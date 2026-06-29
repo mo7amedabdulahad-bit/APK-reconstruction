@@ -759,7 +759,12 @@ def main(apk_path: Path, output_dir: Path, _log=None):
 
     import builtins
     _real_print = builtins.print
-    builtins.print = _log
+
+    def _patched_print(*args, **kwargs):
+        msg = " ".join(str(a) for a in args)
+        _log(msg)
+
+    builtins.print = _patched_print
 
     stats = Stats()
     t0 = time.time()
