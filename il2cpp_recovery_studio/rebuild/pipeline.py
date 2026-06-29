@@ -22,7 +22,7 @@ from pathlib import Path
 from typing import Callable, Optional
 
 
-TOOLS_DIR = Path(__file__).resolve().parent.parent / "tools"
+TOOLS_DIR = Path(__file__).resolve().parent.parent.parent / "tools"
 APKTOOL_JAR = TOOLS_DIR / "apktool.jar"
 APKTOOL_URL = "https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.9.3.jar"
 KEYSTORE_PATH = TOOLS_DIR / "debug.keystore"

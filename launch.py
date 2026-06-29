@@ -26,48 +26,38 @@ def check_python_version() -> bool:
     return True
 
 
+PKG_IMPORT_TO_PIP = {
+    "UnityPy": "UnityPy>=1.5.0",
+    "PIL": "Pillow>=9.0",
+}
+
+
 def ensure_dependencies() -> bool:
     """Install required packages if not already installed."""
-    missing = []
-    for pkg in ("UnityPy", "PIL"):
+    missing_pip = []
+    for import_name, pip_name in PKG_IMPORT_TO_PIP.items():
         try:
-            __import__(pkg)
+            __import__(import_name)
         except ImportError:
-            missing.append(pkg)
+            missing_pip.append(pip_name)
 
-    if not missing:
+    if not missing_pip:
         return True
 
-    req_file = REPO_ROOT / "requirements.txt"
-    if req_file.exists():
-        print("Installing required packages...")
-        try:
-            subprocess.check_call(
-                [sys.executable, "-m", "pip", "install", "-r", str(req_file)],
-                stdout=subprocess.DEVNULL if not _is_verbose() else None,
-                stderr=subprocess.DEVNULL if not _is_verbose() else None,
-            )
-            print("Dependencies installed successfully.")
-            return True
-        except subprocess.CalledProcessError as exc:
-            print(f"Failed to install dependencies: {exc}")
-            print(f"Try manually: pip install -r {req_file}")
-            input("Press Enter to exit...")
-            return False
-    else:
-        print("Installing required packages...")
-        try:
-            subprocess.check_call(
-                [sys.executable, "-m", "pip", "install", "UnityPy>=1.5.0", "Pillow>=9.0"],
-                stdout=subprocess.DEVNULL if not _is_verbose() else None,
-                stderr=subprocess.DEVNULL if not _is_verbose() else None,
-            )
-            print("Dependencies installed successfully.")
-            return True
-        except subprocess.CalledProcessError as exc:
-            print(f"Failed to install dependencies: {exc}")
-            input("Press Enter to exit...")
-            return False
+    print("Installing required packages...")
+    try:
+        subprocess.check_call(
+            [sys.executable, "-m", "pip", "install"] + missing_pip,
+            stdout=subprocess.DEVNULL if not _is_verbose() else None,
+            stderr=subprocess.DEVNULL if not _is_verbose() else None,
+        )
+        print("Dependencies installed successfully.")
+        return True
+    except subprocess.CalledProcessError as exc:
+        print(f"Failed to install dependencies: {exc}")
+        print(f"Try manually: pip install {' '.join(missing_pip)}")
+        input("Press Enter to exit...")
+        return False
 
 
 def _is_verbose() -> bool:

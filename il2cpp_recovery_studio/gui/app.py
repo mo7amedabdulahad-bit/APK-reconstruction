@@ -34,7 +34,7 @@ _BTN_BG = "#313244"
 _BTN_FG = "#cdd6f4"
 _BTN_ACTIVE = "#45475a"
 
-_CONFIG_PATH = Path(__file__).resolve().parent.parent / ".gui_config.json"
+_CONFIG_PATH = Path(__file__).resolve().parent.parent.parent / ".gui_config.json"
 
 
 # ---------------------------------------------------------------------------
