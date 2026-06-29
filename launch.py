@@ -71,8 +71,8 @@ def launch_gui() -> None:
         sys.path.insert(0, str(REPO_ROOT))
 
     try:
-        from il2cpp_recovery_studio.gui.app import main
-        main()
+        from il2cpp_recovery_studio.gui.app import run_gui
+        run_gui()
     except Exception as exc:
         print(f"Failed to launch GUI: {exc}")
         import traceback
