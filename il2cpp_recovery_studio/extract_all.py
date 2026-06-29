@@ -24,8 +24,8 @@ except ImportError:
     print("Install Pillow: pip install Pillow")
     exit(1)
 
-XAPK = None
-OUT = None
+XAPK: Path | None = None
+OUT: Path | None = None
 
 FACTIONS = ['romans', 'egyptians', 'gauls', 'huns', 'spartans', 'teutons', 'vikings']
 
@@ -730,20 +730,31 @@ class Stats:
 
 def run(apk_path: Path, output_dir: Path, log_callback=None):
     """Run extraction with given paths. log_callback(msg) for GUI logging."""
-    global XAPK, OUT
-    XAPK = Path(apk_path)
-    OUT = Path(output_dir)
-    OUT.mkdir(parents=True, exist_ok=True)
-    _log = log_callback if log_callback else (lambda m: print(m))
-    main(_log=_log)
+    main(apk_path, output_dir, _log=log_callback)
 
 
-def main(_log=None):
+def main(apk_path: Path, output_dir: Path, _log=None):
+    """Run the full extraction pipeline.
+
+    Parameters
+    ----------
+    apk_path:
+        Path to the APK or XAPK file to extract.
+    output_dir:
+        Directory where extracted assets will be written.
+    _log:
+        Optional callable for log messages. Defaults to print().
+    """
     global XAPK, OUT
     if _log is None:
         _log = print
-    if XAPK is None or OUT is None:
-        _log("Error: XAPK and OUT must be set. Use run() or set globals.")
+
+    XAPK = Path(apk_path).resolve()
+    OUT = Path(output_dir).resolve()
+    OUT.mkdir(parents=True, exist_ok=True)
+
+    if not XAPK.exists():
+        _log(f"Error: APK/XAPK not found: {XAPK}")
         return
 
     import builtins
@@ -1102,4 +1113,8 @@ def main(_log=None):
     builtins.print = _real_print
 
 if __name__ == '__main__':
-    main()
+    import sys
+    if len(sys.argv) < 3:
+        print("Usage: python -m il2cpp_recovery_studio.extract_all <apk_path> <output_dir>")
+        sys.exit(1)
+    main(Path(sys.argv[1]), Path(sys.argv[2]))

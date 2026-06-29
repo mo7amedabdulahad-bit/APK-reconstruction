@@ -1,12 +1,15 @@
 """Tkinter GUI for IL2CPP Recovery Studio.
 
 Provides APK/XAPK opening, Unity asset extraction, file browsing,
-editing, and APK rebuild & signing - all in a single window.
+editing, APK rebuild & signing, Ghidra code analysis, and AI export
+- all in a single window with tabbed interface.
 """
 from __future__ import annotations
 
 import json
 import os
+import platform
+import subprocess
 import sys
 import threading
 import tkinter as tk
@@ -31,6 +34,28 @@ _BTN_BG = "#313244"
 _BTN_FG = "#cdd6f4"
 _BTN_ACTIVE = "#45475a"
 
+_CONFIG_PATH = Path(__file__).resolve().parent.parent / ".gui_config.json"
+
+
+# ---------------------------------------------------------------------------
+# Config helpers
+# ---------------------------------------------------------------------------
+
+def _load_config() -> dict:
+    if _CONFIG_PATH.exists():
+        try:
+            return json.loads(_CONFIG_PATH.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    return {}
+
+
+def _save_config(data: dict) -> None:
+    try:
+        _CONFIG_PATH.write_text(json.dumps(data, indent=2), encoding="utf-8")
+    except Exception:
+        pass
+
 
 # ---------------------------------------------------------------------------
 # Worker thread helper
@@ -51,10 +76,43 @@ class WorkerThread(threading.Thread):
         try:
             result = self._target(*self._args, **self._kwargs)
             if self._on_done:
-                self._on_done(result)
+                self.after(0, lambda: self._on_done(result))
         except Exception as exc:
             if self._on_error:
-                self._on_error(exc)
+                self.after(0, lambda: self._on_error(exc))
+
+    # Override after to work from non-main thread
+    def after(self, ms, func=None, *args):
+        # We don't have a tkinter after from a thread; the parent App handles it
+        pass
+
+
+def _run_in_thread(app: tk.Tk, target, *args, on_done=None, on_error=None, **kwargs):
+    """Spawn a WorkerThread that posts results back to the tkinter mainloop."""
+    def _done_wrapper(result):
+        if on_done:
+            on_done(result)
+
+    def _error_wrapper(exc):
+        if on_error:
+            on_error(exc)
+
+    class _SafeThread(threading.Thread):
+        def __init__(self):
+            super().__init__(daemon=True)
+            self._result = None
+            self._exc = None
+
+        def run(self):
+            try:
+                self._result = target(*args, **kwargs)
+                app.after(0, lambda: on_done(self._result) if on_done else None)
+            except Exception as exc:
+                app.after(0, lambda: on_error(exc) if on_error else None)
+
+    t = _SafeThread()
+    t.start()
+    return t
 
 
 # ---------------------------------------------------------------------------
@@ -65,8 +123,8 @@ class App(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("IL2CPP Recovery Studio")
-        self.geometry("1100x750")
-        self.minsize(800, 550)
+        self.geometry("1200x800")
+        self.minsize(900, 600)
         self.configure(bg=_BG)
 
         self._apk_path: Optional[Path] = None
@@ -101,6 +159,12 @@ class App(tk.Tk):
         style.map("Treeview", background=[("selected", _BG_LIGHT)])
         style.configure("Horizontal.TProgressbar", background=_ACCENT,
                          troughcolor=_BG_DARK, borderwidth=0)
+        style.configure("TNotebook", background=_BG, borderwidth=0)
+        style.configure("TNotebook.Tab", background=_BG_DARK, foreground=_FG_DIM,
+                         padding=(12, 6))
+        style.map("TNotebook.Tab",
+                   background=[("selected", _BG)],
+                   foreground=[("selected", _ACCENT)])
 
     # -- UI construction -----------------------------------------------------
 
@@ -118,10 +182,34 @@ class App(tk.Tk):
         self._out_label = tk.Label(toolbar, text="No output folder", bg=_BG_DARK, fg=_FG_DIM, anchor="e")
         self._out_label.pack(side=tk.RIGHT, padx=(0, 10))
 
-        # PanedWindow: left = file tree, right = log + editor
-        paned = tk.PanedWindow(self, orient=tk.HORIZONTAL, bg=_BG, sashwidth=4,
+        # Notebook (tabs)
+        self._notebook = ttk.Notebook(self)
+        self._notebook.pack(fill=tk.BOTH, expand=True, padx=6, pady=(6, 0))
+
+        # Tab 1: Main (extraction + file browser)
+        self._build_main_tab()
+
+        # Tab 2: Code Analysis (Ghidra)
+        self._build_code_analysis_tab()
+
+        # Tab 3: AI Export
+        self._build_ai_export_tab()
+
+        # Status bar
+        self._status_var = tk.StringVar(value="Ready")
+        status_bar = tk.Label(self, textvariable=self._status_var, bg=_BG_DARK,
+                               fg=_FG_DIM, anchor="w", padx=8)
+        status_bar.pack(fill=tk.X, side=tk.BOTTOM)
+
+    # ── Tab 1: Main ───────────────────────────────────────────────────
+
+    def _build_main_tab(self):
+        main_tab = tk.Frame(self._notebook, bg=_BG)
+        self._notebook.add(main_tab, text="  Main  ")
+
+        paned = tk.PanedWindow(main_tab, orient=tk.HORIZONTAL, bg=_BG, sashwidth=4,
                                 sashrelief=tk.FLAT)
-        paned.pack(fill=tk.BOTH, expand=True, padx=6, pady=(6, 0))
+        paned.pack(fill=tk.BOTH, expand=True, padx=2, pady=2)
 
         # Left pane: file browser
         left_frame = tk.Frame(paned, bg=_BG)
@@ -146,7 +234,6 @@ class App(tk.Tk):
         right_frame = tk.Frame(paned, bg=_BG)
         paned.add(right_frame, minsize=400)
 
-        # Log area
         tk.Label(right_frame, text="Console Log", bg=_BG, fg=_ACCENT,
                  font=("Segoe UI", 10, "bold")).pack(anchor="w", padx=4, pady=(4, 2))
 
@@ -157,34 +244,155 @@ class App(tk.Tk):
         )
         self._log_text.pack(fill=tk.BOTH, expand=True, padx=4, pady=(0, 4))
 
-        # Action buttons at bottom
         action_frame = tk.Frame(right_frame, bg=_BG)
         action_frame.pack(fill=tk.X, padx=4, pady=(0, 4))
 
         ttk.Button(action_frame, text="Start Extraction", style="Accent.TButton",
                     command=self._start_extraction).pack(side=tk.LEFT, padx=(0, 6))
-
         ttk.Button(action_frame, text="Rebuild & Sign APK", style="Green.TButton",
                     command=self._start_rebuild).pack(side=tk.LEFT)
 
         self._progress = ttk.Progressbar(action_frame, mode="indeterminate", length=200)
         self._progress.pack(side=tk.RIGHT, padx=(6, 0))
 
-        # Status bar
-        self._status_var = tk.StringVar(value="Ready")
-        status_bar = tk.Label(self, textvariable=self._status_var, bg=_BG_DARK,
-                               fg=_FG_DIM, anchor="w", padx=8)
-        status_bar.pack(fill=tk.X, side=tk.BOTTOM)
+    # ── Tab 2: Code Analysis ──────────────────────────────────────────
+
+    def _build_code_analysis_tab(self):
+        tab = tk.Frame(self._notebook, bg=_BG)
+        self._notebook.add(tab, text="  Code Analysis  ")
+
+        # Top section: Ghidra path setting
+        config_frame = tk.Frame(tab, bg=_BG)
+        config_frame.pack(fill=tk.X, padx=8, pady=(8, 4))
+
+        tk.Label(config_frame, text="Ghidra Path:", bg=_BG, fg=_FG,
+                 font=("Segoe UI", 9)).pack(side=tk.LEFT, padx=(0, 6))
+        self._ghidra_path_var = tk.StringVar(value=_load_config().get("ghidra_path", ""))
+        self._ghidra_path_entry = tk.Entry(config_frame, textvariable=self._ghidra_path_var,
+                                            bg=_BG_DARK, fg=_FG, insertbackground=_FG,
+                                            font=("Consolas", 9), width=50)
+        self._ghidra_path_entry.pack(side=tk.LEFT, padx=(0, 6), fill=tk.X, expand=True)
+        ttk.Button(config_frame, text="Browse", command=self._browse_ghidra_path).pack(side=tk.LEFT, padx=(0, 6))
+        ttk.Button(config_frame, text="Save", command=self._save_ghidra_path).pack(side=tk.LEFT)
+
+        # Search section
+        search_frame = tk.Frame(tab, bg=_BG)
+        search_frame.pack(fill=tk.X, padx=8, pady=4)
+
+        tk.Label(search_frame, text="Search method or class name:", bg=_BG, fg=_FG,
+                 font=("Segoe UI", 9)).pack(anchor="w")
+        search_row = tk.Frame(search_frame, bg=_BG)
+        search_row.pack(fill=tk.X, pady=(2, 0))
+
+        self._ghidra_search_var = tk.StringVar()
+        self._ghidra_search_entry = tk.Entry(search_row, textvariable=self._ghidra_search_var,
+                                              bg=_BG_DARK, fg=_FG, insertbackground=_FG,
+                                              font=("Consolas", 9))
+        self._ghidra_search_entry.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=(0, 6))
+        self._ghidra_search_entry.bind("<Return>", lambda e: self._ghidra_search())
+        ttk.Button(search_row, text="Search", command=self._ghidra_search).pack(side=tk.LEFT)
+
+        # Results list
+        tk.Label(tab, text="Search Results:", bg=_BG, fg=_ACCENT,
+                 font=("Segoe UI", 9, "bold")).pack(anchor="w", padx=8, pady=(4, 2))
+
+        results_frame = tk.Frame(tab, bg=_BG)
+        results_frame.pack(fill=tk.BOTH, expand=True, padx=8, pady=(0, 4))
+
+        self._ghidra_results_list = tk.Listbox(
+            results_frame, bg=_BG_DARK, fg=_FG, selectbackground=_BG_LIGHT,
+            font=("Consolas", 9), selectmode=tk.SINGLE, height=8,
+        )
+        ghidra_scroll = ttk.Scrollbar(results_frame, orient=tk.VERTICAL,
+                                       command=self._ghidra_results_list.yview)
+        self._ghidra_results_list.configure(yscrollcommand=ghidra_scroll.set)
+        ghidra_scroll.pack(side=tk.RIGHT, fill=tk.Y)
+        self._ghidra_results_list.pack(fill=tk.BOTH, expand=True)
+
+        # Decompile button + output
+        action_row = tk.Frame(tab, bg=_BG)
+        action_row.pack(fill=tk.X, padx=8, pady=(0, 4))
+        ttk.Button(action_row, text="Decompile Selected", style="Accent.TButton",
+                    command=self._ghidra_decompile).pack(side=tk.LEFT)
+        self._ghidra_status = tk.Label(action_row, text="", bg=_BG, fg=_FG_DIM)
+        self._ghidra_status.pack(side=tk.LEFT, padx=(10, 0))
+
+        tk.Label(tab, text="Decompiled C Pseudocode:", bg=_BG, fg=_ACCENT,
+                 font=("Segoe UI", 9, "bold")).pack(anchor="w", padx=8, pady=(4, 2))
+
+        self._ghidra_code_output = scrolledtext.ScrolledText(
+            tab, wrap=tk.WORD, bg=_BG_DARK, fg=_FG,
+            insertbackground=_FG, font=("Consolas", 9),
+            state=tk.DISABLED, height=12,
+        )
+        self._ghidra_code_output.pack(fill=tk.BOTH, expand=True, padx=8, pady=(0, 8))
+
+        # Internal state
+        self._ghidra_search_results: list[dict] = []
+
+    # ── Tab 3: AI Export ──────────────────────────────────────────────
+
+    def _build_ai_export_tab(self):
+        tab = tk.Frame(self._notebook, bg=_BG)
+        self._notebook.add(tab, text="  AI Export  ")
+
+        # Screen name input
+        input_frame = tk.Frame(tab, bg=_BG)
+        input_frame.pack(fill=tk.X, padx=8, pady=(8, 4))
+
+        tk.Label(input_frame, text="Screen / Feature Name:", bg=_BG, fg=_FG,
+                 font=("Segoe UI", 9)).pack(anchor="w")
+        name_row = tk.Frame(input_frame, bg=_BG)
+        name_row.pack(fill=tk.X, pady=(2, 0))
+
+        self._ai_screen_var = tk.StringVar()
+        self._ai_screen_entry = tk.Entry(name_row, textvariable=self._ai_screen_var,
+                                          bg=_BG_DARK, fg=_FG, insertbackground=_FG,
+                                          font=("Consolas", 9))
+        self._ai_screen_entry.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=(0, 6))
+        self._ai_screen_entry.bind("<Return>", lambda e: self._ai_export_screen())
+
+        ttk.Button(name_row, text="Export for AI", style="Accent.TButton",
+                    command=self._ai_export_screen).pack(side=tk.LEFT, padx=(0, 6))
+        ttk.Button(name_row, text="Export Full Project", style="Green.TButton",
+                    command=self._ai_export_full).pack(side=tk.LEFT)
+
+        # Buttons row
+        btn_row = tk.Frame(tab, bg=_BG)
+        btn_row.pack(fill=tk.X, padx=8, pady=4)
+        ttk.Button(btn_row, text="Open Export Folder", command=self._ai_open_export).pack(side=tk.LEFT)
+        self._ai_export_status = tk.Label(btn_row, text="", bg=_BG, fg=_FG_DIM)
+        self._ai_export_status.pack(side=tk.LEFT, padx=(10, 0))
+
+        # Progress log
+        tk.Label(tab, text="Export Log:", bg=_BG, fg=_ACCENT,
+                 font=("Segoe UI", 9, "bold")).pack(anchor="w", padx=8, pady=(4, 2))
+
+        self._ai_log_text = scrolledtext.ScrolledText(
+            tab, wrap=tk.WORD, bg=_BG_DARK, fg=_FG,
+            insertbackground=_FG, font=("Consolas", 9),
+            state=tk.DISABLED, height=18,
+        )
+        self._ai_log_text.pack(fill=tk.BOTH, expand=True, padx=8, pady=(0, 8))
 
     # -- Logging -------------------------------------------------------------
 
     def _log(self, msg: str):
-        """Thread-safe logging to the console area."""
+        """Thread-safe logging to the main console area."""
         def _append():
             self._log_text.configure(state=tk.NORMAL)
             self._log_text.insert(tk.END, msg + "\n")
             self._log_text.see(tk.END)
             self._log_text.configure(state=tk.DISABLED)
+        self.after(0, _append)
+
+    def _ai_log(self, msg: str):
+        """Thread-safe logging to the AI export console."""
+        def _append():
+            self._ai_log_text.configure(state=tk.NORMAL)
+            self._ai_log_text.insert(tk.END, msg + "\n")
+            self._ai_log_text.see(tk.END)
+            self._ai_log_text.configure(state=tk.DISABLED)
         self.after(0, _append)
 
     def _set_status(self, msg: str):
@@ -196,7 +404,7 @@ class App(tk.Tk):
     def _stop_progress(self):
         self.after(0, lambda: self._progress.stop())
 
-    # -- Actions -------------------------------------------------------------
+    # -- Actions: Main tab ---------------------------------------------------
 
     def _open_apk(self):
         path = filedialog.askopenfilename(
@@ -251,7 +459,7 @@ class App(tk.Tk):
             self._set_status(f"Extraction failed: {exc}")
             self._log(f"ERROR: {exc}")
 
-        WorkerThread(_run, on_done=_on_done, on_error=_on_error).start()
+        _run_in_thread(self, _run, on_done=_on_done, on_error=_on_error)
 
     def _start_rebuild(self):
         if not self._apk_path:
@@ -264,8 +472,6 @@ class App(tk.Tk):
         rebuild_dir = self._output_dir / "rebuild_output"
         rebuild_dir.mkdir(parents=True, exist_ok=True)
 
-        # The modified files are whatever is in the output dir
-        # (the user has edited them via the file browser)
         self._set_status("Rebuilding & signing APK...")
         self._start_progress()
         self._log("Starting APK rebuild pipeline...")
@@ -300,19 +506,236 @@ class App(tk.Tk):
             self._set_status(f"Rebuild failed: {exc}")
             self._log(f"ERROR: {exc}")
 
-        WorkerThread(_run, on_done=_on_done, on_error=_on_error).start()
+        _run_in_thread(self, _run, on_done=_on_done, on_error=_on_error)
+
+    # -- Actions: Code Analysis tab -----------------------------------------
+
+    def _browse_ghidra_path(self):
+        d = filedialog.askdirectory(title="Select Ghidra Installation Folder")
+        if d:
+            self._ghidra_path_var.set(d)
+
+    def _save_ghidra_path(self):
+        cfg = _load_config()
+        cfg["ghidra_path"] = self._ghidra_path_var.get()
+        _save_config(cfg)
+        self._ghidra_status.config(text="Path saved.", fg=_GREEN)
+
+    def _ghidra_search(self):
+        query = self._ghidra_search_var.get().strip()
+        if not query:
+            messagebox.showinfo("Empty Query", "Enter a method or class name to search.")
+            return
+
+        if not self._output_dir:
+            messagebox.showwarning("No Output", "Run extraction first to generate the method map.")
+            return
+
+        method_map = self._find_method_address_map()
+        if not method_map:
+            messagebox.showwarning("No Method Map", "No method_address_map.txt found in the output directory.")
+            return
+
+        self._ghidra_results_list.delete(0, tk.END)
+        self._ghidra_search_results = []
+        self._set_status(f"Searching for '{query}'...")
+
+        def _run():
+            from il2cpp_recovery_studio.ghidra.analyzer import GhidraAnalyzer
+            analyzer = GhidraAnalyzer(
+                ghidra_path=Path(self._ghidra_path_var.get()) if self._ghidra_path_var.get() else None,
+                method_address_map_path=method_map,
+            )
+            return analyzer.search_methods(query)
+
+        def _on_done(results):
+            self._ghidra_search_results = results
+            for row in results:
+                display = (f"{row.get('namespace_class', '')} | "
+                           f"{row.get('dotnet_signature', '')} | "
+                           f"0x{row.get('address', '0')}")
+                self._ghidra_results_list.insert(tk.END, display)
+            self._set_status(f"Found {len(results)} result(s)")
+            if not results:
+                messagebox.showinfo("No Results", f"No methods found matching '{query}'.")
+
+        def _on_error(exc):
+            self._set_status(f"Search failed: {exc}")
+            messagebox.showerror("Search Error", str(exc))
+
+        _run_in_thread(self, _run, on_done=_on_done, on_error=_on_error)
+
+    def _ghidra_decompile(self):
+        sel = self._ghidra_results_list.curselection()
+        if not sel:
+            messagebox.showinfo("No Selection", "Select a method from the search results first.")
+            return
+
+        idx = sel[0]
+        if idx >= len(self._ghidra_search_results):
+            return
+
+        method = self._ghidra_search_results[idx]
+        method_name = method.get("dotnet_signature") or method.get("cpp_name", "")
+
+        if not self._output_dir:
+            return
+
+        method_map = self._find_method_address_map()
+        libil2cpp = self._find_libil2cpp()
+
+        if not libil2cpp:
+            messagebox.showwarning(
+                "libil2cpp.so Not Found",
+                "Could not find libil2cpp.so in the extracted output.\n\n"
+                "Ensure extraction is complete and the APK contains IL2CPP binaries."
+            )
+            return
+
+        decompile_dir = self._output_dir / "ghidra_decompiled"
+        decompile_dir.mkdir(parents=True, exist_ok=True)
+
+        self._ghidra_status.config(text="Decompiling (may take up to 2 minutes)...", fg=_YELLOW)
+        self._start_progress()
+
+        def _run():
+            from il2cpp_recovery_studio.ghidra.analyzer import GhidraAnalyzer
+            analyzer = GhidraAnalyzer(
+                ghidra_path=Path(self._ghidra_path_var.get()) if self._ghidra_path_var.get() else None,
+                libil2cpp_path=libil2cpp,
+                method_address_map_path=method_map,
+                output_dir=decompile_dir,
+            )
+            return analyzer.decompile_method(method_name)
+
+        def _on_done(result):
+            self._stop_progress()
+            self._ghidra_code_output.configure(state=tk.NORMAL)
+            self._ghidra_code_output.delete("1.0", tk.END)
+            if result.get("error"):
+                self._ghidra_code_output.insert("1.0", f"Error: {result['error']}")
+                self._ghidra_status.config(text="Decompilation failed.", fg=_RED)
+            else:
+                self._ghidra_code_output.insert("1.0", result.get("decompiled_c_code", ""))
+                self._ghidra_status.config(text="Decompilation complete.", fg=_GREEN)
+            self._ghidra_code_output.configure(state=tk.DISABLED)
+
+        def _on_error(exc):
+            self._stop_progress()
+            self._ghidra_status.config(text=f"Error: {exc}", fg=_RED)
+
+        _run_in_thread(self, _run, on_done=_on_done, on_error=_on_error)
+
+    def _find_method_address_map(self) -> Optional[Path]:
+        """Search the output directory for method_address_map.txt."""
+        if not self._output_dir:
+            return None
+        for pattern in ("**/method_address_map.txt", "**/method_address_map*.txt"):
+            for match in self._output_dir.rglob(pattern.split("/")[-1]):
+                return match
+        return None
+
+    def _find_libil2cpp(self) -> Optional[Path]:
+        """Search the output directory for libil2cpp.so."""
+        if not self._output_dir:
+            return None
+        for match in self._output_dir.rglob("libil2cpp.so"):
+            return match
+        for match in self._output_dir.rglob("libil2cpp*"):
+            return match
+        return None
+
+    # -- Actions: AI Export tab ---------------------------------------------
+
+    def _ai_export_screen(self):
+        screen_name = self._ai_screen_var.get().strip()
+        if not screen_name:
+            messagebox.showinfo("No Name", "Enter a screen/feature name to export.")
+            return
+        if not self._output_dir or not self._output_dir.exists():
+            messagebox.showwarning("No Output", "Run extraction first.")
+            return
+
+        export_dir = self._output_dir / "ai_export"
+        method_map = self._find_method_address_map()
+
+        self._set_status(f"Exporting screen: {screen_name}...")
+        self._start_progress()
+
+        def _run():
+            from il2cpp_recovery_studio.ai_export.exporter import AIExporter
+            exporter = AIExporter(log_callback=self._ai_log)
+            return exporter.export_screen(
+                screen_name=screen_name,
+                extracted_assets_dir=self._output_dir,
+                method_address_map=method_map,
+                output_dir=export_dir,
+            )
+
+        def _on_done(result):
+            self._stop_progress()
+            self._ai_export_status.config(text=f"Exported: {result}", fg=_GREEN)
+            self._set_status(f"AI export complete: {screen_name}")
+
+        def _on_error(exc):
+            self._stop_progress()
+            self._ai_export_status.config(text=f"Export failed: {exc}", fg=_RED)
+
+        _run_in_thread(self, _run, on_done=_on_done, on_error=_on_error)
+
+    def _ai_export_full(self):
+        if not self._output_dir or not self._output_dir.exists():
+            messagebox.showwarning("No Output", "Run extraction first.")
+            return
+
+        export_dir = self._output_dir / "ai_export"
+        method_map = self._find_method_address_map()
+
+        self._set_status("Exporting full project for AI...")
+        self._start_progress()
+
+        def _run():
+            from il2cpp_recovery_studio.ai_export.exporter import AIExporter
+            exporter = AIExporter(log_callback=self._ai_log)
+            return exporter.export_full_project(
+                extracted_assets_dir=self._output_dir,
+                method_address_map=method_map,
+                output_dir=export_dir,
+            )
+
+        def _on_done(result):
+            self._stop_progress()
+            self._ai_export_status.config(text=f"Full export complete: {result}", fg=_GREEN)
+            self._set_status("Full AI export complete.")
+
+        def _on_error(exc):
+            self._stop_progress()
+            self._ai_export_status.config(text=f"Export failed: {exc}", fg=_RED)
+
+        _run_in_thread(self, _run, on_done=_on_done, on_error=_on_error)
+
+    def _ai_open_export(self):
+        export_dir = self._output_dir / "ai_export" if self._output_dir else None
+        if not export_dir or not export_dir.exists():
+            messagebox.showinfo("No Export", "No AI export folder found. Run an export first.")
+            return
+
+        if platform.system() == "Windows":
+            os.startfile(str(export_dir))
+        elif platform.system() == "Darwin":
+            subprocess.Popen(["open", str(export_dir)])
+        else:
+            subprocess.Popen(["xdg-open", str(export_dir)])
 
     # -- File tree -----------------------------------------------------------
 
     def _refresh_file_tree(self):
-        """Populate the file tree from the output directory."""
         self._file_tree.delete(*self._file_tree.get_children())
         if not self._output_dir or not self._output_dir.exists():
             return
         self._populate_tree("", self._output_dir)
 
     def _populate_tree(self, parent, directory: Path):
-        """Recursively add directories and files to the treeview."""
         try:
             entries = sorted(directory.iterdir(), key=lambda e: (not e.is_dir(), e.name.lower()))
         except PermissionError:
@@ -327,7 +750,6 @@ class App(tk.Tk):
                 self._populate_tree(node, entry)
 
     def _edit_selected_file(self):
-        """Open a simple text editor for the selected file."""
         sel = self._file_tree.selection()
         if not sel:
             messagebox.showinfo("No Selection", "Select a file in the tree first.")
@@ -338,15 +760,13 @@ class App(tk.Tk):
             messagebox.showinfo("Not a File", "Selected item is not a file.")
             return
 
-        # Check if it's text-editable
         try:
             content = file_path.read_text(encoding="utf-8")
         except (UnicodeDecodeError, PermissionError) as exc:
             messagebox.showerror("Cannot Edit", f"Cannot open file as text:\n{exc}")
             return
 
-        # Open editor window
-        editor = EditorWindow(self, file_path, content)
+        EditorWindow(self, file_path, content)
 
 
 # ---------------------------------------------------------------------------
@@ -364,7 +784,6 @@ class EditorWindow(tk.Toplevel):
         self.configure(bg=_BG)
         self.transient(parent)
 
-        # Toolbar
         toolbar = tk.Frame(self, bg=_BG_DARK, padx=6, pady=4)
         toolbar.pack(fill=tk.X)
 
@@ -376,7 +795,6 @@ class EditorWindow(tk.Toplevel):
         ttk.Button(toolbar, text="Format JSON",
                     command=self._format_json).pack(side=tk.RIGHT, padx=(4, 0))
 
-        # Editor area
         self._text = scrolledtext.ScrolledText(
             self, wrap=tk.WORD, bg=_BG_DARK, fg=_FG,
             insertbackground=_FG, selectbackground=_BG_LIGHT,
@@ -385,7 +803,6 @@ class EditorWindow(tk.Toplevel):
         self._text.pack(fill=tk.BOTH, expand=True, padx=6, pady=(6, 0))
         self._text.insert("1.0", content)
 
-        # Status
         self._status = tk.Label(self, text="Ready", bg=_BG_DARK, fg=_FG_DIM, anchor="w", padx=6)
         self._status.pack(fill=tk.X, side=tk.BOTTOM)
 
