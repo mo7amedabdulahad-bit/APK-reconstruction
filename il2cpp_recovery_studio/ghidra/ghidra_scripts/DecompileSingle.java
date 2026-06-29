@@ -1,15 +1,15 @@
-// GhidraHeadlessDecompile.java
+//DecompileSingle.java
 // Ghidra headless script that decompiles a single function by address.
 // Usage: analyzeHeadless <project_dir> <project_name> -import <binary>
 //        -postScript DecompileSingle.java <address> <output_file>
 //        -scriptPath <dir_containing_this_script>
-
-// Arguments:
-//   args[0] = function address (hex string, e.g. "0x1a2b3c4")
-//   args[1] = output file path for the decompiled C code
+//
+// Args[0] = function address (hex string, e.g. "0x1a2b3c4")
+// Args[1] = output file path for the decompiled C code
 
 import ghidra.app.decompiler.DecompInterface;
 import ghidra.app.decompiler.DecompileResults;
+import ghidra.app.script.GhidraScript;
 import ghidra.program.model.address.Address;
 import ghidra.program.model.listing.Function;
 import ghidra.program.model.listing.FunctionManager;
@@ -18,12 +18,16 @@ import ghidra.util.task.ConsoleTaskMonitor;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 
-public class DecompileSingle {
+public class DecompileSingle extends GhidraScript {
 
-    public static void main(String[] args) throws Exception {
+    @Override
+    public void run() throws Exception {
+        String[] args = getScriptArgs();
+
         if (args.length < 2) {
-            System.err.println("Usage: DecompileSingle.java <address> <output_file>");
-            System.exit(1);
+            println("Usage: DecompileSingle.java <address> <output_file>");
+            println("Got " + args.length + " arguments");
+            return;
         }
 
         String addressStr = args[0].replaceAll("^0x", "");
@@ -36,13 +40,11 @@ public class DecompileSingle {
         Function func = fm.getFunctionAt(targetAddr);
 
         if (func == null) {
-            // Try to find function containing this address
             func = fm.getFunctionContaining(targetAddr);
         }
 
         if (func == null) {
-            System.err.println("No function found at address: " + args[0]);
-            // Write a marker to the output file
+            println("No function found at address: " + args[0]);
             PrintWriter pw = new PrintWriter(new FileWriter(outputPath));
             pw.println("// No function found at address 0x" + addressStr);
             pw.flush();
@@ -80,5 +82,6 @@ public class DecompileSingle {
         pw.flush();
         pw.close();
         decomp.dispose();
+        println("Decompilation saved to: " + outputPath);
     }
 }

@@ -21,43 +21,28 @@ Desktop.ini
 *.ipa
 
 # ---- Raw Binaries (download separately) ----
-tools/libil2cpp.so
 Il2CppDumper_Output/libil2cpp.so
 Il2CppDumper_Output/global-metadata.dat
 RecoveredProject/raw/assets/bin/Data/Managed/Metadata/global-metadata.dat
 
-# ---- Tools (too large for git, document in README) ----
-tools/ghidra_12.1.2_PUBLIC/
-tools/ghidra_project/
-tools/ghidra_project2/
-tools/jdk21.0.11_10/
-tools/Cpp2IL/
-tools/Il2CppDumper/
-tools/corretto21.zip
+# ---- Tools (too large for git, auto-downloaded at runtime) ----
+tools/
 
 # ---- Large JSON / Data Dumps ----
-tools/il2cpp_metadata_with_addresses/il2cpp.json
-tools/il2cpp_metadata_with_addresses/il2cpp.h
-tools/il2cpp_inspector_output/cs/il2cpp.cs
 metadata_output/types_v39.json
 metadata_output/parameters.json
 metadata_output/properties.json
 metadata_output/methods.json
 metadata_output/all_types.json
 
-# ---- Ghidra Temp / Lock Files ----
-tools/ghidra_project2/tlmobile.lock
-tools/ghidra_project2/tlmobile.lock~
-tools/ghidra_project2/tlmobile.gpr
-
 # ---- Build Artifacts ----
+*.pyc
+__pycache__/
 il2cpp_recovery_studio/dist/
 il2cpp_recovery_studio/build/
 il2cpp_recovery_studio/__pycache__/
 il2cpp_recovery_studio/.pytest_cache/
 il2cpp_recovery_studio/*.egg-info/
-*.pyc
-__pycache__/
 
 # ---- Extracted Asset Binaries (too large) ----
 extracted_assets/Images/
@@ -78,45 +63,9 @@ extracted_assets/SpriteAtlases/
 # ---- Exclude MonoBehaviours (4,769 raw JSON, minimal data) ----
 extracted_assets/MonoBehaviours/
 
-# ---- Exclude il2cpp_recovery_studio build/dist ----
-il2cpp_recovery_studio/dist/
-il2cpp_recovery_studio/build/
-il2cpp_recovery_studio/.pytest_cache/
-il2cpp_recovery_studio/__pycache__/
-il2cpp_recovery_studio/*.egg-info/
-il2cpp_recovery_studio/analysis/__pycache__/
-il2cpp_recovery_studio/assets/__pycache__/
-il2cpp_recovery_studio/binary/__pycache__/
-il2cpp_recovery_studio/core/__pycache__/
-il2cpp_recovery_studio/crossref/__pycache__/
-il2cpp_recovery_studio/database/__pycache__/
-il2cpp_recovery_studio/decompiler/__pycache__/
-il2cpp_recovery_studio/docs_gen/__pycache__/
-il2cpp_recovery_studio/documentation/__pycache__/
-il2cpp_recovery_studio/exporters/__pycache__/
-il2cpp_recovery_studio/ghidra/__pycache__/
-il2cpp_recovery_studio/graphs/__pycache__/
-il2cpp_recovery_studio/gui/__pycache__/
-il2cpp_recovery_studio/metadata/__pycache__/
-il2cpp_recovery_studio/methodmap/__pycache__/
-il2cpp_recovery_studio/network/__pycache__/
-il2cpp_recovery_studio/performance/__pycache__/
-il2cpp_recovery_studio/plugins/__pycache__/
-il2cpp_recovery_studio/reconstructor/__pycache__/
-il2cpp_recovery_studio/recovery/__pycache__/
-il2cpp_recovery_studio/rebuild/__pycache__/
-il2cpp_recovery_studio/reports/__pycache__/
-il2cpp_recovery_studio/search/__pycache__/
-il2cpp_recovery_studio/strings/__pycache__/
-il2cpp_recovery_studio/tests/__pycache__/
-il2cpp_recovery_studio/unity/__pycache__/
-il2cpp_recovery_studio/unity_assets/__pycache__/
-
 # ---- Temp Files ----
 *.tmp
 *.log
 *.bak
 *.ps1
-tools/ghidra_export_log*.txt
-tools/ghidra_pid*.txt
-tools/run_ghidra*.bat
+.gui_config.json

@@ -566,6 +566,22 @@ class App(tk.Tk):
         _run_in_thread(self, _run, on_done=_on_done, on_error=_on_error)
 
     def _ghidra_decompile(self):
+        # First-run warning for Ghidra analysis
+        cfg = _load_config()
+        if not cfg.get("ghidra_first_run_warned"):
+            result = messagebox.askyesno(
+                "Ghidra Code Analysis",
+                "This feature uses Ghidra (NSA) to decompile native code from libil2cpp.so.\n\n"
+                "• Ghidra and Java JDK will be auto-downloaded on first use (~600 MB)\n"
+                "• Decompilation can take up to 2 minutes per method\n"
+                "• Output is C pseudocode from the IL2CPP native binary\n\n"
+                "Continue?",
+            )
+            cfg["ghidra_first_run_warned"] = True
+            _save_config(cfg)
+            if not result:
+                return
+
         sel = self._ghidra_results_list.curselection()
         if not sel:
             messagebox.showinfo("No Selection", "Select a method from the search results first.")

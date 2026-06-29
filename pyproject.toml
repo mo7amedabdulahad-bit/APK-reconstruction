@@ -27,6 +27,9 @@ dev = [
 [project.scripts]
 il2cpp-recovery-studio = "il2cpp_recovery_studio.__main__:main"
 
+[tool.setuptools.packages.find]
+include = ["il2cpp_recovery_studio*"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = ["test_*.py"]

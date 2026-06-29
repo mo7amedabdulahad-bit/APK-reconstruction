@@ -6,11 +6,15 @@ methods or entire classes, and searches the method address map.
 from __future__ import annotations
 
 import glob
+import json
 import os
+import platform
 import shutil
 import subprocess
 import tempfile
 import time
+import urllib.request
+import zipfile
 from pathlib import Path
 from typing import Callable, Optional
 
@@ -25,6 +29,32 @@ _DEFAULT_SEARCH_PATHS = [
 ]
 
 _HEADER = "address|dotnet_signature|cpp_name|namespace_class|assembly"
+
+_GHIDRA_CONFIG_KEY = "ghidra_path"
+_GHIDRA_VERSION = "11.3.1_PUBLIC"
+_GHIDRA_URL = (
+    f"https://github.com/NationalSecurityAgency/ghidra/releases/download/"
+    f"Ghidra_{_GHIDRA_VERSION.replace('.', '_')}/ghidra_{_GHIDRA_VERSION}.zip"
+)
+_GHIDRA_SHA1_MAP: dict[str, str] = {}  # can be filled for verification
+
+_CONFIG_PATH = Path(__file__).resolve().parent.parent.parent / ".gui_config.json"
+
+
+def _load_config() -> dict:
+    if _CONFIG_PATH.exists():
+        try:
+            return json.loads(_CONFIG_PATH.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    return {}
+
+
+def _save_config(cfg: dict) -> None:
+    try:
+        _CONFIG_PATH.write_text(json.dumps(cfg, indent=2), encoding="utf-8")
+    except Exception:
+        pass
 
 
 class GhidraAnalyzer:
@@ -42,6 +72,8 @@ class GhidraAnalyzer:
         Where to write decompiled output files.
     """
 
+    TOOLS_DIR = Path(__file__).resolve().parent.parent.parent / "tools"
+
     def __init__(
         self,
         ghidra_path: Optional[Path] = None,
@@ -58,10 +90,13 @@ class GhidraAnalyzer:
         self._script_dir = Path(__file__).parent / "ghidra_scripts"
         self._method_cache: list[dict[str, str]] | None = None
 
+    # -- Ghidra discovery & download -----------------------------------------
+
     def find_ghidra(self) -> Optional[Path]:
         """Auto-detect Ghidra installation on Windows/Linux.
 
         Checks C:\\ghidra*, C:\\Program Files\\ghidra*, and PATH.
+        Falls back to auto-downloading Ghidra if not found.
         Returns the Ghidra root directory or None.
         """
         # If already set and valid, return it
@@ -75,6 +110,16 @@ class GhidraAnalyzer:
             if candidate.exists():
                 return self.ghidra_path
 
+        # Check saved config
+        cfg = _load_config()
+        saved = cfg.get(_GHIDRA_CONFIG_KEY)
+        if saved:
+            p = Path(saved)
+            if p.is_dir() and (p / "support" / "analyzeHeadless").exists():
+                self.ghidra_path = p
+                self._log(f"  Found Ghidra (from config): {p}")
+                return p
+
         # Glob-based search on common paths
         for pattern in _DEFAULT_SEARCH_PATHS:
             expanded = os.path.expanduser(pattern)
@@ -83,23 +128,89 @@ class GhidraAnalyzer:
                 if p.is_dir() and (p / "support" / "analyzeHeadless").exists():
                     self.ghidra_path = p
                     self._log(f"  Found Ghidra at: {p}")
+                    cfg[_GHIDRA_CONFIG_KEY] = str(p)
+                    _save_config(cfg)
                     return p
 
         # Search PATH for analyzeHeadless
         for name in ("analyzeHeadless", "analyzeHeadless.bat", "analyzeHeadless.exe"):
             found = shutil.which(name)
             if found:
-                # Walk up to find Ghidra root
                 candidate = Path(found).resolve()
                 for parent in candidate.parents:
                     if (parent / "support" / "analyzeHeadless").exists() or \
                        (parent / "support" / "analyzeHeadless.bat").exists():
                         self.ghidra_path = parent
                         self._log(f"  Found Ghidra at: {parent}")
+                        cfg[_GHIDRA_CONFIG_KEY] = str(parent)
+                        _save_config(cfg)
                         return parent
+
+        # Not found — attempt auto-download
+        self._log("  Ghidra not found locally. Attempting auto-download...")
+        downloaded = self._auto_download_ghidra()
+        if downloaded:
+            cfg[_GHIDRA_CONFIG_KEY] = str(downloaded)
+            _save_config(cfg)
+            return downloaded
 
         self._log("  WARNING: Ghidra not found. Install from https://ghidra-sre.org/")
         return None
+
+    def _auto_download_ghidra(self) -> Optional[Path]:
+        """Download Ghidra from GitHub releases and extract to tools/ directory.
+
+        Returns the extracted Ghidra root directory or None on failure.
+        """
+        try:
+            self.TOOLS_DIR.mkdir(parents=True, exist_ok=True)
+            zip_name = f"ghidra_{_GHIDRA_VERSION}.zip"
+            zip_path = self.TOOLS_DIR / zip_name
+            extract_dir = self.TOOLS_DIR
+
+            if not zip_path.exists():
+                self._log(f"  Downloading Ghidra {_GHIDRA_VERSION}...")
+                self._log(f"  URL: {_GHIDRA_URL}")
+
+                def _progress(block_num: int, block_size: int, total_size: int):
+                    if total_size > 0 and block_num % 10 == 0:
+                        pct = min(100.0, block_num * block_size / total_size * 100)
+                        self._log(f"  Download: {pct:.0f}%")
+
+                urllib.request.urlretrieve(_GHIDRA_URL, str(zip_path), reporthook=_progress)
+                self._log(f"  Download complete: {zip_path} ({zip_path.stat().st_size} bytes)")
+            else:
+                self._log(f"  Using cached download: {zip_path}")
+
+            self._log(f"  Extracting Ghidra to {extract_dir}...")
+            with zipfile.ZipFile(str(zip_path), "r") as zf:
+                zf.extractall(str(extract_dir))
+            self._log("  Extraction complete.")
+
+            # Find the extracted directory (usually ghidra_11.3.1_PUBLIC)
+            ghidra_root = None
+            for item in extract_dir.iterdir():
+                if item.is_dir() and item.name.startswith("ghidra_") and "PUBLIC" in item.name:
+                    ghidra_root = item
+                    break
+
+            if ghidra_root and (ghidra_root / "support" / "analyzeHeadless").exists():
+                self.ghidra_path = ghidra_root
+                self._log(f"  Ghidra ready at: {ghidra_root}")
+                return ghidra_root
+
+            self._log("  WARNING: Ghidra extraction succeeded but analyzeHeadless not found.")
+            return None
+
+        except Exception as exc:
+            self._log(f"  ERROR downloading Ghidra: {exc}")
+            # Clean up partial download
+            try:
+                if zip_path.exists():
+                    zip_path.unlink()
+            except Exception:
+                pass
+            return None
 
     def _get_analyze_headless(self) -> Optional[str]:
         """Return the full path to the analyzeHeadless script."""
@@ -111,6 +222,8 @@ class GhidraAnalyzer:
             if candidate.exists():
                 return str(candidate)
         return None
+
+    # -- Method map ----------------------------------------------------------
 
     def _load_method_map(self) -> list[dict[str, str]]:
         """Load the pipe-delimited method address map into memory."""
@@ -143,6 +256,8 @@ class GhidraAnalyzer:
         self._method_cache = rows
         return rows
 
+    # -- Decompilation -------------------------------------------------------
+
     def decompile_method(self, method_name: str) -> dict:
         """Decompile a single method by name.
 
@@ -165,7 +280,8 @@ class GhidraAnalyzer:
         analyze_headless = self._get_analyze_headless()
         if not analyze_headless:
             result["error"] = (
-                "Ghidra not found. Install Ghidra from https://ghidra-sre.org/ "
+                "Ghidra not found and could not be downloaded. "
+                "Install Ghidra from https://ghidra-sre.org/ "
                 "and set the Ghidra Path in the Code Analysis tab."
             )
             return result
@@ -282,9 +398,11 @@ class GhidraAnalyzer:
 
         with tempfile.TemporaryDirectory() as tmpdir:
             project_dir = os.path.join(tmpdir, "ghidra_project")
+            os.makedirs(project_dir, exist_ok=True)
+
             cmd = [
                 analyze_headless,
-                str(self.libil2cpp_path),
+                project_dir,
                 "decompile_project",
                 "-import", str(self.libil2cpp_path),
                 "-postScript", str(script_path),
@@ -294,17 +412,29 @@ class GhidraAnalyzer:
             ]
 
             self._log(f"    Ghidra: decompiling {address}...")
-            proc = subprocess.run(
-                cmd,
-                capture_output=True,
-                text=True,
-                timeout=120,
-                creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0),
-            )
+            try:
+                proc = subprocess.run(
+                    cmd,
+                    capture_output=True,
+                    text=True,
+                    timeout=180,
+                    creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0),
+                )
+            except subprocess.TimeoutExpired:
+                raise RuntimeError("Ghidra decompilation timed out after 180 seconds")
+            except FileNotFoundError:
+                raise RuntimeError(
+                    f"analyzeHeadless not found at: {analyze_headless}\n"
+                    "Ghidra installation may be corrupted. Re-download Ghidra."
+                )
 
             if proc.returncode != 0:
-                stderr = proc.stderr[:500] if proc.stderr else "unknown error"
-                raise RuntimeError(f"Ghidra exited with code {proc.returncode}: {stderr}")
+                stderr = proc.stderr[:1000] if proc.stderr else "unknown error"
+                stdout = proc.stdout[:500] if proc.stdout else ""
+                raise RuntimeError(
+                    f"Ghidra exited with code {proc.returncode}:\n"
+                    f"stderr: {stderr}\nstdout: {stdout}"
+                )
 
         # Read the output
         if output_file.exists():
