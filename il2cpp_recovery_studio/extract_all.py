@@ -24,8 +24,8 @@ except ImportError:
     print("Install Pillow: pip install Pillow")
     exit(1)
 
-XAPK = Path(r'C:\Users\Mohamed\OneDrive\Desktop\Unity Assets For hero\APK\travianlegendsapp-3-13-0.xapk')
-OUT = Path(r'C:\Users\Mohamed\OneDrive\Desktop\Unity Assets For hero\APK\extracted_assets')
+XAPK = None
+OUT = None
 
 FACTIONS = ['romans', 'egyptians', 'gauls', 'huns', 'spartans', 'teutons', 'vikings']
 
@@ -728,17 +728,38 @@ class Stats:
         print(f"  Missing refs:               {self.missing_refs:>8}")
 
 
-def main():
+def run(apk_path: Path, output_dir: Path, log_callback=None):
+    """Run extraction with given paths. log_callback(msg) for GUI logging."""
+    global XAPK, OUT
+    XAPK = Path(apk_path)
+    OUT = Path(output_dir)
+    OUT.mkdir(parents=True, exist_ok=True)
+    _log = log_callback if log_callback else (lambda m: print(m))
+    main(_log=_log)
+
+
+def main(_log=None):
+    global XAPK, OUT
+    if _log is None:
+        _log = print
+    if XAPK is None or OUT is None:
+        _log("Error: XAPK and OUT must be set. Use run() or set globals.")
+        return
+
+    import builtins
+    _real_print = builtins.print
+    builtins.print = _log
+
     stats = Stats()
     t0 = time.time()
     texture_registry = {}
     sprite_registry = {}
 
-    print("="*70)
-    print("COMPLETE UNITY ASSET EXTRACTION (ALL ERRORS FIXED)")
-    print("="*70)
+    _log("="*70)
+    _log("COMPLETE UNITY ASSET EXTRACTION (ALL ERRORS FIXED)")
+    _log("="*70)
 
-    print("\n[1/5] Loading XAPK...")
+    _log("\n[1/5] Loading XAPK...")
     with zipfile.ZipFile(XAPK, 'r') as z:
         apk_data = z.read('UnityDataAssetPack.apk')
     tp = Path(tempfile.gettempdir()) / 'unity_final.apk'
@@ -1077,6 +1098,8 @@ def main():
     print(f"\n  TOTAL: {total_files} files on disk")
     print(f"  New files written this run: {stats.files_written}")
     print(f"  Output: {OUT}")
+
+    builtins.print = _real_print
 
 if __name__ == '__main__':
     main()

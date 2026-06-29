@@ -2,11 +2,11 @@
 
 When frozen (packaged as .exe), launches the GUI automatically.
 When run as a script, supports --apk, --gui, --output flags.
+Default is always the GUI.
 """
 from __future__ import annotations
 
 import sys
-import os
 from pathlib import Path
 
 
@@ -15,6 +15,7 @@ def _is_frozen() -> bool:
 
 
 def main() -> None:
+    # Always open GUI by default
     if _is_frozen():
         from il2cpp_recovery_studio.gui.app import run_gui
         run_gui()
@@ -26,19 +27,29 @@ def main() -> None:
         prog="il2cpp-recovery-studio",
         description="IL2CPP Recovery Studio - Unity APK analysis and recovery",
     )
-    parser.add_argument("--apk", type=Path, help="Path to APK/XAPK file")
-    parser.add_argument("--output", type=Path, default=Path("output"), help="Output directory")
-    parser.add_argument("--gui", action="store_true", help="Launch GUI (default if no --apk)")
-    parser.add_argument("--reconstruct", action="store_true", help="Run Phase 21 Unity Asset Reconstruction")
+    parser.add_argument("--apk", type=Path, help="Path to APK/XAPK file (CLI mode)")
+    parser.add_argument("--output", type=Path, default=Path("output"), help="Output directory (CLI mode)")
+    parser.add_argument("--gui", action="store_true", default=True,
+                        help="Launch GUI (default)")
+    parser.add_argument("--cli", action="store_true",
+                        help="Run in CLI mode (requires --apk)")
+    parser.add_argument("--reconstruct", action="store_true",
+                        help="Run Phase 21 Unity Asset Reconstruction (CLI mode)")
     parser.add_argument("--verbose", "-v", action="store_true", help="Verbose output")
     parser.add_argument("--version", action="version", version="1.0.0")
 
     args = parser.parse_args()
 
-    if args.gui or (not args.apk and not args.reconstruct):
+    # Default: launch GUI
+    if not args.cli:
         from il2cpp_recovery_studio.gui.app import run_gui
         run_gui()
         return
+
+    # CLI mode
+    if not args.apk:
+        print("Error: --cli mode requires --apk <path>", file=sys.stderr)
+        sys.exit(1)
 
     if not args.apk.exists():
         print(f"Error: APK not found: {args.apk}", file=sys.stderr)
@@ -81,7 +92,6 @@ def main() -> None:
         for err in result.errors:
             print(f"  - {err}")
 
-    # Run Phase 21 Unity Asset Reconstruction if requested or after recovery
     if args.reconstruct:
         print("\n--- Phase 21: Intelligent Asset Reconstruction ---")
         from il2cpp_recovery_studio.unity_assets.orchestrator import UnityAssetReconstructor
@@ -92,7 +102,6 @@ def main() -> None:
             verbose=args.verbose,
         )
 
-        # Try to recover classes from the recovery result for relationship mapping
         recovered_classes = []
         if hasattr(result, 'classes') and result.classes:
             recovered_classes = result.classes
