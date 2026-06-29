@@ -377,7 +377,7 @@ class App(tk.Tk):
 
     # -- Logging -------------------------------------------------------------
 
-    def _log(self, msg: str):
+    def _log(self, msg: str, **_kwargs):
         """Thread-safe logging to the main console area."""
         def _append():
             self._log_text.configure(state=tk.NORMAL)
