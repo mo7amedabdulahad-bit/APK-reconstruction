@@ -1,0 +1,7 @@
+[framework]
+path=Assets/Plugins/MobilePlugins/
+[app]
+id_android=com.traviangames.travianlegendsmobile
+id_ios=com.traviangames.travianlegendsmobile
+[build_support]
+android_libs_to_keep_on_clean=

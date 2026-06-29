@@ -1,0 +1,2081 @@
+detail_window_header_title;{{buildingName|TranslateSuffixFor|allgemein.gid}}
+;{{INT}}
+levelWithValue;مستوى {{level}}
+valueWithPercent;{{value}}%
+valueAsRankingPosition;{{value}}.
+valueChangeInBrackets;({{change|Sign}})
+valueChangeInBracketsWithPercent;({{change|Sign}}%)
+ratioValues;{{a}}/{{b}}
+coordinates;<nobr>({{x}}|{{y}})</nobr>
+village_with_coordinates;{{villageName}} <nobr>({{x}}|{{y}})</nobr>
+village_with_clickable_coordinates;{{villageName}} {{mapId|Coordinates}}
+valuePerHour;{{a}}/ساعة
+back;عودة
+fill;املأ
+hero;البطل
+done;تم
+remove;إزالة
+prerequisites;الشروط:
+newAmount;كمية جديدة
+before;قبل
+after;بعد
+permissions;أذونات
+changesSaved;تم حفظ التغييرات!
+genericError;خطأ غير متوقع
+allianceTagInBrackets;[{{allianceId|AllianceLink}}]
+autocompleteNoResult;لم يُعثَر على تطابق
+medalAdded;أُضيف الوسام
+continueEdit;مواصلة التعديل
+levelUp;رفع المستوى!
+non_existing_object;[?]
+sorting;الترتيب
+copiedToClipboard;تم النسخ إلى الحافظة
+maximumLengthError;الطول الأقصى: {{max}}.
+sortingOptions;خيارات الترتيب
+WIP_comingSoon;ستتوفر الميزة قريبًا!
+upgradeTab_fastForward_button;{{Percent}}% أسرع
+upgradeTab_masterBuilder_button;البناء باستخدام\nالبنّاء {{goldIcon|Sprite}}{{goldCost}}
+upgradeTab_adBoostPopup_boost;{{BOOST}}% زيادة
+infoTab_upgradingToLevel;المبنى قيد التطوير للمستوى {{level}}:
+infoTab_genericCurrently;حاليًا:
+infoTab_genericAtLevel;في المستوى {{INT}}:
+infoTab_genericEffect;{{INT}}
+infoTab_currentProduction;الإنتاج الحالي:
+infoTab_productionAtLevel;الإنتاجية عند المستوى {{INT}}:
+infoTab_effectPerHour;{{INT}} في الساعة
+networkIssues;فقد الاتصال بسيرفر اللعبة.
+cantLoadServerList;تعذر تحميل قائمة السيرفرات بسبب مشاكل في الشبكة. يُرجى التحقق من أن الجهاز متصل بالإنترنت والمحاولة مرة أخرى.
+barracks_TrainTroops_Action;تدريب القوات
+barracks_ViewTrainingsList;عرض قائمة التدريب
+barracks_unitNeedsToBeResearched;تحتاج الوحدة إلى البحث في
+barracks_requiresLabel;يتطلب:
+barracks_trainingCosts;تكاليف تدريب القوات
+barracks_troopsInTraining;قوّات تحت التدريب
+training_started;بدأ التدريب بنجاح!
+targetSelection_relationLabel;الحالة:
+targetSelection_selectedVillage;القرية المحددة
+targetSelection_noSelectedVillage;لم يتم تحديد أي قرية
+targetSelection_ownVillages;قراى الخاصة
+targetSelection_relation0;محايدة
+targetSelection_relation1;ودية
+targetSelection_relation2;تحالفي
+targetSelection_relation3;قريتي الخاصة
+targetSelection_alreadyThere_troops;قواتك موجودة هناك بالفعل.
+targetSelection_alreadyThere_merchants;تجارك موجودون هناك بالفعل.
+rallyPoint_button_confirmTarget;تأكيد الهدف
+rallyPoint_button_prepareTroops;تجهيز القوات
+rallyPoint_button_updateWave;تحديث الموجة
+rallyPoint_button_copyWave;تكرار الموجة
+rallyPoint_button_newWave;إضافة موجة جديدة
+rallyPoint_sendTroops_chooseDestination;إرسال القوات - اختيار الوجهة
+rallyPoint_sendTroops_sendTroopAction_1;إرسال القوات - تأكيد
+rallyPoint_sendTroops_sendTroopAction_3;إرسال القوات - تأكيد
+rallyPoint_sendTroops_sendTroopAction_4;إرسال القوات - تأكيد
+rallyPoint_sendTroops_sendTroopAction_5;إرسال القوات - تأكيد
+rallyPoint_sendTroops_sendTroopAction_72;تمرير القوات - تأكيد
+rallyPoint_sendTroops_sendTroopAction_9;سحب القوات - تأكيد
+rallyPoint_sendTroops_sendTroopAction_10;استيطان قرية جديدة
+rallyPoint_sendTroops_sendTroopButton_1;إرسال قوات
+rallyPoint_sendTroops_sendTroopButton_3;إرسال قوات
+rallyPoint_sendTroops_sendTroopButton_4;إرسال قوات
+rallyPoint_sendTroops_sendTroopButton_5;إرسال قوات
+rallyPoint_sendTroops_sendTroopButton_72;تمرير القوات
+rallyPoint_sendTroops_sendTroopButton_9;إعادة القوات
+rallyPoint_sendTroops_sendTroopButton_10;أسّس قرية جديدة
+rallyPoint_sendTroops_coordinateX;<b>X</b> الإحداثية:
+rallyPoint_sendTroops_coordinateY;<b>Y</b> الإحداثية:
+rallyPoint_sendTroops_selectOnMap;أو حدد موقعًا على الخريطة:
+rallyPoint_sendTroops_arrivalTime;<b>{{hoursLeft|Duration}}</b> في <b>{{hoursLeft|TimeCountUp}}</b>
+rallyPoint_sendTroops_catapultTargetPopup;حدد هدف المقاليع:
+rallyPoint_sendTroops_catapultTarget_category_1;المباني البنية التحتية
+rallyPoint_sendTroops_catapultTarget_category_2;المباني العسكرية
+rallyPoint_sendTroops_catapultTarget_category_3;مباني الموارد
+rallyPoint_sendTroops_catapultTarget_random;عشوائي
+rallyPoint_sendTroops_catapultTarget_noBuilding;اختر مبنى
+rallyPoint_sendTroops_catapultTarget_recentTargets;الأحدث اختيارًا:
+rallyPoint_sendTroops_changeHeroHomeVillage;غيّر موطن البطل
+rallyPoint_sendTroops_attackNoSelection;اختيار نوع الهجوم
+rallyPoint_sendTroops_movementType_5;تعزيزات
+rallyPoint_sendTroops_movementType_3;هجوم
+rallyPoint_sendTroops_movementType_4;نهب
+rallyPoint_sendTroops_attackForwarding;تمرير
+rallyPoint_sendTroops_noTroopsSelected;- لم يتم اختيار أي قوات -
+rallyPoint_sendTroops_noTroopsAvailable;لا يمكن إرسال قوات. لا توجد قوات متوفرة في هذه القرية.
+rallyPoint_sendTroops_forwardingVillageError;يمكن تمرير القوات إلى أعضاء التحالف أو القرى الخاصة فقط.
+rallyPoint_sendTroops_forwardingDestination;تمرير القوات - اختيار الهدف
+rallyPoint_sendTroops_WaveRemoved;تمت إزالة الموجة
+rallyPoint_sendTroops_maxWaves;تم الوصول إلى الحد الأقصى لعدد الموجات
+rallyPoint_sendTroops_notEnoughTroopsToCopy;لا توجد قوات كافية لتكرار الموجة.
+rallyPoint_sendTroops_troopsSent;تم إرسال القوات!
+rallyPoint_sendTroops_toOverview;إلى النظرة العامة
+rallyPoint_sendTroops_backToVillage;العودة الى القرية
+rallyPoint_sendTroops_mission;مهمة:
+rallyPoint_troopsOverview_1;الهجمات وغارات النهب القادمة
+rallyPoint_troopsOverview_2;الهجمات وغارات النهب المرسلة
+rallyPoint_troopsOverview_3;قوّات عائدة
+rallyPoint_troopsOverview_4;القوات الخاصة في هذه القرية والواحات التابعة لها
+rallyPoint_troopsOverview_5;القوات الأجنبية في القرية
+rallyPoint_troopsOverview_6;القوات الخاصة في قرى أو واحات أخرى
+rallyPoint_troopsOverview_7;التعزيزات القادمة
+rallyPoint_troopsOverview_8;التعزيزات المرسلة
+rallyPoint_troopsOverview_9;التعزيزات المرسلة
+rallyPoint_troopsOverview;النظرة العامة على القوات
+rallyPoint_troopsOverview_consumption;الاستهلاك: {{cropConsumption|ShortenNumber|10000}}  {{iconName|Sprite}} في الساعة
+rallyPoint_troopsOverview_arrivalTime;الوصول في: <b>{{Duration|Countdown}}</b> في <b>{{date|Time}}</b> 
+rallyPoint_troopsOverview_incomingMission_3;هجوم قادم من: 
+rallyPoint_troopsOverview_incomingMission_4;غارة نهب قادمة من: 
+rallyPoint_troopsOverview_outgoingMission_3;الهجمات 
+rallyPoint_troopsOverview_outgoingMission_4;غارات النهب 
+rallyPoint_troopsOverview_outgoingMission_5;يعزز 
+rallyPoint_troopsOverview_outgoingMission_50;مغامرة إلى 
+rallyPoint_troopsOverview_outgoingMission_72;تم تمرير القوات إلى 
+rallyPoint_troopsOverview_outgoingMission_10;إنشاء قرية جديدة 
+rallyPoint_troopsOverview_outgoingMission_40;تهريب القوات وإخفاؤهم في الغابة
+rallyPoint_troopsOverview_returningMission;العودة من: 
+rallyPoint_troopsOverview_ownTroops_1;القوات الخاصة في 
+rallyPoint_troopsOverview_ownTroops_2;القوات الخاصة في 
+rallyPoint_troopsOverview_ownTroops_3;القوات الخاصة في 
+rallyPoint_troopsOverview_ownTroops_4;<b>الوحوش</b> في 
+rallyPoint_troopsOverview_ownTroops_5;القوات الخاصة في 
+rallyPoint_troopsOverview_ownTroops_6;القوات الخاصة في 
+rallyPoint_troopsOverview_ownTroops_7;القوات الخاصة في 
+rallyPoint_troopsOverview_foreignTroops_2;قوات التعزيز من 
+rallyPoint_troopsOverview_foreignTroops_4;القوات المأسورة من 
+rallyPoint_troopsOverview_ownTroopsInOther_2;قوات التعزيز الخاصة إلى 
+rallyPoint_troopsOverview_ownTroopsInOther_4;القوات الخاصة المأسورة في 
+rallyPoint_troopsOverview_origin;المنشأ 
+rallyPoint_troopsOverview_reinforcement;تعزيز من 
+rallyPoint_troopsOverview_killed;تم قتل القوات!
+rallyPoint_troopsOverview_released;تم إطلاق سراح القوات!
+rallyPoint_troopsOverview_forwardedTroopsButton;القوات المُمَرَّرَة
+rallyPoint_troopsOverview_returnToOverview;العودة إلى النظرة العامة
+rallyPoint_troopsOverview_incomingAttacks;<color={{colorValue|TextColor}}>{{incomings}}</color> قادمة
+rallyPoint_troopsOverview_amountIncoming;{{value}} قادمة
+rallyPoint_troopsOverview_amountOutgoing;{{value}} مرسلة
+rallyPoint_troopsOverview_amountReturning;{{value}} عائدة
+rallyPoint_troopsOverview_firstArrivalTime;بعد {{timestamp|Countdown}} ساعات
+rallyPoint_troopsOverview_forwardTroops;تمرير
+rallyPoint_troopsOverview_MergeTroops;دمج في القرية
+rallyPoint_troopsOverview_WithdrawTroops;إعادة
+rallyPoint_troopsOverview_sort_1;الحركات المعلمة أولاً
+rallyPoint_troopsOverview_sort_2;الأقدم وصولاً أولاً
+rallyPoint_troopsOverview_sort_3;الأحدث وصولاً أولاً
+rallyPoint_troopsOverview_sort_4;القوات الأحدث إرسالاً أولاً
+rallyPoint_troopsOverview_sort_5;القوات الأقدم إرسالاً أولاً
+rallyPoint_troopsMerge_troopsToBeMerged;القوات المحددة للدمج:
+rallyPoint_troopsMerge_currentGold;الذهب الحالي:  {{iconName|Sprite}} {{currentGold}}
+rallyPoint_troopsMerge_goldLeft_0;{{remainingGold}} / {{maxAllowedGold}} ذهب متبقي لدمج القوات اليوم.
+rallyPoint_troopsMerge_goldLeft_1;{{remainingGold}} / {{maxAllowedGold}} ذهب متبقي لدمج القوات اليوم. لا يزال بإمكانك دمج باستخدام الموارد.
+rallyPoint_troopsMerge_troopsMergedToast;تم دمج القوات!
+rallyPoint_raidList_beingRaided;{{current}}/{{total}} يجري نهبها
+rallyPoint_infoTab_EvasionShortDescription;تفعيل هروب القوات لعاصمتك
+rallyPoint_farmList_createNewTitle;إنشاء قائمة جديدة
+rallyPoint_farmList_editTitle;تعديل القائمة
+rallyPoint_farmList_listName;اسم القائمة
+rallyPoint_farmList_selectDefaultTroops;تحديد القوات الافتراضية
+rallyPoint_farmList_addTroopsButton;إضافة قوات
+rallyPoint_farmList_editTroopsButton;تعديل القوات
+rallyPoint_farmList_setTroopsButton;تعيين قوات
+rallyPoint_farmList_createListButton;إنشاء قائمة
+rallyPoint_farmList_editListButton;تحديث القائمة
+rallyPoint_farmList_editTroopsTitle;تعديل قوات قائمة المزارع
+rallyPoint_farmList_deleteList;حذف القائمة
+rallyPoint_selectTroops;اختيار قوات
+rallyPoint_farmList_listCreated;تم إنشاء القائمة
+rallyPoint_farmList_exitList;الخروج من القائمة
+rallyPoint_farmList_startAll;بدء جميع الأهداف
+rallyPoint_farmList_startAllLists;بدء الكل
+rallyPoint_farmList_startSelected;بدء المحدد
+rallyPoint_farmList_noTarget;- لم يتم تحديد أي أهداف -
+rallyPoint_farmList_noTargetExist;لا توجد أهداف في هذه القائمة
+rallyPoint_farmList_selectedAmount;{{amount}} تم تحديدها:
+rallyPoint_farmList_listUpdated;تم تحديث القائمة
+rallyPoint_farmList_listDeleted;تم حذف القائمة
+rallyPoint_farmList_editWarning;- سيؤدي حذف القائمة إلى حذف جميع الأهداف الموجودة في هذه القائمة\n- سيؤثر تعديل القوات على قوات الهدف الافتراضية المستقبلية فقط
+rallyPoint_farmList_sortingFailed;فشل الترتيب! يرجى المحاولة مرة أخرى!
+rallyPoint_farmList_notStartedPopupTitle;لم يتم بدء غارات النهب
+rallyPoint_farmList_notStartedPopupElement;<b>{{total}}</b> بسبب {{message}}
+rallyPoint_farmList_NotStartedPopupButtonGoTo;الذهاب لقائمة المزارع
+rallyPoint_farmList_AddTargetTitle;إضافة هدف
+rallyPoint_farmList_changeTroops;تغيير القوات
+rallyPoint_farmList_targetAdded;تمت إضافة هدف
+rallyPoint_farmList_targetAlreadyOnList;الهدف موجود بالفعل في قائمة المزارع هذه، يرجى اختيار قائمة مزارع أخرى أو إنشاء قائمة جديدة.
+rallyPoint_farmList_choose;اختيار قائمة مزارع
+rallyPoint_farmList_notYetRaided;لم يتم نهبها بعد
+rallyPoint_farmList_EditRaids;تعديل [raidsAmount=1:الهدف][raidsAmount>1:الأهداف]
+rallyPoint_farmList_DeleteRaidsPlayerQuestion;هل أنت متأكد من أنك تريد حذف [raidsAmount=1:هذا الهدف][raidsAmount>1:هذه الأهداف]؟
+rallyPoint_farmList_ChangeRaidList;تغيير قائمة المزارع
+rallyPoint_farmList_ChangeTarget;تغيير الهدف
+rallyPoint_farmList_ChangeTroops;تغيير القوات
+rallyPoint_farmList_DeactivateTarget;تعطيل [raidsAmount=1:الهدف][raidsAmount>1:الأهداف]
+rallyPoint_farmList_MultiEditWarning;أنت تقوم بتعديل أهداف متعددة. ستؤثر التغييرات التي تم إجراؤها على جميع الأهداف المحددة
+rallyPoint_farmList_UpdateRaids;تحديث [raidsAmount=1:الهدف][raidsAmount>1:الأهداف]
+rallyPoint_farmList_filterShowTroopsTitle;عرض القوات
+rallyPoint_farmList_filterShowTroopsDescription;يعرض القوات المحددة لكل هدف
+rallyPoint_farmList_filterShowPopulationTitle;عرض سكان الهدف
+rallyPoint_farmList_filterShowPopulationDescription;يعرض عدد سكان قرية الهدف
+rallyPoint_farmList_filterShowDistanceTitle;عرض المسافة
+rallyPoint_farmList_filterShowDistanceDescription;يعرض مسافة الهدف إلى قريتك
+rallyPoint_farmList_filterShowLastRaidTitle;عرض معلومات النهب الأخيرة
+rallyPoint_farmList_filterShowLastRaidDescription;يعرض معلومات النهب الأخيرة للهدف
+rallyPoint_farmList_filterShowBountyTitle;عرض الغنيمة والموارد
+rallyPoint_farmList_filterShowBountyDescription;يعرض الغنيمة والموارد التي تم الحصول عليها
+marketplace_createOffer;إنشاء عرض
+marketplace_myOffers_title;عروضي
+marketplace_myOffers_merchants;التجار: {{count}}
+marketplace_myOffers_alliance_True;التحالف: نعم
+marketplace_myOffers_alliance_False;-
+marketplace_myOffers_interval;{{amount}} ساعات
+marketplace_myOffers_offerDeleted;تم حذف العرض
+marketplace_merchantsOverview_arrival;{{duration}} ساعات الوصول في {{arrivalTime}}
+marketplace_merchantsOverview_incomingMerchants;عمليات تسليم واردة: {{count}}
+marketplace_merchantsOverview_outgoingMerchants;عمليات تسليم صادرة: {{count}}
+marketplace_merchantsOverview_noIncomingMerchants;- لا يوجد تجار واردون -
+marketplace_merchantsOverview_noOutgoingMerchants;- لا يوجد تجار صادرون -
+marketplace_merchantsOverview_IncomingCat;وارد
+marketplace_merchantsOverview_outgoingCat;صادر
+marketplace_merchantsOverview_capacity;الحمولة: {{capacity}}
+marketplace_merchantsOverview_merchantsOverview;نظرة عامة على التاجر
+marketplace_merchantsOverview_ArrivingSoonest;الأقرب وصولاً
+marketplace_merchantsOverview_ArrivingLatest;الأحدث وصولاً
+marketplace_merchantsOverview_ShortestDistance;أقصر مسافة
+marketplace_merchantsOverview_LongestDistance;أطول مسافة
+marketplace_merchantsOverview_transportTo;نقل إلى <b>{{Village}}</b> الخاصة بـ <b>{{Player}}</b>
+marketplace_merchantsOverview_transportFrom;نقل من <b>{{Village}}</b> الخاصة بـ <b>{{Player}}</b>
+marketplace_merchantsOverview_returningFrom;العودة من <b>{{Village}}</b> الخاصة بـ <b>{{Player}}</b>
+academy_research_viewResearchList;البحث قيد التقدم
+academy_research_allUnitsResearched;تم بحث جميع الوحدات.
+academy_researchListPopup_title;القوات قيد البحث
+academy_researchListPopup_remainingTime;{{timeLeft}} متبقي. جاهز في {{readyAt}}
+academy_researchListPopup_constructImmediately;البناء فورًا
+research_started;بدأ البحث بنجاح!
+research_timeLeft;{{TIME|Countdown}} متبقي
+townHall_celebration_ongoingCelebration;جارٍ
+topBar_perHourLabel;/ساعة:
+topBar_maxLabel;الحد الأقصى:
+topBar_resourceFull;ممتلئ
+leftPanel_infoBox;صندوق المعلومات
+villagePanel_playerNameTitle;القرى المملوكة لـ {{playerName}}
+villagePanel_toStatistics;إلى إحصائيات القرية
+villagePanel_culturePointsNeeded;النقاط الحضارية المطلوبة للقرية التالية
+mapCell_type;{{x}}{{y}}
+mapCell_type_village;{{villageName}}
+mapCell_type_1;محلّي
+mapCell_type_2;وادي
+mapCell_type_3;واحة غير محتلّة
+mapCell_type_4;واحة مملوكة
+mapCell_type_5;غابة
+mapCell_Owner;المالك
+mapCell_type_valley;وادي
+mapCell_Wilderness;لا يوجد شيء مثير للاهتمام في هذا الموقع.
+mapCell_Distance;{{distance|Round|1}} حقول
+mapCell_locationInfo;معلومات الموقع
+mapCell_surroundings;القرى المجاورة
+mapCell_actions_editFarmlist;تعديل قائمة المزارع
+mapCell_actions_addFarmlist;إضافة لقائمة المزارع
+mapCell_actions_raidOasis;نهب الواحة
+mapCell_showOnMap;عرض على الخريطة
+mapCell_noReports;- لا تتوفر معلومات عن هذا الموقع -
+berichte.region_;{{PLAYERACTIVE}}{{PLAYERPASSIVE}}{{VILLAGE}}{{NAME1}}{{NAME2}}{{ALLY1}}{{ALLY2}}{{NAME}}
+mapCell_goToOwnVillage;الذهاب للقرية الخاصة
+constructionQueue_timeLeftToFinish;{{timestamp|Countdown}} متبقي. جاهز في {{timestamp|Time}}
+constructionQueue_timeUntilStart;يبدأ في {{timestamp|Countdown}}
+constructionQueue_MasterBuilderTitle;قائمة انتظار البنّاء (التكاليف {{masterBuilderCost|Sprite}} {{masterBuilderCost}} عند بدء البناء)
+constructionQueue_Constructing;تشييد مبنى
+constructionImmediatelyPopup_topText;سيتم تنفيذ الأوامر التالية على الفور:
+constructionImmediatelyPopup_title;إكمال فوري
+newBuildingConstructionDetail_dateTimeEnoughResources;ستتوفر الموارد اللازمة بتاريخ {{date|Date}} في {{time|Time}}
+newBuildingConstruction_noBuildingsAvailable;لا يمكن تشييد أي مبانٍ في الوقت الحالي.
+goldclubpopup_currentGold;الذهب الحالي:  {{iconName|Sprite}} <color={{colorValue|TextColor}}>{{currentGold}}</color>
+goldclubpopup_activated_toastMessage;تم تفعيل نادي الذهب!
+loginPage_version;الإصدار {{currentVersion}}
+loginPage_loginBlocked;تم حظر تسجيل الدخول
+loginPage_loginBlocked_fails;محاولات تسجيل دخول فاشلة كثيرة
+loginPage_loginBlocked_message;لقد تم حظر الحساب بسبب محاولات تسجيل دخول فاشلة بشكل مفرط.
+loginPage_loginBlocked_resolve;لرفع الحظر عن الحساب، قم بتسجيل الدخول عبر المتصفح على
+serverSelection_selectRegion;اختر النطاق
+serverSelection_selectGameWorld;اختر السيرفر
+serverSelection_0;العالمي
+serverSelection_1;العربي
+serverSelection_2;الآسيوي
+serverSelection_3;الأوروبي
+serverSelection_4;الأمريكي
+serverSelection_99;Dev
+serverSelection_mapSize;حجم الخريطة:
+serverSelection_mapSize_0;صغيرة
+serverSelection_mapSize_1;كبيرة
+serverSelection_artifacts;التُحف:
+serverSelection_constructionPlans;مخططات البناء:
+serverSelection_changeGameWorld;تغيير السيرفر
+serverSelection_username;اسم المستخدم:
+serverSelection_password;كلمة المرور:
+serverSelection_loginButton;سجّل الدخول والعب
+serverSelection_forgotPassword;نسيت كلمة مروري
+serverSelection_noAccount;ليس لدي حساب
+serverSelection_loginError;اسم المستخدم أو كلمة المرور غير صحيحة
+serverSelection_graphQlError;خطأ في استرجاع البيانات من السيرفر
+serverSelection_tokenRefreshError;خطأ في تسجيل الدخول إلى آخر سيرفر مستخدم: يرجى تسجيل الدخول مرة أخرى.
+serverSelection_stayLoggedIn;البقاء مسجلاً للدخول إلى السيرفر
+troopsInfo_title;القوات في {{villageName}}
+unitInfo_velocity;<b>{{fields}}</b> حقول في الساعة
+unitInfo_resourceCarriage;<b>{{INT}}</b> من الموارد
+unitInfo_researchPrerequisites;المتطلبات الأساسية للبحث:
+unitInfo_trainingPrerequisites;المتطلبات الأساسية للتدريب:
+unitInfo_canCarry;يستطيع حمل:
+exchangeResources_currentTitle;كمية جديدة
+exchangeResources_lockAmount;قفل الكمية
+exchangeResources_changeTitle;تغيير
+exchangeResources_restTitle;المتبقي
+exchangeResources_buildingPossible_True;الترقية ممكنة
+exchangeResources_buildingPossible_False;الترقية غير ممكنة
+exchangeResources_mergePossible_True;الدمج ممكن
+exchangeResources_mergePossible_False;الدمج غير ممكن
+exchangeResources_researchPossible_True;البحث ممكن
+exchangeResources_researchPossible_False;البحث غير ممكن
+exchangeResources_celebrationPossible_True;الاحتفال ممكن
+exchangeResources_celebrationPossible_False;الاحتفال غير ممكن
+exchangeResources_reviveHero_True;إنعاش البطل ممكن
+exchangeResources_reviveHero_False;إنعاش البطل غير ممكن
+exchangeResources_currentlyAvailable;متاح حاليًا: <b>{{amount}}</b>
+exchangeResources_maximumAvailable;الحد الأقصى المتاح: <b>{{amount}}</b>
+exchangeResources_distributeEvenly;توزيع الموارد المتبقية بالتساوي:
+exchangeResources_distributeOnResource;أو إعطاء الأولوية للموارد المتبقية أولاً إلى:
+exchangeResources_distributeAuto;التوزيع التلقائي
+exchangeResources_distributeManual;التوزيع اليدوي
+exchangeResources_availableTroops;القوات المتاحة: {{amount}}
+buildingActivities_title;أنشطة البناء
+buildingActivities_idle;خامل
+buildingActivities_type;النوع
+buildingActivities_building_13;التحسينات:
+buildingActivities_building_16;قائمة المزارع
+buildingActivities_building_17;التجار
+buildingActivities_building_19;القوات تحت التدريب
+buildingActivities_building_20;الفرسان تحت التدريب
+buildingActivities_building_29;القوات تحت التدريب
+buildingActivities_building_30;الفرسان تحت التدريب
+buildingActivities_building_21;القوات تحت التدريب
+buildingActivities_building_22;بحث
+buildingActivities_building_24;الاحتفالات
+buildingActivities_building_46;شفاء القوات
+buildingActivities_buildingAction_;{{amount}}{{max}}
+buildingActivities_buildingAction_16;{{amount}} غارات نهب جارية
+buildingActivities_buildingAction_17;{{amount}}/{{max}} متاح
+mainMenu_title;القائمة الرئيسية
+mainMenu_quests;المهمات
+playerDetails_infoTab;معلومات اللاعب
+playerDetails_villageTabTitle;{{villages}} قرى مع {{oases}} واحات
+playerDetails_SortBy_1;حجم السكان
+playerDetails_SortBy_2;نقاط النصر
+playerDetails_SortBy_3;اسم القرية:
+playerDetails_SortBy_4;اسم المنطقة
+player_gender_DontSpecify;لا تحدّد
+player_gender_Other;أخرى
+player_gender0;ذكر
+player_gender1;أنثى
+player_gender2;أخرى
+player_gender3;لا تحدّد
+playerDetails_NotesFor;ملاحظات لـ {{playerName}}
+playerDetails_NoDescription_Others;- لم يقم هذا اللاعب بإضافة الوصف -
+playerDetails_NoDescription_Own;- لم تتم إضافة أي وصف بعد -
+playerDetails_editLanguages;تعديل اللغات
+playerDetails_searchLanguage;لغة البحث
+goldShopPlaceholder_title;المتجر قادم قريبًا!
+goldShopPlaceholder_description;لم يتم إضافة متجر الذهب بعد إلى تطبيق الجوال.<br><br> لشراء الذهب، يُرجى تسجيل الدخول إلى حسابك عبر المتصفح.
+goldShop_title;متجر الذهب
+goldShop_advantage_5;ترافيان بلاس
+goldShop_advantage_4;الخشب
+goldShop_advantage_1;الطين
+goldShop_advantage_2;الحديد
+goldShop_advantage_3;القمح
+goldShop_feature_activated;تم تفعيل الميزة!
+goldShop_purchaseFailed;فشلت عملية الشراء!
+goldShop_purchaseSuccess;تم الشراء بنجاح.
+goldShop_transactionInProgress;المعاملة قيد المعالجة.\nيُرجى الانتظار.
+goldShop_transactionFailed;لقد حدث خطأ ما.\nالرجاء المحاولة لاحقًا
+goldShop_transactionTimeout;عزيزي اللاعب، لقد تجاوزت عملية الدفع الخاصة بك الحد الزمني وربما لم تتم معالجتها بشكل صحيح. يُرجى الاتصال بـ <style="link"><link="https://support.travian.com/support/tickets/new">دعم الدفع</link></style> إذا واجهتك أي مشكلات.
+market_sendResources_requiredMerchants;التجار المطلوبون:
+market_sendResources_capacityPerMerchant;الحمولة لكل تاجر
+market_sendResources_amountRepeats;عدد التكرارات:
+market_sendResources_confirmResources;تأكيد الموارد
+market_sendResources_amountWithX;{{amount}}x
+market_sendResources_sent;تم إرسال الموارد!
+market_offer_maxDuration;الحد الأقصى لوقت النقل:
+market_offer_confirm;تأكيد العرض
+market_offers_title;عروض
+market_capacity;الحمولة: {{capacity}}
+market_offers_offering;أنا أعرض:
+market_offers_searching;أنا أبحث عن :
+market_offers_offered;أنت ترسل
+market_offers_wanted;أنت تستقبل
+market_offers_accepted;تم قبول العرض! الموارد في طريقها وقد تم إرسال التجار.
+market_offers_ownAllianceOnly;لاعبون من التحالف الخاص فقط
+market_ratio_11;1:1
+market_ratio_1X;1 : X
+market_tradeRoutes_to;إيميل اللاعب الجديد
+market_tradeRoutes_entryAmount;<b>{{amount}}</b> مدخلات
+market_tradeRoutes_noRoutes;- لم يتم إنشاء طرق تجارية -
+market_tradeRoutes_travelTime;وقت السفر: {{time|Duration}} ساعات
+market_tradeRoutes_activeRatio;{{active}}/{{total}} نشط
+market_tradeRoutes_active;فعّال
+market_tradeRoutes_paused;متوقف مؤقتًا
+market_tradeRoutes_updated;تم تحديث الطرق التجارية
+market_tradeRoutes_deleted;تم حذف الطرق التجارية
+market_tradeRoutes_returnAt;العودة في {{time|Time}}
+market_tradeRoutes_merchantsAndRepeat;{{merchants}} تجار، {{repeats}}x
+market_tradeRoutes_filterOptions;خيارات الفلترة
+market_tradeRoutes_showMerchants;عرض التجار
+market_tradeRoutes_showMerchantsText;يعرض عدد التجار الذين يتم استخدامهم
+market_tradeRoutes_showResources;عرض الموارد
+market_tradeRoutes_showResourcesText;يعرض كمية الموارد المحمولة
+market_tradeRoutes_afterInputFieldsSuffix;ساعات
+market_tradeRoutes_interval;{{INT}} ساعات
+market_tradeRoutes_confirmTarget;تأكيد الهدف
+market_tradeRoutes_arrivalTime;{{duration|Duration}} في {{arrivalTime|Time}}
+market_tradeRoutes_created;تم إنشاء الطريق التجاري
+market_tradeRoutes_edit;تعديل [routeAmount=1:الطريق التجاري][routeAmount>1:الطرق التجارية]
+market_tradeRoutes_update;تحديث [routeAmount=1:الطريق التجاري][routeAmount>1:الطرق التجارية]
+market_tradeRoutes_multiEditWarning;أنت تقوم بتعديل طرق تجارية متعددة. ستؤثر التغييرات التي تم إجراؤها على جميع الطرق التجارية الـ {{routeAmount}}.
+market_tradeRoutes_editResourcesTitle;تغيير الموارد
+market_tradeRoutes_editResourcesButton;تعديل الموارد
+market_tradeRoutes_setResourcesButton;تعيين الموارد
+market_tradeRoutes_updateResourcesButton;تحديث الموارد
+market_tradeRoutes_pause;إيقاف [routeAmount=1:الطريق التجاري][routeAmount>1:الطرق التجارية] مؤقتًا
+market_tradeRoutes_pauseDescription;سيتم نقل الطريق التجاري إلى القائمة المتوقفة مؤقتًا ولكن سيبقى في السوق الخاص بك.
+market_tradeRoutes_delete;حذف [routeAmount=1:الطريق التجاري][routeAmount>1:الطرق التجارية]
+market_tradeRoutes_deleteConfirmQuestion;هل أنت متأكد من أنك تريد حذف [routeAmount=1:هذا الطريق التجاري][routeAmount>1:هذه الطرق التجارية]؟
+market_tradeRoutes_invalidTarget;لا يمكن إرسال الطرق التجارية إلا إلى قرى أعجوبة العالم وكذلك قرى التحف أو مخططات بناء أعجوبة العالم لأعضاء التحالف أو الرابطة.
+hero.status;{{NAME}}
+hero_adventures_selectVillage;اختر القرية
+hero_adventures_explore;استكشاف
+hero_adventures_sendHero;أرسل البطل
+hero_adventures_sent;بدأت المغامرة
+hero_status_reviveWithBucket;تُستخدم لإنعاش بطلك على الفور.
+hero_status_reviveWithRes;استخدم الموارد لإنعاش البطل.
+hero_inventory_consumablePopupTitle;عنصر قابل للاستخدام
+hero_resourceTransferPopup_title;نقل الموارد
+hero_resourceTransferPopup_ReadyForTransfer;جاهز للنقل
+hero_resourceTransferPopup_transferSelected;تم تحديد النقل
+hero_resourceTransferPopup_transferMax;الحد الأقصى للنقل
+hero_resourceTransferPopup_storageFull;المخازن ممتلئة. لا يمكنك نقل المزيد من الموارد.
+hero_inventory_transferToCurrentVillage;تم النقل إلى القرية النشطة حاليًا: <b>{{VILLAGE}}</b>
+hero.itemDescriptionV2Details;{{PERCENTAGE}}{{EXPERIENCE}}{{RAISE}}{{LIMIT}}{{MAX}}{{TIME}}
+hero.itemDescriptionV2;{{VALUE}}
+hero_consumablePopup_currentEquippedItems;كمية العناصر المجهزة حاليًا:
+hero_consumablePopup_itemsLeftInInventory;كمية العناصر المتبقية في المخزون:
+hero.itemTypeV2_inventory;مستهلكات
+hero.cooldownWithTime;لديه فترة تهدئة لمدة {{COOLDOWN}}ساعة والتي تنتهي في {{DATE|DateTime}}.
+reports_overview_title;{{COUNT}} تقارير
+reports_overview_title_selected;تم تحديد {{SELECTED}} / {{COUNT}} تقارير
+reports_overview_title_archived;التقارير المؤرشفة
+reports_overview_archived_noReports;- لا توجد تقارير مؤرشفة متاحة -
+reports_filters_title;اختيار الفلتر
+reports_filters_allReports;جميع التقارير
+reports_filters_applyButton;تطبيق {{COUNT}} فلاتر
+reports_filters_noFilter;لم يتم تحديد فلتر
+reports_detail_title;تفاصيل التقرير
+berichte.;{{NAME1}}{{NAME2}}{{VILLAGE_NAME}}{{X}}{{Y}}{{COORDS}}{{NAME}}
+reports_player_from_village;[{{allianceId|AllianceLink}}] {{playerId|PlayerLink}} من قرية {{villageId|VillageLink}}
+reports_troops_lost;القوات المفقودة:
+reports_troops_hospitalized;في المستشفى:
+reports_xp_gained;{{amount}} نقاط خبرة مكتسبة
+reports_health_change;-{{change}}% صحة
+reports_hero_died;لقد مات بطلك أثناء المغامرة
+reports_scouted_building;{{buildingType|TranslateSuffixFor|allgemein.gid}} مستوى <b>{{level}}</b>
+reports_refreshed;تم تحديث التقارير!
+reports_deleteReportPopup_title;حذف التقرير(التقارير)
+reports_deleteReportPopup_warningTitle;هل أنت متأكد من أنك تريد حذف {{X}} تقرير(تقارير)؟
+reports_deleteReportPopup_warningTitleAll;هل أنت متأكد من أنك تريد حذف جميع التقارير؟
+reports_deleteReportPopup_warningDescription;بمجرد قيامك بحذف تقرير، سيختفي التقرير نهائيًا. لن تتمكن من استعادته.
+reports_deleted;تم حذف التقرير!
+reports_markedUnread;تم تأشير التقرير كغير مقروء!
+reports_archived;تم أرشفة التقرير!
+reports_deleted_all;تم حذف جميع التقارير!
+reports_deleted_selected;{{X}} من التقارير تم حذفها!
+reports_markedRead_all;تم تأشير جميع التقارير كمقروءة!
+reports_markedRead_selected;{{X}} من التقارير تم تأشيرها كمقروءة!
+alliance_nameAndTagPair;{{allianceName}} | {{allianceTag}}
+alliance_editAllianceName;تعديل اسم التحالف
+alliance_name;اسم التحالف
+alliance_nameError;لا يمكن أن يكون اسم التحالف فارغًا
+alliance_tag;اختصار التحالف
+alliance_tagError;لا يمكن أن يكون اختصار التحالف فارغًا
+alliance_profileTab_inviteNewPlayer;دعوة لاعب جديد
+alliance_profileTab_showInvitedPlayers;عرض اللاعبين المدعوين
+alliance_invitedPopup_title;اللاعبون المدعوون
+alliance_invitedPopup_invitationRemoved;تم حذف الدعوة!
+alliance_invitePlayerPopup_title;دعوة اللاعب
+alliance_invitePlayerPopup_noPlayerFound;لم يتم العثور على اللاعب
+alliance_invitePlayerPopup_playerInvited;تمت دعوة اللاعب!
+alliance_editMemberPopup_title;تعديل العضو
+alliance_editMemberPopup_customMessage;رسالة مخصصة
+alliance_editMemberPopup_setRole;إسناد منصب
+alliance_editMemberPopup_kickPlayerFromAlliance;طرد اللاعب من التحالف
+alliance_editMemberPopup_cantChangePermission;لا يمكن تغيير الإذن الحالي: انظر التحذير.
+alliance_kickPlayerPopup_areYouSure;هل أنت متأكد من أنك تريد طرد {{Player}} من التحالف؟
+alliance_kickPlayerPopup_playerKicked;تم طرد اللاعب!
+alliance_editAllianceDescription;تعديل وصف التحالف
+alliance_topColumn;العمود العلوي
+alliance_bottomColumn;العمود السفلي
+alliance_bbCodeAdded;تمت إضافة كود BB
+alliance_generalInformation;معلومات عامة
+alliance_confederacy_tab;الرابطة
+alliance_diplomacy;الدبلوماسيّة
+alliance_diplomacy_tab1;اتفاقية عدم اعتداء / حرب
+alliance_diplomacy_send_new;أرسل جديد
+alliance_diplomacy_openRequests;الطلبات المفتوحة
+alliance_diplomacy_otherOffered;{{allianceId|AllianceLink}} معروض {{type|TranslateSuffixFor|alliance_diplomacy_type}}
+alliance_diplomacy_youOffered;لقد عرضت {{type|TranslateSuffixFor|alliance_diplomacy_type}} على {{allianceId|AllianceLink}}
+alliance_diplomacy_offerDeclare;عرض / إعلان
+alliance_diplomacy_type;النوع
+alliance_diplomacy_type1;اتحاد
+alliance_diplomacy_type2;اتفاقية عدم اعتداء
+alliance_diplomacy_type3;حرب
+alliance_diplomacy_type4;اتحاد
+alliance_diplomacy_typekick;الانفصال من الرابطة
+alliance_diplomacy_deleteText_;{{type|TranslateSuffixFor|alliance_diplomacy_type}}{{alliance|AllianceLink}}
+alliance_diplomacy_deleteTitle_RemoveRequest;طلب إزالة
+alliance_diplomacy_deleteText_RemoveRequest;هل أنت متأكد من أنك تريد حذف عرض {{type|TranslateSuffixFor|alliance_diplomacy_type}} على {{alliance|AllianceLink}}؟
+alliance_diplomacy_deleteTitle_TerminateExisting;إنهاء
+alliance_diplomacy_deleteText_TerminateExisting;هل أنت متأكد من أنك تريد إنهاء {{type|TranslateSuffixFor|alliance_diplomacy_type}} مع {{alliance|AllianceLink}}؟
+alliance_diplomacy_deleteTitle_ConfederacyKickVote;إنهاء
+alliance_diplomacy_deleteText_ConfederacyKickVote;تحتاج إلى تأكيد من الأعضاء الآخرين في الرابطة لطرد {{subject|AllianceLink}}.\n\nهل تريد المتابعة وإبلاغ التحالفات الأخرى بقرارك؟
+alliance_diplomacy_deleteTitle_QuitConfederacy;إنهاء
+alliance_diplomacy_deleteText_QuitConfederacy;هل أنت متأكد من أنك تريد إنهاء رابطتك مع الأعضاء التاليين؟
+alliance_diplomacy_deleteTitle_RemoveConfederacyProposal;طلب إزالة
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Kick;هل أنت متأكد من أنك تريد رفض طلب {{alliance|AllianceLink}} لطرد {{subject|AllianceLink}} من الرابطة؟
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Join;هل أنت متأكد من أنك تريد رفض طلب {{alliance|AllianceLink}} للسماح لـ {{subject|AllianceLink}} بالانضمام إلى الرابطة؟
+alliance_diplomacy_sent;تم إرسال العرض
+alliance_diplomacy_accepted;تم قبول العلاقة الدبلوماسية
+alliance_diplomacy_canceled;تم إلغاء العلاقة الدبلوماسية
+alliance_diplomacy_declined;تم رفض الطلب
+alliance_diplomacy_kickStarted;تم إرسال الطلب
+alliance_diplomacy_proposal_approved;تمت الموافقة على الطلب
+alliance_diplomacy_noContract;ليس لدى تحالفك معاهدات نشطة مع تحالفات أخرى.
+alliance_diplomacy_noConfederacy;تحالفك ليس جزءًا من رابطة.
+alliance_diplomacy_alreadyOpenOffer;يوجد بالفعل عرض مفتوح لهذا التحالف.
+alliance_diplomacy_alreadyExistingContract;هناك بالفعل معاهدة مع هذا التحالف.
+alliance_diplomacy_warInDeletion;انتظر حتى ينهي التحالف الآخر الحرب أيضًا.
+alliance_union_leave;مغادرة الرابطة
+alliance_union_add;إضافة طلب جديد
+allianz.diplomacy_with_type;{{NAME}}
+allianz.diplomacy_with_type4;رابطة مع {{NAME}}
+alliance_newsBbDescription;تغيير "الرقم" لتعديل عدد الأخبار
+alliance_LossesBBName;إصابات
+alliance_LossesBBDescription;تغيير "الاسم" لتحديد تحالف للمقارنة
+alliance_NapBBName;مواثيق عدم الاعتداء
+alliance_WarsBBName;حروب
+alliance_addBBCode;إضافة كود BB
+alliance_addMedal;إضافة وسام
+alliance_assignToPosition;إسناد مناصب للأعضاء وتغيير اسم التحالف
+alliance_editPermissions;تعديل الأذونات
+alliance_roleTitle;لقب المنصب:
+alliance_assignToPosition_onlyMemberError;أنت العضو الوحيد في هذا التحالف. لا يمكن إلغاء تحديد إسناد المناصب للأعضاء وتغيير اسم التحالف.
+alliance_noAllianceEvents;- لا توجد أحداث تحالف لعرضها -
+alliance_dailyContribution;المساهمة اليومية
+alliance_contributionAmount;المساهمة: <b>{{AMOUNT}}</b>
+alliance_resourcesContributed;{{current}}/{{max}} من الموارد التي تم المساهمة بها
+alliance_contributionResetIn;إعادة تعيين في: {{time|Countdown}}
+alliance_resUntilNext;الموارد حتى المستوى التالي: {{resources|LongNumber}}
+alliance_bonusCurrentlyActivating;يتم تفعيل المكافأة في: {{resources|Countdown}}
+alliance_bonusMaxed;تم زيادة المكافأة للحد الأقصى
+alliance_tripledContribution;لقد ضاعفت مساهمتك ثلاث مرات!
+alliance_contributionStatistics;إحصائيات المساهمة
+alliance_contributionNone;- لا يوجد مساهمون في الوقت الحالي -
+auth_clientVerificationFailed;تعذر التحقق من العميل. الرجاء المحاولة مجددًا
+banned_seeMessage;رؤية الرسالة
+banned_acceptPunishment;قبول العقوبة
+residence_settlement;الاستيطان
+residence_settlementVillages1;منافذ الاستيطان التي تشغلها القرى
+residence_settlementVillages2;القرى تشغل منفذ استيطان واحد
+residence_settlementAvailableSlots;منافذ الاستيطان المتاحة
+residence_nextSlot;فتح منفذ الاستيطان التالي: {{current}}/{{required}} نقاط حضارية
+residence_slotsUsed;منافذ مستخدمة:
+residence_settlementDetails;تفاصيل الاستيطان
+residence_settlementSlotX;{{number}} منفذ استيطان
+residence_settlementUpgradeNeeded;قم بترقية {{buildingType|TranslateSuffixFor|allgemein.gid}} لفتح منفذ الاستيطان هذا
+residence_settlementSettle;لاستيطان قرية، أرسِل المستوطنين إلى حقل فارغ على خريطة العالم. تحتاج إلى 3 مستوطنين؛ 750 من كل مورد ونقاط حضارية كافية للسيطرة على قرية أخرى.
+residence_settlementChief;لاحتلال قرية أخرى، تحتاج إلى خفض ولائها إلى 0. تحتاج إلى {{senatorId|TranslateSuffixFor|truppen.tid}} لذلك، ويجب ألا يكون هناك قصر أو سكن أو مركز قيادة. تحتاج أيضًا إلى نقاط حضارية كافية للسيطرة على قرية أخرى.
+palace_capital;تعيين هذه القرية كعاصمة لي.
+palace_setAsCapital;تعيين كعاصمة
+palace_enterPassword;أدخل كلمة المرور لأسباب أمنية:
+embassy_GoToAlliance;الذهاب إلى التحالف
+embassy_Invitation;تحالف {{AllianceId|AllianceLink}}، مدعو بواسطة {{playerId|PlayerLink}}
+embassy_VillagesInRange;القرى في النطاق
+embassy_LeaveAllianceToJoin;للانضمام إلى تحالف جديد، يتعين عليك مغادرة تحالفك الحالي أولاً.
+embassy_ConfirmLeaveAlliance;تأكيد ومغادرة التحالف
+embassy_InvitationAccepted;تم قبول الدعوة
+embassy_AllianceFounded;تم تأسيس التحالف بنجاح
+embassy_LeftAlliance;تم مغادرة التحالف بنجاح
+embassy_acceptInvitationQuestion;هل أنت متأكد من رغبتك في الانضمام إلى {{allianceId|AllianceLink}}؟
+embassy_acceptInvitationWarning;لن تتمكن من مغادرة التحالف لمدة {{hours}} ساعات بعد الانضمام.
+embassy_acceptInvite;نعم، انضمام إلى التحالف
+embassy_declineInvite;لا، إزالة الدعوة
+embassy_noAlliancesNearby;لم يتم العثور على تحالفات في المنطقة المجاورة.
+smithy_improveTo;تحسين إلى المستوى {{level}}
+smithy_viewList;عرض التطوير
+smithy_upgradeStarted;بدأ تحسين {{unitId|TranslateSuffixFor|truppen.tid}}
+smithy_researchFirst;الوحدة تحتاج إلى بحثها في الأكاديمية
+smithy_levelTooLow;مستوى أفران صهر الحديد منخفض جدًا، يرجى ترقية أفران صهر الحديد
+allBuildings_10;جميع المخازن:
+allBuildings_11;جميع مخازن الحبوب:
+allBuildings_23;جميع المخابئ:
+allBuildings_38;جميع المخازن:
+allBuildings_39;جميع مخازن الحبوب:
+currentBuildingValue;الحالي {{type|TranslateSuffixFor|allgemein.gid}}:
+ad_successful;تمت مشاهدة الإعلان بنجاح!
+externalLink_title;روابط خارجية
+externalLink_description1;<b>انتباه!</b><br>أنت على وشك فتح الرابط الخارجي التالي:
+externalLink_description2;لا يمكن لـ Travian Games فحص هذا الرابط أو التحقق منه.
+externalLink_description3;امضِ قدمًا على مسؤوليتك الخاصة.
+externalLink_description4;هل أنت متأكد من رغبتك في المتابعة؟
+externalLink_continue;متابعة إلى الرابط
+search_village;البحث عن قرية
+search_select_village;تحديد قرية
+search_three_characters;اكتب على الأقل {{amount}} أحرف
+search_no_result;لم يُعثَر على تطابق
+search_player;البحث عن لاعب
+search_player_invite;دعوة اللاعب
+search_select_player;حدد لاعب
+search_select_player_invite;دعوة لاعب جديد
+search_alliance;البحث عن تحالف
+search_select_alliance;حدد تحالف
+gid27.arte_detail_;{{INT}}
+artefact_inventory_level_effect;الخزنة: {{LEVEL}}، التأثير: {{EFFECT}}
+artefact_inventory_village;القرية:
+artefact_inventory_conquered;محتلة:
+artefact_inventory_active;فعالة: فعالة في
+artefact_inventory_active_already;فعالة: <b>تم التفعيل</b>
+artefact_inventory_show_active_only;عرض تحفي المفعلة فقط
+artefact_overview;نظرة عامة على التحف
+artefact_tip_large;تتطلب التحف الكبيرة خزنة مستوى <b>20</b> وتؤثر على <b>عضويتك</b> بالكامل
+artefact_tip_small;تتطلب التحف الصغيرة خزنة مستوى <b>10</b> وتؤثر فقط على <b>القرية</b>
+artefact_tip_nearby;التحف في المنطقة المحيطة {{villagenamelong|Bold}}
+artefact_small;صغيرة
+artefact_large;كبيرة
+artefact_nearby;بالجوار
+artefact_village;قرية
+artefact_button_former_owners;رؤية المالكين السابقين
+artefact_already_active;تم تفعيلها بالفعل
+artefact_required_level_value;خزنة <b>مستوى {{LEVEL}}</b>
+artefact_details;التفاصيل:
+number_counter;{{NUMBER}}.
+tasks_villageTasks;مهام القرية
+tasks_nextHeroLevelBonus;مكافأة مستوى البطل التالي = {{value}}%
+villageOverview_building_headline;بناء
+villageOverview_building_slotIdle;لا توجد أعمال بناء جارية
+villageOverview_resource_sorting1;قائمة القرية
+villageOverview_resource_sorting2;أقل مدة لمخزن الحبوب
+villageOverview_resource_sorting3;أعلى مدة لمخزن الحبوب
+villageOverview_resource_sorting4;أقل مدة للمخزن
+villageOverview_resource_sorting5;أعلى مدة للمخزن
+villageOverview_resource_sorting6;الإنتاج السالب
+villageOverview_troops_stationed;القوات المتمركزة في القرية
+villageOverview_troops_sum;مجموع القوات الخاصة
+villageOverview_troops_tab_training;تدريب
+villageOverview_culture_slots;منافذ القرية
+cancelPopup_Improvement;إلغاء التحسين
+cancelPopup_Research;إلغاء البحث في الأكاديمية
+cancelPopup_Construction;إلغاء التشييد
+cancelPopup_text_;{{NAME}} {{LEVEL}}
+cancelPopup_text_Improvement;هل تريد إلغاء تحسين {{NAME}} من المستوى {{LEVEL}}؟
+cancelPopup_text_Research;هل تريد إلغاء بحث {{NAME}}؟
+cancelPopup_text_Construction;هل تريد إلغاء بناء {{NAME}} من المستوى {{LEVEL}}؟
+cancelPopup_text_refund;سيتم استرداد نسبة {{INT}}% من تكاليف التحسين:
+dailyQuests_timeRemaining;الوقت المتبقّي: {{time|Countdown}}
+dailyQuests_rewardOverview;رؤية النظرة العامة على المكافأة
+dailyQuests_claimRewards;الحصول على المكافآت
+dailyQuests_pointsEarned;النقاط المكتسبة: <b>{{current}}/{{max}}</b>
+dailyQuests_rewardDescription;هذه هي المكافآت التي يمكنك فتحها من خلال إكمال المهام اليومية لليوم:
+dailyQuests_claimAction;تحصيل
+dailyQuests_alreadyClaimed;تم تحصيله
+dailyQuests_questDetailTitle;المعلومات
+dailyQuests_quest_worth;قيمة هذه المهمة:
+dailyQuests_quest_worth_points;+{{points}} [points>1:نقاط][points=1:نقطة]
+dailyQuests_quest_repeated;يمكن تكرار هذه المهمّة:
+dailyQuests_quest_repeated_amount;{{amount}} [amount>1:مرات][amount=1:مرة]
+dailyQuests_quest_completed;التكرارات المكتملة:
+dailyQuests_quest_difficulty;الصعوبة:
+dailyQuests_quest_requirement;المتطلبات:
+dailyQuests_backToOverview;عودة للنظرة العامة
+dailyQuests_difficulty_moderate;معتدلة
+dailyQuests_difficulty_hard;صعبة
+dailyQuests_difficulty_challenging;تنافسية
+achievementQuests.achQuest_;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+achievementQuests.achQuest__step_01_description;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+heroMansion_Loyalty;الولاء: {{INT}}%
+heroMansion_Conquered;محتلة {{TIME|DateTime}}
+heroMansion_SlotFree;منفذ الواحة التالي متاح
+heroMansion_SlotBlocked;الواحة التالية في <color={{colorValue|TextColor}}>قصر الأبطال</color> <color={{colorValue2|TextColor}}>مستوى {{REQUIRMENT}}</color>
+heroMansion_Undo;تراجع
+heroMansion_FinishedAt;انتهى: {{TIME|Time}}
+waterworks_NoneOasesAcquired;لم يتم ضم الواحة
+waterworks_BonusCalculation;+ ({{INT}}% من {{INT2}}%) = 
+waterworks_CurrentBonus;مكافأة محطات المياه الحالية: +{{INT}}% على موارد الواحة
+waterworks_Oases;الواحات التي تم ضمها
+messages_inbox_title;{{COUNT}} رسائل
+messages_inbox_title_selected;تم تحديد {{SELECTED}} / {{COUNT}} رسائل
+messages_newMessage;رسالة جديدة
+messages_messageSent;تم إرسال الرسالة!
+messages_exitPreview;الخروج من المعاينة
+messages_previewTitle;معاينة الرسالة
+messages_unread_count;{{COUNT}} غير مقروءة
+reportPlayer_selectReason;تحديد سبب البلاغ
+reportPlayer_reasonPlaceholder;سبب البلاغ
+reportPlayer_addNote;إضافة ملاحظة إلى البلاغ (اختياري):
+reportPlayer_alsoBlock;تجاهل هذا اللاعب أيضًا
+reportPlayer_maximumLength;الطول الأقصى: {{text|TextLength}}/300
+reportPlayer_nowIgnored;أنت الآن تتجاهل هذا اللاعب.
+reportPlayer_nowUnignored;لم تعد تتجاهل هذا اللاعب.
+statistics_general;إحصائيات عامة
+statistics_seeDetails;رؤية التفاصيل
+statistiken.progressionStepTitle_;{{VALUE}}{{DATETIME}}
+language_com;لغة التطوير
+language_de-DE;الألمانية
+language_en-US;العربية
+language_fr-FR;الفرنسية
+language_ru-RU;الروسية
+statistics_villageAndHero;أكبر قرية / بطل
+RelativeTime_0;{{data}} ثواني
+RelativeTime_1;{{data}} دقائق
+RelativeTime_2;{{data}} ساعات
+RelativeTime_3;[data>1:{{data}} أيام][data<2:{{data}} يوم]
+RelativeTime_4;[data>1:{{data}} أسابيع][data<2:{{data}} أسبوع]
+RelativeTime.Separator; 
+RelativeTime.Wrapper.Past;منذ {{time}}
+RelativeTime.Wrapper.Future;في {{time}}
+mapCell_tooFewSettlers;{{current}}/3 مستوطنون متاحون
+mapCell_heroNotIdle;بطلك ليس خاملاً
+mapCell_cantAddOwn;لا يمكنك إضافة قراك الخاصة.
+mapCell_alreadyInVillage;أنت بالفعل في تلك القرية
+serverSelection_rememberPassword;تذكر كلمة مروري
+serverSelection_savedWorldsTitle;سيرفراتك
+serverSelection_removeWorldTitle;إزالة سيرفر
+serverSelection_removeWorldQuestion;هل تريد حقًا إزالة هذا السيرفر من قائمتك؟
+serverSelection_removeWorldDescription;تحذير: لن يؤدي هذا إلى حذف حسابك في السيرفر. يمكنك العودة في أي وقت وإضافة السيرفر بما في ذلك حسابك إلى قائمة سيرفراتك.
+serverSelection_removeWorldButton;إزالة من القائمة
+serverSelection_addWorldText;+ إضافة سيرفر
+buildingActivities_buildingAdditional_;{{amount}}
+buildingActivities_buildingAdditional_17;{{amount}} طرق تجارية نشطة
+reports_filters_reset;إعادة تعيين الفلترات
+palace_capitalSet;تم تعيين العاصمة!
+palace_isCapital;هذه هى عاصمتك.
+messages_unread_count_full;{{COUNT}} [COUNT=1:رسالة][COUNT>1:رسائل] غير مقروءة
+statistics_alliance;إحصائيات التحالف
+statistics_alliances_best_off;أفضل التحالفات (مهاجم)
+statistics_alliances_best_def;أفضل التحالفات (مدافع)
+statistics_offensiveStrength;قوتك الهجومية في {{VILLAGEID|VillageLink}} على هذا السيرفر
+statistics_offensiveStrengthAlliance;قوتك الهجومية في {{VILLAGEID|VillageLink}} في تحالفك
+statistics_offensiveStrengthVillage;قوة الهجوم لهذه قرية:
+statistics_defensiveStrength;قوتك الدفاعية على هذا السيرفر
+statistics_defensiveStrengthAlliance;قوتك الدفاعية في تحالفك
+statistics_defensiveStrengthVillage;القوة الدفاعية لهذه القرية:
+statistics_defensiveStrengthVillageSum;إجمالي القوة الدفاعية لجميع القرى:
+recent;الأحدث
+appliedFilters;لديك {{COUNT}} فلاتر فعالة.
+allgemein.gid99;عشوائي
+rallyPoint_troopsOverview_10;نظرة عامة مفصلة على القوات
+rallyPoint_troopsOverview_returningFromAdventure;العودة من مغامرة: 
+rallyPoint_troopsOverview_detailedView;عرض مفصل
+rallyPoint_troopsOverview_noMovements;- لا توجد تحركات للقوات جارية -
+rallyPoint_troopsOverview_Target;الهدف: {{Target|NamedCoordinates}}
+rallyPoint_troopsOverview_Origin;المنشأ: {{Target|NamedCoordinates}}
+hero_adventures_number;رقم {{INT}}
+hero_status_regeneration;<b>تجديد الصحة:</b> {{VALUE}}% في اليوم
+hero_status_regeneration_details;{{HERO}}% يوميًا من البطل {{EQUIPMENT}}% يوميًا من المعدات
+hero_status_experience;<b>الخبرة:</b> {{VALUE}}%
+hero_status_experience_bonus;المكافأة: {{VALUE}}%
+search_results;البحث في النتائج
+search_player_link;رابط اللاعب
+search_select_player_link;تحديد لاعب
+search_recipient;بحث المستلمين
+search_select_recipient;تحديد مستلم
+search_alliance_link;رابط التحالف
+search_select_alliance_link;تحديد تحالف
+messages_fullView_title;رسالة
+messages_recipient_placeholder;اختيار مستلم
+messages_title_placeholder;أدخل عنوان رسالتك
+messages_message_placeholder;أدخل رسالتك
+messages_ownAlliance;تحالفي
+messages_selectedRecipients;تم التحديد
+messages_ownAlliance_[ally];جميع أعضاء التحالف
+messages_ownAlliance_[off];أعضاء التحالف الهجوميون
+messages_ownAlliance_[def];أعضاء التحالف الدفاعيون
+messages_discard_title;إلغاء الرسالة
+messages_discard_text_header;هل تريد إلغاء هذه الرسالة؟
+messages_discard_text;سيتم فقد محتوى الرسالة بشكل لا رجعة فيه.
+messages_confirm_deletion_title;حذف الرسائل
+messages_confirm_deletion_text_header;هل أنت متأكد من رغبتك في حذف [data>1:{{data}} الرسائل][data=1:{{data}} الرسالة]؟
+messages_confirm_deletion_text;بمجرد حذف الرسائل، لا توجد طريقة لاستعادتها.
+messages_confirm_deletion_button;حذف [data>1:{{data}} الرسائل][data=1:{{data}} الرسالة]
+icon_selection_title;إضافة أيقونة
+icon_selection_button;تحديد أيقونة
+icon_selection_resourcesAndHero;الموارد / البطل
+icon_selection_natureAndNatars;الوحوش والناتار
+upgrading;جاري الترقية!
+buildingActivities_buildingAdditional_46;لا توجد قوات جرحى
+playerDetails_ignorePlayerDescription;سيتم تجاهل اللاعب
+reports_share;مشاركة التقرير
+search_select_village_link;اختيار القرية
+search_village_link;رابط القرية
+search_report_link;رابط التقرير
+search_select_report_link;تحديد التقرير
+messages_banned;يمكنك فقط كتابة رسائل إلى الأعضاء الآخرين في تحالفك.
+messages_template_title;القوالب
+messages_template_none;لا توجد قوالب متاحة
+messages_template_edit_title;تعديل القالب
+messages_template_delete_title;حذف القالب
+messages_template_delete_question;هل أنت متأكد من أنك تريد حذف هذا القالب؟
+messages_template_delete_desc;بمجرد حذفه، لا يمكنك استعادته بعد ذلك.
+messages_template_create;إنشاء قالب جديد
+messages_template_create_descr;إنشاء قالب جديد من رسالتك الحالية:
+messages_template_created;تم إنشاء القالب!
+messages_template_deleted;تم حذف القالب!
+statistics_culturePoints_productionRank;ترتيب إنتاجك من النقاط الحضارية على هذا السيرفر
+statistics_culturePoints_productionRankAlliance;ترتيب إنتاجك من النقاط الحضارية ضمن تحالفك
+statistics_culturePoints_production;نقاط حضارية
+statistics_resourceRank_production;الإنتاج: {{VALUE|ShortenNumber}}
+statistics_resourceRank_productionRank;ترتيب إنتاجك على هذا السيرفر
+statistics_resourceRank_productionRankAlliance;ترتيب إنتاجك ضمن تحالفك
+statistics_resourceRank_bounty_lost;خسرت
+statistics_wonderOfTheWorld_header;أفضل أعجوبات العالم
+hospital_healing_costs;تكاليف شفاء القوات
+hospital_healing_action;شفاء القوات
+hospital_healing_list;عرض قائمة الشفاء
+hospital_healing_list_title;شفاء القوات
+hospital_healing_started;بدأ الشفاء
+bonusValueWithPercent;+{{value}}%
+village_with_isCapital;{{villageName}} (عاصمة)
+maximumTextLengthError;{{CONTEXT}} يمكن أن يحتوي على {{AMOUNT}} حرف بحد أقصى 
+infoTab_genericEffectInBrackets;({{INT|Sign}})
+infoTab_effectPercentage;{{INT}}%
+infoTab_effectInBracketsPercentage;({{INT|Sign}}%)
+infoTab_trapperCurrently;السعة القصوى الحالية للصياد:
+trapper_Build_Action;بناء فخاخ
+trapper_ProductionCosts;تكاليف إنتاج الفخاخ
+trapper_TrapsInConstruction;الفخاخ قيد البناء
+trapper_MaxBuilt;الحد الأقصى لعدد الفخاخ التي تم بناؤها بالفعل.
+truppen.tid119;فخ
+truppen.tid119p;فخاخ
+rallyPoint_troopsOverview_outgoingMission_scouting_1;التجسس على دفاعات وقوات 
+rallyPoint_troopsOverview_outgoingMission_scouting_0;التجسس على موارد وقوات 
+rallyPoint_troopsOverview_returningRegeneratedMission;عودة القوات المجددة من: 
+rallyPoint_troopsOverview_returningFleeingMission;عودة القوات من مخبأ الغابة: 
+rallyPoint_troopsOverview_foreignTroopsIn;متمركزة في: 
+rallyPoint_celebration_hint;قد يؤثر الاحتفال في المقهى على القوات.
+building_not_built;مبنى غير مشيد
+berichte.report_icon_24;إبلاغ
+allBuildings_36;العدد الأقصى لجميع الصيادين:
+cropFinder_min_oasis_crop_bonus;الحد الأدنى مكافأة قمح الواحة:
+cropFinder_select_minimum_crop_bonus;تحديد الحد الأدنى من مكافأة القمح
+cropFinder_unoccupied;غير مُحتَلّة
+search_by_location;البحث حسب الموقع
+search_by_player;البحث حسب اللاعب
+search_village_from_player;البحث عن قرية من اللاعب
+enter_player_name;إدخال اسم اللاعب
+messages_template_newConditionsNotMet;يجب أن تحتوي القوالب على عنوان ورسالة.
+message_report_isAlready;تم التبليغ عن الرسالة الحاليّة كـ: {{REASON}}
+tutorial_begin;بدء الجولة
+tutorial_title_0;تحياتنا، أيها البطل الشجاع! 
+tutorial_text_0;مرحبًا بك في ساحة المعركة الشرسة في Travian: Legends. دعنا نجهزك سريعًا لتحكم مستوطناتك الديناميكية وتحشد قواتك التي لا يمكن إيقافها.\n\nهل أنت مستعد؟
+tutorial_title_1;نظرة عامة على التنقل
+tutorial_text_1;ستكتشف هنا كل شيء بدءًا من الخريطة إلى أدوات التواصل الفعّالة وأدوات المعلومات الثاقبة. ستجد هنا أيضًا مهامك اليومية، والإعدادات المخصصة، ومجموعة من الميزات الأخرى.
+tutorial_title_3;مواردك
+tutorial_text_3;يمكن العثور على موارد قريتك هنا. يكشف النقر على شريط الموارد عن المزيد من التفاصيل.
+tutorial_title_4;مواردك
+tutorial_text_4;يخفي النقر على شريط الموارد مرة أخرى التفاصيل.
+tutorial_title_5;قريتك
+tutorial_text_5;ستجد هنا جميع المعلومات الضرورية عن قريتك. من قائمة المهام إلى النظرة العامة على قواتك وقائمة انتظار البناء، كل شيء موجود هنا. توفر ميزة أنشطة البناء، وهي إضافة حديثة إلى التطبيق، ملخصًا سريعًا للتطورات الجارية داخل مبانيك.
+tutorial_title_7;قريتك
+tutorial_text_7;في حالة بناء نقطة التجمع، سيوفر ذلك عرضًا شاملاً لجميع تحركات القوات الجارية. بالإضافة إلى ذلك، يوفر اختصارًا سريعًا لنقطة التجمع.
+tutorial_title_8;القائمة الجانبية
+tutorial_text_8;يمكنك النقر على الأسهم أو التمرير بإصبعك لفتح القائمة الجانبية. يمكن القيام بذلك في أي وقت.
+tutorial_title_9;قائمة القرية
+tutorial_text_9;يمكنك التبديل بسرعة بين قراك عن طريق التمرير على اللوحة الجانبية المفتوحة في أي وقت. ستتمكن أيضًا من العثور على إحصائيات القرية هناك.\n\nوبهذا تنتهي الجولة. ما الذي تنتظره! انغمس، واستكشف، ودع عالم Travian: Legends يصبح ملعبك الاستراتيجي.\n\nحظًا طيّبًا!
+tutorial_finish;إنهاء الجولة
+filters_report_not_found;التقرير غير موجود
+filters_player_not_found;اللاعب غير موجود
+filters_alliance_not_found;التحالف غير موجود
+filters_village_not_found;القرية غير موجودة
+settings_game;هذا السيرفر
+language_app_selection;حدد لغة التطبيق:
+settings_sitter;الوكيل {{VALUE}}:
+settings_sitterTab_yourSitters;وكلاؤك
+settings_sitterTab_SittingFor;موكَّل لـ
+search_player_addSitter;إضافة وكيل
+search_select_player_addSitter;إضافة وكيل
+search_player_addSitter_additionalEmptyResultInfo;لم يتم العثور على لاعب.\nيمكن فقط للاعبين من تحالفك/رابطتك أن يكونوا وكلاء لعضويتك.
+settings_sitter_sitterAdded;تمت إضافة وكيل!
+settings_sitter_sitterRemoved;تمت إزالة الوكيل!
+settings_sitter_sitterPermissionChangesSaved;تم حفظ تغييرات الأذونات!
+settings_sitter_confirm_remove_text_header;هل تريد إزالة الوكيل {{PlayerName}} الخاص بك؟
+settings_sittersFor;وكيل على عضويات أخرى
+settings_sittersFor_info;أنت وكيل على الحسابات التالية. يمكنك أن تزيل نفسك كوكيل بالنقر على رمز X الأحمر.
+settings_sittersFor_none;أنت لست وكيلاً حاليًا على عضوية أخرى.
+settings_sitterFor;موكَّل لـ {{VALUE}}:
+settings_sitterFor_sittingRemoved;توقفت عن الوكالة لـ {{PlayerName}}!
+settings_sitterFor_confirm_remove_header;هل تريد التوقف عن الوكالة لـ 
+settings_sitterFor_confirm_remove_header_questionmark;؟
+settings_sitterFor_confirm_remove_info;لا يمكنك التراجع عن هذا الإجراء. يمكن للاعبين الآخرين فقط إضافتك كوكيل لهم.
+brewery_celebration_attackStrength;({{INT}}% قوة الهجوم)
+brewery_celebration_hint;ستتأثر القوات المشاركة في المسيرة بالفعل بالاحتفال
+settings_game_newLanguage;تم تغيير اللغة إلى {{language}}.
+wonderOfTheWorld_name;اسم أعجوبة العالم:
+combatSimulator_title;محاكاة - {{role|TranslateSuffixFor|combatSimulator_as}}
+combatSimulator_cataTargetLevel;مستوى <b>{{index}} هدف المقاليع</b>
+combatSimulator_troopLevel;مستوى القوات في أفران صهر الحديد:
+combatSimulator_asAttacker;كمهاجم
+combatSimulator_asDefender;كمدافع
+combatSimulator_result;محاكاة النتائج
+combatSimulator_addReinforcement;إضافة تعزيز
+valueWithModifier;×{{value|Round|2}}
+valuePlusInBracketsWithPercent;(+{{change}}%)
+none;لا شيء
+marketplace_traderoute_repeatEveryHour;كرر كل: (ساعات)
+block_sitter_warning;ليست لديك صلاحية كوكيل لعمل ذلك
+settings_openConsentWindow;إعدادات الخصوصية
+combatSimulator_adjustHeroStats;تعديل إحصائيات البطل
+combatSimulator_eagleEyeTitle;تحديد مكافأة المستكشف الأفضل
+combatSimulator_architectSecretTitle;تحديد مكافأة المهندس المعماري
+combatSimulator_metallurgyBonus;تحديد مكافأة التعدين
+combatSimulator_rightHand;تحديد أداة اليد اليمنى
+combatSimulator_leftHand;تحديد أداة اليد اليسرى
+combatSimulator_bodyItem;تحديد أداة البدن
+combatSimulator_inventoryItem;تحديد أداة من المخزون
+combatSimulator_selectBuildingLevel_35;تحديد مستوى المقهى
+combatSimulator_selectBuildingLevel_26;تحديد مستوى القصر
+combatSimulator_selectBuildingLevel_34;تحديد مستوى الحجار
+combatSimulator_selectBuildingLevel_31;تحديد مستوى السور
+combatSimulator_selectBuildingLevel_32;تحديد مستوى السور
+combatSimulator_selectBuildingLevel_33;تحديد مستوى السور
+combatSimulator_selectBuildingLevel_43;تحديد مستوى السور
+combatSimulator_selectBuildingLevel_42;تحديد مستوى السور
+combatSimulator_selectTargetLevel;تحديد مستوى هدف المقاليع
+combatSimulator_selectTroopLevel;تحديد مستوى القوات
+survey_title;استطلاع Travian: Legends
+gdpr_title;الموافقة على معالجة البيانات
+gdpr_description;بموافقتك، نقوم بجمع معلومات معينة تتعلق بجهازك، وعنوان الآي بي الخاص بك، والاستخدام، ومعرّفات الإعلانات. يساعدنا ذلك على عرض إعلانات أكثر ملاءمة لك وتحسين تجربتك في التطبيق بشكل عام.
+gdpr_basic_functions;مطلوب للوظائف الأساسية للتطبيق.
+gdpr_advertisement;استخدام البيانات الشخصية للإعلانات.
+gdpr_analytics;استخدام البيانات الشخصية للتحليلات.
+gdpr_acceptAll;قبول الكل
+gdpr_save_and_exit;حفظ + خروج
+gdpr_rejectAll;رفض الكل
+gdpr_privacy_policy;سياسة الخصوصيّة
+gdpr_terms_and_conditions;الشروط والأحكام
+plus.plus.browserOnly;(المتصفح فقط)
+hero_inventory_already_equipped;نفس الأداة مجهزة بالفعل.
+survey_button_title;استطلاع رأي
+survey_button_description;شارك في هذا الاستطلاع القصير لمساعدتنا في تحسين تطبيق Travian: Legends.
+goldShop_extend;تمديد
+goldShop_remaining;المتبقي:
+goldShop_advantage_activated;مفعّل
+search_select_recipient_removeAll;إزالة الكل
+messages_messageTopic_noTopic;لا يوجد موضوع/افتراضي
+messages_messageTopic_resources;حول الموارد
+messages_messageTopic_defenses;حول الدفاعات
+messages_messageTopic_attacks;حول الهجمات
+messages_messageTopic_strategies;حول الاستراتيجيات
+messages_messageTopic_information;معلومات عامة
+messages_messageTopic_important;معلومات مهمة
+messages_messageTopic_selectionTitle;اختيار موضوع الرسالة
+farmlist_confirm_deletion_header;هل أنت متأكد من أنك تريد حذف قائمة المزارع المحددة؟
+farmlist_confirm_deletion_text;لا يمكن التراجع عن ذلك.
+farmlist_target_confirm_deletion_header;هل أنت متأكد من أنك تريد حذف [data>1:هذه {{data}} الأهداف][data=1:هذا الهدف]؟
+upgrade_queue_cantConstructImmediately;لا يمكن تشييد هذا المبنى على الفور
+language_cs-CZ;التشيكية
+language_es-ES;الإسبانية
+language_pl-PL;البولندية
+language_pt-PT;البرتغالية
+language_tr-TR;التركية
+language_it-IT;الإيطالية
+playerDetails_victorPoints_summary;{{TOTAL}} | {{PERDAY}}/يوم
+settings_selectFormat;تحديد التنسيق:
+settings_selectFormat_dialog_title;تحديد تنسيق التاريخ
+settings_game_newDateFormat;تم تغيير تنسيق التاريخ إلى {{dateFormat}}.
+help_getHelp;احصل على المساعدة
+help_getHelpDescription;إذا كنت بحاجة إلى مساعدة أو ترغب في الإبلاغ عن مشكلة، اتصل بالدعم داخل اللعبة هنا.
+help_learnAboutGame;تعرّف على اللعبة
+help_learnAboutGameDescription;كل ما تحتاج إلى معرفته عن اللعبة وكيفية سير الأمور بالتفصيل يمكنك العثور عليه هنا.
+help_gameRules;تعلم قواعد اللعبة
+help_gameRulesDescription;هنا يمكنك العثور على قواعد اللعبة الحالية.
+help_joinDiscord;انضم إلى Discord
+help_joinDiscordDescription;شاركنا بملاحظاتك على سيرفرنا المخصص للجوال على Discord.
+PLAYERARG;{{PLAYER}}
+referAFriend_friendJoinedDescription;للحصول على ذهب نظير دعوتك، يحتاج صديقك إلى أن يستوطن <b>قريته الثانية</b>. احرص على مساعدته في الوصول إلى هذا الهدف! تحقّق من تقدمه في "نظرة عامة على الإحالة" الواردة أدناه.
+referAFriend_rewardAddedVillage2Title_PLAYERARG;استوطن صديقك {{PLAYER}} قريته الثانية
+referAFriend_rewardAddedVillage3Title_PLAYERARG;استوطن صديقك {{PLAYER}} قريته الثالثة
+referAFriend_rewardAddedVillage4Title_PLAYERARG;استوطن صديقك {{PLAYER}} قريته الرابعة
+referAFriend_rewardAddedVillage5Title_PLAYERARG;استوطن صديقك {{PLAYER}} قريته الخامسة
+referAFriend_rewardAddedVillage6Title_PLAYERARG;استوطن صديقك {{PLAYER}} قريته السادسة
+referAFriend_rewardAddedVillage7Title_PLAYERARG;استوطن صديقك {{PLAYER}} قريته السابعة
+referAFriend_rewardAddedVillage8Title_PLAYERARG;استوطن صديقك {{PLAYER}} قريته الثامنة
+referAFriend_rewardAddedVillage9Title_PLAYERARG;استوطن صديقك {{PLAYER}} قريته التاسعة
+referAFriend_rewardAddedVillage10Title_PLAYERARG;استوطن صديقك {{PLAYER}} قريته العاشرة
+sysmsg_truce_learnMore;تعلّم المزيد عن الهدنات
+worldEnded_ww_playerWon_topAlliance;قام العمال في قرية {{WW_VILLAGE|VillageLink}}، في الساعة {{WORLD_END_TIME|DateTime}}، بوضع الحجر الأخير لتدعيم أحد أهم الإبداعات في التاريخ.<br>جنبًا إلى جنب مع التحالف، {{WW_ALLIANCE|AllianceLink}}، كان {{WW_PLAYER|PlayerLink}} أول من أنهى أعجوبة العالم. بعد استخدام موارد لا حصر لها وحماية الموقع بمئات الآلاف من المدافعين الشجعان، حصل {{WW_PLAYER|PlayerLink}} على لقب "الفائز بهذه الحقبة".
+worldEnded_as2022_topAlliances;تهانينا إلى {{ALLIANCE_TOP_1|AllianceLink}}، الذي أصبح زعيم أوروبا بنقاط نصر قدرها {{VICTORY_POINTS_TOP_1}}! لقد قاتل {{ALLIANCE_TOP_2|AllianceLink}} بشجاعة لتحقيق النصر وحلّ في المركز الثاني، بينما سار {{ALLIANCE_TOP_3|AllianceLink}} على خطاه بسرعة وحصد المركز الثالث.
+worldEnded_playerRanks_population;{{PLAYER_POPULATION_TOP_1|PlayerLink}} كان حاكمًا لأكبر إمبراطورية شخصية، يتبعه كلٌ من {{PLAYER_POPULATION_TOP_2|PlayerLink}} و{{PLAYER_POPULATION_TOP_3|PlayerLink}}.
+worldEnded_playerRanks_offender;لقد هَزَمَ {{PLAYER_OFFENDER_TOP_1|PlayerLink}} أكثر من أي شخص آخر وكان القائد الأكثر رعبًا.
+worldEnded_playerRanks_defender;لقد كان {{PLAYER_DEFENDER_TOP_1|PlayerLink}} أعظم مدافع، حيث هزم الأعداء عند بوابات القرية ولطخ الأراضي المحيطة بتلك القرى بدمائهم.
+rallyPoint_startWithValue;البدء ({{value}})
+rallyPoint_farmList_raidsStarted;{{INT}} غارات نهب مرسلة.
+rallyPoint_farmList_CantAddToAbandonList;لا يمكنك إضافة أهداف إلى قائمة مزارع مهجورة.
+rallyPoint_farmList_CantActivateInToAbandonList;لا يمكنك تنشيط أهداف في قائمة مزارع مهجورة.
+rallyPoint_farmList_CantDuplicateInToAbandonList;لا يمكنك تكرار أهداف في قائمة مزارع مهجورة.
+rallyPoint_farmList_DuplicateRaids;تكرار [raidsAmount=1:الهدف][raidsAmount>1:الأهداف]
+rallyPoint_farmList_SlotsDuplicated;تم تكرار [raidsAmount=1:الهدف][raidsAmount>1:الأهداف]!
+rallyPoint_farmList_pleaseSelectTheList;يُرجى اختيار القائمة التي ترغب في إضافة هدفك إليها.
+rallyPoint_farmList_farmlistFull;قائمة المزارع ممتلئة، يرجى اختيار قائمة مزارع أخرى أو إنشاء قائمة جديدة.
+rallyPoint_farmList_targetName;اسم الهدف
+rallyPoint_farmList_differentTroopsWarning;لن تُغيَّر أرقام القوات إلا إذا استبدلتها أدناه عن طريق إدخال قيمة جديدة.
+rallyPoint_farmList_noobProtectionWarning;أثناء فترة حماية المبتدئين، لا يمكنك نهب لاعبين آخرين ولكن يمكنك نهب الواحات غير المحتلة وقرى الناتار.
+rallyPoint_farmList_noFarmLists;لم يتم إنشاء قائمة مزارع
+rallyPoint_farmList_CreateNewFarmList;إنشاء قائمة مزارع
+rallyPoint_farmList_currentAmount;قوائم المزارع: <b>{{amount}}</b>/{{max}}
+rallyPoint_farmList_differentTribe;القرية لديها قبيلة مختلفة عن قرية المصدر الحالية. يُرجى التحقق من قيم القوات.
+rallyPoint_farmList_overrideTarget;تجاوز الهدف
+rallyPoint_farmList_selectedActivated;تم تعيين الأهداف المحددة على أنها نشطة.
+rallyPoint_farmList_selectedDeactivate;تم تعيين الأهداف المحددة على أنها غير نشطة.
+rallyPoint_farmList_LastRaid;<b>آخر بدء:</b> <nobr>{{lastStarted|DateTime}}</nobr>
+mapCell_editTargetListAmount;<nobr>تعديل الهدف</nobr> <nobr>(قوائم: {{INT}})</nobr>
+goldShop_shopDisabled;متجر الذهب معطل في هذا السيرفر
+infobox_accountLockGameEnd;انتهت هذه الجولة من اللعبة!
+applySorting;تطبيق الترتيب
+truppen.tid931;فخ
+truppen.tid931p;الأفخاخ
+mainMenu_switchBackFromAvatar;{{iconName|Sprite}} العودة إلى {{playerName}}
+pending;(قيد الانتظار)
+featureNotAvailableInVacationMode;لا تتوفر هذه الميزة أثناء تفعيل وضع الإجازة.
+notAllowed;ليس مسموح لك القيام بهذا.
+settings_avatarDeletionInfo;بعد بدء عملية الحذف، سيستغرق الأمر <b>3 أيام</b> لإكمال حذف عضويتك.\nلم يعد بإمكان العضوية قيد الحذف الوصول إلى المزادات أو الصرّاف.\nيمكنك إلغاء عملية الحذف في أي وقت هنا.
+settings_avatarDeletionCountDown;ستُحذَف العضوية خلال
+deleteAvatar_confirmation_header;هل تريد حذف عضويتك؟
+cams_info_subHeader;تسجيل دخول واحد لجميع سيرفراتك
+cams_info_text;أنشئ حساب المنصَّة الخاص بك لتسجيل الدخول بسهولة والوصول السلس إلى جميع سيرفراتك من خلال تسجيل دخول واحد.
+cams_info_lessInfo;معلومات أقل
+cams_info_Question_WhatIsLegendsLobbyAccount;ما هو حساب المنصَّة؟
+cams_info_Answer_WhatIsLegendsLobbyAccount;مع حساب المنصَّة، لن تضطر أبدًا للتسجيل في سيرفر جديد مرة أخرى. ما عليك سوى تسجيل الدخول والوصول إلى سيرفراتك النشطة أو بدء سيرفر جديد في المنصَّة، سواء على المتصفح أو في تطبيق الجوَّال.
+cams_info_Question_WhatAreAvatars;ما هي العضويات؟
+cams_info_Answer_WhatAreAvatars;باستخدام حساب المنصَّة، يُطلق على ملف التعريف الشخصي الخاص بك في سيرفر فردي اسم العضوية. لديك حساب منصَّة واحد قد يحوي عدة عضويات، واحدة لكل سيرفر.
+cams_info_Question_WhatsWithCurrentGameworlds;ماذا سيحدث لسيرفراتي الحالية؟
+cams_info_Answer_WhatsWithCurrentGameworlds;ستُربَط جميع السيرفرات النشطة التي تستخدم نفس عنوان البريد الإلكتروني لحساب المنصَّة الخاص بك ويمكن الوصول إليها عبر المنصَّة. يمكنك نقل عضويات السيرفرات النشطة الحالية الخاصة بك إلى عنوان البريد الإلكتروني الصحيح قبل إنشاء حساب المنصَّة الخاص بك.
+cams_info_Question_WhatsWithSitters;هل لا يزال بإمكاني تعيين وكلاء؟
+cams_info_Answer_WhatsWithSitters;نعم، يمكن تعيين الوكلاء كالمعتاد في إعدادات السيرفر. يمكنك الوصول إلى عضوية عُيِّنت وكيلًا لها مباشرة في السيرفر.
+cams_info_Question_WhatsWithDuals;هل لا يزال بإمكاني اللعب كشريك مع لاعبين آخرين؟
+cams_info_Answer_WhatsWithDuals;يمكن تعيين شركاء في سيرفر عن طريق إدخال اسم حساب منصَّة اللاعب في المنصَّة. هذا يعني أن الشريك يحتاج أيضًا إلى حساب منصَّة أولاً ويمكنه الوصول إلى العضوية عبر المنصَّة بعد قبول الدعوة. يُرجى عدم مشاركة كلمة مرور حساب المنصَّة الخاص بك مع أي شخص.
+cams_info_Question_WhatsWithoutLobbyAccount;هل يمكنني اللعب بدون إنشاء حساب المنصَّة؟
+cams_info_Answer_WhatsWithoutLobbyAccount;لا يزال بإمكانك تسجيل الدخول إلى سيرفراتك الحالية مباشرةً باستخدام الرابط المعني. ومع ذلك، إذا كنت ترغب في بدء سيرفر جديد أو استخدام تطبيق الجوَّال، فيجب إنشاء حساب منصَّة.
+cams_playerDecision_register_info;يتيح لك حساب المنصَّة الجديد ربط سيرفراتك الحالية والمستقبلية بتسجيل دخول واحد.
+cams_playerDecision_login_info;لديك حساب منصَّة بالفعل؟\n\nسجّل الدخول وتابع مغامرتك.
+cams_playerDecision_register_header;أنشئ حساب
+cams_playerDecision_register_create_new_account;إنشاء حساب ردهة
+cams_playerDecision_register_login;تسجيل الدخول إلى المنصَّة
+cams_playerDecision_extra_info;لتتمكن من لعب Travian: Legends، تحتاج إلى إنشاء حساب منصَّة.
+cams_register_header;إنشاء حساب منصَّة
+cams_register_email_label;إدخال عنوان بريدك الإلكتروني:
+cams_register_email_address;تسجيل عنوان البريد الإلكتروني
+cams_register_email_address_missing;يرجى إدخال عنوان بريدك الإلكتروني.
+cams_register_email_address_not_valid;فضلاً أدخل عنوان بريد إلكتروني صالح على سبيل المثال mymail@provider.com
+cams_register_email_address_already_exists;عنوان بريدك الإلكتروني متصل بالفعل بحساب منصَّة.
+cams_register_redirecting_to_login;إعادة التوجيه لتسجيل الدخول {{INT}}...
+cams_register_hintMessage_same_email_address;استخدام نفس عنوان البريد الإلكتروني لعضويات سيرفراتك الحالية لربطها تلقائيًا بحساب المنصَّة الخاص بك.
+cams_register_receive newsletter;أريد أن أتلقى النشرة الإخبارية.
+cams_register_already_have_an_account;لديك بالفعل عضوية؟
+cams_register_log_in_now;تسجيل دخول الآن
+cams_acceptTOS;بالنقر على "تسجيل عنوان البريد الإلكتروني"، فإنك توافق على <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">الشروط والأحكام العامة</link></style> وتؤكد أنك قرأت <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">معلومات عن حق الانسحاب</link></style> و <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">سياسة الخصوصية</link></style>.
+cams_activation_header;تفعيل حساب المنصَّة
+cams_activation_info;لقد أرسلنا رابط التفعيل الخاص بك إلى <b>{{emailAdress}}</b>.<br>يرجى اتباع التعليمات الواردة في رسالة البريد الإلكتروني للمتابعة.
+cams_activation_enter_code;إدخال رمز التفعيل:
+cams_activation_code_example;على سبيل المثال 123456
+cams_activation_entered_code;{{INT}}/6 أرقام
+cams_activation_cta_activate_account;تفعيل العضوية
+cams_activation_email_lost;لم تتلق رسالة بريد إلكتروني؟
+cams_activation_email_resend;إعادة إرسال رسالة البريد الإلكتروني
+cams_activation_email_wrong;عنوان بريد إلكتروني خاطئ؟
+cams_activation_email_change;تغيير البريد الإلكتروني
+cams_activation_code_missing;يرجى إدخال رمز التفعيل الذي استلمته على البريد الإلكتروني.
+cams_activation_code_too_short;رمز التفعيل قصير جدًا. يرجى إدخال جميع الأرقام الستة.
+cams_activation_code_format_incorrect;صيغة رمز التفعيل غير صحيحة. يرجى التأكد من أن الرمز يتكون من ستة أرقام فقط.
+cams_activation_code_incorrect;رمز التفعيل غير صحيح. يرجى إدخال رمز التفعيل الذي استلمته على البريد الإلكتروني.
+cams_activation_code_expired;انتهت صلاحية رمز التفعيل.
+cams_activation_code_start_again;ابدأ من جديد
+cams_login_header;تسجيل الدخول إلى المنصَّة
+cams_login_enter_email;أدخل عنوان بريدك الإلكتروني أو اسم حسابك:
+cams_login_enter_password;أدخل كلمة مرورك:
+cams_login_hintMessage_email_already_connected;عنوان البريد الإلكتروني الذي أدخلته متصل بالفعل بحساب منصَّة. سجّل الدخول أو <style="SimpleLink"><link="BackToRegistrationLink">عُد إلى التسجيل</link></style>.
+cams_login_hintMessage_passwordUpdated;لقد تم تحديث كلمة مرورك بنجاح
+cams_forgot_password;نسيت كلمة المرور خاصتك؟
+cams_recover_password;استعادة كلمة المرور
+cams_login_no_account_yet;ليس لديك حساب بعد؟
+cams_login_create_account;أنشئ حسابًا
+cams_loginMask_accountNameRequired;يرجى إدخال عنوان بريدك الإلكتروني أو اسم حسابك.
+cams_loginMask_passwordRequired;يرجى إدخال كلمة مرورك.
+cams_loginMask_passwordAndUsernameAreWrong;البريد الإلكتروني أو اسم الحساب أو كلمة المرور خاطئة.
+cams_loginMask_emailOrAccountName_placeholder;عنوان البريد الإلكتروني / اسم الحساب
+cams_loginMask_temporaryInfobox;جديد: تحتاج إلى إنشاء حساب منصَّة للوصول إلى سيرفراتك.\n\nإذا لم يكن لديك حساب منصَّة بعد، <style="SimpleLink"><link="CreateAccountLink">أنشئ حسابًا</link></style>.
+cams_setPassword_header;تعيين كلمة المرور الخاصة بك
+cams_setPassword_info;قم بإنشاء كلمة مرور لحسابك بطول لا يقل عن ثمانية أحرف.
+cams_setPassword_enter_password;اختيار كلمة مرور:
+cams_setPassword_strength_label;قوة كلمة المرور
+cams_setPassword_strength_missing;أدخل كلمة مرور للتحقق من قوتها.
+cams_setPassword_strength_1;ضعيفة جدًا
+cams_setPassword_strength_2;ضعيفة للغاية
+cams_setPassword_strength_3and4;معتدلة
+cams_setPassword_strength_5;قوية جدًا
+cams_setPassword_strength_6;قوية للغاية
+cams_setPassword_strength_PasswordTooShort;كلما كانت أطول كان أفضل (16+ حرفًا)
+cams_setPassword_strength_PasswordGoodLength;كلمة المرور ذات طول جيد
+cams_setPassword_strength_OneType;استُخدِمَ نوع واحد فقط من الأحرف
+cams_setPassword_strength_TwoTypes;استُخدِمَ نوعين من الأحرف
+cams_setPassword_strength_ThreeTypes;استُخدِمَ ثلاثة أنواع من الأحرف
+cams_setPassword_strength_NoNumbers;لم تُستَخدَم أرقام
+cams_setPassword_strength_NoLetters;لم تُستَخدَم أحرف
+cams_setPassword_strength_NoSpecialCharacters;لم تُستَخدَم أحرف خاصة
+cams_setPassword_strength_NoUpperAndLowerCase;لا يوجد مزيج من الأحرف الكبيرة والصغيرة
+cams_setPassword_strength_UpperAndLowerCase;استُخدِمَت الأحرف الكبيرة والصغيرة
+cams_activation_cta_set_password;تعيين كلمة مرور
+cams_activation_password_length;8-64 حرفًا
+cams_resetPassword_header;تعيين كلمة مرور جديدة
+cams_resetPassword_info;قم بإنشاء كلمة مرور جديدة لحساب المنصَّة الخاص بك بطول لا يقل عن ثمانية أحرف.
+cams_setUsername_header;اختر اسمًا لحساب المنصَّة الخاص بك
+cams_setUsername_info;اختر اسم مستخدم واختصار لإنشاء اسم حساب المنصَّة الفريد الخاص بك.
+cams_setUsername_username_label;اختيار اسم مستخدم:
+cams_setUsername_tagline_label;اختيار اختصار:
+cams_setUsername_tagline_example;على سبيل المثال TAG12
+cams_setUsername_tagline;اختصار:
+cams_setUsername_condition_onlyLettersAndNumbers;حروف وأرقام فقط
+cams_setUsername_username_condition_Length;3-15 حرفًا
+cams_setUsername_tagline_condition_Length;2-5 أحرف
+cams_setUsername_hint;سيكون مزيج اسم المستخدم والاختصار الخاصين بك هو اسم حساب المنصَّة الفريد الخاص بك. طالما أن المزيج متاح، يمكنك اختيار أي مزيج تريده.\n\nهذا لا يؤثر على الاسم في سيرفرك.
+cams_setUsername_cta_createAccount;أنشئ حسابًا
+cams_setUsername_username_missing;يُرجى إدخال اسم مستخدم واختصار.
+cams_setUsername_accountName_preview;معاينة اسم الحساب:
+cams_setUsernameConfirmPopup_header;تم إنشاء حساب المنصَّة!
+cams_setUsernameConfirmPopup_info;لقد أُنشئ حساب المنصَّة الخاص بك باسم تسجيل الدخول <b>{{playerName}}</b> بنجاح.
+cams_setUsernameConfirmPopup_GameworldAndAvatar_header;سيرفراتك وعضوياتك
+cams_setUsernameConfirmPopup_GameworldAndAvatar_info;لقد قمنا بربط العضويات التالية المتواجدة بالسيرفرات الحالية بنفس عنوان البريد الإلكتروني لحساب المنصَّة الجديد الخاص بك.
+cams_avatar_name;اسم الحساب:
+cams_looby_welcomeMessage;مرحبًا!\n<b>{{playerName}}</b>
+cams_looby_header;سيرفراتك
+cams_looby_noGameWorlds;لا يوجد لديك حاليًا عضوية نشطة في أي سيرفر. انضم إلى سيرفر جديد وابدأ اللعب.
+cams_looby_joinNewGameworld;انضم إلى سيرفر جديد
+cams_looby_playNow;العب الآن
+cams_looby_gameworldsLinked;سيرفرات مرتبطة بحسابك
+cams_looby_invitePenging;[data>1:{{data}} دعوات][data=1:دعوة] قيد الانتظار
+cams_looby_localGameWorld;سيرفر محلي
+cams_looby_avatarInDeletion;يجري الحذف
+cams_removeDualAccount_header;إزالة لاعب شريك
+cams_removeDualAccount_info;هل تريد إزالة <b>{{lobbyAccountName}}</b> الشريك بعضويتك <b>{{avatarName}}</b>؟\n\n<b>{{lobbyAccountName}}</b> لن يكون بإمكانه الوصول إلى عضويتك بعد الآن.
+cams_removeDualAccount_removeDual;إزالة شريك
+cams_addDualPlayer_info;أدخل اسم حساب منصَّة اللاعب
+cams_addDualPlayer_placeholder;اسم المستخدم#اختصار
+cams_addDualPlayer_addPlayer;[data>1:إضافة لاعبين][data=1:إضافة لاعب][data=0:إضافة لاعب]
+search_addDualPlayeradditionalEmptyResultInfo;اللاعب غير موجود أو تمت دعوته بالفعل كشريك
+cams_dualInventation_header;دعوة شريك
+cams_dualInventation_invitations;الدعوات:
+cams_dualInventation_info;إذا قبلت الدعوة، يمكنك تسجيل الدخول بحساب المنصَّة الخاص بك للوصول إلى هذه العضوية.
+cams_dualInventation_moreInfo;يمكنك قبول دعوة شريك واحدة فقط لكل سيرفر.
+cams_dualInventation_invite;<b>{{LobbyAccountName}}</b> دعاك للعب على <b>{{avatarName}}</b>
+cams_dualInventation_AcceptInvite;قبول الدعوة
+cams_acceptDualInvitation_header;قبول دعوة الشريك
+cams_acceptDualInvitation_info;هل تريد قبول دعوة الشريك من <b>{{lobbyAccountName}}</b> للعب على <b>{{avatarName}}</b> في <b>{{gameworldName}}</b>؟
+cams_acceptDualInvitation_moreInfo;لديك عدة دعوات شريك قيد الانتظار لنفس السيرفر، ولكن يمكنك قبول دعوة شريك واحدة فقط لكل سيرفر.
+cams_acceptDualInvitation_avatarInDeletion;نظرًا لقواعد اللعب خاصتنا كشريك، يمكنك امتلاك عضوية نشطة واحدة فقط في كل سيرفر. \nسيؤدي قبول دعوة الشريك إلى إزالة صلاحية الوصول إلى عضويتك {{avatarName}} التي هي قيد الحذف في ذلك السيرفر. \nلن يعد بإمكانك إلغاء عملية الحذف بعد ذلك.
+cams_dualSettings_header;إعدادات الشريك
+cams_dualSettings_info;يمكنك التوقف عن اللعب كشريك على تلك العضوية في أي وقت.
+cams_dualSettings_leaveDualPlay;ترك اللعب كشريك
+cams_confirmLeaveDualPlay_info;هل تريد التوقف عن اللعب كشريك على <b>{{avatarName}}</b> في <b>{{gameworldName}}</b>؟\n\nبعد المغادرة كشريك، يمكنك إنشاء عضويتك الخاصة بك أو الانضمام إلى عضوية أخرى للعب كشريك في هذا سيرفر مرة أخرى.
+cams_recoverPassword_header;استعادة كلمة المرور
+cams_recoverPassword_goBackToLogin;العودة لتسجيل الدخول
+cams_recoverPassword_info;إدخال عنوان البريد الإلكتروني المرتبط بحساب المنصَّة الخاص بك. سنرسل لك تعليمات حول كيفية إعادة تعيين كلمة المرور الخاصة بك
+cams_recoverPasswordEmailSent_header;تم إرسال رسالة البريد الإلكتروني
+cams_recoverPasswordEmailSent_info;في حالة وجود حساب منصَّة لعنوان البريد الإلكتروني <b>{{emailAdress}}</b>، فقد أرسلنا لك تعليمات لإعادة تعيين كلمة المرور الخاصة بك.\n\nبمجرد استعادة كلمة المرور الخاصة بك، يمكنك تسجيل الدخول مرة أخرى.
+cams_recoverPasswordEmailSent_goBackToLogin;العودة لتسجيل الدخول
+cams_editDualAccounts_header;الشركاء
+cams_editDualAccounts_gameworld;السيرفر: {{gameworldName}}
+cams_editDualAccounts_avatar;عضوية: {{avatarName}}
+cams_editDualAccounts_avatarOwner;مالك العضوية:
+cams_editDualAccounts_noDualsAdded;- لم تتم إضافة لاعبين شركاء لهذه العضوية -
+cams_editDualAccounts_info;يتمتع اللاعبون الشركاء <b>بحق الوصول الكامل</b> لهذه العضوية ويمكنهم القيام بكل إجراء في اللعبة بما في ذلك إنفاق وشراء الذهب.\n\nيمكن للاعبين الشركاء تسجيل الدخول بحساب المنصَّة الخاص بهم للوصول إلى هذه العضوية ولا يمكنهم دعوة لاعبين شركاء آخرين.
+cams_editDualAccounts_warningHint;لا تشارك بيانات تسجيل الدخول إلى حساب المنصَّة الخاص بك مع أي لاعبين آخرين لمنع الوصول غير المرغوب فيه إلى العضويات في السيرفرات الأخرى وبيانات حسابك.
+cams_editDualAccounts_addDualPlayer;إضافة لاعب شريك
+cams_editDualAccounts_avatarInDeletion;يجري حذف عضويتك {{avatarName}} في هذا السيرفر. لذلك، لا يمكنك إرسال دعوة شريك.
+cams_settings_title;إعدادات
+cams_settings_changePassword_information;لتغيير كلمة المرور الخاصة بك، سنقوم بإرسال رسالة بريد إلكتروني إلى عنوان البريد الإلكتروني الخاص بحسابك.
+cams_settings_changePassword_sendEmail;إرسال رسالة بريد إلكتروني
+cams_settings_changePassword_emailSent;لقد أرسلنا لك رسالة بريد إلكتروني لتغيير كلمة المرور الخاصة بك.
+cams_settings_accountDeletion_title;حذف حساب المنصَّة
+cams_settings_accountDeletion_info;حذف حساب المنصَّة الخاص بك بما في ذلك جميع السيرفرات والعضويات لهذا الحساب.
+cams_settings_accountDeletion_action;حذف حساب المنصَّة
+cams_settings_accountDeletion_warning;تحذير: لا يمكن التراجع عن هذا الإجراء!
+cams_settings_accountDeletion_warning_content;يكون حذف حساب المنصَّة الخاص بك دائمًا بعد عد تنازلي لمدة 72 ساعة، ولا يمكن التراجع عنه، ويؤثر على جميع عضوياتك. \n\nلا يمكن ضبط حسابك على الحذف إلا إذا تم ضبط جميع عضوياتك على الحذف أولاً.
+cams_settings_accountDeletion_requirementsInformation;لحذف حسابك، يجب أن تكون جميع عضوياتك قيد الحذف أو تم حذفها بالفعل.
+cams_settings_accountDeletion_information_warning;يضع هذا الإجراء حسابك في حالة الحذف. يرجى التحقق من أنك على علم بأنه سيُحذَف حسابك وجميع العضويات والبيانات المرتبطة به بشكل دائم عن طريق كتابة "حذف" في حقل الإدخال.
+cams_settings_accountDeletion_information_error;لا يمكنك حذف الحساب إذا لم يتم ضبط عضوية على الحذف.\nيرجى تسجيل الدخول إلى السيرفرات المشار إليها وحذف عضويتك.
+cams_settings_accountDeletion_noAvatarsFound;لم يتم العثور على سيرفرات/عضويات نشطة.\nأنت جاهز للذهاب!
+cams_settings_accountDeletion_understandmentConfirmation;أفهم ذلك
+cams_settings_accountInDeletion_title;الحساب قيد الحذف
+cams_settings_accountInDeletion_info;سيتم حذف حساب المنصَّة <b>{{NAME}}</b> الخاص بك بشكل دائم في <b>{{TIMESTAMP|Countdown}}</b>.
+cams_settings_accountInDeletion_action;إلغاء الحذف
+cams_mainMenu_dataConsent;الموافقة على البيانات
+gameworld_gameworld;السيرفر
+infobox.productionboost;{{RES}}{{TIME_COUNTER}}
+infobox_notesCount;{{COUNT}} [COUNT=1:ملاحظة][COUNT>1:ملاحظات]
+auction_placeBid;شارك بمزاد
+auction_auctionsAmount;{{COUNT}} مزادات
+auction_bidsRefreshed;تم تحديث المزايدات!
+auction_currentSilver;الفضة الحالية:  {{iconName|Sprite}} {{currentSilver}}
+auction_availableAmount;الكمية المتوفرة:
+auction_toSellAmount;الكمية المبيعة:
+auction_selectAmountToSellHeader;تحديد كمية لبيعها
+auction_soldHorseForSilver;تم بيع حصان مقابل {{amount}} فضة.
+auction_currentCurrency;حالي:
+auction_newCurrencyValues;جديد:
+auction_exchangeExplanationGoldToSilverTitle;يمكنك استبدال الذهب إلى فضة لشراء أدوات البطل من بيت المزادات.
+auction_exchangeExplanationGoldToSilverMore;أدخل كمية الذهب التي ترغب في استبدالها:
+auction_exchangeExplanationSilverToGoldTitle;يمكنك استبدال الفضة من بيع أدوات البطل في دار المزادات إلى ذهب.
+auction_exchangeExplanationSilverToGoldMore;أدخل كمية الفضة التي ترغب في استبدالها:
+auction_countAndName;{{AMOUNT}}×{{ITEM_NAME}}
+auction_deleteAll;حذف جميع المزادات
+auction_confirm_deletion_title;حذف [data>1:{{data}} مدخلات][data=1:مدخل] بالمزاد
+auction_confirm_deletion_button;حذف [data>1:مدخلات][data=1:مدخل]
+auction_confirm_deletion_text_header;هل أنت متأكد من أنك تريد حذف [data>1:{{data}} مدخلات المزاد][data=1:هذا المدخل بالمزاد]؟
+auction_confirm_deletion_text;بمجرد قيامك بحذف مدخل، سيختفي نهائيًا. لن تتمكن من استعادته.
+cams_looby_noMatchingGameworlds;لا توجد سيرفرات مطابقة لاختيارك.
+serverSelection_5;Dev
+serverSelection_header;تحديد فلتر السيرفر
+serverSelection_filter_gameworldSpeed;سرعة السيرفر
+serverSelection_gameworldSpeed;x{{INT}} سرعة
+serverSelection_filer_gameworldLifetime;عمر السيرفر
+serverSelection_gameworldLifetime;{{INT}}-{{INT2}} أيام
+serverSelection_gameworldLifetime_XorMore;{{INT}} أو أكثر من الأيام
+filters_applyButton;تطبيق [COUNT<2:فلتر][COUNT>1:{{COUNT}} فلاتر]
+filters_reset;إعادة تعيين [COUNT<2:فلتر][COUNT>1:فلاتر]
+cams_avatarCreation_cancel_title;إلغاء إنشاء العضوية
+cams_avatarCreation_cancel_reconfirmationText;هل أنت متأكد من أنك تريد إلغاء إنشاء عضويتك على {{gameworldName}}؟
+cams_avatarCreation_cancel_explanation;ستفقد كل تقدمك في هذا السيرفر بما في ذلك اختيار قبيلتك، وموقع الخريطة، واسم العضوية.
+cams_avatarCreation_button_startPlaying;ابدأ اللعب
+cams_avatarCreation_button_changeSector;تغيير الموقع
+cams_avatarCreation_button_selectTribe;تحديد القبيلة
+cams_avatarCreation_button_updateTribe;تحديث القبيلة
+cams_avatarCreation_button_selectSector;تحديد الموقع
+cams_avatarCreation_button_updateSector;تحديث الموقع
+cams_avatarCreation_name_title;إدخال اسم العضوية
+cams_avatarCreation_name_tip;هذا هو اسم عضويتك في هذا السيرفر.
+cams_avatarCreation_name_errorEmpty;يرجى إدخال اسم عضوية.
+cams_avatarCreation_name_placeHolder;اسم الحساب:
+cams_looby_avatarInDeletionBlockPlayNow;لقد قبلت دعوة شريك لهذا السيرفر ({{gameworldName}})، لذا لم يعد بإمكانك الوصول إليه خارج وضع الشريك.
+infobox_openMessage;فتح الرسالة
+infobox_accountIsLocked;لقد تم حظر حسابك!
+auction_button_requirement;أكمل {{REQUIRED}} مغامرات لفتح المزادات.\nمتبقي: {{INT}}
+auction_availableSilver;الفضة المتاحة:  {{iconName|Sprite}} {{currentSilver}}
+auction_deleteSelected;حذف المزادات المحددة
+auction_deletedAll_confirmation;تم حذف جميع المزادات!
+auction_deletedSelected_confirmation;تم حذف {{data}} [data>1:مدخلات][data=1:مدخل] بالمزاد!
+newVersionAvailable_title;الإصدار الجديد متاح
+newVersionAvailable_description;لقد قمنا بتحسين تطبيقنا. يُرجى التحديث لمواصلة اللعب.
+newVersionAvailable_joinDiscord;ما الجديد؟ انضم إلى Discord لمزيد من المعلومات.
+newVersionAvailable_toStore;تحديث الآن
+infobox_beginnerProtection_title;تمديد حماية المبتدئين
+infobox_beginnerProtection_question; هل أنت متأكّد من أنك تريد تمديد فترة الحماية؟
+infobox_beginnerProtection_description;حين تكون في فترة الحماية لا تستطيع إرسال موارد لبقية اللاعبين، أو أن تهاجمهم ولا هم يستطيعون الهجوم عليك.
+sendResources_beginnersProtection;لا يمكنك إرسال موارد إلى لاعبين آخرين أثناء تفعيل حماية المبتدئين لديك.
+sendTroops_beginnersProtection;لا يمكنك إرسال قوات إلى لاعبين آخرين أثناء تفعيل حماية المبتدئين لديك.
+sendTroops_otherBeginnersProtection;لا يمكنك إرسال قوات إلى لاعبين آخرين أثناء تواجدهم تحت حماية المبتدئين.
+buildingActivities_building_36;الفخاخ قيد الإنتاج
+tasks_collectAll;جمع الكل ({{INT}})
+auction_bidMinPlaceholder;دقيقة {{INT}}
+auction_buttonBidMinimum;الحد الأدنى للمزايدة المطلوب
+hero_adventures_available;المغامرات المتوفرة
+messages_freshDeskMessage_viewAndReplyInBrowser;عرض ورد في المتصفح
+messages_webViewRecommendation;قد لا يكون محتوى الرسالة كاملاً.\nنوصي بعرض الرسالة في المتصفح.
+rateThisApp_popup_title;هل تستمتع بتطبيقنا؟
+rateThisApp_popup_description;إذا أعجبك تطبيقنا، يُرجى تخصيص بعض الوقت لتقييمه.
+rateThisApp_popup_appreciatefeedback;ملاحظاتك مهمة بالنسبة لنا!
+rateThisApp_popup_btn_positive;إنه رائع!
+rateThisApp_popup_btn_negative;يمكن أن يكون أفضل
+rearrange_or_demolish_building;إعادة ترتيب أو هدم مبنى
+mainBuilding_buildingArrangement;ترتيب مبنى
+mainBuilding_openRearrangeMode;فتح وضع إعادة الترتيب
+mainBuilding_demolishBuildings;هدم المباني
+mainBuilding_openDemolishMode;فتح وضع الهدم
+mainBuilding_demolishBuildings_description;قم بسحب وإسقاط المباني لتغيير موقعها.
+rearrangeBuildingPopup_rearrangeDescription;إعادة ترتيب <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>؟
+rearrangeBuildingPopup_buildingsRearranged;تم إعادة ترتيب المباني
+rearrangeBuildingPopup_buildingRearranged;{{buildingName|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>{{buildingLevel}}</color>
+confirmRearrangeBuildingPopup_header;هل تريد إعادة ترتيب المبنى التالي؟
+confirmRearrangeBuildingPopup_description;يعيد ترتيب المباني المحددة لقرية <b>{{villageName}}</b>.
+demolishBuildingPopup_title;هدم مبنى
+demolishBuildingPopup_description;حدد مبنى لهدمه
+demolishBuildingPopup_descriptionWithSelection;هل تريد هدم <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>؟
+demolishBuildingPopup_demolishLevel;مستوى الهدم
+demolishBuildingPopup_demolishCompletely;الهدم التامّ
+confirmDemolishBuildingPopup_header;هل تريد هدم <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color> على الفور؟
+confirmDemolishBuildingPopup_description;يقوم على الفور بهدم المبنى المحدد وإزالته من قريتك.\nلا يمكن التراجع عن هذا الإجراء.
+characterCount;{{COUNT}}/{{MAX}} أحرف
+survey_button_description_reward;شارك في هذا الاستطلاع القصير لمساعدتنا في تحسين تطبيق Travian: Legends.\nدعمك سوف يُكافأ.
+cams_lobby_joinGameworld;انضم إلى سيرفر
+cams_lobby_gameworld_inviteOnly;بالدعوة فقط
+cams_lobby_gameworld_inviteOnlyInfo;يقتصر هذا السيرفر على اللاعبين الذين لديهم كود دعوة خاص.
+cams_lobby_gameworld_inviteCodeEnter;أدخل كود الدعوة
+cams_lobby_gameworld_inviteCodeInfo;يقتصر هذا السيرفر على اللاعبين الذين لديهم كود دعوة خاص.\nإذا كان لديك كود، يرجى إدخاله للانضمام إلى السيرفر.
+cams_lobby_gameworld_inviteCodePlaceholder;على سبيل المثال eThbt5OLyZ8D5xjhUaBAba
+cams_lobby_gameworld_inviteCodeErrorCharacterCount;كود الدعوة قصير جدًا. يرجى إدخال جميع {{MAX}} الأحرف.
+cams_lobby_gameworld_inviteCodeCooldown;فترة تهدئة كود الدعوة ({{TIME|Countdown}})
+timeCountDown;{{TIME|Countdown}}
+attestation_failed;فشل تصديق الجهاز! يُرجى استخدام جوال للعب.\nإذا استمرت هذه المشكلة، استخدم زر المساعدة أدناه للاتصال بالدعم!
+mainBuilding_demolishBuildings_notAvailable;يتطلب المبنى الرئيسي في المستوى {{INT}} لهدم المباني.
+mainBuilding_demolishBuildings_demolishing;يهدم <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> إلى <b><color={{colorValue|TextColor}}>المستوى {{buildingLevel}}</color></b> في {{timestamp|Countdown}}.
+demolishBuildingPopup_demolishing;يجري هدم <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> إلى <b><color={{colorValue|TextColor}}>المستوى {{buildingLevel}}</color></b>
+allianz.hinweis_text_NoConfederacy;من الآداب الدبلوماسية التحدث إلى تحالف آخر والتفاوض قبل إرسال عرض ميثاق عدم اعتداء (NAP).
+regions_canBeSettled;يمكن استيطانه؟
+regions_regionStatusNoColon;حالة الإقليم
+regions_top5AlliancesPopulation;<b>سكان</b> أكبر 5 تحالفات
+regions_top5AlliancesVillages;<b>قرى</b> أكبر 5 تحالفات 
+regions_neighboringRegions;المناطق المجاورة
+regions_regionPopulation;سكان الإقليم
+regions_contested;إقليم متنازع عليه
+cams_lobby_gameworld_disabledAndNotSupported;السيرفر غير قابل للعب حاليًا عبر تطبيق الجوال.
+demolishBuildingPopup_impossible;لا يمكن هدم هذا المبنى.
+city_benefits;مزايا المدينة
+city_benefits_threeAdditionalSlots;ثلاث منافذ بناء إضافية
+city_benefits_resourceFieldsLevel12;ترقية حقول الموارد إلى المستوى 12
+city_benefits_watchTowers;ترقية السور بأبراج المراقبة
+city_upgradeToACity;ترقية {{villageName}} إلى مدينة.
+city_culturePointsForNext;(التالي عند {{culturePoints}} نقطة حضارية)
+city_upgradeVillage;ترقية القرية
+city_confirm_upgradeVillage;ترقية إلى مدينة
+city_confirm_header;هل تريد ترقية {{villageName}} إلى مدينة؟
+city_confirm_description;ترقية قرية إلى مدينة تستغرق {{time}} وإحدى منافذ الاستيطان الخاصة بك.
+city_upgrading;{{villageId|VillageLink}} {{text}}
+city_upgraded;{{villageId|VillageLink}} مدينة بالفعل.
+combatSimulator_selectTarget;تحديد هدف
+mainMenu_goToLobby;الذهاب إلى المنصّة
+mainMenu_yourPlayerProfile;ملفك الشخصي كلاعب
+plus.plusAttackWarningText;تظهر لك الهجمات المعادية في قائمة القرية الجوال فقط: في استعراض القرية، سيتم تمييز سهم فتح قائمة القرى على الجانب الأيمن.
+production.crobBalanceTroopConsumptionAncientPower;مكافأة القوة القديمة
+filters_region_not_found;الإقليم غير موجود
+rallyPoint_troopsOverview_ownTroops_8;القوات الخاصة في 
+rallyPoint_troopsOverview_ownTroops_9;القوات الخاصة في 
+tradeOffice_merchantsCarryCapacity;سعة حمولة التجار:
+tradeOffice_tradeShipsCarryCapacity;سعة حمولة السفن التجارية:
+buildingActivities_building_48;شفاء القوات
+playerDetails_victorPointsPerDay;{{PERDAY}} /يوم
+allianz.numIncomingRaids;{{NUM_ATTACKS}} [NUM_ATTACKS=1:غارة نهب][NUM_ATTACKS>1:غارات نهب]
+allianz.numIncomingAttacks;{{NUM_ATTACKS}} [NUM_ATTACKS=1:هجوم][NUM_ATTACKS>1:هجمات]
+allianz.MerchantCapacityAndSpeedNew;تجارة
+alliance_regionalTabTop5Description;الأقاليم التي يكون فيها تحالفك من بين أفضل 5 تحالفات بناءً على السيطرة الإقليمية.
+alliance_regionalTabTitle;أفضل 5 إقليميًا
+alliance_regionalTabTop5Empty;- لا توجد سيطرة إقليمية كافية في أي إقليم -
+alliance_ShowDetails;عرض التفاصيل
+regions_withFactions_yourFactionHasMoreThan50PercentSecured;يسيطر تحالفك على أكثر من {{PERCENT}} من الإقليم.<br><br>أنت بحاجة إلى خزنة لتفعيل القوة الإقليمية.
+wall_upgradesInProgress;الترقيات جارية
+extension_upgradeStarted;بدأت الترقية بنجاح!
+extension_constructionList;قائمة البناء
+upgradeLevel;مستوى الترقية
+infoTab_upgradingToLevelForExtension;جاري ترقية {{buildingName}} حاليًا إلى المستوى {{level}}:
+infoTab_genericCurrentlyForExtension;مكافأة {{buildingName}} الحالية بما في ذلك {{extensionName}}:
+infoTab_genericAtLevelForExtension;عند المستوى {{a}} مع {{extensionName}} المستوى {{b}}:
+ratioValuesNumeratorBold;<b>{{a}}</b>/{{b}}
+infoTab_productionCosts_title;تكاليف الإنتاج
+harbour_shipsInConstruction;السفن قيد التشييد
+unitInfo_troopsCarriage;حتى <b>{{INT}}</b> من القوات
+unitInfo_velocityRaid;لغارات النهب:
+city_benefits_resourceFieldsLevel12inCapital;قم بترقية حقول الموارد إلى المستوى 12، ولكن يمكنك ترقيتها إلى مستوى أعلى في عاصمتك.
+infoTab_genericCurrentlyMoreExplicit;مكافأة {{buildingName}} الحالية:
+merchant_merchantOverview_noIncomingDeliveries;- لا توجد عمليات تسليم واردة. -
+merchant_merchantOverview_noOutgoingDeliveries;- لا توجد عمليات تسليم صادرة. -
+merchant_merchantOverview_incoming;وارد ({{INT}})
+merchant_merchantOverview_outgoing;صادر ({{INT}})
+achievementQuests.achQuest_03_Territory_step_01_description;إرسال قواتك لنهب/مهاجمة قرية ناتارية. يتم إنجاز هذه المهمة بمجرد وصول جيشك، حتى لو تم قتله أثناء المعركة.<br><br>يمكن تحقيق نقاط هذه المهمة {{NUMBER_OF_TASKS_PER_DAY}} مرات في اليوم.\n
+allianz.MerchantCapacityTitle_Harbours;حمولة التاجر/السفينة ومكافأة السرعة
+market_tradeRoutes_invalidTarget_Territory;لا يمكن إرسال طرق تجارية إلا إلى قراك الخاصة.
+market_selectResources;تحديد الموارد
+market_selectResources_requiredTradeShips;السفن التجارية المطلوبة
+market_resourcesWillBeSendByTradeShip;سيتم إرسال الموارد عن طريق السفن التجارية.
+manual.gid38_Territory;في المستودع يتم تخزين الموارد ( الخشب والطين والحديد) .<br><br>لا يمكن تشييد هذا المبنى إلا بوجود القوة قديمة: خريطة بناء.
+manual.gid39_Territory;في الصوامع الكبيرة يتم تخزين القمح المنتج من الحقول .<br><br>لا يمكن تشييد هذا المبنى إلا بوجود القوة قديمة: خريطة بناء.\n
+harbour_noAvailableShips;لا توجد حاليًا أي سفن متمركزة في هذا الميناء.
+harbour_destroy_title;تدمير السفن
+harbour_destroy_desc_title;تحديد نوع وعدد السفن الذي تريد تدميره.
+harbour_destroy_desc;يمكن تدمير السفن المتمركزة هنا حاليًا فقط ولن تسترد أي موارد.
+harbour_destroy_timeNotice;سيتم تدمير السفن على الفور.
+harbour_destroy_selectedTotalAmount;السفن المحددة: <b>{{AMOUNT}}</b>
+harbour_destroy_shipSelectTitle;<b>{{ShipID|TranslateSuffixFor|gid49.type_t}}</b> (<b>{{Amount}}</b> [Amount=1:السفينة][Amount>1:السفن] المتمركزة هنا)
+extension_fullyExtended;{{NAME}} تم توسعته بالكامل.
+extension_willBeFullyExtended;{{NAME}} تجري توسعته بالكامل.
+layout.directLinkMarketplaceTrader;التجار الخاملون: {{INT}}/{{INT2}}
+UnitProduction_ViewBuildingList;عرض قائمة بناء
+raidList_useRaidShipsInfo;تستخدم سفن النهب تلقائيًا عند توفرها. إذا لم يكن لديك سفن نهب، ستسافر قواتك بشكل طبيعي.
+buildingActivities_maxReached;تم الوصول إلى الحد الأقصى للعدد
+buildingActivities_building_49;سفن يجري تشييدها
+buildingActivities_buildingAdditional_48;لا توجد قوات جرحى
+residence_expansion_villagesRatio;القرى: {{COUNT}}/{{MAX}}
+residence_expansion_slotFree;المنفذ ليس قيد الاستخدام.
+residence_expansion_slotPrerequisites;المتطلبات الأساسية <b>{{BuildingID|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>مستوى {{Level}}</color></b>
+residence_expansion_culturePointsPerDay;إنتاج النقاط الحضارية في اليوم
+search_region;بحث الإقليم
+search_select_region;اختر النطاق
+statistiken.progressionStepTitle_start_achieved;بدء السيرفر في {{VALUE}}
+statistiken.progressionStepTitle_serverEnd_locked;سينتهي السيرفر في {{VALUE}}
+filters_artefact_not_found;التحفة غير موجودة
+sendTroops_settlersChangeTribe;لأول {{INT}} مستوطنات، يمكنك اختيار قبيلة القرية التي تود استيطانها. اختر بعناية.
+gid17.nextTradingRoute;يبدأ الطريق التجاري التالي في <b>{{HOUR}}</b> ويحتاج إلى <b>{{MERCHANTS}}</b> [MERCHANTS>1:تجار][MERCHANTS=1:تاجر].
+gid17.nextTradingRouteWithShips;يبدأ الطريق التجاري التالي في <b>{{HOUR}}</b> ويحتاج إلى <b>{{SHIPS}}</b> [SHIPS>1:سفن تجارية][SHIPS=1:سفينة تجارية].
+market_tradeRoutes_merchants;[merchants>1:{{merchants}} تجار][merchants=1:{{merchants}} تاجر]
+market_tradeRoutes_tradeShips;[tradeShips>1:{{tradeShips}} سفن تجارية][tradeShips=1:{{tradeShips}} سفينة تجارية]
+market_tradeRoutes_repeats;{{repeats}} ×
+market_tradeRoutes_usesShip;استخدام سفن
+troopsCheckout_shipUseInfo;{{Distance}} حقول | {{ShipID|Bold}} | حفظ {{duration|Bold}} ساعات
+troopInfoPopup_shipsTitle;السفن المتمركزة في القرية
+language_nl-NL;الهولندية
+cropfinder_cropperType;نوع القمحية:
+valueInBrackets;({{VALUE}})
+residence_settlementSlotsUsed;منافذ استيطان مستخدمة
+residence_settlementCPNeededForNextSlot;النقاط الحضارية المطلوبة لمنفذ الاستيطان التالي:
+gid27.ancient_power_detail_;{{INT}}
+artefact_effect_value;التأثير: <b>{{EFFECT}}</b>
+ancientPower_overview;القوى الإقليمية
+ancientPower_no_ancientPower;لا توجد قوة قديمة على هذا السيرفر
+ancientPower_tip_large;تتطلب القوى القديمة الكبيرة مستوى خزنة <b>20</b> وتؤثر على <b>جميع قراك</b>
+ancientPower_tip_small;تتطلب القوى القديمة الصغيرة مستوى خزنة <b>10</b> وتؤثر فقط على <b>القرية</b> حيث تكون مفعلة
+ancientPower_tip_nearby;القوى القديمة في المنطقة المحيطة بـ {{villagenamelong|Bold}}
+ancientPower_stored_title;تم تأمين القوى الإقليمية من قبل التحالف
+ancientPower_stored_noContent;لم يتم تأمين مناطق من قبل تحالفك
+ancientPower_stored_nextFree;التفعيل المجاني التالي متاح في: [isFree=0:<color={{colorValue|TextColor}}>]{{timeStamp|Countdown?Bold}}[isFree=0:</color>]
+ancientPower_stored_notActivatable;لا توجد قوة قديمة لتفعيلها.
+ancientPower_stored_activated;تم تفعيل القوة القديمة.
+ancientPower_stored_alreadyActive_account;لديك بالفعل قوة قديمة واحدة تؤثر على جميع القرى عند تفعيلها.
+ancientPower_stored_alreadyActive_village;لديك بالفعل قوة قديمة واحدة تؤثر على هذه القرية عند تفعيلها.
+ancientPower_stored_alreadyActive;هذه القوة القديمة مفعلة بالفعل.
+filters_ancientPower_not_found;القوة القديمة غير موجودة
+regions_withFactions_yourAllianceHasMoreThan50PercentSecured;تحالفك لديه سيطرة إقليمية >{{PERCENT}}%.<br><br>أنت بحاجة إلى خزنة لتفعيل القوة الإقليمية.
+language_en-NT;لغة التطوير
+settings_notNow;ليس الآن
+settings_dontAskAgain;لا تسأل مرة أخرى.
+cams_lobby_gameworld_lastPlayedTime;{{TIME}}ساعة
+cams_settings_DirectLoginTitle;تسجيل الدخول المباشر إلى السيرفر
+cams_settings_DirectLoginInfo;تخطي اختيار السيرفر في المنصة وتسجيل الدخول إلى السيرفر الذي لعبت به مؤخرًا مباشرةً عند فتح التطبيق.
+cams_settings_DirectLoginActive;تم تفعيل تسجيل الدخول المباشر
+cams_settings_DirectLoginInactive;تم تعطيل تسجيل الدخول المباشر
+cams_directLoginPopUp_Info;هل تريد تسجيل الدخول إلى سيرفرك مباشرةً عند بدء التطبيق؟
+cams_directLoginPopUp_youCanChange;يمكنك تغيير اختيارك في أي وقت في إعدادات المنصة.
+cams_directLoginPopUp_Accept;نعم، سجل دخولي مباشرة
+language_ro-RO;الرومانية
+language_hu-HU;المجرية
+language_ar-AE;عربي
+autoLoginFailed.;فشل تسجيل الدخول التلقائي.
+needInternetToPlay;تحتاج إلى اتصال بالإنترنت للعب. يرجى التحقق من اتصالك والمحاولة مرة أخرى.
+mapCellInfoWindow_removeFromLists;إزالة من جميع القوائم
+removeFromListsPopup_Title;هل تريد إزالة {{TARGETNAME}} من {{INT}} قوائم مزارع؟
+removeFromListsPopup_Description;يمكنك إضافة الهدف بشكل فردي إلى قوائم المزارع مرة أخرى في وقت لاحق.
+removeFromListsPopup_ConfirmButton;إزالة الهدف
+social_continueWith;أو الاستمرار بـ:
+social_loginWith;أو تسجيل الدخول بـ:
+social_backToRegistration;العودة للتسجيل
+social_createAccountTitle;إنشاء حساب منصَّة
+social_errorTitle_NoEmailProvided;إذن البريد الإلكتروني مفقود
+social_errorMsg_NoEmailProvided;لبدء لعب Travian: Legends، نحتاج إلى <b>إذنك بالوصول إلى عنوان بريدك الإلكتروني.</b>
+social_errorInfo_NoEmailProvided;يُرجى المحاولة مرة أخرى باستخدام إعدادات الأذونات الصحيحة أو تجربة طريقة تسجيل أخرى.
+social_errorTitle_AlreadyExists;البريد الإلكتروني مستخدم بالفعل
+social_errorMsg_AlreadyExists;عنوان البريد الإلكتروني المقدم مستخدم بالفعل لحساب منصة Travian: Legends.
+social_errorInfo_AlreadyExists;يرجى استخدام عنوان البريد الإلكتروني المرتبط بحسابك لتسجيل الدخول.
+social_acceptTOS;بالنقر على "تأكيد"، فإنك توافق على <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">الشروط والأحكام العامة</link></style> وتؤكد أنك قرأت <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">معلومات عن حق الانسحاب</link></style> و <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">سياسة الخصوصية</link></style>.
+linkNotWorking;الرابط لا يعمل
+linkNotWorkingDescription;يبدو أن هذا الرابط لا يعمل حاليًا في تطبيق Travian: Legends. قد يعمل في متصفح الإنترنت الخاص بك.
+openLinkInBrowser;فتح الرابط في المتصفح
+settings_language_useArabicNumerals_activated;استخدام الأرقام العربية الشرقية مفعل
+settings_language_useArabicNumerals_deactivated;استخدام الأرقام العربية الشرقية معطل
+artefact_inventory_active_empty;لا توجد تحف مفعلة
+social_errorTitle_Unknown;خطأ غير معلوم
+social_errorMsg_Unknown;لقد حدث خطأ غير معروف. الرجاء المحاولة مجددًا
+loadingScreen_text_01;بطلك يصلح شعره، يرجى الانتظار.
+loadingScreen_text_02;الصومعة تفيض. يقوم القرويون الآن بتخزين القمح في جيوبهم.
+loadingScreen_text_03;تقيم السفارة حفلاً – للدبلوماسيين فقط.
+loadingScreen_text_04;أصبحت نقطة التجمع الآن مكانًا للنزهة - تستمتع القوات بتناول السندويشات.
+loadingScreen_text_05;يقوم الحداد بصنع سيف... من السباغيتي.
+loadingScreen_text_06;البناؤون المحترفون يقرأون المخطط... مقلوبًا.
+loadingScreen_text_07;انضم الناتار إلى نادي كتاب القرية. لا أحد يعرف كيفية قراءة الأحرف الرونية القديمة.
+loadingScreen_text_08;يقوم الكشافة بإحصاء قوات العدو... ولكن نفدت أصابعهم.
+loadingScreen_text_09;تتعرض أعجوبة العالم للهجوم من الحمام. يجري إرسال طاقم التنظيف.
+loadingScreen_text_10;تطالب ميليشيا الرقيق بنقابة عمالية – استعدوا للإضرابات.
+loadingScreen_text_11;ترفض القوات الهجوم حتى يشرح أحدهم محاكي المعركة.
+loadingScreen_text_12;توقف القرويون عن العمل لمشاهدة قتال بين دجاجتين.
+loadingScreen_text_13;تتجادل مقاليعك حول المبنى الذي ستضربه أولاً.
+loadingScreen_text_14;يرجى التحلي بالصبر – استقل البطل السكك الحديدية الألمانية بدلاً من الحصان.
+loadingScreen_text_15;لا يخفي المخبأ فقط الموارد، ولكن أيضًا ثرثرة القرية.
+loadingScreen_text_16;تستضيف الثكنات عرضًا للمواهب – تم تأجيل التدريب.
+loadingScreen_text_17;جدارك أصبح جاهزًا تقريبًا. فقط في انتظار أن يجف الطلاء.
+loadingScreen_text_18;طالبت كتيبة الجندي الأول باستراحة لتناول القهوة قبل المسيرة.
+loadingScreen_text_19;يشرح الإغريق للرومان ما هو الحاجز – لقد مرت 3 ساعات.
+loadingScreen_text_20;رشوة التجار لتسريع عمليات التسليم.
+loadingScreen_text_21;بطلك يأخذ دورة في ركوب الخيل – قد يستغرق الأمر بعض الوقت.
+loadingScreen_text_22;التجار عالقون خلف ثور بطيء.
+loadingScreen_text_23;يقوم قادة التحالف بصياغة استراتيجية قتالية... بطلاء الأصابع.
+loadingScreen_text_24;الصومعة مليئة بالكعك – إدارة الموارد في أفضل حالاتها.
+loadingScreen_text_25;توقفت عملية الاستكشاف – هناك شيء ما في عين هايمدال.
+changeAccountNameSubtitle;تغيير اسم المستخدم و/أو الاسم المختصر.
+changeAccountNamePleaseNote;يرجى ملاحظة أنه بعد تغيير اسم حسابك، يجب عليك الانتظار {{DAYS}} [DAYS>1:أيام][DAYS=1:يوم] قبل أن تتمكن من تغييره مرة أخرى.
+changeAccountNameWaiting;يجب عليك الانتظار حتى تتمكن من تغيير اسمك مرة أخرى:
+changeAccountNameUpdated;تم تحديث اسم الحساب
+changeAccountNameUpdatedSubtitle;لقد تم تحديث اسم حسابك بنجاح إلى: <b>{{playerName}}</b>
+alliance_top10Title;أفضل 10 داخل التحالف
+gameworldCalendarNoGameworld;لم يتم العثور على سيرفرات قادمة. \nقد تكون قيد التحميل أو غير مجدولة.
+gameworldCalendar_title;تقويم السيرفر
+valueWithModifierBefore;×{{value|Round|2}}
+goldShop_purchaseCanceled;تم إلغاء عملية الشراء!
+goldShop_pendingRestored;تمت استعادة عملية الشراء السابقة الخاصة بك بنجاح.
+hero_consumablePopup_healthByOintment;الصحة المكتسبة لكل دهن شفاء:
+unknown;؟
+serverSelection_gameworldSpeed_short;×{{INT}}
+gameworldCalendarDetails_title;تفاصيل السيرفر
+gameworldCalendarDetails_shareLink;شارك رابط السيرفر
+gameWorldEndCondition;شرط نهاية السيرفر
+gameWorldEndCondition_WonderOfTheWorld;أعجوبة عالم {{Level}}
+gameWorldEndCondition_VictoryPoints;نقاط النصر
+gameWorldRestriction_InvitationCode;يقتصر هذا السيرفر على اللاعبين الذين لديهم كود دعوة خاص.
+gameWorldRestriction_MobilePlayers;هذا السيرفر متاح فقط للاعبي الجوال.
+gameWorldSpecial;هذا سيرفر خاص قد يكون متاحًا لفترة محدودة فقط وقد يحتوي على ميزات مختلفة عن السيرفرات الكلاسيكية.
+gameWorldUndefinedDetails;لم يتم تحديد كافة تفاصيل السيرفر بعد. ستتلقى إشعارًا في منصتك بمجرد تحديثه.
+bonusValueWithPercentNoSpace;+{{value}}%
+startDate;تاريخ البدء
+startTime;نقطة بداية الزمن
+UTC+1;(التوقيت العالمي الموحد +1)
+goldShop_GoldPromotion;عرض ذهب
+auction_FeePopupTitle;رسوم المزاد
+auction_FeePopupText;عليك دفع رسوم {{value}}% على مبيعات دار المزادات. عائدك هو سعر البيع مخصومًا منه رسوم المزاد.
+auction_FeePopupExample;مثال على العملية الحسابية
+auction_FeePopupSalePrice;سعر البيع
+auction_FeePopupFee;رسوم المزاد ({{value}}%)
+auction_FeePopupPayout;المدفوع
+auction_sellHouseFeeInfo;عائدك هو سعر البيع مخصومًا منه {{value}}% رسوم المزاد.
+gold_action_finishImmediately;إتمام فوري
+mapCellInfoWindow_villageReports;عرض تقارير القرية
+hero_crafting_title_refine;صقل الأداة
+hero_crafting_title_smelt;صهر الأداة
+hero_crafting_title_forge;صياغة الأداة
+hero_crafting_title_reforge;إعادة صياغة الأداة
+hero_crafting_action_refine;صقل
+hero_crafting_action_smelt;صهر
+hero_crafting_action_forge;صياغة
+hero_crafting_action_takeMaterials;أخذ ({{INT}}/{{MAX}}) من المواد
+hero_crafting_action_takeAllMaterials;أخذ المواد
+hero_crafting_action_reforge;إعادة صياغة
+hero_crafting_action_take;أخذ
+hero_crafting_action_pick;اختيار عنصر
+hero_crafting_action_equip;تجهيز
+hero_crafting_action_buy_material;شراء مواد
+hero_crafting_action_buy_item;شراء بند
+hero_crafting_action_craft_material;صهر المادة
+hero_crafting_action_moveToInventory;إلى مخزون البطل
+hero_crafting_action_select_item;اختيار
+hero_crafting_action_remove_item;إزالة
+hero_crafting_action_error_equipment;يجب أن يكون العنصر من أدوات البطل.
+hero_crafting_action_error_rarity;يجب أن يكون للعناصر نفس الندرة.
+hero_crafting_action_error_category;يجب أن تكون العناصر من نفس فئة الأدوات.
+hero_crafting_action_error_id;يجب أن تكون العناصر متطابقة.
+hero_crafting_action_error_missingItem;عنصر أو أكثر من العناصر التي قمت بتحديدها لم يعد متوفرًا.
+hero_crafting_refine_tip;يمكن صقل عناصر البطل الملحمية مع أي عنصر بطل ملحمي آخر من نفس فئة العنصر.
+hero_crafting_refine_tip_error;ليس لديك أي عناصر بطل لصقلها. اعثر على العناصر في المغامرات أو اشترِ العناصر في دار المزادات وحسنها عن طريق الصقل.
+hero_crafting_smelt_info;خذ {{INT}} من المواد[INT>1:s] الآن أو انتظر واحصل على {{MAX}}.
+hero_crafting_reforge_text;إعادة صياغة الأداة للحصول على عنصر آخر ربما يكون من ندرة وجودة مختلفة.\nبعد إعادة الصياغة، يمكنك اختيار العنصر الذي تريد أخذه أو إعادة الصياغة مرة أخرى.\nانتبه: بعد إعادة الصياغة، سيختفي العنصر في كل خطوة إعادة صياغة أخرى ولن يمكن إعادته مرة أخرى.
+inventoryItem_quality_title;الجودة
+inventoryItem_rarity_title;الندرة
+inventoryItem_rarity_quality_title;الندرة والجودة
+inventoryItem_rarity_common;شائع
+inventoryItem_rarity_uncommon;غير شائع
+inventoryItem_rarity_rare;نادر
+inventoryItem_rarity_epic;ملحمي
+inventoryItem_rarity_legendary;أسطوري
+search_for_village;البحث عن قرية
+search_for_player;البحث عن لاعب
+villageList_EditMode;وضع التعديل
+villageList_MaxGroupAmount;تم الوصول إلى الحد الأقصى لعدد مجموعات القرية.
+hero_crafting_action_error_material;يجب أن يكون العنصر مادة.
+villageList_ReorderError;هدف غير صحيح
+textMatchingInput_Title;أكِّد بكتابة "{{WORD}}"
+hero_inventory_category_empty;- لا توجد أدوات في هذه الفئة -
+hero_crafting_action_refine_success;تم صقل الأداة
+hero_crafting_action_smelt_success;تم صهر الأداة
+hero_crafting_action_forge_success;تمت صياغة الأداة
+hero_crafting_result_item_equipped;تم التزود بالأداة
+hero_crafting_result_item_taken;تم نقل الأداة إلى المخزون
+hero_crafting_result_material_taken;تم نقل المواد إلى المخزون
+hero_crafting_action_error_quality;يجب أن تكون الأدوات بنفس الجودة.
+hero_crafting_action_error_epic;يجب أن يكون عنصرًا ملحميًا آخر من نفس الفئة والجودة.
+inventoryItem_rarity_none;لا توجد ندرة
+dailyQuests_rewardOverview_short;نظرة عامة على المكافأة
+avatar_confirmation_title_delete;حذف العضوية
+avatar_confirmation_header_delete;هل تريد حذف عضويتك؟
+avatar_confirmation_infoText_delete;بعد بدء عملية الحذف، سيستغرق الأمر <b>3 أيام</b> لإكمال حذف عضويتك.\nلم يعد بإمكان العضوية قيد الحذف الوصول إلى المزادات أو الصرّاف.\nيمكنك إلغاء عملية الحذف في أي وقت هنا.
+avatar_confirmation_requiredWord_delete;حذف
+avatar_confirmation_title_respawn;إعادة ظهور العضوية
+avatar_confirmation_header_respawn;هل تريد إعادة ظهور عضويتك؟
+avatar_confirmation_infoText_respawn;سيؤدي ذلك إلى حذف كل التقدم الذي أحرزته حتى هذه النقطة ووضع قرية البداية في موقع جديد على الخريطة.\n\nسيُحوَّل جميع الذهب المُشترى تلقائيًا.
+avatar_confirmation_requiredWord_respawn;إعادة الظهور
+settings_app_title;جميع السيرفرات
+settings_app_Animations_title;الرسوم المتحركة
+settings_app_Animations_description;اختر الرسوم المتحركة التي ترغب في رؤيتها في التطبيق.
+settings_app_Animations_activated;تم تفعيل الرسوم المتحركة المتعلقة بالسحاب لمعاينة القرية/الموارد
+settings_app_Animations_deactivated;تم تعطيل الرسوم المتحركة المتعلقة بالسحاب لمعاينة القرية/الموارد
+settings_app_NightMode_title;الوضع الليلي
+settings_app_NightMode_description;أشعل أهل قريتك المشاعل، ونيران الأفران تتصدع تحت ضوء النجوم الخافت في سماء الليل.
+settings_app_NightMode_activated;تم تفعيل الوضع الليلي
+settings_app_NightMode_deactivated;تم تعطيل الوضع الليلي
+settings_app_WinterMode_title;وضع الشتاء
+settings_app_WinterMode_description;يتساقط الثلج بهدوء، يغلف القرية بصمت مخادع، حيث يبدو كل صوت وكأنه يذوب في الهواء البارد.
+settings_app_WinterMode_activated;تم تفعيل وضع الشتاء
+settings_app_WinterMode_deactivated;تم تعطيل وضع الشتاء
+settings_app_VillagePanning_title;حركة القرى/حقول الموارد
+settings_app_VillagePanning_description;يمكنك التنقل حول معاينة قريتك وحقول الموارد.
+settings_app_VillagePanning_activated;تم تفعيل الحركة
+settings_app_VillagePanning_deactivated;تم تعطيل الحركة
+settings_app_PushNotifications_title;الإشعارات الفورية العامة
+settings_app_PushNotifications_description;ابقَ على اطلاع بآخر الأخبار العامة المتعلقة بالتطبيق واللعبة من خلال الإشعارات الفورية.
+settings_app_PushNotifications_activated;تم تفعيل إشعار بدء سيرفر
+settings_app_PushNotifications_deactivated;تم تعطيل إشعار بدء سيرفر
+settings_app_EnergySaving_title;وضع توفير الطاقة
+settings_app_EnergySaving_description;حافظ على بطارية جهازك بمعدل إطارات في الثانية أقل.\nقد يؤدي تفعيل وضع توفير الطاقة إلى بعض التأخير البصري أثناء استخدام التطبيق.
+settings_app_EnergySaving_activated;تم تفعيل وضع توفير الطاقة
+settings_app_EnergySaving_deactivated;تم تعطيل وضع توفير الطاقة
+settings_app_DataSaving_title;وضع توفير بيانات الجوال
+settings_app_DataSaving_description;وفر بيانات الجوال/النطاق الترددي من خلال تقليل طلبات الخادم.\nقد يؤدي تفعيل وضع توفير بيانات الجوال إلى فترة أطول لتحديث البيانات داخل اللعبة.
+settings_app_DataSaving_activated;تم تفعيل وضع توفير بيانات الجوال
+settings_app_DataSaving_deactivated;تم تعطيل وضع توفير بيانات الجوال
+auction_FilterType;نوع الأداة
+auction_bidTooLow;المزايدة منخفضة جدًا.
+villageList_Delete_Title;حذف مجموعة القرى
+villageList_Delete_Button;حذف المجموعة
+villageList_Delete_Description;هل تريد حذف مجموعة القرى هذه؟
+villageList_Delete_Description2;لن تتأثر القرى في هذه المجموعة.
+gameworldNews_title;الأخبار والتحديثات
+moreInformation;المزيد من المعلومات
+remainingGold;الذهب المتبقي: {{goldIcon|Sprite}} {{goldAmount}}
+messages_addEmoji_title;إضافة رموز تعبيرية
+messages_select_emojis;تحديد رموز تعبيرية
+cams_resend_email_wait_error;يرجى الانتظار لإرسال بريد إلكتروني آخر.
+cams_settings_accountDeletion_infoGold;بعد حذف عضويتك، سيتم إرسال بريد إلكتروني إليك يشرح كيفية نقل ذهبك المتبقي إلى عضوية أخرى.\n<b>رجاء ملاحظة ما يلي:</b>  يمكن نقل الذهب المتبقي إلى سيرفرات معينة فقط.
+cams_changeMail_title;تغيير عنوان البريد الإلكتروني
+cams_changeMail_description;لتغيير عنوان بريدك الإلكتروني، تحتاج إلى الوصول إلى عنوان البريد الإلكتروني الحالي والجديد.
+cams_changeMail_socialHint;لن يؤثر تغيير عنوان بريدك الإلكتروني على  تسجيل دخولك باستخدام Facebook، أو Google، أو Apple.
+cams_changeMail_cantAccess;لا يمكنك الوصول إلى بريدك الإلكتروني؟
+cams_changeMail_sentVerification;لقد أرسلنا رسالة إلكترونية للتحقق إلى: {{mail}}
+cams_changeMail_checkInbox;يرجى التحقق من صندوق الوارد الخاص بك واتباع التعليمات للمتابعة.
+cams_changeMail_verificationCode;كود التحقق من البريد الإلكتروني:
+cams_changeMail_verifyButton;التحقق من البريد الإلكتروني
+cams_changeMail_enterNew_description;أدخل عنوان بريدك الإلكتروني الجديد أدناه. سنرسل رسالة إلكترونية للتحقق إلى هذا العنوان.
+cams_changeMail_enterNew_description2;اتبع التعليمات الموجودة في الرسالة الإلكترونية لإكمال عملية التغيير.
+cams_changeMail_enterNew_input;أدخل عنوان بريدك الإلكتروني الجديد:
+cams_changeMail_enterNew_input_placeholder;البريد الالكتروني الجديد
+cams_changeMail_enterNew_button;تغيير بريدك الإلكتروني
+cams_changeMail_done_title;تم تحديث البريد الإلكتروني
+cams_changeMail_done_description1;لقد تم تحديث عنوان بريدك الإلكتروني بنجاح إلى {{mail}}
+cams_changeMail_done_description2;سيتم تسجيل خروجك تلقائيًا وإعادة توجيهك إلى صفحة تسجيل الدخول. يرجى استخدام عنوان بريدك الإلكتروني الجديد لتسجيل الدخول.
+cams_changeMail_done_redirecting;إعادة التوجيه لتسجيل الدخول {{time}}...
+bonusValue;+ {{value}}
+value;{{value}}
+ratioValues_Colon;{{a}}:{{b}}
+genericValue;{{VALUE}}
+enterAmount;أدخل الكميّة
+symbol_minus;-
+applyFilter;تطبيق الفلتر
+resetFilter;إعادة تعيين الفلتر
+rallyPoint_troopsOverview_outgoingMission_50_heroCentricAdventure;يستكشف في مغامرة
+rallyPoint_troopsOverview_returningFromAdventure_heroCentricAdventure;عائد من مغامرة
+silverExchangePopup_AvailableSilver;الفضة المتاحة
+silverExchangePopup_SilverStatus;حاليًا {{AMOUNT|LongNumber}} من الفضة خاصتك مقيدة في مزادات نشطة.
+silverExchangePopup_SilverError;ليس لديك ما يكفي من الفضة لهذا الإجراء.
+silverExchangePopup_GoldError;ليس لديك ما يكفي من الذهب لهذا الإجراء.
+hero.status50_heroCentricAdventure;بطلك في طريقه إلى مغامرة.
+inventoryItem_quality_1;الجودة 1
+inventoryItem_quality_2;الجودة 2
+inventoryItem_quality_3;الجودة 3
+inventoryItem_rarity_common_headGear;عتاد رأس شائع
+inventoryItem_rarity_uncommon_headGear;عتاد رأس غير شائع
+inventoryItem_rarity_rare_headGear;عتاد رأس نادر
+inventoryItem_rarity_epic_headGear;عتاد رأس ملحمي
+inventoryItem_rarity_legendary_headGear;عتاد رأس أسطوري
+inventoryItem_rarity_common_utility;أداة شائعة
+inventoryItem_rarity_uncommon_utility;أداة غير شائعة
+inventoryItem_rarity_rare_utility;أداة نادرة
+inventoryItem_rarity_epic_utility;أداة ملحمية
+inventoryItem_rarity_legendary_utility;أداة أسطورية
+inventoryItem_rarity_common_weapon;سلاح شائع
+inventoryItem_rarity_uncommon_weapon;سلاح غير شائع
+inventoryItem_rarity_rare_weapon;سلاح نادر
+inventoryItem_rarity_epic_weapon;سلاح ملحمي
+inventoryItem_rarity_legendary_weapon;سلاح أسطوري
+inventoryItem_rarity_common_armour;درع شائع
+inventoryItem_rarity_uncommon_armour;درع غير شائع
+inventoryItem_rarity_rare_armour;درع نادر
+inventoryItem_rarity_epic_armour;درع ملحمي
+inventoryItem_rarity_legendary_armour;درع أسطوري
+inventoryItem_rarity_common_boots;حذاء شائع
+inventoryItem_rarity_uncommon_boots;حذاء غير شائع
+inventoryItem_rarity_rare_boots;حذاء نادر
+inventoryItem_rarity_epic_boots;حذاء ملحمي
+inventoryItem_rarity_legendary_boots;حذاء أسطوري
+inventoryItem_rarity_common_consumable;مستهلكة
+inventoryItem_rarity_uncommon_consumable;مستهلكات غير شائعة
+inventoryItem_rarity_rare_consumable;مستهلكات نادرة
+inventoryItem_rarity_epic_consumable;مستهلكات ملحمية
+inventoryItem_rarity_common_horse;حصان
+inventoryItem_rarity_uncommon_horse;حصان غير شائع
+inventoryItem_rarity_rare_horse;حصان نادر
+inventoryItem_rarity_epic_horse;حصان ملحمي
+inventoryItem_rarity_legendary_horse;حصان أسطوري
+inventoryItem_rarity_common_material;مستهلكة
+inventoryItem_rarity_uncommon_material;مستهلكات غير شائعة
+inventoryItem_rarity_rare_material;مستهلكات نادرة
+inventoryItem_rarity_epic_material;مستهلكات ملحمية
+search_item;البحث عن أداة
+search_select_item;تحديد أداة
+avatar_confirmation_infoText_delete_goldBough;بعد بدء عملية الحذف، سيستغرق حذف عضويتك <b>ثلاثة أيام على الأقل</b>، حيث تم استخدام هذه العضوية لشراء الذهب مؤخرًا.\nلم يعد بإمكان العضوية قيد الحذف الوصول إلى المزادات أو الصرّاف.\nيمكنك إلغاء عملية الحذف في أي وقت هنا.
+combatSimulator_addItemEffect;إضافة تأثير أداة
+combatSimulator_editItemEffect;تعديل تأثير أداة
+addItemEffect_title;إضافة تأثير أداة البطل
+addItemEffect_description;إضافة تأثيرات منفصلة لتعكس مكافآت فردية لجميع أدوات البطل الممكنة.
+addItemEffect_importHeroEquipment;استيراد أدوات البطل الخاصة
+addItemEffect_importHeroEquipment_success;تم استيراد أدوات البطل
+addItemEffect_selectEffect;تحديد تأثير أداة
+addItemEffect_selectItem;تحديد أداة
+addItemEffect_selectMagnitude;تحديد المقدار
+addItemEffect_selectUnit;اختيار وحدة
+addItemEffect_missingMagnitude;المقدار المفقود
+addItemEffect_effect_2;ضرر مخفض
+addItemEffect_effect_6;+ نقاط صحة إضافية يوميًا
+addItemEffect_effect_12;+ زيادة الهجوم والدفاع لوحدة محددة
+addItemEffect_effect_13;+ زيادة القوة القتالية
+cams_newMail_title;البريد الالكتروني الجديد
+cams_verifyNewMail_title;التحقق من عنوان البريد الإلكتروني الجديد
+cams_verifyCurrentMail_title;التحقق من عنوان البريد الإلكتروني الحالي
+auction_notEnoughSilver;ليس لديك ما يكفي من الفضة.
+auction_itemGroups;مجموعات الأدوات
+auction_unknown;؟
+auction_sortingOption_itemName;اسم العنصر
+auction_sortingOption_bidCount;عدد المزايدات
+auction_sortingOption_finishedAt;انتهى في
+auction_sortingOption_highestBid;أعلى مزايدة
+auction_sortingOption_highestBidder_player;المزايد الأعلى (اللاعب)
+auction_sortingOption_highestBidder_alliance;المزايد الأعلى (التحالف)
+auction_sortingOption_auctionAmount;عدد المزادات الحالية
+auction_sortingOption_nextFinishedAt;ينتهي التالي في
+auction_sellingPrice;سعر البيع
+auction_sellingPrice_lowest;الأدنى
+auction_sellingPrice_average;متوسط
+auction_sellingPrice_highest;الأعلى
+auction_result_won;<color={{colorValue|TextColor}}>ربحت</color>
+auction_result_lost;<color={{colorValue|TextColor}}>تمت المزاودة عليك</color>
+auction_sellingPrice_averagePrice;متوسط السعر
+auction_bidProcessTitle;عملية المزايدة
+auction_bidProcessDescription1;يمكنك تقديم مزايدات على الأدوات التي تهتم بها.
+auction_bidProcessDescription2;يجب عليك المزايدة على الأقل بالحد الأدنى للمبلغ للمزايدة على المزايدة الحالية.
+auction_maxBidFeatureTitle;ميزة الحد الأقصى للمزايدة
+auction_maxBidFeatureDescription1;يمكنك إدخال الحد الأقصى لميزانيتك لأداة ما.
+auction_maxBidFeatureDescription2;سيقوم النظام تلقائيًا بالمزايدة لأجلك حتى الحد الأقصى الذي حددته.
+auction_maxBidFeatureDescription3;تزيد مزايدتك فقط حسب الحاجة لتظل أنت صاحب أعلى مزايدة.
+auction_maxBidFeatureDescription4;تستمر المزايدة إلى أن تفوز أو يتم المزايدة عليك بما يتجاوز الحد الأقصى لميزانيتك.
+auction_auctionDurationTitle;مدة المزاد
+auction_auctionDurationDescription1;إذا كان الوقت المتبقي للمزاد أقل من {{DURATION|Duration}}، تمتد المدة إلى {{DURATION|Duration}} عندما يتغير صاحب أعلى مزايدة.
+auction_auctionWinningTitle;الفوز
+auction_auctionWinningDescription1;يفوز بالأداة صاحب أعلى مزايدة عند انتهاء المزاد.
+auction_auctionFinished;لقد انتهى المزاد بالفعل.
+auction_wasJustOutbid;أنت لست صاحب أعلى مزايدة حاليًا.
+auction_currentHighestBidder;أعلى مزايد حالي
+auction_currentHighestBid;أعلى مزايدة حالية
+auction_yourMaximumBid;أقصى مزايدة لك
+auction_showFinished;انتهى العرض
+auction_deleteAllFinished;حذف جميع المنتهي
+auction_startedAt;بدأ في: {{TIME|DateTime}} | يجري
+auction_canceled;ملغاة
+auction_finished;ينتهي في
+auction_finishedAt;انتهى: {{TIME|DateTime}}
+auction_itemAuction_title;مزاد الأداة
+auction_itemAuction_info;انقر على أداة في مخزون البطل خاصتك لبدء مزاد. يمكن للاعبين الآخرين المزايدة عليه. يستغرق المزاد ما يصل إلى {{INT}} ساعات.
+auction_whatHappensNext_title;ما الذي سيحدث بعد ذلك؟
+auction_whatHappensNext_info1;صاحب أعلى مزايدة يشتري السلعة تلقائيًا عندما ينتهي الوقت.
+auction_whatHappensNext_info2;ستحصل على الفضة عندما يتم البيع.
+auction_whatHappensNext_info3;سيتم إعلامك عندما يتم بيع سلعتك.
+auction_error_cannotSell;لا يمكن بيع هذا العنصر في بيت المزادات.
+auction_error_onlyHorse;لا يمكنك بيع حصانك الوحيد.
+auction_sellItem;بيع بند
+auction_sales;المبيعات
+auction_selectBatchSize;تحديد حجم الدفعة
+auction_selectBatchSize_batches;<b>{{COUNT}}x</b> دفعات أدوات
+auction_selectFilter_title;اختيار الفلتر
+goldShop_upTo;حتى
+shopPromotion_openShop;افتح المتجر
+shopPromotion_goldPromotionTitle;عرض ذهب نشط
+shopPromotion_limitedTimeOffer;عرض لفترة محدودة!
+shopPromotion_goldPromotionDescription;احصل على المزيد من الذهب مقابل نقودك الآن.
+shopPromotion_timeRemaining;الوقت المتبقّي:
+hero_adventures_watchAdReduceDuration_title;خفض مدة المغامرة بنسبة {{AMOUNT}}%
+hero_adventures_watchAdReduceDuration_description;شاهد فيديو لخفض مدة مغامرة بطلك <b>التالية</b>.
+hero_adventures_watchAdIncreaseDanger_title;زيادة خطر المغامرة إلى شاق
+hero_adventures_watchAdIncreaseDanger_description;شاهد فيديو لزيادة خطر <b>المغامرة العادية التالية</b> إلى شاق للمزيد من نقاط خبرة البطل.
+hero_adventures_watchAdActive;فعال للمغامرة التالية.
+hero_adventures_watchAdActiveNormal;فعال للمغامرة العادية التالية.
+hero_crafting_action_error_nonEpic;يجب أن تكون أداة مطابقة من نفس النوعية والجودة.
+berichte.adventure_heroCentric;{{VILLAGE_NAME}} تنطلق في مغامرة.
+reports_share_notShareable;لا يمكن مشاركة هذا التقرير.
+dailyQuests_dailyMaxReached;تم الوصول إلى الحد الأقصى اليومي
+achievementQuests.DailyQuest_12_description;افتح اللعبة في متصفح على جهاز الكمبيوتر الخاص بك وشاهد فيديو.
+achievementQuests.DailyQuest_12_additionalInformation;www.travian.com
+achievementQuests.DailyQuest_13_description;شاهد فيديو لترقية مبانيك بشكل أسرع، على سبيل المثال.
+achievementQuests.DailyQuest_13_additionalInformation;أو انقر على زر "مشاهدة فيديو" لمشاهدة فيديو مباشرة دون مزايا إضافية.
+addItemEffect_effect_11;+ زيادة القوة الهجومية ضد الناتار
+auction_started;بدأ المزاد
+auction_error_batchSize;لا يوجد ما يكفي من الأدوات لبيعها.
+auction_graph_notEnoughData;لا توجد بيانات كافية
+auction_emptyInventory;- ليس لديك حاليًا أي عناصر للبيع -
+RelativeTime_2_word;[data>1:{{data}} ساعات][data<2:{{data}} ساعة]
+gold_action_halveDuration;نصف المدة
+goldShop_advantage_Value_Duration;<b>+{{VALUE}}%</b> لـ <b>[DURATION>6:{{DURATION}} أيام][DURATION<7:{{DURATION|Mult|24}} ساعة]</b>
+goldShop_advantage_Value_Active;<b>+{{VALUE}}%</b> فعال إلى:
+goldShop_upgrade;ترقية
+goldShop_advantage_stillActiveFor;لا تزال فعالة إلى:
+goldShop_advantage_stillActiveFor_Value;{{DURATION}} لغاية الساعة {{TIME}}
+goldShop_advantage_videoFeatureOnCD;يمكنك تفعيل مكافأة الفيديو مرة واحدة فقط في اليوم.\nإعادة الضبط اليومي خلال: {{TIMESTAMP|Countdown}}
+goldShop_advantage_popup_mainInfoHeader_ProductionboostLumber;زيادة <b>إنتاج الخشب</b> في جميع قراك.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostClay;زيادة <b>إنتاج الطين</b> في جميع قراك.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostIron;زيادة <b>إنتاج الحديد</b> في جميع قراك.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostCrop;زيادة <b>إنتاج القمح</b> في جميع قراك.
+goldShop_advantage_popup_mainInfoBody;تنطبق المكافأة على الإنتاج الأساسي وجميع المكافآت الإضافية الأخرى أيضًا.
+goldShop_advantage_popup_premiumInfo;يمكنك تفعيل المكافأة باستخدام الذهب والحصول على +{{VALUE}}% مكافأة إنتاج.\nيمكنك تفعيل التمديد التلقائي لمدة مكافأة دائمة.
+goldShop_advantage_popup_videoFeatureInfo;أو يمكنك مشاهدة فيديو قصير والحصول على مكافأة الإنتاج الأصغر +{{VALUE}}%.\n<b>يمكن تفعيل مكافأة الفيديو مرة واحدة فقط في اليوم لكل مورد.</b>
+goldShop_advantage_popup_upgradeInfo;في أي وقت، يمكنك الترقية إلى +{{VALUE}}% مكافأة إنتاج مقابل الذهب.
+goldShop_advantage_upgradePopupInfo1;ستؤدي ترقية مكافأة الموارد إلى إزالة مكافأتك الفعالة الحالية.
+goldShop_advantage_upgradePopupInfo2;ستحصل على +{{VALUE}}% لـ [DURATION>6:{{DURATION}} أيام][DURATION<7:{{DURATION|Mult|24}} بدلاً من ذلك.
+goldShop_advantage_upgradePopup_title;مكافأة الترقية
+productionOverview_Bonus;+{{VALUE}}% إنتاج
+hero_adventures_watchAdReduceDuration_toast;تم خفض مدة المغامرة.
+hero_adventures_watchAdIncreaseDanger_toast;تمت زيادة خطر المغامرة.
+hero_consumablePopup_amountEquippedAfter;الكمية المجهزة بعد:
+hero_consumablePopup_amountEquippedAfterUse;الكمية المجهزة بعد الاستخدام:
+hero_consumablePopup_amountLeftInInventory;الكمية المتبقية في مخزون البطل:
+cams_recover_password_cooldown;يرجى الانتظار {{VALUE}}
+cams_settings_changePassword_cooldown;يرجى الانتظار {{VALUE}}
+infobox_productionBoost_upgradeButton;ترقية
+infobox_productionBoost_upgradeBonusWithGold;ترقية وتمديد مكافأتك باستخدام الذهب لتحصل على +{{PREMIUM_PERCENTAGE}}% لمدة {{TIME}} ساعات.
+infobox_productionBoost_expires;{{PERCENTAGE}} {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresLumber;تنتهي +{{PERCENTAGE}}% زيادة على إنتاج الخشب خلال {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresClay;تنتهي +{{PERCENTAGE}}% زيادة على إنتاج الطين خلال {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresIron;تنتهي +{{PERCENTAGE}}% زيادة على إنتاج الحديد خلال {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresCrop;تنتهي +{{PERCENTAGE}}% زيادة على إنتاج القمح خلال {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expired;{{PERCENTAGE}}
+infobox_productionBoost_expiredLumber;مكافأة +{{PERCENTAGE}}% على إنتاج الخشب <b>قد انتهت</b>.
+infobox_productionBoost_expiredClay;مكافأة +{{PERCENTAGE}}% على إنتاج الطين <b>قد انتهت</b>.
+infobox_productionBoost_expiredIron;مكافأة +{{PERCENTAGE}}% على إنتاج الحديد <b>قد انتهت</b>.
+infobox_productionBoost_expiredCrop;مكافأة +{{PERCENTAGE}}% على إنتاج القمح <b>قد انتهت</b>.
+infobox_levelUpProductionReminder;زيادة إنتاج الموارد في جميع قراك مقابل الذهب (+{{PREMIUM_PERCENTAGE}}%) أو من خلال مشاهدة فيديو (+{{VIDEO_PERCENTAGE}}%)
+infobox_oneTimeProductionBoostReminder;يمكنك الآن تفعيل +{{VIDEO_PERCENTAGE}}% مكافأة الموارد خاصتك مرة أخرى من خلال مشاهدة فيديو.
+travelSimulator_title;محاكي زمن السفر
+travelSimulator_sourceTribe;قبيلة الموقع المصدر
+travelSimulator_noLocationSelected;لم يتم تحديد موقع
+travelSimulator_slowestUnit_title;أبطأ وحدة
+travelSimulator_slowestUnit_settings;{{UNIT}} | السرعة: {{SPEED}}
+travelSimulator_TournamentSquareLevel_info;(فقط لمسافة تزيد عن 20 مربع)
+travelSimulator_tournamentSquareLevel_option;{{LEVEL}} | {{VALUE}}%
+travelSimulator_unitSelection_title;اختيار أبطأ وحدة
+travelSimulator_unitSelection_unitType;نوع الوحدة
+travelSimulator_unitSelection_unitSpeed;سرعة الوحدة
+travelSimulator_unitSelection_selectedUnitSpeed;السرعة: {{SPEED}}
+travelSimulator_calculation_land;<b>اليابسة:</b> {{VALUE}}
+travelSimulator_calculation_sea;<b>البحر:</b> {{VALUE}}
+travelSimulator_heroAttending;وجود البطل
+travelSimulator_vikingRaidBonus;مكافأة نهب الڤايكنج
+travelSimulator_troopSpeedArtefactEffect;تأثير تحفة قوات سريعة
+travelSimulator_toast_selectSourceAndTarget;اختر مصدرًا وموقعًا مستهدفًا صالحين!
+travelSimulator_toast_selectSourceTribe;اختر قبيلة صالحة!
+IOSAppTrackingTransparencyMessage;الضغط على "سماح" يستخدم معلومات الجهاز للحصول على محتوى إعلاني أكثر ملاءمة
+goldShop_advantage_Value_Duration_Hours;<b>+{{VALUE}}%</b> لـ <b>{{DURATION}} ساعات</b>
+travelSimulator_tournamentSquareLevel_title;مستوى ساحة البطولة
+travelSimulator_troopSpeedAncientPower;القوة القديمة لسرعة القوات
+RelativeTime_Formatted;[weeks>0:{{weeks}}أسبوع][days>0:{{days}}يوم]{{data}}
+settings_account_tab;العضوية
+settings_notification_tab;الإشعارات
+settings_app_PushNotifications_popup_title;الإشعارات
+settings_app_PushNotifications_popup_header;اسمح لنا بإرسال إشعارات إليك
+settings_app_PushNotifications_popup_info1;لتلقي إشعارات فورية بالأخبار والمعلومات المفيدة حول اللعبة، يرجى السماح بتلقي الإشعارات منا أولاً.
+settings_app_PushNotifications_popup_info2;يمكنك تمكين الإشعارات في إعدادات تطبيق جهازك.
+settings_app_PushNotifications_popup_info3;يمكنك أيضًا العودة إلى هنا متى ما شئت لتعطيل الإشعارات مرة أخرى.
+settings_app_PushNotifications_popup_action_button;فتح إعدادات التطبيق
+ratioValueMax;/ {{a}}
+market_sendResources_completed;اكتمل
+market_sendResources_villageNotFound;غير موجودة لا يمكنك إرسال الموارد إلا إلى قراك الخاصة، أو أعضاء تحالفك، أو أعضاء رابطتك.
+no_ads_popup_title;لا توجد فيديوهات إعلانية
+no_ads_popup_header;حدثت مشكلة أثناء محاولة عرض الفيديو الإعلاني.
+no_ads_popup_info1;قد يكون هناك عدة أسباب لذلك:
+no_ads_popup_info2; • لا توجد إعلانات متوفرة حاليًا في مجموعة الإعلانات لمنطقتك.
+no_ads_popup_info3; • تحد إعدادات الخصوصية لديك من عدد الإعلانات التي يمكن تقديمها.
+no_ads_popup_info4; • مشكلات فنية في تطبيقنا أو مزود الإعلانات خاصتنا.
+no_ads_popup_settings_msg;يرجى التأكد من السماح بالإعلانات المخصصة في إعدادات الخصوصية خاصتك.
+no_ads_popup_support_msg;يرجى الاتصال بدعمنا إذا استمرت المشكلة.
+no_ads_popup_support_button;اتصل بنا
+city_upgradeToACity_wwVillageNotUpgradeable;لا يمكن ترقية قرى أعجوبة العالم إلى مدن.
+travelSimulator_selectMagnitude;تحديد المقدار
+marketplace_merchantsOverview_returningTo;العودة إلى <b>{{Village}}</b> الخاصة بـ <b>{{Player}}</b>
+market_sendResources_sendAgain;إرسال مرة أخرى
+search_village_notFound;غير موجودة لا يمكنك إرسال الموارد إلا إلى قراك الخاصة، أو أعضاء تحالفك، أو أعضاء رابطتك.
+settings_app_AnimationsPayoffs_activated;تم تفعيل الرسوم المتحركة لإرسال القوات/التجار
+settings_app_AnimationsPayoffs_deactivated;تم تعطيل الرسوم المتحركة لإرسال القوات/التجار
+hero_resourceTransferPopup_empty;لا توجد موارد لنقلها من مخزون البطل.
+hero_toast_appearanceChanged;تم تغيير المظهر
+alliance_editMemberPopup_customNote;ملاحظة مخصصة
+alliance_editMemberPopup_titleOfRole;لقب المنصب
+alliance_editMemberPopup_setSpecialization;تحديد التخصص
+alliance_role_offensive;هجومي
+alliance_role_defensive;دفاعي
+alliance_role_hybrid;مختلط
+alliance_role_scout;كشاف
+alliance_role_support;داعم
+alliance_role_wow_hammer;مطرقة أعجوبة عالم
+alliance_role_none;لا شيء
+ad_fallback_popup_title;احصل على مكافأتك
+ad_fallback_popup_info;لا تتوفر حاليا أي فيديوهات إعلانية، لكننا ما زلنا نرغب في مكافأتك على ولائك! فضلا انتظر لحظة ريثما نحضر لك مكافأة.
+ad_fallback_popup_rewardGranted;تم منح المكافأة
+ad_fallback_popup_claim;احصل على المكافأة
+ad_fallback_popup_closeWarning;الإغلاق المبكر لهذه الشاشة سيؤدي إلى إلغاء المكافأة
+gameplay_tip_1;يمكنك تدريب المستوطنين في السكن أو القصر (الأول متاح عند المستوى 10).
+gameplay_tip_2;يمكنك بناء قصر واحد فقط لكل عضوية. يوفر حتى ثلاثة منافذ توسع، بينما يوفر السكن اثنين فقط.
+gameplay_tip_3;لتغيير عاصمتك، عليك بناء قصر في قرية جديدة. يرجى ملاحظة أن المباني الحصرية في عاصمتك القديمة ستُفقد أو تُخفَّض مستوياتها.
+gameplay_tip_4;يمكنك استيطان أو احتلال قرية أخرى إذا كان لديك ما يكفي من النقاط الحضارية.
+gameplay_tip_5;احصل على النقاط الحضارية من خلال ترقية المباني وإقامة الاحتفالات في مبنى البلدية.
+gameplay_tip_6;يمكن إقامة الاحتفالات الكبيرة في مبنى البلدية (المستوى 10)، وهي تمنح المزيد من النقاط الحضارية لكنها تكلف مزيدًا من الموارد.
+gameplay_tip_7;لاحتلال قرية، يجب تخفيض ولائها إلى الصفر باستخدام الزعماء المدربين في السكن أو القصر.
+gameplay_tip_8;ابحث الزعماء في الأكاديمية قبل تدريبهم في السكن أو القصر.
+gameplay_tip_9;يمكنك احتلال قرى من الناتار أو من لاعبين آخرين.
+gameplay_tip_10;لا يمكن للاعبين الآخرين احتلال عاصمتك.
+gameplay_tip_11;استخدم أداة البحث عن القمحيات لتحديد القرى التي تحتوي على 9 أو 15 حقلًا من القمح والقادرة على دعم جيش أكبر.
+gameplay_tip_12;يمكن ترقية حقول الموارد في عاصمتك إلى مستويات أعلى مما هو ممكن في القرى الأخرى.
+gameplay_tip_13;أرسل الموارد إلى القرى الصديقة عبر السوق.
+gameplay_tip_14;يمكنك مبادلة الموارد مع لاعبين آخرين في السوق.
+gameplay_tip_15;زد حمولة التجار لديك من خلال تطوير المكتب التجاري.
+gameplay_tip_16;قم بتطوير قصر البطل إلى المستوى 10 لتتمكن من احتلال واحة وزيادة إنتاجك من الموارد.
+gameplay_tip_17;قم بترقية قوة قواتك في أفران صهر الحديد. تطبق هذه الترقيات فورًا على جميع القوات من هذا النوع، بما في ذلك القوات التي تم تدريبها مسبقًا.
+gameplay_tip_18;استخدم محاكي المعركة لتقدير نتائج المعركة قبل الهجوم. كلما أضفت تفاصيل أكثر للمحاكاة، ستزداد دقة النتيجة.
+gameplay_tip_19;مع نادي الذهب، يمكنك تفعيل هروب القوات في عاصمتك لإنقاذ جيشك تلقائيًا من الهجمات الواردة.
+gameplay_tip_20;عندما تعود قواتك إلى موطنها، يتم تعطيل هروب القوات مؤقتًا لمدة 10 ثوانٍ.
+gameplay_tip_21;قم بترقية كشافيك في أفران صهر الحديد لتحسين قدراتهم التجسسية.
+gameplay_tip_22;تزيد الأسوار من دفاع قريتك بشكل كبير.
+gameplay_tip_23;ابنِ مخابئ لحماية مواردك من غارات العدو.
+gameplay_tip_24;يمكن للإغريق تدريب صيادين لأسر المهاجمين قبل بدء المعركة.
+gameplay_tip_25;لتحرير القوات المأسورة، عليك شن هجوم عادي ناجح على القرية التي أسرتهم.
+gameplay_tip_26;يمكن للاعبين المهاجمين تحرير 75% من القوات المأسورة، لكن يمكن للمدافع اختيار إطلاق سراح 100% منها سلميًا.
+gameplay_tip_27;ابنِ مستشفى لعلاج ما يصل إلى 40% من قواتك المفقودة في المعركة.
+gameplay_tip_28;يمكن للإغريق تدريب صياد لأسر القوات المهاجمة حتى قبل بدء المعركة.
+gameplay_tip_29;ابنِ الحجار في عاصمتك لزيادة متانة مبانيك في مواجهة المقاليع ومدقات رأس الكبش.
+gameplay_tip_30;يمكنك ضبط بطلك على الاختباء أثناء هجمات العدو على قريتك الرئيسية لإبقائه في أمان.
+gameplay_tip_31;اهزم الحيوانات في الواحات غير المحتلة للحصول على موارد إضافية. الحيوانات الأقوى تمنح المزيد من الموارد.
+gameplay_tip_32;اهزم الحيوانات في الواحات غير المحتلة باستخدام بطلك للحصول على الخبرة.
+gameplay_tip_33;استخدم الأقفاص لأسر الحيوانات في الواحات غير المحتلة وتعزيز قريتك.
+gameplay_tip_34;تزود بعناصر مثل دهن الشفاء أو الدروع الخاصة لتسريع عملية تجديد صحة بطلك.
+gameplay_tip_35;أنعش بطلك باستخدام الموارد على مدى فترة زمنية، أو فورًا باستخدام إكسير الحياة.
+gameplay_tip_36;يمكنك هدم المباني بمجرد أن يصل مبناك الرئيسي إلى مستوى 10.
+gameplay_tip_37;ابنِ سفارة للانضمام إلى تحالف أو أسس تحالف خاص بك.
+vacationMode_title;وضع الإجازة
+vacationMode_vacation;إجازة
+vacationMode_vacationModeActive;وضع الإجازة مفعل
+vacationMode_info;استخدم وضع الإجازة لحماية قراك أثناء غيابك. يتم تعطيل الإجراءات التالية أثناء وضع الإجازة:
+vacationMode_deactivated_action1;إرسال أو استقبال القوات
+vacationMode_deactivated_action2;الذهاب في مغامرات باستخدام بطلك
+vacationMode_deactivated_action3;بدء أوامر بناء جديدة أو تدريب القوات
+vacationMode_deactivated_action4;استخدام السوق (بما في ذلك الطرق التجارية)
+vacationMode_deactivated_action5;إقامة الاحتفالات، وبدء الأبحاث أو إجراء الترقيات
+vacationMode_deactivated_action6;إنشاء أو الانضمام إلى تحالفات
+vacationMode_deactivated_action7;المساهمة بالموارد في مكافآت التحالف
+vacationMode_deactivated_action8;المشاركة في المزادات
+vacationMode_deactivated_action9;تغيير عاصمتك
+vacationMode_deactivated_action10;حذف حسابك
+vacationMode_deactivated_territory_action1;ترقية قرية إلى مدينة
+vacationMode_deactivated_territory_action2;لا يساهم حسابك في عدد سكان الإقليم التابع لتحالفك ولا تحصل قراك على أي نقاط نصر
+vacationMode_conditions_title;استوفيت شروط الإجازة
+vacationMode_duration_info;كم يومًا يجب أن يستمر وضع الإجازة؟
+vacationMode_durationUntil;إجازة حتى <b>{{DATE}}</b>
+vacationMode_availableDays;الأيام المتاحة <b>{{AVAILABLE}}/{{TOTAL}}</b>
+vacationMode_startButton;ادخل وضع الإجازة الآن
+vacationMode_error_noCancelTime;لا يمكنك إيقاف وضع الإجازة إلا بعد {{HOURS}} ساعة
+vacationMode_error_missingRequirement;أكمل جميع المتطلبات للدخول في وضع الإجازة
+vacationMode_error_noVacationDaysLeft;ليس لديك أي أيام متاحة للدخول في وضع الإجازة
+vacationMode_error_cooldown;لا يمكنك بدء وضع الإجازة إلا بعد مرور {{HOURS}} ساعة على انتهاء الأخير
+vacationMode_abortSuccess;تم إيقاف وضع الإجازة!
+vacationMode_remainingDays;الأيام المتبقية في وضع الإجازة
+vacationMode_runsUntil;وضع الإجازة مستمر حتى
+vacationMode_abortInfo;يمكنك إيقاف وضع الإجازة في أقرب وقت ممكن في <b>{{DATE}}</b>
+vacationMode_abortAvailable;يمكنك إلغاء وضع الإجازة الآن
+vacationMode_abortConfirmHeader;هل تريد فعلاً إلغاء وضع الإجازة؟
+vacationMode_abortConfirmInfo;سيتم إعادة الأيام غير المستخدمة. لا يمكن التراجع عن هذا الإجراء.
+vacationMode_startCooldownInfo;يمكنك بدء وضع الإجازة في أقرب وقت ممكن في <b>{{DATE}}</b>
+vacationMode_abortButton;إيقاف وضع الإجازة
+vacationMode_conditions_has_outgoing_troops;لا توجد قوات مغادرة
+vacationMode_conditions_has_incoming_troops;لا توجد قوات واردة إلى قراك أو واحاتك
+vacationMode_conditions_has_reinforcing_troops_for;لا توجد تعزيزات مرسلة إلى لاعبين آخرين
+vacationMode_conditions_has_reinforcing_troops_from;لا توجد تعزيزات من لاعبين آخرين في قراك أو واحاتك
+vacationMode_conditions_has_ww_village;لا تمتلك قرية أعجوبة عالم
+vacationMode_conditions_has_artifact_village;لا تمتلك قرية تحفة
+vacationMode_conditions_has_beginners_protection;لا توجد حماية مبتدئين
+vacationMode_conditions_has_trapped_troops;لا توجد أي قوات في فخاخك، ولا أي من قواتك، بما في ذلك بطلك، مأسورة
+vacationMode_conditions_has_deletion_event;لم يتم التأشير على عضويتك بالحذف.
+vacationMode_conditions_has_conquered_oase;لم تقم باحتلال أي واحة خلال الساعات الـ{{HOURS}} الماضية. يمكنك الدخول في وضع إجازة بعد مرور {{HOURS}} ساعة منذ احتلال واحة أو بعد خسارتها.
+vacationModePopup_info;سيكون حسابك محميًا أثناء وضع الإجازة. ومع ذلك، سيستمر إنتاج الموارد لديك، وستواصل قواتك استهلاك القمح. <color=red>قد يؤدي ذلك إلى موت القوات جوعًا.</color>
+vacationModePopup_start_info;هل أنت متأكد من رغبتك في الدخول في وضع إجازة لمدة <b>{{DAYS}}</b> [DAYS>1:أيام][DAYS<2:يوم]؟ يمكن إلغاء وضع الإجازة باستخدام الذهب بعد فترة تهدئة مدتها {{COOLDOWN}} ساعة.
+vacationModePopup_troopConsumption;استهلاك القوات الخاصة
+vacationModePopup_starvationEstimate;أقرب وقت لبدء الموت جوعًا
+vacationModePopup_starvationTitle;استهلاك القوات الخاصة
+goldTransfer_accept_gift;نعم، انقل الذهب
+goldTransfer_decline_gift;لا، ارفض الذهب
+goldTransfer_accepted_toast;تم قبول نقل الذهب.
+goldTransfer_declined_toast;تم رفض نقل الذهب.
+smithy_requirementsNotSatisfied;لم يتم استيفاء متطلبات ترقية هذه الوحدة
+vacationModeLobby_status;في إجازة
+block_vacationMode_toast;لا يمكنك القيام بذلك أثناء وضع الإجازة.
+goldTransfer_verifyOwnership_title;التحقق من الملكية
+goldTransfer_verifyOwnership_description;لنقل أي ذهب غير منفق اشتريته إلى عضوية حالية، يرجى أولاً التحقق من ملكيتك للذهب عن طريق إدخال عنوان البريد الإلكتروني الذي تم إرسال كود النقل إليه.
+goldTransfer_verifyOwnership_emailPlaceholder;عنوان البريد الإلكتروني
+goldTransfer_verifyOwnership_errorNoEmail;يرجى إدخال عنوان بريدك الإلكتروني.
+goldTransfer_verifyOwnership_errorAlreadyUsed;رابط نقل الذهب هذا مُستخدَم بالفعل.
+goldTransfer_verifyOwnership_errorInUse;رابط نقل الذهب هذا غير صحيح.
+goldTransfer_verifyOwnership_verifyButton;تحقق
+goldTransfer_selectTargetAvatar_title;حدد العضوية المستهدفة
+goldTransfer_selectTargetAvatar_description;يرجى تحديد العضوية التي ترغب في نقل الذهب إليها.
+goldTransfer_transferableGold_label;الذهب القابل للنقل:
+goldTransfer_enterAvatarName_header;إدخال اسم العضوية
+goldTransfer_avatarName_placeholder;اسم الحساب:
+goldTransfer_searchAvatar_Button;البحث عن عضوية
+goldTransfer_searchAvatarNothingFound_error;لم يتم العثور على عضوية نشطة بهذا الاسم.
+goldTransfer_ownAvatarList_header;اختر من عضوياتك النشطة ({{account}})
+goldTransfer_selectOwnAvatarConfirm_Button;تحديد العضوية
+goldTransfer_selectGameworld_title;يُرجى اختيار السيرفر
+goldTransfer_selectGameworld_description;تم العثور على اسم العضوية في عدة سيرفرات. لا يمكنك نقل الذهب إلا إلى عضوية واحدة. يرجى نحديد السيرفر.
+goldTransfer_selectGameworldConfirm_Button;يُرجى اختيار السيرفر
+goldTransfer_changeAvatar_Button;تغيير اسم العضوية
+goldTransfer_confirm_title;تأكيد النقل
+goldTransfer_confirm_Button;تأكيد النقل
+goldTransfer_confirmAvatarOnOneWorld_info;تم العثور على اسم العضوية في سيرفر واحد:
+goldTransfer_confirmAvatarName_prefix;عضوية:
+goldTransfer_confirmGameworld_prefix;السيرفر:
+goldTransfer_transferComplete_title;تم النقل بنجاح
+goldTransfer_transferComplete_description;تم نقل ذهبك بنجاح إلى <b>{{avatarname}}</b> في <b>{{gameworldname}}.</b>
+goldTransfer_transferComplete_returnButton;العودة إلى اللعبة
+cams_settings_accountDeletion_information_warning_v2;سيؤدي هذا الإجراء إلى حذف حسابك نهائيًا. سيتم فقدان المحتوى التالي المرتبط بحسابك:\n<indent=0.5em>•  جميع العضويات التابعة لحسابك\n•  جميع الميداليات التي حصلت عليها في حسابك</indent>\n\nللتأكيد، اكتب "حذف" في الحقل أدناه.
+mapMarkers_popupTitle;وضع علامة
+mapMarkers_markerType;نوع العلامة
+mapMarkers_markerColor;لون العلامة
+mapMarkers_setAlliance;وضع علامة لتحالفي
+mapMarkers_type_field;حقل
+mapMarkers_addMsg_success;تمت إضافة العلامة بنجاح!
+mapMarkers_saveMsg_success;تم حفظ العلامة بنجاح!
+mapMarkers_noPermission_error;طلب الإذن من قائد تحالفك.
+mapMarkers_marker;علامة
+mapMarkers_markers;علامات
+mapMarkers_listAllianceTitle;علامات التحالف
+mapMarkers_listPlayerTitle;علامات اللاعبين
+mapMarkers_listAlliances;التحالف
+mapMarkers_listPlayers;اللاعب
+mapMarkers_listFlags;الأعلام
+mapMarkers_deleteMarker;حذف العلامة
+mapMarkers_deleteMarkerMessage;هل تريد حذف هذه العلامة؟
+mapMarkers_showOnMap;أظهر علاماتي على الخريطة
+embassy_general_subtab;عام
+embassy_villagesNearby_subtab;القرى المجاورة
+embassy_villagesNearby_listHeader;قرى التحالف/الرابطة

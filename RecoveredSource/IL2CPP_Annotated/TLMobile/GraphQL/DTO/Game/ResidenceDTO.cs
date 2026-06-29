@@ -1,0 +1,20 @@
+﻿// TLMobile.dll - TLMobile.GraphQL.DTO.Game.ResidenceDTO
+// Extracted from IL2CPP metadata v39
+// Method count: 2
+// NOTE: Method bodies are stubs - require native decompilation
+
+namespace TLMobile.GraphQL.DTO.Game
+{
+    public class ResidenceDTO
+    {
+        #region Constructors
+        // 0x04F9F0C0
+        public ResidenceDTO() { }
+        #endregion
+
+        #region Methods
+        // 0x04F9F00C: Void OnError(StreamingContext, ErrorContext)
+        public void OnError(StreamingContext, ErrorContext) { return default; }
+        #endregion
+    }
+}

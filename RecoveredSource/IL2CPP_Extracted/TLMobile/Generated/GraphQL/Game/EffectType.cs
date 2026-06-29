@@ -1,0 +1,23 @@
+// Extracted from IL2CPP metadata v39 via Il2CppInspectorRedux
+// Namespace: TLMobile.Generated.GraphQL.Game
+// Source: global-metadata.dat (Travian Legends Mobile v3.13.0)
+
+	public enum EffectType
+	{
+		MORE_TROOPS_SPEED = 0,
+		MORE_TROOPS_SPEED_BETWEEN_CONFEDERACY = 1,
+		LESS_DAMAGE = 2,
+		LESS_TIME_IN_BARRACK = 3,
+		LESS_TIME_IN_STABLE = 4,
+		MORE_EXPERIENCE = 5,
+		MORE_HEALTH_POINTS = 6,
+		MORE_MOUNTED_HERO_SPEED = 7,
+		MORE_ARMY_SPEED = 8,
+		MORE_SPEED_BETWEEN_OWN_VILLAGES = 9,
+		MORE_CULTURE_POINTS = 10,
+		MORE_ATTACK_NATARS = 11,
+		MORE_UNIT_ATTACK_DEFENCE = 12,
+		MORE_FIGHTING_STRENGTH = 13,
+		LESS_ENEMY_CRANNY = 14,
+		MORE_RETURN_SPEED = 15
+	}

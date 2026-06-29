@@ -1,0 +1,2068 @@
+detail_window_header_title;{{buildingName|TranslateSuffixFor|allgemein.gid}}
+;{{INT}}
+levelWithValue;Nivå {{level}}
+valueWithPercent;{{value}} %
+valueAsRankingPosition;{{value}}.
+valueChangeInBrackets;({{change|Sign}})
+valueChangeInBracketsWithPercent;({{change|Sign}}%)
+ratioValues;{{a}}/{{b}}
+coordinates;<nobr>({{x}}|{{y}})</nobr>
+village_with_coordinates;{{villageName}} <nobr>({{x}}|{{y}})</nobr>
+village_with_clickable_coordinates;{{villageName}} {{mapId|Coordinates}}
+valuePerHour;{{a}}/tim
+back;Tillbaka
+fill;Fyll
+hero;Hjälte
+done;Klar
+remove;Ta bort
+prerequisites;Krav:
+newAmount;Nytt belopp
+before;före
+after;efter
+permissions;Rättigheter
+changesSaved;Ändringar har sparats!
+genericError;Oväntat fel
+allianceTagInBrackets;[{{allianceId|AllianceLink}}]
+autocompleteNoResult;Ingen matchning hittades
+medalAdded;Medalj har lagts till
+continueEdit;Fortsätt redigera
+levelUp;Nivåökning!
+non_existing_object;[?]
+sorting;Sortera
+copiedToClipboard;Kopierat till urklipp
+maximumLengthError;Maximal längd: {{max}}.
+sortingOptions;Sorteringsalternativ
+WIP_comingSoon;Funktionen kommer snart!
+upgradeTab_fastForward_button;{{Percent}}% snabbare
+upgradeTab_masterBuilder_button;Konstruera med \nbyggnadsmästare {{goldIcon|Sprite}}{{goldCost}}
+upgradeTab_adBoostPopup_boost;{{BOOST}}-procentig ökning
+infoTab_upgradingToLevel;Under uppbyggnad till nivå {{level}}:
+infoTab_genericCurrently;För närvarande:
+infoTab_genericAtLevel;På nivå {{INT}}:
+infoTab_genericEffect;{{INT}}
+infoTab_currentProduction;Nuvarande produktion:
+infoTab_productionAtLevel;Produktion vid nivå {{INT}}:
+infoTab_effectPerHour;{{INT}} per timme
+networkIssues;Tappade anslutningen till spelservern.
+cantLoadServerList;Det gick inte att ladda serverlistan på grund av nätverksproblem. Kontrollera att enheten är ansluten till internet och försök igen.
+barracks_TrainTroops_Action;Träna trupper
+barracks_ViewTrainingsList;Visa utbildningslista
+barracks_unitNeedsToBeResearched;Enheten måste först forskas fram i
+barracks_requiresLabel;Kräver:
+barracks_trainingCosts;Kostnader för att träna trupper:
+barracks_troopsInTraining;Trupper som tränas
+training_started;Träningen har påbörjats!
+targetSelection_relationLabel;Status:
+targetSelection_selectedVillage;Vald by
+targetSelection_noSelectedVillage;Ingen by har valts
+targetSelection_ownVillages;Egna byar
+targetSelection_relation0;Neutrala
+targetSelection_relation1;Vänlig
+targetSelection_relation2;Egen allians
+targetSelection_relation3;Egen by
+targetSelection_alreadyThere_troops;Dina trupper är redan där.
+targetSelection_alreadyThere_merchants;Dina handelsmän är redan där.
+rallyPoint_button_confirmTarget;Bekräfta målet
+rallyPoint_button_prepareTroops;Förbered trupper
+rallyPoint_button_updateWave;Uppdatera våg
+rallyPoint_button_copyWave;Kopiera våg
+rallyPoint_button_newWave;Lägg till en ny våg
+rallyPoint_sendTroops_chooseDestination;Skicka trupper – Välj destination
+rallyPoint_sendTroops_sendTroopAction_1;Skicka trupper – Bekräfta
+rallyPoint_sendTroops_sendTroopAction_3;Skicka trupper – Bekräfta
+rallyPoint_sendTroops_sendTroopAction_4;Skicka trupper – Bekräfta
+rallyPoint_sendTroops_sendTroopAction_5;Skicka trupper – Bekräfta
+rallyPoint_sendTroops_sendTroopAction_72;Skicka vidare trupper – Bekräfta
+rallyPoint_sendTroops_sendTroopAction_9;Dra tillbaka trupper - Bekräfta
+rallyPoint_sendTroops_sendTroopAction_10;Grunda en ny by
+rallyPoint_sendTroops_sendTroopButton_1;Sänd trupper
+rallyPoint_sendTroops_sendTroopButton_3;Sänd trupper
+rallyPoint_sendTroops_sendTroopButton_4;Sänd trupper
+rallyPoint_sendTroops_sendTroopButton_5;Sänd trupper
+rallyPoint_sendTroops_sendTroopButton_72;Skicka vidare trupper
+rallyPoint_sendTroops_sendTroopButton_9;Skicka tillbaka trupper
+rallyPoint_sendTroops_sendTroopButton_10;Grunda en ny by
+rallyPoint_sendTroops_coordinateX;<b>X</b>-koordinat:
+rallyPoint_sendTroops_coordinateY;<b>Y</b>-koordinat:
+rallyPoint_sendTroops_selectOnMap;Eller välj en plats på kartan:
+rallyPoint_sendTroops_arrivalTime;<b>{{hoursLeft|Duration}}</b> vid <b>{{hoursLeft|TimeCountUp}}</b>
+rallyPoint_sendTroops_catapultTargetPopup;Välj katapultmål
+rallyPoint_sendTroops_catapultTarget_category_1;Infrastrukturbyggnader
+rallyPoint_sendTroops_catapultTarget_category_2;Militära byggnader
+rallyPoint_sendTroops_catapultTarget_category_3;Råvarubyggnader
+rallyPoint_sendTroops_catapultTarget_random;Slumpvald
+rallyPoint_sendTroops_catapultTarget_noBuilding;Välj byggnad
+rallyPoint_sendTroops_catapultTarget_recentTargets;Senast valda:
+rallyPoint_sendTroops_changeHeroHomeVillage;Ändra hjältens hemby
+rallyPoint_sendTroops_attackNoSelection;Välj anfallstyp
+rallyPoint_sendTroops_movementType_5;Förstärkningar
+rallyPoint_sendTroops_movementType_3;Anfall
+rallyPoint_sendTroops_movementType_4;Plundring
+rallyPoint_sendTroops_attackForwarding;Vidaresändning av trupper
+rallyPoint_sendTroops_noTroopsSelected;- Inga trupper har valts -
+rallyPoint_sendTroops_noTroopsAvailable;Kan inte skicka trupper. Inga trupper tillgängliga i den här byn.
+rallyPoint_sendTroops_forwardingVillageError;Trupper kan endast skickas vidare till alliansmedlemmar eller egna byar.
+rallyPoint_sendTroops_forwardingDestination;Skicka vidare trupper – Välj mål
+rallyPoint_sendTroops_WaveRemoved;Vågen har tagits bort
+rallyPoint_sendTroops_maxWaves;Maximalt antal vågor har uppnåtts
+rallyPoint_sendTroops_notEnoughTroopsToCopy;Inte tillräckligt med trupper för att kopiera vågen.
+rallyPoint_sendTroops_troopsSent;Trupper skickade!
+rallyPoint_sendTroops_toOverview;Till översikten
+rallyPoint_sendTroops_backToVillage;Tillbaka till byn
+rallyPoint_sendTroops_mission;Uppdrag:
+rallyPoint_troopsOverview_1;Inkommande anfall och plundringar
+rallyPoint_troopsOverview_2;Utgående anfall och plundringar
+rallyPoint_troopsOverview_3;Återvändande trupper
+rallyPoint_troopsOverview_4;Egna trupper i den här byn och dess oaser
+rallyPoint_troopsOverview_5;Främmande trupper i byn
+rallyPoint_troopsOverview_6;Egna trupper i andra byar eller oaser
+rallyPoint_troopsOverview_7;Inkommande förstärkningar
+rallyPoint_troopsOverview_8;Utgående förstärkningar
+rallyPoint_troopsOverview_9;Utgående förstärkningar
+rallyPoint_troopsOverview;Truppöversikt
+rallyPoint_troopsOverview_consumption;Konsumtion: {{cropConsumption|ShortenNumber|10000}}  {{iconName|Sprite}} per timme
+rallyPoint_troopsOverview_arrivalTime;Ankommer om: <b>{{Duration|Countdown}}</b> vid <b>{{date|Time}}</b> 
+rallyPoint_troopsOverview_incomingMission_3;Inkommande anfall från: 
+rallyPoint_troopsOverview_incomingMission_4;Inkommande plundringar från: 
+rallyPoint_troopsOverview_outgoingMission_3;Attacker 
+rallyPoint_troopsOverview_outgoingMission_4;Plundringar 
+rallyPoint_troopsOverview_outgoingMission_5;Förstärker 
+rallyPoint_troopsOverview_outgoingMission_50;Dra ut på äventyr till 
+rallyPoint_troopsOverview_outgoingMission_72;Trupper har skickats vidare till 
+rallyPoint_troopsOverview_outgoingMission_10;Grunda en ny by 
+rallyPoint_troopsOverview_outgoingMission_40;Trupper flyr till skogsgrotta
+rallyPoint_troopsOverview_returningMission;Återvänder från: 
+rallyPoint_troopsOverview_ownTroops_1;Egna trupper i 
+rallyPoint_troopsOverview_ownTroops_2;Egna trupper i 
+rallyPoint_troopsOverview_ownTroops_3;Egna trupper i 
+rallyPoint_troopsOverview_ownTroops_4;<b>Natur</b> i 
+rallyPoint_troopsOverview_ownTroops_5;Egna trupper i 
+rallyPoint_troopsOverview_ownTroops_6;Egna trupper i 
+rallyPoint_troopsOverview_ownTroops_7;Egna trupper i 
+rallyPoint_troopsOverview_foreignTroops_2;Förstärkningstrupper från 
+rallyPoint_troopsOverview_foreignTroops_4;Fängslade trupper från 
+rallyPoint_troopsOverview_ownTroopsInOther_2;Egna förstärkningstrupper till 
+rallyPoint_troopsOverview_ownTroopsInOther_4;Egna fängslade trupper i 
+rallyPoint_troopsOverview_origin;Ursprung: 
+rallyPoint_troopsOverview_reinforcement;Förstärkning från 
+rallyPoint_troopsOverview_killed;Dödade trupper!
+rallyPoint_troopsOverview_released;Frisläppta trupper!
+rallyPoint_troopsOverview_forwardedTroopsButton;Vidaresända trupper
+rallyPoint_troopsOverview_returnToOverview;Återvänd till översikt
+rallyPoint_troopsOverview_incomingAttacks;<color={{colorValue|TextColor}}>{{incomings}}</color> på väg in
+rallyPoint_troopsOverview_amountIncoming;{{value}} på väg in
+rallyPoint_troopsOverview_amountOutgoing;{{value}} på väg ut
+rallyPoint_troopsOverview_amountReturning;{{value}} på väg tillbaka
+rallyPoint_troopsOverview_firstArrivalTime;Om {{timestamp|Countdown}} timmar
+rallyPoint_troopsOverview_forwardTroops;Vidare
+rallyPoint_troopsOverview_MergeTroops;Slå ihop med byn
+rallyPoint_troopsOverview_WithdrawTroops;Skicka tillbaka
+rallyPoint_troopsOverview_sort_1;Markerade rörelser först
+rallyPoint_troopsOverview_sort_2;De som ankommer tidigast först
+rallyPoint_troopsOverview_sort_3;De som ankommer sist först
+rallyPoint_troopsOverview_sort_4;Senast skickade trupper först
+rallyPoint_troopsOverview_sort_5;Äldst skickade trupper först
+rallyPoint_troopsMerge_troopsToBeMerged;Trupper utvalda att slås samman:
+rallyPoint_troopsMerge_currentGold;Aktuellt guld:  {{iconName|Sprite}} {{currentGold}}
+rallyPoint_troopsMerge_goldLeft_0;{{remainingGold}}/{{maxAllowedGold}} guld kvar för att slå samman trupper idag.
+rallyPoint_troopsMerge_goldLeft_1;{{remainingGold}}/{{maxAllowedGold}} guld kvar för att slå samman trupper idag. Du kan fortfarande slå samman med råvaror.
+rallyPoint_troopsMerge_troopsMergedToast;Trupper har slagits samman!
+rallyPoint_raidList_beingRaided;{{current}}/{{total}} plundras
+rallyPoint_infoTab_EvasionShortDescription;Aktivera truppundvikande för din huvudby.
+rallyPoint_farmList_createNewTitle;Skapa ny lista
+rallyPoint_farmList_editTitle;Redigera lista
+rallyPoint_farmList_listName;Listnamn
+rallyPoint_farmList_selectDefaultTroops;Välj standardtrupper
+rallyPoint_farmList_addTroopsButton;Lägg till trupper
+rallyPoint_farmList_editTroopsButton;Ändra trupper
+rallyPoint_farmList_setTroopsButton;Ange trupper
+rallyPoint_farmList_createListButton;Skapa lista
+rallyPoint_farmList_editListButton;Uppdatera listan
+rallyPoint_farmList_editTroopsTitle;Redigera trupper i plundringslistan
+rallyPoint_farmList_deleteList;Radera lista
+rallyPoint_selectTroops;Välj trupper
+rallyPoint_farmList_listCreated;Lista har skapats
+rallyPoint_farmList_exitList;Lämna lista
+rallyPoint_farmList_startAll;Starta alla mål
+rallyPoint_farmList_startAllLists;Startar alla
+rallyPoint_farmList_startSelected;Starta valda
+rallyPoint_farmList_noTarget;- Inga mål har valts -
+rallyPoint_farmList_noTargetExist;Inga mål i den här listan
+rallyPoint_farmList_selectedAmount;{{amount}} valda:
+rallyPoint_farmList_listUpdated;Listan har uppdaterats
+rallyPoint_farmList_listDeleted;Listan har tagits bort
+rallyPoint_farmList_editWarning;- Om du tar bort listan tas alla mål i listan bort\n- Om du redigerar trupper påverkas bara framtida målstandardtrupper
+rallyPoint_farmList_sortingFailed;Sorteringen misslyckades! Försök igen!
+rallyPoint_farmList_notStartedPopupTitle;Ostartade plundringar
+rallyPoint_farmList_notStartedPopupElement;<b>{{total}}</b> på grund av {{message}}
+rallyPoint_farmList_NotStartedPopupButtonGoTo;Gå till plundringslistan
+rallyPoint_farmList_AddTargetTitle;Lägg till mål
+rallyPoint_farmList_changeTroops;Ändra trupper
+rallyPoint_farmList_targetAdded;Mål har lagts till
+rallyPoint_farmList_targetAlreadyOnList;Målet finns redan på den här plundingslistan. Välj en annan plundringslista eller skapa en ny.
+rallyPoint_farmList_choose;Välj plundringslista
+rallyPoint_farmList_notYetRaided;Ännu inte plundrad
+rallyPoint_farmList_EditRaids;Redigera mål
+rallyPoint_farmList_DeleteRaidsPlayerQuestion;Är du säker på att du vill ta bort [raidsAmount=1:det här målet][raidsAmount>1:de här målen]?
+rallyPoint_farmList_ChangeRaidList;Ändra plundringslista
+rallyPoint_farmList_ChangeTarget;Ändra mål
+rallyPoint_farmList_ChangeTroops;Ändra trupper
+rallyPoint_farmList_DeactivateTarget;Avaktivera mål
+rallyPoint_farmList_MultiEditWarning;Du redigerar flera mål. Ändringar som görs kommer att påverka alla valda mål
+rallyPoint_farmList_UpdateRaids;Uppdatera mål
+rallyPoint_farmList_filterShowTroopsTitle;Visa trupper
+rallyPoint_farmList_filterShowTroopsDescription;Visar valda trupper per mål
+rallyPoint_farmList_filterShowPopulationTitle;Visa målbefolkning
+rallyPoint_farmList_filterShowPopulationDescription;Visar befolkningen i målets by
+rallyPoint_farmList_filterShowDistanceTitle;Visa avstånd
+rallyPoint_farmList_filterShowDistanceDescription;Visar målets avstånd till din by
+rallyPoint_farmList_filterShowLastRaidTitle;Visa information om den senaste plundringen
+rallyPoint_farmList_filterShowLastRaidDescription;Visar information om den senaste plundringen
+rallyPoint_farmList_filterShowBountyTitle;Visa byte och råvaror
+rallyPoint_farmList_filterShowBountyDescription;Visar vunna byten och råvaror
+marketplace_createOffer;Skapa erbjudande
+marketplace_myOffers_title;Mina erbjudanden
+marketplace_myOffers_merchants;Handelsmän: {{count}}
+marketplace_myOffers_alliance_True;Allians: Ja
+marketplace_myOffers_alliance_False;-
+marketplace_myOffers_interval;{{amount}} timmar
+marketplace_myOffers_offerDeleted;Erbjudandet har tagits bort
+marketplace_merchantsOverview_arrival;{{duration}} timmar Ankommer vid {{arrivalTime}}
+marketplace_merchantsOverview_incomingMerchants;Leveranser på väg in: {{count}}
+marketplace_merchantsOverview_outgoingMerchants;Leveranser på väg ut: {{count}}
+marketplace_merchantsOverview_noIncomingMerchants;- Det finns inga handelsmän på väg in -
+marketplace_merchantsOverview_noOutgoingMerchants;- Det finns inga handelsmän på väg ut -
+marketplace_merchantsOverview_IncomingCat;På väg in
+marketplace_merchantsOverview_outgoingCat;På väg ut
+marketplace_merchantsOverview_capacity;Kapacitet: {{capacity}}
+marketplace_merchantsOverview_merchantsOverview;Handlaröversikt
+marketplace_merchantsOverview_ArrivingSoonest;Ankommer tidigast
+marketplace_merchantsOverview_ArrivingLatest;Ankommer senast
+marketplace_merchantsOverview_ShortestDistance;Kortast avstånd
+marketplace_merchantsOverview_LongestDistance;Längst avstånd
+marketplace_merchantsOverview_transportTo;Transport till <b>{{Village}}</b> med <b>{{Player}}</b>
+marketplace_merchantsOverview_transportFrom;Transport från <b>{{Village}}</b> med <b>{{Player}}</b>
+marketplace_merchantsOverview_returningFrom;Återvänder från <b>{{Village}}</b> med <b>{{Player}}</b>
+academy_research_viewResearchList;Pågående forskning
+academy_research_allUnitsResearched;Alla enheter har forskats fram.
+academy_researchListPopup_title;Trupper forskas fram
+academy_researchListPopup_remainingTime;{{timeLeft}} kvar. Redo vid {{readyAt}}
+academy_researchListPopup_constructImmediately;Konstruera omedelbart
+research_started;Forskningen har påbörjats!
+research_timeLeft;{{TIME|Countdown}} kvar
+townHall_celebration_ongoingCelebration;Pågående
+topBar_perHourLabel;/h:
+topBar_maxLabel;Max:
+topBar_resourceFull;Full
+leftPanel_infoBox;Info-ruta
+villagePanel_playerNameTitle;Byar som ägs av {{playerName}}
+villagePanel_toStatistics;Till bystatistik
+villagePanel_culturePointsNeeded;Kulturpoäng behövs för nästa by
+mapCell_type;{{x}}{{y}}
+mapCell_type_village;{{villageName}}
+mapCell_type_1;Lokala
+mapCell_type_2;Dal
+mapCell_type_3;obebodd oas
+mapCell_type_4;Bebodd oas
+mapCell_type_5;Vildmark
+mapCell_Owner;Ägare:
+mapCell_type_valley;Dal
+mapCell_Wilderness;Det finns inget av intresse på den här platsen.
+mapCell_Distance;{{distance|Round|1}} fält
+mapCell_locationInfo;Platsinformation
+mapCell_surroundings;Närområde
+mapCell_actions_editFarmlist;Redigera farmlista
+mapCell_actions_addFarmlist;Lägg till på farmlistan
+mapCell_actions_raidOasis;Plundra oas
+mapCell_showOnMap;Visa på kartan
+mapCell_noReports;- Ingen information tillgänglig för den här platsen -
+berichte.region_;{{PLAYERACTIVE}}{{PLAYERPASSIVE}}{{VILLAGE}}{{NAME1}}{{NAME2}}{{ALLY1}}{{ALLY2}}{{NAME}}
+mapCell_goToOwnVillage;Gå till egen by
+constructionQueue_timeLeftToFinish;{{timestamp|Countdown}} kvar. Redo vid {{timestamp|Time}}
+constructionQueue_timeUntilStart;Börjar om {{timestamp|Countdown}}
+constructionQueue_MasterBuilderTitle;Byggmästarkö (kostar {{masterBuilderCost|Sprite}} {{masterBuilderCost}} vid byggstart)
+constructionQueue_Constructing;Konstruerar byggnad
+constructionImmediatelyPopup_topText;Följande order kommer att slutförts omedelbart:
+constructionImmediatelyPopup_title;Slutför omedelbart
+newBuildingConstructionDetail_dateTimeEnoughResources;Tillräckligt med råvaror den {{date|Date}} vid {{time|Time}}.
+newBuildingConstruction_noBuildingsAvailable;Just nu kan inga byggnader bli konstruerade.
+goldclubpopup_currentGold;Aktuellt guld:  {{iconName|Sprite}} <color={{colorValue|TextColor}}>{{currentGold}}</color>
+goldclubpopup_activated_toastMessage;Guldklubben har aktiverats!
+loginPage_version;Version {{currentVersion}}
+loginPage_loginBlocked;Inloggningen är låst
+loginPage_loginBlocked_fails;För många misslyckade inloggningsförsök
+loginPage_loginBlocked_message;Ditt konto har blockerats på grund av för många misslyckade inloggningsförsök.
+loginPage_loginBlocked_resolve;För att låsa upp ditt konto, logga in via webbläsaren på
+serverSelection_selectRegion;Välj region
+serverSelection_selectGameWorld;Välj spelvärld
+serverSelection_0;Internationell
+serverSelection_1;Mellanöstern
+serverSelection_2;Asien
+serverSelection_3;Europa
+serverSelection_4;Amerika
+serverSelection_99;Utveckare
+serverSelection_mapSize;Kartstorlek:
+serverSelection_mapSize_0;Liten
+serverSelection_mapSize_1;Stora
+serverSelection_artifacts;Artefakter:
+serverSelection_constructionPlans;Byggnadsplaner:
+serverSelection_changeGameWorld;Byt spelvärld
+serverSelection_username;Användarnamn:
+serverSelection_password;Lösenord:
+serverSelection_loginButton;Logga in och spela
+serverSelection_forgotPassword;Jag har glömt mitt lösenord
+serverSelection_noAccount;Jag har inget konto
+serverSelection_loginError;Felaktigt användarnamn eller lösenord
+serverSelection_graphQlError;Fel vid hämtning av data från servern
+serverSelection_tokenRefreshError;Fel vid inloggning på den senast använda servern. Försök att logga in igen.
+serverSelection_stayLoggedIn;Förbli inloggad i spelvärlden
+troopsInfo_title;Trupper i {{villageName}}
+unitInfo_velocity;<b>{{fields}}</b> fält i timmen
+unitInfo_resourceCarriage;<b>{{INT}}</b> råvaror
+unitInfo_researchPrerequisites;Forskningskrav:
+unitInfo_trainingPrerequisites;Träningskrav:
+unitInfo_canCarry;Kan bära:
+exchangeResources_currentTitle;Nytt belopp
+exchangeResources_lockAmount;Lås belopp
+exchangeResources_changeTitle;Ändra
+exchangeResources_restTitle;Återstår
+exchangeResources_buildingPossible_True;Uppgradering är möjlig
+exchangeResources_buildingPossible_False;Uppgradering ej möjlig
+exchangeResources_mergePossible_True;Sammanslagning är möjlig
+exchangeResources_mergePossible_False;Sammanslagning är inte möjlig
+exchangeResources_researchPossible_True;Forskning är möjlig
+exchangeResources_researchPossible_False;Forskning är inte möjlig
+exchangeResources_celebrationPossible_True;Firande är möjligt
+exchangeResources_celebrationPossible_False;Firande är inte möjligt
+exchangeResources_reviveHero_True;Återupplivning av hjälten är möjlig
+exchangeResources_reviveHero_False;Återupplivning av hjälten är inte möjlig
+exchangeResources_currentlyAvailable;För närvarande tillgänglig: <b>{{amount}}</b>
+exchangeResources_maximumAvailable;Maximalt tillgänglig: <b>{{amount}}</b>
+exchangeResources_distributeEvenly;Fördela återstående råvaror jämnt:
+exchangeResources_distributeOnResource;Eller prioritera återstående råvaror först till:
+exchangeResources_distributeAuto;Automatisk distribution
+exchangeResources_distributeManual;Manuell distribution
+exchangeResources_availableTroops;Tillgängliga trupper: {{amount}}
+buildingActivities_title;Byggaktiviteter
+buildingActivities_idle;Väntande
+buildingActivities_type;Typ
+buildingActivities_building_13;Förbättringar:
+buildingActivities_building_16;Plundringslista
+buildingActivities_building_17;Egna byar
+buildingActivities_building_19;Trupper som tränas
+buildingActivities_building_20;Kavalleri som tränas
+buildingActivities_building_29;Trupper som tränas
+buildingActivities_building_30;Kavalleri som tränas
+buildingActivities_building_21;Trupper som tränas
+buildingActivities_building_22;Forska
+buildingActivities_building_24;Fester
+buildingActivities_building_46;Trupper som läker
+buildingActivities_buildingAction_;{{amount}}{{max}}
+buildingActivities_buildingAction_16;{{amount}} plundringar pågår
+buildingActivities_buildingAction_17;{{amount}}/{{max}} tillgängliga
+mainMenu_title;Huvudmeny
+mainMenu_quests;Uppdrag
+playerDetails_infoTab;Spelarinfo
+playerDetails_villageTabTitle;{{villages}} byar med {{oases}} oaser
+playerDetails_SortBy_1;Befolkningsmängd
+playerDetails_SortBy_2;Segerpoäng
+playerDetails_SortBy_3;Bynamn:
+playerDetails_SortBy_4;Regionnamn
+player_gender_DontSpecify;Ange inte
+player_gender_Other;Annat
+player_gender0;Man
+player_gender1;Kvinna
+player_gender2;Annat
+player_gender3;Ange inte
+playerDetails_NotesFor;Anteckningar för {{playerName}}
+playerDetails_NoDescription_Others;- Den här spelaren har inte lagt till någon beskrivning -
+playerDetails_NoDescription_Own;- Ingen beskrivning har lagts till ännu -
+playerDetails_editLanguages;Redigera språk
+playerDetails_searchLanguage;Sök efter språk
+goldShopPlaceholder_title;Butiken kommer snart!
+goldShopPlaceholder_description;Guldbutiken är ännu inte implementerad i mobilappen.<br><br> Logga in på ditt konto via webbläsaren för att köpa guld.
+goldShop_title;Guldbutiken
+goldShop_advantage_5;Travian Plus
+goldShop_advantage_4;Trä
+goldShop_advantage_1;Lera
+goldShop_advantage_2;Järn
+goldShop_advantage_3;Vete
+goldShop_feature_activated;Funktionen är aktiverad!
+goldShop_purchaseFailed;Köpet misslyckades!
+goldShop_purchaseSuccess;Köpet lyckades.
+goldShop_transactionInProgress;Betalningen pågår.\nVänligen vänta...
+goldShop_transactionFailed;Något gick fel.\nVänligen försök igen senare.
+goldShop_transactionTimeout;Kära spelare, din betalning överskred tidsgränsen och kanske inte har behandlats korrekt. Kontakta vår <style="link"><link="https://support.travian.com/support/tickets/new">betalningssupport</link></style> om du stöter på något problem.
+market_sendResources_requiredMerchants;Handelsmän som krävs:
+market_sendResources_capacityPerMerchant;Kapacitet per handelsman
+market_sendResources_amountRepeats;Antal upprepningar:
+market_sendResources_confirmResources;Bekräfta resurser
+market_sendResources_amountWithX;{{amount}}x
+market_sendResources_sent;Skickade råvaror!
+market_offer_maxDuration;Maximal transporttid:
+market_offer_confirm;Bekräfta erbjudandet
+market_offers_title;Erbjudanden
+market_capacity;Kapacitet: {{capacity}}
+market_offers_offering;Jag erbjuder:
+market_offers_searching;Jag vill ha:
+market_offers_offered;Du skickar
+market_offers_wanted;Du får
+market_offers_accepted;Erbjudandet har accepterats! Resurser är på väg och handelsmän har skickats ut.
+market_offers_ownAllianceOnly;Endast spelare från den egna alliansen
+market_ratio_11;1:1
+market_ratio_1X;1 : X
+market_tradeRoutes_to;Till:
+market_tradeRoutes_entryAmount;<b>{{amount}}</b> inlägg
+market_tradeRoutes_noRoutes;- Inga handelsvägar har skapats - 
+market_tradeRoutes_travelTime;Resetid: {{time|Duration}} timmar
+market_tradeRoutes_activeRatio;{{active}}/{{total}} aktiva
+market_tradeRoutes_active;Aktiv
+market_tradeRoutes_paused;Pausat
+market_tradeRoutes_updated;Handelsvägar har uppdaterats
+market_tradeRoutes_deleted;Handelsvägar har tagits bort
+market_tradeRoutes_returnAt;Återvänder om {{time|Time}}
+market_tradeRoutes_merchantsAndRepeat;{{merchants}} handelsmän, {{repeats}}x
+market_tradeRoutes_filterOptions;Filteralternativ
+market_tradeRoutes_showMerchants;Visa handelsmän
+market_tradeRoutes_showMerchantsText;Visar hur många handelsmän som används
+market_tradeRoutes_showResources;Visa råvaror
+market_tradeRoutes_showResourcesText;Visar mängden råvaror som transporteras
+market_tradeRoutes_afterInputFieldsSuffix;Timmar
+market_tradeRoutes_interval;{{INT}} timmar
+market_tradeRoutes_confirmTarget;Bekräfta målet
+market_tradeRoutes_arrivalTime;{{duration|Duration}} vid {{arrivalTime|Time}}
+market_tradeRoutes_created;Handelsväg har skapats
+market_tradeRoutes_edit;Redigera handelsväg[routeAmount>1:ar]
+market_tradeRoutes_update;Uppdatera handelsväg[routeAmount>1:ar]
+market_tradeRoutes_multiEditWarning;Du redigerar flera handelsvägar. Ändringar som görs kommer att påverka alla {{routeAmount}} handelsvägar.
+market_tradeRoutes_editResourcesTitle;Ändra råvoror
+market_tradeRoutes_editResourcesButton;Redigera råvaror
+market_tradeRoutes_setResourcesButton;Ställ in råvaror
+market_tradeRoutes_updateResourcesButton;Uppdatera råvaror
+market_tradeRoutes_pause;Pausa handelsväg[routeAmount>1:ar]
+market_tradeRoutes_pauseDescription;Handelsvägen flyttas till pauslistan men finns kvar på din marknadsplats.
+market_tradeRoutes_delete;Ta bort handelsväg[routeAmount>1:ar]
+market_tradeRoutes_deleteConfirmQuestion;Är du säker på att du vill ta bort [routeAmount=1:den här handelsvägen][routeAmount>1:de här handelsvägarna]?
+market_tradeRoutes_invalidTarget;Handelsvägar kan endast skickas till byar med världsunder och byar med artefakter eller byggplaner för världsunder från allians- eller federationsmedlemmar
+hero.status;{{NAME}}
+hero_adventures_selectVillage;Välj by
+hero_adventures_explore;Utforska
+hero_adventures_sendHero;Skicka hjälten
+hero_adventures_sent;Äventyret började
+hero_status_reviveWithBucket;Använd för att omedelbart återuppliva hjälten.
+hero_status_reviveWithRes;Använd råvaror för att återuppliva din hjälte.
+hero_inventory_consumablePopupTitle;Användbart föremål
+hero_resourceTransferPopup_title;Överför råvaror
+hero_resourceTransferPopup_ReadyForTransfer;Redo för överföring
+hero_resourceTransferPopup_transferSelected;Överföring valt
+hero_resourceTransferPopup_transferMax;Maximal överföring
+hero_resourceTransferPopup_storageFull;Lagret är fullt. Du kan inte överföra ytterligare resurser.
+hero_inventory_transferToCurrentVillage;Överförs till den aktiva byn: <b>{{VILLAGE}}</b>
+hero.itemDescriptionV2Details;{{PERCENTAGE}}{{EXPERIENCE}}{{RAISE}}{{LIMIT}}{{MAX}}{{TIME}}
+hero.itemDescriptionV2;{{VALUE}}
+hero_consumablePopup_currentEquippedItems;Antal föremål som för närvarande är utrustade:
+hero_consumablePopup_itemsLeftInInventory;Antal föremål som finns kvar i lagret:
+hero.itemTypeV2_inventory;Förbrukningsvara
+hero.cooldownWithTime;Har en väntetid på {{COOLDOWN}} som tar slut {{DATE|DateTime}}.
+reports_overview_title;{{COUNT}} rapporter
+reports_overview_title_selected;Du har valt {{SELECTED}}/{{COUNT}} rapporter
+reports_overview_title_archived;Arkiverade rapporter
+reports_overview_archived_noReports;- Inga arkiverade rapporter tillgängliga -
+reports_filters_title;Välj filter
+reports_filters_allReports;Alla rapporter
+reports_filters_applyButton;Tillämpa {{COUNT}} filter
+reports_filters_noFilter;Inget filter har valts
+reports_detail_title;Rapportdetaljer
+berichte.;{{NAME1}}{{NAME2}}{{VILLAGE_NAME}}{{X}}{{Y}}{{COORDS}}{{NAME}}
+reports_player_from_village;[{{allianceId|AllianceLink}}] {{playerId|PlayerLink}} från byn {{villageId|VillageLink}}
+reports_troops_lost;Förlorade trupper:
+reports_troops_hospitalized;Inlagd på sjukhus:
+reports_xp_gained;{{amount}} erf. har tjänats in
+reports_health_change;-{{change}}% hälsa
+reports_hero_died;Din hjälte dog under äventyret
+reports_scouted_building;{{buildingType|TranslateSuffixFor|allgemein.gid}} nivå <b>{{level}}</b>
+reports_refreshed;Rapporterna är uppdaterade!
+reports_deleteReportPopup_title;Ta bort rapport(er)
+reports_deleteReportPopup_warningTitle;Är du säker att du vill ta bort {{X}} rapport(er)?
+reports_deleteReportPopup_warningTitleAll;Är du säker att du vill ta bort alla rapporter?
+reports_deleteReportPopup_warningDescription;När du har raderat en rapport kommer den att försvinna permanent. Du kommer inte att kunna återfå det.
+reports_deleted;Rapport har raderats!
+reports_markedUnread;Rapport har markerats som oläst!
+reports_archived;Rapport har arkiverats!
+reports_deleted_all;Alla rapporter har tagits bort!
+reports_deleted_selected;{{X}} rapport(er) har tagits bort!
+reports_markedRead_all;Alla rapporter har markerats som lästa!
+reports_markedRead_selected;{{X}} rapport(er) har markerats som lästa!
+alliance_nameAndTagPair;{{allianceName}} | {{allianceTag}}
+alliance_editAllianceName;Redigera alliansnamn
+alliance_name;Alliansnamn
+alliance_nameError;Alliansnamnet får inte vara tomt
+alliance_tag;Allians märke
+alliance_tagError;Allianstaggen får inte vara tom
+alliance_profileTab_inviteNewPlayer;Bjud in en ny spelare
+alliance_profileTab_showInvitedPlayers;Visa inbjudna spelare
+alliance_invitedPopup_title;Inbjudna spelare
+alliance_invitedPopup_invitationRemoved;Inbjudan har tagits bort!
+alliance_invitePlayerPopup_title;invitera spelare
+alliance_invitePlayerPopup_noPlayerFound;Ingen spelare hittades
+alliance_invitePlayerPopup_playerInvited;Spelare har bjudits in!
+alliance_editMemberPopup_title;Redigera medlem
+alliance_editMemberPopup_customMessage;Anpassat meddelande
+alliance_editMemberPopup_setRole;Ställ in roll
+alliance_editMemberPopup_kickPlayerFromAlliance;Sparka spelare från alliansen
+alliance_editMemberPopup_cantChangePermission;Kan inte ändra nuvarande rättigheter: se varning.
+alliance_kickPlayerPopup_areYouSure;Är du säker på att du vill sparka {{Player}} från alliansen?
+alliance_kickPlayerPopup_playerKicked;Spelare har sparkats!
+alliance_editAllianceDescription;Ändra alliansbeskrivning
+alliance_topColumn;Översta kolumnen
+alliance_bottomColumn;Nedersta kolumnen
+alliance_bbCodeAdded;BB-kod har lagts till
+alliance_generalInformation;Allmän information
+alliance_confederacy_tab;Federation
+alliance_diplomacy;Diplomati
+alliance_diplomacy_tab1;IAP/krig
+alliance_diplomacy_send_new;Skicka ny
+alliance_diplomacy_openRequests;Öppna förfrågningar
+alliance_diplomacy_otherOffered;{{allianceId|AllianceLink}} erbjöd {{type|TranslateSuffixFor|alliance_diplomacy_type}}
+alliance_diplomacy_youOffered;You offered {{type|TranslateSuffixFor|alliance_diplomacy_type}} with {{allianceId|AllianceLink}}
+alliance_diplomacy_offerDeclare;Erbjudande/förklaring
+alliance_diplomacy_type;Typ
+alliance_diplomacy_type1;konfederation
+alliance_diplomacy_type2;IAP
+alliance_diplomacy_type3;krig
+alliance_diplomacy_type4;konfederation
+alliance_diplomacy_typekick;avskedande från federationen
+alliance_diplomacy_deleteText_;{{type|TranslateSuffixFor|alliance_diplomacy_type}}{{alliance|AllianceLink}}
+alliance_diplomacy_deleteTitle_RemoveRequest;Ta bort begäran
+alliance_diplomacy_deleteText_RemoveRequest;Är du säker på att du vill ta bort erbjudandet om en {{type|TranslateSuffixFor|alliance_diplomacy_type}} med {{alliance|AllianceLink}}?
+alliance_diplomacy_deleteTitle_TerminateExisting;Avsluta
+alliance_diplomacy_deleteText_TerminateExisting;Är du säker på att du vill avsluta {{type|TranslateSuffixFor|alliance_diplomacy_type}} med {{alliance|AllianceLink}}?
+alliance_diplomacy_deleteTitle_ConfederacyKickVote;Avsluta
+alliance_diplomacy_deleteText_ConfederacyKickVote;Du behöver en bekräftelse från andra medlemmar i federationen innan du kan sparka ut {{subject|AllianceLink}}.\n\nVill du fortsätta och informera de andra allianserna om ditt beslut?
+alliance_diplomacy_deleteTitle_QuitConfederacy;Avsluta
+alliance_diplomacy_deleteText_QuitConfederacy;Är du säker på att du vill avsluta din federation med följande medlemmar?
+alliance_diplomacy_deleteTitle_RemoveConfederacyProposal;Ta bort förfrågan
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Kick;Är du säker på att du vill tacka nej till {{alliance|AllianceLink}} begäran om att sparka ut {{subject|AllianceLink}} ur federationen?
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Join;Är du säker på att du vill tacka nej till {{alliance|AllianceLink}} begäran om att låta {{subject|AllianceLink}} gå med i federationen?
+alliance_diplomacy_sent;Erbjudande har skickats
+alliance_diplomacy_accepted;Diplomatisk relation har accepterats
+alliance_diplomacy_canceled;Diplomatisk relation har avbrutits
+alliance_diplomacy_declined;Förfrågan har nekats
+alliance_diplomacy_kickStarted;Förfrågan skickad
+alliance_diplomacy_proposal_approved;Förfrågan har godkänts
+alliance_diplomacy_noContract;Din allians har inga aktiva kontrakt med andra allianser.
+alliance_diplomacy_noConfederacy;Din allians är inte en del av en federation.
+alliance_diplomacy_alreadyOpenOffer;Det finns redan ett öppet erbjudande gällande den här alliansen.
+alliance_diplomacy_alreadyExistingContract;Det finns redan ett avtal med den här allliansen.
+alliance_diplomacy_warInDeletion;Vänta på att den andra alliansen också avslutar kriget.
+alliance_union_leave;Lämna federationen
+alliance_union_add;Lägg till ny förfrågan
+allianz.diplomacy_with_type;{{NAME}}
+allianz.diplomacy_with_type4;Federation med {{NAME}}
+alliance_newsBbDescription;Ändra texten ”antal” för att redigera antal nyheter
+alliance_LossesBBName;förluster
+alliance_LossesBBDescription;Ändra ”namn” för att välja allians att jämföra med
+alliance_NapBBName;Icke-anfallspakter
+alliance_WarsBBName;Krig
+alliance_addBBCode;Lägg till BB-kod
+alliance_addMedal;Lägg till medalj
+alliance_assignToPosition;Tilldela medlemmar till position och ändra alliansnamn
+alliance_editPermissions;Redigera rättigheter
+alliance_roleTitle;Rollens titel:
+alliance_assignToPosition_onlyMemberError;Du är den enda medlemmen i den här alliansen. Att tilldela medlemmar till positioner och ändra alliansnamnet kan inte avmarkeras.
+alliance_noAllianceEvents;- Inga allianshändelser att visa -
+alliance_dailyContribution;Dagligt bidrag
+alliance_contributionAmount;Bidrag: <b>{{AMOUNT}}</b>
+alliance_resourcesContributed;{{current}}/{{max}} resurser har bidragits med
+alliance_contributionResetIn;Återställ om: {{time|Countdown}}
+alliance_resUntilNext;Resurser till nästa nivå: {{resources|LongNumber}}
+alliance_bonusCurrentlyActivating;Bonus aktivering: {{resources|Countdown}}
+alliance_bonusMaxed;Maximerad bonus
+alliance_tripledContribution;Du har tredubblat ditt bidrag!
+alliance_contributionStatistics;Bidragsstatistik
+alliance_contributionNone;- Inga bidragsgivare för närvarande -
+auth_clientVerificationFailed;Kunde inte verifiera klienten. Vänligen försök igen.
+banned_seeMessage;Läs meddelande
+banned_acceptPunishment;Acceptera straff
+residence_settlement;Bosättning
+palace_capital;Gör den här byn till min huvudby.
+palace_setAsCapital;Ställ in som huvudby
+palace_enterPassword;Ange lösenord av säkerhetsskäl:
+embassy_GoToAlliance;Gå till alliansen
+embassy_Invitation;Alliansen {{AllianceId|AllianceLink}}, inbjuden av {{playerId|PlayerLink}}
+embassy_VillagesInRange;Byar inom räckvidd
+embassy_LeaveAllianceToJoin;För att gå med i en ny allians måste du först lämna din nuvarande allians.
+embassy_ConfirmLeaveAlliance;Bekräfta och lämna alliansen
+embassy_InvitationAccepted;Inbjudan har accepterats
+embassy_AllianceFounded;Allians har bildats
+embassy_LeftAlliance;Alliansen har lämnats
+embassy_acceptInvitationQuestion;Är du säker på att du vill gå med i {{allianceId|AllianceLink}}?
+embassy_acceptInvitationWarning;Du kommer inte att kunna lämna alliansen på {{hours}} timmar efter att du har gått med.
+embassy_acceptInvite;Ja, gå med i alliansen
+embassy_declineInvite;Nej, ta bort inbjudan
+embassy_noAlliancesNearby;Inga allianser hittades i närheten
+smithy_improveTo;Förbättra till nivå {{level}}
+smithy_viewList;Visa utveckling
+smithy_upgradeStarted;Förbättringen {{unitId|TranslateSuffixFor|truppen.tid}} har påbörjats
+smithy_researchFirst;Enheten måste först forskas fram i akademin
+smithy_levelTooLow;Smedjans nivå är för låg, uppgradera den
+allBuildings_10;Alla magasin:
+allBuildings_11;Alla silor:
+allBuildings_23;Alla grottor:
+allBuildings_38;Alla magasin:
+allBuildings_39;Alla silor:
+currentBuildingValue;Aktuella {{type|TranslateSuffixFor|allgemein.gid}}:
+ad_successful;Annons har visats!
+externalLink_title;Extern länk
+externalLink_description1;<b>Varning!</b><br>Du är på väg att öppna den här externa länken:
+externalLink_description2;Travian Games kan inte kontrollera eller verifiera den här länken.
+externalLink_description3;Fortsätt på egen risk.
+externalLink_description4;Är du säker på att du vill fortsätta?
+externalLink_continue;Fortsätt till länk
+search_village;Sök by
+search_select_village;Välj by
+search_three_characters;Ange minst {{amount}} tecken
+search_no_result;Ingen matchning hittades
+search_player;Sök efter spelare
+search_player_invite;invitera spelare
+search_select_player;Välj spelare
+search_select_player_invite;Bjud in en ny spelare
+search_alliance;Sök allians
+search_select_alliance;Välj allians
+gid27.arte_detail_;{{INT}}
+artefact_inventory_village;By:
+artefact_inventory_conquered;Erövrad:
+artefact_inventory_active;Aktiv: aktiv vid
+artefact_inventory_active_already;Aktiv: <b>Aktiverad</b>
+artefact_inventory_show_active_only;Visa endast mina aktiverade artefakter
+artefact_overview;Artefaktöversikt
+artefact_tip_large;Stora artefakter kräver skattkammarnivå <b>20</b> och påverkar hela din <b>avatar</b>
+artefact_tip_small;Små artefakter kräver skattkammarnivå <b>10</b> och påverkar endast <b>byn</b>
+artefact_tip_nearby;Artefakter som finns i området runt {{villagenamelong|Bold}}
+artefact_small;Liten
+artefact_large;Stora
+artefact_nearby;I närheten
+artefact_village;by
+artefact_button_former_owners;Se tidigare ägare
+artefact_already_active;Redan aktiverad
+artefact_required_level_value;Skattkammares <b>nivå{{LEVEL}}</b>
+artefact_details;Detaljer:
+number_counter;{{NUMBER}}.
+tasks_villageTasks;Byuppdrag
+tasks_nextHeroLevelBonus;Bonus för nästa hjältenivå = {{value}}%
+villageOverview_building_headline;Byggnad
+villageOverview_building_slotIdle;Inget byggande pågår
+villageOverview_resource_sorting1;Bylista
+villageOverview_resource_sorting2;Silors kortaste varaktighet
+villageOverview_resource_sorting3;Silors längsta varaktighet
+villageOverview_resource_sorting4;Magasins kortaste varaktighet
+villageOverview_resource_sorting5;Magasins längsta varaktighet
+villageOverview_resource_sorting6;Negativ produktion
+villageOverview_troops_stationed;Trupper stationerade i byn
+villageOverview_troops_sum;Totalt antal egna trupper
+villageOverview_troops_tab_training;Träning
+villageOverview_culture_slots;Byplatser
+cancelPopup_Improvement;Avbryt förbättringen
+cancelPopup_Research;Avbryt forskningen
+cancelPopup_Construction;Avbryt konstruktion
+cancelPopup_text_;{{NAME}} {{LEVEL}}
+cancelPopup_text_Improvement;Vill du avbryta förbättringen av {{NAME}} nivå {{LEVEL}}?
+cancelPopup_text_Research;Vill du avbryta forskningen av {{NAME}}?
+cancelPopup_text_Construction;Vill du sluta uppgradera {{NAME}} till nivå {{LEVEL}}?
+cancelPopup_text_refund;Du får tillbaka {{INT}}% av kostnaderna:
+dailyQuests_timeRemaining;Återstående tid: {{time|Countdown}}
+dailyQuests_rewardOverview;Se belöningsöversikt
+dailyQuests_claimRewards;Ta emot belöningar
+dailyQuests_pointsEarned;Intjänade poäng: <b>{{current}}/{{max}}</b>
+dailyQuests_rewardDescription;Det här är de belöningar du kan låsa upp genom att klara dagens uppdrag:
+dailyQuests_claimAction;Lägg beslag på
+dailyQuests_alreadyClaimed;Hämtade
+dailyQuests_questDetailTitle;Information
+dailyQuests_quest_worth;Det här uppdraget är värt:
+dailyQuests_quest_worth_points;+{{points}} poäng
+dailyQuests_quest_repeated;Det här uppdraget kan upprepas:
+dailyQuests_quest_repeated_amount;{{amount}} gång[amount>1:er]
+dailyQuests_quest_completed;Avslutade upprepningar:
+dailyQuests_quest_difficulty;Svårighetsgrad:
+dailyQuests_quest_requirement;Krav:
+dailyQuests_backToOverview;Tillbaka till översikten
+dailyQuests_difficulty_moderate;Medelmåttigt
+dailyQuests_difficulty_hard;Svår
+dailyQuests_difficulty_challenging;Svår
+achievementQuests.achQuest_;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+achievementQuests.achQuest__step_01_description;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+heroMansion_Loyalty;Lojalitet: {{INT}}%
+heroMansion_Conquered;Erövrad {{TIME|DateTime}}
+heroMansion_SlotFree;Nästa oasplats är tillgänglig
+heroMansion_SlotBlocked;Nästa oas från <color={{colorValue|TextColor}}>Hjältens egendom</color> <color={{colorValue2|TextColor}}>nivå {{REQUIRMENT}}</color>
+heroMansion_Undo;Ångra
+heroMansion_FinishedAt;Avslutade: {{TIME|Time}}
+waterworks_NoneOasesAcquired;Ingen oas har annekterats
+waterworks_BonusCalculation;+ ({{INT}}% av {{INT2}}%) = 
+waterworks_CurrentBonus;Nuvarande vattenverksbonus: +{{INT}}% på oasråvaror
+waterworks_Oases;Annekterade oaser
+messages_inbox_title;{{COUNT}} meddelanden
+messages_inbox_title_selected; {{SELECTED}}/{{COUNT}} meddelanden har valts
+messages_newMessage;Nytt meddelande
+messages_messageSent;Meddelande har skickats!
+messages_exitPreview;Lämna förhandsgranskning
+messages_previewTitle;Förhandsgranska meddelande
+messages_unread_count;{{COUNT}} oläst
+reportPlayer_selectReason;Välj orsak till rapporten
+reportPlayer_reasonPlaceholder;Orsak till rapporten
+reportPlayer_addNote;Lägg till en anteckning i rapporten (valfritt):
+reportPlayer_alsoBlock;Ignorera också den här spelaren
+reportPlayer_maximumLength;Maximal längd: {{text|TextLength}}/300
+reportPlayer_nowIgnored;Du ignorerar nu den här spelaren.
+reportPlayer_nowUnignored;Du ignorerar inte längre den här spelaren.
+statistics_general;Allmän statistik
+statistics_seeDetails;Läs mer
+statistiken.progressionStepTitle_;{{VALUE}}{{DATETIME}}
+language_de-DE;Tyskland
+language_en-US;Svenska
+language_fr-FR;Franska
+language_ru-RU;Ryska
+statistics_villageAndHero;Största by/hjälte
+RelativeTime_0;{{data}} s
+RelativeTime_1;{{data}} m
+RelativeTime_2;{{data}} t
+RelativeTime_3;[data>1:{{data}} dagar][data<2:{{data}} dag]
+RelativeTime_4;[data>1:{{data}} veckor][data<2:{{data}} vecka]
+RelativeTime.Separator; 
+RelativeTime.Wrapper.Past;{{time}} sedan
+RelativeTime.Wrapper.Future;Om {{time}}
+mapCell_tooFewSettlers;{{current}}/3 bosättare tillgänglig(a)
+mapCell_heroNotIdle;Din hjälte är inte sysslolös
+mapCell_cantAddOwn;Du kan inte lägga till dina egna byar
+mapCell_alreadyInVillage;Du är redan i den byn
+serverSelection_rememberPassword;Kom ihåg mitt lösenord
+serverSelection_savedWorldsTitle;Dina spelvärldar
+serverSelection_removeWorldTitle;Ta bort spelvärlden
+serverSelection_removeWorldQuestion;Vill du verkligen ta bort den här spelvärlden från din lista?
+serverSelection_removeWorldDescription;Varning: Det här kommer inte att ta bort ditt konto i spelvärlden. Du kan när som helst komma tillbaka och lägga till spelvärlden där ditt konto ingår i din lista över spelvärldar.
+serverSelection_removeWorldButton;Ta bort från lista
+serverSelection_addWorldText;+ Lägg till spelvärld
+buildingActivities_buildingAdditional_;{{amount}}
+buildingActivities_buildingAdditional_17;{{amount}} aktiva handelsvägar
+reports_filters_reset;Återställ filter
+palace_capitalSet;Huvudby har angetts!
+palace_isCapital;Detta är din huvudstad
+messages_unread_count_full;{{COUNT}} oläst[COUNT>1:a] meddelande[COUNT>1:n]
+statistics_alliance;Alliansstatistik
+statistics_alliances_best_off;De bästa allianserna (anfallare)
+statistics_alliances_best_def;De bästa allianserna (försvarare)
+statistics_offensiveStrength;Din offensiva styrka på {{VILLAGEID|VillageLink}} på den här servern
+statistics_offensiveStrengthAlliance;Din offensiva styrka på {{VILLAGEID|VillageLink}} i din allians
+statistics_offensiveStrengthVillage;Den här byns anfallsstyrka:
+statistics_defensiveStrength;Din försvarsstyrka på den här servern
+statistics_defensiveStrengthAlliance;Din försvarsstyrka i din allians
+statistics_defensiveStrengthVillage;Den här byns försvarsstyrka:
+statistics_defensiveStrengthVillageSum;Total försvarsstyrka för alla byar:
+recent;Nyligen
+appliedFilters;Du tillämpar {{COUNT}} filter.
+allgemein.gid99;Slumpvald
+rallyPoint_troopsOverview_10;Detaljerad truppöversikt
+rallyPoint_troopsOverview_returningFromAdventure;Återvänder från äventyr: 
+rallyPoint_troopsOverview_detailedView;Detaljerad vy
+rallyPoint_troopsOverview_noMovements;- Inte trupprörelser pågår -
+rallyPoint_troopsOverview_Target;Mål: {{Target|NamedCoordinates}}
+rallyPoint_troopsOverview_Origin;Ursprung: {{Target|NamedCoordinates}}
+hero_adventures_number;Nr. {{INT}}
+hero_status_regeneration;<b>Hälsoregeneration:</b> {{VALUE}}% per dag
+hero_status_regeneration_details;{{HERO}}% per dag från hjälte {{EQUIPMENT}}% per dag från utrustning
+hero_status_experience;<b>Erfarenhet:</b> {{VALUE}}%
+hero_status_experience_bonus;Bonus {{VALUE}}%
+search_results;Sökresultat
+search_player_link;Spelarlänk
+search_select_player_link;Välj spelare
+search_recipient;Sök mottagare
+search_select_recipient;Välj mottagare
+search_alliance_link;Allianslänk
+search_select_alliance_link;Välj allians
+messages_fullView_title;meddelande
+messages_recipient_placeholder;Välj mottagare
+messages_title_placeholder;Ange rubriken på ditt meddelande
+messages_message_placeholder;Ange ditt meddelande
+messages_ownAlliance;Egen allians
+messages_selectedRecipients;Valda
+messages_ownAlliance_[ally];Alla alliansmedlemmar
+messages_ownAlliance_[off];Offensiva alliansmedlemmar
+messages_ownAlliance_[def];Defensiva alliansmedlemmar
+messages_discard_title;Släng meddelande
+messages_discard_text_header;Vill du slänga det här meddelandet?
+messages_discard_text;Innehållet i meddelandet kommer att gå förlorat och kan inte återställas.
+messages_confirm_deletion_title;Radera meddelanden
+messages_confirm_deletion_text_header;Är du säker på att du vill ta bort [data>1:{{data}} meddelanden][data=1:{{data}} meddelande]?
+messages_confirm_deletion_text;När meddelanden har raderats finns det inget sätt att få tillbaka dem.
+messages_confirm_deletion_button;Ta bort [data>1:{{data}} meddelanden][data=1:{{data}} meddelande]?
+icon_selection_title;Lägg till ikon
+icon_selection_button;Välj ikon
+icon_selection_resourcesAndHero;Råvaror/hjälte
+icon_selection_natureAndNatars;Natur och natarer
+upgrading;Uppgraderar
+buildingActivities_buildingAdditional_46;Inga skadade trupper
+playerDetails_ignorePlayerDescription;Spelaren kommer ignoreras
+reports_share;Dela rapport
+search_select_village_link;Välj by
+search_village_link;Länka by
+search_report_link;Länka rapport
+search_select_report_link;Välj rapport
+messages_banned;Du kan bara skriva meddelanden till andra medlemmar i din allians.
+messages_template_title;Mallar
+messages_template_none;Inga mallar tillgängliga
+messages_template_edit_title;Redigera mall
+messages_template_delete_title;Ta bort mall
+messages_template_delete_question;Är du säker på att du vill ta bort den här mallen?
+messages_template_delete_desc;När den har raderats kan du inte längre återställa den.
+messages_template_create;Skapa ny mall
+messages_template_create_descr;Skapa en ny mall utifrån ditt nuvarande meddelande:
+messages_template_created;Mall har skapats!
+messages_template_deleted;Mall har tagits bort!
+statistics_culturePoints_productionRank;Din placering för KP-produktion på den här servern
+statistics_culturePoints_productionRankAlliance;Din placering för KP-produktion i din allians
+statistics_culturePoints_production;KP
+statistics_resourceRank_production;Produktion: {{VALUE|ShortenNumber}}
+statistics_resourceRank_productionRank;Din placering för produktion på den här servern
+statistics_resourceRank_productionRankAlliance;Din placering för produktion i din allians
+statistics_resourceRank_bounty_lost;Förlorade
+statistics_wonderOfTheWorld_header;Bästa världsunder
+hospital_healing_costs;Läkningskostnader för trupper
+hospital_healing_action;Läk trupper
+hospital_healing_list;Visa läkningslista
+hospital_healing_list_title;Trupperna som läker
+hospital_healing_started;Läkning har påbörjats
+bonusValueWithPercent;+{{value}} %
+village_with_isCapital;{{villageName}} (huvudby)
+maximumTextLengthError;{{CONTEXT}} kan maximalt ha {{AMOUNT}} tecken
+infoTab_genericEffectInBrackets;({{INT|Sign}})
+infoTab_effectPercentage;{{INT}}%
+infoTab_effectInBracketsPercentage;({{INT|Sign}}%)
+infoTab_trapperCurrently;Maximalt antal på aktuella fällor:
+trapper_Build_Action;Bygg fällor
+trapper_ProductionCosts;Kostnader för fällproduktion
+trapper_TrapsInConstruction;Fällor som byggs
+trapper_MaxBuilt;Maximalt antal fällor som redan har byggts
+truppen.tid119;Fälla
+truppen.tid119p;Fällor
+rallyPoint_troopsOverview_outgoingMission_scouting_1;Spionerar på försvarsbyggnader och trupper som tillhör 
+rallyPoint_troopsOverview_outgoingMission_scouting_0;Spionerar på råvaror och trupper som tillhör 
+rallyPoint_troopsOverview_returningRegeneratedMission;Återvänder regenererade trupper från: 
+rallyPoint_troopsOverview_returningFleeingMission;Trupper som återvänder från skogsgrottan: 
+rallyPoint_troopsOverview_foreignTroopsIn;Stationerade i: 
+rallyPoint_celebration_hint;Firandet i bryggeriet kan påverka trupperna.
+building_not_built;Byggnaden har inte byggts
+berichte.report_icon_24;Rapport
+allBuildings_36;Maximalt antal av alla fällor:
+cropFinder_min_oasis_crop_bonus;Min. Veteoasbonus:
+cropFinder_select_minimum_crop_bonus;Välj minsta vetebonus
+cropFinder_unoccupied;Obebodd
+search_by_location;Sök efter plats
+search_by_player;Sök efter spelare
+search_village_from_player;Sök efter by som till hör spelare
+enter_player_name;Ange spelarnamn
+messages_template_newConditionsNotMet;Mallarna måste innehålla en rubrik och ett meddelande.
+message_report_isAlready;Detta meddelande har redan rapporterats som: {{REASON}}
+tutorial_begin;Börja rundvandringen
+tutorial_title_0;Var hälsad, orädda mästare! 
+tutorial_text_0;Välkommen till det hårda slagfältet i Travian: Legends. Nu ska vi snabbt göra dig redo att styra dina dynamiska bosättningar och samla dina ostoppbara styrkor.\n\nÄr du redo?
+tutorial_title_1;Navigeringsöversikt
+tutorial_text_1;Här hittar du allt från kartan till effektiv kommunikation och insiktsfulla informationsverktyg. Här finns också dina dagliga uppdrag, personliga inställningar och en mängd andra funktioner.
+tutorial_title_3;Dina resurser
+tutorial_text_3;Här hittar du din bys råvaror Läs mer genom att trycka på råvarufältet.
+tutorial_title_4;Dina råvaror
+tutorial_text_4;Om du trycker på resursfältet igen döljs detaljerna.
+tutorial_title_5;Din by
+tutorial_text_5;Här hittar du all nödvändig information om din by. Här finns allt från listan över uppgifter till översikten över dina trupper och byggkön. Ett nytt tillskott i appen, byggnadsaktiviteter, ger en snabb sammanfattning av den pågående utvecklingen i dina byggnader.
+tutorial_title_7;Din by
+tutorial_text_7;Om din samlingsplats byggs kommer den att ge en heltäckande bild av alla aktuella trupprörelser. Dessutom erbjuder den en snabb genväg till din samlingsplats.
+tutorial_title_8;Sidomeny
+tutorial_text_8;Du kan trycka på pilarna eller svepa med fingret för att öppna sidomenyn. Det här kan du göra när som helst.
+tutorial_title_9;Bylista
+tutorial_text_9;Du kan när som helst växla mellan dina byar genom att öppna sidopanelen. Du kommer också att kunna hitta byns statistik där.\n\nNu är rundvandringen slut. Vad väntar du på? Dyk in, utforska och gör Travian: Legends värld till din strategiska lekplats.\n\nLycka till!
+tutorial_finish;Avsluta rundvandringen
+filters_report_not_found;Rapporten finns inte
+filters_player_not_found;Spelaren finns inte
+filters_alliance_not_found;Alliansen finns inte
+filters_village_not_found;Byn finns inte
+settings_game;Den här spelvärlden
+language_app_selection;Välj appens språk:
+settings_sitter;Sitter {{VALUE}}:
+settings_sitterTab_yourSitters;Dina sitters
+settings_sitterTab_SittingFor;Sitter för
+search_player_addSitter;Lägg till sitter
+search_select_player_addSitter;Lägg till sitter
+search_player_addSitter_additionalEmptyResultInfo;Ingen spelare hittades.\nEndast spelare i din allians/federation kan vara sitter för din avatar.
+settings_sitter_sitterAdded;Sitter har lagts till!
+settings_sitter_sitterRemoved;Sitter har tagits bort!
+settings_sitter_sitterPermissionChangesSaved;Rättighetsändringar har sparats!
+settings_sitter_confirm_remove_text_header;Vill du verkligen ta bort {{PlayerName}} som din sitter?
+settings_sittersFor;Sitter för andra avatarer
+settings_sittersFor_info;Du har angetts som sitter till följande avatarer. Du kan avsluta det genom att klicka på det röda krysset.
+settings_sittersFor_none;Du sitter för närvarande inte för en annan avatar.
+settings_sitterFor;Sitter för {{VALUE}}:
+settings_sitterFor_sittingRemoved;Slutade vara sitter för {{PlayerName}}!
+settings_sitterFor_confirm_remove_header;Vill du sluta vara sitter för 
+settings_sitterFor_confirm_remove_header_questionmark;?
+settings_sitterFor_confirm_remove_info;Du kan inte ångra den här åtgärden. Endast andra spelare kan lägga till dig som sin sitter.
+brewery_celebration_attackStrength;({{INT}}% anfallsstyrka)
+brewery_celebration_hint;Trupper som redan marscherar kommer att påverkas av firandet
+settings_game_newLanguage;Språket har ändrats till {{language}}.
+wonderOfTheWorld_name;Namn på världsunder:
+combatSimulator_title;Simulera - {{role|TranslateSuffixFor|combatSimulator_as}}
+combatSimulator_cataTargetLevel;Nivå på det <b>{{index}} katapultmålet</b>
+combatSimulator_troopLevel;Truppens smedjenivå:
+combatSimulator_asAttacker;Som anfallare
+combatSimulator_asDefender;Som försvarare
+combatSimulator_result;Simulera resultat
+combatSimulator_addReinforcement;Lägg till förstärkningar
+valueWithModifier;{{value|Round|2}}x
+valuePlusInBracketsWithPercent;(+{{change}}%)
+none;Inga
+marketplace_traderoute_repeatEveryHour;Upprepa varje: (timmar)
+block_sitter_warning;Som sitter har du inte rättigheten att göra detta.
+settings_openConsentWindow;Integritetsinställningar
+combatSimulator_adjustHeroStats;Justera hjältens attribut
+combatSimulator_eagleEyeTitle;Välj bonusen Örnöga
+combatSimulator_architectSecretTitle;Välj bonusen Arkitekternas hemlighet
+combatSimulator_metallurgyBonus;Välj bonusen Metallurgi
+combatSimulator_rightHand;Välj högerhandsföremål
+combatSimulator_leftHand;Välj vänsterhandsföremål
+combatSimulator_bodyItem;Välj kroppsföremål
+combatSimulator_inventoryItem;Välj inventarieföremål
+combatSimulator_selectBuildingLevel_35;Välj bryggerinivå
+combatSimulator_selectBuildingLevel_26;Välj palatsnivå
+combatSimulator_selectBuildingLevel_34;Välj stenhuggarnivå
+combatSimulator_selectBuildingLevel_31;Välj murnivå
+combatSimulator_selectBuildingLevel_32;Välj murnivå
+combatSimulator_selectBuildingLevel_33;Välj murnivå
+combatSimulator_selectBuildingLevel_43;Välj murnivå
+combatSimulator_selectBuildingLevel_42;Välj murnivå
+combatSimulator_selectTargetLevel;Välj katapultmålets nivå
+combatSimulator_selectTroopLevel;Välj truppnivå
+survey_title;Travian: Legends enkät
+gdpr_title;Samtycke till databehandling
+gdpr_description;Med ditt samtycke samlar vi in viss information om din enhet, IP-adress, användning och reklamidentifierare. Det hjälper oss att visa dig mer relevanta annonser och förbättrar din övergripande appupplevelse.
+gdpr_basic_functions;Krävs för appens grundläggande funktioner.
+gdpr_advertisement;Personuppgifter används för reklam.
+gdpr_analytics;Personuppgifter används för reklam.
+gdpr_acceptAll;Acceptera allt
+gdpr_save_and_exit;Spara + avsluta
+gdpr_rejectAll;Avvisa allt
+gdpr_privacy_policy;Integritetspolicy
+gdpr_terms_and_conditions;Villkor
+plus.plus.browserOnly;(endast webbläsare)
+hero_inventory_already_equipped;Samma föremål är redan utrustat.
+survey_button_title;Feedbackenkät
+survey_button_description;Fyll i den här korta enkäten för att hjälpa oss förbättra Travian: Legends-appen.
+goldShop_extend;Förläng
+goldShop_remaining;Återstår:
+goldShop_advantage_activated;Aktiverad
+search_select_recipient_removeAll;Ta bort allt
+messages_messageTopic_noTopic;Inget ämne/standard
+messages_messageTopic_resources;Om råvaror
+messages_messageTopic_defenses;Om försvar
+messages_messageTopic_attacks;Om anfall
+messages_messageTopic_strategies;Om strategier
+messages_messageTopic_information;Allmän information
+messages_messageTopic_important;Viktig information
+messages_messageTopic_selectionTitle;Välj meddelandets ämne
+farmlist_confirm_deletion_header;Är du säker på att du vill ta bort den valda plundringslistan?
+farmlist_confirm_deletion_text;Det går inte att ångra.
+farmlist_target_confirm_deletion_header;Är du säker på att du vill ta bort [data>1:de här {{data}} målen][data=1:det här målet]?
+upgrade_queue_cantConstructImmediately;Den här byggnaden kan inte slutföras omedelbart
+language_cs-CZ;Tjeckiska
+language_es-ES;Spanska
+language_pl-PL;Polska
+language_pt-PT;Portugisiska
+language_tr-TR;Turkiska
+language_it-IT;Italienska
+playerDetails_victorPoints_summary;{{TOTAL}} | {{PERDAY}}/dag
+settings_selectFormat;Välj format
+settings_selectFormat_dialog_title;Välj datumformat
+settings_game_newDateFormat;Datumformatet har ändrats till {{dateFormat}}.
+help_getHelp;Få hjälp
+help_getHelpDescription;Om du behöver hjälp eller vill rapportera ett problem kan du kontakta supporten i spelet här.
+help_learnAboutGame;Läs mer om spelet
+help_learnAboutGameDescription;Allt du behöver veta om spelet och detaljer om hur allt fungerar finns här.
+help_gameRules;Lär dig spelreglerna
+help_gameRulesDescription;Här kan du läsa spelreglerna
+help_joinDiscord;Gå med i Discord
+help_joinDiscordDescription;Dela med dig av din feedback till oss på vår dedikerade Mobile Discord-server.
+PLAYERARG;{{PLAYER}}
+referAFriend_friendJoinedDescription;Din vän måste grunda sin <b>andra by</b> för att du ska få guld för din inbjudan. Hjälp din vän att nå detta mål! Du kan se dina vänners framsteg i översikten nedan.
+referAFriend_rewardAddedVillage2Title_PLAYERARG;Din vän {{PLAYER}} har grundat sin andra by
+referAFriend_rewardAddedVillage3Title_PLAYERARG;Din vän {{PLAYER}} har grundat sin tredje by
+referAFriend_rewardAddedVillage4Title_PLAYERARG;Din vän {{PLAYER}} har grundat sin fjärde by
+referAFriend_rewardAddedVillage5Title_PLAYERARG;Din vän {{PLAYER}} har grundat sin femte by
+referAFriend_rewardAddedVillage6Title_PLAYERARG;Din vän {{PLAYER}} har grundat sin sjätte by
+referAFriend_rewardAddedVillage7Title_PLAYERARG;Din vän {{PLAYER}} har grundat sin sjunde by
+referAFriend_rewardAddedVillage8Title_PLAYERARG;Din vän {{PLAYER}} har grundat sin åttonde by
+referAFriend_rewardAddedVillage9Title_PLAYERARG;Din vän {{PLAYER}} har grundat sin nionde by
+referAFriend_rewardAddedVillage10Title_PLAYERARG;Din vän {{PLAYER}} har grundat sin tionde by
+sysmsg_truce_learnMore;Lär dig mer om frid
+worldEnded_ww_playerWon_topAlliance;Vid {{WORLD_END_TIME|DateTime}} lade arbetarna i byn {{WW_VILLAGE|VillageLink}} den sista stenen på en av historiens viktigaste skapelser.<br>Tillsammans med alliansen {{WW_ALLIANCE|AllianceLink}}, var {{WW_PLAYER|PlayerLink}} den första som slutförde sitt världsunder. Hundratusentals modiga soldater försvarade en förmögenhet i råvaror för att göra {{WW_PLAYER|PlayerLink}} till erans segrare.
+worldEnded_as2022_topAlliances;Grattis till {{ALLIANCE_TOP_1|AllianceLink}}, som blir Europas ledare med {{VICTORY_POINTS_TOP_1}} segerpoäng! Även {{ALLIANCE_TOP_2|AllianceLink}} kämpade hårt för sin andraplats, och {{ALLIANCE_TOP_3|AllianceLink}} för sin tredjeplats.
+worldEnded_playerRanks_population;{{PLAYER_POPULATION_TOP_1|PlayerLink}} härskade över det största personliga riket, men {{PLAYER_POPULATION_TOP_2|PlayerLink}} och {{PLAYER_POPULATION_TOP_3|PlayerLink}} var hack i häl.
+worldEnded_playerRanks_offender;{{PLAYER_OFFENDER_TOP_1|PlayerLink}} besegrade fler än någon annan och var den mest fruktade befälhavaren.
+worldEnded_playerRanks_defender;{{PLAYER_DEFENDER_TOP_1|PlayerLink}} var den tappraste försvararen och färgade marken runt sina byar röd med sina fienders blod.
+rallyPoint_startWithValue;Start ({{value}})
+rallyPoint_farmList_raidsStarted;{{INT}} plundringar har skickats.
+rallyPoint_farmList_CantAddToAbandonList;Du kan inte lägga till mål på en övergiven farmlista.
+rallyPoint_farmList_CantActivateInToAbandonList;Du kan inte aktivera mål på en övergiven farmlista.
+rallyPoint_farmList_CantDuplicateInToAbandonList;Du kan inte kopiera mål på en övergiven farmlista.
+rallyPoint_farmList_DuplicateRaids;Kopiera mål
+rallyPoint_farmList_SlotsDuplicated;Mål har kopierats!
+rallyPoint_farmList_pleaseSelectTheList;Välj vilken lista du vill lägga till målet i.
+rallyPoint_farmList_farmlistFull;Plundringslistan är full. Välj en annan plundringslista eller skapa en ny.
+rallyPoint_farmList_targetName;Målets namn
+rallyPoint_farmList_differentTroopsWarning;Antalet trupper kommer inte att ändras om du inte anger ett nytt värde nedan.
+rallyPoint_farmList_noobProtectionWarning;När du har nybörjarskydd kan du inte plundra andra spelare, men du kan plundra obebodda oaser och natarbyar.
+rallyPoint_farmList_noFarmLists;Ingen plundringslista har skapats
+rallyPoint_farmList_CreateNewFarmList;Skapa farmlista
+rallyPoint_farmList_currentAmount;Plundringslistor: <b>{{amount}}</b>/{{max}}
+rallyPoint_farmList_differentTribe;Byn har en annan stam än den nuvarande utgångsbyn. Kontrollera vilka trupper som används.
+rallyPoint_farmList_overrideTarget;Ersätt mål
+rallyPoint_farmList_selectedActivated;De valda målen gjordes aktiva.
+rallyPoint_farmList_selectedDeactivate;De valda målen gjordes inaktiva.
+rallyPoint_farmList_LastRaid;<b>Senaste start:</b> <nobr>{{lastStarted|DateTime}}</nobr>
+mapCell_editTargetListAmount;<nobr>Redigera mål</nobr> <nobr>(Listor: {{INT}})</nobr>
+goldShop_shopDisabled;Guldbutiken är inaktiverad på den här spelvärlden
+infobox_accountLockGameEnd;Denna spelrunda är slut!
+applySorting;Tillämpa sortering
+truppen.tid931;Fälla
+truppen.tid931p;Fällor
+mainMenu_switchBackFromAvatar;{{iconName|Sprite}} Gå tillbaka till {{playerName}}
+pending;(Väntande)
+featureNotAvailableInVacationMode;Den här funktionen är inte tillgänglig i semesterläget.
+notAllowed;Du har inte rättigheten att göra det här.
+settings_avatarDeletionInfo;Efter att du har startat nedräkningen kommer det att ta <b>3 dagar</b> innan bottagningen av din avatar är klar.\nAvatarer som håller på att tas bort kan inte längre komma åt auktioner eller växlingskontoret.\nDu kan när som helst avbryta borttagningen här.
+settings_avatarDeletionCountDown;Avataren kommer raderas om
+deleteAvatar_confirmation_header;Vill du ta bort din avatar?
+cams_info_subHeader;En inloggning för alla dina spelvärldar
+cams_info_text;Skapa ditt Legends-lobbykonto för enkel inloggning och sömlös åtkomst till alla dina spelvärldar genom en enhetlig inloggning.
+cams_info_lessInfo;Mindre information
+cams_info_Question_WhatIsLegendsLobbyAccount;Vad är Legends-lobbykontot?
+cams_info_Answer_WhatIsLegendsLobbyAccount;Med ett lobbykonto slipper du registrera dig i nya spelvärldar mer. Bara genom att logga in kan du öppna dina aktiva spelvärldar eller starta en ny i lobbyn, oavsett om du använder webbläsaren eller mobilappen.
+cams_info_Question_WhatAreAvatars;Vad är avatarer?
+cams_info_Answer_WhatAreAvatars;Med lobbykontot kallas dina profiler i specifika spelvärldar för avatarer. Du har ett lobbykonto som kan ha flera avatarer, en för varje spelvärld.
+cams_info_Question_WhatsWithCurrentGameworlds;Vad händer med mina nuvarande spelvärldar?
+cams_info_Answer_WhatsWithCurrentGameworlds;Alla aktiva spelvärldar som använder samma e-postadress som ditt lobbykonto länkas och kan nås via lobbyn. Du kan byta dina nuvarande aktiva spelvärldsavatarer till rätt e-postadress innan ditt lobbykonto skapas.
+cams_info_Question_WhatsWithSitters;Kan jag fortfarande ha sitters?
+cams_info_Answer_WhatsWithSitters;Ja, sitters kan utses som vanligt i spelvärldens inställningar. Avatarer du utsetts till sitter för kan nås direkt i spelvärlden.
+cams_info_Question_WhatsWithDuals;Kan jag fortfarande ha andra spelare som kontopartner?
+cams_info_Answer_WhatsWithDuals;En kontopartner kan kopplas till en spelvärld genom att ange spelarens lobbykontonamn i lobbyn. Det innebär att en kontopartner också behöver ett lobbykonto först och kan få tillgång till avataren via lobbyn efter att ha accepterat inbjudan. Dela inte lösenordet till ditt lobbykonto med någon annan.
+cams_info_Question_WhatsWithoutLobbyAccount;Kan jag spela utan att skapa ett Legends-lobbykonto?
+cams_info_Answer_WhatsWithoutLobbyAccount;Du kan fortfarande logga in på dina nuvarande spelvärldar direkt via respektive webbadress. Om du vill starta en ny spelvärld eller använda mobilappen måste du dock skapa ett lobbykonto.
+cams_playerDecision_register_info;Med det nya lobbykontot kan du koppla ihop dina nuvarande och framtida spelvärldar med en enda inloggning.
+cams_playerDecision_login_info;Har du redan ett lobbykonto?\n\nLogga in och fortsätt ditt äventyr.
+cams_playerDecision_register_header;Skapa konto
+cams_playerDecision_register_create_new_account;Skapa lobbykonto
+cams_playerDecision_register_login;Logga in på lobbyn
+cams_playerDecision_extra_info;För att kunna spela Travian: Legends behöver du skapa ett lobbykonto.
+cams_register_header;Skapa Legends-lobbykonto
+cams_register_email_label;Ange din e-postadress:
+cams_register_email_address;Registrera e-postadress
+cams_register_email_address_missing;Ange din e-postadress
+cams_register_email_address_not_valid;Ange en giltig e-postadress. T.ex. minpost@leverantör.com
+cams_register_email_address_already_exists;Din e-postadress är redan kopplad till ett lobbykonto.
+cams_register_redirecting_to_login;Du skickas vidare till inloggning {{INT}}…
+cams_register_hintMessage_same_email_address;Använd samma e-postadress som dina befintliga spelvärldsavatarer för att automatiskt länka dem till ditt lobbykonto.
+cams_register_receive newsletter;Jag vill få nyhetsbrevet.
+cams_register_already_have_an_account;Har du redan ett konto?
+cams_register_log_in_now;Logga in nu
+cams_acceptTOS;Genom att klicka på ”Registrera e-postadress” accepterar du <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">de allmänna villkoren</link></style> och bekräftar att du har tagit del av <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">informationen om ångerrätt</link></style> och <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">integritetspolicyn</link></style>.
+cams_activation_header;Aktivera Legends-lobbykonto
+cams_activation_info;Vi har skickat en aktiveringslänk till <b>{{emailAdress}}</b>.<br>Följ instruktionerna i e-postmeddelandet för att fortsätta.
+cams_activation_enter_code;Ange aktiveringskoden:
+cams_activation_code_example;T.ex. 123456
+cams_activation_entered_code;{{INT}}/6 siffror
+cams_activation_cta_activate_account;Aktivera konto
+cams_activation_email_lost;Fick du inte något e-postmeddelande?
+cams_activation_email_resend;Skicka e-postmeddelande igen
+cams_activation_email_wrong;Fel e-postadress?
+cams_activation_email_change;Ändra e-postadress
+cams_activation_code_missing;Ange den aktiveringskod som du fick i e-postmeddelandet.
+cams_activation_code_too_short;Aktiveringskoden är för kort. Ange alla 6 siffror.
+cams_activation_code_format_incorrect;Fel format på aktiveringskoden. Se till att koden endast består av 6 siffror.
+cams_activation_code_incorrect;Fel aktiveringskod. Ange den aktiveringskod som du fick i e-postmeddelandet.
+cams_activation_code_expired;Aktiveringskoden har gått ut.
+cams_activation_code_start_again;Börja om på nytt
+cams_login_header;Logga in på Legends-lobbyn
+cams_login_enter_email;Ange e-postadress eller kontonamn:
+cams_login_enter_password;Ange lösenord:
+cams_login_hintMessage_email_already_connected;E-postadressen du angav är redan kopplad till ett lobbykonto. Logga in eller <style="SimpleLink"><link="BackToRegistrationLink">återvänd till registreringen</link></style>.
+cams_login_hintMessage_passwordUpdated;Ditt lösenord har uppdaterats
+cams_forgot_password;Har du glömt ditt lösenord?
+cams_recover_password;Återställ lösenord
+cams_login_no_account_yet;Inget konto ännu?
+cams_login_create_account;Skapa konto
+cams_loginMask_accountNameRequired;Ange e-postadress eller kontonamn.
+cams_loginMask_passwordRequired;Ange lösenord.
+cams_loginMask_passwordAndUsernameAreWrong;Fel e-postadress, kontonamn eller lösenord.
+cams_loginMask_emailOrAccountName_placeholder;E-postadress/kontonamn
+cams_loginMask_temporaryInfobox;Nyhet: Du måste skapa ett lobbykonto för att få tillgång till dina spelvärldar.\n\nOm du inte har ett lobbykonto ännu bör du <style="SimpleLink"><link="CreateAccountLink">skapa konto</link></style>.
+cams_setPassword_header;Välj lösenord
+cams_setPassword_info;Skapa ett lösenord för ditt konto, minst 8 tecken.
+cams_setPassword_enter_password;Välj lösenord:
+cams_setPassword_strength_label;Lösenordets styrka
+cams_setPassword_strength_missing;Ange ett lösenord för att kontrollera hur starkt det är.
+cams_setPassword_strength_1;mycket svagt
+cams_setPassword_strength_2;ganska svagt
+cams_setPassword_strength_3and4;medelmåttigt
+cams_setPassword_strength_5;ganska starkt
+cams_setPassword_strength_6;mycket starkt
+cams_setPassword_strength_PasswordTooShort;Ju längre desto bättre (över 16 tecken)
+cams_setPassword_strength_PasswordGoodLength;Lösenordet har en bra längd
+cams_setPassword_strength_OneType;Endast en typ av tecken ingår
+cams_setPassword_strength_TwoTypes;Två typer av tecken ingår
+cams_setPassword_strength_ThreeTypes;Tre sorters tecken ingår
+cams_setPassword_strength_NoNumbers;Inga siffror ingår
+cams_setPassword_strength_NoLetters;Inga bokstäver ingår
+cams_setPassword_strength_NoSpecialCharacters;Inga specialtecken ingår
+cams_setPassword_strength_NoUpperAndLowerCase;Ingen blandning av stora och små bokstäver
+cams_setPassword_strength_UpperAndLowerCase;Stora och små bokstäver ingår
+cams_activation_cta_set_password;Välj lösenord
+cams_activation_password_length;8–64 tecken
+cams_resetPassword_header;Ange nytt lösenord
+cams_resetPassword_info;Skapa ett nytt lösenord för ditt lobbykonto, minst 8 tecken.
+cams_setUsername_header;Välj ett namn för ditt Legends-lobbykonto
+cams_setUsername_info;Välj ett användarnamn och en tagg för att skapa ditt unika lobbykonto.
+cams_setUsername_username_label;Välj användarnamn:
+cams_setUsername_tagline_label;Välj tagg:
+cams_setUsername_tagline_example;t.ex. TAG12
+cams_setUsername_tagline;Tagg:
+cams_setUsername_condition_onlyLettersAndNumbers;Endast bokstäver och siffror
+cams_setUsername_username_condition_Length;3–15 tecken
+cams_setUsername_tagline_condition_Length;2–5 tecken
+cams_setUsername_hint;Kombinationen av ditt användarnamn och din tagg blir ditt unika lobbynamn. Så länge kombinationen finns tillgänglig kan du välja vilken kombination du vill.\n\nDet här påverkar inte namnet på din spelvärld.
+cams_setUsername_cta_createAccount;Skapa konto
+cams_setUsername_username_missing;Ange ett användarnamn och en tagg.
+cams_setUsername_accountName_preview;Förhandsgranska kontonamn
+cams_setUsernameConfirmPopup_header;Legends-lobbykonto har skapats!
+cams_setUsernameConfirmPopup_info;Du har skapat ett Legends-lobbykonto med inloggningsnamnet <b>{{playerName}}</b>.
+cams_setUsernameConfirmPopup_GameworldAndAvatar_header;Dina spelvärldar och avatarer
+cams_setUsernameConfirmPopup_GameworldAndAvatar_info;Vi kopplade följande befintliga spelvärldsavatarer med samma e-postadress till ditt nya lobbykonto.
+cams_avatar_name;Avatarnamn
+cams_looby_welcomeMessage;Välkommen!\n<b>{{playerName}}</b>
+cams_looby_header;Dina spelvärldar
+cams_looby_noGameWorlds;Du har för närvarande inte en aktiv avatar på någon spelvärld. Gå med i en ny spelvärld och börja spela.
+cams_looby_joinNewGameworld;Gå med i den nya spelvärlden
+cams_looby_playNow;SPELA NU
+cams_looby_gameworldsLinked;Spelvärldar kopplade till ditt konto
+cams_looby_invitePenging;[data>1:{{data}} inbjudningar][data=1:inbjudan] väntar
+cams_looby_localGameWorld;LOKAL SPELVÄRLD
+cams_looby_avatarInDeletion;Tar bort
+cams_removeDualAccount_header;Ta bort kontopartner
+cams_removeDualAccount_info;Vill du ta bort <b>{{lobbyAccountName}}</b> som kontopartner för din avatar <b>{{avatarName}}</b>? \n\n<b>{{lobbyAccountName}}</b> kommer inte att ha tillgång till din avatar längre.
+cams_removeDualAccount_removeDual;Ta bort partner
+cams_addDualPlayer_info;Ange spelarens lobbykontonamn:
+cams_addDualPlayer_placeholder;användarnamn#tagg
+cams_addDualPlayer_addPlayer;[data>1:Lägg till spelare][data=1:Lägg till spelare][data=0:Lägg till spelare]
+search_addDualPlayeradditionalEmptyResultInfo;Spelaren hittades inte eller är redan inbjuden som kontopartner
+cams_dualInventation_header;Kontopartnerinbjudan
+cams_dualInventation_invitations;Inbjudningar:
+cams_dualInventation_info;Om du accepterar inbjudan kan du logga in med ditt eget lobbykonto för att få tillgång till den här avataren.
+cams_dualInventation_moreInfo;Du kan bara acceptera en kontopartnerinbjudan för varje spelvärld.
+cams_dualInventation_invite;<b>{{LobbyAccountName}}</b> bjöd in dig till att spela <b>{{avatarName}}</b>
+cams_dualInventation_AcceptInvite;Accepterade inbjudan
+cams_acceptDualInvitation_header;Acceptera kontopartnerinbjudan
+cams_acceptDualInvitation_info;Vill du acceptera kontopartnerinbjudan från <b>{{lobbyAccountName}}</b> att spela <b>{{avatarName}}</b> på <b>{{gameworldName}}</b>?
+cams_acceptDualInvitation_moreInfo;Du har flera kontopartner inbjudningar för samma spelvärld som väntar men kan bara acceptera en kontopartnerinbjudan per spelvärld.
+cams_acceptDualInvitation_avatarInDeletion;Enligt våra kontopartnerregler får du bara ha en aktiv avatar per spelvärld. \nOm du accepterar kontopartnerinbjudningen får du inte längre åtkomst till din avatar {{avatarName}}, som håller på att tas bort i den spelvärlden. \nDu kan inte avbryta borttagningsprocessen längre efteråt.
+cams_dualSettings_header;Kontopartnerinställningar
+cams_dualSettings_info;Du kan när som helst sluta spela som kontopartner för den nämnda avataren.
+cams_dualSettings_leaveDualPlay;Lämna kontopartnerspel
+cams_confirmLeaveDualPlay_info;Vill du sluta spela som kontopartner för <b>{{avatarName}}</b> på <b>{{gameworldName}}</b>?\n\nEfter att ha lämnat kontopartnerskapet kan du skapa en egen avatar eller gå med i en annan avatar som kontopartner på den här spelvärlden igen.
+cams_recoverPassword_header;Återställ lösenord
+cams_recoverPassword_goBackToLogin;Gå tillbaka till inloggning
+cams_recoverPassword_info;Ange den e-postadress som är kopplad till ditt lobbykonto. Vi skickar instruktioner till dig om hur du återställer ditt lösenord
+cams_recoverPasswordEmailSent_header;E-post har skickats
+cams_recoverPasswordEmailSent_info;Om det finns ett lobbykonto för e-postadressen <b>{{emailAdress}}</b> bör vi ha skickat instruktioner om hur du återställer lösenordet.\n\nNär du har återställt ditt lösenord kan du logga in igen.
+cams_recoverPasswordEmailSent_goBackToLogin;Tillbaka till inloggning
+cams_editDualAccounts_header;Partner
+cams_editDualAccounts_gameworld;Spelvärld: {{gameworldName}}
+cams_editDualAccounts_avatar;Avatar: {{avatarName}}
+cams_editDualAccounts_avatarOwner;Avatarägare:
+cams_editDualAccounts_noDualsAdded;- Inga kontopartnerspelare har lagts till på den här avataren -
+cams_editDualAccounts_info;Kontopartnern kommer att ha <b>full åtkomst</b> till att utföra alla handlingar i spelet, som att spendera och köpa guld.\n\nKontopartnerspelare kan logga in med sitt eget lobbykonto för att få tillgång till den här avataren och kan inte bjuda in andra kontopartnerspelare.
+cams_editDualAccounts_warningHint;Dela inte inloggningsuppgifterna för ditt lobbykonto med andra spelare för att förhindra oönskad åtkomst till andra spelvärldsavatarer och dina kontouppgifter.
+cams_editDualAccounts_addDualPlayer;Lägg till kontopartnerspelare
+cams_editDualAccounts_avatarInDeletion;Din avatar {{avatarName}} i den här spelvärlden kommer att raderas. Därför kan du inte skicka en kontopartnerinbjudan.
+cams_settings_title;Inställningar
+cams_settings_changePassword_information;Om du vill ändra ditt lösenord skickar vi ett e-postmeddelande till ditt kontos e-postadress.
+cams_settings_changePassword_sendEmail;Skicka e-postmeddelande
+cams_settings_changePassword_emailSent;Vi har skickat ett e-postmeddelande till dig för att ändra ditt lösenord.
+cams_settings_accountDeletion_title;Borttagning av lobbykonto
+cams_settings_accountDeletion_info;Ta bort ditt Legends-lobbykonto inklusive alla spelvärldar och avatarer från det här kontot.
+cams_settings_accountDeletion_action;Ta bort lobbykonto
+cams_settings_accountDeletion_warning;Varning: Det här går inte att ångra!
+cams_settings_accountDeletion_warning_content;En borttagning av ditt lobbykonto är permanent efter en nedräkning på 72 timmar, kan inte ångras och påverkar alla dina avatarer. \n\nDitt konto kan bara tas bort om borttagningsprocessen har påbörjats för alla dina avatarer.
+cams_settings_accountDeletion_requirementsInformation;För att ta bort ditt konto måste alla dina avatarer vara under borttagning eller redan vara borttagna.
+cams_settings_accountDeletion_information_warning;Det här gör ditt konto redo för borttagning. Skriv ”radera” i fältet för att bekräfta att du är medveten om att ditt konto, och alla tillhörande avatarer och alla data tas bort permanent.
+cams_settings_accountDeletion_information_error;Du kan inte radera kontot om en avatar inte är under borttagning.\nLogga in i de angivna spelvärldarna och radera din avatar.
+cams_settings_accountDeletion_noAvatarsFound;Inga aktiva spelvärldar/avatarer hittades.\nDu är redo!
+cams_settings_accountDeletion_understandmentConfirmation;Jag förstår
+cams_settings_accountInDeletion_title;Kontot tas bort
+cams_settings_accountInDeletion_info;Ditt lobbykonto <b>{{NAME}}</b> kommer att raderas permanent om <b>{{TIMESTAMP|Countdown}}</b>.
+cams_settings_accountInDeletion_action;Avbryt borttagning
+cams_mainMenu_dataConsent;Samtycke till datadelning
+gameworld_gameworld;Spelvärld
+infobox.productionboost;{{RES}}{{TIME_COUNTER}}
+infobox_notesCount;{{COUNT}} meddelande[COUNT>1:n]
+auction_placeBid;Lägg ett bud
+auction_auctionsAmount;{{COUNT}} auktioner
+auction_bidsRefreshed;Buden har uppdaterats!
+auction_currentSilver;Aktuellt silver:  {{iconName|Sprite}} {{currentSilver}}
+auction_availableAmount;Tillgängligt antal:
+auction_toSellAmount;Säljantal:
+auction_selectAmountToSellHeader;Välj antal att sälja
+auction_soldHorseForSilver;Sålde häst för {{amount}} silver.
+auction_currentCurrency;Aktuellt:
+auction_newCurrencyValues;Nytt:
+auction_exchangeExplanationGoldToSilverTitle;Du kan växla guld till silver för att köpa hjälteföremål på auktionshuset.
+auction_exchangeExplanationGoldToSilverMore;Ange hur mycket guld som du vill växla:
+auction_exchangeExplanationSilverToGoldTitle;Du kan växla in silver från försäljningen av hjälteföremål på auktionshuset till guld.
+auction_exchangeExplanationSilverToGoldMore;Ange hur mycket silver som du vill växla:
+auction_countAndName;{{AMOUNT}}×{{ITEM_NAME}}
+auction_deleteAll;Ta bort alla auktioner
+auction_confirm_deletion_title;Radera auktion [data>1:{{data}} poster][data=1:post]
+auction_confirm_deletion_button;Radera [data>1:poster][data=1:post]
+auction_confirm_deletion_text_header;Är du säker att du vill ta bort [data>1:{{data}} auktionsposter][data=1:den här auktionsposten]?
+auction_confirm_deletion_text;När du har raderat en post kan den inte återställas. Du kommer inte att kunna återfå det.
+cams_looby_noMatchingGameworlds;Det finns inga matchande spelvärldar för ditt val.
+serverSelection_5;Utveckare
+serverSelection_header;Välj spelvärldsfilter
+serverSelection_filter_gameworldSpeed;Spelvärldshastighet
+serverSelection_gameworldSpeed;x{{INT}} hastighet
+serverSelection_filer_gameworldLifetime;Spelvärldslivslängd
+serverSelection_gameworldLifetime;{{INT}}–{{INT2}} dagar
+serverSelection_gameworldLifetime_XorMore;Minst {{INT}} dagar
+filters_applyButton;Tillämpa [COUNT<2:filter][COUNT>1:{{COUNT}} filter]
+filters_reset;Återställ [COUNT<2:filter][COUNT>1:filter]
+cams_avatarCreation_cancel_title;Avbryt skapande av avatar
+cams_avatarCreation_cancel_reconfirmationText;Är du säker på att du vill avbryta skapandet av din avatar på {{gameworldName}}?
+cams_avatarCreation_cancel_explanation;Du kommer att förlora alla dina framsteg i den här spelvärlden, inklusive din stam, kartplats och avatarnamn.
+cams_avatarCreation_button_startPlaying;Börja spela
+cams_avatarCreation_button_changeSector;Ändra position
+cams_avatarCreation_button_selectTribe;Välj stam
+cams_avatarCreation_button_updateTribe;Uppdatera stam
+cams_avatarCreation_button_selectSector;Välj position
+cams_avatarCreation_button_updateSector;Uppdatera position
+cams_avatarCreation_name_title;Ange avatarnamn:
+cams_avatarCreation_name_tip;Det här är ditt avatarnamn i spelvärlden.
+cams_avatarCreation_name_errorEmpty;Var vänlig ange ett avatarnamn.
+cams_avatarCreation_name_placeHolder;Avatarnamn
+cams_looby_avatarInDeletionBlockPlayNow;Du har accepterat en kontopartnerinbjudan till den här spelvärlden, {{gameworldName}}, så du kan inte längre komma åt den utan kontopartner.
+infobox_openMessage;Öppna meddelande
+infobox_accountIsLocked;Din avatar är avstängd!
+auction_button_requirement;Klara {{REQUIRED}} äventyr för att låsa upp auktioner.\nKvar: {{INT}}
+auction_availableSilver;Tillgängligt silver:  {{iconName|Sprite}} {{currentSilver}}
+auction_deleteSelected;Ta bort valda auktioner
+auction_deletedAll_confirmation;Alla auktioner har tagits bort!
+auction_deletedSelected_confirmation;{{data}} auktions[data>1:poster raderade][data=1:post raderad]!
+newVersionAvailable_title;Ny version tillgänglig
+newVersionAvailable_description;Vi har förbättrat vår app. Uppdatera för att fortsätta spela.
+newVersionAvailable_joinDiscord;Vad är nytt? Gå med i Discord för att läsa mer.
+newVersionAvailable_toStore;Uppdatera nu
+infobox_beginnerProtection_title;Förläng nybörjarskydd
+infobox_beginnerProtection_question;Är du säker på att du vill förlänga nybörjarskyddet?
+infobox_beginnerProtection_description;Du kan inte skicka råvaror till andra spelare, attackera eller bli attackerad så länge att nybörjarskyddet är aktivt.
+sendResources_beginnersProtection;Du kan inte skicka råvaror till andra spelare medan ditt nybörjarskydd är aktivt.
+sendTroops_beginnersProtection;Du kan inte skicka trupper till andra spelare medan ditt nybörjarskydd är aktivt.
+sendTroops_otherBeginnersProtection;Du kan inte skicka trupper till andra spelare medan de har sitt nybörjarskydd aktivt.
+buildingActivities_building_36;Fällor som byggs
+tasks_collectAll;Samla alla ({{INT}})
+auction_bidMinPlaceholder;min. {{INT}}
+auction_buttonBidMinimum;Minsta bud som krävs
+hero_adventures_available;Tillgängliga äventyr
+messages_freshDeskMessage_viewAndReplyInBrowser;Visa och svara i webbläsaren
+messages_webViewRecommendation;Innehållet i meddelandet kanske inte är fullständigt.\nVi rekommenderar att du visar meddelandet i en webbläsare.
+rateThisApp_popup_title;Tycker du om vår app?
+rateThisApp_popup_description;Ta ett ögonblick och betygsätt vår app om du gillar den.
+rateThisApp_popup_appreciatefeedback;Din feedback är viktig för oss!
+rateThisApp_popup_btn_positive;Den är jättebra!
+rateThisApp_popup_btn_negative;Skulle kunna vara bättre
+rearrange_or_demolish_building;Bygg om eller riv byggnad
+mainBuilding_buildingArrangement;Byggnadsplacering
+mainBuilding_openRearrangeMode;Öppna flyttläget
+mainBuilding_demolishBuildings;Riv byggnader
+mainBuilding_openDemolishMode;Öppna rivningsläget
+mainBuilding_demolishBuildings_description;Dra och släpp byggnader för att flytta dem.
+rearrangeBuildingPopup_rearrangeDescription;Vill du flytta <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>?
+rearrangeBuildingPopup_buildingsRearranged;Byggnader har flyttats
+rearrangeBuildingPopup_buildingRearranged;{{buildingName|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>{{buildingLevel}}</color>
+confirmRearrangeBuildingPopup_header;Vill du flytta den här byggnaden?
+confirmRearrangeBuildingPopup_description;Flyttar de valda byggnaderna i byn <b>{{villageName}}</b>.
+demolishBuildingPopup_title;Riv byggnad
+demolishBuildingPopup_description;Välj en byggnad som ska rivas
+demolishBuildingPopup_descriptionWithSelection;Vill du riva <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>?
+demolishBuildingPopup_demolishLevel;Rivningsnivå
+demolishBuildingPopup_demolishCompletely;Riv fullständigt
+confirmDemolishBuildingPopup_header;Vill du riva <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color> omedelbart?
+confirmDemolishBuildingPopup_description;River omedelbart den valda byggnaden och tar bort den från din by.\nDet här går inte att ångra.
+characterCount;{{COUNT}}/{{MAX}} tecken
+survey_button_description_reward;Fyll i den här korta enkäten för att hjälpa oss att förbättra Travian: Legends-appen.\nDitt stöd kommer att belönas.
+cams_lobby_joinGameworld;Gå med i spelvärld
+cams_lobby_gameworld_inviteOnly;Endast inbjudna
+cams_lobby_gameworld_inviteOnlyInfo;Den här spelvärlden är begränsad till spelare med en särskild inbjudningskod.
+cams_lobby_gameworld_inviteCodeEnter;Ange inbjudningskod
+cams_lobby_gameworld_inviteCodeInfo;Den här spelvärlden är begränsad till spelare med en särskild inbjudningskod.\nAnge din kod om du har en för att gå med i spelvärlden.
+cams_lobby_gameworld_inviteCodePlaceholder;T.ex. eThbt5OLyZ8D5xjhUaBAba
+cams_lobby_gameworld_inviteCodeErrorCharacterCount;Inbjudningskoden är för kort. Ange alla {{MAX}} tecken.
+cams_lobby_gameworld_inviteCodeCooldown;Vänta ett tag innan du anger din inbjudningskod ({{TIME|Countdown}})
+timeCountDown;{{TIME|Countdown}}
+attestation_failed;Enhetsvalidering misslyckades! Använd en mobil enhet för att spela.\nAnvänd hjälpknappen nedan för att kontakta supporten om problemet kvarstår!
+mainBuilding_demolishBuildings_notAvailable;En huvudbyggnad på nivå {{INT}} behövs för att riva byggnader.
+mainBuilding_demolishBuildings_demolishing;River <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> till <b><color={{colorValue|TextColor}}>nivå {{buildingLevel}}</color></b> om {{timestamp|Countdown}}.
+demolishBuildingPopup_demolishing;River <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> till <b><color={{colorValue|TextColor}}>nivå {{buildingLevel}}</color></b>.
+allianz.hinweis_text_NoConfederacy;Det tillhör diplomatisk etikett att man pratar med en annan allians och förhandlar innan man sänder ett erbjudande om en icke-aggressiv pakt (IAP).
+regions_canBeSettled;Kan bli bosatt?
+regions_regionStatusNoColon;Regioners status
+regions_top5AlliancesPopulation;Topp 5 allianser sett till <b>befolkning</b>
+regions_top5AlliancesVillages;Topp 5 allianser sett till <b>byar</b>
+regions_neighboringRegions;Grannregioner
+regions_regionPopulation;Regional befolkning
+regions_contested;Regionen är bestriden
+cams_lobby_gameworld_disabledAndNotSupported;Spelvärlden är för närvarande inte spelbar via mobilappen.
+demolishBuildingPopup_impossible;Den här byggnaden kan inte rivas.
+city_benefits;Stadsförmåner
+city_benefits_threeAdditionalSlots;Ytterligare 3 byggnadsplatser
+city_benefits_resourceFieldsLevel12;Uppgradera råvarufält till nivå 12.
+city_benefits_watchTowers;Uppgradera murar med vakttorn
+city_upgradeToACity;Uppgradera {{villageName}} till en stad
+city_culturePointsForNext;(nästa om {{culturePoints}} kulturpoäng)
+city_upgradeVillage;Uppgradera by
+city_confirm_upgradeVillage;Uppgradera till en stad
+city_confirm_header;Vill du uppgradera {{villageName}} till en stad?
+city_confirm_description;Att uppgradera en by till en stad kräver {{time}} och en av dina byggnadsplatser.
+city_upgrading;{{villageId|VillageLink}} {{text}}
+city_upgraded;{{villageId|VillageLink}} är redan en stad.
+combatSimulator_selectTarget;Välj mål
+mainMenu_goToLobby;Gå till lobbyn
+mainMenu_yourPlayerProfile;Din spelarprofil
+plus.plusAttackWarningText;Inkommande attacker kommer att visas i bylistan. Endast mobil: I byöversikten är pilen för att öppna bylistan på höger sida markerad.
+production.crobBalanceTroopConsumptionAncientPower;Uråldrig kraftbonus
+filters_region_not_found;Regionen finns inte
+rallyPoint_troopsOverview_ownTroops_8;Egna trupper i 
+rallyPoint_troopsOverview_ownTroops_9;Egna trupper i 
+tradeOffice_merchantsCarryCapacity;Köpmännens kapacitet:
+tradeOffice_tradeShipsCarryCapacity;Handelsskeppens kapacitet: 
+buildingActivities_building_48;Trupper som läker
+playerDetails_victorPointsPerDay;{{PERDAY}} /dag
+allianz.numIncomingRaids;{{NUM_ATTACKS}} plundring[NUM_ATTACKS>1:ar]
+allianz.numIncomingAttacks;{{NUM_ATTACKS}} anfall
+allianz.MerchantCapacityAndSpeedNew;Handel
+alliance_regionalTabTop5Description;Regioner där din allians är en av de 5 största allianserna baserat på territoriell kontroll.
+alliance_regionalTabTitle;Topp 5 i regionen
+alliance_regionalTabTop5Empty;- Inte tillräcklig territoriell kontroll i någon region -
+alliance_ShowDetails;Visa detaljer
+wall_upgradesInProgress;Pågående uppgraderingar
+extension_upgradeStarted;Uppgraderingen har börjat!
+extension_constructionList;Konstruktionslista
+upgradeLevel;Uppbyggnadssnivå
+infoTab_upgradingToLevelForExtension;{{buildingName}} är under uppbyggnad till nivå {{level}}:
+infoTab_genericCurrentlyForExtension;Nuvarande {{buildingName}} bonus inklusive {{extensionName}}:
+infoTab_genericAtLevelForExtension;Nivå {{a}} med {{extensionName}} nivå {{b}}:
+ratioValuesNumeratorBold;<b>{{a}}</b>/{{b}}
+infoTab_productionCosts_title;Produktionskostnader
+harbour_shipsInConstruction;Skepp som byggs
+unitInfo_troopsCarriage;upp till <b>{{INT}}</b> trupper
+unitInfo_velocityRaid;För plundringar:
+city_benefits_resourceFieldsLevel12inCapital;Uppgradera resursfält till nivå 12, men i din huvudby kan du fortfarande uppgradera dem ytterligare
+infoTab_genericCurrentlyMoreExplicit;Nuvarande {{buildingName}}-bonus
+merchant_merchantOverview_noIncomingDeliveries;- Inga leveranser är på väg in -
+merchant_merchantOverview_noOutgoingDeliveries;- Inga leveranser är på väg ut -
+merchant_merchantOverview_incoming;På väg in ({{INT}})
+merchant_merchantOverview_outgoing;På väg ut ({{INT}})
+achievementQuests.achQuest_03_Territory_step_01_description;Skicka trupper på ett anfall eller plundring mot en natarby. Detta uppdrag blir färdigt när dina trupper anländer, även om dina trupper dödas i anfallet.<br><br>Poängen för det här uppdraget kan hämtas {{NUMBER_OF_TASKS_PER_DAY}} gånger per dag.\n
+allianz.MerchantCapacityTitle_Harbours;Större kapacitet och högre hastighet för handelsmän och handelsskepp
+market_tradeRoutes_invalidTarget_Territory;Handelsvägar kan bara upprättas mellan dina egna byar.
+market_selectResources;Välj råvaror
+market_selectResources_requiredTradeShips;Handelsskepp som krävs
+market_resourcesWillBeSendByTradeShip;Råvaror kommer att skickas med handelsskepp.
+manual.gid38_Territory;Det stora magasinet har 3 gånger större kapacitet än det normala magasinet.<br><br>Den här byggnaden kan endast byggas med den uråldriga kraften Byggnadsplan lagringsutrymme.
+manual.gid39_Territory;Den stora silon har 3 gånger större kapacitet än en normal silo.<br><br>Den här byggnaden kan endast byggas med den uråldriga kraften Byggnadsplan lagringsutrymme.\n
+harbour_noAvailableShips;För närvarande finns det inga skepp stationerade i den här hamnen.
+harbour_destroy_title;Förstör skepp
+harbour_destroy_desc_title;Välj skeppstyp och antal som du vill förstöra.
+harbour_destroy_desc;Du kan endast förstöra skepp som är stationerade här och du får inte tillbaka några råvaror.
+harbour_destroy_timeNotice;Skeppen kommer att förstöras omedelbart.
+harbour_destroy_selectedTotalAmount;Valda fartyg: <b>{{AMOUNT}}</b>
+harbour_destroy_shipSelectTitle;<b>{{ShipID|TranslateSuffixFor|gid49.type_t}}</b> (<b>{{Amount}}</b> skepp är stationerade här)
+extension_fullyExtended;{{NAME}} är fullständigt utbyggd.
+extension_willBeFullyExtended;{{NAME}} är fullständigt utbyggd.
+layout.directLinkMarketplaceTrader;Sysslolösa handelsmän: {{INT}} / {{INT2}}
+UnitProduction_ViewBuildingList;Visa bygglista
+raidList_useRaidShipsInfo;Plundringsskepp används automatiskt när de är tillgängliga. Om du inte har några tillgängliga plundringsskepp färdas trupperna normalt.
+buildingActivities_maxReached;Maximalt belopp har nåtts
+buildingActivities_building_49;Skepp som byggs
+buildingActivities_buildingAdditional_48;Inga skadade trupper
+residence_expansion_villagesRatio;Byar: {{COUNT}}/{{MAX}}
+residence_expansion_slotFree;Platsen används inte.
+residence_expansion_slotPrerequisites;Krav <b>{{BuildingID|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>nivå {{Level}}</color></b>
+residence_expansion_culturePointsPerDay;Kulturpoängsproduktion per dag
+search_region;Sök efter region
+search_select_region;Välj region
+statistiken.progressionStepTitle_start_achieved;Server startade {{VALUE}}
+statistiken.progressionStepTitle_serverEnd_locked;Servern kommer att avslutas {{VALUE}}
+filters_artefact_not_found;Artefakten finns inte
+sendTroops_settlersChangeTribe;För de första {{INT}} bosättningarna kan du välja vilken stams by som ska bosättas. Välj med omsorg.
+gid17.nextTradingRoute;Nästa handelsväg börjar på <b>{{HOUR}}</b> och behöver <b>{{MERCHANTS}}</b> [merchants>1: handelsmän][merchants=1: handelsman]
+gid17.nextTradingRouteWithShips;Nästa handelsväg börjar på <b>{{HOUR}}</b> och behöver <b>{{SHIPS}}</b> handelsskepp.
+market_tradeRoutes_merchants;[merchants>1:{{merchants}} handelsmän][merchants=1:{{merchants}} handelsman]
+market_tradeRoutes_tradeShips;[tradeShips>1:{{tradeShips}} handelsskepp][tradeShips=1:{{tradeShips}} handelsskepp]
+market_tradeRoutes_repeats;{{repeats}}x
+market_tradeRoutes_usesShip;Använder skepp
+troopsCheckout_shipUseInfo;{{Distance}} fält | {{ShipID|Bold}} | Spara {{duration|Bold}} timmar
+troopInfoPopup_shipsTitle;Skepp stationerade i byn
+language_nl-NL;Nederländska
+cropfinder_cropperType;Croptyp:
+valueInBrackets;({{VALUE}})
+residence_settlementSlotsUsed;Använda koloniplatser
+residence_settlementCPNeededForNextSlot;Kulturpoäng som behövs för nästa bosättningsplats:
+gid27.ancient_power_detail_;{{INT}}
+artefact_effect_value;Effekt: <b>{{EFFECT}}</b>
+ancientPower_overview;Regionala krafter
+ancientPower_no_ancientPower;Inga uråldriga krafter på den här servern
+ancientPower_tip_large;Stora uråldriga krafter kräver skattkammare nivå <b>20</b> och påverkar <b>alla dina byar</b>
+ancientPower_tip_small;Små uråldriga krafter kräver skattkammarnivå <b>10</b> och påverkar endast <b>byn</b> där de aktiveras
+ancientPower_tip_nearby;Uråldriga krafter i området runt {{villagenamelong|Bold}}
+ancientPower_stored_title;Regionala krafter säkrade av alliansen
+ancientPower_stored_noContent;Inga regionala krafter säkrade av alliansen
+ancientPower_stored_nextFree;Nästa gratis aktivering tillgänglig om: [isFree=0:<color={{colorValue|TextColor}}>]{{timeStamp|Countdown?Bold}}[isFree=0:</color>]
+ancientPower_stored_notActivatable;Inga uråldriga krafter att aktivera.
+ancientPower_stored_activated;Uråldrig kraft aktiverad.
+ancientPower_stored_alreadyActive_account;Du har redan en uråldrig kraft som påverkar alla byar aktiv.
+ancientPower_stored_alreadyActive_village;Du har redan en uråldrig kraft som påverkar den här byn aktiv.
+ancientPower_stored_alreadyActive;Den här uråldriga kraften är redan aktiverad.
+filters_ancientPower_not_found;Den uråldrig kraften finns inte
+regions_withFactions_yourAllianceHasMoreThan50PercentSecured;Din allians kontrollerar mer än {{PERCENT}}<nobr>%</nobr> av området.<br><br>Du behöver en skattkammare för att aktivera den regionala kraften.
+language_en-NT;Utvecklarspråk
+settings_notNow;Inte nu
+settings_dontAskAgain;Fråga inte igen.
+cams_lobby_gameworld_lastPlayedTime;{{TIME}} tim
+cams_settings_DirectLoginTitle;Direkt inloggning till spelvärld
+cams_settings_DirectLoginInfo;Hoppa över valet av spelvärld i Legends-lobbyn och logga in direkt på din senast spelade spelvärld när du öppnar appen.
+cams_settings_DirectLoginActive;Direkt inloggning är aktiverad
+cams_settings_DirectLoginInactive;Direkt inloggning är avaktiverad
+cams_directLoginPopUp_Info;Vill du logga in direkt på din spelvärld när du startar appen?
+cams_directLoginPopUp_youCanChange;Du kan när som helst ändra ditt val i Lobby-inställningarna.
+cams_directLoginPopUp_Accept;Ja, logga in mig direkt
+language_ro-RO;Rumänska
+language_hu-HU;Ungerska
+language_ar-AE;Arabiska
+autoLoginFailed.;Automatisk inloggning misslyckades.
+needInternetToPlay;Du behöver en internetanslutning för att spela. Kontrollera din anslutning och försök igen.
+mapCellInfoWindow_removeFromLists;Ta bort från alla listor
+removeFromListsPopup_Title;Vill du ta bort {{TARGETNAME}} från {{INT}} plundringslistor?
+removeFromListsPopup_Description;Du kan lägga till målet individuellt i plundringslistorna igen senare.
+removeFromListsPopup_ConfirmButton;Ta bort mål
+social_continueWith;Eller fortsätt med:
+social_loginWith;Eller logga in med:
+social_backToRegistration;Tillbaka till registreringen
+social_createAccountTitle;Skapa Legends-lobbykonto
+social_errorTitle_NoEmailProvided;E-postbehörighet saknas
+social_errorMsg_NoEmailProvided;För att börja spela Travian: Legends behöver vi din <b>tillåtelse att komma åt din e-postadress.</b>
+social_errorInfo_NoEmailProvided;Försök igen med korrekta rättighetsinställningar eller prova en annan registreringsmetod.
+social_errorTitle_AlreadyExists;E-postadressen är redan använd
+social_errorMsg_AlreadyExists;Den angivna e-postadressen används redan av ett Travian: Legends lobbykonto.
+social_errorInfo_AlreadyExists;Använd e-postadressen som är kopplad till ditt konto för att logga in.
+social_acceptTOS;Genom att klicka på ”Bekräfta” accepterar du <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">de allmänna villkoren</link></style> och bekräftar att du har tagit del av <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">informationen om ångerrätt</link></style> och <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">integritetspolicyn</link></style>.
+linkNotWorking;Länken fungerar inte
+linkNotWorkingDescription;Det verkar som om den här länken för närvarande inte fungerar i Travian: Legends-appen. Den kanske fungerar i din webbläsare.
+openLinkInBrowser;Öppna länken i webbläsaren
+settings_language_useArabicNumerals_activated;Östarabiska siffror är aktiverad
+settings_language_useArabicNumerals_deactivated;Östarabiska siffror är avaktiverad
+artefact_inventory_active_empty;Inga artefakter är aktiverade
+social_errorTitle_Unknown;okänt fel
+social_errorMsg_Unknown;Ett okänt fel inträffade. Vänligen försök igen.
+loadingScreen_text_01;Din hjälte fixar sitt hår, vänligen vänta.
+loadingScreen_text_02;Silon är överfull. Byborna förvarar nu spannmål i sina fickor.
+loadingScreen_text_03;Ambassaden ordnar en fest – endast för diplomater.
+loadingScreen_text_04;Samlingsplatsen är nu en picknickplats – trupperna smaskar på smörgåsar.
+loadingScreen_text_05;Smeden smider ett svärd… av spaghetti.
+loadingScreen_text_06;Mästerbyggare läser ritningen… upp och ner.
+loadingScreen_text_07;Natarer gick med i byns bokklubb. Ingen vet hur man läser gamla runor.
+loadingScreen_text_08;Scouterna räknar fiendens trupper, men har slut på fingrar.
+loadingScreen_text_09;Världensunder svämmar över av duvor. Skickar in städpersonalen.
+loadingScreen_text_10;Slavsoldaterna kräver en fackförening – förbered dig på strejker.
+loadingScreen_text_11;Trupperna vägrar att anfalla förrän någon förklarar stridssimulatorn.
+loadingScreen_text_12;Byborna slutade arbeta för att se två kycklingar slåss.
+loadingScreen_text_13;Dina katapulter bråkar om vilken byggnad de ska träffa först.
+loadingScreen_text_14;Ha tålamod, hjälten tog tåget istället för häst.
+loadingScreen_text_15;I grottorna gömmer sig inte bara råvaror, utan också byns skvallerbytta.
+loadingScreen_text_16;Barackerna har en talangjakt – träningen skjuts upp.
+loadingScreen_text_17;Din mur är nästan klar. Väntar bara på att färgen ska torka.
+loadingScreen_text_18;Legionärerna krävde en kaffepaus innan de marscherade.
+loadingScreen_text_19;Gallerna förklarar för romarna vad palisader är. Det har gått tre timmar.
+loadingScreen_text_20;Mutar handelsmän för att påskynda leveranser.
+loadingScreen_text_21;Din hjälte går en ridkurs. Det kan ta ett tag.
+loadingScreen_text_22;Handelsmännen sitter fast bakom en långsam oxe.
+loadingScreen_text_23;Alliansledarna ritar upp en stridskarta… med fingerfärger.
+loadingScreen_text_24;Silon är full av kakor – hantering av råvaror när den är som bäst.
+loadingScreen_text_25;Scouterna har tagit en paus – Heimdall har något i ögat.
+changeAccountNameSubtitle;Byt användarnamn och/eller tagg.
+changeAccountNamePleaseNote;Obs! Efter att du har ändrat ditt kontonamn måste du vänta {{DAYS}} [DAYS>1:dagar][DAYS=1:dag] innan du kan ändra det igen.
+changeAccountNameWaiting;Du måste vänta tills du kan byta namn igen
+changeAccountNameUpdated;Kontonamnet har uppdaterats
+changeAccountNameUpdatedSubtitle;Ditt kontonamn har uppdaterats till: <b>{{playerName}}</b>
+alliance_top10Title;Alliansens interna topp 10
+gameworldCalendarNoGameworld;Inga kommande spelvärldar hittades. \nDe kanske laddar eller så är de inte schemalagda.
+gameworldCalendar_title;Spelvärldskalender
+valueWithModifierBefore;{{value|Round|2}}x
+goldShop_purchaseCanceled;Köpet har avbrutits!
+goldShop_pendingRestored;Ditt tidigare köp har återställts.
+hero_consumablePopup_healthByOintment;Läkning per salva:
+unknown;?
+serverSelection_gameworldSpeed_short;{{INT}}x
+gameworldCalendarDetails_title;Spelvärldsdetaljer
+gameworldCalendarDetails_shareLink;Dela länk till spelvärld
+gameWorldEndCondition;Spelvärldens slutvillkor
+gameWorldEndCondition_WonderOfTheWorld;Världsunder {{Level}}
+gameWorldEndCondition_VictoryPoints;Segerpoäng
+gameWorldRestriction_InvitationCode;Den här spelvärlden är begränsad till spelare med en särskild inbjudningskod.
+gameWorldRestriction_MobilePlayers;Den här spelvärlden är endast tillgänglig för spelare på mobil.
+gameWorldSpecial;Det här är en speciell spelvärld som kanske bara är tillgänglig under en begränsad tid och som kan ha andra funktioner än klassiska spelvärldar.
+gameWorldUndefinedDetails;Alla spelvärldsdetaljer är inte fastställda än. Du kommer att få en notis i din lobby när de har uppdaterats.
+bonusValueWithPercentNoSpace;+{{value}} %
+startDate;Startdatum
+startTime;Starttid
+UTC+1;(UTC+1)
+goldShop_GoldPromotion;Guldkampanj
+auction_FeePopupTitle;Auktionsavgift
+auction_FeePopupText;Du måste betala en avgift på {{value}} % på försäljningar i auktionshuset. Din utbetalning är försäljningspriset minus auktionsavgiften.
+auction_FeePopupExample;Exempelberäkning
+auction_FeePopupSalePrice;Försäljningspris
+auction_FeePopupFee;Auktionsavgift ({{value}} %)
+auction_FeePopupPayout;Utbetalning
+auction_sellHouseFeeInfo;Din utbetalning är försäljningspriset minus auktionsavgiften på {{value}} %.
+gold_action_finishImmediately;Slutför omedelbart
+mapCellInfoWindow_villageReports;Visa byrapporter
+hero_crafting_title_refine;Förädla utrustning
+hero_crafting_title_smelt;Smält ner utrustning
+hero_crafting_title_forge;Smid utrustning
+hero_crafting_title_reforge;Smid om utrustning
+hero_crafting_action_refine;Förädla
+hero_crafting_action_smelt;Smält
+hero_crafting_action_forge;Smid
+hero_crafting_action_takeMaterials;Ta ({{INT}}/{{MAX}}) material
+hero_crafting_action_takeAllMaterials;Ta material
+hero_crafting_action_reforge;Smid om
+hero_crafting_action_take;Ta
+hero_crafting_action_pick;Välj föremål
+hero_crafting_action_equip;Ta på
+hero_crafting_action_buy_material;Köp material
+hero_crafting_action_buy_item;Köp föremål
+hero_crafting_action_craft_material;Smält material
+hero_crafting_action_moveToInventory;Till inventarium
+hero_crafting_action_select_item;Välj
+hero_crafting_action_remove_item;Ta bort
+hero_crafting_action_error_equipment;Föremålet måste vara hjälteutrustning.
+hero_crafting_action_error_rarity;Föremålen måste ha samma sällsynthet.
+hero_crafting_action_error_category;Föremålen måste tillhöra samma utrustningskategori.
+hero_crafting_action_error_id;Föremålen måste vara identiska.
+hero_crafting_action_error_missingItem;Ett eller flera av de föremål som du har valt är inte längre tillgängliga.
+hero_crafting_refine_tip;Episka hjälteföremål kan förädlas med valfritt annat episkt hjälteföremål i samma föremålskategori.
+hero_crafting_refine_tip_error;Du har inga hjälteföremål att förädla. Hitta föremål på äventyr eller köp föremål i auktionshuset och förbättra dem genom förädling.
+hero_crafting_smelt_info;Ta {{INT}} material[INT>1:] nu eller vänta och få {{MAX}}.
+hero_crafting_reforge_text;Smid om utrustning för att få ett annat föremål, som kan ha en annan sällsynthet och kvalitet. \nEfter att du har smitt om ett föremål kan du välja vilket föremål du vill behålla, eller smida om igen.\nKom ihåg: När du smider om föremål försvinner det föremål som används i varje efterföljande omsmidningssteg och kan inte återställas.
+inventoryItem_quality_title;Kvalitet
+inventoryItem_rarity_title;Sällsynthet
+inventoryItem_rarity_quality_title;Sällsynthet och kvalitet
+inventoryItem_rarity_common;Vanlig
+inventoryItem_rarity_uncommon;Ovanlig
+inventoryItem_rarity_rare;Sällsynt
+inventoryItem_rarity_epic;Episk
+inventoryItem_rarity_legendary;Legendarisk
+search_for_village;Sök efter by
+search_for_player;Sök efter spelare
+villageList_EditMode;Redigeringsläge
+villageList_MaxGroupAmount;Maxantal bygrupper uppnådda
+hero_crafting_action_error_material;Föremålet måste vara ett material.
+villageList_ReorderError;Ogiltigt mål
+textMatchingInput_Title;Skriv "{{WORD}}" för att bekräfta
+hero_inventory_category_empty;- Inga föremål i den här kategorin -
+hero_crafting_action_refine_success;Utrustning förädlad
+hero_crafting_action_smelt_success;Utrustning smält
+hero_crafting_action_forge_success;Utrustning smidd
+hero_crafting_result_item_equipped;Föremål utrustat
+hero_crafting_result_item_taken;Föremål flyttat till inventarium
+hero_crafting_result_material_taken;Material flyttat till inventarium
+hero_crafting_action_error_quality;Föremålen måste ha samma kvalitet.
+hero_crafting_action_error_epic;Måste vara ett annat episkt föremål av samma kategori och kvalitet.
+inventoryItem_rarity_none;Ingen sällsynthet
+dailyQuests_rewardOverview_short;Belöningsöversikt
+avatar_confirmation_title_delete;Radera avatar
+avatar_confirmation_header_delete;Vill du radera din avatar?
+avatar_confirmation_infoText_delete;Efter att du har startat nedräkningen kommer det att ta <b>3 dagar</b> innan bottagningen av din avatar är klar.\nAvatarer som håller på att tas bort kan inte längre komma åt auktioner eller växlingskontoret.\nDu kan när som helst avbryta borttagningen här.
+avatar_confirmation_requiredWord_delete;radera
+avatar_confirmation_title_respawn;Respawna avatar
+avatar_confirmation_header_respawn;Vill du respawna din avatar?
+avatar_confirmation_infoText_respawn;Det tar bort alla dina framsteg och placerar dig i en startby på en ny plats på kartan.\n\nAllt köpt guld förs över automatiskt.
+avatar_confirmation_requiredWord_respawn;respawn
+settings_app_title;Alla spelvärldar
+settings_app_Animations_title;Animationer
+settings_app_Animations_description;Välj vilka animationer du vill se i appen.
+settings_app_Animations_activated;Molnanimationen i by-/råvaruvyn är aktiverad
+settings_app_Animations_deactivated;Molnanimationen i by-/råvaruvyn är avstängd
+settings_app_NightMode_title;Nattläge
+settings_app_NightMode_description;Dina bybor tände facklorna och eldarna i ugnarna sprakar under det svaga ljuset från stjärnorna på natthimlen.
+settings_app_NightMode_activated;Nattläget är aktiverat
+settings_app_NightMode_deactivated;Nattläget är avstängt
+settings_app_WinterMode_title;Vinterläge
+settings_app_WinterMode_description;Snön faller stilla och sveper in byn i en bedräglig tystnad, där varje ljud tycks upplösas i den frostiga luften.
+settings_app_WinterMode_activated;Vinterläget är aktiverat
+settings_app_WinterMode_deactivated;Vinterläget är avstängt
+settings_app_VillagePanning_title;Förflyttning av by-/råvarufält
+settings_app_VillagePanning_description;Du kan flytta runt din byöversikt och dina råvarufält.
+settings_app_VillagePanning_activated;Förflyttning är aktiv
+settings_app_VillagePanning_deactivated;Förflyttning är avstängd
+settings_app_PushNotifications_title;Allmänna pushnotiser
+settings_app_PushNotifications_description;Få allmänna app- och spelrelaterade nyheter med pushnotiser.
+settings_app_PushNotifications_activated;Notiser om start av spelvärld är aktiverade
+settings_app_PushNotifications_deactivated;Notiser om start av spelvärld är avstängda
+settings_app_EnergySaving_title;Energisparläge
+settings_app_EnergySaving_description;Förläng batteritiden med en lägre bildfrekvens.\nEnergisparläget kan orsaka lagg när du använder appen.
+settings_app_EnergySaving_activated;Energisparläget är aktiverat
+settings_app_EnergySaving_deactivated;Energisparläget är avstängt
+settings_app_DataSaving_title;Mobildatasparläge
+settings_app_DataSaving_description;Spara mobildata/bandbredd med färre serverförfrågningar.\nMobildatasparläget kan leda till ett längre uppdateringsintervall för speldata.
+settings_app_DataSaving_activated;Mobildatasparläget är aktivt
+settings_app_DataSaving_deactivated;Mobildatasparläget är avstängt
+auction_FilterType;Föremålstyp
+auction_bidTooLow;För lågt bud.
+villageList_Delete_Title;Radera bygrupp
+villageList_Delete_Button;Radera grupp
+villageList_Delete_Description;Vill du radera den här bygruppen?
+villageList_Delete_Description2;Byar i den här gruppen påverkas inte.
+gameworldNews_title;Nyheter och uppdateringar
+moreInformation;Mer information
+remainingGold;Återstående guld: {{goldIcon|Sprite}} {{goldAmount}}
+messages_addEmoji_title;Lägg till emojier
+messages_select_emojis;Välj emojier
+cams_resend_email_wait_error;Vänta lite innan du skickar ett nytt e-postmeddelande.
+cams_settings_accountDeletion_infoGold;När du raderar din avatar får du ett e-postmeddelande där det står hur du för över ditt återstående guld till en annan avatar.\n<b>Obs!</b> Ditt  återstående guld går bara att föra över till vissa spelvärldar.
+cams_changeMail_title;Byt e-postadress
+cams_changeMail_description;För att byta e-postadress behöver du tillgång till den nuvarande och den nya e-postadressen.
+cams_changeMail_socialHint;Om du byter e-postadress påverkas inte  inloggningen med Facebook, Google eller Apple.
+cams_changeMail_cantAccess;Kommer du inte åt din e-post?
+cams_changeMail_sentVerification;Vi har skickat ett verifieringsmeddelande till: {{mail}}
+cams_changeMail_checkInbox;Kontrollera din inkorg och följ instruktionerna för att fortsätta.
+cams_changeMail_verificationCode;Verifieringskod:
+cams_changeMail_verifyButton;Verifiera e-postadress
+cams_changeMail_enterNew_description;Ange din nya e-postadress nedan. Vi skickar ett verifieringsmeddelande till den här adressen.
+cams_changeMail_enterNew_description2;Följ instruktionerna i meddelandet för att byta e-postadress.
+cams_changeMail_enterNew_input;Ange din nya e-postadress:
+cams_changeMail_enterNew_input_placeholder;Ny e-postadress
+cams_changeMail_enterNew_button;Byt e-postadress
+cams_changeMail_done_title;E-post uppdaterad
+cams_changeMail_done_description1;Din e-postadress har uppdaterats till {{mail}}
+cams_changeMail_done_description2;Du kommer automatiskt att loggas ut och omdirigeras till inloggningssidan. Använd din nya e-postadress för att logga in.
+cams_changeMail_done_redirecting;Du skickas vidare till inloggning {{time}}…
+bonusValue;+ {{value}}
+value;{{value}}
+ratioValues_Colon;{{a}}:{{b}}
+genericValue;{{VALUE}}
+enterAmount;Ange antal
+symbol_minus;-
+applyFilter;Tillämpa filter
+resetFilter;Återställ filter
+rallyPoint_troopsOverview_outgoingMission_50_heroCentricAdventure;Utforska på äventyr
+rallyPoint_troopsOverview_returningFromAdventure_heroCentricAdventure;Återvänd från äventyr
+silverExchangePopup_AvailableSilver;Tillgängligt silver
+silverExchangePopup_SilverStatus;Just nu är {{AMOUNT|LongNumber}} av ditt silver bundet i aktiva auktioner.
+silverExchangePopup_SilverError;Du har för lite silver för den här åtgärden.
+silverExchangePopup_GoldError;Du har för lite guld för den här åtgärden.
+hero.status50_heroCentricAdventure;Din hjälte är på väg mot ett äventyr.
+inventoryItem_quality_1;Kvalitet 1
+inventoryItem_quality_2;Kvalitet 2
+inventoryItem_quality_3;Kvalitet 3
+inventoryItem_rarity_common_headGear;Vanlig hjälm
+inventoryItem_rarity_uncommon_headGear;Ovanlig hjälm
+inventoryItem_rarity_rare_headGear;Sällsynt hjälm
+inventoryItem_rarity_epic_headGear;Episk hjälm
+inventoryItem_rarity_legendary_headGear;Legendarisk hjälm
+inventoryItem_rarity_common_utility;Vanligt användbart föremål
+inventoryItem_rarity_uncommon_utility;Ovanligt användbart föremål
+inventoryItem_rarity_rare_utility;Sällsynt användbart föremål
+inventoryItem_rarity_epic_utility;Episkt användbart föremål
+inventoryItem_rarity_legendary_utility;Legendariskt användbart föremål
+inventoryItem_rarity_common_weapon;Vanligt vapen
+inventoryItem_rarity_uncommon_weapon;Ovanligt vapen
+inventoryItem_rarity_rare_weapon;Sällsynt vapen
+inventoryItem_rarity_epic_weapon;Episkt vapen
+inventoryItem_rarity_legendary_weapon;Legendariskt vapen
+inventoryItem_rarity_common_armour;Vanlig rustning
+inventoryItem_rarity_uncommon_armour;Ovanlig rustning
+inventoryItem_rarity_rare_armour;Sällsynt rustning
+inventoryItem_rarity_epic_armour;Episk rustning
+inventoryItem_rarity_legendary_armour;Legendarisk rustning
+inventoryItem_rarity_common_boots;Vanliga stövlar
+inventoryItem_rarity_uncommon_boots;Ovanliga stövlar
+inventoryItem_rarity_rare_boots;Sällsynta stövlar
+inventoryItem_rarity_epic_boots;Episka stövlar
+inventoryItem_rarity_legendary_boots;Legendariska stövlar
+inventoryItem_rarity_common_consumable;Förbrukningsvara
+inventoryItem_rarity_uncommon_consumable;Ovanlig förbrukningsvara
+inventoryItem_rarity_rare_consumable;Sällsynt förbrukningsvara
+inventoryItem_rarity_epic_consumable;Episk förbrukningsvara
+inventoryItem_rarity_common_horse;Häst
+inventoryItem_rarity_uncommon_horse;Ovanlig häst
+inventoryItem_rarity_rare_horse;Sällsynt häst
+inventoryItem_rarity_epic_horse;Episk häst
+inventoryItem_rarity_legendary_horse;Legendarisk häst
+inventoryItem_rarity_common_material;Förbrukningsvara
+inventoryItem_rarity_uncommon_material;Ovanlig förbrukningsvara
+inventoryItem_rarity_rare_material;Sällsynt förbrukningsvara
+inventoryItem_rarity_epic_material;Episk förbrukningsvara
+search_item;Sök föremål
+search_select_item;Välj föremål
+avatar_confirmation_infoText_delete_goldBough;När borttagningsprocessen har börjat tar det <b>minst tre dagar</b> att radera din avatar, eftersom avataren nyligen användes till att köpa guld.\nAvatarer som håller på att tas bort kan inte längre komma åt auktioner eller växlingskontoret.\nDu kan när som helst avbryta borttagningen här.
+combatSimulator_addItemEffect;Lägg till föremålseffekt
+combatSimulator_editItemEffect;Redigera föremålseffekt
+addItemEffect_title;Lägg till hjälteföremålseffekt
+addItemEffect_description;Lägg till separata effekter för att spegla alla hjälteföremåls bonusar.
+addItemEffect_importHeroEquipment;Importera egen hjälteutrustning
+addItemEffect_importHeroEquipment_success;Importerade hjälteföremål
+addItemEffect_selectEffect;Välj en föremålseffekt
+addItemEffect_selectItem;Välj ett föremål
+addItemEffect_selectMagnitude;Välj magnitud
+addItemEffect_selectUnit;Välj enhet
+addItemEffect_missingMagnitude;Saknad magnitud
+addItemEffect_effect_2;Mindre skada
+addItemEffect_effect_6;+ Fler hälsopoäng varje dag
+addItemEffect_effect_12;+ Högre anfall och försvar hos en viss enhet
+addItemEffect_effect_13;+ Mer stridsstyrka
+cams_newMail_title;Ny e-postadress
+cams_verifyNewMail_title;Verifiera den nya e-postadressen
+cams_verifyCurrentMail_title;Bekräfta din nuvarande e-postadress
+auction_notEnoughSilver;Du har för lite silver.
+auction_itemGroups;Föremålsgrupper
+auction_unknown;?
+auction_sortingOption_itemName;Föremålets namn
+auction_sortingOption_bidCount;Antal bud
+auction_sortingOption_finishedAt;Avslutades på
+auction_sortingOption_highestBid;Högsta bud
+auction_sortingOption_highestBidder_player;Högsta budgivare (spelare)
+auction_sortingOption_highestBidder_alliance;Högsta budgivare (allians)
+auction_sortingOption_auctionAmount;Antal pågående auktioner
+auction_sortingOption_nextFinishedAt;Nästa avslutades på
+auction_sellingPrice;Säljpris
+auction_sellingPrice_lowest;Lägsta
+auction_sellingPrice_average;Medel
+auction_sellingPrice_highest;Högsta
+auction_result_won;<color={{colorValue|TextColor}}>Vann</color>
+auction_result_lost;<color={{colorValue|TextColor}}>Överbjuden</color>
+auction_sellingPrice_averagePrice;Genomsnittspris
+auction_bidProcessTitle;Budgivningsprocess
+auction_bidProcessDescription1;Du kan lägga bud på föremål som du är intresserad av.
+auction_bidProcessDescription2;Du måste buda minimibeloppet för att buda över det aktuella budet.
+auction_maxBidFeatureTitle;Maxbudsfunktion
+auction_maxBidFeatureDescription1;Du kan ange din högsta budget för ett föremål.
+auction_maxBidFeatureDescription2;Systemet budar automatiskt åt dig upp till ditt inställda maxbud.
+auction_maxBidFeatureDescription3;Ditt bud höjs bara om det behövs för att du ska kunna behålla det högsta budet.
+auction_maxBidFeatureDescription4;Budgivningen fortsätter tills du vinner eller någon lägger ett bud över din budget.
+auction_auctionDurationTitle;Auktionslängd
+auction_auctionDurationDescription1;Om den återstående auktionstiden är kortare än {{DURATION|Duration}} förlängs auktionen till {{DURATION|Duration}} om någon lägger ett nytt högstabud.
+auction_auctionWinningTitle;Vinnare
+auction_auctionWinningDescription1;Den som lagt det högsta budet när auktionen avslutas vinner föremålet.
+auction_auctionFinished;Auktionen har redan avslutats.
+auction_wasJustOutbid;Du har inte lagt det högsta budet just nu.
+auction_currentHighestBidder;Högstbjudande just nu
+auction_currentHighestBid;Högsta budet just nu
+auction_yourMaximumBid;Ditt maxbud
+auction_showFinished;Visa avslutade
+auction_deleteAllFinished;Ta bort alla avslutade
+auction_startedAt;Började: {{TIME|DateTime}} | Pågår
+auction_canceled;Avbröts
+auction_finished;färdig
+auction_finishedAt;Avslutade: {{TIME|DateTime}}
+auction_itemAuction_title;Föremålsauktion
+auction_itemAuction_info;Klicka på ett föremål i ditt inventarium för att påbörja en auktion. Andra spelare kan lägga bud på det. En auktion tar upp till {{INT}} timmar.
+auction_whatHappensNext_title;Vad som händer sedan
+auction_whatHappensNext_info1;Den som lagt det högsta budet köper föremålet automatiskt när tiden går ut.
+auction_whatHappensNext_info2;Du får silver när försäljningen är genomförd.
+auction_whatHappensNext_info3;Du får ett meddelande när ditt föremål är sålt.
+auction_error_cannotSell;Detta föremål kan inte säljas i auktionshuset.
+auction_error_onlyHorse;Du kan inte sälja din enda häst.
+auction_sellItem;Sälj ett föremål
+auction_sales;Försäljningar
+auction_selectBatchSize;Välj batchstorlek
+auction_selectBatchSize_batches;<b>{{COUNT}}x</b> föremålspartier
+auction_selectFilter_title;Välj filter
+goldShop_upTo;Upp till
+shopPromotion_openShop;Öppna butik
+shopPromotion_goldPromotionTitle;Aktiv guldkampanj
+shopPromotion_limitedTimeOffer;Tidsbegränsat erbjudande!
+shopPromotion_goldPromotionDescription;Få mer guld för pengarna nu.
+shopPromotion_timeRemaining;Återstående tid:
+hero_adventures_watchAdReduceDuration_title;Korta ner äventyrstiden med {{AMOUNT}} %
+hero_adventures_watchAdReduceDuration_description;Se en video för att minska tiden på din hjältes <b>nästa</b> äventyr.
+hero_adventures_watchAdIncreaseDanger_title;Höj äventyrsfaran till svår
+hero_adventures_watchAdIncreaseDanger_description;Se en video för att öka svårighetsgraden på <b>nästa vanliga</b> äventyr till svår för att få mer hjälte-XP.
+hero_adventures_watchAdActive;Aktiv under nästa äventyr.
+hero_adventures_watchAdActiveNormal;Aktiv under nästa vanliga äventyr.
+hero_crafting_action_error_nonEpic;Måste vara ett identiskt föremål av samma sällsynthet och kvalitet.
+berichte.adventure_heroCentric;{{VILLAGE_NAME}} ger sig ut på ett äventyr
+reports_share_notShareable;Den här rapporten går inte att dela.
+dailyQuests_dailyMaxReached;Daglig maxgräns uppnådd
+achievementQuests.DailyQuest_12_description;Öppna spelet i en webbläsare på datorn och titta på en video.
+achievementQuests.DailyQuest_12_additionalInformation;www.travian.se
+achievementQuests.DailyQuest_13_description;Titta till exempel på en video för att uppgradera dina byggnader snabbare.
+achievementQuests.DailyQuest_13_additionalInformation;Eller klicka på knappen "Titta på video" för att titta på en video direkt utan ytterligare fördelar.
+addItemEffect_effect_11;+ Höjd attackstyrka mot natarer
+auction_started;Auktionen har börjat
+auction_error_batchSize;För få föremål att sälja.
+auction_graph_notEnoughData;Inte tillräckligt med data
+auction_emptyInventory;- Du har inga föremål att sälja just nu -
+RelativeTime_2_word;[data>1:{{data}} timmar][data<2:{{data}} timme]
+gold_action_halveDuration;Halvera varaktighet
+goldShop_advantage_Value_Duration;<b>+{{VALUE}}%</b> i <b>[DURATION>6:{{DURATION}} dagar][DURATION<7:{{DURATION|Mult|24}} timmar]</b>
+goldShop_advantage_Value_Active;<b>+{{VALUE}}%</b> aktiv i:
+goldShop_upgrade;Uppgradera
+goldShop_advantage_stillActiveFor;Fortfarande aktiv i:
+goldShop_advantage_stillActiveFor_Value;{{DURATION}} till klockan {{TIME}}
+goldShop_advantage_videoFeatureOnCD;Du kan bara aktivera videobonusen en gång per dag.\nDaglig återställning om: {{TIMESTAMP|Countdown}}
+goldShop_advantage_popup_mainInfoHeader_ProductionboostLumber;Öka <b>produktionen av trä</b> i alla dina byar.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostClay;Öka <b>produktionen av lera</b> i alla dina byar.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostIron;Öka <b>produktionen av järn</b> i alla dina byar.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostCrop;Öka <b>produktionen av vete</b> i alla dina byar.
+goldShop_advantage_popup_mainInfoBody;Bonusen på gäller för grundproduktionen och alla andra bonusar.
+goldShop_advantage_popup_premiumInfo;Du kan aktivera bonusen med guld och få en produktionsbonus på +{{VALUE}}%.\nDu kan aktivera automatisk förlängning för en permanent bonusperiod.
+goldShop_advantage_popup_videoFeatureInfo;Eller så kan du titta på en kort video och få den mindre produktionsbonusen på +{{VALUE}}%.\n<b>Videobonusen kan endast aktiveras en gång per dag per resurs.</b>
+goldShop_advantage_popup_upgradeInfo;Du kan när som helst uppgradera till produktionsbonusen på +{{VALUE}}% för guld.
+goldShop_advantage_upgradePopupInfo1;Om du uppgraderar råvarubonusen kommer din nuvarande aktiva bonus att tas bort.
+goldShop_advantage_upgradePopupInfo2;Du får +{{VALUE}}% i [DURATION>6:{{DURATION}} dagar][DURATION<7:{{DURATION|Mult|24}}] istället.
+goldShop_advantage_upgradePopup_title;Uppgraderingsbonus
+productionOverview_Bonus;+{{VALUE}}% produktion
+hero_adventures_watchAdReduceDuration_toast;Äventyrstid förkortad.
+hero_adventures_watchAdIncreaseDanger_toast;Äventyrsfara ökad.
+hero_consumablePopup_amountEquippedAfter;Mängd utrustad efter:
+hero_consumablePopup_amountEquippedAfterUse;Mängd utrustad efter användning:
+hero_consumablePopup_amountLeftInInventory;Mängd kvar i inventariet:
+cams_recover_password_cooldown;Vänligen vänta {{VALUE}}
+cams_settings_changePassword_cooldown;Vänligen vänta {{VALUE}}
+infobox_productionBoost_upgradeButton;Uppgradera
+infobox_productionBoost_upgradeBonusWithGold;Uppgradera och förläng din bonus med guld för att få +{{PREMIUM_PERCENTAGE}}% i {{TIME}} timmar.
+infobox_productionBoost_expires;{{PERCENTAGE}} {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresLumber;Produktionsbonusen på +{{PERCENTAGE}}% för trä upphör om {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresClay;Produktionsbonusen på +{{PERCENTAGE}}% för lera upphör om {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresIron;Produktionsbonusen på +{{PERCENTAGE}}% för järn upphör om {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresCrop;Produktionsbonusen på +{{PERCENTAGE}}% för vete upphör om {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expired;{{PERCENTAGE}}
+infobox_productionBoost_expiredLumber;Produktionsbonusen på +{{PERCENTAGE}}% för trä har <b>upphört</b>.
+infobox_productionBoost_expiredClay;Produktionsbonusen på +{{PERCENTAGE}}% för lera har <b>upphört</b>.
+infobox_productionBoost_expiredIron;Produktionsbonusen på +{{PERCENTAGE}}% för järn har <b>upphört</b>.
+infobox_productionBoost_expiredCrop;Produktionsbonusen på +{{PERCENTAGE}}% för vete har <b>upphört</b>.
+infobox_levelUpProductionReminder;Öka råvaruproduktionen i alla dina byar för guld (+{{PREMIUM_PERCENTAGE}}%) eller genom att titta på en video (+{{VIDEO_PERCENTAGE}}%)
+infobox_oneTimeProductionBoostReminder;Du kan aktivera din resursbonus på +{{VIDEO_PERCENTAGE}}% igen genom att titta på en video.
+travelSimulator_title;Resetidssimulator
+travelSimulator_sourceTribe;Källplatsens stam
+travelSimulator_noLocationSelected;Ingen plats vald
+travelSimulator_slowestUnit_title;Långsammaste enheten
+travelSimulator_slowestUnit_settings;{{UNIT}} | Hastighet: {{SPEED}}
+travelSimulator_TournamentSquareLevel_info;(Endast för avstånd på >20 fält)
+travelSimulator_tournamentSquareLevel_option;{{LEVEL}} | {{VALUE}}%
+travelSimulator_unitSelection_title;Välj den långsammaste enheten
+travelSimulator_unitSelection_unitType;Enhetstyp
+travelSimulator_unitSelection_unitSpeed;Enhetshastighet
+travelSimulator_unitSelection_selectedUnitSpeed;Hastighet: {{SPEED}}
+travelSimulator_calculation_land;<b>Land:</b> {{VALUE}}
+travelSimulator_calculation_sea;<b>Hav:</b> {{VALUE}}
+travelSimulator_heroAttending;Deltagande hjälte
+travelSimulator_vikingRaidBonus;Vikingaplundringsbonus
+travelSimulator_troopSpeedArtefactEffect;Artefaktseffekt för trupphastighet
+travelSimulator_toast_selectSourceAndTarget;Välj en giltig käll- och målplats!
+travelSimulator_toast_selectSourceTribe;Välj en giltig stam!
+IOSAppTrackingTransparencyMessage;Tryck på "Tillåt" för att använda enhetsinformation för mer relevant annonsinnehåll
+goldShop_advantage_Value_Duration_Hours;<b>+{{VALUE}}<nobr> </nobr>%</b> i <b>{{DURATION}} timmar</b>
+travelSimulator_tournamentSquareLevel_title;Tornerplatsens nivå
+travelSimulator_troopSpeedAncientPower;Uråldrig kraft för trupphastighet
+RelativeTime_Formatted;[weeks>0:{{weeks}} v ][days>0:{{days}} d ]{{data}}
+settings_account_tab;Konto
+settings_notification_tab;Pushnotiser
+settings_app_PushNotifications_popup_title;Pushnotiser
+settings_app_PushNotifications_popup_header;Tillåt att vi skickar notiser till dig
+settings_app_PushNotifications_popup_info1;Tillåt notiser från oss för att få pushnotiser med nyheter och praktisk information om spelet.
+settings_app_PushNotifications_popup_info2;Du kan aktivera notiser i enhetens appinställningar.
+settings_app_PushNotifications_popup_info3;Du kan återvända hit om du vill stänga av notiser igen.
+settings_app_PushNotifications_popup_action_button;Öppna appinställningarna
+ratioValueMax;/{{a}}
+market_sendResources_completed;Slutförd
+market_sendResources_villageNotFound;Hittades inte. Du kan endast skicka råvaror till dina egna byar och medlemmar i din allians eller federation.
+no_ads_popup_title;Inga videoannonser
+no_ads_popup_header;Ett problem uppstod vid visning av en videoannons.
+no_ads_popup_info1;Det kan finnas flera orsaker till detta:
+no_ads_popup_info2; • Det finns inga tillgängliga annonser i annonspoolen för din region.
+no_ads_popup_info3; • Dina integritetsinställningar begränsar antalet annonser som kan visas.
+no_ads_popup_info4; • Tekniska problem med vår app eller annonsleverantör.
+no_ads_popup_settings_msg;Se till att du tillåter anpassade annonser i dina integritetsinställningar.
+no_ads_popup_support_msg;Kontakta vår support om problemet kvarstår.
+no_ads_popup_support_button;Kontakta support
+city_upgradeToACity_wwVillageNotUpgradeable;Världsunderbyar kan inte uppgraderas till städer.
+travelSimulator_selectMagnitude;Välj magnitud
+marketplace_merchantsOverview_returningTo;Återvänder till <b>{{Village}}</b> med <b>{{Player}}</b>
+market_sendResources_sendAgain;Skicka igen
+search_village_notFound;Hittades inte. Du kan endast skicka råvaror till dina egna byar och medlemmar i din allians eller federation.
+settings_app_AnimationsPayoffs_activated;Animationen för att skicka trupper/handelsmän är aktiverad
+settings_app_AnimationsPayoffs_deactivated;Animationen för att skicka trupper/handelsmän är inaktiverad
+hero_resourceTransferPopup_empty;Det finns inga råvaror att överföra från hjältens inventarium.
+hero_toast_appearanceChanged;Utseendet har ändrats
+alliance_editMemberPopup_customNote;Egen anteckning
+alliance_editMemberPopup_titleOfRole;Rollens titel
+alliance_editMemberPopup_setSpecialization;Ange specialitet
+alliance_role_offensive;Offensiv
+alliance_role_defensive;Defensiv
+alliance_role_hybrid;Hybrid
+alliance_role_scout;Scout
+alliance_role_support;Support
+alliance_role_wow_hammer;WoW-hammare
+alliance_role_none;Inga
+ad_fallback_popup_title;Hämta din belöning
+ad_fallback_popup_info;Det finns inga videoannonser just nu, men vi vill ändå belöna din lojalitet! Vänta lite medan vi förbereder en belöning.
+ad_fallback_popup_rewardGranted;Belöning utdelad
+ad_fallback_popup_claim;Hämta belöning
+ad_fallback_popup_closeWarning;Om du stänger det här fönstret i förtid får du ingen belöning
+gameplay_tip_1;Du kan träna nybyggare i ett residens eller ett palats (residenset från nivå 10).
+gameplay_tip_2;Du kan bara bygga ett palats per avatar. Det ger upp till 3 expansionsplatser, medan ett residens bara ger 2.
+gameplay_tip_3;För att byta huvudby bygger du ett palats i en ny by. Observera att exklusiva byggnader i din gamla huvudby kommer att gå förlorade eller nedgraderas.
+gameplay_tip_4;Du kan grunda eller erövra en annan by om du har tillräckligt med kulturpoäng.
+gameplay_tip_5;Tjäna kulturpoäng genom att uppgradera byggnader och hålla fester i stadshuset.
+gameplay_tip_6;Stora fester kan hållas i stadshuset (nivå 10) och ger fler kulturpoäng, men kostar mer råvaror.
+gameplay_tip_7;För att erövra en by sänker du dess lojalitet till noll genom att använda administratörer som har tränats i ditt residens eller ditt palats.
+gameplay_tip_8;Forska fram administratörer i akademin innan du tränar dem i ett residens eller palats.
+gameplay_tip_9;Du kan erövra byar från Natarer eller andra spelare.
+gameplay_tip_10;Din huvudby kan inte erövras av andra spelare.
+gameplay_tip_11;Använd Crop-finnaren för att hitta 9- eller 15-vetebyar som kan försörja en större armé.
+gameplay_tip_12;Råvarufält kan uppgraderas till högre nivåer i din huvudby än i andra byar.
+gameplay_tip_13;Skicka råvaror till vänliga byar med hjälp av marknadsplatsen.
+gameplay_tip_14;Du kan byta råvaror med andra spelare på marknadsplatsen.
+gameplay_tip_15;Öka dina handelsmäns kapacitet genom att uppgradera handelskontoret.
+gameplay_tip_16;Uppgradera hjältens egendom till nivå 10 för att annektera en oas och öka din råvaruproduktion.
+gameplay_tip_17;Uppgradera dina truppers styrka i smedjan. Dessa uppgraderingar tillämpas omedelbart på alla trupper av den typen, inklusive trupper som redan har tränats.
+gameplay_tip_18;Använd krigssimulatorn för att uppskatta resultatet av striden innan du anfaller. Ju mer information du lägger till i simuleringen, desto mer exakt blir resultatet.
+gameplay_tip_19;Med Guldklubben kan du aktivera funktionen undvikande i din huvudby för att automatiskt rädda dina trupper från inkommande attacker.
+gameplay_tip_20;När dina trupper återvänder hem är funktionen undvikande tillfälligt avstängd i 10 sekunder.
+gameplay_tip_21;Uppgradera dina scouter i smedjan för att förbättra deras spaningsförmåga.
+gameplay_tip_22;Murar ökar din bys försvar avsevärt.
+gameplay_tip_23;Bygg grottor för att skydda dina råvaror mot fiendens plundringar.
+gameplay_tip_24;Galler kan bygga fällor för att fånga anfallare innan striden börjar.
+gameplay_tip_25;För att befria fångade trupper måste du genomföra ett lyckat vanligt anfall mot byn där de sitter fångna.
+gameplay_tip_26;Anfallande spelare kan befria 75% av de fångade trupperna, men försvararen kan välja att släppa 100% av dem fredligt.
+gameplay_tip_27;Bygg ett sjukhus för att läka upp till 40% av de trupper du förlorade i strid.
+gameplay_tip_28;Galler kan bygga en fälla för att fånga anfallande trupper redan innan striden börjar.
+gameplay_tip_29;Bygg en stenhuggare i din huvudby för att öka byggnaders hållbarhet mot katapulter och murbräckor.
+gameplay_tip_30;Du kan ställa in att din hjälte ska gömma sig under fiendens anfall mot din hemby, så att din hjälte är säker.
+gameplay_tip_31;Besegra djur i obebodda oaser för att få extra råvaror. Starkare djur ger fler råvaror.
+gameplay_tip_32;Besegra djur i obebodda oaser med din hjälte för att få erfarenhet.
+gameplay_tip_33;Använd burar för att fånga djur i obebodda oaser och förstärka din by.
+gameplay_tip_34;Utrusta din hjälte med föremål som salvor eller särskild rustning för att påskynda hjältens återhämtning.
+gameplay_tip_35;Återuppliva din hjälte med råvaror över tid, eller omedelbart med en hink.
+gameplay_tip_36;Du kan riva byggnader när din huvudbyggnad har nått nivå 10.
+gameplay_tip_37;Bygg en ambassad för att gå med i en allians eller grunda din egen.
+vacationMode_title;Semesterläge
+vacationMode_vacation;Semester
+vacationMode_vacationModeActive;Semesterläge är aktivt
+vacationMode_info;Använd semesterläget för att skydda dina byar när du är borta. Följande åtgärder deaktiveras under semesterläget:
+vacationMode_deactivated_action1;skicka eller ta emot trupper
+vacationMode_deactivated_action2;Gå på äventyr med din hjälte
+vacationMode_deactivated_action3;Starta nya byggnadsorder eller träna trupper
+vacationMode_deactivated_action4;Använda marknadsplatsen (inklusive handelsvägar)
+vacationMode_deactivated_action5;Hålla festligheter, påbörja forskning eller genomföra uppgraderingar
+vacationMode_deactivated_action6;Skapa eller gå med i allianser
+vacationMode_deactivated_action7;bidra med råvaror till alliansbonusar
+vacationMode_deactivated_action8;Delta i auktioner
+vacationMode_deactivated_action9;Byta huvudby
+vacationMode_deactivated_action10;radera ditt konto
+vacationMode_deactivated_territory_action1;Uppgradera en by till en stad
+vacationMode_deactivated_territory_action2;Ditt konto bidrar inte till den regionala populationen i din allians och dina byar får inga segerpoäng
+vacationMode_conditions_title;kraven för semesterläge är uppfyllda
+vacationMode_duration_info;Hur många dagar ska semesterläget vara?
+vacationMode_durationUntil;Semester till <b>{{DATE}}</b>
+vacationMode_availableDays;Tillgängliga dagar <b>{{AVAILABLE}}/{{TOTAL}}</b>
+vacationMode_startButton;Aktivera semesterläget nu
+vacationMode_error_noCancelTime;Du kan bara avbryta semesterläget efter {{HOURS}} timmar
+vacationMode_error_missingRequirement;Du måste slutföra alla krav för att aktivera semesterläget
+vacationMode_error_noVacationDaysLeft;Du har inga semesterdagar kvar för att aktivera semesterläget
+vacationMode_error_cooldown;Du kan bara aktivera semesterläget {{HOURS}} timmar efter att det senast avslutades
+vacationMode_abortSuccess;Semesterläget avslutat!
+vacationMode_remainingDays;Dagar kvar i semesterläge
+vacationMode_runsUntil;Semesterläget pågår till
+vacationMode_abortInfo;Du kan avsluta semesterläget tidigast den <b>{{DATE}}</b>
+vacationMode_abortAvailable;Du kan avbryta semesterläget nu
+vacationMode_abortConfirmHeader;Vill du verkligen avbryta semesterläget?
+vacationMode_abortConfirmInfo;Dagar som inte används återbetalas. Denna åtgärd går inte att ångra.
+vacationMode_startCooldownInfo;Du kan starta semesterläget tidigast den <b>{{DATE}}</b>
+vacationMode_abortButton;Avbryt semesterläge
+vacationMode_conditions_has_outgoing_troops;Inga utgående trupper
+vacationMode_conditions_has_incoming_troops;Inga inkommande trupper mot dina byar eller oaser
+vacationMode_conditions_has_reinforcing_troops_for;Inga förstärkningar skickas till andra spelare
+vacationMode_conditions_has_reinforcing_troops_from;Inga förstärkningar från andra spelare i dina byar eller oaser
+vacationMode_conditions_has_ww_village;Äger ingen världsunderby
+vacationMode_conditions_has_artifact_village;Äger ingen artefaktby
+vacationMode_conditions_has_beginners_protection;Inget nybörjarskydd
+vacationMode_conditions_has_trapped_troops;Det finns inga trupper i dina fällor, och inga av dina egna trupper, inklusive din hjälte, är fångade
+vacationMode_conditions_has_deletion_event;Din avatar är inte markerad för radering
+vacationMode_conditions_has_conquered_oase;Du har inte annekterat en oas de senaste {{HOURS}} timmarna. Du kan gå in i semesterläget först när det har gått {{HOURS}} timmar sedan du annekterade en oas, eller när du förlorat en.
+vacationModePopup_info;Ditt konto är skyddat medan semesterläget är aktivt, men din råvaruproduktion fortsätter och dina trupper förbrukar fortfarande vete. <color=red>Detta kan leda till att dina trupper svälter.</color>
+vacationModePopup_start_info;Är du säker på att du vill aktivera semesterläge i <b>{{DAYS}}</b> [DAYS>1:dagar][DAYS<2:dag]? Semesterläge kan avbrytas med guld efter {{COOLDOWN}} timmars väntetid.
+vacationModePopup_troopConsumption;Förbrukning för egna trupper
+vacationModePopup_starvationEstimate;Tidigaste svält inträffar kl
+vacationModePopup_starvationTitle;Förbrukning för egna trupper
+goldTransfer_accept_gift;Ja, överför guldet
+goldTransfer_decline_gift;Nej, avböj guldet
+goldTransfer_accepted_toast;Guldöverföringen accepterades.
+goldTransfer_declined_toast;Guldöverföringen avböjdes.
+smithy_requirementsNotSatisfied;Du uppfyller inte kraven för att uppgradera den här enheten
+vacationModeLobby_status;I semesterläge
+block_vacationMode_toast;Du kan inte göra detta medan du är i semesterläge.
+goldTransfer_verifyOwnership_title;Bekräfta ägarskap
+goldTransfer_verifyOwnership_description;För att föra över det köpta guld du inte har använt till en befintlig avatar måste du först verifiera att du äger guldet genom att ange den e-postadress som överföringskoden skickades till.
+goldTransfer_verifyOwnership_emailPlaceholder;E-Post
+goldTransfer_verifyOwnership_errorNoEmail;Ange din e-postadress
+goldTransfer_verifyOwnership_errorAlreadyUsed;Guldöverföringslänken har redan använts.
+goldTransfer_verifyOwnership_errorInUse;Guldöverföringslänken är ogiltig.
+goldTransfer_verifyOwnership_verifyButton;Verifiera
+goldTransfer_selectTargetAvatar_title;Välj målavatar
+goldTransfer_selectTargetAvatar_description;Välj den avatar du vill föra över guldet till.
+goldTransfer_transferableGold_label;Överförbart guld:
+goldTransfer_enterAvatarName_header;Ange avatarnamn:
+goldTransfer_avatarName_placeholder;Avatarnamn
+goldTransfer_searchAvatar_Button;Sök avatar
+goldTransfer_searchAvatarNothingFound_error;Hittade ingen aktiv avatar med det här namnet.
+goldTransfer_ownAvatarList_header;Välj bland dina aktiva avatarer ({{account}})
+goldTransfer_selectOwnAvatarConfirm_Button;Välj avatar
+goldTransfer_selectGameworld_title;Välj en spelvärld
+goldTransfer_selectGameworld_description;Avatarens namn finns i flera spelvärldar. Du kan endast överföra guld till en avatar. Välj en spelvärld.
+goldTransfer_selectGameworldConfirm_Button;Välj en spelvärld
+goldTransfer_changeAvatar_Button;Ändra namn
+goldTransfer_confirm_title;Bekräfta överföring
+goldTransfer_confirm_Button;Bekräfta överföring
+goldTransfer_confirmAvatarOnOneWorld_info;Avatarnamnet hittades i en spelvärld:
+goldTransfer_confirmAvatarName_prefix;Avatarnamn:
+goldTransfer_confirmGameworld_prefix;Spelvärld:
+goldTransfer_transferComplete_title;Överföring klar
+goldTransfer_transferComplete_description;Ditt guld har överförts till <b>{{avatarname}}</b> i <b>{{gameworldname}}.</b>
+goldTransfer_transferComplete_returnButton;Tillbaka till spelet
+cams_settings_accountDeletion_information_warning_v2;Denna åtgärd kommer att radera ditt konto permanent. Följande innehåll som är kopplat till ditt konto kommer att gå förlorat:\n<indent=0.5em>•  Alla avatarer som ägs av ditt konto\n•  Alla medaljer som du har tjänat in på ditt konto</indent>\n\nBekräfta genom att skriva "delete" i fältet nedan.
+mapMarkers_popupTitle;Sätt ut en markör
+mapMarkers_markerType;Markörtyp
+mapMarkers_markerColor;Markörfärg
+mapMarkers_setAlliance;Sätt en markör för min allians
+mapMarkers_type_field;Fält
+mapMarkers_addMsg_success;Markören har lagts till!
+mapMarkers_saveMsg_success;Markören har sparats!
+mapMarkers_noPermission_error;Be din alliansledare om tillstånd.
+mapMarkers_marker;Markör
+mapMarkers_markers;Markörer
+mapMarkers_listAllianceTitle;Alliansmarkörer
+mapMarkers_listPlayerTitle;Spelarmarkörer
+mapMarkers_listAlliances;Allians:
+mapMarkers_listPlayers;Spelare:
+mapMarkers_listFlags;Flaggor
+mapMarkers_deleteMarker;Ta bort markör
+mapMarkers_deleteMarkerMessage;Vill du ta bort den här markören?
+mapMarkers_showOnMap;Visa mina markörer på kartan
+embassy_general_subtab;Allmänt
+embassy_villagesNearby_subtab;Byar i närheten
+embassy_villagesNearby_listHeader;Byar i alliansen/federationen

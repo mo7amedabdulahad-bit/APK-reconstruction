@@ -1,0 +1,2068 @@
+﻿detail_window_header_title;{{buildingName|TranslateSuffixFor|allgemein.gid}}
+;{{INT}}
+levelWithValue;{{level}}. līmenis
+valueWithPercent;{{value}}%
+valueAsRankingPosition;{{value}}.
+valueChangeInBrackets;({{change|Sign}})
+valueChangeInBracketsWithPercent;({{change|Sign}}%)
+ratioValues;{{a}}/{{b}}
+coordinates;<nobr>({{x}}|{{y}})</nobr>
+village_with_coordinates;{{villageName}} <nobr>({{x}}|{{y}})</nobr>
+village_with_clickable_coordinates;{{villageName}} {{mapId|Coordinates}}
+valuePerHour;{{a}}/h
+back;Atpakaļ
+fill;Aizpildīt
+hero;Varonis
+done;Darīts
+remove;Noņemt
+prerequisites;Prasības:
+newAmount;Jaunā summa
+before;pirms
+after;pēc
+permissions;Atļaujas
+changesSaved;Izmaiņas saglabātas.
+genericError;Neparedzēta kļūda
+allianceTagInBrackets;[{{allianceId|AllianceLink}}]
+autocompleteNoResult;Nav atrasta neviena atbilstība
+medalAdded;Medaļa pievienota
+continueEdit;Turpināt rediģēt
+levelUp;Nākamais līmenis
+non_existing_object;[?]
+sorting;Kārtošana
+copiedToClipboard;Kopēts uz starpliktuvi
+maximumLengthError;Maksimālais garums: {{max}}.
+sortingOptions;Kārtošanas opcijas
+WIP_comingSoon;Funkcija drīz būs pieejama.
+upgradeTab_fastForward_button;{{Percent}}% ātrāk
+upgradeTab_masterBuilder_button;Būvē kopā ar\nBūvmeistaru {{goldIcon|Sprite}}{{goldCost}}
+upgradeTab_adBoostPopup_boost;{{BOOST}}% palielinājums
+infoTab_upgradingToLevel;Celtniecība uz līmeni {{level}}:
+infoTab_genericCurrently;Pašlaik:
+infoTab_genericAtLevel;Līmenī {{INT}}:
+infoTab_genericEffect;{{INT}}
+infoTab_currentProduction;Pašreizēja produkcija:
+infoTab_productionAtLevel;Produkcija {{INT}}. līmenī:
+infoTab_effectPerHour;{{INT}} stundā
+networkIssues;Zaudēts savienojums ar spēles serveri.
+cantLoadServerList;Nevarēja ielādēt serveru sarakstu tīkla problēmu dēļ. Lūdzu, pārbaudiet, vai ierīce ir savienota ar internetu, un mēģiniet vēlreiz.
+barracks_TrainTroops_Action;Apmāci kareivjus
+barracks_ViewTrainingsList;Skatīt apmācību sarakstu
+barracks_unitNeedsToBeResearched;Vienība ir jāizpēta:
+barracks_requiresLabel;Nepieciešams:
+barracks_trainingCosts;Kareivju apmācību izmaksas
+barracks_troopsInTraining;Kareivji apmācībā
+training_started;Apmācības sāktas veiksmīgi!
+targetSelection_relationLabel;Statuss:
+targetSelection_selectedVillage;Izvēlēties ciemu
+targetSelection_noSelectedVillage;Nav izvēlēts neviens ciems
+targetSelection_ownVillages;Jūsu ciemi
+targetSelection_relation0;Neitrāls
+targetSelection_relation1;Draudzīgs
+targetSelection_relation2;Sava alianse
+targetSelection_relation3;Savs ciems
+targetSelection_alreadyThere_troops;Tavi kareivji jau ir šeit.
+targetSelection_alreadyThere_merchants;Tavi tirgotāji jau ir šeit.
+rallyPoint_button_confirmTarget;Apstiprināt mērķi
+rallyPoint_button_prepareTroops;Sagatavot kareivjus
+rallyPoint_button_updateWave;Atjaunināt vilni
+rallyPoint_button_copyWave;Dublēt vilni
+rallyPoint_button_newWave;Pievienot jaunu vilni
+rallyPoint_sendTroops_chooseDestination;Sūtīt kareivjus — izvēlieties galamērķi
+rallyPoint_sendTroops_sendTroopAction_1;Sūtīt kareivjus — apstiprināt
+rallyPoint_sendTroops_sendTroopAction_3;Sūtīt kareivjus — apstiprināt
+rallyPoint_sendTroops_sendTroopAction_4;Sūtīt kareivjus — apstiprināt
+rallyPoint_sendTroops_sendTroopAction_5;Sūtīt kareivjus — apstiprināt
+rallyPoint_sendTroops_sendTroopAction_72;Pārsūtīt kareivjus — apstiprināt
+rallyPoint_sendTroops_sendTroopAction_9;Atsaukt kareivjus — apstiprināt
+rallyPoint_sendTroops_sendTroopAction_10;Izveidot jaunu ciemu
+rallyPoint_sendTroops_sendTroopButton_1;Sūtīt kareivjus
+rallyPoint_sendTroops_sendTroopButton_3;Sūtīt kareivjus
+rallyPoint_sendTroops_sendTroopButton_4;Sūtīt kareivjus
+rallyPoint_sendTroops_sendTroopButton_5;Sūtīt kareivjus
+rallyPoint_sendTroops_sendTroopButton_72;Pārsūtīt kareivjus
+rallyPoint_sendTroops_sendTroopButton_9;Nosūtīt kareivjus atpakaļ
+rallyPoint_sendTroops_sendTroopButton_10;izveidojiet jaunu ciemu
+rallyPoint_sendTroops_coordinateX;<b>X</b> koordinātes:
+rallyPoint_sendTroops_coordinateY;<b>Y</b> koordinātes:
+rallyPoint_sendTroops_selectOnMap;Vai izvēlieties atrašanās vietu kartē:
+rallyPoint_sendTroops_arrivalTime;<b>{{hoursLeft|Duration}}</b> plkst.<nobr> </nobr><b>{{hoursLeft|TimeCountUp}}</b>
+rallyPoint_sendTroops_catapultTargetPopup;Izvēlēties katapultas mērķi:
+rallyPoint_sendTroops_catapultTarget_category_1;Infrastruktūras celtnes
+rallyPoint_sendTroops_catapultTarget_category_2;Militārās celtnes
+rallyPoint_sendTroops_catapultTarget_category_3;Resursu celtnes
+rallyPoint_sendTroops_catapultTarget_random;Nejauši
+rallyPoint_sendTroops_catapultTarget_noBuilding;Atlasīt ēku
+rallyPoint_sendTroops_catapultTarget_recentTargets;Nesen izvēlētais:
+rallyPoint_sendTroops_changeHeroHomeVillage;Mainīt varoņa mājas ciemu
+rallyPoint_sendTroops_attackNoSelection;Izvēlieties uzbrukuma veidu
+rallyPoint_sendTroops_movementType_5;Papildspēki
+rallyPoint_sendTroops_movementType_3;Uzbrukums
+rallyPoint_sendTroops_movementType_4;Sirojums
+rallyPoint_sendTroops_attackForwarding;Pārsūtīšana
+rallyPoint_sendTroops_noTroopsSelected;- Nav izvēlēts neviens kareivis -
+rallyPoint_sendTroops_noTroopsAvailable;Nevar nosūtīt kareivjus. Šajā ciemā kareivji nav pieejami.
+rallyPoint_sendTroops_forwardingVillageError;Kareivjus var pārsūtīt tikai alianses dalībniekiem vai uz saviem ciemiem.
+rallyPoint_sendTroops_forwardingDestination;Pārsūtīt kareivjus — izvēlēties mērķi
+rallyPoint_sendTroops_WaveRemoved;Vilnis noņemts
+rallyPoint_sendTroops_maxWaves;Sasniegtais maksimālais viļņu skaits
+rallyPoint_sendTroops_notEnoughTroopsToCopy;Nepietiek kareivju, lai dublētu vilni.
+rallyPoint_sendTroops_troopsSent;Nosūtīti kareivji
+rallyPoint_sendTroops_toOverview;Uz pārskatu
+rallyPoint_sendTroops_backToVillage;Atgriezties ciemā
+rallyPoint_sendTroops_mission;Misija:
+rallyPoint_troopsOverview_1;Ienākošie uzbrukumi un sirojumi
+rallyPoint_troopsOverview_2;Izejošie uzbrukumi un sirojumi
+rallyPoint_troopsOverview_3;Kareivji, kas atgriežas
+rallyPoint_troopsOverview_4;Savi kareivji šajā ciemā un tā oāzēs
+rallyPoint_troopsOverview_5;Svešie kareivji ciemā
+rallyPoint_troopsOverview_6;Savi kareivji citos ciemos vai oāzēs
+rallyPoint_troopsOverview_7;Ienākošie papildspēki
+rallyPoint_troopsOverview_8;izejošie papildspēki
+rallyPoint_troopsOverview_9;izejošie papildspēki
+rallyPoint_troopsOverview;Pārskats par kareivjiem
+rallyPoint_troopsOverview_consumption;Patēriņš: {{cropConsumption|ShortenNumber|10000}}  {{iconName|Sprite}} stundā
+rallyPoint_troopsOverview_arrivalTime;Ierašanās: <b>{{Duration|Countdown}}</b> plkst.<nobr> </nobr><b>{{date|Time}}</b> 
+rallyPoint_troopsOverview_incomingMission_3;Ienākošais uzbrukums no: 
+rallyPoint_troopsOverview_incomingMission_4;Ienākošais sirojums no: 
+rallyPoint_troopsOverview_outgoingMission_3;Uzbrukumi 
+rallyPoint_troopsOverview_outgoingMission_4;Sirojumi 
+rallyPoint_troopsOverview_outgoingMission_5;Palīdz 
+rallyPoint_troopsOverview_outgoingMission_50;Piedzīvojums uz: 
+rallyPoint_troopsOverview_outgoingMission_72;Kareivji pārsūtīti uz: 
+rallyPoint_troopsOverview_outgoingMission_10;Jauna ciema dibināšana 
+rallyPoint_troopsOverview_outgoingMission_40;Kareivji paslēpās paslēptuvē mežā.
+rallyPoint_troopsOverview_returningMission;Atgriežas no: 
+rallyPoint_troopsOverview_ownTroops_1;Savi kareivji: 
+rallyPoint_troopsOverview_ownTroops_2;Savi kareivji: 
+rallyPoint_troopsOverview_ownTroops_3;Savi kareivji: 
+rallyPoint_troopsOverview_ownTroops_4;<b>Daba</b>: 
+rallyPoint_troopsOverview_ownTroops_5;Savi kareivji: 
+rallyPoint_troopsOverview_ownTroops_6;Savi kareivji: 
+rallyPoint_troopsOverview_ownTroops_7;Savi kareivji: 
+rallyPoint_troopsOverview_foreignTroops_2;Papildspēku kareivji no: 
+rallyPoint_troopsOverview_foreignTroops_4;Ieslodzītie kareivji no: 
+rallyPoint_troopsOverview_ownTroopsInOther_2;Savi kareivji kā papildspēki priekš: 
+rallyPoint_troopsOverview_ownTroopsInOther_4;Savi kareivji, kas ieslodzīti: 
+rallyPoint_troopsOverview_origin;Izcelsme: 
+rallyPoint_troopsOverview_reinforcement;Papildspēki no: 
+rallyPoint_troopsOverview_killed;Nogalināti kareivji!
+rallyPoint_troopsOverview_released;Kareivji atbrīvoti!
+rallyPoint_troopsOverview_forwardedTroopsButton;Pārsūtītie kareivji
+rallyPoint_troopsOverview_returnToOverview;Atgriezties pie pārskata
+rallyPoint_troopsOverview_incomingAttacks;Ienāk: <color={{colorValue|TextColor}}>{{incomings}}</color>
+rallyPoint_troopsOverview_amountIncoming;Ienāk: {{value}}
+rallyPoint_troopsOverview_amountOutgoing;Iziet: {{value}}
+rallyPoint_troopsOverview_amountReturning;Atgriežas: {{value}}
+rallyPoint_troopsOverview_firstArrivalTime;Pēc {{timestamp|Countdown}} stundām
+rallyPoint_troopsOverview_forwardTroops;Uz priekšu
+rallyPoint_troopsOverview_MergeTroops;Iekļaut ciemā
+rallyPoint_troopsOverview_WithdrawTroops;Sūtīt atpakaļ
+rallyPoint_troopsOverview_sort_1;Vispirms kustības ar karodziņiem
+rallyPoint_troopsOverview_sort_2;Vispirms ierodas agrākais
+rallyPoint_troopsOverview_sort_3;Vispirms ierodas pēdējais
+rallyPoint_troopsOverview_sort_4;Vispirms nesenāk nosūtītie kareivji
+rallyPoint_troopsOverview_sort_5;Vispirms visagrāk nosūtītie kareivji
+rallyPoint_troopsMerge_troopsToBeMerged;Apvienošanai izvēlētie kareivji:
+rallyPoint_troopsMerge_currentGold;Pašreizējais zelts:  {{iconName|Sprite}} {{currentGold}}
+rallyPoint_troopsMerge_goldLeft_0;{{remainingGold}} / {{maxAllowedGold}} zelta palicis, lai apvienotu kareivjus šodien.
+rallyPoint_troopsMerge_goldLeft_1;{{remainingGold}} / {{maxAllowedGold}} zelta palicis, lai apvienotu kareivjus šodien. Jūs joprojām varat veikt apvienošanu, izmantojot resursus.
+rallyPoint_troopsMerge_troopsMergedToast;Kareivji apvienoti!
+rallyPoint_raidList_beingRaided;Notiek izlaupīšana: {{current}}/{{total}}
+rallyPoint_infoTab_EvasionShortDescription;Aktivizēt kareivju izvairīšanos galvaspilsētā
+rallyPoint_farmList_createNewTitle;Izveidot jaunu sarakstu
+rallyPoint_farmList_editTitle;Izlabot sarakstu
+rallyPoint_farmList_listName;Saraksta nosaukums
+rallyPoint_farmList_selectDefaultTroops;Izvēlēties noklusējuma kareivjus
+rallyPoint_farmList_addTroopsButton;Pievienot kareivjus
+rallyPoint_farmList_editTroopsButton;Labot karaspēku
+rallyPoint_farmList_setTroopsButton;Iestatīt kareivjus
+rallyPoint_farmList_createListButton;Izveidot sarakstu
+rallyPoint_farmList_editListButton;Atjaunināt sarakstu
+rallyPoint_farmList_editTroopsTitle;Rediģēt fermu saraksta kareivjus
+rallyPoint_farmList_deleteList;Dzēst sarakstu
+rallyPoint_selectTroops;Atlasīt kareivjus
+rallyPoint_farmList_listCreated;Saraksts izveidots
+rallyPoint_farmList_exitList;Iziet no saraksta
+rallyPoint_farmList_startAll;Sākt visos mērķos
+rallyPoint_farmList_startAllLists;Sākt visus
+rallyPoint_farmList_startSelected;Sākt izvēlētajos
+rallyPoint_farmList_noTarget;- Neviens mērķis nav izvēlēts -
+rallyPoint_farmList_noTargetExist;Šajā sarakstā nav mērķu
+rallyPoint_farmList_selectedAmount;{{amount}} izvēlēts:
+rallyPoint_farmList_listUpdated;Saraksts atjaunināts
+rallyPoint_farmList_listDeleted;Saraksts dzēsts
+rallyPoint_farmList_editWarning;- Izdzēšot sarakstu, tiks izdzēsti visi šajā sarakstā esošie mērķi\n- Kareivju rediģēšana attieksies tikai uz nākamo mērķu noklusējuma kareivjiem
+rallyPoint_farmList_sortingFailed;Kārtošana neizdevās! Lūdzu, mēģini vēlreiz!
+rallyPoint_farmList_notStartedPopupTitle;Sirojumi nav sākti
+rallyPoint_farmList_notStartedPopupElement;<b>{{total}}</b>, jo {{message}}
+rallyPoint_farmList_NotStartedPopupButtonGoTo;Pievienot fermu listē
+rallyPoint_farmList_AddTargetTitle;Pievienot mērķi
+rallyPoint_farmList_changeTroops;Mainīt kareivjus
+rallyPoint_farmList_targetAdded;Mērķis pievienots
+rallyPoint_farmList_targetAlreadyOnList;Mērķis jau ir iekļauts šajā fermu sarakstā, lūdzu, izvēlies citu vai izveido jaunu fermu sarakstu.
+rallyPoint_farmList_choose;Izvēlēties fermu sarakstu
+rallyPoint_farmList_notYetRaided;Sirojums vēl nav veikts
+rallyPoint_farmList_EditRaids;Rediģēt mērķi [raidsAmount>1:Rediģēt mērķus]
+rallyPoint_farmList_DeleteRaidsPlayerQuestion;Vai tiešām vēlies dzēst [raidsAmount=1:šo mērķi][raidsAmount>1:šos mērķus]?
+rallyPoint_farmList_ChangeRaidList;Mainīt fermu sarakstu
+rallyPoint_farmList_ChangeTarget;Mainīt mērķi
+rallyPoint_farmList_ChangeTroops;Mainīt kareivjus
+rallyPoint_farmList_DeactivateTarget;Deaktivizēt [raidsAmount=1:mērķi][raidsAmount>1:mērķus]
+rallyPoint_farmList_MultiEditWarning;Tu rediģē vairākus mērķus. Veiktās izmaiņas skars visus izvēlētos mērķus
+rallyPoint_farmList_UpdateRaids;Atjaunināt [raidsAmount=1:mērķi][raidsAmount>1:mērķus]
+rallyPoint_farmList_filterShowTroopsTitle;Rādīt kareivjus
+rallyPoint_farmList_filterShowTroopsDescription;Parāda katram mērķim izvēlētos kareivjus
+rallyPoint_farmList_filterShowPopulationTitle;Rādīt mērķa iedzīvotājus
+rallyPoint_farmList_filterShowPopulationDescription;Parāda mērķa ciema iedzīvotājus
+rallyPoint_farmList_filterShowDistanceTitle;Rādīt attālumu
+rallyPoint_farmList_filterShowDistanceDescription;Rāda mērķa attālumu līdz jūsu ciematam
+rallyPoint_farmList_filterShowLastRaidTitle;Rādīt pēdējā sirojuma informāciju
+rallyPoint_farmList_filterShowLastRaidDescription;Parāda mērķa pēdējā sirojuma informāciju
+rallyPoint_farmList_filterShowBountyTitle;Rādīt ieguvumus un resursus
+rallyPoint_farmList_filterShowBountyDescription;Parāda gūtos ieguvumus un resursus
+marketplace_createOffer;Izveidot piedāvājumu
+marketplace_myOffers_title;Mani piedāvājumi
+marketplace_myOffers_merchants;Tirgotāji: {{count}}
+marketplace_myOffers_alliance_True;Alianse: Jā
+marketplace_myOffers_alliance_False;-
+marketplace_myOffers_interval;{{amount}} stundas
+marketplace_myOffers_offerDeleted;Piedāvājums dzēsts
+marketplace_merchantsOverview_arrival;{{duration}} stundas Ierašanās: {{arrivalTime}}
+marketplace_merchantsOverview_incomingMerchants;Ienākošās piegādes: {{count}}
+marketplace_merchantsOverview_outgoingMerchants;Izejošās piegādes: {{count}}
+marketplace_merchantsOverview_noIncomingMerchants;- Nav ienākošo tirgotāju -
+marketplace_merchantsOverview_noOutgoingMerchants;- Nav izejošo tirgotāju -
+marketplace_merchantsOverview_IncomingCat;Ienākošie
+marketplace_merchantsOverview_outgoingCat;Izejošie
+marketplace_merchantsOverview_capacity;Kapacitāte: {{capacity}}
+marketplace_merchantsOverview_merchantsOverview;Pārskats par tirgotājiem
+marketplace_merchantsOverview_ArrivingSoonest;Visagrākā ierašanās
+marketplace_merchantsOverview_ArrivingLatest;Visvēlākā ierašanās
+marketplace_merchantsOverview_ShortestDistance;Īsākais attālums
+marketplace_merchantsOverview_LongestDistance;Garākais attālums
+marketplace_merchantsOverview_transportTo;Transportēt uz <b>{{Player}}</b> ciemu <b>{{Village}}</b>
+marketplace_merchantsOverview_transportFrom;Transportēt no <b>{{Player}}</b> ciema <b>{{Village}}</b>
+marketplace_merchantsOverview_returningFrom;Atgriežas no <b>{{Player}}</b> ciema <b>{{Village}}</b>
+academy_research_viewResearchList;Notiek izpēte
+academy_research_allUnitsResearched;Visas vienības ir izpētītas.
+academy_researchListPopup_title;Karaspēks, kas tiek pētīts
+academy_researchListPopup_remainingTime;{{timeLeft}} palika. Gatavs plkst. {{readyAt}}
+academy_researchListPopup_constructImmediately;Būvēt nekavējoties
+research_started;Pētījums veiksmīgi uzsākts!
+research_timeLeft;{{TIME|Countdown}} palika
+townHall_celebration_ongoingCelebration;Notiek
+topBar_perHourLabel;/h:
+topBar_maxLabel;Maks.:
+topBar_resourceFull;Pilns
+leftPanel_infoBox;Info lauks
+villagePanel_playerNameTitle;Ciemati, kas pieder {{playerName}}
+villagePanel_toStatistics;Uz ciemu statistiku
+villagePanel_culturePointsNeeded;Nākamajam ciemam nepieciešamie kultūras punkti
+mapCell_type;{{x}}{{y}}
+mapCell_type_village;{{villageName}}
+mapCell_type_1;Lokāls
+mapCell_type_2;Ieleja
+mapCell_type_3;Neieņemta oāze
+mapCell_type_4;Okupēta oāze
+mapCell_type_5;Tuksnešains apgabals
+mapCell_Owner;Īpašnieks
+mapCell_type_valley;Ieleja
+mapCell_Wilderness;Šajā vietā nav nekā interesanta.
+mapCell_Distance;{{distance|Round|1}} lauki
+mapCell_locationInfo;Informācija par atrašanās vietu
+mapCell_surroundings;Apkārtne
+mapCell_actions_editFarmlist;Labot fermu sarakstu
+mapCell_actions_addFarmlist;Pievienot fermu listē
+mapCell_actions_raidOasis;Sirot oāzē
+mapCell_showOnMap;Parādīt kartē
+mapCell_noReports;- Informācija par šo vietu nav pieejama -
+berichte.region_;{{PLAYERACTIVE}}{{PLAYERPASSIVE}}{{VILLAGE}}{{NAME1}}{{NAME2}}{{ALLY1}}{{ALLY2}}{{NAME}}
+mapCell_goToOwnVillage;Iet uz savu ciemu
+constructionQueue_timeLeftToFinish;{{timestamp|Countdown}} palika. Gatavs plkst. {{timestamp|Time}}
+constructionQueue_timeUntilStart;Sāksies pēc {{timestamp|Countdown}}
+constructionQueue_MasterBuilderTitle;Galvenā būvmeistara rinda (izmaksā {{masterBuilderCost|Sprite}} {{masterBuilderCost}} būvniecības sākumā)
+constructionQueue_Constructing;Būvē celtni
+constructionImmediatelyPopup_topText;Sekojošie pasūtījumi tika pabeigti nekavējoties:
+constructionImmediatelyPopup_title;Pabeigt uzreiz
+newBuildingConstructionDetail_dateTimeEnoughResources;Pietiek resursu {{date|Date}} plkst. {{time|Time}}
+newBuildingConstruction_noBuildingsAvailable;Uz doto mirkli nav iespējams celt nevienu celtni.
+goldclubpopup_currentGold;Pašreizējais zelts:  {{iconName|Sprite}} <color={{colorValue|TextColor}}>{{currentGold}}</color>
+goldclubpopup_activated_toastMessage;Zelta klubs aktivizēts!
+loginPage_version;Versija {{currentVersion}}
+loginPage_loginBlocked;Pieteikšanās bloķēta
+loginPage_loginBlocked_fails;Pārāk daudz neveiksmīgu pieteikšanās mēģinājumu
+loginPage_loginBlocked_message;Jūsu konts ir bloķēts pārmērīga neveiksmīgu pieteikšanās mēģinājumu skaita dēļ.
+loginPage_loginBlocked_resolve;Lai atbloķētu kontu, piesakieties, izmantojot pārlūkprogrammu
+serverSelection_selectRegion;Izvēlies reģionu
+serverSelection_selectGameWorld;Izvēlies spēles pasauli
+serverSelection_0;Starptautiskais
+serverSelection_1;Arābu valstis
+serverSelection_2;Āzija
+serverSelection_3;Eiropa
+serverSelection_4;Amerika
+serverSelection_99;Dev
+serverSelection_mapSize;Kartes izmērs:
+serverSelection_mapSize_0;Neliela
+serverSelection_mapSize_1;Lielas
+serverSelection_artifacts;Kultūras pieminekļi:
+serverSelection_constructionPlans;Būvplāni:
+serverSelection_changeGameWorld;Mainīt spēles pasauli
+serverSelection_username;Lietotājvārds:
+serverSelection_password;Parole:
+serverSelection_loginButton;Pierakstīties un spēlēt
+serverSelection_forgotPassword;Aizmirsu savu paroli
+serverSelection_noAccount;Man nav konta
+serverSelection_loginError;Nepareizs lietotājvārds vai parole
+serverSelection_graphQlError;Kļūda datu iegūšanā no servera
+serverSelection_tokenRefreshError;Kļūda, piesakoties pēdējā izmantotajā serverī. Lūdzu, piesakie atkārtoti.
+serverSelection_stayLoggedIn;Palikt pieteiktam spēles pasaulē
+troopsInfo_title;Kareivji ciemā {{villageName}}
+unitInfo_velocity;<b>{{fields}}</b> lauki stundā
+unitInfo_resourceCarriage;<b>{{INT}}</b> resursi
+unitInfo_researchPrerequisites;Priekšnosacījumi pētniecībai:
+unitInfo_trainingPrerequisites;Priekšnosacījumi apmācībai:
+unitInfo_canCarry;Var pārnēsāt
+exchangeResources_currentTitle;Jaunā summa
+exchangeResources_lockAmount;Bloķēšanas summa
+exchangeResources_changeTitle;Mainīt
+exchangeResources_restTitle;Atlikums
+exchangeResources_buildingPossible_True;Iespējama modernizācija
+exchangeResources_buildingPossible_False;Modernizācija nav iespējama
+exchangeResources_mergePossible_True;Iespējama apvienošana
+exchangeResources_mergePossible_False;Apvienošana nav iespējama
+exchangeResources_researchPossible_True;Iespējami pētījumi
+exchangeResources_researchPossible_False;Pētījumi nav iespējami
+exchangeResources_celebrationPossible_True;Iespējamas svinības
+exchangeResources_celebrationPossible_False;Svinības nav iespējamas
+exchangeResources_reviveHero_True;Iespējama varoņa atdzīvināšana
+exchangeResources_reviveHero_False;Varoņa atdzīvināšana nav iespējama
+exchangeResources_currentlyAvailable;Pašlaik pieejams: <b>{{amount}}</b>
+exchangeResources_maximumAvailable;Maksimālais pieejamais: <b>{{amount}}</b>
+exchangeResources_distributeEvenly;Sadalīt atlikušos resursus vienādi:
+exchangeResources_distributeOnResource;Vai arī noteikt prioritātes atlikušajiem resursiem:
+exchangeResources_distributeAuto;Automātiska sadalīšana
+exchangeResources_distributeManual;Manuāla sadalīšana
+exchangeResources_availableTroops;Pieejamie kareivji: {{amount}}
+buildingActivities_title;Celtniecības darbības
+buildingActivities_idle;neaktīvs
+buildingActivities_type;Tips
+buildingActivities_building_13;Uzlabojumi:
+buildingActivities_building_16;Fermu liste
+buildingActivities_building_17;Tirgotāji
+buildingActivities_building_19;Kareivji apmācībā
+buildingActivities_building_20;Kavalērija apmācībās
+buildingActivities_building_29;Kareivji apmācībā
+buildingActivities_building_30;Kavalērija apmācībās
+buildingActivities_building_21;Kareivji apmācībā
+buildingActivities_building_22;Izpētīt
+buildingActivities_building_24;Svētki
+buildingActivities_building_46;Kareivju dziedināšana
+buildingActivities_buildingAction_;{{amount}}{{max}}
+buildingActivities_buildingAction_16;{{amount}} sirojumi turpinās
+buildingActivities_buildingAction_17;Pieejams: {{amount}}/{{max}}
+mainMenu_title;Galvenā izvēlne
+mainMenu_quests;Uzdevumi
+playerDetails_infoTab;Spēlētāja informācija
+playerDetails_villageTabTitle;{{villages}} ciemati ar {{oases}} oāzēm
+playerDetails_SortBy_1;Iedzīvotāju skaits
+playerDetails_SortBy_2;Uzvaras punkti
+playerDetails_SortBy_3;Ciema nosaukums
+playerDetails_SortBy_4;Reģiona nosaukums
+player_gender_DontSpecify;Nav norādīts
+player_gender_Other;Cits
+player_gender0;Vīrietis
+player_gender1;Sieviete
+player_gender2;Cits
+player_gender3;Nav norādīts
+playerDetails_NotesFor;Piezīmes par {{playerName}}
+playerDetails_NoDescription_Others;- Šis spēlētājs nav pievienojis aprakstu -
+playerDetails_NoDescription_Own;- Apraksts vēl nav pievienots -
+playerDetails_editLanguages;Rediģēt valodas
+playerDetails_searchLanguage;Meklēšanas valoda
+goldShopPlaceholder_title;Veikals drīzumā!
+goldShopPlaceholder_description;Zelta veikals vēl nav ieviests mobilajā lietotnē.<br><br> Lai iegādātos zeltu, savā kontā autorizējies no pārlūkprogrammas.
+goldShop_title;Zelta veikals
+goldShop_advantage_5;Travian Plus
+goldShop_advantage_4;Kokmateriāli
+goldShop_advantage_1;Māls
+goldShop_advantage_2;Dzelzs
+goldShop_advantage_3;Labība
+goldShop_feature_activated;Funkcija aktivizēta!
+goldShop_purchaseFailed;Pirkums neizdevās!
+goldShop_purchaseSuccess;Veiksmīgs pirkums.
+goldShop_transactionInProgress;Darījums procesā.\nLūdzu, uzgaidi.
+goldShop_transactionFailed;Kaut kas nogāja greizi.\nLūdzu pamēģiniet vēlāk.
+goldShop_transactionTimeout;Dārgais spēlētāj, tavs maksājums ir veikts pēc noteiktā termiņa un, iespējams, nav apstrādāts pareizi. Lūdzu, sazinies ar mūsu <style="link"><link="https://support.travian.com/support/tickets/new">maksājumu atbalsta dienestu</link></style>, ja rodas kādas problēmas.
+market_sendResources_requiredMerchants;Nepieciešamie tirgotāji:
+market_sendResources_capacityPerMerchant;Katra tirgotāja ietilpība
+market_sendResources_amountRepeats;Atkārtojumu skaits:
+market_sendResources_confirmResources;Apstiprināt resursus
+market_sendResources_amountWithX;× {{amount}}
+market_sendResources_sent;Resources sent!
+market_offer_maxDuration;Maksimālais transportēšanas ilgums:
+market_offer_confirm;Apstiprināt piedāvājumu
+market_offers_title;Piedāvājumi
+market_capacity;Kapacitāte: {{capacity}}
+market_offers_offering;Es piedāvāju:
+market_offers_searching;Es meklēju:
+market_offers_offered;Tu nosūti
+market_offers_wanted;Tu saņem
+market_offers_accepted;Piedāvājums pieņemts! Resursi ir ceļā, un tirgotāji ir nosūtīti.
+market_offers_ownAllianceOnly;Tikai savas alianses spēlētāji
+market_ratio_11;1 : 1
+market_ratio_1X;1 : X
+market_tradeRoutes_to;jaunā spēlētāja e-pasts:
+market_tradeRoutes_entryAmount;<b>{{amount}}</b> Ieraksti
+market_tradeRoutes_noRoutes;- Nav izveidots neviens tirdzniecības ceļš -
+market_tradeRoutes_travelTime;Ceļojuma ilgums: {{time|Duration}} stundas
+market_tradeRoutes_activeRatio;{{active}}/{{total}} aktīvi
+market_tradeRoutes_active;Aktīvs
+market_tradeRoutes_paused;Apturēts
+market_tradeRoutes_updated;Ceļi atjaunināti
+market_tradeRoutes_deleted;Svītrotie tirdzniecības ceļi
+market_tradeRoutes_returnAt;atgriezties plkst. {{time|Time}}
+market_tradeRoutes_merchantsAndRepeat;{{merchants}} tirgotāji, {{repeats}}x
+market_tradeRoutes_filterOptions;Filtrēšanas opcijas
+market_tradeRoutes_showMerchants;Rādīt tirgotājus
+market_tradeRoutes_showMerchantsText;Parāda, cik daudz tirgotāju tiek izmantoti
+market_tradeRoutes_showResources;Rādīt resursus
+market_tradeRoutes_showResourcesText;Parāda pārvietoto resursu apjomu
+market_tradeRoutes_afterInputFieldsSuffix;Stundas
+market_tradeRoutes_interval;{{INT}} stundas
+market_tradeRoutes_confirmTarget;Apstiprināt mērķi
+market_tradeRoutes_arrivalTime;{{duration|Duration}} plkst. {{arrivalTime|Time}}
+market_tradeRoutes_created;Tirdzniecības ceļš izveidots
+market_tradeRoutes_edit;Rediģēt tirdzniecības [routeAmount=1:ceļu][routeAmount>1:ceļus]
+market_tradeRoutes_update;Augšupielādēt tirdzniecības [routeAmount=1:ceļu][routeAmount>1:ceļus]
+market_tradeRoutes_multiEditWarning;Tu rediģē vairākus tirdzniecības ceļus. Veiktās izmaiņas skars visus {{routeAmount}} maršrutus.
+market_tradeRoutes_editResourcesTitle;Mainīt resursus
+market_tradeRoutes_editResourcesButton;Rediģēt resursus
+market_tradeRoutes_setResourcesButton;Pārvaldīt resursus
+market_tradeRoutes_updateResourcesButton;Resursu atjaunināšana
+market_tradeRoutes_pause;Apturēt tirdzniecības [routeAmount=1:ceļu][routeAmount>1:ceļus]
+market_tradeRoutes_pauseDescription;Tirdzniecības ceļš tiks pārvietots uz apturēto sarakstu, bet paliks jūsu tirgus laukumā.
+market_tradeRoutes_delete;Dzēst tirdzniecības [routeAmount=1:ceļu][routeAmount>1:ceļus]
+market_tradeRoutes_deleteConfirmQuestion;Vai tiešām dzēst [routeAmount=1:šo][routeAmount>1:šos] tirdzniecības [routeAmount=1:ceļu][routeAmount>1:ceļus]?
+market_tradeRoutes_invalidTarget;Tirdzniecības ceļus var nosūtīt tikai uz pasaules brīnumu ciemiem un ciemiem, kuros ir alianses vai konfederācijas biedru artefakti vai pasaules brīnumu būvniecības plāni
+hero.status;{{NAME}}
+hero_adventures_selectVillage;Izvēlēties ciemu
+hero_adventures_explore;Izpētīt
+hero_adventures_sendHero;Nosūtīt varoni
+hero_adventures_sent;Piedzīvojums sākās
+hero_status_reviveWithBucket;Izmanto, lai uzreiz atdzīvinātu varoni.
+hero_status_reviveWithRes;Izmanto resursus varoņa atdzīvināšanai.
+hero_inventory_consumablePopupTitle;Izmantojams priekšmets
+hero_resourceTransferPopup_title;Pārsūtīt resursus
+hero_resourceTransferPopup_ReadyForTransfer;Gatavs pārsūtīšanai
+hero_resourceTransferPopup_transferSelected;Izvēlēta pārsūtīšana
+hero_resourceTransferPopup_transferMax;Pārsūtīt maksimumu
+hero_resourceTransferPopup_storageFull;Noliktava pilna. Tu nevari pārsūtīt papildu resursus.
+hero_inventory_transferToCurrentVillage;Pārsūtīts uz šobrīd aktīvo ciemu: <b>{{VILLAGE}}</b>
+hero.itemDescriptionV2Details;{{PERCENTAGE}}{{EXPERIENCE}}{{RAISE}}{{LIMIT}}{{MAX}}{{TIME}}
+hero.itemDescriptionV2;{{VALUE}}
+hero_consumablePopup_currentEquippedItems;Pašlaik aprīkoto priekšmetu daudzums:
+hero_consumablePopup_itemsLeftInInventory;Inventārā atlikušo vienību daudzums:
+hero.itemTypeV2_inventory;Patērējams priekšmets
+hero.cooldownWithTime;Ir {{COOLDOWN}} h atpūtas liks, kas beigsies plkst. {{DATE|DateTime}}.
+reports_overview_title;{{COUNT}} ziņojumi
+reports_overview_title_selected;Izvēlēti {{SELECTED}} / {{COUNT}} ziņojumi
+reports_overview_title_archived;Arhivētie ziņojumi
+reports_overview_archived_noReports;- Nav neviena arhivēta ziņojuma -
+reports_filters_title;Izvēlēties filtru
+reports_filters_allReports;Visi ziņojumi
+reports_filters_applyButton;Piemērot {{COUNT}} filtrus
+reports_filters_noFilter;Nav izvēlēts neviens filtrs
+reports_detail_title;Ziņojuma detaļas
+berichte.;{{NAME1}}{{NAME2}}{{VILLAGE_NAME}}{{X}}{{Y}}{{COORDS}}{{NAME}}
+reports_player_from_village;[{{allianceId|AllianceLink}}] {{playerId|PlayerLink}} no ciema {{villageId|VillageLink}}
+reports_troops_lost;Zaudētie kareivji:
+reports_troops_hospitalized;Hospitalizēti:
+reports_xp_gained;Iegūtie XP: {{amount}}
+reports_health_change;-{{change}}% veselība
+reports_hero_died;Tavs varonis piedzīvojuma laikā nomira
+reports_scouted_building;{{buildingType|TranslateSuffixFor|allgemein.gid}} līmenis <b>{{level}}</b>
+reports_refreshed;Ziņojumi atjauninātas!
+reports_deleteReportPopup_title;Dzēst ziņojumu(-us)
+reports_deleteReportPopup_warningTitle;Vai tiešām dzēst {{X}} ziņojumu(-us)?
+reports_deleteReportPopup_warningTitleAll;Vai tiešām dzēst visus ziņojumus?
+reports_deleteReportPopup_warningDescription;Kad ziņojums tiek izdzēsts, tas vairs nekad nav pieejams. Jūs to nevarēsiet atgūt.
+reports_deleted;Ziņojums izdzēsts!
+reports_markedUnread;Ziņojums ir atzīmēts kā nelasīts!
+reports_archived;Ziņojums arhivēts!
+reports_deleted_all;Visi ziņojumi izdzēsti!
+reports_deleted_selected;Izdzēsts(-i) {{X}} ziņojums(-i)!
+reports_markedRead_all;Visi ziņojumi atzīmēti kā izlasīti!
+reports_markedRead_selected;{{X}} ziņojums(-i) atzīmēti kā izlasīti!
+alliance_nameAndTagPair;{{allianceName}} | {{allianceTag}}
+alliance_editAllianceName;Rediģēt alianses nosaukumu
+alliance_name;Alianses nosaukums
+alliance_nameError;Alianses nosaukums nedrīkst palikt tukšs
+alliance_tag;Alianses tags
+alliance_tagError;Alianses tags nevar palikt tukšs
+alliance_profileTab_inviteNewPlayer;Uzaicināt jaunu spēlētāju
+alliance_profileTab_showInvitedPlayers;Rādīt uzaicinātos spēlētājus
+alliance_invitedPopup_title;Uzaicinātie spēlētāji
+alliance_invitedPopup_invitationRemoved;Ielūgums dzēsts!
+alliance_invitePlayerPopup_title;ielūgt spēlētāju
+alliance_invitePlayerPopup_noPlayerFound;Nav atrasts neviens spēlētājs
+alliance_invitePlayerPopup_playerInvited;Spēlētājs uzaicināts!
+alliance_editMemberPopup_title;Rediģēt biedru
+alliance_editMemberPopup_customMessage;Pielāgota ziņa
+alliance_editMemberPopup_setRole;Noteikt lomu
+alliance_editMemberPopup_kickPlayerFromAlliance;Izslēgt spēlētāju no alianses
+alliance_editMemberPopup_cantChangePermission;Nevar mainīt pašreizējo atļauju: skatīt brīdinājumu.
+alliance_kickPlayerPopup_areYouSure;Vai tiešām izslēgt {{Player}} no alianses?
+alliance_kickPlayerPopup_playerKicked;Spēlētājs izslēgts!
+alliance_editAllianceDescription;Rediģēt alianses aprakstu
+alliance_topColumn;Augšējā sleja
+alliance_bottomColumn;Apakšējā sleja
+alliance_bbCodeAdded;Pievienots BB kods
+alliance_generalInformation;Vispārīga informācija
+alliance_confederacy_tab;Konfederācija
+alliance_diplomacy;Diplomātija
+alliance_diplomacy_tab1;NAP / Karš
+alliance_diplomacy_send_new;Sūtīt jaunu
+alliance_diplomacy_openRequests;Atvērtie pieprasījumi
+alliance_diplomacy_otherOffered;{{allianceId|AllianceLink}} piedāvāja: {{type|TranslateSuffixFor|alliance_diplomacy_type}}
+alliance_diplomacy_youOffered;Tu piedāvāji {{allianceId|AllianceLink}}: {{type|TranslateSuffixFor|alliance_diplomacy_type}}
+alliance_diplomacy_offerDeclare;Piedāvāt / pieteikt
+alliance_diplomacy_type;Tips
+alliance_diplomacy_type1;konfederācija
+alliance_diplomacy_type2;NAP
+alliance_diplomacy_type3;karš
+alliance_diplomacy_type4;konfederācija
+alliance_diplomacy_typekick;izraidīšana no konfederācijas
+alliance_diplomacy_deleteText_;{{type|TranslateSuffixFor|alliance_diplomacy_type}}{{alliance|AllianceLink}}
+alliance_diplomacy_deleteTitle_RemoveRequest;Dzēst pieprasījumu
+alliance_diplomacy_deleteText_RemoveRequest;Vai tiešām dzēst piedāvājumu {{alliance|AllianceLink}} par {{type|TranslateSuffixFor|alliance_diplomacy_type}}?
+alliance_diplomacy_deleteTitle_TerminateExisting;Izbeigt
+alliance_diplomacy_deleteText_TerminateExisting;Vai tiešām izbeigt {{type|TranslateSuffixFor|alliance_diplomacy_type}} ar {{alliance|AllianceLink}}?
+alliance_diplomacy_deleteTitle_ConfederacyKickVote;Izbeigt
+alliance_diplomacy_deleteText_ConfederacyKickVote;Lai izslēgtu {{subject|AllianceLink}}, nepieciešams citu konfederācijas biedru apstiprinājums.\n\nVai vēlies turpināt un informēt pārējās alianses par savu lēmumu?
+alliance_diplomacy_deleteTitle_QuitConfederacy;Izbeigt
+alliance_diplomacy_deleteText_QuitConfederacy;Vai tiešām izbeigt konfederāciju ar minētajiem dalībniekiem?
+alliance_diplomacy_deleteTitle_RemoveConfederacyProposal;Dzēst pieprasījumu
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Kick;Vai tiešām noraidīt {{alliance|AllianceLink}} pieprasījumu par {{subject|AllianceLink}} izslēgšanu no konfederācijas?
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Join;Vai tiešām noraidīt {{alliance|AllianceLink}} pieprasījumu ļaut {{subject|AllianceLink}} pievienoties konfederācijai?
+alliance_diplomacy_sent;Piedāvājums nosūtīts
+alliance_diplomacy_accepted;Diplomātiskās attiecības akceptētas
+alliance_diplomacy_canceled;Diplomātiskās attiecības atceltas
+alliance_diplomacy_declined;Pieprasījums noraidīts
+alliance_diplomacy_kickStarted;Pieprasījums nosūtīts
+alliance_diplomacy_proposal_approved;Pieprasījums apstiprināts
+alliance_diplomacy_noContract;Tavai aliansei nav aktīvu līgumu ar citām aliansēm.
+alliance_diplomacy_noConfederacy;Tava alianse nav konfederācijas daļa.
+alliance_diplomacy_alreadyOpenOffer;Šai aliansei jau ir atvērts piedāvājums.
+alliance_diplomacy_alreadyExistingContract;Ar šo aliansi jau ir noslēgts līgums.
+alliance_diplomacy_warInDeletion;Jāpagaida, kamēr arī otra alianse izbeigs karu.
+alliance_union_leave;Pamest konfederāciju
+alliance_union_add;Pievienot jaunu pieprasījumu
+allianz.diplomacy_with_type;{{NAME}}
+allianz.diplomacy_with_type4;Konfederācija ar {{NAME}}
+alliance_newsBbDescription;Mainīt tekstu "skaits", lai rediģētu ziņu skaitu
+alliance_LossesBBName;Zaudējumi
+alliance_LossesBBDescription;Mainīt "nosaukums", lai atlasītu aliansi, ar kuru salīdzināt
+alliance_NapBBName;Neuzbrukšanas pakti
+alliance_WarsBBName;Kari
+alliance_addBBCode;Pievienot BB kodu
+alliance_addMedal;Pievienot medaļu
+alliance_assignToPosition;Piešķirt dalībniekiem amatus un mainīt alianses nosaukumu
+alliance_editPermissions;Rediģēt atļaujas
+alliance_roleTitle;Lomas nosaukums:
+alliance_assignToPosition_onlyMemberError;Tu esi vienīgais šīs alianses dalībnieks. Amatu piešķiršanu dalībniekiem un alianses nosaukuma maiņu nevar atcelt.
+alliance_noAllianceEvents;- Nav alianses notikumu, ko parādīt -
+alliance_dailyContribution;Ikdienas ieguldījums
+alliance_contributionAmount;Ieguldījums: <b>{{AMOUNT}}</b>
+alliance_resourcesContributed;{{current}}/{{max}} resursi ieguldīti
+alliance_contributionResetIn;Atiestatīt pēc: {{time|Countdown}}
+alliance_resUntilNext;Resursi līdz nākamajam līmenim: {{resources|LongNumber}}
+alliance_bonusCurrentlyActivating;Bonusa aktivizācija: {{resources|Countdown}}
+alliance_bonusMaxed;Maksimāli palielināts bonuss
+alliance_tripledContribution;Tu esi trīškāršojis savu ieguldījumu!
+alliance_contributionStatistics;Ieguldījumu statistika
+alliance_contributionNone;- Pašreiz ieguldījumu nav -
+auth_clientVerificationFailed;Nevarēja pārbaudīt klientu. Lūdzu, mēģiniet vēlreiz.
+banned_seeMessage;Skatīt ziņojumu
+banned_acceptPunishment;Pieņemt sodu
+residence_settlement;Apmetne
+palace_capital;Noteikt šo ciemu par manu galvaspilsētu.
+palace_setAsCapital;Noteikt kā galvaspilsētu
+palace_enterPassword;Drošības apsvērumu dēļ ievadi paroli:
+embassy_GoToAlliance;Iet uz aliansi
+embassy_Invitation;Alianse {{AllianceId|AllianceLink}}, uzaicināja: {{playerId|PlayerLink}}
+embassy_VillagesInRange;Ciemi apvidū
+embassy_LeaveAllianceToJoin;lai pievienotos jaunai aliansei, vispirms ir jāizstājas no pašreizējās alianses.
+embassy_ConfirmLeaveAlliance;Apstiprināt un izstāties no alianses
+embassy_InvitationAccepted;Ielūgums pieņemts
+embassy_AllianceFounded;Alianse nodibināta veiksmīgi
+embassy_LeftAlliance;Izstāšanās no alianses bija veiksmīga
+embassy_acceptInvitationQuestion;Vai tiešām pievienoties {{allianceId|AllianceLink}}?
+embassy_acceptInvitationWarning;{{hours}} stundas pēc pievienošanās no alianses izstāties nevarēs.
+embassy_acceptInvite;Jā, pievienoties aliansei
+embassy_declineInvite;Nē, dzēst ielūgumu
+embassy_noAlliancesNearby;Tuvākajā apkārtnē nav atrastas nekādas alianses.
+smithy_improveTo;Uzlabot līdz līmenim {{level}}
+smithy_viewList;Apskatīt attīstību
+smithy_upgradeStarted;{{unitId|TranslateSuffixFor|truppen.tid}} uzlabojumu uzsākšana
+smithy_researchFirst;Vienības ir jāizpēta akadēmijā
+smithy_levelTooLow;Smēdes līmenis ir pārāk zems, lūdzu, modernizē smēdi
+allBuildings_10;Visas noliktavas:
+allBuildings_11;Visas klētis:
+allBuildings_23;Visas paslēptuves:
+allBuildings_38;Visas noliktavas:
+allBuildings_39;Visas klētis:
+currentBuildingValue;Pašreiz {{type|TranslateSuffixFor|allgemein.gid}}:
+ad_successful;Reklāma redzēta!
+externalLink_title;Ārējā saite
+externalLink_description1;<b>UZMANĪBU!</b><br>Tu gatavojies atvērt šādu ārējo saiti:
+externalLink_description2;Travian Games nevar pārbaudīt šo saiti.
+externalLink_description3;Turpini rīkoties uz savu atbildību.
+externalLink_description4;Vai tiešām turpināt?
+externalLink_continue;Turpināt uz saiti
+search_village;Meklēt ciemu
+search_select_village;Izvēlēties ciemu
+search_three_characters;Jāieraksta vismaz {{amount}} rakstzīmes
+search_no_result;Nav atrasta neviena atbilstība
+search_player;Meklēt spēlētāju
+search_player_invite;ielūgt spēlētāju
+search_select_player;Izvēlēties spēlētāju
+search_select_player_invite;Uzaicināt jaunu spēlētāju
+search_alliance;Meklēt aliansi
+search_select_alliance;Izvēlieties aliansi
+gid27.arte_detail_;{{INT}}
+artefact_inventory_village;Ciems:
+artefact_inventory_conquered;Iekarots:
+artefact_inventory_active;Aktīvs: aktīvs pie
+artefact_inventory_active_already;Aktīvs: <b>aktivizēts</b>
+artefact_inventory_show_active_only;Rādīt tikai manus aktivizētos artefaktus
+artefact_overview;Artefaktu pārskats
+artefact_tip_large;Lieliem artefaktiem ir nepieciešamais dārgumu glabātuves līmenis ir <b>20</b>, un tie ietekmē visu tavu <b>avatāru</b>
+artefact_tip_small;Maziem artefaktiem nepieciešamais dārgumu glabātuves līmenis ir <b>10</b>, un tie ietekmē tikai <b>ciemu</b>
+artefact_tip_nearby;Artefakti, kas atrodas netālu no {{villagenamelong|Bold}}
+artefact_small;Neliela
+artefact_large;Lielas
+artefact_nearby;Netālu
+artefact_village;Ciems
+artefact_button_former_owners;Skatīt iepriekšējos īpašniekus
+artefact_already_active;Jau aktivizēts
+artefact_required_level_value;Dārgumu glabātuves <b>līmenis {{LEVEL}}</b>
+artefact_details;Detaļas
+number_counter;{{NUMBER}}.
+tasks_villageTasks;Ciema uzdevumi
+tasks_nextHeroLevelBonus;Nākamā varoņa līmeņa bonuss = {{value}}%
+villageOverview_building_headline;Celtne
+villageOverview_building_slotIdle;Būvniecība nav uzsākta
+villageOverview_resource_sorting1;Ciemu saraksts
+villageOverview_resource_sorting2;Klēts īsākais ilgums
+villageOverview_resource_sorting3;Klēts garākais ilgums
+villageOverview_resource_sorting4;Noliktavas īsākais ilgums
+villageOverview_resource_sorting5;Noliktavas garākais ilgums
+villageOverview_resource_sorting6;Nepietiekama ražošana
+villageOverview_troops_stationed;Ciemā dislocētie kareivji
+villageOverview_troops_sum;Kareivji kopā
+villageOverview_troops_tab_training;Apmācība
+villageOverview_culture_slots;Ciema vietas
+cancelPopup_Improvement;Atcelt uzlabošanu
+cancelPopup_Research;Atcelt pētniecību
+cancelPopup_Construction;Atcelt būvniecību
+cancelPopup_text_;{{NAME}} {{LEVEL}}
+cancelPopup_text_Improvement;Vai gribi atcelt {{NAME}} uzlabošanu līmenī {{LEVEL}}?
+cancelPopup_text_Research;Vai gribi atcelt {{NAME}} izpēti?
+cancelPopup_text_Construction;Vai gribi izbeigt {{NAME}} būvniecību līmenī {{LEVEL}}?
+cancelPopup_text_refund;Tev tiks atlīdzināts(-i) {{INT}}% no uzlabojumu izmaksām:
+dailyQuests_timeRemaining;Atlikušais laiks: {{time|Countdown}}
+dailyQuests_rewardOverview;Skatīt atlīdzības pārskatu
+dailyQuests_claimRewards;Pieprasīt atlīdzības
+dailyQuests_pointsEarned;Iegūtie punkti: <b>{{current}}/{{max}}</b>
+dailyQuests_rewardDescription;Šīs ir atlīdzības, ko varat atbloķēt, šodien izpildot dienas uzdevumus:
+dailyQuests_claimAction;Pieprasīt
+dailyQuests_alreadyClaimed;Pieteikts
+dailyQuests_questDetailTitle;Informācija
+dailyQuests_quest_worth;Uzdevuma vērtība:
+dailyQuests_quest_worth_points;+{{points}} [points=1:punkts][points>1:punkti]
+dailyQuests_quest_repeated;Šo uzdevumu var atkārtot:
+dailyQuests_quest_repeated_amount;{{amount}} [amount=1:reizi][amount>1:reizes]
+dailyQuests_quest_completed;Veiktie atkārtojumi:
+dailyQuests_quest_difficulty;Grūtības pakāpe:
+dailyQuests_quest_requirement;Prasība:
+dailyQuests_backToOverview;Atpakaļ uz pārskatu
+dailyQuests_difficulty_moderate;Mērena
+dailyQuests_difficulty_hard;Grūta
+dailyQuests_difficulty_challenging;Sarežģīts
+achievementQuests.achQuest_;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+achievementQuests.achQuest__step_01_description;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+heroMansion_Loyalty;Lojalitāte {{INT}}%
+heroMansion_Conquered;Iekarots {{TIME|DateTime}}
+heroMansion_SlotFree;Ir pieejams nākamā oāzes vieta
+heroMansion_SlotBlocked;Nākamā oāze no <color={{colorValue|TextColor}}>varoņu savrupmājas</color> <color={{colorValue2|TextColor}}>līmeņa {{REQUIRMENT}}</color>
+heroMansion_Undo;Atsaukt
+heroMansion_FinishedAt;Pabeigts: {{TIME|Time}}
+waterworks_NoneOasesAcquired;Nav anektēta neviena oāze
+waterworks_BonusCalculation;+ ({{INT}}% no {{INT2}}%) = 
+waterworks_CurrentBonus;Pašreizējais ūdens piegādes sistēmas bonuss: +{{INT}}% pie oāzes resursiem
+waterworks_Oases;Anektētās oāzes
+messages_inbox_title;{{COUNT}} ziņojumi
+messages_inbox_title_selected;Atlasīti {{SELECTED}} / {{COUNT}} ziņojumiem
+messages_newMessage;Jauns ziņojums
+messages_messageSent;Ziņojums nosūtīts!
+messages_exitPreview;Iziet no priekšskatījuma
+messages_previewTitle;Priekšskatīt ziņojumu
+messages_unread_count;{{COUNT}} nelasīti
+reportPlayer_selectReason;Izvēlēties ziņojuma iemeslu
+reportPlayer_reasonPlaceholder;Ziņojuma iemesls
+reportPlayer_addNote;Pievienot piezīmi ziņojumam (nav obligāti):
+reportPlayer_alsoBlock;Ignorēt arī šo spēlētāju
+reportPlayer_maximumLength;Maksimālais garums {{text|TextLength}}/300
+reportPlayer_nowIgnored;Tu tagad ignorē šo spēlētāju.
+reportPlayer_nowUnignored;Tu vairs neignorē šo spēlētāju.
+statistics_general;Vispārējā statistika
+statistics_seeDetails;Skatīt informāciju
+statistiken.progressionStepTitle_;{{VALUE}}{{DATETIME}}
+language_de-DE;Vācu
+language_en-US;Latviski
+language_fr-FR;Franču
+language_ru-RU;Krievu
+statistics_villageAndHero;Lielākais ciems / varonis
+RelativeTime_0;{{data}} s
+RelativeTime_1;{{data}} min
+RelativeTime_2;{{data}} h
+RelativeTime_3;[data>1:{{data}} dienas][data<2:{{data}} diena]
+RelativeTime_4;[data>1:{{data}} nedēļas][data<2:{{data}} nedēļa]
+RelativeTime.Separator; 
+RelativeTime.Wrapper.Past;{{time}} iepriekš
+RelativeTime.Wrapper.Future;Pēc {{time}}
+mapCell_tooFewSettlers;Pieejami {{current}}/3 kolonistiem
+mapCell_heroNotIdle;Tavs varonis nav neaktīvs
+mapCell_cantAddOwn;Tu nevari pievienot savus ciemus
+mapCell_alreadyInVillage;Tu jau esi šajā ciemā
+serverSelection_rememberPassword;Atcerēties manu paroli
+serverSelection_savedWorldsTitle;Jūsu spēles pasaules
+serverSelection_removeWorldTitle;Noņemt spēles pasauli
+serverSelection_removeWorldQuestion;Vai tiešām izņemt šo spēļu pasauli no tava saraksta?
+serverSelection_removeWorldDescription;Brīdinājums: Tas neizdzēsīs tavu kontu spēles pasaulē. Tu jebkurā laikā vari atgriezties un pievienot spēles pasauli, ieskaitot savu kontu, savu spēļu pasauļu sarakstam.
+serverSelection_removeWorldButton;Noņemt no saraksta
+serverSelection_addWorldText;+ pievienot spēles pasauli
+buildingActivities_buildingAdditional_;{{amount}}
+buildingActivities_buildingAdditional_17;{{amount}} aktīvie tirdzniecības ceļi
+reports_filters_reset;Atiestatīt filtrus
+palace_capitalSet;Galvaspilsēta noteikta!
+palace_isCapital;Šī ir Jūsu galvaspilsēta
+messages_unread_count_full;{{COUNT}} nelasīta[COUNT>1:s] ziņa[COUNT>1:s]
+statistics_alliance;Alianses statistika
+statistics_alliances_best_off;Labākās alianses (uzbrucēji)
+statistics_alliances_best_def;Labākās alianses (aizsargātāji)
+statistics_offensiveStrength;Tavs uzbrukuma spēks {{VILLAGEID|VillageLink}} ciemā šajā serverī
+statistics_offensiveStrengthAlliance;Tavs uzbrukuma spēks {{VILLAGEID|VillageLink}} ciemā jūsu aliansē
+statistics_offensiveStrengthVillage;Šī ciema uzbrukuma spēks:
+statistics_defensiveStrength;Tavs aizsardzības spēks šajā serverī
+statistics_defensiveStrengthAlliance;Tavs aizsardzības spēks tavā aliansē
+statistics_defensiveStrengthVillage;Šī ciema aizsardzības spēks:
+statistics_defensiveStrengthVillageSum;Visu ciemu aizsardzības spēku summa:
+recent;Nesen
+appliedFilters;Ir piemēroti {{COUNT}} filtri.
+allgemein.gid99;Nejauši
+rallyPoint_troopsOverview_10;Detalizēts kareivju pārskats
+rallyPoint_troopsOverview_returningFromAdventure;Atgriežas no piedzīvojuma: 
+rallyPoint_troopsOverview_detailedView;Detalizēts skats
+rallyPoint_troopsOverview_noMovements;- Nenotiek kareivju pārvietošanās -
+rallyPoint_troopsOverview_Target;Mērķis: {{Target|NamedCoordinates}}
+rallyPoint_troopsOverview_Origin;Izcelsme: {{Target|NamedCoordinates}}
+hero_adventures_number;Nr. {{INT}}
+hero_status_regeneration;<b>Veselības atjaunošanās:</b> {{VALUE}}% dienā
+hero_status_regeneration_details;{{HERO}}% dienā varonim {{EQUIPMENT}}% dienā aprīkojumam
+hero_status_experience;<b>Pieredze:</b> {{VALUE}}%
+hero_status_experience_bonus;Bonuss: {{VALUE}}%
+search_results;Meklēšanas rezultāti
+search_player_link;Spēlētāja saite
+search_select_player_link;Izvēlēties spēlētāju
+search_recipient;Meklēt saņēmēju
+search_select_recipient;Izvēlēties saņēmēju
+search_alliance_link;Alianses saite
+search_select_alliance_link;Izvēlieties aliansi
+messages_fullView_title;Vēstule
+messages_recipient_placeholder;Izvēlēties saņēmēju
+messages_title_placeholder;Ievadi sava ziņojuma virsrakstu
+messages_message_placeholder;Ievadi savu ziņojumu
+messages_ownAlliance;Sava alianse
+messages_selectedRecipients;Izvēlēts
+messages_ownAlliance_[ally];Visi alianses biedri
+messages_ownAlliance_[off];Alianses uzbrukuma biedri
+messages_ownAlliance_[def];Alianses aizsardzības biedri
+messages_discard_title;Izmest ziņojumu
+messages_discard_text_header;Vai vēlies izmest šo ziņojumu?
+messages_discard_text;Ziņojuma saturs tiks neatgriezeniski zaudēts.
+messages_confirm_deletion_title;Dzēst ziņojumus
+messages_confirm_deletion_text_header;Vai tiešām dzēst [data>1:{{data}} ziņojumus][data=1:{{data}} ziņojumu]?
+messages_confirm_deletion_text;Kad ziņojumi ir izdzēsti, tos nav iespējams atgūt.
+messages_confirm_deletion_button;Dzēst [data>1:{{data}} ziņojumus][data=1:{{data}} ziņojumu]
+icon_selection_title;Pievienot ikonu
+icon_selection_button;Izvēlēties ikonu
+icon_selection_resourcesAndHero;Resursi / Varonis
+icon_selection_natureAndNatars;Daba un natāri
+upgrading;Notiek atjaunošana!
+buildingActivities_buildingAdditional_46;Nav ievainotu kareivju
+playerDetails_ignorePlayerDescription;Spēlētājs tiks ignorēts
+reports_share;Kopīgot ziņojumu
+search_select_village_link;Izvēlēties ciemu
+search_village_link;Saistīt ciemu
+search_report_link;Saistīt ziņojumu
+search_select_report_link;Izvēlēties ziņojumu
+messages_banned;Tu vari rakstīt ziņojumus tikai citiem savas alianses dalībniekiem.
+messages_template_title;Veidnes
+messages_template_none;Nav pieejama neviena veidne
+messages_template_edit_title;Rediģēt veidni
+messages_template_delete_title;Dzēst veidni
+messages_template_delete_question;Vai tiešām dzēst šo veidni?
+messages_template_delete_desc;Pēc dzēšanas to vairs nevarēs atjaunot.
+messages_template_create;Izveidot jaunu veidni
+messages_template_create_descr;Izveido jaunu veidni no pašreizējā ziņojuma:
+messages_template_created;Veidne izveidota!
+messages_template_deleted;Veidne dzēsta!
+statistics_culturePoints_productionRank;Tavu KP ieguves rangs šajā serverī
+statistics_culturePoints_productionRankAlliance;Tavu KP ieguves rangs tavā aliansē
+statistics_culturePoints_production;KP
+statistics_resourceRank_production;Iegūts: {{VALUE|ShortenNumber}}
+statistics_resourceRank_productionRank;Tavs ražošanas rangs šajā serverī
+statistics_resourceRank_productionRankAlliance;Tavs ražošanas rangs tavā aliansē
+statistics_resourceRank_bounty_lost;Zaudēja
+statistics_wonderOfTheWorld_header;Labākie pasaules brīnumi
+hospital_healing_costs;Kareivju dziedināšanas izmaksas
+hospital_healing_action;Dziedināt kareivjus
+hospital_healing_list;Skatīt dziedināšanas sarakstu
+hospital_healing_list_title;Kareivji dziedināšanā
+hospital_healing_started;Uzsākta dziedināšana
+bonusValueWithPercent;+{{value}}%
+village_with_isCapital;{{villageName}} (galvaspilsēta)
+maximumTextLengthError;{{CONTEXT}} drīkst būt ne vairāk kā {{AMOUNT}} rakstzīmes
+infoTab_genericEffectInBrackets;({{INT|Sign}})
+infoTab_effectPercentage;{{INT}}%
+infoTab_effectInBracketsPercentage;({{INT|Sign}}%)
+infoTab_trapperCurrently;Pašreizējais mednieku māju maksimālais daudzums:
+trapper_Build_Action;Veidot lamatas
+trapper_ProductionCosts;Slazdu ražošanas izmaksas
+trapper_TrapsInConstruction;Slazdi izgatavošanā
+trapper_MaxBuilt;Izgatavoto slazdu maksimālais skaits
+truppen.tid119;Lamatas
+truppen.tid119p;Lamatas
+rallyPoint_troopsOverview_outgoingMission_scouting_1;Izlūkot aizsardzību un kareivjus, kas pieder 
+rallyPoint_troopsOverview_outgoingMission_scouting_0;Izlūkot resursu un kareivjus, kas pieder 
+rallyPoint_troopsOverview_returningRegeneratedMission;Atgriežas atjaunotie kareivji no: 
+rallyPoint_troopsOverview_returningFleeingMission;Kareivji atgriežas no meža paslēptuves: 
+rallyPoint_troopsOverview_foreignTroopsIn;Dislocēti: 
+rallyPoint_celebration_hint;Svinības alus darītavā varētu ietekmēt kareivjus.
+building_not_built;Celtne nav uzbūvēta
+berichte.report_icon_24;Ziņot
+allBuildings_36;Visu mednieku māju maks. summa:
+cropFinder_min_oasis_crop_bonus;Min. Oāzes labības bonuss:
+cropFinder_select_minimum_crop_bonus;Izvēlēties minimālo labības bonusu
+cropFinder_unoccupied;Neaizņemts
+search_by_location;Meklēt pēc atrašanās vietas
+search_by_player;Meklēt pēc spēlētāja
+search_village_from_player;Meklēt ciemu, kas pieder spēlētājam
+enter_player_name;Ievadīt spēlētāja vārdu
+messages_template_newConditionsNotMet;Veidnē jābūt nosaukumam un ziņojumam.
+message_report_isAlready;Par vēstuli jau ir ziņot ar sekojošo iemeslu: {{REASON}}
+tutorial_begin;Sākt pamācību
+tutorial_title_0;Sveiciens, bezbailīgais čempion! 
+tutorial_text_0;Laipni aicinām Travian: Legends nežēlīgajā cīņas laukumā. Ļauj mums ātri sagatavot tevi, lai tu varētu valdīt dzīvīgās apmetnēs un vadīt neapturamus spēkus.\n\nVai esi gatavs?
+tutorial_title_1;Navigācijas pārskats
+tutorial_text_1;Šeit tu atradīsi visu, sākot no kartes līdz efektīvai saziņai un izvērstiem informācijas rīkiem. Šeit ir arī noslēpti ikdienas uzdevumi, personalizēti iestatījumi un daudzas citas funkcijas.
+tutorial_title_3;Tavi resursi
+tutorial_text_3;Tava ciema resursus var atrast šeit. Pieskaries resursu joslai, lai atklātu sīkāku informāciju.
+tutorial_title_4;Tavi resursi
+tutorial_text_4;Pieskaries resursu joslai vēlreiz, lai paslēptu sīkāku informāciju.
+tutorial_title_5;Tavs ciems
+tutorial_text_5;Šeit atradīsi visu nepieciešamo informāciju par savu ciemu. Šeit ir viss, sākot ar uzdevumu sarakstu un beidzot ar pārskatu par taviem kareivjiem un celtniecības rindu. Nesen lietotnei pievienotā funkcija "Celtnes darbības" sniedz ātru kopsavilkumu par notiekošajām norisēm tavās celtnēs.
+tutorial_title_7;Tavs ciems
+tutorial_text_7;Ja tev būs izveidota pulcēšanās vieta, tā nodrošinās visaptverošu pārskatu par visām notiekošajām kareivju kustībām. Turklāt tas piedāvā ātru tavu uz jūsu pulcēšanās vietu.
+tutorial_title_8;Sānu izvēlne
+tutorial_text_8;Lai atvērtu sānu izvēlni, vari pieskarties bultiņām vai pavilkt ar pirkstu. To var izdarīt jebkurā laikā.
+tutorial_title_9;Ciemu saraksts
+tutorial_text_9;Jebkurā laikā vari ātri pārslēgties starp ciemiem, pavelkot sānu paneli. Tur atradīsi arī ciema statistiku.\n\nAr to mēs noslēdzam šo pamācību. Ko tu vēl gaidi? Iepazīsti, izpēti un ļauj Travian: Legends pasaulei kļūt par tavu stratēģisko rotaļu laukumu.\n\nLai veicas!
+tutorial_finish;Beigt pamācību
+filters_report_not_found;Ziņojums neeksistē
+filters_player_not_found;Spēlētājs neeksistē
+filters_alliance_not_found;Alianse neeksistē
+filters_village_not_found;Ciems neeksistē
+settings_game;Šī spēļu pasaule
+language_app_selection;Izvēlēties lietotnes valodu:
+settings_sitter;Spēlētāja uzraugs {{VALUE}}:
+settings_sitterTab_yourSitters;Tavi uzraugi
+settings_sitterTab_SittingFor;Uzraudzītie spēlētāji
+search_player_addSitter;Pievienot spēlētāja uzraugu
+search_select_player_addSitter;Pievienot spēlētāja uzraugu
+search_player_addSitter_additionalEmptyResultInfo;Nav atrasts neviens spēlētājs.\nTavu avatāru uzraudzīt var tikai tavas alianses/konfederācijas spēlētāji.
+settings_sitter_sitterAdded;Uzraugs pievienots!
+settings_sitter_sitterRemoved;Uzraugs noņemts!
+settings_sitter_sitterPermissionChangesSaved;Atļauju izmaiņas saglabātas!
+settings_sitter_confirm_remove_text_header;Vai vēlies noņemt {{PlayerName}} kā savu uzraugu?
+settings_sittersFor;Uzraudzība citiem avatāriem
+settings_sittersFor_info;Tu esi pievienots kā spēlētāja uzraugs šādiem avatāriem. Noklikšķinot uz sarkanā "X" simbola, vai atteikties no spēlētāja uzraudzīšanas.
+settings_sittersFor_none;Tu pašlaik neuzraugi nevienu avatāru.
+settings_sitterFor;Uzrauga {{VALUE}}:
+settings_sitterFor_sittingRemoved;Pārtraukta {{PlayerName}} uzraudzīšana!
+settings_sitterFor_confirm_remove_header;Vai vēlies pārtraukt uzraudzīt 
+settings_sitterFor_confirm_remove_header_questionmark;?
+settings_sitterFor_confirm_remove_info;Šo darbību nevar atcelt. Tikai citi spēlētāji var pievienot tevi kā savu uzraugu.
+brewery_celebration_attackStrength;({{INT}}% uzbrukuma spēks)
+brewery_celebration_hint;Svinības skars kareivjus, kas jau dodas gājienā
+settings_game_newLanguage;Valoda mainīta uz {{language}}.
+wonderOfTheWorld_name;Pasaules brīnuma nosaukums:
+combatSimulator_title;Simulācija — {{role|TranslateSuffixFor|combatSimulator_as}}
+combatSimulator_cataTargetLevel;Līmenis <b>{{index}}. Katapultas mērķis</b>
+combatSimulator_troopLevel;Kareivju smēdes līmenis:
+combatSimulator_asAttacker;Kā uzbrucējs
+combatSimulator_asDefender;Kā aizsargātājs
+combatSimulator_result;Simulācijas rezultāti
+combatSimulator_addReinforcement;Pievienot papildspēkus
+valueWithModifier;× {{value|Round|2}}
+valuePlusInBracketsWithPercent;(+{{change}}%)
+none;Nav
+marketplace_traderoute_repeatEveryHour;Atkārtot ik pēc: (stundas(-ām))
+block_sitter_warning;nav pieejams uzraugam
+settings_openConsentWindow;Privātuma iestatījumi
+combatSimulator_adjustHeroStats;Pielāgo varoņa statistiku
+combatSimulator_eagleEyeTitle;Izvēlēties "Ērgļa acs" bonusu
+combatSimulator_architectSecretTitle;Izvēlēties "Arhitektu noslēpuma" bonusu
+combatSimulator_metallurgyBonus;Izvēlēties "Metalurģijas" bonusu
+combatSimulator_rightHand;Izvēlēties rīku labajai rokai
+combatSimulator_leftHand;Izvēlēties rīku kreisajai rokai
+combatSimulator_bodyItem;Izvēlēties ķermeņa elementu
+combatSimulator_inventoryItem;Izvēlēties inventāra vienību
+combatSimulator_selectBuildingLevel_35;Izvēlēties alus darītavas līmeni
+combatSimulator_selectBuildingLevel_26;Izvēlēties pils līmeni
+combatSimulator_selectBuildingLevel_34;Izvēlēties "Akmeņlauztuves" līmeni
+combatSimulator_selectBuildingLevel_31;Izvēlēties sienas līmeni
+combatSimulator_selectBuildingLevel_32;Izvēlēties sienas līmeni
+combatSimulator_selectBuildingLevel_33;Izvēlēties sienas līmeni
+combatSimulator_selectBuildingLevel_43;Izvēlēties sienas līmeni
+combatSimulator_selectBuildingLevel_42;Izvēlēties sienas līmeni
+combatSimulator_selectTargetLevel;Izvēlēties katapultas mērķa līmeni
+combatSimulator_selectTroopLevel;Izvēlēties kareivju līmeni
+survey_title;Travian: Legends aptauja
+gdpr_title;Piekrišana datu apstrādei
+gdpr_description;Ar tavu piekrišanu mēs apkopojam noteiktu informāciju par tavu ierīci, IP adresi, lietošanas un reklāmas identifikatoriem. Tas palīdz mums rādīt tev atbilstošākas reklāmas un uzlabo tavu vispārējo lietotnes lietošanas pieredzi.
+gdpr_basic_functions;Lietotnes pamatfunkcijām vajadzīgie dati.
+gdpr_advertisement;Reklāmas vajadzībām izmantotie personas dati.
+gdpr_analytics;Analītikai izmantotie personas dati.
+gdpr_acceptAll;Pieņemt visus
+gdpr_save_and_exit;Saglabāt + Iziet
+gdpr_rejectAll;Noraidīt visus
+gdpr_privacy_policy;Privātuma politika
+gdpr_terms_and_conditions;Noteikumi un nosacījumi
+plus.plus.browserOnly;(tikai pārlūkprogrammā)
+hero_inventory_already_equipped;Tāds priekšmets jau ir aprīkots.
+survey_button_title;Atsauksmju aptauja
+survey_button_description;Piedalies šajā īsajā aptaujā, lai palīdzētu mums uzlabot Travian: Legends lietotni.
+goldShop_extend;Pagarināt
+goldShop_remaining;Palika:
+goldShop_advantage_activated;aktivizēts
+search_select_recipient_removeAll;Noņemt visus
+messages_messageTopic_noTopic;Nav tēmas / noklusējuma
+messages_messageTopic_resources;Par resursiem
+messages_messageTopic_defenses;Par aizsardzību
+messages_messageTopic_attacks;Par uzbrukumiem
+messages_messageTopic_strategies;Par stratēģijām
+messages_messageTopic_information;Vispārīga informācija
+messages_messageTopic_important;Svarīga informācija
+messages_messageTopic_selectionTitle;Izvēlēties ziņojuma tēmu
+farmlist_confirm_deletion_header;Vai esat pārliecināts, ka vēlaties dzēst atlasīto saimniecību sarakstu?
+farmlist_confirm_deletion_text;Šī darbība ir neatgriezeniska.
+farmlist_target_confirm_deletion_header;Vai tiešām dzēst [data>1:šos {{data}} mērķus][data=1:šo mērķi]?
+upgrade_queue_cantConstructImmediately;Šo celtni nevar uzbūvēt uzreiz
+language_cs-CZ;Čehu
+language_es-ES;Spāņu
+language_pl-PL;Poļu
+language_pt-PT;Portugāļu
+language_tr-TR;Turku
+language_it-IT;Itāļu
+playerDetails_victorPoints_summary;{{TOTAL}} | {{PERDAY}}/dienā
+settings_selectFormat;Izvēlēties formātu:
+settings_selectFormat_dialog_title;Izvēlēties datuma formātu
+settings_game_newDateFormat;Datuma formāts mainīts uz {{dateFormat}}.
+help_getHelp;Palīdzība
+help_getHelpDescription;Ja tev ir nepieciešama palīdzība vai vēlies ziņot par problēmu, sazinies ar spēles atbalsta dienestu šeit.
+help_learnAboutGame;Uzzināt vairāk par spēli
+help_learnAboutGameDescription;Viss, kas tev jāzina par spēli un tās darbību, ir atrodams šeit.
+help_gameRules;Iepazīsties ar spēles noteikumiem
+help_gameRulesDescription;Šeit Jūs atradīsiet patreizējos spēles noteikumus.
+help_joinDiscord;Pievienojies Discord
+help_joinDiscordDescription;Dalies ar mums atsauksmē mūsu īpašajā Mobile Discord serverī.
+PLAYERARG;{{PLAYER}}
+referAFriend_friendJoinedDescription;Lai par savu ielūgumu saņemtu zeltu, tavam draugam jānodibina savs <b>otrais ciems</b>. Palīdzi viņiem sasniegt šo mērķi! Apskati viņu progresu zemāk redzamajā ielūgumu pārskatā.
+referAFriend_rewardAddedVillage2Title_PLAYERARG;Tavs draugs {{PLAYER}} izveidoja 2. ciemu
+referAFriend_rewardAddedVillage3Title_PLAYERARG;Tavs draugs {{PLAYER}} izveidoja 3. ciemu
+referAFriend_rewardAddedVillage4Title_PLAYERARG;Tavs draugs {{PLAYER}} izveidoja 4. ciemu
+referAFriend_rewardAddedVillage5Title_PLAYERARG;Tavs draugs {{PLAYER}} izveidoja 5. ciemu
+referAFriend_rewardAddedVillage6Title_PLAYERARG;Tavs draugs {{PLAYER}} izveidoja 6. ciemu
+referAFriend_rewardAddedVillage7Title_PLAYERARG;Tavs draugs {{PLAYER}} izveidoja 7. ciemu
+referAFriend_rewardAddedVillage8Title_PLAYERARG;Tavs draugs {{PLAYER}} izveidoja 8. ciemu
+referAFriend_rewardAddedVillage9Title_PLAYERARG;Tavs draugs {{PLAYER}} izveidoja 9. ciemu
+referAFriend_rewardAddedVillage10Title_PLAYERARG;Tavs draugs {{PLAYER}} izveidoja 10. ciemu
+sysmsg_truce_learnMore;Uzzināt vairāk par pamieru
+worldEnded_ww_playerWon_topAlliance;Viena no vēsturē nozīmīgākajiem veidojumiem pēdējo akmeni strādnieki {{WORLD_END_TIME|DateTime}} ieklāja ciemā "{{WW_VILLAGE|VillageLink}}".<br>Kopā ar biedriem, {{WW_ALLIANCE|AllianceLink}}, {{WW_PLAYER|PlayerLink}} bija starp pirmajiem, kas pabeidza pasaules brīnumu. Pēc neskaitāmu resursu izlietošanas un vietas aizsardzības ar simtiem tūkstošu aizstāvju, {{WW_PLAYER|PlayerLink}} saņēma titulu "Laikmeta uzvarētājs".
+worldEnded_as2022_topAlliances;Apsveicam {{ALLIANCE_TOP_1|AllianceLink}}, kuri kļuva par Eiropas līderiem ar {{VICTORY_POINTS_TOP_1}} uzvaras punktiem! {{ALLIANCE_TOP_2|AllianceLink}} drošsirdīgi cīnījās, gūstot uzvaras un ieņemot otro vietu, savukārt {{ALLIANCE_TOP_3|AllianceLink}} viņiem cieši sekoja pa pēdām trešajā vietā.
+worldEnded_playerRanks_population;{{PLAYER_POPULATION_TOP_1|PlayerLink}} bija vislielākās personiskās impērijas valdnieks, kuram cieši sekoja {{PLAYER_POPULATION_TOP_2|PlayerLink}} un {{PLAYER_POPULATION_TOP_3|PlayerLink}}.
+worldEnded_playerRanks_offender;{{PLAYER_OFFENDER_TOP_1|PlayerLink}} pieveica vairāk pretinieku nekā jebkurš cits un bija visbaisākais pavēlnieks.
+worldEnded_playerRanks_defender;{{PLAYER_DEFENDER_TOP_1|PlayerLink}} bija visvarenākais aizstāvis, atvairot ienaidniekus pie ciema vārtiem un iekrāsojot zemi ap ciemiem asiņu krāsā.
+rallyPoint_startWithValue;Sākt ({{value}})
+rallyPoint_farmList_raidsStarted;{{INT}} nosūtīti sirojumi.
+rallyPoint_farmList_CantAddToAbandonList;Nevar pievienot mērķus pamestam fermu sarakstam.
+rallyPoint_farmList_CantActivateInToAbandonList;Nevar aktivizēt mērķus pamestā fermu sarakstā.
+rallyPoint_farmList_CantDuplicateInToAbandonList;Nevar dublēt mērķus pamestā fermu sarakstā.
+rallyPoint_farmList_DuplicateRaids;Dublēt [raidsAmount=1:mērķi][raidsAmount>1:mērķus]
+rallyPoint_farmList_SlotsDuplicated;[raidsAmount=1:Mērķis dublēts][raidsAmount>1:Mērķi dublēti]!
+rallyPoint_farmList_pleaseSelectTheList;Izvēlies sarakstu, kuram vēlies pievienot mērķi.
+rallyPoint_farmList_farmlistFull;Fermu saraksts ir pilns, lūdzu, izvēlies citu fermu sarakstu vai izveido jaunu.
+rallyPoint_farmList_targetName;Mērķa nosaukums
+rallyPoint_farmList_differentTroopsWarning;Kareivju skaits netiks mainīts, ja vien nemainīsi to, ierakstot jaunu vērtību.
+rallyPoint_farmList_noobProtectionWarning;Kamēr tev ir iesācēja aizsardzība, tu nevari sirot citus spēlētājus, bet vari sirot neokupētas oāzes un natāru ciemus.
+rallyPoint_farmList_noFarmLists;Nav izveidots neviens fermu saraksts
+rallyPoint_farmList_CreateNewFarmList;Izveidot fermu sarakstu
+rallyPoint_farmList_currentAmount;Fermu saraksti: <b>{{amount}}</b>/{{max}}
+rallyPoint_farmList_differentTribe;Ciemam atšķiras cilts no pašreizējā avota ciema. Pārbaudi kareivju vērtības.
+rallyPoint_farmList_overrideTarget;Neņemt vērā mērķi
+rallyPoint_farmList_selectedActivated;Atlasītie mērķi tika iestatīti kā aktīvi.
+rallyPoint_farmList_selectedDeactivate;Atlasītie mērķi tika iestatīti kā neaktīvi.
+rallyPoint_farmList_LastRaid;<b>Pēdējie sākti:</b> <nobr>{{lastStarted|DateTime}}</nobr>
+mapCell_editTargetListAmount;<nobr>Rediģēt mērķi</nobr> <nobr>(Saraksti: {{INT}})</nobr>
+goldShop_shopDisabled;Zelta veikals šajā spēles pasaulē ir atspējots
+infobox_accountLockGameEnd;Šis spēles raunds ir beidzies!
+applySorting;Piemērot kārtošanu
+truppen.tid931;Lamatas
+truppen.tid931p;Lamatas
+mainMenu_switchBackFromAvatar;{{iconName|Sprite}} Atgriezties pie {{playerName}}
+pending;(Gaida)
+featureNotAvailableInVacationMode;Šī funkcija nav pieejama, kad ir ieslēgts atvaļinājuma režīms.
+notAllowed;Tev tam nav atļaujas.
+settings_avatarDeletionInfo;No avatāra dzēšanas uzsākšanas līdz izdzēšanas pabeigšanai paies <b>3<nobr> </nobr>dienas</b>.\nAvatārs, kas tiek dzēsts, vairs nevar piedalīties izsolēs un apmaiņas birojos.\nDzēšanu jebkurā brīdī vari atcelt šeit.
+settings_avatarDeletionCountDown;Avatārs tiks dzēsts pēc
+deleteAvatar_confirmation_header;Vai vēlies dzēst savu avatāru?
+cams_info_subHeader;Vienonts pieteikumvārds visām spēles pasaulēm
+cams_info_text;Izveido savu Legends Lobby kontu, lai ar vienotu pieteikšanos viegli pierakstītos un bez problēmām piekļūtu visām savām spēļu pasaulēm.
+cams_info_lessInfo;Mazāk informācijas
+cams_info_Question_WhatIsLegendsLobbyAccount;Kas ir Legends lobija konts?
+cams_info_Answer_WhatIsLegendsLobbyAccount;Izmantojot lobija kontu, vairs nav jāreģistrējas jaunai spēles pasaulei. Vienkārši piesakies un vari piekļūt savām aktīvajām spēles pasaulēm vai uzsākt jaunu pārlūkā vai mobilajā lietotnē.
+cams_info_Question_WhatAreAvatars;Kas ir avatāri?
+cams_info_Answer_WhatAreAvatars;Izmantojot lobija kontu, tavs profils atsevišķā spēles pasaulē tiek saukts par avatāru. Tev ir viens lobija konts, kurā var būt vairāki avatāri, pa vienam katrā spēles pasaulē.
+cams_info_Question_WhatsWithCurrentGameworlds;Kas notiks ar manām pašreizējām spēles pasaulēm?
+cams_info_Answer_WhatsWithCurrentGameworlds;Visas aktīvās spēles pasaules, kurām tiek izmantota viena e-pasta adrese kā jūsu lobija konts, tiks saistītas un tām varēs piekļūt, izmantojot lobiju. Pirms lobija konta izveides vari mainīt pašreizējo aktīvo spēles pasauļu avatāru e-pasta adreses uz pareizo e-pasta adresi.
+cams_info_Question_WhatsWithSitters;Vai man joprojām var būt spēlētāja uzraugi?
+cams_info_Answer_WhatsWithSitters;Jā, spēlētāja uzraugus var piešķirt spēles pasaules iestatījumos, kā parasti. Vari piekļūt avatāram, kurš tev ir piešķirts, kā spēlētāja uzraugam, tieši spēles pasaulē.
+cams_info_Question_WhatsWithDuals;Vai es joprojām varu spēlēt kā duālis ar citiem spēlētājiem?
+cams_info_Answer_WhatsWithDuals;Duāļus var piešķirt spēles pasaulei, lobijā ievadot spēlētāja lobija konta nosaukumu. Tas nozīmē, ka arī duālim vispirms ir nepieciešams lobija konts, un pēc ielūguma pieņemšanas tas var piekļūt avatāram lobijā. Lūdzu, nevienam neizpaud savu lobija konta paroli.
+cams_info_Question_WhatsWithoutLobbyAccount;Vai es varu spēlēt, neizveidojot Legends lobija kontu?
+cams_info_Answer_WhatsWithoutLobbyAccount;Joprojām vari pieteikties savās pašreizējās spēles pasaulēs tieši, izmantojot attiecīgo URL. Tomēr, ja vēlies izveidot jaunu spēles pasauli vai izmantot mobilo lietotni, ir jāizveido lobija konts.
+cams_playerDecision_register_info;Jaunais Lobby konts ļauj savienot pašreizējo un nākamās spēļu pasaules ar vienu pieteikšanos.
+cams_playerDecision_login_info;Tev jau ir Lobby konts?\n\nPiesakies un turpini savu piedzīvojumu.
+cams_playerDecision_register_header;Izveidot kontu
+cams_playerDecision_register_create_new_account;Izveidot priekštelpas kontu
+cams_playerDecision_register_login;Ienākt Lobby
+cams_playerDecision_extra_info;Lai varētu spēlēt Travian: Legends, ir jāizveido Lobby konts.
+cams_register_header;Izveidot Legends vestibila kontu
+cams_register_email_label;Ievadi savu e-pasta adresi:
+cams_register_email_address;Reģistrēt e-pasta adresi
+cams_register_email_address_missing;Lūdzu, ievadi savu e-pasta adresi.
+cams_register_email_address_not_valid;Lūdzu, ievadi derīgu e-pasta adresi. Piemēram, mymail@provider.com
+cams_register_email_address_already_exists;Tava e-pasta adresi jau ir saistīta ar Lobby kontu.
+cams_register_redirecting_to_login;Pārvirza uz pieteikšanos {{INT}}...
+cams_register_hintMessage_same_email_address;Izmanto to pašu e-pasta adresi kā saviem esošajiem spēles pasauļu avatāriem, lai automātiski saistītu tos ar savu lobija kontu.
+cams_register_receive newsletter;Vēlos saņemt jaunumus.
+cams_register_already_have_an_account;Vai jau ir konts?
+cams_register_log_in_now;Piesakies tūlīt
+cams_acceptTOS;Noklikšķinot uz "Reģistrēt e-pasta adresi", tu piekrīti <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">Vispārīgajiem noteikumiem</link></style> un apstiprini, ka esi iepazinies ar <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">informāciju par atteikuma tiesībām</link></style> un <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">konfidencialitātes politiku</link></style>.
+cams_activation_header;Aktivizēt Legends vestibila kontu
+cams_activation_info;Aktivizācijas saite ir nosūtīta uz <b>{{emailAdress}}</b>.<br>Lai turpinātu, lūdzu, izpildi e-pastā sniegtos norādījumus.
+cams_activation_enter_code;Ievadi aktivizācijas kodu:
+cams_activation_code_example;Piemēram, 123456
+cams_activation_entered_code;{{INT}}/6 cipariem
+cams_activation_cta_activate_account;Aktivizēt kontu
+cams_activation_email_lost;Nesaņēmi vēstuli?
+cams_activation_email_resend;Nosūtīt vēstuli atkārtoti
+cams_activation_email_wrong;Nepareizā e-pasta adrese?
+cams_activation_email_change;Mainīt e-pastu
+cams_activation_code_missing;Lūdzu, ievadi aktivizācijas kodu, ko saņēmi e-pastā.
+cams_activation_code_too_short;Aktivizācijas kods ir pārāk īss. Lūdzu, ievadi visus sešus ciparus.
+cams_activation_code_format_incorrect;Aktivizācijas koda formāts ir nepareizs. Lūdzu, pārliecinies, ka kods sastāv tikai no sešiem cipariem.
+cams_activation_code_incorrect;Aktivizācijas kods ir nepareizs. Lūdzu, ievadi aktivizācijas kodu, ko saņēmi e-pastā.
+cams_activation_code_expired;Aktivizācijas koda derīguma termiņš beidzās.
+cams_activation_code_start_again;Sākt no jauna
+cams_login_header;Ienākt Legends Lobby
+cams_login_enter_email;Ievadi savu e-pasta adresi vai konta nosaukumu:
+cams_login_enter_password;Ievadi savu paroli:
+cams_login_hintMessage_email_already_connected;Ievadītā e-pasta adrese jau ir saistīta ar kādu Lobby kontu. Piesakies vai <style="SimpleLink"><link="BackToRegistrationLink">dodies atpakaļ uz reģistrāciju</link></style>.
+cams_login_hintMessage_passwordUpdated;Parole ir veiksmīgi atjaunināta.
+cams_forgot_password;Aizmirsi paroli?
+cams_recover_password;Atgūt paroli
+cams_login_no_account_yet;Konta vēl nav?
+cams_login_create_account;Izveidot kontu
+cams_loginMask_accountNameRequired;Lūdzu, ievadi savu e-pasta adresi vai konta nosaukumu.
+cams_loginMask_passwordRequired;Lūdzu, ievadi savu paroli.
+cams_loginMask_passwordAndUsernameAreWrong;Nepareiza e-pasta adrese, konta nosaukums vai parole.
+cams_loginMask_emailOrAccountName_placeholder;E-pasta adrese / konta nosaukums
+cams_loginMask_temporaryInfobox;JAUNUMS: Lai piekļūtu savām spēļu pasaulēm, ir jāizveido Lobby konts.\n\nJa tev vēl nav Lobby konta, <style="SimpleLink"><link="CreateAccountLink">izveido to</link></style>.
+cams_setPassword_header;Iestati paroli
+cams_setPassword_info;Izveido savam kontam paroli, kuras garums ir vismaz astoņas rakstzīmes.
+cams_setPassword_enter_password;Izvēlies paroli:
+cams_setPassword_strength_label;Paroles stiprums
+cams_setPassword_strength_missing;Ievadi paroli, lai pārbaudītu tās stiprumu.
+cams_setPassword_strength_1;ļoti vāja
+cams_setPassword_strength_2;diezgan vāja
+cams_setPassword_strength_3and4;vidēji stipra
+cams_setPassword_strength_5;diezgan spēcīga
+cams_setPassword_strength_6;ļoti spēcīga
+cams_setPassword_strength_PasswordTooShort;Jo garāka, jo labāka (16+ rakstzīmes)
+cams_setPassword_strength_PasswordGoodLength;Paroles garums ir labs
+cams_setPassword_strength_OneType;Izmantotas tikai viena veida rakstzīmes
+cams_setPassword_strength_TwoTypes;Izmantotas divu veidu rakstzīmes
+cams_setPassword_strength_ThreeTypes;Izmantotas trīs veidu rakstzīmes
+cams_setPassword_strength_NoNumbers;Nav izmantoti cipari
+cams_setPassword_strength_NoLetters;Nav izmantoti burti
+cams_setPassword_strength_NoSpecialCharacters;Nav izmantotas speciālās rakstzīmes
+cams_setPassword_strength_NoUpperAndLowerCase;Nav lietota lielo un mazo burtu kombinācija
+cams_setPassword_strength_UpperAndLowerCase;Lietoti lielie un mazie burti
+cams_activation_cta_set_password;Iestatīt paroli
+cams_activation_password_length;8–64 rakstzīmes
+cams_resetPassword_header;Iestatīt jaunu paroli
+cams_resetPassword_info;Izveido jaunu sava priekštelpas konta paroli, kuras garums ir vismaz astoņas rakstzīmes.
+cams_setUsername_header;Izvēlies nosaukumu savam Legends Lobby kontam
+cams_setUsername_info;Izvēlieties lietotājvārdu un tagu, lai izveidotu savu unikālo lobija kontu.
+cams_setUsername_username_label;Izvēlies lietotājvārdu:
+cams_setUsername_tagline_label;Izvēlies tagu:
+cams_setUsername_tagline_example;piemēram, TAG12
+cams_setUsername_tagline;Tags:
+cams_setUsername_condition_onlyLettersAndNumbers;Tikai burti un cipari
+cams_setUsername_username_condition_Length;3–15 rakstzīmes
+cams_setUsername_tagline_condition_Length;2–5 rakstzīmes
+cams_setUsername_hint;Tavu unikālo Lobby nosaukumu veido lietotājvārda un piederības kombinācija. Vari izvēlēties jebkādu pieejamo kombināciju.\n\nTas neietekmē nosaukumu spēles pasaulē.
+cams_setUsername_cta_createAccount;Izveidot kontu
+cams_setUsername_username_missing;Lūdzu, ievadi lietotājvārdu un piederību.
+cams_setUsername_accountName_preview;Konta nosaukuma priekšskatījums:
+cams_setUsernameConfirmPopup_header;Legends Lobby konts ir izveidots!
+cams_setUsernameConfirmPopup_info;Tavs Legends lobija konts ar pieteikumvārdu <b>{{playerName}}</b> ir veiksmīgi izveidots.
+cams_setUsernameConfirmPopup_GameworldAndAvatar_header;Tavas spēļu pasaules un avatāri.
+cams_setUsernameConfirmPopup_GameworldAndAvatar_info;Mēs savienojām šādus esošos spēļu pasauļu avatārus ar to pašu e-pasta adresi kā tavam jaunajam Lobby kontam.
+cams_avatar_name;Avatāra vārds
+cams_looby_welcomeMessage;Laipni lūdzam!\n<b>{{playerName}}</b>
+cams_looby_header;Jūsu spēles pasaules
+cams_looby_noGameWorlds;Tev pašlaik nevienā spēļu pasaulē nav aktīva avatāra. Pievienojies jaunai spēļu pasaulei un sāc spēlēt.
+cams_looby_joinNewGameworld;Pievienojies jaunām spēles pasaulēm
+cams_looby_playNow;SPĒLĒT TŪLĪT
+cams_looby_gameworldsLinked;Spēļu pasaules, kas ir saistītas ar jūsu kontu
+cams_looby_invitePenging;Gaida [data>1:{{data}} ielūgumi][data=1:ielūgums]
+cams_looby_localGameWorld;VIETĒJĀ SPĒĻU PASAULE
+cams_looby_avatarInDeletion;Dzēšana
+cams_removeDualAccount_header;Noņemt duālo spēlētāju
+cams_removeDualAccount_info;Vai vēlies noņemt <b>{{lobbyAccountName}}</b> kā tava avatāra <b>{{avatarName}}</b> duālo spēlētāju?\n\n<b>{{lobbyAccountName}}</b> vairs nevarēs piekļūt tavam avatāram.
+cams_removeDualAccount_removeDual;Noņemt duāli
+cams_addDualPlayer_info;Ievadi spēlētāja Lobby konta nosaukumu:
+cams_addDualPlayer_placeholder;lietotājvārds#tag
+cams_addDualPlayer_addPlayer;[data>1:Pievienot spēlētājus][data=1:Pievienot spēlētāju][data=0:Pievienot spēlētāju]
+search_addDualPlayeradditionalEmptyResultInfo;Spēlētājs nav atrasts vai jau ir uzaicināts kā duālais spēlētājs
+cams_dualInventation_header;Duālā spēlētāja ielūgums
+cams_dualInventation_invitations;Ielūgumi:
+cams_dualInventation_info;Ja pieņemsi ielūgumu, šim avatāram varēsi piekļūt, piesakoties ar savu Lobby kontu.
+cams_dualInventation_moreInfo;Katrā spēļu pasaulē var pieņemt tikai vienu duālā spēlētāja ielūgumu.
+cams_dualInventation_invite;<b>{{LobbyAccountName}}</b> uzaicināja tevi spēlēt ar <b>{{avatarName}}</b>
+cams_dualInventation_AcceptInvite;Pieņemt uzaicinājumu
+cams_acceptDualInvitation_header;Pieņemt duālā spēlētāja ielūgumu
+cams_acceptDualInvitation_info;Vai vēlies pieņemt duālā spēlētāja ielūgumu no <b>{{lobbyAccountName}}</b>, lai spēlētu ar <b>{{avatarName}}</b> pasaulē <b>{{gameworldName}}</b>?
+cams_acceptDualInvitation_moreInfo;Tev ir vairāki duālā spēlētāja ielūgumi vienā spēļu pasaulē, bet vienā spēļu pasaulē var pieņemt tikai vienu duālā spēlētāja ielūgumu.
+cams_acceptDualInvitation_avatarInDeletion;Mūsu duāļa spēles noteikumi paredz, ka katrā spēles pasaulē var būt tikai viens aktīvs avatārs. \nPieņemot duālā spēlētāja ielūgumu, tiks noņemta piekļuve tavam avatāram {{avatarName}}, kas tiek dzēsts attiecīgajā spēles pasaulē. \nPēc tam dzēšanas procesu vairs nevarēs atcelt.
+cams_dualSettings_header;Duālā spēlētāja iestatījumi
+cams_dualSettings_info;Tu jebkurā laikā vari pārtraukt spēlēt kā minētā avatāra duālais spēlētājs.
+cams_dualSettings_leaveDualPlay;Pārtraukt duālo spēli
+cams_confirmLeaveDualPlay_info;Vai vēlies pārtraukt duālo spēli ar <b>{{avatarName}}</b> pasaulē <b>{{gameworldName}}</b>?\n\nPēc duālās spēles pārtraukšanas tu vari izveidot savu avatāru vai kā duālais spēlētājs pievienoties citam avatāram šajā spēļu pasaulē.
+cams_recoverPassword_header;Atgūt paroli
+cams_recoverPassword_goBackToLogin;Doties uz pieteikšanos
+cams_recoverPassword_info;Ievadi ar Lobby kontu saistīto e-pasta adresi. Mēs nosūtīsim norādījumus, kā atiestatīt paroli.
+cams_recoverPasswordEmailSent_header;E-pasta vēstule nosūtīta
+cams_recoverPasswordEmailSent_info;Ja šai e-pasta adresei <b>{{emailAdress}}</b> jau pastāv Lobby konts, mēs nosūtīsim norādījumus, kā atiestatīt paroli.\n\nKad būsi atguvis savu paroli, varēsi atkal pieteikties.
+cams_recoverPasswordEmailSent_goBackToLogin;Atpakaļ uz pieteikšanos
+cams_editDualAccounts_header;Duāļi
+cams_editDualAccounts_gameworld;Spēles pasaule: {{gameworldName}}
+cams_editDualAccounts_avatar;Avatārs: {{avatarName}}
+cams_editDualAccounts_avatarOwner;Avatāra īpašnieks:
+cams_editDualAccounts_noDualsAdded;- Šim avatāram nav pievienoti duālie spēlētāji -
+cams_editDualAccounts_info;Duālajiem spēlētājiem būs <b>pilna piekļuve</b> šim avatāram, un viņi varēs veikt visas darbības spēlē, ieskaitot tērēt un pirkt zeltu.\n\nDuālie spēlētāji, lai piekļūtu šim avatāram, var pieteikties ar savu Lobby kontu, bet viņi NAV tiesīgi uzaicināt citus duālos spēlētājus.
+cams_editDualAccounts_warningHint;Lai novērstu neatļautu piekļuvi citu spēļu pasauļu avatāriem un sava konta datiem, neatklāj citiem spēlētājiem sava Lobby konta pieteikšanās datus.
+cams_editDualAccounts_addDualPlayer;Pievienot duālo spēlētāju
+cams_editDualAccounts_avatarInDeletion;Tavas avatārs {{avatarName}} šajā spēļu pasaulē tiek dzēsts. Tāpēc tu nevari nosūtīt ielūgumu duālajam spēlētājam.
+cams_settings_title;Opcijas
+cams_settings_changePassword_information;Lai tu varētu nomainīt paroli, mēs nosūtīsim vēstuli uz tava konta e-pasta adresi.
+cams_settings_changePassword_sendEmail;Nosūtīt vēstuli
+cams_settings_changePassword_emailSent;Mēs nosūtījām e-pasta vēstuli, lai tu varētu nomainīt paroli.
+cams_settings_accountDeletion_title;Lobby konta dzēšana
+cams_settings_accountDeletion_info;Izdzēst Legends Lobby kontu, ieskaitot visas spēļu pasaules un avatārus šajā kontā.
+cams_settings_accountDeletion_action;Dzēst Lobby kontu
+cams_settings_accountDeletion_warning;Brīdinājums: šo darbību nevar atcelt!
+cams_settings_accountDeletion_warning_content;Lobby konta dzēšana pēc 72 stundām ir neatgriezeniska, to nevar atcelt un tā ietekmē visus avatārus. \n\nKontu var dzēst tikai tad, ja vispirms tiek dzēsti visi avatāri.
+cams_settings_accountDeletion_requirementsInformation;Lai izdzēstu kontu, visiem avatāriem jābūt dzēšanas procesā vai izdzēstiem.
+cams_settings_accountDeletion_information_warning;Ar šo darbību tiek sākta konta dzēšana. Lūdzu, apstiprini, ka apzinies, ka konts, visi saistītie avatāri un dati tiks neatgriezeniski dzēsti, ievades laukā ierakstot "dzēst".
+cams_settings_accountDeletion_information_error;Tu nevari dzēst kontu, ja netiek dzēsts avatārs.\nLūdzu, piesakies norādītajās spēļu pasaulēs un dzēs savu avatāru.
+cams_settings_accountDeletion_noAvatarsFound;Nav atrasta neviena aktīva spēļu pasaule/avatārs.\nTu vari doties ceļā!
+cams_settings_accountDeletion_understandmentConfirmation;Es saprotu
+cams_settings_accountInDeletion_title;Konts tiek dzēsts
+cams_settings_accountInDeletion_info;Tavs Lobby konts <b>{{NAME}}</b> tiks neatgriezeniski dzēsts pasaulē <b>{{TIMESTAMP|Countdown}}</b>.
+cams_settings_accountInDeletion_action;Atcelt dzēšanu
+cams_mainMenu_dataConsent;Piekrišana datu apstrādei
+gameworld_gameworld;Spēles pasaule
+infobox.productionboost;{{RES}}{{TIME_COUNTER}}
+infobox_notesCount;{{COUNT}} piezīme[COUNT>1:s]
+auction_placeBid;Solīt cenu
+auction_auctionsAmount;{{COUNT}} izsoles
+auction_bidsRefreshed;Piedāvājumi atsvaidzināti!
+auction_currentSilver;Pašreiz sudrabs:  {{iconName|Sprite}} {{currentSilver}}
+auction_availableAmount;Pieejamais daudzums:
+auction_toSellAmount;Pārdošanas apjoms:
+auction_selectAmountToSellHeader;Izvēlies pārdodamo summu
+auction_soldHorseForSilver;Zirgs pārdots par {{amount}} sudraba.
+auction_currentCurrency;Pašreiz:
+auction_newCurrencyValues;Jaunums:
+auction_exchangeExplanationGoldToSilverTitle;Zeltu var apmainīt pret sudrabu, lai izsoļu namā iegādātos varoņu priekšmetus.
+auction_exchangeExplanationGoldToSilverMore;Ievadi zelta daudzumu, ko vēlies apmainīt:
+auction_exchangeExplanationSilverToGoldTitle;Sudrabu, ko iegūst par varoņu priekšmetu pārdošanu, izsoļu namā var apmainīt pret zeltu.
+auction_exchangeExplanationSilverToGoldMore;Ievadi sudraba daudzumu, ko vēlies apmainīt:
+auction_countAndName;{{AMOUNT}}×{{ITEM_NAME}}
+auction_deleteAll;Dzēst visas izsoles
+auction_confirm_deletion_title;Izdzēst izsoli [data>1:{{data}} ieraksti][data=1:ieraksts]
+auction_confirm_deletion_button;Dzēst [data>1:ieraksti][data=1:ieraksts]
+auction_confirm_deletion_text_header;Vai tiešām vēlaties dzēst [data>1:{{data}} izsoles ieraksti][data=1:šīs izsoles ieraksts]?
+auction_confirm_deletion_text;Pēc šīs ieraksta dzēšanas tas vairs nebūs atjaunojams. Jūs to nevarēsiet atgūt.
+cams_looby_noMatchingGameworlds;Netika atrasta neviena spēļu pasaule, kas atbilstu jūsu kritērijiem.
+serverSelection_5;Dev
+serverSelection_header;Izvēlēties spēļu pasaules filtru
+serverSelection_filter_gameworldSpeed;Spēļu pasaules ātrums
+serverSelection_gameworldSpeed;x{{INT}} ātrums
+serverSelection_filer_gameworldLifetime;Spēļu pasaules mūžs
+serverSelection_gameworldLifetime;{{INT}}–{{INT2}} dienas
+serverSelection_gameworldLifetime_XorMore;{{INT}} vai vairāk dienu
+filters_applyButton;Piemērot [COUNT<2:filtru][COUNT>1:{{COUNT}} filtrus]
+filters_reset;Atiestatīt [COUNT<2:filtru][COUNT>1:filtrus]
+cams_avatarCreation_cancel_title;Atcelt avatāra izveidi
+cams_avatarCreation_cancel_reconfirmationText;Vai tiešām vēlies atcelt sava avatāra izveidi pasaulē {{gameworldName}}?
+cams_avatarCreation_cancel_explanation;Tu zaudēsi visu savu progresu šajā spēļu pasaulē, ieskaitot cilts izvēli, kartes atrašanās vietu un avatāra vārdu.
+cams_avatarCreation_button_startPlaying;Sākt spēlēt
+cams_avatarCreation_button_changeSector;Mainīt pozīciju
+cams_avatarCreation_button_selectTribe;Izvēlēties cilti
+cams_avatarCreation_button_updateTribe;Atjaunināt cilti
+cams_avatarCreation_button_selectSector;Izvēlēties pozīciju
+cams_avatarCreation_button_updateSector;Atjaunināt pozīciju
+cams_avatarCreation_name_title;Ievadi avatāra vārdu:
+cams_avatarCreation_name_tip;Šis ir tava avatāra vārds spēles pasaulē.
+cams_avatarCreation_name_errorEmpty;Lūdzu, ievadi avatāra vārdu.
+cams_avatarCreation_name_placeHolder;Avatāra vārds
+cams_looby_avatarInDeletionBlockPlayNow;Tu esi pieņēmis duālā spēlētāja ielūgumu šajā spēļu pasaulē, {{gameworldName}}, tāpēc tu vairs nevari tai piekļūt ārpus duālā spēlētāja režīma.
+infobox_openMessage;Atvērt ziņojumu
+infobox_accountIsLocked;Tavs avatārs ir bloķēts!
+auction_button_requirement;Pabeidz {{REQUIRED}} piedzīvojumus, lai atbloķētu izsoles.\nPalika: {{INT}}
+auction_availableSilver;Pieejamais sudrabs:  {{iconName|Sprite}} {{currentSilver}}
+auction_deleteSelected;Izdzēst atlasītās izsoles
+auction_deletedAll_confirmation;Visas izsoles izdzēstas!
+auction_deletedSelected_confirmation;{{data}} izsoles [data>1:ieraksti][data=1:ieraksts] ir izdzēsts(-i)!
+newVersionAvailable_title;Pieejama jauna versija
+newVersionAvailable_description;Mēs esam uzlabojuši savu lietotni. Lūdzu, atjaunini, lai turpinātu spēlēt.
+newVersionAvailable_joinDiscord;Ko jaunu piedāvās zināšanu banka? Pievienojies Discord, lai uzzinātu vairāk.
+newVersionAvailable_toStore;Atjaunināt tagad
+infobox_beginnerProtection_title;Pagarināt jauniņā aizsardzību
+infobox_beginnerProtection_question;Vai esiet pārliecināts pagarināt jauniņo aizsardzību?
+infobox_beginnerProtection_description;Jūs nevariet sūtīt resursus, uzbrukt citiem spēlētajiem vai arī Jums uzbrukt kamēr ir jauniņo aizsardzība.
+sendResources_beginnersProtection;Tu nevari nosūtīt resursus citiem spēlētājiem, kamēr ir aktīva tava jauniņā aizsardzība.
+sendTroops_beginnersProtection;Tu nevari nosūtīt kareivjus citiem spēlētājiem, kamēr ir aktīva tava jauniņā aizsardzība.
+sendTroops_otherBeginnersProtection;Tu nevari nosūtīt kareivjus citiem spēlētājiem, kamēr viņiem ir jauniņā aizsardzība.
+buildingActivities_building_36;Slazdi ražošanā
+tasks_collectAll;Savākt visu ({{INT}})
+auction_bidMinPlaceholder;min. {{INT}}
+auction_buttonBidMinimum;Nepieciešamais piedāvājuma minimums
+hero_adventures_available;Pieejamie piedzīvojumi
+messages_freshDeskMessage_viewAndReplyInBrowser;Skatīt un atbildēt pārlūkā
+messages_webViewRecommendation;Ziņojuma saturs var nebūt pilnīgs.\nMēs iesakām apskatīt ziņojumu pārlūkprogrammā.
+rateThisApp_popup_title;Vai tev patīk mūsu lietotne?
+rateThisApp_popup_description;Ja tev patīk mūsu lietotne, lūdzu, velti brīdi, lai to novērtētu.
+rateThisApp_popup_appreciatefeedback;Tava atsauksme mums ir svarīga!
+rateThisApp_popup_btn_positive;Tā ir lieliska!
+rateThisApp_popup_btn_negative;Varētu būt labāk
+rearrange_or_demolish_building;Pārkārtot vai nojaukt celtni
+mainBuilding_buildingArrangement;Celtnes izvietojums
+mainBuilding_openRearrangeMode;Atvērt pārkārtošanas režīmu
+mainBuilding_demolishBuildings;Nojaukt celtnes
+mainBuilding_openDemolishMode;Atvērt nojaukšanas režīmu
+mainBuilding_demolishBuildings_description;Velc un nomet celtnes, lai mainītu to atrašanās vietu.
+rearrangeBuildingPopup_rearrangeDescription;Pārkārtot <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>?
+rearrangeBuildingPopup_buildingsRearranged;Pārkārtotās celtnes
+rearrangeBuildingPopup_buildingRearranged;{{buildingName|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>{{buildingLevel}}</color>
+confirmRearrangeBuildingPopup_header;Vai vēlies pārkārtot šo celtni?
+confirmRearrangeBuildingPopup_description;Pārkārto izvēlētās ciema celtnes <b>{{villageName}}</b>.
+demolishBuildingPopup_title;Nojaukt ēku
+demolishBuildingPopup_description;Izvēlies nojaucamo ēku
+demolishBuildingPopup_descriptionWithSelection;Vēlies nojaukt <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>?
+demolishBuildingPopup_demolishLevel;Nojaukt līmeni
+demolishBuildingPopup_demolishCompletely;Iznīcināt pilnībā
+confirmDemolishBuildingPopup_header;Vai vēlies nekavējoties nojaukt <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>?
+confirmDemolishBuildingPopup_description;Atlasītās celtnes tiek nekavējoties nojauktas un aizvāktas no tava ciema.\nŠo darbību nevar atcelt.
+characterCount;{{COUNT}}/{{MAX}} rakstzīmes
+survey_button_description_reward;Piedalies šajā īsajā aptaujā, lai palīdzētu mums uzlabot Travian: Legends lietotni.\nTavs atbalsts tiks atalgots.
+cams_lobby_joinGameworld;Pievienoties spēles pasaulei
+cams_lobby_gameworld_inviteOnly;Tikai ar ielūgumiem
+cams_lobby_gameworld_inviteOnlyInfo;Šī spēļu pasaule ir paredzēta tikai spēlētājiem ar īpašu ielūguma kodu.
+cams_lobby_gameworld_inviteCodeEnter;Ievadi ielūguma kodu
+cams_lobby_gameworld_inviteCodeInfo;Šī spēļu pasaule ir paredzēta tikai spēlētājiem ar īpašu ielūguma kodu.\nJa tev tāds ir, lūdzu, ievadi to, lai pievienotos spēļu pasaulei.
+cams_lobby_gameworld_inviteCodePlaceholder;Piemēram, eThbt5OLyZ8D5xjhUaBAba
+cams_lobby_gameworld_inviteCodeErrorCharacterCount;Ielūguma kods ir pārāk īss. Lūdzu, ievadi visas {{MAX}} rakstzīmes.
+cams_lobby_gameworld_inviteCodeCooldown;Ielūguma koda atpūtas laiks ({{TIME|Countdown}})
+timeCountDown;{{TIME|Countdown}}
+attestation_failed;Ierīces atestācija neizdevās! Lai spēlētu, izmanto mobilo ierīci.\nJa šī problēma turpinās, izmanto tālāk redzamo palīdzības pogu, lai sazinātos ar atbalsta dienestu!
+mainBuilding_demolishBuildings_notAvailable;Lai nojauktu celtnes, alvenās celtnes līmenim jābūt {{INT}}.
+mainBuilding_demolishBuildings_demolishing;Nojauc <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> līdz <b><color={{colorValue|TextColor}}>līmenim {{buildingLevel}}</color></b> pēc {{timestamp|Countdown}}.
+demolishBuildingPopup_demolishing;Nojauc <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> līdz <b><color={{colorValue|TextColor}}>līmenim {{buildingLevel}}</color></b>
+allianz.hinweis_text_NoConfederacy;Diplomātiskā etiķete nosaka, ka pirms neuzbrukšanas pakta nosūtīšanas citai aliansei būtu vēlams aprunāties ar to un vienoties par niansēm.
+regions_canBeSettled;Vai var apdzīvot?
+regions_regionStatusNoColon;Reģiona statuss
+regions_top5AlliancesPopulation;Vadošo 5 alianšu <b>iedzīvotāji</b>
+regions_top5AlliancesVillages;Vadošo 5 alianšu <b>ciemi</b>
+regions_neighboringRegions;Blakus esošie reģioni
+regions_regionPopulation;Reģiona iedzīvotāji
+regions_contested;Reģions ir strīdīgs
+cams_lobby_gameworld_disabledAndNotSupported;Spēles pasaule pašlaik nav pieejama mobilajā lietotnē.
+demolishBuildingPopup_impossible;Šo celtni nevar nojaukt.
+city_benefits;Pilsētas priekšrocības
+city_benefits_threeAdditionalSlots;Trīs papildu celtņu vietas
+city_benefits_resourceFieldsLevel12;Modernizēt resursu laukus uz 12. līmeni
+city_benefits_watchTowers;Modernizēt sienu ar sargtorņiem
+city_upgradeToACity;Modernizēt {{villageName}} par pilsētu.
+city_culturePointsForNext;(nākamais pēc {{culturePoints}} kultūras punktiem)
+city_upgradeVillage;Modernizēt ciemu
+city_confirm_upgradeVillage;Modernizēt par pilsētu
+city_confirm_header;Vai vēlies modernizēt {{villageName}} par pilsētu?
+city_confirm_description;Ciema modernizēšanai par pilsētu vajag {{time}} un vienu no tavām apmetņu vietām.
+city_upgrading;{{villageId|VillageLink}} {{text}}
+city_upgraded;{{villageId|VillageLink}} jau ir pilsēta.
+combatSimulator_selectTarget;Izvēlēties mērķi
+mainMenu_goToLobby;Iet uz Lobby
+mainMenu_yourPlayerProfile;Tavs spēlētāja profils
+plus.plusAttackWarningText;Ienākošie uzbrukumi tiks rādīti ciemu sarakstā. Tikai mobilajā ierīcē: ciema skatā labajā pusē tiks izcelta bultiņa, lai atvērtu ciemu sarakstu.
+production.crobBalanceTroopConsumptionAncientPower;Seno spēju bonuss
+filters_region_not_found;Reģions neeksistē
+rallyPoint_troopsOverview_ownTroops_8;Savi kareivji: 
+rallyPoint_troopsOverview_ownTroops_9;Savi kareivji: 
+tradeOffice_merchantsCarryCapacity;Tirgotāja kravnesība:
+tradeOffice_tradeShipsCarryCapacity;Tirdzniecības kuģu kravnesība:
+buildingActivities_building_48;Kareivju dziedināšana
+playerDetails_victorPointsPerDay;{{PERDAY}} /dienā
+allianz.numIncomingRaids;{{NUM_ATTACKS}} [NUM_ATTACKS=1:sirojums][NUM_ATTACKS>1:sirojumi]
+allianz.numIncomingAttacks;{{NUM_ATTACKS}} [NUM_ATTACKS=1:uzbrukums][NUM_ATTACKS>1:uzbrukumi]
+allianz.MerchantCapacityAndSpeedNew;Komercija
+alliance_regionalTabTop5Description;Reģioni, kuros tava alianse ir daļa no 5 labākajām aliansēm pēc teritoriālās kontroles.
+alliance_regionalTabTitle;Reģiona 5 labākie
+alliance_regionalTabTop5Empty;- Nepietiekama teritoriālā kontrole visos reģionos -
+alliance_ShowDetails;Rādīt sīkākas ziņas
+wall_upgradesInProgress;Notiek modernizācija
+extension_upgradeStarted;Modernizācija sākta veiksmīgi!
+extension_constructionList;Būvdarbu saraksts
+upgradeLevel;Modernizācijas līmenis
+infoTab_upgradingToLevelForExtension;Pašlaik modernizē {{buildingName}} uz līmeni {{level}}:
+infoTab_genericCurrentlyForExtension;Pašreizējais {{buildingName}} bonuss, tostarp {{extensionName}}:
+infoTab_genericAtLevelForExtension;Līmenī {{a}} ar {{extensionName}} līmeni {{b}}:
+ratioValuesNumeratorBold;<b>{{a}}</b>/{{b}}
+infoTab_productionCosts_title;Ražošanas izmaksas
+harbour_shipsInConstruction;Kuģi būvniecībā
+unitInfo_troopsCarriage;līdz <b>{{INT}}</b><nobr> k</nobr>areivjiem
+unitInfo_velocityRaid;Sirojumiem:
+city_benefits_resourceFieldsLevel12inCapital;Modernizē resursu laukus līdz 12. līmenim, bet savā galvaspilsētā joprojām varēsi tos modernizēt tālāk
+infoTab_genericCurrentlyMoreExplicit;Pašreiz {{buildingName}} bonuss:
+merchant_merchantOverview_noIncomingDeliveries;- Nav ienākošo piegāžu. -
+merchant_merchantOverview_noOutgoingDeliveries;- Nav izejošo piegāžu. -
+merchant_merchantOverview_incoming;Ienāk ({{INT}})
+merchant_merchantOverview_outgoing;Iziet ({{INT}})
+achievementQuests.achQuest_03_Territory_step_01_description;Nosūtiet savus armiju uzbrukumā Natāru ciemam. Šis uzdevums skaitīsies paveikts, kad Jūsu armija atgriezīsies mājās.<br><br>Punktus par šo uzdevumu var saņemt {{NUMBER_OF_TASKS_PER_DAY}}<nobr> </nobr>reizes dienā.\n
+allianz.MerchantCapacityTitle_Harbours;Tirgotāja nestspēja/ kuģa kravnesība un ātruma bonuss
+market_tradeRoutes_invalidTarget_Territory;Tirdzniecības ceļus var nosūtīt tikai uz saviem ciemiem.
+market_selectResources;Izvēlēties resursus
+market_selectResources_requiredTradeShips;Nepieciešamie tirdzniecības kuģi
+market_resourcesWillBeSendByTradeShip;Resursi tiks nosūtīti ar tirdzniecības kuģi.
+manual.gid38_Territory;Noliktavā tiek glabāti kokmateriāli, māls un dzelzs.<br><br>Šo celtni var būvēt tikai ar noliktavas plāna senajām spējām.
+manual.gid39_Territory;Klētī tiek glabāta labība.<br><br>Šo celtni var būvēt tikai ar noliktavas plāna senajām spējām.\n
+harbour_noAvailableShips;Šobrīd šajā ostā nav dislocēti kuģi.
+harbour_destroy_title;Iznīcināt kuģus
+harbour_destroy_desc_title;Izvēlies kuģa veidu un daudzumu, ko vēlies iznīcināt.
+harbour_destroy_desc;Iznīcināt var tikai šeit šobrīd dislocētos kuģus, un tu nesaņemsi atpakaļ resursus.
+harbour_destroy_timeNotice;Kuģi tiks iznīcināti nekavējoties.
+harbour_destroy_selectedTotalAmount;Izvēlētie kuģi: <b>{{AMOUNT}}</b>
+harbour_destroy_shipSelectTitle;<b>{{ShipID|TranslateSuffixFor|gid49.type_t}}</b> (<b>{{Amount}}</b> [Amount=1:kuģis izvietots][Amount>1:kuģi izvietoti] šeit)
+extension_fullyExtended;{{NAME}} ir pilnībā paplašināti.
+extension_willBeFullyExtended;{{NAME}} ir pilnībā paplašināti.
+layout.directLinkMarketplaceTrader;Neizmantotie tirgotāji: {{INT}}/{{INT2}}
+UnitProduction_ViewBuildingList;Apskatīt celtņu sarakstu
+raidList_useRaidShipsInfo;Sirojumu kuģi tiek izmantoti automātiski, kad tie ir pieejami. Ja jums ir beigušies sirojumu kuģi, jūsu kareivji pārvietosies kā parasti.
+buildingActivities_maxReached;Maksimālais sasniegtais apjoms
+buildingActivities_building_49;Kuģi būvēšanā
+buildingActivities_buildingAdditional_48;Nav ievainotu kareivju
+residence_expansion_villagesRatio;Ciemi: {{COUNT}}/{{MAX}}
+residence_expansion_slotFree;Vieta netiek izmantota.
+residence_expansion_slotPrerequisites;Prasības <b>{{BuildingID|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>līmenis {{Level}}</color></b>
+residence_expansion_culturePointsPerDay;Kultūras punktu ieguve dienā
+search_region;Reģiona meklēšana
+search_select_region;Izvēlies reģionu
+statistiken.progressionStepTitle_start_achieved;Serveris sākts {{VALUE}}
+statistiken.progressionStepTitle_serverEnd_locked;Serveris beigsies {{VALUE}}
+filters_artefact_not_found;Artefakts neeksistē
+sendTroops_settlersChangeTribe;Pirmajās {{INT}} apmešanās reizēs vari izvēlēties, kuras cilts ciemu nodibināt. Izvēlies uzmanīgi.
+gid17.nextTradingRoute;Nākamais tirdzniecības ceļš sākas <b>{{HOUR}}</b>, un tam vajag <b>{{MERCHANTS}}</b> [MERCHANTS>1:tirgotājus][MERCHANTS=1:tirgotāju].
+gid17.nextTradingRouteWithShips;Nākamais tirdzniecības ceļš sākas <b>{{HOUR}}</b>, un tam vajag <b>{{SHIPS}}</b> [SHIPS>1:tirdzniecības kuģus][SHIPS=1:tirdzniecības kuģi].
+market_tradeRoutes_merchants;[merchants>1:{{merchants}} tirgotāji][merchants=1:{{merchants}} tirgotājs]
+market_tradeRoutes_tradeShips;[tradeShips>1:{{tradeShips}} tirdzniecības kuģi][tradeShips=1:{{tradeShips}} tirdzniecības kuģi]
+market_tradeRoutes_repeats;{{repeats}} × 
+market_tradeRoutes_usesShip;Izmanto kuģus
+troopsCheckout_shipUseInfo;{{Distance}} lauciņš | {{ShipID|Bold}} | Saglabāt {{duration|Bold}} stundas
+troopInfoPopup_shipsTitle;Ciemā dislocētie kuģi
+language_nl-NL;Holandiešu
+cropfinder_cropperType;Labības lauka tips:
+valueInBrackets;({{VALUE}})
+residence_settlementSlotsUsed;Izmantotās apmetņu vietas
+residence_settlementCPNeededForNextSlot;Kultūras punkti, kas nepieciešami nākamajai apmetņu vietai:
+gid27.ancient_power_detail_;{{INT}}
+artefact_effect_value;Iedarbība: <b>{{EFFECT}}</b>
+ancientPower_overview;Reģiona spēks
+ancientPower_no_ancientPower;Šajā serverī nav seno spēju
+ancientPower_tip_large;Lielām senajām spējām vajadzīgs dārgumu glabātuves līmenis <b>20</b>, un tās ietekmē <b>visus tavus ciemus</b>
+ancientPower_tip_small;Nelielām senajām spējām vajadzīgs dārgumu glabātuves līmenis <b>10</b>, un tās ietekmē tikai to <b>ciemu</b>, kur tās aktivizētas
+ancientPower_tip_nearby;Senās spējas apvidū ap {{villagenamelong|Bold}}
+ancientPower_stored_title;Alianses iegūtie spēki reģionā
+ancientPower_stored_noContent;Tava alianse nav nostiprinājusies nevienā reģionā
+ancientPower_stored_nextFree;Nākamā bezmaksas aktivizēšana pieejama: [isFree=0:<color={{colorValue|TextColor}}>]{{timeStamp|Countdown?Bold}}[isFree=0:</color>]
+ancientPower_stored_notActivatable;Nav seno spēju, ko aktivizēt.
+ancientPower_stored_activated;Aktivizētas senās spējas.
+ancientPower_stored_alreadyActive_account;Tev jau ir viena aktīva senā spēja, kas ietekmē visus ciemus.
+ancientPower_stored_alreadyActive_village;Tev jau ir viena aktīva senā spēja, kas ietekmē šo ciemu.
+ancientPower_stored_alreadyActive;Šī senā spēja jau ir aktivizēta.
+filters_ancientPower_not_found;Senās spējas neeksistē
+regions_withFactions_yourAllianceHasMoreThan50PercentSecured;Tavai aliansei ir >{{PERCENT}}% kontrole pār teritoriju.<br><br>Lai aktivizētu reģiona spēku, tev vajag dārgumu glabātuvi.
+language_en-NT;Dev language
+settings_notNow;Ne tagad
+settings_dontAskAgain;Nejautāt vēlreiz.
+cams_lobby_gameworld_lastPlayedTime;{{TIME}} h
+cams_settings_DirectLoginTitle;Tiešā pieteikšanās spēļu pasaulē
+cams_settings_DirectLoginInfo;Izlaid spēļu pasaules izvēli Legends Lobby un, atverot lietotni, tieši piesakies pēdējai spēlētajai spēļu pasaulei.
+cams_settings_DirectLoginActive;Tiešā pieteikšanās aktivizēta
+cams_settings_DirectLoginInactive;Tiešā pieteikšanās nav aktīva
+cams_directLoginPopUp_Info;Vai, uzsākot lietotni, vēlies tieši pieteikties savā spēļu pasaulē?
+cams_directLoginPopUp_youCanChange;Savu izvēli jebkurā laikā vari mainīt Lobby iestatījumos.
+cams_directLoginPopUp_Accept;Jā, pierakstiet mani tieši
+language_ro-RO;Rumāņu
+language_hu-HU;Ungāru
+language_ar-AE;Arābu
+autoLoginFailed.;Automātiskā pieteikšanās neizdevās.
+needInternetToPlay;Lai spēlētu, nepieciešams interneta savienojums. Lūdzu, pārbaudi savienojumu un mēģini vēlreiz.
+mapCellInfoWindow_removeFromLists;Noņemt no visiem sarakstiem
+removeFromListsPopup_Title;Vai vēlies noņemt {{TARGETNAME}} no {{INT}} fermu sarakstiem?
+removeFromListsPopup_Description;Mērķi var vēlāk atkal atsevišķi pievienot fermu sarakstiem.
+removeFromListsPopup_ConfirmButton;Noņemt mērķi
+social_continueWith;Vai turpināt ar:
+social_loginWith;Vai piesakies, izmantojot:
+social_backToRegistration;Atpakaļ uz reģistrāciju
+social_createAccountTitle;Izveidot Legends vestibila kontu
+social_errorTitle_NoEmailProvided;Trūkst e-pasta atļaujas
+social_errorMsg_NoEmailProvided;Lai sāktu spēlēt Travian: Legends, mums ir nepieciešama tava <b>atļauja piekļūt e-pasta adresei.</b>
+social_errorInfo_NoEmailProvided;Lūdzu, mēģiniet vēlreiz ar pareizajiem atļauju iestatījumiem vai izmēģiniet citu reģistrācijas metodi.
+social_errorTitle_AlreadyExists;E-pasts jau izmantots
+social_errorMsg_AlreadyExists;Norādītā e-pasta adrese jau tiek izmantota Travian: Legends vestibila kontam.
+social_errorInfo_AlreadyExists;Lai pieteiktos, izmanto ar savu kontu saistīto e-pasta adresi.
+social_acceptTOS;Noklikšķinot uz "Apstiprināt", tu piekrīti <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">Vispārīgajiem noteikumiem</link></style> un apstiprini, ka esi iepazinies ar <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">informāciju par atteikuma tiesībām</link></style> un <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">konfidencialitātes politiku</link></style>.
+linkNotWorking;Saite nedarbojas
+linkNotWorkingDescription;Šķiet, ka šī saite Travian: Legends lietotnē šobrīd nedarbojas. Iespējams, tā darbotos tavā interneta pārlūkprogrammā.
+openLinkInBrowser;Atvērt saiti pārlūkprogrammā
+settings_language_useArabicNumerals_activated;Austrumu arābu ciparu izmantošana ir aktivizēta
+settings_language_useArabicNumerals_deactivated;Austrumu arābu ciparu izmantošana ir deaktivizēta
+artefact_inventory_active_empty;Artefakti nav aktivizēti
+social_errorTitle_Unknown;nezināma kļūda
+social_errorMsg_Unknown;Radusies nezināma kļūda. Lūdzu, mēģiniet vēlreiz.
+loadingScreen_text_01;Jūsu varonis labo matus, lūdzu, pagaidiet.
+loadingScreen_text_02;Klēts ir pārpildīta. Ciema iedzīvotāji tagad graudus glabā kabatās.
+loadingScreen_text_03;Vēstniecība rīko ballīti — tikai diplomātiem.
+loadingScreen_text_04;Pulcēšanās vieta ir kļuvusi par piknika vietu — karavīri bauda sviestmaizes.
+loadingScreen_text_05;Kalējs kaļ zobenu... no spageti.
+loadingScreen_text_06;Būvmeistari lasa projektu... otrādi.
+loadingScreen_text_07;Natārs pievienojās ciema grāmatu klubam. Neviens nezina, kā lasīt senās rūnas.
+loadingScreen_text_08;Izlūki skaitīja ienaidnieka kareivjus... bet pietrūka pirkstu.
+loadingScreen_text_09;Pasaules brīnumam uzbrūk baloži. Nosūta uzkopšanas brigādi.
+loadingScreen_text_10;Vergu zemessardze pieprasa izveidot arodbiedrību — gatavojies streikiem.
+loadingScreen_text_11;Kareivji atsakās uzbrukt, kamēr kāds neizskaidros, kā darbojas kaujas imitators.
+loadingScreen_text_12;Ciema iedzīvotāji pārtrauca darbu, lai vērotu divu cāļu cīņu.
+loadingScreen_text_13;Tavas katapultas strīdas, pa kuru celtni mērķēt vispirms.
+loadingScreen_text_14;Lūdzu, esi pacietīgs, varonis zirga vietā izmanto Deutsche Bahn.
+loadingScreen_text_15;Paslēptuvē tiek slēpti ne tikai resursi, bet arī ciema tenkas.
+loadingScreen_text_16;Kazarmās notiek talantu šovs — mācības ir atliktas.
+loadingScreen_text_17;Tava siena ir gandrīz pabeigta. Tikai jāpagaida, kamēr nožūs krāsa.
+loadingScreen_text_18;Leģionāri pirms gājiena pieprasīja kafijas pauzi.
+loadingScreen_text_19;Galli skaidro romiešiem, kas ir palisāde, ir pagājušas 3 stundas.
+loadingScreen_text_20;Tirgotāju uzpirkšana, lai paātrinātu piegādes.
+loadingScreen_text_21;Tavs varonis apgūst jāšanas kursus, tas var aizņemt kādu laiku.
+loadingScreen_text_22;Tirgotāji ir iestrēguši aiz lēna vērša.
+loadingScreen_text_23;Alianses līderi izstrādā kaujas stratēģiju... ar pirkstu krāsām.
+loadingScreen_text_24;Klēts ir pilna ar cepumiem — visprasmīgākā resursu pārvaldība.
+loadingScreen_text_25;Izlūkošana pārtraukta — Heimdālam kaut kas ir iekritis acī.
+changeAccountNameSubtitle;Mainiet lietotājvārdu un/vai tagu.
+changeAccountNamePleaseNote;Ievēro, ka pēc konta nosaukuma maiņas to atkal varēsi mainīt pēc {{DAYS}} [DAYS>1:dienām][DAYS=1:dienas].
+changeAccountNameWaiting;Jums jāgaida, līdz atkal varēsiet mainīt savu vārdu:
+changeAccountNameUpdated;Konta nosaukums atjaunināts
+changeAccountNameUpdatedSubtitle;Tavs konta nosaukums ir veiksmīgi atjaunināts uz: <b>{{playerName}}</b>
+alliance_top10Title;Alianses iekšējais top 10
+gameworldCalendarNoGameworld;Gaidāmas spēles pasaules nav atrastas. \nTās varbūt tiek ielādētas vai ir atceltas.
+gameworldCalendar_title;Spēles pasauļu kalendārs
+valueWithModifierBefore;× {{value|Round|2}}
+goldShop_purchaseCanceled;Pirkums atcelts!
+goldShop_pendingRestored;Tavs iepriekšējais pirkums ir veiksmīgi atjaunots.
+hero_consumablePopup_healthByOintment;Veselība, ko devusi ziede:
+unknown;?
+serverSelection_gameworldSpeed_short;× {{INT}}
+gameworldCalendarDetails_title;Sīkākas ziņas par spēles pasauli
+gameworldCalendarDetails_shareLink;Kopīgot spēles pasaules saiti
+gameWorldEndCondition;Spēles pasaules beigu stāvoklis
+gameWorldEndCondition_WonderOfTheWorld;Pasales brīnums {{Level}}
+gameWorldEndCondition_VictoryPoints;Uzvaras punkti
+gameWorldRestriction_InvitationCode;Šī spēļu pasaule ir paredzēta tikai spēlētājiem ar īpašu ielūguma kodu.
+gameWorldRestriction_MobilePlayers;Šī spēļu pasaule ir pieejama tikai mobilajiem spēlētājiem.
+gameWorldSpecial;Šī ir īpaša spēļu pasaule, kas var būt pieejama tikai ierobežotu laiku, un tās funkcijas var atšķirties no klasiskajām spēļu pasaulēm.
+gameWorldUndefinedDetails;Vēl nav definētas pilnīgi visas spēles pasaules detaļas. Tiklīdz tie būs atjaunināti, jūs saņemsiet paziņojumu savā vestibilā.
+bonusValueWithPercentNoSpace;+{{value}}%
+startDate;Sākuma datums
+startTime;Sākuma laiks
+UTC+1;(UTC+1)
+goldShop_GoldPromotion;Zelta akcija
+auction_FeePopupTitle;Izsoles maksa
+auction_FeePopupText;Par pārdošanu izsoļu namā jums ir jāmaksā {{value}}% maksa. Jūsu izmaksa ir pārdošanas cena, no kuras atskaitīta izsoles maksa.
+auction_FeePopupExample;Aprēķina piemērs
+auction_FeePopupSalePrice;Pārdošanas cena
+auction_FeePopupFee;Izsoles maksa ({{value}}%)
+auction_FeePopupPayout;Izmaksa
+auction_sellHouseFeeInfo;Tava izmaksa ir pārdošanas cena, no kuras atskaitīta izsoles maksa ({{value}}%).
+gold_action_finishImmediately;Pabeigt nekavējoties
+mapCellInfoWindow_villageReports;Rādīt ciematu ziņojumus
+hero_crafting_title_refine;Pilnveidot aprīkojumu
+hero_crafting_title_smelt;Kausēt aprīkojumu
+hero_crafting_title_forge;Kalt aprīkojumu
+hero_crafting_title_reforge;Pārkalt aprīkojumu
+hero_crafting_action_refine;Apstrādāt
+hero_crafting_action_smelt;Izkausēt
+hero_crafting_action_forge;Kalt
+hero_crafting_action_takeMaterials;Ņem ({{INT}}/{{MAX}}) materiālus
+hero_crafting_action_takeAllMaterials;Ņemt materiālus
+hero_crafting_action_reforge;Pārkalšana
+hero_crafting_action_take;Veikt
+hero_crafting_action_pick;Izvēlies objektu
+hero_crafting_action_equip;Uzvilkt
+hero_crafting_action_buy_material;Pirkt materiālu
+hero_crafting_action_buy_item;Pirkt priekšmetu
+hero_crafting_action_craft_material;Kausēšanas materiāls
+hero_crafting_action_moveToInventory;Uz inventāru
+hero_crafting_action_select_item;Izvēlēties
+hero_crafting_action_remove_item;Noņemt
+hero_crafting_action_error_equipment;Priekšmetam jābūt varoņa aprīkojumam.
+hero_crafting_action_error_rarity;Priekšmetiem jābūt vienāda retuma.
+hero_crafting_action_error_category;Priekšmetiem jābūt vienas un tās pašas aprīkojuma kategorijas.
+hero_crafting_action_error_id;Priekšmetiem jābūt vienādiem.
+hero_crafting_action_error_missingItem;Viens vai vairāki no jūsu izvēlētajiem priekšmetiem vairs nav pieejami.
+hero_crafting_refine_tip;Episko varoņu priekšmetus var pilnveidot ar jebkuru citu tās pašas kategorijas episko varoņu priekšmetu.
+hero_crafting_refine_tip_error;Jums nav neviena varoņa priekšmeta, ko pilnveidot. Atrodi priekšmetus piedzīvojumos vai iegādājies priekšmetus izsoļu namā un uzlabo tos pilnveidojot.
+hero_crafting_smelt_info;Ņem {{INT}} materiālu[INT>1:s] tagad vai pagaidi un saņem {{MAX}}.
+hero_crafting_reforge_text;Pārkal aprīkojumu, lai iegūtu citu priekšmetu, iespējams, ar citu retumu un kvalitāti.\nPēc pārkalšanas vari izvēlēties, kuru priekšmetu vēlies ņemt, vai atkal pārkalt.\nŅem vērā: pēc pārkalšanas iepriekšējā pārkalšanas soļa priekšmets vairs nebūs pieejams, un to nevarēs iemainīt atpakaļ.
+inventoryItem_quality_title;Kvalitāte
+inventoryItem_rarity_title;Retums
+inventoryItem_rarity_quality_title;Retums un kvalitāte
+inventoryItem_rarity_common;Biežs
+inventoryItem_rarity_uncommon;Nav biežs
+inventoryItem_rarity_rare;Rets
+inventoryItem_rarity_epic;Episks
+inventoryItem_rarity_legendary;Leģendārs
+search_for_village;Ciemu meklēšana
+search_for_player;Spēlētāju meklēšana
+villageList_EditMode;Rediģēšanas režīms
+villageList_MaxGroupAmount;Maksimālais sasniegto ciemu grupu skaits.
+hero_crafting_action_error_material;Priekšmetam jābūt materiālam.
+villageList_ReorderError;Nederīgs mērķis
+textMatchingInput_Title;Apstipriniet, ierakstot ”{{WORD}}”
+hero_inventory_category_empty;- Šajā kategorijā nav neviena priekšmeta -
+hero_crafting_action_refine_success;Aprīkojums pilnveidots
+hero_crafting_action_smelt_success;Aprīkojums izkausēts
+hero_crafting_action_forge_success;Aprīkojums izkalts
+hero_crafting_result_item_equipped;Priekšmets aprīkots
+hero_crafting_result_item_taken;Priekšmets pārvietots uz inventāru
+hero_crafting_result_material_taken;Materiāls pārvietots uz inventāru
+hero_crafting_action_error_quality;Priekšmetiem jābūt vienādas kvalitātes.
+hero_crafting_action_error_epic;Tam noteikti jābūt vēl vienam šīs kategorijas un kvalitātes leģendāram priekšmetam.
+inventoryItem_rarity_none;Nav nekāds retums
+dailyQuests_rewardOverview_short;Atlīdzību pārskats
+avatar_confirmation_title_delete;Dzēst avatāru
+avatar_confirmation_header_delete;Vai vēlies dzēst savu avatāru?
+avatar_confirmation_infoText_delete;No avatāra dzēšanas uzsākšanas līdz izdzēšanas pabeigšanai paies <b>3<nobr> </nobr>dienas</b>.\nAvatārs, kas tiek dzēsts, vairs nevar piedalīties izsolēs un apmaiņas birojos.\nDzēšanu jebkurā brīdī vari atcelt šeit.
+avatar_confirmation_requiredWord_delete;dzēst
+avatar_confirmation_title_respawn;Avatāra parādīšanās no jauna
+avatar_confirmation_header_respawn;Vai vēlies likt savam avatāram atkal parādīties?
+avatar_confirmation_infoText_respawn;Tiks dzēsti visi tavi līdzšinējie sasniegumi, un tavs sākuma ciems tiks novietots jaunā vietā uz kartes.\n\nViss iegādātais zelts tiks pārskaitīts automātiski.
+avatar_confirmation_requiredWord_respawn;atdzimt
+settings_app_title;Visas spēles pasaules
+settings_app_Animations_title;Animācijas
+settings_app_Animations_description;Izvēlies, kuras animācijas vēlies redzēt lietotnē.
+settings_app_Animations_activated;Ciema/resursu skata mākoņu animācija ir aktivizēta
+settings_app_Animations_deactivated;Ciema/resursu skata mākoņu animācija ir deaktivizēta
+settings_app_NightMode_title;Nakts režīms
+settings_app_NightMode_description;Tava ciema iedzīvotāji iedeguši lāpas, un kurtuvju ugunis sprakšķ zem nakts debesu zvaigžņu blāvās gaismas.
+settings_app_NightMode_activated;Nakts režīms ir aktivizēts
+settings_app_NightMode_deactivated;Nakts režīms ir deaktivizēts
+settings_app_WinterMode_title;Ziemas režīms
+settings_app_WinterMode_description;Sniegs klusi krīt, ietinot ciemu mānīgā klusumā, kur ik skaņa šķietami izšķīst ledainajā gaisā.
+settings_app_WinterMode_activated;Ziemas režīms ir aktivizēts
+settings_app_WinterMode_deactivated;Ziemas režīms ir deaktivizēts
+settings_app_VillagePanning_title;Ciemu/resursu lauka pārvietošana
+settings_app_VillagePanning_description;Vari pārvietoties pa savu ciema skatu un resursu laukiem.
+settings_app_VillagePanning_activated;Kustība ir aktivizēta
+settings_app_VillagePanning_deactivated;Kustība ir deaktivizēta
+settings_app_PushNotifications_title;Vispārīgie pašpiegādes paziņojumi
+settings_app_PushNotifications_description;Pašpiegādes paziņojumi ļauj saņemt informāciju par vispārīgām ar lietotni un spēlēm saistītām jaunumiem.
+settings_app_PushNotifications_activated;Ir aktivizēts paziņojums par spēles pasaules sākumu
+settings_app_PushNotifications_deactivated;Paziņojums par spēles pasaules sākumu ir deaktivizēts
+settings_app_EnergySaving_title;Enerģijas taupīšanas režīms
+settings_app_EnergySaving_description;Taupi ierīces akumulatoru, izmantojot zemāku FPS ātrumu.\nAktivizējot enerģijas taupīšanas režīmu, lietotnes lietošanas laikā var rasties vizuāla kavēšanās.
+settings_app_EnergySaving_activated;Enerģijas taupīšanas režīms ir aktivizēts
+settings_app_EnergySaving_deactivated;Enerģijas taupīšanas režīms ir deaktivizēts
+settings_app_DataSaving_title;Mobilo datu taupīšanas režīms
+settings_app_DataSaving_description;Taupi mobilos datus/joslas platumu, veicot mazāk servera pieprasījumu.\nAktivizējot mobilo datu taupīšanas režīmu, var pagarināties spēles datu atsvaidzināšanas intervāls.
+settings_app_DataSaving_activated;Mobilo datu taupīšanas režīms ir aktivizēts
+settings_app_DataSaving_deactivated;Mobilo datu taupīšanas režīms ir deaktivizēts
+auction_FilterType;Priekšmeta veids
+auction_bidTooLow;Piedāvājums ir pārāk zems.
+villageList_Delete_Title;Dzēst ciema grupu
+villageList_Delete_Button;Dzēst grupu
+villageList_Delete_Description;Vai vēlies dzēst šo ciema grupu?
+villageList_Delete_Description2;Šīs grupas ciemus tas neietekmēs.
+gameworldNews_title;Jaunumi un atjauninājumi
+moreInformation;Vairāk informācijas
+remainingGold;Atlikušais zelts: {{goldIcon|Sprite}} {{goldAmount}}
+messages_addEmoji_title;Emociju pievienošana
+messages_select_emojis;Atlasiet emocijzīmes
+cams_resend_email_wait_error;Lūdzu, pagaidiet, pirms sūtāt nākamo e-pastu.
+cams_settings_accountDeletion_infoGold;Pēc sava avatara dzēšanas jūs saņemsiet e-pastu ar skaidrojumu, kā atlikušo zeltu pārskaitīt citam avataram.\n<b>Lūdzu, ņemiet vērā:</b> Jūsu  atlikušo zeltu var pārskaitīt tikai uz noteiktām spēļu pasaulēm.
+cams_changeMail_title;Nomainīt e-pasta adresi
+cams_changeMail_description;Lai mainītu e-pasta adresi, ir nepieciešama piekļuve pašreizējai un jaunajai e-pasta adresei.
+cams_changeMail_socialHint;E-pasta adreses maiņa neietekmēs  pieteikšanās ar Facebook, Google vai Apple.
+cams_changeMail_cantAccess;Nevarat piekļūt savam e-pastam?
+cams_changeMail_sentVerification;Mēs esam nosūtījuši pārbaudes e-pasta vēstuli uz: {{mail}}
+cams_changeMail_checkInbox;Lūdzu, pārbaudiet savu iesūtni un izpildiet norādījumus, lai turpinātu.
+cams_changeMail_verificationCode;E-pasta verifikācijas kods:
+cams_changeMail_verifyButton;E-pasta verifikācija
+cams_changeMail_enterNew_description;Lūdzu, norādiet savu jauno e-pasta adresi zemāk. Uz šo adresi mēs nosūtīsim pārbaudes e-pasta vēstuli.
+cams_changeMail_enterNew_description2;Lai pabeigtu e-pasta adreses maiņu, sekojiet instrukcijām, kas nosūtītas e-pastā.
+cams_changeMail_enterNew_input;Lūdzu, ievadiet jauno e-pasta adresi:
+cams_changeMail_enterNew_input_placeholder;Jaunā e-pasta adrese
+cams_changeMail_enterNew_button;Nomainiet e-pasta adresi
+cams_changeMail_done_title;E-pasts ir veiksmīgi atjaunināts
+cams_changeMail_done_description1;Jūsu e-pasta adrese ir veiksmīgi atjaunināta uz {{mail}}
+cams_changeMail_done_description2;Sistēma jūs automātiski atvienos un pāradresēs uz jaunu pieteikšanās vietni. Pieteikšanās veikšanai izmantojiet savu jauno e-pastu.
+cams_changeMail_done_redirecting;Pārvirza uz pieteikšanos {{time}}...
+bonusValue;+ {{value}}
+value;{{value}}
+ratioValues_Colon;{{a}}:{{b}}
+genericValue;{{VALUE}}
+enterAmount;Ievadiet daudzumu
+symbol_minus;-
+applyFilter;Pielietot atlasīto filtru
+resetFilter;Atiestatīt filtru
+rallyPoint_troopsOverview_outgoingMission_50_heroCentricAdventure;Piedzīvojumu izpēte
+rallyPoint_troopsOverview_returningFromAdventure_heroCentricAdventure;Atgriezies no piedzīvojuma
+silverExchangePopup_AvailableSilver;Pieejamais sudrabs
+silverExchangePopup_SilverStatus;Šobrīd {{AMOUNT|LongNumber}} no jūsu sudraba līdzekļiem ir piesaistīti aktīvajām izsolēm.
+silverExchangePopup_SilverError;Jums nav pietiekami daudz sudraba šai darbībai.
+silverExchangePopup_GoldError;Jums nav pietiekami daudz zelta šai darbībai.
+hero.status50_heroCentricAdventure;Tavs varonis dodas ceļā pretī piedzīvojumam.
+inventoryItem_quality_1;Kvalitāte 1
+inventoryItem_quality_2;Kvalitāte 2
+inventoryItem_quality_3;Kvalitāte 3
+inventoryItem_rarity_common_headGear;Parasta galvassega
+inventoryItem_rarity_uncommon_headGear;Neparasta galvassega
+inventoryItem_rarity_rare_headGear;Reti sastopama galvassega
+inventoryItem_rarity_epic_headGear;Episka galvassega
+inventoryItem_rarity_legendary_headGear;Leģendāra galvassega
+inventoryItem_rarity_common_utility;Parasts aprīkojums
+inventoryItem_rarity_uncommon_utility;Neparasts aprīkojums
+inventoryItem_rarity_rare_utility;Reti sastopams aprīkojums
+inventoryItem_rarity_epic_utility;Episks aprīkojums
+inventoryItem_rarity_legendary_utility;Leģendārs aprīkojums
+inventoryItem_rarity_common_weapon;Parasts ierocis
+inventoryItem_rarity_uncommon_weapon;Neparasts ierocis
+inventoryItem_rarity_rare_weapon;Reti sastopams ierocis
+inventoryItem_rarity_epic_weapon;Episks ierocis
+inventoryItem_rarity_legendary_weapon;Leģendārs ierocis
+inventoryItem_rarity_common_armour;Parastas bruņas
+inventoryItem_rarity_uncommon_armour;Neparastas bruņas
+inventoryItem_rarity_rare_armour;Reti sastopamas bruņas
+inventoryItem_rarity_epic_armour;Episkas bruņas
+inventoryItem_rarity_legendary_armour;Leģendāras bruņas
+inventoryItem_rarity_common_boots;Parasti zābaki
+inventoryItem_rarity_uncommon_boots;Neparasti zābaki
+inventoryItem_rarity_rare_boots;Reti sastopami zābaki
+inventoryItem_rarity_epic_boots;Episki zābaki
+inventoryItem_rarity_legendary_boots;Leģendāri zābaki
+inventoryItem_rarity_common_consumable;Patērējams priekšmets
+inventoryItem_rarity_uncommon_consumable;Neparasti patērējamie priekšmeti
+inventoryItem_rarity_rare_consumable;Reti patērējamie priekšmeti
+inventoryItem_rarity_epic_consumable;Episki patērējamie priekšmeti
+inventoryItem_rarity_common_horse;Zirgs
+inventoryItem_rarity_uncommon_horse;Neparastais zirgs
+inventoryItem_rarity_rare_horse;Reti sastopams zirgs
+inventoryItem_rarity_epic_horse;Episkais zirgs
+inventoryItem_rarity_legendary_horse;Leģendārais zirgs
+inventoryItem_rarity_common_material;Patērējams priekšmets
+inventoryItem_rarity_uncommon_material;Neparasti patērējamie priekšmeti
+inventoryItem_rarity_rare_material;Reti patērējamie priekšmeti
+inventoryItem_rarity_epic_material;Episki patērējamie priekšmeti
+search_item;Meklēt priekšmetu
+search_select_item;Veikt priekšmeta izvēli
+avatar_confirmation_infoText_delete_goldBough;Tā kā ar jūsu avatāru nesen tika veikti Zelta pirkumi, pilnīga tā dzēšana notiks <b>ne ātrāk kā trīs dienas</b> pēc procesa uzsākšanas.\nAvatārs, kas tiek dzēsts, vairs nevar piedalīties izsolēs un apmaiņas birojos.\nDzēšanu jebkurā brīdī vari atcelt šeit.
+combatSimulator_addItemEffect;Pievienot vienuma efektu
+combatSimulator_editItemEffect;Rediģēt priekšmeta efektu
+addItemEffect_title;Pievienot varoņa priekšmeta efektu
+addItemEffect_description;Pievienot atsevišķus efektus, lai atspoguļotu individuālos bonusus visiem iespējamajiem varoņa priekšmetiem.
+addItemEffect_importHeroEquipment;Importēt savu varoņa aprīkojumu
+addItemEffect_importHeroEquipment_success;Importētie varoņa elementi
+addItemEffect_selectEffect;Atlasīt vienuma efektu
+addItemEffect_selectItem;Atlasīt vienumu
+addItemEffect_selectMagnitude;Atlasīt lielumu
+addItemEffect_selectUnit;Atlasīt vienību
+addItemEffect_missingMagnitude;Trūkstošais lielums
+addItemEffect_effect_2;Samazināti bojājumi
+addItemEffect_effect_6;+ Papildu veselības punkti dienā
+addItemEffect_effect_12;+ Palielināts uzbrukums un aizsardzība konkrētai vienībai
+addItemEffect_effect_13;Palielināts kaujas spēks
+cams_newMail_title;Jaunā e-pasta adrese
+cams_verifyNewMail_title;Apstiprināt jauno e-pasta adresi
+cams_verifyCurrentMail_title;Pārbaudīt pašreizējo e-pasta adresi
+auction_notEnoughSilver;Jūsu rīcībā esošais sudrabs ir nepietiekams.
+auction_itemGroups;Vienumu grupas
+auction_unknown;?
+auction_sortingOption_itemName;Vienuma nosaukums
+auction_sortingOption_bidCount;Piedāvājumu skaits
+auction_sortingOption_finishedAt;Pabeigts pēc
+auction_sortingOption_highestBid;Augstākā likme
+auction_sortingOption_highestBidder_player;Lielākais solītājs (spēlētāj)
+auction_sortingOption_highestBidder_alliance;Lielākais solītājs (alianse)
+auction_sortingOption_auctionAmount;Pašreizējais izsoļu skaits
+auction_sortingOption_nextFinishedAt;Nākamā beigsies pēc
+auction_sellingPrice;Pārdošanas cena
+auction_sellingPrice_lowest;Zemākais(-ā)
+auction_sellingPrice_average;Vidēji
+auction_sellingPrice_highest;Augstākais(-ā)
+auction_result_won;<color={{colorValue|TextColor}}>Uzvarēja</color>
+auction_result_lost;<color={{colorValue|TextColor}}>Pārsolīts</color>
+auction_sellingPrice_averagePrice;Vidējā cena
+auction_bidProcessTitle;Piedāvājumu iesniegšanas process
+auction_bidProcessDescription1;Jums ir iespēja solīt par priekšmetiem, kas jūs interesē.
+auction_bidProcessDescription2;Jums jāsola vismaz minimālā summa, lai pārspētu pašreizējo solīto cenu.
+auction_maxBidFeatureTitle;Maksimālā piedāvājuma funkcija
+auction_maxBidFeatureDescription1;Jums ir tiesības noteikt savu maksimālo pirkšanas budžetu priekšmeta iegādei.
+auction_maxBidFeatureDescription2;Sistēma automātiski solīs jūsu vietā, nepārsniedzot jūsu noteikto maksimālo summu.
+auction_maxBidFeatureDescription3;Jūsu solītā cena palielinās tikai tik, cik nepieciešams, lai jūs paliktu visaugstākās cenas solītājs.
+auction_maxBidFeatureDescription4;Solīšana turpinās, līdz jūs uzvarat vai jūsu maksimālais budžets tiek pārsniegts.
+auction_auctionDurationTitle;Izsoles ilgums
+auction_auctionDurationDescription1;Gadījumos, kad izsoles termiņš ir īsāks par {{DURATION|Duration}}, tas tiek automātiski pagarināts līdz {{DURATION|Duration}}, kad tiek iesniegts jauns augstākais solījums.
+auction_auctionWinningTitle;Uzvara
+auction_auctionWinningDescription1;Vienumu laimē tas, kurš izsoles noslēgumā ir veicis visaugstāko likmi.
+auction_auctionFinished;Izsole jau ir beigusies.
+auction_wasJustOutbid;Pašlaik jūs neesat augstākais solītājs.
+auction_currentHighestBidder;Vadošais solītājs šobrīd
+auction_currentHighestBid;Pašreizējā augstākā likme
+auction_yourMaximumBid;Jūsu augstākā likme
+auction_showFinished;Parādīt pabeigtās
+auction_deleteAllFinished;Dzēst visas beigušās
+auction_startedAt;Sākts: {{TIME|DateTime}} | Pašlaik notiek
+auction_canceled;Atcelts
+auction_finished;Pabeigts
+auction_finishedAt;Pabeigts: {{TIME|DateTime}}
+auction_itemAuction_title;Vienumu izsole
+auction_itemAuction_info;Lai uzsāktu izsoli, noklikšķiniet uz priekšmeta savā inventārā. Citiem spēlētājiem ir iespēja veikt likmes uz šo. Izsole ilgst līdz {{INT}} stundām.
+auction_whatHappensNext_title;Kas notiks tālāk
+auction_whatHappensNext_info1;Kad beidzas laiks, priekšmetu automātiski nopērk tas, kurš piedāvā augstāko cenu.
+auction_whatHappensNext_info2;Sudrabu saņemsiet, kad tiks veikta pārdošana.
+auction_whatHappensNext_info3;Jums tiks paziņots, kad jūsu prece tiks pārdota.
+auction_error_cannotSell;Šo priekšmetu nevar pārdot izsolē.
+auction_error_onlyHorse;Jūs nedrīkstat pārdot savu vienīgo zirgu.
+auction_sellItem;Pārdot priekšmetu
+auction_sales;Pārdošana
+auction_selectBatchSize;Izvēlieties partijas apjomu
+auction_selectBatchSize_batches;<b>{{COUNT}}x</b> vienumu partijas
+auction_selectFilter_title;Izvēlēties filtru
+goldShop_upTo;Līdz
+shopPromotion_openShop;Atvērt veikalu
+shopPromotion_goldPromotionTitle;Spēkā esošais zelta piedāvājums
+shopPromotion_limitedTimeOffer;Ierobežota laika piedāvājums!
+shopPromotion_goldPromotionDescription;Iegūstiet vairāk zelta par savu naudu.
+shopPromotion_timeRemaining;Atlikušais laiks:
+hero_adventures_watchAdReduceDuration_title;Saīsināt piedzīvojuma laiku par {{AMOUNT}}%
+hero_adventures_watchAdReduceDuration_description;Noskatieties videoklipu, lai samazinātu sava varoņa <b>nākamā</b> piedzīvojuma laiku.
+hero_adventures_watchAdIncreaseDanger_title;Palielināt piedzīvojumu sarežģītības līmeni līdz "Grūts"
+hero_adventures_watchAdIncreaseDanger_description;Lai iegūtu papildu varoņa pieredzes punktus (XP), noskatieties videoklipu un paaugstiniet <b>nākamās standarta </b> piedzīvojuma sarežģītības līmeni uz "Grūts".
+hero_adventures_watchAdActive;Aktīvs nākamajam piedzīvojumam.
+hero_adventures_watchAdActiveNormal;Aktīvs nākamajam parastajam piedzīvojumam.
+hero_crafting_action_error_nonEpic;Nepieciešams tieši tāds pats priekšmets, saglabājot gan retumu, gan kvalitāti.
+berichte.adventure_heroCentric;{{VILLAGE_NAME}} uzsāk piedzīvojumu
+reports_share_notShareable;Šo ziņojumu nevar kopīgot.
+dailyQuests_dailyMaxReached;Sasniegtais dienas maksimums
+achievementQuests.DailyQuest_12_description;Atveriet spēli datorā pārlūkā un skatieties videoklipu.
+achievementQuests.DailyQuest_12_additionalInformation;www.travian.lv
+achievementQuests.DailyQuest_13_description;Piemēram, noskatieties videoklipu, lai ātrāk uzlabotu ēkas.
+achievementQuests.DailyQuest_13_additionalInformation;Vai arī noklikšķiniet uz pogas "Skatīties videoklipu", lai skatītos videoklipu tieši bez jebkādiem papildu bonusiem.
+addItemEffect_effect_11;+ Palielināts uzbrukuma spēks cīņā pret Natāriem.
+auction_started;Izsole ir sākusies
+auction_error_batchSize;Nav pietiekams preču skaits.
+auction_graph_notEnoughData;Nav pietiekami daudz datu
+auction_emptyInventory;— Šobrīd jums nav neviena priekšmeta, ko pārdot —
+RelativeTime_2_word;[data>1:{{data}} stundas][data<2:{{data}} stunda]
+gold_action_halveDuration;Samazināt ilgumu uz pusi
+goldShop_advantage_Value_Duration;<b>+{{VALUE}}%</b> par <b>[DURATION>6:{{DURATION}} dienas][DURATION<7:{{DURATION|Mult|24}} stundas]</b>
+goldShop_advantage_Value_Active;<b>+{{VALUE}}%</b> aktīvs:
+goldShop_upgrade;Jaunināt
+goldShop_advantage_stillActiveFor;Joprojām aktīvs:
+goldShop_advantage_stillActiveFor_Value;{{DURATION}} līdz plkst. {{TIME}}
+goldShop_advantage_videoFeatureOnCD;Video bonusu var aktivizēt tikai vienu reizi dienā.\nIkdienas atiestatīšana pēc: {{TIMESTAMP|Countdown}}
+goldShop_advantage_popup_mainInfoHeader_ProductionboostLumber;Palieliniet <b>kokmateriālu produkciju</b> visos savos ciemos.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostClay;Palieliniet <b>māla produkciju</b> visos savos ciemos.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostIron;Palieliniet <b>dzelzs produkciju</b> visos savos ciemos.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostCrop;Palieliniet <b>labības produkciju</b> visos savos ciemos.
+goldShop_advantage_popup_mainInfoBody; bonuss tiek piemērots bāzes produkcijai un visiem papildu bonusiem.
+goldShop_advantage_popup_premiumInfo;Jūs varat aktivizēt bonusu ar zeltu un saņemt +{{VALUE}}% produkcijas bonusu.\nVarat aktivizēt automātisku pagarinājumu uz pastāvīgu bonusa ilgumu.
+goldShop_advantage_popup_videoFeatureInfo;Vai arī varat noskatīties īsu videoklipu un saņemt mazāku +{{VALUE}}% produkcijas bonusu.\n<b>Video bonusu katram resursam var aktivizēt tikai vienu reizi dienā.</b>
+goldShop_advantage_popup_upgradeInfo;Varat jebkurā laikā jaunināt uz +{{VALUE}}% produkcijas bonusu par zeltu.
+goldShop_advantage_upgradePopupInfo1;Uzlabojot resursu bonusu, tiks noņemts jūsu pašreizējais aktīvais bonuss.
+goldShop_advantage_upgradePopupInfo2;Par [DURATION>6:{{DURATION}} dienas][DURATION<7:{{DURATION|Mult|24}}] vietā jūs saņemsiet +{{VALUE}}%.
+goldShop_advantage_upgradePopup_title;Jaunināšanas bonuss
+productionOverview_Bonus;+{{VALUE}}% produkcija
+hero_adventures_watchAdReduceDuration_toast;Piedzīvojumu ilgums samazināts.
+hero_adventures_watchAdIncreaseDanger_toast;Piedzīvojumu bīstamība palielināta.
+hero_consumablePopup_amountEquippedAfter;Aprīkojums pēc:
+hero_consumablePopup_amountEquippedAfterUse;Aprīkojums pēc izlietošanas:
+hero_consumablePopup_amountLeftInInventory;Inventārā palikušais daudzums:
+cams_recover_password_cooldown;Lūdzu, uzgaidiet {{VALUE}}
+cams_settings_changePassword_cooldown;Lūdzu, uzgaidiet {{VALUE}}
+infobox_productionBoost_upgradeButton;Jaunināt
+infobox_productionBoost_upgradeBonusWithGold;Paaugstiniet un pagariniet savu bonusu ar zeltu, lai saņemtu +{{PREMIUM_PERCENTAGE}}% uz {{TIME}} stundām.
+infobox_productionBoost_expires;{{PERCENTAGE}} {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresLumber;+{{PERCENTAGE}}% kokmateriālu produkcijas bonuss beidzas pēc {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresClay;+{{PERCENTAGE}}% māla produkcijas bonuss beidzas pēc {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresIron;+{{PERCENTAGE}}% dzelzs produkcijas bonuss beidzas pēc {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresCrop;+{{PERCENTAGE}}% labības produkcijas bonuss beidzas pēc {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expired;{{PERCENTAGE}}
+infobox_productionBoost_expiredLumber;+{{PERCENTAGE}}% kokmateriālu produkcijas bonuss ir <b>beidzies</b>.
+infobox_productionBoost_expiredClay;+{{PERCENTAGE}}% māla produkcijas bonuss ir <b>beidzies</b>.
+infobox_productionBoost_expiredIron;+{{PERCENTAGE}}% dzelzs produkcijas bonuss ir <b>beidzies</b>.
+infobox_productionBoost_expiredCrop;+{{PERCENTAGE}}% labības produkcijas bonuss ir <b>beidzies</b>.
+infobox_levelUpProductionReminder;Palieliniet resursu ražošanu visos ciemos par zeltu (+{{PREMIUM_PERCENTAGE}}%) vai noskatoties video (+{{VIDEO_PERCENTAGE}}%)
+infobox_oneTimeProductionBoostReminder;Tagad varat atkal aktivizēt +{{VIDEO_PERCENTAGE}}% resursu bonusu, noskatoties video.
+travelSimulator_title;Ceļošanas laika simulators
+travelSimulator_sourceTribe;Sākuma atrašanās vietas cilts
+travelSimulator_noLocationSelected;Nav izvēlēta atrašanās vieta
+travelSimulator_slowestUnit_title;Lēnākā vienība
+travelSimulator_slowestUnit_settings;{{UNIT}} | Ātrums: {{SPEED}}
+travelSimulator_TournamentSquareLevel_info;(Tikai >20 lauciņu attālumā)
+travelSimulator_tournamentSquareLevel_option;{{LEVEL}} | {{VALUE}}%
+travelSimulator_unitSelection_title;Atlasīt lēnāko vienību
+travelSimulator_unitSelection_unitType;Vienības tips
+travelSimulator_unitSelection_unitSpeed;Vienības ātrums
+travelSimulator_unitSelection_selectedUnitSpeed;Ātrums: {{SPEED}}
+travelSimulator_calculation_land;<b>Zeme:</b> {{VALUE}}
+travelSimulator_calculation_sea;<b>Jūra: </b> {{VALUE}}
+travelSimulator_heroAttending;Varonis apmeklē
+travelSimulator_vikingRaidBonus;Vikingu sirojuma bonuss
+travelSimulator_troopSpeedArtefactEffect;Artefakta ietekme uz kareivju ātrumu
+travelSimulator_toast_selectSourceAndTarget;Izvēlieties derīgu sākuma un mērķa atrašanās vietu!
+travelSimulator_toast_selectSourceTribe;Izvēlieties derīgu cilti!
+IOSAppTrackingTransparencyMessage;Nospiežot "Atļaut", tiek izmantota ierīces informācija, lai piedāvātu atbilstošāku reklāmas saturu
+goldShop_advantage_Value_Duration_Hours;<b>+{{VALUE}}%</b> uz <b>{{DURATION}}<nobr> </nobr>stundām</b>
+travelSimulator_tournamentSquareLevel_title;Turnīru laukuma līmenis
+travelSimulator_troopSpeedAncientPower;Seno spēju ietekme uz kareivju ātrumu
+RelativeTime_Formatted;[weeks>0:{{weeks}} n. ][days>0:{{days}} d. ]{{data}}
+settings_account_tab;Konts
+settings_notification_tab;Pašpiegādes paziņojumi
+settings_app_PushNotifications_popup_title;Pašpiegādes paziņojumi
+settings_app_PushNotifications_popup_header;Ļaujiet mums sūtīt jums paziņojumus
+settings_app_PushNotifications_popup_info1;Lai saņemtu pašpiegādes paziņojumus ar jaunumiem un noderīgu informāciju par spēli, vispirms piekrītiet saņemt paziņojumus no mums.
+settings_app_PushNotifications_popup_info2;Paziņojumus varat iespējot ierīces lietotnes iestatījumos.
+settings_app_PushNotifications_popup_info3;Šeit varat atgriezties jebkurā brīdī, lai paziņojumus atspējotu.
+settings_app_PushNotifications_popup_action_button;Atveriet lietotnes iestatījumus
+ratioValueMax;/ {{a}}
+market_sendResources_completed;Pabeigti
+market_sendResources_villageNotFound;Nav atrasts. Resursus var nosūtīt tikai uz saviem ciemiem un saviem alianses vai konfederācijas biedriem.
+no_ads_popup_title;Nav video reklāmu
+no_ads_popup_header;Mēģinot parādīt videoreklāmu, radās problēma.
+no_ads_popup_info1;Tam var būt vairāki iemesli.
+no_ads_popup_info2; • Pašlaik jūsu reģiona reklāmu fondā nav pieejamu reklāmu.
+no_ads_popup_info3; • Jūsu konfidencialitātes iestatījumi ierobežo iespējamo reklāmu skaitu.
+no_ads_popup_info4; • Tehniskas problēmas ar mūsu lietotni vai reklāmu nodrošinātāju.
+no_ads_popup_settings_msg;Pārliecinieties, ka konfidencialitātes iestatījumos ir atļautas personalizētās reklāmas.
+no_ads_popup_support_msg;Ja problēma saglabājas, sazinieties ar mūsu atbalsta dienestu.
+no_ads_popup_support_button;Sazināties ar atbalsta komandu
+city_upgradeToACity_wwVillageNotUpgradeable;Pasaules brīnumu ciemus nevar pārveidot par pilsētām.
+travelSimulator_selectMagnitude;Atlasīt lielumu
+marketplace_merchantsOverview_returningTo;Returning to <b>{{Village}}</b> of <b>{{Player}}</b>
+market_sendResources_sendAgain;Nosūtīt vēlreiz
+search_village_notFound;Nav atrasts. Resursus var nosūtīt tikai uz saviem ciemiem un saviem alianses vai konfederācijas biedriem.
+settings_app_AnimationsPayoffs_activated;Ir aktivizēta karaspēka/karavīru sūtīšanas animācija
+settings_app_AnimationsPayoffs_deactivated;Sending troops/merchants animation is deactivated
+hero_resourceTransferPopup_empty;No varoņa inventāra nav resursu, ko pārvietot.
+hero_toast_appearanceChanged;Izskats mainīts
+alliance_editMemberPopup_customNote;Pielāgota piezīme
+alliance_editMemberPopup_titleOfRole;Lomas nosaukums
+alliance_editMemberPopup_setSpecialization;Iestatīt specializāciju
+alliance_role_offensive;Uzbrukums
+alliance_role_defensive;Aizsardzība
+alliance_role_hybrid;Hibrīds
+alliance_role_scout;Izlūks
+alliance_role_support;Palīdzība
+alliance_role_wow_hammer;WoW āmurs
+alliance_role_none;Nav
+ad_fallback_popup_title;Saņem savu atlīdzību
+ad_fallback_popup_info;Šobrīd nav pieejamu video reklāmu, bet mēs tik un tā vēlamies apbalvot tevi par lojalitāti! Lūdzu, uzgaidi mirkli, kamēr mēs sagatavojam atlīdzību.
+ad_fallback_popup_rewardGranted;Atlīdzība piešķirta
+ad_fallback_popup_claim;Saņemt atlīdzību
+ad_fallback_popup_closeWarning;Ja tu priekšlaicīgi aizvērsīsi šo ekrānu, atlīdzība tiks atcelta
+gameplay_tip_1;Tu vari apmācīt kolonistus rezidencē vai pilī (rezidence pieejama no 10. līmeņa).
+gameplay_tip_2;Par katru avatāru tu vari uzcelt tikai vienu pili. Tā nodrošina līdz trim paplašinājuma vietām, savukārt rezidence – tikai divas.
+gameplay_tip_3;Lai nomainītu savu galvaspilsētu, uzcel pili jaunā ciemā. Ņem vērā, ka īpašās celtnes tavā vecajā galvaspilsētā tiks zaudētas vai to līmeņi tiks pazemināti.
+gameplay_tip_4;Tu vari apdzīvot vai iekarot citu ciemu, ja tev ir pietiekami daudz kultūras punktu.
+gameplay_tip_5;Iegūsti kultūras punktus, uzlabojot celtnes un rīkojot svinības rātsnamā.
+gameplay_tip_6;Lielās svinības var rīkot rātsnamā (sākot no 10. līmeņa); tās dod vairāk kultūras punktu, bet izmaksā arī vairāk resursu.
+gameplay_tip_7;Lai iekarotu ciemu, samazini tā lojalitāti līdz nullei, izmantojot administratorus, kas apmācīti tavā rezidencē vai pilī.
+gameplay_tip_8;Pirms apmāci administratorus rezidencē vai pilī, vispirms tos izpēti akadēmijā.
+gameplay_tip_9;Tu vari iekarot natāru vai citu spēlētāju ciemus.
+gameplay_tip_10;Tavu galvaspilsētu citi spēlētāji nevar iekarot.
+gameplay_tip_11;Izmanto labības meklētāju, lai atrastu 9 labības lauku vai 15 labības lauku ciematus, kas spēj uzturēt lielāku armiju.
+gameplay_tip_12;Tavā galvaspilsētā resursu laukus var uzlabot līdz augstākiem līmeņiem nekā citos ciemos.
+gameplay_tip_13;Resursus vari nosūtīt uz draudzīgajiem ciemiem, izmantojot tirgus laukumu.
+gameplay_tip_14;Tirgus laukumā tu vari tirgoties ar citiem spēlētājiem, apmainoties ar resursiem.
+gameplay_tip_15;Tu vari palielināt savu tirgotāju kravnesību, uzlabojot tirdzniecības biroju.
+gameplay_tip_16;Uzlabo sava varoņa savrupmāju līdz 10. līmenim, lai varētu pievienot oāzi un palielināt resursu ražošanu.
+gameplay_tip_17;Uzlabo savu kareivju spēku smēdē. Šie uzlabojumi uzreiz attiecas uz visiem šī tipa kareivjiem, arī uz tiem, kas jau ir apmācīti.
+gameplay_tip_18;Izmanto kaujas imitatoru, lai novērtētu kaujas iznākumu pirms uzbrukuma. Jo vairāk detaļu tu pievieno simulācijai, jo precīzāks būs rezultāts.
+gameplay_tip_19;Ar zelta klubu tu vari aktivizēt kareivju izvairīšanos savā galvaspilsētā, lai automātiski pasargātu savu armiju no ienākošajiem uzbrukumiem.
+gameplay_tip_20;Kad tavi kareivji atgriežas mājās, kareivju izvairīšanās uz 10 sekundēm tiek atspējota.
+gameplay_tip_21;Uzlabo savus izlūkus smēdē, lai paaugstinātu viņu izlūkošanas spējas.
+gameplay_tip_22;Mūri ievērojami palielina tava ciema aizsardzību.
+gameplay_tip_23;Būvē paslēptuves, lai aizsargātu savus resursus no ienaidnieka sirojumiem.
+gameplay_tip_24;Galli var izmantot mednieku māju, lai sagūstītu uzbrucējus vēl pirms kaujas sākuma.
+gameplay_tip_25;Lai atbrīvotu iesprostotos kareivjus, veiksmīgi veic parasto uzbrukumu ciemam, kurā tie tika sagūstīti.
+gameplay_tip_26;Uzbrūkošais spēlētājs var atbrīvot 75% no iesprostotajiem kareivjiem, bet aizsargātājs var miermīlīgi atbrīvot 100% no tiem.
+gameplay_tip_27;Uzbūvē slimnīcu, lai atveseļotu līdz 40% kaujā zaudēto kareivju.
+gameplay_tip_28;Galli var izmantot mednieku māju, lai sagūstītu uzbrūkošos kareivjus vēl pirms kaujas sākuma.
+gameplay_tip_29;Uzcel savā galvaspilsētā akmeņlauztuvi, lai palielinātu celtņu izturību pret katapultām un tarāniem.
+gameplay_tip_30;Lai tavs varonis būtu drošībā, tu vari iestatīt, ka ienaidnieka uzbrukumu laikā viņš slēpjas tavā mājas ciemā.
+gameplay_tip_31;Sakauj dzīvniekus neieņemtās oāzēs, lai iegūtu papildu resursus. Jo spēcīgāki dzīvnieki, jo vairāk resursu tu saņem.
+gameplay_tip_32;Sakauj dzīvniekus neieņemtās oāzēs ar savu varoni, lai viņš iegūtu pieredzi.
+gameplay_tip_33;Izmanto būrus, lai sagūstītu dzīvniekus neieņemtajās oāzēs un pastiprinātu savu ciemu.
+gameplay_tip_34;Aprīko savu varoni ar priekšmetiem, piemēram, ziedēm vai īpašām bruņām, lai paātrinātu varoņa veselības atjaunošanos.
+gameplay_tip_35;Atdzīvini savu varoni ar resursiem laika gaitā vai uzreiz, izmantojot spaini.
+gameplay_tip_36;Tu vari nojaukt celtnes, tiklīdz tava galvenā celtne sasniedz 10. līmeni.
+gameplay_tip_37;Uzbūvē vēstniecību, lai pievienotos aliansei vai izveidotu savu aliansi.
+vacationMode_title;Atvaļinājuma režīms
+vacationMode_vacation;Atvaļinājums
+vacationMode_vacationModeActive;Atvaļinājuma režīms ir aktīvs
+vacationMode_info;Izmanto atvaļinājuma režīmu, lai aizsargātu savus ciemus, kamēr esi prom. Atvaļinājuma režīma laikā tiek atspējotas šādas darbības:
+vacationMode_deactivated_action1;sūtīt vai saņemt kareivjus
+vacationMode_deactivated_action2;doties piedzīvojumos ar savu varoni
+vacationMode_deactivated_action3;sākt jaunus celtniecības uzdevumus vai kareivju apmācīšanu
+vacationMode_deactivated_action4;izmantot tirgus laukumu (ieskaitot tirdzniecības ceļus)
+vacationMode_deactivated_action5;rīkot svinības, uzsākt pētniecību vai veikt uzlabojumus
+vacationMode_deactivated_action6;izveidot alianses vai pievienoties tām
+vacationMode_deactivated_action7;ziedot resursus alianses bonusiem
+vacationMode_deactivated_action8;piedalīties izsolēs
+vacationMode_deactivated_action9;mainīt savu galvaspilsētu
+vacationMode_deactivated_action10;dzēst savu kontu
+vacationMode_deactivated_territory_action1;pārveidot ciemu par pilsētu
+vacationMode_deactivated_territory_action2;Tavs konts neveicina tavas alianses reģionālo apdzīvotību, un tavi ciemi nesaņem nekādus uzvaras punktus
+vacationMode_conditions_title;Izpildīti atvaļinājuma režīma nosacījumi
+vacationMode_duration_info;Cik dienas atvaļinājuma režīmam jābūt aktīvam?
+vacationMode_durationUntil;Atvaļinājums līdz <b>{{DATE}}</b>
+vacationMode_availableDays;Pieejamās dienas <b>{{AVAILABLE}}/{{TOTAL}}</b>
+vacationMode_startButton;Ieslēgt atvaļinājuma režīmu tagad
+vacationMode_error_noCancelTime;Tu vari atcelt atvaļinājuma režīmu tikai pēc {{HOURS}} stundām
+vacationMode_error_missingRequirement;Izpildi visas prasības, lai ieslēgtu atvaļinājuma režīmu
+vacationMode_error_noVacationDaysLeft;Tev nav pieejamu atvaļinājuma dienu, lai aktivizētu atvaļinājuma režīmu
+vacationMode_error_cooldown;Tu vari sākt atvaļinājuma režīmu tikai {{HOURS}} stundas pēc iepriekšējā atvaļinājuma beigām
+vacationMode_abortSuccess;Atvaļinājuma režīms ir pārtraukts!
+vacationMode_remainingDays;Atlikušās dienas atvaļinājuma režīmā
+vacationMode_runsUntil;Atvaļinājuma režīms ir aktīvs līdz
+vacationMode_abortInfo;Tu vari pārtraukt atvaļinājuma režīmu ne agrāk kā <b>{{DATE}}</b>
+vacationMode_abortAvailable;Tagad tu vari pārtraukt atvaļinājuma režīmu
+vacationMode_abortConfirmHeader;Vai tiešām vēlies pārtraukt atvaļinājuma režīmu?
+vacationMode_abortConfirmInfo;Neizmantotās dienas tiks atmaksātas. Šo darbību nevar atcelt.
+vacationMode_startCooldownInfo;Atvaļinājuma režīmu vari sākt ne ātrāk kā <b>{{DATE}}</b>
+vacationMode_abortButton;Pārtraukt atvaļinājuma režīmu
+vacationMode_conditions_has_outgoing_troops;Nav izejošu kareivju
+vacationMode_conditions_has_incoming_troops;Nav ienākošu kareivju tavos ciemos vai oāzēs
+vacationMode_conditions_has_reinforcing_troops_for;Nav nosūtīti papildspēki citiem spēlētājiem
+vacationMode_conditions_has_reinforcing_troops_from;Tavos ciemos vai oāzēs nav citu spēlētāju sūtītu papildspēku
+vacationMode_conditions_has_ww_village;Nav Pasaules brīnuma ciema
+vacationMode_conditions_has_artifact_village;Nav kultūras pieminekļa ciema
+vacationMode_conditions_has_beginners_protection;Nav iesācēja aizsardzības
+vacationMode_conditions_has_trapped_troops;Tavos slazdos nav sagūstīts neviens kareivis, un arī neviens no taviem kareivjiem, ieskaitot varoni, nav sagūstīts
+vacationMode_conditions_has_deletion_event;Tavs avatārs nav atzīmēts dzēšanai
+vacationMode_conditions_has_conquered_oase;Tu pēdējo {{HOURS}} stundu laikā neesi iekarojis nevienu oāzi. Atvaļinājuma režīmu tu vari ieslēgt, kad kopš oāzes iekarošanas būs pagājušas {{HOURS}} stundas vai uzreiz pēc oāzes zaudēšanas.
+vacationModePopup_info;Atvaļinājuma režīma laikā tavs konts būs aizsargāts. Tomēr resursu ražošana turpināsies, un tavi kareivji joprojām patērēs labību. <color=red>Tas var novest pie kareivju bada.</color>
+vacationModePopup_start_info;Vai tiešām vēlies ieslēgt atvaļinājuma režīmu uz <b>{{DAYS}}</b> [DAYS>1:dienām][DAYS<2:dienu]? Atvaļinājuma režīmu var atcelt, izmantojot zeltu, pēc {{COOLDOWN}} stundu gaidīšanas.
+vacationModePopup_troopConsumption;Savu kareivju patēriņš
+vacationModePopup_starvationEstimate;Agrākais bada sākums plkst
+vacationModePopup_starvationTitle;Savu kareivju patēriņš
+goldTransfer_accept_gift;Jā, pārskaiti zeltu
+goldTransfer_decline_gift;Nē, noraidi zeltu
+goldTransfer_accepted_toast;Zelta pārsūtīšana apstiprināta.
+goldTransfer_declined_toast;Zelta pārsūtīšana noraidīta.
+smithy_requirementsNotSatisfied;Šīs vienības uzlabošanas prasības nav izpildītas
+vacationModeLobby_status;atvaļinājumā
+block_vacationMode_toast;Tu nevari veikt šo darbību, kamēr esi atvaļinājuma režīmā.
+goldTransfer_verifyOwnership_title;Apstiprināt īpašumtiesības
+goldTransfer_verifyOwnership_description;Lai pārskaitītu savu iegādāto, bet vēl neiztērēto zeltu uz esošu avatāru, lūdzu, vispirms apstipriniet zelta īpašumtiesības, ievadot e-pasta adresi, uz kuru tika nosūtīts pārskaitīšanas kods.
+goldTransfer_verifyOwnership_emailPlaceholder;E-pasta adrese
+goldTransfer_verifyOwnership_errorNoEmail;Lūdzu, ievadi savu e-pasta adresi.
+goldTransfer_verifyOwnership_errorAlreadyUsed;Šī zelta pārsūtīšanas saite jau ir izmantota.
+goldTransfer_verifyOwnership_errorInUse;Šī zelta pārsūtīšanas saite nav derīga.
+goldTransfer_verifyOwnership_verifyButton;Apstiprināt
+goldTransfer_selectTargetAvatar_title;Izvēlies mērķa avatāru
+goldTransfer_selectTargetAvatar_description;Lūdzu, izvēlies avatāru, kam vēlies pārsūtīt zeltu.
+goldTransfer_transferableGold_label;Pārskaitāmais zelts:
+goldTransfer_enterAvatarName_header;Ievadi avatāra vārdu:
+goldTransfer_avatarName_placeholder;Avatāra vārds
+goldTransfer_searchAvatar_Button;Meklēt avatāru
+goldTransfer_searchAvatarNothingFound_error;Nav atrasts neviens aktīvs avatārs ar šādu vārdu.
+goldTransfer_ownAvatarList_header;Izvēlies kādu no saviem aktīvajiem avatāriem ({{account}})
+goldTransfer_selectOwnAvatarConfirm_Button;Izvēlies avatāru
+goldTransfer_selectGameworld_title;Izvēlies spēles pasauli
+goldTransfer_selectGameworld_description;Avatāra vārds tika atrasts vairākās spēļu pasaulēs. Tu vari pārsūtīt zeltu tikai uz vienu avatāru. Lūdzu, izvēlies spēļu pasauli.
+goldTransfer_selectGameworldConfirm_Button;Izvēlies spēles pasauli
+goldTransfer_changeAvatar_Button;Avatāra vārda maiņa
+goldTransfer_confirm_title;Apstiprināt pārsūtīšanu
+goldTransfer_confirm_Button;Apstiprināt pārsūtīšanu
+goldTransfer_confirmAvatarOnOneWorld_info;Šāds avatāra vārds ir atrasts vienā spēles pasaulē:
+goldTransfer_confirmAvatarName_prefix;Avatāra nosaukums:
+goldTransfer_confirmGameworld_prefix;Spēles pasaule:
+goldTransfer_transferComplete_title;Pārsūtīšana veiksmīga
+goldTransfer_transferComplete_description;Tavs zelts tika veiksmīgi pārsūtīts avatāram <b>{{avatarname}}</b> spēles pasaulē <b>{{gameworldname}}.</b>
+goldTransfer_transferComplete_returnButton;Atgriezties spēlē
+cams_settings_accountDeletion_information_warning_v2;Šī darbība neatgriezeniski dzēsīs tavu kontu. Tiks zaudēts viss ar tavu kontu saistītais saturs:\n<indent=0.5em>•  Visi avatāri, kas pieder tavam kontam\n•  Visas medaļas, kas nopelnītas tavā kontā</indent>\n\nApstiprini šo darbību, ierakstot zemāk esošajā laukā vārdu "delete".
+mapMarkers_popupTitle;Iestatīt marķieri
+mapMarkers_markerType;Zīmes veids
+mapMarkers_markerColor;Zīmes krāsa
+mapMarkers_setAlliance;Iestatīt zīmi manai aliansei
+mapMarkers_type_field;Lauks
+mapMarkers_addMsg_success;Zīme ir veiksmīgi pievienota!
+mapMarkers_saveMsg_success;Zīme ir veiksmīgi saglabāta!
+mapMarkers_noPermission_error;Lūdz savam alianses līderim atļauju.
+mapMarkers_marker;Zīme
+mapMarkers_markers;Zīmes
+mapMarkers_listAllianceTitle;alianses zīmes
+mapMarkers_listPlayerTitle;spēlētāja zīmes
+mapMarkers_listAlliances;Alianse
+mapMarkers_listPlayers;Spēlētāji
+mapMarkers_listFlags;Karogi
+mapMarkers_deleteMarker;Dzēst zīmi
+mapMarkers_deleteMarkerMessage;Vai vēlies dzēst šo zīmi?
+mapMarkers_showOnMap;Rādīt manas zīmes kartē
+embassy_general_subtab;Pamata
+embassy_villagesNearby_subtab;Ciemi tuvumā
+embassy_villagesNearby_listHeader;alianses/konfederācijas ciemi

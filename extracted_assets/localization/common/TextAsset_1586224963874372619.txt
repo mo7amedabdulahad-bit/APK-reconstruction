@@ -1,0 +1,2068 @@
+detail_window_header_title;{{buildingName|TranslateSuffixFor|allgemein.gid}}
+;{{INT}}
+levelWithValue;Tase {{level}}
+valueWithPercent;{{value}}%
+valueAsRankingPosition;{{value}}.
+valueChangeInBrackets;({{change|Sign}})
+valueChangeInBracketsWithPercent;({{change|Sign}}%)
+ratioValues;{{a}}/{{b}}
+coordinates;<nobr>({{x}}|{{y}})</nobr>
+village_with_coordinates;{{villageName}} <nobr>({{x}}|{{y}})</nobr>
+village_with_clickable_coordinates;{{villageName}} {{mapId|Coordinates}}
+valuePerHour;{{a}}/t
+back;Tagasi
+fill;Täida
+hero;Väejuht
+done;Tehtud
+remove;Eemalda
+prerequisites;Nõuded:
+newAmount;Uus kogus
+before;enne
+after;pärast
+permissions;Sinu õigused
+changesSaved;Muutused salvestatud!
+genericError;Ootamatu viga
+allianceTagInBrackets;[{{allianceId|AllianceLink}}]
+autocompleteNoResult;Ei leitud ühtegi vastet
+medalAdded;Medal lisatud
+continueEdit;Jätka muutmist
+levelUp;Uus tase!
+non_existing_object;[?]
+sorting;Sorteerimine
+copiedToClipboard;Kopeeritud lõikelauale
+maximumLengthError;Maksimaalne pikkus: {{max}}.
+sortingOptions;Sorteerimisvalikud
+WIP_comingSoon;Funktsioon on varsti tulemas!
+upgradeTab_fastForward_button;{{Percent}}% kiiremini
+upgradeTab_masterBuilder_button;Ehita koos\nehitusmeistriga {{goldIcon|Sprite}}{{goldCost}}
+upgradeTab_adBoostPopup_boost;{{BOOST}}% tõus
+infoTab_upgradingToLevel;Käib uuendamine tasemele {{level}}:
+infoTab_genericCurrently;Praegu:
+infoTab_genericAtLevel;Tasemel {{INT}}:
+infoTab_genericEffect;{{INT}}
+infoTab_currentProduction;Hetke tootmine:
+infoTab_productionAtLevel;Tootlikkus tasemel {{INT}}:
+infoTab_effectPerHour;{{INT}} tunnis
+networkIssues;Ühendus mänguserveriga katkes.
+cantLoadServerList;Võrguprobleemide tõttu ei saanud serverite nimekirja laadida. Palun kontrolli, kas seade on internetiga ühendatud ja proovi uuesti.
+barracks_TrainTroops_Action;Treeni sõdureid
+barracks_ViewTrainingsList;Vaata treenimisnimekirja
+barracks_unitNeedsToBeResearched;Üksus tuleb välja arendada
+barracks_requiresLabel;Nõutav:
+barracks_trainingCosts;Sõdurite treenimiskulu
+barracks_troopsInTraining;Sõdurid treenimas
+training_started;Treenimine algas edukalt!
+targetSelection_relationLabel;Staatus:
+targetSelection_selectedVillage;Valitud küla
+targetSelection_noSelectedVillage;Ühtki küla pole valitud
+targetSelection_ownVillages;Oma külad
+targetSelection_relation0;Neutraalne
+targetSelection_relation1;Sõbralik
+targetSelection_relation2;Oma liit
+targetSelection_relation3;Oma küla
+targetSelection_alreadyThere_troops;Sinu sõdurid on juba seal.
+targetSelection_alreadyThere_merchants;Sinu kaupmehed on juba seal.
+rallyPoint_button_confirmTarget;Kinnita sihtmärk
+rallyPoint_button_prepareTroops;Valmista sõdurid ette
+rallyPoint_button_updateWave;Uuenda lainet
+rallyPoint_button_copyWave;Kopeeri laine
+rallyPoint_button_newWave;Lisa uus laine
+rallyPoint_sendTroops_chooseDestination;Saada sõdurid - Vali sihtkoht
+rallyPoint_sendTroops_sendTroopAction_1;Saada sõdurid - Kinnita
+rallyPoint_sendTroops_sendTroopAction_3;Saada sõdurid - Kinnita
+rallyPoint_sendTroops_sendTroopAction_4;Saada sõdurid - Kinnita
+rallyPoint_sendTroops_sendTroopAction_5;Saada sõdurid - Kinnita
+rallyPoint_sendTroops_sendTroopAction_72;Suuna sõdureidd - Kinnita
+rallyPoint_sendTroops_sendTroopAction_9;Kutsu sõdurid tagasi - Kinnita
+rallyPoint_sendTroops_sendTroopAction_10;Asuta uus küla
+rallyPoint_sendTroops_sendTroopButton_1;Saada sõdurid
+rallyPoint_sendTroops_sendTroopButton_3;Saada sõdurid
+rallyPoint_sendTroops_sendTroopButton_4;Saada sõdurid
+rallyPoint_sendTroops_sendTroopButton_5;Saada sõdurid
+rallyPoint_sendTroops_sendTroopButton_72;Suuna sõdureid
+rallyPoint_sendTroops_sendTroopButton_9;Saada sõdurid tagasi
+rallyPoint_sendTroops_sendTroopButton_10;Asuta uus küla
+rallyPoint_sendTroops_coordinateX;<b>X</b> koordinaat:
+rallyPoint_sendTroops_coordinateY;<b>Y</b> koordinaat:
+rallyPoint_sendTroops_selectOnMap;Või vali asukoht kaardil:
+rallyPoint_sendTroops_arrivalTime;<b>{{hoursLeft|Duration}}</b> kell <b>{{hoursLeft|TimeCountUp}}</b>
+rallyPoint_sendTroops_catapultTargetPopup;Vali katapuldi sihtmärk:
+rallyPoint_sendTroops_catapultTarget_category_1;Tsiviilehitised
+rallyPoint_sendTroops_catapultTarget_category_2;Militaarehitised
+rallyPoint_sendTroops_catapultTarget_category_3;Tootmisehitised
+rallyPoint_sendTroops_catapultTarget_random;Juhuslik
+rallyPoint_sendTroops_catapultTarget_noBuilding;Vali hoone
+rallyPoint_sendTroops_catapultTarget_recentTargets;Viimati valitud:
+rallyPoint_sendTroops_changeHeroHomeVillage;Muuda väejuhi koduküla
+rallyPoint_sendTroops_attackNoSelection;Vali rünnaku tüüp
+rallyPoint_sendTroops_movementType_5;Abiväed
+rallyPoint_sendTroops_movementType_3;Rünnak
+rallyPoint_sendTroops_movementType_4;Rüüste
+rallyPoint_sendTroops_attackForwarding;Suunamine
+rallyPoint_sendTroops_noTroopsSelected;- Ühtegi sõdurit pole valitud -
+rallyPoint_sendTroops_noTroopsAvailable;Ei saa sõdureid saata. Selles külas ei ole sõdureid.
+rallyPoint_sendTroops_forwardingVillageError;Sõdureid saab edasi suunata ainult liidukaaslastele või oma küladesse.
+rallyPoint_sendTroops_forwardingDestination;Suuna sõdureid - Vali sihtmärk
+rallyPoint_sendTroops_WaveRemoved;Laine eemaldatud
+rallyPoint_sendTroops_maxWaves;Lainete maksimaalne arv saavutatud
+rallyPoint_sendTroops_notEnoughTroopsToCopy;Laine kopeerimiseks pole piisavalt sõdureid.
+rallyPoint_sendTroops_troopsSent;Sõdurid saadetud!
+rallyPoint_sendTroops_toOverview;Ülevaatesse
+rallyPoint_sendTroops_backToVillage;Tagasi külla
+rallyPoint_sendTroops_mission;Missioon:
+rallyPoint_troopsOverview_1;Saabuvad rünnakud ja rüüsteretked
+rallyPoint_troopsOverview_2;Väljuvad rünnakud ja rüüsteretked
+rallyPoint_troopsOverview_3;Naasvad sõdurid
+rallyPoint_troopsOverview_4;Oma sõdurid selles külas ja selle oaasides
+rallyPoint_troopsOverview_5;Võõrsõdurid külas
+rallyPoint_troopsOverview_6;Oma sõdurid teistes külades või oaasides
+rallyPoint_troopsOverview_7;Saabuvad abiväed
+rallyPoint_troopsOverview_8;Väljuvad abiväed
+rallyPoint_troopsOverview_9;Väljuvad abiväed
+rallyPoint_troopsOverview;Sõdurite ülevaade
+rallyPoint_troopsOverview_consumption;Tarbimine: {{cropConsumption|ShortenNumber|10000}}  {{iconName|Sprite}} tunnis
+rallyPoint_troopsOverview_arrivalTime;Saabumine <b>{{Duration|Countdown}}</b> pärast kell <b>{{date|Time}}</b> 
+rallyPoint_troopsOverview_incomingMission_3;Saabuv rünnak külast: 
+rallyPoint_troopsOverview_incomingMission_4;Saabuv rüüste külast: 
+rallyPoint_troopsOverview_outgoingMission_3;Rünnakud 
+rallyPoint_troopsOverview_outgoingMission_4;Rüüsted 
+rallyPoint_troopsOverview_outgoingMission_5;Abiväed 
+rallyPoint_troopsOverview_outgoingMission_50;Seiklus 
+rallyPoint_troopsOverview_outgoingMission_72;Sõdurid edastatud külla 
+rallyPoint_troopsOverview_outgoingMission_10;Uue küla asustamine 
+rallyPoint_troopsOverview_outgoingMission_40;Sõdurite saatmine metsapeidikusse
+rallyPoint_troopsOverview_returningMission;Naasmine: 
+rallyPoint_troopsOverview_ownTroops_1;Oma sõdurid külas 
+rallyPoint_troopsOverview_ownTroops_2;Oma sõdurid külas 
+rallyPoint_troopsOverview_ownTroops_3;Oma sõdurid külas 
+rallyPoint_troopsOverview_ownTroops_4;<b>Loodus</b> külas 
+rallyPoint_troopsOverview_ownTroops_5;Oma sõdurid külas 
+rallyPoint_troopsOverview_ownTroops_6;Oma sõdurid külas 
+rallyPoint_troopsOverview_ownTroops_7;Oma sõdurid külas 
+rallyPoint_troopsOverview_foreignTroops_2;Abiväed külast 
+rallyPoint_troopsOverview_foreignTroops_4;Vangistatud sõdurid külast 
+rallyPoint_troopsOverview_ownTroopsInOther_2;Oma sõdurite abiväed külas 
+rallyPoint_troopsOverview_ownTroopsInOther_4;Oma sõdurid vangistatud külas 
+rallyPoint_troopsOverview_origin;Päritolu: 
+rallyPoint_troopsOverview_reinforcement;Abiväed külast 
+rallyPoint_troopsOverview_killed;Sõdurid tapetud!
+rallyPoint_troopsOverview_released;Sõdurid vabastatud!
+rallyPoint_troopsOverview_forwardedTroopsButton;Edasi suunatud sõdurid
+rallyPoint_troopsOverview_returnToOverview;Tagasi ülevaatesse
+rallyPoint_troopsOverview_incomingAttacks;Saabuvad <color={{colorValue|TextColor}}>{{incomings}}</color>
+rallyPoint_troopsOverview_amountIncoming;Saabuvad {{value}}
+rallyPoint_troopsOverview_amountOutgoing;Väljuvad {{value}}
+rallyPoint_troopsOverview_amountReturning;Naasvad {{value}}
+rallyPoint_troopsOverview_firstArrivalTime;{{timestamp|Countdown}} tunni pärast
+rallyPoint_troopsOverview_forwardTroops;Suuna edasi
+rallyPoint_troopsOverview_MergeTroops;Lisa külla
+rallyPoint_troopsOverview_WithdrawTroops;Saada tagasi
+rallyPoint_troopsOverview_sort_1;Esmalt märgistatud liikumised
+rallyPoint_troopsOverview_sort_2;Esmalt varaseimad saabujad
+rallyPoint_troopsOverview_sort_3;Esmalt hiliseimaid saabujad
+rallyPoint_troopsOverview_sort_4;Esmalt äsja saadetud sõdurid
+rallyPoint_troopsOverview_sort_5;Esmalt kõige varem saadetud sõdurid
+rallyPoint_troopsMerge_troopsToBeMerged;Ühildamiseks valitud sõdurid:
+rallyPoint_troopsMerge_currentGold;Praegune kuld:  {{iconName|Sprite}} {{currentGold}}
+rallyPoint_troopsMerge_goldLeft_0;{{remainingGold}} / {{maxAllowedGold}} kulda jäänud täna sõdurite ühildamiseks.
+rallyPoint_troopsMerge_goldLeft_1;{{remainingGold}} / {{maxAllowedGold}} kulda jäänud täna sõdurite ühildamiseks. Saad veel varudega ühildada.
+rallyPoint_troopsMerge_troopsMergedToast;Sõdurid ühildatud!
+rallyPoint_raidList_beingRaided;{{current}}/{{total}} rüüstatakse
+rallyPoint_infoTab_EvasionShortDescription;Aktiveeri sõdurite pagemine pealinnas
+rallyPoint_farmList_createNewTitle;Loo uus nimekiri
+rallyPoint_farmList_editTitle;Muuda nimekirja
+rallyPoint_farmList_listName;Nimekirja pealkiri
+rallyPoint_farmList_selectDefaultTroops;Vali eelvalitud sõdurid
+rallyPoint_farmList_addTroopsButton;Lisa sõdureid
+rallyPoint_farmList_editTroopsButton;Muuda sõdureid
+rallyPoint_farmList_setTroopsButton;Määra sõdurid
+rallyPoint_farmList_createListButton;Loo nimekiri
+rallyPoint_farmList_editListButton;Uuenda nimekirja
+rallyPoint_farmList_editTroopsTitle;Muuda rüüstenimekirja sõdureid
+rallyPoint_farmList_deleteList;Kustuta nimekiri
+rallyPoint_selectTroops;Vali sõdurid
+rallyPoint_farmList_listCreated;Nimekiri loodud
+rallyPoint_farmList_exitList;Välju nimekirjast
+rallyPoint_farmList_startAll;Käivita kõik sihtmärgid
+rallyPoint_farmList_startAllLists;Käivita kõik
+rallyPoint_farmList_startSelected;Käivita valitud
+rallyPoint_farmList_noTarget;- Ühtegi sihtmärki pole valitud -
+rallyPoint_farmList_noTargetExist;Selles nimekirjas ei ole sihtmärke
+rallyPoint_farmList_selectedAmount;{{amount}} valitud:
+rallyPoint_farmList_listUpdated;Nimekiri uuendatud
+rallyPoint_farmList_listDeleted;Nimekiri kustutatud
+rallyPoint_farmList_editWarning;- Nimekirja kustutamine kustutab kõik selle nimekirja sihtmärgid\n- Sõdurite muutmine mõjutab ainult tulevaste sihtmärkide eelvalitud sõdureid
+rallyPoint_farmList_sortingFailed;Sorteerimine ebaõnnestus! Palun proovi uuesti!
+rallyPoint_farmList_notStartedPopupTitle;Rüüsted ei käivitunud
+rallyPoint_farmList_notStartedPopupElement;<b>{{total}}</b> sest {{message}}
+rallyPoint_farmList_NotStartedPopupButtonGoTo;Ava rüüstenimekiri
+rallyPoint_farmList_AddTargetTitle;Lisa sihtmärk
+rallyPoint_farmList_changeTroops;Muuda sõdureid
+rallyPoint_farmList_targetAdded;Sihtmärk lisatud
+rallyPoint_farmList_targetAlreadyOnList;Sihtmärk on juba selles rüüstenimekirjas, palun vali mõni teine rüüstenimekiri või loo uus.
+rallyPoint_farmList_choose;Vali rüüstenimekiri
+rallyPoint_farmList_notYetRaided;Pole veel rüüstatud
+rallyPoint_farmList_EditRaids;Muuda sihtmärki[raidsAmount>1:s]
+rallyPoint_farmList_DeleteRaidsPlayerQuestion;Kas oled kindel, et soovid kustutada [raidsAmount=1:selle sihtmärgi][raidsAmount>1:need sihtmärgid]?
+rallyPoint_farmList_ChangeRaidList;Muuda rüüstenimekirja
+rallyPoint_farmList_ChangeTarget;Muuda sihtmärki
+rallyPoint_farmList_ChangeTroops;Muuda sõdureid
+rallyPoint_farmList_DeactivateTarget;Tühista sihtmärk[raidsAmount>1:s]
+rallyPoint_farmList_MultiEditWarning;Sa muudad mitut sihtmärki Tehtud muudatused mõjutavad kõiki valitud sihtmärke
+rallyPoint_farmList_UpdateRaids;Uuenda sihtmärki[raidsAmount>1:s]
+rallyPoint_farmList_filterShowTroopsTitle;Näita sõdureid
+rallyPoint_farmList_filterShowTroopsDescription;Näitab valitud sõdureid sihtmärgi kohta
+rallyPoint_farmList_filterShowPopulationTitle;Näita sihtmärgi elanike arvu
+rallyPoint_farmList_filterShowPopulationDescription;Näitab sihtmärgiküla elanike arvu
+rallyPoint_farmList_filterShowDistanceTitle;Näita kaugust
+rallyPoint_farmList_filterShowDistanceDescription;Näitab sihtmärgi kaugust sinu külast
+rallyPoint_farmList_filterShowLastRaidTitle;Näita viimast rüüsteinfot
+rallyPoint_farmList_filterShowLastRaidDescription;Näitab sihtmärgi viimast rüüsteinfot
+rallyPoint_farmList_filterShowBountyTitle;Näita saaki ja varusid
+rallyPoint_farmList_filterShowBountyDescription;Näitab saadud saaki ja varusid
+marketplace_createOffer;Loo pakkumine
+marketplace_myOffers_title;Minu pakkumised
+marketplace_myOffers_merchants;Kaupmehed: {{count}}
+marketplace_myOffers_alliance_True;Liit: Jah
+marketplace_myOffers_alliance_False;-
+marketplace_myOffers_interval;{{amount}} tundi
+marketplace_myOffers_offerDeleted;Pakkumine kustutatud
+marketplace_merchantsOverview_arrival;{{duration}} tundi Saabub {{arrivalTime}}
+marketplace_merchantsOverview_incomingMerchants;Saabuvad saadetised: {{count}}
+marketplace_merchantsOverview_outgoingMerchants;Väljuvad saadetised: {{count}}
+marketplace_merchantsOverview_noIncomingMerchants;- Saabuvaid kaupmehi ei ole -
+marketplace_merchantsOverview_noOutgoingMerchants;- Väljuvaid kaupmehi ei ole -
+marketplace_merchantsOverview_IncomingCat;Saabuvad
+marketplace_merchantsOverview_outgoingCat;Väljuvad
+marketplace_merchantsOverview_capacity;Kandevõime: {{capacity}}
+marketplace_merchantsOverview_merchantsOverview;Kaupmeeste ülevaade
+marketplace_merchantsOverview_ArrivingSoonest;Varaseimad saabujad
+marketplace_merchantsOverview_ArrivingLatest;Hiliseimad saabujad
+marketplace_merchantsOverview_ShortestDistance;Lühim kaugus
+marketplace_merchantsOverview_LongestDistance;Pikim kaugus
+marketplace_merchantsOverview_transportTo;Transport külla <b>{{Village}}</b> kaubaga <b>{{Player}}</b>
+marketplace_merchantsOverview_transportFrom;Transport külast <b>{{Village}}</b> kaubaga <b>{{Player}}</b>
+marketplace_merchantsOverview_returningFrom;Naasev külast <b>{{Village}}</b> kaubaga <b>{{Player}}</b>
+academy_research_viewResearchList;Käimasolevad arendused
+academy_research_allUnitsResearched;Kõik üksused on arendatud.
+academy_researchListPopup_title;Arendatavad sõdurid
+academy_researchListPopup_remainingTime;{{timeLeft}} jäänud. Valmis {{readyAt}}
+academy_researchListPopup_constructImmediately;Vii ehitused kohe lõpule
+research_started;Arendus algas edukalt!
+research_timeLeft;{{TIME|Countdown}} jäänud
+townHall_celebration_ongoingCelebration;Käimasolev
+topBar_perHourLabel;/t:
+topBar_maxLabel;Max:
+topBar_resourceFull;Täis
+leftPanel_infoBox;Teated
+villagePanel_playerNameTitle;Külad, mis kuuluvad {{playerName}}
+villagePanel_toStatistics;Küla statistika
+villagePanel_culturePointsNeeded;Järgmise küla jaoks vajalik kultuuripunktide arv
+mapCell_type;{{x}}{{y}}
+mapCell_type_village;{{villageName}}
+mapCell_type_1;Kohalik
+mapCell_type_2;Org
+mapCell_type_3;Hõivamata oaas
+mapCell_type_4;Hõivatud oaas
+mapCell_type_5;Metsik loodus
+mapCell_Owner;Omanik
+mapCell_type_valley;Org
+mapCell_Wilderness;Selles kohas ei ole midagi huvitavat.
+mapCell_Distance;{{distance|Round|1}} välja
+mapCell_locationInfo;Asukoha info
+mapCell_surroundings;Ümbritsev
+mapCell_actions_editFarmlist;Muuda rüüstenimekirja
+mapCell_actions_addFarmlist;Lisa rüüstenimekirja
+mapCell_actions_raidOasis;Rüüsta oaasi
+mapCell_showOnMap;Näita kaardil
+mapCell_noReports;- Selle asukoha kohta pole infot -
+berichte.region_;{{PLAYERACTIVE}}{{PLAYERPASSIVE}}{{VILLAGE}}{{NAME1}}{{NAME2}}{{ALLY1}}{{ALLY2}}{{NAME}}
+mapCell_goToOwnVillage;Mine oma külla
+constructionQueue_timeLeftToFinish;{{timestamp|Countdown}} jäänud. Valmis {{timestamp|Time}}
+constructionQueue_timeUntilStart;Algab {{timestamp|Countdown}}
+constructionQueue_MasterBuilderTitle;Ehitusmeistri järjekord (kulutab {{masterBuilderCost|Sprite}} {{masterBuilderCost}} ehituse alguses)
+constructionQueue_Constructing;Hoone ehitus käib
+constructionImmediatelyPopup_topText;Järgnevad käsud lõpetatakse koheselt:
+constructionImmediatelyPopup_title;Lõpeta kohe
+newBuildingConstructionDetail_dateTimeEnoughResources;Piisavalt varusid {{date|Date}} {{time|Time}}
+newBuildingConstruction_noBuildingsAvailable;Hetkel ei saa hooneid ehitada.
+goldclubpopup_currentGold;Praegune kuld:  {{iconName|Sprite}} <color={{colorValue|TextColor}}>{{currentGold}}</color>
+goldclubpopup_activated_toastMessage;Kuldklubi aktiveeritud!
+loginPage_version;Versioon {{currentVersion}}
+loginPage_loginBlocked;Sisselogimine blokeeritud
+loginPage_loginBlocked_fails;Liiga palju ebaõnnestunud sisselogimiskatseid
+loginPage_loginBlocked_message;Teie konto on blokeeritud liiga paljude ebaõnnestunud sisselogimiskatsete tõttu.
+loginPage_loginBlocked_resolve;Konto avamiseks logi sisse brauseri kaudu aadressil
+serverSelection_selectRegion;Vali piirkond
+serverSelection_selectGameWorld;Vali mängumaailm
+serverSelection_0;Rahvusvaheline
+serverSelection_1;Araabia
+serverSelection_2;Aasia
+serverSelection_3;Euroopa
+serverSelection_4;Ameerika
+serverSelection_99;Dev
+serverSelection_mapSize;Kaardi suurus:
+serverSelection_mapSize_0;Väike
+serverSelection_mapSize_1;Suur
+serverSelection_artifacts;Artefaktid:
+serverSelection_constructionPlans;Ehitusplaanid:
+serverSelection_changeGameWorld;Muuda mängumaailma
+serverSelection_username;Kasutajanimi:
+serverSelection_password;Salasõna:
+serverSelection_loginButton;Logi sisse ja mängi
+serverSelection_forgotPassword;Unustasin salasõna
+serverSelection_noAccount;Mul pole kontot
+serverSelection_loginError;Kasutajanimi või salasõna on vale
+serverSelection_graphQlError;Andmete pärimisel serverist tekkis viga
+serverSelection_tokenRefreshError;Viimati kasutatud serverisse sisselogimine ebaõnnestus: logi uuesti sisse.
+serverSelection_stayLoggedIn;Jää mängumaailma sisse logituks
+troopsInfo_title;Sõdurid külas {{villageName}}
+unitInfo_velocity;<b>{{fields}}</b> välja tunnis
+unitInfo_resourceCarriage;<b>{{INT}}</b> varu
+unitInfo_researchPrerequisites;Arenduse nõuded:
+unitInfo_trainingPrerequisites;Treenimise nõuded:
+unitInfo_canCarry;Suudab kanda:
+exchangeResources_currentTitle;Uus kogus
+exchangeResources_lockAmount;Lukusta kogus
+exchangeResources_changeTitle;Muuda
+exchangeResources_restTitle;Ülejäänu
+exchangeResources_buildingPossible_True;Uuendamine võimalik
+exchangeResources_buildingPossible_False;Uuendamine ei ole võimalik
+exchangeResources_mergePossible_True;Ühildamine võimalik
+exchangeResources_mergePossible_False;Ühildamine pole võimalik
+exchangeResources_researchPossible_True;Arendus võimalik
+exchangeResources_researchPossible_False;Arendus pole võimalik
+exchangeResources_celebrationPossible_True;Pidustus võimalik
+exchangeResources_celebrationPossible_False;Pidustus pole võimalik
+exchangeResources_reviveHero_True;Väejuhi elustamine võimalik
+exchangeResources_reviveHero_False;Väejuhi elustamine pole võimalik
+exchangeResources_currentlyAvailable;Praegu saadaval: <b>{{amount}}</b>
+exchangeResources_maximumAvailable;Maksimaalselt saadaval: <b>{{amount}}</b>
+exchangeResources_distributeEvenly;Jaota ülejäänud varud võrdselt:
+exchangeResources_distributeOnResource;Või suuna ülejäänud varud esmalt:
+exchangeResources_distributeAuto;Automaatne jaotus
+exchangeResources_distributeManual;Käsitsi jaotus
+exchangeResources_availableTroops;Saadaval sõdurid: {{amount}}
+buildingActivities_title;Ehitustegevus
+buildingActivities_idle;Saadaval
+buildingActivities_type;Tüüp
+buildingActivities_building_13;Arendused:
+buildingActivities_building_16;Rüüstenimekiri
+buildingActivities_building_17;Kaupmehed
+buildingActivities_building_19;Sõdurid treenimas
+buildingActivities_building_20;Ratsavägi treenimas
+buildingActivities_building_29;Sõdurid treenimas
+buildingActivities_building_30;Ratsavägi treenimas
+buildingActivities_building_21;Sõdurid treenimas
+buildingActivities_building_22;Arendamine
+buildingActivities_building_24;Pidustused
+buildingActivities_building_46;Sõdurid tervenemas
+buildingActivities_buildingAction_;{{amount}}{{max}}
+buildingActivities_buildingAction_16;{{amount}} käimasolevat rüüstet
+buildingActivities_buildingAction_17;{{amount}}/{{max}} saadaval
+mainMenu_title;Peamenüü
+mainMenu_quests;Ülesanded
+playerDetails_infoTab;Mängija info
+playerDetails_villageTabTitle;{{villages}} küla koos {{oases}} oaasiga
+playerDetails_SortBy_1;Elanike arv
+playerDetails_SortBy_2;Võidupunktid
+playerDetails_SortBy_3;Küla nimi
+playerDetails_SortBy_4;Piirkonna nimi
+player_gender_DontSpecify;Ära täpsusta
+player_gender_Other;Muu
+player_gender0;Mees
+player_gender1;Naine
+player_gender2;Muu
+player_gender3;Ära täpsusta
+playerDetails_NotesFor;Märkused {{playerName}}
+playerDetails_NoDescription_Others;- See mängija ei ole lisanud kirjeldust -
+playerDetails_NoDescription_Own;- Kirjeldust ei ole veel lisatud -
+playerDetails_editLanguages;Muuda keeli
+playerDetails_searchLanguage;Otsi keelt
+goldShopPlaceholder_title;Pood avatakse varsti!
+goldShopPlaceholder_description;Kullapoodi ei saa mobiilirakenduses veel kasutada.<br><br> Kulla ostmiseks logi palun oma kontole brauseri kaudu sisse.
+goldShop_title;Kullapood
+goldShop_advantage_5;Travian Plus
+goldShop_advantage_4;Puit
+goldShop_advantage_1;Savi
+goldShop_advantage_2;Raud
+goldShop_advantage_3;Vili
+goldShop_feature_activated;Funktsioon aktiveeritud!
+goldShop_purchaseFailed;Ost ebaõnnestus!
+goldShop_purchaseSuccess;Ost õnnestus.
+goldShop_transactionInProgress;Tehing on pooleli.\nPalun oota.
+goldShop_transactionFailed;Midagi läks valesti.\nPalun proovi hiljem uuesti.
+goldShop_transactionTimeout;Hea mängija, sinu makse tegemine võttis liiga kaua aega ja selle töötlemine võis ebaõnnestuda. Palun võta ühendust meie <style="link"><link="https://support.travian.com/support/tickets/new">maksetoega</link></style>, kui sul tekib mõni probleem.
+market_sendResources_requiredMerchants;Vajalikud kaupmehed:
+market_sendResources_capacityPerMerchant;Ühe kaupmehe kandevõime
+market_sendResources_amountRepeats;Korduste arv:
+market_sendResources_confirmResources;Kinnita varud
+market_sendResources_amountWithX;{{amount}}x
+market_sendResources_sent;Varud saadetud!
+market_offer_maxDuration;Maksimaalne transpordiaeg:
+market_offer_confirm;Kinnita pakkumine
+market_offers_title;Pakkumised
+market_capacity;Kandevõime: {{capacity}}
+market_offers_offering;Pakun:
+market_offers_searching;Otsin:
+market_offers_offered;Saadad
+market_offers_wanted;Saad vastu
+market_offers_accepted;Pakkumine vastu võetud! Varud on teel ja kaupmehed on välja saadetud.
+market_offers_ownAllianceOnly;Ainult oma liidu mängijad
+market_ratio_11;1:1
+market_ratio_1X;1:X
+market_tradeRoutes_to;Kellele:
+market_tradeRoutes_entryAmount;<b>{{amount}}</b> kirjed
+market_tradeRoutes_noRoutes;- Kaubateid pole loodud -
+market_tradeRoutes_travelTime;Aega kulub {{time|Duration}} tundi
+market_tradeRoutes_activeRatio;{{active}}/{{total}} aktiivne
+market_tradeRoutes_active;Aktiivne
+market_tradeRoutes_paused;Peatatud
+market_tradeRoutes_updated;Kaubateed on uuendatud
+market_tradeRoutes_deleted;Kaubateed kustutatud
+market_tradeRoutes_returnAt;naaseb kell {{time|Time}}
+market_tradeRoutes_merchantsAndRepeat;{{merchants}} kaupmeest, {{repeats}}x
+market_tradeRoutes_filterOptions;Filtreeri valikud
+market_tradeRoutes_showMerchants;Näita kaupmehi
+market_tradeRoutes_showMerchantsText;Näitab, kui palju kaupmehi kasutatakse
+market_tradeRoutes_showResources;Näita varusid
+market_tradeRoutes_showResourcesText;Näitab veetavate varude hulka
+market_tradeRoutes_afterInputFieldsSuffix;Tunnid
+market_tradeRoutes_interval;{{INT}} tundi
+market_tradeRoutes_confirmTarget;Kinnita sihtmärk
+market_tradeRoutes_arrivalTime;{{duration|Duration}} kell {{arrivalTime|Time}}
+market_tradeRoutes_created;Kaubatee on loodud
+market_tradeRoutes_edit;Muuda kaubateed[routeAmount>1:s]
+market_tradeRoutes_update;Uuenda kaubateed[routeAmount>1:s]
+market_tradeRoutes_multiEditWarning;Sa uuendad mitut kaubateed. Tehtud muudatused mõjutavad kõiki {{routeAmount}} kaubateid.
+market_tradeRoutes_editResourcesTitle;Vaheta varusid
+market_tradeRoutes_editResourcesButton;Muuda varusid
+market_tradeRoutes_setResourcesButton;Määra varud
+market_tradeRoutes_updateResourcesButton;Uuenda varusid
+market_tradeRoutes_pause;Peata kaubatee[routeAmount>1:s]
+market_tradeRoutes_pauseDescription;Kaubatee kantakse peatatud kaubateede nimekirja, ent jääb sinu turule alles.
+market_tradeRoutes_delete;Kustuta kaubatee[routeAmount>1:s]
+market_tradeRoutes_deleteConfirmQuestion;Kas oled kindel, et soovid kustutada [routeAmount=1:selle][routeAmount>1:need] kaubatee[routeAmount>1:d]?
+market_tradeRoutes_invalidTarget;Kaubateid saab luua ainult Maailma Ime küladesse ja küladesse, kus on artefakte või Maailma Ime ehitusplaane, mis kuuluvad liidu või liitluse liikmetele.
+hero.status;{{NAME}}
+hero_adventures_selectVillage;Vali küla
+hero_adventures_explore;Avasta
+hero_adventures_sendHero;Saada väejuht
+hero_adventures_sent;Seiklus algas
+hero_status_reviveWithBucket;Kasuta, et taastada oma väejuht koheselt.
+hero_status_reviveWithRes;Kasuta varusid väejuhi taastamiseks.
+hero_inventory_consumablePopupTitle;Kasutatav ese
+hero_resourceTransferPopup_title;Kanna varusid üle
+hero_resourceTransferPopup_ReadyForTransfer;Ülekandmiseks valmis
+hero_resourceTransferPopup_transferSelected;Ülekanne valitud
+hero_resourceTransferPopup_transferMax;Maksimaalne ülekanne
+hero_resourceTransferPopup_storageFull;Ladu täis. Rohkem ei saa varusid üle kanda.
+hero_inventory_transferToCurrentVillage;Kantud hetkel aktiivsesse külla: <b>{{VILLAGE}}</b>
+hero.itemDescriptionV2Details;{{PERCENTAGE}}{{EXPERIENCE}}{{RAISE}}{{LIMIT}}{{MAX}}{{TIME}}
+hero.itemDescriptionV2;{{VALUE}}
+hero_consumablePopup_currentEquippedItems;Hetkel kasutusel olevate esemete hulk:
+hero_consumablePopup_itemsLeftInInventory;Varustusse jäänud esemete arv:
+hero.itemTypeV2_inventory;Tarvitatavad esemed
+hero.cooldownWithTime;{{COOLDOWN}}-tunnine ooteaeg, mis lõpeb {{DATE|DateTime}}.
+reports_overview_title;{{COUNT}} raportit
+reports_overview_title_selected;Valitud {{SELECTED}} / {{COUNT}} raportit
+reports_overview_title_archived;Arhiveeritud raportid
+reports_overview_archived_noReports;- Arhiveeritud raportid puuduvad -
+reports_filters_title;Vali filter
+reports_filters_allReports;Kõik raportid
+reports_filters_applyButton;Rakenda {{COUNT}} filtrit
+reports_filters_noFilter;Ei ole valitud ühtegi filtrit
+reports_detail_title;Raporti üksikasjad
+berichte.;{{NAME1}}{{NAME2}}{{VILLAGE_NAME}}{{X}}{{Y}}{{COORDS}}{{NAME}}
+reports_player_from_village;[{{allianceId|AllianceLink}}] {{playerId|PlayerLink}} külast {{villageId|VillageLink}}
+reports_troops_lost;Kaotatud sõdurid:
+reports_troops_hospitalized;Laatsaretis:
+reports_xp_gained;{{amount}} kultuuripunkti
+reports_health_change;-{{change}}% tervist
+reports_hero_died;Sinu väejuht suri seikluse käigus
+reports_scouted_building;{{buildingType|TranslateSuffixFor|allgemein.gid}} tase <b>{{level}}</b>
+reports_refreshed;Raportid värskendatud!
+reports_deleteReportPopup_title;Kustuta raport(id)
+reports_deleteReportPopup_warningTitle;Kas oled kindel, et soovid kustutada {{X}} raporti(d)?
+reports_deleteReportPopup_warningTitleAll;Kas oled kindel, et soovid kõik raportid kustutada?
+reports_deleteReportPopup_warningDescription;Kui oled raporti kustutanud, kaob see lõplikult. Seda ei saa taastada.
+reports_deleted;Raport kustutatud!
+reports_markedUnread;Raport märgitud kui lugemata!
+reports_archived;Raport arhiveeritud!
+reports_deleted_all;Kõik raportid kustutatud!
+reports_deleted_selected;{{X}} raport(it) kustutatud!
+reports_markedRead_all;Kõik raportid on loetuks märgitud!
+reports_markedRead_selected;{{X}} raport(it) loetuks märgitud!
+alliance_nameAndTagPair;{{allianceName}} | {{allianceTag}}
+alliance_editAllianceName;Muuda liidu nime
+alliance_name;Liidu nimi
+alliance_nameError;Nime välja ei saa tühjaks jätta
+alliance_tag;Liidu lühend
+alliance_tagError;Lühendi välja ei saa tühjaks jätta
+alliance_profileTab_inviteNewPlayer;Kutsu uus mängija
+alliance_profileTab_showInvitedPlayers;Kuva kutsutud mängijad
+alliance_invitedPopup_title;Kutsutud mängijad
+alliance_invitedPopup_invitationRemoved;Kutse kustutatud!
+alliance_invitePlayerPopup_title;Kutsu mängija
+alliance_invitePlayerPopup_noPlayerFound;Mängijat ei leitud
+alliance_invitePlayerPopup_playerInvited;Mängija kutsutud!
+alliance_editMemberPopup_title;Muuda liikmeid
+alliance_editMemberPopup_customMessage;Kirjuta sõnum
+alliance_editMemberPopup_setRole;Määra roll
+alliance_editMemberPopup_kickPlayerFromAlliance;Heida mängija liidust välja
+alliance_editMemberPopup_cantChangePermission;Praegust luba ei saa muuta: vaata hoiatust.
+alliance_kickPlayerPopup_areYouSure;Kas oled kindel, et tahad {{Player}} liidust välja heita?
+alliance_kickPlayerPopup_playerKicked;Mängija välja heidetud!
+alliance_editAllianceDescription;Muuda liidu kirjeldust
+alliance_topColumn;Ülemine veerg
+alliance_bottomColumn;Alumine veerg
+alliance_bbCodeAdded;BB-kood lisatud
+alliance_generalInformation;Üldine info
+alliance_confederacy_tab;Liitlus
+alliance_diplomacy;Diplomaatia
+alliance_diplomacy_tab1;MKL / sõda
+alliance_diplomacy_send_new;Saada uus
+alliance_diplomacy_openRequests;Ava taotlused
+alliance_diplomacy_otherOffered;{{allianceId|AllianceLink}} pakutud {{type|TranslateSuffixFor|alliance_diplomacy_type}}
+alliance_diplomacy_youOffered;Sa pakkusid {{type|TranslateSuffixFor|alliance_diplomacy_type}} koos {{allianceId|AllianceLink}}
+alliance_diplomacy_offerDeclare;Pakkumine / Deklareerimine
+alliance_diplomacy_type;Tüüp
+alliance_diplomacy_type1;liitlus
+alliance_diplomacy_type2;MKL
+alliance_diplomacy_type3;sõda
+alliance_diplomacy_type4;liitlus
+alliance_diplomacy_typekick;liitlusest väljaheitmine
+alliance_diplomacy_deleteText_;{{type|TranslateSuffixFor|alliance_diplomacy_type}}{{alliance|AllianceLink}}
+alliance_diplomacy_deleteTitle_RemoveRequest;Eemalda taotlus
+alliance_diplomacy_deleteText_RemoveRequest;Kas oled kindel, et soovid eemaldada kasutajale {{type|TranslateSuffixFor|alliance_diplomacy_type}} tehtud pakkumise koos {{alliance|AllianceLink}}?
+alliance_diplomacy_deleteTitle_TerminateExisting;Tühistamine
+alliance_diplomacy_deleteText_TerminateExisting;Kas oled kindel, et tahad tühistada {{type|TranslateSuffixFor|alliance_diplomacy_type}} koos {{alliance|AllianceLink}}?
+alliance_diplomacy_deleteTitle_ConfederacyKickVote;Lõpeta liitlus
+alliance_diplomacy_deleteText_ConfederacyKickVote;Sul on vaja teiste liitlaste luba, et heita välja{{subject|AllianceLink}}.\n\nKas soovid jätkata ja teavitada teisi liitlasi oma otsusest?
+alliance_diplomacy_deleteTitle_QuitConfederacy;Lõpeta liitlus
+alliance_diplomacy_deleteText_QuitConfederacy;Kas oled kindel, et soovid lõpetada oma liitluse järgmiste liikmetega?
+alliance_diplomacy_deleteTitle_RemoveConfederacyProposal;Eemalda taotlus
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Kick;Kas oled kindel, et tahad tagasi lükata {{alliance|AllianceLink}} taotluse {{subject|AllianceLink}} liitlusest välja heitmiseks?
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Join;Kas oled kindel, et tahad tagasi lükata {{alliance|AllianceLink}} taotluse {{subject|AllianceLink}} liitlusega liitumiseks?
+alliance_diplomacy_sent;Pakkumine saadetud
+alliance_diplomacy_accepted;Diplomaatiline suhe vastu võetud
+alliance_diplomacy_canceled;Diplomaatiline suhe katkestatud
+alliance_diplomacy_declined;Taotlus lükati tagasi
+alliance_diplomacy_kickStarted;Taotlus saadetud
+alliance_diplomacy_proposal_approved;Taotlus kinnitatud
+alliance_diplomacy_noContract;Sinu liidul ei ole aktiivseid kokkuleppeid teiste liitudega.
+alliance_diplomacy_noConfederacy;Sinu liit ei kuulu ühtegi liitlusesse.
+alliance_diplomacy_alreadyOpenOffer;Sellele liidule on juba avatud pakkumine.
+alliance_diplomacy_alreadyExistingContract;Selle liiduga on juba kokkulepe sõlmitud.
+alliance_diplomacy_warInDeletion;Oota, kuni teine liit samuti sõja lõpetab.
+alliance_union_leave;Lahku liitlusest
+alliance_union_add;Lisa uus taotlus
+allianz.diplomacy_with_type;{{NAME}}
+allianz.diplomacy_with_type4;Liitlus koos {{NAME}}
+alliance_newsBbDescription;Muuda välja "number", et määrata uudiste arvu.
+alliance_LossesBBName;Kaotused
+alliance_LossesBBDescription;Muuda välja "name", et valida liit, mida võrrelda.
+alliance_NapBBName;Mittekallaletungilepingud
+alliance_WarsBBName;Sõjad
+alliance_addBBCode;Lisa BB-kood
+alliance_addMedal;Lisa medal
+alliance_assignToPosition;Määra liikmete positsioonid ja muuda liidu nime
+alliance_editPermissions;Muuda õigusi
+alliance_roleTitle;Rolli nimetus:
+alliance_assignToPosition_onlyMemberError;Sa oled selle liidu ainus liige. Liikmetele rollide määramist ja liidu nime muutmist ei saa märkimata jätta.
+alliance_noAllianceEvents;- Liidu sündmusi pole kuvada -
+alliance_dailyContribution;Päevane panus
+alliance_contributionAmount;Panus: <b>{{AMOUNT}}</b>
+alliance_resourcesContributed;{{current}}/{{max}} panustatud varud
+alliance_contributionResetIn;Nullib ära {{time|Countdown}} pärast
+alliance_resUntilNext;Varud järgmise tasemeni: {{resources|LongNumber}}
+alliance_bonusCurrentlyActivating;Boonus aktiveerub: {{resources|Countdown}}
+alliance_bonusMaxed;Boonus maksimaalselt saavutatud
+alliance_tripledContribution;Kolmekordistasid oma panust!
+alliance_contributionStatistics;Panustamise statistika
+alliance_contributionNone;- Hetkel pole panustajaid -
+auth_clientVerificationFailed;Klienti ei õnnestunud kinnitada. Proovi palun uuesti.
+banned_seeMessage;Vaata sõnumit
+banned_acceptPunishment;Nõustu karistusega
+residence_settlement;Laienemine
+palace_capital;Määra see küla minu pealinnaks.
+palace_setAsCapital;Määra pealinnaks
+palace_enterPassword;Sisesta parool turvakaalutustel
+embassy_GoToAlliance;Ava liit
+embassy_Invitation;Liit {{AllianceId|AllianceLink}}, kuhu sind kutsus {{playerId|PlayerLink}}
+embassy_VillagesInRange;Lähedalolevad külad
+embassy_LeaveAllianceToJoin;Uue liiduga ühinemiseks pead oma praegusest liidust lahkuma.
+embassy_ConfirmLeaveAlliance;Kinnita ja lahku liidust
+embassy_InvitationAccepted;Kutse vastu võetud
+embassy_AllianceFounded;Liidu loomine õnnestus
+embassy_LeftAlliance;Liidust lahkumine õnnestus
+embassy_acceptInvitationQuestion;Kas oled kindel, et soovid liituda {{allianceId|AllianceLink}}-ga ?
+embassy_acceptInvitationWarning;Liidust ei saa lahkuda {{hours}} tunni jooksul pärast liitumist.
+embassy_acceptInvite;Ühine liiduga
+embassy_declineInvite;Ei, eemalda kutse
+embassy_noAlliancesNearby;Lähiümbruses ei leidu ühtegi liitu.
+smithy_improveTo;Tõuse tasemele {{level}}
+smithy_viewList;Vaata arendust
+smithy_upgradeStarted;{{unitId|TranslateSuffixFor|truppen.tid}} paranemine algas
+smithy_researchFirst;Üksust tuleb akadeemias arendada.
+smithy_levelTooLow;Sepikoja tase on liiga madal, palun uuenda sepikoda.
+allBuildings_10;Kõik laod:
+allBuildings_11;Kõik viljaaidad:
+allBuildings_23;Kõik peidikud:
+allBuildings_38;Kõik laod:
+allBuildings_39;Kõik viljaaidad:
+currentBuildingValue;Praegune {{type|TranslateSuffixFor|allgemein.gid}}:
+ad_successful;Reklaam vaadatud!
+externalLink_title;Väline link
+externalLink_description1;<b>NB!</b><br>Sa avad järgmise välise lingi:
+externalLink_description2;Travian Games ei saa seda linki kontrollida ega kinnitada.
+externalLink_description3;Jätka omal vastutusel.
+externalLink_description4;Kas oled kindel, et soovid jätkata?
+externalLink_continue;Ava link
+search_village;Otsi küla
+search_select_village;Vali küla
+search_three_characters;Sisesta vähemalt {{amount}} tähemärki
+search_no_result;Ei leitud ühtegi vastet
+search_player;Otsi mängijat
+search_player_invite;Kutsu mängija
+search_select_player;Vali mängija
+search_select_player_invite;Kutsu uus mängija
+search_alliance;Otsi liitu
+search_select_alliance;Vali liit
+gid27.arte_detail_;{{INT}}
+artefact_inventory_village;Küla:
+artefact_inventory_conquered;Vallutatud:
+artefact_inventory_active;Aktiivne: aktiivne alates
+artefact_inventory_active_already;Aktiivne: <b> aktiveeritud</b>
+artefact_inventory_show_active_only;Kuva ainult minu aktiveeritud artefaktid
+artefact_overview;Artefaktide ülevaade
+artefact_tip_large;Suured esemed nõuavad varakambri taset <b>20</b> ja mõjutavad kogu sinu <b>avatari</b>
+artefact_tip_small;Väikesed esemed nõuavad varakambri taset <b>10</b> ja mõjutavad ainult <b>küla</b>
+artefact_tip_nearby;Artefaktid {{villagenamelong|Bold}} ümbruskonnas
+artefact_small;Väike
+artefact_large;Suur
+artefact_nearby;Lähedal
+artefact_village;Küla
+artefact_button_former_owners;Vaata eelmisi omanikke
+artefact_already_active;Juba aktiveeritud
+artefact_required_level_value;Varakamber <b>tasemel {{LEVEL}}</b>
+artefact_details;Üksikasjad
+number_counter;{{NUMBER}}.
+tasks_villageTasks;Küla ülesanded
+tasks_nextHeroLevelBonus;Järgmise väejuhi taseme boonus = {{value}}%
+villageOverview_building_headline;Hooned
+villageOverview_building_slotIdle;Ehitustöid ei toimu
+villageOverview_resource_sorting1;Küla nimekiri
+villageOverview_resource_sorting2;Lühim viljaaia kestvus
+villageOverview_resource_sorting3;Pikim viljaaia kestvus
+villageOverview_resource_sorting4;Lühim lao kestvus
+villageOverview_resource_sorting5;Pikim lao kestvus
+villageOverview_resource_sorting6;Negatiivne tootlikkus
+villageOverview_troops_stationed;Külas paiknevad sõdurid
+villageOverview_troops_sum;Sõdureid kokku
+villageOverview_troops_tab_training;Treenimine
+villageOverview_culture_slots;Küla laienemiskohad
+cancelPopup_Improvement;Tühista arendamine
+cancelPopup_Research;Tühista arendamine
+cancelPopup_Construction;Tühista ehitus
+cancelPopup_text_;{{NAME}} {{LEVEL}}
+cancelPopup_text_Improvement;Kas tahad tühistada {{NAME}} arendamise tasemele  {{LEVEL}}?
+cancelPopup_text_Research;Kas tahad tühistada {{NAME}} arendamise?
+cancelPopup_text_Construction;Soovid katkestada {{NAME}} ehituse tasemele {{LEVEL}}?
+cancelPopup_text_refund;Sulle tagastatakse {{INT}}% arendamismaksumusest.
+dailyQuests_timeRemaining;Aega jäänud: {{time|Countdown}}
+dailyQuests_rewardOverview;Vaata auhindu
+dailyQuests_claimRewards;Võta auhinnad vastu
+dailyQuests_pointsEarned;Teenitud punktid: <b>{{current}}/{{max}}</b>
+dailyQuests_rewardDescription;Need on auhinnad, mida saab teenida tänaste igapäevaülesannete täitmisega:
+dailyQuests_claimAction;Võta vastu
+dailyQuests_alreadyClaimed;Vastu võetud
+dailyQuests_questDetailTitle;Info
+dailyQuests_quest_worth;See ülesanne on väärt:
+dailyQuests_quest_worth_points;+{{points}} punkt[points>1:i]
+dailyQuests_quest_repeated;Seda ülesannet saab korrata:
+dailyQuests_quest_repeated_amount;{{amount}} aeg[amount>1:a]
+dailyQuests_quest_completed;Korduste arv:
+dailyQuests_quest_difficulty;Raskusaste:
+dailyQuests_quest_requirement;Nõue:
+dailyQuests_backToOverview;Tagasi ülevaatesse
+dailyQuests_difficulty_moderate;Mõõdukas
+dailyQuests_difficulty_hard;Raske
+dailyQuests_difficulty_challenging;Keerukas
+achievementQuests.achQuest_;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+achievementQuests.achQuest__step_01_description;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+heroMansion_Loyalty;Lojaalsus:{{INT}}%
+heroMansion_Conquered;Vallutatud {{TIME|DateTime}}
+heroMansion_SlotFree;Järgmine oaasikoht on saadaval
+heroMansion_SlotBlocked;Järgmise oaasi saab, kui <color={{colorValue|TextColor}}> kindluse</color> <color={{colorValue2|TextColor}}> tase on {{REQUIRMENT}}</color>
+heroMansion_Undo;Võta tagasi
+heroMansion_FinishedAt;Lõpetatud: {{TIME|Time}}
+waterworks_NoneOasesAcquired;Ühtki oaasi pole allutatud
+waterworks_BonusCalculation;+ ({{INT}}% {{INT2}}%-st) = 
+waterworks_CurrentBonus;Praegune veetõstuki boonus: +{{INT}}% oaasidest saadavatele varudele
+waterworks_Oases;Allutatud oaasid
+messages_inbox_title;{{COUNT}} sõnumit
+messages_inbox_title_selected;Valitud {{SELECTED}} / {{COUNT}} sõnumit
+messages_newMessage;Uus sõnum
+messages_messageSent;Sõnum saadetud!
+messages_exitPreview;Välju eelvaatest
+messages_previewTitle;Sõnumi eelvaade
+messages_unread_count;{{COUNT}}lugemata
+reportPlayer_selectReason;Vali raporti põhjus
+reportPlayer_reasonPlaceholder;Raporti põhjus
+reportPlayer_addNote;Lisa raportile märkus (valikuline):
+reportPlayer_alsoBlock;Ignoreeri seda mängijat
+reportPlayer_maximumLength;Maksimaalne pikkus: {{text|TextLength}}/300
+reportPlayer_nowIgnored;Sa ignoreerid nüüd seda mängijat.
+reportPlayer_nowUnignored;Sa ei ignoreeri enam seda mängijat.
+statistics_general;Üldine statistika
+statistics_seeDetails;Vaata üksikasju
+statistiken.progressionStepTitle_;{{VALUE}}{{DATETIME}}
+language_de-DE;saksa
+language_en-US;inglise
+language_fr-FR;prantsuse
+language_ru-RU;vene
+statistics_villageAndHero;Suurim küla / väejuht
+RelativeTime_0;{{data}} sek
+RelativeTime_1;{{data}} min
+RelativeTime_2;{{data}} t
+RelativeTime_3;[data>1:{{data}} päeva][data<2:{{data}} päev]
+RelativeTime_4;[data>1:{{data}}nädalat][data<2:{{data}} nädal]
+RelativeTime.Separator; 
+RelativeTime.Wrapper.Past;{{time}} tagasi
+RelativeTime.Wrapper.Future;{{time}} pärast
+mapCell_tooFewSettlers;{{current}}/3 asunikku saadaval
+mapCell_heroNotIdle;Sinu väejuht pole saadaval.
+mapCell_cantAddOwn;Sa ei saa oma külasid lisada
+mapCell_alreadyInVillage;Sa oled juba selles külas
+serverSelection_rememberPassword;Jäta mu parool meelde
+serverSelection_savedWorldsTitle;Sinu mängumaailmad
+serverSelection_removeWorldTitle;Eemalda mängumaailm
+serverSelection_removeWorldQuestion;Kas sa tõesti tahad selle mängumaailma oma nimekirjast eemaldada?
+serverSelection_removeWorldDescription;NB! See ei kustuta sinu kontot selles mängumaailmas. Saad igal ajal tagasi tulla ja lisada mängumaailma koos oma kontoga oma mängumaailmade nimekirja.
+serverSelection_removeWorldButton;Eemalda nimekirjast
+serverSelection_addWorldText;+ Lisa mängumaailm
+buildingActivities_buildingAdditional_;{{amount}}
+buildingActivities_buildingAdditional_17;{{amount}} aktiivset kaubateed
+reports_filters_reset;Lähtesta filtrid
+palace_capitalSet;Pealinn määratud!
+palace_isCapital;See on sinu pealinn.
+messages_unread_count_full;{{COUNT}} lugemata sõnum[COUNT>1:it]
+statistics_alliance;Liidu statistika
+statistics_alliances_best_off;Parimad liidud (rünnak)
+statistics_alliances_best_def;Parimad liidud (kaitse)
+statistics_offensiveStrength;Sinu {{VILLAGEID|VillageLink}} ründetugevus selles serveris
+statistics_offensiveStrengthAlliance;Sinu {{VILLAGEID|VillageLink}} ründetugevus sinu liidus
+statistics_offensiveStrengthVillage;Selle küla ründetugevus:
+statistics_defensiveStrength;Sinu ründetugevus selles serveris
+statistics_defensiveStrengthAlliance;Sinu kaitsetugevus oma liidus
+statistics_defensiveStrengthVillage;Selle küla kaitsetugevus:
+statistics_defensiveStrengthVillageSum;Kõigi külade kaitsetugevus kokku:
+recent;Hiljutised
+appliedFilters;Sul on {{COUNT}} aktiivset filtrit.
+allgemein.gid99;Juhuslik
+rallyPoint_troopsOverview_10;Sõdurite üksikasjalik ülevaade
+rallyPoint_troopsOverview_returningFromAdventure;Seikluselt naaseb: 
+rallyPoint_troopsOverview_detailedView;Üksikasjalik vaade
+rallyPoint_troopsOverview_noMovements;- Liikvel ei ole ühtegi sõdurit-
+rallyPoint_troopsOverview_Target;Sihtmärk: {{Target|NamedCoordinates}}
+rallyPoint_troopsOverview_Origin;Päritolu: {{Target|NamedCoordinates}}
+hero_adventures_number;Nr. {{INT}}
+hero_status_regeneration;<b>Tervise taastumine:</b> {{VALUE}}% päevas
+hero_status_regeneration_details;{{HERO}}% päevas väejuhilt, {{EQUIPMENT}}% päevas varustuselt
+hero_status_experience;<b>Kogemus:</b> {{VALUE}}%
+hero_status_experience_bonus;Boonus: {{VALUE}}%
+search_results;Otsi tulemusi
+search_player_link;Mängija link
+search_select_player_link;Vali mängija
+search_recipient;Otsi saajat
+search_select_recipient;Vali saaja
+search_alliance_link;Liidu link
+search_select_alliance_link;Vali liit
+messages_fullView_title;Sõnum
+messages_recipient_placeholder;Vali saaja
+messages_title_placeholder;Sisesta sõnumi pealkiri
+messages_message_placeholder;Sisesta sõnum
+messages_ownAlliance;Oma liit
+messages_selectedRecipients;Valitud
+messages_ownAlliance_[ally];Kõik liidu liikmed
+messages_ownAlliance_[off];Ründava liidu liikmed
+messages_ownAlliance_[def];Kaitsva liidu liikmed
+messages_discard_title;Tühista sõnum
+messages_discard_text_header;Kas soovid selle sõnumi kustutada?
+messages_discard_text;Sõnumi sisu ei saa taastada.
+messages_confirm_deletion_title;Kustuta sõnumid
+messages_confirm_deletion_text_header;Kas oled kindel, et tahad kustutada [data>1:{{data}} sõnumit][data=1:{{data}} sõnumi]?
+messages_confirm_deletion_text;Kui sõnumid on kustutatud, pole neid enam võimalik taastada.
+messages_confirm_deletion_button;Kustuta [data>1:{{data}} sõnumit][data=1:{{data}} sõnum]
+icon_selection_title;Lisa ikoon
+icon_selection_button;Vali ikoon
+icon_selection_resourcesAndHero;Varud / väejuht
+icon_selection_natureAndNatars;Loodus ja natarid
+upgrading;Uuendamine!
+buildingActivities_buildingAdditional_46;Mitte ühtegi haavatud sõdurit
+playerDetails_ignorePlayerDescription;Mängijat eiratakse
+reports_share;Jaga raportit
+search_select_village_link;Vali küla
+search_village_link;Seo külaga
+search_report_link;Seo raportiga
+search_select_report_link;Vali raport
+messages_banned;Sõnumeid saab kirjutada ainult oma liidu teistele liikmetele.
+messages_template_title;Mallid
+messages_template_none;Mallid pole saadaval
+messages_template_edit_title;Muuda malli
+messages_template_delete_title;Kustuta mall
+messages_template_delete_question;Kas oled kindel, et tahad selle malli kustutada?
+messages_template_delete_desc;Kui see on kustutatud, ei saa seda enam taastada.
+messages_template_create;Loo uus mall
+messages_template_create_descr;Loo uus mall praeguse sõnumi põhjal:
+messages_template_created;Mall loodud!
+messages_template_deleted;Mall kustutatud!
+statistics_culturePoints_productionRank;Sinu kultuuripunktide tootlikkuse koht selles serveris
+statistics_culturePoints_productionRankAlliance;Sinu kultuuripunktide tootlikkuse koht liidus
+statistics_culturePoints_production;Kultuuripunktid (KP)
+statistics_resourceRank_production;Tootlikkus: {{VALUE|ShortenNumber}}
+statistics_resourceRank_productionRank;Sinu tootlikkuse koht selles serveris
+statistics_resourceRank_productionRankAlliance;Sinu tootlikkuse koht liidus
+statistics_resourceRank_bounty_lost;Kaotasid
+statistics_wonderOfTheWorld_header;Parimad Maailma Imed
+hospital_healing_costs;Sõdurite ravikulud
+hospital_healing_action;Ravi sõdureid
+hospital_healing_list;Kuva tervenemisnimekiri
+hospital_healing_list_title;Sõdurid tervenemas
+hospital_healing_started;Tervenemine algas
+bonusValueWithPercent;+{{value}}%
+village_with_isCapital;{{villageName}} (pealinn)
+maximumTextLengthError;{{CONTEXT}} võib sisaldada maksimaalselt {{AMOUNT}} tähemärki
+infoTab_genericEffectInBrackets;({{INT|Sign}})
+infoTab_effectPercentage;{{INT}}%
+infoTab_effectInBracketsPercentage;({{INT|Sign}}%)
+infoTab_trapperCurrently;Hetkel püünisemeistreid maksimaalselt:
+trapper_Build_Action;Ehita püüniseid
+trapper_ProductionCosts;Püüniste tootmiskulud
+trapper_TrapsInConstruction;Pooleliolevad püünised
+trapper_MaxBuilt;Maksimaalne arv püüniseid on juba ehitatud.
+truppen.tid119;Püünis
+truppen.tid119p;Püünised
+rallyPoint_troopsOverview_outgoingMission_scouting_1;Kaitserajatiste ja sõdurite luuramine 
+rallyPoint_troopsOverview_outgoingMission_scouting_0;Varude ja sõdurite luuramine 
+rallyPoint_troopsOverview_returningRegeneratedMission;Taastunud sõdurid naasevad 
+rallyPoint_troopsOverview_returningFleeingMission;Sõdurid naasevad metsapeidikust 
+rallyPoint_troopsOverview_foreignTroopsIn;Sõdurid paiknevad 
+rallyPoint_celebration_hint;Pruulikojas toimuv pidustus võib sõdureid mõjutada.
+building_not_built;Hoone pole ehitatud
+berichte.report_icon_24;Raport
+allBuildings_36;Kõikide püünisjahijate maksimaalne arv:
+cropFinder_min_oasis_crop_bonus;Min. Oaasi viljaboonus:
+cropFinder_select_minimum_crop_bonus;Vali minimaalne viljaboonus
+cropFinder_unoccupied;Hõivamata
+search_by_location;Otsi asukoha järgi
+search_by_player;Otsi mängija järgi
+search_village_from_player;Otsi küla mängijalt
+enter_player_name;Sisesta mängija nimi
+messages_template_newConditionsNotMet;Mallid peavad sisaldama pealkirja ja sõnumit.
+message_report_isAlready;Sõnumist on juba teavitatud kui {{REASON}}
+tutorial_begin;Alusta ringkäiku
+tutorial_title_0;Tervist, vapper kangelane! 
+tutorial_text_0;Tere tulemast mängu Travian: Legends ägedale lahinguväljale. Aitame sul end kiiresti valmis panna võimsate asulate valitsemiseks ja peatamatute vägede juhtimiseks.\n\nOled valmis?
+tutorial_title_1;Navigatsiooni ülevaade
+tutorial_text_1;Siit leiad kõike alates kaardist kuni tõhusa suhtluse ja kasulike infovahenditeni. Samuti on siia kenasti ära peidetud sinu igapäevased ülesanded, isiklikud sätted ja hulk muid funktsioone.
+tutorial_title_3;Sinu varud
+tutorial_text_3;Oma küla varud leiad siit. Varuriba puudutades näed rohkem üksikasju.
+tutorial_title_4;Sinu varud
+tutorial_text_4;Kui varuriba uuesti puudutad, kaovad need üksikasjad ära.
+tutorial_title_5;Sinu küla
+tutorial_text_5;Siit leiad kogu vajaliku info oma küla kohta. Siin on olemas kõik alates ülesannete loendist kuni sõdurite ülevaate ja ehitiste ootejärjekorrani. Hiljuti mobiilirakendusse lisandunud uus funktsioon, ehitustegevuste ülevaade, teeb kiire kokkuvõtte sinu hoonetes käimasolevatest arendustest.
+tutorial_title_7;Sinu küla
+tutorial_text_7;Kui ehitad kogunemispunkti, annab see sulle täieliku ülevaate kõigist käimasolevatest sõdurite liikumistest. Lisaks pakub see kiiret otseteed sinu kogunemispunkti juurde.
+tutorial_title_8;Külgmenüü
+tutorial_text_8;Külgmenüü avamiseks klikka nooltel või libista sõrmega. Seda saab teha igal ajal.
+tutorial_title_9;Külade nimekiri
+tutorial_text_9;Külade vahel saab igal ajal kiiresti liikuda, kui libistad külgpaneeli lahti. Samuti leiad sealt küla statistika.\n\nJa sellega ringkäik lõpeb. Mida sa veel ootad? Sukeldu Travian: Legendsi maailma, avasta seda ning muuda see oma strateegiliseks mänguväljakuks.\n\nEdu!
+tutorial_finish;Lõpeta ringkäik
+filters_report_not_found;Raportit pole olemas
+filters_player_not_found;Mängijat pole olemas
+filters_alliance_not_found;Liitu pole olemas
+filters_village_not_found;Küla pole olemas
+settings_game;See mängumaailm
+language_app_selection;Vali keel:
+settings_sitter;Konto asendaja {{VALUE}}:
+settings_sitterTab_yourSitters;Sinu konto asendajad
+settings_sitterTab_SittingFor;Asendad
+search_player_addSitter;Lisa asendaja
+search_select_player_addSitter;Lisa asendaja
+search_player_addSitter_additionalEmptyResultInfo;Mängijat ei leitud\nAinult mängijad sinu enda liidust / liitlusest saavad olla avatari asendajad.
+settings_sitter_sitterAdded;Asendaja lisatud!
+settings_sitter_sitterRemoved;Asendaja eemaldatud!
+settings_sitter_sitterPermissionChangesSaved;Lubade muudatused salvestatud!
+settings_sitter_confirm_remove_text_header;Kas soovid {{PlayerName}} oma asendajate hulgast eemaldada?
+settings_sittersFor;Oled asendaja avatari(de)le
+settings_sittersFor_info;Sind on lisatud asendajaks järgmistele avataridele. Saad end asendaja rollist eemaldada, kui vajutad punasele X-ile.
+settings_sittersFor_none;Sa ei ole hetkel ühegi teise avatari asendaja.
+settings_sitterFor;Asendad {{VALUE}}:
+settings_sitterFor_sittingRemoved;Lõpetasid asendamise {{PlayerName}}jaoks!
+settings_sitterFor_confirm_remove_header;Kas tahad asendamise lõpetada 
+settings_sitterFor_confirm_remove_header_questionmark;?
+settings_sitterFor_confirm_remove_info;Seda toimingut ei saa tagasi võtta. Ainult teised mängijad saavad sind oma asendajaks lisada.
+brewery_celebration_attackStrength;({{INT}}% ründetugevusest)
+brewery_celebration_hint;Pidustus mõjutab juba marssivaid sõdureid
+settings_game_newLanguage;Keel muudeti {{language}}-ks.
+wonderOfTheWorld_name;Maailma Ime nimi:
+combatSimulator_title;Simuleeri - {{role|TranslateSuffixFor|combatSimulator_as}}
+combatSimulator_cataTargetLevel;<b>{{index}} Katapulti </b>sihtmärgi tase
+combatSimulator_troopLevel;Sõdurite sepikoja tase:
+combatSimulator_asAttacker;Ründaja roll
+combatSimulator_asDefender;Kaitsja roll
+combatSimulator_result;Simuleeri tulemusi
+combatSimulator_addReinforcement;Lisa abivägi
+valueWithModifier;{{value|Round|2}}x
+valuePlusInBracketsWithPercent;(+{{change}}%)
+none;Ei ole
+marketplace_traderoute_repeatEveryHour;Korda iga: (tunni) järel
+block_sitter_warning;Asendajana on see keelatud.
+settings_openConsentWindow;Privaatsussätted
+combatSimulator_adjustHeroStats;Muuda väejuhi omadusi
+combatSimulator_eagleEyeTitle;Vali kotkasilma boonus
+combatSimulator_architectSecretTitle;Vali arhitekti saladuse boonus
+combatSimulator_metallurgyBonus;Vali metallurgia boonus
+combatSimulator_rightHand;Vali parema käe ese
+combatSimulator_leftHand;Vali vasaku käe ese
+combatSimulator_bodyItem;Vali kehal kantav ese
+combatSimulator_inventoryItem;Vali varustusest ese
+combatSimulator_selectBuildingLevel_35;Vali pruulikoja tase
+combatSimulator_selectBuildingLevel_26;Vali palee tase
+combatSimulator_selectBuildingLevel_34;Vali kivitöökoja tase
+combatSimulator_selectBuildingLevel_31;Vali müüri tase
+combatSimulator_selectBuildingLevel_32;Vali müüri tase
+combatSimulator_selectBuildingLevel_33;Vali müüri tase
+combatSimulator_selectBuildingLevel_43;Vali müüri tase
+combatSimulator_selectBuildingLevel_42;Vali müüri tase
+combatSimulator_selectTargetLevel;Vali katapuldi sihtmärgi tase
+combatSimulator_selectTroopLevel;Vali sõdurite tase
+survey_title;Travian: Legendsi küsitlus
+gdpr_title;Nõusolek isikuandmete töötlemiseks
+gdpr_description;Sinu nõusolekul kogume teatud infot sinu seadme, IP-aadressi, kasutuse ja reklaamiidentifikaatorite kohta. See aitab meil sulle näidata asjakohasemaid reklaame ja parandab sinu üldist kasutuskogemust.
+gdpr_basic_functions;Vajalik rakenduse põhifunktsioonide jaoks.
+gdpr_advertisement;Isikuandmete kasutamine reklaami eesmärgil.
+gdpr_analytics;Isikuandmete kasutamine analüüsi eesmärgil.
+gdpr_acceptAll;Nõustu kõigiga
+gdpr_save_and_exit;Salvesta + Välju
+gdpr_rejectAll;Keeldu kõigist
+gdpr_privacy_policy;Privaatsuspoliitika
+gdpr_terms_and_conditions;Mõisted ja tingimused
+plus.plus.browserOnly;(ainult brauseris)
+hero_inventory_already_equipped;Sama ese on juba varustuses.
+survey_button_title;Tagasiside küsitlus
+survey_button_description;Osale selles lühikeses küsitluses, et aidata meil Travian: Legendsi mobiilirakendust paremaks muuta.
+goldShop_extend;Pikenda
+goldShop_remaining;Alles jäänud:
+goldShop_advantage_activated;Aktiveeritud
+search_select_recipient_removeAll;Eemalda kõik
+messages_messageTopic_noTopic;Teemat pole / vaikimisi
+messages_messageTopic_resources;Varud
+messages_messageTopic_defenses;Kaitsemeetmed
+messages_messageTopic_attacks;Rünnakud
+messages_messageTopic_strategies;Strateegiad
+messages_messageTopic_information;Üldine info
+messages_messageTopic_important;Oluline info
+messages_messageTopic_selectionTitle;Vali sõnumi teema
+farmlist_confirm_deletion_header;Kas oled kindel, et soovid valitud rüüstenimekirja kustutada?
+farmlist_confirm_deletion_text;Seda valikut ei saa tühistada.
+farmlist_target_confirm_deletion_header;Kas oled kindel, et tahad kustutada [data>1:need {{data}} sihtmärgid][data=1:selle sihtmärgi]?
+upgrade_queue_cantConstructImmediately;Seda hoonet ei saa kohe ehitada
+language_cs-CZ;tšehhi
+language_es-ES;hispaania
+language_pl-PL;poola
+language_pt-PT;portugali
+language_tr-TR;türgi
+language_it-IT;itaalia
+playerDetails_victorPoints_summary;{{TOTAL}} | {{PERDAY}}/päevas
+settings_selectFormat;Vali vorming:
+settings_selectFormat_dialog_title;Vali kuupäeva vorming:
+settings_game_newDateFormat;Kuupäeva vorming muudetud vorminguks {{dateFormat}}.
+help_getHelp;Abi saamine
+help_getHelpDescription;Kui vajad abi või soovid probleemist teatada, võta ühendust mängusisese toega siin.
+help_learnAboutGame;Saa mängu kohta rohkem teada
+help_learnAboutGameDescription;Kõik, mida pead mängu ja selle toimimise kohta teadma, leiad siit.
+help_gameRules;Õpi mängureegleid
+help_gameRulesDescription;Siit leiad praegused mängureeglid.
+help_joinDiscord;Liitu Discordiga
+help_joinDiscordDescription;Anna tagasisidet meie spetsiaalses mobiilses Discordi serveris.
+PLAYERARG;{{PLAYER}}
+referAFriend_friendJoinedDescription;Selleks et saada sõbra mängu kutsumise eest kulda, peab sõber asutama oma <b>teise küla</b>. Aita tal seda eesmärki saavutada! Hoia tema arengul silma peal allolevast soovituste ülevaatest.
+referAFriend_rewardAddedVillage2Title_PLAYERARG;Sinu sõber {{PLAYER}} on asutanud oma teise küla
+referAFriend_rewardAddedVillage3Title_PLAYERARG;Sinu sõber {{PLAYER}} on asutanud oma kolmanda küla
+referAFriend_rewardAddedVillage4Title_PLAYERARG;Sinu sõber {{PLAYER}} on asutanud oma neljanda küla
+referAFriend_rewardAddedVillage5Title_PLAYERARG;Sinu sõber {{PLAYER}} on asutanud oma viienda küla
+referAFriend_rewardAddedVillage6Title_PLAYERARG;Sinu sõber {{PLAYER}} on asutanud oma kuuenda küla
+referAFriend_rewardAddedVillage7Title_PLAYERARG;Sinu sõber {{PLAYER}} on asutanud oma seitsmenda küla
+referAFriend_rewardAddedVillage8Title_PLAYERARG;Sinu sõber {{PLAYER}} on asutanud oma kaheksanda küla
+referAFriend_rewardAddedVillage9Title_PLAYERARG;Sinu sõber {{PLAYER}} on asutanud oma üheksanda küla
+referAFriend_rewardAddedVillage10Title_PLAYERARG;Sinu sõber {{PLAYER}} on asutanud oma kümnenda küla
+sysmsg_truce_learnMore;Saa vaherahu kohta rohkem teada
+worldEnded_ww_playerWon_topAlliance;Kui kell lõi {{WORLD_END_TIME|DateTime}}, ladusid töömehed {{WW_VILLAGE|VillageLink}} külas viimase kivi, et panna punkt ühele ajaloo kõige tähtsamale ehitisele.<br> Koos liiduga {{WW_ALLIANCE|AllianceLink}} oli {{WW_PLAYER|PlayerLink}} esimene, kes sai valmis Maailma Ime. Pärast loendamatute varude kasutamist ning Maailma Ime kaitsmist sadade tuhandete vaprate kaitsjatega, pälvis {{WW_PLAYER|PlayerLink}} "Selle Ajastu Võitja" tiitli.
+worldEnded_as2022_topAlliances;Palju õnne mängijale {{ALLIANCE_TOP_1|AllianceLink}}, kes sai Euroopa liidriks {{VICTORY_POINTS_TOP_1}} võidupunktiga! {{ALLIANCE_TOP_2|AllianceLink}} sõdis vapralt, et saavutada teine koht, sellal kui {{ALLIANCE_TOP_3|AllianceLink}} oli nende kannul kolmas.
+worldEnded_playerRanks_population;{{PLAYER_POPULATION_TOP_1|PlayerLink}}valitses kõige suuremat impeeriumi ning talle järgnesid {{PLAYER_POPULATION_TOP_2|PlayerLink}} ja {{PLAYER_POPULATION_TOP_3|PlayerLink}}
+worldEnded_playerRanks_offender;{{PLAYER_OFFENDER_TOP_1|PlayerLink}} alistas rohkem vaenlasi kui keegi teine ja oli kõige kardetum väejuht.
+worldEnded_playerRanks_defender;{{PLAYER_DEFENDER_TOP_1|PlayerLink}} oli kuulsaim kaitsja, alistades vaenlasi juba küla väravates, nii et maapind nende külade ümber värvus verest punaseks.
+rallyPoint_startWithValue;Algus ({{value}})
+rallyPoint_farmList_raidsStarted;{{INT}} käimasolevaid rüüsteid
+rallyPoint_farmList_CantAddToAbandonList;Hüljatud rüüstenimekirja ei saa sihtmärke lisada.
+rallyPoint_farmList_CantActivateInToAbandonList;Hüljatud rüüstenimekirjas ei saa sihtmärke aktiveerida.
+rallyPoint_farmList_CantDuplicateInToAbandonList;Hüljatud rüüstenimekirjas ei saa sihtmärke
+rallyPoint_farmList_DuplicateRaids;Kopeeri sihtmärk[raidsAmount>1:id] 
+rallyPoint_farmList_SlotsDuplicated;Sihtmärk[raidsAmount>1:id] kopeeritud!
+rallyPoint_farmList_pleaseSelectTheList;Vali nimekiri, kuhu soovid sihtmärgi lisada.
+rallyPoint_farmList_farmlistFull;Rüüstenimekiri on täis. Vali teine rüüstenimekiri või loo uus.
+rallyPoint_farmList_targetName;Sihtmärgi nimi
+rallyPoint_farmList_differentTroopsWarning;Sõdurite arv ei muutu, kui sa allapoole uut numbrit ei sisesta.
+rallyPoint_farmList_noobProtectionWarning;Algajakaitse all olles ei saa rüüstata teisi mängijaid, aga saad rüüstata hõivamata oaase ja natarite külasid.
+rallyPoint_farmList_noFarmLists;Rüüstenimekirja pole loodud
+rallyPoint_farmList_CreateNewFarmList;Loo rüüstenimekiri
+rallyPoint_farmList_currentAmount;Rüüstenimekirjad: <b>{{amount}}</b>/{{max}}
+rallyPoint_farmList_differentTribe;Küla elanikud erinevad praeguse lähteküla elanikest. Kontrolli sõdalaste väärtusi
+rallyPoint_farmList_overrideTarget;Asenda sihtmärk
+rallyPoint_farmList_selectedActivated;Valitud sihtmärgid määrati aktiivseks.
+rallyPoint_farmList_selectedDeactivate;Valitud sihtmärgid määrati mitteaktiivseks.
+rallyPoint_farmList_LastRaid;<b>Viimati alustatud:</b> <nobr>{{lastStarted|DateTime}}</nobr>
+mapCell_editTargetListAmount;<nobr>Muuda sihtmärki</nobr> <nobr>(Nimekirjad: {{INT}})</nobr>
+goldShop_shopDisabled;Selles mängumaailmas ei saa kullapoodi kasutada.
+infobox_accountLockGameEnd;Mäng on lõppenud!
+applySorting;Rakenda sorteerimist
+truppen.tid931;Püünis
+truppen.tid931p;Püünised
+mainMenu_switchBackFromAvatar;{{iconName|Sprite}} Mine tagasi {{playerName}}
+pending;(Ootel)
+featureNotAvailableInVacationMode;See funktsioon pole puhkeperioodil saadaval.
+notAllowed;See on keelatud.
+settings_avatarDeletionInfo;Pärast kustutamisprotsessi alustamist kulub sinu avatari lõplikuks kustutamiseks <b>kolm päeva</b>.\nAvatariga, mida kustutakse, ei pääse enam ligi oksjonitele ega vahetuskontorile.\nSaad kustutamisprotsessi igal ajal tühistada siin.
+settings_avatarDeletionCountDown;Avatari kustumiseni jääb
+deleteAvatar_confirmation_header;Kas sa tahad oma avatari kustutada?
+cams_info_subHeader;Üks sisselogimine kõigisse sinu mängumaailmadesse
+cams_info_text;Loo Legendsi Lobby konto, et lihtsustada sisselogimist ja tagada omale sujuva juurdepääsu kõigile mängumaailmadele ühe sisselogimisega.
+cams_info_lessInfo;Vähem infot
+cams_info_Question_WhatIsLegendsLobbyAccount;Mis on Legendsi Lobby konto?
+cams_info_Answer_WhatIsLegendsLobbyAccount;Lobby kontot kasutades ei pea sa enam kunagi uut mängumaailma registreerima. Logid lihtsalt sisse ja pääsed ligi oma aktiivsetele mängumaailmadele või alustad uue mängumaailma Lobbys kas brauseris või mobiilirakenduses.
+cams_info_Question_WhatAreAvatars;Mis on avatarid?
+cams_info_Answer_WhatAreAvatars;Lobby konto puhul nimetatakse sinu profiili individuaalses mängumaailmas avatariks. Sul on üks Lobby konto, millel võib olla mitu avatari, üks iga mängumaailma jaoks.
+cams_info_Question_WhatsWithCurrentGameworlds;Mis juhtub minu praeguste mängumaailmadega?
+cams_info_Answer_WhatsWithCurrentGameworlds;Kõik aktiivsed mängumaailmad, mis kasutavad sama meiliaadressi kui sinu Lobby konto, seotakse omavahel ja neile pääseb ligi Lobby kaudu. Enne Lobby konto loomist saad siduda oma aktiivsete mängumaailmade avatarid õige meiliaadressiga.
+cams_info_Question_WhatsWithSitters;Kas ma saan ikka asendajaid kasutada?
+cams_info_Answer_WhatsWithSitters;Jah, konto asendajaid saab määrata mängumaailma seadetes nagu tavaliselt. Juurdepääs avatarile, mille asendajaks sind on määratud, avaneb otse mängumaailmas.
+cams_info_Question_WhatsWithDuals;Kas ma saan ikka veel mängida dualina koos teiste mängijatega?
+cams_info_Answer_WhatsWithDuals;Duali määramiseks mängumaailma tuleb Lobbys sisestada selle mängija Lobby konto nimi. See tähendab, et ka dualina mängija vajab kõigepealt Lobby kontot ja pääseb avatarile ligi pärast kutse vastuvõtmist Lobbys. Palun ära jaga oma Lobby konto salasõna kellegagi.
+cams_info_Question_WhatsWithoutLobbyAccount;Kas ma saan mängida ilma Legendsi Lobby kontot loomata?
+cams_info_Answer_WhatsWithoutLobbyAccount;Saad oma praegustesse mängumaailmadesse endiselt otse sisse logida vastava lingi kaudu. Kui aga soovid alustada uut mängumaailma või kasutada mobiilirakendust, tuleb luua Lobby konto.
+cams_playerDecision_register_info;Uus Lobby konto võimaldab ühendada oma praeguse ja tulevase mängumaailma ühe sisselogimisega.
+cams_playerDecision_login_info;Kas sul on juba Lobby konto?\n\nLogi sisse ja jätka oma seiklust.
+cams_playerDecision_register_header;Loo konto
+cams_playerDecision_register_create_new_account;Loo Lobby konto
+cams_playerDecision_register_login;Logi sisse Lobby kontole
+cams_playerDecision_extra_info;Travian: Legendsi mängimiseks tuleb luua Lobby konto.
+cams_register_header;Loo Legendsi Lobby konto
+cams_register_email_label;Sisesta oma meiliaadress:
+cams_register_email_address;Registreeri meiliaadress
+cams_register_email_address_missing;Palun sisesta oma meiliaadress.
+cams_register_email_address_not_valid;Palun sisesta kehtiv meiliaadress. nt mymail@provider.com
+cams_register_email_address_already_exists;Sinu meiliaadress on juba Legendsi Lobby kontoga seotud.
+cams_register_redirecting_to_login;Ümbersuunamine sisselogimise juurde {{INT}}...
+cams_register_hintMessage_same_email_address;Kasuta sama meiliaadressi, mis sinu olemasolevate mängumaailma avataridel, et neid automaatselt oma Lobby kontoga siduda.
+cams_register_receive newsletter;Soovin saada uudiskirja.
+cams_register_already_have_an_account;Sul on juba konto?
+cams_register_log_in_now;Logi kohe sisse
+cams_acceptTOS;Klõpsates nupul „Registreeri meiliaadress”, nõustud <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">üldise äritegevuse tingimustega</link></style> ja kinnitad, et oled lugenud <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">teavet taganemisõiguse kohta</link></style> ja <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">privaatsuspoliitikat</link></style>.
+cams_activation_header;Aktiveeri Legendsi Lobby konto
+cams_activation_info;Saatsime sulle aktiveerimislingi aadressile <b>{{emailAdress}}</b><br>Jätkamiseks järgi meilisõnumis olevaid juhiseid.
+cams_activation_enter_code;Sisesta aktiveerimiskood:
+cams_activation_code_example;nt 123456
+cams_activation_entered_code;{{INT}}/6 numbrit
+cams_activation_cta_activate_account;Aktiveeri konto
+cams_activation_email_lost;Ei saanud meilisõnumit?
+cams_activation_email_resend;Saada sõnum uuesti
+cams_activation_email_wrong;Vale meiliaadress?
+cams_activation_email_change;Muuda aadressi
+cams_activation_code_missing;Palun sisesta aktiveerimiskood, mille said meiliga.
+cams_activation_code_too_short;Aktiveerimiskood on liiga lühike. Palun sisesta kõik kuus numbrit.
+cams_activation_code_format_incorrect;Aktiveerimiskood on vale. Palun veendu, et kood koosneb ainult kuuest numbrist.
+cams_activation_code_incorrect;Aktiveerimiskood on vale. Palun sisesta aktiveerimiskood, mille said meilisõnumiga.
+cams_activation_code_expired;Aktiveerimiskood on aegunud.
+cams_activation_code_start_again;Alusta uuesti
+cams_login_header;Logi sisse Lobby kontole
+cams_login_enter_email;Sisesta meiliaadress või kasutajatunnus
+cams_login_enter_password;Sisesta salasõna:
+cams_login_hintMessage_email_already_connected;Sisestatud meiliaadress on juba Lobby kontoga seotud. Logi sisse või <style="SimpleLink"><link="BackToRegistrationLink">mine tagasi registreerimise juurde</link></style>.
+cams_login_hintMessage_passwordUpdated;Sinu salasõna on edukalt uuendatud
+cams_forgot_password;Unustasid salasõna?
+cams_recover_password;Taasta salasõna
+cams_login_no_account_yet;Pole veel kontot?
+cams_login_create_account;Loo konto
+cams_loginMask_accountNameRequired;Sisesta meiliaadress või kasutajatunnus.
+cams_loginMask_passwordRequired;Sisesta salasõna.
+cams_loginMask_passwordAndUsernameAreWrong;Vale meiliaadress,  kasutajatunnus või salasõna.
+cams_loginMask_emailOrAccountName_placeholder;Meiliaadress / kasutajatunnus
+cams_loginMask_temporaryInfobox;UUS: Oma mängumaailmadele ligipääsemiseks pead looma Lobby konto.\n\nKui sa pole veel seda teinud, <style="SimpleLink"><link="CreateAccountLink">loo Lobby konto</link></style>.
+cams_setPassword_header;Määra salasõna
+cams_setPassword_info;Loo konto jaoks salasõna, mis on vähemalt kaheksa tähemärki pikk.
+cams_setPassword_enter_password;Vali salasõna:
+cams_setPassword_strength_label;Salasõna tugevus
+cams_setPassword_strength_missing;Sisesta salasõna, et kontrollida selle tugevust.
+cams_setPassword_strength_1;väga nõrk
+cams_setPassword_strength_2;üsna nõrk
+cams_setPassword_strength_3and4;mõõdukas
+cams_setPassword_strength_5;üsna tugev
+cams_setPassword_strength_6;väga tugev
+cams_setPassword_strength_PasswordTooShort;Mida pikem, seda parem (16+ tähemärki)
+cams_setPassword_strength_PasswordGoodLength;Salasõna on hea pikkusega
+cams_setPassword_strength_OneType;Kasutatud ainult ühte tüüpi märke
+cams_setPassword_strength_TwoTypes;Kasutatud kahte tüüpi märke
+cams_setPassword_strength_ThreeTypes;Kasutatud kolme tüüpi märke
+cams_setPassword_strength_NoNumbers;Ei ole kasutatud numbreid
+cams_setPassword_strength_NoLetters;Ei ole kasutatud tähti
+cams_setPassword_strength_NoSpecialCharacters;Ei ole kasutatud erimärke
+cams_setPassword_strength_NoUpperAndLowerCase;Suur- ja väiketähed pole läbisegi
+cams_setPassword_strength_UpperAndLowerCase;Kasutatud suur- ja väiketähti
+cams_activation_cta_set_password;Määra salasõna
+cams_activation_password_length;8–64 tähemärki
+cams_resetPassword_header;Määra uus salasõna
+cams_resetPassword_info;Loo Lobby konto jaoks salasõna, mis on vähemalt kaheksa tähemärki pikk.
+cams_setUsername_header;Vali oma Legendsi Lobby kontole nimi
+cams_setUsername_info;Vali kasutajatunnus ja lühend, et luua omale ainulaadne Lobby konto.
+cams_setUsername_username_label;Vali kasutajatunnus
+cams_setUsername_tagline_label;Vali lühend
+cams_setUsername_tagline_example;nt TAG12
+cams_setUsername_tagline;Lühend:
+cams_setUsername_condition_onlyLettersAndNumbers;Ainult tähed ja numbrid
+cams_setUsername_username_condition_Length;3–15 tähemärki
+cams_setUsername_tagline_condition_Length;2–5 tähemärki
+cams_setUsername_hint;Sinu kasutajatunnuse ja lühendi kombinatsioon moodustavad sinu ainulaadse Lobby konto nime. Kui kombinatsioon on veel saadaval, saad valida just sellise nime, mis sulle meeldib.\n\nSee ei mõjuta sinu mängumaailma nime.
+cams_setUsername_cta_createAccount;Loo konto
+cams_setUsername_username_missing;Palun sisesta kasutajatunnus ja lühend
+cams_setUsername_accountName_preview;Kontonime eelvaade:
+cams_setUsernameConfirmPopup_header;Legendsi Lobby konto loodud!
+cams_setUsernameConfirmPopup_info;Sinu Legendsi Lobby konto, mille kasutajatunnus on <b>{{playerName}}</b>, on edukalt loodud.
+cams_setUsernameConfirmPopup_GameworldAndAvatar_header;Sinu mängumaailmad ja avatarid
+cams_setUsernameConfirmPopup_GameworldAndAvatar_info;Ühendasime sinu uue Lobby kontoga järgmised olemasolevad mängumaailma avatarid, millel on sama meiliaadress.
+cams_avatar_name;Avatari nimi
+cams_looby_welcomeMessage;Tere tulemast!\n<b>{{playerName}}</b>
+cams_looby_header;Sinu mängumaailmad
+cams_looby_noGameWorlds;Sul ei ole hetkel üheski mängumaailmas aktiivset avatari. Liitu uue mängumaailmaga ja hakka mängima.
+cams_looby_joinNewGameworld;Liitu uue mängumaailmaga
+cams_looby_playNow;HAKKA MÄNGIMA
+cams_looby_gameworldsLinked;Sinu kontoga seotud mängumaailmad
+cams_looby_invitePenging;[data>1:{{data}} kutset][data=1:kutse] ootel
+cams_looby_localGameWorld;KOHALIK MÄNGUMAAILM
+cams_looby_avatarInDeletion;Kustutamine
+cams_removeDualAccount_header;Eemalda dualina mängija
+cams_removeDualAccount_info;Kas soovid eemaldada <b>{{lobbyAccountName}}</b> oma avatari <b>{{avatarName}}</b> dualite hulgast? \n\n<b>{{lobbyAccountName}}</b> ei pääse siis enam su avatarile ligi.
+cams_removeDualAccount_removeDual;Eemalda dualina mängija
+cams_addDualPlayer_info;Sisesta mängija Lobby konto nimi
+cams_addDualPlayer_placeholder;kasutajatunnus#silt
+cams_addDualPlayer_addPlayer;[data>1:Lisa mängijat][data=1:Lisa mängija][data=0:Lisa mängija]
+search_addDualPlayeradditionalEmptyResultInfo;Mängijat ei leitud või on ta juba dualiks kutsutud
+cams_dualInventation_header;Duali kutse
+cams_dualInventation_invitations;Kutsed:
+cams_dualInventation_info;Kui võtad selle kutse vastu, saad Lobby kontoga seda avatari kasutada.
+cams_dualInventation_moreInfo;Iga mängumaailma kohta saad vastu võtta ainult ühe duali kutse.
+cams_dualInventation_invite;<b>{{LobbyAccountName}}</b> kutsus sind mängima <b>{{avatarName}}</b>
+cams_dualInventation_AcceptInvite;Võta kutse vastu
+cams_acceptDualInvitation_header;Võta duali kutse vastu
+cams_acceptDualInvitation_info;Kas soovid vastu võtta duali kutse kasutajalt <b>{{lobbyAccountName}}</b>, et mängida <b>{{avatarName}}</b> mängu <b>{{gameworldName}}</b>?
+cams_acceptDualInvitation_moreInfo;Sul on ühe mängumaailma kohta mitu duali kutset ootel, kuid saad iga mängumaailma kohta vastu võtta ainult ühe kutse.
+cams_acceptDualInvitation_avatarInDeletion;Meie dualina mängimise reeglid lubavad ainult ühte aktiivset avatari mängumaailmas. \nKui võtad duali kutse vastu, kaotad ligipääsu oma avatarile {{avatarName}}, mis on kustumas. \nKui kustutamine on algatatud, ei saa seda enam tagasi võtta.
+cams_dualSettings_header;Duali seaded
+cams_dualSettings_info;Selle avatari dualina mängimise saab lõpetada igal ajal.
+cams_dualSettings_leaveDualPlay;Lõpeta dualina mängimine
+cams_confirmLeaveDualPlay_info;Kas soovid lõpetada dualina mängimise <b>{{avatarName}}</b> jaoks <b>{{gameworldName}}</b> ?\n\nPärast dualina mängimise lõpetamist saad selle mängumaailma jaoks luua uue avatari või mängida dualina uue avatari jaoks.
+cams_recoverPassword_header;Taasta salasõna
+cams_recoverPassword_goBackToLogin;Tagasi sisselogimise juurde
+cams_recoverPassword_info;Sisesta oma Lobby kontoga seotud meiliaadress. Saadame sulle juhised salasõna lähtestamiseks.
+cams_recoverPasswordEmailSent_header;Meilisõnum saadetud
+cams_recoverPasswordEmailSent_info;Kui <b>{{emailAdress}}</b> meiliaadressiga on loodud Lobby konto, peaksid olema saanud juhised salasõna lähtestamiseks oma meiliaadressile.\n\nKui oled salasõna lähtestanud, saad uuesti sisse logida.
+cams_recoverPasswordEmailSent_goBackToLogin;Tagasi sisselogimise juurde
+cams_editDualAccounts_header;Dualid
+cams_editDualAccounts_gameworld;Mängumaailm: {{gameworldName}}
+cams_editDualAccounts_avatar;Avatar: {{avatarName}}
+cams_editDualAccounts_avatarOwner;Avatari omanik:
+cams_editDualAccounts_noDualsAdded;- Sellele avatarile ei ole lisatud dualina mängijaid -
+cams_editDualAccounts_info;Dualina mängijal on sellele avatarile <b>täielik juurdepääs</b> ja ta saab mängus teha kõiki tegevusi, sealhulgas kulutada ja osta kulda.\n\nDualina mängijad pääsevad avatarile ligi, kui logivad sisse oma Lobby kontoga, ja nad ei saa teisi dualina mängijaid juurde kutsuda.
+cams_editDualAccounts_warningHint;Ära jaga oma Lobby konto sisselogimisandmeid teiste mängijatega, et ennetada juurdepääsu sinu teiste mängumaailma avataridele ja konto andmetele.
+cams_editDualAccounts_addDualPlayer;Lisa dualina mängija
+cams_editDualAccounts_avatarInDeletion;Sinu {{avatarName}} avatar kustutatakse sellest mängumaailmast. Seetõttu ei saa sa duali kutset saata.
+cams_settings_title;Seaded
+cams_settings_changePassword_information;Parooli muutmiseks saadame meilisõnumi sinu konto meiliaadressile.
+cams_settings_changePassword_sendEmail;Saada meilisõnum
+cams_settings_changePassword_emailSent;Saatsime sulle parooli muutmiseks meilisõnumi.
+cams_settings_accountDeletion_title;Lobby konto kustutamine
+cams_settings_accountDeletion_info;Kustuta oma Legendsi Lobby konto, kaasa arvatud kõik selle konto mängumaailmad ja avatarid.
+cams_settings_accountDeletion_action;Kustuta Lobby konto
+cams_settings_accountDeletion_warning;NB! Seda ei saa tagasi võtta.
+cams_settings_accountDeletion_warning_content;Sinu Lobby konto kustutatakse pärast 72-tunnist ooteaega. Seda ei saa tagasi võtta ja see mõjutab kõiki sinu avatare. \n\nKontot saab kustutada siis, kui kõik avatarid on kustutatud.
+cams_settings_accountDeletion_requirementsInformation;Konto kustutamiseks peavad kõik avatarid olema kustutamisel või juba kustutatud.
+cams_settings_accountDeletion_information_warning;See toiming paneb sinu Lobby konto kustuma. Palun kinnita, kas sa oled teadlik, et sinu konto ja kõik sellega seotud avatarid ja andmed kustutatakse jäädavalt. Selleks kirjuta sisendiväljale „kustuta“ või „delete“.
+cams_settings_accountDeletion_information_error;Kontot ei saa kustutada, kui avatari kustutamine pole seadistatud.\nPalun logi sisse märgitud mängumaailmadesse ja kustuta oma avatar.
+cams_settings_accountDeletion_noAvatarsFound;Aktiivseid mängumaailmu/avatare ei leitud.\nKõik vajalik on tehtud!
+cams_settings_accountDeletion_understandmentConfirmation;Ma saan aru
+cams_settings_accountInDeletion_title;Konto on kustumas
+cams_settings_accountInDeletion_info;Sinu Lobby konto <b>{{NAME}}</b> kustutatakse jäädavalt <b>{{TIMESTAMP|Countdown}}</b>aja jooksul.
+cams_settings_accountInDeletion_action;Katkesta kustutamine
+cams_mainMenu_dataConsent;Andmetega nõustumine
+gameworld_gameworld;Mängumaailm
+infobox.productionboost;{{RES}}{{TIME_COUNTER}}
+infobox_notesCount;{{COUNT}} märkus[COUNT>1:t]
+auction_placeBid;Tee pakkumine
+auction_auctionsAmount;{{COUNT}} oksjonit
+auction_bidsRefreshed;Pakkumised uuendatud!
+auction_currentSilver;Praegune hõbe:  {{iconName|Sprite}} {{currentSilver}}
+auction_availableAmount;Saadaval olev kogus:
+auction_toSellAmount;Müügikogus:
+auction_selectAmountToSellHeader;Vali müüdav kogus
+auction_soldHorseForSilver;Hobune müüdud {{amount}} hõbeda eest.
+auction_currentCurrency;Praegune:
+auction_newCurrencyValues;Uus:
+auction_exchangeExplanationGoldToSilverTitle;Saad oksjonimajas vahetada kulda hõbeda vastu ja osta väejuhi esemeid.
+auction_exchangeExplanationGoldToSilverMore;Sisesta vahetatava kulla kogus:
+auction_exchangeExplanationSilverToGoldTitle;Oksjonimajas müüdud väejuhi esemete eest saadud hõbeda saab vahetada kullaks.
+auction_exchangeExplanationSilverToGoldMore;Sisesta vahetatava hõbeda kogus:
+auction_countAndName;{{AMOUNT}}×{{ITEM_NAME}}
+auction_deleteAll;Kustuta kõik oksjonid
+auction_confirm_deletion_title;Kustuta oksjon [data>1:{{data}} entries][data=1:entry]
+auction_confirm_deletion_button;Kustuta [data>1:entries][data=1:entry]
+auction_confirm_deletion_text_header;Oled kindel, et soovid kustutada [data>1:{{data}} auction entries][data=1:this auction entry]?
+auction_confirm_deletion_text;Kui oled kande kustutanud, kaob see lõplikult. Seda ei saa taastada.
+cams_looby_noMatchingGameworlds;Sinu valiku jaoks ei ole sobivaid mängumaailmu.
+serverSelection_5;Dev
+serverSelection_header;Vali mängumaailma filter
+serverSelection_filter_gameworldSpeed;Mängumaailma kiirus
+serverSelection_gameworldSpeed;x{{INT}} kiirus
+serverSelection_filer_gameworldLifetime;Mängumaailma kestus
+serverSelection_gameworldLifetime;{{INT}}-{{INT2}} päeva
+serverSelection_gameworldLifetime_XorMore;{{INT}} või rohkem päeva
+filters_applyButton;Rakenda [COUNT<2:filter][COUNT>1:{{COUNT}} filtrit]
+filters_reset;Lähtesta [COUNT<2:filter][COUNT>1:filtrit]
+cams_avatarCreation_cancel_title;Tühista avatari loomine
+cams_avatarCreation_cancel_reconfirmationText;Kas oled kindel, et soovid oma avatari loomise saidil {{gameworldName}}tühistada?
+cams_avatarCreation_cancel_explanation;Sa kaotad kõik oma edusammud selles mängumaailmas, sealhulgas rahvuse valiku, kaardi asukoha ja avatari nime.
+cams_avatarCreation_button_startPlaying;Alusta mängimist
+cams_avatarCreation_button_changeSector;Muuda positsiooni
+cams_avatarCreation_button_selectTribe;Vali rahvus
+cams_avatarCreation_button_updateTribe;Värskenda rahvust
+cams_avatarCreation_button_selectSector;Vali positsioon
+cams_avatarCreation_button_updateSector;Värskenda positsiooni
+cams_avatarCreation_name_title;Sisesta avatari nimi:
+cams_avatarCreation_name_tip;See on sinu avatari nimi mängumaailmas.
+cams_avatarCreation_name_errorEmpty;Palun sisesta avatari nimi.
+cams_avatarCreation_name_placeHolder;Avatari nimi
+cams_looby_avatarInDeletionBlockPlayNow;Oled selle mängumaailma ({{gameworldName}}) jaoks vastu võtnud dualina mängimise kutse, seega ei pääse sa enam sellele väljaspool duali režiimi ligi.
+infobox_openMessage;Ava sõnum
+infobox_accountIsLocked;Sinu avatar on mängust eemaldatud!
+auction_button_requirement;Oksjonite avamiseks läbi {{REQUIRED}} seiklust.\nJäänud: {{INT}}
+auction_availableSilver;Saadaval olev hõbe:  {{iconName|Sprite}} {{currentSilver}}
+auction_deleteSelected;Kustuta valitud oksjonid
+auction_deletedAll_confirmation;Kõik oksjonid kustutatud!
+auction_deletedSelected_confirmation;{{data}} oksjon [data>1:entries][data=1:entry] kustutatud!
+newVersionAvailable_title;Uus versioon saadaval
+newVersionAvailable_description;Oleme oma rakendust parandanud. Palun uuenda, et edasi mängida.
+newVersionAvailable_joinDiscord;Mida on uut? Liitu Discordiga, et saada rohkem infot.
+newVersionAvailable_toStore;Uuenda nüüd
+infobox_beginnerProtection_title;Pikendatud algajakaitse
+infobox_beginnerProtection_question; Oled kindel, et soovid algajakaitset pikendada?
+infobox_beginnerProtection_description;Algajakaitse all ei saa teistele mängijatele saata varusid, neid rünnata neid või nende rünnakute alla sattuda.
+sendResources_beginnersProtection;Sa ei saa teistele mängijatele varusid saata, kui sinu algajakaitse on aktiivne.
+sendTroops_beginnersProtection;Sa ei saa teistele mängijatele sõdureid suunata, kui sinu algajakaitse on aktiivne.
+sendTroops_otherBeginnersProtection;Sa ei saa teistele mängijatele sõdureid suunata, kui nad on algajakaitse all.
+buildingActivities_building_36;Hetkel valmivad püünised
+tasks_collectAll;Võta kõik ({{INT}})
+auction_bidMinPlaceholder;min {{INT}}
+auction_buttonBidMinimum;Nõutav minimaalne pakkumine
+hero_adventures_available;Saadaval seiklused
+messages_freshDeskMessage_viewAndReplyInBrowser;Vaata ja vasta brauseris
+messages_webViewRecommendation;Sõnumi sisu ei pruugi olla täielik.\nSoovitame sõnumit brauseris vaadata.
+rateThisApp_popup_title;Kas sulle meeldib meie rakendus?
+rateThisApp_popup_description;Kui meeldib, siis palun võta hetk aega, et seda hinnata.
+rateThisApp_popup_appreciatefeedback;Sinu tagasiside on meile oluline!
+rateThisApp_popup_btn_positive;See on suurepärane!
+rateThisApp_popup_btn_negative;Võiks olla parem
+rearrange_or_demolish_building;Hoone ümber paigutamine või lammutamine
+mainBuilding_buildingArrangement;Hoone paigutus
+mainBuilding_openRearrangeMode;Ava ümberpaigutusrežiim
+mainBuilding_demolishBuildings;Lammuta hooneid
+mainBuilding_openDemolishMode;Ava lammutamisrežiim
+mainBuilding_demolishBuildings_description;Lohista hooneid, et nende asukohta muuta.
+rearrangeBuildingPopup_rearrangeDescription;Kas paigutad ümber <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>?
+rearrangeBuildingPopup_buildingsRearranged;Hooned ümber paigutatud
+rearrangeBuildingPopup_buildingRearranged;{{buildingName|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>{{buildingLevel}}</color>
+confirmRearrangeBuildingPopup_header;Kas soovid järgmise hoone ümber paigutada?
+confirmRearrangeBuildingPopup_description;Paigutab <b>{{villageName}}</b> küla valitud hooned ümber.
+demolishBuildingPopup_title;Lammuta hoone
+demolishBuildingPopup_description;Vali lammutamiseks hoone
+demolishBuildingPopup_descriptionWithSelection;Kas sa tahad lammutada <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>?
+demolishBuildingPopup_demolishLevel;Lammutamise tase
+demolishBuildingPopup_demolishCompletely;Lammuta täielikult
+confirmDemolishBuildingPopup_header;Kas soovid <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color> otsekohe lammutada?
+confirmDemolishBuildingPopup_description;Lammutab valitud hoone kohe ja eemaldab selle sinu külast.\nSeda ei saa tagasi võtta.
+characterCount;{{COUNT}}/{{MAX}} tähemärki
+survey_button_description_reward;Vasta sellele lühikesele küsitlusele, et aidata meil Travian: Legendsi mobiilirakendust paremaks muuta.\nSinu abi tasub end ära.
+cams_lobby_joinGameworld;Liitu mängumaailmaga
+cams_lobby_gameworld_inviteOnly;Ainult kutsega
+cams_lobby_gameworld_inviteOnlyInfo;See mängumaailm on piiratud erilise kutsekoodiga mängijatele.
+cams_lobby_gameworld_inviteCodeEnter;Sisesta kutsekood
+cams_lobby_gameworld_inviteCodeInfo;See mängumaailm on piiratud erilise kutsekoodiga mängijatele.\nSisesta mängumaailmaga liitumiseks oma kutsekood.
+cams_lobby_gameworld_inviteCodePlaceholder;näiteks eThbt5OLyZ8D5xjhUaBAba
+cams_lobby_gameworld_inviteCodeErrorCharacterCount;Kutsekood on liiga lühike. Palun sisesta kõik {{MAX}} tähemärki.
+cams_lobby_gameworld_inviteCodeCooldown;Kutsekoodi ooteaeg ({{TIME|Countdown}})
+timeCountDown;{{TIME|Countdown}}
+attestation_failed;Seadme kinnitamine ebaõnnestus! Palun kasuta mängimiseks mobiilseadet.\nKui probleem püsib, võta ühendust klienditoega alloleva nupu abil!
+mainBuilding_demolishBuildings_notAvailable;Hoonete lammutamiseks peab sul olema peamaja tasemel {{INT}}
+mainBuilding_demolishBuildings_demolishing;Lammutab <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> tasemele <b><color={{colorValue|TextColor}}>{{buildingLevel}}</color></b>{{timestamp|Countdown}}.
+demolishBuildingPopup_demolishing;Lammutab <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> tasemele <b><color={{colorValue|TextColor}}> {{buildingLevel}}</color></b>
+allianz.hinweis_text_NoConfederacy;Kirjuta teisele liidule esmalt kiri oma soovist sõlmida mittekallaletungilepe (MKL). See on osa diplomaatilisest etiketist.
+regions_canBeSettled;Saab asustada?
+regions_regionStatusNoColon;Piirkonna olek
+regions_top5AlliancesPopulation;Top 5 liidu <b>elanike arv</b>
+regions_top5AlliancesVillages;Top 5 liidu <b>külad</b>
+regions_neighboringRegions;Külgnevad piirkonnad
+regions_regionPopulation;Piirkonna elanike arv
+regions_contested;Piirkonna nimel võisteldakse
+cams_lobby_gameworld_disabledAndNotSupported;Mängumaailmas ei saa praegu mobiilirakenduse kaudu mängida.
+demolishBuildingPopup_impossible;Seda hoonet ei saa lammutada.
+city_benefits;Linna hüved
+city_benefits_threeAdditionalSlots;Kolm lisaehitusplatsi
+city_benefits_resourceFieldsLevel12;Arenda varuväljad tasemele 12
+city_benefits_watchTowers;Täienda müüri vahitornidega
+city_upgradeToACity;Arenda {{villageName}} linnaks
+city_culturePointsForNext;(järgmine pärast {{culturePoints}} kultuuripunkti)
+city_upgradeVillage;Täienda küla
+city_confirm_upgradeVillage;Arenda linnaks
+city_confirm_header;Kas soovid arendada {{villageName}} linnaks?
+city_confirm_description;Selleks et küla linnaks arendada on vaja {{time}} ja ühte sinu laienemiskohta.
+city_upgrading;{{villageId|VillageLink}} {{text}}
+city_upgraded;{{villageId|VillageLink}} on juba linn.
+combatSimulator_selectTarget;Vali sihtmärk
+mainMenu_goToLobby;Mine Lobby kontole
+mainMenu_yourPlayerProfile;Sinu profiil
+plus.plusAttackWarningText;Saabuvad rünnakud kuvatakse külade nimekirjas. Ainult mobiilis: Külavaates on paremal pool külade nimekirja avamiseks mõeldud nool esile tõstetud.
+production.crobBalanceTroopConsumptionAncientPower;Iidse mõju boonus
+filters_region_not_found;Piirkonda pole olemas
+rallyPoint_troopsOverview_ownTroops_8;Enda sõdurid külas 
+rallyPoint_troopsOverview_ownTroops_9;Enda sõdurid külas 
+tradeOffice_merchantsCarryCapacity;Kaupmehe kandevõime:
+tradeOffice_tradeShipsCarryCapacity;Kaubalaeva kandevõime:
+buildingActivities_building_48;Sõdurid tervenemas
+playerDetails_victorPointsPerDay;{{PERDAY}} /päevas
+allianz.numIncomingRaids;{{NUM_ATTACKS}} rüüste[NUM_ATTACKS>1:t]
+allianz.numIncomingAttacks;{{NUM_ATTACKS}} rünnak[NUM_TACKS>1:ut]
+allianz.MerchantCapacityAndSpeedNew;Kaubandus
+alliance_regionalTabTop5Description;Piirkonnad, kus sinu liit on piirkonna kontrolli põhjal viie parima liidu hulgas.
+alliance_regionalTabTitle;Piirkonna esiviisik
+alliance_regionalTabTop5Empty;- Üheski piirkonnas pole piisavalt kontrolli -
+alliance_ShowDetails;Näita üksikasju
+wall_upgradesInProgress;Täiendused on pooleli
+extension_upgradeStarted;Uuendamine edukalt alustatud!
+extension_constructionList;Ehitusnimekiri
+upgradeLevel;Uuenda taset
+infoTab_upgradingToLevelForExtension;Käib {{buildingName}} uuendamine tasemele {{level}}:
+infoTab_genericCurrentlyForExtension;Praegune {{buildingName}} boonus {{extensionName}}, sh:
+infoTab_genericAtLevelForExtension;Tasemel {{a}} koos {{extensionName}} tasemega {{b}}:
+ratioValuesNumeratorBold;<b>{{a}}</b>/{{b}}
+infoTab_productionCosts_title;Tootmiskulud
+harbour_shipsInConstruction;Pooleliolevad laevad
+unitInfo_troopsCarriage;kuni <b>{{INT}}</b> sõdurit
+unitInfo_velocityRaid;Rüüsteretkede jaoks:
+city_benefits_resourceFieldsLevel12inCapital;Uuenda varuväljad 12. tasemele ja saad neid veel edasigi uuendada oma pealinnas.
+infoTab_genericCurrentlyMoreExplicit;Praegune {{buildingName}} boonus:
+merchant_merchantOverview_noIncomingDeliveries;- Saabuvaid saadetisi pole. -
+merchant_merchantOverview_noOutgoingDeliveries;- Väljuvaid saadetisi pole. -
+merchant_merchantOverview_incoming;Saabuvad ({{INT}})
+merchant_merchantOverview_outgoing;Väljuvad ({{INT}})
+achievementQuests.achQuest_03_Territory_step_01_description;Saada sõdurid natarite külasse rüüstele/ründele. Ülesanne loetakse lõppenuks, kui sõdurid on kohale jõudnud, isegi kui nad võitluses hukkuvad.<br><br>Selle ülesande eest saab punkte {{NUMBER_OF_TASKS_PER_DAY}} korda päevas.\n
+allianz.MerchantCapacityTitle_Harbours;Kaupmeeste/laeva kandevõime ja kiiruseboonus
+market_tradeRoutes_invalidTarget_Territory;Kaubateid saab asutada ainult oma külade vahel.
+market_selectResources;Vali varud
+market_selectResources_requiredTradeShips;Nõutavad kaubalaevad
+market_resourcesWillBeSendByTradeShip;Varusid saadetakse kaubalaevaga.
+manual.gid38_Territory;Suur ladu mahutab kolm korda rohkem asju kui tavaline ladu.<br><br>Seda hoonet saab ehitada ainult laoruumi põhiplaani iidse jõuga.
+manual.gid39_Territory;Suur viljaait mahutab kolm korda rohkem asju kui tavaline ladu.<br><br>Seda hoonet saab ehitada ainult laoruumi põhiplaani iidse jõuga.\n
+harbour_noAvailableShips;Praegu ei ole selles sadamas ühtegi laeva.
+harbour_destroy_title;Hävita laevu
+harbour_destroy_desc_title;Vali laeva tüüp ja mitu laeva soovid hävitada.
+harbour_destroy_desc;Hävitada saab ainult hetkel sadamas olevaid laevu ja varusid tagasi ei saa.
+harbour_destroy_timeNotice;Laevad hävitatakse kohe.
+harbour_destroy_selectedTotalAmount;Valitud laevad: <b>{{AMOUNT}}</b>
+harbour_destroy_shipSelectTitle;<b>{{ShipID|TranslateSuffixFor|gid49.type_t}}</b> (<b>{{Amount}}</b> laeva [Amount>1:a] asub siin)
+extension_fullyExtended;{{NAME}} on lõpuni täiustatud.
+extension_willBeFullyExtended;{{NAME}} täiustatakse lõpuni praegusel hetkel.
+layout.directLinkMarketplaceTrader;Vabad kaupmehed: {{INT}}/{{INT2}}
+UnitProduction_ViewBuildingList;Vaata hoonete nimekirja
+raidList_useRaidShipsInfo;Rüüstelaevu kasutatakse automaatselt, kui need on saadaval. Kui vabu rüüstelaevu pole, liiguvad sõdurid tavapäraselt mööda maad.
+buildingActivities_maxReached;Maksimaalne summa on saavutatud
+buildingActivities_building_49;Pooleliolevad laevad
+buildingActivities_buildingAdditional_48;Mitte ühtegi haavatud sõdurit
+residence_expansion_villagesRatio;Külad: {{COUNT}}/{{MAX}}
+residence_expansion_slotFree;Laienemiskoht on vaba.
+residence_expansion_slotPrerequisites;Nõuded <b>{{BuildingID|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>tasemel {{Level}}</color></b>
+residence_expansion_culturePointsPerDay;Kultuuripunktide toodang päevas
+search_region;Piirkonna otsing
+search_select_region;Vali piirkond
+statistiken.progressionStepTitle_start_achieved;Server algab {{VALUE}}
+statistiken.progressionStepTitle_serverEnd_locked;Server lõpeb {{VALUE}}
+filters_artefact_not_found;Artefakti ei eksisteeri
+sendTroops_settlersChangeTribe;Esimese {{INT}} asutuse puhul saad valida, millise rahvuse küla soovid asutada. Vali hoolikalt.
+gid17.nextTradingRoute;Järgmine kaubatee algab punktist <b>{{HOUR}}</b> ja vajab <b>{{MERCHANTS}}</b> [MERCHANTS>1:kaupmehi][MERCHANTS=1:kaupmeest].
+gid17.nextTradingRouteWithShips;Järgmine kaubatee algab punktist <b>{{HOUR}}</b> ja vajab <b>{{SHIPS}}</b> [SHIPS>1:kaubanduslaevu][SHIPS=1:kaubanduslaeva].
+market_tradeRoutes_merchants;[merchants>1:{{merchants}} kaupmeest][merchants=1:{{merchants}} kaupmees]
+market_tradeRoutes_tradeShips;[tradeShips>1:{{tradeShips}} kaubalaevu][tradeShips=1:{{tradeShips}} kaubalaev]
+market_tradeRoutes_repeats;{{repeats}} x
+market_tradeRoutes_usesShip;Kasutab laevu
+troopsCheckout_shipUseInfo;{{Distance}} ruutu | {{ShipID|Bold}} | Säästa {{duration|Bold}} tundi
+troopInfoPopup_shipsTitle;Külas paiknevad laevad
+language_nl-NL;hollandi
+cropfinder_cropperType;Viljaaida tüüp:
+valueInBrackets;({{VALUE}})
+residence_settlementSlotsUsed;Kasutatud laienemiskohad
+residence_settlementCPNeededForNextSlot;Järgmise laienemiskoha jaoks vajalikud kultuuripunktid:
+gid27.ancient_power_detail_;{{INT}}
+artefact_effect_value;Mõju: <b>{{EFFECT}}</b>
+ancientPower_overview;Piirkonna võimud
+ancientPower_no_ancientPower;Sellel serveril pole iidset mõju
+ancientPower_tip_large;Suurte iidsete mõjude jaoks on vaja varakambri taset <b>20</b> ja need mõjutavad <b>kõiki teie külasid</b>
+ancientPower_tip_small;Väikeste iidsete mõjude jaoks on vaja varakambri taset <b>10</b> ja need mõjutavad ainult <b>küla</b>, kus mõjud aktiveeritakse.
+ancientPower_tip_nearby;Iidsed mõjud {{villagenamelong|Bold}} ümbruskonnas
+ancientPower_stored_title;Piirkonnad sinu liidu kontrolli all
+ancientPower_stored_noContent;Sinu liidu kontrolli all pole ühtegi piirkonda
+ancientPower_stored_nextFree;Järgmine tasuta aktiveerimine on saadaval: [isFree=0:<color={{colorValue|TextColor}}>]{{timeStamp|Countdown?Bold}}[isFree=0:</color>]
+ancientPower_stored_notActivatable;Pole ühtegi iidset mõju aktiveerimiseks.
+ancientPower_stored_activated;Iidne mõju aktiveeritud.
+ancientPower_stored_alreadyActive_account;Sul on juba üks iidne mõju, mis mõjutab kõiki külasid, kui see on aktiivne.
+ancientPower_stored_alreadyActive_village;Sul on juba üks iidne mõju, mis mõjutab küla, kui see on aktiivne.
+ancientPower_stored_alreadyActive;See iidne mõju on juba aktiveeritud.
+filters_ancientPower_not_found;Iidset mõju pole olemas
+regions_withFactions_yourAllianceHasMoreThan50PercentSecured;Sinu liit kontrollib >{{PERCENT}}% piirkonnast.<br><br>Piirkondliku võimu aktiveerimiseks on vaja varakambrit.
+language_en-NT;Arenduskeel
+settings_notNow;Mitte praegu
+settings_dontAskAgain;Ära küsi uuesti.
+cams_lobby_gameworld_lastPlayedTime;{{TIME}}t
+cams_settings_DirectLoginTitle;Otse sisselogimine mängumaailma
+cams_settings_DirectLoginInfo;Jäta Legendsi Lobby kontole logides mängumaailma valik vahele ja logi rakenduse avamisel otse sisse oma viimati mängitud mängumaailma.
+cams_settings_DirectLoginActive;Otsene sisselogimine on aktiveeritud
+cams_settings_DirectLoginInactive;Otsene sisselogimine on deaktiveeritud
+cams_directLoginPopUp_Info;Kas soovid rakenduse avamisel kohe oma mängumaailma sisse logida?
+cams_directLoginPopUp_youCanChange;Saad oma valikut igal ajal Lobby konto seadetes muuta.
+cams_directLoginPopUp_Accept;Jah, logi mind kohe sisse
+language_ro-RO;rumeenia
+language_hu-HU;ungari
+language_ar-AE;araabia
+autoLoginFailed.;Automaatne sisselogimine ebaõnnestus.
+needInternetToPlay;Mängimiseks on vaja internetiühendust. Palun kontrolli oma internetiühendust ja logi uuesti sisse.
+mapCellInfoWindow_removeFromLists;Eemalda kõigist rüüstenimekirjadest.
+removeFromListsPopup_Title;Kas soovid {{TARGETNAME}}{{INT}} rüüstenimekirjadest eemaldada?
+removeFromListsPopup_Description;Saad sihtmärgi hiljem uuesti ükshaaval rüüstenimekirjadesse lisada.
+removeFromListsPopup_ConfirmButton;Eemalda sihtmärk
+social_continueWith;Või jätka:
+social_loginWith;Või logi sisse:
+social_backToRegistration;Tagasi registreerimise juurde
+social_createAccountTitle;Loo Legendsi Lobby konto
+social_errorTitle_NoEmailProvided;Meiliõiguste luba puudub
+social_errorMsg_NoEmailProvided;Kui soovid mängida Travian: Legendsi, vajame <b>luba sinu meiliaadressile </b> juurdepääsuks.
+social_errorInfo_NoEmailProvided;Palun proovi uuesti õigete loaseadetega või proovi mõnda muud registreerimismeetodit.
+social_errorTitle_AlreadyExists;Meiliaadress on juba kasutusel
+social_errorMsg_AlreadyExists;Sisestatud meiliaadress on juba Travian: Legendsi Lobby kontoga seotud.
+social_errorInfo_AlreadyExists;Palun kasuta sisselogimiseks kontoga seotud meiliaadressi.
+social_acceptTOS;Klõpsates nupul „Kinnita”, nõustud <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">üldtingimustega</link></style> ja kinnitad, et oled lugenud <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">infot taganemisõiguse kohta</link></style> ja <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">privaatsuspoliitikat</link></style>.
+linkNotWorking;Link ei toimi
+linkNotWorkingDescription;Paistab, et see link ei tööta hetkel Travian: Legendsi mobiilirakenduses. Proovi seda avada brauseris.
+openLinkInBrowser;Ava link brauseris
+settings_language_useArabicNumerals_activated;Ida-Araabia numbrite kasutamine on aktiveeritud
+settings_language_useArabicNumerals_deactivated;Ida-Araabia numbrite kasutamine on deaktiveeritud
+artefact_inventory_active_empty;Ühtegi artefakti pole aktiveeritud
+social_errorTitle_Unknown;Tundmatu viga
+social_errorMsg_Unknown;Ilmnes tundmatu viga. Palun proovi uuesti.
+loadingScreen_text_01;Su väejuht sätib oma juukseid, palun oota.
+loadingScreen_text_02;Viljaait on täis. Külaelanikud hoiavad nüüd taskus vilja.
+loadingScreen_text_03;Saatkond korraldab peo – ainult diplomaatidele.
+loadingScreen_text_04;Kogunemispunktist sai piknikukoht – sõdurid naudivad võileibu.
+loadingScreen_text_05;Sepp sepistab mõõka ... spagettidest.
+loadingScreen_text_06;Ehitusmeistrid vaatavad jooniseid ...tagurpidi.
+loadingScreen_text_07;Natarid on liitunud küla raamatuklubiga. Keegi ei oska iidseid ruune lugeda.
+loadingScreen_text_08;Luurajad üritavad vaenlase sõdureid kokku lugeda ... aga neil said sõrmed otsa.
+loadingScreen_text_09;Maailma Ime on tuvide rünnaku all. Koristajad on teel.
+loadingScreen_text_10;Orisõdurid nõuavad ametiühingu loomist – valmistu streikideks.
+loadingScreen_text_11;Sõdurid keelduvad ründamast, kuni keegi selgitab lahingusimulaatori toimimist.
+loadingScreen_text_12;Külaelanikud jätsid töö katki, et vaadata kahe kana kaklust.
+loadingScreen_text_13;Katapuldid vaidlevad selle üle, millist hoonet esimesena tabada.
+loadingScreen_text_14;Palun ole kannatlik – väejuht sõidab hobuse asemel Deutsche Bahni rongiga.
+loadingScreen_text_15;Siin peidikus ei leidu ainult varusid, vaid ka küla klatši.
+loadingScreen_text_16;Kasarmus toimub talendivõistlus – treening edasi lükatud.
+loadingScreen_text_17;Sinu müür on peaaegu valmis. Tuleb vaid värvi kuivamist oodata.
+loadingScreen_text_18;Leegionärid nõudsid kohvipausi enne marssimist.
+loadingScreen_text_19;Keldid selgitavad roomlastele, mis on puitaed – sellele on kulunud juba kolm tundi.
+loadingScreen_text_20;Anna kaupmeestele altkäemaksu, et nad kiiremini asjad kohale tooks.
+loadingScreen_text_21;Su väejuht käib ratsutamiskursusel – see võib veidi aega võtta.
+loadingScreen_text_22;Kaupmehed on aeglase härja taha kinni jäänud.
+loadingScreen_text_23;Liidu juhid teevad lahinguplaani ...sõrmevärvide abil.
+loadingScreen_text_24;Viljaait on küpsiseid täis – osav varude hoidmine.
+loadingScreen_text_25;Luuramine katkes – Heimdallil läks midagi silma.
+changeAccountNameSubtitle;Muuda kasutajatunnust ja/või lühendit.
+changeAccountNamePleaseNote;Pane tähele, et pärast konto nime muutmist pead ootama {{DAYS}}[DAYS>1:päeva] [DAYS=1:päeva], enne kui saad seda uuesti muuta.
+changeAccountNameWaiting;Pead ootama, kuni saad oma kasutajatunnust uuesti muuta.
+changeAccountNameUpdated;Kasutajatunnus on uuendatud
+changeAccountNameUpdatedSubtitle;Kasutajatunnus on edukalt muudetud ja uus nimi on <b>{{playerName}}</b>
+alliance_top10Title;Liidusisene esikümnik
+gameworldCalendarNoGameworld;Ühtegi tulevast mängumaailma ei leitud. \nNeed võivad alles laadida või neid pole veel ajastatud.
+gameworldCalendar_title;Mängumaailma kalender
+valueWithModifierBefore;{{value|Round|2}}x
+goldShop_purchaseCanceled;Ost tühistatud!
+goldShop_pendingRestored;Sinu eelmine ost on edukalt taastatud.
+hero_consumablePopup_healthByOintment;Tervis, mida saab salvi kasutamisel:
+unknown;?
+serverSelection_gameworldSpeed_short;{{INT}}x
+gameworldCalendarDetails_title;Mängumaailma üksikasjad
+gameworldCalendarDetails_shareLink;Jaga mängumaailma linki
+gameWorldEndCondition;Mängumaailma lõppemistingimus
+gameWorldEndCondition_WonderOfTheWorld;Maailma Ime {{Level}}
+gameWorldEndCondition_VictoryPoints;Võidupunktid
+gameWorldRestriction_InvitationCode;See mängumaailm on piiratud erilise kutsekoodiga mängijatele.
+gameWorldRestriction_MobilePlayers;See mängumaailm on ligipääsetav ainult mobiilimängijatele.
+gameWorldSpecial;See on eriline mängumaailm, mis võib olla saadaval ainult piiratud aja jooksul ja millel võivad olla erinevad funktsioonid kui klassikalistel mängumaailmadel.
+gameWorldUndefinedDetails;Kõiki mängumaailma üksikasju pole veel määratletud. Kui neid on uuendatud, saad oma Lobbys selle kohta teavituse
+bonusValueWithPercentNoSpace;+{{value}}%
+startDate;Alguse kuupäev
+startTime;Alguse aeg
+UTC+1;(UTC+1)
+goldShop_GoldPromotion;Kulla promo
+auction_FeePopupTitle;Oksjonitasu
+auction_FeePopupText;Sa pead maksma {{value}}% tasu oksjonimaja kasutamise eest. Sulle makstakse välja müügihind, millest on lahutatud oksjonitasu.
+auction_FeePopupExample;Näidisarvutus
+auction_FeePopupSalePrice;Müügihind
+auction_FeePopupFee;Oksjonitasu ({{value}}%)
+auction_FeePopupPayout;Väljamakse
+auction_sellHouseFeeInfo;Välja makstakse müügihind, millest on lahutatud {{value}}% oksjonitasu.
+gold_action_finishImmediately;Lõpeta kohe
+mapCellInfoWindow_villageReports;Näita küla raporteid
+hero_crafting_title_refine;Tuuni varustust
+hero_crafting_title_smelt;Sulata varustust
+hero_crafting_title_forge;Sepista varustust
+hero_crafting_title_reforge;Taassepista varustust
+hero_crafting_action_refine;Tuuni
+hero_crafting_action_smelt;Sulata
+hero_crafting_action_forge;Sepista
+hero_crafting_action_takeMaterials;Võta ({{INT}}/{{MAX}}) materjali
+hero_crafting_action_takeAllMaterials;Võta materjalid
+hero_crafting_action_reforge;Taassepista
+hero_crafting_action_take;Võta
+hero_crafting_action_pick;Vali ese
+hero_crafting_action_equip;Kasuta
+hero_crafting_action_buy_material;Osta materjali
+hero_crafting_action_buy_item;Osta ese
+hero_crafting_action_craft_material;Sulata materjali
+hero_crafting_action_moveToInventory;Väejuhi esemetesse
+hero_crafting_action_select_item;Vali
+hero_crafting_action_remove_item;Eemalda
+hero_crafting_action_error_equipment;Ese peab olema väejuhi varustusest
+hero_crafting_action_error_rarity;Esemed peavad olema sama haruldusega
+hero_crafting_action_error_category;Ese peab olema samast varustuse liigist
+hero_crafting_action_error_id;Esemed peavad olema identsed.
+hero_crafting_action_error_missingItem;Üks või mitu valitud eset ei ole enam saadaval.
+hero_crafting_refine_tip;Eepilisi väejuhi esemeid saab tuunida mis tahes teise samast liigist eepilise väejuhi esemega.
+hero_crafting_refine_tip_error;Sul ei ole ühtegi väejuhi eset, mida tuunida. Leia esemeid seiklustelt või osta neid oksjonimajast ja täiusta neid tuunides.
+hero_crafting_smelt_info;Võta kohe {{INT}} materjali[INT>1:s] või oota ja saad {{MAX}}.
+hero_crafting_reforge_text;Taassepista varustust, et saada teine ese, mis võib olla teise harulduse ja kvaliteediga.\nPärast taassepistamist saad valida, millise eseme soovid võtta või uuesti sepistada.\nPane tähele: Pärast taassepistamist kaob iga edasise taassepistamise etapi ese ja seda ei saa tagasi muuta.
+inventoryItem_quality_title;Kvaliteet
+inventoryItem_rarity_title;Haruldus
+inventoryItem_rarity_quality_title;Haruldus ja kvaliteet
+inventoryItem_rarity_common;Tavaline
+inventoryItem_rarity_uncommon;Ebatavaline
+inventoryItem_rarity_rare;Haruldane
+inventoryItem_rarity_epic;Eepiline
+inventoryItem_rarity_legendary;Legendaarne
+search_for_village;Küla otsing
+search_for_player;Mängija otsing
+villageList_EditMode;Muutmisrežiim
+villageList_MaxGroupAmount;Külarühmade maksimaalne arv saavutatud.
+hero_crafting_action_error_material;Ese peab olema materjal.
+villageList_ReorderError;Kehtetu sihtmärk
+textMatchingInput_Title;Kinnitage, sisestades "{{WORD}}"
+hero_inventory_category_empty;- Selles kategoorias ei ole ühtegi eset -
+hero_crafting_action_refine_success;Tuunitud varustus
+hero_crafting_action_smelt_success;Sulatatud varustus
+hero_crafting_action_forge_success;Sepistatud varustus
+hero_crafting_result_item_equipped;Ese on kasutusel
+hero_crafting_result_item_taken;Ese liigutatud varustuse nimekirja
+hero_crafting_result_material_taken;Materjal liigutatud varustuse nimekirja
+hero_crafting_action_error_quality;Esemed peavad olema sama kvaliteediga.
+hero_crafting_action_error_epic;Peab olema veel üks sama kategooria ja kvaliteediga eepiline ese.
+inventoryItem_rarity_none;Haruldus puudub
+dailyQuests_rewardOverview_short;Tasude ülevaade
+avatar_confirmation_title_delete;Kustuta avatar
+avatar_confirmation_header_delete;Kas sa tahad oma avatari kustutada?
+avatar_confirmation_infoText_delete;Pärast kustutamisprotsessi alustamist kulub sinu avatari lõplikuks kustutamiseks <b>kolm päeva</b>.\nAvatariga, mida kustutakse, ei pääse enam ligi oksjonitele ega vahetuskontorile.\nSaad kustutamisprotsessi igal ajal tühistada siin.
+avatar_confirmation_requiredWord_delete;kustuta
+avatar_confirmation_title_respawn;Taastekita avatar
+avatar_confirmation_header_respawn;Kas sa tahad oma avatari taastekitada?
+avatar_confirmation_infoText_respawn;See kustutab kõik senised edusammud ja asetab su algküla kaardil uuele kohale.\n\nKogu ostetud kuld kantakse automaatselt üle.
+avatar_confirmation_requiredWord_respawn;taasrajamine
+settings_app_title;Kõik mängumaailmad
+settings_app_Animations_title;Animatsioonid
+settings_app_Animations_description;Vali, milliseid animatsioone soovid rakenduses näha.
+settings_app_Animations_activated;Küla/varude vaate pilve animatsioon aktiveeritud
+settings_app_Animations_deactivated;Küla/varude vaate pilve animatsioon deaktiveeritud
+settings_app_NightMode_title;Öörežiim
+settings_app_NightMode_description;Sinu külaelanikud süütasid tõrvikud ja ahjutuled praksuvad öötaeva tuhmide tähtede valguse all.
+settings_app_NightMode_activated;Öörežiim on aktiveeritud
+settings_app_NightMode_deactivated;Öörežiim on deaktiveeritud
+settings_app_WinterMode_title;Talverežiim
+settings_app_WinterMode_description;Vaikselt sajab lund, mis mähib küla petlikku vaikusse, kus iga heli näib sumbuvat jäisesse õhku.
+settings_app_WinterMode_activated;Talverežiim on aktiveeritud
+settings_app_WinterMode_deactivated;Talverežiim on deaktiveeritud
+settings_app_VillagePanning_title;Külade/varuväljade liikumine
+settings_app_VillagePanning_description;Saad oma külavaates ja varuväljadel ringi liikuda
+settings_app_VillagePanning_activated;Liikumine on aktiveeritud
+settings_app_VillagePanning_deactivated;Liikumine on deaktiveeritud
+settings_app_PushNotifications_title;Üldised tõuketeavitused
+settings_app_PushNotifications_description;Saa tõuketeavituste abil teavet rakenduse ja mänguga seotud üldiste uudiste kohta.
+settings_app_PushNotifications_activated;Mängumaailma alustamise teavitus on aktiveeritud
+settings_app_PushNotifications_deactivated;Mängumaailma alustamise teavitus on deaktiveeritud
+settings_app_EnergySaving_title;Energiasäästurežiim
+settings_app_EnergySaving_description;Säästa oma seadme akut väiksema kaadrisagedusega\nEnergiasäästurežiim võib rakenduses visuaalset viivitust põhjustada.
+settings_app_EnergySaving_activated;Energiasäästurežiim on aktiveeritud
+settings_app_EnergySaving_deactivated;Energiasäästurežiim on deaktiveeritud
+settings_app_DataSaving_title;Mobiilandmeside säästurežiim
+settings_app_DataSaving_description;Säästa mobiilandmesidet/internetikasutust vähemate serveripäringutega.\nMobiilandmeside säästurežiimi aktiveerimine võib pikendada mänguandmete värskendamise intervalli.
+settings_app_DataSaving_activated;Mobiilandmeside säästurežiim aktiveeritud
+settings_app_DataSaving_deactivated;Mobiilandmeside säästurežiim deaktiveeritud
+auction_FilterType;Eseme tüüp
+auction_bidTooLow;Liiga madal pakkumine.
+villageList_Delete_Title;Kustuta külarühm
+villageList_Delete_Button;Kustuta rühm
+villageList_Delete_Description;Kas soovid selle külarühma kustutada?
+villageList_Delete_Description2;Selle rühma külasid see ei mõjuta.
+gameworldNews_title;Uudised ja uuendused
+moreInformation;Rohkem informatsiooni
+remainingGold;Kulla jääk: {{goldIcon|Sprite}} {{goldAmount}}
+messages_addEmoji_title;Lisa emotikone
+messages_select_emojis;Vali emotikonid
+cams_resend_email_wait_error;Palun oota enne teise e-kirja saatmist.
+cams_settings_accountDeletion_infoGold;Peale avatari kustutamist saadetakse sulle e-kiri juhisega, kuidas kanda ülejäänud  kuld teisele avatarile.\n<b>Pane tähele:</b> Sinu  allesjäänud kulda saab üle kanda ainult teatud mängumaailmadesse.
+cams_changeMail_title;Muuda e-posti aadressi
+cams_changeMail_description;E-posti aadressi muutmiseks on vaja juurdepääsu praegusele ja uuele e-posti aadressile.
+cams_changeMail_socialHint;Sinu e-posti aadressi muutmine ei mõjuta  sisselogimine Facebooki, Google'i või Apple'i kaudu.
+cams_changeMail_cantAccess;Ei saa juurdepääsu oma e-postile?
+cams_changeMail_sentVerification;Saatsime kinnituskirja aadressile: {{mail}}
+cams_changeMail_checkInbox;Palun kontrolli oma postkasti ja järgi juhiseid, et jätkata.
+cams_changeMail_verificationCode;E-posti saadetud kinnituskood:
+cams_changeMail_verifyButton;Kontrolli e-posti
+cams_changeMail_enterNew_description;Sisesta uus meiliaadress Me saadame sellele aadressile kinnituskirja.
+cams_changeMail_enterNew_description2;Muudatuse lõpetamiseks järgi meilisõnumis olevaid juhiseid.
+cams_changeMail_enterNew_input;Sisesta oma uus meiliaadress
+cams_changeMail_enterNew_input_placeholder;Uus meiliaadress
+cams_changeMail_enterNew_button;Muuda oma e-posti aadressi
+cams_changeMail_done_title;E-post uuendatud
+cams_changeMail_done_description1;Sinu meiliaadress on uuendatud ja uus aadress on {{mail}}
+cams_changeMail_done_description2;Sind logitakse automaatselt välja ja suunatakse ümber sisselogimislehele. Palun kasuta sisselogimiseks oma uut meiliaadressi.
+cams_changeMail_done_redirecting;Ümbersuunamine sisselogimise juurde {{time}}...
+bonusValue;+ {{value}}
+value;{{value}}
+ratioValues_Colon;{{a}}:{{b}}
+genericValue;{{VALUE}}
+enterAmount;Sisesta kogus
+symbol_minus;-
+applyFilter;Rakenda filter
+resetFilter;Lähtesta filter
+rallyPoint_troopsOverview_outgoingMission_50_heroCentricAdventure;Seiklusel
+rallyPoint_troopsOverview_returningFromAdventure_heroCentricAdventure;Naaseb seikluselt
+silverExchangePopup_AvailableSilver;Saadaval olev hõbe
+silverExchangePopup_SilverStatus;Praegu on {{AMOUNT|LongNumber}} sinu hõbedat aktiivsetel oksjonitel
+silverExchangePopup_SilverError;Sul ei ole selle tegevuse jaoks piisavalt hõbedat.
+silverExchangePopup_GoldError;Sul ei ole selle tegevuse jaoks piisavalt kulda.
+hero.status50_heroCentricAdventure;Sinu väejuht on teel seiklusele
+inventoryItem_quality_1;Tase 1
+inventoryItem_quality_2;Tase 2
+inventoryItem_quality_3;Tase 3
+inventoryItem_rarity_common_headGear;Tavaline kiiver
+inventoryItem_rarity_uncommon_headGear;Ebatavaline kiiver
+inventoryItem_rarity_rare_headGear;Haruldane kiiver
+inventoryItem_rarity_epic_headGear;Eepiline kiiver
+inventoryItem_rarity_legendary_headGear;Legendaarne kiiver
+inventoryItem_rarity_common_utility;Tavaline vahend
+inventoryItem_rarity_uncommon_utility;Ebatavaine vahend
+inventoryItem_rarity_rare_utility;Haruldane vahend
+inventoryItem_rarity_epic_utility;Eepiline vahend
+inventoryItem_rarity_legendary_utility;Legendaarne vahend
+inventoryItem_rarity_common_weapon;Tavaline relv
+inventoryItem_rarity_uncommon_weapon;Ebatavaline relv
+inventoryItem_rarity_rare_weapon;Haruldane relv
+inventoryItem_rarity_epic_weapon;Eepiline relv
+inventoryItem_rarity_legendary_weapon;Legendaarne relv
+inventoryItem_rarity_common_armour;Tavaline turvis
+inventoryItem_rarity_uncommon_armour;Ebatavaline turvis
+inventoryItem_rarity_rare_armour;Haruldane turvis
+inventoryItem_rarity_epic_armour;Eepiline turvis
+inventoryItem_rarity_legendary_armour;Legendaarne turvis
+inventoryItem_rarity_common_boots;Tavalised saapad
+inventoryItem_rarity_uncommon_boots;Ebatavalised saapad
+inventoryItem_rarity_rare_boots;Haruldased saapad
+inventoryItem_rarity_epic_boots;Eepilised saapad
+inventoryItem_rarity_legendary_boots;Legendaarsed saapad
+inventoryItem_rarity_common_consumable;Tarvitatavad esemed
+inventoryItem_rarity_uncommon_consumable;Ebatavaline ese
+inventoryItem_rarity_rare_consumable;Haruldane ese
+inventoryItem_rarity_epic_consumable;Eepiline ese
+inventoryItem_rarity_common_horse;Ratsu
+inventoryItem_rarity_uncommon_horse;Ebatavaline ratsu
+inventoryItem_rarity_rare_horse;Haruldane ratsu
+inventoryItem_rarity_epic_horse;Eepiline ratsu
+inventoryItem_rarity_legendary_horse;Legendaarne ratsu
+inventoryItem_rarity_common_material;Tarvitatavad esemed
+inventoryItem_rarity_uncommon_material;Ebatavaline ese
+inventoryItem_rarity_rare_material;Haruldane ese
+inventoryItem_rarity_epic_material;Eepiline ese
+search_item;Otsi eset
+search_select_item;Vali ese
+avatar_confirmation_infoText_delete_goldBough;Pärast kustutamisprotsessi käivitamist kulub <b>vähemalt kolm päeva</b> avatari kustumiseks, sest sellega osteti hiljuti kulda.\nKustuva avatariga ei pääse enam ligi oksjonitele ega vahetuskontorile.\nSaad kustutamisprotsessi igal ajal tühistada siin.
+combatSimulator_addItemEffect;Lisa eseme efekt
+combatSimulator_editItemEffect;Muuda eseme efekti
+addItemEffect_title;Lisa väejuhi eseme efekt
+addItemEffect_description;Lisa eraldi efektid, mis näitavad kõigi väejuhi esemete individuaalseid boonuseid.
+addItemEffect_importHeroEquipment;Impordi väejuhi varustus
+addItemEffect_importHeroEquipment_success;Väejuhi varustus imporditud
+addItemEffect_selectEffect;Vali eseme efekt
+addItemEffect_selectItem;Vali ese
+addItemEffect_selectMagnitude;Vali suurus
+addItemEffect_selectUnit;Vali üksus
+addItemEffect_missingMagnitude;Puuduv suurus
+addItemEffect_effect_2;Vähendatud kahju
+addItemEffect_effect_6;+ Täiendavad tervisepunktid päevas
+addItemEffect_effect_12;+ Parem rünnak ja kaitse konkreetse üksuse jaoks
+addItemEffect_effect_13;+ Suurem võitlustugevus
+cams_newMail_title;Uus meiliaadress
+cams_verifyNewMail_title;Kinnita uus meiliaadress
+cams_verifyCurrentMail_title;Kinnita praegune e-posti aadress
+auction_notEnoughSilver;Sul ei ole piisavalt hõbedat.
+auction_itemGroups;Esemete rühmad
+auction_unknown;?
+auction_sortingOption_itemName;Eseme nimi
+auction_sortingOption_bidCount;Pakkumiste arv
+auction_sortingOption_finishedAt;Lõpuni
+auction_sortingOption_highestBid;Kõrgeim pakkuja
+auction_sortingOption_highestBidder_player;Kõrgeim pakkuja (mängija)
+auction_sortingOption_highestBidder_alliance;Kõrgeim pakkuja (liit)
+auction_sortingOption_auctionAmount;Käimasolevate oksjonite arv
+auction_sortingOption_nextFinishedAt;Järgmise lõpuni
+auction_sellingPrice;Müügihind
+auction_sellingPrice_lowest;Madalaim
+auction_sellingPrice_average;Keskmiselt
+auction_sellingPrice_highest;Kõrgeim
+auction_result_won;<color={{colorValue|TextColor}}>Võitsid</color>
+auction_result_lost;<color={{colorValue|TextColor}}>Üle pakutud</color>
+auction_sellingPrice_averagePrice;Keskmine hind
+auction_bidProcessTitle;Pakkumisprotsess
+auction_bidProcessDescription1;Saad teha pakkumisi esemetele, millest huvitatud oled.
+auction_bidProcessDescription2;Sa pead pakkuma vähemalt miinimumsumma, et ületada praegune pakkumine.
+auction_maxBidFeatureTitle;Maksimaalse pakkumise funktsioon
+auction_maxBidFeatureDescription1;Saad sisestada oma maksimaalse eelarve esemele.
+auction_maxBidFeatureDescription2;Süsteem teeb sinu eest automaatselt pakkumisi kuni määratud maksimumini.
+auction_maxBidFeatureDescription3;Sinu pakkumine suureneb ainult nii palju, kui on vaja, et sa jääksid kõrgeima pakkumise tegijaks.
+auction_maxBidFeatureDescription4;Pakkumised jätkuvad seni, kuni võidad või kuni keegi teeb sinu maksimaalsest eelarvest kõrgema pakkumise.
+auction_auctionDurationTitle;Oksjoni kestus
+auction_auctionDurationDescription1;Kui oksjoni lõpuni jääb vähem kui {{DURATION|Duration}}, pikeneb kestus {{DURATION|Duration}}, kui kõrgeima pakkkumise tegija vahetub.
+auction_auctionWinningTitle;Võitmine
+auction_auctionWinningDescription1;Oksjoni lõppedes kõrgeima pakkumise teinud isik võidab eseme.
+auction_auctionFinished;Oksjon on juba lõppenud.
+auction_wasJustOutbid;Sa pole praegu kõrgeim pakkuja
+auction_currentHighestBidder;Hetke parim pakkuja
+auction_currentHighestBid;Hetke parim pakkumine
+auction_yourMaximumBid;Sinu maksimaalne pakkumine
+auction_showFinished;Näita lõppenuid
+auction_deleteAllFinished;Kustuta kõik lõppenud
+auction_startedAt;Algas: {{TIME|DateTime}} | Kestab
+auction_canceled;Tühistatud
+auction_finished;Lõppenud
+auction_finishedAt;Lõpetatud: {{TIME|DateTime}}
+auction_itemAuction_title;Eseme oksjon
+auction_itemAuction_info;Klõpsa oma varustuses esemel, et oksjonit alustada. Teised mängijad saavad sellele pakkumisi teha. Oksjon võib kesta kuni {{INT}} tundi.
+auction_whatHappensNext_title;Mis juhtub edasi
+auction_whatHappensNext_info1;Kõrgeima pakkumise teinud mängija ostab automaatselt eseme, kui aeg saab otsa.
+auction_whatHappensNext_info2;Hõbe laekub sulle müügitehingu lõppemisel.
+auction_whatHappensNext_info3;Saad teavituse, kui su ese on müüdud.
+auction_error_cannotSell;Seda eset ei saa müüa oksjonil.
+auction_error_onlyHorse;Sa ei saa oma ainsat ratsut müüa
+auction_sellItem;Müü ese
+auction_sales;Müük
+auction_selectBatchSize;Vali kogus
+auction_selectBatchSize_batches;<b>{{COUNT}}x</b> komplekti
+auction_selectFilter_title;Vali filter
+goldShop_upTo;Kuni
+shopPromotion_openShop;Ava pood
+shopPromotion_goldPromotionTitle;Aktiivne kulla promo
+shopPromotion_limitedTimeOffer;Piiratud ajaga pakkumine!
+shopPromotion_goldPromotionDescription;Saa nüüd oma raha eest rohkem kulda.
+shopPromotion_timeRemaining;Aega jäänud:
+hero_adventures_watchAdReduceDuration_title;Vähenda seikluse kestust {{AMOUNT}}%
+hero_adventures_watchAdReduceDuration_description;Vaata videot, et vähendada oma väejuhi <b>järgmise</b> seikluse kestust.
+hero_adventures_watchAdIncreaseDanger_title;Suurenda seikluse ohutaset raskeks
+hero_adventures_watchAdIncreaseDanger_description;Vaata videot, et suurendada <b>järgmise tavalise</b> seikluse ohutase raskeks, et teenida rohkem väejuhi kogemusepunkte.
+hero_adventures_watchAdActive;Järgmise seikluse jaoks aktiivne.
+hero_adventures_watchAdActiveNormal;Järgmise tavalise seikluse jaoks aktiivne.
+hero_crafting_action_error_nonEpic;Peab olema identne ese sama harulduse ja kvaliteediga.
+berichte.adventure_heroCentric;{{VILLAGE_NAME}} läheb seiklema
+reports_share_notShareable;Seda raportit ei saa jagada.
+dailyQuests_dailyMaxReached;Päevane maksimum saavutatud
+achievementQuests.DailyQuest_12_description;Ava mäng oma arvuti brauseris ja vaata videot.
+achievementQuests.DailyQuest_12_additionalInformation;www.travian.co.ee/chat
+achievementQuests.DailyQuest_13_description;Vaata näiteks videot, et oma hooneid kiiremini uuendada.
+achievementQuests.DailyQuest_13_additionalInformation;Või klõpsa nupule "Vaata videot", et vaadata videot otse ilma lisahüvedeta.
+addItemEffect_effect_11;+ ründetugevus natarite vastu
+auction_started;Oksjon algas
+auction_error_batchSize;Müümiseks pole piisavalt esemeid.
+auction_graph_notEnoughData;Andmeid pole piisavalt
+auction_emptyInventory;- Sul ei ole praegu müümiseks ühtegi eset -
+RelativeTime_2_word;[data>1:{{data}} tundi][data<2:{{data}} tund]
+gold_action_halveDuration;Lühenda kestust poole võrra
+goldShop_advantage_Value_Duration;<b>+{{VALUE}}%</b> jaoks <b>[DURATION>6:{{DURATION}} päeva][DURATION<7:{{DURATION|Mult|24}} tundi]</b>
+goldShop_advantage_Value_Active;<b>+{{VALUE}}%</b> on veel aktiivne:
+goldShop_upgrade;Uuenda
+goldShop_advantage_stillActiveFor;Aktiivne veel:
+goldShop_advantage_stillActiveFor_Value;{{DURATION}} kuni kella {{TIME}}-ni
+goldShop_advantage_videoFeatureOnCD;Videoboonust saab aktiveerida ainult üks kord päevas.\nIgapäevane lähtestamine: {{TIMESTAMP|Countdown}}
+goldShop_advantage_popup_mainInfoHeader_ProductionboostLumber;Suurenda <b>puidu tootmist</b> kõigis oma külades.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostClay;Suurenda <b>savi tootmist</b> kõigis oma külades.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostIron;Suurenda <b>raua tootmist</b> kõigis oma külades.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostCrop;Suurenda <b>vilja tootmist</b> kõigis oma külades.
+goldShop_advantage_popup_mainInfoBody;Boonus ei mõju ainult algootlikkusele, vaid arvestab ka teiste boonustega.
+goldShop_advantage_popup_premiumInfo;Võid boonuse kullaga aktiveerida ja saada {{VALUE}}% tootmisboonust.\nSaad aktiveerida automaatse pikendamise püsiva boonuse kestuse jaoks.
+goldShop_advantage_popup_videoFeatureInfo;Või saad vaadata lühikest videot ja saada väiksema {{VALUE}}% tootmisboonuse.\n<b>Videoboonust saab iga ressursi puhul aktiveerida ainult üks kord päevas.</b>
+goldShop_advantage_popup_upgradeInfo;Võid igal ajal uuendada +{{VALUE}}% tootmisboonust kullaga.
+goldShop_advantage_upgradePopupInfo1;Ressursiboonuse uuendamine eemaldab sinu praeguse aktiivse boonuse.
+goldShop_advantage_upgradePopupInfo2;Saad +{{VALUE}}% [DURATION>6:{{DURATION}} päeva][DURATION<7:{{DURATION|Mult|24}}] asemel.
+goldShop_advantage_upgradePopup_title;Uuenduse boonus
+productionOverview_Bonus;+{{VALUE}}% tootlikkus
+hero_adventures_watchAdReduceDuration_toast;Seikluste kestust on vähendatud.
+hero_adventures_watchAdIncreaseDanger_toast;Seikluse ohutase on suurenenud.
+hero_consumablePopup_amountEquippedAfter;Kogus, mis on kasutusel pärast:
+hero_consumablePopup_amountEquippedAfterUse;Kogus, mis on kasutusel pärast kasutamist:
+hero_consumablePopup_amountLeftInInventory;Varustusse jäänud esemete arv:
+cams_recover_password_cooldown;Palun oota {{VALUE}}
+cams_settings_changePassword_cooldown;Palun oota {{VALUE}}
+infobox_productionBoost_upgradeButton;Uuenda
+infobox_productionBoost_upgradeBonusWithGold;Uuenda ja pikenda oma boonust kullaga, et saada +{{PREMIUM_PERCENTAGE}}% {{TIME}} tunniks.
+infobox_productionBoost_expires;{{PERCENTAGE}} {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresLumber;+{{PERCENTAGE}}% puidu tootmisboonuse lõpuni {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresClay;+{{PERCENTAGE}}% savi tootmisboonuse lõpuni {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresIron;+{{PERCENTAGE}}% raua tootmisboonuse lõpuni {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresCrop;+{{PERCENTAGE}}% vilja tootmisboonuse lõpuni {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expired;{{PERCENTAGE}}
+infobox_productionBoost_expiredLumber;+{{PERCENTAGE}}% puidu tootmisboonus on <b>lõppenud</b>.
+infobox_productionBoost_expiredClay;+{{PERCENTAGE}}% savi tootmisboonus on <b>lõppenud</b>.
+infobox_productionBoost_expiredIron;+{{PERCENTAGE}}% raua tootmisboonus on <b>lõppenud</b>.
+infobox_productionBoost_expiredCrop;+{{PERCENTAGE}}% vilja tootmisboonus on <b>lõppenud</b>.
+infobox_levelUpProductionReminder;Suurenda selle varu tootmist kõigis oma külades kullaga (+{{PREMIUM_PERCENTAGE}}%) või videot vaadates (+{{VIDEO_PERCENTAGE}}%)
+infobox_oneTimeProductionBoostReminder;Nüüd saad oma +{{VIDEO_PERCENTAGE}}% ressursiboonuse videot vaadates uuesti käivitada.
+travelSimulator_title;Liikumisaja simulaator
+travelSimulator_sourceTribe;Allika asukoha hõim
+travelSimulator_noLocationSelected;Asukohta ei ole valitud
+travelSimulator_slowestUnit_title;Aeglaseim üksus
+travelSimulator_slowestUnit_settings;{{UNIT}} | Kiirus: {{SPEED}}
+travelSimulator_TournamentSquareLevel_info;(Kui sihtmärk on >20 ruudu kaugusel)
+travelSimulator_tournamentSquareLevel_option;{{LEVEL}} | {{VALUE}}%
+travelSimulator_unitSelection_title;Vali aeglaseim üksus
+travelSimulator_unitSelection_unitType;Üksuse liik
+travelSimulator_unitSelection_unitSpeed;Üksuse kiirus
+travelSimulator_unitSelection_selectedUnitSpeed;Kiirus: {{SPEED}}
+travelSimulator_calculation_land;<b>Maa:</b> {{VALUE}}
+travelSimulator_calculation_sea;<b>Meri:</b> {{VALUE}}
+travelSimulator_heroAttending;Väejuht osaleb
+travelSimulator_vikingRaidBonus;Viikingite rüüsteboonus
+travelSimulator_troopSpeedArtefactEffect;Kiiremate sõdurite artefakti boonus
+travelSimulator_toast_selectSourceAndTarget;Vali kehtiv lähte- ja sihtkoht!
+travelSimulator_toast_selectSourceTribe;Vali kehtiv hõim!
+IOSAppTrackingTransparencyMessage;"Luba" vajutamine kasutab seadme teavet asjakohasema reklaamisisu jaoks
+goldShop_advantage_Value_Duration_Hours;<b>+{{VALUE}}%</b> jaoks <b>{{DURATION}} tundi</b>
+travelSimulator_tournamentSquareLevel_title;Staadioni tase
+travelSimulator_troopSpeedAncientPower;Sõdurite kiirus iidne mõju
+RelativeTime_Formatted;[weeks>0:{{weeks}}ndl][days>0:{{days}}päev ]{{data}}
+settings_account_tab;Konto
+settings_notification_tab;Tõuketeated
+settings_app_PushNotifications_popup_title;Tõuketeated
+settings_app_PushNotifications_popup_header;Luba meil sulle teavitusi saata
+settings_app_PushNotifications_popup_info1;Et saada tõuketeavitusi uudiste ja kasuliku teabega mängu kohta, luba esmalt meie teavitused.
+settings_app_PushNotifications_popup_info2;Teavitusi saad lubada oma seadme rakenduste seadetes.
+settings_app_PushNotifications_popup_info3;Sa võid ka siia tagasi pöörduda, kui soovid teavitused uuesti välja lülitada.
+settings_app_PushNotifications_popup_action_button;Ava rakenduse seaded
+ratioValueMax;/ {{a}}
+market_sendResources_completed;Lõpetatud
+market_sendResources_villageNotFound;Ei leitud Varusid saab saata ainult oma küladesse, liiduliikmetele ja liitlastele.
+no_ads_popup_title;Videoreklaamid puuduvad
+no_ads_popup_header;Videoreklaami näitamisel tekkis probleem.
+no_ads_popup_info1;Sellel võib olla mitu põhjust:
+no_ads_popup_info2; • Praegu ei ole sinu piirkonna reklaamipangas ühtegi reklaami saada.
+no_ads_popup_info3; • Sinu privaatsusseaded piiravad esitatavate reklaamide arvu.
+no_ads_popup_info4; • Tehnilised probleemid meie rakenduse või reklaamipakkujaga.
+no_ads_popup_settings_msg;Vaata, et isikustatud reklaamid oleksid sinu privaatsusseadetes lubatud.
+no_ads_popup_support_msg;Palun võta ühendust meie klienditoega, kui probleem püsib.
+no_ads_popup_support_button;Võta ühendust toega
+city_upgradeToACity_wwVillageNotUpgradeable;Maailma Ime külasid ei saa linnadeks ümber ehitada.
+travelSimulator_selectMagnitude;Vali suurus
+marketplace_merchantsOverview_returningTo;Tagasiteel <b>{{Village}}</b> külast <b>{{Player}}</b>
+market_sendResources_sendAgain;Saada uuesti
+search_village_notFound;Ei leitud Varusid saab saata ainult oma küladesse, liiduliikmetele ja liitlastele.
+settings_app_AnimationsPayoffs_activated;Sõdurite/kaupmeeste saatmise animatsioon on aktiveeritud
+settings_app_AnimationsPayoffs_deactivated;Sõdurite/kaupmeeste saatmise animatsioon on deaktiveeritud
+hero_resourceTransferPopup_empty;Väejuhi varustuses pole varusid, mida üle kanda.
+hero_toast_appearanceChanged;Välimus muudetud
+alliance_editMemberPopup_customNote;Isiklik märkus
+alliance_editMemberPopup_titleOfRole;Rolli nimetus
+alliance_editMemberPopup_setSpecialization;Määra spetsialiseerumine
+alliance_role_offensive;Rünnak
+alliance_role_defensive;Kaitse
+alliance_role_hybrid;Hübriid
+alliance_role_scout;Luuraja
+alliance_role_support;Mängutugi
+alliance_role_wow_hammer;Maailma Ime haamer
+alliance_role_none;Ei ole
+ad_fallback_popup_title;Võta oma tasu vastu
+ad_fallback_popup_info;Praegu pole videoreklaame saadaval, aga tahame sind ikkagi sinu lojaalsuse eest premeerida! Palun oota hetk, kuni me sinu tasu ette valmistame.
+ad_fallback_popup_rewardGranted;Tasu välja antud
+ad_fallback_popup_claim;Võta tasu vastu
+ad_fallback_popup_closeWarning;Kui sulged selle ekraani liiga vara, tühistad tasu
+gameplay_tip_1;Asunikke saad treenida residentsis või palees (residents on saadaval alates 10. tasemest).
+gameplay_tip_2;Ühele avatarile saad ehitada ainult ühe palee. See annab kuni 3 laienemiskohta, residents aga ainult 2.
+gameplay_tip_3;Pealinna muutmiseks ehita uues külas palee. Pane tähele, et sinu vana pealinna ainulaadsed hooned kaovad või langevad madalamale tasemele.
+gameplay_tip_4;Piisavate kultuuripunktide korral saad asustada või vallutada teise küla.
+gameplay_tip_5;Kultuuripunkte teenid hooneid täiustades ja raekojas pidustusi korraldades.
+gameplay_tip_6;Suuri pidustusi saad korraldada raekojas (alates 10. tasemest); need annavad rohkem kultuuripunkte, kuid nõuavad ka rohkem varusid.
+gameplay_tip_7;Küla vallutamiseks vähenda selle lojaalsust nullini residentsis või palees treenitud administraatorite abil.
+gameplay_tip_8;Arenda administraatoreid kõigepealt akadeemias, enne kui treenid neid residentsis või palees.
+gameplay_tip_9;Sa saad vallutada külasid nataritelt või teistelt mängijatelt.
+gameplay_tip_10;Teised mängijad ei saa sinu pealinna vallutada.
+gameplay_tip_11;Kasuta viljaväljade otsijat, et leida 9 või 15 viljaväljaga külad, mis suudavad toetada suuremat armeed.
+gameplay_tip_12;Oma pealinnas saad varuväljasid arendada kõrgemale tasemele kui teistes külades.
+gameplay_tip_13;Saada ressursse sõbralikele küladele turu kaudu.
+gameplay_tip_14;Turul saad teiste mängijatega ressursse vahetada.
+gameplay_tip_15;Suurenda oma kaupmeeste kandevõimet, uuendades kaubanduskoda.
+gameplay_tip_16;Uuenda oma väejuhi kindlust 10. tasemele, et liita oaas ja suurendada oma ressursside tootmist.
+gameplay_tip_17;Tõsta oma sõdurite tugevust sepikojas. Need täiustused rakenduvad kohe kõigile selle tüübi sõduritele, kaasa arvatud juba väljaõpetatud sõduritele.
+gameplay_tip_18;Kasuta lahingusimulaatorit, et hinnata lahingu tulemust enne rünnakut. Mida rohkem üksikasju sa simulatsioonile lisad, seda täpsem on tulemus.
+gameplay_tip_19;Kuldklubiga saad oma pealinnas aktiveerida sõdurite pagemise, et päästa oma armee automaatselt sissetulevate rünnakute eest.
+gameplay_tip_20;Kui su sõdurid koju naasevad, lülitub sõdurite pagemine ajutiselt 10 sekundiks välja.
+gameplay_tip_21;Täienda oma luurajaid sepikojas, et parandada nende luureoskusi.
+gameplay_tip_22;Müürid suurendavad oluliselt su küla kaitset.
+gameplay_tip_23;Ehita peidikuid, et kaitsta oma varusid vaenlaste rüüste eest.
+gameplay_tip_24;Keldid saavad treenida püünisemeistreid, et püüda ründajaid kinni enne lahingu algust.
+gameplay_tip_25;Et vangistatud sõdureid vabastada, soorita edukas tavaline rünnak selle küla vastu, mis need kinni püüdis.
+gameplay_tip_26;Ründavad mängijad saavad vabastada 75% kinni püütud sõduritest, kuid kaitsja võib otsustada rahumeelselt 100% vabastada.
+gameplay_tip_27;Ehita laatsaret, et ravida kuni 40% lahingus kaotatud sõduritest.
+gameplay_tip_28;Keldid saavad treenida püünisemeistrit, et püüda ründavaid sõdureid kinni juba enne lahingu algust.
+gameplay_tip_29;Ehita oma pealinnas kivitöökoda, et suurendada hoonete vastupidavust katapultide ja taraanide rünnakute vastu.
+gameplay_tip_30;Sa saad oma väejuhi peitu saata, kui vaenlane sinu koduküla ründab, et temaga midagi ei juhtuks.
+gameplay_tip_31;Alista hõivamata oaasides olevaid loomi, et saada lisavarusid. Mida tugevamad loomad, seda rohkem varusid saad.
+gameplay_tip_32;Alista oma väejuhi abil hõivamata oaasides olevaid loomi, et koguda kogemust.
+gameplay_tip_33;Kasuta puure, et püüda loomi asustamata oaasidest ja tugevdada oma küla.
+gameplay_tip_34;Varusta oma väejuhti tervendavate salvide või spetsiaalse rüüga, et kiirendada tema tervise taastumist.
+gameplay_tip_35;Elusta oma väejuhti varude abil aja jooksul või kohe veeämbriga.
+gameplay_tip_36;Kui sinu peamaja on 10. tasemel, saad hakata hooneid lammutama.
+gameplay_tip_37;Ehita saatkond, et liituda liiduga või asutada omaenda liit.
+vacationMode_title;Puhkus
+vacationMode_vacation;Puhkeperiood
+vacationMode_vacationModeActive;Puhkus on aktiveeritud
+vacationMode_info;Kasuta puhkeperioodi, et kaitsta oma külasid, kui oled eemal. Puhkeperioodi ajal on järgmised tegevused keelatud:
+vacationMode_deactivated_action1;sõdurite saatmine ja saabumine
+vacationMode_deactivated_action2;Oma väejuhiga seiklustele minek
+vacationMode_deactivated_action3;Uute ehituste alustamine või sõdurite treenimine
+vacationMode_deactivated_action4;Turu (ja kaubateede) kasutamine
+vacationMode_deactivated_action5;Korralda pidustusi, alusta arendusi või vii läbi uuendusi
+vacationMode_deactivated_action6;Liitude loomine või nendega liitumine
+vacationMode_deactivated_action7;anneta varusid liidu boonusteks
+vacationMode_deactivated_action8;Osale oksjonitel
+vacationMode_deactivated_action9;Muuda oma pealinna
+vacationMode_deactivated_action10;konto kustutamine
+vacationMode_deactivated_territory_action1;Küla uuendamine linnaks
+vacationMode_deactivated_territory_action2;Sinu konto ei anna panust liidu piirkondliku elanike arvu arvestusse ja sinu külad ei saa võidupunkte
+vacationMode_conditions_title;tingimust on täidetud puhkusele minekuks
+vacationMode_duration_info;Kui mitu päeva puhkus kestab
+vacationMode_durationUntil;Puhkeperiood kuni <b>{{DATE}}</b>
+vacationMode_availableDays;Saadaval päevi: <b>{{AVAILABLE}}/{{TOTAL}}</b>
+vacationMode_startButton;Alusta puhkust nüüd
+vacationMode_error_noCancelTime;Sa saad puhkeperioodi lõpetada alles {{HOURS}} tunni pärast
+vacationMode_error_missingRequirement;Täida kõik nõuded, et saaksid puhkeperioodi sisse lülitada
+vacationMode_error_noVacationDaysLeft;Sul ei ole ühtegi vaba puhkusepäeva, et puhkuse režiimi sisse lülitada
+vacationMode_error_cooldown;Sa saad puhkuse režiimi uuesti käivitada alles {{HOURS}} tundi pärast selle lõppemist
+vacationMode_abortSuccess;Puhkuse režiim katkestatud!
+vacationMode_remainingDays;Järelejäänud päevad puhkuse režiimis
+vacationMode_runsUntil;Puhkuse režiim kestab kuni
+vacationMode_abortInfo;Sa saad puhkuse režiimi katkestada mitte varem kui <b>{{DATE}}</b>
+vacationMode_abortAvailable;Saad puhkuse nüüd katkestada
+vacationMode_abortConfirmHeader;Kas sa tahad kindlalt puhkuse katkestada?
+vacationMode_abortConfirmInfo;Kasutamata päevade eest tagastatakse raha. Seda toimingut ei saa tagasi võtta.
+vacationMode_startCooldownInfo;Sa saad aktiveerida puhkuse režiimi mitte varem kui <b>{{DATE}}</b>
+vacationMode_abortButton;Katkesta puhkus
+vacationMode_conditions_has_outgoing_troops;Väljuvaid sõdureid ei tohi olla
+vacationMode_conditions_has_incoming_troops;Sinu külade ega oaaside poole ei liigu ühtegi sõdurit
+vacationMode_conditions_has_reinforcing_troops_for;Teistele mängijatele ei ole saadetud abiväge
+vacationMode_conditions_has_reinforcing_troops_from;Sinu külades ega oaasides ei viibi teiste mängijate abivägi
+vacationMode_conditions_has_ww_village;Sul ei tohi olla Maailma Ime küla
+vacationMode_conditions_has_artifact_village;Sul ei tohi olla artefakti küla
+vacationMode_conditions_has_beginners_protection;Algajakaitse puudub
+vacationMode_conditions_has_trapped_troops;Sinu lõksudes ei ole ühtegi sõdurit ning ükski sinu enda sõduritest, sealhulgas väejuht, ei ole lõksu langenud
+vacationMode_conditions_has_deletion_event;Sinu avatar ei ole kustutamiseks märgitud
+vacationMode_conditions_has_conquered_oase;Sa ei ole viimase {{HOURS}} tunni jooksul ühtegi oaasi vallutanud. Puhkeperioodi saad sisse lülitada siis, kui oaasi vallutamisest on möödas {{HOURS}} tundi või oled selle kaotanud.
+vacationModePopup_info;Puhkeperioodi ajal on su konto kaitstud. Kuid su varude tootmine jätkub ning su sõdurid tarbivad vilja edasi. <color=red>See võib viia sõdurite nälgimiseni.</color>
+vacationModePopup_start_info;Oled kindel, et soovid aktiveerida puhkuse režiimi <b>{{DAYS}}</b> [DAYS>1:days][DAYS<2:day]? Puhkuse režiimi saab tühistada kullaga pärast {{COOLDOWN}}-tunnise jahtumisaja möödumist.
+vacationModePopup_troopConsumption;Minu sõdurite tarbimine
+vacationModePopup_starvationEstimate;Varaseim nälgimine toimub kell
+vacationModePopup_starvationTitle;Minu sõdurite tarbimine
+goldTransfer_accept_gift;Jah, kanna kuld üle
+goldTransfer_decline_gift;Ei, ära võta kulda vastu
+goldTransfer_accepted_toast;Kulla ülekanne on vastu võetud.
+goldTransfer_declined_toast;Kulla ülekanne on tagasi lükatud.
+smithy_requirementsNotSatisfied;Selle üksuse arendamise nõuded ei ole täidetud
+vacationModeLobby_status;Puhkusel
+block_vacationMode_toast;Sa ei saa seda teha, kui su konto on puhkeperioodil.
+goldTransfer_verifyOwnership_title;Kinnita, et oled omanik
+goldTransfer_verifyOwnership_description;Ostetud, kuid kulutamata kulla olemasolevale avatarile ülekandmiseks palun kinnita esmalt, et see kuld kuulub sulle, sisestades meiliaadressi, kuhu ülekandekood saadeti.
+goldTransfer_verifyOwnership_emailPlaceholder;Meiliaadress
+goldTransfer_verifyOwnership_errorNoEmail;Palun sisesta oma meiliaadress.
+goldTransfer_verifyOwnership_errorAlreadyUsed;Kulla ülekande link on juba kasutatud.
+goldTransfer_verifyOwnership_errorInUse;Kulla ülekande link on kehtetu.
+goldTransfer_verifyOwnership_verifyButton;Kontrolli
+goldTransfer_selectTargetAvatar_title;Vali sihtavatar
+goldTransfer_selectTargetAvatar_description;Palun vali avatar, kuhu soovid kulda üle kanda.
+goldTransfer_transferableGold_label;Ülekantav kuld:
+goldTransfer_enterAvatarName_header;Sisesta avatari nimi:
+goldTransfer_avatarName_placeholder;Avatari nimi
+goldTransfer_searchAvatar_Button;Otsi avatari
+goldTransfer_searchAvatarNothingFound_error;Selle nimega aktiivset avatari ei leitud.
+goldTransfer_ownAvatarList_header;Vali oma aktiivsete avataride hulgast ({{account}})
+goldTransfer_selectOwnAvatarConfirm_Button;Vali avatar
+goldTransfer_selectGameworld_title;Palun vali mängumaailm
+goldTransfer_selectGameworld_description;Avatari nimi leiti mitmes mängumaailmas. Sa saad kulda kanda ainult ühele avatarile. Palun vali mängumaailm.
+goldTransfer_selectGameworldConfirm_Button;Palun vali mängumaailm
+goldTransfer_changeAvatar_Button;Muuda avatari nime
+goldTransfer_confirm_title;Kinnita ülekanne
+goldTransfer_confirm_Button;Kinnita ülekanne
+goldTransfer_confirmAvatarOnOneWorld_info;Avatari nimi leiti ühes mängumaailmas:
+goldTransfer_confirmAvatarName_prefix;Avatari nimi:
+goldTransfer_confirmGameworld_prefix;Mängumaailm:
+goldTransfer_transferComplete_title;Ülekanne õnnestus
+goldTransfer_transferComplete_description;Sinu kuld kanti edukalt üle avatarile <b>{{avatarname}}</b> mängumaailmas <b>{{gameworldname}}.</b>
+goldTransfer_transferComplete_returnButton;Naase mängu
+cams_settings_accountDeletion_information_warning_v2;See toiming kustutab sinu konto jäädavalt. Sinu kontoga seotud järgmine sisu läheb kaotsi:\n<indent=0.5em>•  kõik sinu konto Avatarid\n•  kõik sinu kontol teenitud Medalid</indent>\n\nKinnita, kirjutades allolevasse lahtrisse sõna "delete".
+mapMarkers_popupTitle;Lisa tähis
+mapMarkers_markerType;Tähise tüüp
+mapMarkers_markerColor;Tähise värv
+mapMarkers_setAlliance;Lisa tähis oma liidu jaoks
+mapMarkers_type_field;Väli
+mapMarkers_addMsg_success;Tähis on edukalt lisatud!
+mapMarkers_saveMsg_success;Tähis on edukalt salvestatud!
+mapMarkers_noPermission_error;Küsi luba oma liidu juhilt.
+mapMarkers_marker;Tähis
+mapMarkers_markers;Tähised
+mapMarkers_listAllianceTitle;Liidu tähised
+mapMarkers_listPlayerTitle;Mängija tähised
+mapMarkers_listAlliances;Liidud
+mapMarkers_listPlayers;Mängijaid:
+mapMarkers_listFlags;Lipud
+mapMarkers_deleteMarker;Kustuta tähis
+mapMarkers_deleteMarkerMessage;Kas soovid selle tähise kustutada?
+mapMarkers_showOnMap;Näita mu tähiseid kaardil
+embassy_general_subtab;Üldine
+embassy_villagesNearby_subtab;Lähedal asuvad külad
+embassy_villagesNearby_listHeader;Liidu ja liitluse külad

@@ -1,0 +1,2081 @@
+detail_window_header_title;{{buildingName|TranslateSuffixFor|allgemein.gid}}
+;{{INT}}
+levelWithValue;{{level}}. szint
+valueWithPercent;{{value}}%
+valueAsRankingPosition;{{value}}.
+valueChangeInBrackets;({{change|Sign}})
+valueChangeInBracketsWithPercent;({{change|Sign}}%)
+ratioValues;{{a}}/{{b}}
+coordinates;<nobr>({{x}}|{{y}})</nobr>
+village_with_coordinates;{{villageName}} <nobr>({{x}}|{{y}})</nobr>
+village_with_clickable_coordinates;{{villageName}} {{mapId|Coordinates}}
+valuePerHour;{{a}}/óra
+back;Vissza
+fill;Kitöltés
+hero;Hős
+done;Kész
+remove;eltávolítás
+prerequisites;Feltételek:
+newAmount;Új mennyiség
+before;előtte
+after;utána
+permissions;Engedélyek
+changesSaved;Változások elmentve!
+genericError;Váratlan hiba
+allianceTagInBrackets;[{{allianceId|AllianceLink}}]
+autocompleteNoResult;Nincs találat
+medalAdded;Medál hozzáadva
+continueEdit;Szerkesztés folytatása
+levelUp;Szintlépés!
+non_existing_object;[?]
+sorting;Rendezés
+copiedToClipboard;Vágólapra másolva
+maximumLengthError;Maximális hossz: {{max}}.
+sortingOptions;Rendezési lehetőségek
+WIP_comingSoon;Hamarosan jön a funkció!
+upgradeTab_fastForward_button;{{Percent}}%-kal gyorsabb
+upgradeTab_masterBuilder_button;Építés \népítőmesterrel {{goldIcon|Sprite}}{{goldCost}}
+upgradeTab_adBoostPopup_boost;{{BOOST}}%-os növelés
+infoTab_upgradingToLevel;Építés a {{level}}. szintre:
+infoTab_genericCurrently;Jelenleg:
+infoTab_genericAtLevel;A(z) {{INT}}. szinten :
+infoTab_genericEffect;{{INT}}
+infoTab_currentProduction;Aktuális termelés:
+infoTab_productionAtLevel;Termelés {{INT}}. szinten:
+infoTab_effectPerHour;{{INT}} /óra
+networkIssues;Megszakadt a kapcsolat a játékszerverrel.
+cantLoadServerList;Hálózati problémák miatt nem lehet betölteni a szerverlistát. Kérjük, ellenőrizd, hogy a készülék csatlakozik-e az internethez, és próbáld meg újra.
+barracks_TrainTroops_Action;Csapatok képzése
+barracks_ViewTrainingsList;Képzési lista megtekintése
+barracks_unitNeedsToBeResearched;Az egységet kutatni kell
+barracks_requiresLabel;Szükséges:
+barracks_trainingCosts;A csapatkiképzés költségei
+barracks_troopsInTraining;Kiképzés alatt álló katonák
+training_started;A kiképzés sikeresen megkezdődött!
+targetSelection_relationLabel;Állapot:
+targetSelection_selectedVillage;Kiválasztott falu
+targetSelection_noSelectedVillage;Nincs falu kiválasztva
+targetSelection_ownVillages;Saját falvak
+targetSelection_relation0;Semleges
+targetSelection_relation1;Barátságos
+targetSelection_relation2;Saját klán
+targetSelection_relation3;Saját falu
+targetSelection_alreadyThere_troops;A csapataid már ott vannak.
+targetSelection_alreadyThere_merchants;A kereskedőid már ott vannak.
+rallyPoint_button_confirmTarget;Cél megerősítése
+rallyPoint_button_prepareTroops;Csapatok felkészítése
+rallyPoint_button_updateWave;Hullám frissítése
+rallyPoint_button_copyWave;Hullám megduplázása
+rallyPoint_button_newWave;Új hullám hozzáadása
+rallyPoint_sendTroops_chooseDestination;Csapatok küldése - Válaszd ki a célállomást
+rallyPoint_sendTroops_sendTroopAction_1;Csapatok küldése - Megerősítés
+rallyPoint_sendTroops_sendTroopAction_3;Csapatok küldése - Megerősítés
+rallyPoint_sendTroops_sendTroopAction_4;Csapatok küldése - Megerősítés
+rallyPoint_sendTroops_sendTroopAction_5;Csapatok küldése - Megerősítés
+rallyPoint_sendTroops_sendTroopAction_72;Csapatok továbbítása - Megerősítés
+rallyPoint_sendTroops_sendTroopAction_9;Csapatok visszavonása - Megerősítés
+rallyPoint_sendTroops_sendTroopAction_10;Új falu alapítása
+rallyPoint_sendTroops_sendTroopButton_1;Egységek küldése
+rallyPoint_sendTroops_sendTroopButton_3;Egységek küldése
+rallyPoint_sendTroops_sendTroopButton_4;Egységek küldése
+rallyPoint_sendTroops_sendTroopButton_5;Egységek küldése
+rallyPoint_sendTroops_sendTroopButton_72;Csapatok továbbítása
+rallyPoint_sendTroops_sendTroopButton_9;Csapatok visszaküldése
+rallyPoint_sendTroops_sendTroopButton_10;Új falu alapítása
+rallyPoint_sendTroops_coordinateX;<b>X</b> koordináta:
+rallyPoint_sendTroops_coordinateY;<b>Y</b> koordináta:
+rallyPoint_sendTroops_selectOnMap;Vagy válaszd ki a helyszínt a térképen:
+rallyPoint_sendTroops_arrivalTime;<b>{{hoursLeft|Duration}}</b> / <b>{{hoursLeft|TimeCountUp}}</b>
+rallyPoint_sendTroops_catapultTargetPopup;Válaszd ki a katapult célpontját:
+rallyPoint_sendTroops_catapultTarget_category_1;Infrastrukturális épületek
+rallyPoint_sendTroops_catapultTarget_category_2;Katonai épületek
+rallyPoint_sendTroops_catapultTarget_category_3;Nyersanyagtároló épületek
+rallyPoint_sendTroops_catapultTarget_random;Véletlen
+rallyPoint_sendTroops_catapultTarget_noBuilding;Épület kiválasztása
+rallyPoint_sendTroops_catapultTarget_recentTargets;Legutóbb kiválasztott:
+rallyPoint_sendTroops_changeHeroHomeVillage;Hős új faluba költöztetése
+rallyPoint_sendTroops_attackNoSelection;Támadás típusának kiválasztása
+rallyPoint_sendTroops_movementType_5;Támogatás
+rallyPoint_sendTroops_movementType_3;Támadás
+rallyPoint_sendTroops_movementType_4;Rablás
+rallyPoint_sendTroops_attackForwarding;Továbbítás
+rallyPoint_sendTroops_noTroopsSelected;- Nincs csapat kiválasztva -
+rallyPoint_sendTroops_noTroopsAvailable;Nem küldhetsz csapatokat. Ebben a faluban nincsenek csapatok.
+rallyPoint_sendTroops_forwardingVillageError;Csapatokat csak klántagoknak vagy saját falvaknak lehet továbbítani.
+rallyPoint_sendTroops_forwardingDestination;Csapatok továbbítása - Célpont kiválasztása
+rallyPoint_sendTroops_WaveRemoved;Hullám eltávolítva
+rallyPoint_sendTroops_maxWaves;Elérted a hullámok maximális számát
+rallyPoint_sendTroops_notEnoughTroopsToCopy;Nincs elég csapat a hullám megduplázásához.
+rallyPoint_sendTroops_troopsSent;Csapatok elküldve!
+rallyPoint_sendTroops_toOverview;Áttekintés
+rallyPoint_sendTroops_backToVillage;Vissza a faluhoz
+rallyPoint_sendTroops_mission;Küldetés:
+rallyPoint_troopsOverview_1;Bejövő támadások és fosztogatások
+rallyPoint_troopsOverview_2;Kimenő támadások és fosztogatások
+rallyPoint_troopsOverview_3;Beérkező csapatok
+rallyPoint_troopsOverview_4;Saját csapatok ebben a faluban és oázisaiban
+rallyPoint_troopsOverview_5;Idegen csapatok a faluban
+rallyPoint_troopsOverview_6;Saját csapatok más falvakban vagy oázisokban
+rallyPoint_troopsOverview_7;Érkező támogatások
+rallyPoint_troopsOverview_8;Kimenő támogatások
+rallyPoint_troopsOverview_9;Kimenő támogatások
+rallyPoint_troopsOverview;Csapatáttekintés
+rallyPoint_troopsOverview_consumption;Fogyasztás: {{cropConsumption|ShortenNumber|10000}}  {{iconName|Sprite}} /óra
+rallyPoint_troopsOverview_arrivalTime;Érkezés: <b>{{Duration|Countdown}}</b> / <b>{{date|Time}}</b> 
+rallyPoint_troopsOverview_incomingMission_3;Bejövő támadás a következőtől: 
+rallyPoint_troopsOverview_incomingMission_4;Bejövő fosztogatás a következőtől: 
+rallyPoint_troopsOverview_outgoingMission_3;Támadások 
+rallyPoint_troopsOverview_outgoingMission_4;Rablások 
+rallyPoint_troopsOverview_outgoingMission_5;Támogatás 
+rallyPoint_troopsOverview_outgoingMission_50;Kaland célja: 
+rallyPoint_troopsOverview_outgoingMission_72;Csapatok továbbítása ide: 
+rallyPoint_troopsOverview_outgoingMission_10;Új település alapítása 
+rallyPoint_troopsOverview_outgoingMission_40;A seregek elmenekülnek az erdei rejtekhelyre
+rallyPoint_troopsOverview_returningMission;Visszatérés innen: 
+rallyPoint_troopsOverview_ownTroops_1;Saját csapatok itt: 
+rallyPoint_troopsOverview_ownTroops_2;Saját csapatok itt: 
+rallyPoint_troopsOverview_ownTroops_3;Saját csapatok itt: 
+rallyPoint_troopsOverview_ownTroops_4;<b>Természet</b> a következőben: 
+rallyPoint_troopsOverview_ownTroops_5;Saját csapatok itt: 
+rallyPoint_troopsOverview_ownTroops_6;Saját csapatok itt: 
+rallyPoint_troopsOverview_ownTroops_7;Saját csapatok itt: 
+rallyPoint_troopsOverview_foreignTroops_2;Támogató csapatok a következőből: 
+rallyPoint_troopsOverview_foreignTroops_4;Fogságban lévő csapatok a következőből: 
+rallyPoint_troopsOverview_ownTroopsInOther_2;Saját támogató csapatok a következőhöz: 
+rallyPoint_troopsOverview_ownTroopsInOther_4;Saját fogságban levő csapatok itt: 
+rallyPoint_troopsOverview_origin;Eredet: 
+rallyPoint_troopsOverview_reinforcement;Támogatás innen: 
+rallyPoint_troopsOverview_killed;A katonákat megölték!
+rallyPoint_troopsOverview_released;A katonákat elengedték!
+rallyPoint_troopsOverview_forwardedTroopsButton;Továbbított csapatok
+rallyPoint_troopsOverview_returnToOverview;Vissza az áttekintéshez
+rallyPoint_troopsOverview_incomingAttacks;<color={{colorValue|TextColor}}>{{incomings}}</color> bejövő
+rallyPoint_troopsOverview_amountIncoming;{{value}} bejövő
+rallyPoint_troopsOverview_amountOutgoing;{{value}} kimenő
+rallyPoint_troopsOverview_amountReturning;{{value}} visszatérő
+rallyPoint_troopsOverview_firstArrivalTime;{{timestamp|Countdown}} órán belül
+rallyPoint_troopsOverview_forwardTroops;Tovább
+rallyPoint_troopsOverview_MergeTroops;Bevonás a faluba
+rallyPoint_troopsOverview_WithdrawTroops;Hátraküldés
+rallyPoint_troopsOverview_sort_1;Először a megjelölt mozgások
+rallyPoint_troopsOverview_sort_2;A legkorábban érkező elsőként
+rallyPoint_troopsOverview_sort_3;Az utolsóként érkező elsőként
+rallyPoint_troopsOverview_sort_4;Legutóbb küldött csapatok elsőként
+rallyPoint_troopsOverview_sort_5;A legrégebben küldött csapatok elsőként
+rallyPoint_troopsMerge_troopsToBeMerged;Összevonásra kiválasztott csapatok:
+rallyPoint_troopsMerge_currentGold;Jelenlegi arany:  {{iconName|Sprite}} {{currentGold}}
+rallyPoint_troopsMerge_goldLeft_0;{{remainingGold}} / {{maxAllowedGold}} arany maradt az egyesülő csapatok számára ma.
+rallyPoint_troopsMerge_goldLeft_1;{{remainingGold}} / {{maxAllowedGold}} arany maradt az egyesülő csapatok számára ma. A nyersanyagokkal további egyesülést hajthatsz végre.
+rallyPoint_troopsMerge_troopsMergedToast;A csapatok egyesültek!
+rallyPoint_raidList_beingRaided;{{current}}/{{total}} fosztogatás alatt
+rallyPoint_infoTab_EvasionShortDescription;Aktiváld a csapatkikerülést a fővárosodban
+rallyPoint_farmList_createNewTitle;Új lista létrehozása
+rallyPoint_farmList_editTitle;Lista szerkesztése
+rallyPoint_farmList_listName;Listanév
+rallyPoint_farmList_selectDefaultTroops;Válaszd ki az alapértelmezett csapatokat
+rallyPoint_farmList_addTroopsButton;Csapatok hozzáadása
+rallyPoint_farmList_editTroopsButton;Csapatok szerkesztése
+rallyPoint_farmList_setTroopsButton;Állítsd be a csapatokat
+rallyPoint_farmList_createListButton;Lista létrehozása
+rallyPoint_farmList_editListButton;Lista frissítése
+rallyPoint_farmList_editTroopsTitle;Farmlistás csapatok szerkesztése
+rallyPoint_farmList_deleteList;Lista törlése
+rallyPoint_selectTroops;Katonák kiválasztása
+rallyPoint_farmList_listCreated;Létrehozott lista
+rallyPoint_farmList_exitList;Kilépő lista
+rallyPoint_farmList_startAll;Minden célpont elindítása
+rallyPoint_farmList_startAllLists;Összes indítása
+rallyPoint_farmList_startSelected;Kiválasztott elindítása
+rallyPoint_farmList_noTarget;- Nincs cél kiválasztva -
+rallyPoint_farmList_noTargetExist;Nincsenek célok ezen a listán
+rallyPoint_farmList_selectedAmount;{{amount}} kiválasztva:
+rallyPoint_farmList_listUpdated;Lista frissítve
+rallyPoint_farmList_listDeleted;Törölt lista
+rallyPoint_farmList_editWarning;- A lista törlése az összes célpontot törli a listából\n- A csapatok szerkesztése csak a jövőbeli alapértelmezett célpontokra lesz hatással
+rallyPoint_farmList_sortingFailed;A rendezés nem sikerült! Kérjük, próbáld meg újra!
+rallyPoint_farmList_notStartedPopupTitle;A fosztogatások nem indultak el
+rallyPoint_farmList_notStartedPopupElement;<b>{{total}}</b>, mert {{message}}
+rallyPoint_farmList_NotStartedPopupButtonGoTo;Ugrás a farmlistára
+rallyPoint_farmList_AddTargetTitle;Cél hozzáadása
+rallyPoint_farmList_changeTroops;Csapatváltás
+rallyPoint_farmList_targetAdded;Cél hozzáadva
+rallyPoint_farmList_targetAlreadyOnList;A cél már szerepel ezen a farmlistán, kérjük, válassz egy másik farmlistát, vagy hozz létre egy újat.
+rallyPoint_farmList_choose;Válaszd ki a farmlistát
+rallyPoint_farmList_notYetRaided;Még nem lett kifosztva
+rallyPoint_farmList_EditRaids;Cél[raidsAmount>1:ok] szerkesztése
+rallyPoint_farmList_DeleteRaidsPlayerQuestion;Biztosan törölni szeretnéd [raidsAmount=1:ezt a célt][raidsAmount>1:ezeket a célokat]?
+rallyPoint_farmList_ChangeRaidList;Farmlista módosítása
+rallyPoint_farmList_ChangeTarget;Célváltoztatás
+rallyPoint_farmList_ChangeTroops;Csapatváltoztatás
+rallyPoint_farmList_DeactivateTarget;Cél[raidsAmount>1:ok] inaktiválása
+rallyPoint_farmList_MultiEditWarning;Több célpontot szerkesztesz. Az elvégzett módosítások az összes kiválasztott célpontra hatással lesznek
+rallyPoint_farmList_UpdateRaids;Cél[raidsAmount>1:ok] frissítése
+rallyPoint_farmList_filterShowTroopsTitle;Mutasd a csapatokat
+rallyPoint_farmList_filterShowTroopsDescription;Megjeleníti a kiválasztott csapatokat célpontonként
+rallyPoint_farmList_filterShowPopulationTitle;Cél lakosságának megjelenítése
+rallyPoint_farmList_filterShowPopulationDescription;Megmutatja a célfalu lakosságát
+rallyPoint_farmList_filterShowDistanceTitle;Távolság megjelenítése
+rallyPoint_farmList_filterShowDistanceDescription;Megmutatja a célpont távolságát a faludtól
+rallyPoint_farmList_filterShowLastRaidTitle;Utolsó fosztogatás információinak megjelenítése
+rallyPoint_farmList_filterShowLastRaidDescription;Megjeleníti a célpont legutóbbi fosztogatási adatait
+rallyPoint_farmList_filterShowBountyTitle;Mutasd meg a zsákmányt és a nyersanyagokat
+rallyPoint_farmList_filterShowBountyDescription;Megmutatja a megszerzett zsákmányt és erőforrásokat
+marketplace_createOffer;Ajánlat létrehozása
+marketplace_myOffers_title;Ajánlataim
+marketplace_myOffers_merchants;Kereskedő: {{count}}
+marketplace_myOffers_alliance_True;Klán: Igen
+marketplace_myOffers_alliance_False;-
+marketplace_myOffers_interval;{{amount}} óra
+marketplace_myOffers_offerDeleted;Ajánlat törölve
+marketplace_merchantsOverview_arrival;{{duration}} óra Érkezés: {{arrivalTime}}
+marketplace_merchantsOverview_incomingMerchants;Érkező szállítmányok: {{count}}
+marketplace_merchantsOverview_outgoingMerchants;Kimenő szállítmányok: {{count}}
+marketplace_merchantsOverview_noIncomingMerchants;- Nincsenek érkező kereskedők -
+marketplace_merchantsOverview_noOutgoingMerchants;- Nincsenek kimenő kereskedők -
+marketplace_merchantsOverview_IncomingCat;Beérkező
+marketplace_merchantsOverview_outgoingCat;Kimenő
+marketplace_merchantsOverview_capacity;Kapacitás: {{capacity}}
+marketplace_merchantsOverview_merchantsOverview;Kereskedői áttekintés
+marketplace_merchantsOverview_ArrivingSoonest;Leghamarabb érkező
+marketplace_merchantsOverview_ArrivingLatest;Legkésőbb érkező
+marketplace_merchantsOverview_ShortestDistance;Legkisebb távolság
+marketplace_merchantsOverview_LongestDistance;Legnagyobb távolság
+marketplace_merchantsOverview_transportTo;Szállítás ide: <b>{{Village}}</b>, játékos: <b>{{Player}}</b>
+marketplace_merchantsOverview_transportFrom;Szállítás innen: <b>{{Village}}</b>, játékos: <b>{{Player}}</b>
+marketplace_merchantsOverview_returningFrom;Visszatérés innen: <b>{{Village}}</b>, játékos: <b>{{Player}}</b>
+academy_research_viewResearchList;Folyamatban lévő kutatás
+academy_research_allUnitsResearched;Minden egység már fel van fedezve.
+academy_researchListPopup_title;Kutatás alatt álló csapatok
+academy_researchListPopup_remainingTime;{{timeLeft}} maradt. Készen áll: {{readyAt}}
+academy_researchListPopup_constructImmediately;Azonnali építkezés
+research_started;A kutatás sikeresen elindult!
+research_timeLeft;{{TIME|Countdown}} maradt
+townHall_celebration_ongoingCelebration;Folyamatban
+topBar_perHourLabel;/h:
+topBar_maxLabel;Max:
+topBar_resourceFull;Teljes
+leftPanel_infoBox;Infóbox
+villagePanel_playerNameTitle;Falvak tulajdonosa: {{playerName}}
+villagePanel_toStatistics;A falustatisztikához
+villagePanel_culturePointsNeeded;Kulturális pontokra van szükség a következő faluhoz
+mapCell_type;{{x}}{{y}}
+mapCell_type_village;{{villageName}}
+mapCell_type_1;Helyi
+mapCell_type_2;Völgy
+mapCell_type_3;Szabad oázis
+mapCell_type_4;Oázis elfoglalása
+mapCell_type_5;Vadon
+mapCell_Owner;Tulajdonos:
+mapCell_type_valley;Völgy
+mapCell_Wilderness;Ezen a helyen nincs semmi érdekes.
+mapCell_Distance;{{distance|Round|1}} mező
+mapCell_locationInfo;Helyszín-információ
+mapCell_surroundings;Környezet
+mapCell_actions_editFarmlist;Farmlista szerkesztés
+mapCell_actions_addFarmlist;Farmlistához ad
+mapCell_actions_raidOasis;Oázis kifosztása
+mapCell_showOnMap;Megjelenítés a térképen
+mapCell_noReports;- Erről a helyről nem áll rendelkezésre információ -
+berichte.region_;{{PLAYERACTIVE}}{{PLAYERPASSIVE}}{{VILLAGE}}{{NAME1}}{{NAME2}}{{ALLY1}}{{ALLY2}}{{NAME}}
+mapCell_goToOwnVillage;Ugrás a saját falura
+constructionQueue_timeLeftToFinish;{{timestamp|Countdown}} maradt. Készen áll ekkor: {{timestamp|Time}}
+constructionQueue_timeUntilStart;Elkezdődik ekkor: {{timestamp|Countdown}}
+constructionQueue_MasterBuilderTitle;Főépítői sor ({{masterBuilderCost|Sprite}} {{masterBuilderCost}} a költség az építkezés kezdetén)
+constructionQueue_Constructing;Épület építése
+constructionImmediatelyPopup_topText;Az alábbi feladatok lesznek befejezve:
+constructionImmediatelyPopup_title;Azonnali befejezés
+newBuildingConstructionDetail_dateTimeEnoughResources;Elég nyersanyag: {{date|Date}} / {{time|Time}}
+newBuildingConstruction_noBuildingsAvailable;Jelenleg nem építhetőek újabb épületek.
+goldclubpopup_currentGold;Jelenlegi arany:  {{iconName|Sprite}} <color={{colorValue|TextColor}}>{{currentGold}}</color>
+goldclubpopup_activated_toastMessage;Gold Club aktiválva!
+loginPage_version;Verzió: {{currentVersion}}
+loginPage_loginBlocked;Bejelentkezés blokkolva
+loginPage_loginBlocked_fails;Túl sok sikertelen bejelentkezési kísérlet
+loginPage_loginBlocked_message;A fiókod blokkolva lett a túlzottan sok sikertelen bejelentkezési kísérlet miatt.
+loginPage_loginBlocked_resolve;A fiók feloldásához jelentkezz be a böngészőn keresztül a következő címen
+serverSelection_selectRegion;Válassz régiót
+serverSelection_selectGameWorld;Válassz játékvilágot
+serverSelection_0;Nemzetközi
+serverSelection_1;Arab
+serverSelection_2;Ázsia
+serverSelection_3;Európa
+serverSelection_4;Amerika
+serverSelection_99;Dev
+serverSelection_mapSize;Térkép mérete:
+serverSelection_mapSize_0;Kicsi
+serverSelection_mapSize_1;Nagy
+serverSelection_artifacts;Különleges tárgyak:
+serverSelection_constructionPlans;Építési tervek:
+serverSelection_changeGameWorld;Játékvilág módosítása
+serverSelection_username;Felhasználónév:
+serverSelection_password;Jelszó:
+serverSelection_loginButton;Jelentkezz be és játssz
+serverSelection_forgotPassword;Elfelejtettem a jelszavam
+serverSelection_noAccount;Nincs fiókom
+serverSelection_loginError;Hibás felhasználónév vagy jelszó
+serverSelection_graphQlError;Hiba az adatok a kiszolgálóról való lekérése közben
+serverSelection_tokenRefreshError;Hiba az utoljára használt szerverre való bejelentkezéskor: kérjük, jelentkezz be újra.
+serverSelection_stayLoggedIn;Maradj bejelentkezve a játékvilágba
+troopsInfo_title;Csapatok itt: {{villageName}}
+unitInfo_velocity;<b>{{fields}}</b> mező óránként
+unitInfo_resourceCarriage;<b>{{INT}}</b> nyersanyag
+unitInfo_researchPrerequisites;A kutatás előfeltételei:
+unitInfo_trainingPrerequisites;A kiképzés előfeltételei:
+unitInfo_canCarry;Terhelhetőség:
+exchangeResources_currentTitle;Új mennyiség
+exchangeResources_lockAmount;Zárolási mennyiség
+exchangeResources_changeTitle;Módosítás
+exchangeResources_restTitle;Maradék
+exchangeResources_buildingPossible_True;Fejlesztés lehetséges
+exchangeResources_buildingPossible_False;A fejlesztés nem lehetséges
+exchangeResources_mergePossible_True;Az összevonás lehetséges
+exchangeResources_mergePossible_False;Az összevonás nem lehetséges
+exchangeResources_researchPossible_True;A kutatás lehetséges
+exchangeResources_researchPossible_False;A kutatás nem lehetséges
+exchangeResources_celebrationPossible_True;Az ünneplés lehetséges
+exchangeResources_celebrationPossible_False;Az ünneplés nem lehetséges
+exchangeResources_reviveHero_True;A hős újraélesztése lehetséges
+exchangeResources_reviveHero_False;A hős újraélesztése nem lehetséges
+exchangeResources_currentlyAvailable;Jelenleg elérhető: <b>{{amount}}</b>
+exchangeResources_maximumAvailable;Maximálisan elérhető: <b>{{amount}}</b>
+exchangeResources_distributeEvenly;Ossza el egyenletesen a fennmaradó nyersanyagokat:
+exchangeResources_distributeOnResource;Vagy rangsorolja a fennmaradó nyersanyagokat először:
+exchangeResources_distributeAuto;Automatikus elosztás
+exchangeResources_distributeManual;Kézi elosztás
+exchangeResources_availableTroops;Elérhető csapatok: {{amount}}
+buildingActivities_title;Építési tevékenységek
+buildingActivities_idle;Üres
+buildingActivities_type;Típus
+buildingActivities_building_13;Fejlesztések:
+buildingActivities_building_16;Farmlista
+buildingActivities_building_17;Kereskedő
+buildingActivities_building_19;Kiképzés alatt álló katonák
+buildingActivities_building_20;Lovasság a kiképzésen
+buildingActivities_building_29;Kiképzés alatt álló katonák
+buildingActivities_building_30;Lovasság a kiképzésen
+buildingActivities_building_21;Kiképzés alatt álló katonák
+buildingActivities_building_22;Kutatás
+buildingActivities_building_24;Ünnep
+buildingActivities_building_46;Gyógyuló csapatok
+buildingActivities_buildingAction_;{{amount}}{{max}}
+buildingActivities_buildingAction_16;{{amount}} fosztogatás folyamatban
+buildingActivities_buildingAction_17;{{amount}}/{{max}} elérhető
+mainMenu_title;Főmenü
+mainMenu_quests;Kalandok
+playerDetails_infoTab;Játékos infó
+playerDetails_villageTabTitle;{{villages}} falu {{oases}} oázissal
+playerDetails_SortBy_1;Lakosság mérete
+playerDetails_SortBy_2;Győzelmi pont
+playerDetails_SortBy_3;Falunév:
+playerDetails_SortBy_4;Régió neve
+player_gender_DontSpecify;Nincs meghatározva
+player_gender_Other;Egyéb
+player_gender0;Férfi
+player_gender1;Nő
+player_gender2;Egyéb
+player_gender3;Nincs meghatározva
+playerDetails_NotesFor;Megjegyzések {{playerName}} számára
+playerDetails_NoDescription_Others;- Ez a játékos nem adott hozzá leírást -
+playerDetails_NoDescription_Own;- Még nincs leírás hozzáadva -
+playerDetails_editLanguages;Nyelvek szerkesztése
+playerDetails_searchLanguage;Nyelv keresése
+goldShopPlaceholder_title;A bolt hamarosan jön!
+goldShopPlaceholder_description;Az Aranybolt még nem szerepel a mobilalkalmazásban.<br><br> Arany vásárlásához kérjük, jelentkezz be a fiókodba a böngészőn keresztül.
+goldShop_title;Aranybolt
+goldShop_advantage_5;Travian Plusz
+goldShop_advantage_4;Fa
+goldShop_advantage_1;Agyag
+goldShop_advantage_2;Vasérc
+goldShop_advantage_3;Búza
+goldShop_feature_activated;Funkció aktiválva!
+goldShop_purchaseFailed;A vásárlás meghiúsult!
+goldShop_purchaseSuccess;Sikeres vásárlás.
+goldShop_transactionInProgress;Folyamatban lévő tranzakció.\nKis türelmet kérünk.
+goldShop_transactionFailed;Valami rosszul sült el.\nKérjük, próbáld meg később.
+goldShop_transactionTimeout;Kedves játékos, a fizetésed túllépte az időkorlátot, és lehet, hogy nem megfelelően lett feldolgozva. Kérjük, fordulj <style="link"><link="https://support.travian.com/support/tickets/new">fizetési ügyfélszolgálatunkhoz</link></style>, ha bármilyen probléma merül fel.
+market_sendResources_requiredMerchants;Szükséges kereskedők:
+market_sendResources_capacityPerMerchant;Kapacitás kereskedőnként
+market_sendResources_amountRepeats;Ismétlések száma:
+market_sendResources_confirmResources;Nyersanyagok megerősítése
+market_sendResources_amountWithX;{{amount}}x
+market_sendResources_sent;Nyersanyagok elküldve!
+market_offer_maxDuration;Maximális szállítási idő:
+market_offer_confirm;Ajánlat megerősítése
+market_offers_title;Ajánlatok
+market_capacity;Kapacitás: {{capacity}}
+market_offers_offering;Kínálom:
+market_offers_searching;Keresem:
+market_offers_offered;Te küldesz
+market_offers_wanted;Te kapsz
+market_offers_accepted;Ajánlat elfogadva! A nyersanyagok már úton vannak, és a kereskedőket már kiküldték.
+market_offers_ownAllianceOnly;Csak a saját klán játékosaiból
+market_ratio_11;1:1
+market_ratio_1X;1 : X
+market_tradeRoutes_to;Címzett:
+market_tradeRoutes_entryAmount;<b>{{amount}}</b> bejegyzés
+market_tradeRoutes_noRoutes;- Nem hoztak létre kereskedelmi útvonalakat -
+market_tradeRoutes_travelTime;Utazási idő: {{time|Duration}} óra
+market_tradeRoutes_activeRatio;{{active}}/{{total}} aktív
+market_tradeRoutes_active;Aktív
+market_tradeRoutes_paused;Szünetelve
+market_tradeRoutes_updated;Utak frissítve
+market_tradeRoutes_deleted;Kereskedelmi útvonalak törölve
+market_tradeRoutes_returnAt;visszatérés ekkor: {{time|Time}}
+market_tradeRoutes_merchantsAndRepeat;{{merchants}} kereskedő, {{repeats}}x
+market_tradeRoutes_filterOptions;Szűrési lehetőségek
+market_tradeRoutes_showMerchants;Kereskedők megjelenítése
+market_tradeRoutes_showMerchantsText;Megmutatja, hogy hány kereskedő van alkalmazva
+market_tradeRoutes_showResources;Nyersanyagok megjelenítése
+market_tradeRoutes_showResourcesText;Megmutatja a szállított nyersanyagok mennyiségét
+market_tradeRoutes_afterInputFieldsSuffix;Óra
+market_tradeRoutes_interval;{{INT}} óra
+market_tradeRoutes_confirmTarget;Cél megerősítése
+market_tradeRoutes_arrivalTime;{{duration|Duration}} / {{arrivalTime|Time}}
+market_tradeRoutes_created;Kereskedelmi útvonal létrehozva
+market_tradeRoutes_edit;Kereskedelmi útvonal[routeAmount>1:ak] szerkesztése
+market_tradeRoutes_update;Kereskedelmi útvonal[routeAmount>1:ak] frissítése
+market_tradeRoutes_multiEditWarning;Több kereskedelmi útvonalat szerkesztesz. Az elvégzett módosítások mind a(z) {{routeAmount}} útvonalat érintik.
+market_tradeRoutes_editResourcesTitle;Nyersanyagok módosítása
+market_tradeRoutes_editResourcesButton;Nyersanyagok szerkesztése
+market_tradeRoutes_setResourcesButton;Nyersanyagok beállítása
+market_tradeRoutes_updateResourcesButton;Nyersanyagok frissítése
+market_tradeRoutes_pause;Kereskedelmi útvonal[routeAmount>1:ak] szüneteltetése
+market_tradeRoutes_pauseDescription;A kereskedelmi útvonal átkerül a szünetlistára, de a piacon marad.
+market_tradeRoutes_delete;Kereskedelmi útvonal[routeAmount>1:ak] törlése
+market_tradeRoutes_deleteConfirmQuestion;Biztos, hogy törölni akarok a [routeAmount=1:ezt][routeAmount>1:ezeket] a kereskedelmi útvonal[routeAmount>1:ak]at?
+market_tradeRoutes_invalidTarget;Kereskedelmi útvonalakat csak olyan falvakba lehet küldeni, ahol van Világcsoda vagy különleges tárgy, valamint olyan falvakba, ahol a klán vagy a szövetség tagjainak Világcsoda-építési tervei vannak.
+hero.status;{{NAME}}
+hero_adventures_selectVillage;Válassz ki egy falut
+hero_adventures_explore;Felfedezés
+hero_adventures_sendHero;Hős elküldése
+hero_adventures_sent;A kaland elkezdődött
+hero_status_reviveWithBucket;Használd, hogy hősöd azonnal újraéledjen.
+hero_status_reviveWithRes;Használd a nyersanyagokat a hős újraélesztéséhez.
+hero_inventory_consumablePopupTitle;Használható tárgy
+hero_resourceTransferPopup_title;Nyersanyagok átadása
+hero_resourceTransferPopup_ReadyForTransfer;Készen áll az átadásra
+hero_resourceTransferPopup_transferSelected;Kiválasztott átadás
+hero_resourceTransferPopup_transferMax;Maximális mennyiség átadása
+hero_resourceTransferPopup_storageFull;Tároló tele. Nem tudsz több nyersanyagot átadni.
+hero_inventory_transferToCurrentVillage;Átadva a jelenleg aktív falunak: <b>{{VILLAGE}}</b>
+hero.itemDescriptionV2Details;{{PERCENTAGE}}{{EXPERIENCE}}{{RAISE}}{{LIMIT}}{{MAX}}{{TIME}}
+hero.itemDescriptionV2;{{VALUE}}
+hero_consumablePopup_currentEquippedItems;A jelenleg felszerelt tárgyak mennyisége:
+hero_consumablePopup_itemsLeftInInventory;A leltárban maradt tárgyak mennyisége:
+hero.itemTypeV2_inventory;Fogyóeszköz
+hero.cooldownWithTime;{{COOLDOWN}} a várakozási idő, vége ekkor: {{DATE|DateTime}}
+reports_overview_title;{{COUNT}} jelentés
+reports_overview_title_selected;Kiválasztva {{SELECTED}} / {{COUNT}} jelentés
+reports_overview_title_archived;Archivált jelentések
+reports_overview_archived_noReports;- Nem állnak rendelkezésre archivált jelentések -
+reports_filters_title;Szűrő kiválasztása
+reports_filters_allReports;Minden jelentés
+reports_filters_applyButton;{{COUNT}} szűrő alkalmazása
+reports_filters_noFilter;Nincs kiválasztott szűrő
+reports_detail_title;Jelentés részletei
+berichte.;{{NAME1}}{{NAME2}}{{VILLAGE_NAME}}{{X}}{{Y}}{{COORDS}}{{NAME}}
+reports_player_from_village;[{{allianceId|AllianceLink}}] {{playerId|PlayerLink}} a(z) {{villageId|VillageLink}} faluból
+reports_troops_lost;Elveszett csapatok:
+reports_troops_hospitalized;Kórházba került:
+reports_xp_gained;{{amount}} megszerzett XP
+reports_health_change;-{{change}}% egészség
+reports_hero_died;A hősöd meghalt a kaland során
+reports_scouted_building;{{buildingType|TranslateSuffixFor|allgemein.gid}} <b>{{level}}</b>. szint
+reports_refreshed;Jelentések frissítve!
+reports_deleteReportPopup_title;Jelentés(ek) törlése
+reports_deleteReportPopup_warningTitle;Biztos, hogy törölni szeretnél {{X}} jelentést?
+reports_deleteReportPopup_warningTitleAll;Biztos, hogy törölni szeretnéd a az összes jelentést?
+reports_deleteReportPopup_warningDescription;Ha egyszer törölsz egy jelentést, az végleg eltűnik. Nem fogod tudni visszaszerezni.
+reports_deleted;Jelentés törölve!
+reports_markedUnread;Jelentés olvasatlannak jelölve!
+reports_archived;Jelentés archiválva!
+reports_deleted_all;Minden jelentést törölve!
+reports_deleted_selected;{{X}} jelentés törölve
+reports_markedRead_all;Minden jelentés olvasottként lett megjelölve!
+reports_markedRead_selected;{{X}} jelentés olvasottként megjelölve!
+alliance_nameAndTagPair;{{allianceName}} | {{allianceTag}}
+alliance_editAllianceName;Klánnév szerkesztése
+alliance_name;Klánnév
+alliance_nameError;A klán neve nem lehet üres
+alliance_tag;Klán cimke
+alliance_tagError;A klán címkéje nem lehet üres
+alliance_profileTab_inviteNewPlayer;Új játékos meghívása
+alliance_profileTab_showInvitedPlayers;Meghívott játékosok megjelenítése
+alliance_invitedPopup_title;Meghívott játékosok
+alliance_invitedPopup_invitationRemoved;Meghívó eltávolítva!
+alliance_invitePlayerPopup_title;Játékos meghívása
+alliance_invitePlayerPopup_noPlayerFound;Nem található a játékos
+alliance_invitePlayerPopup_playerInvited;Játékos meghívva!
+alliance_editMemberPopup_title;Tag szerkesztése
+alliance_editMemberPopup_customMessage;Egyéni üzenet
+alliance_editMemberPopup_setRole;Szerep beállítása
+alliance_editMemberPopup_kickPlayerFromAlliance;Játékos kirúgása a klánból
+alliance_editMemberPopup_cantChangePermission;Nem lehet megváltoztatni az aktuális engedélyt: lásd a figyelmeztetést.
+alliance_kickPlayerPopup_areYouSure;Biztos vagy benne, hogy ki akarod rúgni a játékost ({{Player}}) a klánból?
+alliance_kickPlayerPopup_playerKicked;A játékos kirúgva!
+alliance_editAllianceDescription;Klánleírás szerkesztése
+alliance_topColumn;Felső oszlop
+alliance_bottomColumn;Alsó oszlop
+alliance_bbCodeAdded;BB kód hozzáadva
+alliance_generalInformation;Általános információk
+alliance_confederacy_tab;Szövetség
+alliance_diplomacy;Diplomácia
+alliance_diplomacy_tab1;MNT / Háború
+alliance_diplomacy_send_new;Új küldése
+alliance_diplomacy_openRequests;Nyitott kérelmek
+alliance_diplomacy_otherOffered;{{allianceId|AllianceLink}} felajánlotta a következőt: {{type|TranslateSuffixFor|alliance_diplomacy_type}}
+alliance_diplomacy_youOffered;Felajánlás ({{type|TranslateSuffixFor|alliance_diplomacy_type}}) a következőtől: {{allianceId|AllianceLink}}
+alliance_diplomacy_offerDeclare;Ajánlat / Nyilatkozat
+alliance_diplomacy_type;Típus
+alliance_diplomacy_type1;Szövetség
+alliance_diplomacy_type2;MNT
+alliance_diplomacy_type3;Háború
+alliance_diplomacy_type4;Szövetség
+alliance_diplomacy_typekick;elbocsátás a szövetségből
+alliance_diplomacy_deleteText_;{{type|TranslateSuffixFor|alliance_diplomacy_type}}{{alliance|AllianceLink}}
+alliance_diplomacy_deleteTitle_RemoveRequest;Kérés eltávolítása
+alliance_diplomacy_deleteText_RemoveRequest;Biztosan el akarod távolítani az ajánlatot ({{type|TranslateSuffixFor|alliance_diplomacy_type}}) a következővel: {{alliance|AllianceLink}}?
+alliance_diplomacy_deleteTitle_TerminateExisting;Lezárás
+alliance_diplomacy_deleteText_TerminateExisting;Biztosan le akarod zárni a kapcsolatot ({{type|TranslateSuffixFor|alliance_diplomacy_type}}) a következővel: {{alliance|AllianceLink}}?
+alliance_diplomacy_deleteTitle_ConfederacyKickVote;Lezárás
+alliance_diplomacy_deleteText_ConfederacyKickVote;A szövetség többi tagjától is jóváhagyást kell kapnod {{subject|AllianceLink}} eltávolítására.\n\nSzeretnéd folytatni és tájékoztatni a többi klánt a döntésedről?
+alliance_diplomacy_deleteTitle_QuitConfederacy;Lezárás
+alliance_diplomacy_deleteText_QuitConfederacy;Biztosan meg akarod szüntetni a szövetséget a következő tagokkal?
+alliance_diplomacy_deleteTitle_RemoveConfederacyProposal;Kérés eltávolítása
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Kick;Biztosan vissza akarod utasítani {{alliance|AllianceLink}} kérését, hogy rúgjuk ki a következőt a szövetségből: {{subject|AllianceLink}}?
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Join;Biztosan elutasítod {{alliance|AllianceLink}} kérelmét, hogy csatlakozzon a(z) {{subject|AllianceLink}} szövetséghez?
+alliance_diplomacy_sent;Ajánlat elküldve
+alliance_diplomacy_accepted;Elfogadott diplomáciai kapcsolat
+alliance_diplomacy_canceled;Megszakított diplomáciai kapcsolat
+alliance_diplomacy_declined;Kérelem elutasítva
+alliance_diplomacy_kickStarted;Kérés elküldve
+alliance_diplomacy_proposal_approved;Kérelem jóváhagyva
+alliance_diplomacy_noContract;A klánodnak nincs aktív szerződése más klánokkal.
+alliance_diplomacy_noConfederacy;A klánod nem része egy szövetségnek.
+alliance_diplomacy_alreadyOpenOffer;Már van egy nyílt ajánlat ebbe a klánba.
+alliance_diplomacy_alreadyExistingContract;Ezzel a klánnal már van szerződés.
+alliance_diplomacy_warInDeletion;Várd meg, hogy a másik klán is befejezze a háborút.
+alliance_union_leave;Szövetség elhagyása
+alliance_union_add;Új kérelem hozzáadása
+allianz.diplomacy_with_type;{{NAME}}
+allianz.diplomacy_with_type4;Szövetség a következővel: {{NAME}}
+alliance_newsBbDescription;Változtasd meg a "szám" értékét a hírek számának szerkesztéséhez
+alliance_LossesBBName;Veszteségek
+alliance_LossesBBDescription;Változtasd meg a "név" értékét a klán összehasonlításhoz történő kiválasztásához
+alliance_NapBBName;Megnemtámadási szerződések
+alliance_WarsBBName;Háborúk
+alliance_addBBCode;BB kód hozzáadása
+alliance_addMedal;Medál hozzáadása
+alliance_assignToPosition;Tagok hozzárendelése a pozícióhoz és a klán nevének módosítása
+alliance_editPermissions;Jogosultságok szerkesztése
+alliance_roleTitle;A szerepkör neve:
+alliance_assignToPosition_onlyMemberError;Te vagy az egyetlen tagja ennek a klánnak. A tagok szerepkörökhöz rendelése és a klán nevének megváltoztatása nem törölhető.
+alliance_noAllianceEvents;- Nincsenek klánesemények -
+alliance_dailyContribution;Napi hozzájárulás
+alliance_contributionAmount;Hozzájárulás: <b>{{AMOUNT}}</b>
+alliance_resourcesContributed;{{current}}/{{max}} nyersanyag hozzájárulás
+alliance_contributionResetIn;Visszaáll: {{time|Countdown}}
+alliance_resUntilNext;Nyersanyagok a következő szintig: {{resources|LongNumber}}
+alliance_bonusCurrentlyActivating;Bónusz aktiválódik: {{resources|Countdown}}
+alliance_bonusMaxed;Bónusz maximalizálva
+alliance_tripledContribution;Megtripláztad a hozzájárulásod!
+alliance_contributionStatistics;Hozzájárulási statisztikák
+alliance_contributionNone;- Jelenleg nincsenek hozzájárulók -
+auth_clientVerificationFailed;Nem tudta ellenőrizni a klienst. Próbáld meg újra.
+banned_seeMessage;Lásd az üzenetet
+banned_acceptPunishment;Büntetés elfogadása
+residence_settlement;Letelepülés
+residence_settlementVillages1;A települések által elfoglalt települési rések
+residence_settlementVillages2;A falvak 1 településhelyet foglalnak el
+residence_settlementAvailableSlots;Elérhető elszámolási rések
+residence_nextSlot;Next settlement slot unlock: {{current}}/{{required}} culture points
+residence_slotsUsed;Slots used:
+residence_settlementDetails;Az elszámolás részletei
+residence_settlementSlotX;Settlement slot {{number}}
+residence_settlementUpgradeNeeded;Fejlesszétek a {{buildingType|TranslateSuffixFor|allgemein.gid}} oldjátok fel ezt a településhelyet
+residence_settlementSettle;Ha új falut alapítanál, küldj telepeseket egy üres mezőre a világtérképen. Szükséged van 3 telepesre; 750 nyersanyagra minden nyersanyagból és elegendő kultúrpontra ahhoz, hogy egy másik falut is irányíthass.
+residence_settlementChief;Egy másik falu meghódításához le kell csökkentened a hűségét 0-ra. Ehhez szükséged van a {{senatorId|TranslateSuffixFor|truppen.tid}} címre, és már nem lehet palota, rezidencia vagy parancsnoki központ. You also need enough culture points to control another village.
+palace_capital;Ezt a falut jelölje ki fővárosomnak.
+palace_setAsCapital;Fővárosként beállítva
+palace_enterPassword;Biztonsági okokból add meg a jelszót:
+embassy_GoToAlliance;Menj a klánhoz
+embassy_Invitation;{{AllianceId|AllianceLink}} klán, meghívta: {{playerId|PlayerLink}}
+embassy_VillagesInRange;Falvak a tartományban
+embassy_LeaveAllianceToJoin;Ahhoz, hogy új klánhoz csatlakozhass, előbb ki kell lépned a jelenlegi klánodból.
+embassy_ConfirmLeaveAlliance;Megerősítés és kilépés a klánból
+embassy_InvitationAccepted;Meghívás elfogadva
+embassy_AllianceFounded;A klán sikeresen megalakult
+embassy_LeftAlliance;Sikeresen kiléptél a klánból
+embassy_acceptInvitationQuestion;Biztos vagy benne, hogy csatlakozni akarsz a(z) {{allianceId|AllianceLink}} klánhoz?
+embassy_acceptInvitationWarning;A csatlakozástól számított {{hours}} órán belül nem hagyhatod el a klánt.
+embassy_acceptInvite;Igen, csatlakozom a klánhoz
+embassy_declineInvite;Nem, távolítsd el a meghívót
+embassy_noAlliancesNearby;A közeli területen nem találtak klánokat.
+smithy_improveTo;{{level}}. szintre fejlesztés
+smithy_viewList;Fejlődés megtekintése
+smithy_upgradeStarted;{{unitId|TranslateSuffixFor|truppen.tid}} megkezdett fejlesztés
+smithy_researchFirst;Az egységet az akadémián kell kutatni
+smithy_levelTooLow;A kovácsműhely szintje túl alacsony, kérlek, fejleszd a kovácsműhelyt!
+allBuildings_10;Minden raktár:
+allBuildings_11;Minden magtár:
+allBuildings_23;Minden rejtekhely:
+allBuildings_38;Minden raktár:
+allBuildings_39;Minden magtár:
+currentBuildingValue;Jelenleg {{type|TranslateSuffixFor|allgemein.gid}}:
+ad_successful;Hirdetés sikeresen megnézve!
+externalLink_title;Külső Link
+externalLink_description1;<b>Vigyázat!</b><br>A következő külső linket készülsz megnyitni:
+externalLink_description2;A Travian Games nem tudja ellenőrizni vagy igazolni ezt a linket.
+externalLink_description3;Saját felelősségre járj el.
+externalLink_description4;Biztosan folytatni akarod?
+externalLink_continue;Tovább a linkhez
+search_village;Falu keresése
+search_select_village;Válassz ki egy falut
+search_three_characters;Gépelj be legalább {{amount}} karaktert
+search_no_result;Nincs találat
+search_player;Játékos keresés
+search_player_invite;Játékos meghívása
+search_select_player;Játékos kiválasztása
+search_select_player_invite;Új játékos meghívása
+search_alliance;Klán keresése
+search_select_alliance;Klán kiválasztása
+gid27.arte_detail_;{{INT}}
+artefact_inventory_level_effect;Kincstár: {{LEVEL}}, hatás: {{EFFECT}}
+artefact_inventory_village;Kiindulás:
+artefact_inventory_conquered;Meghódítva:
+artefact_inventory_active;Aktív: aktív ekkor:
+artefact_inventory_active_already;Aktív: <b>Aktiválva</b>
+artefact_inventory_show_active_only;Csak az aktivált ereklyéim megjelenítése
+artefact_overview;Ereklyék áttekintése
+artefact_tip_large;A nagy ereklyékhez <b>20</b>. kincstári szintre van szükség, és az egész <b>avatárodat</b> érinti
+artefact_tip_small;A kis ereklyékhez <b>10</b>. kincstári szintre van szükség, és csak a <b>falut érinti</b>
+artefact_tip_nearby;A környéken talált ereklyék: {{villagenamelong|Bold}}
+artefact_small;Kicsi
+artefact_large;Nagy
+artefact_nearby;A közelben
+artefact_village;Falu
+artefact_button_former_owners;Korábbi tulajdonosok megjelenítése
+artefact_already_active;Már aktiválva
+artefact_required_level_value;Kincstár <b>{{LEVEL}}. szint</b>
+artefact_details;Részletek:
+number_counter;{{NUMBER}}.
+tasks_villageTasks;Falubeli feladatok
+tasks_nextHeroLevelBonus;Következő hősi szint bónusz = {{value}}%
+villageOverview_building_headline;Építkezés
+villageOverview_building_slotIdle;Nincs folyamatban lévő építkezés
+villageOverview_resource_sorting1;Falulista
+villageOverview_resource_sorting2;Legalacsonyabb magtár-időtartam
+villageOverview_resource_sorting3;Legmagasabb magtár-időtartam
+villageOverview_resource_sorting4;Legalacsonyabb raktár-időtartam
+villageOverview_resource_sorting5;Legmagasabb raktár-időtartam
+villageOverview_resource_sorting6;Negatív termelés
+villageOverview_troops_stationed;A faluban állomásozó csapotok
+villageOverview_troops_sum;Összes saját csapat
+villageOverview_troops_tab_training;Kiképzés
+villageOverview_culture_slots;Falubeli férőhelyek
+cancelPopup_Improvement;Fejlesztés megszakítása
+cancelPopup_Research;Kutatás megszakítása
+cancelPopup_Construction;Építkezés megszakítása
+cancelPopup_text_;{{NAME}} {{LEVEL}}
+cancelPopup_text_Improvement;Szeretnéd megszakítani a(z) {{NAME}} {{LEVEL}}. szintre fejlesztését?
+cancelPopup_text_Research;Szeretnéd megszakítani {{NAME}} kutatását?
+cancelPopup_text_Construction;Szeretnéd megszakítani a(z) {{LEVEL}}. szintű {{NAME}} építését?
+cancelPopup_text_refund;Visszakapod a fejlesztési költségek {{INT}}%-át:
+dailyQuests_timeRemaining;Hátralevő idő: {{time|Countdown}}
+dailyQuests_rewardOverview;Jutalom áttekintés megjelenítése
+dailyQuests_claimRewards;Jutalom begyűjtése
+dailyQuests_pointsEarned;Megszerzett pontok: <b>{{current}}/{{max}}</b>
+dailyQuests_rewardDescription;Ezeket a jutalmakat a mai napi küldetések teljesítésével oldhatod fel:
+dailyQuests_claimAction;Követelés
+dailyQuests_alreadyClaimed;Begyűjtve
+dailyQuests_questDetailTitle;Infó
+dailyQuests_quest_worth;A kaland értéke:
+dailyQuests_quest_worth_points;+{{points}} pont
+dailyQuests_quest_repeated;Ez a küldetés megismételhető:
+dailyQuests_quest_repeated_amount;{{amount}} idő
+dailyQuests_quest_completed;Ismétlések befejezve:
+dailyQuests_quest_difficulty;Nehézség:
+dailyQuests_quest_requirement;Követelmény:
+dailyQuests_backToOverview;Vissza az áttekintéshez
+dailyQuests_difficulty_moderate;Mérsékelt
+dailyQuests_difficulty_hard;Nehéz
+dailyQuests_difficulty_challenging;Kihívást jelent
+achievementQuests.achQuest_;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+achievementQuests.achQuest__step_01_description;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+heroMansion_Loyalty;Hűség: {{INT}}%
+heroMansion_Conquered;Meghódítva: {{TIME|DateTime}}
+heroMansion_SlotFree;A következő oázis férőhely elérhető
+heroMansion_SlotBlocked;A következő oázis a <color={{colorValue|TextColor}}>Hősök házától</color> <color={{colorValue2|TextColor}}> {{REQUIRMENT}}szintű</color>
+heroMansion_Undo;Visszavonás
+heroMansion_FinishedAt;Befejezve: {{TIME|Time}}
+waterworks_NoneOasesAcquired;Nem csatolt oázis
+waterworks_BonusCalculation;+ ({{INT}}% a következőből: {{INT2}}%) = (% /%) = 
+waterworks_CurrentBonus;Jelenlegi vízmű bónusza: +{{INT}}% az oázis nyersanyagokon
+waterworks_Oases;Annektált oázisok
+messages_inbox_title;{{COUNT}} üzenet
+messages_inbox_title_selected;Kiválasztott {{SELECTED}} / {{COUNT}} üzenet
+messages_newMessage;Új üzenet
+messages_messageSent;Üzenet elküldve!
+messages_exitPreview;Kilépés az előnézetből
+messages_previewTitle;Üzenet előnézete
+messages_unread_count;{{COUNT}} olvasatlan
+reportPlayer_selectReason;Válassza ki a jelentés okát
+reportPlayer_reasonPlaceholder;A jelentés oka
+reportPlayer_addNote;Megjegyzés hozzáadása a jelentéshez (opcionális):
+reportPlayer_alsoBlock;Ezt a játékost is hagyd figyelmen kívül
+reportPlayer_maximumLength;Maximális hossz: {{text|TextLength}}/300
+reportPlayer_nowIgnored;Most figyelmen kívül hagyod ezt a játékost.
+reportPlayer_nowUnignored;Többé nem hagyod figyelmen kívül ezt a játékost.
+statistics_general;Általános statisztikák
+statistics_seeDetails;Lásd a részleteket
+statistiken.progressionStepTitle_;{{VALUE}}{{DATETIME}}
+language_com;Dev nyelv
+language_de-DE;Német
+language_en-US;Magyar
+language_fr-FR;Francia
+language_ru-RU;Orosz
+statistics_villageAndHero;Legnagyobb falu / hős
+RelativeTime_0;{{data}} mp
+RelativeTime_1;{{data}} p
+RelativeTime_2;{{data}} ó
+RelativeTime_3;[data>1:{{data}} nap][data<2:{{data}} nap]
+RelativeTime_4;[data>1:{{data}} hét][data<2:{{data}} hét]
+RelativeTime.Separator; 
+RelativeTime.Wrapper.Past;korábban mint {{time}}
+RelativeTime.Wrapper.Future;{{time}}-n belül
+mapCell_tooFewSettlers;{{current}}/3 telepes elérhető
+mapCell_heroNotIdle;A hősöd nem tétlen
+mapCell_cantAddOwn;Nem adhatsz hozzá saját falvakat
+mapCell_alreadyInVillage;Te már abban a faluban vagy
+serverSelection_rememberPassword;Emlékezzen a jelszavamra
+serverSelection_savedWorldsTitle;Saját játékvilágok
+serverSelection_removeWorldTitle;Játékvilág eltávolítása
+serverSelection_removeWorldQuestion;Tényleg le akarod venni ezt a játékvilágot a listádról?
+serverSelection_removeWorldDescription;Figyelmeztetés: Ez nem fogja törölni a fiókodat a játékvilágban. Bármikor visszatérhetsz, és hozzáadhatod a fiókodat is tartalmazó játékvilágot a játékvilágok listájához.
+serverSelection_removeWorldButton;Eltávolítás a listáról
+serverSelection_addWorldText;+ Játékvilág hozzáadása
+buildingActivities_buildingAdditional_;{{amount}}
+buildingActivities_buildingAdditional_17;{{amount}} aktív kereskedelmi útvonal
+reports_filters_reset;Szűrők visszaállítása
+palace_capitalSet;Főváros beállítva!
+palace_isCapital;Ez a fővárosod.
+messages_unread_count_full;{{COUNT}} olvasatlan üzenet
+statistics_alliance;Klánstatisztika
+statistics_alliances_best_off;A legjobb klánok (támadó)
+statistics_alliances_best_def;A legjobb klánok (védekező)
+statistics_offensiveStrength;A(z) {{VILLAGEID|VillageLink}} támadó erőd ezen a szerveren
+statistics_offensiveStrengthAlliance;{{VILLAGEID|VillageLink}} támadó erőd a klánodban
+statistics_offensiveStrengthVillage;A falu támadó ereje:
+statistics_defensiveStrength;A védelmi erőd ezen a szerveren
+statistics_defensiveStrengthAlliance;A védelmi erőd a klánodban
+statistics_defensiveStrengthVillage;A falu védekező ereje:
+statistics_defensiveStrengthVillageSum;Az összes falu teljes védelmi ereje:
+recent;Legutóbbi
+appliedFilters;{{COUNT}} szűrő aktív.
+allgemein.gid99;Véletlen
+rallyPoint_troopsOverview_10;Részletes csapatáttekintés
+rallyPoint_troopsOverview_returningFromAdventure;Visszatérés a kalandból: 
+rallyPoint_troopsOverview_detailedView;Részletes nézet
+rallyPoint_troopsOverview_noMovements;- Nincs folyamatban csapatmozgás -
+rallyPoint_troopsOverview_Target;Cél: {{Target|NamedCoordinates}}
+rallyPoint_troopsOverview_Origin;Eredet: {{Target|NamedCoordinates}}
+hero_adventures_number;Ssz. {{INT}}
+hero_status_regeneration;<b>Egészség-regeneráció:</b> {{VALUE}}% naponta
+hero_status_regeneration_details;{{HERO}}% naponta a hős miatt{{EQUIPMENT}}% naponta a felszerelés miatt
+hero_status_experience;<b>Tapasztalat:</b> {{VALUE}}%
+hero_status_experience_bonus;Bónusz: {{VALUE}}%
+search_results;Találatok
+search_player_link;Játékos link
+search_select_player_link;Játékos kiválasztása
+search_recipient;Címzett keresése
+search_select_recipient;Címzett kiválasztása
+search_alliance_link;Klán linkje
+search_select_alliance_link;Klán kiválasztása
+messages_fullView_title;Üzenet
+messages_recipient_placeholder;Címzett kiválasztása
+messages_title_placeholder;Add meg az üzenet címét
+messages_message_placeholder;Írd be üzeneted
+messages_ownAlliance;Saját klán
+messages_selectedRecipients;Kiválasztott
+messages_ownAlliance_[ally];Minden klántag
+messages_ownAlliance_[off];Támadó klántagok
+messages_ownAlliance_[def];Védekező klántagok
+messages_discard_title;Üzenet elvetése
+messages_discard_text_header;El akarod vetni ezt az üzenetet?
+messages_discard_text;Az üzenet tartalma visszafordíthatatlanul elveszik.
+messages_confirm_deletion_title;Üzenetek törlése
+messages_confirm_deletion_text_header;Biztos, hogy törölni szeretnél [data>1:{{data}} üzenetet][data=1:{{data}} üzenetet]?
+messages_confirm_deletion_text;Ha az üzenetek törlődtek, nem lehet őket visszaállítani.
+messages_confirm_deletion_button;[data>1:{{data}} Üzenet][data=1:{{data}} Üzenet] törlése
+icon_selection_title;Ikon hozzáadása
+icon_selection_button;Ikon kiválasztása
+icon_selection_resourcesAndHero;Nyersanyagok / Hős
+icon_selection_natureAndNatars;Természet és natarok
+upgrading;Fejlesztés!
+buildingActivities_buildingAdditional_46;Nincs sebesült katona
+playerDetails_ignorePlayerDescription;Játékos letiltva
+reports_share;Jelentés megosztása
+search_select_village_link;Válassz ki egy falut
+search_village_link;Falu linkelése
+search_report_link;Jelentés linkelése
+search_select_report_link;Válaszd ki a jelentést
+messages_banned;Csak a klánod más tagjainak írhatsz üzeneteket.
+messages_template_title;Sablonok
+messages_template_none;Nincsenek rendelkezésre álló sablonok
+messages_template_edit_title;Sablon szerkesztése
+messages_template_delete_title;Sablon törlése
+messages_template_delete_question;Biztosan törölni szeretnéd ezt a sablont?
+messages_template_delete_desc;Ha törölted, nem lehet többé visszaállítani.
+messages_template_create;Új sablon létrehozása
+messages_template_create_descr;Hozzon létre egy új sablont az aktuális üzenetből:
+messages_template_created;Sablon létrehozva!
+messages_template_deleted;Sablon törölve!
+statistics_culturePoints_productionRank;A KP termelési helyezésed ezen a szerveren
+statistics_culturePoints_productionRankAlliance;A KP termelési helyezésed ezen a klánodban
+statistics_culturePoints_production;KP
+statistics_resourceRank_production;Termelés: {{VALUE|ShortenNumber}}
+statistics_resourceRank_productionRank;A termelési helyezésed ezen a szerveren
+statistics_resourceRank_productionRankAlliance;A termelési helyezésed a szövetségben
+statistics_resourceRank_bounty_lost;Elvesztett
+statistics_wonderOfTheWorld_header;Legjobb világcsodák
+hospital_healing_costs;Csapatok gyógyítási költségei
+hospital_healing_action;Csapatok gyógyítása
+hospital_healing_list;Gyógyulási lista megtekintése
+hospital_healing_list_title;A csapatok gyógyulása
+hospital_healing_started;A gyógyulás megkezdődött
+bonusValueWithPercent;+{{value}}%
+village_with_isCapital;{{villageName}} (főváros)
+maximumTextLengthError;{{CONTEXT}} legfeljebb {{AMOUNT}} karakterekből állhat
+infoTab_genericEffectInBrackets;({{INT|Sign}})
+infoTab_effectPercentage;{{INT}}%
+infoTab_effectInBracketsPercentage;({{INT|Sign}}%)
+infoTab_trapperCurrently;Jelenlegi csapdakészítő max. mennyisége:
+trapper_Build_Action;Csapdaépítés
+trapper_ProductionCosts;A csapda előállítási költségei
+trapper_TrapsInConstruction;Csapdák építés alatt
+trapper_MaxBuilt;A már megépített csapdák maximális száma.
+truppen.tid119;Csapda
+truppen.tid119p;Csapdák
+rallyPoint_troopsOverview_outgoingMission_scouting_1;A következő védelmének és csapatainak felderítése: 
+rallyPoint_troopsOverview_outgoingMission_scouting_0;A következő nyersanyagainak és csapatainak felderítése: 
+rallyPoint_troopsOverview_returningRegeneratedMission;Visszatérő regenerált csapatok innen: 
+rallyPoint_troopsOverview_returningFleeingMission;A csapatok visszatérnek az erdei rejtekhelyből: 
+rallyPoint_troopsOverview_foreignTroopsIn;Itt állomásoznak: 
+rallyPoint_celebration_hint;A sörfőzdében tartott ünnepség hatással lehet a csapatokra.
+building_not_built;Meg nem épült épület
+berichte.report_icon_24;Jelentés
+allBuildings_36;Minden csapdakészítő max. mennyisége:
+cropFinder_min_oasis_crop_bonus;Min. Oázis búzabónusz:
+cropFinder_select_minimum_crop_bonus;Válaszd ki a minimális búzabónuszt
+cropFinder_unoccupied;Szabad
+search_by_location;Keresés hely szerint
+search_by_player;Keresés játékos szerint
+search_village_from_player;Játékos falujának keresése
+enter_player_name;Adja meg a játékos nevét
+messages_template_newConditionsNotMet;A sablonoknak tartalmazniuk kell egy címet és egy üzenetet.
+message_report_isAlready;Az üzenet az következő okból már be lett jelentve: {{REASON}}
+tutorial_begin;Túra elkezdése
+tutorial_title_0;Üdvözlet, rettenthetetlen bajnok! 
+tutorial_text_0;Üdvözlünk a Travian: Legends ádáz csataterén. Gyorsan felkészítünk a dinamikus letelepedés használatára és a megállíthatatlan erők felsorakoztatására.\n\nKészen állsz?
+tutorial_title_1;Navigáció áttekintése
+tutorial_text_1;Itt mindent felfedezhetsz a térképtől kezdve a hatékony kommunikációig és a lényeglátó információs eszközökig. Szintén szépen elrejtve itt találod a napi küldetéseket, a személyre szabott beállításokat és egy sor más funkciót.
+tutorial_title_3;A nyersanyagaid
+tutorial_text_3;A falud nyersanyagait itt találod. Az nyersanyagsávra koppintva további részletek jelennek meg.
+tutorial_title_4;A nyersanyagaid
+tutorial_text_4;Az nyersanyagsávra való ismételt koppintás elrejti a részleteket.
+tutorial_title_5;A falud
+tutorial_text_5;Itt minden szükséges információt megtalálsz a faludról. A feladatok listájától kezdve a csapatok áttekintéséig és az építési sorba állításig minden megtalálható itt. Az app újdonsága, hogy az építési tevékenységek funkció gyors összefoglalót nyújt az épületeken belül folyamatban lévő fejlesztésekről.
+tutorial_title_7;A falud
+tutorial_text_7;Ha a gyülekezőtér megépül, ez átfogó képet ad az összes folyamatban lévő csapatmozgásról. Ezenkívül gyors elérést kínál a gyülekezőtérhez.
+tutorial_title_8;Oldalsó menü
+tutorial_text_8;Az oldalsó menü megnyitásához koppints a nyilakra, vagy húzd el az ujjad. Ez bármikor megtehető.
+tutorial_title_9;Falulista
+tutorial_text_9;Bármikor gyorsan válthatsz a falvak között az oldalsó panelt kinyitva. A falu statisztikáit is ott találod.\n\nÉs ezzel a túra véget is ért. Mire vársz még? Merülj el, fedezd fel, és hagyd, hogy a Travian: Legends világa a stratégiai játszótereddé váljon.\n\nSok szerencsét!
+tutorial_finish;Túra vége
+filters_report_not_found;A jelentés nem létezik
+filters_player_not_found;A játékos nem található
+filters_alliance_not_found;A klán nem található
+filters_village_not_found;A falu nem létezik
+settings_game;Ez a játékvilág
+language_app_selection;Válaszd ki az app nyelvét:
+settings_sitter;{{VALUE}} helyettesítő:
+settings_sitterTab_yourSitters;Helyettesítőid
+settings_sitterTab_SittingFor;Helyettese a következőnek:
+search_player_addSitter;Helyettes hozzáadása
+search_select_player_addSitter;Helyettes hozzáadása
+search_player_addSitter_additionalEmptyResultInfo;Nem található a játékos.\nCsak a saját klánod/szövetséged játékosai helyettesíthetik avatárodat.
+settings_sitter_sitterAdded;Helyettes hozzáadva!
+settings_sitter_sitterRemoved;Helyettes eltávolítva!
+settings_sitter_sitterPermissionChangesSaved;Az engedélyek módosítása elmentve!
+settings_sitter_confirm_remove_text_header;El akarod távolítani a következőt a helyetteseid közül: {{PlayerName}}?
+settings_sittersFor;Helyettes más avatár(ok)nál
+settings_sittersFor_info;A következő avatároknál vagy beállítva helyettesként. A piros X-szel tudod ezeket a helyettesítéseket törölni.
+settings_sittersFor_none;Jelenleg nem helyettesítesz másik avatárt.
+settings_sitterFor;{{VALUE}} helyettese:
+settings_sitterFor_sittingRemoved;Megszűnt {{PlayerName}} helyettesítése!
+settings_sitterFor_confirm_remove_header;Meg akarod szüntetni a helyettesítés az következőhöz: 
+settings_sitterFor_confirm_remove_header_questionmark;?
+settings_sitterFor_confirm_remove_info;Ezt a műveletet nem lehet visszavonni. Csak más játékosok adhatnak hozzá téged, mint helyettesüket.
+brewery_celebration_attackStrength;({{INT}}% támadóerő)
+brewery_celebration_hint;A már menetelő csapatokat érinti az ünnepség
+settings_game_newLanguage;A nyelv módosítva a következőre: {{language}}.
+wonderOfTheWorld_name;A világcsoda neve:
+combatSimulator_title;Szimuláció - {{role|TranslateSuffixFor|combatSimulator_as}}
+combatSimulator_cataTargetLevel;<b>{{index}}. katapult célja</b>
+combatSimulator_troopLevel;Csapat kovácsműhelyének szintje:
+combatSimulator_asAttacker;Támadóként
+combatSimulator_asDefender;Védekezőként
+combatSimulator_result;Szimulálja az eredményeket
+combatSimulator_addReinforcement;Támogatás hozzáadása
+valueWithModifier;{{value|Round|2}}x
+valuePlusInBracketsWithPercent;(+{{change}}%)
+none;Semmi
+marketplace_traderoute_repeatEveryHour;Ismételje meg minden: (óránként)
+block_sitter_warning;Helyettesként nem lehetséges
+settings_openConsentWindow;Adatvédelmi beállítások
+combatSimulator_adjustHeroStats;Hős statisztikáinak beállítása
+combatSimulator_eagleEyeTitle;Válaszd ki a sasszem bónuszt
+combatSimulator_architectSecretTitle;Válaszd ki az építészek titka bónuszt
+combatSimulator_metallurgyBonus;Válaszd ki a fémöntés bónuszt
+combatSimulator_rightHand;Válassz jobbkezes tárgyat
+combatSimulator_leftHand;Válassz balkezes tárgyat
+combatSimulator_bodyItem;Válassz testen viselhető tárgyat
+combatSimulator_inventoryItem;Készletben levő tétel kiválasztása
+combatSimulator_selectBuildingLevel_35;Válaszd ki a sörfőzde szintjét
+combatSimulator_selectBuildingLevel_26;Válaszd ki a palota szintjét
+combatSimulator_selectBuildingLevel_34;Válaszd ki a kőfejtő szintjét
+combatSimulator_selectBuildingLevel_31;Válaszd ki a fal szintjét
+combatSimulator_selectBuildingLevel_32;Válaszd ki a fal szintjét
+combatSimulator_selectBuildingLevel_33;Válaszd ki a fal szintjét
+combatSimulator_selectBuildingLevel_43;Válaszd ki a fal szintjét
+combatSimulator_selectBuildingLevel_42;Válaszd ki a fal szintjét
+combatSimulator_selectTargetLevel;Válaszd ki a katapult céljának szintjét
+combatSimulator_selectTroopLevel;Válassza ki a csapatszintet
+survey_title;Travian: Legends felmérés
+gdpr_title;Hozzájárulás az adatfeldolgozáshoz
+gdpr_description;A hozzájárulásoddal bizonyos információkat gyűjtünk az eszközöddel, IP-címeddel, használattal és a hirdetési azonosítókkal kapcsolatban. Ez segít nekünk abban, hogy relevánsabb hirdetéseket jelenítsünk meg neked, és javítja az app általános felhasználói élményét.
+gdpr_basic_functions;Az app alapvető funkcióihoz szükséges.
+gdpr_advertisement;Személyes adatok felhasználása reklámcélokra.
+gdpr_analytics;Személyes adatok felhasználása elemzési célokra.
+gdpr_acceptAll;Összes elfogadása
+gdpr_save_and_exit;Mentés + Kilépés
+gdpr_rejectAll;Összes elutasítása
+gdpr_privacy_policy;Adatvédelmi nyilatkozat
+gdpr_terms_and_conditions;ÁSZF
+plus.plus.browserOnly;(csak böngésző)
+hero_inventory_already_equipped;Ugyanez a tárgy már fel van szerelve.
+survey_button_title;Visszajelző kérdőív
+survey_button_description;Vegyél részt ebben a rövid felmérésben, hogy segíts nekünk a Travian: Legends app fejlesztésében.
+goldShop_extend;hosszabbítás
+goldShop_remaining;Hátralevő:
+goldShop_advantage_activated;aktiválva
+search_select_recipient_removeAll;Távolítson el mindent
+messages_messageTopic_noTopic;Nincs téma/alapértelmezett
+messages_messageTopic_resources;A nyersanyagokról
+messages_messageTopic_defenses;A védekezésről
+messages_messageTopic_attacks;A támadásokról
+messages_messageTopic_strategies;A stratégiákról
+messages_messageTopic_information;Általános információk
+messages_messageTopic_important;Fontos információk
+messages_messageTopic_selectionTitle;Üzenet témájának kiválasztása
+farmlist_confirm_deletion_header;Biztos, hogy törölni szeretnéd a kiválasztott farmlistát?
+farmlist_confirm_deletion_text;Ez a művelet nem visszaállítható.
+farmlist_target_confirm_deletion_header;Biztosan törölni szeretéd [data>1:a(z) {{data}} célt][data=1:ezt a célt]?
+upgrade_queue_cantConstructImmediately;Ezt az épületet nem lehet azonnal felépíteni
+language_cs-CZ;Cseh
+language_es-ES;Spanyol
+language_pl-PL;Lengyel
+language_pt-PT;Portugál
+language_tr-TR;Török
+language_it-IT;Olasz
+playerDetails_victorPoints_summary;{{TOTAL}} | {{PERDAY}}/nap
+settings_selectFormat;Válassz formátumot:
+settings_selectFormat_dialog_title;Válassz dátumformátumot
+settings_game_newDateFormat;A dátumformátum megváltozott a következőre: {{dateFormat}}
+help_getHelp;Segítségkérés
+help_getHelpDescription;Ha segítségre van szükséged, vagy problémát szeretnél jelenteni, lépj kapcsolatba a játékon belüli ügyfélszolgálattal itt.
+help_learnAboutGame;Ismerd meg a játékot
+help_learnAboutGameDescription;Mindent, amit a játékról és a dolgok működéséről tudni szeretnél, részletesen itt találsz.
+help_gameRules;Ismerd meg a játékszabályokat
+help_gameRulesDescription;Itt találod az aktuális játékszabályokat.
+help_joinDiscord;Csatlakozz a Discordhoz
+help_joinDiscordDescription;Oszd meg velünk visszajelzéseidet a dedikált mobil Discord szerverünkön.
+PLAYERARG;{{PLAYER}}
+referAFriend_friendJoinedDescription;Ahhoz, hogy aranyat kapj az ajánlásodért, a barátodnak meg kell alapítania a <b>második faluját</b>. Segíts neki abban, hogy elérje ezt a célt! Ellenőrizd haladását az alábbi ajánlói áttekintésben.
+referAFriend_rewardAddedVillage2Title_PLAYERARG;Barátod, {{PLAYER}} megalapította 2. faluját
+referAFriend_rewardAddedVillage3Title_PLAYERARG;Barátod, {{PLAYER}} megalapította 3. faluját
+referAFriend_rewardAddedVillage4Title_PLAYERARG;Barátod, {{PLAYER}} megalapította 4. faluját
+referAFriend_rewardAddedVillage5Title_PLAYERARG;Barátod, {{PLAYER}} megalapította 5. faluját
+referAFriend_rewardAddedVillage6Title_PLAYERARG;Barátod, {{PLAYER}} megalapította 6. faluját
+referAFriend_rewardAddedVillage7Title_PLAYERARG;Barátod, {{PLAYER}} megalapította 7. faluját
+referAFriend_rewardAddedVillage8Title_PLAYERARG;Barátod, {{PLAYER}} megalapította 8. faluját
+referAFriend_rewardAddedVillage9Title_PLAYERARG;Barátod, {{PLAYER}} megalapította 9. faluját
+referAFriend_rewardAddedVillage10Title_PLAYERARG;Barátod, {{PLAYER}} megalapította 10. faluját
+sysmsg_truce_learnMore;További információk a fegyverszünetekről
+worldEnded_ww_playerWon_topAlliance;A munkások {{WW_VILLAGE|VillageLink}} faluban, {{WORLD_END_TIME|DateTime}} órájában lerakták az utolsó követ a történelem egyik legjelentősebb alkotásának megalkotásához.<br>A klánnal ({{WW_ALLIANCE|AllianceLink}}) együtt {{WW_PLAYER|PlayerLink}} volt az első, aki befejezte a világcsodát. Miután számtalan erőforrást felhasznált, és több százezer bátor védővel megvédte a helyszínt, {{WW_PLAYER|PlayerLink}} megkapta a "Korszak győztese" címet.
+worldEnded_as2022_topAlliances;Gratulálunk {{ALLIANCE_TOP_1|AllianceLink}} számára, akik Európa vezetőivé váltak {{VICTORY_POINTS_TOP_1}} győzelmi ponttal! {{ALLIANCE_TOP_2|AllianceLink}} bátran küzdött a győzelemért, második lett, miközben {{ALLIANCE_TOP_3|AllianceLink}} sebesen követte őket a harmadik helyen.
+worldEnded_playerRanks_population;{{PLAYER_POPULATION_TOP_1|PlayerLink}} uralta a legnagyobb személyes birodalmat, szorosan követte őt {{PLAYER_POPULATION_TOP_2|PlayerLink}} és {{PLAYER_POPULATION_TOP_3|PlayerLink}}.
+worldEnded_playerRanks_offender;{{PLAYER_OFFENDER_TOP_1|PlayerLink}} mindenkinél többet győzött le, és ő volt a legrettegettebb parancsnok.
+worldEnded_playerRanks_defender;{{PLAYER_DEFENDER_TOP_1|PlayerLink}} volt a legdicsőségesebb védelmező, aki a falvak kapujában győzte le az ellenséget, és vérükkel terítette be a falvak körüli földeket.
+rallyPoint_startWithValue;Start ({{value}})
+rallyPoint_farmList_raidsStarted;{{INT}} fosztogatás elindítva.
+rallyPoint_farmList_CantAddToAbandonList;Egy elhagyott farmlistára nem lehet célpontokat felvenni.
+rallyPoint_farmList_CantActivateInToAbandonList;Nem aktiválhatsz célpontokat egy elhagyott farmlistán.
+rallyPoint_farmList_CantDuplicateInToAbandonList;A célpontok nem duplikálhatók egy elhagyott farmlistán.
+rallyPoint_farmList_DuplicateRaids;Duplikált cél[raidsAmount>1:ok]
+rallyPoint_farmList_SlotsDuplicated;Cél[raidsAmount>1:s] duplikálva!
+rallyPoint_farmList_pleaseSelectTheList;Kérjük, válaszd ki a listát, amelyhez hozzá kívánod adni a célpontot.
+rallyPoint_farmList_farmlistFull;A farmlista megtelt, kérjük, válassz egy másik farmlistát, vagy hozz létre egy újat.
+rallyPoint_farmList_targetName;Cél neve
+rallyPoint_farmList_differentTroopsWarning;A csapatok száma nem változik, kivéve, ha új érték megadásával felülírod őket.
+rallyPoint_farmList_noobProtectionWarning;Amíg a kezdővédelem alatt állsz, nem tudsz fosztogatni más játékosokat, de a nem elfoglalt oázisokban és a natar falvakban fosztogathatsz.
+rallyPoint_farmList_noFarmLists;Nincs létrehozott farmlista
+rallyPoint_farmList_CreateNewFarmList;Farmlista létrehozása
+rallyPoint_farmList_currentAmount;Farmlisták: <b>{{amount}}</b>/{{max}}
+rallyPoint_farmList_differentTribe;A falunak más törzse van, mint a jelenlegi forrásfalunak. Kérjük, ellenőrizd a csapat értékeit.
+rallyPoint_farmList_overrideTarget;Cél felülbírálása
+rallyPoint_farmList_selectedActivated;A kiválasztott célpontok aktívra lettek állítva.
+rallyPoint_farmList_selectedDeactivate;A kiválasztott célpontok inaktívra lettek állítva.
+rallyPoint_farmList_LastRaid;<b>Legutoljára elindítva:</b> <nobr>{{lastStarted|DateTime}}</nobr>
+mapCell_editTargetListAmount;<nobr>Célpont szerkesztése</nobr> <nobr>(Listák: {{INT}})</nobr>
+goldShop_shopDisabled;Az aranybolt ki van kapcsolva ezen a játékvilágon
+infobox_accountLockGameEnd;Ennek a körnek vége!
+applySorting;Alkalmazza a rendezést
+truppen.tid931;Csapda
+truppen.tid931p;Csapdák
+mainMenu_switchBackFromAvatar;{{iconName|Sprite}} Vissza ide: {{playerName}}
+pending;(Függőben)
+featureNotAvailableInVacationMode;Ez a funkció vakáció üzemmódban nem érhető el.
+notAllowed;Ezt nem teheted meg.
+settings_avatarDeletionInfo;A törlési folyamat elindítása után <b>3 napba telik</b>, mire az avatárod törlése befejeződik.\nEgy törölt avatár nem férhet hozzá az árverésekhez és a pénzváltóhoz.\nA törlési folyamatot itt bármikor megszakíthatod.
+settings_avatarDeletionCountDown;Az avatár törlődik ekkor:
+deleteAvatar_confirmation_header;Törölni akarod az avatárod?
+cams_info_subHeader;Egy bejelentkezés az összes játékvilágodhoz
+cams_info_text;Hozz létre Legends előcsarnok-fiókot az egyszerű bejelentkezéshez és a zökkenőmentes hozzáféréshez az összes játékvilágodhoz egyetlen bejelentkezéssel.
+cams_info_lessInfo;Kevesebb információ
+cams_info_Question_WhatIsLegendsLobbyAccount;Mi az a Legends előcsarnok-fiók?
+cams_info_Answer_WhatIsLegendsLobbyAccount;Az előcsarnok-fiókkal soha többé nem kell regisztrálnod egy új játékvilágba. Csak bejelentkezel, és belépsz az aktív játékvilágodba, vagy új játékot indítasz az előcsarnokban, akár a böngészőben, akár a mobilalkalmazásban.
+cams_info_Question_WhatAreAvatars;Mik azok az avatárok?
+cams_info_Answer_WhatAreAvatars;A előcsarnok-fiók bevezetésével a profilodat egy adott játékvilágban avatárnak nevezzük. Egy előcsarnok-fiókod van, amelyhez több avatár is tartozhat, egy-egy minden játékvilághoz.
+cams_info_Question_WhatsWithCurrentGameworlds;Mi fog történni a jelenlegi játékvilágaimmal?
+cams_info_Answer_WhatsWithCurrentGameworlds;Minden aktív játékvilág, amely ugyanazt az e-mail címet használja, mint az előcsarnok-fiókod, összekapcsolódik, és az előcsarnokon keresztül érhető el. Az előcsarnok-fiókod létrehozása előtt le tudod cserélni a jelenleg aktív játékvilágbeli avatárjaidnál az e-mail-címet a megfelelőre.
+cams_info_Question_WhatsWithSitters;Lehetnek még helyetteseim?
+cams_info_Answer_WhatsWithSitters;Igen, a játékvilág beállításaiban a szokásos módon lehet helyetteseket kijelölni. Közvetlenül a játékvilágban érheted el azt az avatárt, akit helyettesként kijelöltél.
+cams_info_Question_WhatsWithDuals;Játszhatok még társjátékosként más játékosokkal?
+cams_info_Answer_WhatsWithDuals;A társjátékosok az előcsarnokban lévő játékos előcsarnok-fióknevének megadásával rendelhetők egy játékvilághoz. Ez azt jelenti, hogy a társjátékosnak először egy előcsarnok-fiókra is szüksége van, és a meghívás elfogadása után az előcsarnokon keresztül férhet hozzá az avatárhoz. Kérjük, ne oszd meg senkivel előcsarnok-fiókod jelszavát.
+cams_info_Question_WhatsWithoutLobbyAccount;Játszhatok Legends előcsarnok-fiók létrehozása nélkül?
+cams_info_Answer_WhatsWithoutLobbyAccount;Az aktuális játékvilágodba közvetlenül a megfelelő URL-címen továbbra is bejelentkezhetsz. Ha azonban új játékvilágot akarsz indítani, vagy a mobilalkalmazást szeretnéd használni, létre kell hoznod egy előcsarnok-fiókot.
+cams_playerDecision_register_info;Az új előcsarnok-fiók segítségével egyetlen bejelentkezéssel összekapcsolhatod jelenlegi és jövőbeli játékvilágaidat.
+cams_playerDecision_login_info;Van már előcsarnok-fiókod?\n\nJelentkezz be, és folytasd a kalandodat.
+cams_playerDecision_register_header;Fiók létrehozása
+cams_playerDecision_register_create_new_account;Előcsarnokfiók létrehozása
+cams_playerDecision_register_login;Bejelentkezés az előcsarnokba
+cams_playerDecision_extra_info;Ahhoz, hogy játszani tudj a Travian: Legends játékkal, létre kell hoznod egy előcsarnok-fiókot.
+cams_register_header;Legends előcsarnok-fiók létrehozása
+cams_register_email_label;Add meg az e-mail-címed:
+cams_register_email_address;E-mail-cím regisztrálása
+cams_register_email_address_missing;Kérjük, add meg az e-mail-címed.
+cams_register_email_address_not_valid;Kérjük, adj meg egy valós e-mail-címet. Pl. nev@szolgaltato.hu
+cams_register_email_address_already_exists;Az e-mail-címed már kapcsolódik egy előcsarnok-fiókhoz.
+cams_register_redirecting_to_login;Átirányítás a(z) {{INT}} bejelentkezéshez...
+cams_register_hintMessage_same_email_address;Használd ugyanazt az e-mail címet, mint amit a meglévő játékvilágbeli avatárod használ, hogy automatikusan összekapcsold őket az előcsarnok-fiókoddal.
+cams_register_receive newsletter;Szeretném megkapni a hírlevelet.
+cams_register_already_have_an_account;Már van fiókod?
+cams_register_log_in_now;Jelentkezz be most
+cams_acceptTOS;Az "E-mail cím regisztrálása" gombra kattintva elfogadod a <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">ÁSZF-et</link></style> és megerősíted, hogy elolvastad a <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">Tájékoztatás az elállási jogról</link></style> és a <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">Adatvédelmi szabályzat</link></style> dokumentumokat.
+cams_activation_header;Legends előcsarnok-fiók aktiválása
+cams_activation_info;Elküldtük az aktiválási linket ide: <b>{{emailAdress}}</b>.<br>A folytatáshoz kövesd az e-mailben található utasításokat.
+cams_activation_enter_code;Add meg az aktiválási kódot:
+cams_activation_code_example;Pl. 123456
+cams_activation_entered_code;{{INT}}/6 számjegy
+cams_activation_cta_activate_account;Fiók aktiválása
+cams_activation_email_lost;Nem kaptál e-mailt?
+cams_activation_email_resend;E-mail újraküldése
+cams_activation_email_wrong;Hibás az e-mail-cím?
+cams_activation_email_change;Email-cím módosítása
+cams_activation_code_missing;Kérjük, add meg az e-mailben kapott aktiválási kódot!
+cams_activation_code_too_short;Az aktiválási kód túl rövid. Kérjük, add meg mind a hat számjegyet.
+cams_activation_code_format_incorrect;Az aktiváló kód formátuma helytelen. Kérjük, ügyelj arra, hogy a kód csak hat számból álljon.
+cams_activation_code_incorrect;Az aktiválási kód érvénytelen! Kérjük, add meg az e-mailben kapott aktiválási kódot!
+cams_activation_code_expired;Az aktiváló kód lejárt.
+cams_activation_code_start_again;Újrakezdés
+cams_login_header;Bejelentkezés a Legends előcsarnokba
+cams_login_enter_email;Add meg az e-mail-címed vagy a fiókod nevét:
+cams_login_enter_password;Add meg a jelszavad:
+cams_login_hintMessage_email_already_connected;A megadott e-mail-cím már kapcsolódik egy előcsarnok-fiókhoz. Jelentkezz be, vagy <style="SimpleLink"><link="BackToRegistrationLink">menj vissza a regisztrációhoz</link></style>.
+cams_login_hintMessage_passwordUpdated;Jelszavad sikeresen frissült
+cams_forgot_password;Elfelejtetted a jelszavadat?
+cams_recover_password;Jelszó visszaállítása
+cams_login_no_account_yet;Még nincs fiókod?
+cams_login_create_account;Fiók létrehozása
+cams_loginMask_accountNameRequired;Kérjük, add meg e-mail-címed vagy a fiókod nevét.
+cams_loginMask_passwordRequired;Kérjük, add meg jelszavad.
+cams_loginMask_passwordAndUsernameAreWrong;Hibás e-mail, fióknév vagy jelszó.
+cams_loginMask_emailOrAccountName_placeholder;E-mail-cím vagy fióknév
+cams_loginMask_temporaryInfobox;ÚJ: A játékvilágok eléréséhez előcsarnok-fiókot kell létrehoznod.\n\nHa még nincs előcsarnok-fiókod, <style="SimpleLink"><link="CreateAccountLink">hozz létre fiókot</link></style>.
+cams_setPassword_header;Állítsd be a jelszavadat
+cams_setPassword_info;Hozz létre egy legalább nyolc karakter hosszúságú jelszót a fiókodhoz.
+cams_setPassword_enter_password;Válassz jelszót:
+cams_setPassword_strength_label;Jelszó erőssége
+cams_setPassword_strength_missing;Adjon meg egy jelszót az erősség ellenőrzéséhez.
+cams_setPassword_strength_1;nagyon gyenge
+cams_setPassword_strength_2;elég gyenge
+cams_setPassword_strength_3and4;közepes
+cams_setPassword_strength_5;elég erős
+cams_setPassword_strength_6;nagyon erős
+cams_setPassword_strength_PasswordTooShort;Minél hosszabb, annál jobb (16+ karakter)
+cams_setPassword_strength_PasswordGoodLength;A jelszó hosszúsága jó
+cams_setPassword_strength_OneType;Csak egy betűméretet használj
+cams_setPassword_strength_TwoTypes;Kétféle karakterméretet használhatsz
+cams_setPassword_strength_ThreeTypes;Háromféle típusú karakter használata
+cams_setPassword_strength_NoNumbers;Nincs benne szám
+cams_setPassword_strength_NoLetters;Nincs benne betű
+cams_setPassword_strength_NoSpecialCharacters;Nincs benne speciális karakter
+cams_setPassword_strength_NoUpperAndLowerCase;Ne keverd a kis- és nagybetűket
+cams_setPassword_strength_UpperAndLowerCase;Kis- és nagybetűk használata
+cams_activation_cta_set_password;Jelszó beállítása
+cams_activation_password_length;8-64 karakter
+cams_resetPassword_header;Új jelszó beállítása
+cams_resetPassword_info;Hozz létre egy új jelszót az előcsarnok-fiókodhoz, amelynek hossza legalább nyolc karakter.
+cams_setUsername_header;Válassz nevet a Legends előcsarnok-fiókod számára
+cams_setUsername_info;Válassz egy felhasználónevet és egy címkét, hogy létrehozd egyedi előcsarnok-fiókneved.
+cams_setUsername_username_label;Válassz egy felhasználónevet:
+cams_setUsername_tagline_label;Válassz egy címkét:
+cams_setUsername_tagline_example;pl. CÍMKE12
+cams_setUsername_tagline;Címke:
+cams_setUsername_condition_onlyLettersAndNumbers;Csak betűk és számok
+cams_setUsername_username_condition_Length;3-15 karakter
+cams_setUsername_tagline_condition_Length;2-5 karakter
+cams_setUsername_hint;A felhasználónév és a címke kombinációja lesz az egyedi előcsarnok-fiókneved. Mindaddig, amíg a kombináció elérhető, bármilyen kombinációt választhatsz.\n\nEz nem befolyásolja a játékvilágodban levő neved.
+cams_setUsername_cta_createAccount;Fiók létrehozása
+cams_setUsername_username_missing;Kérjük, adj meg egy felhasználónevet és egy címkét.
+cams_setUsername_accountName_preview;Fióknév előnézet:
+cams_setUsernameConfirmPopup_header;Legends előcsarnok-fiók létrehozva!
+cams_setUsernameConfirmPopup_info;Sikeresen létrehoztuk a Legends előcsarnok-fiókodat a(z) <b>{{playerName}}</b> bejelentkezési névvel.
+cams_setUsernameConfirmPopup_GameworldAndAvatar_header;Játékvilágaid és avatárjaid
+cams_setUsernameConfirmPopup_GameworldAndAvatar_info;A következő, azonos e-mail-címmel rendelkező, már létező játékvilágbeli avatárokat kapcsoltuk az új előcsarnok-fiókodhoz.
+cams_avatar_name;Avatár neve
+cams_looby_welcomeMessage;Üdvözlünk!\n<b>{{playerName}}</b>
+cams_looby_header;Saját játékvilágok
+cams_looby_noGameWorlds;Jelenleg nincs aktív avatárod egyik játékvilágban sem. Csatlakozz egy új játékvilághoz, és kezdj el játszani.
+cams_looby_joinNewGameworld;Csatlakozás egy új játékvilághoz
+cams_looby_playNow;JÁTÉK INDÍTÁSA
+cams_looby_gameworldsLinked;A fiókodhoz kapcsolódó játékvilágok
+cams_looby_invitePenging;{{data}} meghívó függőben
+cams_looby_localGameWorld;HELYI JÁTÉKVILÁG
+cams_looby_avatarInDeletion;Törlés
+cams_removeDualAccount_header;Társjátékos eltávolítása
+cams_removeDualAccount_info;Szeretnéd eltávolítani az avatárodhoz (<b>{{avatarName}}</b>) rendelt társjátékost (<b>{{lobbyAccountName}}</b>)?\n\n<b>{{lobbyAccountName}}</b> nem fog tudni hozzáférni az avatárodhoz többé.
+cams_removeDualAccount_removeDual;Társjátékos törlése
+cams_addDualPlayer_info;Adja meg a játékos előcsarnok-fiókjának nevét:
+cams_addDualPlayer_placeholder;felhasználónév#címke
+cams_addDualPlayer_addPlayer;[data>1:Játékosok hozzáadása][data=1:Játékos hozzáadása][data=0:Játékos hozzáadása]
+search_addDualPlayeradditionalEmptyResultInfo;A játékos nem található, vagy már meghívták társjátékosnak
+cams_dualInventation_header;Társjátékos meghívása
+cams_dualInventation_invitations;Meghívók:
+cams_dualInventation_info;Ha elfogadod a meghívást, a saját előcsarnok-fiókoddal jelentkezhetsz be, hogy hozzáférj ehhez az avatárhoz.
+cams_dualInventation_moreInfo;Minden játékvilágban csak egy társjátékos meghívást fogadhatsz el.
+cams_dualInventation_invite;<b>{{LobbyAccountName}}</b> meghívott téged, hogy játssz a(z) <b>{{avatarName}}</b> avatárjával
+cams_dualInventation_AcceptInvite;Meghívás elfogadása
+cams_acceptDualInvitation_header;Társjátékos-meghívó elfogadása
+cams_acceptDualInvitation_info;Szeretnéd elfogadni <b>{{lobbyAccountName}}</b> társjátékos meghívását az avatárjához (<b>{{avatarName}}</b>) a(z) <b>{{gameworldName}}</b> játékvilágban?
+cams_acceptDualInvitation_moreInfo;Több társjátékos meghívásod van ugyanarra a játékvilágra, de minden játékvilágban csak egy társjátékos meghívást fogadhatsz el.
+cams_acceptDualInvitation_avatarInDeletion;A társjátékosokra vonatkozó szabályaink értelmében játékvilágonként csak egy aktív avatár használható. \nA társjátékos meghívás elfogadása megszünteti a törlés alatt álló avatarod ({{avatarName}}) elérését az adott játékvilágban. \nA törlési folyamatot ezután már nem lehet megszakítani.
+cams_dualSettings_header;Társjátékos beállítások
+cams_dualSettings_info;Bármikor abbahagyhatod az adott avatár társjátékosaként való játékot.
+cams_dualSettings_leaveDualPlay;Társjátékos játék elhagyása
+cams_confirmLeaveDualPlay_info;Szeretnéd abbahagyni, hogy társjátékos legyél <b>{{avatarName}}</b> avatárjához a(z) <b>{{gameworldName}}</b> játékvilágban?\n\nMiután elhagytad a társjátékos játékot, létrehozhatod saját avatárod, vagy csatlakozhatsz egy másik avatárhoz, hogy ismét társjátékos lehess ebben a játékvilágban.
+cams_recoverPassword_header;Jelszó visszaállítása
+cams_recoverPassword_goBackToLogin;Vissza a bejelentkezéshez
+cams_recoverPassword_info;Add meg az előcsarnok-fiókodhoz tartozó e-mail-címet. Elküldjük neked a jelszó visszaállítására vonatkozó utasításokat.
+cams_recoverPasswordEmailSent_header;E-mail elküldve
+cams_recoverPasswordEmailSent_info;Ha az e-mail-címhez (<b>{{emailAdress}}</b>) létezik előcsarnok-fiók , akkor elküldtük neked az utasításokat a jelszó visszaállításához.\n\nMiután helyreállítottad a jelszavad, újra bejelentkezhetsz.
+cams_recoverPasswordEmailSent_goBackToLogin;Vissza a bejelentkezéshez
+cams_editDualAccounts_header;Kettősök
+cams_editDualAccounts_gameworld;Játékvilág: {{gameworldName}}
+cams_editDualAccounts_avatar;Avatár: {{avatarName}}
+cams_editDualAccounts_avatarOwner;Avatár tulajdonosa:
+cams_editDualAccounts_noDualsAdded;- Ehhez az avatárhoz nem adtak hozzá társjátékosokat -
+cams_editDualAccounts_info;A társjátékosok <b>teljes hozzáférést</b> kapnak ehhez az avatárhoz, és képesek a játékban minden műveletet végrehajtani, beleértve az arany elköltését és vásárlását is.\n\nA társjátékosok a saját előcsarnok-fiókjukkal jelentkezhetnek be, hogy hozzáférjenek ehhez az avatárhoz, és NEM tudnak meghívni más társjátékosokat.
+cams_editDualAccounts_warningHint;Ne oszd meg az előcsarnok-fiókod bejelentkezési adatait más játékosokkal, hogy megakadályozd a nem kívánt hozzáférést más játékvilágok avatárjaihoz és a fiókod adataihoz.
+cams_editDualAccounts_addDualPlayer;Társjátékos hozzáadása
+cams_editDualAccounts_avatarInDeletion;Az avatárod ({{avatarName}}) ezen a játékvilágon törlés alatt áll. Ezért nem küldhetsz társjátékos meghívót.
+cams_settings_title;Beállítások
+cams_settings_changePassword_information;Jelszóváltoztatáshoz küldünk egy e-mailt a fiókod e-mail-címére.
+cams_settings_changePassword_sendEmail;E-mail elküldése
+cams_settings_changePassword_emailSent;Küldtünk neked egy e-mailt, hogy módosíthasd a jelszavad.
+cams_settings_accountDeletion_title;Előcsarnok-fiók törlése
+cams_settings_accountDeletion_info;Törli az előcsarnok-fiókodat, beleértve az összes játékvilágot és avatárt is erről a fiókról.
+cams_settings_accountDeletion_action;Előcsarnok-fiók törlése
+cams_settings_accountDeletion_warning;Figyelmeztetés: Ezt a műveletet nem lehet visszavonni!
+cams_settings_accountDeletion_warning_content;Az előcsarnok-fiókod törlése 72 órás visszaszámlálás után véglegessé válik, nem visszafordítható, és az összes avatárodat érinti. \n\nA fiókodat csak akkor lehet törlésre állítani, ha az összes avatárodat törlésre állítottad.
+cams_settings_accountDeletion_requirementsInformation;Fiókod törléséhez az összes avatárodnak törlés alatt kell lennie, vagy már töröltnek kell lennie.
+cams_settings_accountDeletion_information_warning;Ez a művelet a fiókodat törlési állapotba helyezi. Kérjük, ellenőrizd, tisztában vagy-e azzal, hogy fiókod és az összes kapcsolódó avatár és adat véglegesen törlődik, ha a beviteli mezőbe beírod a "delete" (törlés) szót.
+cams_settings_accountDeletion_information_error;Nem törölheted a fiókot, ha egy avatár nincs törlésre beállítva.\nKérjük, jelentkezz be a megadott játékvilágokba, és töröld az avatárodat.
+cams_settings_accountDeletion_noAvatarsFound;Nem találtunk aktív játékvilágokat/avatárokat.\nMehetsz!
+cams_settings_accountDeletion_understandmentConfirmation;Megértem
+cams_settings_accountInDeletion_title;Fiók törlés alatt
+cams_settings_accountInDeletion_info;A(z) <b>{{NAME}}</b> előcsarnok fiókodat <b>{{TIMESTAMP|Countdown}}</b> leteltével véglegesen töröljük.
+cams_settings_accountInDeletion_action;Törlés visszavonása
+cams_mainMenu_dataConsent;Hozzájárulás az adatfelhasználáshoz
+gameworld_gameworld;Játékvilág
+infobox.productionboost;{{RES}}{{TIME_COUNTER}}
+infobox_notesCount;{{COUNT}} megjegyzés
+auction_placeBid;Licitálj
+auction_auctionsAmount;{{COUNT}} árverés
+auction_bidsRefreshed;Ajánlatok frissítve!
+auction_currentSilver;Jelenlegi ezüst:  {{iconName|Sprite}} {{currentSilver}}
+auction_availableAmount;Rendelkezésre álló mennyiség:
+auction_toSellAmount;Eladási mennyiség:
+auction_selectAmountToSellHeader;Válaszd ki az eladni kívánt mennyiséget
+auction_soldHorseForSilver;Ló eladva {{amount}} ezüstért.
+auction_currentCurrency;Jelenlegi:
+auction_newCurrencyValues;Új:
+auction_exchangeExplanationGoldToSilverTitle;Az aranyat ezüstre cserélheted, hogy hősi tárgyakat vásárolhass az aukciós házban.
+auction_exchangeExplanationGoldToSilverMore;Add meg az átváltani kívánt arany mennyiségét:
+auction_exchangeExplanationSilverToGoldTitle;Az aukciós házban a hősi tárgyak eladásából származó ezüstöt aranyra válthatod.
+auction_exchangeExplanationSilverToGoldMore;Add meg az átváltani kívánt ezüst mennyiségét:
+auction_countAndName;{{AMOUNT}}×{{ITEM_NAME}}
+auction_deleteAll;Minden árverés törlése
+auction_confirm_deletion_title;Árverés törlése [data>1:{{data}} bejegyzés][data=1:bejegyzés]
+auction_confirm_deletion_button;Törlés [data>1:bejegyzés][data=1:bejegyzés]
+auction_confirm_deletion_text_header;Biztosan törölni szeretnéd a(z) [data>1:{{data}} aukcióbejegyzést][data=1: aukcióbejegyzést]?
+auction_confirm_deletion_text;Ha egyszer törölsz egy bejegyzést, az végleg eltűnik. Nem fogod tudni visszaszerezni.
+cams_looby_noMatchingGameworlds;Nincsenek megfelelő játékvilágok a kiválasztásodhoz.
+serverSelection_5;Dev
+serverSelection_header;Játékvilág szűrő kiválasztása
+serverSelection_filter_gameworldSpeed;Játékvilág sebessége
+serverSelection_gameworldSpeed;x{{INT}} sebesség
+serverSelection_filer_gameworldLifetime;Játékvilág élettartama
+serverSelection_gameworldLifetime;{{INT}}-{{INT2}} nap
+serverSelection_gameworldLifetime_XorMore;{{INT}} vagy több nap
+filters_applyButton;Alkalmazzon [COUNT<2:egy szűrőt][COUNT>1:{{COUNT}} szűrőt]
+filters_reset;[COUNT<2:Szűrő][COUNT>1:Szűrő] visszaállítása
+cams_avatarCreation_cancel_title;Avatár létrehozásának megszakítása
+cams_avatarCreation_cancel_reconfirmationText;Biztos vagy benne, hogy meg akarod szakítani az avatarod létrehozását a(z) {{gameworldName}} játékvilágban?
+cams_avatarCreation_cancel_explanation;Elveszíted az összes elért eredményedet ebben a játékvilágban, beleértve a népválasztásodat, a térképi helyet és az avatárnevet.
+cams_avatarCreation_button_startPlaying;Játék indítása
+cams_avatarCreation_button_changeSector;Pozícióváltás
+cams_avatarCreation_button_selectTribe;Válassz népet
+cams_avatarCreation_button_updateTribe;Nép frissítése
+cams_avatarCreation_button_selectSector;Pozíció kiválasztása
+cams_avatarCreation_button_updateSector;Pozíció frissítése
+cams_avatarCreation_name_title;Add meg az avatár nevét:
+cams_avatarCreation_name_tip;Ez az avatárod neve ebben a játékvilágban.
+cams_avatarCreation_name_errorEmpty;Kérjük, adj meg egy avatárnevet.
+cams_avatarCreation_name_placeHolder;Avatár neve
+cams_looby_avatarInDeletionBlockPlayNow;Elfogadtál egy társjátékos meghívást erre a játékvilágra ({{gameworldName}}), így a társjátékos módon kívül már nem tudod elérni.
+infobox_openMessage;Üzenet megnyitása
+infobox_accountIsLocked;Az avatárodat kitiltották!
+auction_button_requirement;Teljesítsd a(z) {{REQUIRED}} kalandokat az árverések feloldásához.\nHátralevő: {{INT}}
+auction_availableSilver;Elérhető ezüst:  {{iconName|Sprite}} {{currentSilver}}
+auction_deleteSelected;Kijelölt árverések törlése
+auction_deletedAll_confirmation;Minden árverés törölve!
+auction_deletedSelected_confirmation;{{data}} árverés[data>1:bejegyzés][data=1:bejegyzés] törölve!
+newVersionAvailable_title;Új verzió elérhető
+newVersionAvailable_description;Továbbfejlesztettük az appunkat. Kérjük, frissíts a játék folytatásához.
+newVersionAvailable_joinDiscord;Mik az újdonságok? További információkért csatlakozz a Discordhoz.
+newVersionAvailable_toStore;Frissítés most
+infobox_beginnerProtection_title;Kezdővédelem meghosszabbítása
+infobox_beginnerProtection_question;Biztosan meg akarod hosszabbítani a kezdővédelmet?
+infobox_beginnerProtection_description;Nem küldhetsz nyersanyagot másnak, és nem támadhatsz meg játékost, amíg a kezdővédelem tart.
+sendResources_beginnersProtection;Nem küldhetsz erőforrásokat más játékosoknak, amíg a kezdővédelmed aktív.
+sendTroops_beginnersProtection;Nem küldhetsz csapatokat más játékosoknak, amíg a kezdővédelmed aktív.
+sendTroops_otherBeginnersProtection;Nem küldhetsz csapatokat más játékosoknak, amíg azok a kezdővédelem alatt állnak.
+buildingActivities_building_36;Csapdák gyártás alatt
+tasks_collectAll;Gyűjtsd össze az összeset ({{INT}})
+auction_bidMinPlaceholder;min. {{INT}}
+auction_buttonBidMinimum;Minimális ajánlat szükséges
+hero_adventures_available;Elérhető kalandok
+messages_freshDeskMessage_viewAndReplyInBrowser;Megtekintés és válaszadás a böngészőben
+messages_webViewRecommendation;Előfordulhat, hogy az üzenet tartalma nem teljes.\nJavasoljuk, hogy az üzenetet egy böngészőben tekintsd meg.
+rateThisApp_popup_title;Tetszik az appunk?
+rateThisApp_popup_description;Ha tetszik az appunk, kérjük, szánj rá egy percet, hogy értékeld.
+rateThisApp_popup_appreciatefeedback;A visszajelzésed fontos számunkra!
+rateThisApp_popup_btn_positive;Ez nagyszerű!
+rateThisApp_popup_btn_negative;Lehetne jobb is
+rearrange_or_demolish_building;Az épület áthelyezése vagy lebontása
+mainBuilding_buildingArrangement;Az épület áthelyezése
+mainBuilding_openRearrangeMode;Áthelyezési mód megnyitása
+mainBuilding_demolishBuildings;Épületek lebontása
+mainBuilding_openDemolishMode;Nyisd meg a bontási módot
+mainBuilding_demolishBuildings_description;Húzd az épületeket a pozíció megváltoztatásához.
+rearrangeBuildingPopup_rearrangeDescription;<b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color> áthelyezése?
+rearrangeBuildingPopup_buildingsRearranged;Áthelyezett épületek
+rearrangeBuildingPopup_buildingRearranged;{{buildingName|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>{{buildingLevel}}</color>
+confirmRearrangeBuildingPopup_header;Szeretnéd áthelyezni a következő épületet?
+confirmRearrangeBuildingPopup_description;Áthelyezi a falu (<b>{{villageName}}</b>) kiválasztott épületeit.
+demolishBuildingPopup_title;Épület lebontása
+demolishBuildingPopup_description;Válaszd ki a lebontandó épületet
+demolishBuildingPopup_descriptionWithSelection;Le akarod bontani (<b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>)?
+demolishBuildingPopup_demolishLevel;Szint bontása
+demolishBuildingPopup_demolishCompletely;Teljes lebontás
+confirmDemolishBuildingPopup_header;Szeretnéd azonnal lebontani (<b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>)?
+confirmDemolishBuildingPopup_description;Azonnal lerombolja a kiválasztott épületet, és eltávolítja a faludból.\nEzt a műveletet nem lehet visszavonni.
+characterCount;{{COUNT}}/{{MAX}} karakter
+survey_button_description_reward;Vegyél részt ebben a rövid felmérésben, hogy segíts nekünk a Travian: Legends app fejlesztésében.\nTámogatásodat megjutalmazzuk.
+cams_lobby_joinGameworld;Csatlakozás a játékvilághoz
+cams_lobby_gameworld_inviteOnly;Csak meghívásra
+cams_lobby_gameworld_inviteOnlyInfo;Ez a játékvilág csak speciális meghívó kóddal rendelkező játékosok számára van fenntartva.
+cams_lobby_gameworld_inviteCodeEnter;Meghívókód megadása
+cams_lobby_gameworld_inviteCodeInfo;Ez a játékvilág csak speciális meghívó kóddal rendelkező játékosok számára van fenntartva.\nHa van egy, kérjük, add meg, hogy csatlakozz a játékvilághoz.
+cams_lobby_gameworld_inviteCodePlaceholder;Pl. eThbt5OLyZ8D5xjhUaBAba
+cams_lobby_gameworld_inviteCodeErrorCharacterCount;A meghívókód túl rövid. Írd be mind a(z) {{MAX}} karaktert.
+cams_lobby_gameworld_inviteCodeCooldown;Meghívókód várakozás idieje ({{TIME|Countdown}})
+timeCountDown;{{TIME|Countdown}}
+attestation_failed;Az eszköz igazolása sikertelen! Kérjük, a játékhoz használj mobileszközt.\nHa ez a probléma továbbra is fennáll, használd az alábbi segítség gombot, hogy kapcsolatba lépj az ügyfélszolgálattal!
+mainBuilding_demolishBuildings_notAvailable;{{INT}} szintű főépület szükséges az épületek bontásához.
+mainBuilding_demolishBuildings_demolishing;Lebontja a(z) <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> épületet <b><color={{colorValue|TextColor}}>{{buildingLevel}}. szintre</color></b> ennyi idő múlva: {{timestamp|Countdown}}.
+demolishBuildingPopup_demolishing;Lebontja a(z) <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> épületet <b><color={{colorValue|TextColor}}>. szintre{{buildingLevel}}</color></b>
+allianz.hinweis_text_NoConfederacy;A diplomáciai etikett kimondja, hogy kapcsolatba kell lépni az adott klánnal, mielőtt megnemtámadási szerződésre szóló ajánlatot küldenénk.
+regions_canBeSettled;Megalapítható?
+regions_regionStatusNoColon;Regionális állapot
+regions_top5AlliancesPopulation;A top 5 klán <b>népessége</b>
+regions_top5AlliancesVillages;A top 5 klán <b>faluinak száma</b>
+regions_neighboringRegions;Szomszédos régiók
+regions_regionPopulation;Régió népessége
+regions_contested;A régió vitatott
+cams_lobby_gameworld_disabledAndNotSupported;A játékvilág jelenleg nem játszható mobilalkalmazáson keresztül.
+demolishBuildingPopup_impossible;Ezt az épületet nem lehet lebontani.
+city_benefits;A város előnyei
+city_benefits_threeAdditionalSlots;Három további építési hely
+city_benefits_resourceFieldsLevel12;A nyersanyagmezők 12. szintre történő fejlesztése
+city_benefits_watchTowers;Fal korszerűsítése őrtornyokkal
+city_upgradeToACity;{{villageName}} várossá fejlesztése
+city_culturePointsForNext;(a következő {{culturePoints}} kulturális pont múlva)
+city_upgradeVillage;Falu fejlesztése
+city_confirm_upgradeVillage;Várossá fejlesztés
+city_confirm_header;Szeretnéd a falut ({{villageName}}) várossá fejleszteni?
+city_confirm_description;Egy falu várossá fejlesztése időt ({{time}}) és az egyik letelepedési férőhelyedet igényli.
+city_upgrading;{{villageId|VillageLink}} {{text}}
+city_upgraded;{{villageId|VillageLink}} már város.
+combatSimulator_selectTarget;Cél kiválasztása
+mainMenu_goToLobby;Ugrás az előcsarnokba
+mainMenu_yourPlayerProfile;A játékosprofilod
+plus.plusAttackWarningText;Beérkező támadások a falvak listájában megjelenik Csak mobilon: A falu nézetben a falu listájának jobb oldali megnyitásához szükséges nyíl ki lesz jelölve.
+production.crobBalanceTroopConsumptionAncientPower;Ősi erő bónusza
+filters_region_not_found;A régió nem létezik
+rallyPoint_troopsOverview_ownTroops_8;Saját csapatok itt: 
+rallyPoint_troopsOverview_ownTroops_9;Saját csapatok itt: 
+tradeOffice_merchantsCarryCapacity;Kereskedő szállítási kapacitása:
+tradeOffice_tradeShipsCarryCapacity;Kereskedelmi hajó szállítási kapacitása:
+buildingActivities_building_48;Gyógyuló csapatok
+playerDetails_victorPointsPerDay;{{PERDAY}} /nap
+allianz.numIncomingRaids;{{NUM_ATTACKS}} fosztogatás
+allianz.numIncomingAttacks;{{NUM_ATTACKS}} támadás
+allianz.MerchantCapacityAndSpeedNew;Kereskedelem
+alliance_regionalTabTop5Description;Azok a régiók, amelyekben a klánod a terület uralma alapján az első 5 klán között van.
+alliance_regionalTabTitle;Regionális top 5
+alliance_regionalTabTop5Empty;- Nincs elég területi uralom egyik régióban sem -
+alliance_ShowDetails;Részletek
+regions_withFactions_yourFactionHasMoreThan50PercentSecured;A klánod {{PERCENT}}-ot meghaladó területi uralommal rendelkezik.<br><br>A területi erő aktiválásához kincstárra van szükség.
+wall_upgradesInProgress;Folyamatban lévő fejlesztések
+extension_upgradeStarted;A fejlesztés sikeresen elindult!
+extension_constructionList;Építési lista
+upgradeLevel;Szintfejlesztés
+infoTab_upgradingToLevelForExtension;Jelenleg {{buildingName}} fejlesztése folyik {{level}}. szintre:
+infoTab_genericCurrentlyForExtension;Jelenlegi {{buildingName}} bónusz, beleértve a következőt: {{extensionName}}:
+infoTab_genericAtLevelForExtension;A(z) {{a}}. szinten a {{extensionName}} {{b}}. szintjével:
+ratioValuesNumeratorBold;<b>{{a}}</b>/{{b}}
+infoTab_productionCosts_title;Termelési költségek
+harbour_shipsInConstruction;Épülő hajók
+unitInfo_troopsCarriage;akár <b>{{INT}}</b> csapat
+unitInfo_velocityRaid;Fosztogatásokhoz:
+city_benefits_resourceFieldsLevel12inCapital;A nyersanyagmezőket a 12. szintre fejlesztheted, de a fővárosodban még tovább fejlesztheted őket.
+infoTab_genericCurrentlyMoreExplicit;Aktuális {{buildingName}} bónusz:
+merchant_merchantOverview_noIncomingDeliveries;- Nincsenek bejövő szállítmányok. -
+merchant_merchantOverview_noOutgoingDeliveries;- Nincsenek kimenő szállítmányok. -
+merchant_merchantOverview_incoming;Bejövő ({{INT}})
+merchant_merchantOverview_outgoing;Kimenő ({{INT}})
+achievementQuests.achQuest_03_Territory_step_01_description;Küldj ki csapatokat, hogy kifosszanak/megtámadjanak egy Natar falut. A feladat végrehajtottnak tekintendő, amint a sereg megérkezik a Natar faluba, mindegy, hogy túlélik a csatát, vagy sem.<br><br>A pontokat ezért a küldetésért naponta {{NUMBER_OF_TASKS_PER_DAY}} alkalommal is el lehet érni.\n
+allianz.MerchantCapacityTitle_Harbours;Kereskedő/hajó kapacitása és sebességbónusza
+market_tradeRoutes_invalidTarget_Territory;Kereskedelmi útvonalakat csak a saját falvakba lehet küldeni.
+market_selectResources;Válassz nyersanyagokat
+market_selectResources_requiredTradeShips;Szükséges kereskedelmi hajók
+market_resourcesWillBeSendByTradeShip;A nyersanyagokat kereskedelmi hajóval küldik.
+manual.gid38_Territory;A nagy raktár a normál raktár kapacitásának a háromszorosával rendelkezik.<br><br>Ezt az épületet csak a építési terv ősi erejével lehet megépíteni.
+manual.gid39_Territory;A nagy magtár a normál raktár kapacitásának a háromszorosával rendelkezik.<br><br>Ezt az épületet csak az építési főterv ősi erejével lehet megépíteni.\n
+harbour_noAvailableShips;Ebben a kikötőben jelenleg nem állomásoznak hajók.
+harbour_destroy_title;Hajók elpusztítása
+harbour_destroy_desc_title;Válaszd ki a hajó típusát és a megsemmisíteni kívánt mennyiséget.
+harbour_destroy_desc;Csak a jelenleg itt állomásozó hajókat lehet elpusztítani, és nem kapsz vissza nyersanyagokat.
+harbour_destroy_timeNotice;A hajók azonnal megsemmisülnek.
+harbour_destroy_selectedTotalAmount;Kiválasztott hajók: <b>{{AMOUNT}}</b>
+harbour_destroy_shipSelectTitle;<b>{{ShipID|TranslateSuffixFor|gid49.type_t}}</b> (<b>{{Amount}}</b> hajó állomásozik itt)
+extension_fullyExtended;{{NAME}} teljesen kiterjesztve.
+extension_willBeFullyExtended;{{NAME}} teljes kiterjesztés alatt áll.
+layout.directLinkMarketplaceTrader;Szabad kereskedők: {{INT}}/{{INT2}}
+UnitProduction_ViewBuildingList;Építési lista megtekintése
+raidList_useRaidShipsInfo;A fosztogató hajók automatikusan használatba kerülnek, ha rendelkezésre állnak. Ha kifogytál a fosztogató hajókból, a csapataid normálisan utaznak.
+buildingActivities_maxReached;Max. mennyiség elérve
+buildingActivities_building_49;Gyártásban levő hajók
+buildingActivities_buildingAdditional_48;Nincs sebesült katona
+residence_expansion_villagesRatio;Falvak: {{COUNT}}/{{MAX}}
+residence_expansion_slotFree;Férőhely nincs használatban.
+residence_expansion_slotPrerequisites;Előfeltétel <b>{{BuildingID|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}> {{Level}}</color></b>. szinten
+residence_expansion_culturePointsPerDay;Kulturálispont-termelés naponta
+search_region;Régió keresése
+search_select_region;Válassz régiót
+statistiken.progressionStepTitle_start_achieved;A szerver elindulása: {{VALUE}}
+statistiken.progressionStepTitle_serverEnd_locked;A szerver a következő időpontban ér véget: {{VALUE}}
+filters_artefact_not_found;Az ereklye nem létezik
+sendTroops_settlersChangeTribe;Az első {{INT}} letelepedésnél kiválaszthatod a megalapítani kívánt falu népét. Válassz körültekintően.
+gid17.nextTradingRoute;A következő kereskedelmi útvonal <b>{{HOUR}}</b> órakor indul, és  <b>{{MERCHANTS}}</b> kereskedőre van szükség hozzá.
+gid17.nextTradingRouteWithShips;A következő kereskedelmi útvonal <b>{{HOUR}}</b> órakor indul, és a <b>{{SHIPS}}</b> kereskedelmi hajóra van szükség hozzá.
+market_tradeRoutes_merchants;[merchants>1:{{merchants}} kereskedő][merchants=1:{{merchants}} kereskedő]
+market_tradeRoutes_tradeShips;[tradeShips>1:{{tradeShips}} kereskedelmi hajó][tradeShips=1:{{tradeShips}} kereskedelmi hajó]
+market_tradeRoutes_repeats;{{repeats}} x
+market_tradeRoutes_usesShip;Hajót használ
+troopsCheckout_shipUseInfo;{{Distance}} mező | {{ShipID|Bold}} | {{duration|Bold}} óra megtakarítás
+troopInfoPopup_shipsTitle;A faluban kikötött hajók
+language_nl-NL;Holland
+cropfinder_cropperType;Búzamező típusa:
+valueInBrackets;({{VALUE}})
+residence_settlementSlotsUsed;Felhasznált letelepedési férőhelyek
+residence_settlementCPNeededForNextSlot;Kulturális pontok szükségesek a következő letelepedési férőhelyhez:
+gid27.ancient_power_detail_;{{INT}}
+artefact_effect_value;Hatás: <b>{{EFFECT}}</b>
+ancientPower_overview;Területi erők
+ancientPower_no_ancientPower;Nincs ősi erő ezen a szerveren
+ancientPower_tip_large;A nagy ősi erőkhöz <b>20</b>. kincstári szintre van szükség és <b>az összes faludat érintik</b>
+ancientPower_tip_small;A kis ősi erőkhöz <b>10</b>. kincstári szintre van szükség, és csak azt a <b>falut</b> érintik, ahol aktiválták őket
+ancientPower_tip_nearby;Ősi erők {{villagenamelong|Bold}} környékén
+ancientPower_stored_title;A klán által biztosított ősi erők
+ancientPower_stored_noContent;Nincs a klánod által biztosított régió
+ancientPower_stored_nextFree;Következő ingyenes aktiválás: [isFree=0:<color={{colorValue|TextColor}}>]{{timeStamp|Countdown?Bold}}[isFree=0:</color>]
+ancientPower_stored_notActivatable;Nincs aktiválható ősi erő.
+ancientPower_stored_activated;Ősi erő aktiválva.
+ancientPower_stored_alreadyActive_account;Már van egy ősi erőd, amely minden falura hatással van, amikor aktív.
+ancientPower_stored_alreadyActive_village;Már van egy ősi erőd, amely hatással van erre a falura, amikor aktív.
+ancientPower_stored_alreadyActive;Ez az ősi erő már aktiválódott.
+filters_ancientPower_not_found;Az ősi erő nem létezik
+regions_withFactions_yourAllianceHasMoreThan50PercentSecured;Klánod a terület >{{PERCENT}}%-át ellenőrzi.<br><br>A területi erő aktiválásához kincstárra van szükség.
+language_en-NT;Dev nyelv
+settings_notNow;Most nem
+settings_dontAskAgain;Ne kérdezd újra.
+cams_lobby_gameworld_lastPlayedTime;{{TIME}} óra
+cams_settings_DirectLoginTitle;Közvetlen bejelentkezés a játékvilágba
+cams_settings_DirectLoginInfo;Hagyd ki a játékvilág kiválasztását a Legends előcsarnokban, és jelentkezz be a legutóbb játszott játékvilágodba közvetlenül az alkalmazás megnyitásakor.
+cams_settings_DirectLoginActive;A közvetlen bejelentkezés aktiválva van
+cams_settings_DirectLoginInactive;A közvetlen bejelentkezés ki van kapcsolva
+cams_directLoginPopUp_Info;Szeretnél közvetlenül az alkalmazás indításakor bejelentkezni a játékvilágodba?
+cams_directLoginPopUp_youCanChange;A választást bármikor megváltoztathatod az előcsarnok beállításaiban.
+cams_directLoginPopUp_Accept;Igen, jelentkezzen be közvetlenül
+language_ro-RO;Román
+language_hu-HU;Magyar
+language_ar-AE;Arab
+autoLoginFailed.;Az automatikus bejelentkezés sikertelen.
+needInternetToPlay;A játékhoz internetkapcsolatra van szükséged. Kérjük, ellenőrizd a kapcsolatot, és próbáld meg újra.
+mapCellInfoWindow_removeFromLists;Eltávolítás minden listából
+removeFromListsPopup_Title;Szeretnéd eltávolítani a(z) {{TARGETNAME}} célpontot a(z) {{INT}} farmlistáról?
+removeFromListsPopup_Description;A célpontokat később egyenként is hozzáadhatod a farmlistákhoz.
+removeFromListsPopup_ConfirmButton;Célpont eltávolítása
+social_continueWith;Vagy folytassa:
+social_loginWith;Vagy jelentkezz be:
+social_backToRegistration;Vissza a regisztrációhoz
+social_createAccountTitle;Legends előcsarnok-fiók létrehozása
+social_errorTitle_NoEmailProvided;Az e-mail engedély hiányzik
+social_errorMsg_NoEmailProvided;A Travian: Legends játék megkezdéséhez szükségünk van a <b>engedélyedre, hogy hozzáférjünk az e-mail-címedhez.</b>
+social_errorInfo_NoEmailProvided;Kérjük, próbáld meg újra a megfelelő engedélyezési beállításokkal, vagy próbálkozz más regisztrációs módszerrel.
+social_errorTitle_AlreadyExists;Az e-mail-cím már foglalt
+social_errorMsg_AlreadyExists;A megadott e-mail-címet már használják a Travian: Legends előcsarnok-fiókhoz.
+social_errorInfo_AlreadyExists;Kérjük, a bejelentkezéshez használd a fiókodhoz kapcsolt e-mail-címet.
+social_acceptTOS;Az "Megerősítés" gombra kattintva elfogadod a <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">ÁSZF-et</link></style> és megerősíted, hogy elolvastad a <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">Tájékoztatás az elállási jogról</link></style> és a <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">Adatvédelmi szabályzat</link></style> dokumentumokat.
+linkNotWorking;A link nem működik
+linkNotWorkingDescription;Úgy tűnik, ez a link jelenleg nem működik a Travian: Legends applikációban. Az internetes böngésződben talán működik.
+openLinkInBrowser;Link megnyitása a böngészőben
+settings_language_useArabicNumerals_activated;A keleti arab számok használata aktiválódik
+settings_language_useArabicNumerals_deactivated;A keleti arab számok használata kikapcsolva
+artefact_inventory_active_empty;Nincs aktivált különleges tárgy
+social_errorTitle_Unknown;Ismeretlen hiba
+social_errorMsg_Unknown;Ismeretlen hiba történt. Próbáld meg újra.
+loadingScreen_text_01;A hősöd a haját igazgatja, kérlek várj.
+loadingScreen_text_02;A magtár túlcsordult. A falusiak most gabonát tárolnak a zsebükben.
+loadingScreen_text_03;A nagykövetség partit rendez - csak diplomatáknak.
+loadingScreen_text_04;A gyülekezőhely most piknikezőhely - a csapatok szendvicseket fogyasztanak.
+loadingScreen_text_05;A kovács egy kardot kovácsol... spagettiből.
+loadingScreen_text_06;Az építőmesterek fordítva olvassák a tervrajzot... fejjel lefelé.
+loadingScreen_text_07;A natarok csatlakoztak a falubeli könyvklubhoz. Senki sem tudja, hogyan kell olvasni az ősi rúnákat.
+loadingScreen_text_08;A felderítők ellenséges csapatokat számolnak... de elfogytak az ujjaik.
+loadingScreen_text_09;A Világcsodát galambok támadják. Küldöm a takarítóbrigádot.
+loadingScreen_text_10;A rabszolgamilícia szakszervezetet követel - készüljetek fel a sztrájkokra.
+loadingScreen_text_11;A csapatok nem hajlandók támadni, amíg valaki el nem magyarázza a harcszimulátort.
+loadingScreen_text_12;A falubeliek abbahagyták a munkát, hogy megnézzék két csirke harcát.
+loadingScreen_text_13;A katapultjaid azon vitatkoznak, hogy melyik épületet találják el először.
+loadingScreen_text_14;Kérjük, legyél türelemmel - a hős ló helyett a MÁV-ot vette igénybe.
+loadingScreen_text_15;A rejtekhely nemcsak nyersanyagokat, hanem falusi pletykákat is rejt.
+loadingScreen_text_16;A laktanyában énekes tehetségkutatót tartanak - a kiképzést elhalasztják.
+loadingScreen_text_17;A falad már majdnem kész. Már csak a festék száradására várunk.
+loadingScreen_text_18;A légiósok a menetelés előtt kávészünetet követeltek.
+loadingScreen_text_19;A gallok azt magyarázzák a rómaiaknak, mi az a paliszád - már 3 órája.
+loadingScreen_text_20;A kereskedők megvesztegetése a szállítások felgyorsítása érdekében.
+loadingScreen_text_21;Hősöd lovas tanfolyamra jár - ez eltarthat egy darabig.
+loadingScreen_text_22;A kereskedők megrekedtek egy lassú ökör mögött.
+loadingScreen_text_23;A klán vezetői harci stratégiát dolgoznak ki... ujjfestékkel.
+loadingScreen_text_24;A magtár tele van sütikkel - erőforrás-gazdálkodás a javából.
+loadingScreen_text_25;A felderítés félbeszakadt - valami Heimdall szemébe került.
+changeAccountNameSubtitle;Felhasználónév és/vagy rövidítés módosítása.
+changeAccountNamePleaseNote;Kérjük, vedd figyelembe, hogy a fióknév megváltoztatása után várnod kell {{DAYS}} [DAYS>1:napot][DAYS=1:napot], és csak ez után változtathatod meg újra.
+changeAccountNameWaiting;Várnod kell, amíg újra módosíthatod a neved:
+changeAccountNameUpdated;A fióknév frissítve
+changeAccountNameUpdatedSubtitle;A fiókod neve sikeresen a következőre módosult: <b>{{playerName}}</b>
+alliance_top10Title;Belső klán top 10
+gameworldCalendarNoGameworld;Nem található hamarosan induló játékvilág. \nEzek lehetnek feltöltés alatt vagy még be nem tervezettek.
+gameworldCalendar_title;JÁTÉKVILÁG-NAPTÁR
+valueWithModifierBefore;{{value|Round|2}}x
+goldShop_purchaseCanceled;Vásárlás törölve!
+goldShop_pendingRestored;A korábbi vásárlást sikeresen visszaállítottuk.
+hero_consumablePopup_healthByOintment;Gyógykenőcsönként szerzett egészség:
+unknown;?
+serverSelection_gameworldSpeed_short;{{INT}}x
+gameworldCalendarDetails_title;A játékvilág részletei
+gameworldCalendarDetails_shareLink;Játékvilág hivatkozás megosztása
+gameWorldEndCondition;A játék világának végállapota
+gameWorldEndCondition_WonderOfTheWorld;Világcsoda {{Level}}
+gameWorldEndCondition_VictoryPoints;Győzelmi pont
+gameWorldRestriction_InvitationCode;Ez a játékvilág csak speciális meghívó kóddal rendelkező játékosok számára van fenntartva.
+gameWorldRestriction_MobilePlayers;Ez a játékvilág csak a mobilos játékosok számára érhető el.
+gameWorldSpecial;Ez egy különleges játékvilág, amely csak korlátozott ideig lesz elérhető, és a klasszikus játékvilágoktól eltérő funkciókkal rendelkezhet.
+gameWorldUndefinedDetails;Még nem minden játékvilág-részlet lett meghatározva. Amint frissültek, értesítést kapsz az előcsarnokodban.
+bonusValueWithPercentNoSpace;+{{value}}%
+startDate;Kezdési dátum
+startTime;Indulás ideje
+UTC+1;(UTC+1)
+goldShop_GoldPromotion;Arany promóció
+auction_FeePopupTitle;Árverési díj
+auction_FeePopupText;Az aukciós házak eladásai után {{value}}% díjat kell fizetned. A kifizetésed az eladási ár mínusz az árverési díj.
+auction_FeePopupExample;Példaszámítás
+auction_FeePopupSalePrice;Eladási ár
+auction_FeePopupFee;Árverési díj ({{value}}%)
+auction_FeePopupPayout;Kifizetés
+auction_sellHouseFeeInfo;A kifizetésed az eladási ár mínusz a(z) {{value}}% árverési díj.
+gold_action_finishImmediately;Azonnali befejezés
+mapCellInfoWindow_villageReports;Falujelentések megjelenítése
+hero_crafting_title_refine;Felszerelés finomítása
+hero_crafting_title_smelt;Olvasztóberendezés
+hero_crafting_title_forge;Kovácstechnikai berendezés
+hero_crafting_title_reforge;Újrakovácsolási berendezés
+hero_crafting_action_refine;Finomít
+hero_crafting_action_smelt;Olvaszt
+hero_crafting_action_forge;Kovács
+hero_crafting_action_takeMaterials;Vegyen ({{INT}}/{{MAX}}) anyagot
+hero_crafting_action_takeAllMaterials;Anyagok elvétele
+hero_crafting_action_reforge;Újrakovácsolás
+hero_crafting_action_take;Elvesz
+hero_crafting_action_pick;Válassz egy tárgyat
+hero_crafting_action_equip;Felszerel
+hero_crafting_action_buy_material;Anyagvásárlás
+hero_crafting_action_buy_item;Tárgyvásárlás
+hero_crafting_action_craft_material;Olvadékanyag
+hero_crafting_action_moveToInventory;A leltárba
+hero_crafting_action_select_item;Kiválasztás
+hero_crafting_action_remove_item;eltávolítás
+hero_crafting_action_error_equipment;A tárgynak hősi felszerelésnek kell lennie.
+hero_crafting_action_error_rarity;A tárgyaknak azonos ritkaságúnak kell lenniük.
+hero_crafting_action_error_category;A tárgyaknak ugyanabba a felszerelési kategóriába kell tartozniuk.
+hero_crafting_action_error_id;A tárgyaknak azonosnak kell lenniük.
+hero_crafting_action_error_missingItem;A kiválasztott tárgyak közül egy vagy több már nem elérhető.
+hero_crafting_refine_tip;Az epikus hősi tárgyak bármely más epikus hősi tárggyal finomíthatóak ugyanabból a tárgykategóriából.
+hero_crafting_refine_tip_error;Nincsenek finomítandó hősi tárgyaid. Keress tárgyakat a kalandok során, vagy vásárolj tárgyakat az aukciós házban, és finomítással javítsd fel őket.
+hero_crafting_smelt_info;Vegyél {{INT}} anyagot most, vagy várj, és kapsz {{MAX}} darabot.
+hero_crafting_reforge_text;Kovácsolj újra egy felszerelést, hogy egy másik, esetleg más ritkaságú és minőségű tárgyat kapj.\nAz újrakovácsolás után kiválaszthatod, hogy melyik tárgyat szeretnéd elvinni, vagy újra kovácsolni.\nVigyázz: A kovácsolás után minden további kovácsolási lépésben használt tárgy eltűnik, és nem cserélhető vissza.
+inventoryItem_quality_title;Minőség
+inventoryItem_rarity_title;Ritkaság
+inventoryItem_rarity_quality_title;Ritkaság és minőség
+inventoryItem_rarity_common;Közönséges
+inventoryItem_rarity_uncommon;Szokatlan
+inventoryItem_rarity_rare;Ritka
+inventoryItem_rarity_epic;Epikus
+inventoryItem_rarity_legendary;Legendás
+search_for_village;Falu keresése
+search_for_player;Játékos keresése
+villageList_EditMode;Szerkesztési mód
+villageList_MaxGroupAmount;Elérted a falusi csoportok maximális számát.
+hero_crafting_action_error_material;A tárgynak anyagnak kell lennie.
+villageList_ReorderError;Érvénytelen cél
+textMatchingInput_Title;Erősítsd meg "{{WORD}}" beírásával
+hero_inventory_category_empty;- Ebben a kategóriában nincsenek tételek -
+hero_crafting_action_refine_success;Finomított felszerelések
+hero_crafting_action_smelt_success;Beolvasztott felszerelések
+hero_crafting_action_forge_success;Kovácsolt felszerelések
+hero_crafting_result_item_equipped;Felszerelt tétel
+hero_crafting_result_item_taken;Tétel a leltárba áthelyezve
+hero_crafting_result_material_taken;Anyag a leltárba áthelyezve
+hero_crafting_action_error_quality;A tételeknek azonos minőségűnek kell lenniük.
+hero_crafting_action_error_epic;Kell lennie egy másik epikus tételnek ugyanabban a kategóriában és minőségben.
+inventoryItem_rarity_none;Nincs ritkaság
+dailyQuests_rewardOverview_short;Jutalom áttekintése
+avatar_confirmation_title_delete;Avatár törlése
+avatar_confirmation_header_delete;Törölni akarod az avatárod?
+avatar_confirmation_infoText_delete;A törlési folyamat elindítása után <b>3 napba telik</b>, mire az avatárod törlése befejeződik.\nEgy törölt avatár nem férhet hozzá az árverésekhez és a pénzváltóhoz.\nA törlési folyamatot itt bármikor megszakíthatod.
+avatar_confirmation_requiredWord_delete;Törlés
+avatar_confirmation_title_respawn;Avatár újraélesztése
+avatar_confirmation_header_respawn;Szeretnéd újraéleszteni az avatárod?
+avatar_confirmation_infoText_respawn;Ez törli a teljes játékállást, és a kiinduló falut a térkép egy új helyére helyezi.\n\nMinden megvásárolt arany automatikusan átkerül.
+avatar_confirmation_requiredWord_respawn;újraélesztés
+settings_app_title;Minden játékvilág
+settings_app_Animations_title;Animációk
+settings_app_Animations_description;Válaszd ki, hogy milyen animációkat szeretnél látni az applikációban.
+settings_app_Animations_activated;Falu/erőforrás nézet felhő animációja aktiválva
+settings_app_Animations_deactivated;Falu/erőforrás nézet felhő animációja kikapcsolva
+settings_app_NightMode_title;Éjszakai üzemmód
+settings_app_NightMode_description;A falusiak meggyújtották a fáklyákat, és a kemencék tüze pattog az éjszakai égbolt csillagainak halvány fénye alatt.
+settings_app_NightMode_activated;Éjszakai üzemmód aktiválva
+settings_app_NightMode_deactivated;Éjszakai üzemmód kikapcsolva
+settings_app_WinterMode_title;Téli üzemmód
+settings_app_WinterMode_description;A hó halkan hull, csalóka csendbe burkolja a falut, ahol minden hang szétfoszlani tűnik a fagyos levegőben.
+settings_app_WinterMode_activated;Téli üzemmód aktiválva
+settings_app_WinterMode_deactivated;Téli üzemmód kikapcsolva
+settings_app_VillagePanning_title;Falu/nyersanyagmező mozgása
+settings_app_VillagePanning_description;Mozoghatsz a falu nézetében és az nyersanyagmezőkön.
+settings_app_VillagePanning_activated;Mozgás aktiválva
+settings_app_VillagePanning_deactivated;Mozgás kikapcsolva
+settings_app_PushNotifications_title;Általános push értesítések
+settings_app_PushNotifications_description;Tájékozódhatsz az alkalmazással és a játékkal kapcsolatos általános hírekről push-értesítésekkel.
+settings_app_PushNotifications_activated;A játékvilág indulásáról szóló értesítés aktiválva van
+settings_app_PushNotifications_deactivated;A játékvilág indulásáról szóló értesítés ki van kapcsolva
+settings_app_EnergySaving_title;Energiatakarékos üzemmód
+settings_app_EnergySaving_description;Kíméld készüléked akkumulátorát alacsonyabb FPS-értékkel.\nAz energiatakarékos üzemmód aktiválása némi vizuális késedelmet okozhat az applikáció használata közben.
+settings_app_EnergySaving_activated;Energiatakarékos üzemmód aktiválva
+settings_app_EnergySaving_deactivated;Energiatakarékos üzemmód kikapcsolva
+settings_app_DataSaving_title;Mobil adattakarékos üzemmód
+settings_app_DataSaving_description;Kevesebb szerverkérés révén mobiladat/sávszélesség megtakarítása.\nA mobil adatkímélő üzemmód aktiválása hosszabb frissítési intervallumot eredményezhet a játékbeli adatok esetében.
+settings_app_DataSaving_activated;Mobil adattakarékos üzemmód aktiválva
+settings_app_DataSaving_deactivated;Mobil adattakarékos üzemmód kikapcsolva
+auction_FilterType;Tétel típusa
+auction_bidTooLow;Túl alacsony ajánlat.
+villageList_Delete_Title;Falucsoport törlése
+villageList_Delete_Button;Csoport törlése
+villageList_Delete_Description;Szeretnéd törölni ezt a falucsoportot?
+villageList_Delete_Description2;Az ebbe a csoportba tartozó falvak nem lesznek érintettek.
+gameworldNews_title;Hírek és frissítések
+moreInformation;További információk
+remainingGold;Megmaradt arany: {{goldIcon|Sprite}} {{goldAmount}}
+messages_addEmoji_title;Emojik hozzáadása
+messages_select_emojis;Emojik kiválasztása
+cams_resend_email_wait_error;Kérjük, várj az újabb e-mailt küldésére.
+cams_settings_accountDeletion_infoGold;Az avatárod törlése után kapsz egy e-mailt, amelyben le lesz írva, hogyan viheted át a megmaradt aranyadat egy másik avatárhoz.\n<b>Ne feledd:</b>  a fennmaradó aranyat csak bizonyos játékvilágokba lehet átvinni.
+cams_changeMail_title;E-mail-cím módosítása
+cams_changeMail_description;Az e-mail-cím megváltoztatásához hozzá kell férned a jelenlegi és az új e-mail-címedhez is.
+cams_changeMail_socialHint;Az e-mail-cím megváltoztatása nem befolyásolja  a Facebook, a Google vagy az Apple segítségével történő bejelentkezést.
+cams_changeMail_cantAccess;Nem férsz hozzá az e-mailedhez?
+cams_changeMail_sentVerification;Küldtünk egy ellenőrző e-mailt a következő címre: {{mail}}
+cams_changeMail_checkInbox;Kérjük, ellenőrizd a postaládád, és kövesd az utasításokat a folytatáshoz.
+cams_changeMail_verificationCode;E-mail-cím ellenőrző kód
+cams_changeMail_verifyButton;E-mail-cím ellenőrzése
+cams_changeMail_enterNew_description;Írd be az új e-mail-címed alább. Erre a címre küldünk egy ellenőrző e-mailt.
+cams_changeMail_enterNew_description2;A folytatáshoz kövesd az e-mailben található utasításokat.
+cams_changeMail_enterNew_input;Írd be az új e-mail-címed:
+cams_changeMail_enterNew_input_placeholder;Új e-mail-cím
+cams_changeMail_enterNew_button;Email-cím módosítása
+cams_changeMail_done_title;E-mail-cím frissítve
+cams_changeMail_done_description1;Az email-címed sikeresen a következőre módosult: {{mail}}
+cams_changeMail_done_description2;A rendszer automatikusan kijelentkezik, és átirányít a bejelentkezési oldalra. Kérjük, használd az új e-mail-címed a bejelentkezéshez.
+cams_changeMail_done_redirecting;Átirányítás a(z) {{time}} bejelentkezéshez...
+bonusValue;+ {{value}}
+value;{{value}}
+ratioValues_Colon;{{a}}:{{b}}
+genericValue;{{VALUE}}
+enterAmount;Írd be a mennyiséget
+symbol_minus;-
+applyFilter;Szűrő alkalmazása
+resetFilter;Szűrő visszaállítása
+rallyPoint_troopsOverview_outgoingMission_50_heroCentricAdventure;Felfedezés kaland közben
+rallyPoint_troopsOverview_returningFromAdventure_heroCentricAdventure;Visszatérés a kalandból
+silverExchangePopup_AvailableSilver;Elérhető ezüst
+silverExchangePopup_SilverStatus;Jelenleg {{AMOUNT|LongNumber}} ezüstöd van aktív aukciókban lekötve.
+silverExchangePopup_SilverError;Nincs elég ezüstöd ehhez az akcióhoz.
+silverExchangePopup_GoldError;Nincs elég aranyad ehhez az akcióhoz.
+hero.status50_heroCentricAdventure;A hősöd a kalandjához vezető úton van.
+inventoryItem_quality_1;1. minőség
+inventoryItem_quality_2;2. minőség
+inventoryItem_quality_3;3. minőség
+inventoryItem_rarity_common_headGear;Közönséges fejfedő
+inventoryItem_rarity_uncommon_headGear;Szokatlan fejfedő
+inventoryItem_rarity_rare_headGear;Ritka fejfedő
+inventoryItem_rarity_epic_headGear;Epikus fejfedő
+inventoryItem_rarity_legendary_headGear;Legendás fejfedő
+inventoryItem_rarity_common_utility;Közönséges segédeszköz
+inventoryItem_rarity_uncommon_utility;Szokatlan segédeszköz
+inventoryItem_rarity_rare_utility;Ritka segédeszköz
+inventoryItem_rarity_epic_utility;Epikus segédeszköz
+inventoryItem_rarity_legendary_utility;Legendás segédeszköz
+inventoryItem_rarity_common_weapon;Közönséges fegyver
+inventoryItem_rarity_uncommon_weapon;Szokatlan fegyver
+inventoryItem_rarity_rare_weapon;Ritka fegyver
+inventoryItem_rarity_epic_weapon;Epikus fegyver
+inventoryItem_rarity_legendary_weapon;Legendás fegyver
+inventoryItem_rarity_common_armour;Közönséges páncélzat
+inventoryItem_rarity_uncommon_armour;Szokatlan páncélzat
+inventoryItem_rarity_rare_armour;Ritka páncélzat
+inventoryItem_rarity_epic_armour;Epikus páncélzat
+inventoryItem_rarity_legendary_armour;Legendás páncélzat
+inventoryItem_rarity_common_boots;Közönséges csizma
+inventoryItem_rarity_uncommon_boots;Szokatlan csizma
+inventoryItem_rarity_rare_boots;Ritka csizma
+inventoryItem_rarity_epic_boots;Epikus csizma
+inventoryItem_rarity_legendary_boots;Legendás csizma
+inventoryItem_rarity_common_consumable;Fogyóeszköz
+inventoryItem_rarity_uncommon_consumable;Szokatlan fogyasztási cikk
+inventoryItem_rarity_rare_consumable;Ritka fogyasztási cikk
+inventoryItem_rarity_epic_consumable;Epikus fogyasztási cikk
+inventoryItem_rarity_common_horse;Ló
+inventoryItem_rarity_uncommon_horse;Szokatlan ló
+inventoryItem_rarity_rare_horse;Ritka ló
+inventoryItem_rarity_epic_horse;Epikus Ló
+inventoryItem_rarity_legendary_horse;Legendás ló
+inventoryItem_rarity_common_material;Fogyóeszköz
+inventoryItem_rarity_uncommon_material;Szokatlan fogyasztási cikk
+inventoryItem_rarity_rare_material;Ritka fogyasztási cikk
+inventoryItem_rarity_epic_material;Epikus fogyasztási cikk
+search_item;Tárgy keresése
+search_select_item;Válassz tárgyat
+avatar_confirmation_infoText_delete_goldBough;A törlési folyamat elindítása után <b>legalább három napot</b> vesz igénybe az avatárod törlése, mert ezzel az avatárral nem túl régen aranyat vásároltál.\nEgy törölt avatár nem férhet hozzá az árverésekhez és a pénzváltóhoz.\nA törlési folyamatot itt bármikor megszakíthatod.
+combatSimulator_addItemEffect;Tárgyhatás hozzáadása
+combatSimulator_editItemEffect;Tárgyhatás szerkesztése
+addItemEffect_title;Hősi tárgyhatás hozzáadása
+addItemEffect_description;Adj hozzá külön hatásokat, hogy tükrözzék az összes tárgy egyedi bónuszait.
+addItemEffect_importHeroEquipment;Saját hősi felszerelés importálása
+addItemEffect_importHeroEquipment_success;Importált hősi felszerelések
+addItemEffect_selectEffect;Válassz ki egy tárgyhatást
+addItemEffect_selectItem;Válassz egy tárgyat
+addItemEffect_selectMagnitude;Válaszd ki a nagyságrendet
+addItemEffect_selectUnit;Egység kiválasztása
+addItemEffect_missingMagnitude;Hiányzó nagyságrend
+addItemEffect_effect_2;Csökkentett kár
+addItemEffect_effect_6;+ További egészségpontok naponta
+addItemEffect_effect_12;+ Megnövelt támadás és védelem bizonyos egységek számára
+addItemEffect_effect_13;+ Megnövelt harci erő
+cams_newMail_title;Új e-mail-cím
+cams_verifyNewMail_title;Új e-mail-cím ellenőrzése
+cams_verifyCurrentMail_title;Aktuális e-mail-cím ellenőrzése
+auction_notEnoughSilver;Nincs elég ezüstöd.
+auction_itemGroups;Tételcsoportok
+auction_unknown;?
+auction_sortingOption_itemName;Tétel neve
+auction_sortingOption_bidCount;Az ajánlatok száma
+auction_sortingOption_finishedAt;Befejezés:
+auction_sortingOption_highestBid;Legmagasabb ajánlat
+auction_sortingOption_highestBidder_player;Jelenlegi nyertes (játékos)
+auction_sortingOption_highestBidder_alliance;Jelenlegi nyertes (klán)
+auction_sortingOption_auctionAmount;Futó árverések száma
+auction_sortingOption_nextFinishedAt;Következő befejezés:
+auction_sellingPrice;Eladási ár
+auction_sellingPrice_lowest;Legalacsonyabb
+auction_sellingPrice_average;Átlag
+auction_sellingPrice_highest;Legmagasabb
+auction_result_won;<color={{colorValue|TextColor}}>Megnyert</color>
+auction_result_lost;<color={{colorValue|TextColor}}>Túllicitálva</color>
+auction_sellingPrice_averagePrice;Átlagos ár
+auction_bidProcessTitle;Ajánlattételi folyamat
+auction_bidProcessDescription1;Licitálhatsz a téged érdeklő tételekre.
+auction_bidProcessDescription2;Legalább a minimális összeggel kell licitálnod ahhoz, hogy túllicitáld az aktuális licitet.
+auction_maxBidFeatureTitle;Maximális licit funkció
+auction_maxBidFeatureDescription1;Megadhatod a maximális összeget a tételre.
+auction_maxBidFeatureDescription2;A rendszer automatikusan licitál helyetted a beállított maximumig.
+auction_maxBidFeatureDescription3;Az ajánlatod csak akkor növekszik, ha ez szükséges ahhoz, hogy te maradj a nyertes ajánlattevő.
+auction_maxBidFeatureDescription4;A licitálás addig folytatódik, amíg nem nyersz, vagy amíg a maximális összegen túl nem licitál valaki.
+auction_auctionDurationTitle;Az árverés időtartama
+auction_auctionDurationDescription1;Ha az aukció hátralévő ideje kevesebb, mint {{DURATION|Duration}}, az időtartam {{DURATION|Duration}}cel meghosszabbodik, amikor a legmagasabb ajánlatot tevő személy megváltozik.
+auction_auctionWinningTitle;Nyertes
+auction_auctionWinningDescription1;Az aukció végén a legmagasabb ajánlatot tevő nyeri meg a terméket.
+auction_auctionFinished;Az árverésnek már vége van.
+auction_wasJustOutbid;Nem te vagy jelenleg a nyertes licitáló.
+auction_currentHighestBidder;Jelenlegi nyertes
+auction_currentHighestBid;Jelenlegi legmagasabb licit
+auction_yourMaximumBid;Maximális licited
+auction_showFinished;Befejezettek megjelenítése
+auction_deleteAllFinished;Összes befejezett törlése
+auction_startedAt;Kezdés: {{TIME|DateTime}} | Folyamatban
+auction_canceled;Törölve
+auction_finished;Kész
+auction_finishedAt;Befejezve: {{TIME|DateTime}}
+auction_itemAuction_title;Tárgy árverése
+auction_itemAuction_info;Kattints egy tárgyra a leltárban, hogy elindíts egy árverést. A többi játékos licitálhat rá. Az árverés maximum {{INT}} óráig tart.
+auction_whatHappensNext_title;Mi történik ezután
+auction_whatHappensNext_info1;A legmagasabb ajánlatot tevő automatikusan megvásárolja a terméket, amikor az idő lejár.
+auction_whatHappensNext_info2;Ezüstöt kapsz, amikor az eladás megtörténik.
+auction_whatHappensNext_info3;Értesítést kapsz, ha a tárgyad elkelt.
+auction_error_cannotSell;Ezt a tételt nem lehet eladni az aukciós házban.
+auction_error_onlyHorse;Nem adhatod el az egyetlen lovadat.
+auction_sellItem;Adj el egy tárgyat
+auction_sales;Értékesítés
+auction_selectBatchSize;Tételméret kiválasztása
+auction_selectBatchSize_batches;<b>{{COUNT}}x</b> kötegelt tétel
+auction_selectFilter_title;Szűrő kiválasztása
+goldShop_upTo;Legfeljebb
+shopPromotion_openShop;Bolt megnyitása
+shopPromotion_goldPromotionTitle;Aktív arany promóció
+shopPromotion_limitedTimeOffer;Korlátozott idejű ajánlat!
+shopPromotion_goldPromotionDescription;Szerezz több aranyat a pénzedért!
+shopPromotion_timeRemaining;Hátralévő idő:
+hero_adventures_watchAdReduceDuration_title;Csökkenti a kaland időtartamát {{AMOUNT}}%-kal
+hero_adventures_watchAdReduceDuration_description;Nézz meg egy videót, hogy csökkentsd hősöd <b>következő</b> kalandjának időtartamát.
+hero_adventures_watchAdIncreaseDanger_title;Nehézre fokozza a kaland veszélyességét
+hero_adventures_watchAdIncreaseDanger_description;Nézz meg egy videót, hogy növeld a <b>a következő normál</b> kaland veszélyét nehézre a több hősi TP-ért.
+hero_adventures_watchAdActive;Aktív a következő kalandhoz.
+hero_adventures_watchAdActiveNormal;Aktív a következő normál kalandhoz.
+hero_crafting_action_error_nonEpic;Ugyanolyan ritkaságú és minőségű, azonos tárgynak kell lennie.
+berichte.adventure_heroCentric;{{VILLAGE_NAME}} elindul egy kalandra
+reports_share_notShareable;Ez a jelentés nem osztható meg.
+dailyQuests_dailyMaxReached;Elérted a napi maximumot
+achievementQuests.DailyQuest_12_description;Nyisd meg a játékot a számítógéped böngészőjében, és nézd meg a videót.
+achievementQuests.DailyQuest_12_additionalInformation;www.travian.hu
+achievementQuests.DailyQuest_13_description;Nézz meg például egy videót, hogy gyorsabban fejleszthesd az épületeidet.
+achievementQuests.DailyQuest_13_additionalInformation;Vagy kattints a "Videó megnézése" gombra, ha közvetlenül, további előnyök nélkül szeretnél videót nézni.
+addItemEffect_effect_11;+ megnövelt támadási erő a natarok ellen
+auction_started;Az árverés elkezdődött
+auction_error_batchSize;Nincs elég eladható termék.
+auction_graph_notEnoughData;Nincs elég adat
+auction_emptyInventory;- Jelenleg nincsenek eladható tárgyaid -
+RelativeTime_2_word;[data>1:{{data}} óra][data<2:{{data}} óra]
+gold_action_halveDuration;Időtartam megfelezése
+goldShop_advantage_Value_Duration;<b>+{{VALUE}}%</b> <b>[DURATION>6:{{DURATION}} napig][DURATION<7:{{DURATION|Mult|24}} óráig][DURATION<7: óráig]</b>
+goldShop_advantage_Value_Active;<b>+{{VALUE}}%</b> aktív:
+goldShop_upgrade;Fejlesztés
+goldShop_advantage_stillActiveFor;Még mindig aktív:
+goldShop_advantage_stillActiveFor_Value;{{DURATION}} {{TIME}} óráig
+goldShop_advantage_videoFeatureOnCD;A videobónuszt naponta csak egyszer aktiválhatja.\nNapi visszaállítás: {{TIMESTAMP|Countdown}}
+goldShop_advantage_popup_mainInfoHeader_ProductionboostLumber;Növeld meg a <b>fűrészáru</b> termelését minden faludban.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostClay;Növeld meg az <b>anyag termelését</b> minden faludban.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostIron;Növeld meg a <b>vasérc termelését</b> minden faludban.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostCrop;Növeld meg a <b>búza termelését</b> minden faludban.
+goldShop_advantage_popup_mainInfoBody;A bónusz az alaptermelésedre és minden más bónuszra is hatással van!
+goldShop_advantage_popup_premiumInfo;A bónuszt az Arannyal aktiválhatod, és {{VALUE}}% termelési bónuszt kapsz.\nAktiválhatod az automatikus hosszabbítást egy állandó bónusz időtartamára.
+goldShop_advantage_popup_videoFeatureInfo;Vagy megnézhetsz egy rövid videót, és megkaphatod a kisebb {{VALUE}}% termelési bónuszt.\n<b>A videobónusz minden erőforrás esetében naponta csak egyszer aktiválható.</b>
+goldShop_advantage_popup_upgradeInfo;Bármikor fejleszthetsz a +{{VALUE}}%-os termelési bónuszra Aranyért cserébe.
+goldShop_advantage_upgradePopupInfo1;Az erőforrásbónusz fejlesztése eltávolítja a jelenlegi aktív bónuszodat.
+goldShop_advantage_upgradePopupInfo2;[DURATION>6:{{DURATION}} napig][DURATION<7:{{DURATION|Mult|24}}] helyett +{{VALUE}}%-ot kapsz.
+goldShop_advantage_upgradePopup_title;Fejlesztési bónusz
+productionOverview_Bonus;+{{VALUE}}% termelés
+hero_adventures_watchAdReduceDuration_toast;A kaland időtartama csökkent.
+hero_adventures_watchAdIncreaseDanger_toast;A kalandveszély megnőtt.
+hero_consumablePopup_amountEquippedAfter;Felszerelt mennyiség utána:
+hero_consumablePopup_amountEquippedAfterUse;Felszerelt mennyiség felhasználás után:
+hero_consumablePopup_amountLeftInInventory;A leltárban maradt mennyiség:
+cams_recover_password_cooldown;Kis türelmet kérünk: {{VALUE}}
+cams_settings_changePassword_cooldown;Kis türelmet kérünk: {{VALUE}}
+infobox_productionBoost_upgradeButton;Fejlesztés
+infobox_productionBoost_upgradeBonusWithGold;Arannyal fejleszd és hosszabbítsd meg bónuszod, így +{{PREMIUM_PERCENTAGE}}%-ot kapsz {{TIME}} órán keresztül.
+infobox_productionBoost_expires;{{PERCENTAGE}} {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresLumber;+{{PERCENTAGE}}% fűrészáru termelési bónusz befejeződik: {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresClay;+{{PERCENTAGE}}% anyag termelési bónusz befejeződik: {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresIron;+{{PERCENTAGE}}% vasérc termelési bónusz befejeződik: {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresCrop;+{{PERCENTAGE}}% búza termelési bónusz befejeződik: {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expired;{{PERCENTAGE}}
+infobox_productionBoost_expiredLumber;+{{PERCENTAGE}}% fűrészáru termelési bónusz <b>lejárt</b>. 
+infobox_productionBoost_expiredClay;+{{PERCENTAGE}}% agyag termelési bónusz <b>lejárt</b>. 
+infobox_productionBoost_expiredIron;+{{PERCENTAGE}}% vasérc termelési bónusz <b>lejárt</b>. 
+infobox_productionBoost_expiredCrop;+{{PERCENTAGE}}% búza termelési bónusz <b>lejárt</b>. 
+infobox_levelUpProductionReminder;Növeld a nyersanyagtermelést minden faludban aranyért (+{{PREMIUM_PERCENTAGE}}%) vagy egy videó megtekintésével (+{{VIDEO_PERCENTAGE}}%)
+infobox_oneTimeProductionBoostReminder;Most újra aktiválhatod a +{{VIDEO_PERCENTAGE}}%-os nyersanyagbónuszodat, ha megnézel egy videót.
+travelSimulator_title;Utazási idő szimulátor
+travelSimulator_sourceTribe;Forrás helye: nép
+travelSimulator_noLocationSelected;Nincs kiválasztott helyszín
+travelSimulator_slowestUnit_title;Leglassabb egység
+travelSimulator_slowestUnit_settings;{{UNIT}} | Sebesség: {{SPEED}}
+travelSimulator_TournamentSquareLevel_info;(Csak >20 mező távolság esetén)
+travelSimulator_tournamentSquareLevel_option;{{LEVEL}} | {{VALUE}}%
+travelSimulator_unitSelection_title;Válaszd a leglassabb egységet
+travelSimulator_unitSelection_unitType;Egység típusa
+travelSimulator_unitSelection_unitSpeed;Egység sebessége
+travelSimulator_unitSelection_selectedUnitSpeed;Sebesség: {{SPEED}}
+travelSimulator_calculation_land;<b>Szárazföld:</b> {{VALUE}}
+travelSimulator_calculation_sea;<b>Tenger:</b> {{VALUE}}
+travelSimulator_heroAttending;A hős részt vesz
+travelSimulator_vikingRaidBonus;Viking rablási bónusz
+travelSimulator_troopSpeedArtefactEffect;Csapatsebességre vonatkozó ereklye hatása
+travelSimulator_toast_selectSourceAndTarget;Válassz ki egy érvényes forrás- és célhelyet!
+travelSimulator_toast_selectSourceTribe;Válassz egy érvényes népet!
+IOSAppTrackingTransparencyMessage;Az "Engedélyezés" megnyomása az eszközinformációkat használja a relevánsabb hirdetési tartalomhoz
+goldShop_advantage_Value_Duration_Hours;<b>+{{VALUE}}%</b> <b>{{DURATION}} órára</b>
+travelSimulator_tournamentSquareLevel_title;Gyakorlótér szintje
+travelSimulator_troopSpeedAncientPower;Csapatok sebessége ősi erő
+RelativeTime_Formatted;[weeks>0:{{weeks}}hét ][days>0:{{days}}n ]{{data}}
+settings_account_tab;Felhasználó
+settings_notification_tab;Push értesítések
+settings_app_PushNotifications_popup_title;Push értesítések
+settings_app_PushNotifications_popup_header;Engedélyezd, hogy értesítéseket küldjünk neked
+settings_app_PushNotifications_popup_info1;Ha szeretnél push-értesítéseket kapni a játékkal kapcsolatos hírekről és hasznos információkról, kérjük, először engedélyezd az értesítéseket.
+settings_app_PushNotifications_popup_info2;Az értesítéseket a készülék alkalmazásbeállításaiban engedélyezheted.
+settings_app_PushNotifications_popup_info3;Ide bármikor visszatérhetsz, ha újra le szeretnéd tiltani az értesítéseket.
+settings_app_PushNotifications_popup_action_button;Az alkalmazásbeállítások megnyitása
+ratioValueMax;/ {{a}}
+market_sendResources_completed;Teljesítve
+market_sendResources_villageNotFound;Nem található. Nyersanyagokat csak saját falvaidba, a klántagoknak és a szövetség tagjainak küldhetsz.
+no_ads_popup_title;Nincsenek videohirdetések
+no_ads_popup_header;Probléma merült fel egy videohirdetés megjelenítésekor.
+no_ads_popup_info1;Ennek több oka is lehet:
+no_ads_popup_info2; • Jelenleg nincsenek elérhető hirdetések a régiódban.
+no_ads_popup_info3; • Az adatvédelmi beállításaid korlátozzák a megjeleníthető hirdetések számát.
+no_ads_popup_info4; • Technikai problémák az alkalmazásunkkal vagy a hirdetésszolgáltatóval.
+no_ads_popup_settings_msg;Kérjük, engedélyezd a személyre szabott hirdetéseket az adatvédelmi beállításoknál.
+no_ads_popup_support_msg;Ha a probléma továbbra is fennáll, kérjük, lépj kapcsolatba ügyfélszolgálatunkkal.
+no_ads_popup_support_button;Kapcsolatfelvétel
+city_upgradeToACity_wwVillageNotUpgradeable;A Világcsoda falvakat nem lehet várossá fejleszteni.
+travelSimulator_selectMagnitude;Válaszd ki a nagyságrendet
+marketplace_merchantsOverview_returningTo;Visszatérés <b>{{Player}}</b> <b>{{Village}}</b> nevű falujába
+market_sendResources_sendAgain;Elküldés újra
+search_village_notFound;Nem található. Nyersanyagokat csak saját falvaidba, a klántagoknak és a szövetség tagjainak küldhetsz.
+settings_app_AnimationsPayoffs_activated;A csapatok/katonák küldése animáció bekapcsolva
+settings_app_AnimationsPayoffs_deactivated;A csapatok/katonák küldése animáció kikapcsolva
+hero_resourceTransferPopup_empty;Nincs a hős leltárában átadható nyersanyag.
+hero_toast_appearanceChanged;Megváltozott a megjelenés
+alliance_editMemberPopup_customNote;Egyéni megjegyzés
+alliance_editMemberPopup_titleOfRole;A szerepkör neve
+alliance_editMemberPopup_setSpecialization;Specializáció beállítása
+alliance_role_offensive;Támadás
+alliance_role_defensive;Védekezés
+alliance_role_hybrid;Hibrid
+alliance_role_scout;Felderítő
+alliance_role_support;Támogató
+alliance_role_wow_hammer;VCS Pöröly
+alliance_role_none;Nincs
+ad_fallback_popup_title;Jutalom igénylése
+ad_fallback_popup_info;Jelenleg nincs elérhető videohirdetés, de továbbra is jutalmat szeretnénk adni a hűségedért! Kérlek, várj egy kicsit, amíg előkészítjük a jutalmad.
+ad_fallback_popup_rewardGranted;Jutalom jóváírva
+ad_fallback_popup_claim;Jutalom begyűjtése
+ad_fallback_popup_closeWarning;Ha túl korán zárod be ezt a képernyőt, elvész a jutalom
+gameplay_tip_1;Telepeseket a lakóházban vagy a palotában képezhetsz (ha az épület elérte a 10-es szintet).
+gameplay_tip_2;Egy avatárhoz csak egy palotát építhetsz. A palota legfeljebb 3 bővítő férőhelyet ad, míg a lakóház csak 2-t.
+gameplay_tip_3;Ahhoz, hogy megváltoztasd a főfaludat, építs palotát egy új faluban. Ne feledd, hogy a régi főfaludban lévő különleges épületek elvesznek vagy alacsonyabb szintre csökkennek.
+gameplay_tip_4;Elég kulturális ponttal új falut alapíthatsz, vagy elfoglalhatsz egy másik falut.
+gameplay_tip_5;Kulturális pontokat épületek fejlesztésével és a tanácsházban tartott ünnepségekkel szerezhetsz.
+gameplay_tip_6;Nagy ünnepségeket a tanácsházban tarthatsz (10-es szinttől); ezek több kulturális pontot adnak, de több nyersanyagot is igényelnek.
+gameplay_tip_7;Egy falu elfoglalásához nullára kell csökkentened a hűségét a rezidenciádban vagy a palotádban kiképzett adminisztrátorokkal.
+gameplay_tip_8;Az adminisztrátorokat először az akadémián kell kutatnod, csak ezután képezheted ki őket a rezidenciában vagy a palotában.
+gameplay_tip_9;Falvakat foglalhatsz el a Nataroktól vagy más játékosoktól.
+gameplay_tip_10;A főfaludat más játékosok nem foglalhatják el.
+gameplay_tip_11;Használd a búzakeresőt, hogy 9- és 15-búzamezős falvakat találj, amelyek egy nagyobb hadsereget is el tudnak tartani.
+gameplay_tip_12;A főfaludban a nyersanyagmezőket magasabb szintre fejlesztheted, mint a többi faludban.
+gameplay_tip_13;A piacon keresztül nyersanyagokat küldhetsz baráti falvaknak.
+gameplay_tip_14;A piacon nyersanyagokkal kereskedhetsz a többi játékossal.
+gameplay_tip_15;A kereskedelmi központ fejlesztésével növelheted a kereskedőid kapacitását.
+gameplay_tip_16;Fejleszd a hősök házát 10-es szintre, hogy elfoglalhass egy oázist, és növeld a nyersanyagtermelésedet.
+gameplay_tip_17;A kovácsműhelyben növelheted a csapataid erejét. A fejlesztés az adott típusú összes csapatodra azonnal érvényes, a már kiképzettekre is.
+gameplay_tip_18;Használd a harcszimulátort, hogy a támadás előtt megbecsüld a csata kimenetelét. Minél több részletet adsz meg a szimulációban, annál pontosabb lesz az eredmény.
+gameplay_tip_19;Az Aranyklubbal aktiválhatod a főfaludban lévő csapataid menekülését, így azok automatikusan elmenekülnek a beérkező támadások elől.
+gameplay_tip_20;Amikor a csapataid hazaérnek, a csapataid menekülése 10 másodpercre ideiglenesen le van tiltva.
+gameplay_tip_21;Fejleszd a felderítőidet a kovácsműhelyben, hogy javuljanak a felderítési képességeik.
+gameplay_tip_22;A falak jelentősen növelik a falud védelmét.
+gameplay_tip_23;Építs búvóhelyeket, hogy megvédd nyersanyagaidat az ellenséges rablásoktól.
+gameplay_tip_24;A gallok kiképezhetnek csapdakészítőket, hogy már a csata kezdete előtt elfogják a támadókat.
+gameplay_tip_25;A csapdába esett csapatok kiszabadításához indíts sikeres normál támadást arra a falura, amely csapdába ejtette őket.
+gameplay_tip_26;A támadó játékosok a csapdába ejtett csapatok 75%-át szabadíthatják ki, de a védő úgy dönthet, hogy békésen elengedi a csapatok 100%-át.
+gameplay_tip_27;Építs egy kórházat, hogy meggyógyíthasd a harcban elesett csapatok 40%-át.
+gameplay_tip_28;A gallok kiképezhetnek egy csapdakészítőt, aki még a csata kezdete előtt elfogja a támadó csapatokat.
+gameplay_tip_29;Építs egy kőfejtőt a főfaludban, hogy növeld az épületeid tartósságát a katapultokkal és faltörő kosokkal szemben.
+gameplay_tip_30;Beállíthatod, hogy a hősöd elrejtőzzön, amikor az ellenség megtámadja a honos faludat, így a hősöd biztonságban marad.
+gameplay_tip_31;Győzd le az állatokat a szabad oázisokban, hogy extra nyersanyaghoz juss. Az erősebb állatok több nyersanyagot adnak.
+gameplay_tip_32;Verd le a szabad oázisokban élő állatokat a hősöddel, és szerezz tapasztalatot.
+gameplay_tip_33;Használj ketreceket, hogy elkapd a szabad oázisokban lévő állatokat, és ezzel megerősítsd a faludat.
+gameplay_tip_34;Használj olyan tárgyakat, mint például a gyógykenőcs vagy speciális páncél, hogy felgyorsítsd a hősöd életerejének regenerációját.
+gameplay_tip_35;Éleszd újra a hősödet nyersanyag felhasználásával, ami időbe telik, vagy azonnal egy vizesvödörrel.
+gameplay_tip_36;Ha a főépületed eléri a 10. szintet, más épületeket is lebonthatsz.
+gameplay_tip_37;Építsd fel a követséget, hogy csatlakozhass egy klánhoz, vagy alapítsd meg a sajátodat.
+vacationMode_title;Vakáció mód
+vacationMode_vacation;Vakáció
+vacationMode_vacationModeActive;A vakáció mód aktív
+vacationMode_info;Használd a vakáció módot, hogy megvédd a falvaidat, amíg távol vagy. Vakáció módban az alábbi tevékenységek nem érhetők el:
+vacationMode_deactivated_action1;csapatok küldése vagy fogadása
+vacationMode_deactivated_action2;Kalandozás a hősöddel
+vacationMode_deactivated_action3;Új építési megbízások indítása vagy csapatok kiképzése
+vacationMode_deactivated_action4;Piac használata (beleértve a kereskedelmi útvonalakat)
+vacationMode_deactivated_action5;Ünnepségek tartása, kutatások megkezdése vagy fejlesztések végrehajtása
+vacationMode_deactivated_action6;Klánok létrehozása vagy azokhoz való csatlakozás
+vacationMode_deactivated_action7;hozzájárulás nyersanyagokkal a klánbónuszokhoz
+vacationMode_deactivated_action8;Vegyél részt az Árveréseken
+vacationMode_deactivated_action9;Változtasd meg a fővárosodat
+vacationMode_deactivated_action10;fiókod törlése
+vacationMode_deactivated_territory_action1;Falu várossá fejlesztése
+vacationMode_deactivated_territory_action2;A fiókod nem járul hozzá a klánod regionális népességéhez, és a falvaid nem kapnak győzelmi pontokat
+vacationMode_conditions_title;a vakáció feltételei teljesültek
+vacationMode_duration_info;Hány napig tartson a vakációs mód?
+vacationMode_durationUntil;Vakáció <b>{{DATE}}</b>-ig
+vacationMode_availableDays;Elérhető napok <b>{{AVAILABLE}}/{{TOTAL}}</b>
+vacationMode_startButton;Lépj most vakációs módba
+vacationMode_error_noCancelTime;A vakációs módot csak {{HOURS}} óra múlva állíthatod le
+vacationMode_error_missingRequirement;Teljesítsd a vakációs módba lépéshez szükséges összes követelményt
+vacationMode_error_noVacationDaysLeft;Nincsenek szabadnapjaid a vakáció módba lépéshez
+vacationMode_error_cooldown;A vakáció módot csak {{HOURS}} órával azután indíthatod el, hogy a legutóbbi véget ért
+vacationMode_abortSuccess;A vakáció mód leállt!
+vacationMode_remainingDays;Hátralévő napok a vakáció módban
+vacationMode_runsUntil;A vakáció mód eddig tart:
+vacationMode_abortInfo;A vakáció módot legkorábban ekkor állíthatod le: <b>{{DATE}}</b>
+vacationMode_abortAvailable;Most megszakíthatod a vakáció módot
+vacationMode_abortConfirmHeader;Biztosan meg akarod szakítani a vakáció módot?
+vacationMode_abortConfirmInfo;A fel nem használt napokat visszakapod. Ez a művelet nem vonható vissza.
+vacationMode_startCooldownInfo;A vakáció módot legkorábban ekkor indíthatod el: <b>{{DATE}}</b>
+vacationMode_abortButton;Vakációs mód leállítása
+vacationMode_conditions_has_outgoing_troops;Nincsenek kimenő csapatok
+vacationMode_conditions_has_incoming_troops;Nincsenek a falvaidhoz vagy oázisaidhoz tartó bejövő csapatok
+vacationMode_conditions_has_reinforcing_troops_for;Nincsenek más játékosoknak küldött támogatásaid
+vacationMode_conditions_has_reinforcing_troops_from;Nincsenek más játékosoktól érkező támogató csapatok a falvaidban vagy oázisaidban
+vacationMode_conditions_has_ww_village;Nem rendelkezel világcsoda-faluval
+vacationMode_conditions_has_artifact_village;Nem rendelkezel különleges tárgyat tartalmazó faluval
+vacationMode_conditions_has_beginners_protection;Nem állsz kezdővédelem alatt
+vacationMode_conditions_has_trapped_troops;Nincsenek csapatok a csapdáidban, és egyetlen saját csapatod — beleértve a hősödet is — sem esett csapdába
+vacationMode_conditions_has_deletion_event;Avatárod nincs törlésre jelölve
+vacationMode_conditions_has_conquered_oase;Az elmúlt {{HOURS}} órában nem foglaltál el oázist. Vakáció módba akkor léphetsz, ha egy oázis elfoglalása óta már {{HOURS}} óra eltelt, vagy ha elveszítetted azt.
+vacationModePopup_info;A vakáció mód ideje alatt a fiókod védett lesz. Viszont a nyersanyagtermelés folytatódik, és a csapataid továbbra is fogyasztják a búzát. <color=red>Ez a csapataid éhezéséhez vezethet.</color>\n
+vacationModePopup_start_info;Biztosan be akarsz lépni vakáció módba <b>{{DAYS}}</b> [DAYS>1:napra][DAYS<2:napra]? A vakáció mód megszakítható arany felhasználásával {{COOLDOWN}} órás várakozási idő után.
+vacationModePopup_troopConsumption;Saját csapatok fogyasztása
+vacationModePopup_starvationEstimate;Leghamarabb ekkor kezdődik az éhezés
+vacationModePopup_starvationTitle;Saját csapatok fogyasztása
+goldTransfer_accept_gift;Igen, utald át az aranyat\n
+goldTransfer_decline_gift;Nem, utasítsd vissza az aranyat
+goldTransfer_accepted_toast;Aranyátutalás elfogadva.
+goldTransfer_declined_toast;Aranyátutalás elutasítva.
+smithy_requirementsNotSatisfied;Nem teljesülnek ennek az egységnek a fejlesztéséhez szükséges követelmények
+vacationModeLobby_status;Vakáción
+block_vacationMode_toast;Ezt nem teheted meg, amíg vakáción vagy.
+goldTransfer_verifyOwnership_title;Tulajdonjog igazolása
+goldTransfer_verifyOwnership_description;Ahhoz, hogy a megvásárolt, de még fel nem használt aranyat egy meglévő avatárra átutalhasd, először igazold, hogy az arany a tiéd: add meg azt az e-mail-címet, amelyre az átviteli kódot küldtük.
+goldTransfer_verifyOwnership_emailPlaceholder;E-mail-cím
+goldTransfer_verifyOwnership_errorNoEmail;Kérjük, add meg az e-mail-címed.
+goldTransfer_verifyOwnership_errorAlreadyUsed;Ez az aranytovábbító hivatkozást már felhasználták.
+goldTransfer_verifyOwnership_errorInUse;Ez az aranytovábbító hivatkozás érvénytelen.
+goldTransfer_verifyOwnership_verifyButton;Ellenőrzés
+goldTransfer_selectTargetAvatar_title;Cél-avatár kiválasztása
+goldTransfer_selectTargetAvatar_description;Kérlek, válaszd ki azt az avatárt, amelynek át szeretnéd utalni az aranyat.
+goldTransfer_transferableGold_label;Átutalható arany:
+goldTransfer_enterAvatarName_header;Add meg az avatár nevét:
+goldTransfer_avatarName_placeholder;Avatár neve
+goldTransfer_searchAvatar_Button;Avatár keresése
+goldTransfer_searchAvatarNothingFound_error;Nem található aktív avatár ezzel a névvel.
+goldTransfer_ownAvatarList_header;Válassz az aktív avatárjaid közül ({{account}})
+goldTransfer_selectOwnAvatarConfirm_Button;Avatár kiválasztása
+goldTransfer_selectGameworld_title;Játékvilág kiválasztása
+goldTransfer_selectGameworld_description;Ezt az avatárnevet több játékvilágon is használják. Az aranyat csak egy avatárnak utalhatod át. Kérlek, válassz egy játékvilágot.
+goldTransfer_selectGameworldConfirm_Button;Játékvilág kiválasztása
+goldTransfer_changeAvatar_Button;Avatárnév módosítása
+goldTransfer_confirm_title;Küldés jóváhagyása
+goldTransfer_confirm_Button;Küldés jóváhagyása
+goldTransfer_confirmAvatarOnOneWorld_info;Az avatárnév egy játékvilágban található meg:
+goldTransfer_confirmAvatarName_prefix;Avatár neve:
+goldTransfer_confirmGameworld_prefix;Játékvilág:
+goldTransfer_transferComplete_title;Az átutalás sikeres
+goldTransfer_transferComplete_description;Az aranyadat sikeresen átutaltuk <b>{{avatarname}}</b> avatár számára a(z) <b>{{gameworldname}}</b> játékvilágban.
+goldTransfer_transferComplete_returnButton;Vissza a játékhoz
+cams_settings_accountDeletion_information_warning_v2;Ez a művelet véglegesen törli a fiókodat. A fiókodhoz kapcsolódó alábbi tartalmak vesznek el:\n<indent=0.5em>•  A fiókodhoz tartozó összes avatár\n•  A fiókoddal megszerzett összes medál</indent>\n\nA megerősítéshez írd be az alábbi mezőbe a "delete" szót.
+mapMarkers_popupTitle;Jelölő beállítása
+mapMarkers_markerType;Jelölő típusa
+mapMarkers_markerColor;Jelölő színe
+mapMarkers_setAlliance;Jelölő beállítása a klánomnak
+mapMarkers_type_field;Mező
+mapMarkers_addMsg_success;Sikeresen hozzáadtad a jelölőt!
+mapMarkers_saveMsg_success;Sikeresen elmentetted a jelölőt!
+mapMarkers_noPermission_error;Kérj engedélyt a klánod vezetőjétől.
+mapMarkers_marker;Jelölő
+mapMarkers_markers;Jelölők
+mapMarkers_listAllianceTitle;klánjelölők
+mapMarkers_listPlayerTitle;játékosjelölők
+mapMarkers_listAlliances;Klán
+mapMarkers_listPlayers;Játékos:
+mapMarkers_listFlags;Zászlók
+mapMarkers_deleteMarker;Jelölő törlése
+mapMarkers_deleteMarkerMessage;Szeretnéd törölni ezt a jelölőt?
+mapMarkers_showOnMap;Jelölőim megjelenítése a térképen
+embassy_general_subtab;Általános
+embassy_villagesNearby_subtab;Közeli falvak
+embassy_villagesNearby_listHeader;klán- és szövetségi falvak

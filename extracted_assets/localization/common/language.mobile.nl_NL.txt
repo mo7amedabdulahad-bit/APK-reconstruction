@@ -1,0 +1,2081 @@
+﻿detail_window_header_title;{{buildingName|TranslateSuffixFor|allgemein.gid}}
+;{{INT}}
+levelWithValue;Niveau {{level}}
+valueWithPercent;{{value}}%
+valueAsRankingPosition;{{value}}.
+valueChangeInBrackets;({{change|Sign}})
+valueChangeInBracketsWithPercent;({{change|Sign}}%)
+ratioValues;{{a}}/{{b}}
+coordinates;<nobr>({{x}}|{{y}})</nobr>
+village_with_coordinates;{{villageName}} <nobr>({{x}}|{{y}})</nobr>
+village_with_clickable_coordinates;{{villageName}} {{mapId|Coordinates}}
+valuePerHour;{{a}}/uur
+back;Terug
+fill;Vullen
+hero;Held
+done;Klaar
+remove;Verwijderen
+prerequisites;Benodigdheden:
+newAmount;Nieuw bedrag
+before;Voor
+after;Na
+permissions;Bevoegdheden
+changesSaved;Wijzigingen opgeslagen.
+genericError;Onverwachte fout
+allianceTagInBrackets;[{{allianceId|AllianceLink}}]
+autocompleteNoResult;Geen resultaat gevonden
+medalAdded;Medaille toegevoegd
+continueEdit;Doorgaan met bewerken
+levelUp;Niveau omhoog!
+non_existing_object;[?]
+sorting;Sorteren
+copiedToClipboard;Gekopieerd naar klembord
+maximumLengthError;Maximale lengte: {{max}}.
+sortingOptions;Sorteermogelijkheden
+WIP_comingSoon;Functie binnenkort beschikbaar!
+upgradeTab_fastForward_button;{{Percent}}% sneller
+upgradeTab_masterBuilder_button;Bouwen met\nbouwmeester {{goldIcon|Sprite}}{{goldCost}}
+upgradeTab_adBoostPopup_boost;{{BOOST}}% boost
+infoTab_upgradingToLevel;Bouw tot niveau {{level}}:
+infoTab_genericCurrently;Momenteel:
+infoTab_genericAtLevel;Op niveau {{INT}}:
+infoTab_genericEffect;{{INT}}
+infoTab_currentProduction;Actuele productie:
+infoTab_productionAtLevel;Productie op niveau {{INT}}:
+infoTab_effectPerHour;{{INT}} Per uur
+networkIssues;Verbinding met de spelserver verbroken.
+cantLoadServerList;Serverlijst kon niet geladen worden vanwege netwerkproblemen. Controleer of het apparaat is verbonden met internet en probeer het opnieuw.
+barracks_TrainTroops_Action;Legers trainen
+barracks_ViewTrainingsList;Trainingslijst bekijken
+barracks_unitNeedsToBeResearched;Eenheid moet onderzocht worden in
+barracks_requiresLabel;Vereist:
+barracks_trainingCosts;Kosten troepentraining
+barracks_troopsInTraining;Troepen in training
+training_started;Training begonnen!
+targetSelection_relationLabel;Status:
+targetSelection_selectedVillage;Gekozen dorp
+targetSelection_noSelectedVillage;Geen dorp gekozen
+targetSelection_ownVillages;Eigen dorpen
+targetSelection_relation0;Neutraal
+targetSelection_relation1;Vriendelijk
+targetSelection_relation2;Eigen alliantie
+targetSelection_relation3;Eigen dorp
+targetSelection_alreadyThere_troops;Jouw troepen zijn er al.
+targetSelection_alreadyThere_merchants;Je handelaren zijn er al.
+rallyPoint_button_confirmTarget;Doel bevestigen
+rallyPoint_button_prepareTroops;Troepen voorbereiden
+rallyPoint_button_updateWave;Golf bijwerken
+rallyPoint_button_copyWave;Golf kopiëren
+rallyPoint_button_newWave;Nieuwe golf toevoegen
+rallyPoint_sendTroops_chooseDestination;Troepen verzenden - Bestemming kiezen
+rallyPoint_sendTroops_sendTroopAction_1;Troepen verzenden - Bevestigen
+rallyPoint_sendTroops_sendTroopAction_3;Troepen verzenden - Bevestigen
+rallyPoint_sendTroops_sendTroopAction_4;Troepen verzenden - Bevestigen
+rallyPoint_sendTroops_sendTroopAction_5;Troepen verzenden - Bevestigen
+rallyPoint_sendTroops_sendTroopAction_72;Troepen doorsturen - Bevestigen
+rallyPoint_sendTroops_sendTroopAction_9;Troepen terugtrekken - Bevestigen
+rallyPoint_sendTroops_sendTroopAction_10;Nieuw dorp stichten
+rallyPoint_sendTroops_sendTroopButton_1;Troepen sturen
+rallyPoint_sendTroops_sendTroopButton_3;Troepen sturen
+rallyPoint_sendTroops_sendTroopButton_4;Troepen sturen
+rallyPoint_sendTroops_sendTroopButton_5;Troepen sturen
+rallyPoint_sendTroops_sendTroopButton_72;Troepen doorsturen
+rallyPoint_sendTroops_sendTroopButton_9;Troepen terugsturen
+rallyPoint_sendTroops_sendTroopButton_10;Sticht een nieuw dorp
+rallyPoint_sendTroops_coordinateX;<b>X</b>-coördinaat:
+rallyPoint_sendTroops_coordinateY;<b>Y</b>-coördinaat:
+rallyPoint_sendTroops_selectOnMap;Of selecteer een locatie op de kaart:
+rallyPoint_sendTroops_arrivalTime;<b>{{hoursLeft|Duration}}</b> om <b>{{hoursLeft|TimeCountUp}}</b>
+rallyPoint_sendTroops_catapultTargetPopup;Selecteer doelwit van katapult:
+rallyPoint_sendTroops_catapultTarget_category_1;Infrastructuurgebouwen
+rallyPoint_sendTroops_catapultTarget_category_2;Militaire gebouwen
+rallyPoint_sendTroops_catapultTarget_category_3;Grondstoffengebouwen
+rallyPoint_sendTroops_catapultTarget_random;Willekeurig
+rallyPoint_sendTroops_catapultTarget_noBuilding;Kies gebouw
+rallyPoint_sendTroops_catapultTarget_recentTargets;Meest recent geselecteerd:
+rallyPoint_sendTroops_changeHeroHomeVillage;Held toewijzen aan dorp
+rallyPoint_sendTroops_attackNoSelection;Selecteer type aanval
+rallyPoint_sendTroops_movementType_5;Versterking
+rallyPoint_sendTroops_movementType_3;Aanval
+rallyPoint_sendTroops_movementType_4;Overval
+rallyPoint_sendTroops_attackForwarding;Doorsturen
+rallyPoint_sendTroops_noTroopsSelected;- Geen troepen geselecteerd -
+rallyPoint_sendTroops_noTroopsAvailable;Kan geen troepen sturen. Geen troepen beschikbaar in dit dorp.
+rallyPoint_sendTroops_forwardingVillageError;Troepen kunnen alleen worden doorgestuurd naar alliantieleden of eigen dorpen.
+rallyPoint_sendTroops_forwardingDestination;Voorwaartse troepen - Selecteer doel
+rallyPoint_sendTroops_WaveRemoved;Golf verwijderd
+rallyPoint_sendTroops_maxWaves;Maximaal aantal golven bereikt
+rallyPoint_sendTroops_notEnoughTroopsToCopy;Niet genoeg troepen om golf te kopiëren.
+rallyPoint_sendTroops_troopsSent;Troepen gestuurd!
+rallyPoint_sendTroops_toOverview;Naar overzicht
+rallyPoint_sendTroops_backToVillage;Terug naar dorp
+rallyPoint_sendTroops_mission;Missie:
+rallyPoint_troopsOverview_1;Inkomende aanvallen en overvallen
+rallyPoint_troopsOverview_2;Uitgaande aanvallen en overvallen
+rallyPoint_troopsOverview_3;Terugkomende troepen
+rallyPoint_troopsOverview_4;Eigen troepen in dit dorp en bijbehorende oases
+rallyPoint_troopsOverview_5;Troepen van anderen in dorp
+rallyPoint_troopsOverview_6;Eigen troepen in andere dorpen en oases
+rallyPoint_troopsOverview_7;Inkomende versterkingen
+rallyPoint_troopsOverview_8;Uitgaande versterkingen
+rallyPoint_troopsOverview_9;Uitgaande versterkingen
+rallyPoint_troopsOverview;Troepenoverzicht
+rallyPoint_troopsOverview_consumption;Onderhoud:: {{cropConsumption|ShortenNumber|10000}}  {{iconName|Sprite}} Per uur
+rallyPoint_troopsOverview_arrivalTime;Aankomst over: <b>{{Duration|Countdown}}</b> om <b>{{date|Time}}</b> 
+rallyPoint_troopsOverview_incomingMission_3;Inkomende aanval van: 
+rallyPoint_troopsOverview_incomingMission_4;Inkomende overval van: 
+rallyPoint_troopsOverview_outgoingMission_3;Valt aan 
+rallyPoint_troopsOverview_outgoingMission_4;Overvalt 
+rallyPoint_troopsOverview_outgoingMission_5;Versterkt 
+rallyPoint_troopsOverview_outgoingMission_50;Op avontuur naar 
+rallyPoint_troopsOverview_outgoingMission_72;Troepen doorgestuurd naar 
+rallyPoint_troopsOverview_outgoingMission_10;Nieuw dorp stichten 
+rallyPoint_troopsOverview_outgoingMission_40;De troepen vluchtten richting een bos.
+rallyPoint_troopsOverview_returningMission;Terugkomend van: 
+rallyPoint_troopsOverview_ownTroops_1;Eigen troepen in 
+rallyPoint_troopsOverview_ownTroops_2;Eigen troepen in 
+rallyPoint_troopsOverview_ownTroops_3;Eigen troepen in 
+rallyPoint_troopsOverview_ownTroops_4;<b>Natuur</b> in 
+rallyPoint_troopsOverview_ownTroops_5;Eigen troepen in 
+rallyPoint_troopsOverview_ownTroops_6;Eigen troepen in 
+rallyPoint_troopsOverview_ownTroops_7;Eigen troepen in 
+rallyPoint_troopsOverview_foreignTroops_2;Verdedigingstroepen van 
+rallyPoint_troopsOverview_foreignTroops_4;Gevangen troepen van 
+rallyPoint_troopsOverview_ownTroopsInOther_2;Eigen versterkingstroepen voor 
+rallyPoint_troopsOverview_ownTroopsInOther_4;Eigen gevangen troepen in 
+rallyPoint_troopsOverview_origin;Afkomst: 
+rallyPoint_troopsOverview_reinforcement;Versterking van 
+rallyPoint_troopsOverview_killed;Troepen gedood!
+rallyPoint_troopsOverview_released;Troepen vrijgelaten!
+rallyPoint_troopsOverview_forwardedTroopsButton;Doorgestuurde troepen
+rallyPoint_troopsOverview_returnToOverview;Terug naar overzicht
+rallyPoint_troopsOverview_incomingAttacks;<color={{colorValue|TextColor}}>{{incomings}}</color> inkomend
+rallyPoint_troopsOverview_amountIncoming;{{value}} inkomend
+rallyPoint_troopsOverview_amountOutgoing;{{value}} uitgaand
+rallyPoint_troopsOverview_amountReturning;{{value}} terugkerend
+rallyPoint_troopsOverview_firstArrivalTime;Over {{timestamp|Countdown}} uur
+rallyPoint_troopsOverview_forwardTroops;Verder
+rallyPoint_troopsOverview_MergeTroops;Opnemen in dit dorp
+rallyPoint_troopsOverview_WithdrawTroops;Terugsturen
+rallyPoint_troopsOverview_sort_1;Gemarkeerde bewegingen eerst
+rallyPoint_troopsOverview_sort_2;Vroegste komt eerst aan
+rallyPoint_troopsOverview_sort_3;Laatste komt eerst aan
+rallyPoint_troopsOverview_sort_4;Meest recent gestuurde troepen eerst
+rallyPoint_troopsOverview_sort_5;Langst geleden gestuurde troepen eerst
+rallyPoint_troopsMerge_troopsToBeMerged;Geselecteerde troepen om samen te voegen:
+rallyPoint_troopsMerge_currentGold;Huidige goud:  {{iconName|Sprite}} {{currentGold}}
+rallyPoint_troopsMerge_goldLeft_0;Vandaag nog {{remainingGold}} / {{maxAllowedGold}} goud over voor het samenvoegen van troepen.
+rallyPoint_troopsMerge_goldLeft_1;Vandaag nog {{remainingGold}} / {{maxAllowedGold}} goud over voor het samenvoegen van troepen. Je kunt nog wel samenvoegen met grondstoffen.
+rallyPoint_troopsMerge_troopsMergedToast;Troepen samengevoegd!
+rallyPoint_raidList_beingRaided;{{current}}/{{total}} wordt overvallen
+rallyPoint_infoTab_EvasionShortDescription;Activeer troepenevacuatie voor je hoofddorp
+rallyPoint_farmList_createNewTitle;Creëer nieuwe lijst
+rallyPoint_farmList_editTitle;Lijst bijwerken
+rallyPoint_farmList_listName;Lijstnaam
+rallyPoint_farmList_selectDefaultTroops;Standaardtroepen selecteren
+rallyPoint_farmList_addTroopsButton;Troepen toevoegen
+rallyPoint_farmList_editTroopsButton;Bewerk troepen
+rallyPoint_farmList_setTroopsButton;Plaats troepen
+rallyPoint_farmList_createListButton;Lijst maken
+rallyPoint_farmList_editListButton;Lijst bijwerken
+rallyPoint_farmList_editTroopsTitle;Troepen farmlijst bewerken
+rallyPoint_farmList_deleteList;Verwijder lijst
+rallyPoint_selectTroops;Kies troepen
+rallyPoint_farmList_listCreated;Lijst gemaakt
+rallyPoint_farmList_exitList;Lijst verlaten
+rallyPoint_farmList_startAll;Alle doelwitten starten
+rallyPoint_farmList_startAllLists;Alle starten
+rallyPoint_farmList_startSelected;Geselecteerde starten
+rallyPoint_farmList_noTarget;- Geen doelwitten geselecteerd -
+rallyPoint_farmList_noTargetExist;Geen doelwitten in deze lijst
+rallyPoint_farmList_selectedAmount;{{amount}} geselecteerd:
+rallyPoint_farmList_listUpdated;Lijst bijgewerkt
+rallyPoint_farmList_listDeleted;Lijst verwijderd
+rallyPoint_farmList_editWarning;- Als je de lijst verwijdert, worden alle doelwitten in deze lijst verwijderd\n- Het bewerken van troepen heeft alleen invloed op toekomstige troepen voor het standaarddoelwit
+rallyPoint_farmList_sortingFailed;Sorteren mislukt! Probeer het opnieuw!
+rallyPoint_farmList_notStartedPopupTitle;Overvallen niet gestart
+rallyPoint_farmList_notStartedPopupElement;<b>{{total}}</b> vanwege {{message}}
+rallyPoint_farmList_NotStartedPopupButtonGoTo;Naar farmlijst
+rallyPoint_farmList_AddTargetTitle;Doel toevoegen
+rallyPoint_farmList_changeTroops;Troepen aanpassen
+rallyPoint_farmList_targetAdded;Doelwit toegevoegd
+rallyPoint_farmList_targetAlreadyOnList;Het doelwit staat al op deze farmlijst. Kies een andere farmlijst of maak een nieuwe.
+rallyPoint_farmList_choose;Farmlijst kiezen
+rallyPoint_farmList_notYetRaided;Nog geen overvallen
+rallyPoint_farmList_EditRaids;Doelwit[raidsAmount>1:ten] bewerken
+rallyPoint_farmList_DeleteRaidsPlayerQuestion;Weet je zeker dat je [raidsAmount=1:dit doelwit][raidsAmount>1:deze doelwitten] wilt verwijderen?
+rallyPoint_farmList_ChangeRaidList;Farmlijst wijzigen
+rallyPoint_farmList_ChangeTarget;Doelwit wijzigen
+rallyPoint_farmList_ChangeTroops;Troepen aanpassen
+rallyPoint_farmList_DeactivateTarget;Doelwit[raidsAmount>1:ten] uitschakelen
+rallyPoint_farmList_MultiEditWarning;Je bewerkt meerdere doelwitten. Aangebrachte wijzigingen zijn van invloed op alle geselecteerde doelwitten
+rallyPoint_farmList_UpdateRaids;Doelwit[raidsAmount>1:ten] bijwerken
+rallyPoint_farmList_filterShowTroopsTitle;Troepen tonen
+rallyPoint_farmList_filterShowTroopsDescription;Toont de geselecteerde troepen per doelwit
+rallyPoint_farmList_filterShowPopulationTitle;Populatie doelwit tonen
+rallyPoint_farmList_filterShowPopulationDescription;Toont de populatie van het dorp van het doelwit
+rallyPoint_farmList_filterShowDistanceTitle;Afstand tonen
+rallyPoint_farmList_filterShowDistanceDescription;Toont de afstand van het doelwit tot je dorp
+rallyPoint_farmList_filterShowLastRaidTitle;Informatie laatste overval tonen
+rallyPoint_farmList_filterShowLastRaidDescription;Toont informatie laatste overval van het doelwit
+rallyPoint_farmList_filterShowBountyTitle;Premie en grondstoffen tonen
+rallyPoint_farmList_filterShowBountyDescription;Toont de verkregen premie en grondstoffen
+marketplace_createOffer;Aanbieding maken
+marketplace_myOffers_title;Mijn aanbiedingen
+marketplace_myOffers_merchants;Handelaren: {{count}}
+marketplace_myOffers_alliance_True;Alliantie: Ja
+marketplace_myOffers_alliance_False;-
+marketplace_myOffers_interval;{{amount}} uur
+marketplace_myOffers_offerDeleted;Aanbieding verwijderd
+marketplace_merchantsOverview_arrival;{{duration}} uur Aankomst bij {{arrivalTime}}
+marketplace_merchantsOverview_incomingMerchants;Inkomende leveringen: {{count}}
+marketplace_merchantsOverview_outgoingMerchants;Uitgaande leveringen: {{count}}
+marketplace_merchantsOverview_noIncomingMerchants;- Er zijn geen inkomende handelaren -
+marketplace_merchantsOverview_noOutgoingMerchants;- Er zijn geen uitgaande handelaren -
+marketplace_merchantsOverview_IncomingCat;Inkomend
+marketplace_merchantsOverview_outgoingCat;Uitgaand
+marketplace_merchantsOverview_capacity;Capaciteit: {{capacity}}
+marketplace_merchantsOverview_merchantsOverview;Overzicht handelaren
+marketplace_merchantsOverview_ArrivingSoonest;Komt het eerst aan
+marketplace_merchantsOverview_ArrivingLatest;Komt het laatst aan
+marketplace_merchantsOverview_ShortestDistance;Kortste afstand
+marketplace_merchantsOverview_LongestDistance;Langste afstand
+marketplace_merchantsOverview_transportTo;Transport naar <b>{{Village}}</b> van <b>{{Player}}</b>
+marketplace_merchantsOverview_transportFrom;Transport van <b>{{Village}}</b> van <b>{{Player}}</b>
+marketplace_merchantsOverview_returningFrom;Keert terug van <b>{{Village}}</b> van <b>{{Player}}</b>
+academy_research_viewResearchList;Lopend onderzoek
+academy_research_allUnitsResearched;Alle eenheden zijn onderzocht.
+academy_researchListPopup_title;Troepen die worden onderzocht
+academy_researchListPopup_remainingTime;Nog {{timeLeft}}. Klaar om {{readyAt}}
+academy_researchListPopup_constructImmediately;Direct bouwen
+research_started;Onderzoek gestart!
+research_timeLeft;Nog {{TIME|Countdown}}
+townHall_celebration_ongoingCelebration;Doorlopend
+topBar_perHourLabel;/u:
+topBar_maxLabel;Max.:
+topBar_resourceFull;Vol
+leftPanel_infoBox;Informatie box
+villagePanel_playerNameTitle;Dorpen van {{playerName}}
+villagePanel_toStatistics;Naar dorpsstatistieken
+villagePanel_culturePointsNeeded;Cultuurpunten nodig voor volgende dorp
+mapCell_type;{{x}}{{y}}
+mapCell_type_village;{{villageName}}
+mapCell_type_1;Lokaal
+mapCell_type_2;Vallei
+mapCell_type_3;Vrije Oase
+mapCell_type_4;Bezette Oase
+mapCell_type_5;Wildernis
+mapCell_Owner;Eigenaar:
+mapCell_type_valley;Vallei
+mapCell_Wilderness;Er is niets interessants op deze locatie.
+mapCell_Distance;{{distance|Round|1}} velden
+mapCell_locationInfo;Locatie-info
+mapCell_surroundings;Omgeving
+mapCell_actions_editFarmlist;Farmlijst aanpassen
+mapCell_actions_addFarmlist;Toevoegen aan farmlijst
+mapCell_actions_raidOasis;Oase overvallen
+mapCell_showOnMap;Toon op kaart
+mapCell_noReports;- Geen informatie beschikbaar voor deze locatie -
+berichte.region_;{{PLAYERACTIVE}}{{PLAYERPASSIVE}}{{VILLAGE}}{{NAME1}}{{NAME2}}{{ALLY1}}{{ALLY2}}{{NAME}}
+mapCell_goToOwnVillage;Naar eigen dorp
+constructionQueue_timeLeftToFinish;Nog {{timestamp|Countdown}}. Klaar om {{timestamp|Time}}
+constructionQueue_timeUntilStart;Start over {{timestamp|Countdown}}
+constructionQueue_MasterBuilderTitle;Wachtrij bouwmeester (kosten {{masterBuilderCost|Sprite}} {{masterBuilderCost}} bij de start van de bouw)
+constructionQueue_Constructing;Gebouw aan het bouwen
+constructionImmediatelyPopup_topText;De volgende opdrachten zijn direct klaargezet:
+constructionImmediatelyPopup_title;Direct voltooien
+newBuildingConstructionDetail_dateTimeEnoughResources;Genoeg grondstoffen op {{date|Date}} om {{time|Time}}
+newBuildingConstruction_noBuildingsAvailable;Er kunnen geen gebouwen op dit moment gebouwd worden.
+goldclubpopup_currentGold;Huidige goud:  {{iconName|Sprite}} <color={{colorValue|TextColor}}>{{currentGold}}</color>
+goldclubpopup_activated_toastMessage;Goldclub geactiveerd!
+loginPage_version;Versie {{currentVersion}}
+loginPage_loginBlocked;Inloggen geblokkeerd
+loginPage_loginBlocked_fails;Te veel mislukte inlogpogingen
+loginPage_loginBlocked_message;Je account is geblokkeerd vanwege te veel mislukte inlogpogingen.
+loginPage_loginBlocked_resolve;Om je account te ontgrendelen, log je in via je browser op
+serverSelection_selectRegion;Selecteer regio
+serverSelection_selectGameWorld;Kies spelwereld
+serverSelection_0;Internationaal
+serverSelection_1;Midden-Oosten
+serverSelection_2;Azië
+serverSelection_3;Europa
+serverSelection_4;Amerika
+serverSelection_99;Dev
+serverSelection_mapSize;Kaartgrootte:
+serverSelection_mapSize_0;Klein
+serverSelection_mapSize_1;Groot
+serverSelection_artifacts;Artefacten:
+serverSelection_constructionPlans;Blauwdrukken:
+serverSelection_changeGameWorld;Van spelwereld veranderen
+serverSelection_username;Gebruikersnaam:
+serverSelection_password;Wachtwoord
+serverSelection_loginButton;Log in en speel
+serverSelection_forgotPassword;Ik ben mijn wachtwoord vergeten
+serverSelection_noAccount;Ik heb geen account
+serverSelection_loginError;Gebruikersnaam of wachtwoord onjuist
+serverSelection_graphQlError;Fout bij het ophalen van gegevens van de server
+serverSelection_tokenRefreshError;Fout bij het inloggen op de laatst gebruikte server: log opnieuw in.
+serverSelection_stayLoggedIn;Ingelogd blijven in de spelwereld
+troopsInfo_title;Troepen in {{villageName}}
+unitInfo_velocity;<b>{{fields}}</b> velden per uur
+unitInfo_resourceCarriage;<b>{{INT}}</b> grondstoffen
+unitInfo_researchPrerequisites;Vereisten voor onderzoek:
+unitInfo_trainingPrerequisites;Vereisten voor training:
+unitInfo_canCarry;Draagkracht:
+exchangeResources_currentTitle;Nieuwe hoeveelheid
+exchangeResources_lockAmount;Hoeveelheid vergrendelen
+exchangeResources_changeTitle;Wijzigen
+exchangeResources_restTitle;Rest
+exchangeResources_buildingPossible_True;Uitbreiding mogelijk
+exchangeResources_buildingPossible_False;Uitbreiding niet mogelijk
+exchangeResources_mergePossible_True;Samenvoegen mogelijk
+exchangeResources_mergePossible_False;Samenvoegen niet mogelijk
+exchangeResources_researchPossible_True;Onderzoek mogelijk
+exchangeResources_researchPossible_False;Onderzoek niet mogelijk
+exchangeResources_celebrationPossible_True;Feest mogelijk
+exchangeResources_celebrationPossible_False;Feest niet mogelijk
+exchangeResources_reviveHero_True;Held genezen is mogelijk
+exchangeResources_reviveHero_False;Held genezen is niet mogelijk
+exchangeResources_currentlyAvailable;Momenteel beschikbaar: <b>{{amount}}</b>
+exchangeResources_maximumAvailable;Maximaal beschikbaar: <b>{{amount}}</b>
+exchangeResources_distributeEvenly;Overgebleven grondstoffen gelijkmatig verdelen:
+exchangeResources_distributeOnResource;Of geef eerst prioriteit aan resterende grondstoffen voor:
+exchangeResources_distributeAuto;Automatische verdeling
+exchangeResources_distributeManual;Handmatige verdeling
+exchangeResources_availableTroops;Beschikbare troepen: {{amount}}
+buildingActivities_title;Bouwactiviteiten
+buildingActivities_idle;Idle
+buildingActivities_type;Type
+buildingActivities_building_13;Verbeteringen:
+buildingActivities_building_16;Farm lijst.
+buildingActivities_building_17;Handelaren
+buildingActivities_building_19;Troepen in training
+buildingActivities_building_20;Cavalerie in training
+buildingActivities_building_29;Troepen in training
+buildingActivities_building_30;Cavalerie in training
+buildingActivities_building_21;Troepen in training
+buildingActivities_building_22;Onderzoeken
+buildingActivities_building_24;Feesten
+buildingActivities_building_46;Troepen genezen
+buildingActivities_buildingAction_;{{amount}}{{max}}
+buildingActivities_buildingAction_16;{{amount}} lopende overvallen
+buildingActivities_buildingAction_17;{{amount}}/{{max}} beschikbaar
+mainMenu_title;Hoofdmenu
+mainMenu_quests;Opdrachten
+playerDetails_infoTab;Spelersinfo
+playerDetails_villageTabTitle;{{villages}} dorpen met {{oases}} oases
+playerDetails_SortBy_1;Populatie
+playerDetails_SortBy_2;Overwinningspunten
+playerDetails_SortBy_3;Dorpsnaam:
+playerDetails_SortBy_4;Regio naam
+player_gender_DontSpecify;Niet specificeren
+player_gender_Other;Overige
+player_gender0;Man
+player_gender1;Vrouw
+player_gender2;Overige
+player_gender3;Niet specificeren
+playerDetails_NotesFor;Notities voor {{playerName}}
+playerDetails_NoDescription_Others;- Deze speler heeft geen beschrijving toegevoegd -
+playerDetails_NoDescription_Own;- Nog geen beschrijving toegevoegd -
+playerDetails_editLanguages;Talen bewerken
+playerDetails_searchLanguage;Taal zoeken
+goldShopPlaceholder_title;Winkel komt binnenkort!
+goldShopPlaceholder_description;De goudwinkel is nog niet geïmplementeerd in de mobiele app.<br><br> Om goud te kopen, log je in op je account via de browser.
+goldShop_title;Goudwinkel
+goldShop_advantage_5;Travian Plus
+goldShop_advantage_4;Hout
+goldShop_advantage_1;Klei
+goldShop_advantage_2;IJzer
+goldShop_advantage_3;Graan
+goldShop_feature_activated;Functie geactiveerd!
+goldShop_purchaseFailed;Aankoop mislukt!
+goldShop_purchaseSuccess;Aankoop gelukt.
+goldShop_transactionInProgress;Transactie in behandeling.\nEven geduld.
+goldShop_transactionFailed;Er is iets misgegaan.\nProbeer het later nog een keer.
+goldShop_transactionTimeout;Beste speler, je betaling heeft de tijdslimiet overschreden en is mogelijk niet correct verwerkt. Neem contact op met onze <style="link"><link="https://support.travian.com/support/tickets/new">betalingsondersteuning</link></style> als je problemen ondervindt.
+market_sendResources_requiredMerchants;Vereiste handelaren:
+market_sendResources_capacityPerMerchant;Capaciteit per handelaar
+market_sendResources_amountRepeats;Aantal herhalingen:
+market_sendResources_confirmResources;Grondstoffen bevestigen
+market_sendResources_amountWithX;{{amount}}x
+market_sendResources_sent;Grondstoffen verzonden
+market_offer_maxDuration;Maximale tijd transport:
+market_offer_confirm;Aanbieding bevestigen
+market_offers_title;Aanbod
+market_capacity;Capaciteit: {{capacity}}
+market_offers_offering;Ik bied:
+market_offers_searching;Ik zoek:
+market_offers_offered;Je stuurt
+market_offers_wanted;Je ontvangt
+market_offers_accepted;Aanbieding geaccepteerd! Grondstoffen zijn onderweg en handelaren zijn op pad gestuurd.
+market_offers_ownAllianceOnly;Alleen spelers van de eigen alliantie
+market_ratio_11;1:1
+market_ratio_1X;1:X
+market_tradeRoutes_to;Aan:
+market_tradeRoutes_entryAmount;<b>{{amount}}</b> routes
+market_tradeRoutes_noRoutes;- Geen handelsroute gecreëerd -
+market_tradeRoutes_travelTime;Reistijd: {{time|Duration}} uur
+market_tradeRoutes_activeRatio;{{active}}/{{total}} actief
+market_tradeRoutes_active;Actief
+market_tradeRoutes_paused;Gepauzeerd
+market_tradeRoutes_updated;Routes geüpdatet
+market_tradeRoutes_deleted;Handelsroutes verwijderd
+market_tradeRoutes_returnAt;keren terug om {{time|Time}}
+market_tradeRoutes_merchantsAndRepeat;{{merchants}} handelaren, {{repeats}}x
+market_tradeRoutes_filterOptions;Filteropties
+market_tradeRoutes_showMerchants;Handelaren tonen
+market_tradeRoutes_showMerchantsText;Laat zien hoeveel handelaren er worden gebruikt
+market_tradeRoutes_showResources;Grondstoffen tonen
+market_tradeRoutes_showResourcesText;Toont de hoeveelheid vervoerde grondstoffen
+market_tradeRoutes_afterInputFieldsSuffix;Uur
+market_tradeRoutes_interval;{{INT}} uur
+market_tradeRoutes_confirmTarget;Doel bevestigen
+market_tradeRoutes_arrivalTime;{{duration|Duration}} om {{arrivalTime|Time}}
+market_tradeRoutes_created;Handelsroute gemaakt
+market_tradeRoutes_edit;Handelsroute[routeAmount>1:s] bewerken
+market_tradeRoutes_update;Handelsroute[routeAmount>1:s] bijwerken
+market_tradeRoutes_multiEditWarning;Je bewerkt meerdere handelsroutes. Wijzigingen zijn van invloed op alle {{routeAmount}} routes.
+market_tradeRoutes_editResourcesTitle;Grondstoffen wijzigen
+market_tradeRoutes_editResourcesButton;Grondstoffen bewerken
+market_tradeRoutes_setResourcesButton;Grondstoffen instellen
+market_tradeRoutes_updateResourcesButton;Grondstoffen bijwerken
+market_tradeRoutes_pause;Handelsroute[routeAmount>1:s] pauzeren
+market_tradeRoutes_pauseDescription;De handelsroute wordt verplaatst naar de gepauzeerde lijst, maar blijft op je marktplaats staan.
+market_tradeRoutes_delete;Handelsroute[routeAmount>1:s] verwijderen
+market_tradeRoutes_deleteConfirmQuestion;Weet je zeker dat je [routeAmount=1:deze][routeAmount>1:deze] handelsroute[routeAmount>1:s] wilt verwijderen?
+market_tradeRoutes_invalidTarget;Handelsroutes kunnen alleen gestuurd worden naar dorpen met een wereldwonder en naar dorpen met artefacten of bouwplannen voor wereldwonderen van alliantie- of bondgenootschapsleden.
+hero.status;{{NAME}}
+hero_adventures_selectVillage;Selecteer dorp
+hero_adventures_explore;Verken
+hero_adventures_sendHero;Stuur held
+hero_adventures_sent;Avontuur begonnen
+hero_status_reviveWithBucket;Gebruik om je held direct tot leven te brengen.
+hero_status_reviveWithRes;Gebruik grondstoffen om held tot leven te wekken.
+hero_inventory_consumablePopupTitle;Bruikbaar item
+hero_resourceTransferPopup_title;Grondstoffen verplaatsen
+hero_resourceTransferPopup_ReadyForTransfer;Klaar om te verplaatsen
+hero_resourceTransferPopup_transferSelected;Selectie verplaatsen
+hero_resourceTransferPopup_transferMax;Maximum verplaatsen
+hero_resourceTransferPopup_storageFull;Opslag vol. Je kunt geen grondstoffen meer verplaatsen.
+hero_inventory_transferToCurrentVillage;Verplaatst naar het momenteel actieve dorp: <b>{{VILLAGE}}</b>
+hero.itemDescriptionV2Details;{{PERCENTAGE}}{{EXPERIENCE}}{{RAISE}}{{LIMIT}}{{MAX}}{{TIME}}
+hero.itemDescriptionV2;{{VALUE}}
+hero_consumablePopup_currentEquippedItems;Aantal items dat momenteel is uitgerust:
+hero_consumablePopup_itemsLeftInInventory;Aantal resterende items in inventaris:
+hero.itemTypeV2_inventory;Verbruiksartikel
+hero.cooldownWithTime;Heeft een afkoelperiode van {{COOLDOWN}}u die eindigt om {{DATE|DateTime}}.
+reports_overview_title;{{COUNT}} rapporten
+reports_overview_title_selected;{{SELECTED}} / {{COUNT}} rapporten geselecteerd
+reports_overview_title_archived;Gearchiveerde rapporten
+reports_overview_archived_noReports;- Geen gearchiveerde rapporten beschikbaar -
+reports_filters_title;Filter selecteren
+reports_filters_allReports;Alle rapporten
+reports_filters_applyButton;{{COUNT}} filters toepassen
+reports_filters_noFilter;Geen filter geselecteerd
+reports_detail_title;Rapportdetails
+berichte.;{{NAME1}}{{NAME2}}{{VILLAGE_NAME}}{{X}}{{Y}}{{COORDS}}{{NAME}}
+reports_player_from_village;[{{allianceId|AllianceLink}}] {{playerId|PlayerLink}} van dorp {{villageId|VillageLink}}
+reports_troops_lost;Verloren troepen:
+reports_troops_hospitalized;Gewond:
+reports_xp_gained;{{amount}} XP verdiend
+reports_health_change;-{{change}}% gezondheid
+reports_hero_died;Je held is gedood tijdens het avontuur
+reports_scouted_building;{{buildingType|TranslateSuffixFor|allgemein.gid}} niveau <b>{{level}}</b>
+reports_refreshed;Rapporten vernieuwd!
+reports_deleteReportPopup_title;Rapport(en) verwijderen
+reports_deleteReportPopup_warningTitle;Weet je zeker dat je {{X}} rapport(en) wilt verwijderen?
+reports_deleteReportPopup_warningTitleAll;Weet je zeker dat je alle rapporten wilt verwijderen?
+reports_deleteReportPopup_warningDescription;Als je een rapport verwijdert, is het voorgoed weg. Je kunt het niet herstellen.
+reports_deleted;Rapport verwijderd!
+reports_markedUnread;Rapport gemarkeerd als ongelezen!
+reports_archived;Rapport gearchiveerd!
+reports_deleted_all;Alle rapporten verwijderd!
+reports_deleted_selected;{{X}} rapport(en) verwijderd!
+reports_markedRead_all;Alle rapporten gemarkeerd als gelezen!
+reports_markedRead_selected;{{X}} rapport(en) gemarkeerd als gelezen!
+alliance_nameAndTagPair;{{allianceName}} | {{allianceTag}}
+alliance_editAllianceName;Alliantienaam bewerken
+alliance_name;Alliantienaam
+alliance_nameError;Alliantienaam mag niet leeg zijn
+alliance_tag;Alliantietag
+alliance_tagError;Alliantietag mag niet leeg zijn
+alliance_profileTab_inviteNewPlayer;Nieuwe speler uitnodigen
+alliance_profileTab_showInvitedPlayers;Uitgenodigde spelers tonen
+alliance_invitedPopup_title;Uitgenodigde spelers
+alliance_invitedPopup_invitationRemoved;Uitnodiging verwijderd!
+alliance_invitePlayerPopup_title;Speler uitnodigen
+alliance_invitePlayerPopup_noPlayerFound;Geen speler gevonden
+alliance_invitePlayerPopup_playerInvited;Speler uitgenodigd!
+alliance_editMemberPopup_title;Lid bewerken
+alliance_editMemberPopup_customMessage;Aangepast bericht
+alliance_editMemberPopup_setRole;Rol instellen
+alliance_editMemberPopup_kickPlayerFromAlliance;Speler uit alliantie verwijderen
+alliance_editMemberPopup_cantChangePermission;Kan de huidige toestemming niet wijzigen: zie waarschuwing.
+alliance_kickPlayerPopup_areYouSure;Weet je zeker dat je {{Player}} uit de alliantie wilt verwijderen?
+alliance_kickPlayerPopup_playerKicked;Speler verwijderd!
+alliance_editAllianceDescription;Alliantiebeschrijving bewerken
+alliance_topColumn;Bovenaan kolom
+alliance_bottomColumn;Onderaan kolom
+alliance_bbCodeAdded;BB-code toegevoegd
+alliance_generalInformation;Algemene informatie
+alliance_confederacy_tab;Bondgenootschap
+alliance_diplomacy;Diplomatie
+alliance_diplomacy_tab1;NAV / Oorlog
+alliance_diplomacy_send_new;Nieuwe verzenden
+alliance_diplomacy_openRequests;Verzoeken openen
+alliance_diplomacy_otherOffered;{{allianceId|AllianceLink}}  bood {{type|TranslateSuffixFor|alliance_diplomacy_type}} aan
+alliance_diplomacy_youOffered;Je bood {{allianceId|AllianceLink}} {{type|TranslateSuffixFor|alliance_diplomacy_type}} aan
+alliance_diplomacy_offerDeclare;Aanbieden / Verklaren
+alliance_diplomacy_type;Type
+alliance_diplomacy_type1;bondgenootschap
+alliance_diplomacy_type2;NAV
+alliance_diplomacy_type3;oorlog
+alliance_diplomacy_type4;bondgenootschap
+alliance_diplomacy_typekick;verwijdering uit bondgenootschap
+alliance_diplomacy_deleteText_;{{type|TranslateSuffixFor|alliance_diplomacy_type}}{{alliance|AllianceLink}}
+alliance_diplomacy_deleteTitle_RemoveRequest;Verzoek verwijderen
+alliance_diplomacy_deleteText_RemoveRequest;Weet je zeker dat je de aanbieding voor {{type|TranslateSuffixFor|alliance_diplomacy_type}} met {{alliance|AllianceLink}} wilt verwijderen?
+alliance_diplomacy_deleteTitle_TerminateExisting;Beëindigen
+alliance_diplomacy_deleteText_TerminateExisting;Weet je zeker dat je {{type|TranslateSuffixFor|alliance_diplomacy_type}} met {{alliance|AllianceLink}} wilt beëindigen?
+alliance_diplomacy_deleteTitle_ConfederacyKickVote;Beëindigen
+alliance_diplomacy_deleteText_ConfederacyKickVote;Om {{subject|AllianceLink}} te verwijderen uit het bondgenootschap, heb je een bevestiging nodig van andere leden van het bondgenootschap.\n\nWil jij hiermee doorgaan en de andere allianties informeren over jouw beslissing?
+alliance_diplomacy_deleteTitle_QuitConfederacy;Beëindigen
+alliance_diplomacy_deleteText_QuitConfederacy;Weet je zeker dat je je bondgenootschap met de volgende leden wilt beëindigen?
+alliance_diplomacy_deleteTitle_RemoveConfederacyProposal;Verzoek verwijderen
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Kick;Weet je zeker dat je het verzoek van {{alliance|AllianceLink}} om {{subject|AllianceLink}} uit het bondgenootschap te verwijderen wilt afwijzen?
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Join;Weet je zeker dat je het verzoek van {{alliance|AllianceLink}} om {{subject|AllianceLink}} lid te laten worden van het bondgenootschap wilt afwijzen?
+alliance_diplomacy_sent;Aanbod verzonden
+alliance_diplomacy_accepted;Diplomatieke relatie geaccepteerd
+alliance_diplomacy_canceled;Diplomatieke relatie geannuleerd
+alliance_diplomacy_declined;Verzoek afgewezen
+alliance_diplomacy_kickStarted;Verzoek verzonden
+alliance_diplomacy_proposal_approved;Verzoek goedgekeurd
+alliance_diplomacy_noContract;Je alliantie heeft geen actieve verdragen met andere allianties.
+alliance_diplomacy_noConfederacy;Je alliantie maakt geen deel uit van een bondgenootschap.
+alliance_diplomacy_alreadyOpenOffer;Er is al een open aanbod voor deze alliantie.
+alliance_diplomacy_alreadyExistingContract;Er is al een verdrag met deze alliantie.
+alliance_diplomacy_warInDeletion;Wacht tot de andere alliantie de oorlog ook beëindigt.
+alliance_union_leave;Bondgenootschap verlaten
+alliance_union_add;Nieuw verzoek toevoegen
+allianz.diplomacy_with_type;{{NAME}}
+allianz.diplomacy_with_type4;Bondgenootschap met {{NAME}}
+alliance_newsBbDescription;Wijzig 'aantal' om het aantal nieuwsberichten te bewerken
+alliance_LossesBBName;Verliezen
+alliance_LossesBBDescription;Verander 'naam' om alliantie voor vergelijking te selecteren
+alliance_NapBBName;Niet-aanvalsverdragen
+alliance_WarsBBName;Oorlogen
+alliance_addBBCode;BB-code toevoegen
+alliance_addMedal;Medaille toevoegen
+alliance_assignToPosition;Leden aan positie toewijzen en alliantienaam wijzigen
+alliance_editPermissions;Toestemmingen bewerken
+alliance_roleTitle;Titel van rol:
+alliance_assignToPosition_onlyMemberError;Jij bent het enige lid van deze alliantie. Leden aan rollen toewijzen en de alliantienaam wijzigen kunnen niet worden uitgeschakeld.
+alliance_noAllianceEvents;- Geen alliantiegebeurtenissen om te tonen -
+alliance_dailyContribution;Dagelijkse bijdrage
+alliance_contributionAmount;Bijdrage: <b>{{AMOUNT}}</b>
+alliance_resourcesContributed;{{current}}/{{max}} grondstoffen bijgedragen
+alliance_contributionResetIn;Wordt gereset over: {{time|Countdown}}
+alliance_resUntilNext;Grondstoffen tot het volgende niveau: {{resources|LongNumber}}
+alliance_bonusCurrentlyActivating;Bonus wordt geactiveerd over: {{resources|Countdown}}
+alliance_bonusMaxed;Bonus gemaximaliseerd
+alliance_tripledContribution;Je hebt je bijdrage verdrievoudigd!
+alliance_contributionStatistics;Bijdragestatistieken
+alliance_contributionNone;- Momenteel geen bijdragers -
+auth_clientVerificationFailed;Kan client niet verifiëren. Probeer het opnieuw.
+banned_seeMessage;Zie bericht
+banned_acceptPunishment;Straf accepteren
+residence_settlement;Nederzetting
+residence_settlementVillages1;Nederzettingsplekken ingenomen door dorpen
+residence_settlementVillages2;Dorpen nemen 1 nederzettingsvak in beslag
+residence_settlementAvailableSlots;Beschikbare nederzettingsvakken
+residence_nextSlot;Ontgrendelen volgende nederzettingsvak: {{current}}/{{required}} cultuurpunten
+residence_slotsUsed;Gebruikte vakken:
+residence_settlementDetails;Details nederzetting
+residence_settlementSlotX;Nederzettingsvak {{number}}
+residence_settlementUpgradeNeeded;Breid {{buildingType|TranslateSuffixFor|allgemein.gid}} uit om dit nederzettingsvak te ontgrendelen
+residence_settlementSettle;Om een dorp te stichten, stuur je kolonisten naar een leeg veld op de wereldkaart. Je hebt 3 kolonisten nodig; 750 van elke grondstof en genoeg cultuurpunten om een ander dorp te controleren.
+residence_settlementChief;Om een ander dorp te veroveren, moet je de loyaliteit ervan verlagen naar 0. Daarvoor heb je {{senatorId|TranslateSuffixFor|truppen.tid}} nodig en er mag geen paleis, residentie of commandocentrum meer staan. Je moet ook genoeg cultuurpunten hebben om een ander dorp te beheersen.
+palace_capital;Stel dit dorp in als mijn hoofddorp.
+palace_setAsCapital;Als hoofddorp instellen
+palace_enterPassword;Voer om veiligheidsredenen een wachtwoord in:
+embassy_GoToAlliance;Naar alliantie
+embassy_Invitation;Alliantie {{AllianceId|AllianceLink}}, uitgenodigd door {{playerId|PlayerLink}}
+embassy_VillagesInRange;Dorpen in bereik
+embassy_LeaveAllianceToJoin;Om lid te worden van een nieuwe alliantie, moet je de huidige alliantie eerst verlaten.
+embassy_ConfirmLeaveAlliance;Bevestigen en de alliantie verlaten
+embassy_InvitationAccepted;Uitnodiging geaccepteerd
+embassy_AllianceFounded;Alliantie opgericht
+embassy_LeftAlliance;Uit de alliantie gestapt
+embassy_acceptInvitationQuestion;Weet je zeker dat je lid wilt worden van {{allianceId|AllianceLink}}?
+embassy_acceptInvitationWarning;Je kunt de alliantie pas {{hours}} uur nadat je lid bent geworden verlaten.
+embassy_acceptInvite;Ja, lid worden van alliantie
+embassy_declineInvite;Nee, uitnodiging verwijderen
+embassy_noAlliancesNearby;Geen allianties gevonden in de nabije omgeving.
+smithy_improveTo;Verbeteren tot niveau {{level}}
+smithy_viewList;Ontwikkeling bekijken
+smithy_upgradeStarted;{{unitId|TranslateSuffixFor|truppen.tid}} verbetering gestart
+smithy_researchFirst;Eenheid moet onderzocht worden in de academie
+smithy_levelTooLow;Breid de smederij uit, het niveau is te laag
+allBuildings_10;Alle pakhuizen:
+allBuildings_11;Alle graansilo's:
+allBuildings_23;Alle schuilplaatsen:
+allBuildings_38;Alle pakhuizen:
+allBuildings_39;Alle graansilo's:
+currentBuildingValue;Huidige {{type|TranslateSuffixFor|allgemein.gid}}:
+ad_successful;Advertentie bekeken!
+externalLink_title;Externe link
+externalLink_description1;<b>Waarschuwing!</b><br>Je staat op het punt de volgende externe link te openen:
+externalLink_description2;Travian Games kan deze link niet controleren of verifiëren.
+externalLink_description3;Ga verder op eigen risico.
+externalLink_description4;Weet je zeker dat je wilt doorgaan?
+externalLink_continue;Doorgaan naar link
+search_village;Dorp zoeken
+search_select_village;Dorp selecteren
+search_three_characters;Typ minstens {{amount}} tekens
+search_no_result;Geen resultaten
+search_player;Speler zoeken
+search_player_invite;Speler uitnodigen
+search_select_player;Speler selecteren
+search_select_player_invite;Nieuwe speler uitnodigen
+search_alliance;Alliantie zoeken
+search_select_alliance;Alliantie selecteren
+gid27.arte_detail_;{{INT}}
+artefact_inventory_level_effect;Schatkamer: {{LEVEL}}, effect: {{EFFECT}}
+artefact_inventory_village;Dorp:
+artefact_inventory_conquered;Veroverd:
+artefact_inventory_active;Actief: actief om
+artefact_inventory_active_already;Active: <b>geactiveerd</b>
+artefact_inventory_show_active_only;Alleen mijn geactiveerde artefacten tonen
+artefact_overview;Overzicht artefacten
+artefact_tip_large;Grote artefacten vereisen schatkamerniveau <b>20</b> en hebben invloed op je hele <b>avatar</b>
+artefact_tip_small;Kleine artefacten vereisen schatkamerniveau <b>10</b> en hebben alleen invloed op het <b>dorp</b>
+artefact_tip_nearby;Artefacten in het gebied rond {{villagenamelong|Bold}}
+artefact_small;Klein
+artefact_large;Groot
+artefact_nearby;In de buurt
+artefact_village;Dorp
+artefact_button_former_owners;Vorige eigenaars bekijken
+artefact_already_active;Al geactiveerd
+artefact_required_level_value;Schatkamer <b>level {{LEVEL}}</b>
+artefact_details;Details
+number_counter;{{NUMBER}}.
+tasks_villageTasks;Dorpstaken
+tasks_nextHeroLevelBonus;Volgende heldenniveaubonus = {{value}}%
+villageOverview_building_headline;In aanbouw
+villageOverview_building_slotIdle;Geen bouw in uitvoering
+villageOverview_resource_sorting1;Dorpslijst
+villageOverview_resource_sorting2;Laagste siloduur
+villageOverview_resource_sorting3;Hoogste siloduur
+villageOverview_resource_sorting4;Laagste pakhuisduur
+villageOverview_resource_sorting5;Hoogste pakhuisduur
+villageOverview_resource_sorting6;Negatieve productie
+villageOverview_troops_stationed;Troepen gestationeerd in dorp
+villageOverview_troops_sum;Totaal eigen troepen
+villageOverview_troops_tab_training;Training
+villageOverview_culture_slots;Dorpsvakken
+cancelPopup_Improvement;Verbetering annuleren
+cancelPopup_Research;Onderzoek annuleren
+cancelPopup_Construction;Bouw annuleren
+cancelPopup_text_;{{NAME}} {{LEVEL}}
+cancelPopup_text_Improvement;Wil je de verbetering annuleren van {{NAME}} niveau {{LEVEL}}?
+cancelPopup_text_Research;Wil je het onderzoek van {{NAME}} annuleren?
+cancelPopup_text_Construction;Wil je de bouw van {{NAME}} niveau {{LEVEL}} afbreken?
+cancelPopup_text_refund;Je krijgt {{INT}}% van de verbeteringskosten terug:
+dailyQuests_timeRemaining;Resterende tijd: {{time|Countdown}}
+dailyQuests_rewardOverview;Beloningsoverzicht bekijken
+dailyQuests_claimRewards;Beloningen claimen
+dailyQuests_pointsEarned;Verdiende punten: <b>{{current}}/{{max}}</b>
+dailyQuests_rewardDescription;Dit zijn de beloningen die je kunt ontgrendelen door de dagelijkse opdrachten van vandaag te voltooien:
+dailyQuests_claimAction;Innen
+dailyQuests_alreadyClaimed;Geclaimd
+dailyQuests_questDetailTitle;Info
+dailyQuests_quest_worth;Deze opdracht is het volgende waard:
+dailyQuests_quest_worth_points;+{{points}} punt[points>1:en]
+dailyQuests_quest_repeated;Deze opdracht kan herhaald worden:
+dailyQuests_quest_repeated_amount;{{amount}} keer
+dailyQuests_quest_completed;Herhalingen voltooid:
+dailyQuests_quest_difficulty;Moeilijkheidsgraad:
+dailyQuests_quest_requirement;Vereisten:
+dailyQuests_backToOverview;Terug naar overzicht
+dailyQuests_difficulty_moderate;Redelijk
+dailyQuests_difficulty_hard;Zwaar
+dailyQuests_difficulty_challenging;Uitdagend
+achievementQuests.achQuest_;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+achievementQuests.achQuest__step_01_description;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+heroMansion_Loyalty;Loyaliteit: {{INT}}%
+heroMansion_Conquered;{{TIME|DateTime}} veroverd
+heroMansion_SlotFree;Volgende oasisvak is beschikbaar
+heroMansion_SlotBlocked;Volgende oase vanaf <color={{colorValue|TextColor}}>Heldenhof</color> <color={{colorValue2|TextColor}}>niveau{{REQUIRMENT}}</color>
+heroMansion_Undo;Ongedaan maken
+heroMansion_FinishedAt;Voltooid: {{TIME|Time}}
+waterworks_NoneOasesAcquired;Geen oase geannexeerd
+waterworks_BonusCalculation;+ ({{INT}}% van {{INT2}}%) = 
+waterworks_CurrentBonus;Huidige waterwerkbonus: +{{INT}}% op oasegrondstoffen
+waterworks_Oases;Geannexeerde oases
+messages_inbox_title;{{COUNT}} berichten
+messages_inbox_title_selected;{{SELECTED}}/{{COUNT}} berichten geselecteerd
+messages_newMessage;Nieuw bericht
+messages_messageSent;Bericht verzonden!
+messages_exitPreview;Voorbeeld verlaten
+messages_previewTitle;Voorbeeldbericht
+messages_unread_count;{{COUNT}} ongelezen
+reportPlayer_selectReason;Selecteer de reden voor de melding
+reportPlayer_reasonPlaceholder;Reden voor melding
+reportPlayer_addNote;Voeg een notitie toe aan de melding (optioneel):
+reportPlayer_alsoBlock;Deze speler ook negeren
+reportPlayer_maximumLength;Maximale lengte: {{text|TextLength}}/300
+reportPlayer_nowIgnored;Je negeert deze speler nu.
+reportPlayer_nowUnignored;Je negeert deze speler niet meer.
+statistics_general;Algemene statistieken
+statistics_seeDetails;Details bekijken
+statistiken.progressionStepTitle_;{{VALUE}}{{DATETIME}}
+language_com;Dev-taal
+language_de-DE;Duits
+language_en-US;Nederlands
+language_fr-FR;Frans
+language_ru-RU;Russisch
+statistics_villageAndHero;Grootste dorp/held
+RelativeTime_0;{{data}} s
+RelativeTime_1;{{data}} m
+RelativeTime_2;{{data}} u
+RelativeTime_3;[data>1:{{data}} dagen][data<2:{{data}} dag]
+RelativeTime_4;[data>1:{{data}} weken][data<2:{{data}} week]
+RelativeTime.Separator; 
+RelativeTime.Wrapper.Past;{{time}} geleden
+RelativeTime.Wrapper.Future;Over {{time}}
+mapCell_tooFewSettlers;{{current}}/3 kolonisten beschikbaar
+mapCell_heroNotIdle;Je held is niet inactief
+mapCell_cantAddOwn;Je kunt je eigen dorpen niet toevoegen
+mapCell_alreadyInVillage;Je bent al in dat dorp
+serverSelection_rememberPassword;Onthoud mijn wachtwoord
+serverSelection_savedWorldsTitle;Jouw spelwerelden
+serverSelection_removeWorldTitle;Spelwereld verwijderen
+serverSelection_removeWorldQuestion;Wil je deze spelwereld echt van je lijst verwijderen?
+serverSelection_removeWorldDescription;Waarschuwing: Hierdoor wordt je account in de spelwereld niet verwijderd. Je kunt op elk moment terugkomen en de spelwereld inclusief je account toevoegen aan je lijst met spelwerelden.
+serverSelection_removeWorldButton;Van lijst verwijderen
+serverSelection_addWorldText;+ Spelwereld toevoegen
+buildingActivities_buildingAdditional_;{{amount}}
+buildingActivities_buildingAdditional_17;{{amount}} actieve handelsroutes
+reports_filters_reset;Filters resetten
+palace_capitalSet;Hoofddorpset!
+palace_isCapital;Dit dorp is je hoofddorp.
+messages_unread_count_full;{{COUNT}} ongelezen bericht[COUNT>1:en]
+statistics_alliance;Alliantiestatistieken
+statistics_alliances_best_off;De beste allianties (aanvaller)
+statistics_alliances_best_def;De beste allianties (verdediger)
+statistics_offensiveStrength;Je aanvalskracht van {{VILLAGEID|VillageLink}} op deze server
+statistics_offensiveStrengthAlliance;Je aanvalskracht van {{VILLAGEID|VillageLink}} in je alliantie
+statistics_offensiveStrengthVillage;Aanvalskracht van dit dorp:
+statistics_defensiveStrength;Je verdedigingskracht op deze server
+statistics_defensiveStrengthAlliance;Je verdedigingskracht in je alliantie
+statistics_defensiveStrengthVillage;Verdedigingskracht van dit dorp:
+statistics_defensiveStrengthVillageSum;Totale verdedigingskracht van alle dorpen:
+recent;Recent
+appliedFilters;Je hebt {{COUNT}} actieve filters.
+allgemein.gid99;Willekeurig
+rallyPoint_troopsOverview_10;Gedetailleerd troepenoverzicht
+rallyPoint_troopsOverview_returningFromAdventure;Komt terug van avontuur: 
+rallyPoint_troopsOverview_detailedView;Gedetailleerde weergave
+rallyPoint_troopsOverview_noMovements;- Geen troepenbewegingen -
+rallyPoint_troopsOverview_Target;Doelwit: {{Target|NamedCoordinates}}
+rallyPoint_troopsOverview_Origin;Afkomst: {{Target|NamedCoordinates}}
+hero_adventures_number;Nr. {{INT}}
+hero_status_regeneration;<b>Gezondheidsregeneratie:</b> {{VALUE}}% per dag
+hero_status_regeneration_details;{{HERO}}% per dag van held {{EQUIPMENT}}% per dag van uitrusting
+hero_status_experience;<b>Ervaring:</b> {{VALUE}}%
+hero_status_experience_bonus;Bonus: {{VALUE}}%
+search_results;Zoekresultaten
+search_player_link;Spelerslink
+search_select_player_link;Speler selecteren
+search_recipient;Ontvanger zoeken
+search_select_recipient;Ontvanger selecteren
+search_alliance_link;Alliantielink
+search_select_alliance_link;Alliantie selecteren
+messages_fullView_title;Bericht
+messages_recipient_placeholder;Ontvanger selecteren
+messages_title_placeholder;Voer de titel van je bericht in
+messages_message_placeholder;Voer je bericht in
+messages_ownAlliance;Eigen alliantie
+messages_selectedRecipients;Geselecteerd
+messages_ownAlliance_[ally];Alle alliantieleden
+messages_ownAlliance_[off];Aanvallende alliantieleden
+messages_ownAlliance_[def];Verdedigende alliantieleden
+messages_discard_title;Bericht verwijderen
+messages_discard_text_header;Wil je dit bericht verwijderen?
+messages_discard_text;De inhoud van het bericht gaat verloren.
+messages_confirm_deletion_title;Berichten verwijderen
+messages_confirm_deletion_text_header;Weet je zeker dat je [data>1:{{data}} berichten][data=1:{{data}} bericht] wilt verwijderen?
+messages_confirm_deletion_text;Als berichten eenmaal verwijderd zijn, is er geen manier om ze terug te halen.
+messages_confirm_deletion_button;[data>1:{{data}} berichten][data=1:{{data}} bericht] verwijderen
+icon_selection_title;Icoon toevoegen
+icon_selection_button;Icoon selecteren
+icon_selection_resourcesAndHero;Grondstoffen/Held
+icon_selection_natureAndNatars;Natuur en Natars
+upgrading;Bezig met upgraden!
+buildingActivities_buildingAdditional_46;Geen gewonde troepen
+playerDetails_ignorePlayerDescription;Speler zal worden genegeerd
+reports_share;Deel rapport
+search_select_village_link;Selecteer dorp
+search_village_link;Dorp linken
+search_report_link;Rapport linken
+search_select_report_link;Rapport selecteren
+messages_banned;Je kunt alleen berichten schrijven aan andere leden van je alliantie.
+messages_template_title;Sjablonen
+messages_template_none;Geen sjablonen beschikbaar
+messages_template_edit_title;Sjabloon bewerken
+messages_template_delete_title;Sjabloon verwijderen
+messages_template_delete_question;Weet je zeker dat je deze sjabloon wilt verwijderen?
+messages_template_delete_desc;Als je hem eenmaal verwijderd hebt, kun je hem niet meer herstellen.
+messages_template_create;Nieuwe sjabloon maken
+messages_template_create_descr;Maak een nieuwe sjabloon van je huidige bericht:
+messages_template_created;Sjabloon gemaakt!
+messages_template_deleted;Sjabloon verwijderd!
+statistics_culturePoints_productionRank;Jouw CP-productierang op deze server
+statistics_culturePoints_productionRankAlliance;Jouw CP-productierang in je alliantie
+statistics_culturePoints_production;CP
+statistics_resourceRank_production;Productie: {{VALUE|ShortenNumber}}
+statistics_resourceRank_productionRank;Jouw productierang op deze server
+statistics_resourceRank_productionRankAlliance;Jouw productierang in je alliantie
+statistics_resourceRank_bounty_lost;Verloren
+statistics_wonderOfTheWorld_header;Beste wereldwonderen
+hospital_healing_costs;Kosten troepengenezing
+hospital_healing_action;Troepen genezen
+hospital_healing_list;Genezingslijst bekijken
+hospital_healing_list_title;Troepengenezin
+hospital_healing_started;Genezing begonnen
+bonusValueWithPercent;+{{value}}%
+village_with_isCapital;{{villageName}} (hoofddorp)
+maximumTextLengthError;{{CONTEXT}} kan maximaal {{AMOUNT}} tekens bevatten
+infoTab_genericEffectInBrackets;({{INT|Sign}})
+infoTab_effectPercentage;{{INT}}%
+infoTab_effectInBracketsPercentage;({{INT|Sign}}%)
+infoTab_trapperCurrently;Huidige max. hoeveelheid vallenzetter:
+trapper_Build_Action;Bouw vallen
+trapper_ProductionCosts;Productiekosten vallen
+trapper_TrapsInConstruction;Vallen in de aanbouw
+trapper_MaxBuilt;Je hebt al het maximumaantal vallen gebouwd
+truppen.tid119;Val
+truppen.tid119p;Vallen
+rallyPoint_troopsOverview_outgoingMission_scouting_1;Bezig verdediging en troepen te scouten van 
+rallyPoint_troopsOverview_outgoingMission_scouting_0;Bezig grondstoffen en troepen te scouten van 
+rallyPoint_troopsOverview_returningRegeneratedMission;Terugkerende geregenereerde troepen van: 
+rallyPoint_troopsOverview_returningFleeingMission;Terugkerende troepen van bosschuilplaats: 
+rallyPoint_troopsOverview_foreignTroopsIn;Gestationeerd in: 
+rallyPoint_celebration_hint;Het feest in de brouwerij kan de troepen beïnvloeden.
+building_not_built;Gebouw niet gebouwd
+berichte.report_icon_24;Melden
+allBuildings_36;Alle vallenzetters max. bedrag:
+cropFinder_min_oasis_crop_bonus;Min. Graanbonus oase:
+cropFinder_select_minimum_crop_bonus;Selecteer minimale graanbonus
+cropFinder_unoccupied;Onbezet
+search_by_location;Zoeken op locatie
+search_by_player;Zoeken op speler
+search_village_from_player;Dorp van speler zoeken
+enter_player_name;Spelersnaam invoeren
+messages_template_newConditionsNotMet;Sjablonen moeten een titel en een bericht bevatten.
+message_report_isAlready;Huidig bericht is reeds gerapporteerd als: {{REASON}}
+tutorial_begin;Rondleiding beginnen
+tutorial_title_0;Gegroet, onverschrokken kampioen! 
+tutorial_text_0;Welkom op het woeste slagveld van Travian: Legends. We gaan je snel klaarstomen om je dynamische nederzettingen te besturen en je onstuitbare krachten in te zetten.\n\nBen jij er klaar voor?
+tutorial_title_1;Overzicht navigatie
+tutorial_text_1;Hier ontdek je alles, van de kaart tot efficiënte communicatie en overzichtelijke informatietools. Hier vind je ook je dagelijkse missies, persoonlijke instellingen en een heleboel andere functies.
+tutorial_title_3;Je grondstoffen
+tutorial_text_3;De grondstoffen van je dorp kun je hier vinden. Als je op de grondstoffenbalk tikt, krijg je meer informatie te zien.
+tutorial_title_4;Je grondstoffen
+tutorial_text_4;Je kunt de informatie verbergen door nogmaals op de grondstoffenbalk te tikken.
+tutorial_title_5;Je dorp
+tutorial_text_5;Hier vind je alle benodigde informatie over je dorp, van de takenlijst tot het overzicht van je troepen en de bouwwachtrij. De functie voor gebouwactiviteiten, een recente toevoeging aan de app, geeft je een snel overzicht van je gebouwen.
+tutorial_title_7;Je dorp
+tutorial_text_7;Als je de verzamelplaats eenmaal gebouwd hebt, krijg je hier een uitgebreid overzicht van alle troepenbewegingen. Bovendien kun je zo snel naar je verzamelplaats gaan.
+tutorial_title_8;Zijmenu
+tutorial_text_8;Je kunt op de pijltjes tikken of met je vinger vegen om het zijmenu te openen. Dit kun je op elk moment doen.
+tutorial_title_9;Dorpslijst
+tutorial_text_9;Je kunt op elk moment snel schakelen tussen je dorpen door het zijpaneel open te vegen. Daar vind je ook de dorpsstatistieken.\n\nEn dat is het einde van de tour. Waar wacht je nog op? Duik in de wereld van Travian: Legends en verken je nieuwe strategische speeltuin.\n\nSucces!
+tutorial_finish;Einde tour
+filters_report_not_found;Rapport bestaat niet
+filters_player_not_found;Speler bestaat niet
+filters_alliance_not_found;Alliantie bestaat niet
+filters_village_not_found;Dorp bestaat niet
+settings_game;Deze speelwereld
+language_app_selection;Selecteer taal:
+settings_sitter;Sitter {{VALUE}}:
+settings_sitterTab_yourSitters;Je sitters
+settings_sitterTab_SittingFor;Sitten voor
+search_player_addSitter;Sitter toevoegen
+search_select_player_addSitter;Sitter toevoegen
+search_player_addSitter_additionalEmptyResultInfo;Geen speler gevonden.\nAlleen spelers van jouw alliantie/bondgenootschap kunnen voor jouw avatar sitten.
+settings_sitter_sitterAdded;Sitter toegevoegd!
+settings_sitter_sitterRemoved;Sitter verwijderd!
+settings_sitter_sitterPermissionChangesSaved;Toestemmingswijzigingen opgeslagen!
+settings_sitter_confirm_remove_text_header;Wil je {{PlayerName}} echt als jouw sitter verwijderen?
+settings_sittersFor;Sitter voor avatar(s)
+settings_sittersFor_info;Je bent ingesteld als de sitter voor de volgende avatars. Als je op de rode X klikt beëindig je een opzichterschap.
+settings_sittersFor_none;Je bent momenteel geen sitter voor een andere avatar.
+settings_sitterFor;Sitter voor {{VALUE}}:
+settings_sitterFor_sittingRemoved;Gestopt met sitten voor {{PlayerName}}!
+settings_sitterFor_confirm_remove_header;Wil je stoppen met sitten voor 
+settings_sitterFor_confirm_remove_header_questionmark;?
+settings_sitterFor_confirm_remove_info;Je kunt deze actie niet ongedaan maken. Alleen andere spelers kunnen jou als sitter toevoegen.
+brewery_celebration_attackStrength;({{INT}}% aanvalskracht)
+brewery_celebration_hint;Troepen die al onderweg zijn worden beïnvloed door het feest
+settings_game_newLanguage;Taal gewijzigd in {{language}}.
+wonderOfTheWorld_name;Naam wereldwonder:
+combatSimulator_title;Simuleren - {{role|TranslateSuffixFor|combatSimulator_as}}
+combatSimulator_cataTargetLevel;Niveau van het  <b>{{index}} katapultdoelwit</b>
+combatSimulator_troopLevel;Troepensmederijniveau:
+combatSimulator_asAttacker;Als aanvaller
+combatSimulator_asDefender;Als verdediger
+combatSimulator_result;Resultaten simuleren
+combatSimulator_addReinforcement;Versterking toevoegen
+valueWithModifier;{{value|Round|2}}x
+valuePlusInBracketsWithPercent;(+{{change}}%)
+none;Geen
+marketplace_traderoute_repeatEveryHour;Herhaal elke: (uur)
+block_sitter_warning;Je hebt als opzichter geen toegang tot deze functie.
+settings_openConsentWindow;Privacy-instellingen
+combatSimulator_adjustHeroStats;Heldenstatistieken aanpassen
+combatSimulator_eagleEyeTitle;Selecteer adelaarsogenbonus
+combatSimulator_architectSecretTitle;Selecteer geheim van de architect-bonus
+combatSimulator_metallurgyBonus;Selecteer metallurgiebonus
+combatSimulator_rightHand;Selecteer item rechterhand
+combatSimulator_leftHand;Selecteer item linkerhand
+combatSimulator_bodyItem;Selecteer item lichaam
+combatSimulator_inventoryItem;Selecteer inventarisitem
+combatSimulator_selectBuildingLevel_35;Selecteer brouwerijniveau
+combatSimulator_selectBuildingLevel_26;Selecteer paleisniveau
+combatSimulator_selectBuildingLevel_34;Selecteer steenhouwerijniveau
+combatSimulator_selectBuildingLevel_31;Selecteer muurniveau
+combatSimulator_selectBuildingLevel_32;Selecteer muurniveau
+combatSimulator_selectBuildingLevel_33;Selecteer muurniveau
+combatSimulator_selectBuildingLevel_43;Selecteer muurniveau
+combatSimulator_selectBuildingLevel_42;Selecteer muurniveau
+combatSimulator_selectTargetLevel;Selecteer doelniveau katapult
+combatSimulator_selectTroopLevel;Selecteer troepenniveau
+survey_title;Vragenlijst Travian: Legends
+gdpr_title;Toestemming voor gegevensverwerking
+gdpr_description;Met jouw toestemming verzamelen we bepaalde informatie met betrekking tot je apparaat, IP-adres, gebruik en advertentie-identificatiegegevens. Dit helpt ons om je relevantere advertenties te tonen en verbetert je algehele app-ervaring.
+gdpr_basic_functions;Vereist voor de basisfuncties van de app.
+gdpr_advertisement;Gebruik van persoonlijke gegevens voor reclame.
+gdpr_analytics;Gebruik van persoonlijke gegevens voor analyse.
+gdpr_acceptAll;Alles accepteren
+gdpr_save_and_exit;Opslaan en afsluiten
+gdpr_rejectAll;Alles afwijzen
+gdpr_privacy_policy;Privacybeleid
+gdpr_terms_and_conditions;Algemene voorwaarden
+plus.plus.browserOnly;(alleen browser)
+hero_inventory_already_equipped;Hetzelfde item is al uitgerust.
+survey_button_title;Feedback enquête
+survey_button_description;Doe mee aan deze korte enquête om ons te helpen de Travian: Legends-app te verbeteren.
+goldShop_extend;Verlengen
+goldShop_remaining;Resterend:
+goldShop_advantage_activated;Geactiveerd
+search_select_recipient_removeAll;Alles verwijderen
+messages_messageTopic_noTopic;Geen onderwerp/standaard
+messages_messageTopic_resources;Over grondstoffen
+messages_messageTopic_defenses;Over verdediging
+messages_messageTopic_attacks;Over aanvallen
+messages_messageTopic_strategies;Over strategieën
+messages_messageTopic_information;Algemene informatie
+messages_messageTopic_important;Belangrijke informatie
+messages_messageTopic_selectionTitle;Selecteer berichtonderwerp
+farmlist_confirm_deletion_header;Weet je zeker dat je de geselecteerde farmlijst wilt verwijderen?
+farmlist_confirm_deletion_text;Dit kan niet ongedaan gemaakt worden.
+farmlist_target_confirm_deletion_header;Weet je zeker dat je [data>1:deze {{data}} doelwitten][data=1:dit doelwit] wilt verwijderen?
+upgrade_queue_cantConstructImmediately;Dit gebouw kan niet direct worden gebouwd
+language_cs-CZ;Tsjechisch
+language_es-ES;Spaans
+language_pl-PL;Pools
+language_pt-PT;Portugees
+language_tr-TR;Turks
+language_it-IT;Italiaans
+playerDetails_victorPoints_summary;{{TOTAL}} | {{PERDAY}}/dag
+settings_selectFormat;Selecteer weergave:
+settings_selectFormat_dialog_title;Selecteer datumweergave
+settings_game_newDateFormat;Datumweergave gewijzigd in {{dateFormat}}.
+help_getHelp;Hulp krijgen
+help_getHelpDescription;Als je hulp nodig hebt of een probleem wilt melden, kun je hier contact opnemen met de ondersteuning in de game.
+help_learnAboutGame;Leer meer over het spel
+help_learnAboutGameDescription;Alles wat je moet weten over het spel en hoe alles in detail werkt, kun je hier vinden.
+help_gameRules;De spelregels leren
+help_gameRulesDescription;Hier vind je de huidige spelregels.
+help_joinDiscord;Meepraten op Discord
+help_joinDiscordDescription;Deel je feedback met ons op onze speciale mobiele Discord-server.
+PLAYERARG;{{PLAYER}}
+referAFriend_friendJoinedDescription;Om goud te ontvangen voor je verwijzing, moet je vriend een <b>tweede dorp</b> stichten. Zorg ervoor dat je hem helpt dit doel te bereiken! Bekijk zijn vorderingen in het onderstaande verwijzingsoverzicht.
+referAFriend_rewardAddedVillage2Title_PLAYERARG;Je vriend {{PLAYER}} heeft het 2e dorp gesticht
+referAFriend_rewardAddedVillage3Title_PLAYERARG;Je vriend {{PLAYER}} heeft het 3e dorp gesticht
+referAFriend_rewardAddedVillage4Title_PLAYERARG;Je vriend {{PLAYER}} heeft het 4e dorp gesticht
+referAFriend_rewardAddedVillage5Title_PLAYERARG;Je vriend {{PLAYER}} heeft het 5e dorp gesticht
+referAFriend_rewardAddedVillage6Title_PLAYERARG;Je vriend {{PLAYER}} heeft het 6e dorp gesticht
+referAFriend_rewardAddedVillage7Title_PLAYERARG;Je vriend {{PLAYER}} heeft het 7e dorp gesticht
+referAFriend_rewardAddedVillage8Title_PLAYERARG;Je vriend {{PLAYER}} heeft het 8e dorp gesticht
+referAFriend_rewardAddedVillage9Title_PLAYERARG;Je vriend {{PLAYER}} heeft het 9e dorp gesticht
+referAFriend_rewardAddedVillage10Title_PLAYERARG;Je vriend {{PLAYER}} heeft het 10e dorp gesticht
+sysmsg_truce_learnMore;Meer informatie over vredes
+worldEnded_ww_playerWon_topAlliance;Arbeiders in het dorp van {{WW_VILLAGE|VillageLink}}, in het uur van {{WORLD_END_TIME|DateTime}}, hebben de laatste steen gelegd om een van de meest significante creaties uit de geschiedenis te voltooien.<br>Samen met allianties, {{WW_ALLIANCE|AllianceLink}}, was {{WW_PLAYER|PlayerLink}} de eerste die het Wereldwonder voltooide. Na het gebruik van talloze grondstoffen en het beschermen van de bouwplaats met honderdduizenden dappere verdedigers, heeft {{WW_PLAYER|PlayerLink}} de titel "Winnaar van dit Tijdperk" ontvangen.
+worldEnded_as2022_topAlliances;Felicitaties aan {{ALLIANCE_TOP_1|AllianceLink}}, die de leiders van Europa zijn geworden met {{VICTORY_POINTS_TOP_1}}overwinningspunten! {{ALLIANCE_TOP_2|AllianceLink}} hebben als nummer twee dapper gestreden om hun overwinning op te eisen, op korte afstand gevolgd door {{ALLIANCE_TOP_3|AllianceLink}} op de derde plaats.
+worldEnded_playerRanks_population;{{PLAYER_POPULATION_TOP_1|PlayerLink}} was heerser over het grootste persoonlijke rijk, op de voet gevolgd door {{PLAYER_POPULATION_TOP_2|PlayerLink}} en {{PLAYER_POPULATION_TOP_3|PlayerLink}}.
+worldEnded_playerRanks_offender;{{PLAYER_OFFENDER_TOP_1|PlayerLink}} heeft er meer verslagen dan ieder ander en was de meest gevreesde commandant.
+worldEnded_playerRanks_defender;{{PLAYER_DEFENDER_TOP_1|PlayerLink}} was de meest glorieuze verdediger, die vijanden bij de poorten versloeg en landerijen rond deze dorpen met hun bloed doordrenkte.
+rallyPoint_startWithValue;Start ({{value}})
+rallyPoint_farmList_raidsStarted;{{INT}} overvallen gestuurd.
+rallyPoint_farmList_CantAddToAbandonList;Je kunt geen doelwitten toevoegen aan een verlaten farmlijst.
+rallyPoint_farmList_CantActivateInToAbandonList;Je kunt geen doelwitten activeren in een verlaten farmlijst.
+rallyPoint_farmList_CantDuplicateInToAbandonList;Je kunt geen doelwitten dupliceren in een verlaten farmlijst.
+rallyPoint_farmList_DuplicateRaids;Doelwit[raidsAmount>1:ten] dupliceren
+rallyPoint_farmList_SlotsDuplicated;Doelwit[raidsAmount>1:ten] gedupliceerd
+rallyPoint_farmList_pleaseSelectTheList;Selecteer a.u.b. de lijst waar je jouw doel aan wilt toevoegen.
+rallyPoint_farmList_farmlistFull;Farmlijst is vol. Kies een andere farmlijst of maak een nieuwe.
+rallyPoint_farmList_targetName;Naam doelwit
+rallyPoint_farmList_differentTroopsWarning;Troepenaantallen worden niet gewijzigd, tenzij je deze overschrijft door hieronder een nieuwe waarde in te voeren.
+rallyPoint_farmList_noobProtectionWarning;Onder beginnersbescherming kun je geen andere spelers overvallen, maar wel onbezette oases en Natar-dorpen.
+rallyPoint_farmList_noFarmLists;Geen farmlijst gemaakt
+rallyPoint_farmList_CreateNewFarmList;Farmlijst maken
+rallyPoint_farmList_currentAmount;Farmlijsten: <b>{{amount}}</b>/{{max}}
+rallyPoint_farmList_differentTribe;Dorp heeft een andere stam dan hudige brondorp. Controleer troepenwaarden.
+rallyPoint_farmList_overrideTarget;Doelwit overschrijven
+rallyPoint_farmList_selectedActivated;Geselecteerde doelwitten zijn actief gemaakt.
+rallyPoint_farmList_selectedDeactivate;Geselecteerde doelwitten zijn inactief gemaakt.
+rallyPoint_farmList_LastRaid;<b>Laatste gestart:</b> <nobr>{{lastStarted|DateTime}}</nobr>
+mapCell_editTargetListAmount;<nobr>Doelwit bewerken</nobr> <nobr>(lijsten: {{INT}})</nobr>
+goldShop_shopDisabled;Goudwinkel is uitgeschakeld in deze spelwereld
+infobox_accountLockGameEnd;Deze ronde van het spel is geëindigd!
+applySorting;Sorteren toepassen
+truppen.tid931;Val
+truppen.tid931p;Vallen
+mainMenu_switchBackFromAvatar;{{iconName|Sprite}} Terug naar {{playerName}}
+pending;(in afwachting)
+featureNotAvailableInVacationMode;Deze functie is niet beschikbaar in de vakantiemodus.
+notAllowed;Je hebt geen toegang tot deze functie.
+settings_avatarDeletionInfo;Nadat het verwijderingsproces gestart is, duurt het <b>3 dagen</b> om je avatar te verwijderen.\nEen avatar die verwijderd wordt, heeft geen toegang meer tot veilingen of het wisselkantoor!\nJe kunt het verwijderingsproces hier op elk moment annuleren.
+settings_avatarDeletionCountDown;De avatar wordt verwijderd over
+deleteAvatar_confirmation_header;Wil je je avatar verwijderen?
+cams_info_subHeader;Eén login voor al je spelwerelden
+cams_info_text;Maak een Legends-lobbyaccount om eenvoudig in te loggen en toegang te krijgen tot al je spelwerelden via één enkele aanmelding.
+cams_info_lessInfo;Minder informatie
+cams_info_Question_WhatIsLegendsLobbyAccount;Wat is het Legends-lobbyaccount?
+cams_info_Answer_WhatIsLegendsLobbyAccount;Met een lobbyaccount hoef je je nooit meer te registreren voor een nieuwe spelwereld. Je logt gewoon in en gaat naar je actieve spelwerelden of start een nieuwe in de lobby, zowel in de browser als in de mobiele app.
+cams_info_Question_WhatAreAvatars;Wat zijn avatars?
+cams_info_Answer_WhatAreAvatars;Met het lobbyaccount wordt je profiel in een individuele spelwereld een avatar genoemd. Eén lobbyaccount kan meerdere avatars hebben, één voor elke spelwereld.
+cams_info_Question_WhatsWithCurrentGameworlds;Wat gebeurt er met mijn huidige spelwerelden?
+cams_info_Answer_WhatsWithCurrentGameworlds;Alle actieve spelwerelden die hetzelfde e-mailadres gebruiken als je lobbyaccount worden gekoppeld en zijn toegankelijk via de lobby. Je kunt je huidige actieve spelwereldavatars overschakelen naar het juiste e-mailadres voordat je lobbyaccount wordt gemaakt.
+cams_info_Question_WhatsWithSitters;Kan ik nog steeds sitters hebben?
+cams_info_Answer_WhatsWithSitters;Ja, sitters kunnen zoals altijd worden toegewezen in de instellingen van de spelwereld. Je kunt een avatar die je als sitter hebt aangesteld direct in de spelwereld benaderen.
+cams_info_Question_WhatsWithDuals;Kan ik nog steeds als dual met andere spelers spelen?
+cams_info_Answer_WhatsWithDuals;Duals kunnen worden toegewezen aan een spelwereld door de naam van het lobbyaccount van de speler in de lobby in te voeren. Dat betekent dat een dual ook eerst een lobbyaccount moet hebben en na het accepteren van de uitnodiging toegang heeft tot de avatar via de lobby. Deel het wachtwoord van je lobbyaccount met niemand.
+cams_info_Question_WhatsWithoutLobbyAccount;Kan ik spelen zonder een Legends-lobbyaccount te maken?
+cams_info_Answer_WhatsWithoutLobbyAccount;Je kunt nog steeds direct inloggen op je huidige spelwerelden via de betreffende URL. Maar als je een nieuwe spelwereld wil starten of de mobiele app wilt gebruiken, moet je een lobbyaccount maken.
+cams_playerDecision_register_info;Met het nieuwe lobbyaccount kun je je huidige en toekomstige spelwerelden met elkaar verbinden met één aanmelding.
+cams_playerDecision_login_info;Heb je al een lobbyaccount?\n\nLog in en ga verder met je avontuur.
+cams_playerDecision_register_header;Account maken
+cams_playerDecision_register_create_new_account;Lobbyaccount maken
+cams_playerDecision_register_login;Inloggen in de lobby
+cams_playerDecision_extra_info;Om Travian: Legends te kunnen spelen, moet je een lobbyaccount maken.
+cams_register_header;Legends-lobbyaccount maken
+cams_register_email_label;Voer je e-mailadres in:
+cams_register_email_address;E-mailadres registreren
+cams_register_email_address_missing;Voer je e-mailadres in.
+cams_register_email_address_not_valid;Vul een geldig e-mailadres in. Bijvoorbeeld mijnmail@provider.com
+cams_register_email_address_already_exists;Je e-mailadres is al gekoppeld aan een lobbyaccount.
+cams_register_redirecting_to_login;Doorverwijzen naar inloggen {{INT}}...
+cams_register_hintMessage_same_email_address;Gebruik hetzelfde e-mailadres als je bestaande spelwereldavatars om ze automatisch te koppelen aan je lobbyaccount.
+cams_register_receive newsletter;Ik wil de nieuwsbrief ontvangen.
+cams_register_already_have_an_account;Heb jij al een account?
+cams_register_log_in_now;Nu inloggen
+cams_acceptTOS;Door te klikken op 'E-mailadres registreren' accepteer je de <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">Algemene voorwaarden</link></style> en bevestig je dat je de <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">Informatie over het herroepingsrecht</link></style> en het <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">Privacybeleid</link></style> hebt gelezen.
+cams_activation_header;Legends-lobbyaccount activeren
+cams_activation_info;We hebben je activeringslink gestuurd naar <b>{{emailAdress}}</b>.<br>Volg de instructies in de e-mail om verder te gaan.
+cams_activation_enter_code;Vul de activeringscode in:
+cams_activation_code_example;bijv. 123456
+cams_activation_entered_code;{{INT}}/6 cijfers
+cams_activation_cta_activate_account;Account activeren
+cams_activation_email_lost;Heb je geen e-mail ontvangen?
+cams_activation_email_resend;E-mail opnieuw sturen
+cams_activation_email_wrong;Verkeerde e-mailadres?
+cams_activation_email_change;Email veranderen
+cams_activation_code_missing;Voer de activeringscode in die je in de e-mail hebt ontvangen.
+cams_activation_code_too_short;De activeringscode is te kort. Voer alle zes cijfers in.
+cams_activation_code_format_incorrect;Het formaat van de activeringscode is onjuist. Zorg ervoor dat de code uit slechts zes cijfers bestaat.
+cams_activation_code_incorrect;De activeringscode is onjuist. Voer de activeringscode in die je in de e-mail hebt ontvangen.
+cams_activation_code_expired;De activeringscode is verlopen.
+cams_activation_code_start_again;Opnieuw beginnen
+cams_login_header;Inloggen in de Legends-lobby
+cams_login_enter_email;Voer je e-mailadres of accountnaam in:
+cams_login_enter_password;Voer je wachtwoord in:
+cams_login_hintMessage_email_already_connected;Het ingevoerde e-mailadres is al gekoppeld aan een lobbyaccount. Log in of <style="SimpleLink"><link="BackToRegistrationLink">ga terug naar registratie</link></style>.
+cams_login_hintMessage_passwordUpdated;Je wachtwoord is bijgewerkt
+cams_forgot_password;Wachtwoord vergeten?
+cams_recover_password;Wachtwoord herstellen
+cams_login_no_account_yet;Nog geen account?
+cams_login_create_account;Maak account
+cams_loginMask_accountNameRequired;Voer je e-mailadres of accountnaam in.
+cams_loginMask_passwordRequired;Voer je wachtwoord in.
+cams_loginMask_passwordAndUsernameAreWrong;E-mailadres, accountnaam of wachtwoord onjuist.
+cams_loginMask_emailOrAccountName_placeholder;E-mailadres / accountnaam
+cams_loginMask_temporaryInfobox;NIEUW: Je moet een lobbyaccount maken om toegang te krijgen tot je spelwerelden.\n\nAls je nog geen lobbyaccount hebt, kun je een <style="SimpleLink"><link="CreateAccountLink">account maken</link></style>.
+cams_setPassword_header;Stel je wachtwoord in
+cams_setPassword_info;Kies een wachtwoord voor je account dat uit minimaal acht tekens bestaat.
+cams_setPassword_enter_password;Kies een wachtwoord:
+cams_setPassword_strength_label;Wachtwoordsterkte
+cams_setPassword_strength_missing;Voer een wachtwoord in om te controleren hoe sterk het is.
+cams_setPassword_strength_1;zeer zwak
+cams_setPassword_strength_2;redelijk zwak
+cams_setPassword_strength_3and4;gemiddeld
+cams_setPassword_strength_5;redelijk sterk
+cams_setPassword_strength_6;heel sterk
+cams_setPassword_strength_PasswordTooShort;Hoe langer, hoe beter (16+ tekens)
+cams_setPassword_strength_PasswordGoodLength;Wachtwoord heeft een goede lengte
+cams_setPassword_strength_OneType;Maar één soort tekens gebruikt
+cams_setPassword_strength_TwoTypes;Twee soorten tekens gebruikt
+cams_setPassword_strength_ThreeTypes;Drie soorten tekens gebruikt
+cams_setPassword_strength_NoNumbers;Geen cijfers gebruikt
+cams_setPassword_strength_NoLetters;Geen letters gebruikt
+cams_setPassword_strength_NoSpecialCharacters;Geen speciale tekens gebruikt
+cams_setPassword_strength_NoUpperAndLowerCase;Geen mix van hoofdletters en kleine letters
+cams_setPassword_strength_UpperAndLowerCase;Hoofdletters en kleine letters gebruikt
+cams_activation_cta_set_password;Wachtwoord instellen
+cams_activation_password_length;8-64 tekens
+cams_resetPassword_header;Nieuw wachtwoord instellen
+cams_resetPassword_info;Kies een nieuw wachtwoord voor je lobbyaccount dat uit minimaal acht tekens bestaat.
+cams_setUsername_header;Kies een naam voor je Legends-lobbyaccount
+cams_setUsername_info;Kies een gebruikersnaam en tag om je unieke lobbyaccountnaam te maken.
+cams_setUsername_username_label;Kies een gebruikersnaam:
+cams_setUsername_tagline_label;Kies een tag:
+cams_setUsername_tagline_example;bijv. TAG12
+cams_setUsername_tagline;Tag:
+cams_setUsername_condition_onlyLettersAndNumbers;Alleen letters en cijfers
+cams_setUsername_username_condition_Length;3-15 tekens
+cams_setUsername_tagline_condition_Length;2-5 tekens
+cams_setUsername_hint;De combinatie van je gebruikersnaam en tag wordt je unieke lobbyaccountnaam. Zolang de combinatie beschikbaar is, kun je elke combinatie kiezen die je wilt.\n\nDit heeft geen invloed op je naam op je spelwereld.
+cams_setUsername_cta_createAccount;Maak account
+cams_setUsername_username_missing;Voer een gebruikersnaam en tag in.
+cams_setUsername_accountName_preview;Voorbeeld accountnaam:
+cams_setUsernameConfirmPopup_header;Legends-lobbyaccount gemaakt!
+cams_setUsernameConfirmPopup_info;Je Legends-lobbyaccount met de inlognaam <b>{{playerName}}</b> is gemaakt.
+cams_setUsernameConfirmPopup_GameworldAndAvatar_header;Jouw spelwerelden en avatars
+cams_setUsernameConfirmPopup_GameworldAndAvatar_info;We hebben de volgende bestaande spelwereldavatars met hetzelfde e-mailadres gekoppeld aan je nieuwe lobbyaccount.
+cams_avatar_name;Avatarnaam
+cams_looby_welcomeMessage;Welkom!\n<b>{{playerName}}</b>
+cams_looby_header;Jouw speelwerelden
+cams_looby_noGameWorlds;Je hebt momenteel geen actieve avatars op spelwerelden. Ga naar een nieuwe spelwereld en begin te spelen.
+cams_looby_joinNewGameworld;Meedoen met nieuwe speelwereld
+cams_looby_playNow;SPEEL NU
+cams_looby_gameworldsLinked;Speelwerelden gekoppeld aan je account
+cams_looby_invitePenging;[data>1:{{data}} uitnodigingen][data=1:uitnodiging] in afwachting
+cams_looby_localGameWorld;LOKALE SPELWERELD
+cams_looby_avatarInDeletion;Bezig met verwijderen
+cams_removeDualAccount_header;Dual-speler verwijderen
+cams_removeDualAccount_info;Wil je <b>{{lobbyAccountName}}</b> verwijderen als dual voor je avatar <b>{{avatarName}}</b>?\n\n<b>{{lobbyAccountName}}</b> heeft dan geen toegang meer tot je avatar.
+cams_removeDualAccount_removeDual;Dual verwijderen
+cams_addDualPlayer_info;Voer de lobbyaccountnaam van speler in:
+cams_addDualPlayer_placeholder;gebruikersnaam#tag
+cams_addDualPlayer_addPlayer;[data>1:Spelers toevoegen][data=1:Speler toevoegen][data=0:Spelers toevoegen]
+search_addDualPlayeradditionalEmptyResultInfo;Speler niet gevonden of is al uitgenodigd als dual
+cams_dualInventation_header;Dualuitnodiging
+cams_dualInventation_invitations;Uitnodigingen:
+cams_dualInventation_info;Als je de uitnodiging accepteert, kun je inloggen met je eigen lobbyaccount om toegang te krijgen tot deze avatar.
+cams_dualInventation_moreInfo;Je kunt maar één dualuitnodiging per spelwereld accepteren.
+cams_dualInventation_invite;<b>{{LobbyAccountName}}</b> heeft je uitgenodigd om <b>{{avatarName}}</b> te spelen
+cams_dualInventation_AcceptInvite;Uitnodiging accepteren
+cams_acceptDualInvitation_header;Dualuitnodiging accepteren
+cams_acceptDualInvitation_info;Wil je de dualuitnodiging van <b>{{lobbyAccountName}}</b> om <b>{{avatarName}}</b> te spelen op <b>{{gameworldName}}</b> accepteren?
+cams_acceptDualInvitation_moreInfo;Je hebt meerdere dualuitnodigingen voor dezelfde spelwereld in afwachting, maar je kunt maar één dualuitnodiging voor elke spelwereld accepteren.
+cams_acceptDualInvitation_avatarInDeletion;Volgens onze regels voor duals mag je maar één actieve avatar per speelwereld hebben. \nAls je de dualuitnodiging accepteert, wordt de toegang tot je avatar {{avatarName}} in die speelwereld verwijderd. \nJe kunt het verwijderingsproces daarna niet meer stoppen.
+cams_dualSettings_header;Dualinstellingen
+cams_dualSettings_info;Je kunt op elk moment stoppen met spelen als dual voor die avatar.
+cams_dualSettings_leaveDualPlay;Dualweergave verlaten
+cams_confirmLeaveDualPlay_info;Wil je stoppen met spelen als dual voor <b>{{avatarName}}</b> op <b>{{gameworldName}}</b>?\n\nNadat je de dual hebt verlaten, kun je je eigen avatar maken of je aansluiten bij een andere avatar om weer als dual te spelen op deze spelwereld.
+cams_recoverPassword_header;Wachtwoord herstellen
+cams_recoverPassword_goBackToLogin;Terug naar login
+cams_recoverPassword_info;Voer het e-mailadres in dat gekoppeld is aan je lobbyaccount. We sturen je instructies over hoe je je wachtwoord opnieuw kunt instellen
+cams_recoverPasswordEmailSent_header;E-mail verzonden
+cams_recoverPasswordEmailSent_info;Als er een lobbyaccount bestaat voor het e-mailadres <b>{{emailAdress}}</b>, hebben we je instructies gestuurd om je wachtwoord opnieuw in te stellen.\n\nZodra je je wachtwoord hersteld hebt, kun je weer inloggen.
+cams_recoverPasswordEmailSent_goBackToLogin;Terug naar login
+cams_editDualAccounts_header;Duals
+cams_editDualAccounts_gameworld;Speelwereld: {{gameworldName}}
+cams_editDualAccounts_avatar;Avatar: {{avatarName}}
+cams_editDualAccounts_avatarOwner;Eigenaar avatar:
+cams_editDualAccounts_noDualsAdded;- Geen dualspelers toegevoegd voor deze avatar -
+cams_editDualAccounts_info;Dualspelers hebben <b>volledige informatie</b> over deze avatar en kunnen elke actie in het spel uitvoeren, waaronder goud kopen en uitgeven.\n\nDualspelers kunnen inloggen met hun eigen lobbyaccount om toegang te krijgen tot deze avatar en kunnen GEEN andere dualspelers uitnodigen.
+cams_editDualAccounts_warningHint;Deel de inloggegevens van je lobbyaccount niet met andere spelers om ongewenste toegang tot andere spelwereldavatars en je accountgegevens te voorkomen.
+cams_editDualAccounts_addDualPlayer;Dualspeler toevoegen
+cams_editDualAccounts_avatarInDeletion;Je avatar {{avatarName}} op deze spelwereld wordt verwijderd. Je kunt daarom geen dualuitnodiging sturen.
+cams_settings_title;Instellingen
+cams_settings_changePassword_information;Om je wachtwoord te wijzigen, sturen we een e-mail naar het e-mailadres van je account.
+cams_settings_changePassword_sendEmail;E-mail sturen
+cams_settings_changePassword_emailSent;We hebben je een e-mail gestuurd om je wachtwoord te wijzigen.
+cams_settings_accountDeletion_title;Verwijdering lobbyaccount
+cams_settings_accountDeletion_info;Verwijder je Legends-lobbyaccount inclusief alle spelwerelden en avatars van dit account.
+cams_settings_accountDeletion_action;Lobbyaccount verwijderen
+cams_settings_accountDeletion_warning;Waarschuwing: Deze actie is permanent en kan niet ongedaan gemaakt worden.
+cams_settings_accountDeletion_warning_content;Het verwijderen van je lobbyaccount is na 72 uur permanent, kan niet ongedaan gemaakt worden en heeft invloed op al je avatars. \n\nJe kunt je account alleen laten verwijderen als je het verwijderingsproces eerst uitvoert voor al je avatars.
+cams_settings_accountDeletion_requirementsInformation;Het verwijderingsproces voor al je avatars moet zijn gestart of voltooid om je account te kunnen verwijderen.
+cams_settings_accountDeletion_information_warning;Door deze handeling wordt het verwijderingsproces in gang gezet voor je account. Bevestig dat je ervan op de hoogte bent dat je account, alle bijbehorende avatars en gegevens permanent verwijderd zullen worden zodra je 'verwijderen' typt in het tekstvak.
+cams_settings_accountDeletion_information_error;Je kunt het account niet verwijderen als het verwijderingsproces niet gestart is voor een van je avatars.\nLog in op de aangegeven spelwerelden en verwijder je avatar.
+cams_settings_accountDeletion_noAvatarsFound;Geen actieve spelwerelden/avatars gevonden.\nJe kunt aan de slag!
+cams_settings_accountDeletion_understandmentConfirmation;Ik begrijp het
+cams_settings_accountInDeletion_title;Account wordt verwijderd
+cams_settings_accountInDeletion_info;Je lobbyaccount <b>{{NAME}}</b> wordt permanent verwijderd over <b>{{TIMESTAMP|Countdown}}</b>.
+cams_settings_accountInDeletion_action;Verwijdering annuleren
+cams_mainMenu_dataConsent;Gegevenstoestemming
+gameworld_gameworld;Speelwereld
+infobox.productionboost;{{RES}}{{TIME_COUNTER}}
+infobox_notesCount;{{COUNT}} opmerking[COUNT>1:en]
+auction_placeBid;Een bod plaatsen
+auction_auctionsAmount;{{COUNT}} veilingen
+auction_bidsRefreshed;Biedingen vernieuwd!
+auction_currentSilver;Huidige zilver:  {{iconName|Sprite}} {{currentSilver}}
+auction_availableAmount;Beschikbare hoeveelheid:
+auction_toSellAmount;Verkoophoeveelheid:
+auction_selectAmountToSellHeader;Selecteer hoeveelheid om te verkopen
+auction_soldHorseForSilver;Paard verkocht voor {{amount}} zilver.
+auction_currentCurrency;Huidig:
+auction_newCurrencyValues;Nieuw:
+auction_exchangeExplanationGoldToSilverTitle;Je kunt goud omwisselen voor zilver om heldenitems te kopen in het veilinghuis.
+auction_exchangeExplanationGoldToSilverMore;Voer de hoeveelheid goud in die je wilt omwisselen:
+auction_exchangeExplanationSilverToGoldTitle;Je kunt het zilver dat je verdiend hebt met de verkoop van heldenitems omwisselen voor goud in het veilinghuis.
+auction_exchangeExplanationSilverToGoldMore;Voer de hoeveelheid zilver in die je wilt omwisselen:
+auction_countAndName;{{AMOUNT}}×{{ITEM_NAME}}
+auction_deleteAll;Alle veilingen verwijderen
+auction_confirm_deletion_title;[data>1:{{data}} veilingvermeldingen][data=1:Veilingvermelding] verwijderen
+auction_confirm_deletion_button;[data>1:ivermeldingen][data=1:vermelding] verwijderen
+auction_confirm_deletion_text_header;Weet je zeker dat je [data>1:{{data}} veilingvermeldingen][data=1:dit veilingvermelding] wil verwijderen?
+auction_confirm_deletion_text;Het verwijderen van een vermelding is permanent. Je kunt het niet herstellen.
+cams_looby_noMatchingGameworlds;Er komen geen spelwerelden overeen met je selectie.
+serverSelection_5;Dev
+serverSelection_header;Selecteer spelwereldfilter
+serverSelection_filter_gameworldSpeed;Snelheid spelwereld
+serverSelection_gameworldSpeed;x{{INT}} snelheid
+serverSelection_filer_gameworldLifetime;Duur spelwereld
+serverSelection_gameworldLifetime;{{INT}}-{{INT2}} dagen
+serverSelection_gameworldLifetime_XorMore;{{INT}} of meer dagen
+filters_applyButton;[COUNT<2:Filter][COUNT>1:{{COUNT}} filters] toepassen
+filters_reset;[COUNT<2:Filter][COUNT>1:Filters] resetten
+cams_avatarCreation_cancel_title;Avatar maken annuleren
+cams_avatarCreation_cancel_reconfirmationText;Weet je zeker dat je het maken van je avatar op {{gameworldName}} wilt annuleren?
+cams_avatarCreation_cancel_explanation;Je verliest al je voortgang in deze spelwereld, inclusief je stamselectie, kaartlocatie en avatarnaam.
+cams_avatarCreation_button_startPlaying;Start met spelen!
+cams_avatarCreation_button_changeSector;Positie wijzigen
+cams_avatarCreation_button_selectTribe;Kies stam
+cams_avatarCreation_button_updateTribe;Stam bijwerken
+cams_avatarCreation_button_selectSector;Selecteer positie
+cams_avatarCreation_button_updateSector;Positie bijwerken
+cams_avatarCreation_name_title;Voer avatarnaam in:
+cams_avatarCreation_name_tip;Dit is je avatarnaam in deze spelwereld.
+cams_avatarCreation_name_errorEmpty;Voer een avatarnaam in.
+cams_avatarCreation_name_placeHolder;Avatarnaam
+cams_looby_avatarInDeletionBlockPlayNow;Je hebt een dualuitnodiging geaccepteerd voor deze spelwereld ({{gameworldName}}), dus je hebt er geen toegang meer toe buiten de dualmodus.
+infobox_openMessage;Bericht openen
+infobox_accountIsLocked;Jouw avatar was geblokkeerd!
+auction_button_requirement;Voltooi {{REQUIRED}} avonturen om veilingen te ontgrendelen.\nOver: {{INT}}
+auction_availableSilver;Beschikbaar zilver:  {{iconName|Sprite}} {{currentSilver}}
+auction_deleteSelected;Geselecteerde veilingen verwijderen
+auction_deletedAll_confirmation;Alle veilingen verwijderd!
+auction_deletedSelected_confirmation;{{data}} [data>1:veilingvermeldingen][data=1:Veilingvermelding] verwijderd!
+newVersionAvailable_title;Nieuwe versie beschikbaar
+newVersionAvailable_description;We hebben onze app verbeterd. Update om verder te kunnen spelen.
+newVersionAvailable_joinDiscord;Wat is er nieuw? Kom naar Discord voor meer informatie.
+newVersionAvailable_toStore;Nu updaten
+infobox_beginnerProtection_title;Beginnersbescherming verlengen
+infobox_beginnerProtection_question;Weet je zeker dat je de beginnersbescherming wilt verlengen?
+infobox_beginnerProtection_description;Je kan geen grondstoffen versturen naar andere spelers, aanvallen of zelf aangevallen worden in je beginnersbescherming.
+sendResources_beginnersProtection;Je kunt geen grondstoffen naar andere spelers sturen zolang je beginnersbescherming nog actief is.
+sendTroops_beginnersProtection;Je kunt geen troepen naar andere spelers sturen zolang je beginnersbescherming nog actief is.
+sendTroops_otherBeginnersProtection;Je kunt geen troepen sturen naar spelers met actieve beginnersbescherming.
+buildingActivities_building_36;Vallen in productie
+tasks_collectAll;Alles verzamelen ({{INT}})
+auction_bidMinPlaceholder;min. {{INT}}
+auction_buttonBidMinimum;Vereiste minimumbod
+hero_adventures_available;Beschikbare avonturen
+messages_freshDeskMessage_viewAndReplyInBrowser;Bekijken en beantwoorden in browser
+messages_webViewRecommendation;De inhoud van het bericht is mogelijk niet volledig.\nWe raden aan om het bericht in een browser te bekijken.
+rateThisApp_popup_title;Vind je onze app leuk?
+rateThisApp_popup_description;Als je onze app leuk vindt, neem dan even de tijd om hem te beoordelen.
+rateThisApp_popup_appreciatefeedback;Jouw feedback is belangrijk voor ons!
+rateThisApp_popup_btn_positive;Het is geweldig!
+rateThisApp_popup_btn_negative;Kan beter
+rearrange_or_demolish_building;Gebouw verplaatsen of slopen
+mainBuilding_buildingArrangement;Indeling gebouwen
+mainBuilding_openRearrangeMode;Indelingsmodus openen
+mainBuilding_demolishBuildings;Gebouwen slopen
+mainBuilding_openDemolishMode;Sloopmodus openen
+mainBuilding_demolishBuildings_description;Versleep gebouwen om ze te verplaatsen.
+rearrangeBuildingPopup_rearrangeDescription;<b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color> verplaatsen?
+rearrangeBuildingPopup_buildingsRearranged;Gebouwen opnieuw ingedeeld
+rearrangeBuildingPopup_buildingRearranged;{{buildingName|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>{{buildingLevel}}</color>
+confirmRearrangeBuildingPopup_header;Wil je het volgende gebouw opnieuw indelen?
+confirmRearrangeBuildingPopup_description;Deel de geselecteerde gebouwen van dorp <b>{{villageName}}</b> opnieuw in.
+demolishBuildingPopup_title;Gebouw slopen
+demolishBuildingPopup_description;Selecteer een gebouw om te slopen
+demolishBuildingPopup_descriptionWithSelection;Wil je <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color> slopen?
+demolishBuildingPopup_demolishLevel;Niveau slopen
+demolishBuildingPopup_demolishCompletely;Volledig slopen
+confirmDemolishBuildingPopup_header;Wil je <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color> onmiddellijk slopen?
+confirmDemolishBuildingPopup_description;Sloopt onmiddellijk het geselecteerde gebouw en verwijdert het uit je dorp.\nDeze actie kan niet ongedaan gemaakt worden.
+characterCount;{{COUNT}}/{{MAX}} tekens
+survey_button_description_reward;Doe mee aan deze korte enquête om ons te helpen de Travian: Legends-app te verbeteren.\nJe steun wordt beloond.
+cams_lobby_joinGameworld;Meedoen met speelwereld
+cams_lobby_gameworld_inviteOnly;Alleen op uitnodiging
+cams_lobby_gameworld_inviteOnlyInfo;Deze spelwereld is alleen toegankelijk voor spelers met een speciale uitnodigingscode.
+cams_lobby_gameworld_inviteCodeEnter;Uitnodigingscode invoeren
+cams_lobby_gameworld_inviteCodeInfo;Deze spelwereld is alleen toegankelijk voor spelers met een speciale uitnodigingscode.\nAls je er een hebt, voer hem dan in om mee te doen met de spelwereld.
+cams_lobby_gameworld_inviteCodePlaceholder;Bijv. eThbt5OLyZ8D5xjhUaBAba
+cams_lobby_gameworld_inviteCodeErrorCharacterCount;De uitnodigingscode is te kort. Voer alle {{MAX}} tekens in.
+cams_lobby_gameworld_inviteCodeCooldown;Afkoelperiode uitnodigingscode ({{TIME|Countdown}})
+timeCountDown;{{TIME|Countdown}}
+attestation_failed;Apparaatbevestiging mislukt! Gebruik een mobiel apparaat om te spelen.\nAls dit probleem zich blijft voordoen, gebruik dan de onderstaande helpknop om contact op te nemen met support!
+mainBuilding_demolishBuildings_notAvailable;Hoofdgebouw op niveau {{INT}} nodig om gebouwen te slopen.
+mainBuilding_demolishBuildings_demolishing;Sloopt <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> tot <b><color={{colorValue|TextColor}}>niveau {{buildingLevel}}</color></b> in {{timestamp|Countdown}}.
+demolishBuildingPopup_demolishing;<b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> wordt gesloopt tot <b><color={{colorValue|TextColor}}>level {{buildingLevel}}</color></b>
+allianz.hinweis_text_NoConfederacy;Het is diplomatieke etiquette om met een andere alliantie te overleggen voordat je een niet-aanvalsverdrag (NAV) aanbiedt.
+regions_canBeSettled;Kan worden bezet?
+regions_regionStatusNoColon;Regio status
+regions_top5AlliancesPopulation;<b>Populatie</b> van top 5 allianties:
+regions_top5AlliancesVillages;<b>Dorpen</b> van top 5 allianties:
+regions_neighboringRegions;Buurregio's
+regions_regionPopulation;Population regio
+regions_contested;Regio wordt betwist
+cams_lobby_gameworld_disabledAndNotSupported;Spelwereld momenteel niet speelbaar via mobiele app.
+demolishBuildingPopup_impossible;Dit gebouw kan niet worden gesloopt.
+city_benefits;Voordelen stad
+city_benefits_threeAdditionalSlots;Drie extra bouwplaatsen
+city_benefits_resourceFieldsLevel12;Grondstofvelden uitbreiden tot niveau 12
+city_benefits_watchTowers;Muur uitbreiden met wachttorens
+city_upgradeToACity;Breid {{villageName}} uit tot een stad.
+city_culturePointsForNext;(volgende over {{culturePoints}} cultuurpunten)
+city_upgradeVillage;Dorp uitbreiden
+city_confirm_upgradeVillage;Uitbreiden tot stad
+city_confirm_header;Wil je {{villageName}} uitbreiden tot een stad?
+city_confirm_description;Een dorp uitbreiden tot een stad kost {{time}} en een van je nederzettingsvakken.
+city_upgrading;{{villageId|VillageLink}} {{text}}
+city_upgraded;{{villageId|VillageLink}} is al een stad.
+combatSimulator_selectTarget;Selecteer doelwit
+mainMenu_goToLobby;Naar lobby
+mainMenu_yourPlayerProfile;Jouw spelersprofiel
+plus.plusAttackWarningText;Binnenkomende aanvallen worden getoond in de dorpslijst. Alleen mobiel: In de dorpsweergave wordt de pijl om de dorpslijst te openen aan de rechterkant weergegeven.
+production.crobBalanceTroopConsumptionAncientPower;Oude kracht-bonus
+filters_region_not_found;Regio bestaat niet
+rallyPoint_troopsOverview_ownTroops_8;Eigen troepen in 
+rallyPoint_troopsOverview_ownTroops_9;Eigen troepen in 
+tradeOffice_merchantsCarryCapacity;Draagcapaciteit handelaar:
+tradeOffice_tradeShipsCarryCapacity;Transportcapaciteit handelsschip:
+buildingActivities_building_48;Troepen genezen
+playerDetails_victorPointsPerDay;{{PERDAY}} /dag
+allianz.numIncomingRaids;{{NUM_ATTACKS}} overval[NUM_ATTACKS>1:len]
+allianz.numIncomingAttacks;{{NUM_ATTACKS}} aanval[NUM_ATTACKS>1:len]
+allianz.MerchantCapacityAndSpeedNew;Handel
+alliance_regionalTabTop5Description;Regio's waarin jouw alliantie tot de top 5 allianties behoort op basis van gebieden onder controle.
+alliance_regionalTabTitle;Regionale top 5
+alliance_regionalTabTop5Empty;- In geen enkele regio genoeg gebieden onder controle -
+alliance_ShowDetails;Toon details
+regions_withFactions_yourFactionHasMoreThan50PercentSecured;Jouw alliantie heeft meer dan {{PERCENT}} van het gebied onder controle.<br><br>Je hebt een schatkamer nodig om de regionale kracht te activeren.
+wall_upgradesInProgress;Uitbreidingen bezig
+extension_upgradeStarted;Uitbreiding gestart!
+extension_constructionList;Bouwlijst
+upgradeLevel;Uitbreidingsniveau
+infoTab_upgradingToLevelForExtension;{{buildingName}} wordt uitgebreid tot niveau {{level}}:
+infoTab_genericCurrentlyForExtension;Huidige {{buildingName}}bonus inclusief {{extensionName}}:
+infoTab_genericAtLevelForExtension;Op niveau {{a}} met {{extensionName}} niveau {{b}}:
+ratioValuesNumeratorBold;<b>{{a}}</b>/{{b}}
+infoTab_productionCosts_title;Productiekosten
+harbour_shipsInConstruction;Schepen in aanbouw
+unitInfo_troopsCarriage;tot <b>{{INT}}</b> troepen
+unitInfo_velocityRaid;Voor overvallen:
+city_benefits_resourceFieldsLevel12inCapital;Breid grondstofvelden uit tot niveau 12, maar je kunt ze nog verder uitbreiden in je hoofdstad.
+infoTab_genericCurrentlyMoreExplicit;Huidige {{buildingName}}bonus:
+merchant_merchantOverview_noIncomingDeliveries;- Er zijn geen inkomende leveringen -
+merchant_merchantOverview_noOutgoingDeliveries;- Er zijn geen uitgaande leveringen -
+merchant_merchantOverview_incoming;Inkomend ({{INT}})
+merchant_merchantOverview_outgoing;Uitgaand ({{INT}})
+achievementQuests.achQuest_03_Territory_step_01_description;Stuur legers om een Natariaans dorp aan te vallen of te overvallen. Deze opdracht wordt voltooid zodra je leger aankomt bij het Natariaanse dorp, zelfs als je troepen gedood worden in de strijd.<br><br>De punten voor deze opdracht kunnen {{NUMBER_OF_TASKS_PER_DAY}} keer per dag worden bereikt.\n
+allianz.MerchantCapacityTitle_Harbours;Capaciteits- en snelheidsbonus handelaars/schepen
+market_tradeRoutes_invalidTarget_Territory;Handelsroutes kunnen alleen verzonden worden naar je eigen dorpen.
+market_selectResources;Selecteer grondstoffen
+market_selectResources_requiredTradeShips;Vereiste handelsschepen
+market_resourcesWillBeSendByTradeShip;Grondstoffen worden per handelsschip verzonden.
+manual.gid38_Territory;Het grote pakhuis heeft 3 keer meer opslagcapaciteit dan een normaal pakhuis.<br><br>Dit gebouw kan alleen worden gebouwd met de oude kracht opslagmeesterplan.
+manual.gid39_Territory;De Grote Graansilo heeft 3 keer meer opslag mogelijkheden dan een normaal pakhuis.<br><br>Dit gebouw kan alleen worden gebouwd met de oude kracht opslagmeesterplan.\n
+harbour_noAvailableShips;Er liggen momenteel geen schepen in deze haven.
+harbour_destroy_title;Schepen vernietigen
+harbour_destroy_desc_title;Selecteer een type schip en hoeveel je er wil vernietigen.
+harbour_destroy_desc;Alleen schepen die hier momenteel aangemeerd zijn kunnen vernietigd worden en je ontvangt er geen grondstoffen voor.
+harbour_destroy_timeNotice;Schepen worden onmiddellijk vernietigd.
+harbour_destroy_selectedTotalAmount;Geselecteerde schepen: <b>{{AMOUNT}}</b>
+harbour_destroy_shipSelectTitle;<b>{{ShipID|TranslateSuffixFor|gid49.type_t}}</b> (schepen gestationeerd: <b>{{Amount}}</b>)
+extension_fullyExtended;{{NAME}} zijn volledig uitgebouwd.
+extension_willBeFullyExtended;{{NAME}} worden volledig uitgebouwd.
+layout.directLinkMarketplaceTrader;Stilstaande handelaren: {{INT}}/{{INT2}}
+UnitProduction_ViewBuildingList;Gebouwenlijst bekijken
+raidList_useRaidShipsInfo;Overvalschepen worden automatisch gebruikt als ze beschikbaar zijn. Als je geen overvalschepen meer hebt, reizen je troepen normaal.
+buildingActivities_maxReached;Max. bereikt bedrag
+buildingActivities_building_49;Schepen in productie
+buildingActivities_buildingAdditional_48;Geen gewonde troepen
+residence_expansion_villagesRatio;Dorpen: {{COUNT}}/{{MAX}}
+residence_expansion_slotFree;Vak niet in gebruik.
+residence_expansion_slotPrerequisites;Benodigdheden <b>{{BuildingID|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>level {{Level}}</color></b>
+residence_expansion_culturePointsPerDay;Cultuurpuntenproductie per dag
+search_region;Zoeken in regio
+search_select_region;Selecteer regio
+statistiken.progressionStepTitle_start_achieved;Server gestart op {{VALUE}}
+statistiken.progressionStepTitle_serverEnd_locked;Server eindigt op {{VALUE}}
+filters_artefact_not_found;Artefact bestaat niet
+sendTroops_settlersChangeTribe;Voor de eerste {{INT}} nederzettingen kun je kiezen van welke stam het dorp wordt. Kies zorgvuldig.
+gid17.nextTradingRoute;De volgende handelsroute begint om <b>{{HOUR}}</b> en heeft <b>{{MERCHANTS}}</b> [MERCHANTS>1:handelaren][MERCHANTS=1:handelaar] nodig.
+gid17.nextTradingRouteWithShips;De volgende handelsroute begint om <b>{{HOUR}}</b> en heeft <b>{{SHIPS}}</b> [SHIPS>1:handelsschepen][SHIPS=1:handelsschip] nodig.
+market_tradeRoutes_merchants;[merchants>1:{{merchants}} kooplieden][merchants=1:{{merchants}} kooplieden]
+market_tradeRoutes_tradeShips;[tradeShips>1:{{tradeShips}} handelsschepen][tradeShips=1:{{tradeShips}} handelsschip]
+market_tradeRoutes_repeats;{{repeats}} x
+market_tradeRoutes_usesShip;Gebruikt schepen
+troopsCheckout_shipUseInfo;{{Distance}} velden | {{ShipID|Bold}} | Bespaar {{duration|Bold}} uur
+troopInfoPopup_shipsTitle;Schepen gestationeerd in dorp
+language_nl-NL;Nederlands
+cropfinder_cropperType;Type cropper:
+valueInBrackets;({{VALUE}})
+residence_settlementSlotsUsed;Gebruikte nederzettingsruimten
+residence_settlementCPNeededForNextSlot;Cultuurpunten nodig voor volgende nederzettingsruimte:
+gid27.ancient_power_detail_;{{INT}}
+artefact_effect_value;Effect: <b>{{EFFECT}}</b>
+ancientPower_overview;Regionale krachten
+ancientPower_no_ancientPower;Geen oude kracht op deze server
+ancientPower_tip_large;Grote oude krachten vereisen schatkamerniveau <b>20</b> en hebben invloed op <b>al je dorpen</b>
+ancientPower_tip_small;Kleine oude krachten vereisen schatkamerniveau <b>10</b> en hebben alleen invloed op het <b>dorp</b> waar ze geactiveerd worden
+ancientPower_tip_nearby;Oude krachten in het gebied rond {{villagenamelong|Bold}}
+ancientPower_stored_title;Regionale krachten veiliggesteld door alliantie
+ancientPower_stored_noContent;Geen regio's veiliggesteld door je alliantie
+ancientPower_stored_nextFree;Volgende gratis activering beschikbaar over: [isFree=0:<color={{colorValue|TextColor}}>]{{timeStamp|Countdown?Bold}}[isFree=0:</color>]
+ancientPower_stored_notActivatable;Geen oude kracht om te activeren.
+ancientPower_stored_activated;Oude kracht geactiveerd.
+ancientPower_stored_alreadyActive_account;Je hebt al één oude kracht die van invloed is op alle dorpen als deze actief is.
+ancientPower_stored_alreadyActive_village;Je hebt al één oude kracht die van invloed is op dit dorp als deze actief is.
+ancientPower_stored_alreadyActive;Deze oude kracht is al geactiveerd.
+filters_ancientPower_not_found;Oude kracht bestaat niet
+regions_withFactions_yourAllianceHasMoreThan50PercentSecured;Jouw alliantie heeft meer dan {{PERCENT}}% van het gebied onder controle.<br><br>Je hebt een schatkamer nodig om de regionale kracht te activeren.
+language_en-NT;Dev-taal
+settings_notNow;Niet nu
+settings_dontAskAgain;Vraag het niet nog een keer.
+cams_lobby_gameworld_lastPlayedTime;{{TIME}}u
+cams_settings_DirectLoginTitle;Direct inloggen op spelwereld
+cams_settings_DirectLoginInfo;Sla de spelwereldselectie in de Legends-lobby over en log bij het openen van de app direct in op je laatst gespeelde spelwereld.
+cams_settings_DirectLoginActive;Direct inloggen is ingeschakeld
+cams_settings_DirectLoginInactive;Direct inloggen is uitgeschakeld
+cams_directLoginPopUp_Info;Wil je direct bij het starten van de app inloggen op je spelwereld?
+cams_directLoginPopUp_youCanChange;Je kunt je keuze op elk moment wijzigen in de lobby-instellingen.
+cams_directLoginPopUp_Accept;Ja, log me direct in
+language_ro-RO;Roemeens
+language_hu-HU;Hongaars
+language_ar-AE;Arabisch
+autoLoginFailed.;Automatisch aanmelden mislukt.
+needInternetToPlay;Je hebt een internetverbinding nodig om te spelen. Controleer je internetverbinding en probeer het opnieuw.
+mapCellInfoWindow_removeFromLists;Verwijderen van alle lijsten
+removeFromListsPopup_Title;Wil je {{TARGETNAME}} uit {{INT}} farmlijsten verwijderen?
+removeFromListsPopup_Description;Je kunt het doelwit later weer afzonderlijk toevoegen aan de farmlijsten.
+removeFromListsPopup_ConfirmButton;Doelwit verwijderen
+social_continueWith;Of ga verder met:
+social_loginWith;Of log in met:
+social_backToRegistration;Terug naar registratie
+social_createAccountTitle;Legends-lobbyaccount maken
+social_errorTitle_NoEmailProvided;E-mailtoestemming ontbreekt
+social_errorMsg_NoEmailProvided;Voordat je Travian: Legends kunt spelen, hebben we jouw <b>toestemming nodig om toegang te krijgen tot je e-mailadres.</b>
+social_errorInfo_NoEmailProvided;Probeer het opnieuw met de juiste toestemmingsinstellingen of probeer een andere registratiemethode.
+social_errorTitle_AlreadyExists;E-mailadres wordt al gebruikt
+social_errorMsg_AlreadyExists;Het opgegeven e-mailadres wordt al gebruikt voor een Travian: Legends-lobbyaccount.
+social_errorInfo_AlreadyExists;Gebruik het e-mailadres dat aan je account gekoppeld is om in te loggen.
+social_acceptTOS;Door op 'Bevestigen' te klikken, accepteer je de <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">Algemene voorwaarden</link></style> en bevestig je dat je op de hoogte bent van de <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">Informatie over het herroepingsrecht</link></style> en het <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">Privacybeleid</link></style>.
+linkNotWorking;Link werkt niet
+linkNotWorkingDescription;Deze link lijkt op dit moment niet te werken in de Travian: Legends-app. Misschien werkt deze wel in je internetbrowser.
+openLinkInBrowser;Link openen in browser
+settings_language_useArabicNumerals_activated;Het gebruik van Oost-Arabische cijfers is ingeschakeld
+settings_language_useArabicNumerals_deactivated;Het gebruik van Oost-Arabische cijfers is uitgeschakeld
+artefact_inventory_active_empty;Geen artefacten geactiveerd
+social_errorTitle_Unknown;onbekende fout
+social_errorMsg_Unknown;Er is een onbekende fout opgetreden. Probeer het opnieuw.
+loadingScreen_text_01;Even geduld, je held kijkt nog in de spiegel.
+loadingScreen_text_02;De graansilo loopt over. Dorpelingen stoppen hun zakken nu vol graan.
+loadingScreen_text_03;De ambassade geeft een feestje - alleen voor diplomaten.
+loadingScreen_text_04;Het verzamelpunt is nu een picknickplaats, de troepen genieten van broodjes.
+loadingScreen_text_05;De smid smeedt een zwaard... van spaghetti.
+loadingScreen_text_06;Bouwmeesters lezen de blauwdruk... ondersteboven.
+loadingScreen_text_07;De natars zijn lid geworden van de boekenclub in het dorp. Niemand weet hoe je oude runen moet lezen.
+loadingScreen_text_08;Verkenners tellen vijandelijke troepen... maar hebben te weinig vingers.
+loadingScreen_text_09;Het wereldwonder wordt aangevallen door duiven. Stuur de schoonmaakploeg.
+loadingScreen_text_10;De slavenmilitie eist een vakbond. Zet je schrap voor stakingen.
+loadingScreen_text_11;Troepen weigeren aan te vallen totdat iemand de gevechtssimulator uitlegt.
+loadingScreen_text_12;Dorpelingen zijn gestopt met werken om twee kippen te zien vechten.
+loadingScreen_text_13;Je katapulten maken ruzie over welk gebouw als eerste geraakt moet worden.
+loadingScreen_text_14;Even geduld, de held nam de trein in plaats van een paard.
+loadingScreen_text_15;De schuilplaats verbergt niet alleen grondstoffen, maar ook dorpsroddels.
+loadingScreen_text_16;De barakken organiseren een talentenjacht, de training uitgesteld.
+loadingScreen_text_17;Je muur is bijna klaar. We wachten tot de verf droog is.
+loadingScreen_text_18;De legionairs eigen een koffiepauze voor de mars begint.
+loadingScreen_text_19;Galliërs leggen de Romeinen uit wat een palissade is. Ze zijn al 3 uur bezig.
+loadingScreen_text_20;Koopmannen omkopen om leveren te versnellen.
+loadingScreen_text_21;Je held volgt een cursus paardrijden. Dat kan nog wel even duren.
+loadingScreen_text_22;Kooplieden zitten vast achter een trage os.
+loadingScreen_text_23;De leiders van de alliantie stellen een gevechtsstrategie op... met vingerverf.
+loadingScreen_text_24;De graansilo zit vol koekjes. Grondstoffenbeheer op zijn best.
+loadingScreen_text_25;Verkenners onderbroken, er zit iets in Heimdalls Oog.
+changeAccountNameSubtitle;Gebruikersnaam en/of tag wijzigen.
+changeAccountNamePleaseNote;Houd er rekening mee dat je na het wijzigen van je accountnaam {{DAYS}} [DAYS>1:days][DAYS=1:day] moet wachten voordat je de naam opnieuw kunt wijzigen.
+changeAccountNameWaiting;Je moet wachten tot je je naam weer kunt veranderen:
+changeAccountNameUpdated;Accountnaam bijgewerkt
+changeAccountNameUpdatedSubtitle;Je accountnaam is veranderd in: <b>{{playerName}}</b>
+alliance_top10Title;Interne top 10 alliantie
+gameworldCalendarNoGameworld;Geen aanstaande speelwerelden gevonden. \nMogelijk worden ze nog geladen of zijn ze nog niet gepland.
+gameworldCalendar_title;Speelwereldkalender
+valueWithModifierBefore;{{value|Round|2}}x
+goldShop_purchaseCanceled;Aankoop geannuleerd!
+goldShop_pendingRestored;Je vorige aankoop is hersteld.
+hero_consumablePopup_healthByOintment;Gezondheid per zalf:
+unknown;?
+serverSelection_gameworldSpeed_short;{{INT}}x
+gameworldCalendarDetails_title;Details speelwereld
+gameworldCalendarDetails_shareLink;Link speelwereld delen
+gameWorldEndCondition;Eindstatus speelwereld
+gameWorldEndCondition_WonderOfTheWorld;Wereldwonder {{Level}}
+gameWorldEndCondition_VictoryPoints;Overwinningspunten
+gameWorldRestriction_InvitationCode;Deze spelwereld is alleen toegankelijk voor spelers met een speciale uitnodigingscode.
+gameWorldRestriction_MobilePlayers;Deze speelwereld is alleen toegankelijk voor mobiele spelers.
+gameWorldSpecial;Dit is een speciale speelwereld die mogelijk tijdelijk beschikbaar is en andere functies heeft dan de klassieke speelwerelden.
+gameWorldUndefinedDetails;Nog niet alle details van de spelwereld zijn bepaald. Zodra ze zijn bijgewerkt, krijg je een melding in je lobby.
+bonusValueWithPercentNoSpace;+{{value}}%
+startDate;Startdatum
+startTime;Start tijd (uur)
+UTC+1;(UTC+1)
+goldShop_GoldPromotion;Goudpromotie
+auction_FeePopupTitle;Veilingkosten
+auction_FeePopupText;Je betaalt {{value}}% aan kosten bij verkopen in het veilinghuis. Je uitbetaling is de verkoopprijs min de veilingkosten.
+auction_FeePopupExample;Voorbeeldberekening
+auction_FeePopupSalePrice;Verkoopprijs
+auction_FeePopupFee;Veilingkosten ({{value}}%)
+auction_FeePopupPayout;Uitbetaling
+auction_sellHouseFeeInfo;Je uitbetaling is de verkoopprijs min de veilingkosten van {{value}}%.
+gold_action_finishImmediately;Direct klaarzetten
+mapCellInfoWindow_villageReports;Dorpsrapporten tonen
+hero_crafting_title_refine;Uitrusting verfijnen
+hero_crafting_title_smelt;Uitrusting smelten
+hero_crafting_title_forge;Uitrusting smeden
+hero_crafting_title_reforge;Uitrusting hersmeden
+hero_crafting_action_refine;Verfijnen
+hero_crafting_action_smelt;Smelten
+hero_crafting_action_forge;Smeden
+hero_crafting_action_takeMaterials;({{INT}}/{{MAX}}) materialen nemen
+hero_crafting_action_takeAllMaterials;Materialen nemen
+hero_crafting_action_reforge;Hersmeden
+hero_crafting_action_take;Nemen
+hero_crafting_action_pick;Kies item
+hero_crafting_action_equip;Uitrusten
+hero_crafting_action_buy_material;Materiaal kopen
+hero_crafting_action_buy_item;Item kopen
+hero_crafting_action_craft_material;Materiaal smelten
+hero_crafting_action_moveToInventory;Naar inventaris
+hero_crafting_action_select_item;Selecteer
+hero_crafting_action_remove_item;Verwijderen
+hero_crafting_action_error_equipment;Item moet heldenuitrusting zijn.
+hero_crafting_action_error_rarity;Items moeten dezelfde zeldzaamheid hebben.
+hero_crafting_action_error_category;Items moeten van dezelfde uitrustingscategorie zijn.
+hero_crafting_action_error_id;Items moeten identiek zijn.
+hero_crafting_action_error_missingItem;Een of meer van de items die je hebt geselecteerd zijn niet meer beschikbaar.
+hero_crafting_refine_tip;Epische heldenitem kunnen worden verfijnd met elk ander episch heldenitem van dezelfde voorwerpcategorie.
+hero_crafting_refine_tip_error;Je hebt geen heldenitem om te verfijnen. Vind items op avonturen of koop ze in het veilinghuis en verbeter ze door ze te verfijnen.
+hero_crafting_smelt_info;Neem nu {{INT}} materiaal of wacht en krijg er {{MAX}}.
+hero_crafting_reforge_text;Hersmeed uitrusting om een ander item te krijgen, mogelijk van een andere zeldzaamheid en kwaliteit.\nNa het hersmeden kun je kiezen welk item je wilt nemen of opnieuw wilt hersmeden.\nLet op: Na het hersmeden zijn de items van elke volgende hersmeedstap weg en kunnen het niet meer terugveranderd worden.
+inventoryItem_quality_title;Kwaliteit
+inventoryItem_rarity_title;Zeldzaamheid
+inventoryItem_rarity_quality_title;Zeldzaamheid en kwaliteit
+inventoryItem_rarity_common;Gewoon
+inventoryItem_rarity_uncommon;Ongewoon
+inventoryItem_rarity_rare;Zeldzaam
+inventoryItem_rarity_epic;Episch
+inventoryItem_rarity_legendary;Legendarisch
+search_for_village;Dorp zoeken
+search_for_player;Speler zoeken
+villageList_EditMode;Bewerkingsmodus
+villageList_MaxGroupAmount;Max. aantal dorpsgroepen bereikt.
+hero_crafting_action_error_material;Item moet een materiaal zijn.
+villageList_ReorderError;Ongeldig doel
+textMatchingInput_Title;Bevestig door '{{WORD}}' te typen.
+hero_inventory_category_empty;- Geen items in deze categorie -
+hero_crafting_action_refine_success;Uitrusting verfijnd
+hero_crafting_action_smelt_success;Uitrusting gesmolten
+hero_crafting_action_forge_success;Uitrusting gesmeed
+hero_crafting_result_item_equipped;Item uitgerust
+hero_crafting_result_item_taken;Item verplaatst naar inventaris
+hero_crafting_result_material_taken;Materiaal verplaatst naar inventaris
+hero_crafting_action_error_quality;Items moeten van dezelfde kwaliteit zijn.
+hero_crafting_action_error_epic;Moet nog een episch item zijn van dezelfde categorie en kwaliteit.
+inventoryItem_rarity_none;Geen zeldzaamheid
+dailyQuests_rewardOverview_short;Beloningsoverzicht
+avatar_confirmation_title_delete;Avatar verwijderen
+avatar_confirmation_header_delete;Wil je je avatar verwijderen?
+avatar_confirmation_infoText_delete;Nadat het verwijderingsproces gestart is, duurt het <b>3 dagen</b> om je avatar te verwijderen.\nEen avatar die verwijderd wordt, heeft geen toegang meer tot veilingen of het wisselkantoor!\nJe kunt het verwijderingsproces hier op elk moment annuleren.
+avatar_confirmation_requiredWord_delete;verwijderen
+avatar_confirmation_title_respawn;Avatar terugbrengen
+avatar_confirmation_header_respawn;Wil je je avatar terugbrengen?
+avatar_confirmation_infoText_respawn;Dit verwijdert alle voortgang die je tot nu toe hebt gemaakt en plaatst je startdorp op een nieuwe locatie op de kaart.\n\nAl het gekochte goud wordt automatisch overgezet.
+avatar_confirmation_requiredWord_respawn;terugbrengen
+settings_app_title;Alle speelwerelden
+settings_app_Animations_title;Animaties
+settings_app_Animations_description;Kies welke animaties je in de app wilt zien.
+settings_app_Animations_activated;Wolkenanimatie voor dorps-/grondstoffenoverzicht is geactiveerd
+settings_app_Animations_deactivated;Wolkenanimatie voor dorps-/grondstoffenoverzicht is gedeactiveerd
+settings_app_NightMode_title;Nachtmodus
+settings_app_NightMode_description;Je dorpelingen hebben de fakkels aangestoken en de vuren van de ovens knetteren onder het zwakke licht van de sterren aan de nachtelijke hemel.
+settings_app_NightMode_activated;Nachtmodus is geactiveerd
+settings_app_NightMode_deactivated;Nachtmodus is gedeactiveerd
+settings_app_WinterMode_title;Wintermodus
+settings_app_WinterMode_description;Sneeuw valt zachtjes en hult het dorp in een bedrieglijke stilte, waarin elk geluid lijkt op te lossen in de ijzige lucht.
+settings_app_WinterMode_activated;Wintermodus is geactiveerd
+settings_app_WinterMode_deactivated;Wintermodus is gedeactiveerd
+settings_app_VillagePanning_title;Beweging dorpen/grondstoffenvelden
+settings_app_VillagePanning_description;Je kunt door je dorpsoverzicht en de grondstoffenvelden bewegen.
+settings_app_VillagePanning_activated;Beweging is geactiveerd
+settings_app_VillagePanning_deactivated;Beweging is gedeactiveerd
+settings_app_PushNotifications_title;Pushmeldingen
+settings_app_PushNotifications_description;Blijf op de hoogte van algemeen app- en game-gerelateerd nieuws met pushmeldingen.
+settings_app_PushNotifications_activated;De melding voor het starten van de spelwereld is geactiveerd
+settings_app_PushNotifications_deactivated;De melding voor het starten van de spelwereld is gedeactiveerd
+settings_app_EnergySaving_title;Energiebesparende modus
+settings_app_EnergySaving_description;Bespaar de batterij van je apparaat met een lagere framesnelheid.\nHet activeren van de energiebesparende modus kan leiden tot enige visuele vertraging tijdens het gebruik van de app.
+settings_app_EnergySaving_activated;Energiebesparende modus is geactiveerd
+settings_app_EnergySaving_deactivated;Energiebesparende modus is gedeactiveerd
+settings_app_DataSaving_title;Besparingsmodus mobiele gegevens
+settings_app_DataSaving_description;Bespaar mobiele gegevens/bandbreedte door minder serververzoeken te doen.\nHet activeren van de besparingsmodus voor mobiele gegevens kan leiden tot een langere verversingsinterval voor gegevens in de game.
+settings_app_DataSaving_activated;Besparingsmodus mobiele gegevens geactiveerd
+settings_app_DataSaving_deactivated;Besparingsmodus mobiele gegevens gedeactiveerd
+auction_FilterType;Type item
+auction_bidTooLow;Bod te laag.
+villageList_Delete_Title;Dorpsgroep verwijderen
+villageList_Delete_Button;Groep verwijderen
+villageList_Delete_Description;Wil je deze dorpsgroep verwijderen?
+villageList_Delete_Description2;Dit heeft geen effect op de dorpen in deze groep.
+gameworldNews_title;Nieuws en updates
+moreInformation;Meer informatie
+remainingGold;Resterende goud: {{goldIcon|Sprite}} {{goldAmount}}
+messages_addEmoji_title;Emoji's toevoegen
+messages_select_emojis;Selecteer emoji's
+cams_resend_email_wait_error;Wacht even tot je weer een e-mail kunt versturen.
+cams_settings_accountDeletion_infoGold;Na verwijdering van jouw avatar, ontvang je een e-mail waarin uitgelegd wordt hoe je je resterende goud naar een andere avatar kunt sturen.\n<b>Let op:</b>  Je resterende goud kan alleen overgezet worden naar bepaalde spelwerelden.
+cams_changeMail_title;E-mailadres wijzigen
+cams_changeMail_description;Om je e-mailadres te wijzigen, moet je toegang hebben tot het huidige en het nieuwe e-mailadres.
+cams_changeMail_socialHint;Het wijzigen van je e-mailadres heeft geen invloed op  je aanmelding met Facebook, Google of Apple.
+cams_changeMail_cantAccess;Geen toegang tot je e-mailadres?
+cams_changeMail_sentVerification;We hebben een verificatiemail gestuurd naar: {{mail}}
+cams_changeMail_checkInbox;Controleer je inbox en volg de instructies om door te gaan.
+cams_changeMail_verificationCode;E-mailverificatiecode:
+cams_changeMail_verifyButton;E-mailadres verifiëren
+cams_changeMail_enterNew_description;Voer hieronder je nieuwe e-mailadres in. We sturen een verificatiemail naar dit adres.
+cams_changeMail_enterNew_description2;Volg de instructies in de e-mail om de wijziging te voltooien.
+cams_changeMail_enterNew_input;Voer je nieuwe e-mailadres in:
+cams_changeMail_enterNew_input_placeholder;Nieuwe e-mailadres
+cams_changeMail_enterNew_button;E-mailadres wijzigen
+cams_changeMail_done_title;E-mailadres bijgewerkt
+cams_changeMail_done_description1;Je hebt je e-mailadres gewijzigd in {{mail}}
+cams_changeMail_done_description2;Je wordt automatisch uitgelogd en doorgestuurd naar de inlogpagina. Gebruik je nieuwe e-mailadres om in te loggen.
+cams_changeMail_done_redirecting;Doorverwijzen naar inloggen {{time}}...
+bonusValue;+ {{value}}
+value;{{value}}
+ratioValues_Colon;{{a}}:{{b}}
+genericValue;{{VALUE}}
+enterAmount;Geef aantal op
+symbol_minus;-
+applyFilter;Filter toepassen
+resetFilter;Filter resetten
+rallyPoint_troopsOverview_outgoingMission_50_heroCentricAdventure;Aan het verkennen op avontuur
+rallyPoint_troopsOverview_returningFromAdventure_heroCentricAdventure;Keert terug van avontuur
+silverExchangePopup_AvailableSilver;Zilver beschikbaar
+silverExchangePopup_SilverStatus;Er zit op dit moment {{AMOUNT|LongNumber}} van je zilver vast in actieve veilingen.
+silverExchangePopup_SilverError;Je hebt niet genoeg zilver voor deze actie.
+silverExchangePopup_GoldError;Je hebt niet genoeg goud voor deze actie.
+hero.status50_heroCentricAdventure;Je held is op weg naar een avontuur.
+inventoryItem_quality_1;Kwaliteit 1
+inventoryItem_quality_2;Kwaliteit 2
+inventoryItem_quality_3;Kwaliteit 3
+inventoryItem_rarity_common_headGear;Gewone hoofdbedekking
+inventoryItem_rarity_uncommon_headGear;Ongewone hoofdbedekking
+inventoryItem_rarity_rare_headGear;Zeldzame hoofdbedekking
+inventoryItem_rarity_epic_headGear;Epische hoofdbedekking
+inventoryItem_rarity_legendary_headGear;Legendarische hoofdbedekking
+inventoryItem_rarity_common_utility;Gewoon gereedschap
+inventoryItem_rarity_uncommon_utility;Ongewoon gereedschap
+inventoryItem_rarity_rare_utility;Zeldzaam gereedschap
+inventoryItem_rarity_epic_utility;Episch gereedschap
+inventoryItem_rarity_legendary_utility;Legendarisch gereedschap
+inventoryItem_rarity_common_weapon;Gewoon wapen
+inventoryItem_rarity_uncommon_weapon;Ongewoon wapen
+inventoryItem_rarity_rare_weapon;Zeldzaam wapen
+inventoryItem_rarity_epic_weapon;Episch wapen
+inventoryItem_rarity_legendary_weapon;Legendarisch wapen
+inventoryItem_rarity_common_armour;Gewone bepantsering
+inventoryItem_rarity_uncommon_armour;Ongewone bepantsering
+inventoryItem_rarity_rare_armour;Zeldzame bepantsering
+inventoryItem_rarity_epic_armour;Epische bepantsering
+inventoryItem_rarity_legendary_armour;Legendarische bepantsering
+inventoryItem_rarity_common_boots;Gewone laarzen
+inventoryItem_rarity_uncommon_boots;Ongewone laarzen
+inventoryItem_rarity_rare_boots;Zeldzame laarzen
+inventoryItem_rarity_epic_boots;Epische laarzen
+inventoryItem_rarity_legendary_boots;Legendarische laarzen
+inventoryItem_rarity_common_consumable;Gebruiksartikel
+inventoryItem_rarity_uncommon_consumable;Ongewoon verbruiksartikel
+inventoryItem_rarity_rare_consumable;Zeldzaam verbruiksartikel
+inventoryItem_rarity_epic_consumable;Episch verbruiksartikel
+inventoryItem_rarity_common_horse;Paard
+inventoryItem_rarity_uncommon_horse;Ongewoon paard
+inventoryItem_rarity_rare_horse;Zeldzaam paard
+inventoryItem_rarity_epic_horse;Episch Paard
+inventoryItem_rarity_legendary_horse;Legendarisch paard
+inventoryItem_rarity_common_material;Gebruiksartikel
+inventoryItem_rarity_uncommon_material;Ongewoon verbruiksartikel
+inventoryItem_rarity_rare_material;Zeldzaam verbruiksartikel
+inventoryItem_rarity_epic_material;Episch verbruiksartikel
+search_item;Item zoeken
+search_select_item;Item selecteren
+avatar_confirmation_infoText_delete_goldBough;Nadat het verwijderingsproces gestart is, duurt het <b>minimaal drie dagen</b> om je avatar te verwijderen aangezien deze avatar onlangs gebruikt is om goud te kopen.\nEen avatar die verwijderd wordt, heeft geen toegang meer tot veilingen of het wisselkantoor!\nJe kunt het verwijderingsproces hier op elk moment annuleren.
+combatSimulator_addItemEffect;Itemeffect toevoegen
+combatSimulator_editItemEffect;Itemeffect bewerken
+addItemEffect_title;Heldenitemeffect toevoegen
+addItemEffect_description;Voeg afzonderlijke effecten toe om individuele bonussen van alle mogelijke heldenitems weer te geven.
+addItemEffect_importHeroEquipment;Eigen heldenuitrusting importeren
+addItemEffect_importHeroEquipment_success;Heldenitems geïmporteerd
+addItemEffect_selectEffect;Selecteer een itemeffect
+addItemEffect_selectItem;Selecteer een item
+addItemEffect_selectMagnitude;Selecteer kracht
+addItemEffect_selectUnit;Eenheid selecteren
+addItemEffect_missingMagnitude;Magnitude ontbreekt
+addItemEffect_effect_2;Minder schade
+addItemEffect_effect_6;+ extra gezondheidspunten per dag
+addItemEffect_effect_12;+ meer aanval en verdediging voor een bepaalde eenheid
+addItemEffect_effect_13;+ meer vechtsterkte
+cams_newMail_title;Nieuwe e-mailadres
+cams_verifyNewMail_title;Nieuwe e-mailadres verifiëren
+cams_verifyCurrentMail_title;Huidige e-mailadres verifiëren
+auction_notEnoughSilver;Je hebt niet genoeg zilver.
+auction_itemGroups;Itemgroepen
+auction_unknown;?
+auction_sortingOption_itemName;Itemnaam
+auction_sortingOption_bidCount;Aantal biedingen
+auction_sortingOption_finishedAt;Voltooid over
+auction_sortingOption_highestBid;Hoogste bod
+auction_sortingOption_highestBidder_player;Hoogste bieder (speler)
+auction_sortingOption_highestBidder_alliance;Hoogste bieder (alliantie)
+auction_sortingOption_auctionAmount;Aantal huidige veilingen
+auction_sortingOption_nextFinishedAt;Volgende voltooid over
+auction_sellingPrice;Verkoopprijs
+auction_sellingPrice_lowest;Laagste
+auction_sellingPrice_average;Gemiddelde
+auction_sellingPrice_highest;Hoogste
+auction_result_won;<color={{colorValue|TextColor}}>Gewonnen</color>
+auction_result_lost;<color={{colorValue|TextColor}}>Overboden</color>
+auction_sellingPrice_averagePrice;Gemiddelde prijs
+auction_bidProcessTitle;Biedproces
+auction_bidProcessDescription1;Je kunt bieden op items waarin je geïnteresseerd bent.
+auction_bidProcessDescription2;Je moet ten minste het minimumbedrag bieden om het huidige bod te overbieden.
+auction_maxBidFeatureTitle;Maximumbod-functie
+auction_maxBidFeatureDescription1;Je kunt je maximale budget voor een item invoeren.
+auction_maxBidFeatureDescription2;Het systeem zal automatisch voor je bieden tot het door jou ingestelde maximum.
+auction_maxBidFeatureDescription3;Je bod wordt alleen verhoogd als dat nodig is om de hoogste bieder te blijven.
+auction_maxBidFeatureDescription4;Het bieden gaat door totdat je wint of overboden wordt boven je maximale budget.
+auction_auctionDurationTitle;Veilingduur
+auction_auctionDurationDescription1;Als de resterende veilingtijd korter is dan {{DURATION|Duration}} wordt de duur verlengd tot {{DURATION|Duration}} als er een nieuwe hoogste bieder is.
+auction_auctionWinningTitle;Winnen
+auction_auctionWinningDescription1;De hoogste bieder aan het einde van de veiling wint het item.
+auction_auctionFinished;De veiling is al afgelopen.
+auction_wasJustOutbid;Jij bent op dit moment niet de hoogste bieder.
+auction_currentHighestBidder;Huidige hoogste bieder
+auction_currentHighestBid;Huidige hoogste bod
+auction_yourMaximumBid;Jouw maximale bod
+auction_showFinished;Voltooide tonen
+auction_deleteAllFinished;Alle voltooide verwijderen
+auction_startedAt;Begonnen: {{TIME|DateTime}} | Lopend
+auction_canceled;Geannuleerd
+auction_finished;Klaar
+auction_finishedAt;Voltooid: {{TIME|DateTime}}
+auction_itemAuction_title;Itemveiling
+auction_itemAuction_info;Klik op een item in je inventaris om een veiling te starten. Andere spelers kunnen erop bieden. Een veiling kan tot {{INT}} uur duren.
+auction_whatHappensNext_title;Wat gebeurt er nu?
+auction_whatHappensNext_info1;De hoogste bieder koopt het item automatisch zodra de tijd om is.
+auction_whatHappensNext_info2;Je ontvangt zilver nadat het item verkocht is.
+auction_whatHappensNext_info3;Je krijgt een bericht als je item verkocht is.
+auction_error_cannotSell;Dit item kan niet in het veilinghuis verkocht worden.
+auction_error_onlyHorse;Je kunt niet je enige paard verkopen.
+auction_sellItem;Verkoop item
+auction_sales;Verkopen
+auction_selectBatchSize;Partijgrootte selecteren
+auction_selectBatchSize_batches;Itempartijen van <b>{{COUNT}}x</b>
+auction_selectFilter_title;Filter selecteren
+goldShop_upTo;Tot
+shopPromotion_openShop;Winkel openen
+shopPromotion_goldPromotionTitle;Actieve goudpromotie
+shopPromotion_limitedTimeOffer;Tijdelijke aanbieding!
+shopPromotion_goldPromotionDescription;Krijg nu meer goud voor je geld.
+shopPromotion_timeRemaining;Resterende tijd:
+hero_adventures_watchAdReduceDuration_title;Verkort een avontuur met {{AMOUNT}}%
+hero_adventures_watchAdReduceDuration_description;Bekijk een video om het <b>volgende</b> avontuur van je held te verkorten.
+hero_adventures_watchAdIncreaseDanger_title;Vergroot het gevaar van het avontuur tot moeilijk
+hero_adventures_watchAdIncreaseDanger_description;Bekijk een video om het gevaar van <b>het volgende normale</b> avontuur te verhogen naar moeilijk voor meer helden-XP.
+hero_adventures_watchAdActive;Actief voor het volgende avontuur.
+hero_adventures_watchAdActiveNormal;Actief voor het volgende normale avontuur.
+hero_crafting_action_error_nonEpic;Moet een identiek item zijn van dezelfde zeldzaamheid en kwaliteit.
+berichte.adventure_heroCentric;{{VILLAGE_NAME}} gaat op avontuur
+reports_share_notShareable;Dit rapport kan niet gedeeld worden.
+dailyQuests_dailyMaxReached;Dagelijks maximum bereikt
+achievementQuests.DailyQuest_12_description;Open het spel in een browser op je computer en bekijk een video.
+achievementQuests.DailyQuest_12_additionalInformation;www.travian.nl
+achievementQuests.DailyQuest_13_description;Bekijk bijvoorbeeld een video om je gebouwen sneller te upgraden.
+achievementQuests.DailyQuest_13_additionalInformation;Of klik op de knop 'Bekijk de video' om een video direct te bekijken zonder extra voordelen.
+addItemEffect_effect_11;+ meer aanvalskracht tegen Natars
+auction_started;Veiling gestart
+auction_error_batchSize;Niet genoeg items om te verkopen.
+auction_graph_notEnoughData;Niet genoeg gegevens
+auction_emptyInventory;- Je hebt momenteel geen items om te verkopen -
+RelativeTime_2_word;[data>1:{{data}} uur][data<2:{{data}} uur]
+gold_action_halveDuration;Duur halveren
+goldShop_advantage_Value_Duration;<b>+{{VALUE}}%</b> voor <b>[DURATION>6:{{DURATION}} dagen][DURATION<7:{{DURATION|Mult|24}} uren]</b>
+goldShop_advantage_Value_Active;<b>+{{VALUE}}%</b> actief voor:
+goldShop_upgrade;Uitbreiding
+goldShop_advantage_stillActiveFor;Nog steeds actief voor:
+goldShop_advantage_stillActiveFor_Value;{{DURATION}}dagen tot {{TIME}} uur
+goldShop_advantage_videoFeatureOnCD;Je kunt de videobonus maar één keer per dag activeren.\n Dagelijkse reset in: {{TIMESTAMP|Countdown}}
+goldShop_advantage_popup_mainInfoHeader_ProductionboostLumber;Vergroot de <b>houtproductie</b> in al je dorpen.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostClay;Vergroot de <b>kleiproductie</b> in al je dorpen.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostIron;Verhoog<b> ijzerproductie</b> in al je dorpen.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostCrop;Verhoog <b>graanproductie</b> in al je dorpen.
+goldShop_advantage_popup_mainInfoBody;De bonus geldt voor de basisproductie en ook voor alle andere extra bonussen.
+goldShop_advantage_popup_premiumInfo;Je kunt de bonus activeren met goud en een productiebonus van + {{VALUE}}% krijgen.\nJe kunt automatische verlenging activeren voor een permanente bonus.
+goldShop_advantage_popup_videoFeatureInfo;Of je kunt een korte video bekijken en de kleinere productiebonus van +{{VALUE}}% krijgen.\n<b>De videobonus kan maar één keer per dag geactiveerd worden voor elke grondstof.</b>
+goldShop_advantage_popup_upgradeInfo;Je kunt op elk moment upgraden naar de +{{VALUE}}% productiebonus van  voor goud.
+goldShop_advantage_upgradePopupInfo1;Als je de grondstofbonus upgradet, wordt je huidige actieve bonus verwijderd.
+goldShop_advantage_upgradePopupInfo2;Je krijgt +{{VALUE}}% voor [DURATION>6:{{DURATION}} dagen][DURATION<7:{{DURATION|Mult|24}}] in plaats daarvan.
+goldShop_advantage_upgradePopup_title;Upgradebonus
+productionOverview_Bonus;+{{VALUE}}% productie
+hero_adventures_watchAdReduceDuration_toast;Het avontuur is verkort.
+hero_adventures_watchAdIncreaseDanger_toast;Het gevaar van het avontuur is toegenomen.
+hero_consumablePopup_amountEquippedAfter;Uitgerust bedrag na:
+hero_consumablePopup_amountEquippedAfterUse;Uitgerust bedrag gebruik:
+hero_consumablePopup_amountLeftInInventory;Aantal resterende items in inventaris:
+cams_recover_password_cooldown;Wacht even, alsjeblieft{{VALUE}}
+cams_settings_changePassword_cooldown;Wacht even, alsjeblieft{{VALUE}}
+infobox_productionBoost_upgradeButton;Uitbreiding
+infobox_productionBoost_upgradeBonusWithGold;Upgrade en verleng je bonus met Goud om +{{PREMIUM_PERCENTAGE}}% te krijgen voor {{TIME}} uur.
+infobox_productionBoost_expires;{{PERCENTAGE}} {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresLumber;+{{PERCENTAGE}}% houtproductie bonus eindigt over:{{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresClay;+{{PERCENTAGE}}% kleiproductie bonus eindigt over:{{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresIron;+{{PERCENTAGE}}% ijzerproductie bonus eindigt over:{{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresCrop;+{{PERCENTAGE}}% graanproductie bonus eindigt over:{{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expired;{{PERCENTAGE}}
+infobox_productionBoost_expiredLumber;+{{PERCENTAGE}}% houtproductie bonus is <b> verlopen </b>.
+infobox_productionBoost_expiredClay;+{{PERCENTAGE}}% kleiproductie bonus is <b> verlopen </b>.
+infobox_productionBoost_expiredIron;+{{PERCENTAGE}}% ijzerproductie bonus is <b> verlopen </b>.
+infobox_productionBoost_expiredCrop;+{{PERCENTAGE}}% graanproductie bonus is <b> verlopen </b>.
+infobox_levelUpProductionReminder;Verhoog de grondstofproductie in al je dorpen voor goud (+{{PREMIUM_PERCENTAGE}}%) of door een video te bekijken (+{{VIDEO_PERCENTAGE}}%)
+infobox_oneTimeProductionBoostReminder;Je kunt nu je +{{VIDEO_PERCENTAGE}}% grondstofbonus weer activeren door een video te bekijken.
+travelSimulator_title;Reistijdsimulator
+travelSimulator_sourceTribe;Bron stam
+travelSimulator_noLocationSelected;Geen locatie geselecteerd
+travelSimulator_slowestUnit_title;Traagste eenheid
+travelSimulator_slowestUnit_settings;{{UNIT}} Snelheid: {{SPEED}}
+travelSimulator_TournamentSquareLevel_info;(Alleen voor een afstand van >20 tegels)
+travelSimulator_tournamentSquareLevel_option;{{LEVEL}} | {{VALUE}}%
+travelSimulator_unitSelection_title;Selecteteer taagste eenheid
+travelSimulator_unitSelection_unitType;Type eenheid
+travelSimulator_unitSelection_unitSpeed;Snelheid eenheid
+travelSimulator_unitSelection_selectedUnitSpeed;Snelheid: {{SPEED}}
+travelSimulator_calculation_land;<b>Land:</b> {{VALUE}}
+travelSimulator_calculation_sea;<b> Zee: </b>{{VALUE}}
+travelSimulator_heroAttending;Held aanwezig
+travelSimulator_vikingRaidBonus;Viking overvalbonus
+travelSimulator_troopSpeedArtefactEffect;Hogere troepensnelheid artefactseffect
+travelSimulator_toast_selectSourceAndTarget;Selecteer een geldige bron- en doellocatie!
+travelSimulator_toast_selectSourceTribe;Selecteer een geldige stam!
+IOSAppTrackingTransparencyMessage;Als je op "Toestaan" drukt, wordt apparaatinformatie gebruikt voor relevantere advertentie-inhoud
+goldShop_advantage_Value_Duration_Hours;<b>+{{VALUE}}%</b> voor <b>{{DURATION}} uur</b>
+travelSimulator_tournamentSquareLevel_title;Toernooiveldniveau
+travelSimulator_troopSpeedAncientPower;Troepsnelheid oude kracht
+RelativeTime_Formatted;[weeks>0:{{weeks}}w ][days>0:{{days}}d ]{{data}}
+settings_account_tab;Account
+settings_notification_tab;Pushmeldingen
+settings_app_PushNotifications_popup_title;Pushmeldingen
+settings_app_PushNotifications_popup_header;Sta ons toe om je meldingen te sturen
+settings_app_PushNotifications_popup_info1;Om pushmeldingen met nieuws en nuttige informatie over het spel te ontvangen, moet je eerst meldingen van ons toestaan.
+settings_app_PushNotifications_popup_info2;Je kunt meldingen inschakelen in de app-instellingen van je apparaat.
+settings_app_PushNotifications_popup_info3;Je kunt hier ook terugkeren wanneer je meldingen weer wilt uitschakelen.
+settings_app_PushNotifications_popup_action_button;Open app instellingen
+ratioValueMax;/ {{a}}
+market_sendResources_completed;Complete
+market_sendResources_villageNotFound;Niet gevonden. Je kunt alleen grondstoffen sturen naar je eigen dorpen, alliantieleden of geallieerde allianties.
+no_ads_popup_title;Geen video-advertenties
+no_ads_popup_header;Er heeft zich een probleem voorgedaan tijdens het weergeven van een videoadvertentie.
+no_ads_popup_info1;Hier kunnen verschillende redenen voor zijn:
+no_ads_popup_info2; • Er zijn momenteel geen beschikbare advertenties in de advertentiepool voor jouw regio.
+no_ads_popup_info3; • Je privacy-instellingen beperken het aantal advertenties dat kan worden weergegeven.
+no_ads_popup_info4; • Technische problemen met onze app of advertentieprovider.
+no_ads_popup_settings_msg;Zorg ervoor dat je gepersonaliseerde advertenties toestaat in je privacy-instellingen.
+no_ads_popup_support_msg;Neem contact op met onze ondersteuning als het probleem zich blijft voordoen.
+no_ads_popup_support_button;Contacteer Support
+city_upgradeToACity_wwVillageNotUpgradeable;Wereldwonder dorpen kunnen niet worden opgewaardeerd tot steden.
+travelSimulator_selectMagnitude;Selecteer kracht
+marketplace_merchantsOverview_returningTo;Keert terug van <b>{{Village}}</b> van <b>{{Player}}</b>
+market_sendResources_sendAgain;Opnieuw verzenden
+search_village_notFound;Niet gevonden. Je kunt alleen grondstoffen sturen naar je eigen dorpen, alliantieleden of geallieerde allianties.
+settings_app_AnimationsPayoffs_activated;Animatie troepen/merchants sturen is geactiveerd
+settings_app_AnimationsPayoffs_deactivated;Animatie troepen/merchants sturen is geactiveerd
+hero_resourceTransferPopup_empty;Er zijn geen grondstoffen in de inventaris van je held om over te dragen.
+hero_toast_appearanceChanged;Uiterlijk gewijzigd
+alliance_editMemberPopup_customNote;Eigen notitie
+alliance_editMemberPopup_titleOfRole;Titel van rol
+alliance_editMemberPopup_setSpecialization;Stel specialisatie in
+alliance_role_offensive;Offensief
+alliance_role_defensive;Defensief
+alliance_role_hybrid;Hybride
+alliance_role_scout;Verkenner
+alliance_role_support;Crewleden
+alliance_role_wow_hammer;WoW Hamer
+alliance_role_none;Geen
+ad_fallback_popup_title;Je beloning ophalen
+ad_fallback_popup_info;Er zijn momenteel geen videoadvertenties beschikbaar, maar we willen je toch belonen voor je loyaliteit! Wacht even terwijl we een beloning voor je klaarmaken.
+ad_fallback_popup_rewardGranted;Beloning toegekend
+ad_fallback_popup_claim;Beloning ophalen
+ad_fallback_popup_closeWarning;Als je dit vroegtijdig sluit, gaat de beloning verloren
+gameplay_tip_1;Je kunt kolonisten trainen in een residentie of een paleis (de eerste groep vanaf niveau 10).
+gameplay_tip_2;Je kunt per Avatar maar één Paleis bouwen. Het biedt tot 3 Uitbreidingsplekken, terwijl een Residentie er maar 2 biedt.
+gameplay_tip_3;Om je hoofddorp te veranderen, bouw een paleis in een nieuw dorp. Let op: exclusieve gebouwen in je oude hoofddorp gaan verloren of worden verlaagd.
+gameplay_tip_4;Je kunt een ander dorp stichten of veroveren als je genoeg cultuurpunten hebt.
+gameplay_tip_5;Verdien cultuurpunten door gebouwen uit te breiden en feesten te houden in het raadhuis.
+gameplay_tip_6;Grote feesten kunnen worden gehouden in het raadhuis (niveau 10) en geven meer cultuurpunten, maar kosten meer grondstoffen.
+gameplay_tip_7;Om een dorp te veroveren, moet je de loyaliteit op nul brengen met behulp van beheerders die in je residentie of paleis zijn getraind.
+gameplay_tip_8;Onderzoek beheerders in de academie voordat je ze in een residentie of paleis traint.
+gameplay_tip_9;Je kunt dorpen van de Natars of van andere spelers veroveren.
+gameplay_tip_10;Je hoofddorp kan niet worden veroverd door andere spelers.
+gameplay_tip_11;Gebruik de cropfinder om dorpen met 9 of 15 graanvelden te vinden die een groter leger kunnen onderhouden.
+gameplay_tip_12;Grondstoffenvelden kunnen in je hoofddorp tot een hoger niveau worden uitgebouwd dan in andere dorpen.
+gameplay_tip_13;Stuur grondstoffen naar bevriende dorpen via de marktplaats.
+gameplay_tip_14;Via de Marktplaats kun je grondstoffen verhandelen met andere spelers.
+gameplay_tip_15;Vergroot de capaciteit van je handelaren door het handelskantoor te upgraden.
+gameplay_tip_16;Breid je heldenhof uit tot niveau 10 om een oase te annexeren en je grondstoffenproductie te verhogen.
+gameplay_tip_17;Verhoog de sterkte van je eenheden in de smederij. Deze verbeteringen gelden meteen voor alle eenheden van dat type, ook voor eenheden die al getraind zijn.
+gameplay_tip_18;Gebruik de veldslagsimulator om de uitkomsten van gevechten in te schatten voordat je aanvalt. Hoe meer details je aan de simulatie toevoegt, hoe nauwkeuriger het resultaat zal zijn.
+gameplay_tip_19;Met de Goudclub kun je in je hoofddorp de evasiefunctie voor je troepen activeren, zodat je leger bij inkomende aanvallen automatisch wordt gered.
+gameplay_tip_20;Als je eenheden thuiskomen, wordt de evasie tijdelijk 10 seconden uitgeschakeld.
+gameplay_tip_21;Verbeter je verkenners in de smederij om hun spionagevaardigheden te versterken.
+gameplay_tip_22;Muren verhogen de verdediging van je dorp aanzienlijk.
+gameplay_tip_23;Bouw schuilplaatsen om je grondstoffen te beschermen tegen vijandelijke overvallen.
+gameplay_tip_24;Galliërs kunnen vallenzetters trainen om aanvallers te vangen voordat het gevecht begint.
+gameplay_tip_25;Om gevangen eenheden te bevrijden, moet je een gewone aanval uitvoeren op het dorp dat ze gevangen heeft.
+gameplay_tip_26;Aanvallende spelers kunnen 75% van de gevangen eenheden bevrijden, maar de verdediger kan ervoor kiezen om 100% van hen vreedzaam vrij te laten.
+gameplay_tip_27;Je kunt een veldhospitaal bouwen om tot 40% van je in de strijd verloren eenheden te herstellen.
+gameplay_tip_28;Galliërs kunnen vallenzetters trainen om aanvallende eenheden te vangen voordat het gevecht begint.
+gameplay_tip_29;Bouw een steenhouwerij in je hoofddorp om de stevigheid van je gebouwen tegen katapulten en rammen te vergroten.
+gameplay_tip_30;Je kunt instellen dat je held zich verbergt bij vijandelijke aanvallen op je thuisdorp, zodat hij veilig blijft.
+gameplay_tip_31;Versla dieren in onbezette oases om extra grondstoffen te krijgen. Sterkere dieren geven meer grondstoffen.
+gameplay_tip_32;Gebruik je held om dieren in onbezette oases te verslaan en zo ervaring op te doen.
+gameplay_tip_33;Gebruik kooien om dieren in onbezette oases gevangen te nemen en je dorp te versterken.
+gameplay_tip_34;Voorzie je held van voorwerpen zoals zalven of speciale harnassen om zijn gezondheid sneller te laten herstellen.
+gameplay_tip_35;Wek je held na verloop van tijd met grondstoffen weer tot leven, of onmiddellijk met een emmer.
+gameplay_tip_36;Je kunt gebouwen slopen zodra je hoofdgebouw niveau 10 heeft bereikt.
+gameplay_tip_37;Bouw een ambassade om je bij een alliantie aan te sluiten of je eigen alliantie op te richten.
+vacationMode_title;Vakantiemodus
+vacationMode_vacation;Vakantiemodus
+vacationMode_vacationModeActive;Vakantiemodus is actief
+vacationMode_info;Gebruik de vakantiemodus om je dorpen te beschermen als je weg bent.\n\nDe volgende acties zijn uitgeschakeld tijdens de vakantiemodus:
+vacationMode_deactivated_action1;sturen of ontvangen van troepen
+vacationMode_deactivated_action2;op avontuur gaan met je held
+vacationMode_deactivated_action3;nieuwe bouwopdrachten starten of eenheden trainen
+vacationMode_deactivated_action4;de marktplaats gebruiken (inclusief handelsroutes)
+vacationMode_deactivated_action5;Vieringen houden, onderzoek starten of upgrades uitvoeren
+vacationMode_deactivated_action6;allianties vormen of je daarbij aansluiten
+vacationMode_deactivated_action7;grondstoffen doneren aan alliantiebonussen
+vacationMode_deactivated_action8;Deelnemen aan veilingen
+vacationMode_deactivated_action9;Je hoofddorp wijzigen
+vacationMode_deactivated_action10;je account verwijderen
+vacationMode_deactivated_territory_action1;een dorp tot stad uitbreiden
+vacationMode_deactivated_territory_action2;Je account draagt niet bij aan de regionale bevolking van je alliantie en je dorpen krijgen geen overwinningspunten
+vacationMode_conditions_title;voorwaarden voor vakantiemodus vervuld
+vacationMode_duration_info;Hoeveel dagen moet de vakantiemodus duren
+vacationMode_durationUntil;Vakantiemodus tot <b>{{DATE}}</b>
+vacationMode_availableDays;Beschikbare dagen <b>{{AVAILABLE}}/{{TOTAL}}</b>
+vacationMode_startButton;Activeer de vakantiemodus nu
+vacationMode_error_noCancelTime;Je kunt de vakantiemodus pas na {{HOURS}} uur stoppen
+vacationMode_error_missingRequirement;Voltooi alle vereisten om de vakantiemodus te starten
+vacationMode_error_noVacationDaysLeft;Je hebt geen beschikbare dagen om de vakantiemodus te starten
+vacationMode_error_cooldown;Je kunt de vakantiemodus pas starten {{HOURS}} uur nadat deze voor het laatst is beëindigd
+vacationMode_abortSuccess;Vakantiemodus is beëindigd!
+vacationMode_remainingDays;Resterende dagen in vakantiemodus
+vacationMode_runsUntil;Vakantiemodus is actief tot
+vacationMode_abortInfo;Je kunt de vakantiemodus het vroegst op <b>{{DATE}}</b> stopzetten
+vacationMode_abortAvailable;Je kunt de vakantiemodus nu beëindigen
+vacationMode_abortConfirmHeader;Weet je zeker dat je de vakantiemodus wilt beëindigen?
+vacationMode_abortConfirmInfo;Ongebruikte dagen worden terugbetaald. Deze actie kan niet ongedaan worden gemaakt.
+vacationMode_startCooldownInfo;Je kunt de vakantiemodus op zijn vroegst op <b>{{DATE}}</b> starten
+vacationMode_abortButton;Vakantiemodus stoppen
+vacationMode_conditions_has_outgoing_troops;Geen uitgaande eenheden
+vacationMode_conditions_has_incoming_troops;Geen inkomende eenheden naar je dorpen of oases
+vacationMode_conditions_has_reinforcing_troops_for;Geen versterkingen naar andere spelers gestuurd
+vacationMode_conditions_has_reinforcing_troops_from;Geen versterkingen van andere spelers in je dorpen of oases
+vacationMode_conditions_has_ww_village;Geen eigenaar van een wereldwonderdorp
+vacationMode_conditions_has_artifact_village;Geen eigenaar van een artefactendorp
+vacationMode_conditions_has_beginners_protection;Geen beginnersbescherming
+vacationMode_conditions_has_trapped_troops;Er zitten geen eenheden in je vallen en geen van je eigen eenheden, inclusief je held, zit gevangen
+vacationMode_conditions_has_deletion_event;Jouw avatar is niet gemarkeerd voor verwijdering
+vacationMode_conditions_has_conquered_oase;Je hebt in de afgelopen {{HOURS}} uur geen oase geannexeerd. Je kunt de vakantiemodus pas activeren zodra er {{HOURS}} uur zijn verstreken sinds je een oase hebt geannexeerd of zodra je een oase bent kwijtgeraakt.
+vacationModePopup_info;Je account wordt tijdens de vakantiemodus beschermd. Je grondstoffenproductie loopt echter gewoon door en je troepen blijven graan verbruiken. <color=red>Dit kan ertoe leiden dat je troepen verhongeren.</color>
+vacationModePopup_start_info;Weet je zeker dat je de vakantiemodus wilt activeren voor <b>{{DAYS}}</b> [DAYS>1:dagen][DAYS<2:dag]? De vakantiemodus kan met goud worden geannuleerd na een wachttijd van {{COOLDOWN}} uur.
+vacationModePopup_troopConsumption;Onderhoud van eigen eenheden
+vacationModePopup_starvationEstimate;Vroegste uithongering om
+vacationModePopup_starvationTitle;Onderhoud van eigen eenheden
+goldTransfer_accept_gift;Ja, maak het goud over
+goldTransfer_decline_gift;Nee, wijs het goud af
+goldTransfer_accepted_toast;Goudoverdracht geaccepteerd.
+goldTransfer_declined_toast;Goudoverdracht afgewezen.
+smithy_requirementsNotSatisfied;Je voldoet niet aan de vereisten om deze eenheid te verbeteren
+vacationModeLobby_status;In vakantiemodus
+block_vacationMode_toast;Je kunt dit niet doen terwijl je in vakantiemodus bent.
+goldTransfer_verifyOwnership_title;Eigendom verifiëren
+goldTransfer_verifyOwnership_description;Om ongebruikt goud dat je hebt gekocht aan een bestaande speler over te dragen, moet je eerst verifiëren dat het goud van jou is door het e-mailadres in te voeren waarnaar de overdrachtscode is verzonden.
+goldTransfer_verifyOwnership_emailPlaceholder;E-mailadres
+goldTransfer_verifyOwnership_errorNoEmail;Voer je e-mailadres in.
+goldTransfer_verifyOwnership_errorAlreadyUsed;De Goud transferlink is al gebruikt.
+goldTransfer_verifyOwnership_errorInUse;De Goud transferlink is ongeldig.
+goldTransfer_verifyOwnership_verifyButton;Verifiëren
+goldTransfer_selectTargetAvatar_title;Selecteer de doelavatar
+goldTransfer_selectTargetAvatar_description;Selecteer de avatar waarnaar je het goud wilt overdragen.
+goldTransfer_transferableGold_label;Overdraagbaar goud:
+goldTransfer_enterAvatarName_header;Voer avatarnaam in:
+goldTransfer_avatarName_placeholder;Avatarnaam
+goldTransfer_searchAvatar_Button;Avatar zoeken
+goldTransfer_searchAvatarNothingFound_error;Er is geen actieve avatar met deze naam gevonden.
+goldTransfer_ownAvatarList_header;Selecteer een van je actieve avatars ({{account}})
+goldTransfer_selectOwnAvatarConfirm_Button;Avatar selecteren
+goldTransfer_selectGameworld_title;Kies een speelwereld
+goldTransfer_selectGameworld_description;De avatarnaam komt voor op meerdere spelwerelden. Je kunt het goud slechts naar één avatar overdragen. Selecteer een spelwereld.
+goldTransfer_selectGameworldConfirm_Button;Kies een speelwereld
+goldTransfer_changeAvatar_Button;Verander naam avatar
+goldTransfer_confirm_title;Overdracht bevestigen
+goldTransfer_confirm_Button;Overdracht bevestigen
+goldTransfer_confirmAvatarOnOneWorld_info;De avatarnaam is op één speelwereld gevonden:
+goldTransfer_confirmAvatarName_prefix;Avatarnaam:
+goldTransfer_confirmGameworld_prefix;Speelwereld:
+goldTransfer_transferComplete_title;Overdracht geslaagd
+goldTransfer_transferComplete_description;Je goud is succesvol overgedragen aan <b>{{avatarname}}</b> op <b>{{gameworldname}}.</b>
+goldTransfer_transferComplete_returnButton;Terug naar het spel
+cams_settings_accountDeletion_information_warning_v2;Deze actie verwijdert je account permanent. De volgende inhoud die aan je account is gekoppeld, gaat verloren:\n<indent=0.5em>•  Alle avatars die bij je account horen\n•  Alle medailles die op je account zijn verdiend</indent>\n\nBevestig door "delete" in het veld hieronder in te voeren.
+mapMarkers_popupTitle;Markering instellen
+mapMarkers_markerType;Markeringstype
+mapMarkers_markerColor;Kleur van de markering
+mapMarkers_setAlliance;Plaats een markering voor mijn alliantie
+mapMarkers_type_field;Veld
+mapMarkers_addMsg_success;De markering is succesvol toegevoegd!
+mapMarkers_saveMsg_success;De markering is succesvol opgeslagen!
+mapMarkers_noPermission_error;Vraag toestemming aan je alliantieleider.
+mapMarkers_marker;Markering
+mapMarkers_markers;Markeringen
+mapMarkers_listAllianceTitle;Alliantiemarkeringen
+mapMarkers_listPlayerTitle;Spelermarkeringen
+mapMarkers_listAlliances;Alliantie:
+mapMarkers_listPlayers;Speler
+mapMarkers_listFlags;Vlaggen
+mapMarkers_deleteMarker;Markering verwijderen
+mapMarkers_deleteMarkerMessage;Wil je deze markering verwijderen?
+mapMarkers_showOnMap;Toon mijn markeringen op de kaart
+embassy_general_subtab;Algemeen
+embassy_villagesNearby_subtab;Dorpen in de buurt
+embassy_villagesNearby_listHeader;Alliantie-/bondgenootschapsdorpen

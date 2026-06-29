@@ -1,0 +1,2068 @@
+detail_window_header_title;{{buildingName|TranslateSuffixFor|allgemein.gid}}
+;{{INT}}
+levelWithValue;Taso {{level}}
+valueWithPercent;{{value}}%
+valueAsRankingPosition;{{value}}.
+valueChangeInBrackets;({{change|Sign}})
+valueChangeInBracketsWithPercent;({{change|Sign}}%)
+ratioValues;{{a}}/{{b}}
+coordinates;<nobr>({{x}}|{{y}})</nobr>
+village_with_coordinates;{{villageName}} <nobr>({{x}}|{{y}})</nobr>
+village_with_clickable_coordinates;{{villageName}} {{mapId|Coordinates}}
+valuePerHour;{{a}}/t
+back;Takaisin
+fill;Täytä
+hero;Sankari
+done;Valmis
+remove;poista
+prerequisites;Vaatimukset:
+newAmount;Uusi määrä
+before;ennen
+after;jälkeen
+permissions;Oikeudet
+changesSaved;Muutokset tallennettu.
+genericError;Odottamaton virhe
+allianceTagInBrackets;[{{allianceId|AllianceLink}}]
+autocompleteNoResult;Ei vastaavuutta
+medalAdded;Mitali lisätty
+continueEdit;Jatka muokkausta
+levelUp;Tason nousu!
+non_existing_object;[?]
+sorting;Lajittelu
+copiedToClipboard;Kopioitu leikepöydälle
+maximumLengthError;Enimmäispituus: {{max}}.
+sortingOptions;Lajitteluvaihtoehdot
+WIP_comingSoon;Ominaisuus tulossa pian!
+upgradeTab_fastForward_button;{{Percent}}% nopeammin
+upgradeTab_masterBuilder_button;Rakenna \nRakennusmestarin{{goldIcon|Sprite}} avulla{{goldCost}}
+upgradeTab_adBoostPopup_boost;{{BOOST}}% tehostus
+infoTab_upgradingToLevel;Laajentumassa tasolle {{level}}:
+infoTab_genericCurrently;Tällä hetkellä:
+infoTab_genericAtLevel;Tasolla {{INT}}:
+infoTab_genericEffect;{{INT}}
+infoTab_currentProduction;Nykyinen tuotanto:
+infoTab_productionAtLevel;Tuotanto tasolla {{INT}}:
+infoTab_effectPerHour;{{INT}} tunnissa
+networkIssues;Yhteys pelipalvelimeen katkesi.
+cantLoadServerList;Palvelinluetteloa ei voitu ladata verkko-ongelmien vuoksi. Varmista, että laite on yhteydessä internetiin ja yritä uudelleen.
+barracks_TrainTroops_Action;Kouluta joukkoja
+barracks_ViewTrainingsList;Näytä koulutusluettelo
+barracks_unitNeedsToBeResearched;Yksikkö on ensin tutkittava 
+barracks_requiresLabel;Vaatii:
+barracks_trainingCosts;Joukkojen koulutuskustannukset
+barracks_troopsInTraining;Joukkoja koulutettavana
+training_started;Koulutus alkoi onnistuneesti!
+targetSelection_relationLabel;Tila:
+targetSelection_selectedVillage;Valittu kylä
+targetSelection_noSelectedVillage;Ei kylää valittuna
+targetSelection_ownVillages;Omat kylät
+targetSelection_relation0;Neutraali
+targetSelection_relation1;Ystävällinen
+targetSelection_relation2;Oma liittouma
+targetSelection_relation3;Oma kylä
+targetSelection_alreadyThere_troops;Joukkosi ovat jo siellä.
+targetSelection_alreadyThere_merchants;Kauppiaasi ovat jo siellä.
+rallyPoint_button_confirmTarget;Vahvista kohde
+rallyPoint_button_prepareTroops;Valmistele joukot
+rallyPoint_button_updateWave;Päivitä aalto
+rallyPoint_button_copyWave;Monista aalto
+rallyPoint_button_newWave;Lisää aalto
+rallyPoint_sendTroops_chooseDestination;Lähetä joukkoja - Valitse kohde
+rallyPoint_sendTroops_sendTroopAction_1;Lähetä joukkoja - Vahvista
+rallyPoint_sendTroops_sendTroopAction_3;Lähetä joukkoja - Vahvista
+rallyPoint_sendTroops_sendTroopAction_4;Lähetä joukkoja - Vahvista
+rallyPoint_sendTroops_sendTroopAction_5;Lähetä joukkoja - Vahvista
+rallyPoint_sendTroops_sendTroopAction_72;Lähetä joukkoja edelleen - Vahvista
+rallyPoint_sendTroops_sendTroopAction_9;Joukkojen vetäminen pois - Vahvista
+rallyPoint_sendTroops_sendTroopAction_10;Asuta uusi kylä
+rallyPoint_sendTroops_sendTroopButton_1;Lähetä joukkoja
+rallyPoint_sendTroops_sendTroopButton_3;Lähetä joukkoja
+rallyPoint_sendTroops_sendTroopButton_4;Lähetä joukkoja
+rallyPoint_sendTroops_sendTroopButton_5;Lähetä joukkoja
+rallyPoint_sendTroops_sendTroopButton_72;Lähetä joukot edelleen
+rallyPoint_sendTroops_sendTroopButton_9;Lähetä joukot takaisin
+rallyPoint_sendTroops_sendTroopButton_10;Perusta uusi kylä
+rallyPoint_sendTroops_coordinateX;<b>X</b> koordinaatti:
+rallyPoint_sendTroops_coordinateY;<b>Y</b> koordinaatti:
+rallyPoint_sendTroops_selectOnMap;Tai valitse sijainti kartalta:
+rallyPoint_sendTroops_arrivalTime;<b>{{hoursLeft|Duration}}</b> - <b>{{hoursLeft|TimeCountUp}}</b>
+rallyPoint_sendTroops_catapultTargetPopup;Valitse katapulttien kohde
+rallyPoint_sendTroops_catapultTarget_category_1;Infrastruktuurirakennukset
+rallyPoint_sendTroops_catapultTarget_category_2;Sotilasrakennukset
+rallyPoint_sendTroops_catapultTarget_category_3;Resurssirakennukset
+rallyPoint_sendTroops_catapultTarget_random;Satunnainen
+rallyPoint_sendTroops_catapultTarget_noBuilding;Valitse rakennus
+rallyPoint_sendTroops_catapultTarget_recentTargets;Viimeksi valittu:
+rallyPoint_sendTroops_changeHeroHomeVillage;Vaihda sankarin kotikylää
+rallyPoint_sendTroops_attackNoSelection;Valitse hyökkäystyyppi
+rallyPoint_sendTroops_movementType_5;Vahvistuksia
+rallyPoint_sendTroops_movementType_3;Hyökkäys
+rallyPoint_sendTroops_movementType_4;Ryöstö
+rallyPoint_sendTroops_attackForwarding;Eteenpäin lähettäminen
+rallyPoint_sendTroops_noTroopsSelected;- joukkoja ei ole valittu -
+rallyPoint_sendTroops_noTroopsAvailable;Ei voi lähettää joukkoja. Tässä kylässä ei ole joukkoja.
+rallyPoint_sendTroops_forwardingVillageError;Joukkoja voidaan lähettää edelleen vain liittokunnan jäsenille tai omiin kyliin.
+rallyPoint_sendTroops_forwardingDestination;Joukkojen lähettäminen edelleen - Valitse kohde
+rallyPoint_sendTroops_WaveRemoved;Aalto poistettu
+rallyPoint_sendTroops_maxWaves;Aaltojen enimmäismäärä
+rallyPoint_sendTroops_notEnoughTroopsToCopy;Ei tarpeeksi joukkoja aallon monistamiseen.
+rallyPoint_sendTroops_troopsSent;Joukot lähetetty
+rallyPoint_sendTroops_toOverview;Yleiskatsaukseen
+rallyPoint_sendTroops_backToVillage;Takaisin kylään
+rallyPoint_sendTroops_mission;Tehtävä:
+rallyPoint_troopsOverview_1;Saapuvia hyökkäyksiä ja ryöstöjä 
+rallyPoint_troopsOverview_2;Lähteviä hyökkäyksiä ja ryöstöjä
+rallyPoint_troopsOverview_3;Palaavia joukkoja
+rallyPoint_troopsOverview_4;Omat joukot tässä kylässä ja sen keitailla
+rallyPoint_troopsOverview_5;Vieraita joukkoja kylässä
+rallyPoint_troopsOverview_6;Omia joukkoja muissa kylissä ja keitaissa
+rallyPoint_troopsOverview_7;Saapuvia vahvistuksia
+rallyPoint_troopsOverview_8;Lähteviä vahvistuksia
+rallyPoint_troopsOverview_9;Lähteviä vahvistuksia
+rallyPoint_troopsOverview;Joukkojen yleiskatsaus
+rallyPoint_troopsOverview_consumption;Kulutus: {{cropConsumption|ShortenNumber|10000}}  {{iconName|Sprite}} tunnissa
+rallyPoint_troopsOverview_arrivalTime;Saapuminen: <b>{{Duration|Countdown}}</b> at <b>{{date|Time}}</b> 
+rallyPoint_troopsOverview_incomingMission_3;Saapuva hyökkäys kohteesta 
+rallyPoint_troopsOverview_incomingMission_4;Saapuva ryöstö kohteesta 
+rallyPoint_troopsOverview_outgoingMission_3;Hyökkäykset 
+rallyPoint_troopsOverview_outgoingMission_4;Ryöstöt 
+rallyPoint_troopsOverview_outgoingMission_5;Vahvistaa 
+rallyPoint_troopsOverview_outgoingMission_50;Seikkailu kohteeseen 
+rallyPoint_troopsOverview_outgoingMission_72;Joukot lähetetty eteenpäin kohteeseen 
+rallyPoint_troopsOverview_outgoingMission_10;Uuden kylän perustaminen 
+rallyPoint_troopsOverview_outgoingMission_40;Joukot pakenevat metsän suojaan.
+rallyPoint_troopsOverview_returningMission;Palaa kohteesta 
+rallyPoint_troopsOverview_ownTroops_1;Omat joukot kohteessa 
+rallyPoint_troopsOverview_ownTroops_2;Omat joukot kohteessa 
+rallyPoint_troopsOverview_ownTroops_3;Omat joukot kohteessa 
+rallyPoint_troopsOverview_ownTroops_4;<b>Luonto</b> kohteessa 
+rallyPoint_troopsOverview_ownTroops_5;Omat joukot kohteessa 
+rallyPoint_troopsOverview_ownTroops_6;Omat joukot kohteessa 
+rallyPoint_troopsOverview_ownTroops_7;Omat joukot kohteessa 
+rallyPoint_troopsOverview_foreignTroops_2;Vahvistukset kohteesta 
+rallyPoint_troopsOverview_foreignTroops_4;Vangittuja joukkoja kohteesta 
+rallyPoint_troopsOverview_ownTroopsInOther_2;Omat vahvistukset kohteelle 
+rallyPoint_troopsOverview_ownTroopsInOther_4;Omat vangit kohteessa 
+rallyPoint_troopsOverview_origin;Alkuperä: 
+rallyPoint_troopsOverview_reinforcement;Vahvistukset kohteesta 
+rallyPoint_troopsOverview_killed;Joukkoja tapettu!
+rallyPoint_troopsOverview_released;Joukot vapautettu!
+rallyPoint_troopsOverview_forwardedTroopsButton;Edelleen lähetetyt joukot
+rallyPoint_troopsOverview_returnToOverview;Paluu yleiskatsaukseen
+rallyPoint_troopsOverview_incomingAttacks;<color={{colorValue|TextColor}}>{{incomings}}</color> saapuvat
+rallyPoint_troopsOverview_amountIncoming;{{value}} saapuvat
+rallyPoint_troopsOverview_amountOutgoing;{{value}} lähtevät
+rallyPoint_troopsOverview_amountReturning;{{value}} palaavat
+rallyPoint_troopsOverview_firstArrivalTime;{{timestamp|Countdown}} tunnin kuluttua
+rallyPoint_troopsOverview_forwardTroops;Eteenpäin
+rallyPoint_troopsOverview_MergeTroops;Liitä kylään
+rallyPoint_troopsOverview_WithdrawTroops;Lähetä takaisin
+rallyPoint_troopsOverview_sort_1;Merkityt liikkeet ensin
+rallyPoint_troopsOverview_sort_2;Ensimmäisenä saapuvat ensin
+rallyPoint_troopsOverview_sort_3;Viimeisenä saapuvat ensin
+rallyPoint_troopsOverview_sort_4;Viimeksi lähetetyt joukot ensin
+rallyPoint_troopsOverview_sort_5;Vanhin lähetetty joukko ensin
+rallyPoint_troopsMerge_troopsToBeMerged;Yhdistettäväksi valitut joukot:
+rallyPoint_troopsMerge_currentGold;Nykyinen kulta:  {{iconName|Sprite}} {{currentGold}}
+rallyPoint_troopsMerge_goldLeft_0;{{remainingGold}} / {{maxAllowedGold}} kultaa jäljellä joukkojen yhdistämistä varten tänään.
+rallyPoint_troopsMerge_goldLeft_1;{{remainingGold}} / {{maxAllowedGold}} kultaa jäljellä joukkojen yhdistämistä varten tänään. Voit silti yhdistää resurssien avulla.
+rallyPoint_troopsMerge_troopsMergedToast;Joukot yhdistetty!
+rallyPoint_raidList_beingRaided;{{current}}/{{total}} ryöstettävänä
+rallyPoint_infoTab_EvasionShortDescription;Aktivoi väistö pääkaupungissasi
+rallyPoint_farmList_createNewTitle;Luo uusi lista
+rallyPoint_farmList_editTitle;Muokkaa listaa
+rallyPoint_farmList_listName;Listan nimi
+rallyPoint_farmList_selectDefaultTroops;Valitse oletusjoukot
+rallyPoint_farmList_addTroopsButton;Lisää joukkoja
+rallyPoint_farmList_editTroopsButton;Muokkaa joukkoja
+rallyPoint_farmList_setTroopsButton;Aseta joukot
+rallyPoint_farmList_createListButton;Luo lista
+rallyPoint_farmList_editListButton;Päivitysluettelo
+rallyPoint_farmList_editTroopsTitle;Muokkaa farmilistan joukkoja
+rallyPoint_farmList_deleteList;Poista lista
+rallyPoint_selectTroops;Valitse joukot
+rallyPoint_farmList_listCreated;Lista luotu
+rallyPoint_farmList_exitList;Poistu listasta
+rallyPoint_farmList_startAll;Käynnistä kaikki kohteet
+rallyPoint_farmList_startAllLists;Käynnistä kaikki
+rallyPoint_farmList_startSelected;Käynnistä valitut
+rallyPoint_farmList_noTarget;- kohteita ei ole valittu -
+rallyPoint_farmList_noTargetExist;Tässä luettelossa ei ole kohteita
+rallyPoint_farmList_selectedAmount;{{amount}} valittu:
+rallyPoint_farmList_listUpdated;Lista päivitetty
+rallyPoint_farmList_listDeleted;Lista poistettu
+rallyPoint_farmList_editWarning;- Listan poistaminen poistaa kaikki tämän listan kohteet\n- Sotilaiden muokkaaminen vaikuttaa vain tuleviin kohteiden oletussotilaisiin
+rallyPoint_farmList_sortingFailed;Lajittelu epäonnistui! Yritä uudelleen!
+rallyPoint_farmList_notStartedPopupTitle;Ryöstöjä ei aloitettu
+rallyPoint_farmList_notStartedPopupElement;<b>{{total}}</b> koska {{message}}
+rallyPoint_farmList_NotStartedPopupButtonGoTo;Siirry farmilistaan
+rallyPoint_farmList_AddTargetTitle;Lisää kohde
+rallyPoint_farmList_changeTroops;Vaihda joukkoja
+rallyPoint_farmList_targetAdded;Kohde lisätty
+rallyPoint_farmList_targetAlreadyOnList;Kohde on jo tällä tilaluettelolla, valitse toinen tilaluettelo tai luo uusi.
+rallyPoint_farmList_choose;Valitse Farmlista
+rallyPoint_farmList_notYetRaided;Ei vielä ryöstetty
+rallyPoint_farmList_EditRaids;Muokkaa [raidsAmount=1:kohdetta][raidsAmount>1:kohteita]
+rallyPoint_farmList_DeleteRaidsPlayerQuestion;Oletko varma, että haluat poistaa [raidsAmount=1:tämä kohde][raidsAmount>1:nämä kohteet]?
+rallyPoint_farmList_ChangeRaidList;Muuta farmilistaa
+rallyPoint_farmList_ChangeTarget;Muuta kohdetta
+rallyPoint_farmList_ChangeTroops;Vaihda joukkoja
+rallyPoint_farmList_DeactivateTarget;Poista [raidsAmount=1:kohde][raidsAmount>1:kohteet] käytöstä
+rallyPoint_farmList_MultiEditWarning;Muokkaat useita kohteita. Tehdyt muutokset vaikuttavat kaikkiin valittuihin kohteisiin
+rallyPoint_farmList_UpdateRaids;Päivitä [raidsAmount=1:kohde][raidsAmount>1:kohteet]
+rallyPoint_farmList_filterShowTroopsTitle;Näytä joukot
+rallyPoint_farmList_filterShowTroopsDescription;Näyttää valitut joukot kohteittain
+rallyPoint_farmList_filterShowPopulationTitle;Näytä kohderyhmä
+rallyPoint_farmList_filterShowPopulationDescription;Näyttää kohdekylän asukasluvun
+rallyPoint_farmList_filterShowDistanceTitle;Näytä etäisyys
+rallyPoint_farmList_filterShowDistanceDescription;Näyttää kohteen etäisyyden kylästäsi
+rallyPoint_farmList_filterShowLastRaidTitle;Näytä viimeisimmän ryöstön tiedot
+rallyPoint_farmList_filterShowLastRaidDescription;Näyttää kohteen viimeiset ryöstötiedot
+rallyPoint_farmList_filterShowBountyTitle;Näytä palkkiot ja resurssit
+rallyPoint_farmList_filterShowBountyDescription;Näyttää saadut palkkiot ja resurssit
+marketplace_createOffer;Luo tarjous
+marketplace_myOffers_title;Tarjoukseni
+marketplace_myOffers_merchants;Kauppiaita: {{count}}
+marketplace_myOffers_alliance_True;Liittoumassa: Kyllä
+marketplace_myOffers_alliance_False;-
+marketplace_myOffers_interval;{{amount}} tuntia
+marketplace_myOffers_offerDeleted;Tarjous poistettu
+marketplace_merchantsOverview_arrival;{{duration}} tuntia Saapuminen {{arrivalTime}}
+marketplace_merchantsOverview_incomingMerchants;Saapuvia toimituksia: {{count}}
+marketplace_merchantsOverview_outgoingMerchants;Lähteviä toimituksia: {{count}}
+marketplace_merchantsOverview_noIncomingMerchants;- Ei saapuvia kauppiaita -
+marketplace_merchantsOverview_noOutgoingMerchants;- Ei lähteviä kauppiaita -
+marketplace_merchantsOverview_IncomingCat;Saapuvat
+marketplace_merchantsOverview_outgoingCat;Lähtevät
+marketplace_merchantsOverview_capacity;Kantokyky: {{capacity}}
+marketplace_merchantsOverview_merchantsOverview;Kauppiaiden yleiskatsaus
+marketplace_merchantsOverview_ArrivingSoonest;Saapuu ensimmäisenä
+marketplace_merchantsOverview_ArrivingLatest;Saapuu viimeisenä
+marketplace_merchantsOverview_ShortestDistance;Lyhin etäisyys
+marketplace_merchantsOverview_LongestDistance;Pisin etäisyys
+marketplace_merchantsOverview_transportTo;Kuljeta kohteeseen <b>{{Village}}</b> - <b>{{Player}}</b>
+marketplace_merchantsOverview_transportFrom;Kuljeta kohteesta <b>{{Village}}</b> - <b>{{Player}}</b>
+marketplace_merchantsOverview_returningFrom;Palaa kohteesta <b>{{Village}}</b> - <b>{{Player}}</b>
+academy_research_viewResearchList;Tutkimus on käynnissä
+academy_research_allUnitsResearched;Kaikki yksiköt on tutkittu.
+academy_researchListPopup_title;Tutkittavat joukot
+academy_researchListPopup_remainingTime;{{timeLeft}} jäljellä. Valmiina {{readyAt}}
+academy_researchListPopup_constructImmediately;Valmista välittömästi
+research_started;Tutkimus käynnistyi onnistuneesti!
+research_timeLeft;{{TIME|Countdown}} jäljellä.
+townHall_celebration_ongoingCelebration;Käynnissä
+topBar_perHourLabel;/h:
+topBar_maxLabel;Max:
+topBar_resourceFull;Täynnä
+leftPanel_infoBox;Infoboksi
+villagePanel_playerNameTitle;Kylät, jotka omistaa {{playerName}}
+villagePanel_toStatistics;Kylätilastoihin
+villagePanel_culturePointsNeeded;Kulttuuripisteitä seuraavaa kylää varten
+mapCell_type;{{x}}{{y}}
+mapCell_type_village;{{villageName}}
+mapCell_type_1;Lähialue
+mapCell_type_2;Laakso
+mapCell_type_3;Autio keidas
+mapCell_type_4;asutettu laakso
+mapCell_type_5;Erämaa
+mapCell_Owner;Omistaja:
+mapCell_type_valley;Laakso
+mapCell_Wilderness;Tässä paikassa ei ole mitään kiinnostavaa.
+mapCell_Distance;{{distance|Round|1}} kenttää
+mapCell_locationInfo;Sijaintitiedot
+mapCell_surroundings;Ympäristö
+mapCell_actions_editFarmlist;Muokkaa farmilistaa
+mapCell_actions_addFarmlist;Lisää farmilistalle
+mapCell_actions_raidOasis;Ryöstä keidas
+mapCell_showOnMap;Näytä kartalla
+mapCell_noReports;- Tästä sijainnista ei ole tietoja -
+berichte.region_;{{PLAYERACTIVE}}{{PLAYERPASSIVE}}{{VILLAGE}}{{NAME1}}{{NAME2}}{{ALLY1}}{{ALLY2}}{{NAME}}
+mapCell_goToOwnVillage;Mene omaan kylään
+constructionQueue_timeLeftToFinish;{{timestamp|Countdown}} jäljellä. Valmiina {{timestamp|Time}}
+constructionQueue_timeUntilStart;Aloittaa {{timestamp|Countdown}}
+constructionQueue_MasterBuilderTitle;Rakennusmestarijono (kustannukset {{masterBuilderCost|Sprite}} {{masterBuilderCost}} rakentamisen alkaessa)
+constructionQueue_Constructing;Rakennusta rakennetaan
+constructionImmediatelyPopup_topText;Seuraavat rakennustyöt ovat valmistuneet välittömästi:
+constructionImmediatelyPopup_title;Valmista välittömästi
+newBuildingConstructionDetail_dateTimeEnoughResources;Riittävästi resursseja {{date|Date}} - {{time|Time}}
+newBuildingConstruction_noBuildingsAvailable;Tällä hetkellä ei voi rakentaa rakennuksia.
+goldclubpopup_currentGold;Nykyinen kulta:  {{iconName|Sprite}} <color={{colorValue|TextColor}}>{{currentGold}}</color>
+goldclubpopup_activated_toastMessage;Kultaklubi on aktivoitu!
+loginPage_version;Versio {{currentVersion}}
+loginPage_loginBlocked;Sisäänkirjautuminen estetty
+loginPage_loginBlocked_fails;Liian monta epäonnistunutta kirjautumisyritystä
+loginPage_loginBlocked_message;Tilisi on estetty liian monien epäonnistuneiden kirjautumisyritysten vuoksi.
+loginPage_loginBlocked_resolve;Voit avata tilisi lukituksen kirjautumalla selaimen kautta osoitteessa
+serverSelection_selectRegion;Valitse alue
+serverSelection_selectGameWorld;Valitse pelimaailma
+serverSelection_0;Kansainvälinen
+serverSelection_1;Arabia
+serverSelection_2;Aasia
+serverSelection_3;Eurooppa
+serverSelection_4;Amerikka
+serverSelection_99;Kehitys
+serverSelection_mapSize;Kartan koko:
+serverSelection_mapSize_0;Pieni
+serverSelection_mapSize_1;Suuri
+serverSelection_artifacts;Artefaktit:
+serverSelection_constructionPlans;Rakennusohjeet:
+serverSelection_changeGameWorld;Vaihda pelimaailma
+serverSelection_username;Käyttäjätunnus:
+serverSelection_password;Salasana:
+serverSelection_loginButton;Kirjaudu ja pelaa
+serverSelection_forgotPassword;Unohdin salasanani
+serverSelection_noAccount;Minulla ei ole tiliä
+serverSelection_loginError;Käyttäjätunnus tai salasana väärin
+serverSelection_graphQlError;Virhe tietojen saamisessa palvelimelta
+serverSelection_tokenRefreshError;Viimeksi käytetylle palvelimelle kirjautumisessa tapahtui virhe: kirjaudu uudelleen.
+serverSelection_stayLoggedIn;Pysy kirjautuneena pelimaailmaan
+troopsInfo_title;Joukot {{villageName}}
+unitInfo_velocity;<b>{{fields}}</b> ruutua tunnissa
+unitInfo_resourceCarriage;<b>{{INT}}</b> resurssia
+unitInfo_researchPrerequisites;Tutkimuksen edellytykset:
+unitInfo_trainingPrerequisites;Koulutuksen edellytykset:
+unitInfo_canCarry;Voi kantaa:
+exchangeResources_currentTitle;Uusi määrä
+exchangeResources_lockAmount;Lukituksen määrä
+exchangeResources_changeTitle;Vaihda
+exchangeResources_restTitle;Loput
+exchangeResources_buildingPossible_True;Parannus mahdollista
+exchangeResources_buildingPossible_False;Parannus ei ole mahdollista
+exchangeResources_mergePossible_True;Yhdistäminen mahdollista
+exchangeResources_mergePossible_False;Yhdistäminen mahdotonta
+exchangeResources_researchPossible_True;Tutkimus mahdollista
+exchangeResources_researchPossible_False;Tutkimus mahdotonta
+exchangeResources_celebrationPossible_True;Juhlat mahdollisia
+exchangeResources_celebrationPossible_False;Juhlat mahdottomia
+exchangeResources_reviveHero_True;Sankarin elvyttäminen mahdollista
+exchangeResources_reviveHero_False;Sankarin elvyttäminen mahdotonta
+exchangeResources_currentlyAvailable;Tällä hetkellä käytettävissä: <b>{{amount}}</b>
+exchangeResources_maximumAvailable;Enimmäismäärä käytettävissä: <b>{{amount}}</b>
+exchangeResources_distributeEvenly;Jaa jäljellä olevat resurssit tasan:
+exchangeResources_distributeOnResource;Tai priorisoi jäljellä olevat resurssit ensin:
+exchangeResources_distributeAuto;Automaattinen jako
+exchangeResources_distributeManual;Manuaalinen jako
+exchangeResources_availableTroops;Saatavilla olevat joukot: {{amount}}
+buildingActivities_title;Rakennustoiminta
+buildingActivities_idle;Joutilas
+buildingActivities_type;Tyyppi
+buildingActivities_building_13;Parannuksia:
+buildingActivities_building_16;Farmilista
+buildingActivities_building_17;Kauppiaat
+buildingActivities_building_19;Joukkoja koulutettavana
+buildingActivities_building_20;Ratsuväki koulutuksessa
+buildingActivities_building_29;Joukkoja koulutettavana
+buildingActivities_building_30;Ratsuväki koulutuksessa
+buildingActivities_building_21;Joukkoja koulutettavana
+buildingActivities_building_22;Tutkimus
+buildingActivities_building_24;Juhlia
+buildingActivities_building_46;Joukkojen tervehdyttäminen
+buildingActivities_buildingAction_;{{amount}}{{max}}
+buildingActivities_buildingAction_16;{{amount}} ryöstöä meneillään
+buildingActivities_buildingAction_17;{{amount}}/{{max}} saatavilla
+mainMenu_title;Päävalikko
+mainMenu_quests;Tehtävät
+playerDetails_infoTab;Pelaajatiedot
+playerDetails_villageTabTitle;{{villages}} kylät, joissa on {{oases}} keidasta
+playerDetails_SortBy_1;Asukasmäärä
+playerDetails_SortBy_2;Voittopisteet
+playerDetails_SortBy_3;Kylän nimi:
+playerDetails_SortBy_4;Alueen nimi
+player_gender_DontSpecify;Älä määrittele
+player_gender_Other;Muu
+player_gender0;Mies
+player_gender1;Nainen
+player_gender2;Muu
+player_gender3;Älä määrittele
+playerDetails_NotesFor;Huomautukset {{playerName}}
+playerDetails_NoDescription_Others;- Tämä pelaaja ei ole lisännyt kuvausta -
+playerDetails_NoDescription_Own;- Kuvausta ei ole vielä lisätty -
+playerDetails_editLanguages;Muokkaa kieliä
+playerDetails_searchLanguage;Etsi kieli
+goldShopPlaceholder_title;Kauppa on tulossa pian!
+goldShopPlaceholder_description;Kultakauppaa ei ole vielä toteutettu mobiilisovelluksessa.<br><br> Jos haluat ostaa kultaa, kirjaudu tilillesi selaimen kautta.
+goldShop_title;Kultakauppa
+goldShop_advantage_5;Travian Plus
+goldShop_advantage_4;Puu
+goldShop_advantage_1;Savi
+goldShop_advantage_2;Rauta
+goldShop_advantage_3;Vilja
+goldShop_feature_activated;Ominaisuus aktivoitu!
+goldShop_purchaseFailed;Osto epäonnistui!
+goldShop_purchaseSuccess;Osto onnistui.
+goldShop_transactionInProgress;Ostotapahtuma on käynnissä.\nOle hyvä ja odota.
+goldShop_transactionFailed;Jokin meni vikaan.\nYritä myöhemmin uudestaan.
+goldShop_transactionTimeout;Hyvä pelaaja, maksusi ylitti aikarajan, eikä sitä ehkä käsitelty oikein. Ota yhteyttä <style="link"><link="https://support.travian.com/support/tickets/new">maksutukeen</link></style>, jos sinulla on ongelmia.
+market_sendResources_requiredMerchants;Tarvittavat kauppiaat:
+market_sendResources_capacityPerMerchant;Kantokyky per kauppias
+market_sendResources_amountRepeats;Toistojen määrä:
+market_sendResources_confirmResources;Vahvista resurssit
+market_sendResources_amountWithX;{{amount}}x
+market_sendResources_sent;Resurssit lähetetty!
+market_offer_maxDuration;Toimituksen maksimikesto:
+market_offer_confirm;Vahvista tarjous
+market_offers_title;Tarjoukset
+market_capacity;Kantokyky: {{capacity}}
+market_offers_offering;Minä tarjoan:
+market_offers_searching;Minä tarvitsen:
+market_offers_offered;Sinä lähetät
+market_offers_wanted;Sinä saat
+market_offers_accepted;Tarjous hyväksytty! Resurssit ovat matkalla ja kauppiaat on lähetetty.
+market_offers_ownAllianceOnly;Vain oman liittouman pelaajat
+market_ratio_11;1:1
+market_ratio_1X;1 : X
+market_tradeRoutes_to;Vastaanottaja:
+market_tradeRoutes_entryAmount;<b>{{amount}}</b> merkinnät
+market_tradeRoutes_noRoutes;- Kauppareittejä ei ole luotu -
+market_tradeRoutes_travelTime;Matka-aika: {{time|Duration}} tuntia
+market_tradeRoutes_activeRatio;{{active}}/{{total}} aktiivisena
+market_tradeRoutes_active;Aktiivinen
+market_tradeRoutes_paused;Tauolla
+market_tradeRoutes_updated;Reitit päivitetty
+market_tradeRoutes_deleted;Kauppareitit poistettu
+market_tradeRoutes_returnAt;paluu klo {{time|Time}}
+market_tradeRoutes_merchantsAndRepeat;{{merchants}} kauppiaita, {{repeats}}x
+market_tradeRoutes_filterOptions;Suodatinvaihtoehdot
+market_tradeRoutes_showMerchants;Näytä kauppiaat
+market_tradeRoutes_showMerchantsText;Näyttää, kuinka monta kauppiasta käytetään
+market_tradeRoutes_showResources;Näytä resurssit
+market_tradeRoutes_showResourcesText;Näyttää kuljetettujen resurssien määrän
+market_tradeRoutes_afterInputFieldsSuffix;Tuntia
+market_tradeRoutes_interval;{{INT}} tuntia
+market_tradeRoutes_confirmTarget;Vahvista kohde
+market_tradeRoutes_arrivalTime;{{duration|Duration}} klo {{arrivalTime|Time}}
+market_tradeRoutes_created;Kauppareitti luotu
+market_tradeRoutes_edit;Muokkaa [routeAmount=1:kauppareittiä][routeAmount>1:kauppareittejä]
+market_tradeRoutes_update;Päivitä [routeAmount=1:kauppareitti][routeAmount>1:kauppareitit]
+market_tradeRoutes_multiEditWarning;Muokkaat useita kauppareittejä. Tehdyt muutokset vaikuttavat kaikkiin {{routeAmount}} reittiin.
+market_tradeRoutes_editResourcesTitle;Vaihda resursseja
+market_tradeRoutes_editResourcesButton;Muokkaa resursseja
+market_tradeRoutes_setResourcesButton;Aseta resurssit
+market_tradeRoutes_updateResourcesButton;Päivitä resurssit
+market_tradeRoutes_pause;Keskeytä [routeAmount=1:kauppareitti][routeAmount>1:kauppareitit]
+market_tradeRoutes_pauseDescription;Kauppareitti siirretään keskeytettyjen listalle, mutta se pysyy markkinapaikallasi.
+market_tradeRoutes_delete;Poista [routeAmount=1:kauppareitti][routeAmount>1:kauppareitit]
+market_tradeRoutes_deleteConfirmQuestion;Oletko varma, että haluat poistaa [routeAmount=1:tämän kauppareitin][routeAmount>1:nämä kauppareitit]?
+market_tradeRoutes_invalidTarget;Kauppareittejä voi lähettää vain maailmanihmeen kyliin ja kyliin, joissa on artefakteja tai maailmanihmeen rakennussuunnitelmia liittouman tai konfederaation jäseniltä
+hero.status;{{NAME}}
+hero_adventures_selectVillage;Valitse kylä
+hero_adventures_explore;Tutki
+hero_adventures_sendHero;Lähetä sankari
+hero_adventures_sent;Seikkailu alkoi
+hero_status_reviveWithBucket;Käytetään sankarin palauttamiseen välittömästi.
+hero_status_reviveWithRes;Käytä resursseja palauttaaksesi sankarin henkiin.
+hero_inventory_consumablePopupTitle;Käyttökelpoinen esine
+hero_resourceTransferPopup_title;Siirrä resursseja
+hero_resourceTransferPopup_ReadyForTransfer;Valmis siirtoa varten
+hero_resourceTransferPopup_transferSelected;Siirto valittu
+hero_resourceTransferPopup_transferMax;Siirto enimmäismäärä
+hero_resourceTransferPopup_storageFull;Varasto täynnä. Et voi siirtää enempää resursseja.
+hero_inventory_transferToCurrentVillage;Siirretty tällä hetkellä aktiivisiin kyliin: <b>{{VILLAGE}}</b>
+hero.itemDescriptionV2Details;{{PERCENTAGE}}{{EXPERIENCE}}{{RAISE}}{{LIMIT}}{{MAX}}{{TIME}}
+hero.itemDescriptionV2;{{VALUE}}
+hero_consumablePopup_currentEquippedItems;Tällä hetkellä varustettujen esineiden määrä:
+hero_consumablePopup_itemsLeftInInventory;Varastossa jäljellä olevien tuotteiden määrä:
+hero.itemTypeV2_inventory;Kulutustavara
+hero.cooldownWithTime;{{COOLDOWN}} tunnin odotus meneillään, joka päättyy {{DATE|DateTime}}.
+reports_overview_title;{{COUNT}} raportit
+reports_overview_title_selected;Valittu {{SELECTED}} / {{COUNT}} raporttia
+reports_overview_title_archived;Arkistoidut raportit
+reports_overview_archived_noReports;- Arkistoituja raportteja ei ole saatavilla -
+reports_filters_title;Valitse suodatin
+reports_filters_allReports;Kaikki raportit
+reports_filters_applyButton;Käytä {{COUNT}} suodattimia
+reports_filters_noFilter;Suodatinta ei ole valittu
+reports_detail_title;Raportin yksityiskohdat
+berichte.;{{NAME1}}{{NAME2}}{{VILLAGE_NAME}}{{X}}{{Y}}{{COORDS}}{{NAME}}
+reports_player_from_village;[{{allianceId|AllianceLink}}] {{playerId|PlayerLink}} kylästä {{villageId|VillageLink}}
+reports_troops_lost;Kadonneet joukot:
+reports_troops_hospitalized;Sairaalahoidossa:
+reports_xp_gained;{{amount}} kokemuspistettä saatu
+reports_health_change;-{{change}}% terveyttä
+reports_hero_died;Sankarisi kuoli seikkailun aikana
+reports_scouted_building;{{buildingType|TranslateSuffixFor|allgemein.gid}} taso <b>{{level}}</b>
+reports_refreshed;Raportit päivitetty!
+reports_deleteReportPopup_title;Tuhoa raportit
+reports_deleteReportPopup_warningTitle;Oletko varma, että haluat poistaa {{X}} raporttia?
+reports_deleteReportPopup_warningTitleAll;Haluatko varmasti tuhota kaikki raportit?
+reports_deleteReportPopup_warningDescription;Kun olet poistanut raportin, se katoaa lopullisesti. Et pysty palauttamaan sitä.
+reports_deleted;Raportti poistettu!
+reports_markedUnread;Raportti merkitty lukemattomaksi!
+reports_archived;Raportti arkistoitu!
+reports_deleted_all;Kaikki raportit poistettu!
+reports_deleted_selected;{{X}} raporttia tuhottu!
+reports_markedRead_all;Kaikki raportit on merkitty luetuiksi!
+reports_markedRead_selected;{{X}} raporttia merkitty luetuiksi!
+alliance_nameAndTagPair;{{allianceName}} | {{allianceTag}}
+alliance_editAllianceName;Muokkaa liittouman nimeä
+alliance_name;Liittouman nimi
+alliance_nameError;Liittouman nimi ei voi olla tyhjä
+alliance_tag;Liittouman merkki
+alliance_tagError;Liittouman leima ei voi olla tyhjä
+alliance_profileTab_inviteNewPlayer;Kutsu uusi pelaaja
+alliance_profileTab_showInvitedPlayers;Näytä kutsutut pelaajat
+alliance_invitedPopup_title;Kutsutut pelaajat
+alliance_invitedPopup_invitationRemoved;Kutsu poistettu!
+alliance_invitePlayerPopup_title;kutsu pelaaja
+alliance_invitePlayerPopup_noPlayerFound;Pelaajaa ei löytynyt
+alliance_invitePlayerPopup_playerInvited;Pelaaja kutsuttu!
+alliance_editMemberPopup_title;Muokkaa jäsentä
+alliance_editMemberPopup_customMessage;Mukautettu viesti
+alliance_editMemberPopup_setRole;Aseta rooli
+alliance_editMemberPopup_kickPlayerFromAlliance;Poista pelaaja liittoumasta
+alliance_editMemberPopup_cantChangePermission;Nykyistä käyttöoikeutta ei voi muuttaa: katso varoitus.
+alliance_kickPlayerPopup_areYouSure;Oletko varma, että haluat poistaa pelaajan {{Player}} liittoumasta?
+alliance_kickPlayerPopup_playerKicked;Pelaaja poistettu liittoumasta!
+alliance_editAllianceDescription;Muokkaa liittouman kuvausta
+alliance_topColumn;Ylin sarake
+alliance_bottomColumn;Alin sarake
+alliance_bbCodeAdded;BB-koodi lisätty
+alliance_generalInformation;Yleistietoja
+alliance_confederacy_tab;Konfederaatio
+alliance_diplomacy;Diplomatia
+alliance_diplomacy_tab1;NAP / Sota
+alliance_diplomacy_send_new;Lähetä uusi
+alliance_diplomacy_openRequests;Avoimet pyynnöt
+alliance_diplomacy_otherOffered;{{allianceId|AllianceLink}} ehdotti {{type|TranslateSuffixFor|alliance_diplomacy_type}}
+alliance_diplomacy_youOffered;Tarjositte {{type|TranslateSuffixFor|alliance_diplomacy_type}} - {{allianceId|AllianceLink}}
+alliance_diplomacy_offerDeclare;Tarjoa / julista
+alliance_diplomacy_type;Tyyppi
+alliance_diplomacy_type1;Liittolaisuus:
+alliance_diplomacy_type2;rauha
+alliance_diplomacy_type3;sota
+alliance_diplomacy_type4;Liittolaisuus:
+alliance_diplomacy_typekick;erottaminen konfederaatiosta
+alliance_diplomacy_deleteText_;{{type|TranslateSuffixFor|alliance_diplomacy_type}}{{alliance|AllianceLink}}
+alliance_diplomacy_deleteTitle_RemoveRequest;Poista pyyntö
+alliance_diplomacy_deleteText_RemoveRequest;Oletko varma, että haluat poistaa tarjouksen {{type|TranslateSuffixFor|alliance_diplomacy_type}} - {{alliance|AllianceLink}}?
+alliance_diplomacy_deleteTitle_TerminateExisting;Poista
+alliance_diplomacy_deleteText_TerminateExisting;Oletko varma, että haluat lopettaa {{type|TranslateSuffixFor|alliance_diplomacy_type}} - {{alliance|AllianceLink}}?
+alliance_diplomacy_deleteTitle_ConfederacyKickVote;Poista
+alliance_diplomacy_deleteText_ConfederacyKickVote;Sinun on saatava muiden konfederaation jäsenten vahvistus jotta {{subject|AllianceLink}} voidaan erottaa.\n\nHaluatko jatkaa ja ilmoittaa muille liittoumille päätöksestäsi?
+alliance_diplomacy_deleteTitle_QuitConfederacy;Poista
+alliance_diplomacy_deleteText_QuitConfederacy;Oletko varma, että haluat lopettaa konfederaation seuraavien jäsenten kanssa?
+alliance_diplomacy_deleteTitle_RemoveConfederacyProposal;Poista pyyntö
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Kick;Oletko varma, että haluat kieltäytyä {{alliance|AllianceLink}} pyynnöstä poistaa {{subject|AllianceLink}} konfederaatiosta?
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Join;Oletko varma, että haluat kieltäytyä {{alliance|AllianceLink}} pyynnöstä lisätä {{subject|AllianceLink}} konfederaatioon?
+alliance_diplomacy_sent;Tarjous lähetetty
+alliance_diplomacy_accepted;Diplomaattiset suhteet hyväksytty
+alliance_diplomacy_canceled;Diplomaattiset suhteet päätetty
+alliance_diplomacy_declined;Pyyntö hylätty
+alliance_diplomacy_kickStarted;Pyyntö lähetetty
+alliance_diplomacy_proposal_approved;Pyyntö hyväksytty
+alliance_diplomacy_noContract;Liittoumallasi ei ole aktiivisia sopimuksia muiden liittoumien kanssa.
+alliance_diplomacy_noConfederacy;Liittonne ei ole osa liittovaltiota.
+alliance_diplomacy_alreadyOpenOffer;Tästä liittoumasta on jo tehty avoin tarjous.
+alliance_diplomacy_alreadyExistingContract;Tämän liiton kanssa on jo tehty sopimus.
+alliance_diplomacy_warInDeletion;Odota, että myös toinen liitto lopettaa sodan.
+alliance_union_leave;Lähde konfederaatiosta
+alliance_union_add;Lisää uusi pyyntö
+allianz.diplomacy_with_type;{{NAME}}
+allianz.diplomacy_with_type4;Konfederaatiossa {{NAME}}
+alliance_newsBbDescription;Vaihda 'numero' teksti muokkaamaan uutisten lukumäärää
+alliance_LossesBBName;menetykset
+alliance_LossesBBDescription;Vaihda 'nimi' valitsemaan liittouma, johon vertaillaan
+alliance_NapBBName;Hyökkäämättömyyssopimukset
+alliance_WarsBBName;Sodat
+alliance_addBBCode;Lisää BB-koodi
+alliance_addMedal;Lisää mitali
+alliance_assignToPosition;Määritä jäsenet rooleihin ja muuta liiton nimeä
+alliance_editPermissions;Muokkaa oikeuksia
+alliance_roleTitle;Roolin nimi:
+alliance_assignToPosition_onlyMemberError;Olet tämän liiton ainoa jäsen. Jäsenten määräämistä rooleihin ja liiton nimen muuttamista ei voi poistaa.
+alliance_noAllianceEvents;- Ei liiton tapahtumia näytettäväksi -
+alliance_dailyContribution;Päivittäinen tukiosuus
+alliance_contributionAmount;Tuki: <b>{{AMOUNT}}</b>
+alliance_resourcesContributed;{{current}}/{{max}} resurssia annettu
+alliance_contributionResetIn;Nollautuu ajassa: {{time|Countdown}}
+alliance_resUntilNext;Resurssit seuraavalle tasolle asti: {{resources|LongNumber}}
+alliance_bonusCurrentlyActivating;Bonuksen aktivointi: {{resources|Countdown}}
+alliance_bonusMaxed;Bonus maksimoitu
+alliance_tripledContribution;Olet kolminkertaistanut tukiosuutesi!
+alliance_contributionStatistics;Rahoitusosuustilastot
+alliance_contributionNone;- Ei tukevia tällä hetkellä -
+auth_clientVerificationFailed;Asiakasta ei voitu vahvistaa. Yritä uudelleen.
+banned_seeMessage;Katso viesti
+banned_acceptPunishment;Hyväksy rangaistus
+residence_settlement;Asutus
+palace_capital;Aseta tämä kylä pääkaupungikseni.
+palace_setAsCapital;Asetetaan pääkaupungiksi
+palace_enterPassword;Syötä salasana turvallisuussyistä:
+embassy_GoToAlliance;Siirry liittoon
+embassy_Invitation;Liittouma {{AllianceId|AllianceLink}}, johon kutsui {{playerId|PlayerLink}}
+embassy_VillagesInRange;Kylät säteellä
+embassy_LeaveAllianceToJoin;Liittyäksesi uuteen liittoumaan, sinun on ensin erottava nykyisestä liittoumastasi.
+embassy_ConfirmLeaveAlliance;Vahvista ja poistu liittoumasta
+embassy_InvitationAccepted;Kutsu hyväksytty
+embassy_AllianceFounded;Liittouma perustettiin onnistuneesti
+embassy_LeftAlliance;Poistui onnistuneesti liittoumasta
+embassy_acceptInvitationQuestion;Oletko varma, että haluat liittyä {{allianceId|AllianceLink}}?
+embassy_acceptInvitationWarning;Et voi poistua liittoumasta {{hours}} tuntiin liittymisen jälkeen.
+embassy_acceptInvite;Liity liittoumaan
+embassy_declineInvite;En halua liittyä, poista kutsu
+embassy_noAlliancesNearby;Lähialueelta ei löydy liittoutumia.
+smithy_improveTo;Paranna tasolle {{level}}
+smithy_viewList;Näytä kehitys
+smithy_upgradeStarted;{{unitId|TranslateSuffixFor|truppen.tid}} parannus aloitettu
+smithy_researchFirst;Yksikkö on tutkittava Akatemiassa
+smithy_levelTooLow;Sepän taso liian alhainen, päivitä sepän taso
+allBuildings_10;Kaikki varastot:
+allBuildings_11;Kaikki viljasiilot:
+allBuildings_23;Kaikki kätköt:
+allBuildings_38;Kaikki varastot:
+allBuildings_39;Kaikki viljasiilot:
+currentBuildingValue;Tällä hetkellä {{type|TranslateSuffixFor|allgemein.gid}}:
+ad_successful;Mainos katsottu onnistuneesti!
+externalLink_title;Ulkoinen linkki
+externalLink_description1;<b>Varoitus!</b><br>Olet avaamassa seuraavaa ulkoista linkkiä:
+externalLink_description2;Travian Games ei voi tarkistaa tai vahvistaa tätä linkkiä.
+externalLink_description3;Toimi omalla vastuullasi.
+externalLink_description4;Haluatko varmasti jatkaa?
+externalLink_continue;Jatka linkkiin
+search_village;Etsi kylää
+search_select_village;Valitse kylä
+search_three_characters;Kirjoita vähintää {{amount}} merkkiä
+search_no_result;Vastaavuutta ei löytynyt
+search_player;Etsi pelaaja
+search_player_invite;kutsu pelaaja
+search_select_player;Valitse pelaaja
+search_select_player_invite;Kutsu uusi pelaaja
+search_alliance;Etsi liittoumaa
+search_select_alliance;Valitse liittouma
+gid27.arte_detail_;{{INT}}
+artefact_inventory_village;Kylä:
+artefact_inventory_conquered;Vallattu:
+artefact_inventory_active;Aktiivinen: aktiivinen klo
+artefact_inventory_active_already;Aktiivinen: <b>Aktivoitui</b>
+artefact_inventory_show_active_only;Näytä vain aktivoidut artefaktit
+artefact_overview;Artefaktin yleiskatsaus
+artefact_tip_large;Suuret artefaktit edellyttävät aarrekammion tasoa <b>20</b> ja vaikuttavat koko <b>hahmoon</b>
+artefact_tip_small;Pienet esineet vaativat aarrekammion tason <b>10</b> ja vaikuttavat vain <b>kylään</b>
+artefact_tip_nearby;Artefakteja, jotka ovat {{villagenamelong|Bold}} lähistöllä
+artefact_small;Pieni
+artefact_large;Suuri
+artefact_nearby;Lähistöllä
+artefact_village;Kylä
+artefact_button_former_owners;Katso edelliset omistajat
+artefact_already_active;Jo aktivoitu
+artefact_required_level_value;Aarrekammio <b>taso {{LEVEL}}</b>
+artefact_details;Tarkemmat tiedot:
+number_counter;{{NUMBER}}.
+tasks_villageTasks;Kylän tehtävät
+tasks_nextHeroLevelBonus;Seuraavan sankarin tason bonus = {{value}}%
+villageOverview_building_headline;Rakennus
+villageOverview_building_slotIdle;Ei käynnissä olevia rakennustöitä
+villageOverview_resource_sorting1;Kylälista
+villageOverview_resource_sorting2;Viljasiilo pienin kesto
+villageOverview_resource_sorting3;Viljasiilo suurin kesto
+villageOverview_resource_sorting4;Varaston pienin kesto
+villageOverview_resource_sorting5;Varaston suurin kesto
+villageOverview_resource_sorting6;Tuotantosi on negatiivinen.
+villageOverview_troops_stationed;Joukkoja asemissa kylässä
+villageOverview_troops_sum;Omia joukkoja yhteensä
+villageOverview_troops_tab_training;Koulutus
+villageOverview_culture_slots;Kyläpaikat
+cancelPopup_Improvement;Peruuta tason korotus
+cancelPopup_Research;Peruuta tutkimus
+cancelPopup_Construction;Peruuta rakennustyö
+cancelPopup_text_;{{NAME}} {{LEVEL}}
+cancelPopup_text_Improvement;Haluatko peruuttaa rakennuksen {{NAME}} korottamisen tasolle {{LEVEL}}?
+cancelPopup_text_Research;Haluatko peruuttaa aiheen {{NAME}} tutkimuksen?
+cancelPopup_text_Construction;Haluatko peruuttaa rakennustyön {{NAME}} tasolle {{LEVEL}}?
+cancelPopup_text_refund;Sinulle palautetaan {{INT}}% korotuskustannuksista:
+dailyQuests_timeRemaining;Aikaa jäljellä: {{time|Countdown}}
+dailyQuests_rewardOverview;Katso palkitsemisen yleiskatsaus
+dailyQuests_claimRewards;Ota palkkiot
+dailyQuests_pointsEarned;Ansaitut pisteet: <b>{{current}}/{{max}}</b>
+dailyQuests_rewardDescription;Nämä palkinnot voit avata suorittamalla tämän päivän päivittäiset tehtävät:
+dailyQuests_claimAction;Kerää
+dailyQuests_alreadyClaimed;Vaadittu
+dailyQuests_questDetailTitle;Tiedot
+dailyQuests_quest_worth;Tämän tehtävän arvo:
+dailyQuests_quest_worth_points;+{{points}} piste[points>1:ttä]
+dailyQuests_quest_repeated;Tämä tehtävä voidaan toistaa:
+dailyQuests_quest_repeated_amount;{{amount}} kerta[amount>1:a]
+dailyQuests_quest_completed;Toistoja suoritettu:
+dailyQuests_quest_difficulty;Vaikeustaso:
+dailyQuests_quest_requirement;Vaatimus:
+dailyQuests_backToOverview;Takaisin yleisnäkymään
+dailyQuests_difficulty_moderate;Kohtalainen
+dailyQuests_difficulty_hard;Vaikea
+dailyQuests_difficulty_challenging;Haastava
+achievementQuests.achQuest_;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+achievementQuests.achQuest__step_01_description;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+heroMansion_Loyalty;Uskollisuus: {{INT}}%
+heroMansion_Conquered;Vallattu {{TIME|DateTime}}
+heroMansion_SlotFree;Seuraava keidaspaikka on saatavilla
+heroMansion_SlotBlocked;Seuraava keidas <color={{colorValue|TextColor}}>Sankarin Kartanon</color> <color={{colorValue2|TextColor}}>tasolla {{REQUIRMENT}}</color>
+heroMansion_Undo;Peruuta
+heroMansion_FinishedAt;Valmistui: {{TIME|Time}}
+waterworks_NoneOasesAcquired;Ei liitettyä keidasta
+waterworks_BonusCalculation;+ ({{INT}}% / {{INT2}}%) = 
+waterworks_CurrentBonus;Nykyinen vesilaitosbonus: +{{INT}}% keidasresursseista
+waterworks_Oases;Keitaita liitetty
+messages_inbox_title;{{COUNT}} viestiä
+messages_inbox_title_selected;Valitut viestit {{SELECTED}} / {{COUNT}} 
+messages_newMessage;Uusi viesti
+messages_messageSent;Viesti lähetetty
+messages_exitPreview;Poistu esikatselusta
+messages_previewTitle;Esikatsele viestiä
+messages_unread_count;{{COUNT}} lukematonta
+reportPlayer_selectReason;Valitse raportin syy
+reportPlayer_reasonPlaceholder;Raportin syy
+reportPlayer_addNote;Lisää raporttiin lisätieto (valinnainen):
+reportPlayer_alsoBlock;Älä välitä myöskään tästä pelaajasta
+reportPlayer_maximumLength;Enimmäispituus: {{text|TextLength}}/300
+reportPlayer_nowIgnored;Välttelet nyt tätä pelaajaa.
+reportPlayer_nowUnignored;Poistit tämän pelaajan välttelylistalta.
+statistics_general;Yleiset tilastot
+statistics_seeDetails;Katso lisätietoja
+statistiken.progressionStepTitle_;{{VALUE}}{{DATETIME}}
+language_de-DE;Saksan
+language_en-US;Suomi
+language_fr-FR;Ranska
+language_ru-RU;Venäjä
+statistics_villageAndHero;Suurin kylä / sankari
+RelativeTime_0;{{data}} s
+RelativeTime_1;{{data}} m
+RelativeTime_2;{{data}} h
+RelativeTime_3;[data>1:{{data}} päivää][data<2:{{data}} päivä]
+RelativeTime_4;[data>1:{{data}} viikkoa][data<=1:{{data}} viikko]
+RelativeTime.Separator; 
+RelativeTime.Wrapper.Past;{{time}} sitten
+RelativeTime.Wrapper.Future;Ajassa {{time}}
+mapCell_tooFewSettlers;{{current}}/3 uudisasukasta käytettävissä
+mapCell_heroNotIdle;Sankarisi ei ole toimettomana
+mapCell_cantAddOwn;Et voi lisätä omia kyliäsi
+mapCell_alreadyInVillage;Olet jo siinä kylässä
+serverSelection_rememberPassword;Muista salasanani
+serverSelection_savedWorldsTitle;Pelimaailmasi
+serverSelection_removeWorldTitle;Poista pelimaailma
+serverSelection_removeWorldQuestion;Haluatko todella poistaa tämän pelimaailman listaltasi?
+serverSelection_removeWorldDescription;Varoitus: Tämä ei poista tiliäsi pelimaailmasta. Voit palata milloin tahansa ja lisätä pelimaailman ja tilisi pelimaailmojen luetteloon.
+serverSelection_removeWorldButton;Poista listalta
+serverSelection_addWorldText;+ Lisää pelimaailma
+buildingActivities_buildingAdditional_;{{amount}}
+buildingActivities_buildingAdditional_17;{{amount}} aktiivista kauppareittiä
+reports_filters_reset;Nollaa suodattimet
+palace_capitalSet;Pääkaupunki asetettu!
+palace_isCapital;Tämä on pääkaupunkisi.
+messages_unread_count_full;{{COUNT}} lukematonta viestiä
+statistics_alliance;Liittoumatilastot
+statistics_alliances_best_off;Parhaat liittoumat (hyökkäys)
+statistics_alliances_best_def;Parhaat liittoumat (puolustus)
+statistics_offensiveStrength;Hyökkäysvoimasi {{VILLAGEID|VillageLink}} tällä palvelimella
+statistics_offensiveStrengthAlliance;Hyökkäysvoimasi {{VILLAGEID|VillageLink}} liittoumassasi
+statistics_offensiveStrengthVillage;Hyökkäysvoima tässä kylässä:
+statistics_defensiveStrength;Puolustusvoimasi tällä palvelimella
+statistics_defensiveStrengthAlliance;Puolustusvoimasi liittoumassasi
+statistics_defensiveStrengthVillage;Puolustusvoima tässä kylässä:
+statistics_defensiveStrengthVillageSum;Kaikkien kylien puolustusvoimien summa:
+recent;Viimeisimmät
+appliedFilters;Sinulla on käytössäsi {{COUNT}} suodatinta.
+allgemein.gid99;Satunnainen
+rallyPoint_troopsOverview_10;Yksityiskohtainen joukkojen yleiskatsaus
+rallyPoint_troopsOverview_returningFromAdventure;Paluumatkalla seikkailusta: 
+rallyPoint_troopsOverview_detailedView;Yksityiskohtainen näkymä
+rallyPoint_troopsOverview_noMovements;- Ei joukkojen liikkeitä -
+rallyPoint_troopsOverview_Target;Kohde: {{Target|NamedCoordinates}}
+rallyPoint_troopsOverview_Origin;Lähde: {{Target|NamedCoordinates}}
+hero_adventures_number;Nro. {{INT}}
+hero_status_regeneration;<b>Terveyden palautuminen:</b> {{VALUE}}% päivässä
+hero_status_regeneration_details;{{HERO}}% päivässä sankarista {{EQUIPMENT}}% päivässä varusteista
+hero_status_experience;<b>Kokemus:</b> {{VALUE}}%
+hero_status_experience_bonus;Bonus: {{VALUE}}%
+search_results;Etsi tuloksia
+search_player_link;Pelaajan linkki
+search_select_player_link;Valitse pelaaja
+search_recipient;Etsi vastaanottaja
+search_select_recipient;Valitse vastaanottaja
+search_alliance_link;Liittouman linkki
+search_select_alliance_link;Valitse liittouma
+messages_fullView_title;Viesti
+messages_recipient_placeholder;Valitse vastaanottaja
+messages_title_placeholder;Kirjoita viestisi otsikko
+messages_message_placeholder;Kirjoita viestisi
+messages_ownAlliance;Oma liittouma
+messages_selectedRecipients;Valittu
+messages_ownAlliance_[ally];Kaikki liittouman jäsenet
+messages_ownAlliance_[off];Hyökkäävät liittouman jäsenet
+messages_ownAlliance_[def];Puolustavat liittouman jäsenet
+messages_discard_title;Hylkää viesti
+messages_discard_text_header;Haluatko hylätä tämän viestin?
+messages_discard_text;Viestin sisältö katoaa peruuttamattomasti.
+messages_confirm_deletion_title;Poista viestit
+messages_confirm_deletion_text_header;Haluatko varmasti poistaa [data>1:{{data}} viestit][data=1:{{data}} viestin]?
+messages_confirm_deletion_text;Kun viestit on poistettu, niitä ei voi enää saada takaisin.
+messages_confirm_deletion_button;Poista [data>1:{{data}} viestiä][data=1:{{data}} viesti]
+icon_selection_title;Lisää kuvake
+icon_selection_button;Valitse kuvake
+icon_selection_resourcesAndHero;Resurssit / Sankari
+icon_selection_natureAndNatars;Luonto ja Nataarit
+upgrading;Parannetaan!
+buildingActivities_buildingAdditional_46;Ei haavoittuneita joukkoja
+playerDetails_ignorePlayerDescription;Pelaaja piilotetaan
+reports_share;Jaa raportti
+search_select_village_link;Valitse kylä
+search_village_link;Linkitä kylä
+search_report_link;Linkitä raportti
+search_select_report_link;Valitse raportti
+messages_banned;Voit kirjoittaa viestejä vain liittosi muille jäsenille.
+messages_template_title;Mallipohjat
+messages_template_none;Ei saatavilla mallipohjia
+messages_template_edit_title;Muokkaa mallipohjaa
+messages_template_delete_title;Poista mallipohja
+messages_template_delete_question;Haluatko varmasti poistaa tämän mallipohjan?
+messages_template_delete_desc;Kun se on kerran poistettu, et voi enää palauttaa sitä.
+messages_template_create;Luo uusi mallipohja
+messages_template_create_descr;Luo uusi mallipohja nykyisestä viestistäsi:
+messages_template_created;Mallipohja luotu!
+messages_template_deleted;Mallipohja poistettu!
+statistics_culturePoints_productionRank;Kulttuuripistetuotantosi sijoitus tällä palvelimella
+statistics_culturePoints_productionRankAlliance;Kulttuuripistetuotantosi sijoitus liittoumassasi
+statistics_culturePoints_production;KP
+statistics_resourceRank_production;Tuotanto: {{VALUE|ShortenNumber}}
+statistics_resourceRank_productionRank;Tuotantosi sijoitus tällä palvelimella
+statistics_resourceRank_productionRankAlliance;Tuotantosi sijoitus liittoumassasi
+statistics_resourceRank_bounty_lost;Tappio
+statistics_wonderOfTheWorld_header;Parhaat maailman ihmeet
+hospital_healing_costs;Joukkojen parantumiskustannukset
+hospital_healing_action;Paranna joukkoja
+hospital_healing_list;Näytä paranemisluettelo
+hospital_healing_list_title;Joukkojen paraneminen
+hospital_healing_started;Paraneminen alkoi
+bonusValueWithPercent;+{{value}}%
+village_with_isCapital;{{villageName}} (Pääkaupunki)
+maximumTextLengthError;{{CONTEXT}} voi olla enintään {{AMOUNT}} merkkiä
+infoTab_genericEffectInBrackets;({{INT|Sign}})
+infoTab_effectPercentage;{{INT}}%
+infoTab_effectInBracketsPercentage;({{INT|Sign}}%)
+infoTab_trapperCurrently;Nykyinen ansoittajan enimmäismäärä:
+trapper_Build_Action;Rakenna ansoja
+trapper_ProductionCosts;Ansojen tuotantokustannukset
+trapper_TrapsInConstruction;Rakentella olevia ansoja
+trapper_MaxBuilt;Ansoja on jo rakennettu maksimimäärä.
+truppen.tid119;Ansa
+truppen.tid119p;Ansoja
+rallyPoint_troopsOverview_outgoingMission_scouting_1;Tiedustele puolustuksia ja joukkoja kohteesta 
+rallyPoint_troopsOverview_outgoingMission_scouting_0;Tiedustele resursseja ja joukkoja kohteesta 
+rallyPoint_troopsOverview_returningRegeneratedMission;Palautetaan joukkoja kohteesta: 
+rallyPoint_troopsOverview_returningFleeingMission;Joukot palaavat metsän kätköistä: 
+rallyPoint_troopsOverview_foreignTroopsIn;Asemissa kohteessa: 
+rallyPoint_celebration_hint;Panimossa vietettävät juhlat saattavat vaikuttaa joukkoihin.
+building_not_built;Rakennusta ei rakennettu
+berichte.report_icon_24;Raportti
+allBuildings_36;Kaikkien ansastajien enimmäismäärä:
+cropFinder_min_oasis_crop_bonus;Väh. Keitaiden viljabonus:
+cropFinder_select_minimum_crop_bonus;Valitse vähimmäisviljabonus
+cropFinder_unoccupied;Autio
+search_by_location;Etsi sijainnin mukaan
+search_by_player;Etsi pelaajan mukaan
+search_village_from_player;Etsi pelaajan kylää
+enter_player_name;Anna pelaajan nimi
+messages_template_newConditionsNotMet;Mallipohjissa on oltava otsikko ja viesti.
+message_report_isAlready;Viesti on ilmiannetty syyllä {{REASON}}
+tutorial_begin;Aloita kiertue
+tutorial_title_0;Tervehdys, peloton mestari! 
+tutorial_text_0;Tervetuloa Travian: Legendsin hurjalle taistelukentälle. Valmistaudutaan nopeasti hallitsemaan dynaamisia siirtokuntia ja keräämään pysäyttämättömiä joukkoja.\n\nOletko valmis?
+tutorial_title_1;Navigoinnin yleiskatsaus
+tutorial_text_1;Täältä löydät kaiken kartasta tehokkaaseen viestintään ja oivaltaviin tietovälineisiin. Täällä on myös siististi piilotettuna päivittäiset tehtävät, henkilökohtaiset asetukset ja monia muita ominaisuuksia.
+tutorial_title_3;Resurssisi
+tutorial_text_3;Kyläsi resurssit löytyvät täältä. Resurssipalkkia napauttamalla saat lisätietoja.
+tutorial_title_4;Resurssisi
+tutorial_text_4;Resurssipalkin napauttaminen uudelleen piilottaa yksityiskohdat.
+tutorial_title_5;Kyläsi
+tutorial_text_5;Täältä löydät kaikki tarvittavat tiedot kylästäsi. Tehtäväluettelosta joukkojesi yleiskatsaukseen ja rakennusjonoon kaikki on tässä. Sovelluksen tuorein lisäys, rakennuksen aktiviteetit -ominaisuus, tarjoaa nopean yhteenvedon rakennusten meneillään olevasta kehityksestä.
+tutorial_title_7;Kyläsi
+tutorial_text_7;Jos kokoontumispisteesi rakennetaan, se tarjoaa kattavan näkymän kaikista käynnissä olevista joukkojen liikkeistä. Lisäksi se tarjoaa nopean oikotien kokoontumispisteellesi.
+tutorial_title_8;Sivuvalikko
+tutorial_text_8;Voit avata sivuvalikon napauttamalla nuolia tai pyyhkäisemällä sormella. Tämä voidaan tehdä milloin tahansa.
+tutorial_title_9;Kylälista
+tutorial_text_9;Voit vaihtaa nopeasti kylien välillä pyyhkäisemällä sivupaneelin auki milloin tahansa. Sieltä löydät myös kylätilastot.\n\nJa tähän päättyy kierros. Mitä enää odotat? Sukella sisään, tutki ja anna Travian: Legendsin maailman tulla strategiseksi leikkikentäksi.\n\nOnnea matkaan!
+tutorial_finish;Päätä kierros
+filters_report_not_found;Raporttia ei ole olemassa
+filters_player_not_found;Pelaajaa ei ole olemassa
+filters_alliance_not_found;Liittoumaa ei ole olemassa
+filters_village_not_found;Kylää ei ole olemassa
+settings_game;Tämä pelimaailma
+language_app_selection;Valitse sovelluksen kieli
+settings_sitter;Kylävahti {{VALUE}}:
+settings_sitterTab_yourSitters;Sinun kylävahtisi
+settings_sitterTab_SittingFor;Kylävahtina
+search_player_addSitter;Lisää kylävahti
+search_select_player_addSitter;Lisää kylävahti
+search_player_addSitter_additionalEmptyResultInfo;Pelaajaa ei löytynyt\nVain samassa liittoumassa/konfederaatiossa olevat pelaajat voivat toimia kylävahtinasi.
+settings_sitter_sitterAdded;Kylävahti lisätty!
+settings_sitter_sitterRemoved;Kylävahti poistettu!
+settings_sitter_sitterPermissionChangesSaved;Lupamuutokset tallennettu!
+settings_sitter_confirm_remove_text_header;Haluatko varmasti poistaa {{PlayerName}} kylävahdeistasi?
+settings_sittersFor;Näiden hahmojen kylävahti
+settings_sittersFor_info;Sinut on nimetty kylävahdiksi alla oleville hahmoille. Voit perua tämän painamalla punaista rastia.
+settings_sittersFor_none;Et ole tällä hetkellä toisen hahmon kylävahti.
+settings_sitterFor;Kylävahti hahmolle {{VALUE}}
+settings_sitterFor_sittingRemoved;Ei ole enää kylävahti hahmolle {{PlayerName}}!
+settings_sitterFor_confirm_remove_header;Haluatko lopettaa kylävahtina olon hahmolle 
+settings_sitterFor_confirm_remove_header_questionmark;?
+settings_sitterFor_confirm_remove_info;Tätä toimenpidettä ei voi peruuttaa. Vain muut pelaajat voivat lisätä sinut kylävahdikseen.
+brewery_celebration_attackStrength;({{INT}}% hyökkäysvoima)
+brewery_celebration_hint;Juhla vaikuttaa jo marssiviin joukkoihin
+settings_game_newLanguage;Kieli muutettu {{language}}.
+wonderOfTheWorld_name;Maailman ihmeen nimi:
+combatSimulator_title;Simuloi - {{role|TranslateSuffixFor|combatSimulator_as}}
+combatSimulator_cataTargetLevel;Taso <b>{{index}}. katapulttien kohde</b>
+combatSimulator_troopLevel;Joukkojen sepän taso:
+combatSimulator_asAttacker;Hyökkääjänä
+combatSimulator_asDefender;Puolustajana
+combatSimulator_result;Simuloi tuloksia
+combatSimulator_addReinforcement;Lisää vahvistuksia
+valueWithModifier;{{value|Round|2}}x
+valuePlusInBracketsWithPercent;(+{{change}}%)
+none;Ei lainkaan
+marketplace_traderoute_repeatEveryHour;Toista joka: (tunti)
+block_sitter_warning;Kylävahtina et voi tehdä tätä.
+settings_openConsentWindow;Yksityisyysasetukset
+combatSimulator_adjustHeroStats;Säädä sankarin ominaisuuksia
+combatSimulator_eagleEyeTitle;Valitse Haukansilmä -bonus
+combatSimulator_architectSecretTitle;Valitse Arkkitehdin salainen bonus
+combatSimulator_metallurgyBonus;Valitse metallurgian bonus
+combatSimulator_rightHand;Valitse oikean käden esine
+combatSimulator_leftHand;Valitse vasemman käden esine
+combatSimulator_bodyItem;Valitse rintapanssari
+combatSimulator_inventoryItem;Valitse varuste
+combatSimulator_selectBuildingLevel_35;Valitse panimon taso
+combatSimulator_selectBuildingLevel_26;Valitse palatsin taso
+combatSimulator_selectBuildingLevel_34;Valitse Kivenhakkaajan taso
+combatSimulator_selectBuildingLevel_31;Valitse muurin taso
+combatSimulator_selectBuildingLevel_32;Valitse muurin taso
+combatSimulator_selectBuildingLevel_33;Valitse muurin taso
+combatSimulator_selectBuildingLevel_43;Valitse muurin taso
+combatSimulator_selectBuildingLevel_42;Valitse muurin taso
+combatSimulator_selectTargetLevel;Valitse katapulttien taso
+combatSimulator_selectTroopLevel;Valitse joukkojen taso
+survey_title;Travian: Legends kysely
+gdpr_title;Suostumus tietojen käsittelyyn
+gdpr_description;Keräämme suostumuksellasi tiettyjä tietoja laitteestasi, IP-osoitteestasi, käytöstäsi ja mainonnan tunnisteista. Tämä auttaa meitä näyttämään sinulle sopivampia mainoksia ja parantaa yleistä sovelluskokemustasi.
+gdpr_basic_functions;Tarvitaan sovelluksen perustoimintoja varten.
+gdpr_advertisement;Henkilötietojen käyttö mainonnassa.
+gdpr_analytics;Henkilötietojen käyttö analytiikassa.
+gdpr_acceptAll;Hyväksy kaikki
+gdpr_save_and_exit;Tallenna + Poistu
+gdpr_rejectAll;Hylkää kaikki
+gdpr_privacy_policy;Tietosuojakäytäntö
+gdpr_terms_and_conditions;Yleiset käyttöehdot
+plus.plus.browserOnly;(vain selain)
+hero_inventory_already_equipped;Sama esine on jo varustettu.
+survey_button_title;Palautekysely
+survey_button_description;Osallistu tähän lyhyeen kyselyyn ja auta meitä parantamaan Travian: Legends -sovellusta.
+goldShop_extend;jatka
+goldShop_remaining;Jäljellä:
+goldShop_advantage_activated;aktivoitu
+search_select_recipient_removeAll;Poista kaikki
+messages_messageTopic_noTopic;Ei aihetta/oletus
+messages_messageTopic_resources;Tietoa resursseista
+messages_messageTopic_defenses;Tietoja puolustuksesta
+messages_messageTopic_attacks;Tietoja hyökkäyksistä
+messages_messageTopic_strategies;Tietoja strategioista
+messages_messageTopic_information;Yleistietoja
+messages_messageTopic_important;Tärkeää tietoa
+messages_messageTopic_selectionTitle;Valitse viestin aihe
+farmlist_confirm_deletion_header;Haluatko varmasti poistaa valitun farmilistan?
+farmlist_confirm_deletion_text;Tätä toimintoa ei voi peruuttaa.
+farmlist_target_confirm_deletion_header;Haluatko varmastoi poistaa [data>1:nämä {{data}} kohteet][data=1:tämän kohteen]?
+upgrade_queue_cantConstructImmediately;Tätä rakennusta ei voida rakentaa välittömästi
+language_cs-CZ;Tšekki
+language_es-ES;Espanja
+language_pl-PL;Puola
+language_pt-PT;Portugali
+language_tr-TR;Turkki
+language_it-IT;Italia
+playerDetails_victorPoints_summary;{{TOTAL}} | {{PERDAY}}/päivä
+settings_selectFormat;Valitse muoto:
+settings_selectFormat_dialog_title;Valitse muoto
+settings_game_newDateFormat;Päivämäärämuoto muutettu muotoon {{dateFormat}}.
+help_getHelp;Hae apua
+help_getHelpDescription;Jos tarvitset apua tai haluat ilmoittaa ongelmasta, ota yhteyttä pelin sisäiseen tukeen täällä.
+help_learnAboutGame;Tutustu peliin
+help_learnAboutGameDescription;Kaikki mitä sinun tarvitsee tietää pelistä ja siitä, miten asiat toimivat yksityiskohtaisesti, löytyy täältä.
+help_gameRules;Opi pelisäännöt
+help_gameRulesDescription;Täältä löytyvät pelin säännöt.
+help_joinDiscord;Liity Discordiin
+help_joinDiscordDescription;Jaa palautteesi kanssamme erityisellä Mobile Discord -palvelimellamme.
+PLAYERARG;{{PLAYER}}
+referAFriend_friendJoinedDescription;Jotta saat Kultaa kaverikutsustasi, kaverisi on asutettava <b>toinen kylänsä</b>. Auta heitä saavuttamaan tavoite! Voit katsoa heidän edistymistään kaverikutsujen yleisnäkymästä, alhaalla.
+referAFriend_rewardAddedVillage2Title_PLAYERARG;Kaverisi {{PLAYER}} on asuttanut 2. kylänsä
+referAFriend_rewardAddedVillage3Title_PLAYERARG;Kaverisi {{PLAYER}} on asuttanut 3. kylänsä
+referAFriend_rewardAddedVillage4Title_PLAYERARG;Kaverisi {{PLAYER}} on asuttanut 4. kylänsä
+referAFriend_rewardAddedVillage5Title_PLAYERARG;Kaverisi {{PLAYER}} on asuttanut 5. kylänsä
+referAFriend_rewardAddedVillage6Title_PLAYERARG;Kaverisi {{PLAYER}} on asuttanut 6. kylänsä
+referAFriend_rewardAddedVillage7Title_PLAYERARG;Kaverisi {{PLAYER}} on asuttanut 7. kylänsä
+referAFriend_rewardAddedVillage8Title_PLAYERARG;Kaverisi {{PLAYER}} on asuttanut 8. kylänsä
+referAFriend_rewardAddedVillage9Title_PLAYERARG;Kaverisi {{PLAYER}} on asuttanut 9. kylänsä
+referAFriend_rewardAddedVillage10Title_PLAYERARG;Kaverisi {{PLAYER}} on asuttanut 10. kylänsä
+sysmsg_truce_learnMore;Opi lisää aselevosta
+worldEnded_ww_playerWon_topAlliance;Kylän {{WW_VILLAGE|VillageLink}} työläiset, {{WORLD_END_TIME|DateTime}} tienoolla, muurasivat viimeisen kiven erääseen historian mahtavimmista luomuksista.Liittoumien <br>kanssa, {{WW_ALLIANCE|AllianceLink}}, {{WW_PLAYER|PlayerLink}} rakensi ensimmäisenä Maailmanihmeen loppuun saakka. Lukemattomien resurssien käytön päätteeksi, ja satojentuhansien rohkeiden puolustajien avustuksella, {{WW_PLAYER|PlayerLink}} sai itselleen kunnian olla "Tämän aikakauden voittaja."
+worldEnded_as2022_topAlliances;Onnea {{ALLIANCE_TOP_1|AllianceLink}}, joka tuli Euroopan johtajaksi {{VICTORY_POINTS_TOP_1}} voittopisteellä! {{ALLIANCE_TOP_2|AllianceLink}} taisteli urhoollisesti voiton eteen, ja päätyivät toiseksi. {{ALLIANCE_TOP_3|AllianceLink}} Seurasi heidän kintereillään kolmannelle palkintopallille.
+worldEnded_playerRanks_population;{{PLAYER_POPULATION_TOP_1|PlayerLink}} oli suurimman henkilökohtaisen valtakunnan hallitsija, ja toisella ja kolmannella sijalla olivat {{PLAYER_POPULATION_TOP_2|PlayerLink}} ja {{PLAYER_POPULATION_TOP_3|PlayerLink}}.
+worldEnded_playerRanks_offender;{{PLAYER_OFFENDER_TOP_1|PlayerLink}} tuhosi vihollistaistelijoita enemmän kuin kukaan muu, ja oli pelätyin komentaja.
+worldEnded_playerRanks_defender;{{PLAYER_DEFENDER_TOP_1|PlayerLink}} oli loistokkain puolustaja. Hän surmasi vihollisiaan kyliensä porteilla tahraten ympäröivät maat vihollistensa verellä.
+rallyPoint_startWithValue;Aloita ({{value}})
+rallyPoint_farmList_raidsStarted;{{INT}} lähetettyä ryöstöä.
+rallyPoint_farmList_CantAddToAbandonList;Et voi lisätä kohteita hylättyjen tilojen luetteloon.
+rallyPoint_farmList_CantActivateInToAbandonList;Et voi aktivoida kohteita hylättyjen tilojen luettelossa.
+rallyPoint_farmList_CantDuplicateInToAbandonList;Et voi monistaa kohteita hylättyjen tilojen luettelossa.
+rallyPoint_farmList_DuplicateRaids;Monista [raidsAmount=1:kohde][raidsAmount>1:kohteet]
+rallyPoint_farmList_SlotsDuplicated;[raidsAmount=1:Kohde][raidsAmount>1:Kohteet] monistettu!
+rallyPoint_farmList_pleaseSelectTheList;Valitse lista, johon haluat lisätä kohteesi.
+rallyPoint_farmList_farmlistFull;Farmilista on täynnä, valitse toinen farmilista tai luo uusi.
+rallyPoint_farmList_targetName;Kohteen nimi
+rallyPoint_farmList_differentTroopsWarning;Joukkojen määrää ei muuteta, ellet korvaa niitä asettamalla uudet luvut alla.
+rallyPoint_farmList_noobProtectionWarning;Aloittelijan suojan aikana et voi ryöstää toisia pelaajia, mutta voit ryöstää vapaita keitaita ja Nataarikyliä.
+rallyPoint_farmList_noFarmLists;Farmilistaa ei luotu
+rallyPoint_farmList_CreateNewFarmList;Luo farmilista
+rallyPoint_farmList_currentAmount;Farmilistoja: <b>{{amount}}</b>/{{max}}
+rallyPoint_farmList_differentTribe;Kylässä on eri heimo kuin tämänhetkisessä lähdekylässä. Tarkista joukkojen kyvyt.
+rallyPoint_farmList_overrideTarget;Ylikirjoita kohde
+rallyPoint_farmList_selectedActivated;Valitut kohteet asetettiin aktiivisiksi.
+rallyPoint_farmList_selectedDeactivate;Valitut kohteet asetettiin passiivisiksi.
+rallyPoint_farmList_LastRaid;<b>Viimeksi käynnistetty:</b> <nobr>{{lastStarted|DateTime}}</nobr>
+mapCell_editTargetListAmount;<nobr>Muokkaa kohdetta</nobr> <nobr>(listat: {{INT}})</nobr>
+goldShop_shopDisabled;Kultakauppa on poistettu käytöstä tässä pelimaailmassa
+infobox_accountLockGameEnd;Pelikierros on päättynyt!
+applySorting;Aktivoi lajittelu
+truppen.tid931;Ansa
+truppen.tid931p;Ansoja
+mainMenu_switchBackFromAvatar;{{iconName|Sprite}} Palaa takaisin {{playerName}}
+pending;(meneillään)
+featureNotAvailableInVacationMode;Tämä toiminto ei ole käytettävissä lomatilassa.
+notAllowed;Et voi tehdä tätä.
+settings_avatarDeletionInfo;Poistoprosessi kestää <b>3 vuorokautta</b>, ja hahmosi poistuu serveriltä vasta, kun aika on kulunut loppuun.\nHahmo joka on poistotilassa ei pysty enää ottamaan osaa huutokauppoihin eikä käyttämään vaihtotoimistoa.\nVoit peruuttaa poistamisen milloin tahansa täällä.
+settings_avatarDeletionCountDown;Hahmo poistetaan: 
+deleteAvatar_confirmation_header;Haluatko poistaa hahmosi?
+cams_info_subHeader;Yksi kirjautuminen kaikkiin pelimaailmoihin
+cams_info_text;Luo Legends aulatili, jotta voit kirjautua sisään helposti ja päästä saumattomasti kaikkiin pelimaailmoihisi yhtenäisen kirjautumisen kautta.
+cams_info_lessInfo;Vähemmän tietoa
+cams_info_Question_WhatIsLegendsLobbyAccount;Mikä on Legendsin aulatili?
+cams_info_Answer_WhatIsLegendsLobbyAccount;Alatilin ansiosta sinun ei enää koskaan tarvitse rekisteröityä uuteen pelimaailmaan. Kirjaudu vain sisään ja siirry aktiiviseen pelimaailmaasi, tai aloita uusi pelimaailman aulassa, selaimella tai mobiilisovelluksella.
+cams_info_Question_WhatAreAvatars;Mitä hahmot ovat?
+cams_info_Answer_WhatAreAvatars;Aulatilillä profiiliasi yksittäisessä pelimaailmassa kutsutaan avatariksi. Sinulla on yksi aulatili, jolla voi olla useita avatareja, yksi kutakin pelimaailmaa varten.
+cams_info_Question_WhatsWithCurrentGameworlds;Mitä tapahtuu nykyisille pelimaailmoilleni?
+cams_info_Answer_WhatsWithCurrentGameworlds;Kaikki aktiiviset pelimaailmat, jotka käyttävät samaa sähköpostiosoitetta kuin aulatilisi, linkitetään ja niihin pääsee aulan kautta. Voit vaihtaa nykyiset aktiiviset pelimaailman avatarisi oikeaan sähköpostiosoitteeseen ennen aulatilisi luomista.
+cams_info_Question_WhatsWithSitters;Voinko silti käyttää kylävahteja?
+cams_info_Answer_WhatsWithSitters;Kyllä, vahdit voidaan määrittää normaalisti pelimaailman asetuksista. Voit käyttää hahmoa, jolle sinut on nimitetty kylävahdiksi, suoraan pelimaailmassa.
+cams_info_Question_WhatsWithDuals;Voinko silti pelata duaalina muiden pelaajien kanssa?
+cams_info_Answer_WhatsWithDuals;Duaalit voidaan määrittää pelimaailmaan syöttämällä aulassa olevan pelaajan aulatilin nimi. Tämä tarkoittaa, että myös duaali tarvitsee ensin aulatilin ja voi kirjautua hahmolleen aulan kautta kun kutsu on hyväksytty. Pyydämme ettet jaa aulatilisi salasanaa kenenkään kanssa.
+cams_info_Question_WhatsWithoutLobbyAccount;Voinko pelata ilman Legendsin aulatiliä?
+cams_info_Answer_WhatsWithoutLobbyAccount;Voit edelleen kirjautua nykyisille pelimaailmoillesi suoraan käyttäen niiden URL-osoitetta. Jos kuitenkin haluat aloittaa uuden pelimaailman tai käyttää mobiilisovellusta, sinun täytyy luoda aulatili.
+cams_playerDecision_register_info;Uuden aulatilin avulla voit yhdistää nykyiset ja tulevat pelimaailmasi yhdellä kirjautumisella.
+cams_playerDecision_login_info;Onko sinulla jo aulatili?\n\nKirjaudu sisään ja jatka seikkailuasi.
+cams_playerDecision_register_header;Luo tili
+cams_playerDecision_register_create_new_account;Luo aulatili
+cams_playerDecision_register_login;Kirjaudu sisään aulaan
+cams_playerDecision_extra_info;Jotta voit pelata Travian: Legends -peliä, sinun on luotava aulatili.
+cams_register_header;Luo Legendsin aulatili
+cams_register_email_label;Kirjoita sähköpostiosoitteesi:
+cams_register_email_address;Rekisteröidy sähköpostiosoitteella
+cams_register_email_address_missing;Kirjoita sähköpostiosoitteesi.
+cams_register_email_address_not_valid;Syötä toimiva sähköpostiosoite. Esimerkiksi posti@palveluntarjoaja.fi
+cams_register_email_address_already_exists;Sähköpostiosoitteesi on jo yhdistetty aulatiliin.
+cams_register_redirecting_to_login;Ohjataan kirjautumiseen {{INT}}...
+cams_register_hintMessage_same_email_address;Käytä samaa sähköpostiosoitetta kuin nykyiset pelimaailmasi hahmosi yhdistääksesi heidät automaattisesti aulatiliin.
+cams_register_receive newsletter;Haluan vastaanottaa uutiskirjeen.
+cams_register_already_have_an_account;Onko sinulla jo tili?
+cams_register_log_in_now;Kirjaudu nyt
+cams_acceptTOS;Klikkaamalla "Rekisteröi sähköpostiosoite" hyväksyt <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">Yleiset käyttöehdot</link></style> ja vahvistat, että olet huomioinut <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">Tiedot peruuttamisoikeudesta</link></style> ja <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">Tietosuojaselosteet</link></style>.
+cams_activation_header;Luo Legendsin aulatili
+cams_activation_info;Lähetimme sinulle aktivointilinkin osoitteeseen <b>{{emailAdress}}</b>.<br>Ole hyvä ja seuraa sähköpostissa olevia ohjeita jatkaaksesi.
+cams_activation_enter_code;Kirjoita aktivointikoodi:
+cams_activation_code_example;Esim.123456
+cams_activation_entered_code;{{INT}}/6 numeroa
+cams_activation_cta_activate_account;Aktivoi tili
+cams_activation_email_lost;Etkö saanut sähköpostia?
+cams_activation_email_resend;Lähetä sähköposti uudelleen
+cams_activation_email_wrong;Väärä sähköpostiosoite?
+cams_activation_email_change;Vaihda sähköpostiosoite
+cams_activation_code_missing;Ole hyvä ja kirjoita aktivointikoodi jonka sait sähköpostissa.
+cams_activation_code_too_short;Aktivointikoodi on liian lyhyt. Kirjoita kaikki kuusi numeroa.
+cams_activation_code_format_incorrect;Aktivointikoodi on virheellinen. Varmista, että koodi koostuu vain kuudesta numerosta.
+cams_activation_code_incorrect;Aktivointikoodi on virheellinen. Ole hyvä ja kirjoita aktivointikoodi jonka sait sähköpostissa.
+cams_activation_code_expired;Aktivointikoodi on vanhentunut.
+cams_activation_code_start_again;Aloita alusta
+cams_login_header;Kirjaudu sisään Legends aulaan
+cams_login_enter_email;Anna sähköpostiosoitteesi tai tilisi nimi tähän:
+cams_login_enter_password;Anna salasanasi:
+cams_login_hintMessage_email_already_connected;Sähköpostiosoitteesi on jo yhdistetty aulatiliin. Kirjaudu tai <style="SimpleLink"><link="BackToRegistrationLink">siirry rekisteröitymään</link></style>.
+cams_login_hintMessage_passwordUpdated;Salasanasi päivitettiin onnistuneesti
+cams_forgot_password;Unohditko salasanasi?
+cams_recover_password;Nollaa salasana
+cams_login_no_account_yet;Eikö sinulla ole vielä tiliä?
+cams_login_create_account;Luo tili
+cams_loginMask_accountNameRequired;Anna sähköpostiosoitteesi tai tilisi nimi.
+cams_loginMask_passwordRequired;Ole hyvä ja anna salasanasi.
+cams_loginMask_passwordAndUsernameAreWrong;Väärä sähköpostiosoite, tili nimi tai salasana.
+cams_loginMask_emailOrAccountName_placeholder;Pelitilin nimi tai sähköpostiosoite
+cams_loginMask_temporaryInfobox;UUSI: Sinun on luotava aulatili päästääksesi käsiksi pelimaailmoihisi.\n\nJos sinulla ei ole vielä aulatiliä, <style="SimpleLink"><link="CreateAccountLink">luo tili</link></style>.
+cams_setPassword_header;Aseta salasanani
+cams_setPassword_info;Luo tilisi salasana, jossa on vähintään kahdeksan merkkiä.
+cams_setPassword_enter_password;Valitse salasana:
+cams_setPassword_strength_label;Salasanan vahvuus
+cams_setPassword_strength_missing;Kirjoita salasana tarkistaaksesi sen vahvuuden.
+cams_setPassword_strength_1;hyvin heikko
+cams_setPassword_strength_2;melko heikko
+cams_setPassword_strength_3and4;Keskinkertainen
+cams_setPassword_strength_5;melko vahva
+cams_setPassword_strength_6;erittäin vahva
+cams_setPassword_strength_PasswordTooShort;Mitä pidempi, sitä parempi (16+ merkkiä)
+cams_setPassword_strength_PasswordGoodLength;Salasana on riittävän pitkä
+cams_setPassword_strength_OneType;Vain yhden tyyppisiä merkkejä käytetty
+cams_setPassword_strength_TwoTypes;Käytettiin kahdenlaisia merkkejä
+cams_setPassword_strength_ThreeTypes;Käytettiin kolmenlaisia merkkejä
+cams_setPassword_strength_NoNumbers;Ei numeroita käytetty
+cams_setPassword_strength_NoLetters;Ei kirjaimia käytetty
+cams_setPassword_strength_NoSpecialCharacters;Ei erikoismerkkejä käytetty
+cams_setPassword_strength_NoUpperAndLowerCase;Ei isojen ja pienten kirjainten sekoitusta
+cams_setPassword_strength_UpperAndLowerCase;Isoja ja pieniä kirjaimia käytetty
+cams_activation_cta_set_password;Aseta salasanani
+cams_activation_password_length;8-64 merkkiä
+cams_resetPassword_header;Aseta uusi salasana
+cams_resetPassword_info;Luo aulatiliisi salasana, jossa on vähintään kahdeksan merkkiä.
+cams_setUsername_header;Valitse nimi Legends aulatilillesi
+cams_setUsername_info;Valitse käyttäjätunnus ja lyhenne luodaksesi yksilöllisen aulatilin.
+cams_setUsername_username_label;Valitse käyttäjätunnus:
+cams_setUsername_tagline_label;Valitse lyhenne:
+cams_setUsername_tagline_example;esim. TAG12
+cams_setUsername_tagline;Tagi:
+cams_setUsername_condition_onlyLettersAndNumbers;Vain kirjaimia ja numeroita
+cams_setUsername_username_condition_Length;3-15 merkkiä
+cams_setUsername_tagline_condition_Length;2-5 merkkiä
+cams_setUsername_hint;Käyttäjänimesi ja lyhenteesi yhdistelmä on yksilöllinen aulatilin nimesi. Niin kauan kuin yhdistelmä on vapaana, voit valita minkä tahansa yhdistelmän.\n\nTämä ei vaikuta pelimaailman nimeen.
+cams_setUsername_cta_createAccount;Luo tili
+cams_setUsername_username_missing;Kirjoita käyttäjätunnus ja lyhenne.
+cams_setUsername_accountName_preview;Tilin nimen esikatselu:
+cams_setUsernameConfirmPopup_header;Legends aulatili luotu!
+cams_setUsernameConfirmPopup_info;Legendsin aulatilisi kirjautumistunnuksella <b>{{playerName}}</b> on luotu onnistuneesti.
+cams_setUsernameConfirmPopup_GameworldAndAvatar_header;Pelimaailmasi ja hahmosi
+cams_setUsernameConfirmPopup_GameworldAndAvatar_info;Yhdistimme seuraavat olemassa olevat pelimaailman hahmot, joilla on sama sähköpostiosoite, uuteen aulatiliisi.
+cams_avatar_name;Hahmon nimi
+cams_looby_welcomeMessage;Tervetuloa!\n<b>{{playerName}}</b>
+cams_looby_header;Pelimaailmasi
+cams_looby_noGameWorlds;Sinulla ei ole tällä hetkellä aktiivista hahmoa missään pelimaailmassa. Liity uuteen pelimaailmaan ja aloita pelaaminen.
+cams_looby_joinNewGameworld;Liity uuteen pelimaailmaan
+cams_looby_playNow;PELAA NYT
+cams_looby_gameworldsLinked;Tiliisi yhdistetyt pelimaailmat
+cams_looby_invitePenging;[data>1:{{data}} kutsua ][data=1:kutsu] odottaa käsittelyä
+cams_looby_localGameWorld;PAIKALLINEN PELIMAAILMA
+cams_looby_avatarInDeletion;Poistetaan
+cams_removeDualAccount_header;Poista duaalipelaaja
+cams_removeDualAccount_info;Haluatko poistaa <b>{{lobbyAccountName}}</b> hahmosi duaalipelaajan <b>{{avatarName}}</b>?\n\n<b>{{lobbyAccountName}}</b> ei pääse enää käsiksi hahmoosi.
+cams_removeDualAccount_removeDual;Poista duaali
+cams_addDualPlayer_info;Kirjoita pelaajan aulatilin nimi
+cams_addDualPlayer_placeholder;käyttäjätunnus#tag
+cams_addDualPlayer_addPlayer;[data>1:Lisää pelaajia][data=1:Lisää pelaaja][data=0:Lisää pelaaja][data=1:Lisää pelaaja]
+search_addDualPlayeradditionalEmptyResultInfo;Pelaajaa ei löydy tai hänet on jo kutsuttu duaaliksi
+cams_dualInventation_header;Duaalikutsu
+cams_dualInventation_invitations;Kutsut:
+cams_dualInventation_info;Jos hyväksyt kutsun, voit kirjautua sisään omalla aulatililläsi ja käyttää tätä hahmoa.
+cams_dualInventation_moreInfo;Voit hyväksyä vain yhden duaalikutsun kutakin pelimaailmaa kohti.
+cams_dualInventation_invite;<b>{{LobbyAccountName}}</b> kutsui sinut pelaamaan <b>{{avatarName}}</b>
+cams_dualInventation_AcceptInvite;Hyväksy kutsu
+cams_acceptDualInvitation_header;Hyväksy duaalikutsu
+cams_acceptDualInvitation_info;Haluatko hyväksyä <b>{{lobbyAccountName}}</b> duaalikutsun pelata <b>{{avatarName}}</b> - <b>{{gameworldName}}</b>?
+cams_acceptDualInvitation_moreInfo;Sinulla on useita duaalikutsuja samaa pelimaailmaa varten, mutta voit hyväksyä sieltä vain yhden duaalikutsun.
+cams_acceptDualInvitation_avatarInDeletion;Duaalisääntömme mukaan sinulla voi olla kuhunkin pelimaailmaan vain yksi aktiivinen hahmo. \nDuaalikutsun hyväksymällä menetät poistotilassa olevan hahmosi {{avatarName}} käyttöoikeuden kyseisessä pelimaailmassa. \nEt voi enää peruuttaa poistoprosessia jälkikäteen.
+cams_dualSettings_header;Duaaliasetukset
+cams_dualSettings_info;Voit lopettaa pelaamisen dualina mainitulla hahmolla milloin tahansa.
+cams_dualSettings_leaveDualPlay;Lähde duaalipelistä
+cams_confirmLeaveDualPlay_info;Haluatko lopettaa dualin pelaamisen <b>{{avatarName}}</b> - <b>{{gameworldName}}</b>?\n\nKun olet poistunut duaalipelistä, voit luoda oman avatarin tai liittyä toisen avatarin kanssa duaalipeliin tässä pelimaailmassa uudelleen.
+cams_recoverPassword_header;Nollaa salasana
+cams_recoverPassword_goBackToLogin;Takaisin kirjautumissivulle
+cams_recoverPassword_info;Anna sähköpostiosoite, joka on liitetty aulatiliisi. Lähetämme sinulle ohjeet miten palautat salasanasi
+cams_recoverPasswordEmailSent_header;Sähköposti lähetetty
+cams_recoverPasswordEmailSent_info;Jos tälle sähköpostiosoitteelle <b>{{emailAdress}}</b> on luotu aulatili, olet varmasti saanut sähköpostiisi ohjeet salasanan palauttamiseksi.\n\nKun olet palauttanut salasanasi, voit kirjautua uudelleen.
+cams_recoverPasswordEmailSent_goBackToLogin;Takaisin kirjautumissivulle
+cams_editDualAccounts_header;Duaalit
+cams_editDualAccounts_gameworld;Pelimaailma: {{gameworldName}}
+cams_editDualAccounts_avatar;Hahmo: {{avatarName}}
+cams_editDualAccounts_avatarOwner;Hahmon omistaja:
+cams_editDualAccounts_noDualsAdded;- Tälle hahmolle ei ole lisätty duaalipelaajia -
+cams_editDualAccounts_info;Duaali pystyy suorittamaan <b>kaikki pelaajatoiminnot</b>, mukaan lukien Kullan kuluttaminen ja ostaminen.\n\nDuaalipelaajat voivat kirjautua sisään omalla aulatilillään päästäkseen käyttämään tätä hahmoa, eivätkä he voi kutsua muita kaksoispelaajia.
+cams_editDualAccounts_warningHint;Älä jaa aulatilisi kirjautumistietoja muiden pelaajien kanssa, jotta estät ei-toivotun pääsyn muihin pelimaailman hahmoihin ja tilisi tietoihin.
+cams_editDualAccounts_addDualPlayer;Lisää duaalipelaaja
+cams_editDualAccounts_avatarInDeletion;Avatarisi {{avatarName}} tässä pelimaailmassa poistetaan. Siksi et voi lähettää duaalikutsua.
+cams_settings_title;Asetukset
+cams_settings_changePassword_information;Jos haluat vaihtaa salasanasi, lähetämme sinulle sähköpostiviestin tilisi sähköpostiosoitteeseen.
+cams_settings_changePassword_sendEmail;Lähetä sähköposti
+cams_settings_changePassword_emailSent;Olemme lähettäneet sinulle sähköpostia salasanasi vaihtamiseksi.
+cams_settings_accountDeletion_title;Aulatilin poistaminen
+cams_settings_accountDeletion_info;Poista Legends aulatilisi, mukaan lukien kaikki pelimaailmat ja hahmot tältä tililtä.
+cams_settings_accountDeletion_action;Poista aulatili
+cams_settings_accountDeletion_warning;Varoitus: Tätä toimintoa ei voi peruuttaa!
+cams_settings_accountDeletion_warning_content;Aulatilisi poistaminen on lopullinen 72 tunnin laskennan jälkeen, sitä ei voi palauttaa, ja se vaikuttaa kaikkiin avatareihisi. \n\nTilisi voidaan asettaa poistettavaksi vain, jos kaikki nykyiset hahmosi ovat poistovaiheessa.
+cams_settings_accountDeletion_requirementsInformation;Jotta voisit poistaa tilisi, kaikkien hahmojesi on oltava poistovaiheessa tai poistettu.
+cams_settings_accountDeletion_information_warning;Tämä toiminto aloittaa tilisi poistoprosessin. Vahvista kirjoittamalla "delete" kenttään, että olet tietoinen tilisi, kaikkien siihen liittyvien hahmosi ja tietojesi pysyvästä poistamisesta.
+cams_settings_accountDeletion_information_error;Et voi poistaa tiliä, jos hahmo ei ole poistossa.\nKirjaudu sisään ilmoitettuihin pelimaailmoihin ja poista avatarisi.
+cams_settings_accountDeletion_noAvatarsFound;Aktiivisia pelimaailmoja/hahmoja ei löytynyt.\nOlet valmis lähtemään!
+cams_settings_accountDeletion_understandmentConfirmation;Ymmärrän
+cams_settings_accountInDeletion_title;Tiliä poistetaan
+cams_settings_accountInDeletion_info;Aulatilisi <b>{{NAME}}</b> poistetaan pysyvästi <b>{{TIMESTAMP|Countdown}}</b>.
+cams_settings_accountInDeletion_action;Peruuta tilin poisto
+cams_mainMenu_dataConsent;Tietojen hyväksyntä
+gameworld_gameworld;Pelimaailma
+infobox.productionboost;{{RES}}{{TIME_COUNTER}}
+infobox_notesCount;{{COUNT}} muistio[COUNT>1:ta]
+auction_placeBid;Aseta tarjous
+auction_auctionsAmount;{{COUNT}} huutokauppa(a)
+auction_bidsRefreshed;Tarjoukset päivitetty!
+auction_currentSilver;Nykyinen hopea:  {{iconName|Sprite}} {{currentSilver}}
+auction_availableAmount;Käytettävissä:
+auction_toSellAmount;Myytävissä:
+auction_selectAmountToSellHeader;Valitse myytävä määrä
+auction_soldHorseForSilver;Myyty hevonen {{amount}} hopeasta
+auction_currentCurrency;Nykyinen:
+auction_newCurrencyValues;Uusi:
+auction_exchangeExplanationGoldToSilverTitle;Voit vaihtaa kultaa hopeaksi ostaaksesi sankariesineitä huutokauppahuoneesta.
+auction_exchangeExplanationGoldToSilverMore;Syötä kullan määrä, jonka haluat vaihtaa:
+auction_exchangeExplanationSilverToGoldTitle;Voit vaihtaa hopeaa myymällä sankarin esineet huutokauppakamarissa kultaa vasten.
+auction_exchangeExplanationSilverToGoldMore;Syötä kullan määrä jonka haluat vaihtaa:
+auction_countAndName;{{AMOUNT}}×{{ITEM_NAME}}
+auction_deleteAll;Poista kaikki huutokaupat
+auction_confirm_deletion_title;Poista huutokauppa [data>1:{{data}} merkintää][data=1:merkintä]
+auction_confirm_deletion_button;Poista [data>1:merkinnät][data=1:merkintä]
+auction_confirm_deletion_text_header;Haluatko varmasti poistaa [data>1:{{data}} huutokauppamerkintää][data=1:tämän huutokauppamerkinnän]?
+auction_confirm_deletion_text;Kun olet poistanut merkinnän, se katoaa lopullisesti. Et pysty palauttamaan sitä.
+cams_looby_noMatchingGameworlds;Valintasi mukaisia pelimaailmoja ei ole.
+serverSelection_5;Kehitys
+serverSelection_header;Valitse pelimaailman suodatin
+serverSelection_filter_gameworldSpeed;Pelimaailman nopeus
+serverSelection_gameworldSpeed;x{{INT}} nopeus
+serverSelection_filer_gameworldLifetime;Pelimaailman ikä
+serverSelection_gameworldLifetime;{{INT}}-{{INT2}} päivää
+serverSelection_gameworldLifetime_XorMore;{{INT}} tai useampia päiviä
+filters_applyButton;Käytetään [COUNT<2:suodatinta][COUNT>1:{{COUNT}} suodatinta]
+filters_reset;Poista [COUNT<2:suodatin][COUNT>1:suodattimet]
+cams_avatarCreation_cancel_title;Peruuta hahmon luominen
+cams_avatarCreation_cancel_reconfirmationText;Oletko varma, että haluat peruuttaa hahmosi luomisen {{gameworldName}}?
+cams_avatarCreation_cancel_explanation;Menetät kaiken edistymisesi tässä pelimaailmassa, mukaan lukien heimovalintasi, kartan sijainnin ja hahmon nimen.
+cams_avatarCreation_button_startPlaying;Aloita pelaaminen
+cams_avatarCreation_button_changeSector;Vaihda sijaintia
+cams_avatarCreation_button_selectTribe;Valitse heimo
+cams_avatarCreation_button_updateTribe;Päivitä heimo
+cams_avatarCreation_button_selectSector;Valitse aloitussijainti
+cams_avatarCreation_button_updateSector;Päivitä sijainti
+cams_avatarCreation_name_title;Kirjoita hahmon nimi:
+cams_avatarCreation_name_tip;Tämä on hahmosi nimi pelimaailmassa.
+cams_avatarCreation_name_errorEmpty;Kirjoita hahmon nimi.
+cams_avatarCreation_name_placeHolder;Hahmon nimi
+cams_looby_avatarInDeletionBlockPlayNow;Olet hyväksynyt duaalikutsun tähän pelimaailmaan, {{gameworldName}}, joten et voi enää käyttää sitä ei-duaalitilassa.
+infobox_openMessage;Avaa viesti
+infobox_accountIsLocked;Hahmosi on jäädytetty!
+auction_button_requirement;Suorita {{REQUIRED}} seikkailua avataksesi huutokaupat.\nJäljellä: {{INT}}
+auction_availableSilver;Käytettävissä hopeaa:  {{iconName|Sprite}} {{currentSilver}}
+auction_deleteSelected;Poista valitut huutokaupat
+auction_deletedAll_confirmation;Kaikki huutokaupat poistettu!
+auction_deletedSelected_confirmation;{{data}} huutokauppa[data>1:merkintää][data=1:merkintä] poistettu!
+newVersionAvailable_title;Uusi versio saatavilla
+newVersionAvailable_description;Olemme parantaneet sovellustamme. Pyydämme sinua päivittämään sovelluksen jatkaaksesi pelaamista.
+newVersionAvailable_joinDiscord;Mikä on uutta? Liity Discordiin saadaksesi lisätietoja.
+newVersionAvailable_toStore;Päivitä nyt
+infobox_beginnerProtection_title;Pidennä aloittelijan suojaa
+infobox_beginnerProtection_question;Oletko varma, että haluat jatkaa uuden pelaajan suojaa?
+infobox_beginnerProtection_description;Et voi lähettää resursseja toisille pelaajille, hyökätä muille tai joutua hyökkäyksen kohteeksi uuden pelaajan suojan aikana.
+sendResources_beginnersProtection;Et voi lähettää resursseja muille pelaajille, kun uuden pelaajan suojasi on aktiivinen.
+sendTroops_beginnersProtection;Et voi lähettää joukkoja muille pelaajille, kun uuden pelaajan suojasi on aktiivinen.
+sendTroops_otherBeginnersProtection;Et voi lähettää joukkoja pelaajalle, jolla on uuden pelaajan suoja.
+buildingActivities_building_36;Tuotannossa olevat ansat
+tasks_collectAll;Kerää kaikki ({{INT}})
+auction_bidMinPlaceholder;min. {{INT}}
+auction_buttonBidMinimum;Tarjousvaatimuksen vähimmäismäärä
+hero_adventures_available;Saatavilla olevat seikkailut
+messages_freshDeskMessage_viewAndReplyInBrowser;Näytä ja vastaa selaimessa
+messages_webViewRecommendation;Viestin sisältö ei välttämättä ole täydellinen.\nSuosittelemme viestin katsomista selaimessa.
+rateThisApp_popup_title;Pidätkö sovelluksestamme?
+rateThisApp_popup_description;Jos pidät sovelluksestamme, ota hetki aikaa ja arvioi se.
+rateThisApp_popup_appreciatefeedback;Palautteesi on meille tärkeää!
+rateThisApp_popup_btn_positive;Se on mahtavaa!
+rateThisApp_popup_btn_negative;Voisi olla parempi
+rearrange_or_demolish_building;Rakennuksen uudelleenjärjestely tai purkaminen
+mainBuilding_buildingArrangement;Rakennusjärjestelyt
+mainBuilding_openRearrangeMode;Avaa uudelleenjärjestämistila
+mainBuilding_demolishBuildings;Hajota rakennuksia
+mainBuilding_openDemolishMode;Avaa purkutila
+mainBuilding_demolishBuildings_description;Rakennusten sijaintia voi muuttaa vetämällä ja pudottamalla.
+rearrangeBuildingPopup_rearrangeDescription;Järjestä uudelleen <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>?
+rearrangeBuildingPopup_buildingsRearranged;Rakennukset uudelleenjärjestelty
+rearrangeBuildingPopup_buildingRearranged;{{buildingName|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>{{buildingLevel}}</color>
+confirmRearrangeBuildingPopup_header;Haluatko järjestää seuraavan rakennuksen uudelleen?
+confirmRearrangeBuildingPopup_description;Järjestää kylän <b>{{villageName}}</b> valitut rakennukset uudelleen.
+demolishBuildingPopup_title;Hajota rakennus
+demolishBuildingPopup_description;Valitse purettava rakennus
+demolishBuildingPopup_descriptionWithSelection;Haluatko purkaa <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>?
+demolishBuildingPopup_demolishLevel;Pura taso
+demolishBuildingPopup_demolishCompletely;Tuhoa kokonaan
+confirmDemolishBuildingPopup_header;Haluatko purkaa <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color> välittömästi?
+confirmDemolishBuildingPopup_description;Purkaa välittömästi valitiun rakennuksen ja poistaa sen kylästäsi.\nTätä toimintoa ei voi peruuttaa.
+characterCount;{{COUNT}}/{{MAX}} merkkiä
+survey_button_description_reward;Osallistu tähän lyhyeen kyselyyn ja auta meitä parantamaan Travian: Legends -sovellusta.\nTukesi palkitaan.
+cams_lobby_joinGameworld;Liity pelimaailmaan
+cams_lobby_gameworld_inviteOnly;Vain kutsusta
+cams_lobby_gameworld_inviteOnlyInfo;Tämä pelimaailma on rajoitettu pelaajille, joilla on erityinen kutsukoodi.
+cams_lobby_gameworld_inviteCodeEnter;Anna kutsukoodi
+cams_lobby_gameworld_inviteCodeInfo;Tämä pelimaailma on rajoitettu pelaajille, joilla on erityinen kutsukoodi.\nJos sinulla on sellainen, ole hyvä ja syötä se liittyäksesi pelimaailmaan.
+cams_lobby_gameworld_inviteCodePlaceholder;Esim. eThbt5OLyZ8D5xjhUaBAba
+cams_lobby_gameworld_inviteCodeErrorCharacterCount;Kutsukoodi on liian lyhyt. Kirjoita kaikki {{MAX}} merkkiä.
+cams_lobby_gameworld_inviteCodeCooldown;Kutsukoodin odotusaika ({{TIME|Countdown}})
+timeCountDown;{{TIME|Countdown}}
+attestation_failed;Laitteen todentaminen epäonnistui! Käytä mobiililaitetta pelaamiseen.\nJos ongelma jatkuu, ota yhteyttä asiakaspalveluun alla olevasta ohjepainikkeesta!
+mainBuilding_demolishBuildings_notAvailable;Päärakennuksen taso {{INT}} tarvitaan rakennusten purkamiseen.
+mainBuilding_demolishBuildings_demolishing;Purkaa <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> -> <b><color={{colorValue|TextColor}}>taso {{buildingLevel}}</color></b> kohteessa {{timestamp|Countdown}}.
+demolishBuildingPopup_demolishing;Puretaan <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> -> <b><color={{colorValue|TextColor}}>taso {{buildingLevel}}</color></b>
+allianz.hinweis_text_NoConfederacy;Diplomaattisen etiketin mukaan on kohteliasta ensin keskustella toisen liittoutuman kanssa ja vasta sitten tarjota rauhaa tai liittolaisuutta.
+regions_canBeSettled;Voiko asuttaa?
+regions_regionStatusNoColon;Alueen tila
+regions_top5AlliancesPopulation;Suurimpien 5 liittouman <b>asukasluku</b>
+regions_top5AlliancesVillages;Suurimpien 5 liittouman <b>kylät</b>
+regions_neighboringRegions;Naapurialueet
+regions_regionPopulation;Alueen asukasluku
+regions_contested;Alue on kiistanalainen
+cams_lobby_gameworld_disabledAndNotSupported;Pelimaailm ei ole tällä hetkellä pelattavissa mobiilisovelluksen kautta.
+demolishBuildingPopup_impossible;Tätä rakennusta ei voi purkaa.
+city_benefits;Kaupungin edut
+city_benefits_threeAdditionalSlots;Kolme lisälaajennuspaikkaa
+city_benefits_resourceFieldsLevel12;Laajenna resurssikentt(i)ä tasolle 12.
+city_benefits_watchTowers;Paranna muureja käyttäen vartiotorneja
+city_upgradeToACity;Kehitä {{villageName}} kaupungiksi.
+city_culturePointsForNext;(seuraava {{culturePoints}} kulttuuripisteen kohdalla)
+city_upgradeVillage;Päivitä kylää
+city_confirm_upgradeVillage;Kehitä kaupungiksi
+city_confirm_header;Haluatko kehittää {{villageName}} kaupungiksi?
+city_confirm_description;Kylän päivittäminen kaupungiksi vie {{time}} ja yhden asutuspaikan.
+city_upgrading;{{villageId|VillageLink}} {{text}}
+city_upgraded;{{villageId|VillageLink}} on jo kaupunki.
+combatSimulator_selectTarget;Valitse kohde
+mainMenu_goToLobby;Mene aulaan
+mainMenu_yourPlayerProfile;Pelaajaprofiilisi
+plus.plusAttackWarningText;Saapuvat hyökkäykset näytetään kylälistalla Vain mobiililaitteilla: Kylänäkymässä oikealla puolella oleva nuoli, jolla voit avata kyläluettelon, on korostettuna.
+production.crobBalanceTroopConsumptionAncientPower;Muinaisen voiman antama bonus
+filters_region_not_found;Aluetta ei ole olemassa
+rallyPoint_troopsOverview_ownTroops_8;Omat joukot kohteessa 
+rallyPoint_troopsOverview_ownTroops_9;Omat joukot kohteessa 
+tradeOffice_merchantsCarryCapacity;Kauppiaiden kantokyky:
+tradeOffice_tradeShipsCarryCapacity;Kauppalaivojen kantokyky:
+buildingActivities_building_48;Joukkojen tervehdyttäminen
+playerDetails_victorPointsPerDay;{{PERDAY}} /päivä
+allianz.numIncomingRaids;{{NUM_ATTACKS}} ryöstö[NUM_ATTACKS>1:ä]
+allianz.numIncomingAttacks;{{NUM_ATTACKS}} hyökkäys[NUM_ATTACKS>1:tä]
+allianz.MerchantCapacityAndSpeedNew;Kaupankäynti
+alliance_regionalTabTop5Description;Alueet, joilla liittoutumasi kuuluu 5 parhaan liittoutuman joukkoon aluevalvonnan perusteella.
+alliance_regionalTabTitle;Alueen top 5
+alliance_regionalTabTop5Empty;- Alueellinen valvonta ei riitä millään alueella -
+alliance_ShowDetails;Näytä tiedot
+wall_upgradesInProgress;Käynnissä olevat päivitykset
+extension_upgradeStarted;Päivitys käynnistyi onnistuneesti!
+extension_constructionList;Rakennustyölista
+upgradeLevel;Parannustaso
+infoTab_upgradingToLevelForExtension;Laajentamassa {{buildingName}} tasolle {{level}}:
+infoTab_genericCurrentlyForExtension;Nykyinen {{buildingName}} bonus mukaan lukien {{extensionName}}:
+infoTab_genericAtLevelForExtension;Tasolla {{a}} sekä {{extensionName}} tasolla {{b}}:
+ratioValuesNumeratorBold;<b>{{a}}</b>/{{b}}
+infoTab_productionCosts_title;Tuotantokustannukset
+harbour_shipsInConstruction;Rakenteilla olevia laivoja
+unitInfo_troopsCarriage;enintään <b>{{INT}}</b> yksikköä
+unitInfo_velocityRaid;Ryöstöjä varten:
+city_benefits_resourceFieldsLevel12inCapital;Päivitä resurssikentät tasolle 12, pääkaupungissasi voit päivittää niitä sitäkin enemmän
+infoTab_genericCurrentlyMoreExplicit;Nykyinen {{buildingName}} bonus:
+merchant_merchantOverview_noIncomingDeliveries;- Ei saapuvia toimituksia. -
+merchant_merchantOverview_noOutgoingDeliveries;- Ei lähteviä toimituksia. -
+merchant_merchantOverview_incoming;Saapuvat ({{INT}})
+merchant_merchantOverview_outgoing;Lähtevät ({{INT}})
+achievementQuests.achQuest_03_Territory_step_01_description;Lähetä joukkoja hyökkäykseen tai ryöstöretkelle nataarikylään. Tehtävä tulee suoritetuksi heti, kun armeijasi saapuu perille, vaikka se heittäisikin henkensä taistelussa.<br><br>Tämän tehtävän pisteet voi saada {{NUMBER_OF_TASKS_PER_DAY}} kertaa päivässä.\n
+allianz.MerchantCapacityTitle_Harbours;Kauppiaiden ja kauppalaivojen kapasiteetti- ja nopeusbonus
+market_tradeRoutes_invalidTarget_Territory;Kauppareitin voi määrittää vain omien kyliesi välille.
+market_selectResources;Aseta resurssit
+market_selectResources_requiredTradeShips;Tarvittavat kauppalaivat
+market_resourcesWillBeSendByTradeShip;Resurssit lähetetään kauppalaivoilla.
+manual.gid38_Territory;Suuren varaston kapasiteetti on kolminkertainen normaaliin nähden.<br><br>Tämä rakennus voidaan rakentaa vain varastointiyleissuunnitelman muinaisvoiman avulla.
+manual.gid39_Territory;Suuren viljasiilon kapasiteetti on kolminkertainen normaaliin nähden.<br><br>Tämä rakennus voidaan rakentaa vain varastointiyleissuunnitelman muinaisvoiman avulla.\n
+harbour_noAvailableShips;Tällä hetkellä tässä satamassa ei ole yhtään alusta.
+harbour_destroy_title;Tuhoa aluksia
+harbour_destroy_desc_title;Valitse aluksen tyyppi ja määrä, jonka haluat tuhota.
+harbour_destroy_desc;Vain laivat jotka on paraikaa sijoitettu tänne, voidaan tuhota. Et saa lainkaan resursseja takaisin.
+harbour_destroy_timeNotice;Alukset tuhoutuvat välittömästi.
+harbour_destroy_selectedTotalAmount;Valitut alukset: <b>{{AMOUNT}}</b>
+harbour_destroy_shipSelectTitle;<b>{{ShipID|TranslateSuffixFor|gid49.type_t}}</b> (<b>{{Amount}}</b> tänne sijoitettua alus[Amount>1:ta])
+extension_fullyExtended;{{NAME}} on täysin laajennettu.
+extension_willBeFullyExtended;{{NAME}} on täysin laajennettu.
+layout.directLinkMarketplaceTrader;Vapaita kauppiaita: {{INT}} / {{INT2}}
+UnitProduction_ViewBuildingList;Näytä rakennusluettelo
+raidList_useRaidShipsInfo;Ryöstölaivoja käytetään automaattisesti kun niitä on saatavilla. Jos ryöstölaivat ovat loppu, joukot kulkevat normaalisti.
+buildingActivities_maxReached;Saavutettu enimmäismäärä
+buildingActivities_building_49;Tuotannossa olevat laivat
+buildingActivities_buildingAdditional_48;Ei haavoittuneita joukkoja
+residence_expansion_villagesRatio;Kyliä: {{COUNT}}/{{MAX}}
+residence_expansion_slotFree;Paikka ei ole käytössä.
+residence_expansion_slotPrerequisites;Esivaatimukset <b>{{BuildingID|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>taso {{Level}}</color></b>
+residence_expansion_culturePointsPerDay;Kulttuuripistetuotanto per päivä
+search_region;Alueen haku
+search_select_region;Valitse alue
+statistiken.progressionStepTitle_start_achieved;Palvelin käynnistyi {{VALUE}}
+statistiken.progressionStepTitle_serverEnd_locked;Palvelin päättyy {{VALUE}}
+filters_artefact_not_found;Artefaktia ei ole olemassa
+sendTroops_settlersChangeTribe;Ensimmäisen {{INT}} asutuksen kohdalla voit valita asutettavan kylän heimon. Valitse huolellisesti.
+gid17.nextTradingRoute;Seuraava kauppareitti alkaa osoitteesta <b>{{HOUR}}</b> ja tarvitsee <b>{{MERCHANTS}}</b> [MERCHANTS>1:kauppiasta][MERCHANTS=1:kauppiaan].
+gid17.nextTradingRouteWithShips;Seuraava kauppareitti alkaa osoitteesta <b>{{HOUR}}</b> ja tarvitsee <b>{{SHIPS}}</b> [SHIPS>1:kauppalaivaa][SHIPS=1:kauppalaivan].
+market_tradeRoutes_merchants;[merchants>1:{{merchants}} kauppiaat][merchants=1:{{merchants}} kauppias] [merchants=1: kauppias]
+market_tradeRoutes_tradeShips;[tradeShips>1:{{tradeShips}} kauppalaivaa][tradeShips=1:{{tradeShips}} kauppalaiva
+market_tradeRoutes_repeats;{{repeats}} x
+market_tradeRoutes_usesShip;Käyttää laivoja
+troopsCheckout_shipUseInfo;{{Distance}} ruutu | {{ShipID|Bold}} | Säästä {{duration|Bold}} tuntia
+troopInfoPopup_shipsTitle;Laivoja asemissa kylässä
+language_nl-NL;Hollantilainen
+cropfinder_cropperType;Viljapeltotyyppi:
+valueInBrackets;({{VALUE}})
+residence_settlementSlotsUsed;Käytetyt asutuspaikat
+residence_settlementCPNeededForNextSlot;Kulttuuripisteitä tarvitaan seuraavaan asutuspaikkaan:
+gid27.ancient_power_detail_;{{INT}}
+artefact_effect_value;Vaikutus: <b>{{EFFECT}}</b>
+ancientPower_overview;Alueelliset voimat
+ancientPower_no_ancientPower;Tällä palvelimella ei ole muinaista voimaa
+ancientPower_tip_large;Suuret muinaisvoimat vaativat aarrekammion tason <b>20</b> ja vaikuttavat <b>kaikkiin kyliisi</b>
+ancientPower_tip_small;Pienet muinaisvoimat vaativat aarrekammion tason <b>10</b> ja vaikuttavat vain <b>kylään</b>
+ancientPower_tip_nearby;Muinaiset voimat ympäröivällä alueella {{villagenamelong|Bold}}
+ancientPower_stored_title;Liittouman hallussapitämät alueet
+ancientPower_stored_noContent;Liittoumasi ei pidä hallussaan alueita
+ancientPower_stored_nextFree;Seuraava ilmainen aktivointi saatavilla: [isFree=0:<color={{colorValue|TextColor}}>]{{timeStamp|Countdown?Bold}}[isFree=0:</color>]
+ancientPower_stored_notActivatable;Ei aktivoitavissa olevaa muinaista voimaa.
+ancientPower_stored_activated;Muinainen voima aktivoitu.
+ancientPower_stored_alreadyActive_account;Sinulla on jo yksi muinainen voima, joka vaikuttaa kaikkiin kyliin.
+ancientPower_stored_alreadyActive_village;Sinulla on jo yksi muinainen voima, joka vaikuttaa tähän kylään.
+ancientPower_stored_alreadyActive;Tämä muinainen voima on jo aktivoitu.
+filters_ancientPower_not_found;Muinaista valtaa ei ole
+regions_withFactions_yourAllianceHasMoreThan50PercentSecured;Liittoumallasi on  >{{PERCENT}}% alueellista hallintaa.<br><br>Tarvitset aarrekammion aktivoidaksesi alueellisen voiman.
+language_en-NT;Dev-kieli
+settings_notNow;Ei nyt
+settings_dontAskAgain;Älä kysy uudestaan.
+cams_lobby_gameworld_lastPlayedTime;{{TIME}}h
+cams_settings_DirectLoginTitle;Suora kirjautuminen pelimaailmaan
+cams_settings_DirectLoginInfo;Ohita pelimaailman valinta Legends aulassa ja kirjaudu suoraan viimeksi pelaamaasi pelimaailmaan, kun avaat sovelluksen.
+cams_settings_DirectLoginActive;Suora kirjautuminen on aktivoitu
+cams_settings_DirectLoginInactive;Suora kirjautuminen on poistettu
+cams_directLoginPopUp_Info;Haluatko kirjautua suoraan pelimaailmaan, kun käynnistät sovelluksen?
+cams_directLoginPopUp_youCanChange;Voit muuttaa valintaasi milloin tahansa aulan asetuksissa.
+cams_directLoginPopUp_Accept;Kyllä, kirjaudu sisään suoraan
+language_ro-RO;Romania
+language_hu-HU;Unkari
+language_ar-AE;Arabia
+autoLoginFailed.;Automaattinen kirjautuminen epäonnistui.
+needInternetToPlay;Tarvitset internet-yhteyden pelataksesi. Ole hyvä ja tarkista yhteytesi ja yritä uudelleen.
+mapCellInfoWindow_removeFromLists;Poista kaikilta listoilta
+removeFromListsPopup_Title;Haluatko poistaa {{TARGETNAME}} {{INT}} farmilistasta?
+removeFromListsPopup_Description;Voit lisätä kohteen erikseen farmilistaan myöhemmin uudelleen.
+removeFromListsPopup_ConfirmButton;Poista kohde
+social_continueWith;Tai jatka:
+social_loginWith;Tai kirjaudu sisään käyttäen:
+social_backToRegistration;Takaisin rekisteröitymiseen
+social_createAccountTitle;Luo Legendsin aulatili
+social_errorTitle_NoEmailProvided;Sähköpostin käyttöoikeus puuttuu
+social_errorMsg_NoEmailProvided;Jotta voisimme aloittaa Travian: Legends pelaamisen, tarvitsemme sinulta <b>luvan käyttää sähköpostiosoitettasi</b>.
+social_errorInfo_NoEmailProvided;Ole hyvä ja yritä uudelleen käyttäen oikeita käyttöoikeusasetuksia tai kokeile toista rekisteröintitapaa.
+social_errorTitle_AlreadyExists;Sähköpostiosoite on jo käytetty
+social_errorMsg_AlreadyExists;Antamasi sähköpostiosoite on jo Travian: Legends Tili.
+social_errorInfo_AlreadyExists;Käytä kirjautumiseen tiliisi liitettyä sähköpostiosoitetta.
+social_acceptTOS;Klikkaamalla "Vahvista" hyväksyt <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">Yleiset käyttöehdot</link></style> ja vahvistat, että olet huomioinut <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">Tiedot peruuttamisoikeudesta</link></style> ja <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">Tietosuojaselosteet</link></style>.
+linkNotWorking;Linkki ei toimi
+linkNotWorkingDescription;Näyttää siltä, että tämä linkki ei tällä hetkellä toimi Travian: Legends -sovelluksessa. Se saattaa toimia internet-selaimessasi.
+openLinkInBrowser;Avaa linkki selaimessa
+settings_language_useArabicNumerals_activated;Itäisten arabialaisten numeroiden käyttö aktivoidaan
+settings_language_useArabicNumerals_deactivated;Itäisten arabialaisten numeroiden käyttö poistettiin käytöstä
+artefact_inventory_active_empty;Ei aktivoituja artefakteja
+social_errorTitle_Unknown;Tuntematon virhe
+social_errorMsg_Unknown;Tuntematon virhe tapahtui. Yritä uudelleen.
+loadingScreen_text_01;Sankarisi korjaa hiuksiaan, odota.
+loadingScreen_text_02;Viljavarasto tulvii yli. Kyläläiset varastoivat nyt viljaa taskuissaan.
+loadingScreen_text_03;Suurlähetystö järjestää juhlat – vain diplomaateille.
+loadingScreen_text_04;Kokoontumispaikka on nyt piknik-paikka – joukot nauttivat voileipiä.
+loadingScreen_text_05;Seppä takoo miekkaa... spagetista.
+loadingScreen_text_06;Mestarirakentajat lukevat piirustuksia... ylösalaisin.
+loadingScreen_text_07;Nataarit liittyivät kylän kirjakerhoon. Kukaan ei osaa lukea muinaisia riimuja.
+loadingScreen_text_08;Partiolaiset laskevat vihollisjoukkoja... mutta sormet loppuivat kesken.
+loadingScreen_text_09;Kyyhkyset hyökkäävät maailman ihmeen kimppuun. Lähetän siivoojat paikalle.
+loadingScreen_text_10;Orjamiliisi vaatii ammattiliittoa – valmistaudu lakkoon.
+loadingScreen_text_11;Joukot kieltäytyvät hyökkäämästä, kunnes joku selittää taistelusimulaattorin.
+loadingScreen_text_12;Kyläläiset pysähtyivät töihin katsomaan kahden kanan tappelua.
+loadingScreen_text_13;Katapulttisi kiistelevät siitä, mihin rakennukseen osuvat ensin.
+loadingScreen_text_14;Ole kärsivällinen, sankari otti Deutsche Bahnin hevosen sijaan.
+loadingScreen_text_15;Kätköön kätkeytyy paitsi resursseja, myös kylän juoruja.
+loadingScreen_text_16;Kasarmilla järjestetään kykyjenetsintäkilpailu – harjoittelua lykätty.
+loadingScreen_text_17;Seinäsi on melkein valmis. Odotan vain maalin kuivumista.
+loadingScreen_text_18;Legioonalaiset vaativat kahvitauon ennen marssia.
+loadingScreen_text_19;Gallialaiset selittävät roomalaisille, mikä on Palisade, on kulunut jo 3 tuntia.
+loadingScreen_text_20;Kauppiaiden lahjominen toimitusten nopeuttamiseksi.
+loadingScreen_text_21;Sankarisi käy ratsastuskurssia, se voi kestää jonkin aikaa.
+loadingScreen_text_22;Kauppiaat ovat juuttuneet hitaan härän taakse.
+loadingScreen_text_23;Liittouman johtajat laativat taistelustrategiaa... sormiväreillä.
+loadingScreen_text_24;Viljavarasto on täynnä keksejä – resurssienhallintaa parhaimmillaan.
+loadingScreen_text_25;Tiedustelu keskeytetty – Heimdallin silmässä on jotain.
+changeAccountNameSubtitle;Vaihda käyttäjänimi ja/tai lyhenne.
+changeAccountNamePleaseNote;Huomaa, että tilin nimen vaihtamisen jälkeen sinun on odotettava {{DAYS}} [DAYS>1:päivää][DAYS=1:päivä] ennen kuin voit vaihtaa sen nimeä uudelleen.
+changeAccountNameWaiting;Sinun on odotettava, ennen kuin voit jälleen vaihtaa nimeäsi:
+changeAccountNameUpdated;Tilin nimi on muutettu
+changeAccountNameUpdatedSubtitle;Tilisi nimi vaihdettiin onnistuneesti: <b>{{playerName}}</b>
+alliance_top10Title;Liittouman sisäinen top 10
+gameworldCalendarNoGameworld;Uusia pelimaailmoja ei löytynyt \nNe voivat vielä latautua tai olla ajastamatta.
+gameworldCalendar_title;Pelimaailmojen kalenteri
+valueWithModifierBefore;{{value|Round|2}}x
+goldShop_purchaseCanceled;Osto peruutettu!
+goldShop_pendingRestored;Edellinen ostoksesi on palautettu onnistuneesti.
+hero_consumablePopup_healthByOintment;Terveyttä saatu per voide:
+unknown;?
+serverSelection_gameworldSpeed_short;{{INT}}x
+gameworldCalendarDetails_title;Pelimaailman tiedot
+gameworldCalendarDetails_shareLink;Jaa pelimaailmalinkki
+gameWorldEndCondition;Pelimaailman loppuehto
+gameWorldEndCondition_WonderOfTheWorld;Maailmanihme {{Level}}
+gameWorldEndCondition_VictoryPoints;Voittopisteet
+gameWorldRestriction_InvitationCode;Tämä pelimaailma on rajoitettu pelaajille, joilla on erityinen kutsukoodi.
+gameWorldRestriction_MobilePlayers;Tämä pelimaailma on vain mobiilipelaajien käytettävissä.
+gameWorldSpecial;Tämä on erityinen pelimaailma, joka voi olla käytettävissä vain rajoitetun ajan ja jossa voi olla erilaisia ominaisuuksia kuin klassisissa pelimaailmoissa.
+gameWorldUndefinedDetails;Kaikkia pelimaailman yksityiskohtia ei ole vielä määritelty. Saat ilmoituksen aulaasi kun ne on päivitetty.
+bonusValueWithPercentNoSpace;+{{value}}%
+startDate;Aloituspäivä
+startTime;Aloitusaika
+UTC+1;(UTC+1)
+goldShop_GoldPromotion;Kultatarjous
+auction_FeePopupTitle;Huutokauppamaksu
+auction_FeePopupText;Sinun on maksettava {{value}}%:n maksu huutokauppamyynnistä. Sinulle tilitetään myyntihinta, josta on vähennetty huutokauppamaksu.
+auction_FeePopupExample;Esimerkkilaskelma
+auction_FeePopupSalePrice;Myyntihinta
+auction_FeePopupFee;Huutokauppamaksu ({{value}}%)
+auction_FeePopupPayout;Maksu
+auction_sellHouseFeeInfo;Sinulle tilitetään myyntihinta, josta on vähennetty {{value}}%:n huutokauppamaksu.
+gold_action_finishImmediately;Välitön valmistuminen
+mapCellInfoWindow_villageReports;Näytä kylän raportit
+hero_crafting_title_refine;Jalosta varusteita
+hero_crafting_title_smelt;Sulata varusteita
+hero_crafting_title_forge;Tao varusteita
+hero_crafting_title_reforge;Tao varusteet uudelleen
+hero_crafting_action_refine;Jalosta
+hero_crafting_action_smelt;Sulata
+hero_crafting_action_forge;Tao
+hero_crafting_action_takeMaterials;Ota ({{INT}}/{{MAX}}) materiaalit
+hero_crafting_action_takeAllMaterials;Ota materiaalit
+hero_crafting_action_reforge;Uudelleenvala
+hero_crafting_action_take;Ota
+hero_crafting_action_pick;Valitse kohde
+hero_crafting_action_equip;Käytä
+hero_crafting_action_buy_material;Osta materiaalia
+hero_crafting_action_buy_item;Osta esine
+hero_crafting_action_craft_material;Sulatusmateriaali
+hero_crafting_action_moveToInventory;Tavaraluetteloon
+hero_crafting_action_select_item;Valitse
+hero_crafting_action_remove_item;poista
+hero_crafting_action_error_equipment;Esineen on oltava sankarin varuste.
+hero_crafting_action_error_rarity;Esineiden on oltava samoja harvinaisuuksia.
+hero_crafting_action_error_category;Tuotteiden on kuuluttava samaan varusteluokkaan.
+hero_crafting_action_error_id;Tuotteiden on oltava samanlaisia.
+hero_crafting_action_error_missingItem;Yksi tai useampi valitsemistasi tuotteista ei ole enää saatavilla.
+hero_crafting_refine_tip;Eeppisiä sankariesineitä voidaan jalostaa minkä tahansa saman esinekategorian eeppisen sankariesineen kanssa.
+hero_crafting_refine_tip_error;Sinulla ei ole mitään sankariesineitä jalostettavaksi. Etsi esineitä seikkailuista tai osta esineitä huutokauppahuoneesta ja paranna niitä jalostamalla.
+hero_crafting_smelt_info;Ota {{INT}} materiaali[INT>1:s] nyt tai odota ja hanki {{MAX}}.
+hero_crafting_reforge_text;Tao varusteet uudelleen saadaksesi toisen, mahdollisesti eri harvinaisuutta ja laatua olevan esineen.\nUudelleen takomisen jälkeen voit valita, minkä esineen haluat ottaa tai takoa uudelleen.\nOle varuillasi: Kun olet takonut uudelleen, jokaisen seuraavan takomisvaiheen esine katoaa, eikä sitä voi vaihtaa takaisin.
+inventoryItem_quality_title;Laatu
+inventoryItem_rarity_title;Harvinaisuus
+inventoryItem_rarity_quality_title;Harvinaisuus & laatu
+inventoryItem_rarity_common;Yleinen
+inventoryItem_rarity_uncommon;Erityinen
+inventoryItem_rarity_rare;Harvinainen
+inventoryItem_rarity_epic;Eepinen
+inventoryItem_rarity_legendary;Legendaarinen
+search_for_village;Kylähaku
+search_for_player;Pelaajan haku
+villageList_EditMode;Muokkaustila
+villageList_MaxGroupAmount;Tavoitettujen kyläryhmien enimmäismäärä.
+hero_crafting_action_error_material;Esineen on oltava materiaali.
+villageList_ReorderError;Virheellinen kohde
+textMatchingInput_Title;Vahvista kirjoittamalla "{{WORD}}"
+hero_inventory_category_empty;- Ei esineitä tässä kategoriassa -
+hero_crafting_action_refine_success;Jalostetut varusteet
+hero_crafting_action_smelt_success;Sulatetut varusteet
+hero_crafting_action_forge_success;Taotut varusteet
+hero_crafting_result_item_equipped;Käytössä olevat esineet
+hero_crafting_result_item_taken;Esine siirretty tavaravalikkoon
+hero_crafting_result_material_taken;Materiaali siirretty tavaravalikkoon
+hero_crafting_action_error_quality;Tuotteiden on oltava samaa laatua.
+hero_crafting_action_error_epic;Täytyy olla toinen saman luokan ja laadun eeppinen tuote.
+inventoryItem_rarity_none;Ei harvinaisuutta
+dailyQuests_rewardOverview_short;Palkinnon yleiskuva
+avatar_confirmation_title_delete;Poista hahmo
+avatar_confirmation_header_delete;Haluatko poistaa hahmosi?
+avatar_confirmation_infoText_delete;Poistoprosessi kestää <b>3 vuorokautta</b>, ja hahmosi poistuu serveriltä vasta, kun aika on kulunut loppuun.\nHahmo joka on poistotilassa ei pysty enää ottamaan osaa huutokauppoihin eikä käyttämään vaihtotoimistoa.\nVoit peruuttaa poistamisen milloin tahansa täällä.
+avatar_confirmation_requiredWord_delete;poista
+avatar_confirmation_title_respawn;Herätä hahmo
+avatar_confirmation_header_respawn;Haluatko herättää hahmosi?
+avatar_confirmation_infoText_respawn;Tämä poistaa kaiken edistyksesi tähän asti ja asettaa aloituskyläsi uuteen sijaintiin kartalla.\n\nKaikki ostettu Kulta siirtyy automaattisesti.
+avatar_confirmation_requiredWord_respawn;Henkiinherätys
+settings_app_title;Kaikki pelimaailmat
+settings_app_Animations_title;Animaatiot
+settings_app_Animations_description;Valitse, mitä animaatioita haluat nähdä sovelluksessa.
+settings_app_Animations_activated;Kylän/resurssinäkymän pilvianimaatio on aktivoitu
+settings_app_Animations_deactivated;Kylän/resurssinäkymän pilvianimaatio on poistettu käytöstä
+settings_app_NightMode_title;Yötila
+settings_app_NightMode_description;Kyläläisesi sytyttivät soihdut, ja uunien tulet roihuavat yötaivaan tähtien hämärässä valossa.
+settings_app_NightMode_activated;Yötila on aktivoitu
+settings_app_NightMode_deactivated;Yötila on poistettu päältä
+settings_app_WinterMode_title;Talvitila
+settings_app_WinterMode_description;Lunta sataa hiljaa ja kietoo kylän petolliseen hiljaisuuteen, jossa jokainen ääni tuntuu liukenevan huurteiseen ilmaan.
+settings_app_WinterMode_activated;Talvitila on aktivoitu
+settings_app_WinterMode_deactivated;Talvitila on poistettu päältä
+settings_app_VillagePanning_title;Kylässä/resurssikentällä liikkuminen
+settings_app_VillagePanning_description;Voit liikkua kylänäkymässä ja resurssikentillä.
+settings_app_VillagePanning_activated;Liike aktivoitu
+settings_app_VillagePanning_deactivated;Liike poistettu päältä
+settings_app_PushNotifications_title;Yleiset ilmoitukset
+settings_app_PushNotifications_description;Saat tietoa sovellukseen ja peliin liittyvistä yleisistä uutisista push-ilmoitusten avulla.
+settings_app_PushNotifications_activated;Pelimaailman aloitusilmoitus on aktivoitu
+settings_app_PushNotifications_deactivated;Pelimaailman aloitusilmoitus on deaktivoitu
+settings_app_EnergySaving_title;Energiansäästötila
+settings_app_EnergySaving_description;Säästä laitteesi akkua pienemmällä FPS-nopeudella.\nEnergiansäästötilan aktivointi saattaa aiheuttaa jonkin verran visuaalista viivettä sovelluksen käytön aikana.
+settings_app_EnergySaving_activated;Energiansäästötila on aktivoitu
+settings_app_EnergySaving_deactivated;Energiansäästötila on poistettu päältä
+settings_app_DataSaving_title;Mobiilidatan säästötila
+settings_app_DataSaving_description;Säästä mobiilidataa/kaistanleveyttä tekemällä vähemmän palvelinpyyntöjä.\nMobiilidatan säästötilan aktivointi saattaa johtaa pelin sisäisten tietojen pidempään päivitysaikaan.
+settings_app_DataSaving_activated;Mobiilidatan säästötila aktivoitu
+settings_app_DataSaving_deactivated;Mobiilidatan säästötila poistettu päältä
+auction_FilterType;Esineen tyyppi
+auction_bidTooLow;Tarjous liian alhainen.
+villageList_Delete_Title;Poista kyläryhmä
+villageList_Delete_Button;Delete ryhmä
+villageList_Delete_Description;Haluatko poistaa tämän kyläryhmän?
+villageList_Delete_Description2;Tähän ryhmään kuuluviin kyliin ei kohdistu vaikutuksia.
+gameworldNews_title;Uutiset ja päivitykset
+moreInformation;Lisätietoja
+remainingGold;Kultaa jäljellä: {{goldIcon|Sprite}} {{goldAmount}}
+messages_addEmoji_title;Lisää hymiöitä
+messages_select_emojis;Valitse hymiöt
+cams_resend_email_wait_error;Odota ennen toisen sähköpostin lähettämistä.
+cams_settings_accountDeletion_infoGold;Sen jälkeen, kun olet poistanut hahmosi, saat sähköpostin, jonka avulla voit siirtää tilillesi jääneen Kullan toiselle hahmolle.\n<b>Huomioi:</b> sinun  jäljellä olevaa Kultaasi voi siirtää vain tiettyihin pelimaailmoihin.
+cams_changeMail_title;Vaihda sähköpostiosoite
+cams_changeMail_description;Vaihtaaksesi sähköpostiosoitteesi, tarvitset nykyisen ja uuden sähköpostiosoitteen käyttöoikeudet.
+cams_changeMail_socialHint;Sähköpostiosoitteesi vaihtamisella ei ole vaikutusta  kirjautumiseesi Facebookin, Googlen tai Applen kautta.
+cams_changeMail_cantAccess;Etkö voi käyttää sähköpostiasi?
+cams_changeMail_sentVerification;Olemme lähettäneet vahvistussähköpostin osoitteeseen: {{mail}}
+cams_changeMail_checkInbox;Tarkista postilaatikkosi ja seuraa ohjeita jatkaaksesi.
+cams_changeMail_verificationCode;Sähköpostivahvistuksen koodi:
+cams_changeMail_verifyButton;Vahvista sähköpostiosoite
+cams_changeMail_enterNew_description;Kirjoita uusi sähköpostiosoitteesi alle. Lähetämme vahvistussähköpostin tähän osoitteeseen.
+cams_changeMail_enterNew_description2;Ole hyvä ja seuraa sähköpostissa olevia ohjeita jatkaaksesi muutosta.
+cams_changeMail_enterNew_input;Kirjoita uusi sähköpostiosoitteesi:
+cams_changeMail_enterNew_input_placeholder;Uusi sähköpostiosoite
+cams_changeMail_enterNew_button;Vaihda sähköpostiosoitteesi
+cams_changeMail_done_title;Sähköposti päivitetty
+cams_changeMail_done_description1;Sähköpostiosoitteesi päivitettiin onnistuneesti. Se on nyt {{mail}}
+cams_changeMail_done_description2;Sinut kirjataan automaattisesti ulos ja ohjataan kirjautumissivulle. Käytä uutta sähköpostiosoitetta kirjautuaksesi.
+cams_changeMail_done_redirecting;Ohjataan kirjautumiseen {{time}}...
+bonusValue;+ {{value}}
+value;{{value}}
+ratioValues_Colon;{{a}}:{{b}}
+genericValue;{{VALUE}}
+enterAmount;Anna lukumäärä
+symbol_minus;-
+applyFilter;Käytä suodatinta
+resetFilter;Nollaa suodatin
+rallyPoint_troopsOverview_outgoingMission_50_heroCentricAdventure;Seikkailun tutkimusmatka
+rallyPoint_troopsOverview_returningFromAdventure_heroCentricAdventure;Paluumatkalla seikkailusta
+silverExchangePopup_AvailableSilver;Käytettävissä hopeaa
+silverExchangePopup_SilverStatus;Tällä hetkellä {{AMOUNT|LongNumber}} hopeastasi on sidottu aktiivisiin huutokauppoihin
+silverExchangePopup_SilverError;Sinulla ei ole tarpeeksi hopeaa tähän toimintoon.
+silverExchangePopup_GoldError;Sinulla ei ole tarpeeksi Kultaa tähän toimintoon.
+hero.status50_heroCentricAdventure;Sankarisi on matkalla seikkailuun.
+inventoryItem_quality_1;Laatu 1
+inventoryItem_quality_2;Laatu 2
+inventoryItem_quality_3;Laatu 3
+inventoryItem_rarity_common_headGear;Yleinen päähine
+inventoryItem_rarity_uncommon_headGear;Erityinen päähine
+inventoryItem_rarity_rare_headGear;Harvinainen päähine
+inventoryItem_rarity_epic_headGear;Eeppinen päähine
+inventoryItem_rarity_legendary_headGear;Legendaarinen päähine
+inventoryItem_rarity_common_utility;Yleinen apuväline
+inventoryItem_rarity_uncommon_utility;Erityinen apuväline
+inventoryItem_rarity_rare_utility;Harvinainen apuväline
+inventoryItem_rarity_epic_utility;Eeppinen apuväline
+inventoryItem_rarity_legendary_utility;Legendaarinen apuväline
+inventoryItem_rarity_common_weapon;Yleinen ase
+inventoryItem_rarity_uncommon_weapon;Erityinen ase
+inventoryItem_rarity_rare_weapon;Harvinainen ase
+inventoryItem_rarity_epic_weapon;Eeppinen ase
+inventoryItem_rarity_legendary_weapon;Legendaarinen ase
+inventoryItem_rarity_common_armour;Yleinen haarniska
+inventoryItem_rarity_uncommon_armour;Erityinen haarniska
+inventoryItem_rarity_rare_armour;Harvinainen haarniska
+inventoryItem_rarity_epic_armour;Eeppinen haarniska
+inventoryItem_rarity_legendary_armour;Legendaarinen haarniska
+inventoryItem_rarity_common_boots;Yleiset saappaat
+inventoryItem_rarity_uncommon_boots;Erityiset saappaat
+inventoryItem_rarity_rare_boots;Harvinaiset saappaat
+inventoryItem_rarity_epic_boots;Eeppiset saappaat
+inventoryItem_rarity_legendary_boots;Legendaariset saappaat
+inventoryItem_rarity_common_consumable;Kulutustavara
+inventoryItem_rarity_uncommon_consumable;Epätavallinen kulutustavara
+inventoryItem_rarity_rare_consumable;Harvinainen kulutustavara
+inventoryItem_rarity_epic_consumable;Eeppinen kulutustavara
+inventoryItem_rarity_common_horse;Hevonen
+inventoryItem_rarity_uncommon_horse;Epätavallinen hevonen
+inventoryItem_rarity_rare_horse;Harvinainen hevonen
+inventoryItem_rarity_epic_horse;Eeppinen hevonen
+inventoryItem_rarity_legendary_horse;Legendaarinen hevonen
+inventoryItem_rarity_common_material;Kulutustavara
+inventoryItem_rarity_uncommon_material;Epätavallinen kulutustavara
+inventoryItem_rarity_rare_material;Harvinainen kulutustavara
+inventoryItem_rarity_epic_material;Eeppinen kulutustavara
+search_item;Etsi esinettä
+search_select_item;Valitse esine
+avatar_confirmation_infoText_delete_goldBough;Poistoprosessin käynnistyttyä hahmosi tuhoutuminen kestää <b>vähintään 3 päivää</b>, sillä hahmosi osti Kultaa lähiaikoina.\nHahmo joka on poistotilassa ei pysty enää ottamaan osaa huutokauppoihin eikä käyttämään vaihtotoimistoa.\nVoit peruuttaa poistamisen milloin tahansa täällä.
+combatSimulator_addItemEffect;Lisää esineen vaikutus
+combatSimulator_editItemEffect;Muokkaa esineen vaikutusta
+addItemEffect_title;Lisää sankariesineen vaikutus
+addItemEffect_description;Lisää erilliset vaikutukset, jotka heijastavat kaikkien sankariesineiden yksilöllisiä bonuksia.
+addItemEffect_importHeroEquipment;Tuo oman sankarin varusteet
+addItemEffect_importHeroEquipment_success;Tuodut sankariesineet
+addItemEffect_selectEffect;Valitse esineen vaikutus
+addItemEffect_selectItem;Valitse esine
+addItemEffect_selectMagnitude;Valitse laajuustaso
+addItemEffect_selectUnit;Valitse yksikkö
+addItemEffect_missingMagnitude;Laajuus puuttuu
+addItemEffect_effect_2;Vähennetty vahinko
+addItemEffect_effect_6;+ Lisää terveyspisteitä päivässä
+addItemEffect_effect_12;+ Lisätty hyökkäys ja puolustus tietyille yksiköille
+addItemEffect_effect_13;+ Korotettu taisteluvoima
+cams_newMail_title;Uusi sähköpostiosoite
+cams_verifyNewMail_title;Vahvista uusi sähköpostiosoite
+cams_verifyCurrentMail_title;Vahvista nykyinen sähköpostiosoite
+auction_notEnoughSilver;Sinulla ei ole tarpeeksi hopeaa.
+auction_itemGroups;Esineryhmät
+auction_unknown;?
+auction_sortingOption_itemName;Esineen nimi
+auction_sortingOption_bidCount;Tarjousten määrä
+auction_sortingOption_finishedAt;Valmistuu
+auction_sortingOption_highestBid;Korkein huuto
+auction_sortingOption_highestBidder_player;Eniten tarjoava (pelaaja)
+auction_sortingOption_highestBidder_alliance;Eniten tarjoava (liittouma)
+auction_sortingOption_auctionAmount;Tämänhetkisiä huutokauppoja
+auction_sortingOption_nextFinishedAt;Seuraava valmistuu
+auction_sellingPrice;Myyntihinta
+auction_sellingPrice_lowest;Alin
+auction_sellingPrice_average;Keskiarvo
+auction_sellingPrice_highest;Korkein
+auction_result_won;<color={{colorValue|TextColor}}>Voitto</color>
+auction_result_lost;<color={{colorValue|TextColor}}>Tarjous ylitetty</color>
+auction_sellingPrice_averagePrice;Keskimääräinen hinta
+auction_bidProcessTitle;Tarjousprosessi
+auction_bidProcessDescription1;Voit tehdä tarjouksia kohteista, joista olet kiinnostunut.
+auction_bidProcessDescription2;Sinun on tarjottava vähintään vähimmäismäärä ylittääksesi nykyisen tarjouksen.
+auction_maxBidFeatureTitle;Maksimitarjousominaisuus
+auction_maxBidFeatureDescription1;Voit syöttää kohteen maksimibudjetin.
+auction_maxBidFeatureDescription2;Järjestelmä tekee puolestasi automaattisesti tarjouksen asettamaasi enimmäismäärään asti.
+auction_maxBidFeatureDescription3;Tarjouksesi nousee vain sen verran, että pysyt korkeimman tarjouksen tekijänä.
+auction_maxBidFeatureDescription4;Huutokauppa jatkuu, kunnes voitat tai sinut ohitetaan enimmäisbudjettisi ylittävältä osalta.
+auction_auctionDurationTitle;Huutokaupan kesto
+auction_auctionDurationDescription1;Jos huutokaupan jäljellä oleva aika on alle {{DURATION|Duration}}, kesto jatkuu {{DURATION|Duration}} asti, kun korkeimman tarjouksen tekijä vaihtuu.
+auction_auctionWinningTitle;Voittava
+auction_auctionWinningDescription1;Huutokaupan päättyessä korkeimman tarjouksen tehnyt voittaa kohteen.
+auction_auctionFinished;Huutokauppa on jo päättynyt.
+auction_wasJustOutbid;Et ole tällä hetkellä voittamassa huutokauppaa.
+auction_currentHighestBidder;Korkeimman tarjouksen tekijä tällä hetkellä
+auction_currentHighestBid;Korkein tarjous tällä hetkellä
+auction_yourMaximumBid;Suurin tarjouksesi
+auction_showFinished;Näytä valmis
+auction_deleteAllFinished;Poista kaikki valmiit
+auction_startedAt;Aloitettiin: {{TIME|DateTime}} | Käynnissä
+auction_canceled;Peruutettu
+auction_finished;valmis
+auction_finishedAt;Valmistui: {{TIME|DateTime}}
+auction_itemAuction_title;Esinehuutokaupat
+auction_itemAuction_info;Napsauta varastossasi olevaa esinettä aloittaaksesi huutokaupan. Muut pelaajat voivat tehdä siitä tarjouksen. Huutokauppa voi kestää {{INT}} tuntia.
+auction_whatHappensNext_title;Mitä tapahtuu seuraavaksi
+auction_whatHappensNext_info1;Korkeimman tarjouksen tekijä ostaa kohteen automaattisesti, kun aika loppuu.
+auction_whatHappensNext_info2;Saat hopeaa, kun myynti on tehty.
+auction_whatHappensNext_info3;Sinulle ilmoitetaan, kun tuotteesi on myyty.
+auction_error_cannotSell;Tätä esinettä ei voi myydä huutokaupassa.
+auction_error_onlyHorse;Et voi myydä ainoaa hevostasi.
+auction_sellItem;Myy esine
+auction_sales;Myynti
+auction_selectBatchSize;Valitse erän koko
+auction_selectBatchSize_batches;<b>{{COUNT}}x</b> esine-erää
+auction_selectFilter_title;Valitse suodatin
+goldShop_upTo;Enintään
+shopPromotion_openShop;Avaa kauppa
+shopPromotion_goldPromotionTitle;Aktiivinen kultatarjous
+shopPromotion_limitedTimeOffer;Tarjous vain rajoitetun ajan!
+shopPromotion_goldPromotionDescription;Hanki nyt enemmän kultaa rahoillasi.
+shopPromotion_timeRemaining;Aikaa jäljellä:
+hero_adventures_watchAdReduceDuration_title;Vähennä seikkailun kestoa {{AMOUNT}}%
+hero_adventures_watchAdReduceDuration_description;Katso video lyhentääksesi sankarisi <b>seuraavan</b> seikkailun kestoa.
+hero_adventures_watchAdIncreaseDanger_title;Seikkailun taso nousi vaikeaksi
+hero_adventures_watchAdIncreaseDanger_description;Katso video, jolla voit lisätä <b>seuraavan normaalin</b> seikkailun tasoa vaikeaksi saadaksesi lisää sankarin kokemuspisteitä.
+hero_adventures_watchAdActive;Aktiivinen seuraavaa seikkailua varten.
+hero_adventures_watchAdActiveNormal;Aktiivinen seuraavaa tavallista seikkailua varten.
+hero_crafting_action_error_nonEpic;Kyseessä on oltava samanlainen esine, joka on samaa harvinaisuutta ja laatua.
+berichte.adventure_heroCentric;{{VILLAGE_NAME}} lähtee seikkailemaan
+reports_share_notShareable;Tätä raporttia ei voi jakaa.
+dailyQuests_dailyMaxReached;Saavutettu päivittäinen enimmäismäärä
+achievementQuests.DailyQuest_12_description;Avaa peli selaimessa tietokoneellasi ja katso video.
+achievementQuests.DailyQuest_12_additionalInformation;www.travian.fi
+achievementQuests.DailyQuest_13_description;Katso video, jotta voit esimerkiksi päivittää rakennuksia nopeammin.
+achievementQuests.DailyQuest_13_additionalInformation;Tai napsauta "Katso video" -painiketta, jos haluat katsoa videon suoraan ilman lisäetuja.
+addItemEffect_effect_11;+ lisää hyökkäysvoimaa nataareja vastaan
+auction_started;Huutokauppa alkoi
+auction_error_batchSize;Ei tarpeeksi myytäviä esineitä.
+auction_graph_notEnoughData;Ei riittävästi tietoja
+auction_emptyInventory;- Sinulla ei ole tällä hetkellä myytäviä esineitä -
+RelativeTime_2_word;[data>1:{{data}} tuntia][data<2:{{data}} tunti]
+gold_action_halveDuration;Puolita kesto
+goldShop_advantage_Value_Duration;<b>+{{VALUE}}%</b> <b>[DURATION>6:{{DURATION}} päivän][DURATION<7:{{DURATION|Mult|24}} tunnin]</b> ajan
+goldShop_advantage_Value_Active;<b>+{{VALUE}}%</b> aktiivinen:
+goldShop_upgrade;Parannus
+goldShop_advantage_stillActiveFor;Aktiivinen vielä:
+goldShop_advantage_stillActiveFor_Value;{{DURATION}} kunnes {{TIME}}
+goldShop_advantage_videoFeatureOnCD;Voit aktivoida videobonuksen vain kerran päivässä.\nPäivittäinen nollaus: {{TIMESTAMP|Countdown}}
+goldShop_advantage_popup_mainInfoHeader_ProductionboostLumber;Lisää <b>puuntuotantoa</b> kaikissa kylissäsi.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostClay;Lisää <b>saventuotantoa</b> kaikissa kylissäsi.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostIron;Lisää <b>raudantuotantoa</b> kaikissa kylissäsi.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostCrop;Lisää <b>viljantuotantoa</b> kaikissa kylissäsi.
+goldShop_advantage_popup_mainInfoBody; Bonus ei vaikuta vain resurssin perustuotantoon vaan kaikkiin muihinkin bonuksiin.
+goldShop_advantage_popup_premiumInfo;Voit aktivoida bonuksen Kullalla ja saada {{VALUE}} tuotantobonuksen.\nVoit aktivoida automaattisen laajennuksen pysyvälle bonusaikavälille.
+goldShop_advantage_popup_videoFeatureInfo;Tai voit katsoa lyhyen videon ja saada pienemmän +{{VALUE}}% tuotantobonuksen.\n<b>Videobonus voidaan aktivoida vain kerran päivässä kunkin resurssin osalta.</b>
+goldShop_advantage_popup_upgradeInfo;Voit milloin tahansa päivittää +{{VALUE}}% tuotantobonukseen Kultaa vastaan.
+goldShop_advantage_upgradePopupInfo1;Resurssibonuksen päivittäminen poistaa nykyisen aktiivisen bonuksesi.
+goldShop_advantage_upgradePopupInfo2;Saat +{{VALUE}}% [DURATION>6:{{DURATION}} päivää][DURATION<7:{{DURATION|Mult|24}}] sijaan.
+goldShop_advantage_upgradePopup_title;Päivitysbonus
+productionOverview_Bonus;+{{VALUE}}% tuotantoon
+hero_adventures_watchAdReduceDuration_toast;Seikkailun kestoa lyhennettiin.
+hero_adventures_watchAdIncreaseDanger_toast;Seikkailun vaarallisuus nousi.
+hero_consumablePopup_amountEquippedAfter;Mukana oleva määrä jälkeen:
+hero_consumablePopup_amountEquippedAfterUse;Mukana oleva määrä käytön jälkeen:
+hero_consumablePopup_amountLeftInInventory;Varastossa jäljellä oleva määrä:
+cams_recover_password_cooldown;Odota {{VALUE}}
+cams_settings_changePassword_cooldown;Odota {{VALUE}}
+infobox_productionBoost_upgradeButton;Parannus
+infobox_productionBoost_upgradeBonusWithGold;Päivitä ja jatka bonusta Kullalla saadaksesi +{{PREMIUM_PERCENTAGE}}% {{TIME}} tunnin ajan.
+infobox_productionBoost_expires;{{PERCENTAGE}} {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresLumber;+{{PERCENTAGE}}% puuntuotantobonus päättyy {{TIME_COUNTER|Countdown?Bold}} kuluttua
+infobox_productionBoost_expiresClay;+{{PERCENTAGE}}% puuntuotantobonus päättyy {{TIME_COUNTER|Countdown?Bold}} kuluttua
+infobox_productionBoost_expiresIron;+{{PERCENTAGE}}% raudantuotantobonus päättyy {{TIME_COUNTER|Countdown?Bold}} kuluttua
+infobox_productionBoost_expiresCrop;+{{PERCENTAGE}}% viljantuotantobonus päättyy {{TIME_COUNTER|Countdown?Bold}} kuluttua
+infobox_productionBoost_expired;{{PERCENTAGE}}
+infobox_productionBoost_expiredLumber;+{{PERCENTAGE}}% puuntuotantobonus <b>on päättynyt</b>.
+infobox_productionBoost_expiredClay;+{{PERCENTAGE}}% saventuotantobonus <b>on päättynyt</b>.
+infobox_productionBoost_expiredIron;+{{PERCENTAGE}}% raudantuotantobonus <b>on päättynyt</b>.
+infobox_productionBoost_expiredCrop;+{{PERCENTAGE}}% viljantuotantobonus <b>on päättynyt</b>.
+infobox_levelUpProductionReminder;Lisää resurssien tuotantoa kaikissa kylissäsi Kultaa vastaan (+{{PREMIUM_PERCENTAGE}}%) tai katsomalla videon (+{{VIDEO_PERCENTAGE}}%)
+infobox_oneTimeProductionBoostReminder;Voit nyt aktivoida +{{VIDEO_PERCENTAGE}}% resurssibonuksesi uudelleen katsomalla videon.
+travelSimulator_title;Matka-ajan simulaattori
+travelSimulator_sourceTribe;Lähtösijainnin heimo
+travelSimulator_noLocationSelected;Ei valittua sijaintia
+travelSimulator_slowestUnit_title;Hitain yksikkö
+travelSimulator_slowestUnit_settings;{{UNIT}} | Nopeus: {{SPEED}}
+travelSimulator_TournamentSquareLevel_info;(Vain >20 ruudun etäisyydellä)
+travelSimulator_tournamentSquareLevel_option;{{LEVEL}} | {{VALUE}}%
+travelSimulator_unitSelection_title;Valitse hitain yksikkö
+travelSimulator_unitSelection_unitType;Yksikön tyyppi
+travelSimulator_unitSelection_unitSpeed;Yksikön nopeus
+travelSimulator_unitSelection_selectedUnitSpeed;Nopeus: {{SPEED}}
+travelSimulator_calculation_land;<b>Maa:</b> {{VALUE}}
+travelSimulator_calculation_sea;<b>Meri:</b> {{VALUE}}
+travelSimulator_heroAttending;Sankari osallistuu
+travelSimulator_vikingRaidBonus;Viikinkien ryöstöbonus
+travelSimulator_troopSpeedArtefactEffect;Joukkoja nopeuttavan artefaktin vaikutus
+travelSimulator_toast_selectSourceAndTarget;Valitse kelvollinen lähde- ja kohdepaikka!
+travelSimulator_toast_selectSourceTribe;Valitse kelvollinen heimo!
+IOSAppTrackingTransparencyMessage;Paina "Salli" käyttääksesi laitetietoja relevanssia lisäävää mainossisältöä varten
+goldShop_advantage_Value_Duration_Hours;<b>+{{VALUE}}%</b>, <b>{{DURATION}} tunniksi</b>
+travelSimulator_tournamentSquareLevel_title;Turnajaisareenan taso
+travelSimulator_troopSpeedAncientPower;Joukkoja nopeuttava muinainen voima
+RelativeTime_Formatted;[weeks>0:{{weeks}}vkoa ][days>0:{{days}}pv ]{{data}}
+settings_account_tab;Tili
+settings_notification_tab;Ilmoitukset
+settings_app_PushNotifications_popup_title;Ilmoitukset
+settings_app_PushNotifications_popup_header;Salli meidän lähettää sinulle ilmoituksia
+settings_app_PushNotifications_popup_info1;Jos haluat vastaanottaa push-ilmoituksia, joissa on uutisia ja hyödyllistä tietoa pelistä, salli ensin ilmoitukset meiltä.
+settings_app_PushNotifications_popup_info2;Voit ottaa ilmoitukset käyttöön laitteen sovellusasetuksissa.
+settings_app_PushNotifications_popup_info3;Voit myös palata tänne aina, kun haluat poistaa ilmoitukset käytöstä uudelleen.
+settings_app_PushNotifications_popup_action_button;Avaa sovelluksen asetukset
+ratioValueMax;/ {{a}}
+market_sendResources_completed;Suoritettu
+market_sendResources_villageNotFound;Ei löytynyt. Voit lähettää resursseja vain omiin kyliisi sekä liittoumasi ja konfederaatiosi jäsenille.
+no_ads_popup_title;Ei videomainoksia
+no_ads_popup_header;Ongelma ilmeni, kun yritettiin näyttää videomainosta.
+no_ads_popup_info1;Tähän voi olla useita syitä:
+no_ads_popup_info2; • Alueesi mainosvalikoimassa ei ole tällä hetkellä mainoksia.
+no_ads_popup_info3; • Yksityisyysasetuksesi rajoittavat tarjottavien mainosten määrää.
+no_ads_popup_info4; • Tekniset ongelmat sovelluksemme tai mainostoimittajamme kanssa.
+no_ads_popup_settings_msg;Varmista, että sallit henkilökohtaiset mainokset yksityisyysasetuksissasi.
+no_ads_popup_support_msg;Ota yhteyttä asiakaspalveluumme, jos ongelma jatkuu.
+no_ads_popup_support_button;Ota yhteys Tukeen
+city_upgradeToACity_wwVillageNotUpgradeable;Maailman ihmeen kyliä ei voi päivittää kaupungeiksi.
+travelSimulator_selectMagnitude;Valitse laajuustaso
+marketplace_merchantsOverview_returningTo;Palataan kohteeseen <b>{{Village}}</b> / <b>{{Player}}</b>
+market_sendResources_sendAgain;Lähetä uudelleen
+search_village_notFound;Ei löytynyt. Voit lähettää resursseja vain omiin kyliisi sekä liittoumasi ja konfederaatiosi jäsenille.
+settings_app_AnimationsPayoffs_activated;Joukkojen/kauppiaiden lähettämisen animaatio on päällä
+settings_app_AnimationsPayoffs_deactivated;Joukkojen/kauppiaiden lähettämisen animaatio on pois päältä
+hero_resourceTransferPopup_empty;Sankarin tavaraluettelossa ei ole siirrettäviä resursseja.
+hero_toast_appearanceChanged;Ulkoasu muutettu
+alliance_editMemberPopup_customNote;Oma muistiinpano
+alliance_editMemberPopup_titleOfRole;Roolin nimi
+alliance_editMemberPopup_setSpecialization;Aseta erikoistuminen
+alliance_role_offensive;Hyökkäys
+alliance_role_defensive;Puolustus
+alliance_role_hybrid;Hybridi
+alliance_role_scout;Tiedustelija
+alliance_role_support;Tuki
+alliance_role_wow_hammer;WoW-nyrkki
+alliance_role_none;Ei mikään
+ad_fallback_popup_title;Lunasta palkkiosi
+ad_fallback_popup_info;Tällä hetkellä videomainoksia ei ole saatavilla, mutta haluamme silti palkita uskollisuutesi! Odota hetki, niin valmistelemme sinulle palkkion.
+ad_fallback_popup_rewardGranted;Palkkio myönnetty
+ad_fallback_popup_claim;Lunasta palkkio
+ad_fallback_popup_closeWarning;Tämän näytön ennenaikainen sulkeminen peruuttaa palkkion
+gameplay_tip_1;Voit kouluttaa uudisasukkaita virka-asunnossa tai palatsissa (tasolta 10 alkaen).
+gameplay_tip_2;Voit rakentaa vain yhden palatsin jokaista hahmoa kohti. Se tarjoaa enintään 3 laajennuspaikkaa, kun taas virka-asunto tarjoaa vain 2.
+gameplay_tip_3;Jos haluat vaihtaa pääkaupunkia, sinun täytyy rakentaa palatsi uuteen kylään. Huomaa, että vanhan pääkaupunkisi erikoisrakennukset menetetään tai niiden taso laskee.
+gameplay_tip_4;Voit perustaa tai valloittaa toisen kylän, kun sinulla on tarpeeksi kulttuuripisteitä.
+gameplay_tip_5;Voit ansaita kulttuuripisteitä kehittämällä rakennuksia ja järjestämällä juhlia kaupungintalossa.
+gameplay_tip_6;Suuria juhlia voidaan järjestää kaupungintalossa (tasolla 10). Ne antavat enemmän kulttuuripisteitä, mutta maksavat enemmän resursseja.
+gameplay_tip_7;Voit valloittaa kylän laskemalla sen uskollisuuden nollaan virka-asunnossa tai palatsissa koulutetuilla hallitsijoilla.
+gameplay_tip_8;Tutki hallitsijat akatemiassa ennen kuin koulutat heitä virka-asunnossa tai palatsissa.
+gameplay_tip_9;Voit valloittaa kyliä Nataareilta tai muilta pelaajilta.
+gameplay_tip_10;Muut pelaajat eivät voi valloittaa pääkaupunkiasi.
+gameplay_tip_11;Käytä viljakylien etsintätyökalua löytääksesi 9-vilja- tai 15-viljakyliä, jotka pystyvät ylläpitämään suurempaa armeijaa.
+gameplay_tip_12;Resurssikenttiä voidaan parantaa pääkaupungissasi korkeammalle tasolle kuin muissa kylissä.
+gameplay_tip_13;Lähetä resursseja ystävällisiin kyliin torin kautta.
+gameplay_tip_14;Torilla voit käydä kauppaa resursseilla muiden pelaajien kanssa.
+gameplay_tip_15;Voit lisätä kauppiaidesi kantokykyä kehittämällä kauppavirastoa.
+gameplay_tip_16;Päivitä sankarisi kartano tasolle 10, jotta voit ottaa keitaan haltuusi ja lisätä resurssituotantoasi.
+gameplay_tip_17;Sepän pajassa voit parantaa joukkojesi voimaa. Nämä parannukset vaikuttavat välittömästi kaikkiin tämän tyypin joukkoihin, myös jo koulutettuihin.
+gameplay_tip_18;Käytä taistelusimulaattoria arvioidaksesi taistelujen lopputuloksia ennen hyökkäystä. Mitä enemmän yksityiskohtia lisäät simulaatioon, sitä tarkempi tulos on.
+gameplay_tip_19;Kultaklubin avulla voit komentaa joukkosi väistämään saapuvat hyökkäykset pääkaupungissasi.
+gameplay_tip_20;Kun joukkosi palaavat kotiin, väistö poistuu tilapäisesti käytöstä 10 sekunniksi.
+gameplay_tip_21;Paranna tiedustelijoitasi sepän pajassa vahvistaaksesi heidän tiedustelukykyään.
+gameplay_tip_22;Muurit lisäävät kyläsi puolustusta huomattavasti.
+gameplay_tip_23;Rakenna kätköjä suojellaksesi resurssejasi vihollisten ryöstöiltä.
+gameplay_tip_24;Gallialaiset voivat kouluttaa ansoittajia vangitsemaan hyökkääjiä ennen taistelun alkamista.
+gameplay_tip_25;Voit vapauttaa ansaan joutuneet joukot tekemällä onnistuneen tavallisen hyökkäyksen siihen kylään, jossa ne ovat.
+gameplay_tip_26;Hyökkäävät pelaajat voivat vapauttaa 75% ansaan joutuneista joukoista, mutta puolustaja voi halutessaan vapauttaa niistä 100% rauhanomaisesti.
+gameplay_tip_27;Rakenna sairaala, jotta voit parantaa jopa 40% taistelussa haavoittuneista joukoista.
+gameplay_tip_28;Gallialaiset voivat kouluttaa ansoittajan vangitsemaan hyökkäävät joukot jo ennen taistelun alkamista.
+gameplay_tip_29;Rakenna pääkaupunkiisi kivenhakkaajan maja lisätäksesi rakennusten kestävyyttä katapultteja ja muurinmurtajia vastaan.
+gameplay_tip_30;Voit asettaa sankarisi piiloutumaan vihollisen hyökätessä kotikylääsi, jotta hän pysyy turvassa.
+gameplay_tip_31;Päihitä villieläimiä autioissa keitaissa saadaksesi lisäresursseja. Vahvemmat eläimet antavat enemmän resursseja.
+gameplay_tip_32;Kukista autioiden keitaiden villieläimiä sankarillasi saadaksesi kokemusta.
+gameplay_tip_33;Käytä häkkejä vangitaksesi villieläimiä autioissa keitaissa ja vahvistaaksesi kylääsi.
+gameplay_tip_34;Varusta sankarisi esimerkiksi voiteilla tai erityisellä haarniskalla nopeuttaaksesi hänen terveytensä palautumista.
+gameplay_tip_35;Voit elvyttää sankarisi resursseilla ajan myötä tai välittömästi ämpärillä.
+gameplay_tip_36;Voit purkaa rakennuksia, kun päärakennuksesi saavuttaa tason 10.
+gameplay_tip_37;Rakenna lähetystö liittyäksesi liittoumaan tai perustaaksesi oman liittouman.
+vacationMode_title;Lomatila
+vacationMode_vacation;Loma
+vacationMode_vacationModeActive;Lomatila on aktiivinen
+vacationMode_info;Käytä lomatilaa suojellaksesi kyliäsi, kun olet poissa. Seuraavat toiminnot ovat pois käytöstä lomatilassa:
+vacationMode_deactivated_action1;joukkojen lähetys ja vastaanotto
+vacationMode_deactivated_action2;seikkailuille lähteminen sankarisi kanssa
+vacationMode_deactivated_action3;uusien rakennustöiden aloittaminen ja joukkojen kouluttaminen
+vacationMode_deactivated_action4;torin käyttäminen (mukaan lukien kauppareitit)
+vacationMode_deactivated_action5;juhlien järjestäminen, tutkimuksen aloittaminen ja päivitysten tekeminen
+vacationMode_deactivated_action6;liittoutumien luominen ja niihin liittyminen
+vacationMode_deactivated_action7;resurssien kontribuointi liittoumabonuksiin
+vacationMode_deactivated_action8;huutokauppoihin osallistuminen
+vacationMode_deactivated_action9;pääkaupunkisi vaihtaminen
+vacationMode_deactivated_action10;tilin poistaminen
+vacationMode_deactivated_territory_action1;kylän kehittäminen kaupungiksi
+vacationMode_deactivated_territory_action2;Tilisi ei vaikuta liittoutumasi alueelliseen asukaslukuun, eivätkä kyläsi saa voittopisteitä
+vacationMode_conditions_title;loman ehdot täyttyneet
+vacationMode_duration_info;Kuinka monta päivää lomatilan pitäisi kestää
+vacationMode_durationUntil;Lomatila on voimassa <b>{{DATE}}</b> asti
+vacationMode_availableDays;Käytettävissä olevat päivät <b>{{AVAILABLE}}/{{TOTAL}}</b>
+vacationMode_startButton;Siirry nyt lomatilaan
+vacationMode_error_noCancelTime;Voit lopettaa lomatilan vasta {{HOURS}} tunnin kuluttua
+vacationMode_error_missingRequirement;Täytä kaikki vaatimukset, jotta voit siirtyä lomatilaan
+vacationMode_error_noVacationDaysLeft;Sinulla ei ole yhtään lomatilapäivää jäljellä
+vacationMode_error_cooldown;Voit aloittaa lomatilan uudelleen vasta {{HOURS}} tunnin kuluttua sen päättymisestä
+vacationMode_abortSuccess;Lomatila keskeytettiin!
+vacationMode_remainingDays;Jäljellä olevat lomatilapäivät
+vacationMode_runsUntil;Lomatila päättyy
+vacationMode_abortInfo;Voit keskeyttää lomatilan aikaisintaan <b>{{DATE}}</b>
+vacationMode_abortAvailable;Voit keskeyttää lomatilan nyt
+vacationMode_abortConfirmHeader;Haluatko varmasti keskeyttää lomatilan?
+vacationMode_abortConfirmInfo;Käyttämättömät päivät hyvitetään. Tätä toimintoa ei voi perua.
+vacationMode_startCooldownInfo;Voit aloittaa lomatilan aikaisintaan <b>{{DATE}}</b>
+vacationMode_abortButton;Keskeytä lomatila
+vacationMode_conditions_has_outgoing_troops;Ei lähteviä joukkoja
+vacationMode_conditions_has_incoming_troops;Ei saapuvia joukkoja kyliisi tai keitaille
+vacationMode_conditions_has_reinforcing_troops_for;Ei lähetettyjä vahvistuksia muille pelaajille
+vacationMode_conditions_has_reinforcing_troops_from;Ei muiden pelaajien vahvistuksia kylissäsi tai keitaissasi
+vacationMode_conditions_has_ww_village;Et omista Maailmanihmeen kylää
+vacationMode_conditions_has_artifact_village;Et omista artefaktikylää
+vacationMode_conditions_has_beginners_protection;Sinulla ei ole aloittelijan suojaa
+vacationMode_conditions_has_trapped_troops;Ansoissasi ei ole joukkoja, eikä omia joukkojasi ole ansoissa, eikä sankarisikaan ole jäänyt ansaan
+vacationMode_conditions_has_deletion_event;Hahmoasi ei ole merkitty poistettavaksi
+vacationMode_conditions_has_conquered_oase;Et ole vallannut keidasta viimeisen {{HOURS}} tunnin aikana. Voit siirtyä lomatilaan, kun keitaan valtaamisesta tai menettämisestä on kulunut {{HOURS}} tuntia.
+vacationModePopup_info;Tilisi on suojattu lomatilan aikana, mutta resurssituotantosi jatkuu, ja joukkosi kuluttavat edelleen viljaa. <color=red>Tämä voi johtaa joukkojesi nälkäkuolemiin.</color>
+vacationModePopup_start_info;Haluatko varmasti siirtyä lomatilaan <b>{{DAYS}}</b> [DAYS>1:päiväksi][DAYS<2:päiväksi]? Lomatilan voi peruuttaa kultaa käyttämällä {{COOLDOWN}} tunnin odotusajan jälkeen.
+vacationModePopup_troopConsumption;Omien joukkojen kulutus
+vacationModePopup_starvationEstimate;Varhaisin nälkiintymishetki
+vacationModePopup_starvationTitle;Omien joukkojen kulutus
+goldTransfer_accept_gift;Kyllä, siirrä Kulta
+goldTransfer_decline_gift;Ei, älä siirrä Kultaa
+goldTransfer_accepted_toast;Kullan siirto hyväksytty.
+goldTransfer_declined_toast;Kullan siirto hylätty.
+smithy_requirementsNotSatisfied;Tämän yksikön päivittämistä koskevat vaatimukset eivät täyty
+vacationModeLobby_status;Lomalla
+block_vacationMode_toast;Et voi tehdä tätä lomatilan aikana.
+goldTransfer_verifyOwnership_title;Vahvista omistus
+goldTransfer_verifyOwnership_description;Jotta voit siirtää ostamasi käyttämättömän kullan olemassa olevalle hahmolle, vahvista ensin, että omistat kullan syöttämällä se sähköpostiosoite, johon siirtokoodi lähetettiin.
+goldTransfer_verifyOwnership_emailPlaceholder;Sähköpostiosoite
+goldTransfer_verifyOwnership_errorNoEmail;Kirjoita sähköpostiosoitteesi.
+goldTransfer_verifyOwnership_errorAlreadyUsed;Tämä Kullansiirtolinkki on jo käytetty.
+goldTransfer_verifyOwnership_errorInUse;Tämä Kullansiirtolinkki on virheellinen.
+goldTransfer_verifyOwnership_verifyButton;Vahvista
+goldTransfer_selectTargetAvatar_title;Valitse kohdehahmo
+goldTransfer_selectTargetAvatar_description;Valitse hahmo, jolle haluat siirtää kullan.
+goldTransfer_transferableGold_label;Siirrettävissä oleva kulta:
+goldTransfer_enterAvatarName_header;Kirjoita hahmon nimi:
+goldTransfer_avatarName_placeholder;Hahmon nimi
+goldTransfer_searchAvatar_Button;Etsi hahmo
+goldTransfer_searchAvatarNothingFound_error;Tällä nimellä ei löytynyt aktiivista hahmoa.
+goldTransfer_ownAvatarList_header;Valitse aktiivisista hahmoistasi ({{account}})
+goldTransfer_selectOwnAvatarConfirm_Button;Valitse hahmo
+goldTransfer_selectGameworld_title;Valitse pelimaailma
+goldTransfer_selectGameworld_description;Hahmon nimi löytyi useasta pelimaailmasta. Voit siirtää kullan vain yhdelle hahmolle. Valitse pelimaailma.
+goldTransfer_selectGameworldConfirm_Button;Valitse pelimaailma
+goldTransfer_changeAvatar_Button;Vaihda hahmon nimi
+goldTransfer_confirm_title;Vahvista siirto
+goldTransfer_confirm_Button;Vahvista siirto
+goldTransfer_confirmAvatarOnOneWorld_info;Hahmon nimi löytyi yhdestä pelimaailmasta:
+goldTransfer_confirmAvatarName_prefix;Hahmon nimi:
+goldTransfer_confirmGameworld_prefix;Pelimaailma:
+goldTransfer_transferComplete_title;Siirto onnistui
+goldTransfer_transferComplete_description;Kultasi on siirretty onnistuneesti hahmolle <b>{{avatarname}}</b> pelimaailmaan <b>{{gameworldname}}.</b>
+goldTransfer_transferComplete_returnButton;Palaa peliin
+cams_settings_accountDeletion_information_warning_v2;Tämä toiminto poistaa tilisi pysyvästi. Seuraavat tiliisi liittyvät asiat poistetaan:\n<indent=0.5em>•  Kaikki tilisi hahmot\n•  Kaikki tililläsi ansaitut mitalit</indent>\n\nVahvista kirjoittamalla "delete" alla olevaan kenttään.
+mapMarkers_popupTitle;Aseta merkki
+mapMarkers_markerType;Merkin tyyppi
+mapMarkers_markerColor;Merkin väri
+mapMarkers_setAlliance;Aseta merkki liittoumalleni
+mapMarkers_type_field;Ruutu
+mapMarkers_addMsg_success;Merkki lisättiin onnistuneesti!
+mapMarkers_saveMsg_success;Merkki tallennettiin onnistuneesti!
+mapMarkers_noPermission_error;Pyydä oikeudet liittoumasi johtajalta.
+mapMarkers_marker;Merkki
+mapMarkers_markers;Merkit
+mapMarkers_listAllianceTitle;Liittouman merkit
+mapMarkers_listPlayerTitle;Pelaajan merkit
+mapMarkers_listAlliances;Liittoumat
+mapMarkers_listPlayers;Pelaajat
+mapMarkers_listFlags;Liput
+mapMarkers_deleteMarker;Poista merkki
+mapMarkers_deleteMarkerMessage;Haluatko poistaa tämän merkin?
+mapMarkers_showOnMap;Näytä merkkini kartalla
+embassy_general_subtab;Yleinen
+embassy_villagesNearby_subtab;Lähistöllä olevat kylät
+embassy_villagesNearby_listHeader;Liittouman/konfederaation kylät

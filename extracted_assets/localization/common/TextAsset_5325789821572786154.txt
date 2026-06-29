@@ -1,0 +1,2115 @@
+detail_window_header_title;{{buildingName|TranslateSuffixFor|allgemein.gid}}
+;{{INT}}
+levelWithValue;Úroveň {{level}}
+valueWithPercent;{{value}}%
+valueAsRankingPosition;{{value}}.
+valueChangeInBrackets;({{change|Sign}})
+valueChangeInBracketsWithPercent;({{change|Sign}}%)
+ratioValues;{{a}}/{{b}}
+coordinates;<nobr>({{x}}|{{y}})</nobr>
+village_with_coordinates;{{villageName}} <nobr>({{x}}|{{y}})</nobr>
+village_with_clickable_coordinates;{{villageName}} {{mapId|Coordinates}}
+valuePerHour;{{a}}/hod.
+back;Zpět
+fill;Max.
+hero;Hrdina
+done;Hotovo
+remove;Odebrat
+prerequisites;Požadavky:
+newAmount;Nový počet
+before;před
+after;po
+permissions;Povolení
+changesSaved;Změny uloženy!
+genericError;Neočekávaná chyba
+allianceTagInBrackets;[{{allianceId|AllianceLink}}]
+autocompleteNoResult;Nenalezena žádná shoda
+medalAdded;Přidána medaile
+continueEdit;Pokračovat v úpravách
+levelUp;Nová úroveň!
+non_existing_object;[?]
+sorting;Řazení
+copiedToClipboard;Zkopírováno do schránky
+maximumLengthError;Maximální délka: {{max}}.
+sortingOptions;Možnosti řazení
+WIP_comingSoon;Funkce k dispozici již brzy!
+upgradeTab_fastForward_button;o {{Percent}}% rychlejší
+upgradeTab_masterBuilder_button;Postavit se \nstavbyvedoucím {{goldIcon|Sprite}}{{goldCost}}
+upgradeTab_adBoostPopup_boost;Zrychlení o {{BOOST}}%.
+infoTab_upgradingToLevel;Staví se úroveň {{level}}:
+infoTab_genericCurrently;Aktuálně:
+infoTab_genericAtLevel;Na úrovni {{INT}}:
+infoTab_genericEffect;{{INT}}
+infoTab_currentProduction;Aktuální produkce:
+infoTab_productionAtLevel;Produkce na úrovni {{INT}}:
+infoTab_effectPerHour;{{INT}} za hodinu
+networkIssues;Spojení s herním serverem bylo ztraceno.
+cantLoadServerList;Nepodařilo se načíst seznam serverů kvůli potížím se sítí. Potvrď, že je zařízení připojené k internetu, a zkus to znovu.
+barracks_TrainTroops_Action;Vycvičit jednotky
+barracks_ViewTrainingsList;Zobrazit seznam výcviku
+barracks_unitNeedsToBeResearched;Jednotku je potřeba nejprve vyzkoumat v
+barracks_requiresLabel;Požadováno:
+barracks_trainingCosts;Cena výcviku jednotky
+barracks_troopsInTraining;Jednotky ve výcviku
+training_started;Výcvik úspěšně začal!
+targetSelection_relationLabel;Stav:
+targetSelection_selectedVillage;Vybraná vesnice
+targetSelection_noSelectedVillage;Nevybrána žádná vesnice
+targetSelection_ownVillages;Vlastní vesnice
+targetSelection_relation0;Neutrální
+targetSelection_relation1;Přátelský
+targetSelection_relation2;Vlastní aliance
+targetSelection_relation3;Vlastní vesnice
+targetSelection_alreadyThere_troops;Tvé jednotky už tam jsou.
+targetSelection_alreadyThere_merchants;Tví obchodníci už tam jsou.
+rallyPoint_button_confirmTarget;Potvrdit cíl
+rallyPoint_button_prepareTroops;Připravit jednotky
+rallyPoint_button_updateWave;Aktualizovat vlnu
+rallyPoint_button_copyWave;Duplikovat vlnu
+rallyPoint_button_newWave;Přidat novou vlnu
+rallyPoint_sendTroops_chooseDestination;Poslat jednotky – vybrat cíl
+rallyPoint_sendTroops_sendTroopAction_1;Poslat jednotky – potvrdit
+rallyPoint_sendTroops_sendTroopAction_3;Poslat jednotky – potvrdit
+rallyPoint_sendTroops_sendTroopAction_4;Poslat jednotky – potvrdit
+rallyPoint_sendTroops_sendTroopAction_5;Poslat jednotky – potvrdit
+rallyPoint_sendTroops_sendTroopAction_72;Přeposlat jednotky – potvrdit
+rallyPoint_sendTroops_sendTroopAction_9;Stáhnout jednotky – potvrdit
+rallyPoint_sendTroops_sendTroopAction_10;Založit novou vesnici
+rallyPoint_sendTroops_sendTroopButton_1;Poslat jednotky
+rallyPoint_sendTroops_sendTroopButton_3;Poslat jednotky
+rallyPoint_sendTroops_sendTroopButton_4;Poslat jednotky
+rallyPoint_sendTroops_sendTroopButton_5;Poslat jednotky
+rallyPoint_sendTroops_sendTroopButton_72;Přeposlat jednotky
+rallyPoint_sendTroops_sendTroopButton_9;Poslat jednotky zpět
+rallyPoint_sendTroops_sendTroopButton_10;Založit novou vesnici
+rallyPoint_sendTroops_coordinateX;Souřadnice <b>X</b>:
+rallyPoint_sendTroops_coordinateY;Souřadnice <b>Y</b>:
+rallyPoint_sendTroops_selectOnMap;Nebo vyber místo na mapě:
+rallyPoint_sendTroops_arrivalTime;<b>{{hoursLeft|Duration}}</b> v <b>{{hoursLeft|TimeCountUp}}</b>
+rallyPoint_sendTroops_catapultTargetPopup;Vybrat cíl katapultu:
+rallyPoint_sendTroops_catapultTarget_category_1;Budovy infrastruktury
+rallyPoint_sendTroops_catapultTarget_category_2;Vojenské budovy
+rallyPoint_sendTroops_catapultTarget_category_3;Surovinové budovy
+rallyPoint_sendTroops_catapultTarget_random;Náhodně
+rallyPoint_sendTroops_catapultTarget_noBuilding;Vyber budovu
+rallyPoint_sendTroops_catapultTarget_recentTargets;Naposledy vybrané:
+rallyPoint_sendTroops_changeHeroHomeVillage;Změnit domovskou vesnici hrdiny
+rallyPoint_sendTroops_attackNoSelection;Vyber typ útoku
+rallyPoint_sendTroops_movementType_5;Podpora
+rallyPoint_sendTroops_movementType_3;Útok
+rallyPoint_sendTroops_movementType_4;Loupež
+rallyPoint_sendTroops_attackForwarding;Přeposílání
+rallyPoint_sendTroops_noTroopsSelected;- Nevybrány žádné jednotky -
+rallyPoint_sendTroops_noTroopsAvailable;Jednotky nelze poslat. V této vesnici nejsou k dispozici žádné jednotky.
+rallyPoint_sendTroops_forwardingVillageError;Jednotky můžou být přeposlány pouze členům aliance nebo do vlastnch vesnic.
+rallyPoint_sendTroops_forwardingDestination;Přeposlat jednotky – vybrat cíl
+rallyPoint_sendTroops_WaveRemoved;Vlna odstraněna
+rallyPoint_sendTroops_maxWaves;Bylo dosaženo maximálního počtu vln
+rallyPoint_sendTroops_notEnoughTroopsToCopy;Nedostatek jednotek pro duplikování vlny
+rallyPoint_sendTroops_troopsSent;Jednotky odeslány!
+rallyPoint_sendTroops_toOverview;K přehledu
+rallyPoint_sendTroops_backToVillage;Zpět do vesnice
+rallyPoint_sendTroops_mission;Mise:
+rallyPoint_troopsOverview_1;Příchozí útoky a loupeže
+rallyPoint_troopsOverview_2;Odchozí útoky a loupeže
+rallyPoint_troopsOverview_3;Vracející se jednotky
+rallyPoint_troopsOverview_4;Vlastní jednotky v této vesnici a jejích oázách
+rallyPoint_troopsOverview_5;Cizí jednotky ve vesnici
+rallyPoint_troopsOverview_6;Vlastní jednotky v jiných vesnicích nebo oázách
+rallyPoint_troopsOverview_7;Příchozí podpory
+rallyPoint_troopsOverview_8;Odchozí podpory
+rallyPoint_troopsOverview_9;Odchozí podpory
+rallyPoint_troopsOverview;Přehled jednotek
+rallyPoint_troopsOverview_consumption;Spotřeba: {{cropConsumption|ShortenNumber|10000}}  {{iconName|Sprite}} za hodinu
+rallyPoint_troopsOverview_arrivalTime;Příchod za: <b>{{Duration|Countdown}}</b> v <b>{{date|Time}}</b> 
+rallyPoint_troopsOverview_incomingMission_3;Příchozí útok od: 
+rallyPoint_troopsOverview_incomingMission_4;Příchozí loupež od: 
+rallyPoint_troopsOverview_outgoingMission_3;Útok na: 
+rallyPoint_troopsOverview_outgoingMission_4;Loupež: 
+rallyPoint_troopsOverview_outgoingMission_5;Podpora pro: 
+rallyPoint_troopsOverview_outgoingMission_6;Skautská obrana a vojáci 
+rallyPoint_troopsOverview_outgoingMission_50;Dobrodružství v: 
+rallyPoint_troopsOverview_outgoingMission_72;Přeposílání jednotek do: 
+rallyPoint_troopsOverview_outgoingMission_10;Zakládaní nové vesnice 
+rallyPoint_troopsOverview_outgoingMission_40;Vojáci se utíkají schovat do lesa
+rallyPoint_troopsOverview_returningMission;Návrat z: 
+rallyPoint_troopsOverview_ownTroops_1;Vlastní jednotky v: 
+rallyPoint_troopsOverview_ownTroops_2;Vlastní jednotky v: 
+rallyPoint_troopsOverview_ownTroops_3;Vlastní jednotky v: 
+rallyPoint_troopsOverview_ownTroops_4;<b>Příroda</b> v: 
+rallyPoint_troopsOverview_ownTroops_5;Vlastní jednotky v: 
+rallyPoint_troopsOverview_ownTroops_6;Vlastní jednotky v: 
+rallyPoint_troopsOverview_ownTroops_7;Vlastní jednotky v: 
+rallyPoint_troopsOverview_foreignTroops_2;Jednotky na podpoře od: 
+rallyPoint_troopsOverview_foreignTroops_4;Zajaté jednotky od: 
+rallyPoint_troopsOverview_ownTroopsInOther_2;Vlastní jednotky na podpoře pro: 
+rallyPoint_troopsOverview_ownTroopsInOther_4;Vlastní jednotky zajaté v: 
+rallyPoint_troopsOverview_origin;Původ: 
+rallyPoint_troopsOverview_reinforcement;Podpora od: 
+rallyPoint_troopsOverview_killed;Jednotky zabity!
+rallyPoint_troopsOverview_released;Jednotky propuštěny!
+rallyPoint_troopsOverview_forwardedTroopsButton;Přeposlané jednotky
+rallyPoint_troopsOverview_returnToOverview;Zpět k přehledu
+rallyPoint_troopsOverview_incomingAttacks;[incomings=1-4:<color={{colorValue|TextColor}}>{{incomings}}</color> příchozí][incomings>4:<color={{colorValue|TextColor}}>{{incomings}}</color> příchozích][incomings=0:<color={{colorValue|TextColor}}>{{incomings}}</color> příchozích]
+rallyPoint_troopsOverview_amountIncoming;[value=1-4:{{value}} příchozí][value>4:{{value}} příchozích][value=0:{{value}} příchozích]
+rallyPoint_troopsOverview_amountOutgoing;[value=1-4:{{value}} odchozí][value>4:{{value}} odchozích][value=0:{{value}} odchozích]
+rallyPoint_troopsOverview_amountReturning;[value=1-4:{{value}} vracející se][value>4:{{value}} vracejících se][value=0:{{value}} vracejících se]
+rallyPoint_troopsOverview_firstArrivalTime;Za {{timestamp|Countdown}} hodin
+rallyPoint_troopsOverview_forwardTroops;Přeposlat
+rallyPoint_troopsOverview_MergeTroops;Začlenit do vesnice
+rallyPoint_troopsOverview_WithdrawTroops;Poslat zpět
+rallyPoint_troopsOverview_sort_1;Nejprve označené pohyby
+rallyPoint_troopsOverview_sort_2;Nejprve první příchozí
+rallyPoint_troopsOverview_sort_3;Nejprve poslední příchozí
+rallyPoint_troopsOverview_sort_4;Nejprve nejnovější odeslané jednotky
+rallyPoint_troopsOverview_sort_5;Nejprve nejstarší odeslané jednotky
+rallyPoint_troopsMerge_troopsToBeMerged;Počet jednotek vybraných ke sloučení:
+rallyPoint_troopsMerge_currentGold;Aktuální zlaté:  {{iconName|Sprite}} {{currentGold}}
+rallyPoint_troopsMerge_goldLeft_0;{{remainingGold}} / {{maxAllowedGold}} zbývajících zlatých na dnešní začlenění jednotek.
+rallyPoint_troopsMerge_goldLeft_1;{{remainingGold}} / {{maxAllowedGold}} zbývajících zlatých na dnešní začlenění jednotek. Ještě můžeš začlenit za suroviny.
+rallyPoint_troopsMerge_troopsMergedToast;Jednotky začleněny!
+rallyPoint_raidList_beingRaided;{{current}}/{{total}} loupeží na cestě
+rallyPoint_infoTab_EvasionShortDescription;Aktivovat uhýbání jednotek pro hlavní vesnici
+rallyPoint_farmList_createNewTitle;Vytvořit nový farmlist
+rallyPoint_farmList_editTitle;Upravit farmlist
+rallyPoint_farmList_listName;Název farmlistu
+rallyPoint_farmList_selectDefaultTroops;Vybrat výchozí jednotky
+rallyPoint_farmList_addTroopsButton;Přidat jednotky
+rallyPoint_farmList_editTroopsButton;Upravit jednotky
+rallyPoint_farmList_setTroopsButton;Nastavit jednotky
+rallyPoint_farmList_createListButton;Vytvořit farmlist
+rallyPoint_farmList_editListButton;Aktualizovat farmlist
+rallyPoint_farmList_editTroopsTitle;Upravit jednotky farmlistu
+rallyPoint_farmList_deleteList;Smazat farmlist
+rallyPoint_selectTroops;Vybrat jednotky
+rallyPoint_farmList_listCreated;Farmlist vytvořen
+rallyPoint_farmList_exitList;Opustit farmlist
+rallyPoint_farmList_startAll;Poslat na všechny cíle
+rallyPoint_farmList_startAllLists;Poslat vše
+rallyPoint_farmList_startSelected;Poslat vybrané
+rallyPoint_farmList_noTarget;- Nevybrány žádné cíle -
+rallyPoint_farmList_noTargetExist;V tomto farmlistu nejsou žádné cíle
+rallyPoint_farmList_selectedAmount;{{amount}} vybráno:
+rallyPoint_farmList_listUpdated;Farmlist aktualizován
+rallyPoint_farmList_listDeleted;Farmlist smazán
+rallyPoint_farmList_editWarning;- Smazání farmlistu smaže všechny cíle v tomto farmlistu\n- Úprava jednotek ovlivní pouze výchozí jednotky u budoucích cílů
+rallyPoint_farmList_sortingFailed;Řazení selhalo! Zkus to prosím znovu.
+rallyPoint_farmList_notStartedPopupTitle;Loupeže nezahájeny
+rallyPoint_farmList_notStartedPopupElement;<b>{{total}}</b> protože {{message}}
+rallyPoint_farmList_NotStartedPopupButtonGoTo;Jít k farmlistu
+rallyPoint_farmList_AddTargetTitle;Přidat cíl
+rallyPoint_farmList_changeTroops;Změnit jednotky
+rallyPoint_farmList_targetAdded;Cíl přidán
+rallyPoint_farmList_targetAlreadyOnList;Cíl už v tomto farmlistu je, vyber prosím jiný farmlist nebo vytvoř nový.
+rallyPoint_farmList_choose;Vyber farmlist
+rallyPoint_farmList_notYetRaided;Ještě nevyloupeno
+rallyPoint_farmList_EditRaids;Změnit [raidsAmount=1:cíl][raidsAmount>1:cíle]
+rallyPoint_farmList_DeleteRaidsPlayerQuestion;Určitě chceš smazat [raidsAmount=1:tento cíl][raidsAmount>1:tyto cíle]?
+rallyPoint_farmList_ChangeRaidList;Změnit farmlist
+rallyPoint_farmList_ChangeTarget;Změnit cíl
+rallyPoint_farmList_ChangeTroops;Změnit jednotky
+rallyPoint_farmList_DeactivateTarget;Deaktivovat [raidsAmount=1:cíl][raidsAmount>1:cíle]
+rallyPoint_farmList_MultiEditWarning;Upravuješ více cílů. Provedené změny ovlivní všechny vybrané cíle
+rallyPoint_farmList_UpdateRaids;Aktualizovat [raidsAmount=1:cíl][raidsAmount>1:cíle]
+rallyPoint_farmList_filterShowTroopsTitle;Zobrazit jednotky
+rallyPoint_farmList_filterShowTroopsDescription;Ukazuje vybrané jednotky pro cíl
+rallyPoint_farmList_filterShowPopulationTitle;Zobrazit populaci cíle
+rallyPoint_farmList_filterShowPopulationDescription;Ukazuje populaci cílové vesnice
+rallyPoint_farmList_filterShowDistanceTitle;Zobrazit vzdálenost
+rallyPoint_farmList_filterShowDistanceDescription;Ukazuje vzdálenost tvé vesnice od cíle
+rallyPoint_farmList_filterShowLastRaidTitle;Zobrazit informace o poslední loupeži
+rallyPoint_farmList_filterShowLastRaidDescription;Ukazuje informace o poslední loupeži cíle
+rallyPoint_farmList_filterShowBountyTitle;Zobrazit kořist a suroviny
+rallyPoint_farmList_filterShowBountyDescription;Ukazuje kořist a získané suroviny
+marketplace_createOffer;Vytvořit nabídku
+marketplace_myOffers_title;Moje nabídky
+marketplace_myOffers_merchants;Obchodníci: {{count}}
+marketplace_myOffers_alliance_True;Aliance: Ano
+marketplace_myOffers_alliance_False;-
+marketplace_myOffers_interval;{{amount}} hodin
+marketplace_myOffers_offerDeleted;Nabídka smazána
+marketplace_merchantsOverview_arrival;{{duration}} hodin Příchod v {{arrivalTime}}
+marketplace_merchantsOverview_incomingMerchants;Příchozí dodávky: {{count}}
+marketplace_merchantsOverview_outgoingMerchants;Odchozí dodávky: {{count}}
+marketplace_merchantsOverview_noIncomingMerchants;- Žádní příchozí obchodníci -
+marketplace_merchantsOverview_noOutgoingMerchants;- Žádní odchozí obchodníci -
+marketplace_merchantsOverview_IncomingCat;Příchozí
+marketplace_merchantsOverview_outgoingCat;Odchozí
+marketplace_merchantsOverview_capacity;Kapacita: {{capacity}}
+marketplace_merchantsOverview_merchantsOverview;Přehled obchodníků
+marketplace_merchantsOverview_ArrivingSoonest;Nejbližší příchod
+marketplace_merchantsOverview_ArrivingLatest;Nejpozdější příchod
+marketplace_merchantsOverview_ShortestDistance;Nejkratší vzdálenost
+marketplace_merchantsOverview_LongestDistance;Nejdelší vzdálenost
+marketplace_merchantsOverview_transportTo;Dodávka do vesnice <b>{{Village}}</b> hráče <b>{{Player}}</b>
+marketplace_merchantsOverview_transportFrom;Dodávka z vesnice <b>{{Village}}</b> hráče <b>{{Player}}</b>
+marketplace_merchantsOverview_returningFrom;Návrat z vesnice <b>{{Village}}</b> hráče <b>{{Player}}</b>
+academy_research_viewResearchList;Probíhá výzkum
+academy_research_allUnitsResearched;Všechny jednotky jsou vyzkoumány.
+academy_researchListPopup_title;Jednotky jsou ve výzkumu
+academy_researchListPopup_remainingTime;Zbývá {{timeLeft}}. Hotovo v {{readyAt}}
+academy_researchListPopup_constructImmediately;Okamžitě dokončit
+research_started;Výzkum úspěšně začal!
+research_timeLeft;Zbývá {{TIME|Countdown}}
+townHall_celebration_ongoingCelebration;probíhá
+topBar_perHourLabel;/h:
+topBar_maxLabel;Max:
+topBar_resourceFull;Plný
+leftPanel_infoBox;Infobox
+villagePanel_playerNameTitle;Vesnice vlastněné hráčem {{playerName}}
+villagePanel_toStatistics;Ke statistikám vesnic
+villagePanel_culturePointsNeeded;Potřebné kulturní body pro další vesnici
+mapCell_type;{{x}}{{y}}
+mapCell_type_village;{{villageName}}
+mapCell_type_1;Ve vesnici
+mapCell_type_2;Údolí
+mapCell_type_3;volná oáza
+mapCell_type_4;obsazená oáza
+mapCell_type_5;Divočina
+mapCell_Owner;Majitel
+mapCell_type_valley;Údolí
+mapCell_Wilderness;Na tomto místě není nic zajímavého.
+mapCell_Distance;[distance=1-4: {{distance|Round|1}} pole][distance>4: {{distance|Round|1}} polí]
+mapCell_locationInfo;Informace o lokalitě
+mapCell_surroundings;Okolí
+mapCell_actions_editFarmlist;Upravit farmlist
+mapCell_actions_addFarmlist;Přidat do farmlistu
+mapCell_actions_raidOasis;Vyloupit oázu
+mapCell_showOnMap;Zobrazit na mapě
+mapCell_noReports;- Pro tuto lokalitu nejsou k dispozici žádné informace -
+berichte.region_;{{PLAYERACTIVE}}{{PLAYERPASSIVE}}{{VILLAGE}}{{NAME1}}{{NAME2}}{{ALLY1}}{{ALLY2}}{{NAME}}
+mapCell_goToOwnVillage;Jít do vlastní vesnice
+constructionQueue_timeLeftToFinish;Zbývá {{timestamp|Countdown}}. Hotovo v {{timestamp|Time}}
+constructionQueue_timeUntilStart;Začne za {{timestamp|Countdown}}
+constructionQueue_MasterBuilderTitle;Fronta stavbyvedoucího (stojí {{masterBuilderCost|Sprite}} {{masterBuilderCost}} na začátku stavby)
+constructionQueue_Constructing;Stavba budov
+constructionImmediatelyPopup_topText;Následující stavby budou okamžitě dokončeny:
+constructionImmediatelyPopup_title;Okamžitě dokončit
+newBuildingConstructionDetail_dateTimeEnoughResources;Dostatek surovin {{date|Date}} v {{time|Time}}
+newBuildingConstruction_noBuildingsAvailable;Momentálně není možné postavit další budovu.
+goldclubpopup_currentGold;Aktuální počet zlatých:  {{iconName|Sprite}} <color={{colorValue|TextColor}}>{{currentGold}}</color>
+goldclubpopup_activated_toastMessage;Bonifácův klub aktivován!
+loginPage_version;Verze {{currentVersion}}
+loginPage_loginBlocked;Přihlášení zablokováno
+loginPage_loginBlocked_fails;Příliš mnoho neúspěšných pokusů o přihlášení
+loginPage_loginBlocked_message;Tvůj účet byl zablokován kvůli příliš velkému počtu neúspěšných pokusů o přihlášení.
+loginPage_loginBlocked_resolve;Pro odemčení svého účtu se přihlas v prohlížeči na
+serverSelection_selectRegion;Vybrat region
+serverSelection_selectGameWorld;Vybrat herní svět
+serverSelection_0;International
+serverSelection_1;Arabics
+serverSelection_2;Asia
+serverSelection_3;Europe
+serverSelection_4;America
+serverSelection_99;Dev
+serverSelection_mapSize;Velikost mapy:
+serverSelection_mapSize_0;Malá
+serverSelection_mapSize_1;Velká
+serverSelection_artifacts;Artefakty:
+serverSelection_constructionPlans;Stavební plány:
+serverSelection_inXdays;In {{days}} days
+serverSelection_changeGameWorld;Změnit herní svět
+serverSelection_username;Uživatelské jméno:
+serverSelection_password;Heslo:
+serverSelection_loginButton;Přihlas se a hraj
+serverSelection_forgotPassword;Zapomenuté heslo
+serverSelection_noAccount;Nemám účet
+serverSelection_loginError;Nesprávné uživatelské jméno nebo heslo
+serverSelection_graphQlError;Chyba při načítání dat ze serveru
+serverSelection_tokenRefreshError;Chyba při přihlášení na poslední použitý server: přihlas se prosím znovu.
+serverSelection_stayLoggedIn;Zůstat přihlášen na herním světě
+troopsInfo_title;Jednotky ve vesnici {{villageName}}
+unitInfo_velocity;<b>{{fields}}</b> polí/h
+unitInfo_resourceCarriage;<b>{{INT}}</b> surovin
+unitInfo_researchPrerequisites;Požadavky na výzkum:
+unitInfo_trainingPrerequisites;Požadavky pro výcvik:
+unitInfo_canCarry;Nosnost:
+exchangeResources_currentTitle;Nová částka
+exchangeResources_lockAmount;Zamknout částku
+exchangeResources_changeTitle;Změnit
+exchangeResources_restTitle;Zbývá
+exchangeResources_buildingPossible_True;Rozšíření je možné
+exchangeResources_buildingPossible_False;Rozšíření není možné
+exchangeResources_mergePossible_True;Začlenění je možné
+exchangeResources_mergePossible_False;Začlenění není možné
+exchangeResources_researchPossible_True;Výzkum je možný
+exchangeResources_researchPossible_False;Výzkum není možný
+exchangeResources_celebrationPossible_True;Uspořádání slavností je možné
+exchangeResources_celebrationPossible_False;Uspořádání slavností není možné
+exchangeResources_reviveHero_True;Oživení hrdiny je možné
+exchangeResources_reviveHero_False;Oživení hrdiny není možné
+exchangeResources_currentlyAvailable;Momentálně k dispozici: <b>{{amount}}</b>
+exchangeResources_maximumAvailable;Dostupné maximum: <b>{{amount}}</b>
+exchangeResources_distributeEvenly;Rozdělit zbývající suroviny rovnoměrně:
+exchangeResources_distributeOnResource;Nebo upřednostnit ze zbývajících surovin tuto:
+exchangeResources_distributeAuto;Automatické rozdělení
+exchangeResources_distributeManual;Manuální rozdělení
+exchangeResources_availableTroops;Dostupné jednotky: {{amount}}
+buildingActivities_title;Stavební práce
+buildingActivities_idle;Nečinný
+buildingActivities_type;Typ
+buildingActivities_building_13;Vylepšení:
+buildingActivities_building_16;Farmlist
+buildingActivities_building_17;Obchodníci
+buildingActivities_building_19;Jednotky ve výcviku
+buildingActivities_building_20;Výcvik jízdy
+buildingActivities_building_29;Jednotky ve výcviku
+buildingActivities_building_30;Výcvik jízdy
+buildingActivities_building_21;Jednotky ve výcviku
+buildingActivities_building_22;Výzkum
+buildingActivities_building_24;Slavnosti
+buildingActivities_building_46;Uzdravování jednotek
+buildingActivities_buildingAction_;{{amount}}{{max}}
+buildingActivities_buildingAction_16;Probíhá {{amount}} loupeží
+buildingActivities_buildingAction_17;{{amount}}/{{max}} k dispozici
+mainMenu_title;Hlavní menu
+mainMenu_quests;Úkoly
+playerDetails_infoTab;Info o hráči
+playerDetails_villageTabTitle;[villages=1-4:{{villages}} vesnice][villages>4:{{villages}} vesnic] s {{oases}} oázami
+playerDetails_SortBy_1;Populace
+playerDetails_SortBy_2;Vítězné body
+playerDetails_SortBy_3;Jméno vesnice
+playerDetails_SortBy_4;Jméno regionu
+player_gender_DontSpecify;Neuvedeno
+player_gender_Other;Jiné
+player_gender0;Muž
+player_gender1;Žena
+player_gender2;Jiné
+player_gender3;Neuvedeno
+playerDetails_NotesFor;Poznámky k hráči {{playerName}}
+playerDetails_NoDescription_Others;- Tento hráč nemá žádný popis -
+playerDetails_NoDescription_Own;- Ještě nebyl přidán žádný popis -
+playerDetails_editLanguages;Upravit jazyky
+playerDetails_searchLanguage;Hledaný jazyk
+goldShopPlaceholder_title;Obchod bude již brzy!
+goldShopPlaceholder_description;Zlatý obchod ještě není v mobilní aplikaci implementován.<br><br> Pro nákup zlatých se prosím přihlas na svůj účet v prohlížeči.
+goldShop_title;Zlatý obchod
+goldShop_advantage_5;Travian Plus
+goldShop_advantage_4;Dřevo
+goldShop_advantage_1;Hlína
+goldShop_advantage_2;Železo
+goldShop_advantage_3;Obilí
+goldShop_feature_activated;Funkce aktivována!
+goldShop_purchaseFailed;Nákup selhal!
+goldShop_purchaseSuccess;Nákup byl úspěšný.
+goldShop_transactionInProgress;Transakce se zpracovává.\nProsíme, počkej.
+goldShop_transactionFailed;Něco se pokazilo.\nZkus to prosím později.
+goldShop_transactionTimeout;Milý hráči, tvá platba překročila časový limit a možná nebyla zpracována správně. Pokud se setkáš s jakýmikoli problémy, kontaktuj prosím naši <style="link"><link="https://support.travian.com/support/tickets/new">platební podporu</link></style>.
+forceUpdate_title;Aktualizovat aplikaci
+forceUpdate_description;Používáš nepodporovanou verzi mobilní aplikace Travian: Legends. Jdi prosím do App Store a aktualizuj si aplikaci.<br><br>Po aktualizaci restartuj aplikaci, abys mohl pokračovat ve hře.
+forceUpdate_toStore;Do App Store
+market_sendResources_requiredMerchants;Požadovaní obchodníci:
+market_sendResources_capacityPerMerchant;Kapacita obchodníka
+market_sendResources_amountRepeats;Počet opakování:
+market_sendResources_confirmResources;Potvrdit suroviny
+market_sendResources_amountWithX;{{amount}}×
+market_sendResources_sent;Suroviny odeslány!
+market_offer_maxDuration;Maximální doba dodávky
+market_offer_confirm;Potvrdit nabídku
+market_offers_title;Nabídky
+market_capacity;Kapacita: {{capacity}}
+market_offers_offering;Nabízím:
+market_offers_searching;Hledám:
+market_offers_offered;Pošleš
+market_offers_wanted;Obdržíš
+market_offers_accepted;Nabídka přijata! Suroviny jsou na cestě a obchodníci již byli odesláni.
+market_offers_ownAllianceOnly;Pouze pro hráče z vlastní aliance
+market_ratio_11;1:1
+market_ratio_1X;1:X
+market_tradeRoutes_to;Do:
+market_tradeRoutes_entryAmount;<b>{{amount}}</b> položek
+market_tradeRoutes_noRoutes;- Nevytvořeny žádné obchodní cesty -
+market_tradeRoutes_travelTime;Doba cesty: {{time|Duration}} hodin
+market_tradeRoutes_activeRatio;{{active}}/{{total}} aktivní
+market_tradeRoutes_active;Aktivní
+market_tradeRoutes_paused;Pozastavené
+market_tradeRoutes_updated;Obchodní cesty aktualizovány
+market_tradeRoutes_deleted;Obchodní cesty smazány
+market_tradeRoutes_returnAt;Návrat v {{time|Time}}
+market_tradeRoutes_merchantsAndRepeat;[merchants=1:{{merchants}} obchodník][merchants=2-4:{{merchants}} obchodníci][merchants>4:{{merchants}} obchodníků], {{repeats}}×
+market_tradeRoutes_filterOptions;Možnosti filtru
+market_tradeRoutes_showMerchants;Zobrazit obchodníky
+market_tradeRoutes_showMerchantsText;Ukazuje, kolik obchodníků je právě využíváno
+market_tradeRoutes_showResources;Zobrazit suroviny
+market_tradeRoutes_showResourcesText;Ukazuje počet nesených surovin
+market_tradeRoutes_afterInputFieldsSuffix;Hodin
+market_tradeRoutes_interval;{{INT}} hodin
+market_tradeRoutes_confirmTarget;Potvrdit cíl
+market_tradeRoutes_arrivalTime;{{duration|Duration}} v {{arrivalTime|Time}}
+market_tradeRoutes_created;Obchodní cesta vytvořena
+market_tradeRoutes_edit;Upravit obchodní [routeAmount=1:cestu][routeAmount>1:cesty]
+market_tradeRoutes_update;Aktualizovat obchodní [routeAmount=1:cestu][routeAmount>1:cesty]
+market_tradeRoutes_multiEditWarning;Upravuješ více obchodních cest. Provedené změny ovlivní [routeAmount=1: jednu cestu][routeAmount=2: {{routeAmount}} cesty][routeAmount=3-4: všechny {{routeAmount}} cesty][routeAmount>4:všech {{routeAmount}} cest].
+market_tradeRoutes_editResourcesTitle;Změnit suroviny
+market_tradeRoutes_editResourcesButton;Upravit suroviny
+market_tradeRoutes_setResourcesButton;Nastavit suroviny
+market_tradeRoutes_updateResourcesButton;Aktualizovat suroviny
+market_tradeRoutes_pause;Pozastavit obchodní [routeAmount=1:cestu][routeAmount>1:cesty]
+market_tradeRoutes_pauseDescription;Obchodní cesty budou přesunuty do seznamu pozastavených cest, ale zůstanou na tvém tržišti.
+market_tradeRoutes_delete;Smazat obchodní [routeAmount=1:cestu][routeAmount>1:cesty]
+market_tradeRoutes_deleteConfirmQuestion;Určitě chceš smazat [routeAmount=1:tuto][routeAmount>1:tyto] obchodní [routeAmount=1:cestu][routeAmount>1:cesty]?
+market_tradeRoutes_invalidTarget;Obchodní cesty lze nastavit pouze do vesnic členů aliance či konfederace, v nichž je umístěn div světa, artefakt nebo stavební pláne pro div světa.
+hero.status;{{NAME}}
+hero_adventures_selectVillage;Vybrat vesnici
+hero_adventures_explore;Prozkoumat
+hero_adventures_sendHero;Poslat hrdinu
+hero_adventures_sent;Dobrodružství zahájeno
+hero_status_reviveWithBucket;Použij pro okamžité oživení svého hrdiny.
+hero_status_reviveWithRes;Použij suroviny pro oživení hrdiny.
+hero_inventory_consumablePopupTitle;Použitelný předmět
+hero_resourceTransferPopup_title;Přesunout suroviny
+hero_resourceTransferPopup_ReadyForTransfer;Připraveno k přesunu
+hero_resourceTransferPopup_transferSelected;Přesunout vybrané
+hero_resourceTransferPopup_transferMax;Přesunout maximum
+hero_resourceTransferPopup_storageFull;Sklad je plný. Nemůžeš přesunout více surovin.
+hero_inventory_transferToCurrentVillage;Přesunuto do momentálně aktivní vesnice: <b>{{VILLAGE}}</b>
+hero.itemDescriptionV2Details;{{PERCENTAGE}}{{EXPERIENCE}}{{RAISE}}{{LIMIT}}{{MAX}}{{TIME}}
+hero.itemDescriptionV2;{{VALUE}}
+hero_consumablePopup_currentEquippedItems;Počet aktuálně použitých předmětů:
+hero_consumablePopup_itemsLeftInInventory;Počet zbývajících předmětů v inventáři:
+hero.itemTypeV2_inventory;Spotřební předměty
+hero.cooldownWithTime;Má {{COOLDOWN}}h odpočet, který končí v {{DATE|DateTime}}.
+reports_overview_title;{{COUNT}} hlášení
+reports_overview_title_selected;Vybráno {{SELECTED}}/{{COUNT}} hlášení
+reports_overview_title_archived;Archivovaná hlášení
+reports_overview_archived_noReports;- Žádná dostupná archivovaná hlášení -
+reports_filters_title;Vybrat filtr
+reports_filters_allReports;Všechna hlášení
+reports_filters_applyButton;Použít [COUNT=1:{{COUNT}} filtr][COUNT=2-4:{{COUNT}} filtry][COUNT>4:{{COUNT}} filtrů]
+reports_filters_noFilter;Nevybrán žádný filtr
+reports_detail_title;Detaily hlášení
+berichte.;{{NAME1}}{{NAME2}}{{VILLAGE_NAME}}{{X}}{{Y}}{{COORDS}}{{NAME}}
+reports_player_from_village;[{{allianceId|AllianceLink}}] {{playerId|PlayerLink}} z vesnice {{villageId|VillageLink}}
+reports_troops_lost;Ztracené jednotky:
+reports_troops_hospitalized;Hospitalizováno:
+reports_xp_gained;Získáno {{amount}} XP
+reports_health_change;-{{change}}% zdraví
+reports_hero_died;Tvůj hrdina zemřel během dobrodružství
+reports_scouted_building;{{buildingType|TranslateSuffixFor|allgemein.gid}} na úrovni <b>{{level}}</b>
+reports_refreshed;Hlášení aktualizována!
+reports_deleteReportPopup_title;Smazat hlášení
+reports_deleteReportPopup_warningTitle;Určitě chceš smazat {{X}} hlášení?
+reports_deleteReportPopup_warningTitleAll;Určitě chceš smazat všechna hlášení?
+reports_deleteReportPopup_warningDescription;Jakmile hlášení smažeš, bude trvale odstraněno. Už ho nebudeš moct obnovit.
+reports_deleted;Hlášení smazáno!
+reports_markedUnread;Hlášení označeno jako nepřečtené!
+reports_archived;Hlášení archivováno!
+reports_deleted_all;Všechna hlášení smazána!
+reports_deleted_selected;Smazáno {{X}} hlášení!
+reports_markedRead_all;Všechna hlášení označena jako přečtená!
+reports_markedRead_selected;{{X}} hlášení označeno jako přečtené!
+alliance_nameAndTagPair;{{allianceName}} | {{allianceTag}}
+alliance_editAllianceName;Upravit jméno aliance
+alliance_name;Jméno aliance
+alliance_nameError;Jméno aliance nemůže být prázdné
+alliance_tag;Zkratka aliance
+alliance_tagError;Zkratka aliance nemůže být prázdná
+alliance_profileTab_inviteNewPlayer;Pozvat nového hráče
+alliance_profileTab_showInvitedPlayers;Zobrazit pozvané hráče
+alliance_invitedPopup_title;Pozvaní hráči
+alliance_invitedPopup_invitationRemoved;Pozvánka smazána!
+alliance_invitePlayerPopup_title;Pozvat hráče
+alliance_invitePlayerPopup_noPlayerFound;Nenalezen žádný hráč
+alliance_invitePlayerPopup_playerInvited;Hráč pozván!
+alliance_editMemberPopup_title;Upravit člena
+alliance_editMemberPopup_customMessage;Vlastní zpráva
+alliance_editMemberPopup_setRole;Nastavit roli
+alliance_editMemberPopup_kickPlayerFromAlliance;Vyhodit hráče z aliance
+alliance_editMemberPopup_cantChangePermission;Aktuální práva nelze změnit: viz varování.
+alliance_kickPlayerPopup_areYouSure;Určitě chceš vyhodit hráče {{Player}} z aliance?
+alliance_kickPlayerPopup_playerKicked;Hráč byl vyhozen!
+alliance_editAllianceDescription;Změnit popis aliance
+alliance_topColumn;Horní sloupec
+alliance_bottomColumn;Spodní sloupec
+alliance_bbCodeAdded;BB kód přidán
+alliance_generalInformation;Obecné informace
+alliance_confederacy_tab;Konfederace
+alliance_diplomacy;Diplomacie
+alliance_diplomacy_tab1;DON / Válka
+alliance_diplomacy_send_new;Poslat nové
+alliance_diplomacy_openRequests;Otevřené požadavky
+alliance_diplomacy_otherOffered;Nabídka od aliance {{allianceId|AllianceLink}}: {{type|TranslateSuffixFor|alliance_diplomacy_type}}
+alliance_diplomacy_youOffered;Vaše nabídka alianci {{allianceId|AllianceLink}}: {{type|TranslateSuffixFor|alliance_diplomacy_type}}
+alliance_diplomacy_offerDeclare;Nabídnout / vyhlásit
+alliance_diplomacy_type;Typ
+alliance_diplomacy_type1;konfederace
+alliance_diplomacy_type2;DON
+alliance_diplomacy_type3;válka
+alliance_diplomacy_type4;konfederace
+alliance_diplomacy_typekick;propuštění z konfederace
+alliance_diplomacy_deleteText_;{{type|TranslateSuffixFor|alliance_diplomacy_type}}{{alliance|AllianceLink}}
+alliance_diplomacy_deleteTitle_RemoveRequest;Zrušit požadavek
+alliance_diplomacy_deleteText_RemoveRequest;Určitě chceš zrušit nabídku „{{type|TranslateSuffixFor|alliance_diplomacy_type}}“ alianci {{alliance|AllianceLink}}?
+alliance_diplomacy_deleteTitle_TerminateExisting;Ukončit
+alliance_diplomacy_deleteText_TerminateExisting;Určitě chceš ukončit „{{type|TranslateSuffixFor|alliance_diplomacy_type}}“ s aliancí {{alliance|AllianceLink}}?
+alliance_diplomacy_deleteTitle_ConfederacyKickVote;Ukončit
+alliance_diplomacy_deleteText_ConfederacyKickVote;Pro vyhození aliance {{subject|AllianceLink}} je potřebné potvrzení od dalších členů konfederace.\n\nChceš pokračovat a informovat ostatní aliance o svém rozhodnutí?
+alliance_diplomacy_deleteTitle_QuitConfederacy;Ukončit
+alliance_diplomacy_deleteText_QuitConfederacy;Určitě chceš ukončit konfederaci s následujícími členy?
+alliance_diplomacy_deleteTitle_RemoveConfederacyProposal;Odstranit požadavek
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Kick;Určitě chceš odmítnout požadavek aliance {{alliance|AllianceLink}} na vyhození aliance {{subject|AllianceLink}} z konfederace?
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Join;Určitě chceš odmítnout požadavek aliance {{alliance|AllianceLink}} na přijetí aliance {{subject|AllianceLink}} do konfederace?
+alliance_diplomacy_sent;Nabídka poslána
+alliance_diplomacy_accepted;Diplomatický styk přijat
+alliance_diplomacy_canceled;Diplomatický styk zrušen
+alliance_diplomacy_declined;Požadavek odmítnut
+alliance_diplomacy_kickStarted;Požadavek poslán
+alliance_diplomacy_proposal_approved;Požadavek přijat
+alliance_diplomacy_noContract;Tvá aliance nemá žádné aktivní dohody s ostatními aliancemi.
+alliance_diplomacy_noConfederacy;Tvá aliance není součástí konfederace.
+alliance_diplomacy_alreadyOpenOffer;Pro tuto alianci už existuje otevřená nabídka.
+alliance_diplomacy_alreadyExistingContract;S touto aliancí už je uzavřena dohoda.
+alliance_diplomacy_warInDeletion;Počkej, až druhá aliance ukončí válku.
+alliance_union_leave;Opustit konfederaci
+alliance_union_add;Přidat nový požadavek
+allianz.diplomacy_with_type;{{NAME}}
+allianz.diplomacy_with_type4;Konfederace s aliancí {{NAME}}
+alliance_newsBbDescription;Změň „počet“ pro úpravu počtu novinek
+alliance_LossesBBName;Ztráty
+alliance_LossesBBDescription;Změň „jméno“ pro výběr aliance pro porovnání
+alliance_NapBBName;Dohody o neútočení
+alliance_WarsBBName;Války
+alliance_addBBCode;Přidat BB kód
+alliance_addMedal;Přidat medaili
+alliance_assignToPosition;Přiřaď členy na pozici a změň název aliance
+alliance_editPermissions;Upravit práva
+alliance_roleTitle;Název role:
+alliance_assignToPosition_onlyMemberError;Jsi jediný člen této aliance. Přiřazování rolí členům a změna jména aliance nemůže být zrušeno.
+alliance_noAllianceEvents;- Žádné události aliance k zobrazení -
+alliance_dailyContribution;Denní dar
+alliance_contributionAmount;Dar: <b>{{AMOUNT}}</b>
+alliance_resourcesContributed;Darováno {{current}}/{{max}} surovin
+alliance_contributionResetIn;Reset za {{time|Countdown}}
+alliance_resUntilNext;Suroviny pro další úroveň: {{resources|LongNumber}}
+alliance_bonusCurrentlyActivating;Aktivace bonusu za: {{resources|Countdown}}
+alliance_bonusMaxed;Maximální bonus
+alliance_tripledContribution;Ztrojnásobil jsi svůj dar!
+alliance_contributionStatistics;Statistiky darů
+alliance_contributionNone;- Momentálně žádní přispěvatelé -
+auth_clientVerificationFailed;Nepodařilo se ověřit klienta. Zkus to prosím znovu.
+banned_seeMessage;Zobrazit zprávu
+banned_acceptPunishment;Přijmout trest
+residence_settlement;Osada
+residence_settlementVillages1;Osadnické sloty obsazené vesnicemi
+residence_settlementVillages2;Vesnice zabírají 1 osadnický slot
+residence_settlementAvailableSlots;Dostupné osadnické sloty
+residence_nextSlot;Další odemčený osadnický slot: {{current}}/{{required}} kulturních bodů
+residence_slotsUsed;Obsazené sloty:
+residence_settlementDetails;Detaily osady
+residence_settlementSlotX;Osadnický slot {{number}}
+residence_settlementUpgradeNeeded;Rozšiř budovu {{buildingType|TranslateSuffixFor|allgemein.gid}} pro odemčení osadnického slotu
+residence_settlementSettle;K založení vesnice musíš poslat osadníky na prázdné políčko na mapě. Potřebuješ 3 osadníky, 750 od každé suroviny a dostatek kulturních bodů na ovládnutí další vesnice.
+residence_settlementChief;Pro dobytí další vesnice musíš snížit její loajalitu na 0. Na to je nutný {{senatorId|TranslateSuffixFor|truppen.tid}}, a také v dobývané vesnici nesmí zůstat palác, rezidence ani velitelský stan. Musíš také mít dostatek kulturních bodů na ovládnutí další vesnice.
+palace_capital;Nastavit tuto vesnici jako hlavní
+palace_setAsCapital;Nastavit jako hlavní
+palace_enterPassword;Zadej heslo z bezpečnostních důvodů:
+embassy_GoToAlliance;Přejít do aliance
+embassy_Invitation;Aliance {{AllianceId|AllianceLink}}, pozvánka od hráče {{playerId|PlayerLink}}
+embassy_VillagesInRange;Vesnice v dosahu
+embassy_LeaveAllianceToJoin;Abys mohl vstoupit do této aliance, musíš nejprve opustit tu stávající.
+embassy_ConfirmLeaveAlliance;Potvrď a opusť alianci
+embassy_InvitationAccepted;Pozvánka přijata
+embassy_AllianceFounded;Aliance úspěšně založena
+embassy_LeftAlliance;Aliance úspěšně opuštěna
+embassy_acceptInvitationQuestion;Určitě se chceš připojit k alianci {{allianceId|AllianceLink}}?
+embassy_acceptInvitationWarning;{{hours}} hodin po vstupu nebudeš moct tuto alianci opustit.
+embassy_acceptInvite;Ano, vstoupit do aliance
+embassy_declineInvite;Ne, smazat pozvánku
+embassy_noAlliancesNearby;V okolí nebyly nalezeny žádné aliance.
+tos_title;Zřeknutí se odpovědnosti
+tos_disclaimer;Aplikace je momentálně v <style="Mango">beta verzi. Některé herní funkce ještě nejsou v aplikaci k dispozici.</style>\nPokud nejsi zkušeným hráčem Travian: Legends, doporučujeme ti začít v prohlížeči na <style="link"><link="http://www.travian.com">www.travian.com</link></style>.
+tos_disclaimer2;Těšíme se na tvou zpětnou vazbu k aktuálnímu stavu aplikace na našem <style="link"><link="https://discord.gg/fcsKvwcE2t">Discordu</link></style>.
+tos_text;Přijímám <style="link"><link="https://agb.traviangames.com/terms-en.pdf#cmpnoscreen">všeobecné obchodní podmínky</link></style> a beru na vědomí <style="link"><link="https://agb.traviangames.com/right-of-withdrawal-EN.pdf">informace o uplatňování práva odstoupit od smlouvy</link></style> a <style="link"><link="https://www.traviangames.com/en/games-privacy-policy">zásady ochrany soukromí</link></style>.
+tos_confirm;Potvrdit
+smithy_improveTo;Vylepšit na úroveň {{level}}
+smithy_viewList;Zobrazit rozvoj
+smithy_upgradeStarted;Vylepšování jednotky {{unitId|TranslateSuffixFor|truppen.tid}} zahájeno
+smithy_researchFirst;Tuto jednotku musíš vyzkoumat v akademii
+smithy_levelTooLow;Úroveň zbrojnice je příliš nízká, rozšiř ji prosím
+allBuildings_10;Všechny sklady:
+allBuildings_11;Všechny sýpky:
+allBuildings_23;Všechny úkryty:
+allBuildings_38;Všechny sklady:
+allBuildings_39;Všechny sýpky:
+currentBuildingValue;Aktuální {{type|TranslateSuffixFor|allgemein.gid}}:
+ad_successful;Reklama úspěšně zhlédnuta!
+externalLink_title;Externí odkaz
+externalLink_description1;<b>Pozor!</b><br>Chystáš se otevřít následující externí odkaz:
+externalLink_description2;Společnost Travian Games nemůže zkontrolovat tento odkaz.
+externalLink_description3;Pokračuj na vlastní nebezpečí.
+externalLink_description4;Určitě chceš pokračovat?
+externalLink_continue;Pokračovat k odkazu
+search_village;Hledat vesnici
+search_select_village;Vybrat vesnici
+search_three_characters;Zadej nejméně {{amount}} znaky
+search_no_result;Nenalezena žádná shoda
+search_player;Hledat hráče
+search_player_invite;Pozvat hráče
+search_select_player;Vybrat hráče
+search_select_player_invite;Pozvat nového hráče
+search_alliance;Hledat alianci
+search_select_alliance;Vybrat alianci
+gid27.arte_detail_;{{INT}}
+artefact_inventory_level_effect;Pokladnice: {{LEVEL}}, efekt: {{EFFECT}}
+artefact_inventory_village;Vesnice:
+artefact_inventory_conquered;Dobyto:
+artefact_inventory_active;Aktivní: aktivní v
+artefact_inventory_active_already;Aktivní: <b>Aktivováno</b>
+artefact_inventory_show_active_only;Zobrazit pouze moje aktivované artefakty
+artefact_overview;Přehled artefaktů
+artefact_tip_large;Velké artefakty vyžadují pokladnici na úrovni <b>20</b> a ovlivňují celou tvou <b>postavu</b>
+artefact_tip_small;Malé artefakty vyžadují pokladnici na úrovni <b>10</b> a ovlivňují pouze <b>vesnici</b>
+artefact_tip_nearby;Artefakty v oblasti kolem vesnice {{villagenamelong|Bold}}
+artefact_small;Malé
+artefact_large;Velké
+artefact_nearby;Poblíž
+artefact_village;Vesnice
+artefact_button_former_owners;Zobrazit předchozí vlastníky
+artefact_already_active;Již aktivováno
+artefact_required_level_value;Pokladnice <b>na úrovni {{LEVEL}}</b>
+artefact_details;Detaily
+number_counter;{{NUMBER}}.
+tasks_villageTasks;Úkoly pro vesnici
+tasks_nextHeroLevelBonus;Bonus hrdiny na další úrovni = {{value}}%
+villageOverview_building_headline;Stavba
+villageOverview_building_slotIdle;Neprobíhá žádná stavba
+villageOverview_resource_sorting1;Seznam vesnic
+villageOverview_resource_sorting2;Nejkratší doba naplnění sýpky
+villageOverview_resource_sorting3;Nejdelší doba naplnění sýpky
+villageOverview_resource_sorting4;Nejkratší doba naplnění skladu
+villageOverview_resource_sorting5;Nejdelší doba naplnění skladu
+villageOverview_resource_sorting6;Záporná produkce
+villageOverview_troops_stationed;Jednotky umístěné ve vesnici
+villageOverview_troops_sum;Všechny vlastní jednotky
+villageOverview_troops_tab_training;Výcvik
+villageOverview_culture_slots;Sloty vesnic
+cancelPopup_Improvement;Zrušit vylepšování
+cancelPopup_Research;Zrušit výzkum
+cancelPopup_Construction;Zrušit stavbu
+cancelPopup_text_;{{NAME}} {{LEVEL}}
+cancelPopup_text_Improvement;Chceš zrušit vylepšování jednotky {{NAME}} na úroveň {{LEVEL}}?
+cancelPopup_text_Research;Chceš zrušit výzkum jednotky {{NAME}}?
+cancelPopup_text_Construction;Chceš zrušit stavbu budovy {{NAME}} na úroveň {{LEVEL}}?
+cancelPopup_text_refund;Dostaneš zpátky {{INT}}% nákladů na vylepšení:
+dailyQuests_timeRemaining;Zbývající čas: {{time|Countdown}}
+dailyQuests_rewardOverview;Přehled odměn
+dailyQuests_claimRewards;Vyzvednout odměny
+dailyQuests_pointsEarned;Získané body: <b>{{current}}/{{max}}</b>
+dailyQuests_rewardDescription;Toto jsou odměny, které můžeš odemknout dokončením dnešních denních úkolů:
+dailyQuests_claimAction;Vyzvednout
+dailyQuests_alreadyClaimed;Vyzvednuto
+dailyQuests_autoCollect;Jakékoli odměny, které nebyly požadovány na konci dne, budou za vás automaticky nárokovány.
+dailyQuests_questDetailTitle;Informace
+dailyQuests_quest_worth;Počet bodů za splnění tohoto úkolu:
+dailyQuests_quest_worth_points;+{{points}} [points=1:bod][points=2-4:body][points>5:bodů]
+dailyQuests_quest_repeated;Tento úkol je možné opakovat:
+dailyQuests_quest_repeated_amount;{{amount}}krát
+dailyQuests_quest_completed;Dokončená opakování:
+dailyQuests_quest_difficulty;Obtížnost:
+dailyQuests_quest_requirement;Požadavek:
+dailyQuests_backToOverview;Zpět k přehledu
+dailyQuests_difficulty_moderate;Střední
+dailyQuests_difficulty_hard;Těžký
+dailyQuests_difficulty_challenging;Náročný
+achievementQuests.achQuest_;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+achievementQuests.achQuest__step_01_description;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+heroMansion_Loyalty;Loajalita: {{INT}}%
+heroMansion_Conquered;Obsazeno {{TIME|DateTime}}
+heroMansion_SlotFree;Slot na další oázu je k dispozici
+heroMansion_SlotBlocked;Další oázu můžeš obsadit s <color={{colorValue|TextColor}}>hrdinským dvorem</color> na <color={{colorValue2|TextColor}}>úrovni {{REQUIRMENT}}</color>
+heroMansion_Undo;Zpět
+heroMansion_FinishedAt;Hotovo: {{TIME|Time}}
+waterworks_NoneOasesAcquired;Neobsazena žádná oáza
+waterworks_BonusCalculation;+ ({{INT}}% z {{INT2}}%) = 
+waterworks_CurrentBonus;Aktuální bonus vodárny: +{{INT}}% k surovinám z oázy
+waterworks_Oases;Obsazené oázy
+messages_inbox_title;[COUNT=1:{{COUNT}} zpráva][COUNT=2-4: {{COUNT}} zprávy][COUNT>4:{{COUNT}} zpráv]
+messages_inbox_title_selected;Vybráno {{SELECTED}}/{{COUNT}} zpráv
+messages_newMessage;Nová zpráva
+messages_messageSent;Zpráva poslána!
+messages_exitPreview;Ukončit náhled
+messages_previewTitle;Náhled zprávy
+messages_unread_count;[COUNT=1:{{COUNT}} nepřečtená][COUNT=2-4:{{COUNT}} nepřečtené][COUNT>4:{{COUNT}} nepřečtených]
+reportPlayer_selectReason;Vybrat důvod nahlášení
+reportPlayer_reasonPlaceholder;Důvod nahlášení
+reportPlayer_addNote;Přidat poznámku k nahlášení (volitelné):
+reportPlayer_alsoBlock;Ignorovat tohoto hráče
+reportPlayer_maximumLength;Maximální délka: {{text|TextLength}}/300
+reportPlayer_nowIgnored;Tohoto hráče nyní ignoruješ.
+reportPlayer_nowUnignored;Tohoto hráče už neignoruješ.
+statistics_general;Obecné statistiky
+statistics_seeDetails;Zobrazit detaily
+statistiken.progressionStepTitle_;{{VALUE}}{{DATETIME}}
+language_com;Dev language
+language_de-DE;Němčina
+language_en-US;Angličtina
+language_fr-FR;Francouzština
+language_ru-RU;Ruština
+statistics_villageAndHero;Největší vesnice / hrdina
+RelativeTime_0;{{data}} s
+RelativeTime_1;{{data}} m
+RelativeTime_2;{{data}} h
+RelativeTime_3;[data>4:{{data}} dní][data=2-4:{{data}} dny][data=1:{{data}} den][data=0:{{data}} dní]
+RelativeTime_4;[data>4:{{data}} týdnů][data=2-4:{{data}} týdny][data=1:{{data}} týden][data=0:{{data}} týdnů]
+RelativeTime.Separator; 
+RelativeTime.Wrapper.Past;Před {{time}}
+RelativeTime.Wrapper.Future;Za {{time}}
+mapCell_tooFewSettlers;{{current}}/3 osadníci k dispozici
+mapCell_heroNotIdle;Tvůj hrdina nezahálí
+mapCell_cantAddOwn;Nemůžeš přidat své vlastní vesnice
+mapCell_alreadyInVillage;V této vesnici už jsi
+serverSelection_rememberPassword;Zapamatovat mé heslo
+serverSelection_savedWorldsTitle;Tvé herní světy
+serverSelection_removeWorldTitle;Odebrat herní svět
+serverSelection_removeWorldQuestion;Opravdu chceš smazat tento herní svět ze svého seznamu?
+serverSelection_removeWorldDescription;Upozornění: Tato akce nesmaže tvůj účet na herním světě. Kdykoli se můžeš vrátit a přidat herní svět včetně svého účtu do seznamu herních světů.
+serverSelection_removeWorldButton;Odstranit ze seznamu
+serverSelection_addWorldText;+ Přidat herní svět
+buildingActivities_buildingAdditional_;{{amount}}
+buildingActivities_buildingAdditional_17;[amount=1:{{amount}} aktivní obchodní cesta][amount=2-4:{{amount}} aktivní obchodní cesty][amount>4:{{amount}} aktivních obchodních cest]
+reports_filters_reset;Resetovat filtry
+palace_capitalSet;Hlavní vesnice nastavena!
+palace_isCapital;Toto je tvá hlavní vesnice.
+messages_unread_count_full;{{COUNT}} [COUNT=1:nepřečtená zpráva][COUNT=2-4:nepřečtené zprávy][COUNT>4:nepřečtených zpráv]
+statistics_alliance;Statistiky aliance
+statistics_alliances_best_off;Nejlepší aliance (útok)
+statistics_alliances_best_def;Nejlepší aliance (obrana)
+statistics_offensiveStrength;Tvá ofenzivní síla ve vesnici {{VILLAGEID|VillageLink}} na tomto serveru
+statistics_offensiveStrengthAlliance;Tvá ofenzivní síla ve vesnici {{VILLAGEID|VillageLink}} ve tvé alianci
+statistics_offensiveStrengthVillage;Útočná síla této vesnice:
+statistics_defensiveStrength;Tvá defenzivní síla na tomto serveru
+statistics_defensiveStrengthAlliance;Tvá defenzivní síla ve tvé alianci
+statistics_defensiveStrengthVillage;Defenzivní síla této vesnice:
+statistics_defensiveStrengthVillageSum;Celková defenzivní síla všech vesnic:
+recent;Nedávné
+appliedFilters;Máš [COUNT=1:{{COUNT}} aktivní filtr][COUNT=2-4:{{COUNT}} aktivní filtry][COUNT>4:{{COUNT}} aktivních filtrů].
+allgemein.gid99;Náhodně
+rallyPoint_troopsOverview_10;Podrobný přehled jednotek
+rallyPoint_troopsOverview_returningFromAdventure;Návrat z dobrodružství: 
+rallyPoint_troopsOverview_detailedView;Detailní pohled
+rallyPoint_troopsOverview_noMovements;- Žádné probíhající pohyby jednotek -
+rallyPoint_troopsOverview_Target;Cíl: {{Target|NamedCoordinates}}
+rallyPoint_troopsOverview_Origin;Začátek: {{Target|NamedCoordinates}}
+hero_adventures_number;Č. {{INT}}
+hero_status_regeneration;<b>Regenerace zdraví:</b> {{VALUE}}% za den
+hero_status_regeneration_details;{{HERO}}% za den díky hrdinovi, {{EQUIPMENT}}% za den díky vybavení
+hero_status_experience;<b>Zkušenosti:</b> {{VALUE}}%
+hero_status_experience_bonus;Bonus: {{VALUE}}%
+search_results;Výsledky hledání
+search_player_link;Odkaz na hráče
+search_select_player_link;Vybrat hráče
+search_recipient;Vyhledat příjemce
+search_select_recipient;Vybrat příjemce
+search_alliance_link;Odkaz na alianci
+search_select_alliance_link;Vybrat alianci
+messages_fullView_title;Zpráva
+messages_recipient_placeholder;Vybrat příjemce
+messages_title_placeholder;Zadej předmět zprávy
+messages_message_placeholder;Zadej svou zprávu
+messages_ownAlliance;Vlastní aliance
+messages_selectedRecipients;Vybraní
+messages_ownAlliance_[ally];Všichni členové aliance
+messages_ownAlliance_[off];Ofenzivní členové aliance
+messages_ownAlliance_[def];Defenzivní členové aliance
+messages_discard_title;Zahodit zprávu
+messages_discard_text_header;Chceš tuto zprávu zahodit?
+messages_discard_text;Obsah zprávy bude nenávratně ztracen.
+messages_confirm_deletion_title;Smazat zprávy
+messages_confirm_deletion_text_header;Určitě chceš smazat [data>4:{{data}} zpráv][data=2-4:{{data}} zprávy][data=1:{{data}} zprávu]?
+messages_confirm_deletion_text;Jakmile zprávy smažeš, už je není možné nijak obnovit.
+messages_confirm_deletion_button;Smazat [data>4:{{data}} zpráv][data=2-4:{{data}} zprávy][data=1:{{data}} zprávu]
+icon_selection_title;Přidat ikonu
+icon_selection_button;Vybrat ikonu
+icon_selection_resourcesAndHero;Suroviny / Hrdina
+icon_selection_natureAndNatars;Příroda a Nataři
+upgrading;Vylepšuje se!
+buildingActivities_buildingAdditional_46;Žádné zraněné jednotky
+playerDetails_ignorePlayerDescription;Hráč je ignorován
+reports_share;Sdílet hlášení
+search_select_village_link;Vybrat vesnici
+search_village_link;Odkaz na vesnici
+search_report_link;Odkaz na hlášení
+search_select_report_link;Vybrat hlášení
+messages_banned;Můžeš psát zprávy pouze ostatním členům tvé aliance.
+messages_template_title;Šablony
+messages_template_none;Žádné dostupné šablony
+messages_template_edit_title;Upravit šablonu
+messages_template_delete_title;Smazat šablonu
+messages_template_delete_question;Určitě chceš smazat tuto šablonu?
+messages_template_delete_desc;Jakmile bude smazána, již ji nebude možné obnovit.
+messages_template_create;Vytvořit novou šablonu
+messages_template_create_descr;Vytvořit novou šablonu z aktuální zprávy:
+messages_template_created;Šablona vytvořena!
+messages_template_deleted;Šablona smazána!
+statistics_culturePoints_productionRank;Tvé pořadí v žebříčku produkce KB na tomto serveru
+statistics_culturePoints_productionRankAlliance;Tvé pořadí v žebříčku produkce KB ve tvé alianci
+statistics_culturePoints_production;KB
+statistics_resourceRank_production;Produkce: {{VALUE|ShortenNumber}}
+statistics_resourceRank_productionRank;Tvé pořadí v žebříčku produkce na tomto serveru
+statistics_resourceRank_productionRankAlliance;Tvé pořadí v žebříčku produkce ve tvé alianci
+statistics_resourceRank_bounty_lost;Ztraceno
+statistics_wonderOfTheWorld_header;Nejlepší divy světa
+hospital_healing_costs;Cena za uzdravení jednotek
+hospital_healing_action;Uzdravit jednotky
+hospital_healing_list;Zobrazit seznam uzdravování
+hospital_healing_list_title;Uzdravování jednotek
+hospital_healing_started;Uzdravování začalo
+bonusValueWithPercent;+{{value}}%
+village_with_isCapital;{{villageName}} (hlavní vesnice)
+maximumTextLengthError;{{CONTEXT}} může mít maximálně {{AMOUNT}} znaků
+infoTab_genericEffectInBrackets;({{INT|Sign}})
+infoTab_effectPercentage;{{INT}}%
+infoTab_effectInBracketsPercentage;({{INT|Sign}}%)
+infoTab_trapperCurrently;Aktuální max. počet pastí:
+trapper_ViewBuildingList;Zobrazit seznam budov
+trapper_Build_Action;Postavit pasti
+trapper_ProductionCosts;Náklady na výrobu pastí
+trapper_TrapsInConstruction;Pasti ve stavbě
+trapper_MaxBuilt;Již byl postaven maximální počet pastí.
+truppen.tid119;Past
+truppen.tid119p;Pasti
+rallyPoint_troopsOverview_outgoingMission_scouting_1;Špehování obrany a jednotek ve vesnici 
+rallyPoint_troopsOverview_outgoingMission_scouting_0;Špehování surovin a jednotek ve vesnici 
+rallyPoint_troopsOverview_returningRegeneratedMission;Vracející se oživené jednotky z: 
+rallyPoint_troopsOverview_returningFleeingMission;Návrat jednotek z lesa: 
+rallyPoint_troopsOverview_foreignTroopsIn;Na podpoře v: 
+rallyPoint_celebration_hint;Slavnosti v pivovaru můžou mít vliv na jednotky.
+building_not_built;Budova nebyla postavena
+berichte.report_icon_24;Hlášení
+allBuildings_36;Max. počet všech pastí:
+cropFinder_min_oasis_crop_bonus;Minimální bonus obilných oáz:
+cropFinder_select_minimum_crop_bonus;Vybrat minimální bonus k obilí
+cropFinder_unoccupied;Neobsazeno
+search_by_location;Hledat podle lokality
+search_by_player;Hledat podle hráče
+search_village_from_player;Vyhledat vesnici hráče
+enter_player_name;Zadat jméno hráče
+messages_template_newConditionsNotMet;Šablona musí obsahovat předmět a zprávu.
+message_report_isAlready;Tato zpráva už byla nahlášena z tohoto důvodu: {{REASON}}
+tutorial_begin;Začít s prohlídkou
+tutorial_title_0;Ahoj, nebojácný šampione! 
+tutorial_text_0;Vítej na nelítostném bitevním poli Travian: Legends. Pojďme se rychle připravit na vládu ve tvých dynamických osadách a mobilizaci nezastavitelných jednotek.\n\nJsi připraven?
+tutorial_title_1;Přehled navigace
+tutorial_text_1;Zde objevíš vše od mapy až po efektivní komunikaci a informační nástroje. Najdeš tu také přehledně schovány své denní úkoly, osobní nastavení a mnoho dalších funkcí.
+tutorial_title_3;Tvé suroviny
+tutorial_text_3;Zde najdeš suroviny pro svou vesnici. Po kliknutí na panel se surovinami se zobrazí další podrobnosti.
+tutorial_title_4;Tvé suroviny
+tutorial_text_4;Opětovným kliknutím na panel se surovinami ho zase skryješ.
+tutorial_title_5;Tvá vesnice
+tutorial_text_5;Zde najdeš všechny potřebné informace o tvé vesnici. Je tu vše, od seznamu úkolů až po přehled jednotek a stavební frontu. Nedávný přírůstek do aplikace – stavební aktivity – poskytuje rychlý přehled o aktuálním rozvoji tvých budov.
+tutorial_title_7;Tvá vesnice
+tutorial_text_7;Až bude postaveno shromaždiště, získáš na něm poskytovat komplexní přehled o všech probíhajících pohybech jednotek. Navíc zde najdeš i rychlou zkratku ke shromaždišti.
+tutorial_title_8;Boční menu
+tutorial_text_8;Můžeš klepnout na šipky nebo přejet prstem pro otevření bočního menu. Tuto akci můžeš provést kdykoli.
+tutorial_title_9;Seznam vesnic
+tutorial_text_9;Mezi vesnicemi můžeš kdykoli rychle přepínat po otevření bočního panelu. Najdeš tam i statistiky vesnice.\n\nA tím je prohlídka u konce. Na co ještě čekáš? Ponoř se do hry, objevuj a nechť se svět Travian: Legends stane tvým strategickým hřištěm.\n\nHodně štěstí!
+tutorial_finish;Ukončit prohlídku
+filters_report_not_found;Hlášení neexistuje
+filters_player_not_found;Hráč neexistuje
+filters_alliance_not_found;Aliance neexistuje
+filters_village_not_found;Vesnice neexistuje
+settings_game;Tento herní svět
+language_app_selection;Vybrat jazyk aplikace:
+settings_sitter;Zástupce {{VALUE}}:
+settings_sitterTab_yourSitters;Tví zástupci
+settings_sitterTab_SittingFor;Zástup na hráče
+search_player_addSitter;Přidat zástupce
+search_select_player_addSitter;Přidat zástupce
+search_player_addSitter_additionalEmptyResultInfo;Nenalezen žádný hráč.\nPouze hráči z tvé aliance / konfederace můžou zastupovat tvou postavu.
+settings_sitter_sitterAdded;Zástupce byl přidán!
+settings_sitter_sitterRemoved;Zástupce byl odstraněn!
+settings_sitter_sitterPermissionChangesSaved;Změny povolení uloženy!
+settings_sitter_confirm_remove_text_header;Chceš odstranit hráče {{PlayerName}} jako svého zástupce?
+settings_sittersFor;Zastupování ostatních hráčů
+settings_sittersFor_info;U následujících hráčů jsi zapsán jako zástupce. Toto zastupování můžeš zrušit kliknutím na červené X.
+settings_sittersFor_none;Momentálně nezastupuješ jiného hráče.
+settings_sitterFor;Zastupování hráče {{VALUE}}:
+settings_sitterFor_sittingRemoved;Zrušeno zastupování hráče {{PlayerName}}!
+settings_sitterFor_confirm_remove_header;Chceš přerušit zastupování hráče 
+settings_sitterFor_confirm_remove_header_questionmark;?
+settings_sitterFor_confirm_remove_info;Tuto akci nemůžeš vzít zpět. Pouze ostatní hráči tě můžou přidat jako svého zástupce.
+brewery_celebration_attackStrength;({{INT}}% síla útoku)
+brewery_celebration_hint;Slavnosti ovlivní i jednotky, které jsou již na cestě
+settings_game_newLanguage;Jazyk změněn na: {{language}}.
+wonderOfTheWorld_name;Název divu světa:
+combatSimulator_title;Simulovat – {{role|TranslateSuffixFor|combatSimulator_as}}
+combatSimulator_cataTargetLevel;Úroveň <b>{{index}}. cíle katapultu</b>
+combatSimulator_troopLevel;Úroveň vylepšení ve zbrojnici:
+combatSimulator_asAttacker;Jako útočník
+combatSimulator_asDefender;Jako obránce
+combatSimulator_result;Simulovat výsledky
+combatSimulator_addReinforcement;Přidat podporu
+valueWithModifier;{{value|Round|2}}×
+valuePlusInBracketsWithPercent;(+{{change}}%)
+none;Žádný
+marketplace_traderoute_repeatEveryHour;Opakovat každých: (hodin)
+block_sitter_warning;Toto nemůžeš udělat jako zástupce.
+settings_openConsentWindow;Nastavení soukromí
+combatSimulator_adjustHeroStats;Upravit parametry hrdiny
+combatSimulator_eagleEyeTitle;Vyber bonus teleskopu
+combatSimulator_architectSecretTitle;Vyber bonus architektova tajemství
+combatSimulator_metallurgyBonus;Vyber bonus metalurgie
+combatSimulator_rightHand;Vybrat předmět do pravé ruky
+combatSimulator_leftHand;Vybrat předmět do levé ruky
+combatSimulator_bodyItem;Vybrat brnění
+combatSimulator_inventoryItem;Vybrat předmět z inventáře
+combatSimulator_selectBuildingLevel_35;Vybrat úroveň pivovaru
+combatSimulator_selectBuildingLevel_26;Vybrat úroveň paláce
+combatSimulator_selectBuildingLevel_34;Vybrat úroveň kameníka
+combatSimulator_selectBuildingLevel_31;Vybrat úroveň zdi
+combatSimulator_selectBuildingLevel_32;Vybrat úroveň zdi
+combatSimulator_selectBuildingLevel_33;Vybrat úroveň zdi
+combatSimulator_selectBuildingLevel_43;Vybrat úroveň zdi
+combatSimulator_selectBuildingLevel_42;Vybrat úroveň zdi
+combatSimulator_selectTargetLevel;Vybrat úroveň cíle katapultu
+combatSimulator_selectTroopLevel;Vybrat úroveň jednotek
+survey_title;Průzkum Travian: Legends
+tos_earlyAccess;Aplikace je momentálně v režimu <style="Mango">předběžného přístupu.\n\nNěkteré herní funkce ještě nejsou v aplikaci k dispozici.</style>\n\nPokud nejsi zkušeným hráčem Travian: Legends, doporučujeme ti začít v prohlížeči na <style="link"><link="http://www.travian.com">www.travian.com</link></style>.
+tos_understood;Rozumím
+gdpr_title;Souhlas se zpracováním dat
+gdpr_description;S tvým souhlasem shromažďujeme určité informace týkající se tvého zařízení, IP adresy, využití a reklamních identifikátorů. To nám pomůže zobrazovat ti relevantnější reklamy a zlepší tvůj celkový dojem z aplikace.
+gdpr_basic_functions;Požadováno pro základní funkce aplikace.
+gdpr_advertisement;Využití osobních údajů pro reklamu.
+gdpr_analytics;Využití osobních údajů pro analýzu.
+gdpr_acceptAll;Přijmout vše
+gdpr_save_and_exit;Uložit + ukončit
+gdpr_rejectAll;Vše odmítnout
+gdpr_privacy_policy;Zásady ochrany soukromí
+gdpr_terms_and_conditions;VOP
+plus.plus.browserOnly;(pouze prohlížeč)
+hero_inventory_already_equipped;Ten samý předmět už je nasazený.
+survey_button_title;Průzkum zpětné vazby
+survey_button_description;Zúčastni se tohoto krátkého dotazníku, který nám pomůže vylepšit aplikaci Travian: Legends.
+goldShop_extend;Prodloužit
+goldShop_remaining;Zbývá:
+goldShop_advantage_activated;Aktivováno
+search_select_recipient_removeAll;Odstranit vše
+messages_messageTopic_noTopic;Žádné téma/výchozí
+messages_messageTopic_resources;O surovinách
+messages_messageTopic_defenses;O obraně
+messages_messageTopic_attacks;O útocích
+messages_messageTopic_strategies;O strategiích
+messages_messageTopic_information;Obecné informace
+messages_messageTopic_important;Důležité informace
+messages_messageTopic_selectionTitle;Vybrat téma zprávy
+farmlist_confirm_deletion_header;Určitě chceš smazat vybraný farmlist?
+farmlist_confirm_deletion_text;Tato akce je nevratná.
+farmlist_target_confirm_deletion_header;Určitě chceš smazat [data=1:tento cíl][data=2-4:tyto {{data}} cíle][data>4:těchto {{data}} cílů]?
+upgrade_queue_cantConstructImmediately;Tato budova nemůže být okamžitě dokončena.
+language_cs-CZ;Čeština
+language_es-ES;Španělština
+language_pl-PL;Polština
+language_pt-PT;Portugalština
+language_tr-TR;Turečtina
+language_it-IT;Italština
+playerDetails_victorPoints_summary;{{TOTAL}} | {{PERDAY}}/den
+statistics_progressionStepTitle_;{{VALUE}}{{DATETIME}}
+statistics_progressionStepTitle_start_achieved;Herní svět začal {{VALUE}}
+statistics_progressionStepTitle_secondVillage_locked;Nikdo ještě nezaložil druhou vesnici
+statistics_progressionStepTitle_secondVillage_achieved;První hráč, který na tomto světě založil druhou vesnici: {{VALUE}} ({{DATETIME}})
+statistics_progressionStepTitle_serverEnd_locked;Herní svět skončí {{VALUE}}
+statistics_progressionStepTitle_serverEnd_achieved;Herní svět skončil {{VALUE}}
+statistics_progressionStepTitle_artifacts_locked;Artefakty se objeví {{VALUE}}
+statistics_progressionStepTitle_artifacts_unlocked;Artefakty se objevily {{VALUE}}
+statistics_progressionStepTitle_artifacts_achieved;První artefakt byl dobyt hráčem {{VALUE}} ({{DATETIME}})
+statistics_progressionStepTitle_constructionPlans_locked;Stavební plány se objeví {{VALUE}}
+statistics_progressionStepTitle_constructionPlans_unlocked;Stavební plány se objevily {{VALUE}}
+statistics_progressionStepTitle_constructionPlans_achieved;První hráč, který získal stavební plán: {{VALUE}} ({{DATETIME}})
+statistics_progressionStepTitle_firstWWLevelOne_locked;Kdo postaví první úroveň divu světa?
+statistics_progressionStepTitle_firstWWLevelOne_achieved;První úroveň divu světa byla postavena hráčem {{VALUE}} ({{DATETIME}})
+settings_selectFormat;Vyber formát:
+settings_selectFormat_dialog_title;Vyber formát data
+settings_game_newDateFormat;Formát data změněn na {{dateFormat}}.
+help_getHelp;Získat pomoc
+help_getHelpDescription;Pokud potřebuješ pomoc nebo chceš nahlásit problém, můžeš zde kontaktovat herní podporu.
+help_learnAboutGame;Zjisti více o hře
+help_learnAboutGameDescription;Vše, co potřebuješ vědět o hře a o tom, jak to funguje, najdeš zde.
+help_gameRules;Nauč se pravidla hry
+help_gameRulesDescription;Zde najdeš pravidla hry.
+help_joinDiscord;Přidej se na Discord
+help_joinDiscordDescription;Poděl se s námi o svou zpětnou vazbu na našem speciálním Discord serveru pro mobilní aplikaci.
+PLAYERARG;{{PLAYER}}
+referAFriend_friendJoinedDescription;Abys získal zlaté za jeho pozvání, musí tvůj kamarád založit <b>druhou vesnici</b>. Pomoz mu dosáhnout tohoto cíle! Jeho pokrok můžeš sledovat v přehledu níže.
+referAFriend_rewardAddedVillage2Title_PLAYERARG;Tvůj kamarád {{PLAYER}} založil svou 2. vesnici
+referAFriend_rewardAddedVillage3Title_PLAYERARG;Tvůj kamarád {{PLAYER}} založil svou 3. vesnici
+referAFriend_rewardAddedVillage4Title_PLAYERARG;Tvůj kamarád {{PLAYER}} založil svou 4. vesnici
+referAFriend_rewardAddedVillage5Title_PLAYERARG;Tvůj kamarád {{PLAYER}} založil svou 5. vesnici
+referAFriend_rewardAddedVillage6Title_PLAYERARG;Tvůj kamarád {{PLAYER}} založil svou 6. vesnici
+referAFriend_rewardAddedVillage7Title_PLAYERARG;Tvůj kamarád {{PLAYER}} založil svou 7. vesnici
+referAFriend_rewardAddedVillage8Title_PLAYERARG;Tvůj kamarád {{PLAYER}} založil svou 8. vesnici
+referAFriend_rewardAddedVillage9Title_PLAYERARG;Tvůj kamarád {{PLAYER}} založil svou 9. vesnici
+referAFriend_rewardAddedVillage10Title_PLAYERARG;Tvůj kamarád {{PLAYER}} založil svou 10. vesnici
+sysmsg_truce_learnMore;Zjisti více o příměří
+worldEnded_ww_playerWon_topAlliance;V {{WORLD_END_TIME|DateTime}} položili dělníci ve vesnici {{WW_VILLAGE|VillageLink}} poslední kámen a dokončili tak jeden z nejvýznamnějších výtvorů v historii.<br>Společně se svou aliancí {{WW_ALLIANCE|AllianceLink}} byl hráč {{WW_PLAYER|PlayerLink}} prvním, kdo dokončil stavbu divu světa. Tato velkolepá stavba spolkla bezpočet surovin a na svou obranu si vyžádala statisíce statečných obránců, ale dílo se zdařilo a {{WW_PLAYER|PlayerLink}} tak získává titul vítěze této epochy. 
+worldEnded_as2022_topAlliances;Gratulujeme alianci {{ALLIANCE_TOP_1|AllianceLink}}, která se stala vládcem Evropy s {{VICTORY_POINTS_TOP_1}} vítěznými body! Aliance {{ALLIANCE_TOP_2|AllianceLink}} také statečně bojovala o vítězství a umístila se na druhém místě, následována aliancí {{ALLIANCE_TOP_3|AllianceLink}} na třetím místě.
+worldEnded_playerRanks_population;Hráč {{PLAYER_POPULATION_TOP_1|PlayerLink}} ovládal největší říši, následován hráči {{PLAYER_POPULATION_TOP_2|PlayerLink}} a {{PLAYER_POPULATION_TOP_3|PlayerLink}}.
+worldEnded_playerRanks_offender;Hráč {{PLAYER_OFFENDER_TOP_1|PlayerLink}} porazil více jednotek než kdokoli jiný a byl tak nejobávanějším velitelem.
+worldEnded_playerRanks_defender;Hráč {{PLAYER_DEFENDER_TOP_1|PlayerLink}} se stal nejúspěšnějším obráncem, když porazil nepřátele u bran vesnice a pokryl jejich okolí nepřátelskou krví.
+rallyPoint_startWithValue;Start ({{value}})
+rallyPoint_farmList_raidsStarted;[INT=1:Odeslána {{INT}} loupež.][INT=2-4:Odeslány {{INT}} loupeže.][INT>4:Odesláno {{INT}} loupeží.]
+rallyPoint_farmList_CantAddToAbandonList;Nemůžeš přidat cíle do opuštěného farmlistu.
+rallyPoint_farmList_CantActivateInToAbandonList;Nemůžeš aktivovat cíle v opuštěném farmlistu.
+rallyPoint_farmList_CantDuplicateInToAbandonList;Nemůžeš duplikovat cíle v opuštěném farmlistu.
+rallyPoint_farmList_DuplicateRaids;Duplikovat [raidsAmount=1:cíl][raidsAmount>1:cíle]
+rallyPoint_farmList_SlotsDuplicated;[raidsAmount=1:Cíl duplikován!][raidsAmount>1:Cíle duplikovány!]
+rallyPoint_farmList_pleaseSelectTheList;Vyber prosím farmlist, do nějž chceš přidat svůj cíl.
+rallyPoint_farmList_farmlistFull;Farmlist je plný, vyber prosím jiný farmlist nebo vytvoř nový.
+rallyPoint_farmList_targetName;Jméno cíle
+rallyPoint_farmList_differentTroopsWarning;Počty jednotek nebudou upraveny, pokud je nepřepíšeš zadáním nové hodnoty níže.
+rallyPoint_farmList_noobProtectionWarning;Během začátečnické ochrany nemůžeš útočit na ostatní hráče, ale můžeš loupit neobsazené oázy a natarské vesnice.
+rallyPoint_farmList_noFarmLists;Nebyl vytvořen žádný farmlist
+rallyPoint_farmList_CreateNewFarmList;Vytvořit farmlist
+rallyPoint_farmList_currentAmount;Farmlisty: <b>{{amount}}</b>/{{max}}
+rallyPoint_farmList_differentTribe;Vesnice má jiný národ než stávající zdrojová vesnice. Zkontroluj prosím jednotky.
+rallyPoint_farmList_overrideTarget;Přepsat cíl
+rallyPoint_farmList_selectedActivated;Vybrané cíle byly nastaveny jako aktivní.
+rallyPoint_farmList_selectedDeactivate;Vybrané cíle byly nastaveny jako neaktivní.
+rallyPoint_farmList_LastRaid;<b>Naposledy posláno:</b> <nobr>{{lastStarted|DateTime}}</nobr>
+mapCell_editTargetListAmount;<nobr>Upravit cíl</nobr> <nobr>(Farmlisty: {{INT}})</nobr>
+goldShop_shopDisabled;Obchod se zlatými je na tomto herním světě deaktivován
+infobox_accountLockGameEnd;Toto herní kolo skončilo!
+applySorting;Použít řazení
+truppen.tid931;Past
+truppen.tid931p;Pasti
+rallyPoint_attackWW_blocked;Útoky na vesnice s divem světa ještě nejsou možné. Nejbližší možný čas poslání jednotek: {{timestamp|DateTime}}
+mainMenu_switchBackFromAvatar;{{iconName|Sprite}} Jít zpět k {{playerName}}
+pending;(probíhá)
+featureNotAvailableInVacationMode;Tato funkce není k dispozici během režimu dovolené.
+notAllowed;Nemáš oprávnění provést tuto akci.
+settings_avatarDeletionInfo;Po zahájení mazání trvá <b>tři dny</b>, než se dokončí mazání tvé postavy.\nPostava, která se maže, se nemůže účastnit aukcí nebo využívat směnárnu.\nZde můžeš kdykoliv zrušit mazání postavy.
+settings_avatarDeletionCountDown;Postava bude smazána za
+deleteAvatar_confirmation_header;Chceš smazat svou postavu?
+cams_info_subHeader;Jedno přihlášení pro všechny tvé herní světy
+cams_info_text;Vytvoř si svůj účet v Legends lobby pro snadné přihlašování a jednoduchý přístup na všechny své herní světy prostřednictvím jednoho přihlášení.
+cams_info_lessInfo;Méně informací
+cams_info_Question_WhatIsLegendsLobbyAccount;Co je účet v Legends lobby?
+cams_info_Answer_WhatIsLegendsLobbyAccount;S účtem v lobby se už nikdy nemusíš registrovat na nový herní svět. Stačí se přihlásit do lobby a otevřít si své aktivní herní světy nebo se přihlásit na nový, ať už v prohlížeči, nebo v mobilní aplikaci.
+cams_info_Question_WhatAreAvatars;Co jsou postavy?
+cams_info_Answer_WhatAreAvatars;S účtem v lobby se tvůj profil na jednotlivých herních světech nazývá postavou. Máš jeden účet v lobby, v jehož rámci můžeš mít více postav – jednu pro každý herní svět.
+cams_info_Question_WhatsWithCurrentGameworlds;Co se stane s mými současnými herními světy?
+cams_info_Answer_WhatsWithCurrentGameworlds;Všechny tvé postavy na aktivních herních světech používající stejnou e-mailovou adresu jako tvůj účet v lobby se s ním propojí a budou přístupné prostřednictvím lobby. E-mailovou adresu pro své aktuálně aktivní postavy na herních světech můžeš přepnout na správnou e-mailovou adresu ještě před vytvořením účtu v lobby.
+cams_info_Question_WhatsWithSitters;Mohu i nadále mít zástupce?
+cams_info_Answer_WhatsWithSitters;Ano, zástupce lze přiřadit běžným způsobem v nastavení na herním světě. Přístup k postavě, na kterou jsi byl jmenován zástupcem, máš přímo na herním světě.
+cams_info_Question_WhatsWithDuals;Můžu i nadále hrát jako dual s ostatními hráči?
+cams_info_Answer_WhatsWithDuals;Dualy lze na herní svět přiřadit tak, že ve své lobby zadáš jméno účtu v lobby daného hráče, s nímž chceš hrát. To znamená, že dual potřebuje vlastní účet v lobby a po přijetí pozvánky se bude moci dostat na tvou postavu ze své lobby. Nesděluj prosím nikomu své heslo k účtu v lobby.
+cams_info_Question_WhatsWithoutLobbyAccount;Mohu hrát bez vytvoření účtu v lobby?
+cams_info_Answer_WhatsWithoutLobbyAccount;I nadále se můžeš přímo přihlásit na své aktuální herní světy prostřednictvím příslušných URL. Pokud ale chceš začít hrát nový herní svět nebo používat mobilní aplikaci, musíš si vytvořit účet v lobby.
+cams_playerDecision_register_info;Nový účet v lobby ti umožní propojit současné a budoucí herní světy jedním přihlášením.
+cams_playerDecision_login_info;Už máš účet v lobby?\n\nPřihlas se a vydej se na dobrodružství.
+cams_playerDecision_register_header;Vytvořit účet
+cams_playerDecision_register_create_new_account;Vytvořit účet v lobby
+cams_playerDecision_register_login;Přihlásit se do lobby
+cams_playerDecision_extra_info;Abys mohl hrát Travian: Legends, musíš si vytvořit účet v lobby.
+cams_register_header;Vytvořit účet v Legends lobby
+cams_register_email_label;Zadej svou e-mailovou adresu:
+cams_register_email_address;Registrovat e-mailovou adresu
+cams_register_email_address_missing;Zadej prosím svou e-mailovou adresu:
+cams_register_email_address_not_valid;Zadej prosím platnou e-mailovou adresu. Např. mujmail@poskytovatel.cz
+cams_register_email_address_already_exists;Tvá e-mailová adresa už je propojena s účtem v lobby.
+cams_register_redirecting_to_login;Přesměrování na přihlášení {{INT}}...
+cams_register_hintMessage_same_email_address;Zadej stejnou e-mailovou adresu, jakou mají tvé stávající postavy na herních světech, abychom je automaticky propojili s účtem v lobby.
+cams_register_receive newsletter;Chci odebírat newsletter.
+cams_register_already_have_an_account;Už máš účet?
+cams_register_log_in_now;Přihlas se nyní
+cams_acceptTOS;Kliknutím na „Registrovat e-mailovou adresu“ přijímáš <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">VOP</link></style> a potvrzuješ přečtení <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">informací o právu na odstoupení od smlouvy</link></style> a <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">zásady ochrany soukromí</link></style>.
+cams_activation_header;Aktivovat účet v Legends lobby
+cams_activation_info;Poslali jsme ti aktivační odkaz na: <b>{{emailAdress}}</b>.<br>Pokračuj prosím podle instrukcí v e-mailu.
+cams_activation_enter_code;Zadej aktivační kód:
+cams_activation_code_example;Např. 123456
+cams_activation_entered_code;{{INT}}/6 číslic
+cams_activation_cta_activate_account;Aktivovat účet
+cams_activation_email_lost;Nepřišel ti e-mail?
+cams_activation_email_resend;Znovu poslat e-mail
+cams_activation_email_wrong;Špatná e-mailová adresa?
+cams_activation_email_change;Změnit e-mailovou adresu
+cams_activation_code_missing;Zadej prosím aktivační kód, který ti přišel e-mailem.
+cams_activation_code_too_short;Aktivační kód je příliš krátký. Zadej prosím všech šest číslic.
+cams_activation_code_format_incorrect;Formát aktivačního kódu je nesprávný. Kód se musí skládat pouze ze šesti čísel.
+cams_activation_code_incorrect;Aktivační kód je nesprávný. Zadej prosím aktivační kód, který ti přišel e-mailem.
+cams_activation_code_expired;Platnost aktivačního kódu vypršela.
+cams_activation_code_start_again;Začít znovu
+cams_login_header;Přihlas se do Legends lobby
+cams_login_enter_email;Zadej svou e-mailovou adresu nebo jméno účtu:
+cams_login_enter_password;Zadej své heslo:
+cams_login_hintMessage_email_already_connected;Tebou zadaná e-mailová adresa už je propojena s účtem v lobby. Přihlas se nebo <style="SimpleLink"><link="BackToRegistrationLink">se vrať k registraci</link></style>.
+cams_login_hintMessage_passwordUpdated;Tvé heslo bylo úspěšně aktualizováno
+cams_forgot_password;Zapomněl jsi heslo?
+cams_recover_password;Obnovit heslo
+cams_login_no_account_yet;Ještě nemáš účet?
+cams_login_create_account;Vytvořit účet
+cams_loginMask_accountNameRequired;Zadej prosím svou e-mailovou adresu nebo jméno účtu.
+cams_loginMask_passwordRequired;Zadej prosím své heslo.
+cams_loginMask_passwordAndUsernameAreWrong;Špatný e-mail, jméno účtu nebo heslo.
+cams_loginMask_emailOrAccountName_placeholder;E-mailová adresa / jméno účtu
+cams_loginMask_temporaryInfobox;NOVINKA: Pro přístup na herní světy je potřeba vytvořit si účet v lobby.\n\nPokud ještě nemáš účet v lobby, <style="SimpleLink"><link="CreateAccountLink">založ si ho</link></style>.
+cams_setPassword_header;Nastav si heslo
+cams_setPassword_info;Vytvoř si heslo ke svému účtu s minimální délkou 8 znaků.
+cams_setPassword_enter_password;Zvol si heslo:
+cams_setPassword_strength_label;Síla hesla
+cams_setPassword_strength_missing;Zadej heslo pro kontrolu jeho síly.
+cams_setPassword_strength_1;velmi slabé
+cams_setPassword_strength_2;docela slabé
+cams_setPassword_strength_3and4;středně silné
+cams_setPassword_strength_5;docela silné
+cams_setPassword_strength_6;velmi silné
+cams_setPassword_strength_PasswordTooShort;Čím delší, tím lépe (16+ znaků)
+cams_setPassword_strength_PasswordGoodLength;Heslo má dostatečnou délku
+cams_setPassword_strength_OneType;Použit jen jeden typ znaků
+cams_setPassword_strength_TwoTypes;Použity dva typy znaků
+cams_setPassword_strength_ThreeTypes;Použity tři typy znaků
+cams_setPassword_strength_NoNumbers;Žádná použitá čísla
+cams_setPassword_strength_NoLetters;Žádná použitá písmena
+cams_setPassword_strength_NoSpecialCharacters;Žádné použité speciální znaky
+cams_setPassword_strength_NoUpperAndLowerCase;Žádná velká a malá písmena
+cams_setPassword_strength_UpperAndLowerCase;Jsou používána malá a velká písmena
+cams_activation_cta_set_password;Nastavit heslo
+cams_activation_password_length;8–64 znaků
+cams_resetPassword_header;Nastavit nové heslo
+cams_resetPassword_info;Vytvoř si nové heslo ke svému účtu v lobby s minimální délkou 8 znaků.
+cams_setUsername_header;Vyber si jméno pro svůj účet v Legends lobby
+cams_setUsername_info;Zvol si uživatelské jméno a přídomek, aby sis mohl vytvořit své jedinečné jméno účtu v lobby.
+cams_setUsername_username_label;Vyber si uživatelské jméno:
+cams_setUsername_tagline_label;Vyber si přídomek:
+cams_setUsername_tagline_example;např. TAG12
+cams_setUsername_tagline;Přídomek:
+cams_setUsername_condition_onlyLettersAndNumbers;Pouze písmena a čísla
+cams_setUsername_username_condition_Length;3–15 znaků
+cams_setUsername_tagline_condition_Length;2–5 znaků
+cams_setUsername_hint;Kombinace tvého uživatelského jména a přídomku bude jedinečným jménem tvého účtu v lobby. Pokud je příslušná kombinace k dispozici, můžeš si vybrat libovolnou kombinaci.\n\nToto nemá vliv na jméno na tvém herním světě.
+cams_setUsername_cta_createAccount;Vytvořit účet
+cams_setUsername_username_missing;Zadej prosím uživatelské jméno a přídomek.
+cams_setUsername_accountName_preview;Náhled jména účtu:
+cams_setUsernameConfirmPopup_header;Účet v Legends lobby vytvořen!
+cams_setUsernameConfirmPopup_info;Tvůj účet v Legends lobby s přihlašovacím jménem <b>{{playerName}}</b> byl úspěšně vytvořen.
+cams_setUsernameConfirmPopup_GameworldAndAvatar_header;Tvé herní světy a postavy
+cams_setUsernameConfirmPopup_GameworldAndAvatar_info;Ke tvému novému účtu v lobby jsme připojili následující existující postavy na herních světech se stejnou e-mailovou adresou.
+cams_avatar_name;Jméno postavy
+cams_looby_welcomeMessage;Vítej!\n<b>{{playerName}}</b>
+cams_looby_header;Tvé herní světy
+cams_looby_noGameWorlds;Momentálně nemáš žádnou aktivní postavu na žádném herním světě. Přidej se na nový herní svět a začni hrát.
+cams_looby_joinNewGameworld;Přidej se na nový herní svět
+cams_looby_playNow;HRAJ TEĎ!
+cams_looby_gameworldsLinked;Herní světy propojené s tvým účtem
+cams_looby_invitePenging;[data>4:{{data}} pozvánek čeká][data=2-4:{{data}} pozvánky čekají][data=1:pozvánka čeká] na vyřízení
+cams_looby_localGameWorld;MÍSTNÍ HERNÍ SVĚT
+cams_looby_avatarInDeletion;Mazání
+cams_removeDualAccount_header;Odstranit duala
+cams_removeDualAccount_info;Chceš odstranit hráče <b>{{lobbyAccountName}}</b> jako duala pro tvou postavu <b>{{avatarName}}</b>?\n\nHráč <b>{{lobbyAccountName}}</b> už nebude mít přístup k tvé postavě.
+cams_removeDualAccount_removeDual;Odstranit duala
+cams_addDualPlayer_info;Zadej jméno lobby účtu hráče:
+cams_addDualPlayer_placeholder;uživatelské jméno#přídomek
+cams_addDualPlayer_addPlayer;[data>1:Přidat hráče][data=1:Přidat hráče][data=0:Přidat hráče]
+search_addDualPlayeradditionalEmptyResultInfo;Hráč nenalezen nebo už je pozván jako dual
+cams_dualInventation_header;Pozvánka k hraní dualu
+cams_dualInventation_invitations;Pozvánky:
+cams_dualInventation_info;Pokud přijmeš pozvánku, můžeš se přihlásit pomocí svého účtu v lobby a získat přístup k této postavě.
+cams_dualInventation_moreInfo;Na každý herní svět můžeš přijmout jen jednu pozvánku na hraní dualu.
+cams_dualInventation_invite;Hráč <b>{{LobbyAccountName}}</b> tě pozval k hraní na postavě <b>{{avatarName}}</b>
+cams_dualInventation_AcceptInvite;Přijmout pozvánku
+cams_acceptDualInvitation_header;Přijmout pozvánku k hraní dualu
+cams_acceptDualInvitation_info;Chceš přijmout pozvánku k hraní dualu od hráče <b>{{lobbyAccountName}}</b> a zahrát si na postavě <b>{{avatarName}}</b> na <b>{{gameworldName}}</b>?
+cams_acceptDualInvitation_moreInfo;Máš více nevyřízených pozvánek k hraní dualu na stejném herním světě, ale můžeš přijmout jen jednu pozvánku k hraní dualu na každý herní svět.
+cams_acceptDualInvitation_avatarInDeletion;Naše pravidla hry pro dualy tě omezují na hraní pouze jedné postavy na jednom herním světě. \nPřijetím pozvánky k hraní dualu přijdeš o přístup ke své postavě {{avatarName}}, která se na tomto herním světě maže. \nPoté už mazání nemůžeš zrušit.
+cams_dualSettings_header;Nastavení dualu
+cams_dualSettings_info;Hraní duala této postavy můžeš kdykoliv ukončit.
+cams_dualSettings_leaveDualPlay;Přestat hrát jako dual
+cams_confirmLeaveDualPlay_info;Chceš přestat hrát jako dual postavy <b>{{avatarName}}</b> na <b>{{gameworldName}}</b>?\n\nPo opuštění dualu si můžeš vytvořit svou vlastní postavu, nebo se připojit k jiné postavě a opět hrát jako dual na tomto herním světě.
+cams_recoverPassword_header;Obnovit heslo
+cams_recoverPassword_goBackToLogin;Zpět k přihlášení
+cams_recoverPassword_info;Zadej e-mailovou adresu spojenou s tvým účtem v lobby. Pošleme ti instrukce, jak si resetovat heslo.
+cams_recoverPasswordEmailSent_header;E-mail odeslán
+cams_recoverPasswordEmailSent_info;Pokud pro e-mailovou adresu <b>{{emailAdress}}</b> existuje účet v lobby, poslali jsme ti na ni instrukce pro obnovení tvého hesla.\n\nJakmile obnovíš své heslo, můžeš se znovu přihlásit.
+cams_recoverPasswordEmailSent_goBackToLogin;Zpět k přihlášení
+cams_editDualAccounts_header;Dualy
+cams_editDualAccounts_gameworld;Herní svět: {{gameworldName}}
+cams_editDualAccounts_avatar;Postava: {{avatarName}}
+cams_editDualAccounts_avatarOwner;Vlastník postavy:
+cams_editDualAccounts_noDualsAdded;- K této postavě nebyl přidán žádný dual -
+cams_editDualAccounts_info;Dual má <b>plný přístup</b> k této postavě a může provádět všechny akce ve hře, včetně utrácení a kupování zlatých.\n\nDualové se můžou přihlásit pomocí svého vlastního účtu v herní lobby pro přístup k této postavě. Nemůžou ale zvát další dual hráče.
+cams_editDualAccounts_warningHint;Nesdílej své přihlašovací údaje k účtu v lobby s jinými hráči, zabráníš tak nechtěnému přístupu k postavám na jiných herních světech a k údajům o tvém účtu.
+cams_editDualAccounts_addDualPlayer;Přidat duala
+cams_editDualAccounts_avatarInDeletion;Tvá postava {{avatarName}} na tomto herním světě se maže. Proto nemůžeš poslat pozvánku k hraní dualu.
+cams_settings_title;Nastavení
+cams_settings_changePassword_information;Abychom ti mohli změnit heslo, pošleme ti e-mail na e-mailovou adresu tvého účtu.
+cams_settings_changePassword_sendEmail;Poslat e-mail
+cams_settings_changePassword_emailSent;Poslali jsme ti e-mail, aby sis mohl změnit heslo.
+cams_settings_accountDeletion_title;Smazání účtu v lobby
+cams_settings_accountDeletion_info;Smaž svůj účet v herní lobby včetně všech herních světů a postav vytvořených z tohoto účtu.
+cams_settings_accountDeletion_action;Smazat účet v lobby
+cams_settings_accountDeletion_warning;Pozor: Tato akce je nevratná!
+cams_settings_accountDeletion_warning_content;Smazání účtu v herní lobby je po uběhnutí 72 hodin trvalé, nelze ho zrušit a ovlivní všechny tvé postavy. \n\nTvůj účet může být smazán pouze v případě, že se všechny tvé aktuální postavy mažou.
+cams_settings_accountDeletion_requirementsInformation;Aby bylo možné smazat svůj účet, všechny tvé postavy se musí mazat nebo už být smazané.
+cams_settings_accountDeletion_information_warning;Tímto úkonem se aktivuje proces mazání tvého účtu. Potvrď prosím, že si jsi vědom toho, že tvůj účet, všechny přidružené postavy a data budou trvale odstraněny, a to napsáním „smazat“ do příslušného políčka.
+cams_settings_accountDeletion_information_error;Účet nemůžeš smazat, pokud se nemaže postava.\nPřihlas se prosím na uvedené herní světy a smaž svou postavu.
+cams_settings_accountDeletion_noAvatarsFound;Nenalezeny žádné aktivní herní světy/postavy.\nMůžeš se do toho pustit!
+cams_settings_accountDeletion_understandmentConfirmation;Rozumím
+cams_settings_accountInDeletion_title;Účet se maže
+cams_settings_accountInDeletion_info;Tvůj účet v lobby <b>{{NAME}}</b> bude za <b>{{TIMESTAMP|Countdown}}</b> nenávratně smazán.
+cams_settings_accountInDeletion_action;Zrušit mazání
+cams_mainMenu_dataConsent;Souhlas s údaji
+gameworld_gameworld;Herní svět
+infobox.productionboost;{{RES}}{{TIME_COUNTER}}
+infobox_notesCount;[COUNT>1:Zprávy: {{COUNT}}]
+auction_placeBid;Přihoď na aukci
+auction_auctionsAmount;[COUNT>4:{{COUNT}} aukcí][COUNT=1-4:{{COUNT}} aukce][COUNT=0:{{COUNT}} aukcí]
+auction_bidsRefreshed;Nabídky aktualizovány!
+auction_currentSilver;Aktuální stav stříbrných:  {{iconName|Sprite}} {{currentSilver}}
+auction_availableAmount;Dostupné množství:
+auction_toSellAmount;Množství k prodeji:
+auction_selectAmountToSellHeader;Vyber množství k prodeji
+auction_soldHorseForSilver;Kůň prodán za {{amount}} stříbrných.
+auction_currentCurrency;Aktuálně:
+auction_newCurrencyValues;Nově:
+auction_exchangeExplanationGoldToSilverTitle;Pokud si chceš v aukci koupit předměty pro hrdinu, můžeš si vyměnit zlaté za stříbrné.
+auction_exchangeExplanationGoldToSilverMore;Zadej počet zlatých, které chceš vyměnit:
+auction_exchangeExplanationSilverToGoldTitle;Stříbrné získané z prodeje předmětů pro hrdinu v aukci si můžeš vyměnit za zlaté.
+auction_exchangeExplanationSilverToGoldMore;Zadej počet stříbrných, které chceš vyměnit:
+auction_countAndName;{{AMOUNT}}×{{ITEM_NAME}}
+auction_deleteAll;Smazat všechny aukce
+auction_confirm_deletion_title;Smazat [data>4:{{data}} položek aukce][data=2-4:{{data}} položky aukce][data=1:položku aukce]
+auction_confirm_deletion_button;Smazat [data>1:položky][data=1:položku]
+auction_confirm_deletion_text_header;Určitě chceš smazat [data>4:{{data}} položek aukce][data=2-4:{{data}} položky aukce][data=1:tuto položku aukce]?
+auction_confirm_deletion_text;Jakmile položku aukce smažeš, bude trvale odstraněna. Už ji nebudeš moct obnovit.
+cams_looby_noMatchingGameworlds;Pro tvůj výběr neexistují žádné odpovídající herní světy.
+serverSelection_5;Dev
+serverSelection_header;Vyber filtr herních světů
+serverSelection_filter_gameworldSpeed;Rychlost herního světa
+serverSelection_gameworldSpeed;Rychlost x{{INT}}
+serverSelection_filer_gameworldLifetime;Doba trvání herního světa
+serverSelection_gameworldLifetime;{{INT}}–{{INT2}} dní
+serverSelection_gameworldLifetime_XorMore;{{INT}} nebo více dní
+filters_applyButton;Použít [COUNT<2:filtr][COUNT=2-4:{{COUNT}} filtry][COUNT>4: {{COUNT}} filtrů]
+filters_reset;Resetovat [COUNT<2:filtr][COUNT>1: filtry]
+cams_avatarCreation_cancel_title;Zrušit vytváření postavy
+cams_avatarCreation_cancel_reconfirmationText;Určitě chceš zrušit vytváření postavy na {{gameworldName}}?
+cams_avatarCreation_cancel_explanation;Přijdeš o veškerý svůj pokrok na tomto herním světě včetně výběru národa, umístění na mapě a jména postavy.
+cams_avatarCreation_button_startPlaying;Začít hrát
+cams_avatarCreation_button_changeSector;Změnit pozici
+cams_avatarCreation_button_selectTribe;Vybrat národ
+cams_avatarCreation_button_updateTribe;Aktualizovat národ
+cams_avatarCreation_button_selectSector;Vybrat pozici
+cams_avatarCreation_button_updateSector;Aktualizovat pozici
+cams_avatarCreation_name_title;Zadej jméno postavy:
+cams_avatarCreation_name_tip;Toto je jméno tvé postavy na tomto herním světě.
+cams_avatarCreation_name_errorEmpty;Zadej prosím jméno postavy
+cams_avatarCreation_name_placeHolder;Jméno postavy
+cams_looby_avatarInDeletionBlockPlayNow;Přijal jsi pozvánku k hraní dualu na tomto herním světě ({{gameworldName}}), takže na něj již nemáš přístup mimo režim dualu.
+connectionIssue_header;Nestabilní připojení
+connectionIssue_info;Momentálně se nemůžeme spojit se serverem. Může to být způsobeno nestabilním připojením k internetu.\n\nMůžeš počkat, nebo...
+connectionIssue_tryAgain;Zavřít vyskakovací okno a zkusit to znovu
+connectionIssue_restart;Restartovat aplikaci
+infobox_openMessage;Otevřít zprávu
+infobox_accountIsLocked;Tvá postava byla zablokována!
+auction_button_requirement;Dokonči {{REQUIRED}} dobrodružných výprav pro odemknutí aukcí.\nZbývá: {{INT}}
+auction_availableSilver;Dostupné stříbrné:  {{iconName|Sprite}} {{currentSilver}}
+auction_deleteSelected;Smazat vybrané aukce
+auction_deletedAll_confirmation;Všechny aukce smazány!
+auction_deletedSelected_confirmation;[data>4:Smazáno {{data}} položek aukce][data=2-4:Smazány {{data}} položky aukce][data=1:Smazána položka aukce]!
+newVersionAvailable_title;Nová verze k dispozici
+newVersionAvailable_description;Vylepšili jsme naši aplikaci. Pro pokračování ve hře ji prosím aktualizuj.
+newVersionAvailable_joinDiscord;Co je nového? Pro více informací se přidej na Discord.
+newVersionAvailable_toStore;Aktualizovat teď
+infobox_beginnerProtection_title;Prodloužení začátečnické ochrany
+infobox_beginnerProtection_question;Určitě chceš prodloužit svou začátečnickou ochranu?
+infobox_beginnerProtection_description;Během začátečnické ochrany nemůžeš posílat suroviny jiným hráčům, útočit na ně nebo jim posílat podporu.
+sendResources_beginnersProtection;Dokud jsi v začátečnické ochraně, nemůžeš posílat suroviny jiným hráčům.
+sendTroops_beginnersProtection;Dokud jsi v začátečnické ochraně, nemůžeš posílat jednotky k jiným hráčům.
+sendTroops_otherBeginnersProtection;Nemůžeš posílat jednotky k jiným hráčům, pokud jsou v začátečnické ochraně.
+buildingActivities_building_36;Pasti ve výrobě
+tasks_collectAll;Vyzvednout vše ({{INT}})
+auction_bidMinPlaceholder;min. {{INT}}
+auction_buttonBidMinimum;Je požadována minimální nabídka
+hero_adventures_available;Dostupná dobrodružství
+messages_freshDeskMessage_viewAndReplyInBrowser;Podívej se a odpověz v prohlížeči
+messages_webViewRecommendation;Obsah zprávy nemusí být úplný.\nDoporučujeme přečíst si zprávu v prohlížeči.
+rateThisApp_popup_title;Líbí se ti naše aplikace?
+rateThisApp_popup_description;Pokud se ti naše aplikace líbí, věnuj prosím chvíli jejímu ohodnocení.
+rateThisApp_popup_appreciatefeedback;Tvá zpětná vazba je pro nás důležitá!
+rateThisApp_popup_btn_positive;Je to skvělé!
+rateThisApp_popup_btn_negative;Mohlo by to být lepší
+rearrange_or_demolish_building;Přemístit nebo zbourat budovu
+mainBuilding_buildingArrangement;Uspořádání budov
+mainBuilding_openRearrangeMode;Otevřít režim přemístění
+mainBuilding_demolishBuildings;Zbourat budovy
+mainBuilding_openDemolishMode;Otevřít režim bourání
+mainBuilding_demolishBuildings_description;Přetáhni a pusť budovy pro změnu pozice.
+rearrangeBuildingPopup_rearrangeDescription;Přemístit budovu <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>?
+rearrangeBuildingPopup_buildingsRearranged;Budovy přemístěny
+rearrangeBuildingPopup_buildingRearranged;{{buildingName|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>{{buildingLevel}}</color>
+confirmRearrangeBuildingPopup_header;Chceš přemístit následující budovu?
+confirmRearrangeBuildingPopup_description;Přemístí vybrané budovy ve vesnici <b>{{villageName}}</b>.
+demolishBuildingPopup_title;Zbourat budovu
+demolishBuildingPopup_description;Vyber budovu ke zbourání
+demolishBuildingPopup_descriptionWithSelection;Chceš zbourat budovu <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>?
+demolishBuildingPopup_demolishLevel;Zbourat úroveň
+demolishBuildingPopup_demolishCompletely;Zbourat kompletně
+confirmDemolishBuildingPopup_header;Chceš okamžitě zbourat budovu <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>?
+confirmDemolishBuildingPopup_description;Okamžitě zbourá vybranou budovu a odstraní ji z vesnice.\nTato akce je nevratná.
+characterCount;{{COUNT}}/{{MAX}} znaků
+survey_button_description_reward;Zúčastni se tohoto krátkého dotazníku, který nám pomůže vylepšit aplikaci Travian: Legends.\nTvá podpora bude odměněna.
+cams_lobby_joinGameworld;Přidej se na herní svět
+cams_lobby_gameworld_inviteOnly;Pouze pro zvané
+cams_lobby_gameworld_inviteOnlyInfo;Tento herní svět je vyhrazen pouze pro hráče se speciálním kódem pozvánky.
+cams_lobby_gameworld_inviteCodeEnter;Zadej kód pozvánky
+cams_lobby_gameworld_inviteCodeInfo;Tento herní svět je vyhrazen pouze pro hráče se speciálním kódem pozvánky.\nPokud ho máš, zadej ho, aby ses mohl připojit k hernímu světu.
+cams_lobby_gameworld_inviteCodePlaceholder;Např. eThbt5OLyZ8D5xjhUaBAba
+cams_lobby_gameworld_inviteCodeErrorCharacterCount;Kód pozvánky je příliš krátký. Zadej prosím všech {{MAX}} znaků.
+cams_lobby_gameworld_inviteCodeCooldown;Odpočet kódu pozvánky ({{TIME|Countdown}})
+timeCountDown;{{TIME|Countdown}}
+attestation_failed;Atestace zařízení se nezdařila! Použij prosím ke hře mobilní zařízení.\nPokud problém přetrvává, kontaktuj podporu kliknutím na tlačítko Nápověda.
+mainBuilding_demolishBuildings_notAvailable;K bourání budov je potřeba hlavní budova na úrovni {{INT}}.
+mainBuilding_demolishBuildings_demolishing;Zbourá budovu <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> na <b><color={{colorValue|TextColor}}>úroveň {{buildingLevel}}</color></b> za {{timestamp|Countdown}}.
+demolishBuildingPopup_demolishing;Bourání budovy <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> na <b><color={{colorValue|TextColor}}>úroveň {{buildingLevel}}</color></b>
+allianz.hinweis_text_NoConfederacy;Je diplomaticky slušné se nejdříve spojit s aliancí, než jí pošlete nabídku na konfederaci nebo nabídku dohody o neútočení.
+regions_canBeSettled;Lze osídlit?
+regions_regionStatusNoColon;Stav regionu
+regions_top5AlliancesPopulation;<b>Populace</b> top 5 aliancí
+regions_top5AlliancesVillages;<b>Vesnice</b> top 5 aliancí
+regions_neighboringRegions;Sousedící regiony
+regions_regionPopulation;Populace regionu
+regions_contested;Probíhá boj o region
+cams_lobby_gameworld_disabledAndNotSupported;Herní svět momentálně nelze hrát prostřednictvím mobilní aplikace.
+demolishBuildingPopup_impossible;Tato budova nemůže být zbourána.
+city_benefits;Výhody města
+city_benefits_threeAdditionalSlots;Tři stavební sloty navíc
+city_benefits_resourceFieldsLevel12;Rozšíření surovinových polí na úroveň 12
+city_benefits_watchTowers;Rozšíření zdi o strážní věže
+city_upgradeToACity;Povýšit vesnici {{villageName}} na město.
+city_culturePointsForNext;(další za {{culturePoints}} kulturních bodů)
+city_upgradeVillage;Povýšení vesnice
+city_confirm_upgradeVillage;Povýšit na město
+city_confirm_header;Chceš povýšit vesnici {{villageName}} na město?
+city_confirm_description;Povýšení vesnice na město trvá {{time}} a zabere jeden osadnický slot.
+city_upgrading;{{villageId|VillageLink}} {{text}}
+city_upgraded;Vesnice {{villageId|VillageLink}} je již městem.
+combatSimulator_selectTarget;Vybrat cíl
+mainMenu_goToLobby;Do lobby
+mainMenu_yourPlayerProfile;Tvůj profil hráče
+plus.plusAttackWarningText;Příchozí útoky se zobrazí v seznamu vesnic. Pouze pro mobilní zařízení: V zobrazení vesnice bude na pravé straně zvýrazněna šipka pro otevření seznamu vesnic.
+production.crobBalanceTroopConsumptionAncientPower;Bonus antické síly
+filters_region_not_found;Region neexistuje
+rallyPoint_troopsOverview_ownTroops_8;Vlastní jednotky v: 
+rallyPoint_troopsOverview_ownTroops_9;Vlastní jednotky v: 
+tradeOffice_merchantsCarryCapacity;Kapacita obchodníků:
+tradeOffice_tradeShipsCarryCapacity;Kapacita obchodních lodí:
+buildingActivities_building_48;Uzdravování jednotek
+playerDetails_victorPointsPerDay;{{PERDAY}} / den
+allianz.numIncomingRaids;[NUM_ATTACKS=1: {{NUM_ATTACKS}} loupež][NUM_ATTACKS=2-4: {{NUM_ATTACKS}} loupeže][NUM_ATTACKS>4:  {{NUM_ATTACKS}} loupeží]
+allianz.numIncomingAttacks;[NUM_ATTACKS=1: {{NUM_ATTACKS}} útok][NUM_ATTACKS=2-4: {{NUM_ATTACKS}} útoky][NUM_ATTACKS>4:  {{NUM_ATTACKS}} útoků]
+allianz.MerchantCapacityAndSpeedNew;Obchod
+alliance_regionalTabButton;Regiony
+alliance_regionalTabTop5Description;Regiony, ve kterých tvá aliance patří mezi 5 nejlepších aliancí na základě kontroly území.
+alliance_regionalTabTitle;Top 5 v regionu
+alliance_regionalTabTop5Empty;- V žádném regionu nemá dostatečnou kontrolu území -
+alliance_ShowDetails;Zobrazit detaily
+regions_withFactions_yourFactionHasMoreThan50PercentSecured;Tvá aliance má větší než {{PERCENT}} kontrolu území.<br><br>K aktivaci antické síly je nutná pokladnice.
+wall_upgradesInProgress;Probíhá vylepšování
+extension_upgradeStarted;Rozšiřování úspěšně začalo!
+extension_constructionList;Seznam staveb
+upgradeLevel;Úroveň rozšíření
+infoTab_upgradingToLevelForExtension;{{buildingName}} se momentálně rozšiřuje na úroveň {{level}}:
+infoTab_genericCurrentlyForExtension;Aktuální bonus budovy {{buildingName}} včetně {{extensionName}}:
+infoTab_genericAtLevelForExtension;Na úrovni {{a}} s {{extensionName}} na úrovni {{b}}:
+ratioValuesNumeratorBold;<b>{{a}}</b>/{{b}}
+infoTab_productionCosts_title;Náklady na výrobu
+harbour_shipsInConstruction;Lodě ve výrobě
+unitInfo_troopsCarriage;až <b>{{INT}}</b> jednotek
+unitInfo_velocityRaid;Na loupeže:
+city_benefits_resourceFieldsLevel12inCapital;Surovinová pole můžeš rozšířit až na úroveň 12, ale v hlavní vesnici je můžeš vylepšit ještě více.
+infoTab_genericCurrentlyMoreExplicit;Aktuální bonus {{buildingName}}:
+merchant_merchantOverview_noIncomingDeliveries;- Žádné příchozí dodávky -
+merchant_merchantOverview_noOutgoingDeliveries;- Žádné odchozí dodávky -
+merchant_merchantOverview_incoming;Příchozí ({{INT}})
+merchant_merchantOverview_outgoing;Odchozí ({{INT}})
+achievementQuests.achQuest_03_Territory_step_01_description;Zaútoč na natarskou vesnici. Tento úkol bude splněn, když tvá armáda dorazí, nezávisle na tom, zda přežije nebo ne.<br><br>Body za tento úkol můžeš získat {{NUMBER_OF_TASKS_PER_DAY}}× denně.\n
+allianz.MerchantCapacityTitle_Harbours;Bonus ke kapacitě a rychlosti obchodníků/lodí
+market_tradeRoutes_invalidTarget_Territory;Obchodní cesty můžeš nastavit jen do svých vlastních vesnic.
+market_selectResources;Vybrat suroviny
+market_selectResources_requiredTradeShips;Požadované obchodní lodě
+market_resourcesWillBeSendByTradeShip;Suroviny budou poslány obchodní lodí.
+manual.gid38_Territory;Velký sklad nabízí 3× větší kapacitu pro skladování než běžný sklad.<br><br>Tuto budovu lze postavit pouze s antickou silou „Skladníkův sen“.
+manual.gid39_Territory;Velká sýpka nabízí 3× větší kapacitu pro skladování než běžná sýpka.<br><br>Tuto budovu lze postavit pouze s antickou silou „Skladníkův sen“.\n
+harbour_noAvailableShips;V tomto přístavu nejsou momentálně žádné lodě.
+harbour_destroy_title;Zničit lodě
+harbour_destroy_desc_title;Vyber typ lodě a množství, které chceš zničit.
+harbour_destroy_desc;Zničit lze pouze lodě, které zde jsou momentálně zakotvené, a nezískáš žádné suroviny zpět.
+harbour_destroy_timeNotice;Lodě budou okamžitě zničeny.
+harbour_destroy_selectedTotalAmount;Vybrané lodě: <b>{{AMOUNT}}</b>
+harbour_destroy_shipSelectTitle;<b>{{ShipID|TranslateSuffixFor|gid49.type_t}}</b> (kotví zde <b>{{Amount}}</b> [Amount=1:loď][Amount=2-4:lodě][Amount>4:lodí])
+extension_fullyExtended;{{NAME}} jsou plně rozšířeny.
+extension_willBeFullyExtended;{{NAME}} jsou rozšiřovány na maximum.
+layout.directLinkMarketplaceTrader;Volní obchodníci: {{INT}}/{{INT2}}
+UnitProduction_ViewBuildingList;Zobrazit seznam budov
+raidList_useRaidShipsInfo;Loupežné lodě jsou použity automaticky, pokud jsou k dispozici. Pokud nemáš žádné loupežné lodě, tvé jednotky budou cestovat normálně.
+buildingActivities_maxReached;Dosažen max. počet
+buildingActivities_building_49;Lodě ve výrobě
+buildingActivities_buildingAdditional_48;Žádné zraněné jednotky
+residence_expansion_villagesRatio;Vesnice: {{COUNT}}/{{MAX}}
+residence_expansion_slotFree;Slot není využit.
+residence_expansion_slotPrerequisites;Požadavky <b>{{BuildingID|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>na úrovni {{Level}}</color></b>
+residence_expansion_culturePointsPerDay;Produkce kulturních bodů za den
+search_region;Hledání regionů
+search_select_region;Vybrat region
+statistiken.progressionStepTitle_start_achieved;Herní svět začal {{VALUE}}
+statistiken.progressionStepTitle_serverEnd_locked;Herní svět skončí {{VALUE}}
+filters_artefact_not_found;Artefakt neexistuje
+sendTroops_settlersChangeTribe;Při zakládání prvních {{INT}} nových vesnic si můžeš vybrat, jaký národ budou mít založené vesnice. Vybírej pečlivě.
+gid17.nextTradingRoute;Příští obchodní cesta začne v <b>{{HOUR}}</b> a vyžaduje <b>{{MERCHANTS}}</b> [MERCHANTS>4: obchodníků][MERCHANTS=2-4:obchodníky][MERCHANTS=1:obchodníka].
+gid17.nextTradingRouteWithShips;Příští obchodní cesta začne v <b>{{HOUR}}</b> a vyžaduje <b>{{SHIPS}}</b> [SHIPS>4: obchodních lodí][SHIPS=2-4:obchodní lodě][SHIPS=1:obchodní loď].
+market_tradeRoutes_merchants;[merchants>4:{{merchants}} obchodníků][merchants=2-4:{{merchants}} obchodníci][merchants=1:{{merchants}} obchodník]
+market_tradeRoutes_tradeShips;[tradeShips>4:{{tradeShips}} obchodních lodí][tradeShips=2-4:{{tradeShips}} obchodní lodě][tradeShips=1:{{tradeShips}} obchodní loď]
+market_tradeRoutes_repeats;{{repeats}}×
+market_tradeRoutes_usesShip;Použije lodě
+troopsCheckout_shipUseInfo;{{Distance}} polí | {{ShipID|Bold}} | Ušetři {{duration|Bold}} hodin
+troopInfoPopup_shipsTitle;Lodě umístěné ve vesnici
+language_nl-NL;Nizozemština
+cropfinder_cropperType;Typ multicropu:
+valueInBrackets;({{VALUE}})
+residence_settlementSlotsUsed;Využité osadnické sloty
+residence_settlementCPNeededForNextSlot;Potřebné kulturní body pro další osadnický slot:
+gid27.ancient_power_detail_;{{INT}}
+artefact_effect_value;Účinek: <b>{{EFFECT}}</b>
+ancientPower_overview;Regionální síly
+ancientPower_no_ancientPower;Na tomto serveru není žádná antická síla
+ancientPower_tip_large;Velké antické síly vyžadují úroveň pokladnice <b>20</b> a ovlivňují <b>všechny tvé vesnice</b>
+ancientPower_tip_small;Malé antické síly vyžadují pokladnici na úrovni <b>10</b> a ovlivňují pouze <b>vesnici</b>, v níž jsou aktivovány
+ancientPower_tip_nearby;Antické síly v okolí {{villagenamelong|Bold}}
+ancientPower_stored_title;Regionální síly zabrané tvou aliancí
+ancientPower_stored_noContent;Žádné regiony zabrané tvou aliancí
+ancientPower_stored_nextFree;Další bezplatná aktivace je k dispozici za: [isFree=0:<color={{colorValue|TextColor}}>]{{timeStamp|Countdown?Bold}}[isFree=0:</color>]
+ancientPower_stored_notActivatable;Žádná antická síla k aktivaci.
+ancientPower_stored_activated;Antická síla aktivována.
+ancientPower_stored_alreadyActive_account;Už máš jednu antickou sílu, která ovlivňuje všechny vesnice, pokud je aktivní.
+ancientPower_stored_alreadyActive_village;Už máš jednu antickou sílu, která ovlivňuje tuto vesnici, pokud je aktivní. 
+ancientPower_stored_alreadyActive;Tato antická síla je již aktivována.
+filters_ancientPower_not_found;Antická síla neexistuje
+regions_withFactions_yourAllianceHasMoreThan50PercentSecured;Tvá aliance má větší než {{PERCENT}}% kontrolu území.<br><br>K aktivaci antické síly je nutná pokladnice.
+language_en-NT;Dev language
+settings_notNow;Teď ne
+settings_dontAskAgain;Neptejte se znovu
+cams_lobby_gameworld_lastPlayedTime;{{TIME}} h
+cams_settings_DirectLoginTitle;Přímé přihlášení do herního světa
+cams_settings_DirectLoginInfo;Přeskoč výběr herního světa v Legends lobby a přihlas se do naposledy hraného herního světa přímo při otevření aplikace.
+cams_settings_DirectLoginActive;Přímé přihlášení je aktivováno
+cams_settings_DirectLoginInactive;Přímé přihlášení je deaktivováno
+cams_directLoginPopUp_Info;Chceš se do herního světa přihlásit přímo při spuštění aplikace?
+cams_directLoginPopUp_youCanChange;Svůj výběr můžeš kdykoli změnit v nastavení lobby.
+cams_directLoginPopUp_Accept;Ano, přihlaste mě přímo
+language_ro-RO;Rumunština
+language_hu-HU;Maďarština
+language_ar-AE;Arabština
+autoLoginFailed.;Automatické přihlášení se nezdařilo.
+needInternetToPlay;Ke hraní potřebuješ připojení k internetu. Zkontroluj prosím své připojení k internetu a zkus to znovu.
+mapCellInfoWindow_removeFromLists;Odstranit ze všech farmlistů
+removeFromListsPopup_Title;Chceš odstranit {{TARGETNAME}} z {{INT}} farmlistů?
+removeFromListsPopup_Description;Později můžeš cíl do farmlistů přidat znovu.
+removeFromListsPopup_ConfirmButton;Odstranit cíl
+social_continueWith;Nebo pokračuj s:
+social_loginWith;Nebo se přihlas pomocí:
+social_backToRegistration;Zpět k registraci
+social_createAccountTitle;Vytvořit účet v Legends lobby
+social_errorTitle_NoEmailProvided;Chybějící povolení e-mailu
+social_errorMsg_NoEmailProvided;Chceš-li začít hrát hru Travian: Legends, potřebujeme tvé <b>povolení k přístupu ke tvé e-mailové adrese.</b>
+social_errorInfo_NoEmailProvided;Zkus to prosím znovu se správným nastavením oprávnění nebo zkus jiný způsob registrace.
+social_errorTitle_AlreadyExists;E-mail je již používán
+social_errorMsg_AlreadyExists;Zadaná e-mailová adresa je již použita pro lobby účet v Travian: Legends.
+social_errorInfo_AlreadyExists;Pro přihlášení použij e-mailovou adresu spojenou s tvým účtem.
+social_acceptTOS;Kliknutím na „Potvrdit“ přijímáš <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">VOP</link></style> a potvrzuješ, že bereš na vědomí <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">informace o právu na odstoupení od smlouvy</link></style> a <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">zásady ochrany soukromí</link></style>.
+linkNotWorking;Nefunkční odkaz
+linkNotWorkingDescription;Zdá se, že tento odkaz v aplikaci Travian: Legends momentálně nefunguje. V internetovém prohlížeči by mohl fungovat.
+openLinkInBrowser;Otevřít odkaz v prohlížeči
+settings_language_useArabicNumerals_activated;Používání východoarabských číslic je aktivováno
+settings_language_useArabicNumerals_deactivated;Používání východoarabských číslic je deaktivováno
+artefact_inventory_active_empty;Žádné aktivované artefakty
+social_errorTitle_Unknown;Neznámá chyba
+social_errorMsg_Unknown;Vyskytla se neznámá chyba. Zkus to prosím znovu.
+loadingScreen_text_01;Tvůj hrdina si upravuje vlasy, počkej prosím.
+loadingScreen_text_02;Sýpka přetéká. Vesničané si nyní ukládají obilí do kapes.
+loadingScreen_text_03;Velvyslanectví pořádá večírek – pouze pro diplomaty.
+loadingScreen_text_04;Na shromaždišti je nyní místo pro piknik – vojáci si pochutnávají na sendvičích.
+loadingScreen_text_05;Kovář kuje meč... ze špaget.
+loadingScreen_text_06;Mistři stavitelé čtou plán... vzhůru nohama.
+loadingScreen_text_07;Nataři se připojili k vesnickému knižnímu klubu. Nikdo neumí číst staré runy.
+loadingScreen_text_08;Průzkumníci počítají nepřátelské jednotky... ale došly jim prsty.
+loadingScreen_text_09;Na div světa právě útočí holubi. Posíláme úklidovou četu.
+loadingScreen_text_10;Domobrana otroků požaduje vytvoření odborů – připrav se na stávky.
+loadingScreen_text_11;Vojáci odmítají útočit, dokud jim někdo nevysvětlí bojový simulátor.
+loadingScreen_text_12;Vesničané přestali pracovat, aby mohli sledovat souboj dvou kuřat.
+loadingScreen_text_13;Tvé katapulty se přou o to, kterou budovu zasáhnout jako první.
+loadingScreen_text_14;Prosíme o trpělivost – hrdina jede místo koně s Českými drahami.
+loadingScreen_text_15;V jeskyni se skrývají nejen suroviny, ale také vesnické drby.
+loadingScreen_text_16;V kasárnách se koná přehlídka talentů – výcvik odložen.
+loadingScreen_text_17;Tvá zeď je téměř hotová. Čeká se jen na zaschnutí barvy.
+loadingScreen_text_18;Legionáři si před pochodem vyžádali přestávku na kávu.
+loadingScreen_text_19;Galové vysvětlují Římanům, co je to palisáda – už to trvá tři hodiny.
+loadingScreen_text_20;Podplácení obchodníků, aby urychlili dodávky.
+loadingScreen_text_21;Tvůj hrdina se účastní kurzu jízdy na koni – to může chvíli trvat.
+loadingScreen_text_22;Obchodníci se zasekli za pomalým volem.
+loadingScreen_text_23;Vedoucí představitelé aliance připravují bojovou strategii... prstovými barvami.
+loadingScreen_text_24;Sýpka je plná sušenek – takhle se to má dělat!
+loadingScreen_text_25;Průzkum přerušen. Heimdall má něco v oku.
+changeAccountNameSubtitle;Změnit jméno uživatele a/nebo přídomek.
+changeAccountNamePleaseNote;Pamatuj, že po změně jména účtu musíš počkat {{DAYS}} [DAYS>4:dní][DAYS=2-4:dny][DAYS=1:den], než si ho budeš moci znovu změnit.
+changeAccountNameWaiting;Musíš počkat, než si budeš moct změnit jméno znovu
+changeAccountNameUpdated;Jméno účtu změněno
+changeAccountNameUpdatedSubtitle;Jméno tvého účtu bylo úspěšně změněno na: <b>{{playerName}}</b>
+alliance_top10Title;Interní top 10 aliance
+gameworldCalendarNoGameworld;Nenalezeny žádné nadcházející herní světy. \nMohou se načítat nebo ještě nejsou naplánované.
+gameworldCalendar_title;Kalendář herních světů
+valueWithModifierBefore;{{value|Round|2}}×
+goldShop_purchaseCanceled;Nákup zrušen!
+goldShop_pendingRestored;Tvůj předchozí nákup byl úspěšně obnoven.
+hero_consumablePopup_healthByOintment;Zdraví získané za mast:
+unknown;?
+serverSelection_gameworldSpeed_short;{{INT}}×
+gameworldCalendarDetails_title;Detaily o herním světě
+gameworldCalendarDetails_shareLink;Sdílet odkaz na herní svět
+gameWorldEndCondition;Podmínka ukončení herního světa
+gameWorldEndCondition_WonderOfTheWorld;Div světa {{Level}}
+gameWorldEndCondition_VictoryPoints;Vítězné body
+gameWorldRestriction_InvitationCode;Tento herní svět je vyhrazen pouze pro hráče se speciálním kódem pozvánky.
+gameWorldRestriction_MobilePlayers;Tento herní svět je přístupný pouze pro mobilní hráče.
+gameWorldSpecial;Jedná se o speciální herní svět, který může být k dispozici pouze po omezenou dobu a může mít jiné funkce než klasické herní světy.
+gameWorldUndefinedDetails;Ještě nebyly definovány všechny podrobnosti o herním světě. Po jejich aktualizaci obdržíš oznámení v lobby.
+bonusValueWithPercentNoSpace;+{{value}}%
+startDate;Datum startu
+startTime;Čas startu
+UTC+1;(UTC+1)
+goldShop_GoldPromotion;Akce na zlaté
+auction_FeePopupTitle;Aukční poplatek
+auction_FeePopupText;Za prodej na aukci musíš zaplatit poplatek ve výši {{value}} %. Tvá výplata je prodejní cena minus aukční poplatek.
+auction_FeePopupExample;Příklad výpočtu
+auction_FeePopupSalePrice;Prodejní cena
+auction_FeePopupFee;Aukční poplatek ({{value}} %)
+auction_FeePopupPayout;Výplata
+auction_sellHouseFeeInfo;Tvá výplata je prodejní cena minus aukční poplatek ({{value}} %).
+gold_action_finishImmediately;Okamžitě dokončit
+mapCellInfoWindow_villageReports;Zobrazit hlášení vesnice
+hero_crafting_title_refine;Vylepšit vybavení
+hero_crafting_title_smelt;Roztavit vybavení
+hero_crafting_title_forge;Ukovat vybavení
+hero_crafting_title_reforge;Překovat vybavení
+hero_crafting_action_refine;Vylepšit
+hero_crafting_action_smelt;Roztavit
+hero_crafting_action_forge;Ukovat
+hero_crafting_action_takeMaterials;Vzít materiály ({{INT}}/{{MAX}})
+hero_crafting_action_takeAllMaterials;Vzít materiály
+hero_crafting_action_reforge;Překovat
+hero_crafting_action_take;Vzít
+hero_crafting_action_pick;Vyber položku
+hero_crafting_action_equip;Nasadit
+hero_crafting_action_buy_material;Koupit materiál
+hero_crafting_action_buy_item;Koupit předmět
+hero_crafting_action_craft_material;Roztavit materiál
+hero_crafting_action_moveToInventory;Do inventáře
+hero_crafting_action_select_item;Vybrat
+hero_crafting_action_remove_item;Odebrat
+hero_crafting_action_error_equipment;Předmět musí být vybavení hrdiny.
+hero_crafting_action_error_rarity;Předměty musí mít stejnou vzácnost.
+hero_crafting_action_error_category;Předměty musí patřit do stejné kategorie vybavení.
+hero_crafting_action_error_id;Předměty musí být totožné.
+hero_crafting_action_error_missingItem;Jeden nebo více vybraných předmětů již není k dispozici.
+hero_crafting_refine_tip;Epické předměty hrdiny lze vylepšit jakýmkoli jiným epickým předmětem hrdiny stejné kategorie.
+hero_crafting_refine_tip_error;Nemáš žádné hrdinovy předměty, které bys mohl vylepšit. Najdi předměty na dobrodružných výpravách nebo si je kup v aukci a vylepši je.
+hero_crafting_smelt_info;Vezmi si {{INT}} materiál[INT>1:y] nyní, nebo počkej a získej {{MAX}}.
+hero_crafting_reforge_text;Překovat pro získání jiného předmětu, pokud možno jiné vzácnosti a kvality.\nPo překování si můžeš vybrat, který předmět si chceš vzít, nebo můžeš znovu zkusit překování.\nPozor: Po překování bude předmět každého dalšího kroku překování ztracen a nebude možné ho změnit zpět.
+inventoryItem_quality_title;Kvalita
+inventoryItem_rarity_title;Vzácnost
+inventoryItem_rarity_quality_title;Vzácnost a kvalita
+inventoryItem_rarity_common;Běžný
+inventoryItem_rarity_uncommon;Neobvyklý
+inventoryItem_rarity_rare;Vzácný
+inventoryItem_rarity_epic;Epický
+inventoryItem_rarity_legendary;Legendární
+search_for_village;Hledání vesnice
+search_for_player;Hledání hráče
+villageList_EditMode;Režim úprav
+villageList_MaxGroupAmount;Dosažen max. počet skupin vesnic.
+hero_crafting_action_error_material;Položka musí být materiál.
+villageList_ReorderError;Neplatný cíl
+textMatchingInput_Title;Potvrď zadáním „{{WORD}}“
+hero_inventory_category_empty;- V této kategorii nejsou žádné předměty -
+hero_crafting_action_refine_success;Vybavení vylepšeno
+hero_crafting_action_smelt_success;Vybavení roztaveno
+hero_crafting_action_forge_success;Vybavení ukováno
+hero_crafting_result_item_equipped;Předmět nasazen
+hero_crafting_result_item_taken;Předmět přesunut do inventáře
+hero_crafting_result_material_taken;Materiál přesunut do inventáře
+hero_crafting_action_error_quality;Předměty musí být stejné kvality.
+hero_crafting_action_error_epic;Musí to být další epická položka stejné kategorie a kvality.
+inventoryItem_rarity_none;Žádná vzácnost
+dailyQuests_rewardOverview_short;Přehled odměn
+avatar_confirmation_title_delete;Smazat postavu
+avatar_confirmation_header_delete;Chceš smazat svou postavu?
+avatar_confirmation_infoText_delete;Po zahájení mazání trvá <b>tři dny</b>, než se dokončí mazání tvé postavy.\nPostava, která se maže, se nemůže účastnit aukcí nebo využívat směnárnu.\nZde můžeš kdykoliv zrušit mazání postavy.
+avatar_confirmation_requiredWord_delete;smazat
+avatar_confirmation_title_respawn;Respawn postavy
+avatar_confirmation_header_respawn;Chceš respawnout svou postavu?
+avatar_confirmation_infoText_respawn;Tato akce smaže všechen pokrok, který jsi do té doby učinil, a tvá startovní vesnice se přesune na nové místo na mapě.\n\nVšechny zakoupené zlaté budou automaticky převedeny.
+avatar_confirmation_requiredWord_respawn;obnovit
+settings_app_title;Všechny herní světy
+settings_app_Animations_title;Animace
+settings_app_Animations_description;Vyber si, které animace chceš v aplikaci zobrazit.
+settings_app_Animations_activated;Animace mraků pro zobrazení vesnice/surovin je aktivována
+settings_app_Animations_deactivated;Animace mraků pro zobrazení vesnice/surovin je deaktivována
+settings_app_NightMode_title;Noční režim
+settings_app_NightMode_description;Tví vesničané zapalují pochodně a ohně pecí praskají pod matným světlem hvězd na noční obloze.
+settings_app_NightMode_activated;Noční režim je aktivován
+settings_app_NightMode_deactivated;Noční režim je deaktivován
+settings_app_WinterMode_title;Zimní mód
+settings_app_WinterMode_description;Tiše padá sníh a zahaluje vesnici do záludného ticha, v němž se každý zvuk jakoby rozplývá v mrazivém vzduchu.
+settings_app_WinterMode_activated;Zimní mód je aktivován
+settings_app_WinterMode_deactivated;Zimní mód je deaktivován
+settings_app_VillagePanning_title;Pohyb po vesnici/surovinách
+settings_app_VillagePanning_description;Můžeš se pohybovat v zobrazení vesnice a surovinových polí.
+settings_app_VillagePanning_activated;Pohyb je aktivován
+settings_app_VillagePanning_deactivated;Pohyb je deaktivován
+settings_app_PushNotifications_title;Obecné push notifikace
+settings_app_PushNotifications_description;Získávej informace o obecných novinkách týkajících se aplikace a hry pomocí push notifikací.
+settings_app_PushNotifications_activated;Oznámení o spuštění herního světa je aktivováno
+settings_app_PushNotifications_deactivated;Oznámení o spuštění herního světa je deaktivováno
+settings_app_EnergySaving_title;Režim úspory energie
+settings_app_EnergySaving_description;Šetřete baterii zařízení díky nižšímu FPS.\nAktivace úsporného režimu může při používání aplikace způsobit určité vizuální zpoždění.
+settings_app_EnergySaving_activated;Režim úspory energie je aktivován
+settings_app_EnergySaving_deactivated;Režim úspory energie je deaktivován
+settings_app_DataSaving_title;Režim úspory mobilních dat
+settings_app_DataSaving_description;Úspora mobilních dat díky menšímu počtu požadavků na server.\nAktivace režimu úspory mobilních dat může vést k delšímu intervalu obnovování dat ve hře.
+settings_app_DataSaving_activated;Režim úspory mobilních dat je aktivován
+settings_app_DataSaving_deactivated;Režim úspory mobilních dat je deaktivován
+auction_FilterType;Typ předmětu
+auction_bidTooLow;Příliš nízká nabídka.
+villageList_Delete_Title;Smazat skupinu vesnic
+villageList_Delete_Button;Smazat skupinu
+villageList_Delete_Description;Chceš smazat tuto skupinu vesnic?
+villageList_Delete_Description2;Vesnice v této skupině nebudou dotčeny.
+gameworldNews_title;Novinky a aktualizace
+moreInformation;Další informace
+remainingGold;Zbývající zlaté: {{goldIcon|Sprite}} {{goldAmount}}
+messages_addEmoji_title;Přidat emoji
+messages_select_emojis;Vybrat emoji
+cams_resend_email_wait_error;Počkej prosím na odeslání dalšího e-mailu.
+cams_settings_accountDeletion_infoGold;Po smazání své postavy dostaneš email na registrační e-mail s pokynem k převodu zbylých zlatých na jinou postavu.\n<b>Vezmi prosím na vědomí:</b> Tvé  zbývající zlaté lze převést pouze na určité herní světy.
+cams_changeMail_title;Změnit e-mailovou adresu
+cams_changeMail_description;Pro změnu e-mailové adresy potřebuješ přístup ke své aktuální i nové e-mailové adrese.
+cams_changeMail_socialHint;Změna e-mailové adresy neovlivní  tvé přihlášení pomocí Facebooku, Google nebo Apple.
+cams_changeMail_cantAccess;Nemáš přístup k e-mailu?
+cams_changeMail_sentVerification;Poslali jsme ověřovací e-mail na: {{mail}}
+cams_changeMail_checkInbox;Podívej se prosím do své e-mailové schránky a pokračuj podle instrukcí.
+cams_changeMail_verificationCode;Ověřovací kód e-mailu:
+cams_changeMail_verifyButton;Ověřit e-mail
+cams_changeMail_enterNew_description;Zadej svou novou e-mailovou adresu níže: Na tuto adresu ti pošleme ověřovací e-mail.
+cams_changeMail_enterNew_description2;Pro dokončení změny prosím pokračuj podle instrukcí v e-mailu.
+cams_changeMail_enterNew_input;Zadej svou novou e-mailovou adresu:
+cams_changeMail_enterNew_input_placeholder;Nová e-mailová adresa
+cams_changeMail_enterNew_button;Změnit e-mailovou adresu
+cams_changeMail_done_title;E-mail aktualizován
+cams_changeMail_done_description1;Tvá e-mailová adresa byla úspěšně změněna na {{mail}}
+cams_changeMail_done_description2;Budeš automaticky odhlášen a přesměrován na přihlašovací stránku. Zadej prosím svou novou e-mailovou adresu pro přihlášení.
+cams_changeMail_done_redirecting;Přesměrování na přihlášení {{time}}...
+bonusValue;+ {{value}}
+value;{{value}}
+ratioValues_Colon;{{a}}:{{b}}
+genericValue;{{VALUE}}
+enterAmount;Zadej množství
+symbol_minus;-
+applyFilter;Použít filtr
+resetFilter;Resetovat filtr
+rallyPoint_troopsOverview_outgoingMission_50_heroCentricAdventure;Průzkum na dobrodružství
+rallyPoint_troopsOverview_returningFromAdventure_heroCentricAdventure;Návrat z dobrodružství
+silverExchangePopup_AvailableSilver;Dostupné stříbrné
+silverExchangePopup_SilverStatus;Momentálně je {{AMOUNT|LongNumber}} tvých stříbrných vázáno v aktivních aukcích.
+silverExchangePopup_SilverError;Na tuto akci nemáš dostatek stříbra.
+silverExchangePopup_GoldError;Na tuto akci nemáš dostatek zlatých.
+hero.status50_heroCentricAdventure;Tvůj hrdina je na cestě za dobrodružstvím.
+inventoryItem_quality_1;Kvalita 1
+inventoryItem_quality_2;Kvalita 2
+inventoryItem_quality_3;Kvalita 3
+inventoryItem_rarity_common_headGear;Běžná helma
+inventoryItem_rarity_uncommon_headGear;Neobvyklá helma
+inventoryItem_rarity_rare_headGear;Vzácná helma
+inventoryItem_rarity_epic_headGear;Epická helma
+inventoryItem_rarity_legendary_headGear;Legendární helma
+inventoryItem_rarity_common_utility;Běžný užitkový předmět
+inventoryItem_rarity_uncommon_utility;Neobvyklý užitkový předmět
+inventoryItem_rarity_rare_utility;Vzácný užitkový předmět
+inventoryItem_rarity_epic_utility;Epický užitkový předmět
+inventoryItem_rarity_legendary_utility;Legendární užitkový předmět
+inventoryItem_rarity_common_weapon;Běžná zbraň
+inventoryItem_rarity_uncommon_weapon;Neobvyklá zbraň
+inventoryItem_rarity_rare_weapon;Vzácná zbraň
+inventoryItem_rarity_epic_weapon;Epická zbraň
+inventoryItem_rarity_legendary_weapon;Legendární zbraň
+inventoryItem_rarity_common_armour;Běžné brnění
+inventoryItem_rarity_uncommon_armour;Neobvyklé brnění
+inventoryItem_rarity_rare_armour;Vzácné brnění
+inventoryItem_rarity_epic_armour;Epické brnění
+inventoryItem_rarity_legendary_armour;Legendární brnění
+inventoryItem_rarity_common_boots;Běžné boty
+inventoryItem_rarity_uncommon_boots;Neobvyklé boty
+inventoryItem_rarity_rare_boots;Vzácné boty
+inventoryItem_rarity_epic_boots;Epické boty
+inventoryItem_rarity_legendary_boots;Legendární boty
+inventoryItem_rarity_common_consumable;Spotřební předmět
+inventoryItem_rarity_uncommon_consumable;Neobvyklý spotřební předmět
+inventoryItem_rarity_rare_consumable;Vzácný spotřební předmět
+inventoryItem_rarity_epic_consumable;Epický spotřební předmět
+inventoryItem_rarity_common_horse;Kůň
+inventoryItem_rarity_uncommon_horse;Neobvyklý kůň
+inventoryItem_rarity_rare_horse;Vzácný kůň
+inventoryItem_rarity_epic_horse;Epický kůň
+inventoryItem_rarity_legendary_horse;Legendární kůň
+inventoryItem_rarity_common_material;Spotřební předmět
+inventoryItem_rarity_uncommon_material;Neobvyklý spotřební předmět
+inventoryItem_rarity_rare_material;Vzácný spotřební předmět
+inventoryItem_rarity_epic_material;Epický spotřební předmět
+search_item;Hledat předmět
+search_select_item;Vybrat předmět
+avatar_confirmation_infoText_delete_goldBough;Po zahájení mazání trvá <b>nejméně tři dny</b>, než se tvá postava kompletně smaže, protože jsi na ní nedávno koupil zlaté.\nPostava, která se maže, se nemůže účastnit aukcí nebo využívat směnárnu.\nZde můžeš kdykoliv zrušit mazání postavy.
+combatSimulator_addItemEffect;Přidat efekt předmětu
+combatSimulator_editItemEffect;Upravit efekt předmětu
+addItemEffect_title;Přidat efekt předmětu hrdiny
+addItemEffect_description;Přidat samostatné efekty odrážející jednotlivé bonusy všech možných předmětů hrdiny.
+addItemEffect_importHeroEquipment;Importovat vybavení vlastního hrdiny
+addItemEffect_importHeroEquipment_success;Importované vybavení hrdinů
+addItemEffect_selectEffect;Vybrat efekt předmětu
+addItemEffect_selectItem;Vyber předmět
+addItemEffect_selectMagnitude;Vyber rozsah
+addItemEffect_selectUnit;Vyber jednotku
+addItemEffect_missingMagnitude;Chybějící rozsah
+addItemEffect_effect_2;Snížené poškození
+addItemEffect_effect_6;+ Další body zdraví za den
+addItemEffect_effect_12;+ Zvýšení útoku a obrany pro konkrétní jednotku
+addItemEffect_effect_13;+ Zvýšení bojové síly
+cams_newMail_title;Nová e-mailová adresa
+cams_verifyNewMail_title;Ověřit novou e-mailovou adresu
+cams_verifyCurrentMail_title;Ověřit aktuální e-mailovou adresu
+auction_notEnoughSilver;Nemáš dostatek stříbra
+auction_itemGroups;Skupiny předmětů
+auction_unknown;?
+auction_sortingOption_itemName;Název předmětu
+auction_sortingOption_bidCount;Počet nabídek
+auction_sortingOption_finishedAt;Konec za
+auction_sortingOption_highestBid;Nejvyšší nabídka
+auction_sortingOption_highestBidder_player;Nejvyšší nabídka (hráč)
+auction_sortingOption_highestBidder_alliance;Nejvyšší nabídka (aliance)
+auction_sortingOption_auctionAmount;Počet aktuálních aukcí
+auction_sortingOption_nextFinishedAt;Další končí za
+auction_sellingPrice;Prodejní cena
+auction_sellingPrice_lowest;Nejnižší
+auction_sellingPrice_average;Průměrná
+auction_sellingPrice_highest;Nejvyšší
+auction_result_won;<color={{colorValue|TextColor}}>Vítězství</color>
+auction_result_lost;<color={{colorValue|TextColor}}>Přehození</color>
+auction_sellingPrice_averagePrice;Průměrná cena
+auction_bidProcessTitle;Proces přihazování
+auction_bidProcessDescription1;Můžeš přihazovat na položky, o které máš zájem.
+auction_bidProcessDescription2;Musíš nabídnout alespoň minimální částku, abys překonal aktuální nabídku.
+auction_maxBidFeatureTitle;Funkce maximální nabídky
+auction_maxBidFeatureDescription1;Můžeš zadat svůj maximální rozpočet na položku.
+auction_maxBidFeatureDescription2;Systém za tebe automaticky přihazuje až do výše nastaveného maxima.
+auction_maxBidFeatureDescription3;Tvá nabídka se zvýší pouze tak, abys zůstal účastníkem s nejvyšší nabídkou.
+auction_maxBidFeatureDescription4;Nabídky pokračují, dokud nevyhraješ nebo dokud nepřekročíš svůj maximální rozpočet.
+auction_auctionDurationTitle;Doba trvání aukce
+auction_auctionDurationDescription1;Pokud je zbývající čas aukce kratší než {{DURATION|Duration}}, doba trvání se prodlouží na {{DURATION|Duration}}, když se změní nejvyšší nabízející.
+auction_auctionWinningTitle;Vítězství
+auction_auctionWinningDescription1;Předmět získává ten, kdo po skončení aukce nabídne nejvyšší cenu.
+auction_auctionFinished;Tato aukce už byla ukončena.
+auction_wasJustOutbid;Momentálně nemáš nejvyšší nabídku.
+auction_currentHighestBidder;Aktuální největší přihazovatel
+auction_currentHighestBid;Aktuální největší nabídka
+auction_yourMaximumBid;Tvá maximální nabídka
+auction_showFinished;Zobrazit dokončené
+auction_deleteAllFinished;Odstranit všechny dokončené
+auction_startedAt;Začalo: {{TIME|DateTime}} | Běží
+auction_canceled;Zrušeno
+auction_finished;Ukončeno
+auction_finishedAt;Ukončeno: {{TIME|DateTime}}
+auction_itemAuction_title;Aukce předmětu
+auction_itemAuction_info;Kliknutím na položku v inventáři spustíš aukci. Ostatní hráči na něj mohou přihazovat. Aukce trvá až {{INT}} hodin.
+auction_whatHappensNext_title;Co bude dál
+auction_whatHappensNext_info1;Po vypršení času si položku automaticky koupí ten, kdo nabídl nejvyšší cenu.
+auction_whatHappensNext_info2;Po uskutečnění prodeje získáš stříbro.
+auction_whatHappensNext_info3;Jakmile bude tvá položka prodána, budeš o tom informován.
+auction_error_cannotSell;Tento předmět nelze prodat na aukci.
+auction_error_onlyHorse;Nemůžeš prodat svého jediného koně.
+auction_sellItem;Prodat předmět
+auction_sales;Prodeje
+auction_selectBatchSize;Výběr velikosti balíčku
+auction_selectBatchSize_batches;<b>{{COUNT}}x</b> balíčky předmětů
+auction_selectFilter_title;Vybrat filtr
+goldShop_upTo;Až do
+shopPromotion_openShop;Otevřít obchod
+shopPromotion_goldPromotionTitle;Aktivní akce na zlaté
+shopPromotion_limitedTimeOffer;Časově omezená nabídka!
+shopPromotion_goldPromotionDescription;Získej teď za své peníze více zlatých.
+shopPromotion_timeRemaining;Zbývající čas:
+hero_adventures_watchAdReduceDuration_title;Zkrácení doby trvání dobrodružství o {{AMOUNT}}%
+hero_adventures_watchAdReduceDuration_description;Podívej se na video, které zkrátí dobu trvání <b>dalšího</b> dobrodružství tvého hrdiny.
+hero_adventures_watchAdIncreaseDanger_title;Zvýšení obtížnosti dobrodružství na těžké
+hero_adventures_watchAdIncreaseDanger_description;Podívej se na video, které zvýší obtížnost <b>dalšího normálního</b> dobrodružství na těžké a získej více zkušeností pro hrdinu.
+hero_adventures_watchAdActive;Aktivní pro další dobrodružství.
+hero_adventures_watchAdActiveNormal;Aktivní pro další normální dobrodružství.
+hero_crafting_action_error_nonEpic;Musí se jednat o totožný předmět stejné vzácnosti a kvality.
+berichte.adventure_heroCentric;{{VILLAGE_NAME}} vyráží na dobrodružství
+reports_share_notShareable;Toto hlášení nelze sdílet.
+dailyQuests_dailyMaxReached;Dosaženo denní maximum
+achievementQuests.DailyQuest_12_description;Otevři hru v prohlížeči na počítači a podívej se na video.
+achievementQuests.DailyQuest_12_additionalInformation;www.travian.com
+achievementQuests.DailyQuest_13_description;Podívej se na video, díky němuž můžeš např. rychleji rozšířit své budovy.
+achievementQuests.DailyQuest_13_additionalInformation;Nebo klikni na tlačítko „Zhlédnout video“ a podívej se na video přímo bez dalších výhod.
+addItemEffect_effect_11;+ zvýšení útočné síly proti Natarům
+auction_started;Aukce zahájena
+auction_error_batchSize;Nedostatek předmětů k prodeji.
+auction_graph_notEnoughData;Nedostatek dat
+auction_emptyInventory;- V současné době nemáš žádné předměty k prodeji -
+RelativeTime_2_word;[data>4:{{data}} hodin][data=2-4:{{data}} hodiny][data<2:{{data}} hodina]
+gold_action_halveDuration;Zkrátit dobu trvání na polovinu
+goldShop_advantage_Value_Duration;<b>+{{VALUE}}<nobr> </nobr>%</b> na <b>[DURATION>6:{{DURATION}} dní][DURATION<7:{{DURATION|Mult|24}} hodin]</b>
+goldShop_advantage_Value_Active;<b>+{{VALUE}}%<nobr> </nobr></b> aktivní na:
+goldShop_upgrade;Vylepšit
+goldShop_advantage_stillActiveFor;Stále aktivní na:
+goldShop_advantage_stillActiveFor_Value;{{DURATION}} do {{TIME}} hodin
+goldShop_advantage_videoFeatureOnCD;Video bonus můžeš aktivovat pouze jednou denně.\nDenní reset za: {{TIMESTAMP|Countdown}}
+goldShop_advantage_popup_mainInfoHeader_ProductionboostLumber;Zvyš <b>produkci dřeva</b> ve všech svých vesnicích.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostClay;Zvyš <b>produkci hlíny</b> ve všech svých vesnicích.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostIron;Zvyš <b>produkci železa</b> ve všech svých vesnicích.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostCrop;Zvyš <b>produkci obilí</b> ve všech svých vesnicích.
+goldShop_advantage_popup_mainInfoBody;Tento bonus se týká základní produkce vybrané suroviny i všech ostatních bonusů.
+goldShop_advantage_popup_premiumInfo;Bonus můžeš aktivovat za zlaté a získat +{{VALUE}}% bonus k produkci.\nMůžeš také aktivovat automatické prodloužení pro trvalou dobu trvání bonusu.
+goldShop_advantage_popup_videoFeatureInfo;Nebo můžeš zhlédnout krátké video a získat menší +{{VALUE}}% bonus k produkci.\n<b>Video bonus lze u každé suroviny aktivovat pouze jednou denně.</b>
+goldShop_advantage_popup_upgradeInfo;Kdykoli můžeš přejít na +{{VALUE}}% bonus k produkci za zlaté.
+goldShop_advantage_upgradePopupInfo1;Vylepšení surovinového bonusu odstraní tvůj současný aktivní bonus.
+goldShop_advantage_upgradePopupInfo2;Místo toho získáš +{{VALUE}} % na [DURATION>6:{{DURATION}} dní][DURATION<7:{{DURATION|Mult|24}}]
+goldShop_advantage_upgradePopup_title;Vylepšit bonus
+productionOverview_Bonus;+{{VALUE}}% produkce
+hero_adventures_watchAdReduceDuration_toast;Doba trvání dobrodružství zkrácena.
+hero_adventures_watchAdIncreaseDanger_toast;Obtížnost dobrodružství zvýšena.
+hero_consumablePopup_amountEquippedAfter;Počet u hrdiny po:
+hero_consumablePopup_amountEquippedAfterUse;Počet u hrdiny po použití:
+hero_consumablePopup_amountLeftInInventory;Zbylý počet v inventáři:
+cams_recover_password_cooldown;Počkej prosím {{VALUE}}
+cams_settings_changePassword_cooldown;Počkej prosím {{VALUE}}
+infobox_productionBoost_upgradeButton;Vylepšit
+infobox_productionBoost_upgradeBonusWithGold;Vylepši a prodluž svůj bonus za zlaté a získej +{{PREMIUM_PERCENTAGE}} % na {{TIME}} hodin.
+infobox_productionBoost_expires;{{PERCENTAGE}} {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresLumber;+{{PERCENTAGE}}% bonus k produkci dřeva končí za {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresClay;+{{PERCENTAGE}}% bonus k produkci hlíny končí za {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresIron;+{{PERCENTAGE}}% bonus k produkci železa končí za {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresCrop;+{{PERCENTAGE}}% bonus k produkci obilí končí za {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expired;{{PERCENTAGE}}
+infobox_productionBoost_expiredLumber;+{{PERCENTAGE}}% bonus k produkci dřeva <b>vypršel</b>.
+infobox_productionBoost_expiredClay;+{{PERCENTAGE}}% bonus k produkci hlíny <b>vypršel</b>.
+infobox_productionBoost_expiredIron;+{{PERCENTAGE}}% bonus k produkci železa <b>vypršel</b>.
+infobox_productionBoost_expiredCrop;+{{PERCENTAGE}}% bonus k produkci obilí <b>vypršel</b>.
+infobox_levelUpProductionReminder;Zvyš produkci surovin ve všech svých vesnicích za zlaté (+{{PREMIUM_PERCENTAGE}} %) nebo za zhlédnutí videa (+{{VIDEO_PERCENTAGE}} %)
+infobox_oneTimeProductionBoostReminder;Nyní si můžeš surovinový bonus +{{VIDEO_PERCENTAGE}} % opět aktivovat zhlédnutím videa.
+travelSimulator_title;Simulátor doby cesty
+travelSimulator_sourceTribe;Počáteční lokalita národa
+travelSimulator_noLocationSelected;Nevybrána žádná lokalita
+travelSimulator_slowestUnit_title;Nejpomalejší jednotka
+travelSimulator_slowestUnit_settings;{{UNIT}} | Rychlost: {{SPEED}}
+travelSimulator_TournamentSquareLevel_info;(Pouze pro vzdálenost >20 polí)
+travelSimulator_tournamentSquareLevel_option;{{LEVEL}} | {{VALUE}}%
+travelSimulator_unitSelection_title;Vyber nejpomalejší jednotku
+travelSimulator_unitSelection_unitType;Typ jednotky
+travelSimulator_unitSelection_unitSpeed;Rychlost jednotky
+travelSimulator_unitSelection_selectedUnitSpeed;Rychlost: {{SPEED}}
+travelSimulator_calculation_land;<b>Pevnina:</b> {{VALUE}}
+travelSimulator_calculation_sea;<b>Moře:</b> {{VALUE}}
+travelSimulator_heroAttending;Hrdina se účastní
+travelSimulator_vikingRaidBonus;Vikingský loupežný bonus
+travelSimulator_troopSpeedArtefactEffect;Efekt artefaktu rychlejších jednotek
+travelSimulator_toast_selectSourceAndTarget;Vyber platnou lokalitu startu i cíle!
+travelSimulator_toast_selectSourceTribe;Vyber platný národ!
+IOSAppTrackingTransparencyMessage;Stisknutím tlačítka „Povolit“ umožníš využití informací o zařízení pro relevantnější obsah reklam
+goldShop_advantage_Value_Duration_Hours;<b>+{{VALUE}}%</b> na <b>{{DURATION}} hodin</b>
+travelSimulator_tournamentSquareLevel_title;Úroveň turnajového hřiště
+travelSimulator_troopSpeedAncientPower;Rychlost jednotek díky antické síle
+RelativeTime_Formatted;[weeks>0:{{weeks}}t ][days>0:{{days}}d ]{{data}}
+settings_account_tab;Účet
+settings_notification_tab;Push notifikace
+settings_app_PushNotifications_popup_title;Push notifikace
+settings_app_PushNotifications_popup_header;Povol nám zasílat ti notifikace
+settings_app_PushNotifications_popup_info1;Chceš-li dostávat push notifikace s novinkami a užitečnými informacemi o hře, musíš nejprve povolit notifikace.
+settings_app_PushNotifications_popup_info2;Notifikace můžeš povolit v nastavení aplikace v zařízení.
+settings_app_PushNotifications_popup_info3;Kdykoli se sem můžeš vrátit a notifikace opět zakázat.
+settings_app_PushNotifications_popup_action_button;Otevřít nastavení aplikace
+ratioValueMax;/ {{a}}
+market_sendResources_completed;Dokončeno
+market_sendResources_villageNotFound;Nenalezeno Suroviny můžeš posílat pouze do svých vesnic a ke spoluhráčům z aliance a z konfederace.
+no_ads_popup_title;Žádné videoreklamy
+no_ads_popup_header;Při pokusu o zobrazení videoreklamy došlo k problému.
+no_ads_popup_info1;Důvodů může být několik:
+no_ads_popup_info2; • V současné době nejsou v reklamním fondu pro tvůj region k dispozici žádné reklamy.
+no_ads_popup_info3; • Tvé nastavení ochrany osobních údajů omezuje počet reklam, které lze poskytnout.
+no_ads_popup_info4; • Technické problémy s naší aplikací nebo poskytovatelem reklamy.
+no_ads_popup_settings_msg;V nastavení ochrany osobních údajů nezapomeň povolit personalizované reklamy.
+no_ads_popup_support_msg;Pokud problém přetrvává, kontaktuj naši podporu.
+no_ads_popup_support_button;Kontaktovat podporu
+city_upgradeToACity_wwVillageNotUpgradeable;Vesnice s divem světa nelze povýšit na města.
+travelSimulator_selectMagnitude;Vyber rozsah
+marketplace_merchantsOverview_returningTo;Návrat do vesnice <b>{{Village}}</b> hráče <b>{{Player}}</b>
+market_sendResources_sendAgain;Odeslat znovu
+search_village_notFound;Nenalezeno Suroviny můžeš posílat pouze do svých vesnic a ke spoluhráčům z aliance a z konfederace.
+settings_app_AnimationsPayoffs_activated;Animace odeslání jednotek/obchodníků aktivována
+settings_app_AnimationsPayoffs_deactivated;Animace odeslání jednotek/obchodníků deaktivována
+hero_resourceTransferPopup_empty;V hrdinově inventáři nejsou žádné suroviny k přesunu.
+hero_toast_appearanceChanged;Vzhled byl změněn
+alliance_editMemberPopup_customNote;Vlastní poznámka
+alliance_editMemberPopup_titleOfRole;Název role
+alliance_editMemberPopup_setSpecialization;Nastavit specializaci
+alliance_role_offensive;Útok
+alliance_role_defensive;Obrana
+alliance_role_hybrid;Hybrid
+alliance_role_scout;Špeh
+alliance_role_support;Support
+alliance_role_wow_hammer;Útok na div
+alliance_role_none;Žádná
+ad_fallback_popup_title;Vyzvedni si svou odměnu
+ad_fallback_popup_info;V tuto chvíli nejsou k dispozici žádná videa, ale stále tě chceme odměnit za tvou loajalitu! Počkej prosím chvíli, než pro tebe připravíme odměnu.
+ad_fallback_popup_rewardGranted;Odměna udělena
+ad_fallback_popup_claim;Vyzvednout odměnu
+ad_fallback_popup_closeWarning;Předčasné zavření této obrazovky zruší odměnu
+gameplay_tip_1;Osadníky můžeš vycvičit v rezidenci nebo v paláci (první na úrovni 10).
+gameplay_tip_2;Na jedné postavě můžeš postavit jen jeden palác. Ten poskytuje až tři expanzní sloty, přičemž rezidence nabízí pouze dva.
+gameplay_tip_3;Pro změnu hlavní vesnice postav palác v nové vesnici. Pamatuj, že všechny exkluzivní budovy v tvé staré hlavní vesnici budou ztraceny nebo zbourány na nižší úroveň.
+gameplay_tip_4;S dostatečným počtem kulturních bodů můžeš založit nebo dobýt další vesnici.
+gameplay_tip_5;Kulturní body získáš rozšiřováním budov a pořádáním slavností v radnici.
+gameplay_tip_6;Velké slavnosti můžeš pořádat v radnici (od úrovně 10). Přinášejí více kulturních bodů, ale stojí více surovin.
+gameplay_tip_7;Pro dobytí vesnice sniž její loajalitu na nulu pomocí administrátorů vycvičených v rezidenci nebo v paláci.
+gameplay_tip_8;Než je začneš v rezidenci nebo v paláci cvičit, musíš je nejdřív vyzkoumat v akademii.
+gameplay_tip_9;Vesnice můžeš dobývat od Natarů nebo od ostatních hráčů.
+gameplay_tip_10;Tvou hlavní vesnici nemůže dobýt žádný jiný hráč.
+gameplay_tip_11;Pomocí vyhledávače multicropů najdeš vesnice s 9 nebo 15 obilnými poli, které uživí větší armádu.
+gameplay_tip_12;V hlavní vesnici můžeš surovinová pole vylepšit na vyšší úroveň než v ostatních vesnicích.
+gameplay_tip_13;Pomocí tržiště můžeš posílat suroviny do spřátelených vesnic.
+gameplay_tip_14;Na tržišti můžeš obchodovat se surovinami s ostatními hráči.
+gameplay_tip_15;Zvyš kapacitu svých obchodníků rozšířením obchodní kanceláře.
+gameplay_tip_16;Rozšiř hrdinský dvůr na úroveň 10, abys mohl zabrat oázu a zvýšit tak produkci surovin.
+gameplay_tip_17;Vylepši sílu svých jednotek ve zbrojnici. Tato vylepšení se okamžitě projeví u všech jednotek daného typu, včetně již vycvičených.
+gameplay_tip_18;Použij bitevní simulátor, abys před útokem odhadl výsledek bitvy. Čím více podrobností přidáš do simulace, tím přesnější bude výsledek.
+gameplay_tip_19;S Bonifácovým klubem můžeš ve své hlavní vesnici aktivovat úhyb jednotek, který je automaticky ochrání před přicházejícími útoky.
+gameplay_tip_20;Když se tvé jednotky vrátí domů, je úhyb jednotek dočasně na 10 sekund vypnutý.
+gameplay_tip_21;Vylepši své zvědy v zbrojnici, abys zlepšil jejich špehovací schopnosti.
+gameplay_tip_22;Zdi výrazně zlepšují obranu tvé vesnice.
+gameplay_tip_23;Postav úkryty, abys ochránil své suroviny před nepřátelskými loupežemi.
+gameplay_tip_24;Galové mohou stavět pasti, které zajmou útočící jednotky ještě před začátkem boje.
+gameplay_tip_25;Pokud chceš osvobodit jednotky zajaté v pastích, musíš na vesnici, ve které jsou chycené, poslat úspěšný normální útok.
+gameplay_tip_26;Útočící hráči mohou osvobodit 75% zajatých jednotek, ale obránce se může rozhodnout propustit 100% z nich i bez boje.
+gameplay_tip_27;Postav nemocnici a uzdrav až 40% svých jednotek ztracených v bitvě.
+gameplay_tip_28;Galové mohou stavět pasti, které zajmou útočící jednotky ještě dřív, než bitva vůbec začne.
+gameplay_tip_29;Postav ve své hlavní vesnici kameníka a zvyš tím odolnost budov proti katapultům a beranidlům.
+gameplay_tip_30;Můžeš nastavit, aby se tvůj hrdina během nepřátelských útoků na jeho domovskou vesnici skrýval a zůstal tak v bezpečí.
+gameplay_tip_31;Poraz zvířata ve volných oázách a získej další suroviny. Silnější zvířata poskytnou více surovin.
+gameplay_tip_32;Poraz zvířata ve volných oázách se svým hrdinou a získej zkušenosti.
+gameplay_tip_33;Použij klece k chycení zvířat ve volných oázách a získej tak podporu pro svou vesnici.
+gameplay_tip_34;Vybav hrdinu předměty, jako jsou bylinkové masti nebo speciální brnění, aby se mu rychleji regenerovalo zdraví.
+gameplay_tip_35;Svého hrdinu můžeš oživit postupně za suroviny, nebo okamžitě pomocí živé vody.
+gameplay_tip_36;Jakmile tvá hlavní budova dosáhne úrovně 10, můžeš v ní bourat ostatní budovy.
+gameplay_tip_37;Postav ambasádu, aby ses mohl připojit k alianci nebo založit vlastní.
+vacationMode_title;Režim dovolené
+vacationMode_vacation;Dovolená
+vacationMode_vacationModeActive;Režim dovolené je aktivní
+vacationMode_info;Použij režim dovolené, aby byly tvoje vesnice chráněné, když jsi pryč. Během režimu dovolené nemůžeš provádět následující akce:
+vacationMode_deactivated_action1;Odesílání jednotek a příchod podpor
+vacationMode_deactivated_action2;Posílání hrdiny na dobrodružné výpravy
+vacationMode_deactivated_action3;Zahájení nových stavebních příkazů nebo výcviku jednotek
+vacationMode_deactivated_action4;Používání tržiště (včetně obchodních cest)
+vacationMode_deactivated_action5;Pořádání slavností, zahajování výzkumu nebo vylepšování jednotek
+vacationMode_deactivated_action6;Vytváření aliancí nebo vstup do nich
+vacationMode_deactivated_action7;Darování surovin na alianční bonusy
+vacationMode_deactivated_action8;Účast v aukcích
+vacationMode_deactivated_action9;Změna hlavní vesnice
+vacationMode_deactivated_action10;Smazání účtu
+vacationMode_deactivated_territory_action1;Rozšíření vesnice na město
+vacationMode_deactivated_territory_action2;Tvůj účet nepřispívá k regionální populaci tvé aliance a tvé vesnice nedostávají žádné vítězné body
+vacationMode_conditions_title;splněných předpokladů pro aktivaci režimu dovolené
+vacationMode_duration_info;Kolik dní má režim dovolené trvat?
+vacationMode_durationUntil;Dovolená do <b>{{DATE}}</b>
+vacationMode_availableDays;Dostupné dny <b>{{AVAILABLE}}/{{TOTAL}}</b>
+vacationMode_startButton;Aktivovat režim dovolené
+vacationMode_error_noCancelTime;Režim dovolené můžeš ukončit až po {{HOURS}} hodinách
+vacationMode_error_missingRequirement;Pro vstup do režimu dovolené musíš splnit všechny požadavky
+vacationMode_error_noVacationDaysLeft;Nemáš žádné volné dny pro zahájení režimu dovolené
+vacationMode_error_cooldown;Režim dovolené můžeš zapnout nejdříve {{HOURS}} hodin po jeho posledním ukončení
+vacationMode_abortSuccess;Režim dovolené byl zrušen!
+vacationMode_remainingDays;Zbývající dny dovolené
+vacationMode_runsUntil;Režim dovolené aktivní do
+vacationMode_abortInfo;Režim dovolené lze ukončit nejdříve <b>{{DATE}}</b>
+vacationMode_abortAvailable;Nyní můžeš ukončit režim dovolené
+vacationMode_abortConfirmHeader;Opravdu chceš ukončit režim dovolené?
+vacationMode_abortConfirmInfo;Nevyužité dny budou vráceny. Tuto akci nelze zrušit.
+vacationMode_startCooldownInfo;Režim dovolené lze zahájit nejdříve <b>{{DATE}}</b>
+vacationMode_abortButton;Ukončit režim dovolené
+vacationMode_conditions_has_outgoing_troops;Žádné odchozí jednotky
+vacationMode_conditions_has_incoming_troops;Žádné příchozí jednotky do tvých vesnic a oáz
+vacationMode_conditions_has_reinforcing_troops_for;Žádné podpory u jiných hráčů
+vacationMode_conditions_has_reinforcing_troops_from;Žádné podpory od jiných hráčů ve tvých vesnicích nebo oázách
+vacationMode_conditions_has_ww_village;Nevlastníš vesnici s divem světa
+vacationMode_conditions_has_artifact_village;Nevlastníš vesnici s artefaktem
+vacationMode_conditions_has_beginners_protection;Nemáš začátečnickou ochranu
+vacationMode_conditions_has_trapped_troops;V tvých pastech nejsou žádné jednotky a žádná z tvých vlastních jednotek, včetně tvého hrdiny, není zajatá
+vacationMode_conditions_has_deletion_event;Tvá postava se nemaže
+vacationMode_conditions_has_conquered_oase;Za posledních {{HOURS}} hodin jsi neobsadil žádnou oázu. Do režimu dovolené můžeš vstoupit, jakmile od obsazení oázy uplyne {{HOURS}} hodin, nebo když oázu ztratíš.
+vacationModePopup_info;Během režimu dovolené bude tvůj účet chráněn. Produkce surovin ale poběží dál a tvé jednotky budou nadále spotřebovávat obilí. <color=red>To může vést k hladovění jednotek.</color>
+vacationModePopup_start_info;Opravdu chceš vstoupit do režimu dovolené na <b>{{DAYS}}</b> [DAYS>1:dní][DAYS<2:den]? Režim dovolené můžeš zrušit za zlaté po uplynutí {{COOLDOWN}} hodin odpočtu.
+vacationModePopup_troopConsumption;Spotřeba vlastních jednotek
+vacationModePopup_starvationEstimate;Nejdřívější hladovění v
+vacationModePopup_starvationTitle;Spotřeba vlastních jednotek
+goldTransfer_accept_gift;Ano, převést zlaté
+goldTransfer_decline_gift;Ne, odmítnout zlaté
+goldTransfer_accepted_toast;Převod zlatých byl přijat.
+goldTransfer_declined_toast;Převod zlatých byl odmítnut.
+smithy_requirementsNotSatisfied;Požadavky pro vylepšení této jednotky nejsou splněny
+vacationModeLobby_status;Na dovolené
+block_vacationMode_toast;Toto nemůžeš provést během režimu dovolené.
+goldTransfer_verifyOwnership_title;Ověřit vlastnictví
+goldTransfer_verifyOwnership_description;Pro převod svých neutracených zakoupených zlatých na již existující postavu nejprve prosím potvrď jejich vlastnictví zadáním e-mailové adresy, na kterou byl odeslán odkaz na převod.
+goldTransfer_verifyOwnership_emailPlaceholder;Email
+goldTransfer_verifyOwnership_errorNoEmail;Zadej prosím svou e-mailovou adresu:
+goldTransfer_verifyOwnership_errorAlreadyUsed;Tento odkaz na převod zlatých už byl použit.
+goldTransfer_verifyOwnership_errorInUse;Tento odkaz na převod zlatých je neplatný.
+goldTransfer_verifyOwnership_verifyButton;Ověřit
+goldTransfer_selectTargetAvatar_title;Vybrat cílovou postavu
+goldTransfer_selectTargetAvatar_description;Vyber prosím postavu, na kterou chceš převést zlaté.
+goldTransfer_transferableGold_label;Převoditelné zlaté:
+goldTransfer_enterAvatarName_header;Zadej jméno postavy:
+goldTransfer_avatarName_placeholder;Jméno postavy
+goldTransfer_searchAvatar_Button;Najít postavu
+goldTransfer_searchAvatarNothingFound_error;Nenalezena žádná aktivní postava s tímto jménem.
+goldTransfer_ownAvatarList_header;Vyber ze svých aktivních postav ({{account}})
+goldTransfer_selectOwnAvatarConfirm_Button;Vybrat postavu
+goldTransfer_selectGameworld_title;Vyber herní svět
+goldTransfer_selectGameworld_description;Jméno postavy se vyskytuje na více herních světech. Zlaté můžeš převést jen na jednu postavu. Vyber prosím herní svět.
+goldTransfer_selectGameworldConfirm_Button;Vyber herní svět
+goldTransfer_changeAvatar_Button;Změnit jméno postavy
+goldTransfer_confirm_title;Potvrdit převod
+goldTransfer_confirm_Button;Potvrdit převod
+goldTransfer_confirmAvatarOnOneWorld_info;Jméno postavy bylo nalezeno na jednom herním světě:
+goldTransfer_confirmAvatarName_prefix;Tvá přezdívka:
+goldTransfer_confirmGameworld_prefix;Herní svět:
+goldTransfer_transferComplete_title;Převod proběhl úspěšně
+goldTransfer_transferComplete_description;Tvé zlaté byly úspěšně převedeny na postavu <b>{{avatarname}}</b> na <b>{{gameworldname}}.</b>
+goldTransfer_transferComplete_returnButton;Návrat do hry
+cams_settings_accountDeletion_information_warning_v2;Tato akce natrvalo smaže tvůj účet. Následující obsah spojený s tvým účtem bude ztracen:\n<indent=0.5em>•  Všechny postavy vlastněné tvým účtem\n•  Všechny medaile získané na tvém účtu</indent>\n\nPotvrď zadáním slova „smazat“ do pole níže.
+mapMarkers_popupTitle;Nastavit značku
+mapMarkers_markerType;Typ značky
+mapMarkers_markerColor;Barva značky
+mapMarkers_setAlliance;Nastavit značku pro mou alianci
+mapMarkers_type_field;Políčko
+mapMarkers_addMsg_success;Značka byla úspěšně přidána!
+mapMarkers_saveMsg_success;Značka byla úspěšně uložena!
+mapMarkers_noPermission_error;Požádej lídra své aliance o povolení.
+mapMarkers_marker;Značka
+mapMarkers_markers;Značky
+mapMarkers_listAllianceTitle;Značky aliance
+mapMarkers_listPlayerTitle;Značky hráče
+mapMarkers_listAlliances;Aliance:
+mapMarkers_listPlayers;Hráčů:
+mapMarkers_listFlags;Vlajky
+mapMarkers_deleteMarker;Smazat značku
+mapMarkers_deleteMarkerMessage;Chceš smazat tuto značku?
+mapMarkers_showOnMap;Zobrazit mé značky na mapě
+embassy_general_subtab;Všeobecně
+embassy_villagesNearby_subtab;Okolní vesnice
+embassy_villagesNearby_listHeader;Vesnice aliance/konfederace

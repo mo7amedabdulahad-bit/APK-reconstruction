@@ -1,0 +1,2068 @@
+﻿detail_window_header_title;{{buildingName|TranslateSuffixFor|allgemein.gid}}
+;{{INT}}
+levelWithValue;Stepen {{level}}
+valueWithPercent;{{value}}%
+valueAsRankingPosition;{{value}}.
+valueChangeInBrackets;({{change|Sign}})
+valueChangeInBracketsWithPercent;({{change|Sign}}%)
+ratioValues;{{a}}/{{b}}
+coordinates;<nobr>({{x}}|{{y}})</nobr>
+village_with_coordinates;{{villageName}} <nobr>({{x}}|{{y}})</nobr>
+village_with_clickable_coordinates;{{villageName}} {{mapId|Coordinates}}
+valuePerHour;{{a}}/h
+back;Nazad
+fill;Popuni
+hero;Heroj
+done;Gotovo
+remove;Ukloniti
+prerequisites;Preduslovi:
+newAmount;Novi iznos
+before;prije
+after;poslije
+permissions;Dozvole:
+changesSaved;Izmjene su sačuvane!
+genericError;Neočekivana greška
+allianceTagInBrackets;[{{allianceId|AllianceLink}}]
+autocompleteNoResult;Nije pronađen nijedan rezultat
+medalAdded;Medalja je dodana
+continueEdit;Nastavi uređivanje
+levelUp;Nadogradi!
+non_existing_object;[?]
+sorting;Sortiranje
+copiedToClipboard;Kopirano u međuspremnik
+maximumLengthError;Maksimalna dužina: {{max}}.
+sortingOptions;Opcije sortiranja
+WIP_comingSoon;Uskoro dostupna funkcija!
+upgradeTab_fastForward_button;{{Percent}}% brže
+upgradeTab_masterBuilder_button;Graditi sa \nMajstorom za gradnju{{goldIcon|Sprite}}{{goldCost}}
+upgradeTab_adBoostPopup_boost;{{BOOST}}% pojačanja
+infoTab_upgradingToLevel;Trenutna nadogradnja na stepen {{level}}:
+infoTab_genericCurrently;Trenutno:
+infoTab_genericAtLevel;Na nivou {{INT}}:
+infoTab_genericEffect;{{INT}}
+infoTab_currentProduction;Trenutna proizvodnja:
+infoTab_productionAtLevel;Proizvodnja na stepenu {{INT}}:
+infoTab_effectPerHour;{{INT}} na sat
+networkIssues;Izgubljena veza sa serverom igre.
+cantLoadServerList;Nije moguće učitati listu servera zbog problema s mrežom. Molimo Vas da provjerite da li je uređaj povezan s internetom i pokušajte ponovo.
+barracks_TrainTroops_Action;Obučite vojsku
+barracks_ViewTrainingsList;Pogledajte trening listu
+barracks_unitNeedsToBeResearched;Jedinica se prvo treba istražiti u
+barracks_requiresLabel; Potrebno: 
+barracks_trainingCosts;Troškovi obuke trupa
+barracks_troopsInTraining;Vojska u obuci
+training_started;Trening je uspješno započeo!
+targetSelection_relationLabel;Status:
+targetSelection_selectedVillage;Odabrano selo
+targetSelection_noSelectedVillage;Nema odabranog sela
+targetSelection_ownVillages;Vlastita sela
+targetSelection_relation0;Neutralno
+targetSelection_relation1;Prijateljski
+targetSelection_relation2;Vlastiti savez
+targetSelection_relation3;Vlastito selo
+targetSelection_alreadyThere_troops;Vaše jedinice su već tu.
+targetSelection_alreadyThere_merchants;Vaši trgovci su već tu.
+rallyPoint_button_confirmTarget;Potvrdi cilj
+rallyPoint_button_prepareTroops;Pripremite jedinice
+rallyPoint_button_updateWave;Ažuriranje valova
+rallyPoint_button_copyWave;Dupliciraj val
+rallyPoint_button_newWave;Dodajte val
+rallyPoint_sendTroops_chooseDestination;Pošalji jedinice - Odaberite odredište
+rallyPoint_sendTroops_sendTroopAction_1;Pošalji jedinice - Potvrdi
+rallyPoint_sendTroops_sendTroopAction_3;Pošalji jedinice - Potvrdi
+rallyPoint_sendTroops_sendTroopAction_4;Pošalji jedinice - Potvrdi
+rallyPoint_sendTroops_sendTroopAction_5;Pošalji jedinice - Potvrdi
+rallyPoint_sendTroops_sendTroopAction_72;Proslijedi jedinice - Potvrdi
+rallyPoint_sendTroops_sendTroopAction_9;Povuci jedinice - Potvrdi
+rallyPoint_sendTroops_sendTroopAction_10;Naselite novo selo
+rallyPoint_sendTroops_sendTroopButton_1;Pošalji jedinice
+rallyPoint_sendTroops_sendTroopButton_3;Pošalji jedinice
+rallyPoint_sendTroops_sendTroopButton_4;Pošalji jedinice
+rallyPoint_sendTroops_sendTroopButton_5;Pošalji jedinice
+rallyPoint_sendTroops_sendTroopButton_72;Prosljeđivanje vojske
+rallyPoint_sendTroops_sendTroopButton_9;Vrati vojsku nazad
+rallyPoint_sendTroops_sendTroopButton_10;Osnujte novo selo
+rallyPoint_sendTroops_coordinateX;Koordinata<b>X</b> :
+rallyPoint_sendTroops_coordinateY;<b>Y</b> koordinate:
+rallyPoint_sendTroops_selectOnMap;Ili odaberite lokaciju na mapi:
+rallyPoint_sendTroops_arrivalTime;<b>{{hoursLeft|Duration}}</b> u <b>{{hoursLeft|TimeCountUp}}</b>
+rallyPoint_sendTroops_catapultTargetPopup;Odaberi metu katapulta
+rallyPoint_sendTroops_catapultTarget_category_1;Infrastrukturne zgrade
+rallyPoint_sendTroops_catapultTarget_category_2;Vojne zgrade
+rallyPoint_sendTroops_catapultTarget_category_3;Resursne zgrade
+rallyPoint_sendTroops_catapultTarget_random;Nasumično
+rallyPoint_sendTroops_catapultTarget_noBuilding;Odaberite građevinu
+rallyPoint_sendTroops_catapultTarget_recentTargets;Najnovije odabrano:
+rallyPoint_sendTroops_changeHeroHomeVillage;Promijeniti matično selo heroja
+rallyPoint_sendTroops_attackNoSelection;Odaberite vrstu napada
+rallyPoint_sendTroops_movementType_5;Pojačanja
+rallyPoint_sendTroops_movementType_3;Napad
+rallyPoint_sendTroops_movementType_4;Pljačka
+rallyPoint_sendTroops_attackForwarding;Prosljeđivanje
+rallyPoint_sendTroops_noTroopsSelected;- Jedinice nisu odabrane -
+rallyPoint_sendTroops_noTroopsAvailable;Ne mogu slati jedinice. U ovom selu nema dostupnih jedinica.
+rallyPoint_sendTroops_forwardingVillageError;Jedinice se mogu proslijediti samo članovima saveza ili vlastitim selima.
+rallyPoint_sendTroops_forwardingDestination;Proslijedi vojsku - Odaberite cilj
+rallyPoint_sendTroops_WaveRemoved;Val uklonjen
+rallyPoint_sendTroops_maxWaves;Dostignut je maksimalan broj valova
+rallyPoint_sendTroops_notEnoughTroopsToCopy;Nema dovoljno jedinica za dupliciranje vala.
+rallyPoint_sendTroops_troopsSent;Vojska je poslana
+rallyPoint_sendTroops_toOverview;Na pregled
+rallyPoint_sendTroops_backToVillage;Nazad u selo
+rallyPoint_sendTroops_mission;Misija:
+rallyPoint_troopsOverview_1;Nadolazeći napadi i pljačke: 
+rallyPoint_troopsOverview_2;Odlazeći napadi / pljačke
+rallyPoint_troopsOverview_3;Vojska u povratku
+rallyPoint_troopsOverview_4;Vojska u selu i njegovim oazama
+rallyPoint_troopsOverview_5;Savezna vojska u selu
+rallyPoint_troopsOverview_6;Vlastita vojska u drugim selima ili oazama
+rallyPoint_troopsOverview_7;Dolazeća pojačanja
+rallyPoint_troopsOverview_8;Odlazna pojačanja
+rallyPoint_troopsOverview_9;Odlazna pojačanja
+rallyPoint_troopsOverview;Pregled jedinica
+rallyPoint_troopsOverview_consumption;Održavanje: {{cropConsumption|ShortenNumber|10000}}  {{iconName|Sprite}} na sat
+rallyPoint_troopsOverview_arrivalTime;Dolazak za: <b>{{Duration|Countdown}}</b> u <b>{{date|Time}}</b>  
+rallyPoint_troopsOverview_incomingMission_3;Nadolazeći napadi od:  
+rallyPoint_troopsOverview_incomingMission_4;nadolazeći pljačkaški pohodi od: 
+rallyPoint_troopsOverview_outgoingMission_3;Napadi 
+rallyPoint_troopsOverview_outgoingMission_4;Pljačke 
+rallyPoint_troopsOverview_outgoingMission_5;Pojačanja 
+rallyPoint_troopsOverview_outgoingMission_50;Avantura do 
+rallyPoint_troopsOverview_outgoingMission_72;Vojska proslijeđena do 
+rallyPoint_troopsOverview_outgoingMission_10;Osnivanje novog sela 
+rallyPoint_troopsOverview_outgoingMission_40;Vojska bježi u sklonište u šumi.
+rallyPoint_troopsOverview_returningMission;Povratak iz: 
+rallyPoint_troopsOverview_ownTroops_1;Vlastita vojska u 
+rallyPoint_troopsOverview_ownTroops_2;Vlastita vojska u 
+rallyPoint_troopsOverview_ownTroops_3;Vlastita vojska u 
+rallyPoint_troopsOverview_ownTroops_4;<b>Priroda</b> u 
+rallyPoint_troopsOverview_ownTroops_5;Vlastita vojska u 
+rallyPoint_troopsOverview_ownTroops_6;Vlastita vojska u 
+rallyPoint_troopsOverview_ownTroops_7;Vlastita vojska u 
+rallyPoint_troopsOverview_foreignTroops_2;Pojačanje od  
+rallyPoint_troopsOverview_foreignTroops_4;Zarobljena vojska od  
+rallyPoint_troopsOverview_ownTroopsInOther_2;Vlastita vojska u pojačanju kod 
+rallyPoint_troopsOverview_ownTroopsInOther_4;Zarobljena vojska kod 
+rallyPoint_troopsOverview_origin;Porijeklo: 
+rallyPoint_troopsOverview_reinforcement;Pojačanje od  
+rallyPoint_troopsOverview_killed;Vojske umrlo!
+rallyPoint_troopsOverview_released;Vojnici pušteni!
+rallyPoint_troopsOverview_forwardedTroopsButton;Proslijeđene jedinice
+rallyPoint_troopsOverview_returnToOverview;Povratak na pregled
+rallyPoint_troopsOverview_incomingAttacks;<color={{colorValue|TextColor}}>{{incomings}}</color> dolazni
+rallyPoint_troopsOverview_amountIncoming;{{value}} dolazni
+rallyPoint_troopsOverview_amountOutgoing;{{value}} odlazni
+rallyPoint_troopsOverview_amountReturning;{{value}} vraćanje
+rallyPoint_troopsOverview_firstArrivalTime;Za {{timestamp|Countdown}} sat/sata/sati
+rallyPoint_troopsOverview_forwardTroops;Proslijediti
+rallyPoint_troopsOverview_MergeTroops;Pripojite u selo
+rallyPoint_troopsOverview_WithdrawTroops;Poslati nazad
+rallyPoint_troopsOverview_sort_1;Označeni pokreti prvo
+rallyPoint_troopsOverview_sort_2;Najraniji stižu prvi
+rallyPoint_troopsOverview_sort_3;Najkasniji stižu prvi
+rallyPoint_troopsOverview_sort_4;Prvo najnovije poslane jedinice
+rallyPoint_troopsOverview_sort_5;Prvo najkasnije poslane jedinice
+rallyPoint_troopsMerge_troopsToBeMerged;Trupe odabrane za spajanje:
+rallyPoint_troopsMerge_currentGold;Trenutno zlato:  {{iconName|Sprite}} {{currentGold}}
+rallyPoint_troopsMerge_goldLeft_0;Preostalo je {{remainingGold}}/{{maxAllowedGold}} zlata za spajanje trupa danas.
+rallyPoint_troopsMerge_goldLeft_1;Preostalo je {{remainingGold}}/{{maxAllowedGold}} zlata za spajanje trupa danas. I dalje možete spajati s resursima.
+rallyPoint_troopsMerge_troopsMergedToast;Vojske su se spojile!
+rallyPoint_raidList_beingRaided;{{current}}/{{total}}Opljačkano
+rallyPoint_infoTab_EvasionShortDescription;Aktivirati izmicanje vojske iz glavnog grada.
+rallyPoint_farmList_createNewTitle;Napraviti novu listu
+rallyPoint_farmList_editTitle;Izmeni listu
+rallyPoint_farmList_listName;Naziv liste
+rallyPoint_farmList_selectDefaultTroops;Automatski odabir vojske
+rallyPoint_farmList_addTroopsButton;Dodaj jedinice
+rallyPoint_farmList_editTroopsButton;Urediti vojsku
+rallyPoint_farmList_setTroopsButton;Postavite jedinice
+rallyPoint_farmList_createListButton;Napravi listu
+rallyPoint_farmList_editListButton;Ažuriraj listu
+rallyPoint_farmList_editTroopsTitle;Uredi jedinice farm liste
+rallyPoint_farmList_deleteList;Obrišite listu
+rallyPoint_selectTroops;Odaberi vojsku
+rallyPoint_farmList_listCreated;Lista je kreirana
+rallyPoint_farmList_exitList;Otkaži listu
+rallyPoint_farmList_startAll;Započni sve mete
+rallyPoint_farmList_startAllLists;Započni sve
+rallyPoint_farmList_startSelected;Započni odabrano
+rallyPoint_farmList_noTarget;- Mete nisu odabrane -
+rallyPoint_farmList_noTargetExist;Nema ciljeva na ovoj listi
+rallyPoint_farmList_selectedAmount;{{amount}} odabrano:
+rallyPoint_farmList_listUpdated;Lista ažurirana
+rallyPoint_farmList_listDeleted;Lista izbrisana
+rallyPoint_farmList_editWarning;- Brisanjem liste će se izbrisati svi ciljevi na ovoj listi\n- Uređivanje jedinica će uticati samo na buduće jedinice koje su unaprijed određene.
+rallyPoint_farmList_sortingFailed;Sortiranje nije uspjelo! Molimo pokušajte ponovo!
+rallyPoint_farmList_notStartedPopupTitle;Pljačke nisu započete
+rallyPoint_farmList_notStartedPopupElement;<b>{{total}}</b> zbog {{message}}
+rallyPoint_farmList_NotStartedPopupButtonGoTo;Idi na farm listu
+rallyPoint_farmList_AddTargetTitle;Dodaj metu
+rallyPoint_farmList_changeTroops;Promjena jedinica
+rallyPoint_farmList_targetAdded;Cilj je dodan
+rallyPoint_farmList_targetAlreadyOnList;Cilj je već na ovoj listi farmi, molimo odaberite drugu farm listu ili kreirajte novu.
+rallyPoint_farmList_choose;Odaberite farm listu
+rallyPoint_farmList_notYetRaided;Još nije opljačkano
+rallyPoint_farmList_EditRaids;Uredi cilj[raidsAmount>1:eve]
+rallyPoint_farmList_DeleteRaidsPlayerQuestion;Jeste li sigurni da želite izbrisati [raidsAmount=1:ovaj cilj][raidsAmount>1:ove ciljeve]?
+rallyPoint_farmList_ChangeRaidList;Promijeni farm listu
+rallyPoint_farmList_ChangeTarget;Promijeni cilj
+rallyPoint_farmList_ChangeTroops;Promjeni jedinice
+rallyPoint_farmList_DeactivateTarget;Uredi cilj[raidsAmount>1:eve]
+rallyPoint_farmList_MultiEditWarning;Uređujete više ciljeva. Izvršene promjene će uticati na sve odabrane ciljeve
+rallyPoint_farmList_UpdateRaids;Uredi cilj[raidsAmount>1:eve]
+rallyPoint_farmList_filterShowTroopsTitle;Prikaži jedinice
+rallyPoint_farmList_filterShowTroopsDescription;Prikazuje odabrane jedinice po meti
+rallyPoint_farmList_filterShowPopulationTitle;Prikaži populaciju mete
+rallyPoint_farmList_filterShowPopulationDescription;Prikazuje broj stanovnika ciljanog sela
+rallyPoint_farmList_filterShowDistanceTitle;Prikaži udaljenost
+rallyPoint_farmList_filterShowDistanceDescription;Prikazuje udaljenost mete do vašeg sela
+rallyPoint_farmList_filterShowLastRaidTitle;Prikaži informacije o posljednjem napadu
+rallyPoint_farmList_filterShowLastRaidDescription;Prikazuje informacije o posljednjem napadu odabrane mete
+rallyPoint_farmList_filterShowBountyTitle;Prikaži nagradu i resurse
+rallyPoint_farmList_filterShowBountyDescription;Prikazuje nagradu i dobijene resurse
+marketplace_createOffer;Napravi ponudu
+marketplace_myOffers_title;Moje ponude
+marketplace_myOffers_merchants;Trgovci: {{count}}
+marketplace_myOffers_alliance_True;Savez: Da
+marketplace_myOffers_alliance_False;-
+marketplace_myOffers_interval;{{amount}} sati
+marketplace_myOffers_offerDeleted;Ponuda je izbrisana
+marketplace_merchantsOverview_arrival;{{duration}} sati Dolazak u {{arrivalTime}}
+marketplace_merchantsOverview_incomingMerchants;Dolazne dostave: {{count}}
+marketplace_merchantsOverview_outgoingMerchants;Odlazne dostave: {{count}}
+marketplace_merchantsOverview_noIncomingMerchants;- Nema dolaznih trgovaca -
+marketplace_merchantsOverview_noOutgoingMerchants;- Nema odlaznih trgovaca -
+marketplace_merchantsOverview_IncomingCat; Dolazni
+marketplace_merchantsOverview_outgoingCat; Odlazni
+marketplace_merchantsOverview_capacity;Kapacitet: {{capacity}}
+marketplace_merchantsOverview_merchantsOverview;Pregled trgovaca
+marketplace_merchantsOverview_ArrivingSoonest;Najraniji dolasci
+marketplace_merchantsOverview_ArrivingLatest;Najkasniji dolasci
+marketplace_merchantsOverview_ShortestDistance;Najkraća udaljenost
+marketplace_merchantsOverview_LongestDistance;Najduža udaljenost
+marketplace_merchantsOverview_transportTo;Transport u <b>{{Village}}</b> od <b>{{Player}}</b>
+marketplace_merchantsOverview_transportFrom;Transport iz <b>{{Village}}</b> od <b>{{Player}}</b>
+marketplace_merchantsOverview_returningFrom;Povratak iz: <b>{{Village}}</b> od <b>{{Player}}</b>
+academy_research_viewResearchList;Istraživanje u toku
+academy_research_allUnitsResearched;Sve jedinice su istražene.
+academy_researchListPopup_title;Vojska koja se istražuje
+academy_researchListPopup_remainingTime;{{timeLeft}} lijevo. Spremno u {{readyAt}}
+academy_researchListPopup_constructImmediately;Odmah završiti gradnju
+research_started;Istraživanje je uspješno započelo!
+research_timeLeft;{{TIME|Countdown}} lijevo
+townHall_celebration_ongoingCelebration;U toku
+topBar_perHourLabel;/h:
+topBar_maxLabel;Maksimalno:
+topBar_resourceFull;Puno
+leftPanel_infoBox;Informacije
+villagePanel_playerNameTitle;Sela u vlasništvu {{playerName}}
+villagePanel_toStatistics;Na statistiku sela
+villagePanel_culturePointsNeeded;Kulturni bodovi potrebni za sljedeće selo
+mapCell_type;{{x}}{{y}}
+mapCell_type_village;{{villageName}}
+mapCell_type_1;Lokalno
+mapCell_type_2;Dolina
+mapCell_type_3;Slobodna oaza
+mapCell_type_4;Osvojena oaza
+mapCell_type_5;Divljina
+mapCell_Owner;Vlasnik
+mapCell_type_valley;Dolina
+mapCell_Wilderness;Na ovoj lokaciji nema ničega zanimljivog.
+mapCell_Distance;{{distance|Round|1}} Polja
+mapCell_locationInfo;Informacije o lokaciji
+mapCell_surroundings;Okruženje
+mapCell_actions_editFarmlist;Uredi farm listu
+mapCell_actions_addFarmlist;Dodaj na farm listu
+mapCell_actions_raidOasis;Pljačkaj oaze
+mapCell_showOnMap;Pokazati na karti
+mapCell_noReports;- Nema dostupnih informacija za ovu lokaciju -
+berichte.region_;{{PLAYERACTIVE}}{{PLAYERPASSIVE}}{{VILLAGE}}{{NAME1}}{{NAME2}}{{ALLY1}}{{ALLY2}}{{NAME}}
+mapCell_goToOwnVillage;Idi u vlastito selo
+constructionQueue_timeLeftToFinish;{{timestamp|Countdown}} lijevo. Spremno u {{timestamp|Time}}
+constructionQueue_timeUntilStart;Počinje u {{timestamp|Countdown}}
+constructionQueue_MasterBuilderTitle;Red glavnog graditelja (troškovi {{masterBuilderCost|Sprite}} {{masterBuilderCost}} na početku gradnje)
+constructionQueue_Constructing;Izgraditi građevinu
+constructionImmediatelyPopup_topText;Sljedeći zadaci će biti odmah završeni:
+constructionImmediatelyPopup_title;Završi odmah
+newBuildingConstructionDetail_dateTimeEnoughResources;Dovoljno resursa na dan {{date|Date}} u {{time|Time}}
+newBuildingConstruction_noBuildingsAvailable;Trenutno ne možete graditi nijednu novu građevinu.
+goldclubpopup_currentGold;Trenutno zlato:  {{iconName|Sprite}} <color={{colorValue|TextColor}}>{{currentGold}}</color>
+goldclubpopup_activated_toastMessage;Zlatni klub aktiviran!
+loginPage_version;Verzija {{currentVersion}}
+loginPage_loginBlocked;Prijava blokirana
+loginPage_loginBlocked_fails;Previše pogrešnih pokušaja prilikom prijave
+loginPage_loginBlocked_message;Vaš račun je blokiran zbog prevelikog broja neuspjelih pokušaja prijave.
+loginPage_loginBlocked_resolve;Da biste otključali svoj račun, prijavite se putem preglednika na
+serverSelection_selectRegion;Odaberite regiju
+serverSelection_selectGameWorld;Odaberite server
+serverSelection_0;Međunarodni
+serverSelection_1;Arapski
+serverSelection_2;Azija
+serverSelection_3;Evropa
+serverSelection_4;Amerika
+serverSelection_99;Razvojni programer
+serverSelection_mapSize;Veličina mape:
+serverSelection_mapSize_0;Mala
+serverSelection_mapSize_1;Velika
+serverSelection_artifacts;Artefakti:
+serverSelection_constructionPlans;Građevinski planovi:
+serverSelection_changeGameWorld;Promijenite server
+serverSelection_username;Korisničko ime
+serverSelection_password;Šifra:
+serverSelection_loginButton;Prijavite se i igrajte
+serverSelection_forgotPassword;Zaboravio/la sam šifru
+serverSelection_noAccount;Još uvijek nemate račun?
+serverSelection_loginError;Korisničko ime ili šifra nisu tačni
+serverSelection_graphQlError;Greška prilikom preuzimanja podataka sa servera
+serverSelection_tokenRefreshError;Greška prilikom prijave na posljednji korišteni server: molimo vas da se ponovo prijavite.
+serverSelection_stayLoggedIn;Ostanite prijavljeni na server
+troopsInfo_title;Jedinice u {{villageName}}
+unitInfo_velocity;<b>{{fields}}</b> polja po satu
+unitInfo_resourceCarriage;<b>{{INT}}</b> resursa
+unitInfo_researchPrerequisites;Preduslovi za istraživanje:
+unitInfo_trainingPrerequisites;Preduslovi za obuku:
+unitInfo_canCarry;Može nositi:
+exchangeResources_currentTitle;Novi iznos
+exchangeResources_lockAmount;Zaključaj iznos
+exchangeResources_changeTitle;Promjena
+exchangeResources_restTitle;Ostalo
+exchangeResources_buildingPossible_True;Nadogradnja je moguća
+exchangeResources_buildingPossible_False;Nadogradnja nije moguća
+exchangeResources_mergePossible_True;Spajanje moguće
+exchangeResources_mergePossible_False;Spajanje nije moguće
+exchangeResources_researchPossible_True;Moguće istraživanje
+exchangeResources_researchPossible_False;Istraživanje nije moguće
+exchangeResources_celebrationPossible_True;Moguće slavlje
+exchangeResources_celebrationPossible_False;Slavlje nije moguće
+exchangeResources_reviveHero_True;Oživljavanje heroja moguće
+exchangeResources_reviveHero_False;Oživljavanje heroja nije moguće
+exchangeResources_currentlyAvailable;Trenutno dostupno: <b>{{amount}}</b>
+exchangeResources_maximumAvailable;Maksimalno dostupno: <b>{{amount}}</b>
+exchangeResources_distributeEvenly;Raspodijeliti preostale resurse
+exchangeResources_distributeOnResource;Ili prvo odredite prioritet preostalih resursa za:
+exchangeResources_distributeAuto;Automatska raspodjela
+exchangeResources_distributeManual;Ručna raspodjela
+exchangeResources_availableTroops;Dostupne jedinice: {{amount}}
+buildingActivities_title;Građevinske aktivnosti
+buildingActivities_idle;U stanju mirovanja
+buildingActivities_type;Tip
+buildingActivities_building_13;Poboljšanja:
+buildingActivities_building_16;Lista farmi
+buildingActivities_building_17;Trgovci
+buildingActivities_building_19;Vojska u obuci
+buildingActivities_building_20;Konjica na obuci
+buildingActivities_building_29;Vojska u obuci
+buildingActivities_building_30;Konjica na obuci
+buildingActivities_building_21;Vojska u obuci
+buildingActivities_building_22;Istraživanje
+buildingActivities_building_24;Proslave
+buildingActivities_building_46;Liječenje jedinica
+buildingActivities_buildingAction_;{{amount}}{{max}}
+buildingActivities_buildingAction_16;{{amount}} pljački u toku
+buildingActivities_buildingAction_17;{{amount}}/{{max}} dostupno
+mainMenu_title;Glavni meni
+mainMenu_quests;Zadaci
+playerDetails_infoTab;Informacije o igraču
+playerDetails_villageTabTitle;{{villages}} sela sa {{oases}} oaze
+playerDetails_SortBy_1;Stanovnika
+playerDetails_SortBy_2;Pobjednički bodovi
+playerDetails_SortBy_3;Ime sela
+playerDetails_SortBy_4;Naziv regije
+player_gender_DontSpecify;Nemoj određivati
+player_gender_Other;Ostalo
+player_gender0;Muško
+player_gender1;Žensko
+player_gender2;Ostalo
+player_gender3;Nemoj određivati
+playerDetails_NotesFor;Bilješke za {{playerName}}
+playerDetails_NoDescription_Others;- Ovaj igrač nije dodao opis -
+playerDetails_NoDescription_Own;- Još nije dodat opis -
+playerDetails_editLanguages;Uredi jezike
+playerDetails_searchLanguage;Jezik pretrage
+goldShopPlaceholder_title;Prodavnica uskoro stiže!
+goldShopPlaceholder_description;Zlatarna još nije implementirana u mobilnu aplikaciju.<br><br> Za kupovinu zlata, molimo vas da se prijavite na svoj račun putem pretraživača.
+goldShop_title;Zlatarna
+goldShop_advantage_5;TRAVIAN Plus
+goldShop_advantage_4;Drvo
+goldShop_advantage_1;Glina
+goldShop_advantage_2;Željezo
+goldShop_advantage_3;Žito
+goldShop_feature_activated;Funkcija aktivirana!
+goldShop_purchaseFailed;Kupovina nije uspjela!
+goldShop_purchaseSuccess;Kupovina uspješna.
+goldShop_transactionInProgress;Transakcija u toku.\nMolimo pričekajte.
+goldShop_transactionFailed;Nešto nije uredu\nPokušajte ponovo kasnije.
+goldShop_transactionTimeout;Poštovani igraču, vaša uplata je prekoračila vremenski rok i moguće je da nije ispravno obrađena. Molimo kontaktirajte našu <style="link"><link="https://support.travian.com/support/tickets/new">podršku za plaćanje</link></style> ako naiđete na bilo kakav problem.
+market_sendResources_requiredMerchants;Potrebni trgovci:
+market_sendResources_capacityPerMerchant;Kapacitet po trgovcu
+market_sendResources_amountRepeats;Broj ponavljanja:
+market_sendResources_confirmResources;Potvrdite resurse
+market_sendResources_amountWithX;x {{amount}}
+market_sendResources_sent;Resursi poslani!
+market_offer_maxDuration;Maksimalan broj sati transporta resursa
+market_offer_confirm;Potvrdi ponudu
+market_offers_title;Ponude
+market_capacity;Kapacitet: {{capacity}}
+market_offers_offering;Nudim:
+market_offers_searching;Tražim:
+market_offers_offered;Vi šaljete
+market_offers_wanted;Vi primate
+market_offers_accepted;Ponuda prihvaćena! Resursi su na putu, a trgovci su otpremljeni.
+market_offers_ownAllianceOnly;Samo igrači iz vlastitog saveza
+market_ratio_11;1:1
+market_ratio_1X;1 : X
+market_tradeRoutes_to;Za:
+market_tradeRoutes_entryAmount;<b>{{amount}}</b> unosi
+market_tradeRoutes_noRoutes;- Nema kreiranih trgovačkih ruta -
+market_tradeRoutes_travelTime;Vrijeme putovanja: {{time|Duration}} sati
+market_tradeRoutes_activeRatio;{{active}}/{{total}} aktivno
+market_tradeRoutes_active;Aktivno
+market_tradeRoutes_paused;Pauzirano
+market_tradeRoutes_updated;Trgovačke rute su ažurirane
+market_tradeRoutes_deleted;Trgovačke rute izbrisane
+market_tradeRoutes_returnAt;povratak na {{time|Time}}
+market_tradeRoutes_merchantsAndRepeat;{{merchants}} trgovaca, {{repeats}}X
+market_tradeRoutes_filterOptions;Opcije filtera
+market_tradeRoutes_showMerchants;Prikaži trgovce
+market_tradeRoutes_showMerchantsText;Prikazuje koliko se trgovaca koristi
+market_tradeRoutes_showResources;Prikaži resurse
+market_tradeRoutes_showResourcesText;Prikazuje količinu resursa koji se prevoze
+market_tradeRoutes_afterInputFieldsSuffix;Sati
+market_tradeRoutes_interval;{{INT}} sati
+market_tradeRoutes_confirmTarget;Potvrdi cilj
+market_tradeRoutes_arrivalTime;{{duration|Duration}} u {{arrivalTime|Time}}
+market_tradeRoutes_created;Trgovačka rute kreirana.
+market_tradeRoutes_edit;Uredi [routeAmount>1:trgovačke rute][routeAmount=1:trgovačku rutu]
+market_tradeRoutes_update;Uredi [routeAmount>1:trgovačke rute][routeAmount=1:trgovačku rutu]
+market_tradeRoutes_multiEditWarning;Uređujete više ruta. Napravljene promjene će uticati na sve {{routeAmount}} rute.
+market_tradeRoutes_editResourcesTitle;Promjeni resurse
+market_tradeRoutes_editResourcesButton;Uredi resurse
+market_tradeRoutes_setResourcesButton;Postavi resurse
+market_tradeRoutes_updateResourcesButton;Ažuriraj resurse
+market_tradeRoutes_pause;Pauziraj [routeAmount>1:trgovačke rute][routeAmount=1:trgovačku rutu]
+market_tradeRoutes_pauseDescription;Trgovačka ruta će biti premještena na pauziranu listu, ali će ostati u vašoj pijaci.
+market_tradeRoutes_delete;Izbriši [routeAmount>1:trgovačke rute][routeAmount=1:trgovačku rutu]
+market_tradeRoutes_deleteConfirmQuestion;Jeste li sigurni da želite izbrisati [routeAmount=1:ovu][routeAmount>1:ove] [routeAmount>1:trgovačke rute][routeAmount=1:trgovačku rutu]?
+market_tradeRoutes_invalidTarget;Trgovačke rute mogu se slati samo u sela svjetskih čuda i sela s artefaktima ili planovima izgradnje svjetskih čuda članova saveza ili konfederacije.
+hero.status;{{NAME}}
+hero_adventures_selectVillage;Odaberite selo
+hero_adventures_explore;Istražite
+hero_adventures_sendHero;Pošaljite heroja
+hero_adventures_sent;Avantura je započela
+hero_status_reviveWithBucket;Koristite za oživljavanje heroja bez čekanja.
+hero_status_reviveWithRes;Koristite resurse za oživljavanje heroja.
+hero_inventory_consumablePopupTitle;Upotrebljiv predmet
+hero_resourceTransferPopup_title;Transfer resursa
+hero_resourceTransferPopup_ReadyForTransfer;Spremno za transfer
+hero_resourceTransferPopup_transferSelected;Prenesi odabrano
+hero_resourceTransferPopup_transferMax;Maksimalni transfer
+hero_resourceTransferPopup_storageFull;Skladište puno.  Ne možete prenijeti daljnje resurse.
+hero_inventory_transferToCurrentVillage;Preneseno na trenutno aktivno selo: <b>{{VILLAGE}}</b>
+hero.itemDescriptionV2Details;{{PERCENTAGE}}{{EXPERIENCE}}{{RAISE}}{{LIMIT}}{{MAX}}{{TIME}}
+hero.itemDescriptionV2;{{VALUE}}
+hero_consumablePopup_currentEquippedItems;Količina trenutno opremljenih predmeta:
+hero_consumablePopup_itemsLeftInInventory;Količina preostalih predmeta u inventaru:
+hero.itemTypeV2_inventory;Potrošni materijal
+hero.cooldownWithTime;Ima {{COOLDOWN}}sati hlađenja koje se završava u {{DATE|DateTime}}.
+reports_overview_title;{{COUNT}} izvještaja
+reports_overview_title_selected;Odabrano {{SELECTED}}/ {{COUNT}} izvještaja
+reports_overview_title_archived;Arhivirani izvještaji
+reports_overview_archived_noReports;- Nema dostupnih arhiviranih izvještaja -
+reports_filters_title;Odaberite filter
+reports_filters_allReports;Svi izvještaji
+reports_filters_applyButton;Primijeni {{COUNT}} filtere
+reports_filters_noFilter;Nije odabran nijedan filter
+reports_detail_title;Detalji izvještaja
+berichte.;{{NAME1}}{{NAME2}}{{VILLAGE_NAME}}{{X}}{{Y}}{{COORDS}}{{NAME}}
+reports_player_from_village;[{{allianceId|AllianceLink}}] {{playerId|PlayerLink}} iz sela {{villageId|VillageLink}}
+reports_troops_lost;Izgubljene jedinice:
+reports_troops_hospitalized;Hospitalizirano:
+reports_xp_gained;{{amount}} Osvojenog iskustva
+reports_health_change;-{{change}}% zdravlja
+reports_hero_died;Vaš heroj je poginuo tokom avanture
+reports_scouted_building;{{buildingType|TranslateSuffixFor|allgemein.gid}} stepen <b>{{level}}</b>
+reports_refreshed;Izvještaji osvježeni!
+reports_deleteReportPopup_title;Obrisati izvještaj(e)
+reports_deleteReportPopup_warningTitle;Jeste li sigurni da želite izbrisati {{X}} izvještaj(e)?
+reports_deleteReportPopup_warningTitleAll;Jeste li sigurni da želite izbrisati sve izvještaje?
+reports_deleteReportPopup_warningDescription;Nakon što izbrišete izvještaj, on će biti trajno izbrisan. Nećete ga moći oporaviti.
+reports_deleted;Izvještaj izbrisan!
+reports_markedUnread;Izvještaj je označen kao nepročitan!
+reports_archived;Izvještaj arhiviran!
+reports_deleted_all;Svi izvještaji su izbrisani!
+reports_deleted_selected;{{X}} izvještaj(a) izbrisan!
+reports_markedRead_all;Svi izvještaji označeni kao pročitani!
+reports_markedRead_selected;{{X}} izvještaj(i) označeni kao pročitani!
+alliance_nameAndTagPair;{{allianceName}} | {{allianceTag}}
+alliance_editAllianceName;Uredi naziv saveza
+alliance_name;Naziv saveza
+alliance_nameError;Naziv saveza ne može biti prazan
+alliance_tag;Oznaka alijanse
+alliance_tagError;Oznaka saveza ne može biti prazna
+alliance_profileTab_inviteNewPlayer;Pozovite igrača
+alliance_profileTab_showInvitedPlayers;Prikaži pozvane igrače
+alliance_invitedPopup_title;Pozvani igrači
+alliance_invitedPopup_invitationRemoved;Pozivnica uklonjena!
+alliance_invitePlayerPopup_title;Pozvati igrača
+alliance_invitePlayerPopup_noPlayerFound;Nije pronađen nijedan igrač
+alliance_invitePlayerPopup_playerInvited;Igrač pozvan!
+alliance_editMemberPopup_title;Uredi člana
+alliance_editMemberPopup_customMessage;Prilagođena poruka
+alliance_editMemberPopup_setRole;Postavi ulogu
+alliance_editMemberPopup_kickPlayerFromAlliance;Izbacite igrača iz saveza
+alliance_editMemberPopup_cantChangePermission;Nije moguće promijeniti trenutnu dozvolu: pogledajte upozorenje.
+alliance_kickPlayerPopup_areYouSure;Jesi li siguran/sigurna da želiš izbaciti {{Player}} iz saveza?
+alliance_kickPlayerPopup_playerKicked;Igrač izbačen!
+alliance_editAllianceDescription;Urediti opis saveza
+alliance_topColumn;Gornja kolona
+alliance_bottomColumn;Donja kolona
+alliance_bbCodeAdded;BB kod je dodan
+alliance_generalInformation;Opšti podaci
+alliance_confederacy_tab;Konfederacija
+alliance_diplomacy;Diplomatija
+alliance_diplomacy_tab1;NAP / Rat
+alliance_diplomacy_send_new;Pošalji novo
+alliance_diplomacy_openRequests;Otvoreni zahtjevi
+alliance_diplomacy_otherOffered;{{allianceId|AllianceLink}} ponudio/la {{type|TranslateSuffixFor|alliance_diplomacy_type}}
+alliance_diplomacy_youOffered;Ponudili ste {{type|TranslateSuffixFor|alliance_diplomacy_type}} sa {{allianceId|AllianceLink}}
+alliance_diplomacy_offerDeclare;Ponuda / izjava
+alliance_diplomacy_type;Tip
+alliance_diplomacy_type1;savez
+alliance_diplomacy_type2;NNP
+alliance_diplomacy_type3;rat
+alliance_diplomacy_type4;konfederacijski pakt
+alliance_diplomacy_typekick;izbacivanje iz konfederacije
+alliance_diplomacy_deleteText_;{{type|TranslateSuffixFor|alliance_diplomacy_type}}{{alliance|AllianceLink}}
+alliance_diplomacy_deleteTitle_RemoveRequest;Ukloni zahtjev
+alliance_diplomacy_deleteText_RemoveRequest;Jeste li sigurni da želite ukloniti ponudu za {{type|TranslateSuffixFor|alliance_diplomacy_type}} sa {{alliance|AllianceLink}}?
+alliance_diplomacy_deleteTitle_TerminateExisting;Završiti
+alliance_diplomacy_deleteText_TerminateExisting;Jeste li sigurni da želite završiti {{type|TranslateSuffixFor|alliance_diplomacy_type}} sa {{alliance|AllianceLink}}?
+alliance_diplomacy_deleteTitle_ConfederacyKickVote;Završiti
+alliance_diplomacy_deleteText_ConfederacyKickVote;Potrebna Vam je potvrda od ostalih članova konfederacije da izbacite {{subject|AllianceLink}}.\n\nDa li želite nastaviti i obavijestiti druge alijanse o svojoj odluci?
+alliance_diplomacy_deleteTitle_QuitConfederacy;Završiti
+alliance_diplomacy_deleteText_QuitConfederacy;Jeste li sigurni da želite raskinuti svoju konfederaciju sa sljedećim članovima?
+alliance_diplomacy_deleteTitle_RemoveConfederacyProposal;Ukloni zahtjev
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Kick;Jeste li sigurni da želite odbiti {{alliance|AllianceLink}} zahtjev za izbacivanje {{subject|AllianceLink}} iz konfederacije?
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Join;Jeste li sigurni da želite odbiti {{alliance|AllianceLink}} zahtjev za dopuštanje {{subject|AllianceLink}} da se pridruži konfederaciji?
+alliance_diplomacy_sent;Ponuda poslana
+alliance_diplomacy_accepted;Diplomatski odnos prihvaćen
+alliance_diplomacy_canceled;Diplomatski odnos odbijen
+alliance_diplomacy_declined;Zahtjev odbijen
+alliance_diplomacy_kickStarted;Zahtjev je poslan
+alliance_diplomacy_proposal_approved;Zahtjev odobren
+alliance_diplomacy_noContract;Vaš savez nema aktivnih ugovora s drugim savezima.
+alliance_diplomacy_noConfederacy;Vaš savez nije dio konfederacije.
+alliance_diplomacy_alreadyOpenOffer;Već postoji otvorena ponuda za ovaj savez.
+alliance_diplomacy_alreadyExistingContract;Već postoji ugovor sa ovim savezom.
+alliance_diplomacy_warInDeletion;Sačekajte da i drugi savez završi rat.
+alliance_union_leave;Napustiti konfederaciju
+alliance_union_add;Dodaj novi zahtjev
+allianz.diplomacy_with_type;{{NAME}}
+allianz.diplomacy_with_type4;Konfederacija sa {{NAME}}
+alliance_newsBbDescription;Promijenite tekst 'broj' da biste uredili broj vijesti
+alliance_LossesBBName;Gubici
+alliance_LossesBBDescription;Promijenite 'ime' da biste odabrali savez za poređenje
+alliance_NapBBName;Paktovi o nenapadanju
+alliance_WarsBBName;Ratovi
+alliance_addBBCode;Dodaj BB kod
+alliance_addMedal;Dodaj medalju
+alliance_assignToPosition;Dodijelite članove na pozicije i promijenite naziv saveza
+alliance_editPermissions;Uredi dozvole
+alliance_roleTitle;Naziv uloge:
+alliance_assignToPosition_onlyMemberError;Ti si jedini član ovog saveza. Dodjeljivanje članova na pozicije i promjena imena saveza ne mogu se odznačiti.
+alliance_noAllianceEvents;- Nema događaja saveza za prikaz -
+alliance_dailyContribution;Dnevne donacije
+alliance_contributionAmount;Donacije: <b>{{AMOUNT}}</b>
+alliance_resourcesContributed;{{current}}/{{max}} donirano resursa
+alliance_contributionResetIn;Reset je za: {{time|Countdown}}
+alliance_resUntilNext;Resursa do sljedećeg nivoa: {{resources|LongNumber}}
+alliance_bonusCurrentlyActivating;Aktivacija bonusa: {{resources|Countdown}}
+alliance_bonusMaxed;Bonus maksimiziran
+alliance_tripledContribution;Trostruka donacija!
+alliance_contributionStatistics;Statistika donacija
+alliance_contributionNone;- Trenutno nema osoba koje su donirale -
+auth_clientVerificationFailed;Nije moguće verificirati klijenta. Pokušajte ponovo.
+banned_seeMessage;Pogledajte poruku
+banned_acceptPunishment;Prihvati kaznu
+residence_settlement;Naselje
+palace_capital;Postavi ovo selo za moj glavni grad.
+palace_setAsCapital;Postavi kao glavni grad
+palace_enterPassword;Unesite šifru iz sigurnosnih razloga:
+embassy_GoToAlliance;Idi u savez
+embassy_Invitation;Savez {{AllianceId|AllianceLink}}, pozvan od {{playerId|PlayerLink}}
+embassy_VillagesInRange;Sela u planinskom lancu
+embassy_LeaveAllianceToJoin;Da biste se pridružili ovoj alijansi prvo morate napustiti Vašu sadašnju alijansu.
+embassy_ConfirmLeaveAlliance;Potvrdi i napusti savez
+embassy_InvitationAccepted;Pozivnica prihvaćena
+embassy_AllianceFounded;Savez uspješno osnovan
+embassy_LeftAlliance;Uspješno napušten savez
+embassy_acceptInvitationQuestion;Jeste li sigurni da se želite pridružiti {{allianceId|AllianceLink}}?
+embassy_acceptInvitationWarning;Nećete moći napustiti savez {{hours}} sati nakon pridruživanja.
+embassy_acceptInvite;Da, pridruži se savezu
+embassy_declineInvite;Ne, ukloni pozivnicu
+embassy_noAlliancesNearby;Nisu pronađeni savezi u obližnjem području.
+smithy_improveTo;Poboljšajte do nivoa {{level}}
+smithy_viewList;Pogledajte razvoj
+smithy_upgradeStarted;{{unitId|TranslateSuffixFor|truppen.tid}} poboljšanje je započeto
+smithy_researchFirst;Jedinica se prvo treba istražiti u akademiji.
+smithy_levelTooLow;Nivo kovačnice je prenizak, molimo vas da nadogradite kovačnicu
+allBuildings_10;Sva skladišta:
+allBuildings_11;Sve žitnice:
+allBuildings_23;Sva skloništa:
+allBuildings_38;Sva skladišta:
+allBuildings_39;Sve žitnice:
+currentBuildingValue;Trenutno {{type|TranslateSuffixFor|allgemein.gid}}:
+ad_successful;Oglas je uspješno odgledan!
+externalLink_title;Spoljni link
+externalLink_description1;<b>Upozorenje!</b><br>Upravo ćete otvoriti sljedeći eksterni link:
+externalLink_description2;Travian Games ne može provjeriti niti verificirati ovaj link.
+externalLink_description3;Nastavite na vlastitu odgovornost.
+externalLink_description4;Jeste li sigurni da želite nastaviti?
+externalLink_continue;Nastavite s povezivanjem
+search_village;Pretraga sela
+search_select_village;Odaberite selo
+search_three_characters;Unesite bar {{amount}} karaktera
+search_no_result;Nije pronađen nijedan rezultat
+search_player;Pretraga igrača
+search_player_invite;Pozvati igrača
+search_select_player;Odaberite igrača
+search_select_player_invite;Pozovite igrača
+search_alliance;Pretraga saveza
+search_select_alliance;Odaberite savez
+gid27.arte_detail_;{{INT}}
+artefact_inventory_village;Selo:
+artefact_inventory_conquered;Osvojeno:
+artefact_inventory_active;Aktivno: aktivno u
+artefact_inventory_active_already;Aktivno: <b> Aktivirano </b>
+artefact_inventory_show_active_only;Prikaži samo moje aktivirane artefakte
+artefact_overview;Pregled artefakata
+artefact_tip_large;Veliki artefakti zahtijevaju nivo riznice <b>20</b> i utiču na cijeli vaš <b>avatar</b>
+artefact_tip_small;Mali artefakti zahtijevaju nivo riznice <b>10</b> i utiču samo na <b>selo</b>
+artefact_tip_nearby;Artefakti koji se nalaze u okolini {{villagenamelong|Bold}}
+artefact_small;Mali
+artefact_large;Veliki
+artefact_nearby;U blizini
+artefact_village;Selo
+artefact_button_former_owners;Pogledajte prethodne vlasnike
+artefact_already_active;Već aktivirano
+artefact_required_level_value;Riznica na <b> stepenu {{LEVEL}}</b>
+artefact_details;Detalji
+number_counter;{{NUMBER}}.
+tasks_villageTasks;Seoski zadaci
+tasks_nextHeroLevelBonus;Bonus za sljedeći nivo heroja = {{value}}%
+villageOverview_building_headline;Izgradnja
+villageOverview_building_slotIdle;Nema gradnje u toku
+villageOverview_resource_sorting1;Lista sela
+villageOverview_resource_sorting2;Najkraće trajanje žitnice
+villageOverview_resource_sorting3;Najduže trajanje žitnice
+villageOverview_resource_sorting4;Najkraće trajanje u skladištu
+villageOverview_resource_sorting5;Najduže trajanje u skladištu
+villageOverview_resource_sorting6;Negativna proizvodnja žita.
+villageOverview_troops_stationed;Jedinice trenutno u selu
+villageOverview_troops_sum;Ukupno vojske
+villageOverview_troops_tab_training;Obuka
+villageOverview_culture_slots;Seoski slotovi
+cancelPopup_Improvement;Otkazati poboljšanje
+cancelPopup_Research;Otkazati pretragu
+cancelPopup_Construction;Otkaži gradnju
+cancelPopup_text_;{{NAME}} {{LEVEL}}
+cancelPopup_text_Improvement;Želite li otkazati poboljšanje {{NAME}} na nivo {{LEVEL}}?
+cancelPopup_text_Research;Želite li otkazati istraživanje {{NAME}}?
+cancelPopup_text_Construction;Da li želite prekinuti izgradnju {{NAME}} na nivo{{LEVEL}}?
+cancelPopup_text_refund;Dobićete povrat {{INT}}% troškova poboljšanja;
+dailyQuests_timeRemaining;Preostalo vrijeme: {{time|Countdown}}
+dailyQuests_rewardOverview;Pogledajte pregled nagrada
+dailyQuests_claimRewards;Preuzmite nagrade
+dailyQuests_pointsEarned;Osvojeni bodovi: <b>{{current}}/{{max}}</b>
+dailyQuests_rewardDescription;Ovo su nagrade koje možete otključati ispunjavanjem današnjih dnevnih zadataka:
+dailyQuests_claimAction;Preuzmi
+dailyQuests_alreadyClaimed;Preuzeto
+dailyQuests_questDetailTitle;Informacije
+dailyQuests_quest_worth;Ovaj zadatak je vrijedan:
+dailyQuests_quest_worth_points;+{{points}} bod[tačke>1:ova]
+dailyQuests_quest_repeated;Ovaj zadatak se može ponoviti:
+dailyQuests_quest_repeated_amount;{{amount}} put[iznos>1:a]
+dailyQuests_quest_completed;Završena ponavljanja:
+dailyQuests_quest_difficulty;Težina:
+dailyQuests_quest_requirement;Uslovi:
+dailyQuests_backToOverview;Natrag na pregled
+dailyQuests_difficulty_moderate;Umjereno
+dailyQuests_difficulty_hard;Teško
+dailyQuests_difficulty_challenging;Izazovno
+achievementQuests.achQuest_;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+achievementQuests.achQuest__step_01_description;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+heroMansion_Loyalty;Odanost: {{INT}}%
+heroMansion_Conquered;Osvojeno {{TIME|DateTime}}
+heroMansion_SlotFree;Sljedeće mjesto za oazu je dostupno
+heroMansion_SlotBlocked;Sljedeća oaza sa <color={{colorValue|TextColor}}>dvorcem heroja</color> <color={{colorValue2|TextColor}}>na stepenu {{REQUIRMENT}}</color>
+heroMansion_Undo;Poništi
+heroMansion_FinishedAt;Gotovo: {{TIME|Time}}
+waterworks_NoneOasesAcquired;Nije pripojena nijedna oaza
+waterworks_BonusCalculation;+ ({{INT}}% od {{INT2}}%) = 
+waterworks_CurrentBonus;Trenutni bonus vodovoda: +{{INT}}% na resurse oaza
+waterworks_Oases;Oaze u domašaju
+messages_inbox_title;{{COUNT}} poruka
+messages_inbox_title_selected;Odabrano poruka {{SELECTED}} / {{COUNT}} 
+messages_newMessage;Nova poruka
+messages_messageSent;Poruka je poslana
+messages_exitPreview;Izlaz iz pregleda
+messages_previewTitle;Pregled poruke
+messages_unread_count;{{COUNT}} nepročitano
+reportPlayer_selectReason;Odaberite razlog za prijavu
+reportPlayer_reasonPlaceholder;Razlog za prijavu
+reportPlayer_addNote;Dodajte napomenu uz izvještaj (opciono):
+reportPlayer_alsoBlock;Također ignorirajte ovog igrača
+reportPlayer_maximumLength;Maksimalna dužina: {{text|TextLength}}/300
+reportPlayer_nowIgnored;Sada ignorišeš ovog igrača.
+reportPlayer_nowUnignored;Više ne ignorišeš ovog igrača.
+statistics_general;Opća statistika
+statistics_seeDetails;Pogledajte detalje
+statistiken.progressionStepTitle_;{{VALUE}}{{DATETIME}}
+language_de-DE;Njemački
+language_en-US;Engleski
+language_fr-FR;Francuski
+language_ru-RU;Ruski
+statistics_villageAndHero;Najveće selo / heroj
+RelativeTime_0;{{data}} s
+RelativeTime_1;{{data}} m
+RelativeTime_2;{{data}} s
+RelativeTime_3;[data>1:{{data}} dana][data<=1:{{data}} dan]
+RelativeTime_4;[data>1:{{data}} sedmice][data<=1:{{data}} sedmica]
+RelativeTime.Separator; 
+RelativeTime.Wrapper.Past;{{time}} prije
+RelativeTime.Wrapper.Future;U {{time}}
+mapCell_tooFewSettlers;{{current}}/3 dostupnih naseljenika
+mapCell_heroNotIdle;Vaš heroj nije slobodan
+mapCell_cantAddOwn;Ne možete dodati Vaša vlastita sela na farm listu
+mapCell_alreadyInVillage;Već si u tom selu
+serverSelection_rememberPassword;Zapamti moju šifru
+serverSelection_savedWorldsTitle;Vaši serveri
+serverSelection_removeWorldTitle;Ukloni server
+serverSelection_removeWorldQuestion;Da li zaista želite ukloniti ovaj server sa svoje liste?
+serverSelection_removeWorldDescription;Upozorenje: Ovo neće izbrisati vaš račun na serveru. Možete se vratiti u bilo kojem trenutku i dodati server, uključujući i vaš račun, na vašu listu servera.
+serverSelection_removeWorldButton;Ukloni s liste
+serverSelection_addWorldText;+ Dodaj server
+buildingActivities_buildingAdditional_;{{amount}}
+buildingActivities_buildingAdditional_17;{{amount}} aktivne trgovačke rute
+reports_filters_reset;Resetiraj filtere
+palace_capitalSet;Kapitalni set!
+palace_isCapital;Ovo je Vaš glavni grad
+messages_unread_count_full;{{COUNT}} nepročitana [COUNT=1:poruka][COUNT>1:poruke]
+statistics_alliance;Statistike saveza
+statistics_alliances_best_off;Najbolji savezi (napad)
+statistics_alliances_best_def;Najbolji savezi (odbrana)
+statistics_offensiveStrength;Vaša ofanzivna snaga od {{VILLAGEID|VillageLink}} na ovom serveru
+statistics_offensiveStrengthAlliance;Vaša ofanzivna snaga od {{VILLAGEID|VillageLink}} u vašem savezu
+statistics_offensiveStrengthVillage;Napadačka snaga ovog sela:
+statistics_defensiveStrength;Vaša odbrambena snaga na ovom serveru
+statistics_defensiveStrengthAlliance;Vaša odbrambena snaga u vašem savezu
+statistics_defensiveStrengthVillage;Odbrambena snaga ovog sela:
+statistics_defensiveStrengthVillageSum;Zbir odbrambene snage svih sela:
+recent;Nedavno
+appliedFilters;Imate {{COUNT}} aktiviranih filtera.
+allgemein.gid99;Nasumično
+rallyPoint_troopsOverview_10;Detaljan pregled jedinica
+rallyPoint_troopsOverview_returningFromAdventure;Povratak sa avanture: 
+rallyPoint_troopsOverview_detailedView;Detaljan prikaz
+rallyPoint_troopsOverview_noMovements;- Nema kretanja jedinica u toku -
+rallyPoint_troopsOverview_Target;Cilj: {{Target|NamedCoordinates}}
+rallyPoint_troopsOverview_Origin;Porijeklo: {{Target|NamedCoordinates}}
+hero_adventures_number;Br. {{INT}}
+hero_status_regeneration;<b> Oporavak zdravlja: </b> {{VALUE}}% po danu
+hero_status_regeneration_details;{{HERO}}% po danu od heroja {{EQUIPMENT}}% po danu od opreme
+hero_status_experience;<b> iskustvo: </b> {{VALUE}}%
+hero_status_experience_bonus;Bonus {{VALUE}}%
+search_results;Rezultati pretrage
+search_player_link;Link igrača
+search_select_player_link;Odaberite igrača
+search_recipient;Pretraži primaoca
+search_select_recipient;Odaberite primaoca
+search_alliance_link;Link saveza
+search_select_alliance_link;Odaberite savez
+messages_fullView_title;Poruka
+messages_recipient_placeholder;Odaberite primaoca
+messages_title_placeholder;Unesite naslov vaše poruke
+messages_message_placeholder;Unesite poruku
+messages_ownAlliance;Vlastiti savez
+messages_selectedRecipients; Odabrano
+messages_ownAlliance_[ally];Svi članovi saveza
+messages_ownAlliance_[off];Napadački članovi saveza
+messages_ownAlliance_[def];Defanzivni članovi saveza
+messages_discard_title;Odbaci poruku
+messages_discard_text_header;Želite li odbaciti ovu poruku?
+messages_discard_text;Sadržaj poruke će biti nepovratno izgubljen.
+messages_confirm_deletion_title;Izbriši poruke
+messages_confirm_deletion_text_header;Jeste li sigurni da želite izbrisati [data>1:{{data}} poruke][data=1:{{data}} poruku]?
+messages_confirm_deletion_text;Nakon što se poruke izbrišu, ne postoji način da se vrate.
+messages_confirm_deletion_button;Obriši [data>1:{{data}} poruke][data=1:{{data}} poruku]
+icon_selection_title;Dodaj ikonicu
+icon_selection_button;Odaberite ikonicu
+icon_selection_resourcesAndHero;Resursi / Heroj
+icon_selection_natureAndNatars;Priroda i Natari
+upgrading;Nadograđuje se!
+buildingActivities_buildingAdditional_46;Nema ranjene vojske
+playerDetails_ignorePlayerDescription;Igrač će biti ignorisan
+reports_share;Podijeliti izvještaj
+search_select_village_link;Odaberite selo
+search_village_link;Link do sela
+search_report_link;Link ka izvještaju
+search_select_report_link;Odaberite izvještaj
+messages_banned;Možete pisati poruke samo drugim članovima vašeg saveza.
+messages_template_title;Predlošci
+messages_template_none;Nema dostupnih predložaka
+messages_template_edit_title;Uredi predložak
+messages_template_delete_title;Izbriši šablon
+messages_template_delete_question;Jeste li sigurni da želite izbrisati ovaj predložak?
+messages_template_delete_desc;Nakon što ga izbrišete, više ga ne možete oporaviti.
+messages_template_create;Kreiraj novi predložak
+messages_template_create_descr;Kreirajte novi predložak iz vaše trenutne poruke:
+messages_template_created;Predložak kreiran!
+messages_template_deleted;Šablon izbrisan!
+statistics_culturePoints_productionRank;Vaš rang proizvodnje kulturnih poena na serveru: 
+statistics_culturePoints_productionRankAlliance;Vaš rang proizvodnje kulturnih poena unutar alijanse: 
+statistics_culturePoints_production;KP
+statistics_resourceRank_production;Proizvodnja: {{VALUE|ShortenNumber}}
+statistics_resourceRank_productionRank;Vaš rang proizvodnje na serveru
+statistics_resourceRank_productionRankAlliance;Vaš rang proizvodnje u vašem savezu
+statistics_resourceRank_bounty_lost;Gubitak
+statistics_wonderOfTheWorld_header;Najbolja svjetska čuda
+hospital_healing_costs;Troškovi liječenja jedinica
+hospital_healing_action;Izliječi vojnike
+hospital_healing_list;Pogledajte listu za liječenje
+hospital_healing_list_title;Lijelenje jedinica
+hospital_healing_started;Liječenje je počelo
+bonusValueWithPercent;+{{value}}%
+village_with_isCapital;{{villageName}} (glavni grad)
+maximumTextLengthError;{{CONTEXT}} može imati maksimalno {{AMOUNT}} znakova
+infoTab_genericEffectInBrackets;({{INT|Sign}})
+infoTab_effectPercentage;{{INT}}%
+infoTab_effectInBracketsPercentage;({{INT|Sign}}%)
+infoTab_trapperCurrently;Trenutni maksimalni iznos za postavljače zamki:
+trapper_Build_Action;Izgraditi zamke
+trapper_ProductionCosts;Troškovi proizvodnje zamki
+trapper_TrapsInConstruction;Zamke u izradi
+trapper_MaxBuilt;Maksimalan broj zamki već izrađen
+truppen.tid119;Zamka
+truppen.tid119p;Zamke
+rallyPoint_troopsOverview_outgoingMission_scouting_1;Izviđanje utvrde i vojske od 
+rallyPoint_troopsOverview_outgoingMission_scouting_0;Izviđanje resursa i vojske od 
+rallyPoint_troopsOverview_returningRegeneratedMission;Vraćanje regeneriranih trupa iz: 
+rallyPoint_troopsOverview_returningFleeingMission;Vojnici se vraćaju iz šumskog skloništa: 
+rallyPoint_troopsOverview_foreignTroopsIn;Stacionirani u: 
+rallyPoint_celebration_hint;Proslava u pivari bi mogla uticati na vojnike.
+building_not_built;Zgrada nije izgrađena
+berichte.report_icon_24;Izvještaj
+allBuildings_36;Maksimalni iznos za sve postavljače zamki:
+cropFinder_min_oasis_crop_bonus;Minimalno Bonus oaze žita
+cropFinder_select_minimum_crop_bonus;Odaberite minimalni bonus za žito
+cropFinder_unoccupied;Nije okupirano
+search_by_location;Pretraži po lokaciji
+search_by_player;Pretraga igrača
+search_village_from_player;Pretraži selo od igrača
+enter_player_name;Unesite korisničko ime igrača
+messages_template_newConditionsNotMet;Predlošci moraju sadržavati naslov i poruku.
+message_report_isAlready;Trenutna poruka je već prijavljena kao: {{REASON}}
+tutorial_begin;Započni obilazak
+tutorial_title_0;Pozdrav, neustrašivi šampione! 
+tutorial_text_0;Dobrodošli na žestoko bojno polje igre Travian: Legends. Hajde da vas brzo opremimo da vladate svojim dinamičnim naseljima i okupite svoje nezaustavljive snage.\n\nDa li ste spremni?
+tutorial_title_1;Pregled navigacije
+tutorial_text_1;Ovdje ćete otkriti sve, od karte do efikasne komunikacije i alata za uvid u informacije. Ovdje su također uredno skriveni vaši dnevni zadaci, personalizirane postavke i mnoštvo drugih funkcija.
+tutorial_title_3;Vaši resursi
+tutorial_text_3;Resursi vašeg sela mogu se pronaći ovdje. Dodirivanjem trake s resursima otkriva se više detalja.
+tutorial_title_4;Vaši resursi
+tutorial_text_4;Ponovnim dodirivanjem trake s resursima sakrivaju se detalji.
+tutorial_title_5;Vaše selo
+tutorial_text_5;Ovdje ćete pronaći sve potrebne informacije o vašem selu. Od liste zadataka do pregleda vaših jedinica i reda čekanja za gradnju, sve je ovdje. Nedavni dodatak aplikaciji, funkcija aktivnosti u zgradi, pruža brz pregled tekućih dešavanja unutar vaših zgrada.
+tutorial_title_7;Vaše selo
+tutorial_text_7;Ukoliko se izgradi vaše mjesto okupljanja, to će vam pružiti sveobuhvatan pregled svih tekućih kretanja jedinica. Osim toga, nudi brzu prečicu do vašeg mjesta okupljanja.
+tutorial_title_8;Bočni meni
+tutorial_text_8;Možete dodirnuti strelice ili prevući prstom da biste otvorili bočni meni. Ovo se može uraditi u bilo koje vrijeme.
+tutorial_title_9;Lista sela
+tutorial_text_9;Možete brzo prelaziti između svojih sela tako što ćete u bilo kojem trenutku otvoriti bočnu ploču prevlačenjem prsta. Tamo ćete moći pronaći i statistiku sela.\n\nI ovim se završava obilazak. Pa šta čekate! Zaronite, istražite i dopustite da svijet Travian: Legends postane vaše strateško igralište.\n\nSretno!
+tutorial_finish;Kraj obilaska
+filters_report_not_found;Izvještaj ne postoji
+filters_player_not_found;Igrač ne postoji
+filters_alliance_not_found;Savez ne postoji.
+filters_village_not_found;Selo ne postoji
+settings_game;Ovaj server
+language_app_selection;Izaberite jezik aplikacije:
+settings_sitter;Čuvar naloga {{VALUE}}:
+settings_sitterTab_yourSitters;Vaši čuvari naloga
+settings_sitterTab_SittingFor;Čuvar naloga za
+search_player_addSitter;Dodajte čuvara naloga
+search_select_player_addSitter;Dodajte čuvara naloga
+search_player_addSitter_additionalEmptyResultInfo;Igrač nije pronađen\nSamo igrači iz vašeg saveza/konfederacije mogu čuvati vaš avatar.
+settings_sitter_sitterAdded;Čuvar naloga je dodan!
+settings_sitter_sitterRemoved;Čuvar naloga uklonjen!
+settings_sitter_sitterPermissionChangesSaved;Promjene dozvola su sačuvane!
+settings_sitter_confirm_remove_text_header;Želite li ukloniti {{PlayerName}} kao čuvara naloga?
+settings_sittersFor;Čuvar za druge avatare
+settings_sittersFor_info;Postavljeni ste kao čuvar naloga za sljedeće avatare. Ovo možete poništiti klikom na crveni X.
+settings_sittersFor_none;Trenutno niste čuvar naloga.
+settings_sitterFor;Čuvar naloga za {{VALUE}}:
+settings_sitterFor_sittingRemoved;Prestanak čuvanja naloga za {{PlayerName}}!
+settings_sitterFor_confirm_remove_header;Želite li prestati čuvati nalog 
+settings_sitterFor_confirm_remove_header_questionmark;?
+settings_sitterFor_confirm_remove_info;Ne možete poništiti ovu radnju. Samo drugi igrači vas mogu dodati kao svog čuvara naloga.
+brewery_celebration_attackStrength;({{INT}}% napadačke snage)
+brewery_celebration_hint;Vojnici koji već marširaju bit će pod uticajem proslave
+settings_game_newLanguage;Jezik promijenjen u {{language}}.
+wonderOfTheWorld_name;Naziv svjetskog čuda:
+combatSimulator_title;Simulirati - {{role|TranslateSuffixFor|combatSimulator_as}}
+combatSimulator_cataTargetLevel;Stepen od <b>{{index}}. Meta katapulta </b>
+combatSimulator_troopLevel;Nivo kovačnice jedinica:
+combatSimulator_asAttacker;Napadač
+combatSimulator_asDefender;Branilac
+combatSimulator_result;Simuliraj rezultate
+combatSimulator_addReinforcement;Pojačanja
+valueWithModifier;x {{value|Round|2}}
+valuePlusInBracketsWithPercent;(+{{change}}%)
+none;Nijedan
+marketplace_traderoute_repeatEveryHour;Ponavljati svakih: (sati)
+block_sitter_warning;Kao čuvaru naloga nije Vam dopuštena ova akcija.
+settings_openConsentWindow;Postavke privatnosti
+combatSimulator_adjustHeroStats;Prilagodite statistiku heroja
+combatSimulator_eagleEyeTitle;Odaberite bonus Oči Orlova
+combatSimulator_architectSecretTitle;Odaberite bonus Tajne Arhitekte
+combatSimulator_metallurgyBonus;Odaberite bonus Metalurgije
+combatSimulator_rightHand;Odaberite predmet za desnu ruku
+combatSimulator_leftHand;Odaberite predmet za lijevu ruku
+combatSimulator_bodyItem;Odaberite oklop
+combatSimulator_inventoryItem;Odaberite predmet inventara
+combatSimulator_selectBuildingLevel_35;Odaberite nivo pivare
+combatSimulator_selectBuildingLevel_26;Odaberite nivo dvorca
+combatSimulator_selectBuildingLevel_34;Odaberite nivo klesara
+combatSimulator_selectBuildingLevel_31;Odaberite nivo zida
+combatSimulator_selectBuildingLevel_32;Odaberite nivo zida
+combatSimulator_selectBuildingLevel_33;Odaberite nivo zida
+combatSimulator_selectBuildingLevel_43;Odaberite nivo zida
+combatSimulator_selectBuildingLevel_42;Odaberite nivo zida
+combatSimulator_selectTargetLevel;Odaberi nivo mete katapulta
+combatSimulator_selectTroopLevel;Odaberite nivo jedinica
+survey_title;Anketa o Travian: Legends
+gdpr_title;Saglasnost za obradu podataka
+gdpr_description;Uz Vaš pristanak, prikupljamo određene informacije o Vašem uređaju, IP adresi, korištenju i identifikatorima oglašavanja. Ovo nam pomaže da vam prikazujemo relevantnije oglase i poboljšava vaše cjelokupno iskustvo s aplikacijom.
+gdpr_basic_functions;Potrebno za osnovne funkcionalnosti aplikacije.
+gdpr_advertisement;Lični podaci koji se koriste za oglašavanje.
+gdpr_analytics;Lični podaci koji se koriste za analizu.
+gdpr_acceptAll;Prihvati sve
+gdpr_save_and_exit;Sačuvaj + Izađi
+gdpr_rejectAll;Odbaci sve
+gdpr_privacy_policy;Politika privatnosti
+gdpr_terms_and_conditions;Uvjeti i odredbe
+plus.plus.browserOnly;(samo pretraživač)
+hero_inventory_already_equipped;Isti predmet je već opremljen.
+survey_button_title;Anketa o povratnim informacijama
+survey_button_description;Učestvujte u ovoj kratkoj anketi kako biste nam pomogli da poboljšamo aplikaciju Travian: Legends.
+goldShop_extend;Produžiti
+goldShop_remaining;Preostalo: 
+goldShop_advantage_activated;Aktivirano
+search_select_recipient_removeAll;Ukloni sve
+messages_messageTopic_noTopic;Nema teme/zadano
+messages_messageTopic_resources;O resursima
+messages_messageTopic_defenses;O odbrani
+messages_messageTopic_attacks;O napadima
+messages_messageTopic_strategies;O strategijama
+messages_messageTopic_information;Opšti podaci
+messages_messageTopic_important;Važne informacije
+messages_messageTopic_selectionTitle;Odaberite temu poruke
+farmlist_confirm_deletion_header;Jeste li sigurni da želite izbrisati odabranu farm listu?
+farmlist_confirm_deletion_text;Ovo se ne može poništiti.
+farmlist_target_confirm_deletion_header;Jeste li sigurni da želite izbrisati [raidsAmount=1:ovaj cilj][raidsAmount>1:ove {{data}} ciljeve]?
+upgrade_queue_cantConstructImmediately;Ova zgrada se ne može odmah izgraditi
+language_cs-CZ;Češki
+language_es-ES;Španski
+language_pl-PL;Poljski
+language_pt-PT;Portugalski
+language_tr-TR;Turski
+language_it-IT;Italijanski
+playerDetails_victorPoints_summary;{{TOTAL}} | {{PERDAY}} /dan
+settings_selectFormat;Odaberite format:
+settings_selectFormat_dialog_title;Odaberite format vremena
+settings_game_newDateFormat;Format datuma promijenjen u {{dateFormat}}.
+help_getHelp;Zatražite pomoć
+help_getHelpDescription;Ako vam je potrebna pomoć ili želite prijaviti problem, kontaktirajte podršku u igri ovdje.
+help_learnAboutGame;Saznajte više o igri
+help_learnAboutGameDescription;Sve što trebate znati o igri, kako stvari detaljno funkcionišu, možete pronaći ovdje.
+help_gameRules;Naučite pravila igre
+help_gameRulesDescription;Ovdje možete pronaći pravila igre.
+help_joinDiscord;Pridruži se Discordu
+help_joinDiscordDescription;Podijelite svoje mišljenje s nama na našem namjenskom mobilnom Discord serveru.
+PLAYERARG;{{PLAYER}}
+referAFriend_friendJoinedDescription;Da bi dobio zlato za vašu preporuku, vaš prijatelj mora naseliti svoje <b> drugo selo</b>. Svakako mu pomozite da postigne taj cilj! U nastavku pogledajte njegov napredak u pregledu reference ispod.
+referAFriend_rewardAddedVillage2Title_PLAYERARG;Vaš prijatelj {{PLAYER}} je naselio svoje drugo selo
+referAFriend_rewardAddedVillage3Title_PLAYERARG;Vaš prijatelj {{PLAYER}} je naselio svoje treće selo
+referAFriend_rewardAddedVillage4Title_PLAYERARG;Vaš prijatelj {{PLAYER}} je naselio svoje četvrto selo
+referAFriend_rewardAddedVillage5Title_PLAYERARG;Vaš prijatelj {{PLAYER}} je naselio svoje peto selo
+referAFriend_rewardAddedVillage6Title_PLAYERARG;Vaš prijatelj {{PLAYER}} je naselio svoje šesto selo
+referAFriend_rewardAddedVillage7Title_PLAYERARG;Vaš prijatelj {{PLAYER}} je naselio svoje sedmo selo
+referAFriend_rewardAddedVillage8Title_PLAYERARG;Vaš prijatelj {{PLAYER}} je naselio svoje osmo selo
+referAFriend_rewardAddedVillage9Title_PLAYERARG;Vaš prijatelj {{PLAYER}} je naselio svoje deveto selo
+referAFriend_rewardAddedVillage10Title_PLAYERARG;Vaš prijatelj {{PLAYER}} je naselio svoje deseto selo
+sysmsg_truce_learnMore;Saznajte više o primirju
+worldEnded_ww_playerWon_topAlliance;Graditelji u selu {{WW_VILLAGE|VillageLink}}, u satu {{WORLD_END_TIME|DateTime}}, postavili su posljednji kamen da bi utvrdili jedno od najznačajnijih stvaranja u historiji.<br>Skupa sa savezima, {{WW_ALLIANCE|AllianceLink}}, {{WW_PLAYER|PlayerLink}} je prvi završio Svjetsko čudo. Nakon upotrebe nebrojeno mnogo resursa i braneći sela sa stotinama hiljada hrabrih branitelja, {{WW_PLAYER|PlayerLink}} je dobio titulu „Pobjednik ovog doba”.
+worldEnded_as2022_topAlliances;Čestitke savezu {{ALLIANCE_TOP_1|AllianceLink}}, koji je postao vođa Evrope s {{VICTORY_POINTS_TOP_1}}Pobjedničkih poena! {{ALLIANCE_TOP_2|AllianceLink}} savez se hrabro borio da proglasi svoju pobjedu, postigavši drugo mjesto, dok ih je savez {{ALLIANCE_TOP_3|AllianceLink}} pratio u stopu postigavši treće mjesto.
+worldEnded_playerRanks_population;{{PLAYER_POPULATION_TOP_1|PlayerLink}} je bio vladar najvećeg carstva, koje je u stopu praćeno od strane {{PLAYER_POPULATION_TOP_2|PlayerLink}} i {{PLAYER_POPULATION_TOP_3|PlayerLink}}.
+worldEnded_playerRanks_offender;{{PLAYER_OFFENDER_TOP_1|PlayerLink}} je porazio više vojske od svih ostalih i neprijatelji su ga se najviše bojali.
+worldEnded_playerRanks_defender;{{PLAYER_DEFENDER_TOP_1|PlayerLink}} bio je najslavniji branitelj, pobjeđujući neprijatelje na kapijama sela natapajući krvlju zemlju oko tih sela.
+rallyPoint_startWithValue;Početak: ({{value}})
+rallyPoint_farmList_raidsStarted;{{INT}} poslane pljačke.
+rallyPoint_farmList_CantAddToAbandonList;Ne možete dodati mete na listu napuštenih farmi.
+rallyPoint_farmList_CantActivateInToAbandonList;Ne možete aktivirati mete na listi napuštenih farmi.
+rallyPoint_farmList_CantDuplicateInToAbandonList;Ne možete duplirati ciljeve na listi napuštenih farmi.
+rallyPoint_farmList_DuplicateRaids;Duplikat [raidsAmount=1:cilja][raidsAmount>1:ciljeva]
+rallyPoint_farmList_SlotsDuplicated;Cilj[raidsAmount>1:evi] dupliciran[raidsAmount>1:i!
+rallyPoint_farmList_pleaseSelectTheList;Molimo odaberite listu kojoj želite dodati metu.
+rallyPoint_farmList_farmlistFull;Farm lista je puna, molimo odaberite drugu farm listu ili kreirajte novu.
+rallyPoint_farmList_targetName;Naziv cilja
+rallyPoint_farmList_differentTroopsWarning;Brojevi jedinica neće biti promijenjeni, osim ako ih ne prepravite ispod unosom nove vrijednosti.
+rallyPoint_farmList_noobProtectionWarning;Dok ste u početničkoj zaštiti ne možete pljačkati druge igrače ali možete pljačkati slobodne oaze i natarska sela.
+rallyPoint_farmList_noFarmLists;Nije kreirana farm lista
+rallyPoint_farmList_CreateNewFarmList;Napravite farm listu
+rallyPoint_farmList_currentAmount;Farm liste: <b>{{amount}}</b>/{{max}}
+rallyPoint_farmList_differentTribe;Selo ima drugačije pleme od trenutnog izvornog sela. Molimo provjerite vrste jedinica
+rallyPoint_farmList_overrideTarget;Prepravi cilj
+rallyPoint_farmList_selectedActivated;Odabrani ciljevi su postavljeni na aktivne.
+rallyPoint_farmList_selectedDeactivate;Odabrani ciljevi su postavljeni na neaktivne.
+rallyPoint_farmList_LastRaid;<b> Posljednje pokretanje: </b><nobr>{{lastStarted|DateTime}}</nobr>
+mapCell_editTargetListAmount;<nobr>Uredi cilj</nobr> <nobr> (Liste: {{INT}})</nobr>
+goldShop_shopDisabled;Trgovina zlatom je onemogućena na ovom serveru
+infobox_accountLockGameEnd;Ova runda igre je završena!
+applySorting;Primijeni sortiranje
+truppen.tid931;Zamka
+truppen.tid931p;Zamke
+mainMenu_switchBackFromAvatar;{{iconName|Sprite}} Vrati se na {{playerName}}
+pending; (U toku)
+featureNotAvailableInVacationMode;Ova funkcija nije dostupna tokom režima odmora.
+notAllowed;Nije vam dozvoljeno da ovo uradite.
+settings_avatarDeletionInfo;Nakon što započnete brisanje, potrebno je <b>3 dana</b> da se dovrši brisanje vašeg avatara.\nRačun koji se briše više nema pristupa aukcijama ili mjenjačnici!\nBrisanje možete otkazati u bilo kojem trenutku ovdje.
+settings_avatarDeletionCountDown;Avatar će biti obrisan za
+deleteAvatar_confirmation_header;Želite li izbrisati svoj avatar?
+cams_info_subHeader;Jedna prijava za sve vaše servere
+cams_info_text;Kreirajte svoj Legends Lobby račun za jednostavnu prijavu i nesmetan pristup svim vašim serverima putem jedinstvene prijave.
+cams_info_lessInfo;Manje informacija
+cams_info_Question_WhatIsLegendsLobbyAccount;Šta je Legends lobby račun?
+cams_info_Answer_WhatIsLegendsLobbyAccount;Sa lobby nalogom, više se nikada ne morate registrovati za novi server. Samo se prijavite i pristupite svojim aktivnim serverima ili započnite novi u lobiju, bilo u pregledniku ili u mobilnoj aplikaciji.
+cams_info_Question_WhatAreAvatars;Šta su avatari?
+cams_info_Answer_WhatAreAvatars;Sa lobby računom, vaš profil u individualnom serveru naziva se avatar. Imate jedan lobby nalog koji može imati više avatara, po jedan za server.
+cams_info_Question_WhatsWithCurrentGameworlds;Šta će se dogoditi s mojim trenutnim serverima?
+cams_info_Answer_WhatsWithCurrentGameworlds;Svi aktivni serveri koji koriste istu adresu e-pošte kao i vaš nalog u lobiju bit će povezani i njima se može pristupiti putem lobija. Možete prebaciti svoje trenutne aktivne avatare servera na ispravnu adresu e-pošte prije nego što se kreira vaš nalog u lobiju.
+cams_info_Question_WhatsWithSitters;Mogu li i dalje imati čuvare naloga?
+cams_info_Answer_WhatsWithSitters;Da, čuvari se mogu dodijeliti kao i do sada u postavkama servera. Možete pristupiti avataru za kojeg ste postavljeni kao čuvar direktno u serveru.
+cams_info_Question_WhatsWithDuals;Mogu li i dalje igrati kao dual sa drugim igračima?
+cams_info_Answer_WhatsWithDuals;Duali se mogu dodijeliti serveru unošenjem imena lobby računa igrača u lobiju. To znači da dual prvo treba lobby nalog i može pristupiti avataru preko lobija nakon što prihvati poziv. Molimo da nikome ne dijelite šifru svog lobby naloga.
+cams_info_Question_WhatsWithoutLobbyAccount;Mogu li igrati bez kreiranja Legends lobby računa?
+cams_info_Answer_WhatsWithoutLobbyAccount;I dalje se možete prijaviti u svoje trenutne servere direktno koristeći odgovarajući URL. Međutim, ako želite pokrenuti novi server ili koristiti mobilnu aplikaciju, potrebno je kreirati lobby račun.
+cams_playerDecision_register_info;Novi Lobby račun vam omogućava da povežete svoje trenutne i buduće servere jednom prijavom.
+cams_playerDecision_login_info;Već imate Lobby račun?\n\nPrijavite se i nastavite svoju avanturu.
+cams_playerDecision_register_header;Napravite račun
+cams_playerDecision_register_create_new_account;Kreirajte lobi nalog
+cams_playerDecision_register_login;Prijava u lobi
+cams_playerDecision_extra_info;Da biste mogli igrati Travian: Legends, potrebno je da kreirate Lobby račun.
+cams_register_header;Kreirajte Legends lobi nalog
+cams_register_email_label;Unesite Vašu e-mail adresu:
+cams_register_email_address;Registrirajte se sa email adresom
+cams_register_email_address_missing;Molimo Vas unesite email adresu.
+cams_register_email_address_not_valid;Molimo  unesite važeću email adresu. Npr. mymail@provider.com
+cams_register_email_address_already_exists;Vaša adresa e-pošte je već povezana s lobi računom.
+cams_register_redirecting_to_login;Preusmjeravanje na prijavu {{INT}}...
+cams_register_hintMessage_same_email_address;Koristite istu adresu e-pošte kao vaši postojeći avatari servera da ih automatski povežete s vašim lobby računom.
+cams_register_receive newsletter;Želim primati bilten.
+cams_register_already_have_an_account;Već imate račun?
+cams_register_log_in_now;Prijavite se sada
+cams_acceptTOS;Klikom na "Registruj adresu e-pošte" prihvatate <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">Opšte uslove poslovanja</link></style> i potvrđujete da ste upoznati sa <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">Informacije o pravu na odustajanje od kupovine</link></style> i <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">Politikom privatnosti</link></style>.
+cams_activation_header;Aktivirajte Legends lobby račun
+cams_activation_info;Poslali smo vam link za aktivaciju na <b>{{emailAdress}}</b>.<br>Pratite uputstva u emailu da nastavite.
+cams_activation_enter_code;Unesite aktivacijski kod
+cams_activation_code_example;Npr. 123456
+cams_activation_entered_code;{{INT}}/6 cifara
+cams_activation_cta_activate_account;Aktivirajte nalog
+cams_activation_email_lost;Niste dobili email?
+cams_activation_email_resend;Ponovno pošaljite email
+cams_activation_email_wrong;Pogrešna email adresa?
+cams_activation_email_change;Promjena email adrese
+cams_activation_code_missing;Unesite aktivacijski kod koji ste dobili u e-mailu.
+cams_activation_code_too_short;Aktivacijski kod je prekratak. Unesite svih 6 cifara.
+cams_activation_code_format_incorrect;Format aktivacijskog koda je netačan. Molimo Vas da se uvjerite da kod sadrži samo šest brojeva.
+cams_activation_code_incorrect;Aktivacijski kod je pogrešan. Unesite aktivacijski kod koji ste dobili u emailu.
+cams_activation_code_expired;Aktivacijski kod je istekao.
+cams_activation_code_start_again;Počni ponovo
+cams_login_header;Prijavite se u Legends Lobby
+cams_login_enter_email;Unesite svoju email adresu ili ime računa
+cams_login_enter_password;Unesite šifru:
+cams_login_hintMessage_email_already_connected;Vaša adresa e-pošte je već povezana s lobi računom. Prijavite se ili <style="SimpleLink"><link="BackToRegistrationLink"> se vratite na registraciju </link></style>.
+cams_login_hintMessage_passwordUpdated;Vaša šifra je uspješno ažurirana.
+cams_forgot_password;Zaboravili ste šifru?
+cams_recover_password;Oporavite šifru
+cams_login_no_account_yet;Još nemate račun?
+cams_login_create_account;Napravite račun
+cams_loginMask_accountNameRequired;Unesite svoju email adresu ili ime računa
+cams_loginMask_passwordRequired;Molimo unesite svoju šifru.
+cams_loginMask_passwordAndUsernameAreWrong;Pogrešan email, ime naloga ili šifra
+cams_loginMask_emailOrAccountName_placeholder;Adresa e-pošte / ime računa
+cams_loginMask_temporaryInfobox;NOVO: Morate kreirati Lobby račun da biste pristupili svojim serverima.\n\nAko još nemate Lobby račun, <style="SimpleLink"><link="CreateAccountLink">kreirajte račun</link></style>.
+cams_setPassword_header;Molimo postavite Vašu šifru.
+cams_setPassword_info;Kreirajte šifru za svoj nalog sa minimalnom dužinom od osam znakova.
+cams_setPassword_enter_password;Odaberite šifru
+cams_setPassword_strength_label;Jačina šifre
+cams_setPassword_strength_missing;Unesite šifru da provjerite njenu snagu.
+cams_setPassword_strength_1;vrlo slab
+cams_setPassword_strength_2;prilično slab
+cams_setPassword_strength_3and4;Umjerena
+cams_setPassword_strength_5;prilično jak
+cams_setPassword_strength_6;vrlo jak
+cams_setPassword_strength_PasswordTooShort;Što duže to bolje (16+ znakova)
+cams_setPassword_strength_PasswordGoodLength;Šifra ima dobru dužinu
+cams_setPassword_strength_OneType;Koristi se samo jedna vrsta karaktera
+cams_setPassword_strength_TwoTypes;Korištene su dvije vrste karaktera
+cams_setPassword_strength_ThreeTypes;Korištene su tri vrste karaktera
+cams_setPassword_strength_NoNumbers;Nisu korišteni brojevi
+cams_setPassword_strength_NoLetters;Nema korištenih slova
+cams_setPassword_strength_NoSpecialCharacters;Nisu korišteni posebni karakteri
+cams_setPassword_strength_NoUpperAndLowerCase;Nema kombinacije velikih i malih slova
+cams_setPassword_strength_UpperAndLowerCase;Korištena su samo velika i mala slova
+cams_activation_cta_set_password;Postavite šifru
+cams_activation_password_length;8 - 64 znakova
+cams_resetPassword_header;Izaberite novu šifru
+cams_resetPassword_info;Kreirajte novu šifru za svoj lobi račun sa minimalnom dužinom od 8 znakova.
+cams_setUsername_header;Odaberite ime za svoj Legends Lobby račun
+cams_setUsername_info;Odaberite korisničko ime i skraćenicu da kreirate svoj jedinstveni lobby račun.
+cams_setUsername_username_label;Izaberi korisničko ime:
+cams_setUsername_tagline_label;Odaberite skraćenicu:
+cams_setUsername_tagline_example;npr. TAG12
+cams_setUsername_tagline;Skraćenica
+cams_setUsername_condition_onlyLettersAndNumbers;Samo slova i brojevi
+cams_setUsername_username_condition_Length;3-15 znakova
+cams_setUsername_tagline_condition_Length;2-5 znakova
+cams_setUsername_hint;Kombinacija vašeg korisničkog imena i skraćenice bit će vaše jedinstveno ime lobija. Sve dok je kombinacija dostupna, možete odabrati bilo koju kombinaciju koju želite.\n\nOvo ne utiče na ime na vašem serveru.
+cams_setUsername_cta_createAccount;Napravite račun
+cams_setUsername_username_missing;Molimo unesite korisničko ime i skraćenicu.
+cams_setUsername_accountName_preview;Pregled naziva računa:
+cams_setUsernameConfirmPopup_header;Legends Lobby račun kreiran!
+cams_setUsernameConfirmPopup_info;Vaš Legends lobby nalog s imenom za prijavu <b>{{playerName}}</b> je uspješno kreiran.
+cams_setUsernameConfirmPopup_GameworldAndAvatar_header;Vaši serveri i avatari
+cams_setUsernameConfirmPopup_GameworldAndAvatar_info;Povezali smo sljedeće postojeće avatare iz servera s istom email adresom na vaš novi Lobby račun.
+cams_avatar_name;Ime avatara
+cams_looby_welcomeMessage;Dobrodošli!\n<b>{{playerName}}</b>
+cams_looby_header;Vaši serveri
+cams_looby_noGameWorlds;Trenutno nemate aktivnog avatara ni na jednom serveru. Pridružite se novom serveru i počnite igrati.
+cams_looby_joinNewGameworld;Pridruži se novom serveru
+cams_looby_playNow;IGRAJTE SADA
+cams_looby_gameworldsLinked;Serveri povezani s vašim računom
+cams_looby_invitePenging;[data>1:{{data}} pozivnice][data=1:Pozivnica] na čekanju
+cams_looby_localGameWorld;LOKALNI SERVER
+cams_looby_avatarInDeletion;Brisanje
+cams_removeDualAccount_header;Uklonite duala
+cams_removeDualAccount_info;Želite li ukloniti <b>{{lobbyAccountName}}</b> kao duala za vašeg avatar <b>{{avatarName}}</b>?\n\n<b>{{lobbyAccountName}}</b> više neće imati pristup vašem avataru.
+cams_removeDualAccount_removeDual;Ukloniti dual
+cams_addDualPlayer_info;Unesite ime lobi računa igrača
+cams_addDualPlayer_placeholder;korisničko ime#oznaka
+cams_addDualPlayer_addPlayer;[data>1:Dodaj igrače][data=1:Dodaj igrača][data=0:Dodaj igrača]
+search_addDualPlayeradditionalEmptyResultInfo;Igrač nije pronađen ili je već pozvan kao dual
+cams_dualInventation_header;Dual pozivnice
+cams_dualInventation_invitations;Pozivnice:
+cams_dualInventation_info;Ako prihvatite poziv, možete se prijaviti sa svojim Lobby računom kako biste pristupili ovom avataru.
+cams_dualInventation_moreInfo;Možete prihvatiti samo jednu dual pozivnicu za svaki server.
+cams_dualInventation_invite;<b>{{LobbyAccountName}}</b> vas je pozvao da igrate <b>{{avatarName}}</b>
+cams_dualInventation_AcceptInvite;Prihvati pozivnicu
+cams_acceptDualInvitation_header;Prihvati pozivnicu za duala
+cams_acceptDualInvitation_info;Želite li prihvatiti poziv za duala od <b>{{lobbyAccountName}}</b> da igrate <b>{{avatarName}}</b> na <b>{{gameworldName}}</b>?
+cams_acceptDualInvitation_moreInfo;Imate više dual pozivnica za isti server na čekanju, ali možete prihvatiti samo jednu dual pozivnicu za server.
+cams_acceptDualInvitation_avatarInDeletion;Naša pravila dual igre ograničavaju vas da imate samo jedan aktivan avatar po serveru. \nPrihvaćanje dual pozivnice će ukloniti pristup vašem avataru {{avatarName}} prilikom brisanja u tom serveru. \nNakon toga više ne možete otkazati proces brisanja.
+cams_dualSettings_header;Dual postavke
+cams_dualSettings_info;Možete prestati igrati kao dual za spomenutog avatara u bilo kojem trenutku.
+cams_dualSettings_leaveDualPlay;Napusti dual igru
+cams_confirmLeaveDualPlay_info;Želite li prestati igrati duala za <b>{{avatarName}}</b> na <b>{{gameworldName}}</b>?\n\nNakon što napustite dual mod, možete kreirati vlastiti avatar ili se pridružiti drugom avataru za ponovnu dual igru u ovom serveru.
+cams_recoverPassword_header;Oporavite šifru
+cams_recoverPassword_goBackToLogin;Nazad na prijavu
+cams_recoverPassword_info;Unesite adresu e-pošte povezanu sa vašim Lobby računom. Poslat ćemo vam upute kako da resetujete šifru.
+cams_recoverPasswordEmailSent_header;E-pošta poslana
+cams_recoverPasswordEmailSent_info;Ako postoji lobi račun za ovu adresu e-pošte <b>{{emailAdress}}</b>, trebali ste dobiti upute za resetovamke šifre u svojim emailovima.\n\nNakon što povratite šifru, možete se ponovo prijaviti.
+cams_recoverPasswordEmailSent_goBackToLogin;Nazad na prijavu
+cams_editDualAccounts_header;Duali
+cams_editDualAccounts_gameworld;Svijet igre: {{gameworldName}}
+cams_editDualAccounts_avatar;Avatar: {{avatarName}}
+cams_editDualAccounts_avatarOwner;Vlasnik avatara:
+cams_editDualAccounts_noDualsAdded;- Za ovaj avatar nije dodat nijedan dual -
+cams_editDualAccounts_info;Igrači koji igraju duala imat će <b>potpuni pristup</b> ovom avataru i moći će obavljati sve radnje u igri, uključujući trošenje i kupovinu zlata.\n\nIgrači koji igraju duala mogu se prijaviti sa svojim Lobby računom kako bi pristupili ovom avataru i NE mogu pozvati druge duale.
+cams_editDualAccounts_warningHint;Ne dijelite podatke za prijavu na svoj Lobby račun s drugim igračima kako biste spriječili neželjeni pristup avatarima drugih igara i podacima vašeg računa.
+cams_editDualAccounts_addDualPlayer;Dodaj duala
+cams_editDualAccounts_avatarInDeletion;Vaš avatar {{avatarName}} na ovom serveru se briše. Stoga, ne možete poslati poziv za duala.
+cams_settings_title;Postavke
+cams_settings_changePassword_information;Da biste promijenili šifru, poslat ćemo vam email na adresu e-pošte vašeg računa.
+cams_settings_changePassword_sendEmail;Pošalji email
+cams_settings_changePassword_emailSent;Poslali smo vam email za promjenu šifre.
+cams_settings_accountDeletion_title;Brisanje lobi računa
+cams_settings_accountDeletion_info;Izbrišite svoj Legends Lobby račun, uključujući sve servere i avatare s ovog računa.
+cams_settings_accountDeletion_action;Izbriši Lobby račun
+cams_settings_accountDeletion_warning;Upozorenje: Ova radnja se ne može poništiti!
+cams_settings_accountDeletion_warning_content;Brisanje vašeg lobi računa je trajno nakon odbrojavanja od 72 sata, ne može se poništiti i utiče na sve vaše avatare. \n\nVaš račun može biti izbrisan samo ako su prvo svi vaši avatari postavljeni na brisanje.
+cams_settings_accountDeletion_requirementsInformation;Da biste izbrisali svoj račun, svi vaši avatari moraju biti u procesu brisanja ili već biti izbrisani.
+cams_settings_accountDeletion_information_warning;Ova radnja stavlja vaš račun u stanje brisanja. Molimo Vas da potvrdite da ste svjesni da će Vaš račun i svi povezani avatari i podaci biti trajno izbrisani tako što ćete u polje za unos upisati "delete".
+cams_settings_accountDeletion_information_error;Ne možete izbrisati račun ako avatar nije u procesu brisanja.\nMolimo vas da se prijavite u naznačene servere i izbrišete svoj avatar.
+cams_settings_accountDeletion_noAvatarsFound;Nisu pronađeni aktivni serveri/avatari.\nSpremni ste!
+cams_settings_accountDeletion_understandmentConfirmation;Razumijem
+cams_settings_accountInDeletion_title;Račun u procesu brisanja
+cams_settings_accountInDeletion_info;Vaš Lobby račun <b>{{NAME}}</b> će biti trajno izbrisan za <b>{{TIMESTAMP|Countdown}}</b>.
+cams_settings_accountInDeletion_action;Otkazati brisanje
+cams_mainMenu_dataConsent;Saglasnost sa podacima
+gameworld_gameworld;Server
+infobox.productionboost;{{RES}}{{TIME_COUNTER}}
+infobox_notesCount;{{COUNT}} [COUNT=1:bilješka][COUNT=2-4:bilješke][COUNT>4:bilješki]
+auction_placeBid;Stavite ponudu
+auction_auctionsAmount;{{COUNT}} aukcije
+auction_bidsRefreshed;Ponude osvježene!
+auction_currentSilver;Trenutno srebro:  {{iconName|Sprite}} {{currentSilver}}
+auction_availableAmount;Dostupni iznos:
+auction_toSellAmount;Količina prodaje:
+auction_selectAmountToSellHeader;Odaberite količinu za prodaju
+auction_soldHorseForSilver;Prodao konja za {{amount}} srebra.
+auction_currentCurrency;Trenutno:
+auction_newCurrencyValues;Novo:
+auction_exchangeExplanationGoldToSilverTitle;Možete zamijeniti zlato za srebro kako biste kupili predmete za heroja u aukcijskoj kući.
+auction_exchangeExplanationGoldToSilverMore;Unesite količinu zlata koju želite zamijeniti:
+auction_exchangeExplanationSilverToGoldTitle;Srebro zarađeno prodajom herojskih predmeta na aukcijama možete zamijeniti za zlato.
+auction_exchangeExplanationSilverToGoldMore;Unesite količinu srebra koju želite zamijeniti:
+auction_countAndName;{{AMOUNT}}×{{ITEM_NAME}}
+auction_deleteAll;Obriši sve aukcije
+auction_confirm_deletion_title;Obriši aukciju [data>1:{{data}} unosa][data=1:unos]
+auction_confirm_deletion_button;Obriši [data>1: zapisa][data=1: zapis]
+auction_confirm_deletion_text_header;Jeste li sigurni da želite obrisati data>1:{{data}} aukcijske unose][data=1: ovaj aukcijski unos]? 
+auction_confirm_deletion_text;Kada obrišete unos, on će trajno nestati. Nećete ga moći oporaviti.
+cams_looby_noMatchingGameworlds;Nema odgovarajućih svjetova igre za vaš odabir.
+serverSelection_5;Razvojni programer
+serverSelection_header;Odaberite filter za server
+serverSelection_filter_gameworldSpeed;Brzina servera
+serverSelection_gameworldSpeed;{{INT}}x brzina
+serverSelection_filer_gameworldLifetime;Dužina servera
+serverSelection_gameworldLifetime;{{INT}}-{{INT2}} dana
+serverSelection_gameworldLifetime_XorMore;{{INT}} ili više dana
+filters_applyButton;Primijeni [COUNT<2:filter][COUNT>1:{{COUNT}} filtera]
+filters_reset;Resetuj [COUNT<2:filter][COUNT>1:filtera]
+cams_avatarCreation_cancel_title;Otkaži kreiranje avatara
+cams_avatarCreation_cancel_reconfirmationText;Jeste li sigurni da želite otkazati kreiranje vašeg avatara na {{gameworldName}}?
+cams_avatarCreation_cancel_explanation;Izgubit ćete sav svoj napredak na ovom serveru, uključujući odabir plemena, lokaciju na mapi i ime avatara.
+cams_avatarCreation_button_startPlaying;Početak igre
+cams_avatarCreation_button_changeSector;Promijeni položaj
+cams_avatarCreation_button_selectTribe;Izaberi pleme!
+cams_avatarCreation_button_updateTribe;Ažuriraj pleme
+cams_avatarCreation_button_selectSector;Označite početnu poziciju
+cams_avatarCreation_button_updateSector;Ažuriraj poziciju
+cams_avatarCreation_name_title;Unesite ime svog avatara
+cams_avatarCreation_name_tip;Ovo je ime vašeg avatara na serveru.
+cams_avatarCreation_name_errorEmpty;Molimo unesite ime avatara.
+cams_avatarCreation_name_placeHolder;Ime avatara
+cams_looby_avatarInDeletionBlockPlayNow;Prihvatili ste poziv za duala za ovaj server, ({{gameworldName}}), tako da mu više ne možete pristupiti u nedualnom modu.
+infobox_openMessage;Otvori poruku
+infobox_accountIsLocked;Vaš avatar je banovan!
+auction_button_requirement;Završite {{REQUIRED}} avanture da biste otključali aukcije.\n Lijevo: {{INT}}
+auction_availableSilver;Dostupno srebro:  {{iconName|Sprite}} {{currentSilver}}
+auction_deleteSelected;Obriši odabrane aukcije
+auction_deletedAll_confirmation;Sve aukcije su izbrisane!
+auction_deletedSelected_confirmation;{{data}} Aukcija data>1: unosa][data=1: unos] je obrisana!  
+newVersionAvailable_title;Dostupna nova verzija
+newVersionAvailable_description;Poboljšali smo našu aplikaciju. Molimo vas da ažurirate aplikaciju da biste nastavili igrati.
+newVersionAvailable_joinDiscord;Šta je novo? Pridružite se Discordu za više informacija.
+newVersionAvailable_toStore;Ažuriraj sada
+infobox_beginnerProtection_title;Produži početničku zaštitu
+infobox_beginnerProtection_question;Jeste li sigurni da želite produžiti svoju početničku zaštitu?
+infobox_beginnerProtection_description;Ne možete slati resurse drugim igračima, napadati ih ili biti napadnuti, dok traje početnika zaštita.
+sendResources_beginnersProtection;Ne možete slati resurse drugim igračima dok je vaša početnička zaštita aktivna.
+sendTroops_beginnersProtection;Ne možete slati jedinice drugim igračima dok je vaša početnička zaštita aktivna.
+sendTroops_otherBeginnersProtection;Ne možete slati jedinice drugim igračima dok su pod početničkom zaštitom.
+buildingActivities_building_36;Zamke u proizvodnji
+tasks_collectAll;Sakupi sve ({{INT}})
+auction_bidMinPlaceholder;minimalno {{INT}}
+auction_buttonBidMinimum;Potrebno ponuditi minimalno
+hero_adventures_available;Dostupne avanture
+messages_freshDeskMessage_viewAndReplyInBrowser;Prikaži i odgovori u pregledniku
+messages_webViewRecommendation;Sadržaj poruke možda nije potpun.\nPreporučujemo da poruku pregledate u pregledniku.
+rateThisApp_popup_title;Uživate li u našoj aplikaciji?
+rateThisApp_popup_description;Ako vam se sviđa naša aplikacija, molimo vas da odvojite trenutak da je ocijenite.
+rateThisApp_popup_appreciatefeedback;Vaše povratne informacije su nam važne!
+rateThisApp_popup_btn_positive;Odlično je!
+rateThisApp_popup_btn_negative;Moglo bi biti bolje
+rearrange_or_demolish_building;Preurediti ili srušiti zgradu
+mainBuilding_buildingArrangement;Uređenje rasporeda zgrada
+mainBuilding_openRearrangeMode;Otvori način preuređivanja
+mainBuilding_demolishBuildings;Srušiti građevine
+mainBuilding_openDemolishMode;Otvori mod rušenja
+mainBuilding_demolishBuildings_description;Prevucite i ispustite zgrade da biste promijenili položaj.
+rearrangeBuildingPopup_rearrangeDescription;Premjestiti <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>?
+rearrangeBuildingPopup_buildingsRearranged;Zgrade preuređene
+rearrangeBuildingPopup_buildingRearranged;{{buildingName|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>{{buildingLevel}}</color>
+confirmRearrangeBuildingPopup_header;Želite li premjestiti sljedeću zgradu?
+confirmRearrangeBuildingPopup_description;Preraspoređuje odabrane zgrade u selu <b>{{villageName}}</b>.
+demolishBuildingPopup_title;Srušiti građevinu
+demolishBuildingPopup_description;Odaberite zgradu za rušenje
+demolishBuildingPopup_descriptionWithSelection;Da li rušite <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>?
+demolishBuildingPopup_demolishLevel;Nivo rušenja
+demolishBuildingPopup_demolishCompletely;Potpuno srušiti
+confirmDemolishBuildingPopup_header;Želite li odmah srušiti <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color> ?
+confirmDemolishBuildingPopup_description;Odmah ruši odabranu zgradu i uklanja je iz vašeg sela.\nOva radnja se ne može poništiti.
+characterCount;{{COUNT}}/{{MAX}} znakova
+survey_button_description_reward;Učestvujte u ovoj kratkoj anketi kako biste nam pomogli da poboljšamo aplikaciju Travian: Legends.\nVaša podrška će biti nagrađena.
+cams_lobby_joinGameworld;Pridruži se serveru
+cams_lobby_gameworld_inviteOnly;Samo po pozivu
+cams_lobby_gameworld_inviteOnlyInfo;Ovaj server je ograničen na igrače sa posebnim pozivnim kodom.
+cams_lobby_gameworld_inviteCodeEnter;Unesite pozivni kod
+cams_lobby_gameworld_inviteCodeInfo;Ovaj server je ograničen na igrače sa posebnim pozivnim kodom.\nAko ga imate, unesite ga da se pridružite serveru.
+cams_lobby_gameworld_inviteCodePlaceholder;Npr. eThbt5OLyZ8D5xjhUaBAba
+cams_lobby_gameworld_inviteCodeErrorCharacterCount;Aktivacijski kod je prekratak. Molimo unesite sve {{MAX}} znakove.
+cams_lobby_gameworld_inviteCodeCooldown;Vrijeme hlađenja za pozivni kod ({{TIME|Countdown}})
+timeCountDown;{{TIME|Countdown}}
+attestation_failed;Atestiranje uređaja nije uspjelo! Molimo koristite mobilni uređaj za igranje.\nAko se ovaj problem nastavi, koristite dugme za pomoć ispod da biste kontaktirali podršku!
+mainBuilding_demolishBuildings_notAvailable;Nivo {{INT}} glavne zgrade potreban za rušenje zgrada.
+mainBuilding_demolishBuildings_demolishing;Ruši <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> do <b><color={{colorValue|TextColor}}>nivoa {{buildingLevel}}</color></b> u {{timestamp|Countdown}}.
+demolishBuildingPopup_demolishing;Rušenje <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> do <b><color={{colorValue|TextColor}}>nivoa {{buildingLevel}}</color></b>
+allianz.hinweis_text_NoConfederacy;Diplomatski je bonton razgovarati sa drugim savezom i pregovarati prije slanja ponude za pakt o nenapadanju (NAP).
+regions_canBeSettled;Može biti naseljeno?
+regions_regionStatusNoColon;Status regije
+regions_top5AlliancesPopulation;Top 5 saveza <b>populacija</b>
+regions_top5AlliancesVillages;Top 5 saveza <b>sela</b>
+regions_neighboringRegions;Susjedne regije
+regions_regionPopulation;Populacija regije
+regions_contested;Regija je osporavana
+cams_lobby_gameworld_disabledAndNotSupported;Server trenutno nije dostupan za igranje putem mobilne aplikacije.
+demolishBuildingPopup_impossible;Ova zgrada se ne može srušiti.
+city_benefits;Prednosti grada
+city_benefits_threeAdditionalSlots;Grad ima tri dodatna mjesta za zgrade
+city_benefits_resourceFieldsLevel12;Možett imati resursna polja do nivoa 12
+city_benefits_watchTowers;Nadogradite zid sa osmatračnicama
+city_upgradeToACity;Nadogradite {{villageName}} u grad
+city_culturePointsForNext;(sljedeće za {{culturePoints}} kulturnih bodova)
+city_upgradeVillage;Nadogradite selo
+city_confirm_upgradeVillage;Nadogradite u grad
+city_confirm_header;Želite li nadograditi {{villageName}} u grad?
+city_confirm_description;Nadogradnja sela u grad zahtijeva {{time}} i jedno od vaših mjesta za naselje.
+city_upgrading;{{villageId|VillageLink}} {{text}}
+city_upgraded;{{villageId|VillageLink}} već je grad.
+combatSimulator_selectTarget;Odaberi metu
+mainMenu_goToLobby;Idi u lobi
+mainMenu_yourPlayerProfile;Vaš profil
+plus.plusAttackWarningText;Dolazeći napadi će biti prikazani na listi sela. Samo za mobilne uređaje: U prikazu sela, strelica za otvaranje liste sela s desne strane bit će istaknuta.
+production.crobBalanceTroopConsumptionAncientPower;Bonusi drevne moći
+filters_region_not_found;Regija ne postoji.
+rallyPoint_troopsOverview_ownTroops_8;Vlastita vojska u 
+rallyPoint_troopsOverview_ownTroops_9;Vlastita vojska u 
+tradeOffice_merchantsCarryCapacity;Nosivost trgovaca:
+tradeOffice_tradeShipsCarryCapacity;Nosivost trgovačkih brodova:
+buildingActivities_building_48;Liječenje jedinica
+playerDetails_victorPointsPerDay;{{PERDAY}} /dan
+allianz.numIncomingRaids;{{NUM_ATTACKS}} [NUM_ATTACKS=1:pljačka][NUM_ATTACKS=2-4:pljačke][NUM_ATTACKS>4:pljački]
+allianz.numIncomingAttacks;{{NUM_ATTACKS}} [NUM_ATTACKS=1:napad][NUM_ATTACKS>1:napadi]
+allianz.MerchantCapacityAndSpeedNew;Trgovina
+alliance_regionalTabTop5Description;Regije u kojima je vaš savez među 5 najboljih saveza na osnovu teritorijalne kontrole.
+alliance_regionalTabTitle;Top 5 u regiji
+alliance_regionalTabTop5Empty;- Nema dovoljno teritorijalne kontrole ni u jednoj regiji -
+alliance_ShowDetails;Pokazati detalje
+wall_upgradesInProgress;Nadogradnje u toku
+extension_upgradeStarted;Nadogradnja je uspješno započela!
+extension_constructionList;Lista izgradnje
+upgradeLevel;Stepen nadogradnje
+infoTab_upgradingToLevelForExtension;Trenutna nadogradnja {{buildingName}} na stepen {{level}}:
+infoTab_genericCurrentlyForExtension;Trenutni {{buildingName}} bonus uključujući {{extensionName}}:
+infoTab_genericAtLevelForExtension;Na nivou {{a}} sa {{extensionName}} nivo {{b}}:
+ratioValuesNumeratorBold;<b>{{a}}</b>/{{b}}
+infoTab_productionCosts_title;Troškovi proizvodnje
+harbour_shipsInConstruction;Brodovi u izgradnji
+unitInfo_troopsCarriage;do <b>{{INT}}</b> jedinica
+unitInfo_velocityRaid;Za pljačke:
+city_benefits_resourceFieldsLevel12inCapital;Nadogradite resursna polja na nivo 12, međutim u svom glavnom gradu ih i dalje možete dodatno nadograditi
+infoTab_genericCurrentlyMoreExplicit;Trenutni {{buildingName}} bonus:
+merchant_merchantOverview_noIncomingDeliveries;- Nema dolaznih dostava -
+merchant_merchantOverview_noOutgoingDeliveries;- Nema odlaznih dostava -
+merchant_merchantOverview_incoming; Dolazni ({{INT}})
+merchant_merchantOverview_outgoing; Odlazni ({{INT}})
+achievementQuests.achQuest_03_Territory_step_01_description;Pošaljite vojsku da napadne/opljačka natarsko selo. Ovaj zadatak je izvršen kada vojska stigne do sela, čak i ako pogine tokom borbe.<br><br> Poeni za ovaj zadatak mogu se dobiti {{NUMBER_OF_TASKS_PER_DAY}} puta dnevno.\n
+allianz.MerchantCapacityTitle_Harbours;Bonus za kapacitet i brzinu trgovaca/brodova
+market_tradeRoutes_invalidTarget_Territory;Trgovačke rute mogu biti poslane samo u vaša vlastita sela.
+market_selectResources;Odaberite resurse
+market_selectResources_requiredTradeShips;Potrebni trgovački brodovi
+market_resourcesWillBeSendByTradeShip;Resursi će biti poslani trgovačkim brodom.
+manual.gid38_Territory;Veliko skladište nudi 3x više prostora i čuva vaše resurse sigurnije od običnog skladišta.<br><br>Ova zgrada se može izgraditi samo uz pomoć drevne moći glavnog plana skladištenja.
+manual.gid39_Territory;Veliki silos Vam nudi 3x više prostora i čuva usjeve sigurnije od običnog silosa.<br><br>Ova zgrada se može izgraditi samo uz pomoć drevne moći glavnog plana skladištenja.\n
+harbour_noAvailableShips;Trenutno nema brodova stacioniranih u ovoj luci.
+harbour_destroy_title;Uništi brodove
+harbour_destroy_desc_title;Odaberite vrstu broda i količinu koju želite uništiti.
+harbour_destroy_desc;Samo brodovi koji su trenutno stacionirani ovdje mogu biti uništeni i nećete dobiti nikakve resurse natrag.
+harbour_destroy_timeNotice;Brodovi će biti odmah uništeni.
+harbour_destroy_selectedTotalAmount;Odabrani brodovi: <b>{{AMOUNT}}</b>
+harbour_destroy_shipSelectTitle;<b>{{ShipID|TranslateSuffixFor|gid49.type_t}}</b> (<b>{{Amount}}</b> [Amount=1:brod je stacioniran][Amount=2-4:broda su stacionirana][Amount>4:brodova je stacionirano] ovdje)
+extension_fullyExtended;{{NAME}} su potpuno prošireni.
+extension_willBeFullyExtended;{{NAME}} su potpuno prošireni.
+layout.directLinkMarketplaceTrader;Slobodni trgovci: {{INT}} / {{INT2}}
+UnitProduction_ViewBuildingList;Pogledajte popis zgrada
+raidList_useRaidShipsInfo;Napomena: Pljačkaški brodovi se koriste automatski kada su dostupni. Ako vam ponestane pljačkaških brodova, vaše jedinice će normalno putovati.
+buildingActivities_maxReached;Dostignut maksimalni iznos
+buildingActivities_building_49;Brodovi u proizvodnji
+buildingActivities_buildingAdditional_48;Nema ranjene vojske
+residence_expansion_villagesRatio;Sela: {{COUNT}}/{{MAX}}
+residence_expansion_slotFree;Slot se ne koristi.
+residence_expansion_slotPrerequisites;Preduslovi: <b>{{BuildingID|TranslateSuffixFor|allgemein.gid}}<color={{colorValue|TextColor}}> stepen {{Level}}</color></b>
+residence_expansion_culturePointsPerDay;Proizvodnja kulturnih bodova po danu
+search_region;Pretraga regije
+search_select_region;Odaberite regiju
+statistiken.progressionStepTitle_start_achieved;Server je počeo {{VALUE}}
+statistiken.progressionStepTitle_serverEnd_locked;Server će se završiti {{VALUE}}
+filters_artefact_not_found;Artefakt ne postoji
+sendTroops_settlersChangeTribe;Za prva {{INT}} naselja, možete odabrati kojeg plemena će biti selo koje naseljavate. Pažljivo birajte.
+gid17.nextTradingRoute;Sljedeća trgovačka ruta počinje u <b>{{HOUR}}</b> i treba <b>{{MERCHANTS}}</b> [MERCHANTS>1:trgovaca][MERCHANTS=1:trgovca].
+gid17.nextTradingRouteWithShips;Sljedeća trgovačka ruta počinje u <b>{{HOUR}}</b> i treba <b>{{SHIPS}}</b> [SHIPS>1:trgovačkih brodova][SHIPS=1:trgovački brod].
+market_tradeRoutes_merchants;[merchants>1:{{merchants}} trgovci][merchants=1:{{merchants}} trgovac]
+market_tradeRoutes_tradeShips;[tradeShips>1:{{tradeShips}} trgovački brodovi][tradeShips=1:{{tradeShips}} trgovački brod]
+market_tradeRoutes_repeats;x {{repeats}}
+market_tradeRoutes_usesShip;Koristi brodove
+troopsCheckout_shipUseInfo;{{Distance}} pločica | {{ShipID|Bold}} | Uštedite {{duration|Bold}} sati
+troopInfoPopup_shipsTitle;Brodovi stacionirani u selu
+language_nl-NL;holandski
+cropfinder_cropperType;Vrste žitnica:
+valueInBrackets;({{VALUE}})
+residence_settlementSlotsUsed;Korišteni slotovi za naseljavanje
+residence_settlementCPNeededForNextSlot;Potrebni kulturni bodovi za sljedeće mjesto za naseljavanje:
+gid27.ancient_power_detail_;{{INT}}
+artefact_effect_value;Efekat: <b>{{EFFECT}}</b>
+ancientPower_overview;Regionalne moći
+ancientPower_no_ancientPower;Nemaju drevne moći na ovom serveru
+ancientPower_tip_large;Velike drevne moći zahtijevaju nivo riznice <b>20</b> i utiču na <b>sva vaša sela</b>
+ancientPower_tip_small;Mali artefakti zahtijevaju nivo riznice <b>10</b> i utiču samo na <b>selo</b> u kojem su aktivirani
+ancientPower_tip_nearby;Drevne sile u okolnom području {{villagenamelong|Bold}}
+ancientPower_stored_title;Regionalne moći osigurane unutar saveza
+ancientPower_stored_noContent;Vaš savez nije zauzeo ni jednu regiju
+ancientPower_stored_nextFree;Sljedeća besplatna aktivacija dostupna za: [isFree=0:<color={{colorValue|TextColor}}>]{{timeStamp|Countdown?Bold}}[isFree=0:</color>]
+ancientPower_stored_notActivatable;Nema drevne moći za aktiviranje.
+ancientPower_stored_activated;Drevna moć aktivirana.
+ancientPower_stored_alreadyActive_account;Već imaš jednu drevnu moć koja utiče na sva aktivna sela.
+ancientPower_stored_alreadyActive_village;Već imaš jednu drevnu moć koja utiče na ovo selo.
+ancientPower_stored_alreadyActive;Ova drevna moć je već aktivirana.
+filters_ancientPower_not_found;Drevna moć ne postoji
+regions_withFactions_yourAllianceHasMoreThan50PercentSecured;Vaš savez ima >{{PERCENT}}% teritorijalne kontrole.<br><br>Trebate riznicu da biste aktivirali regionalnu moć.
+language_en-NT;Razvojni jezik
+settings_notNow;Ne sada
+settings_dontAskAgain;Ne pitaj ponovo.
+cams_lobby_gameworld_lastPlayedTime;{{TIME}}h
+cams_settings_DirectLoginTitle;Direktna prijava na server
+cams_settings_DirectLoginInfo;Preskočite odabir servera u Legends lobiju i prijavite se direktno na svoj posljednji server prilikom otvaranja aplikacije.
+cams_settings_DirectLoginActive;Direktna prijava je aktivirana
+cams_settings_DirectLoginInactive;Direktna prijava je deaktivirana
+cams_directLoginPopUp_Info;Želite li se direktno prijaviti u svoj server prilikom pokretanja aplikacije?
+cams_directLoginPopUp_youCanChange;Svoj izbor možete promijeniti u bilo kojem trenutku u postavkama lobija.
+cams_directLoginPopUp_Accept;Da, prijavi me direktno
+language_ro-RO;Rumunski
+language_hu-HU;Mađarski
+language_ar-AE;Arapski
+autoLoginFailed.;Automatska prijava nije uspjela.
+needInternetToPlay;Za igranje vam je potrebna internetska veza. Molimo provjerite svoju internet konekciju i povežite se ponovno.
+mapCellInfoWindow_removeFromLists;Uklonite sa svih listi
+removeFromListsPopup_Title;Želite li ukloniti {{TARGETNAME}} sa {{INT}} farm listi?
+removeFromListsPopup_Description;Cilj možete kasnije pojedinačno dodati na farm listama.
+removeFromListsPopup_ConfirmButton;Ukloni cilj
+social_continueWith;Ili nastavite sa:
+social_loginWith;Ili se prijavite sa:
+social_backToRegistration;Nazad na registraciju
+social_createAccountTitle;Kreirajte Legends lobi nalog
+social_errorTitle_NoEmailProvided;Nedostaje dozvola za e-poštu
+social_errorMsg_NoEmailProvided;Da biste počeli igrati Travian: Legends, potrebna nam je vaša <b>dozvola za pristup vašoj email adresi.</b>
+social_errorInfo_NoEmailProvided;Molimo pokušajte ponovo s ispravnim postavkama dozvola ili isprobajte drugu metodu registracije.
+social_errorTitle_AlreadyExists;E-pošta je već korištena
+social_errorMsg_AlreadyExists;Navedena adresa e-pošte se već koristi za Travian: Legends lobi račun.
+social_errorInfo_AlreadyExists;Molimo Vas da za prijavu koristite email adresu povezanu s Vašim računom.
+social_acceptTOS;Klikom na "Registruj adresu e-pošte" prihvatate <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">Opšte uslove poslovanja</link></style> i potvrđujete da ste upoznati sa <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">Informacijama o pravu na odustajanje od kupovine</link></style> i <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">Politikom privatnosti</link></style>.
+linkNotWorking;Link ne radi
+linkNotWorkingDescription;Izgleda da ovaj link trenutno ne radi u aplikaciji Travian: Legends. Možda će raditi u vašem internet pregledniku.
+openLinkInBrowser;Otvori link u pretraživaču
+settings_language_useArabicNumerals_activated;Aktivirano je korištenje istočno-arapskih brojeva
+settings_language_useArabicNumerals_deactivated;Upotreba istočno-arapskih brojeva je deaktivirana
+artefact_inventory_active_empty;Nijedan artefakt nije aktiviran
+social_errorTitle_Unknown;nepoznata greška
+social_errorMsg_Unknown;Desila se neočekivana greška. Pokušajte ponovo.
+loadingScreen_text_01;Vaš heroj popravlja kosu, molimo vas pričekajte.
+loadingScreen_text_02;Silos prepun. Seljani sada skladište žito u svojim džepovima.
+loadingScreen_text_03;Ambasada organizuje zabavu – samo za diplomate.
+loadingScreen_text_04;Mjesto okupljanja je sada mjesto za piknik – vojnici uživaju u sendvičima.
+loadingScreen_text_05;Kovač kuje mač... od špageta.
+loadingScreen_text_06;Majstori građevinari čitaju nacrt... naopako.
+loadingScreen_text_07;Natari su se pridružili seoskom klubu čitalaca. Niko ne zna čitati drevne rune.
+loadingScreen_text_08;Izviđači broje neprijateljske jedinice... ali nemaju dovoljno prstiju.
+loadingScreen_text_09;Svjetsko čudo napadaju golubovi. Šaljem ekipu za čišćenje.
+loadingScreen_text_10;Robovska milicija zahtijeva sindikat – pripremite se za štrajkove.
+loadingScreen_text_11;Vojnici odbijaju napadati dok im neko ne objasni simulator borbe.
+loadingScreen_text_12;Seljani su prestali raditi kako bi gledali kako se dvije kokoške bore.
+loadingScreen_text_13;Vaši katapulti se svađaju oko toga koju zgradu prvo da pogode.
+loadingScreen_text_14;Molim vas za strpljenje, heroj je vozio Deutsche Bahn umjesto konja.
+loadingScreen_text_15;Skrovište ne krije samo resurse, već i seoske tračeve.
+loadingScreen_text_16;Kasarna je domaćin takmičenja talenata – trening je odgođen.
+loadingScreen_text_17;Vaš zid je skoro gotov. Samo čekam da se farba osuši.
+loadingScreen_text_18;Legionari su tražili pauzu za kafu prije marša.
+loadingScreen_text_19;Gali objašnjavaju Rimljanima šta je palisada, prošla su 3 sata.
+loadingScreen_text_20;Podmićivanje trgovaca kako bi ubrzali isporuke.
+loadingScreen_text_21;Vaš heroj pohađa kurs jahanja, što bi moglo potrajati.
+loadingScreen_text_22;Trgovci su zaglavljeni iza sporog vola.
+loadingScreen_text_23;Vođe Alijanse izrađuju borbenu strategiju... bojama za prste.
+loadingScreen_text_24;Silos je pun kolačića – upravljanje resursima u svom najboljem izdanju.
+loadingScreen_text_25;Izviđanje prekinuto – Heimdallovom nešto palo u oko.
+changeAccountNameSubtitle;Promijenite korisničko ime i/ili oznaku.
+changeAccountNamePleaseNote;Imajte na umu da nakon promjene imena računa morate pričekati {{DAYS}} [DAYS>1:dana][DAYS=1:dan] prije nego što ga ponovo možete promijeniti.
+changeAccountNameWaiting;Morate pričekati da ponovo promijenite ime:
+changeAccountNameUpdated;Naziv računa je ažuriran
+changeAccountNameUpdatedSubtitle;Naziv vašeg računa je uspješno ažuriran na: <b>{{playerName}}</b>
+alliance_top10Title;Interni top 10 saveza
+gameworldCalendarNoGameworld;Nema pronađenih nadolazećih servera \nMoguće je da se učitavaju ili da nisu planirani.
+gameworldCalendar_title;Game World kalendar
+valueWithModifierBefore;x {{value|Round|2}}
+goldShop_purchaseCanceled;Kupovina otkazana!
+goldShop_pendingRestored;Vaša prethodna kupovina je uspješno vraćena.
+hero_consumablePopup_healthByOintment;Zdravlje dobijeno po masti:
+unknown;?
+serverSelection_gameworldSpeed_short;x {{INT}}
+gameworldCalendarDetails_title;Detalji o serveru
+gameworldCalendarDetails_shareLink;Podjeli link servera
+gameWorldEndCondition;Uslov za kraj servera
+gameWorldEndCondition_WonderOfTheWorld;Svjetsko čudo {{Level}}
+gameWorldEndCondition_VictoryPoints;Pobjednički bodovi
+gameWorldRestriction_InvitationCode;Ovaj server je ograničen na igrače sa posebnim pozivnim kodom.
+gameWorldRestriction_MobilePlayers;Ovaj svijet igre dostupan je samo mobilnim igračima.
+gameWorldSpecial;Ovo je poseban server koji može biti dostupan samo ograničeno vrijeme i može imati drugačije karakteristike od klasičnih servera.
+gameWorldUndefinedDetails;Nisu još definirani svi detalji svijeta igre. Primit ćete obavještenje u svom lobiju nakon što bude ažurirano.
+bonusValueWithPercentNoSpace;+{{value}}%
+startDate;Datum početka
+startTime;Početno vrijeme
+UTC+1;(UTC+1)
+goldShop_GoldPromotion;Promocija zlata
+auction_FeePopupTitle;Provizija za aukciju
+auction_FeePopupText;Morate platiti {{value}}% provizije na prodaju putem aukcijske kuće. Vaša isplata je prodajna cijena umanjena za aukcijsku proviziju.
+auction_FeePopupExample;Primjer izračuna
+auction_FeePopupSalePrice;Snižena cijena
+auction_FeePopupFee;Provizija za aukciju ({{value}}%)
+auction_FeePopupPayout;Isplata
+auction_sellHouseFeeInfo;Vaša isplata je prodajna cijena umanjena za {{value}}% aukcijsku proviziju.
+gold_action_finishImmediately;Odmah završiti
+mapCellInfoWindow_villageReports;Prikaži izvještaje sela
+hero_crafting_title_refine;Usavršite opremu
+hero_crafting_title_smelt;Oprema za topljenje
+hero_crafting_title_forge;Oprema za kovanje
+hero_crafting_title_reforge;Oprema za ponovno kovanje
+hero_crafting_action_refine;Pročisti
+hero_crafting_action_smelt;Topi
+hero_crafting_action_forge;Kuj
+hero_crafting_action_takeMaterials;Uzmite ({{INT}}/{{MAX}}) materijala
+hero_crafting_action_takeAllMaterials;Uzmite materijale
+hero_crafting_action_reforge;Prekovati
+hero_crafting_action_take;Uzmi
+hero_crafting_action_pick;Odaberite stavku
+hero_crafting_action_equip;Opremiti
+hero_crafting_action_buy_material;Kupite materijal
+hero_crafting_action_buy_item;Kupite predmet
+hero_crafting_action_craft_material;Taljeni materijal
+hero_crafting_action_moveToInventory;Na inventar
+hero_crafting_action_select_item;Odaberi
+hero_crafting_action_remove_item;Ukloniti
+hero_crafting_action_error_equipment;Predmet mora biti oprema heroja.
+hero_crafting_action_error_rarity;Predmeti moraju imati istu rijetkost.
+hero_crafting_action_error_category;Predmeti moraju biti iz iste kategorije opreme.
+hero_crafting_action_error_id;Stavke moraju biti identične.
+hero_crafting_action_error_missingItem;Jedan ili više odabranih artikala više nisu dostupni.
+hero_crafting_refine_tip;Predmeti epskih heroja mogu se usavršiti bilo kojim drugim predmetom epskih heroja iz iste kategorije predmeta.
+hero_crafting_refine_tip_error;Nemate nijedan herojski predmet za poboljšanje. Pronađite predmete u avanturama ili kupite predmete u aukcijskoj kući i poboljšajte ih usavršavanjem.
+hero_crafting_smelt_info;Uzmi {{INT}} material[INT>1:e] sada ili sačekaj i uzmi {{MAX}}.
+hero_crafting_reforge_text;Prekrijte opremu da biste dobili drugi predmet, moguće drugačije rijetkosti i kvalitete.\nNakon ponovnog kovanja, možete odabrati koji predmet želite uzeti ili ponovo kovati.\nImajte na umu: Nakon ponovnog kovanja, predmet svakog sljedećeg koraka ponovnog kovanja će nestati i neće se moći vratiti.
+inventoryItem_quality_title;Kvalitet
+inventoryItem_rarity_title;Rijetkost
+inventoryItem_rarity_quality_title;Rijetkost i kvalitet
+inventoryItem_rarity_common;Uobičajeno
+inventoryItem_rarity_uncommon;Neuobičajeno
+inventoryItem_rarity_rare;Rijetko
+inventoryItem_rarity_epic;Epski
+inventoryItem_rarity_legendary;Legendarni
+search_for_village;Pretraga sela
+search_for_player;Pretraga igrača
+villageList_EditMode;Način uređivanja
+villageList_MaxGroupAmount;Dostignut je maksimalan broj seoskih grupa.
+hero_crafting_action_error_material;Predmet mora biti materijal.
+villageList_ReorderError;Nevažeći cilj
+textMatchingInput_Title;Potvrdite upisivanjem "{{WORD}}"
+hero_inventory_category_empty;- Nema artikala u ovoj kategoriji -
+hero_crafting_action_refine_success;Oprema usavršena
+hero_crafting_action_smelt_success;Oprema je taljena
+hero_crafting_action_forge_success;Kovane opreme
+hero_crafting_result_item_equipped;Opremljen predmet
+hero_crafting_result_item_taken;Predmet premješten u inventar
+hero_crafting_result_material_taken;Materijal premješten u inventar
+hero_crafting_action_error_quality;Predmeti moraju biti istog kvaliteta.
+hero_crafting_action_error_epic;Mora biti još jedan epski predmet iste kategorije i kvaliteta.
+inventoryItem_rarity_none;Nema rijetkosti
+dailyQuests_rewardOverview_short;Pregled nagrada
+avatar_confirmation_title_delete;Izbriši avatar
+avatar_confirmation_header_delete;Želite li izbrisati svoj avatar?
+avatar_confirmation_infoText_delete;Nakon što započnete brisanje, potrebno je <b>3 dana</b> da se dovrši brisanje vašeg avatara.\nRačun koji se briše više nema pristupa aukcijama ili mjenjačnici!\nBrisanje možete otkazati u bilo kojem trenutku ovdje.
+avatar_confirmation_requiredWord_delete;Obrisati
+avatar_confirmation_title_respawn;Ponovno postavljanje avatara
+avatar_confirmation_header_respawn;Želite li ponovo postaviti svoj avatar?
+avatar_confirmation_infoText_respawn;Ovo će izbrisati sav napredak koji ste napravili do ove točke i postaviti vaše početno selo na novu lokaciju na mapi.\n\nSvo kupljeno zlato će biti automatski prebačeno.
+avatar_confirmation_requiredWord_respawn;ponovno rađanje
+settings_app_title;Svi serveri 
+settings_app_Animations_title;Animacije
+settings_app_Animations_description;Odaberite koje animacije želite vidjeti u aplikaciji.
+settings_app_Animations_activated;Aktivirana je animacija oblaka za prikaz sela/resursa
+settings_app_Animations_deactivated;Deaktivirana je animacija oblaka za prikaz sela/resursa
+settings_app_NightMode_title;Noćni način rada
+settings_app_NightMode_description;Vaši seljani su upalili baklje, a vatra u pećima pucketa pod prigušenim svjetlom zvijezda na noćnom nebu.
+settings_app_NightMode_activated;Noćni način rada je aktiviran
+settings_app_NightMode_deactivated;Noćni način rada je deaktiviran
+settings_app_WinterMode_title;Zimski način rada
+settings_app_WinterMode_description;Snijeg tiho pada, obavijajući selo varljivom tišinom, gdje se svaki zvuk čini kao da se rastvara u ledenom zraku.
+settings_app_WinterMode_activated;Zimski način rada je aktiviran
+settings_app_WinterMode_deactivated;Zimski način rada je deaktiviran
+settings_app_VillagePanning_title;Kretanje po selu/resursnom polju
+settings_app_VillagePanning_description;Možete se kretati po prikazu sela i poljima resursa.
+settings_app_VillagePanning_activated;Kretanje je aktivirano
+settings_app_VillagePanning_deactivated;Kretanje je deaktivirano
+settings_app_PushNotifications_title;Opća push obavještenja
+settings_app_PushNotifications_description;Budite informirani o općim vijestima vezanim za aplikacije i igre putem push obavijesti.
+settings_app_PushNotifications_activated;Obavještenje o početku servera je aktivirano
+settings_app_PushNotifications_deactivated;Obavještenje o početku servera je deaktivirano
+settings_app_EnergySaving_title;Način rada za uštedu energije
+settings_app_EnergySaving_description;Uštedite bateriju svog uređaja nižom stopom FPS-a.\nAktiviranje načina rada za uštedu energije može dovesti do određenog vizualnog kašnjenja tokom korištenja aplikacije.
+settings_app_EnergySaving_activated;Aktiviran je način rada za uštedu energije
+settings_app_EnergySaving_deactivated;Način rada za uštedu energije je isključen
+settings_app_DataSaving_title;Način rada za uštedu mobilnih podataka
+settings_app_DataSaving_description;Uštedite mobilne podatke/propusnost slanjem manjeg broja zahtjeva serveru.\nAktiviranje načina rada za uštedu mobilnih podataka može dovesti do dužeg intervala osvježavanja podataka u igri.
+settings_app_DataSaving_activated;Način rada za uštedu mobilnih podataka je aktivan
+settings_app_DataSaving_deactivated;Način rada za uštedu mobilnih podataka je isključen
+auction_FilterType;Vrsta stavke
+auction_bidTooLow;Ponuda je preniska.
+villageList_Delete_Title;Obriši grupu sela
+villageList_Delete_Button;Obriši grupu
+villageList_Delete_Description;Želite li izbrisati ovu grupu sela?
+villageList_Delete_Description2;Sela u ovoj grupi neće biti pogođena.
+gameworldNews_title;Vijesti i ažuriranja
+moreInformation;Više informacija
+remainingGold;Preostalo zlato: {{goldIcon|Sprite}} {{goldAmount}}
+messages_addEmoji_title;Dodaj emotikone
+messages_select_emojis;Odaberite emotikone
+cams_resend_email_wait_error;Molimo pričekajte prije slanja još jedne e-pošte.
+cams_settings_accountDeletion_infoGold;Nakon što izbrišete svoj avatar, bit će vam poslana e-poruka s objašnjenjem kako prenijeti preostalo zlato na drugi avatar. \n<b> Molimo imajte na umu: </b> Vaše  Preostalo zlato se može prenijeti samo na određene servere.
+cams_changeMail_title;Promijeni email adresu
+cams_changeMail_description;Za promjenu adrese e-pošte potreban vam je pristup trenutnoj i novoj adresi e-pošte.
+cams_changeMail_socialHint;Promjena vaše adrese e-pošte neće uticati na  vašu prijavu putem Facebooka, Googlea ili Applea.
+cams_changeMail_cantAccess;Ne možete pristupiti svojoj e-pošti?
+cams_changeMail_sentVerification;Poslali smo verifikacioni email na: {{mail}}
+cams_changeMail_checkInbox;Provjerite svoju pristiglu poštu i slijedite upute da nastavite.
+cams_changeMail_verificationCode;E-mail kod za potvrdu: 
+cams_changeMail_verifyButton;Potvrdite e-poštu
+cams_changeMail_enterNew_description;Unesite novu email adresu ispod Poslat ćemo verifikacioni email na ovu adresu.
+cams_changeMail_enterNew_description2;Pratite uputstva u emailu da dovršite promjenu.
+cams_changeMail_enterNew_input;Unesite vašu novu email adresu
+cams_changeMail_enterNew_input_placeholder;Nova email adresa
+cams_changeMail_enterNew_button; Promjenite svoj e-mail 
+cams_changeMail_done_title;Email je ažuriran
+cams_changeMail_done_description1;Vaša email adresa je uspješno izmjenjena na {{mail}}
+cams_changeMail_done_description2;Automatski ćete biti odjavljeni i preusmjereni na stranicu za prijavu. Molimo koristite svoju novu email adresu da se prijavite.
+cams_changeMail_done_redirecting;Preusmjeravanje na prijavu {{time}}...
+bonusValue;+ {{value}}
+value;{{value}}
+ratioValues_Colon;{{a}}:{{b}}
+genericValue;{{VALUE}}
+enterAmount;Unesi količinu
+symbol_minus;-
+applyFilter;Primijeni filter
+resetFilter;Resetiraj filter
+rallyPoint_troopsOverview_outgoingMission_50_heroCentricAdventure;Istraživanje u avanturi
+rallyPoint_troopsOverview_returningFromAdventure_heroCentricAdventure;Povratak sa avanture
+silverExchangePopup_AvailableSilver;Dostupno srebro
+silverExchangePopup_SilverStatus;Trenutno je {{AMOUNT|LongNumber}} vašeg srebra vezano na aktivnim aukcijama
+silverExchangePopup_SilverError;Nemate dovoljno srebra za ovu akciju.
+silverExchangePopup_GoldError;Nemate dovoljno srebra za ovu akciju.
+hero.status50_heroCentricAdventure;Vaš heroj je na putu prema avanturi.
+inventoryItem_quality_1;Kvalitet 1
+inventoryItem_quality_2;Kvalitet 2
+inventoryItem_quality_3;Kvalitet 3
+inventoryItem_rarity_common_headGear;Uobičajena oprema za glavu
+inventoryItem_rarity_uncommon_headGear;Neuobičajena oprema za glavu
+inventoryItem_rarity_rare_headGear;Rijetka oprema za glavu
+inventoryItem_rarity_epic_headGear;Epska oprema za glavu
+inventoryItem_rarity_legendary_headGear;Legendarna oprema za Glavu
+inventoryItem_rarity_common_utility;Uobičajena korisna oprema
+inventoryItem_rarity_uncommon_utility;Neuobičajena korisna oprema
+inventoryItem_rarity_rare_utility;Rijetka korisna oprema
+inventoryItem_rarity_epic_utility;Epska korisna oprema
+inventoryItem_rarity_legendary_utility;Legendarna korisna oprema
+inventoryItem_rarity_common_weapon;Obično oružje
+inventoryItem_rarity_uncommon_weapon;Neobično oružje
+inventoryItem_rarity_rare_weapon;Rijetko oružje
+inventoryItem_rarity_epic_weapon;Epsko oružje
+inventoryItem_rarity_legendary_weapon;Legendarno oružje
+inventoryItem_rarity_common_armour;Obični oklop
+inventoryItem_rarity_uncommon_armour;Neobični oklop
+inventoryItem_rarity_rare_armour;Rijetki oklop
+inventoryItem_rarity_epic_armour;Epski oklop
+inventoryItem_rarity_legendary_armour;Legendarni oklop
+inventoryItem_rarity_common_boots;Obične čizme
+inventoryItem_rarity_uncommon_boots;Neobične čizme
+inventoryItem_rarity_rare_boots;Rijetke čizme
+inventoryItem_rarity_epic_boots;Epske čizme
+inventoryItem_rarity_legendary_boots;Legendarne čizme
+inventoryItem_rarity_common_consumable;Potrošni materijal
+inventoryItem_rarity_uncommon_consumable;Neobična potrošna roba
+inventoryItem_rarity_rare_consumable;Rijetka potrošna roba
+inventoryItem_rarity_epic_consumable;Epska potrošna roba
+inventoryItem_rarity_common_horse;Konj
+inventoryItem_rarity_uncommon_horse;Neobični konj
+inventoryItem_rarity_rare_horse;Rijedak konj
+inventoryItem_rarity_epic_horse;Epski konj
+inventoryItem_rarity_legendary_horse;Legendarni konj
+inventoryItem_rarity_common_material;Potrošni materijal
+inventoryItem_rarity_uncommon_material;Neobična potrošna roba
+inventoryItem_rarity_rare_material;Rijetka potrošna roba
+inventoryItem_rarity_epic_material;Epska potrošna roba
+search_item;Pretraži stavku
+search_select_item;Odaberite predmet
+avatar_confirmation_infoText_delete_goldBough;Nakon što započnete brisanje, trebat će <b>3 dana</b> da se završi proces brisanja za Vaš avatar jer ste na ovom avataru u skorije vrijeme kupovali zlato.\nRačun koji se briše više nema pristupa aukcijama ili mjenjačnici!\nBrisanje možete otkazati u bilo kojem trenutku ovdje.
+combatSimulator_addItemEffect;Dodaj efekat predmeta
+combatSimulator_editItemEffect;Uredi efekat predmeta
+addItemEffect_title;Dodajte efekte herojskih predmeta
+addItemEffect_description;Dodajte odvojene efekte kako biste prikazali pojedinačne bonuse svih mogućih herojskih predmeta.
+addItemEffect_importHeroEquipment;Uvoz vlastite opreme heroja
+addItemEffect_importHeroEquipment_success;Uvezeni herojski predmeti
+addItemEffect_selectEffect;Odaberite efekat predmeta
+addItemEffect_selectItem;Odaberite predmet
+addItemEffect_selectMagnitude;Odaberite magnitudu
+addItemEffect_selectUnit;Odaberite jedinicu
+addItemEffect_missingMagnitude;Nedostaje magnituda
+addItemEffect_effect_2;Smanjena šteta
+addItemEffect_effect_6;+ Dodatni bodovi zdravlja po danu
+addItemEffect_effect_12;+ Povećan napad i odbrana za određene jedinice
+addItemEffect_effect_13;+ Povećana borbena snaga
+cams_newMail_title;Nova email adresa
+cams_verifyNewMail_title;Potvrdi novu email adresu
+cams_verifyCurrentMail_title;Verifikuj trenutnu email adresu
+auction_notEnoughSilver;Nemate dovoljno srebra.
+auction_itemGroups;Grupe artikala
+auction_unknown;?
+auction_sortingOption_itemName;Naziv stavke
+auction_sortingOption_bidCount;Broj ponuda
+auction_sortingOption_finishedAt;Završeno za
+auction_sortingOption_highestBid;Najbolja ponuda
+auction_sortingOption_highestBidder_player;Najbolji ponuđač (igrač)
+auction_sortingOption_highestBidder_alliance;Najviši ponuđač (savez)
+auction_sortingOption_auctionAmount;Broj trenutnih aukcija
+auction_sortingOption_nextFinishedAt;Sljedeća završava za
+auction_sellingPrice;Prodajna cijena
+auction_sellingPrice_lowest;Najniža
+auction_sellingPrice_average;Prosjek
+auction_sellingPrice_highest;Najviša
+auction_result_won;<color={{colorValue|TextColor}}>Pobjeda</color>
+auction_result_lost;<color={{colorValue|TextColor}}>Nadmašena</color>
+auction_sellingPrice_averagePrice;Prosječna cijena
+auction_bidProcessTitle;Proces nadmetanja
+auction_bidProcessDescription1;Možete licitirati na artikle koji vas zanimaju.
+auction_bidProcessDescription2;Morate ponuditi barem minimalni iznos kako biste nadmašili trenutnu ponudu.
+auction_maxBidFeatureTitle;Funkcija maksimalne ponude
+auction_maxBidFeatureDescription1;Možete unijeti maksimalni budžet za određenu stavku.
+auction_maxBidFeatureDescription2;Sistem će automatski licitirati za vas do maksimuma koji ste postavili.
+auction_maxBidFeatureDescription3;Vaša ponuda se povećava samo onoliko koliko je potrebno da biste ostali najviši ponuđač.
+auction_maxBidFeatureDescription4;Licitiranje se nastavlja sve dok ne pobijedite ili dok ne budete nadmašeni iznad svog maksimalnog budžeta.
+auction_auctionDurationTitle;Trajanje aukcije
+auction_auctionDurationDescription1;Ako je preostalo vrijeme aukcije kraće od {{DURATION|Duration}}, trajanje se produžava do {{DURATION|Duration}} kada se promjeni najviši ponuđač.
+auction_auctionWinningTitle;Pobjeda
+auction_auctionWinningDescription1;Najviši ponuđač na kraju aukcije osvaja predmet.
+auction_auctionFinished;Aukcija je već završena.
+auction_wasJustOutbid;Trenutno niste najviši ponuđač.
+auction_currentHighestBidder;Trenutni najviši ponuđač
+auction_currentHighestBid;Trenutna najviša ponuda
+auction_yourMaximumBid;Vaša maksimalna ponuda
+auction_showFinished;Prikaži završeno
+auction_deleteAllFinished;Obriši sve završeno
+auction_startedAt;Započeto: {{TIME|DateTime}} | Pokrenuto
+auction_canceled;Otkazano
+auction_finished;Gotovo
+auction_finishedAt;Gotovo: {{TIME|DateTime}}
+auction_itemAuction_title;Aukcija predmeta
+auction_itemAuction_info;Kliknite na predmet u svom inventaru da biste započeli aukciju. Drugi igrači mogu licitirati na to. Aukcija traje i do {{INT}} sati.
+auction_whatHappensNext_title;Šta se dešava sljedeće
+auction_whatHappensNext_info1;Najviši ponuđač automatski kupuje predmet kada istekne vrijeme.
+auction_whatHappensNext_info2;Dobit ćete srebro kada se prodaja obavi.
+auction_whatHappensNext_info3;Bit ćete obaviješteni kada vaš artikal bude prodat.
+auction_error_cannotSell;Ovaj predmet se ne može prodati na aukciji.
+auction_error_onlyHorse;Ne možeš prodati svog jedinog konja.
+auction_sellItem;Prodajte predmet
+auction_sales;Prodaja
+auction_selectBatchSize;Odaberite veličinu serije
+auction_selectBatchSize_batches;<b>{{COUNT}}x</b> serije artikala
+auction_selectFilter_title;Odaberite filter
+goldShop_upTo;Do
+shopPromotion_openShop;Otvori prodavnicu
+shopPromotion_goldPromotionTitle;Aktivna promocija zlata
+shopPromotion_limitedTimeOffer;Vremenski ograničena ponuda!
+shopPromotion_goldPromotionDescription;Dobijte više zlata za svoj novac odmah.
+shopPromotion_timeRemaining;Preostalo vrijeme:
+hero_adventures_watchAdReduceDuration_title;Smanjite trajanje avanture za {{AMOUNT}}%
+hero_adventures_watchAdReduceDuration_description;Pogledajte video kako biste skratili trajanje sljedeće</b><b>avanture vašeg heroja.
+hero_adventures_watchAdIncreaseDanger_title;Povećajte opasnost od avanture na tešku avanturu
+hero_adventures_watchAdIncreaseDanger_description;Pogledajte video kako biste povećali opasnost  <b>sljedeće normalne</b> avanture na tešku i dobili više XP-a za heroje.
+hero_adventures_watchAdActive;Aktivan za sljedeću avanturu.
+hero_adventures_watchAdActiveNormal;Aktivan za sljedeću normalnu avanturu.
+hero_crafting_action_error_nonEpic;Mora biti identičan predmet iste rijetkosti i kvalitete.
+berichte.adventure_heroCentric;{{VILLAGE_NAME}} zaputite se na avanturu
+reports_share_notShareable;Ovaj izvještaj se ne može dijeliti.
+dailyQuests_dailyMaxReached;Dostignut je dnevni maksimum
+achievementQuests.DailyQuest_12_description;Otvorite igru ​​u pregledniku na računaru i pogledajte video.
+achievementQuests.DailyQuest_12_additionalInformation;www.travian.ba
+achievementQuests.DailyQuest_13_description;Na primjer, pogledajte video kako biste brže nadogradili svoje zgrade.
+achievementQuests.DailyQuest_13_additionalInformation;Ili kliknite na dugme "Pogledaj video" da biste direktno pogledali video bez dodatnih pogodnosti.
+addItemEffect_effect_11;+ povećana snaga napada protiv Natara
+auction_started;Aukcija je započela
+auction_error_batchSize;Nema dovoljno artikala za prodaju.
+auction_graph_notEnoughData;Nema dovoljno podataka
+auction_emptyInventory;- Trenutno nemate artikala za prodaju -
+RelativeTime_2_word;[data>1:{{data}} sati][data<2:{{data}} sat]
+gold_action_halveDuration;Prepolovite trajanje
+goldShop_advantage_Value_Duration;<b>+{{VALUE}}%</b> za <b>[DURATION>6:{{DURATION}} dana][DURATION<7:{{DURATION|Mult|24}} sati]</b>
+goldShop_advantage_Value_Active;<b>+{{VALUE}}%</b> aktivno za:
+goldShop_upgrade;Nadogradnja
+goldShop_advantage_stillActiveFor;Još uvijek aktivan za:
+goldShop_advantage_stillActiveFor_Value;{{DURATION}} do {{TIME}} sati
+goldShop_advantage_videoFeatureOnCD;Video bonus možete aktivirati samo jednom dnevno. \n Dnevno resetovanje u: {{TIMESTAMP|Countdown}}
+goldShop_advantage_popup_mainInfoHeader_ProductionboostLumber;Povećajte <b> proizvodnju drveta </b> u svim svojim selima.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostClay;Povećajte <b> proizvodnju gline </b> u svim svojim selima.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostIron;Povećajte <b> proizvodnju željeza </b> u svim svojim selima.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostCrop;Povećajte <b> proizvodnju žita </b> u svim svojim selima.
+goldShop_advantage_popup_mainInfoBody; Bonus se odnosi na osnovnu proizvodnju i sve ostale dodatne bonuse.
+goldShop_advantage_popup_premiumInfo;Bonus možete aktivirati sa Zlatom i dobiti +{{VALUE}}% bonus na proizvodnju.\nMožete aktivirati automatsko produženje za trajno trajanje bonusa.
+goldShop_advantage_popup_videoFeatureInfo;Ili možete pogledati kratki video i dobiti manji +{{VALUE}}% bonus proizvodnje.\n<b>Video bonus se može aktivirati samo jednom dnevno za svaki resurs.</b>
+goldShop_advantage_popup_upgradeInfo;U bilo kojem trenutku možete nadograditi na +{{VALUE}}% bonus proizvodnje za zlato.
+goldShop_advantage_upgradePopupInfo1;Nadogradnja bonusa resursa će ukloniti vaš trenutni aktivni bonus.
+goldShop_advantage_upgradePopupInfo2;Umjesto toga, dobit ćete +{{VALUE}}% za [DURATION>6:{{DURATION}} dana][DURATION<7:{{DURATION|Mult|24}}].
+goldShop_advantage_upgradePopup_title;Bonus za nadogradnju
+productionOverview_Bonus;+{{VALUE}}% proizvodnje
+hero_adventures_watchAdReduceDuration_toast;Trajanje avanture je smanjeno.
+hero_adventures_watchAdIncreaseDanger_toast;Opasnost od avanture je povećana.
+hero_consumablePopup_amountEquippedAfter;Količina opremljena nakon:
+hero_consumablePopup_amountEquippedAfterUse;Količina opremljena nakon:
+hero_consumablePopup_amountLeftInInventory;Količina preostalih predmeta u inventaru:
+cams_recover_password_cooldown;Molimo pričekajte {{VALUE}}
+cams_settings_changePassword_cooldown;Molimo pričekajte {{VALUE}}
+infobox_productionBoost_upgradeButton;Nadogradnja
+infobox_productionBoost_upgradeBonusWithGold;Nadogradite i produžite svoj bonus sa zlatom da biste dobili +{{PREMIUM_PERCENTAGE}}% na {{TIME}} sata.
+infobox_productionBoost_expires;{{PERCENTAGE}} {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresLumber;+{{PERCENTAGE}}% bonus proizvodnje drveta ističe za {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresClay;+{{PERCENTAGE}}% bonus za proizvodnju gline ističe za {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresIron;+{{PERCENTAGE}}% bonus za proizvodnju željeza ističe za {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresCrop;+{{PERCENTAGE}}% bonus za proizvodnju žita ističe za {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expired;{{PERCENTAGE}}
+infobox_productionBoost_expiredLumber;+{{PERCENTAGE}}% bonus proizvodnje drveta je <b> istekao</b>.
+infobox_productionBoost_expiredClay;+{{PERCENTAGE}}% bonus proizvodnje gline je <b> istekao</b>.
+infobox_productionBoost_expiredIron;+{{PERCENTAGE}}% bonus proizvodnje željeza je <b> istekao</b>.
+infobox_productionBoost_expiredCrop;+{{PERCENTAGE}}% bonus proizvodnje žita je <b> istekao</b>.
+infobox_levelUpProductionReminder;Povećajte proizvodnju resursa u svim svojim selima za zlato (+{{PREMIUM_PERCENTAGE}}%) ili gledanjem videa (+{{VIDEO_PERCENTAGE}}%)
+infobox_oneTimeProductionBoostReminder;Sada možete aktivirati svoj bonus od +{{VIDEO_PERCENTAGE}}% resursa gledanjem videa.
+travelSimulator_title;Simulator putovanja
+travelSimulator_sourceTribe;Izvorna lokacija plemena
+travelSimulator_noLocationSelected;Nije odabrana lokacija
+travelSimulator_slowestUnit_title;Najsporija jedinica
+travelSimulator_slowestUnit_settings;{{UNIT}} | Brzina: {{SPEED}}
+travelSimulator_TournamentSquareLevel_info;(Samo za udaljenost veću od 20 polja)
+travelSimulator_tournamentSquareLevel_option;{{LEVEL}} | {{VALUE}}%
+travelSimulator_unitSelection_title;Odaberite najsporiju jedinicu
+travelSimulator_unitSelection_unitType;Tip jedinice
+travelSimulator_unitSelection_unitSpeed;Brzina jedinice
+travelSimulator_unitSelection_selectedUnitSpeed;Brzina: {{SPEED}}
+travelSimulator_calculation_land;<b>Kopno:</b> {{VALUE}}
+travelSimulator_calculation_sea;<b>More:</b> {{VALUE}}
+travelSimulator_heroAttending;Heroj prisustvuje
+travelSimulator_vikingRaidBonus;Bonus za vikinški napad
+travelSimulator_troopSpeedArtefactEffect;Efekat artefakta brže vojske
+travelSimulator_toast_selectSourceAndTarget;Odaberite važeću izvornu i ciljnu lokaciju!
+travelSimulator_toast_selectSourceTribe;Odaberite važeće pleme!
+IOSAppTrackingTransparencyMessage;Pritiskom na "Dozvoli" koristit ćete informacije o uređaju za relevantniji sadržaj oglasa
+goldShop_advantage_Value_Duration_Hours;<b>+{{VALUE}}%</b> tokom <b>{{DURATION}} sati</b>
+travelSimulator_tournamentSquareLevel_title;Nivo arene
+travelSimulator_troopSpeedAncientPower;Brzina jedinica, drevna moć
+RelativeTime_Formatted;[weeks>0:{{weeks}}sedmice][days>0:{{days}}dan]{{data}}
+settings_account_tab;Nalog
+settings_notification_tab;push notifikacije
+settings_app_PushNotifications_popup_title;push notifikacije
+settings_app_PushNotifications_popup_header;Dozvolite nam da vam šaljemo obavještenja
+settings_app_PushNotifications_popup_info1;Da biste primali push obavještenja s novostima i korisnim informacijama o igri, prvo dozvolite obavještenja od nas.
+settings_app_PushNotifications_popup_info2;Obavještenja možete omogućiti u postavkama aplikacije na vašem uređaju.
+settings_app_PushNotifications_popup_info3;Također se možete vratiti ovdje kad god želite ponovo onemogućiti obavještenja.
+settings_app_PushNotifications_popup_action_button;Otvori postavke aplikacije
+ratioValueMax;/ {{a}}
+market_sendResources_completed;Završeno
+market_sendResources_villageNotFound;Nije pronađeno Resurse možete poslati samo članovima Vaše alijanse i saveznicima.
+no_ads_popup_title;Nema video oglasa
+no_ads_popup_header;Došlo je do problema prilikom pokušaja prikazivanja video oglasa.
+no_ads_popup_info1;Za to može postojati nekoliko razloga:
+no_ads_popup_info2; • Trenutno nema dostupnih oglasa u oglasnom fondu za vašu regiju.
+no_ads_popup_info3; • Vaše postavke privatnosti ograničavaju broj oglasa koji se mogu prikazivati.
+no_ads_popup_info4; • Tehnički problemi s našom aplikacijom ili pružateljem oglasa.
+no_ads_popup_settings_msg;Molimo Vas da u postavkama privatnosti omogućite personalizirane oglase.
+no_ads_popup_support_msg;Molimo kontaktirajte našu podršku ako problem i dalje postoji.
+no_ads_popup_support_button;Kontaktirajte podršku
+city_upgradeToACity_wwVillageNotUpgradeable;Sela "Svjetsko čudo" ne mogu se nadograditi u gradove.
+travelSimulator_selectMagnitude;Odaberite magnitudu
+marketplace_merchantsOverview_returningTo;Vraćanje <b>{{Village}}</b> od <b>{{Player}}</b>
+market_sendResources_sendAgain;Pošalji ponovo
+search_village_notFound;Nije pronađeno Resurse možete poslati samo članovima Vaše alijanse i saveznicima.
+settings_app_AnimationsPayoffs_activated;Animacija slanja trupa/trgovaca je aktivirana
+settings_app_AnimationsPayoffs_deactivated;Animacija slanja trupa/trgovaca je deaktivirana
+hero_resourceTransferPopup_empty;Nema resursa za prenos iz inventara heroja.
+hero_toast_appearanceChanged;Izgled promijenjen
+alliance_editMemberPopup_customNote;Prilagođena napomena
+alliance_editMemberPopup_titleOfRole;Naziv uloge
+alliance_editMemberPopup_setSpecialization;Postavi specijalizaciju
+alliance_role_offensive;Napadački
+alliance_role_defensive;Obrambeni
+alliance_role_hybrid;Hibrid
+alliance_role_scout;Izviđač
+alliance_role_support;Podrška
+alliance_role_wow_hammer;WoW čekić
+alliance_role_none;Nijedan
+ad_fallback_popup_title;Preuzmi svoju nagradu
+ad_fallback_popup_info;Trenutno nema video oglasa, ali i dalje želimo nagraditi tvoju odanost! Molimo te, sačekaj trenutak dok pripremimo nagradu.
+ad_fallback_popup_rewardGranted;Nagrada dodijeljena
+ad_fallback_popup_claim;Preuzmi nagradu
+ad_fallback_popup_closeWarning;Ako prerano zatvoriš ovaj ekran, nagrada će biti poništena
+gameplay_tip_1;Naseljenike možeš obučavati u rezidenciji ili dvorcu (rezidencija dostupna na nivou 10).
+gameplay_tip_2;Možeš izgraditi samo jedan dvorac po avataru. Dvorac omogućava do 3 mjesta za širenje, dok rezidencija omogućava samo 2.
+gameplay_tip_3;Ako želiš promijeniti svoj glavni grad, izgradi dvorac u novom selu. Imaj na umu da će ekskluzivne građevine u tvom starom glavnom gradu biti izgubljene ili snižene.
+gameplay_tip_4;Možeš naseliti ili osvojiti drugo selo ako imaš dovoljno kulturnih poena.
+gameplay_tip_5;Kulturne poene zarađuješ nadogradnjom građevina i organiziranjem slavlja u opštini.
+gameplay_tip_6;Velika slavlja mogu se održavati u opštini (nivo 10) i daju više kulturnih poena, ali koštaju više resursa.
+gameplay_tip_7;Da osvojiš selo, smanji njegovu odanost na nulu pomoću administratora obučenih u tvojoj rezidenciji ili dvorcu.
+gameplay_tip_8;Istraži administratore u akademiji prije nego što ih obučiš u rezidenciji ili dvorcu.
+gameplay_tip_9;Možeš osvojiti sela od Natara ili drugih igrača.
+gameplay_tip_10;Tvoj glavni grad ne mogu osvojiti drugi igrači.
+gameplay_tip_11;Koristi pretragu cropova da pronađeš sela sa 9 ili 15 polja hrane koja mogu podržati veću vojsku.
+gameplay_tip_12;Resursna polja u tvom glavnom gradu mogu se nadograditi na viši nivo nego u ostalim selima.
+gameplay_tip_13;Pošalji resurse u prijateljska sela putem pijace.
+gameplay_tip_14;Na pijaci možete trgovati resursima sa drugim igračima.
+gameplay_tip_15;Povećaj kapacitet trgovaca nadogradnjom trgovačkog centra.
+gameplay_tip_16;Nadogradi dvorac heroja na nivo 10 da pripojiš oazu i povećaš proizvodnju resursa.
+gameplay_tip_17;Nadogradi snagu svojih jedinica u kovačnici. Ove nadogradnje se primjenjuju odmah na sve jedinice tog tipa, uključujući i one koje su već obučene.
+gameplay_tip_18;Koristi simulator borbe da procijeniš ishod bitke prije napada. Što više detalja uneseš u simulaciju, to će rezultat biti tačniji.
+gameplay_tip_19;Uz Zlatni klub možeš aktivirati izbjegavanje jedinica u svom glavnom gradu da automatski sačuvaš svoju vojsku od nadolazećih napada.
+gameplay_tip_20;Kada se tvoje jedinice vrate kući, izbjegavanje jedinica je privremeno onemogućeno na 10 sekundi.
+gameplay_tip_21;Nadogradi svoje izviđače u kovačnici da poboljšaš njihove sposobnosti špijuniranja.
+gameplay_tip_22;Zidovi značajno povećavaju odbranu tvog sela.
+gameplay_tip_23;Gradi skloništa da zaštitiš svoje resurse od neprijateljskih pljački.
+gameplay_tip_24;Gali mogu obučiti postavljače zamki kako bi uhvatili napadače prije nego što borba započne.
+gameplay_tip_25;Kako bi oslobodio zarobljene jedinice, moraš uspješno izvesti običan napad na selo koje ih je zarobilo.
+gameplay_tip_26;Igrači koji napadaju mogu osloboditi 75% zarobljenih jedinica, ali branilac može odlučiti da ih sve 100% mirno pusti na slobodu.
+gameplay_tip_27;Izgradi bolnicu kako bi izliječio do 40% svojih jedinica izgubljenih u bici.
+gameplay_tip_28;Gali mogu obučiti postavljača zamki za hvatanje napadačkih jedinica prije nego što bitka počne.
+gameplay_tip_29;Izgradi klesara u svom glavnom gradu da povećaš izdržljivost građevina protiv katapulta i ovnova.
+gameplay_tip_30;Možeš postaviti svog heroja da se sakrije tokom neprijateljskih napada na tvoje matično selo kako bi ostao siguran.
+gameplay_tip_31;Porazi životinje u slobodnim oazama kako bi dobio dodatne resurse. Jače životinje daju više resursa.
+gameplay_tip_32;Pobijedi životinje u slobodnim oazama svojim herojem kako bi stekao iskustvo.
+gameplay_tip_33;Koristi kaveze za hvatanje životinja u slobodnim oazama i ojačaj svoje selo.
+gameplay_tip_34;Opremi svog heroja predmetima poput masti ili posebnog oklopa kako bi mu se zdravlje brže obnavljalo.
+gameplay_tip_35;Oživi svog heroja vremenom koristeći resurse ili odmah pomoću kante.
+gameplay_tip_36;Možeš rušiti građevine kada tvoja glavna zgrada dostigne 10. nivo.
+gameplay_tip_37;Izgradi ambasadu da se pridružiš alijansi ili osnuješ vlastitu.
+vacationMode_title;Mod odmora
+vacationMode_vacation;Odmor
+vacationMode_vacationModeActive;Mod za odmor je aktivan
+vacationMode_info;Koristi način odmora da zaštitiš svoja sela dok te nema. Sljedeće radnje su deaktivirane dok je uključen način odmora:
+vacationMode_deactivated_action1;slanje ili primanje vojske
+vacationMode_deactivated_action2;Kreni u avanture sa svojim herojem
+vacationMode_deactivated_action3;Započinjanje novih građevinskih narudžbi ili obuke jedinica
+vacationMode_deactivated_action4;korištenje pijace (uključujući trgovačke puteve)
+vacationMode_deactivated_action5;Održavaj slavlja, započni istraživanja ili izvrši nadogradnje
+vacationMode_deactivated_action6;Stvaranje ili pridruživanje savezima
+vacationMode_deactivated_action7;doniranje sirovina za bonuse alijanse
+vacationMode_deactivated_action8;Učestvuj na aukcijama
+vacationMode_deactivated_action9;Promijeni svoj glavni grad
+vacationMode_deactivated_action10;izbrisati račun
+vacationMode_deactivated_territory_action1;Nadograđivanje sela u grad
+vacationMode_deactivated_territory_action2;Tvoj nalog ne doprinosi regionalnoj populaciji tvoje alijanse i tvoja sela ne dobijaju pobjedničke bodove
+vacationMode_conditions_title;uslovi za odmor ispunjeni
+vacationMode_duration_info;Koliko dana treba trajati mod odmora
+vacationMode_durationUntil;Odmor do <b>{{DATE}}</b>
+vacationMode_availableDays;Dostupni dani <b>{{AVAILABLE}}/{{TOTAL}}</b>
+vacationMode_startButton;Uđi u mod odmora sada
+vacationMode_error_noCancelTime;Možeš prekinuti odmor tek nakon {{HOURS}} sati
+vacationMode_error_missingRequirement;Ispuni sve zahtjeve da bi mogao ući u mod odmora
+vacationMode_error_noVacationDaysLeft;Nemaš nijedan dostupan dan za ulazak u mod odmora
+vacationMode_error_cooldown;Mod odmora možeš pokrenuti tek {{HOURS}} sati nakon što je zadnji put završen
+vacationMode_abortSuccess;Mod odmora je prekinut!
+vacationMode_remainingDays;Preostali dani u modu odmora
+vacationMode_runsUntil;Mod odmora traje do
+vacationMode_abortInfo;Mod odmora možeš prekinuti najranije <b>{{DATE}}</b>
+vacationMode_abortAvailable;Možete prekinuti mod odmora sada
+vacationMode_abortConfirmHeader;Da li zaista želiš prekinuti mod odmora?
+vacationMode_abortConfirmInfo;Neiskorišteni dani će biti nadoknađeni. Ova radnja se ne može poništiti.
+vacationMode_startCooldownInfo;Mod odmora možeš pokrenuti najranije <b>{{DATE}}</b>
+vacationMode_abortButton;Prekini mod odmora
+vacationMode_conditions_has_outgoing_troops;Nema odlaznih jedinica
+vacationMode_conditions_has_incoming_troops;Nema dolaznih jedinica prema tvojim selima ili oazama
+vacationMode_conditions_has_reinforcing_troops_for;Nema poslanih pojačanja drugim igračima
+vacationMode_conditions_has_reinforcing_troops_from;Nema pojačanja od drugih igrača u tvojim selima ili oazama
+vacationMode_conditions_has_ww_village;Nemaš u vlasništvu selo Svjetskog čuda
+vacationMode_conditions_has_artifact_village;Nemaš u vlasništvu selo s artefaktom
+vacationMode_conditions_has_beginners_protection;Nemaš početničku zaštitu
+vacationMode_conditions_has_trapped_troops;U tvojim zamkama nema jedinica, i nijedna tvoja jedinica, uključujući i tvog heroja, nije zarobljena
+vacationMode_conditions_has_deletion_event;Tvoj avatar nije označen za brisanje
+vacationMode_conditions_has_conquered_oase;Nisi anektirao nijednu oazu u posljednjih {{HOURS}} sati. U mod odmora možeš ući tek kada prođe {{HOURS}} sati od anektiranja oaze ili nakon što je izgubiš.
+vacationModePopup_info;Tvoj nalog će biti zaštićen tokom moda odmora. Međutim, proizvodnja resursa će se nastaviti i tvoje jedinice će i dalje trošiti hranu. <color=red>To može dovesti do izgladnjivanja jedinica.</color>
+vacationModePopup_start_info;Da li zaista želiš ući u mod odmora na <b>{{DAYS}}</b> [DAYS>1:dana][DAYS<2:dan]? Mod odmora možeš otkazati uz pomoć zlata nakon perioda hlađenja od {{COOLDOWN}} sati.
+vacationModePopup_troopConsumption;Potrošnja sopstvenih jedinica
+vacationModePopup_starvationEstimate;Najraniji trenutak izgladnjivanja
+vacationModePopup_starvationTitle;Potrošnja sopstvenih jedinica
+goldTransfer_accept_gift;Da, prenesi zlato
+goldTransfer_decline_gift;Ne, odbij zlato
+goldTransfer_accepted_toast;Prijenos zlata je prihvaćen.
+goldTransfer_declined_toast;Prijenos zlata je odbijen.
+smithy_requirementsNotSatisfied;Nisu ispunjeni zahtjevi za unapređenje ove jedinice
+vacationModeLobby_status;na odmoru
+block_vacationMode_toast;Ne možeš ovo uraditi dok si na odmoru.
+goldTransfer_verifyOwnership_title;Potvrdite vlasništvo
+goldTransfer_verifyOwnership_description;Da biste prenijeli bilo koje nepotrošeno zlato koje ste kupili na postojeći avatar, prvo potvrdite vlasništvo nad zlatom unošenjem adrese e-pošte na koju je poslan kod za prijenos.
+goldTransfer_verifyOwnership_emailPlaceholder;E-mail adresa
+goldTransfer_verifyOwnership_errorNoEmail;Molimo Vas unesite email adresu.
+goldTransfer_verifyOwnership_errorAlreadyUsed;Ovaj link za prijenos zlata je već iskorišten.
+goldTransfer_verifyOwnership_errorInUse;Ovaj link za prijenos zlata je nevažeći.
+goldTransfer_verifyOwnership_verifyButton;Provjeri
+goldTransfer_selectTargetAvatar_title;Odaberi ciljanog avatara
+goldTransfer_selectTargetAvatar_description;Odaberi avatara kojem želiš prenijeti zlato.
+goldTransfer_transferableGold_label;Prenosivo zlato:
+goldTransfer_enterAvatarName_header;Unesite ime svog avatara
+goldTransfer_avatarName_placeholder;Ime avatara
+goldTransfer_searchAvatar_Button;Pretraži avatara
+goldTransfer_searchAvatarNothingFound_error;Nije pronađen aktivan avatar s ovim imenom.
+goldTransfer_ownAvatarList_header;Odaberi jednog od svojih aktivnih avatara ({{account}})
+goldTransfer_selectOwnAvatarConfirm_Button;Odaberi avatar
+goldTransfer_selectGameworld_title;Odaberite server
+goldTransfer_selectGameworld_description;Ime avatara pronađeno je na više servera. Zlato možeš prenijeti samo na jednog avatara. Odaberi server.
+goldTransfer_selectGameworldConfirm_Button;Odaberite server
+goldTransfer_changeAvatar_Button;Promijenite ime avatara
+goldTransfer_confirm_title;Potvrdite prijenos
+goldTransfer_confirm_Button;Potvrdite prijenos
+goldTransfer_confirmAvatarOnOneWorld_info;Ime avatara je pronađeno na jednom serveru:
+goldTransfer_confirmAvatarName_prefix;Ime avatara:
+goldTransfer_confirmGameworld_prefix;Server:
+goldTransfer_transferComplete_title;Transfer uspješan
+goldTransfer_transferComplete_description;Tvoje zlato je uspješno preneseno avataru <b>{{avatarname}}</b> na <b>{{gameworldname}}.</b>
+goldTransfer_transferComplete_returnButton;Vrati se u igru
+cams_settings_accountDeletion_information_warning_v2;Ova radnja će trajno izbrisati tvoj nalog. Sljedeći sadržaj povezan s tvojim nalogom bit će izgubljen:\n<indent=0.5em>•  Svi avatari koji pripadaju tvom nalogu\n•  Sve medalje osvojene na tvom nalogu</indent>\n\nPotvrdi tako što ćeš u polje ispod upisati riječ "delete".
+mapMarkers_popupTitle;Postavi oznaku
+mapMarkers_markerType;Vrsta oznake
+mapMarkers_markerColor;Boja oznake
+mapMarkers_setAlliance;Postavi oznaku za svoju alijansu
+mapMarkers_type_field;Polje
+mapMarkers_addMsg_success;Oznaka je uspješno dodana!
+mapMarkers_saveMsg_success;Oznaka je uspješno sačuvana!
+mapMarkers_noPermission_error;Zatraži dozvolu od vođe svoje alijanse.
+mapMarkers_marker;Oznaka
+mapMarkers_markers;Oznake
+mapMarkers_listAllianceTitle;Oznake saveza
+mapMarkers_listPlayerTitle;Oznake igrača
+mapMarkers_listAlliances;Alijanse
+mapMarkers_listPlayers;Igrači:
+mapMarkers_listFlags;Oznake
+mapMarkers_deleteMarker;Izbriši oznaku
+mapMarkers_deleteMarkerMessage;Želiš li izbrisati ovu oznaku?
+mapMarkers_showOnMap;Prikaži moje oznake na mapi
+embassy_general_subtab;Generalno
+embassy_villagesNearby_subtab;Sela u blizini
+embassy_villagesNearby_listHeader;Sela alijanse/konfederacije

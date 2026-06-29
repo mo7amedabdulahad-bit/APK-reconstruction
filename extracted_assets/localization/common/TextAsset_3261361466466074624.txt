@@ -1,0 +1,2115 @@
+detail_window_header_title;{{buildingName|TranslateSuffixFor|allgemein.gid}}
+;{{INT}}
+levelWithValue;{{level}}. seviye
+valueWithPercent;%{{value}}
+valueAsRankingPosition;{{value}}.
+valueChangeInBrackets;({{change|Sign}})
+valueChangeInBracketsWithPercent;(%{{change|Sign}})
+ratioValues;{{a}}/{{b}}
+coordinates;<nobr>({{x}}|{{y}})</nobr>
+village_with_coordinates;{{villageName}} <nobr>({{x}}|{{y}})</nobr>
+village_with_clickable_coordinates;{{villageName}} {{mapId|Coordinates}}
+valuePerHour;{{a}}/s
+back;Geri
+fill;Doldur
+hero;Kahraman
+done;Hazır
+remove;Kaldır
+prerequisites;Koşullar:
+newAmount;Yeni miktar
+before;önce
+after;sonra
+permissions;İzinler
+changesSaved;Değişiklikler kaydedildi!
+genericError;Beklenmeyen hata
+allianceTagInBrackets;[{{allianceId|AllianceLink}}]
+autocompleteNoResult;Eşleşme bulunamadı
+medalAdded;Madalya eklendi
+continueEdit;Düzenlemeye devam et
+levelUp;Seviye atlandı!
+non_existing_object;[?]
+sorting;Sıralama
+copiedToClipboard;Panoya kopyalandı
+maximumLengthError;Azami uzunluk: {{max}}.
+sortingOptions;Sıralama seçenekleri
+WIP_comingSoon;Bu özellik yakında geliyor!
+upgradeTab_fastForward_button;%{{Percent}} daha hızlı
+upgradeTab_masterBuilder_button;Yapı ustası\nile inşa et {{goldCost}}{{goldIcon|Sprite}}
+upgradeTab_adBoostPopup_boost;%{{BOOST}} güçlendirme
+infoTab_upgradingToLevel;Kurulan seviye {{level}}:
+infoTab_genericCurrently;Şu anda:
+infoTab_genericAtLevel;{{INT}}. seviyede:
+infoTab_genericEffect;{{INT}}
+infoTab_currentProduction;Şu anki üretim:
+infoTab_productionAtLevel;Üretim Seviye {{INT}}:
+infoTab_effectPerHour;saatte {{INT}}
+networkIssues;Oyun sunucusu ile bağlantı kayboldu.
+cantLoadServerList;Ağ bağlantısı sorunları nedeniyle sunucu listesi yüklenemedi. Lütfen cihazın internete bağlı olduğundan emin olup tekrar deneyin.
+barracks_TrainTroops_Action;Asker eğit
+barracks_ViewTrainingsList;Eğitim listesini göster
+barracks_unitNeedsToBeResearched;Birimin önce şurada araştırılması gerekiyor:
+barracks_requiresLabel;Gerekenler:
+barracks_trainingCosts;Asker eğitim maliyeti
+barracks_troopsInTraining;Eğitimdeki askerler
+training_started;Eğitim başarıyla başladı!
+targetSelection_relationLabel;Durum:
+targetSelection_selectedVillage;Seçilen köy
+targetSelection_noSelectedVillage;Hiçbir köy seçilmedi
+targetSelection_ownVillages;Kendi köylerin
+targetSelection_relation0;Tarafsız
+targetSelection_relation1;Dost
+targetSelection_relation2;Kendi birliğin
+targetSelection_relation3;Kendi köyün
+targetSelection_alreadyThere_troops;Askerlerin zaten orada.
+targetSelection_alreadyThere_merchants;Tüccarların zaten orada.
+rallyPoint_button_confirmTarget;Hedefi onayla
+rallyPoint_button_prepareTroops;Askerleri hazırla
+rallyPoint_button_updateWave;Saldırı dalgasını güncelle
+rallyPoint_button_copyWave;Saldırı dalgasını kopyala
+rallyPoint_button_newWave;Yeni saldırı dalgası ekle
+rallyPoint_sendTroops_chooseDestination;Asker gönder - Varış yeri seç
+rallyPoint_sendTroops_sendTroopAction_1;Asker gönder - Onayla
+rallyPoint_sendTroops_sendTroopAction_3;Asker gönder - Onayla
+rallyPoint_sendTroops_sendTroopAction_4;Asker gönder - Onayla
+rallyPoint_sendTroops_sendTroopAction_5;Asker gönder - Onayla
+rallyPoint_sendTroops_sendTroopAction_72;Asker sevk et - Onayla
+rallyPoint_sendTroops_sendTroopAction_9;Askerleri geri çek - Onayla
+rallyPoint_sendTroops_sendTroopAction_10;Yeni köy kur
+rallyPoint_sendTroops_sendTroopButton_1;Asker gönder
+rallyPoint_sendTroops_sendTroopButton_3;Asker gönder
+rallyPoint_sendTroops_sendTroopButton_4;Asker gönder
+rallyPoint_sendTroops_sendTroopButton_5;Asker gönder
+rallyPoint_sendTroops_sendTroopButton_72;Asker sevk et
+rallyPoint_sendTroops_sendTroopButton_9;Askerleri geri gönder
+rallyPoint_sendTroops_sendTroopButton_10;Yeni köy kur
+rallyPoint_sendTroops_coordinateX;<b>X</b> koordinatı:
+rallyPoint_sendTroops_coordinateY;<b>Y</b> koordinatı:
+rallyPoint_sendTroops_selectOnMap;Veya haritadan yer seç:
+rallyPoint_sendTroops_arrivalTime;Kalan: <b>{{hoursLeft|Duration}}</b>, toplam: <b>{{hoursLeft|TimeCountUp}}</b>
+rallyPoint_sendTroops_catapultTargetPopup;Mancınık hedefini seç:
+rallyPoint_sendTroops_catapultTarget_category_1;Altyapı binaları
+rallyPoint_sendTroops_catapultTarget_category_2;Askeri binalar
+rallyPoint_sendTroops_catapultTarget_category_3;Hammadde binaları
+rallyPoint_sendTroops_catapultTarget_random;Rastgele
+rallyPoint_sendTroops_catapultTarget_noBuilding;Bina seç
+rallyPoint_sendTroops_catapultTarget_recentTargets;En son seçilen:
+rallyPoint_sendTroops_changeHeroHomeVillage;Kahramanın yaşadığı köyü değiştir
+rallyPoint_sendTroops_attackNoSelection;Saldırı türünü seç
+rallyPoint_sendTroops_movementType_5;Destekler
+rallyPoint_sendTroops_movementType_3;Saldırı
+rallyPoint_sendTroops_movementType_4;Yağma
+rallyPoint_sendTroops_attackForwarding;Sevkiyat
+rallyPoint_sendTroops_noTroopsSelected;- Hiç asker seçilmedi -
+rallyPoint_sendTroops_noTroopsAvailable;Asker gönderilemez. Bu köyde kullanılabilir asker yok.
+rallyPoint_sendTroops_forwardingVillageError;Askerler sadece birlik üyelerine veya kendi köylerine sevk edilebilir.
+rallyPoint_sendTroops_forwardingDestination;Asker sevk et - Hedef seç
+rallyPoint_sendTroops_WaveRemoved;Saldırı dalgası kaldırıldı
+rallyPoint_sendTroops_maxWaves;En yüksek sayıda saldırı dalgasına ulaşıldı
+rallyPoint_sendTroops_notEnoughTroopsToCopy;Saldırı dalgasını kopyalamak için yeterli asker yok.
+rallyPoint_sendTroops_troopsSent;Askerler gönderildi!
+rallyPoint_sendTroops_toOverview;Genel bakışa
+rallyPoint_sendTroops_backToVillage;Köye geri dön
+rallyPoint_sendTroops_mission;Görev:
+rallyPoint_troopsOverview_1;Gelen saldırı ve yağmalar
+rallyPoint_troopsOverview_2;Giden saldırı ve yağmalar
+rallyPoint_troopsOverview_3;Dönen askerler
+rallyPoint_troopsOverview_4;Bu köyde ve köyün vahalarındaki askerlerin
+rallyPoint_troopsOverview_5;Köydeki yabancı askerler
+rallyPoint_troopsOverview_6;Diğer köylerde veya vahalardaki askerlerin
+rallyPoint_troopsOverview_7;Gelen destekler
+rallyPoint_troopsOverview_8;Giden destekler
+rallyPoint_troopsOverview_9;Giden destekler
+rallyPoint_troopsOverview;Asker görünümü
+rallyPoint_troopsOverview_consumption;Tüketim: {{cropConsumption|ShortenNumber|10000}}  saatte {{iconName|Sprite}}
+rallyPoint_troopsOverview_arrivalTime;Ulaşım süresi: <b>{{Duration|Countdown}}</b>, zamanı: <b>{{date|Time}}</b> 
+rallyPoint_troopsOverview_incomingMission_3;Gelen saldırının sahibi: 
+rallyPoint_troopsOverview_incomingMission_4;Gelen yağmanın sahibi: 
+rallyPoint_troopsOverview_outgoingMission_3;Saldırı-> 
+rallyPoint_troopsOverview_outgoingMission_4;Yağmalar 
+rallyPoint_troopsOverview_outgoingMission_5;Destekler 
+rallyPoint_troopsOverview_outgoingMission_6;İzcilik savunmaları ve birlikleri 
+rallyPoint_troopsOverview_outgoingMission_50;Çıkılan macera: 
+rallyPoint_troopsOverview_outgoingMission_72;Asker sevk edilen yer: 
+rallyPoint_troopsOverview_outgoingMission_10;Yeni köy kurulumu 
+rallyPoint_troopsOverview_outgoingMission_40;Askerlerin orman sığınağına kaçıyor.
+rallyPoint_troopsOverview_returningMission;Dönülen yer: 
+rallyPoint_troopsOverview_ownTroops_1;Kendi askerlerin: 
+rallyPoint_troopsOverview_ownTroops_2;Kendi askerlerin: 
+rallyPoint_troopsOverview_ownTroops_3;Kendi askerlerin: 
+rallyPoint_troopsOverview_ownTroops_4;<b>Doğa</b>: 
+rallyPoint_troopsOverview_ownTroops_5;Kendi askerlerin: 
+rallyPoint_troopsOverview_ownTroops_6;Kendi askerlerin: 
+rallyPoint_troopsOverview_ownTroops_7;Kendi askerlerin: 
+rallyPoint_troopsOverview_foreignTroops_2;Şu köyden destek askerler: 
+rallyPoint_troopsOverview_foreignTroops_4;Şu köyden alınan esirler: 
+rallyPoint_troopsOverview_ownTroopsInOther_2;Şu köydeki destek askerlerin: 
+rallyPoint_troopsOverview_ownTroopsInOther_4;Şu köydeki esir askerlerin: 
+rallyPoint_troopsOverview_origin;Köken: 
+rallyPoint_troopsOverview_reinforcement;Şu oyuncunun destekleri: 
+rallyPoint_troopsOverview_killed;Askerler öldürüldü!
+rallyPoint_troopsOverview_released;Askerler salındı!
+rallyPoint_troopsOverview_forwardedTroopsButton;Sevk edilen askerler
+rallyPoint_troopsOverview_returnToOverview;Görünüme geri dön
+rallyPoint_troopsOverview_incomingAttacks;<color={{colorValue|TextColor}}>{{incomings}}</color> gelen
+rallyPoint_troopsOverview_amountIncoming;{{value}} gelen
+rallyPoint_troopsOverview_amountOutgoing;{{value}} giden
+rallyPoint_troopsOverview_amountReturning;{{value}} dönen
+rallyPoint_troopsOverview_firstArrivalTime;{{timestamp|Countdown}} saat içinde
+rallyPoint_troopsOverview_forwardTroops;Sevk et
+rallyPoint_troopsOverview_MergeTroops;Köye dahil et
+rallyPoint_troopsOverview_WithdrawTroops;Geri gönder
+rallyPoint_troopsOverview_sort_1;Önce işaretlenen hareketler
+rallyPoint_troopsOverview_sort_2;Önce ilk varan
+rallyPoint_troopsOverview_sort_3;Önce son varan
+rallyPoint_troopsOverview_sort_4;Önce en yeni gönderilen askerler
+rallyPoint_troopsOverview_sort_5;Önce en eski gönderilen askerler
+rallyPoint_troopsMerge_troopsToBeMerged;Birleştirilmek için seçilen askerler:
+rallyPoint_troopsMerge_currentGold;Şu anki Altın:  {{iconName|Sprite}} {{currentGold}}
+rallyPoint_troopsMerge_goldLeft_0;Asker birleştirmek için bugün {{remainingGold}} / {{maxAllowedGold}} Altın kaldı.
+rallyPoint_troopsMerge_goldLeft_1;Asker birleştirmek için bugün {{remainingGold}} / {{maxAllowedGold}} Altın kaldı. Buna karşın hammadde ile halen birleştirebilirsin.
+rallyPoint_troopsMerge_troopsMergedToast;Askerler birleştirildi!
+rallyPoint_raidList_beingRaided;{{current}}/{{total}} yağmalanıyor
+rallyPoint_infoTab_EvasionShortDescription;Merkez köyünde asker kaçırmayı etkinleştir.
+rallyPoint_farmList_createNewTitle;Yeni liste oluştur
+rallyPoint_farmList_editTitle;Listeyi değiştir
+rallyPoint_farmList_listName;Liste adı
+rallyPoint_farmList_selectDefaultTroops;Varsayılan askerleri seç
+rallyPoint_farmList_addTroopsButton;Asker ekle
+rallyPoint_farmList_editTroopsButton;Askerleri düzenle
+rallyPoint_farmList_setTroopsButton;Askerleri belirle
+rallyPoint_farmList_createListButton;Liste oluştur
+rallyPoint_farmList_editListButton;Listeyi güncelle
+rallyPoint_farmList_editTroopsTitle;Yağma listesindeki askerleri düzenle
+rallyPoint_farmList_deleteList;Listeyi sil
+rallyPoint_selectTroops;Asker seç
+rallyPoint_farmList_listCreated;Liste oluşturuldu
+rallyPoint_farmList_exitList;Listeden çık
+rallyPoint_farmList_startAll;Tüm hedefleri başlat
+rallyPoint_farmList_startAllLists;Hepsini başlat
+rallyPoint_farmList_startSelected;Seçilenleri başlat
+rallyPoint_farmList_noTarget;- Hiçbir hedef seçilmedi -
+rallyPoint_farmList_noTargetExist;Bu listede hiçbir hedef yok
+rallyPoint_farmList_selectedAmount;{{amount}} seçildi:
+rallyPoint_farmList_listUpdated;Liste güncellendi
+rallyPoint_farmList_listDeleted;Liste silindi
+rallyPoint_farmList_editWarning;- Listeyi silmek, bu listedeki tüm hedefleri silecektir\n- Askerleri düzenlemek, hedefin sadece sonraki zamanlardaki varsayılan askerlerini etkileyecektir
+rallyPoint_farmList_sortingFailed;Sıralama başarısız! Lütfen tekrar dene!
+rallyPoint_farmList_notStartedPopupTitle;Başlamayan yağmalar
+rallyPoint_farmList_notStartedPopupElement;{{message}} nedeniyle <b>{{total}}</b>
+rallyPoint_farmList_NotStartedPopupButtonGoTo;Yağma listesine git
+rallyPoint_farmList_AddTargetTitle;Hedef ekle
+rallyPoint_farmList_changeTroops;Askerleri değiştir
+rallyPoint_farmList_targetAdded;Hedef eklendi
+rallyPoint_farmList_targetAlreadyOnList;Hedef zaten bu yağma listesinde var, lütfen başka bir yağma listesi seç veya yeni bir tane oluştur.
+rallyPoint_farmList_choose;Yağma listesi seç
+rallyPoint_farmList_notYetRaided;Henüz yağmalanmadı
+rallyPoint_farmList_EditRaids;[raidsAmount>1:Hedefleri][raidsAmount=1:Hedefi] düzenle
+rallyPoint_farmList_DeleteRaidsPlayerQuestion;[raidsAmount=1:Bu hedefi][raidsAmount>1:Bu hedefleri] silmek istediğinden emin misin?
+rallyPoint_farmList_ChangeRaidList;Yağma listesini değiştir
+rallyPoint_farmList_ChangeTarget;Hedefi değiştir
+rallyPoint_farmList_ChangeTroops;Askerleri değiştir
+rallyPoint_farmList_DeactivateTarget;[raidsAmount>1:Hedefleri][raidsAmount=1:Hedefi] devreden çıkar
+rallyPoint_farmList_MultiEditWarning;Birden fazla hedefi düzenliyorsun. Yapılan değişiklikler seçilen tüm hedefleri etkileyecektir
+rallyPoint_farmList_UpdateRaids;[raidsAmount>1:Hedefleri][raidsAmount=1:Hedefi] güncelle
+rallyPoint_farmList_filterShowTroopsTitle;Askerleri göster
+rallyPoint_farmList_filterShowTroopsDescription;Her hedef için seçilen askerleri gösterir
+rallyPoint_farmList_filterShowPopulationTitle;Hedef nüfusunu göster
+rallyPoint_farmList_filterShowPopulationDescription;Hedef köyün nüfusunu gösterir
+rallyPoint_farmList_filterShowDistanceTitle;Mesafeyi göster
+rallyPoint_farmList_filterShowDistanceDescription;Hedefin köyüne olan uzaklığını gösterir
+rallyPoint_farmList_filterShowLastRaidTitle;Son yağma bilgisini göster
+rallyPoint_farmList_filterShowLastRaidDescription;Hedefe yapılan son yağma bilgisini gösterir
+rallyPoint_farmList_filterShowBountyTitle;Ganimet ve hammaddeleri göster
+rallyPoint_farmList_filterShowBountyDescription;Elde edilen ganimet ve hammaddeyi gösterir
+marketplace_createOffer;Teklif oluştur
+marketplace_myOffers_title;Tekliflerim
+marketplace_myOffers_merchants;Tüccar: {{count}}
+marketplace_myOffers_alliance_True;Birliğe: Evet
+marketplace_myOffers_alliance_False;-
+marketplace_myOffers_interval;{{amount}} saat
+marketplace_myOffers_offerDeleted;Teklif silindi
+marketplace_merchantsOverview_arrival;{{duration}} saat Varacağı zaman: {{arrivalTime}}
+marketplace_merchantsOverview_incomingMerchants;Gelen teslimatlar: {{count}}
+marketplace_merchantsOverview_outgoingMerchants;Giden teslimatlar: {{count}}
+marketplace_merchantsOverview_noIncomingMerchants;- Hiç gelen tüccar yok -
+marketplace_merchantsOverview_noOutgoingMerchants;- Hiç giden tüccar yok -
+marketplace_merchantsOverview_IncomingCat;Gelen
+marketplace_merchantsOverview_outgoingCat;Giden
+marketplace_merchantsOverview_capacity;Sığa: {{capacity}}
+marketplace_merchantsOverview_merchantsOverview;Tüccar görünümü
+marketplace_merchantsOverview_ArrivingSoonest;En erken varan
+marketplace_merchantsOverview_ArrivingLatest;En geç varan
+marketplace_merchantsOverview_ShortestDistance;En kısa mesafe
+marketplace_merchantsOverview_LongestDistance;En uzun mesafe
+marketplace_merchantsOverview_transportTo;<b>{{Player}}</b> adlı oyuncunun <b>{{Village}}</b> köyüne nakliye
+marketplace_merchantsOverview_transportFrom;<b>{{Player}}</b> adlı oyuncunun <b>{{Village}}</b> köyünden nakliye
+marketplace_merchantsOverview_returningFrom;<b>{{Player}}</b> adlı oyuncunun <b>{{Village}}</b> köyünden dönüş
+academy_research_viewResearchList;Devam eden araştırmalar
+academy_research_allUnitsResearched;Tüm birimler araştırıldı.
+academy_researchListPopup_title;Şu an araştırılan askerler
+academy_researchListPopup_remainingTime;{{timeLeft}} kaldı. Hazır olduğu zaman: {{readyAt}}
+academy_researchListPopup_constructImmediately;Hemen inşa et
+research_started;Araştırma başarılı bir şekilde başlatıldı!
+research_timeLeft;{{TIME|Countdown}} kaldı
+townHall_celebration_ongoingCelebration;Devam eden
+topBar_perHourLabel;/s:
+topBar_maxLabel;Azami:
+topBar_resourceFull;Dolu
+leftPanel_infoBox;Bilgi kutusu
+villagePanel_playerNameTitle;{{playerName}} oyuncusunun köyleri
+villagePanel_toStatistics;Köy istatistiklerine
+villagePanel_culturePointsNeeded;Sonraki köy için gerekli kültür puanı
+mapCell_type;{{x}}{{y}}
+mapCell_type_village;{{villageName}}
+mapCell_type_1;Yerel
+mapCell_type_2;Vadi
+mapCell_type_3;Boş vaha
+mapCell_type_4;İşgal edilmiş vaha
+mapCell_type_5;Vahşi Doğa
+mapCell_Owner;Sahibi
+mapCell_type_valley;Vadi
+mapCell_Wilderness;Bu konumda ilgi çekici bir şey yok.
+mapCell_Distance;{{distance|Round|1}} kare
+mapCell_locationInfo;Konum bilgisi
+mapCell_surroundings;Çevre
+mapCell_actions_editFarmlist;Yağma listesini düzenle
+mapCell_actions_addFarmlist;Yağma listesine ekle
+mapCell_actions_raidOasis;Vahayı yağmala
+mapCell_showOnMap;Haritada göster
+mapCell_noReports;- Bu konumla ilgili herhangi bir bilgi yok -
+berichte.region_;{{PLAYERACTIVE}}{{PLAYERPASSIVE}}{{VILLAGE}}{{NAME1}}{{NAME2}}{{ALLY1}}{{ALLY2}}{{NAME}}
+mapCell_goToOwnVillage;Kendi köyüne git
+constructionQueue_timeLeftToFinish;{{timestamp|Countdown}} kaldı. Hazır olduğu zaman: {{timestamp|Time}}
+constructionQueue_timeUntilStart;{{timestamp|Countdown}} içinde başlıyor
+constructionQueue_MasterBuilderTitle;Yapı ustası kuyruğu (inşaatın başlangıcındaki maliyeti: {{masterBuilderCost|Sprite}} {{masterBuilderCost}})
+constructionQueue_Constructing;Bina inşa ediliyor
+constructionImmediatelyPopup_topText;Aşağıdaki işlemler hemen tamamlanır:
+constructionImmediatelyPopup_title;Hemen tamamla
+newBuildingConstructionDetail_dateTimeEnoughResources;Yeterli hammadde {{date|Date}}, {{time|Time}} tarihinde olacak
+newBuildingConstruction_noBuildingsAvailable;Şu anda yeni bir yapı inşa edilemez.
+goldclubpopup_currentGold;Şu anki Altın:  {{iconName|Sprite}} <color={{colorValue|TextColor}}>{{currentGold}}</color>
+goldclubpopup_activated_toastMessage;Altın Kulüp etkinleştirildi!
+loginPage_version;{{currentVersion}} sürümü
+loginPage_loginBlocked;Giriş engellendi
+loginPage_loginBlocked_fails;Çok fazla başarısız giriş denemesi
+loginPage_loginBlocked_message;Hesabın, çok fazla başarısız giriş denemesini nedeniyle bloke edildi.
+loginPage_loginBlocked_resolve;Hesabınının kilidini açmak için tarayıcı ile şuraya giriş yapmalısın:
+serverSelection_selectRegion;Bölge seç
+serverSelection_selectGameWorld;Oyun dünyası seç
+serverSelection_0;Uluslararası
+serverSelection_1;Arap
+serverSelection_2;Asya
+serverSelection_3;Avrupa
+serverSelection_4;Amerika
+serverSelection_99;Geliştirici
+serverSelection_mapSize;Harita boyutu:
+serverSelection_mapSize_0;Küçük
+serverSelection_mapSize_1;Büyük
+serverSelection_artifacts;Tılsımlar:
+serverSelection_constructionPlans;İnşa planları:
+serverSelection_inXdays;In {{days}} days
+serverSelection_changeGameWorld;Oyun dünyasını değiştir
+serverSelection_username;Kullanıcı ismi:
+serverSelection_password;Şifre:
+serverSelection_loginButton;Giriş yap ve oyna
+serverSelection_forgotPassword;Şifremi unuttum
+serverSelection_noAccount;Bir hesabım yok
+serverSelection_loginError;Kullanıcı adı ve şifre hatalı
+serverSelection_graphQlError;Sunucudan veri alınırken hata oluştu
+serverSelection_tokenRefreshError;Son kullanılan sunucuya giriş yaparken hata oluştu: Lütfen tekrar giriş yap.
+serverSelection_stayLoggedIn;Oyun dünyasında oturumunu açık tut
+troopsInfo_title;{{villageName}} köyündeki askerler
+unitInfo_velocity;Her saat <b>{{fields}}</b> kare
+unitInfo_resourceCarriage;<b>{{INT}}</b> hammadde
+unitInfo_researchPrerequisites;Araştırma için koşullar:
+unitInfo_trainingPrerequisites;Eğitim için koşullar:
+unitInfo_canCarry;Taşıma sınırı:
+exchangeResources_currentTitle;Yeni miktar
+exchangeResources_lockAmount;Kilitlenecek miktar
+exchangeResources_changeTitle;Değişim
+exchangeResources_restTitle;Kalan
+exchangeResources_buildingPossible_True;Geliştirme mümkün
+exchangeResources_buildingPossible_False;Geliştirme mümkün değil
+exchangeResources_mergePossible_True;Birleştirme mümkün
+exchangeResources_mergePossible_False;Birleştirme mümkün değil
+exchangeResources_researchPossible_True;Araştırma mümkün
+exchangeResources_researchPossible_False;Araştırma mümkün değil
+exchangeResources_celebrationPossible_True;Festival mümkün
+exchangeResources_celebrationPossible_False;Festival mümkün değil
+exchangeResources_reviveHero_True;Kahramanı canlandırmak mümkün
+exchangeResources_reviveHero_False;Kahramanı canlandırmak mümkün değil
+exchangeResources_currentlyAvailable;Mevcut olan: <b>{{amount}}</b>
+exchangeResources_maximumAvailable;Kullanılabilir azami miktar: <b>{{amount}}</b>
+exchangeResources_distributeEvenly;Kalan hammaddeleri eşit olarak dağıt:
+exchangeResources_distributeOnResource;Veya şunun için ilk olarak kalan hammaddelere öncelik ver:
+exchangeResources_distributeAuto;Kendiliğinden dağıtım
+exchangeResources_distributeManual;Dağıtımı kendin yap
+exchangeResources_availableTroops;Kullanılabilir askerler: {{amount}}
+buildingActivities_title;İnşaat faaliyetleri
+buildingActivities_idle;Çalışmayan
+buildingActivities_type;Tür
+buildingActivities_building_13;Geliştirmeler:
+buildingActivities_building_16;Yağma listesi
+buildingActivities_building_17;Tüccarlar
+buildingActivities_building_19;Eğitimdeki askerler
+buildingActivities_building_20;Eğitimdeki süvariler
+buildingActivities_building_29;Eğitimdeki askerler
+buildingActivities_building_30;Eğitimdeki süvariler
+buildingActivities_building_21;Eğitimdeki askerler
+buildingActivities_building_22;Araştırma
+buildingActivities_building_24;Festivaller
+buildingActivities_building_46;Asker iyileştirme
+buildingActivities_buildingAction_;{{amount}}{{max}}
+buildingActivities_buildingAction_16;{{amount}} yağma devam ediyor
+buildingActivities_buildingAction_17;{{amount}}/{{max}} kullanılabilir
+mainMenu_title;Ana menü
+mainMenu_quests;Görevler
+playerDetails_infoTab;Oyuncu bilgisi
+playerDetails_villageTabTitle;{{oases}} vahalı {{villages}} köy
+playerDetails_SortBy_1;Nüfus miktarı
+playerDetails_SortBy_2;Zafer puanı
+playerDetails_SortBy_3;Köy ismi
+playerDetails_SortBy_4;Bölge ismi
+player_gender_DontSpecify;Belirtilmemiş
+player_gender_Other;Diğer
+player_gender0;Erkek
+player_gender1;Kadın
+player_gender2;Diğer
+player_gender3;Belirtilmemiş
+playerDetails_NotesFor;{{playerName}} ile ilgili notlar
+playerDetails_NoDescription_Others;- Bu oyuncu bir tanım eklememiş -
+playerDetails_NoDescription_Own;- Henüz bir tanım eklenmedi -
+playerDetails_editLanguages;Dili değiştir
+playerDetails_searchLanguage;Dil ara
+goldShopPlaceholder_title;Mağaza yakında geliyor!
+goldShopPlaceholder_description;Altın Mağazası henüz mobil uygulamaya eklenmedi.<br><br> Altın satın almak için lütfen hesabına tarayıcı ile giriş yap.
+goldShop_title;Altın Mağazası
+goldShop_advantage_5;Travian Plus
+goldShop_advantage_4;Odun
+goldShop_advantage_1;Tuğla
+goldShop_advantage_2;Demir
+goldShop_advantage_3;Tahıl
+goldShop_feature_activated;Özellik etkinleştirildi!
+goldShop_purchaseFailed;Satın alma başarısız!
+goldShop_purchaseSuccess;Satın alma başarılı.
+goldShop_transactionInProgress;Ödeme işlemi devam ediyor.\nLütfen bekleyin.
+goldShop_transactionFailed;Bir şeyler yanlış gitti.\nBir süre sonra lütfen tekrar deneyiniz.
+goldShop_transactionTimeout;Sevgili oyuncu, ödemeniz zaman sınırını aştı ve bu nedenle doğru bir şekilde gerçekleşmemiş olabilir. Herhangi bir sorunla karşılaşırsanız lütfen <style="link"><link="https://support.travian.com/support/tickets/new">ödeme desteğimizle</link></style> iletişime geçin.
+forceUpdate_title;Uygulamayı güncelle
+forceUpdate_description;Travian Legends Mobil Uygulamanın desteklenmeyen bir sürümünü kullanıyorsunuz. Lütfen App Store sayfasına gidip uygulamayı güncelleyin.<br><br>Güncellemeden sonra oynamaya devam etmek için oyunu yeniden başlatın.
+forceUpdate_toStore;App Store'a
+market_sendResources_requiredMerchants;Gerekli tüccarlar:
+market_sendResources_capacityPerMerchant;Tüccar başına kapasite
+market_sendResources_amountRepeats;Tekrar sayısı:
+market_sendResources_confirmResources;Hammaddeleri onayla
+market_sendResources_amountWithX;{{amount}}x
+market_sendResources_sent;Hammaddeler gönderildi!
+market_offer_maxDuration;Azami nakliye süresi:
+market_offer_confirm;Teklifi onayla
+market_offers_title;Teklifler
+market_capacity;Sığa: {{capacity}}
+market_offers_offering;Sattığım şey:
+market_offers_searching;Aradığım şey:
+market_offers_offered;Göndereceğin
+market_offers_wanted;Alacağın
+market_offers_accepted;Teklif kabul edildi! Hammaddeler yolda, tüccarlar yola koyuldu.
+market_offers_ownAllianceOnly;Sadece kendi birliğinden oyuncular
+market_ratio_11;1:1
+market_ratio_1X;1 : X
+market_tradeRoutes_to;Gideceği yer:
+market_tradeRoutes_entryAmount;<b>{{amount}}</b> girdi
+market_tradeRoutes_noRoutes;- Herhangi bir ticaret yolu oluşturulmadı -
+market_tradeRoutes_travelTime;Yolculuk süresi: {{time|Duration}} saat
+market_tradeRoutes_activeRatio;{{active}}/{{total}} etkin
+market_tradeRoutes_active;Etkin
+market_tradeRoutes_paused;Duraklatıldı
+market_tradeRoutes_updated;Güncellenen ticaret yolları
+market_tradeRoutes_deleted;Ticaret yolları silindi
+market_tradeRoutes_returnAt;{{time|Time}} tarihinde geri dönecek
+market_tradeRoutes_merchantsAndRepeat;{{merchants}} tüccar, {{repeats}}x
+market_tradeRoutes_filterOptions;Filtreleme seçenekleri
+market_tradeRoutes_showMerchants;Tüccarları göster
+market_tradeRoutes_showMerchantsText;Şu anda kaç tüccarın kullanıldığını gösterir
+market_tradeRoutes_showResources;Hammaddeleri göster
+market_tradeRoutes_showResourcesText;Taşınan hammadde miktarını gösterir
+market_tradeRoutes_afterInputFieldsSuffix;Saat
+market_tradeRoutes_interval;{{INT}} saat
+market_tradeRoutes_confirmTarget;Hedefi onayla
+market_tradeRoutes_arrivalTime;Kalan: {{duration|Duration}}, toplam: {{arrivalTime|Time}}
+market_tradeRoutes_created;Ticaret yolu oluşturuldu
+market_tradeRoutes_edit;[routeAmount>1:Ticaret yollarını][routeAmount=1:Ticaret yolunu] düzenle
+market_tradeRoutes_update;[routeAmount>1:Ticaret yollarını][routeAmount=1:Ticaret yolunu] güncelle
+market_tradeRoutes_multiEditWarning;Birden fazla ticaret yolunu düzenliyorsun. Değişiklikler {{routeAmount}} ticaret yolunun tümünü etkileyecek.
+market_tradeRoutes_editResourcesTitle;Hammaddeleri değiştir
+market_tradeRoutes_editResourcesButton;Hammaddeleri düzenle
+market_tradeRoutes_setResourcesButton;Hammaddeleri belirle
+market_tradeRoutes_updateResourcesButton;Hammaddeleri güncelle
+market_tradeRoutes_pause;[routeAmount>1:Ticaret yollarını][routeAmount=1:Ticaret yolunu] duraklat
+market_tradeRoutes_pauseDescription;Ticaret yolu duraklatılmışlar listesine taşınır ancak yine de pazar yerinde kalır.
+market_tradeRoutes_delete;[routeAmount>1:Ticaret yollarını][routeAmount=1:Ticaret yolunu] sil
+market_tradeRoutes_deleteConfirmQuestion;[routeAmount=1:Bu ticaret yolunu][routeAmount>1:Bu ticaret yollarını] silmek istediğinden emin misin?
+market_tradeRoutes_invalidTarget;Ticaret yolları sadece Dünya Harikası olan köylere, birliğin ya da ittifak üyelerinin tılsım sahibi köylerine veya Dünya Harikası inşa planı olan köylerine gönderim yaparken kullanılabilir.
+hero.status;{{NAME}}
+hero_adventures_selectVillage;Köy seç
+hero_adventures_explore;Keşfet
+hero_adventures_sendHero;Kahraman gönder
+hero_adventures_sent;Macera başladı
+hero_status_reviveWithBucket;Kahramanını hemen canlandırmak için kullan.
+hero_status_reviveWithRes;Kahramanı canladırmak için hammadde kullan.
+hero_inventory_consumablePopupTitle;Kullanılabilir eşya
+hero_resourceTransferPopup_title;Hammaddeleri aktar
+hero_resourceTransferPopup_ReadyForTransfer;Aktarma için hazır
+hero_resourceTransferPopup_transferSelected;Seçilenleri aktar
+hero_resourceTransferPopup_transferMax;Mümkün olan en fazlasını aktar
+hero_resourceTransferPopup_storageFull;Depo dolu. Daha fazla hammadde aktaramazsın.
+hero_inventory_transferToCurrentVillage;Şu anda etkin olan köye aktarıldı: <b>{{VILLAGE}}</b>
+hero.itemDescriptionV2Details;{{PERCENTAGE}}{{EXPERIENCE}}{{RAISE}}{{LIMIT}}{{MAX}}{{TIME}}
+hero.itemDescriptionV2;{{VALUE}}
+hero_consumablePopup_currentEquippedItems;Şu anda kuşanılan eşyaların sayısı:
+hero_consumablePopup_itemsLeftInInventory;Heybede kalan eşya sayısı:
+hero.itemTypeV2_inventory;Sarf malzemesi
+hero.cooldownWithTime;{{DATE|DateTime}} tarihinde bitecek {{COOLDOWN}} saatlik bir geri sayımı var.
+reports_overview_title;{{COUNT}} rapor
+reports_overview_title_selected;Seçilen {{SELECTED}} / {{COUNT}} rapor
+reports_overview_title_archived;Arşivlenen raporlar
+reports_overview_archived_noReports;- Arşivlenen hiçbir rapor yok -
+reports_filters_title;Filtre seç
+reports_filters_allReports;Tüm raporlar
+reports_filters_applyButton;{{COUNT}} filtre uygula
+reports_filters_noFilter;Hiçbir filtre seçilmedi
+reports_detail_title;Rapor ayrıntıları
+berichte.;{{NAME1}}{{NAME2}}{{VILLAGE_NAME}}{{X}}{{Y}}{{COORDS}}{{NAME}}
+reports_player_from_village;[{{allianceId|AllianceLink}}] {{villageId|VillageLink}} köyünden {{playerId|PlayerLink}}
+reports_troops_lost;Kaybedilen askerler:
+reports_troops_hospitalized;Hastaneye yatırılan:
+reports_xp_gained;{{amount}} DP kazanıldı
+reports_health_change;-%{{change}} sağlık
+reports_hero_died;Kahramanın macera sırasında öldü
+reports_scouted_building;{{buildingType|TranslateSuffixFor|allgemein.gid}} seviye <b>{{level}}</b>
+reports_refreshed;Raporlar yeniden yüklendi!
+reports_deleteReportPopup_title;Raporları sil
+reports_deleteReportPopup_warningTitle;{{X}} raporu silmek istediğinden emin misin?
+reports_deleteReportPopup_warningTitleAll;Tüm raporları silmek istediğinden emin misin?
+reports_deleteReportPopup_warningDescription;Bir raporu sildiğinde, rapor kalıcı olarak gider. Onu geri getiremezsin.
+reports_deleted;Rapor silindi!
+reports_markedUnread;Rapor okunmadı olarak işaretlendi!
+reports_archived;Rapor arşivlendi!
+reports_deleted_all;Tüm raporlar silindi!
+reports_deleted_selected;{{X}} rapor silindi!
+reports_markedRead_all;Tüm raporlar okundu olarak işaretlendi!
+reports_markedRead_selected;{{X}} rapor okundu olarak işaretlendi!
+alliance_nameAndTagPair;{{allianceName}} | {{allianceTag}}
+alliance_editAllianceName;Birlik ismini düzenle
+alliance_name;Birlik adı
+alliance_nameError;Birlik adı boş bırakılamaz
+alliance_tag;Birlik kısaltması
+alliance_tagError;Birlik kısaltması boş bırakılamaz
+alliance_profileTab_inviteNewPlayer;Yeni oyuncu davet et
+alliance_profileTab_showInvitedPlayers;Davet edilen oyuncuları göster
+alliance_invitedPopup_title;Davet edilen oyuncular
+alliance_invitedPopup_invitationRemoved;Davet geri alındı!
+alliance_invitePlayerPopup_title;Oyuncu davet et
+alliance_invitePlayerPopup_noPlayerFound;Oyuncu bulunamadı
+alliance_invitePlayerPopup_playerInvited;Oyuncu davet edildi!
+alliance_editMemberPopup_title;Üyeyi düzenle
+alliance_editMemberPopup_customMessage;Özel ileti
+alliance_editMemberPopup_setRole;Konumunu belirle
+alliance_editMemberPopup_kickPlayerFromAlliance;Oyuncuyu birlikten at
+alliance_editMemberPopup_cantChangePermission;Şu anki izinler değiştirilemez: Uyarıyı inceleyin.
+alliance_kickPlayerPopup_areYouSure;{{Player}} adlı oyuncuyu birlikten atmak istediğine emin misin?
+alliance_kickPlayerPopup_playerKicked;Oyuncu atıldı!
+alliance_editAllianceDescription;Birlik tanımını düzenle
+alliance_topColumn;Üst alan
+alliance_bottomColumn;Alt alan
+alliance_bbCodeAdded;BB kodu eklendi
+alliance_generalInformation;Genel bilgi
+alliance_confederacy_tab;İttifak
+alliance_diplomacy;Diplomasi
+alliance_diplomacy_tab1;SA / Savaş
+alliance_diplomacy_send_new;Yeni bir tane gönder
+alliance_diplomacy_openRequests;Açık istekler
+alliance_diplomacy_otherOffered;{{allianceId|AllianceLink}}, {{type|TranslateSuffixFor|alliance_diplomacy_type}} teklif etti
+alliance_diplomacy_youOffered;{{allianceId|AllianceLink}} ile {{type|TranslateSuffixFor|alliance_diplomacy_type}} teklif ettin
+alliance_diplomacy_offerDeclare;Teklif et / İlan et
+alliance_diplomacy_type;Tür
+alliance_diplomacy_type1;ittifak
+alliance_diplomacy_type2;SA
+alliance_diplomacy_type3;savaş
+alliance_diplomacy_type4;ittifak
+alliance_diplomacy_typekick;ittifaktan ihraç
+alliance_diplomacy_deleteText_;{{type|TranslateSuffixFor|alliance_diplomacy_type}}{{alliance|AllianceLink}}
+alliance_diplomacy_deleteTitle_RemoveRequest;İsteği geri al
+alliance_diplomacy_deleteText_RemoveRequest;{{alliance|AllianceLink}} ile {{type|TranslateSuffixFor|alliance_diplomacy_type}} teklifini geri almak istediğinden emin misin?
+alliance_diplomacy_deleteTitle_TerminateExisting;Sonlandır
+alliance_diplomacy_deleteText_TerminateExisting;{{alliance|AllianceLink}} ile {{type|TranslateSuffixFor|alliance_diplomacy_type}} durumunu sonlandırmak istediğine emin misin?
+alliance_diplomacy_deleteTitle_ConfederacyKickVote;Sonlandır
+alliance_diplomacy_deleteText_ConfederacyKickVote;{{subject|AllianceLink}} birliğini atmak için ittifakın diğer üyelerinin onayına ihtiyacın var.\n\nDevam etmek ve kararınızı diğer ittifaklara bildirmek istiyor musunuz?
+alliance_diplomacy_deleteTitle_QuitConfederacy;Sonlandır
+alliance_diplomacy_deleteText_QuitConfederacy;Alttaki üyelerle ittifakını sonlandırmak istediğinden emin misin?
+alliance_diplomacy_deleteTitle_RemoveConfederacyProposal;İsteği geri al
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Kick;{{alliance|AllianceLink}} birliğinin {{subject|AllianceLink}} birliğini ittifaktan atma talebini reddetmek istediğine emin misin?
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Join;{{alliance|AllianceLink}} birliğinin {{subject|AllianceLink}} birliğini ittifaka katma talebini reddetmek istediğine emin misin?
+alliance_diplomacy_sent;Teklif gönderildi
+alliance_diplomacy_accepted;Diplomatik ilişki kabul edildi
+alliance_diplomacy_canceled;Diplomatik ilişki iptal edildi
+alliance_diplomacy_declined;İstek reddedildi
+alliance_diplomacy_kickStarted;İstek gönderildi
+alliance_diplomacy_proposal_approved;İstek kabul edildi
+alliance_diplomacy_noContract;Birliğinin, diğer birliklerle geçerli bir antlaşması yok.
+alliance_diplomacy_noConfederacy;Birliğin, bir ittifakın parçası değil.
+alliance_diplomacy_alreadyOpenOffer;Bu birlik için zaten açık bir teklif mevcut.
+alliance_diplomacy_alreadyExistingContract;Bu birlik ile zaten yapılmış bir antlaşma var.
+alliance_diplomacy_warInDeletion;Diğer birliğin de savaşı sonlandırmasını bekleyin.
+alliance_union_leave;İttifaktan ayrıl
+alliance_union_add;Yeni talep ekle
+allianz.diplomacy_with_type;{{NAME}}
+allianz.diplomacy_with_type4;{{NAME}} ile ittifak
+alliance_newsBbDescription;Haber sayısını değiştirmek için "sayı"yı değiştir
+alliance_LossesBBName;Kayıplar
+alliance_LossesBBDescription;Karşılaştırılacak birliği seçmek için "isim" bölümünü değiştir
+alliance_NapBBName;Saldırmazlık antlaşmaları
+alliance_WarsBBName;Savaşlar
+alliance_addBBCode;BB kodu ekle
+alliance_addMedal;Madalya ekle
+alliance_assignToPosition;Konuma üyeler ekle ve birlik adını değiştir
+alliance_editPermissions;İzinleri düzenle
+alliance_roleTitle;Konumun ismi:
+alliance_assignToPosition_onlyMemberError;Bu birliğin tek üyesi sensin. Üyelere konum atama ve birlik ismi değiştirme, işaretlenmeden bırakılamaz.
+alliance_noAllianceEvents;- Gösterilecek hiçbir birlik etkinliği yok -
+alliance_dailyContribution;Günlük katkı
+alliance_contributionAmount;Katkı: <b>{{AMOUNT}}</b>
+alliance_resourcesContributed;{{current}}/{{max}} hammadde bağışlandı
+alliance_contributionResetIn;{{time|Countdown}} içinde sıfırlanacak
+alliance_resUntilNext;Sonraki seviyeye kalan hammadde: {{resources|LongNumber}}
+alliance_bonusCurrentlyActivating;Katkı {{resources|Countdown}} içinde etkinleşecek
+alliance_bonusMaxed;Azami katkıya ulaşıldı
+alliance_tripledContribution;Katkını üçe katladın!
+alliance_contributionStatistics;Katkı istatistikleri
+alliance_contributionNone;- Şu anda katkı yapan kimse yok -
+auth_clientVerificationFailed;İstemci doğrulanamadı. Lütfen bu işlemi yeniden dene.
+banned_seeMessage;İletiye bak
+banned_acceptPunishment;Cezayı kabul et
+residence_settlement;Yerleşim
+residence_settlementVillages1;Köylerin işgal ettiği yerleşim boşlukları
+residence_settlementVillages2;Köyler 1 yerleşim boşluğu işgal ediyor
+residence_settlementAvailableSlots;Kullanılabilir yerleşim boşlukları
+residence_nextSlot;Sonraki yerleşim boşluğunun kilidi için: {{current}}/{{required}} kültür puanı
+residence_slotsUsed;Kullanılan boşluk:
+residence_settlementDetails;Yerleşim ayrıntıları
+residence_settlementSlotX;{{number}} yerleşim boşluğu
+residence_settlementUpgradeNeeded;Bu yerleşim boşluğunun kilidini açmak için {{buildingType|TranslateSuffixFor|allgemein.gid}} binasını geliştir
+residence_settlementSettle;Bir köy kurmak için dünya haritasındaki boş bir alana yerleşimciler gönder. Başka bir köy kurmak için 3 yerleşimciye, her birinden 750'şer hammaddeye ve yeterli kültür puanına sahip olmalısın.
+residence_settlementChief;Başka bir köyü fethetmek için köyün vatan sevgisini 0'a düşürmelisin. Fetih için {{senatorId|TranslateSuffixFor|truppen.tid}} adlı birime ihtiyacın olur; fetih sırasında bu köyde Saray, Köşk veya Komuta Merkezi bulunmamalıdır. Ayrıca başka bir köyü egemenliğin altına alabilmen için yeterli kültür puanına da sahip olman gerekir.
+palace_capital;Bu köyü merkez köyüm yap.
+palace_setAsCapital;Merkez yap
+palace_enterPassword;Güvenlik nedeniyle şifre gir:
+embassy_GoToAlliance;Birliğe git
+embassy_Invitation;{{AllianceId|AllianceLink}} birliği, {{playerId|PlayerLink}} tarafından davet edildi
+embassy_VillagesInRange;Erişim alanındaki köyler
+embassy_LeaveAllianceToJoin;Yeni bir birliğe katılabilmek için öncelikle şu anki birliğinden ayrılman gerekiyor.
+embassy_ConfirmLeaveAlliance;Onayla ve birlikten ayrıl
+embassy_InvitationAccepted;Davet kabul edildi
+embassy_AllianceFounded;Birlik başarılı bir şekilde kuruldu
+embassy_LeftAlliance;Başarılı bir şekilde birlik terk edildi
+embassy_acceptInvitationQuestion;{{allianceId|AllianceLink}} birliğine katılmak istediğine emin misin?
+embassy_acceptInvitationWarning;Katıldıktan sonraki {{hours}} saat boyunca birliğinden ayrılamayacaksın.
+embassy_acceptInvite;Evet, birliğe katıl
+embassy_declineInvite;Hayır, daveti sil
+embassy_noAlliancesNearby;Yakınlarda bir birlik bulunamadı.
+tos_title;Feragatname
+tos_disclaimer;Uygulama şu anda <style="Mango">beta halindedir. Oyunun bazı işlevleri henüz uygulamada mevcut olmayabilir.</style>\nEğer deneyimli bir Travian: Legends oyuncusu değilsen macerana <style="link"><link="http://www.travian.com">www.travian.com.tr</link></style> adresinde tarayıcınla oynayarak başlamanı tavsiye ederiz.
+tos_disclaimer2;Uygulamanın şu anki durumuyla ilgili geri bildirimlerinizi <style="link"><link="https://discord.gg/fcsKvwcE2t">Discord</link></style> sunucumuzda görmek için sabırsızlanıyoruz.
+tos_text;<style="link"><link="https://agb.traviangames.com/terms-en.pdf#cmpnoscreen">GŞK</link></style>'yi kabul ediyorum; <style="link"><link="https://agb.traviangames.com/right-of-withdrawal-EN.pdf">Cayma Hakkı ile İlgili Bilgiler</link></style>'in ve <style="link"><link="https://www.traviangames.com/en/games-privacy-policy">Gizlilik Politikası</link></style>'nın mevcudiyetinin farkındayım.
+tos_confirm;Onayla
+smithy_improveTo;{{level}}. seviyeye çıkar
+smithy_viewList;Geliştirmeleri incele
+smithy_upgradeStarted;{{unitId|TranslateSuffixFor|truppen.tid}} geliştirme başladı
+smithy_researchFirst;Birimin Akademi'de araştırılması gerekiyor
+smithy_levelTooLow;Dökümhane seviyesi çok düşük, lütfen dökümhaneyi geliştir
+allBuildings_10;Tüm depolar:
+allBuildings_11;Tüm ambarlar:
+allBuildings_23;Tüm sığınaklar:
+allBuildings_38;Tüm depolar:
+allBuildings_39;Tüm ambarlar:
+currentBuildingValue;Şu anki {{type|TranslateSuffixFor|allgemein.gid}}:
+ad_successful;Tanıtım başarılı bir şekilde izlendi!
+externalLink_title;Harici bağlantı
+externalLink_description1;<b>Dikkat!</b><br>Şu harici bağlantıyı açmak üzeresin:
+externalLink_description2;Travian Games bu bağlantıyı kontrol edemez veya doğrulayamaz.
+externalLink_description3;Devam etmek kendi sorumluluğundadır.
+externalLink_description4;Devam etmek istediğine emin misin?
+externalLink_continue;Bağlantıya devam et
+search_village;Köy ara
+search_select_village;Köy seç
+search_three_characters;En az {{amount}} karakter yazın
+search_no_result;Eşleşme bulunamadı
+search_player;Oyuncu ara
+search_player_invite;Oyuncu davet et
+search_select_player;Oyuncu seç
+search_select_player_invite;Yeni oyuncu davet et
+search_alliance;Birlik ara
+search_select_alliance;Birlik seç
+gid27.arte_detail_;{{INT}}
+artefact_inventory_level_effect;Hazine binası: {{LEVEL}}, etkisi: {{EFFECT}}
+artefact_inventory_village;Köy:
+artefact_inventory_conquered;Ele geçirilen:
+artefact_inventory_active;Etkin - Etkin olduğu zaman:
+artefact_inventory_active_already;Etkin: <b>Etkinleştirildi</b>
+artefact_inventory_show_active_only;Sadece etkin olan tılsımlarımı göster
+artefact_overview;Tılsım görünümü
+artefact_tip_large;Büyük tılsımlar <b>20nci</b> seviye hazine binası gerektirir ve tüm <b>avatarına</b> etki eder
+artefact_tip_small;Küçük tılsımlar <b>10.</b> seviye hazine binası gerektirir ve sadece <b>köyüne</b> etki eder
+artefact_tip_nearby;{{villagenamelong|Bold}} etrafındaki alanda bulunan tılsımlar
+artefact_small;Küçük
+artefact_large;Büyük
+artefact_nearby;Yakındaki
+artefact_village;Köy
+artefact_button_former_owners;Önceki sahiplerini gör
+artefact_already_active;Zaten etkinleştirildi
+artefact_required_level_value;Hazine Binası <b>{{LEVEL}}. seviye</b>
+artefact_details;Ayrıntılar:
+number_counter;{{NUMBER}}.
+tasks_villageTasks;Köy görevleri
+tasks_nextHeroLevelBonus;Yeni kahraman seviye katkısı =%{{value}}
+villageOverview_building_headline;Bina
+villageOverview_building_slotIdle;Devam eden hiçbir inşaat yok
+villageOverview_resource_sorting1;Köy listesi
+villageOverview_resource_sorting2;En düşük ambar dolum süresi
+villageOverview_resource_sorting3;En yüksek ambar dolum süresi
+villageOverview_resource_sorting4;En düşük depo dolum süresi
+villageOverview_resource_sorting5;En yüksek depo dolum süresi
+villageOverview_resource_sorting6;Eksi değerde üretim
+villageOverview_troops_stationed;Köyde konuşlanan askerler
+villageOverview_troops_sum;Toplam askerlerin
+villageOverview_troops_tab_training;Eğitim
+villageOverview_culture_slots;Köy boşlukları
+cancelPopup_Improvement;Geliştirmeyi iptal et
+cancelPopup_Research;Araştırmayı iptal et
+cancelPopup_Construction;İnşaatı iptal et
+cancelPopup_text_;{{NAME}} {{LEVEL}}
+cancelPopup_text_Improvement;{{LEVEL}}. seviyeye olan {{NAME}} geliştirmesini iptal etmek istiyor musun?
+cancelPopup_text_Research;{{NAME}} araştırmasını iptal etmek istiyor musun?
+cancelPopup_text_Construction;{{LEVEL}}. seviyeye olan {{NAME}} inşaatını iptal etmek istiyor musun?
+cancelPopup_text_refund;Geliştirme maliyetinin%{{INT}} kadarını geri alacaksın:
+dailyQuests_timeRemaining;Kalan süre: {{time|Countdown}}
+dailyQuests_rewardOverview;Ödül görünümünü incele
+dailyQuests_claimRewards;Ödülleri al
+dailyQuests_pointsEarned;Kazanılan puanlar: <b>{{current}}/{{max}}</b>
+dailyQuests_rewardDescription;Bu günün günlük görevlerini tamamlayarak kilidini açabileceğin ödüller:
+dailyQuests_claimAction;Talep et
+dailyQuests_alreadyClaimed;Alınan
+dailyQuests_autoCollect;Günün sonunda talep edilmeyen ödüller sizin için otomatik olarak talep edilecektir..
+dailyQuests_questDetailTitle;Bilgi
+dailyQuests_quest_worth;Bu görevin karşılığı:
+dailyQuests_quest_worth_points;+{{points}} puan
+dailyQuests_quest_repeated;Bu görev tekrarlanabilir:
+dailyQuests_quest_repeated_amount;{{amount}} kez
+dailyQuests_quest_completed;Gerçekleşen tekrarlar:
+dailyQuests_quest_difficulty;Zorluk seviyesi:
+dailyQuests_quest_requirement;Koşullar:
+dailyQuests_backToOverview;Genel görünüme geri dön
+dailyQuests_difficulty_moderate;Orta
+dailyQuests_difficulty_hard;Zor
+dailyQuests_difficulty_challenging;Zorlu
+achievementQuests.achQuest_;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+achievementQuests.achQuest__step_01_description;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+heroMansion_Loyalty;Vatan sevgisi:%{{INT}}
+heroMansion_Conquered;Fethedildi {{TIME|DateTime}}
+heroMansion_SlotFree;Sonraki vaha boşluğu kullanılabilir
+heroMansion_SlotBlocked;<color={{colorValue|TextColor}}>Kahraman Kışlası</color>nda sonraki vaha <color={{colorValue2|TextColor}}>{{REQUIRMENT}}. seviyede</color>
+heroMansion_Undo;Geri al
+heroMansion_FinishedAt;Hazır: {{TIME|Time}}
+waterworks_NoneOasesAcquired;Hiçbir vaha ilhak edilmedi
+waterworks_BonusCalculation;+ (%{{INT}} /%{{INT2}}) = 
+waterworks_CurrentBonus;Şu anki su işleri katkısı: Vaha hammaddelerine +%{{INT}}
+waterworks_Oases;İlhak edilmiş vahalar
+messages_inbox_title;{{COUNT}} ileti
+messages_inbox_title_selected;Seçilen {{SELECTED}} / {{COUNT}} ileti
+messages_newMessage;Yeni ileti
+messages_messageSent;Mesaj gönderildi!
+messages_exitPreview;Ön izlemeden çık
+messages_previewTitle;İletiyi ön izle
+messages_unread_count;{{COUNT}} okunmamış
+reportPlayer_selectReason;Şikayet için sebep seç
+reportPlayer_reasonPlaceholder;Şikayet sebebi
+reportPlayer_addNote;Şikayete bir not ekle (isteğe bağlı):
+reportPlayer_alsoBlock;Ayrıca bu oyuncuyu yok say
+reportPlayer_maximumLength;Azami uzunluk: {{text|TextLength}}/300
+reportPlayer_nowIgnored;Şu anda bu oyuncuyu yok sayıyorsun.
+reportPlayer_nowUnignored;Artık bu oyuncuyu yok sayamazsın.
+statistics_general;Genel istatistikler
+statistics_seeDetails;Ayrıntıları incele
+statistiken.progressionStepTitle_;{{VALUE}}{{DATETIME}}
+language_com;Geliştirici dili
+language_de-DE;Almanca
+language_en-US;English
+language_fr-FR;Fransızca
+language_ru-RU;Rusça
+statistics_villageAndHero;En büyük köy / kahraman
+RelativeTime_0;{{data}} sn.
+RelativeTime_1;{{data}} dk.
+RelativeTime_2;{{data}} s.
+RelativeTime_3;[data>1:{{data}} gün][data<2:{{data}} gün]
+RelativeTime_4;[data>1:{{data}} hafta][data<2:{{data}} hafta]
+RelativeTime.Separator; 
+RelativeTime.Wrapper.Past;{{time}} önce
+RelativeTime.Wrapper.Future;{{time}} içinde
+mapCell_tooFewSettlers;{{current}}/3 yerleşimci mevcut
+mapCell_heroNotIdle;Kahramanın boşta değil
+mapCell_cantAddOwn;Kendi köylerini ekleyemezsin
+mapCell_alreadyInVillage;Zaten bu köydesin
+serverSelection_rememberPassword;Şifremi hatırla
+serverSelection_savedWorldsTitle;Oyun dünyaların
+serverSelection_removeWorldTitle;Oyun dünyasını kaldır
+serverSelection_removeWorldQuestion;Bu oyun dünyasını listenden kaldırmayı gerçekten istiyor musun?
+serverSelection_removeWorldDescription;Uyarı: Bu işlem oyun dünyasındaki hesabını silmez. İstediğin zaman geri gelebilir ve hesabının bulunduğu oyun dünyasını oyun dünyaları listene ekleyebilirsin.
+serverSelection_removeWorldButton;Listeden kaldır
+serverSelection_addWorldText;+ Oyun dünyası ekle
+buildingActivities_buildingAdditional_;{{amount}}
+buildingActivities_buildingAdditional_17;{{amount}} etkin ticaret yolu
+reports_filters_reset;Filtreleri sıfırla
+palace_capitalSet;Merkez belirlendi!
+palace_isCapital;Bu senin merkez köyün.
+messages_unread_count_full;{{COUNT}} okunmamış ileti
+statistics_alliance;Birlik istatistikleri
+statistics_alliances_best_off;En iyi birlikler (saldıran)
+statistics_alliances_best_def;En iyi birlikler (savunan)
+statistics_offensiveStrength;Bu sunucudaki {{VILLAGEID|VillageLink}} köyünün saldırı gücü
+statistics_offensiveStrengthAlliance;Birliğindeki {{VILLAGEID|VillageLink}} köyünün saldırı gücü
+statistics_offensiveStrengthVillage;Bu köyün saldırı gücü:
+statistics_defensiveStrength;Bu sunucudaki savunma gücün
+statistics_defensiveStrengthAlliance;Birliğindeki savunma gücün
+statistics_defensiveStrengthVillage;Bu köyün savunma gücü:
+statistics_defensiveStrengthVillageSum;Tüm köylerin savunma gücü:
+recent;En son
+appliedFilters;Etkin {{COUNT}} filtren var.
+allgemein.gid99;Rastgele
+rallyPoint_troopsOverview_10;Ayrıntılı askeri birim görünümü
+rallyPoint_troopsOverview_returningFromAdventure;Maceradan dönüş: 
+rallyPoint_troopsOverview_detailedView;Ayrıntılı görünüm
+rallyPoint_troopsOverview_noMovements;- Hiçbir asker hareketi yok -
+rallyPoint_troopsOverview_Target;Hedef: {{Target|NamedCoordinates}}
+rallyPoint_troopsOverview_Origin;Köken: {{Target|NamedCoordinates}}
+hero_adventures_number;No. {{INT}}
+hero_status_regeneration;<b>Sağlık iyileşmesi::</b> Günde%{{VALUE}}
+hero_status_regeneration_details;Kahramandan her gün%{{HERO}}, donanımdan her gün%{{EQUIPMENT}}
+hero_status_experience;<b>Deneyim:</b>%{{VALUE}}
+hero_status_experience_bonus;Katkı:%{{VALUE}}
+search_results;Arama sonuçları
+search_player_link;Oyuncu bağlantısı
+search_select_player_link;Oyuncu seç
+search_recipient;Alıcı ara
+search_select_recipient;Alıcı seç
+search_alliance_link;Birlik bağlantısı
+search_select_alliance_link;Birlik seç
+messages_fullView_title;İleti
+messages_recipient_placeholder;Alıcı seç
+messages_title_placeholder;İletinin başlığını gir
+messages_message_placeholder;İletini gir
+messages_ownAlliance;Kendi birliğin
+messages_selectedRecipients;Seçilen
+messages_ownAlliance_[ally];Tüm birlik üyeleri
+messages_ownAlliance_[off];Saldırgan birlik üyeleri
+messages_ownAlliance_[def];Savunmacı birlik üyeleri
+messages_discard_title;İletiyi temizle
+messages_discard_text_header;İletiyi temizlemek istiyor musun?
+messages_discard_text;İletinin içeriği geri dönülemez bir şekilde kaybolacaktır.
+messages_confirm_deletion_title;İletileri sil
+messages_confirm_deletion_text_header;[data>1:{{data}}İletileri][data=1:{{data}}İletiyi] silmek istediğinden emin misin?
+messages_confirm_deletion_text;İletiler silindiğinde onları geri almanın bir yolu yoktur.
+messages_confirm_deletion_button;[data>1:{{data}}İletileri][data=1:{{data}}İletiyi] sil.
+icon_selection_title;Simge ekle
+icon_selection_button;Simge seç
+icon_selection_resourcesAndHero;Hammaddeler / Kahraman
+icon_selection_natureAndNatars;Doğa ve Natarlar
+upgrading;Geliştiriliyor!
+buildingActivities_buildingAdditional_46;Yaralı asker yok
+playerDetails_ignorePlayerDescription;Oyuncu yok sayılacak.
+reports_share;Raporu paylaş
+search_select_village_link;Köy seç
+search_village_link;Köy bağlantısı
+search_report_link;Rapor bağlantısı
+search_select_report_link;Rapor seç
+messages_banned;Sadece birliğindeki diğer üyelere ileti yazabilirsin.
+messages_template_title;Şablonlar
+messages_template_none;Kullanılabilir şablon yok
+messages_template_edit_title;Şablonu düzenle
+messages_template_delete_title;Şablonu sil
+messages_template_delete_question;Bu şablonu silmek istediğine emin misin?
+messages_template_delete_desc;Silindiğinde onu geri getiremezsin.
+messages_template_create;Yeni şablon oluştur
+messages_template_create_descr;Şu anki iletinden yeni bir şablon oluştur.
+messages_template_created;Şablon oluşturuldu!
+messages_template_deleted;Şablon silindi!
+statistics_culturePoints_productionRank;Bu sunucudaki KP üretim sıralaman
+statistics_culturePoints_productionRankAlliance;Birliğindeki KP üretim sıralaman
+statistics_culturePoints_production;KP
+statistics_resourceRank_production;Üretim: {{VALUE|ShortenNumber}}
+statistics_resourceRank_productionRank;Bu sunucudaki üretim sıralaman
+statistics_resourceRank_productionRankAlliance;Birliğindeki üretim sıralaman
+statistics_resourceRank_bounty_lost;Kayıp
+statistics_wonderOfTheWorld_header;En iyi Dünya Harikaları
+hospital_healing_costs;Asker iyileştirme masrafı
+hospital_healing_action;Askerleri iyileştir
+hospital_healing_list;İyileştirme listesine göz at
+hospital_healing_list_title;İyileştirilen askerler
+hospital_healing_started;İyileştirme başladı
+bonusValueWithPercent;+%{{value}}
+village_with_isCapital;{{villageName}} (merkez)
+maximumTextLengthError;{{CONTEXT}} en fazla {{AMOUNT}} karakter içerebilir
+infoTab_genericEffectInBrackets;({{INT|Sign}})
+infoTab_effectPercentage;%{{INT}}
+infoTab_effectInBracketsPercentage;(%{{INT|Sign}})
+infoTab_trapperCurrently;Şu anki en fazla tuzakçı miktarı:
+trapper_ViewBuildingList;Bina listesine göz at
+trapper_Build_Action;Tuzak kur
+trapper_ProductionCosts;Tuzak üretim maliyeti
+trapper_TrapsInConstruction;Kurulmaya devam eden tuzaklar
+trapper_MaxBuilt;Mümkün olan en fazla sayıda tuzak zaten kuruldu.
+truppen.tid119;Tuzak
+truppen.tid119p;Tuzak
+rallyPoint_troopsOverview_outgoingMission_scouting_1;Şu köyün savunma ve askerlerini gözetle: 
+rallyPoint_troopsOverview_outgoingMission_scouting_0;Şu köyün hammadde ve askerlerini gözetle: 
+rallyPoint_troopsOverview_returningRegeneratedMission;Şurada iyileşip geri dönen oyuncular: 
+rallyPoint_troopsOverview_returningFleeingMission;Orman sığınağından dönen askerler: 
+rallyPoint_troopsOverview_foreignTroopsIn;Konuşlandığı yer: 
+rallyPoint_celebration_hint;İçecek fabrikasındaki festivalin askeri birimlere etkisi olabilir.
+building_not_built;Bina inşa edilmedi
+berichte.report_icon_24;Şikayet et
+allBuildings_36;Azami tuzakçı miktarı:
+cropFinder_min_oasis_crop_bonus;En az Vaha tahıl katkısı:
+cropFinder_select_minimum_crop_bonus;En az tahıl katkısını seç
+cropFinder_unoccupied;Boş
+search_by_location;Konuma göre ara
+search_by_player;Oyuncuya göre ara
+search_village_from_player;Oyuncunun köyünü ara
+enter_player_name;Oyuncu adı gir
+messages_template_newConditionsNotMet;Şablonlar bir başlık ve bir ileti içermelidir.
+message_report_isAlready;Bu mesaj zaten {{REASON}} sebebiyle şikayet edildi.
+tutorial_begin;Tura başla
+tutorial_title_0;Selamlar korkusuz şampiyon! 
+tutorial_text_0;Travian: Legends'ın hararetli muharebe alanına hoş geldin. Durmadan değişen yerleşim yerlerini yönetmen ve durdurulamaz güçlerine önderlik etmen için haydi seni donatalım.\n\nHazır mısın?
+tutorial_title_1;Haritada Gezinti
+tutorial_text_1;Burada, haritada nasıl verimli iletişim kuracağından, haritada bulunan aydınlatıcı bilgi araçlarına kadar her şeyi keşfedeceksin. Ayrıca günlük görevlerinin, kişiselleştirilmiş ayarlarının ve bir çok başka özelliğin de buraya düzgünce yerleştirildiğini fark edeceksin.
+tutorial_title_3;Hammaddelerin
+tutorial_text_3;Köyündeki hammaddeler burada bulunabilir. Hammadde çubuğuna dokunduğunda daha fazla ayrıntı ortaya çıkar.
+tutorial_title_4;Hammaddelerin
+tutorial_text_4;Hammadde çubuğuna tekrar dokunduğunda ayrıntılar gizlenir.
+tutorial_title_5;Köyün
+tutorial_text_5;Burada, köyünle ilgili bütün gerekli bilgileri bulabilirsin. Görevlerin listesinden askerlerinin genel görünümüne ve hatta inşa kuyruğuna kadar her şey buradadır. Uygulamaya en son yapılan eklemeyle inşaat etkinlikleri özelliği, binalarında devam eden geliştirmelerle ilgili kısa bir özet sunuyor.
+tutorial_title_7;Köyün
+tutorial_text_7;Askeri üs inşa edilirse, bu sana, devam eden tüm askeri hareketlerin kapsamlı bir görünümünü sağlayacaktır. Ek olarak askeri üssüne hızlıca gidebileceğin bir kısayol da sunacaktır.
+tutorial_title_8;Yan Menü
+tutorial_text_8;Yan menüyü açmak için oklara dokunabilir veya parmağınla kaydırabilirsin. Bu her zaman yapılabilir.
+tutorial_title_9;Köy Listesi
+tutorial_text_9;İstediğin zaman yan paneli kaydırıp açarak köylerin arasında hızlıca geçiş yapabilirsin. Burada ayrıca köy istatistiklerini de bulabileceksin.\n\nVe bu son bilgi ile tur sona eriyor. Neyi bekliyorsun! Hemen içine dal, keşfet ve bırak Travian: Legends dünyası senin stratejik oyun alanın olsun.\n\nİyi şanslar!
+tutorial_finish;Turu sonlandır
+filters_report_not_found;Rapor mevcut değil
+filters_player_not_found;Oyuncu mevcut değil
+filters_alliance_not_found;Birlik mevcut değil
+filters_village_not_found;Köy mevcut değil
+settings_game;Bu oyun dünyası
+language_app_selection;Uygulama dilini seç:
+settings_sitter;Temsilci {{VALUE}}:
+settings_sitterTab_yourSitters;Temsilcilerin
+settings_sitterTab_SittingFor;Yaptığın temsilcilikler:
+search_player_addSitter;Temsilci ekle
+search_select_player_addSitter;Temsilci ekle
+search_player_addSitter_additionalEmptyResultInfo;Oyuncu bulunamadı.\nSadece kendi birliğindeki/ittifakındaki oyuncular avatarına temsilcilik yapabilir.
+settings_sitter_sitterAdded;Temsilci eklendi!
+settings_sitter_sitterRemoved;Temsilci kaldırıldı!
+settings_sitter_sitterPermissionChangesSaved;İzin değişiklikleri kaydedildi!
+settings_sitter_confirm_remove_text_header;{{PlayerName}} adlı oyuncunun temsilciliğini kaldırmak istiyor musun?
+settings_sittersFor;Diğer avatarlara temsilcilik
+settings_sittersFor_info;Aşağıdaki oyuncu avatarlarının temsilcisi olarak atandın. Kırmızı X'e tıklayarak temsilciliğini bitirebilirsin.
+settings_sittersFor_none;Şu anda başka bir avatara temsilcilik yapmıyorsun.
+settings_sitterFor;{{VALUE}} için temsilcilik:
+settings_sitterFor_sittingRemoved;{{PlayerName}} adlı oyuncuya temsilciliğin durduruldu!
+settings_sitterFor_confirm_remove_header;Şu oyuncuya temsilciliğini durdurmak ister misin: 
+settings_sitterFor_confirm_remove_header_questionmark;?
+settings_sitterFor_confirm_remove_info;Bu eylemi geri alamazsın. Sadece başka oyuncular seni kendi temsilcisi olarak atayabilirler.
+brewery_celebration_attackStrength;(%{{INT}} saldırı gücü)
+brewery_celebration_hint;Halen yolda olan askeri birimler festivalden etkilenirler
+settings_game_newLanguage;Dil, {{language}} olarak değiştirildi.
+wonderOfTheWorld_name;Dünya Harikası ismi:
+combatSimulator_title;Simüle et - {{role|TranslateSuffixFor|combatSimulator_as}}
+combatSimulator_cataTargetLevel;<b>{{index}}. mancınık hedefinin</b> seviyesi
+combatSimulator_troopLevel;Askeri birimin dökümhane seviyesi:
+combatSimulator_asAttacker;Saldıran olarak
+combatSimulator_asDefender;Savunan olarak
+combatSimulator_result;Sonuçları simüle et
+combatSimulator_addReinforcement;Destek ekle
+valueWithModifier;{{value|Round|2}}x
+valuePlusInBracketsWithPercent;(+%{{change}})
+none;Hiçbiri
+marketplace_traderoute_repeatEveryHour;Tekrarlama sıklığı: (saat)
+block_sitter_warning;Temsilci olarak bunu yapmaya yetkin yok.
+settings_openConsentWindow;Gizlilik ayarları
+combatSimulator_adjustHeroStats;Kahraman istatistiklerini ayarla
+combatSimulator_eagleEyeTitle;Kartal Gözü katkısını seç
+combatSimulator_architectSecretTitle;Mimar'ın Sırrı katkısını seç
+combatSimulator_metallurgyBonus;Metalurji katkısını seç
+combatSimulator_rightHand;Sağ el için eşya seç
+combatSimulator_leftHand;Sol el için eşya seç
+combatSimulator_bodyItem;Gövde için eşya seç
+combatSimulator_inventoryItem;Heybe için eşya seç
+combatSimulator_selectBuildingLevel_35;İçecek fabrikası seviyesi seç
+combatSimulator_selectBuildingLevel_26;Saray seviyesi seç
+combatSimulator_selectBuildingLevel_34;Taş ustası loncası seviyesi seç
+combatSimulator_selectBuildingLevel_31;Sur seviyesi seç
+combatSimulator_selectBuildingLevel_32;Sur seviyesi seç
+combatSimulator_selectBuildingLevel_33;Sur seviyesi seç
+combatSimulator_selectBuildingLevel_43;Sur seviyesi seç
+combatSimulator_selectBuildingLevel_42;Sur seviyesi seç
+combatSimulator_selectTargetLevel;Mancınık hedefi seviyesi seç
+combatSimulator_selectTroopLevel;Asker seviyesi seç
+survey_title;Travian: Legends Anketi
+tos_earlyAccess;Uygulama şu anda <style="Mango">erken erişim devresinde.\n\nOyunun bazı işlevleri henüz uygulamada mevcut olmayabilir.</style>\n\nEğer deneyimli bir Travian: Legends oyuncusu değilsen macerana <style="link"><link="http://www.travian.com">www.travian.com.tr</link></style> adresinde tarayıcınla oynayarak başlamanı tavsiye ederiz.
+tos_understood;Anlaşıldı
+gdpr_title;Veri işleme onayı
+gdpr_description;İznin doğrultusunda, cihazın, IP adresin, kullanımın ve tanıtım tanımlayıcıların ile ilgili belirli bilgileri topluyoruz. Bu sana daha uygun tanıtımları göstermemize ve genel uygulama deneyimini geliştirmemize yardımcı oluyor.
+gdpr_basic_functions;Uygulamanın temel işlevleri için gereklidir.
+gdpr_advertisement;Tanıtımlar için kişisel verilerin kullanımı.
+gdpr_analytics;Analizler için kişisel verilerin kullanımı.
+gdpr_acceptAll;Hepsini kabul et
+gdpr_save_and_exit;Kaydet + Çık
+gdpr_rejectAll;Hepsini reddet
+gdpr_privacy_policy;Gizlilik Politikası
+gdpr_terms_and_conditions;Ş&K
+plus.plus.browserOnly;(sadece tarayıcıda)
+hero_inventory_already_equipped;Aynı eşya zaten kuşanılmış.
+survey_button_title;Geri Bildirim Anketi
+survey_button_description;Travian: Legends uygulamasını geliştirmekte bize yardımcı olmak için bu kısa ankete katıl.
+goldShop_extend;uzat
+goldShop_remaining;Kalan:
+goldShop_advantage_activated;aktif
+search_select_recipient_removeAll;Hepsini kaldır
+messages_messageTopic_noTopic;Başlık yok / Varsayılan
+messages_messageTopic_resources;Hammadde hakkında
+messages_messageTopic_defenses;Savunma hakkında
+messages_messageTopic_attacks;Saldırı hakkında
+messages_messageTopic_strategies;Stratejiler hakkında
+messages_messageTopic_information;Genel bilgi
+messages_messageTopic_important;Önemli bilgilendirme
+messages_messageTopic_selectionTitle;İleti başlığını seç
+farmlist_confirm_deletion_header;Seçilen yağma listesini silmek istediğinden emin misin?
+farmlist_confirm_deletion_text;Bu işlem geri alınamaz.
+farmlist_target_confirm_deletion_header;Bu {{data}} hedefi silmek istediğinden emin misin?
+upgrade_queue_cantConstructImmediately;Bu bina anında inşa edilemez
+language_cs-CZ;Çekçe
+language_es-ES;İspanyolca
+language_pl-PL;Lehçe
+language_pt-PT;Portekizce
+language_tr-TR;Türkçe
+language_it-IT;İtalyanca
+playerDetails_victorPoints_summary;{{TOTAL}} | {{PERDAY}}/gün
+statistics_progressionStepTitle_;{{VALUE}}{{DATETIME}}
+statistics_progressionStepTitle_start_achieved;Sunucu {{VALUE}} tarihinde başladı
+statistics_progressionStepTitle_secondVillage_locked;Şu ana kadar kimse ikinci bir köy kurmadı
+statistics_progressionStepTitle_secondVillage_achieved;Bu sunucuda ikinci köyünü kuran ilk oyuncu: {{DATETIME}} tarihinde {{VALUE}}
+statistics_progressionStepTitle_serverEnd_locked;Sunucu {{VALUE}} tarihinde sona erecek
+statistics_progressionStepTitle_serverEnd_achieved;Sunucunun sona erme tarihi: {{VALUE}}
+statistics_progressionStepTitle_artifacts_locked;Tılsımları ortaya çıkacağı tarih: {{VALUE}}
+statistics_progressionStepTitle_artifacts_unlocked;Tılsımların ortaya çıktığı tarih: {{VALUE}}
+statistics_progressionStepTitle_artifacts_achieved;İlk tılsım {{DATETIME}} tarihinde, {{VALUE}} tarafından ele geçirildi
+statistics_progressionStepTitle_constructionPlans_locked;İnşa planlarının ortaya çıkacağı tarih: {{VALUE}}
+statistics_progressionStepTitle_constructionPlans_unlocked;İnşa planlarının ortaya çıktığı tarih: {{VALUE}}
+statistics_progressionStepTitle_constructionPlans_achieved;İnşa planını ele geçiren ilk oyuncu: {{DATETIME}} tarihinde {{VALUE}}
+statistics_progressionStepTitle_firstWWLevelOne_locked;Dünya Harikasının ilk seviyesini kim inşa edecek?
+statistics_progressionStepTitle_firstWWLevelOne_achieved;Bir Dünya Harikasının ilk seviyesi {{VALUE}} tarafından {{DATETIME}} tarihinde inşa edildi
+settings_selectFormat;Biçimi seç:
+settings_selectFormat_dialog_title;Tarih biçimini seç
+settings_game_newDateFormat;Tarih formatı {{dateFormat}} olarak değiştirildi.
+help_getHelp;Yardım al
+help_getHelpDescription;Eğer yardıma ihtiyacın varsa veya bir sorunu bildirmek istersen buradan oyuniçi destekle iletişme geçebilirsin.
+help_learnAboutGame;Oyunla ilgili bilgi
+help_learnAboutGameDescription;Oyun hakkında bilmek istediğin şeylerin tümü ve olayların işlerin nasıl yürüdüğüyle ilgili ayrıntılı bilgiyi burada bulabilirsin.
+help_gameRules;Oyun kurallarını öğren
+help_gameRulesDescription;Burada oyun kurallarımızı görebilirsin
+help_joinDiscord;Discord'a katıl
+help_joinDiscordDescription;Özel mobil Discord sunucumuzda geri bildirimlerinizi bizimle paylaşın.
+PLAYERARG;{{PLAYER}}
+referAFriend_friendJoinedDescription;Oyunu tavsiye ettiğin oyuncudan Altın kazanman için arkadaşının <b>ikinci köyünü</b> kurması gerekir. Bu hedefe ulaşmaları için onlara yardım etmeyi ihmal etme! Alttaki tavsiye edilen görünümünden ilerlemelerini takip et.
+referAFriend_rewardAddedVillage2Title_PLAYERARG;Arkadaşın {{PLAYER}} 2'nci köyünü kurdu
+referAFriend_rewardAddedVillage3Title_PLAYERARG;Arkadaşın {{PLAYER}} 3'üncü köyünü kurdu
+referAFriend_rewardAddedVillage4Title_PLAYERARG;Arkadaşın {{PLAYER}} 4'üncü köyünü kurdu
+referAFriend_rewardAddedVillage5Title_PLAYERARG;Arkadaşın {{PLAYER}} 5'inci köyünü kurdu
+referAFriend_rewardAddedVillage6Title_PLAYERARG;Arkadaşın {{PLAYER}} 6'ncı köyünü kurdu
+referAFriend_rewardAddedVillage7Title_PLAYERARG;Arkadaşın {{PLAYER}} 7'inci köyünü kurdu
+referAFriend_rewardAddedVillage8Title_PLAYERARG;Arkadaşın {{PLAYER}} 8'inci köyünü kurdu
+referAFriend_rewardAddedVillage9Title_PLAYERARG;Arkadaşın {{PLAYER}} 9'uncu köyünü kurdu
+referAFriend_rewardAddedVillage10Title_PLAYERARG;Arkadaşın {{PLAYER}} 10'uncu köyünü kurdu
+sysmsg_truce_learnMore;Ateşkeslerle ilgili daha fazlasını öğren
+worldEnded_ww_playerWon_topAlliance;{{WW_VILLAGE|VillageLink}} köyündeki çalışanlar {{WORLD_END_TIME|DateTime}} saatinde tarihteki en önemli yapılardan birini tamamlayacak son taşı da yerine yerleştirdiler.<br>{{WW_PLAYER|PlayerLink}}, {{WW_ALLIANCE|AllianceLink}} birliğiyle birlikte Dünya Harikası'nı ilk tamamlayan oyuncu oldu. Sayısız hammadde kullanıp inşaat alanını binlerce cesur savunmacıyla koruduktan sonra {{WW_PLAYER|PlayerLink}}, "Çağın Muzafferi" unvanını aldı.
+worldEnded_as2022_topAlliances;{{VICTORY_POINTS_TOP_1}} zafer puanıyla Avrupa'nın önderleri olan {{ALLIANCE_TOP_1|AllianceLink}} birliğine tebrikler! {{ALLIANCE_TOP_2|AllianceLink}} birliği zaferi elde etmek için cesurca çarpışarak ikinci gelirken {{ALLIANCE_TOP_3|AllianceLink}} birliği de hemen arkalarından onları izledi.
+worldEnded_playerRanks_population;{{PLAYER_POPULATION_TOP_1|PlayerLink}} en büyük kişisel imparatorluğun hükümdarı oldu, onu {{PLAYER_POPULATION_TOP_2|PlayerLink}} ve {{PLAYER_POPULATION_TOP_3|PlayerLink}} yakından izledi.
+worldEnded_playerRanks_offender;{{PLAYER_OFFENDER_TOP_1|PlayerLink}} herkesten fazla düşmanı alt etti ve en korkulan komutan oldu.
+worldEnded_playerRanks_defender;{{PLAYER_DEFENDER_TOP_1|PlayerLink}}, köy kapılarında düşmanlarını bozguna uğratıp bu köylerin etrafını onların kirli kanlarına bulayan en şanlı savunmacı oldu.
+rallyPoint_startWithValue;Başlat ({{value}})
+rallyPoint_farmList_raidsStarted;{{INT}} yağma gönderildi.
+rallyPoint_farmList_CantAddToAbandonList;Kullanılmayan bir yağma listesine hedef ekleyemezsin.
+rallyPoint_farmList_CantActivateInToAbandonList;Kullanılmayan bir yağma listesindeki hedefleri etkinleştiremezsin.
+rallyPoint_farmList_CantDuplicateInToAbandonList;Kullanılmayan bir yağma listesindeki hedefleri kopyalayamazsın.
+rallyPoint_farmList_DuplicateRaids;[raidsAmount>1:Hedefleri][raidsAmount=1:Hedefi] kopyala
+rallyPoint_farmList_SlotsDuplicated;[raidsAmount>1:Hedefler][raidsAmount=1:Hedef] kopyalandı!
+rallyPoint_farmList_pleaseSelectTheList;Lütfen hedefe eklemek istediğin listeyi seç.
+rallyPoint_farmList_farmlistFull;Yağma listesi dolu, lütfen başka bir yağma listesi seç veya yeni bir tane oluştur.
+rallyPoint_farmList_targetName;Hedef adı
+rallyPoint_farmList_differentTroopsWarning;Asker sayıları, alt kısma yeni bir sayı girilerek yenisi yazılmadığı sürece değiştirilmez.
+rallyPoint_farmList_noobProtectionWarning;Başlangıç korumasındayken diğer oyuncuları yağmalayamazsın ancak terk edilmiş vahaları ve Natar köylerini yağmalayabilirsin.
+rallyPoint_farmList_noFarmLists;Hiç yağma listesi oluşturulmadı
+rallyPoint_farmList_CreateNewFarmList;Yağma listesi oluştur
+rallyPoint_farmList_currentAmount;Yağma listeleri: <b>{{amount}}</b>/{{max}}
+rallyPoint_farmList_differentTribe;Köydeki halk, şu an tedarikçi köydekinden farklı. Lütfen asker sayılarını gözden geçir.
+rallyPoint_farmList_overrideTarget;Hedefi geçersiz kıl
+rallyPoint_farmList_selectedActivated;Seçilen hedefler etkinleştirildi.
+rallyPoint_farmList_selectedDeactivate;Seçilen hedefler devre dışı bırakıldı.
+rallyPoint_farmList_LastRaid;<b>Son başlangıç:</b> <nobr>{{lastStarted|DateTime}}</nobr>
+mapCell_editTargetListAmount;<nobr>Hedefi düzenle</nobr> <nobr>(Liste: {{INT}})</nobr>
+goldShop_shopDisabled;Bu oyun dünyasında Altın mağazası devreden çıkartıldı
+infobox_accountLockGameEnd;Bu tur sona erdi!
+applySorting;Sıralamayı uygula
+truppen.tid931;Tuzak
+truppen.tid931p;Tuzak
+rallyPoint_attackWW_blocked;Dünya Harikası köylerine saldırmak henüz mümkün değil. Asker gönderilebilecek en erken zaman: {{timestamp|DateTime}}
+mainMenu_switchBackFromAvatar;{{iconName|Sprite}} {{playerName}} adlı oyuncuya geri dön
+pending;(Askıda)
+featureNotAvailableInVacationMode;Bu özellik tatil modundayken kullanılamaz.
+notAllowed;Bunu yapmaya yetkin yok.
+settings_avatarDeletionInfo;Silme işlemini başlattıktan sonra avatarının silinme işleminin tamamlanması <b>3 gün</b> sürecektir.\nSilinen bir avatar artık açık artırmaya veya takas bürosuna erişemez.\nSilme işlemini istediğin zaman buradan iptal edebilirsin.
+settings_avatarDeletionCountDown;Avatarın silineceği zaman:
+deleteAvatar_confirmation_header;Avatarını silmek istiyor musun?
+cams_info_subHeader;Tüm oyun dünyaların için tek bir giriş
+cams_info_text;Kolay oturum açma ve tek bir girişle tüm oyun dünyalarına sorunsuz erişim için Legends lobi hesabını oluştur.
+cams_info_lessInfo;Daha az bilgi
+cams_info_Question_WhatIsLegendsLobbyAccount;Legends lobi hesabı nedir?
+cams_info_Answer_WhatIsLegendsLobbyAccount;Lobi hesabı ile bir daha asla yeni bir oyun dünyasına kaydolmak zorunda kalmazsın. İster tarayıcıda ister mobil uygulamada oturum açıp etkin oyun dünyalarına erişebilir veya lobide yeni bir tane başlatabilirsin.
+cams_info_Question_WhatAreAvatars;Avatar nedir?
+cams_info_Answer_WhatAreAvatars;Lobi hesabı ile, bir oyun dünyasındaki profilin avatar olarak adlandırılmaktadır. Her oyun dünyası için bir tane olmak üzere birden fazla avatara sahip olabilen bir lobi hesabınız bulunur.
+cams_info_Question_WhatsWithCurrentGameworlds;Mevcut oyun dünyalarıma ne olacak?
+cams_info_Answer_WhatsWithCurrentGameworlds;Lobi hesabınızla aynı eposta adresini kullanan tüm etkin oyun dünyaları lobi hesabına bağlanacak ve bunlara lobi üzerinden erişilebilecektir. Lobi hesabın oluşturulmadan önce, mevcut etkin oyun dünyası avatarlarını doğru eposta adresi ile değiştirebilirsin.
+cams_info_Question_WhatsWithSitters;Hâlâ temsilcilerim olabilir mi?
+cams_info_Answer_WhatsWithSitters;Evet, temsilciler oyun dünyası ayarlarından olağan şekilde atanabilir. Temsilci olarak atandığın bir avatara doğrudan oyun dünyasından erişebilirsin.
+cams_info_Question_WhatsWithDuals;Hâlâ diğer oyuncularla ortak olarak oynayabilir miyim?
+cams_info_Answer_WhatsWithDuals;Ortaklar, lobide oyuncunun lobi hesap adı girilerek bir oyun dünyasına atanabilir. Bu, bir ortağın da öncelikle bir lobi hesabına ihtiyacı olduğu ve davetiyeyi kabul ettikten sonra lobi üzerinden avatara erişebileceği anlamına gelir. Lütfen lobi hesabı şifreni kimseyle paylaşma.
+cams_info_Question_WhatsWithoutLobbyAccount;Legends lobi hesabı oluşturmadan oynayabilir miyim?
+cams_info_Answer_WhatsWithoutLobbyAccount;İlgili URL'yi kullanarak mevcut oyun dünyalarınıza doğrudan giriş yapmaya devam edebilirsin. Ancak yeni bir oyun dünyasına başlamak veya mobil uygulamayı kullanmak istiyorsan, bir lobi hesabının oluşturulması gerekir.
+cams_playerDecision_register_info;Yeni lobi hesabı, tek bir girişle mevcut ve gelecekteki oyun dünyalarına bağlanmanı sağlar.
+cams_playerDecision_login_info;Zaten bir lobi hesabın var mı?\n\nGiriş yap ve macerana devam et.
+cams_playerDecision_register_header;Hesap oluştur
+cams_playerDecision_register_create_new_account;Lobi hesabı oluştur
+cams_playerDecision_register_login;Lobiye giriş yap
+cams_playerDecision_extra_info;Travian: Legends oynayabilmek için bir lobi hesabı oluşturman gerekir.
+cams_register_header;Legends lobi hesabı oluştur
+cams_register_email_label;Eposta adresini yaz:
+cams_register_email_address;Eposta adresini kaydet
+cams_register_email_address_missing;Lütfen eposta adresini gir.
+cams_register_email_address_not_valid;Lütfen geçerli bir eposta adresi gir. Örn. mymail@provider.com
+cams_register_email_address_already_exists;Eposta adresin zaten bir lobi hesabına bağlı.
+cams_register_redirecting_to_login;Girişe yönlendiriliyor {{INT}}...
+cams_register_hintMessage_same_email_address;Mevcut oyun dünyası avatarlarınla aynı eposta adresini kullanarak onları kendiliğinden lobi hesabına bağla.
+cams_register_receive newsletter;Haber bülteni almak istiyorum.
+cams_register_already_have_an_account;Zaten bir hesabınız mı var?
+cams_register_log_in_now;Şimdi giriş yap
+cams_acceptTOS;"E-posta adresini kaydet"e tıklayarak <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">GŞK</link></style>'yi kabul etmiş ve <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">Cayma Hakkına İlişkin Bilgiler</link></style>i ve <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">Gizlilik Politikası</link></style>nı okuduğunu onaylamış olursun.
+cams_activation_header;Legends lobi hesabını etkinleştir
+cams_activation_info;<b>{{emailAdress}}</b> adresine etkinleştirme bağlantını gönderdik.<br>Devam etmek için lütfen epostadaki talimatları izle.
+cams_activation_enter_code;Etkinleştirme kodunu gir:
+cams_activation_code_example;Örn.123456
+cams_activation_entered_code;{{INT}}/6 rakam
+cams_activation_cta_activate_account;Hesabı etkinleştir
+cams_activation_email_lost;Eposta gelmedi mi?
+cams_activation_email_resend;Tekrar eposta gönder
+cams_activation_email_wrong;Hatalı eposta adresi mi?
+cams_activation_email_change;Epostayı değiştir
+cams_activation_code_missing;Lütfen eposta ile aldığın etkinleştirme kodunu gir.
+cams_activation_code_too_short;Etkinleştirme kodu çok kısa. Lütfen altı rakamın tümünü gir.
+cams_activation_code_format_incorrect;Etkinleştirme kodunun formatı doğru değil. Lütfen kodun yalnızca altı rakamdan oluştuğundan emin ol.
+cams_activation_code_incorrect;Etkinleştirme kodu doğru değil. Lütfen aldığın epostadaki etkinleştirme kodunu gir.
+cams_activation_code_expired;Etkinleştirme kodu zaman aşımına uğradı.
+cams_activation_code_start_again;Yeniden başla
+cams_login_header;Legends lobiye giriş yap
+cams_login_enter_email;Eposta adresini veya hesap adını gir:
+cams_login_enter_password;Şifreni gir:
+cams_login_hintMessage_email_already_connected;Girdiğin eposta adresi zaten bir lobi hesabına bağlı. Giriş yap veya <style="SimpleLink"><link="BackToRegistrationLink">kayıt sayfasına geri dön</link></style>.
+cams_login_hintMessage_passwordUpdated;Şifren başarıyla güncellendi
+cams_forgot_password;Şifreni mi unuttun?
+cams_recover_password;Şifreyi kurtar
+cams_login_no_account_yet;Henüz hesabın yok mu?
+cams_login_create_account;Hesap oluştur
+cams_loginMask_accountNameRequired;Lütfen eposta adresini veya hesap adını gir.
+cams_loginMask_passwordRequired;Lütfen şifreni gir.
+cams_loginMask_passwordAndUsernameAreWrong;Yanlış eposta, hesap adı veya şifre.
+cams_loginMask_emailOrAccountName_placeholder;Eposta adresi / hesap adı
+cams_loginMask_temporaryInfobox;YENİ: Oyun dünyalarına erişebilmek için bir lobi hesabı oluşturman gerekiyor.\n\nHenüz bir lobi hesabın yoksa <style="SimpleLink"><link="CreateAccountLink">hesap oluştur</link></style>.
+cams_setPassword_header;Şifreni belirle
+cams_setPassword_info;Hesabın için en az altı karakter uzunluğunda bir şifre oluştur.
+cams_setPassword_enter_password;Bir şifre seç:
+cams_setPassword_strength_label;Şifre gücü
+cams_setPassword_strength_missing;Gücünü kontrol etmek için bir şifre gir.
+cams_setPassword_strength_1;çok zayıf
+cams_setPassword_strength_2;oldukça zayıf
+cams_setPassword_strength_3and4;orta
+cams_setPassword_strength_5;oldukça güçlü
+cams_setPassword_strength_6;çok güçlü
+cams_setPassword_strength_PasswordTooShort;Ne kadar uzun, o kadar iyi (16+ karakter)
+cams_setPassword_strength_PasswordGoodLength;Şifrenin uzunluğu iyi
+cams_setPassword_strength_OneType;Yalnızca bir karakter türü kullanılmış
+cams_setPassword_strength_TwoTypes;İki karakter türü kullanılmış
+cams_setPassword_strength_ThreeTypes;Üç karakter türü kullanılmış
+cams_setPassword_strength_NoNumbers;Rakam kullanılmamış
+cams_setPassword_strength_NoLetters;Harf kullanılmamış
+cams_setPassword_strength_NoSpecialCharacters;Özel karakter kullanılmamış
+cams_setPassword_strength_NoUpperAndLowerCase;Büyük ve küçük harf karışımı yok
+cams_setPassword_strength_UpperAndLowerCase;Büyük ve küçük harf kullanılmış
+cams_activation_cta_set_password;Şifre belirle
+cams_activation_password_length;8-64 karakter
+cams_resetPassword_header;Yeni şifre belirle
+cams_resetPassword_info;Lobi hesabın için en az altı karakter uzunluğunda yeni bir şifre oluştur.
+cams_setUsername_header;Legends lobi hesabın için bir isim seç
+cams_setUsername_info;Benzersiz lobi hesap adını oluşturmak için bir kullanıcı adı ve etiket seç.
+cams_setUsername_username_label;Bir kullanıcı adı seç:
+cams_setUsername_tagline_label;Bir etiket seç:
+cams_setUsername_tagline_example;Örn. TAG12
+cams_setUsername_tagline;Etiket:
+cams_setUsername_condition_onlyLettersAndNumbers;Sadece harfler ve rakamlar
+cams_setUsername_username_condition_Length;3-15 karakter
+cams_setUsername_tagline_condition_Length;2-5 karakter
+cams_setUsername_hint;Kullanıcı adının ve etiketin birleşimi benzersiz lobi hesap adın olacaktır. Kullanılabilir olduğu sürece istediğin kombinasyonu seçebilirsin.\n\nBu, oyun dünyandaki adını etkilemez.
+cams_setUsername_cta_createAccount;Hesap oluştur
+cams_setUsername_username_missing;Lütfen bir kullanıcı adı ve etiket gir.
+cams_setUsername_accountName_preview;Hesap adı önizlemesi:
+cams_setUsernameConfirmPopup_header;Legends lobi hesabı oluşturuldu!
+cams_setUsernameConfirmPopup_info;<b>{{playerName}}</b> giriş isimli Legends lobi hesabın başarıyla oluşturuldu.
+cams_setUsernameConfirmPopup_GameworldAndAvatar_header;Oyun dünyaların ve avatarların
+cams_setUsernameConfirmPopup_GameworldAndAvatar_info;Aynı eposta adresine sahip aşağıdaki mevcut oyun dünyası avatarlarını yeni lobi hesabına bağladık.
+cams_avatar_name;Avatar adı
+cams_looby_welcomeMessage;Hoş geldin!\n<b>{{playerName}}</b>
+cams_looby_header;Oyun dünyaların
+cams_looby_noGameWorlds;Şu anda hiçbir oyun dünyasında etkin bir avatarın yok. Yeni bir oyun dünyasına katıl ve oynamaya başla.
+cams_looby_joinNewGameworld;Yeni oyun dünyasına kaydol
+cams_looby_playNow;HEMEN OYNA
+cams_looby_gameworldsLinked;Hesabına bağlı oyun dünyaları
+cams_looby_invitePenging;[data>1:{{data}} davet][data=1:davet] beklemede
+cams_looby_localGameWorld;YEREL OYUN DÜNYASI
+cams_looby_avatarInDeletion;Siliniyor
+cams_removeDualAccount_header;Ortak oyuncuyu kaldır
+cams_removeDualAccount_info;<b>{{lobbyAccountName}}</b> adlı oyuncuyu <b>{{avatarName}}</b> adlı avatarına ortaklıktan kaldırmak istiyor musun?\n\n<b>{{lobbyAccountName}}</b> artık avatarına erişemeyecek.
+cams_removeDualAccount_removeDual;Ortağı kaldır
+cams_addDualPlayer_info;Oyuncunun lobi hesap adını gir:
+cams_addDualPlayer_placeholder;kullanıcıadı#etiket
+cams_addDualPlayer_addPlayer;[data>1:Oyuncu ekle][data=1:Oyuncu ekle][data=0:Oyuncu ekle]
+search_addDualPlayeradditionalEmptyResultInfo;Oyuncu bulunamadı veya zaten ortak olarak davet edilmiş.
+cams_dualInventation_header;Ortaklık daveti
+cams_dualInventation_invitations;Davetler:
+cams_dualInventation_info;Daveti kabul edersen kendi lobi hesabınla giriş yaparak bu hesaba erişebilirsin.
+cams_dualInventation_moreInfo;Her oyun dünyası için yalnızca bir ortak daveti kabul edebilirsin.
+cams_dualInventation_invite;<b>{{LobbyAccountName}}</b> seni, <b>{{avatarName}}</b> avatarıyla oynamaya davet etti
+cams_dualInventation_AcceptInvite;Daveti kabul et
+cams_acceptDualInvitation_header;Ortaklık davetini kabul et
+cams_acceptDualInvitation_info;<b>{{gameworldName}}</b> dünyasında <b>{{avatarName}}</b> avatarıyla oynamak için <b>{{lobbyAccountName}}</b> adlı oyuncudan gelen ortaklık davetini kabul etmek istiyor musun?
+cams_acceptDualInvitation_moreInfo;Aynı oyun dünyası için bekleyen birden fazla ortaklık davetin var ancak her oyun dünyası için yalnızca bir ortaklık davetini kabul edebilirsin.
+cams_acceptDualInvitation_avatarInDeletion;Ortak oyun kurallarımız nedeniyle oyun dünyası başına sadece bir etkin avatarın olabilir. \nOrtaklık davetini kabul ettiğinde, bu oyun dünyasındaki {{avatarName}} adlı silinen avatarına erişimin ortadan kalkacaktır. \nSonrasında silme işlemini iptal edemezsin.
+cams_dualSettings_header;Ortaklık ayarları
+cams_dualSettings_info;İstediğin zaman o avatarda ortak olarak oynamayı bırakabilirsin.
+cams_dualSettings_leaveDualPlay;Ortak oyundan ayrıl
+cams_confirmLeaveDualPlay_info;<b>{{gameworldName}}</b> oyun dünyasındaki <b>{{avatarName}}</b> avatarında ortak olarak oynamayı bırakmak mı istiyorsun?\n\nOrtaklıktan ayrıldıktan sonra kendi avatarını oluşturabilir veya bu oyun dünyasında tekrar ortak oynamak için başka bir avatara katılabilirsin.
+cams_recoverPassword_header;Şifreyi kurtar
+cams_recoverPassword_goBackToLogin;Girişe geri dön
+cams_recoverPassword_info;Lobi hesabınla ilişkili eposta adresini gir. Şifreni nasıl sıfırlayacağına dair talimatları sana göndereceğiz
+cams_recoverPasswordEmailSent_header;Eposta gönderildi
+cams_recoverPasswordEmailSent_info;Eğer <b>{{emailAdress}}</b> eposta adresine bağlı bir lobi hesabı varsa şifreni sıfırlama talimatlarını sana göndereceğiz.\n\nŞifreni kurtardıktan sonra tekrar giriş yapabilirsin.
+cams_recoverPasswordEmailSent_goBackToLogin;Girişe geri dön
+cams_editDualAccounts_header;Ortaklar
+cams_editDualAccounts_gameworld;Oyun dünyası: {{gameworldName}}
+cams_editDualAccounts_avatar;Avatar: {{avatarName}}
+cams_editDualAccounts_avatarOwner;Avatar sahibi:
+cams_editDualAccounts_noDualsAdded;- Bu avatara ortak oyuncu eklenmedi -
+cams_editDualAccounts_info;Ortak oyuncuların bu avatara <b>tam erişimi</b> bulunmaktadır; bunlar, Altın harcamak ve satın almak da dahil olmak üzere oyundaki her eylemi gerçekleştirebilirler.\n\nOrtak oyuncular bu avatara erişmek için kendi lobi hesaplarıyla giriş yapabilirler ancak başka ortak oyuncu davet edemezler.
+cams_editDualAccounts_warningHint;Diğer oyun dünyası avatarlarına ve hesap verilerinize istenmeyen erişimleri önlemek için lobi hesabı giriş verilerinizi başka oyuncularla paylaşmayın.
+cams_editDualAccounts_addDualPlayer;Ortak oyuncu ekle
+cams_editDualAccounts_avatarInDeletion;Bu oyun dünyasındaki {{avatarName}} adlı avatarın siliniyor. Bundan dolayı ortaklık daveti gönderemezsin.
+cams_settings_title;Ayarlar
+cams_settings_changePassword_information;Şifreni değiştirmek için hesabının eposta adresine bir eposta göndereceğiz.
+cams_settings_changePassword_sendEmail;Eposta gönder
+cams_settings_changePassword_emailSent;Şifreni değiştirmek için sana bir eposta gönderdik.
+cams_settings_accountDeletion_title;Lobi hesabını silme
+cams_settings_accountDeletion_info;Bu hesapla bağlantılı tüm oyun dünyaları ve avatarlar da dahil olmak üzere Legends lobi hesabını sil.
+cams_settings_accountDeletion_action;Lobi hesabını sil
+cams_settings_accountDeletion_warning;Uyarı: Bu işlem geri alınamaz!
+cams_settings_accountDeletion_warning_content;Lobi hesabının silinmesi 72 saatlik bir geri sayımın ardından kalıcı olur, geri alınamaz ve tüm avatarlarını etkiler. \n\nHesabını silinmeye almak için öncelikle tüm avatarlarının silinmeye alınması gerekir.
+cams_settings_accountDeletion_requirementsInformation;Hesabını silmek için tüm avatarlarının silinme sürecinde olması veya zaten silinmiş olması gerekir.
+cams_settings_accountDeletion_information_warning;Bu işlem, hesabını silinme durumuna sokar. Lütfen hesabının, ilişkili tüm avatarların ve verilerin kalıcı olarak silineceğinin farkında olduğunu giriş alanına "sil" yazarak doğrula.
+cams_settings_accountDeletion_information_error;Bir avatar silinmeye alınmadıysa hesabı silemezsin.\nLütfen belirtilen oyun dünyalarına giriş yap ve avatarını sil.
+cams_settings_accountDeletion_noAvatarsFound;Etkin oyun dünyaları / avatarlar bulunamadı.\nGitmeye hazırsın!
+cams_settings_accountDeletion_understandmentConfirmation;Anlıyorum
+cams_settings_accountInDeletion_title;Hesap silinme aşamasında
+cams_settings_accountInDeletion_info;<b>{{NAME}}</b> adlı lobi hesabın, <b>{{TIMESTAMP|Countdown}}</b> içinde kalıcı olarak silinecek.
+cams_settings_accountInDeletion_action;Silmeyi iptal et
+cams_mainMenu_dataConsent;Veri onayı
+gameworld_gameworld;Oyun dünyası
+infobox.productionboost;{{RES}}{{TIME_COUNTER}}
+infobox_notesCount;{{COUNT}} not
+auction_placeBid;Bir teklif ver
+auction_auctionsAmount;{{COUNT}} açık artırma
+auction_bidsRefreshed;Teklifler yenilendi!
+auction_currentSilver;Şu anki gümüş:  {{iconName|Sprite}} {{currentSilver}}
+auction_availableAmount;Kullanılabilir miktar:
+auction_toSellAmount;Satış miktarı:
+auction_selectAmountToSellHeader;Satış miktarı seç
+auction_soldHorseForSilver;At {{amount}} gümüşe satıldı.
+auction_currentCurrency;Şu anki:
+auction_newCurrencyValues;Yeni:
+auction_exchangeExplanationGoldToSilverTitle;Müzayede evinde kahraman eşyaları satın almak için Altını gümüşe çevirebilirsin.
+auction_exchangeExplanationGoldToSilverMore;Değiş tokuş etmek istediğin Altın miktarını gir:
+auction_exchangeExplanationSilverToGoldTitle;Müzayede evinde kahraman eşyaları satarak elde ettiğin gümüşü Altınla değiş tokuş edebilirsin.
+auction_exchangeExplanationSilverToGoldMore;Değiş tokuş etmek istediğin gümüş miktarını gir:
+auction_countAndName;{{AMOUNT}}×{{ITEM_NAME}}
+auction_deleteAll;Tüm açık artırmaları sil
+auction_confirm_deletion_title;[data>1:{{data}} açık artırma girdisini][data=1:Açık artırma girdisini] sil
+auction_confirm_deletion_button;[data>1:Girdileri][data=1:Girdiyi] sil
+auction_confirm_deletion_text_header;[data>1:{{data}} açık artırma girdisini][data=1:Bu açık artırma girdisini] silmek istediğinden emin misin?
+auction_confirm_deletion_text;Bir girdiyi sildiğinde kalıcı olarak gider. Onu geri getiremezsin.
+cams_looby_noMatchingGameworlds;Seçiminle eşleşen oyun dünyası yok.
+serverSelection_5;Geliştirici
+serverSelection_header;Oyun dünyası filtresini seç
+serverSelection_filter_gameworldSpeed;Oyun dünyası hızı
+serverSelection_gameworldSpeed;{{INT}}x hız
+serverSelection_filer_gameworldLifetime;Oyun dünyasının yaşı
+serverSelection_gameworldLifetime;{{INT}}-{{INT2}} gün
+serverSelection_gameworldLifetime_XorMore;{{INT}} veya daha fazla gün
+filters_applyButton;[COUNT<2:Filtreyi][COUNT>1:{{COUNT}} filtreyi] uygula
+filters_reset;[COUNT<2:Filtreyi][COUNT>1:Filtreleri] sıfırla
+cams_avatarCreation_cancel_title;Avatar oluşturmayı iptal et
+cams_avatarCreation_cancel_reconfirmationText;{{gameworldName}} oyun dünyasındaki avatarının oluşturulmasını iptal etmek istediğinden emin misin?
+cams_avatarCreation_cancel_explanation;Halk seçimin, haritadaki konumun ve avatar adın da dahil olmak üzere bu oyun dünyasındaki tüm ilerlemeni kaybedeceksin.
+cams_avatarCreation_button_startPlaying;Oyuna başla
+cams_avatarCreation_button_changeSector;Konumu değiştir
+cams_avatarCreation_button_selectTribe;Halkını seç
+cams_avatarCreation_button_updateTribe;Halkı güncelle
+cams_avatarCreation_button_selectSector;Konumu seç
+cams_avatarCreation_button_updateSector;Konumu güncelle
+cams_avatarCreation_name_title;Avatar adı gir:
+cams_avatarCreation_name_tip;Bu, bu oyun dünyasındaki avatarının adıdır.
+cams_avatarCreation_name_errorEmpty;Lütfen bir avatar ismi gir.
+cams_avatarCreation_name_placeHolder;Avatar adı
+cams_looby_avatarInDeletionBlockPlayNow;Bu oyun dünyası ({{gameworldName}}) için bir ortaklık davetini kabul ettin, bu nedenle artık ortak kip dışında buraya erişemezsin.
+connectionIssue_header;Dengesiz bağlantı
+connectionIssue_info;Şu anda sunucuya ulaşamıyoruz. Bu, dengesiz bir internet bağlantısından kaynaklanıyor olabilir.\n\nBekleyebilirsin veya...
+connectionIssue_tryAgain;Açılır pencereyi kapatıp tekrar deneyebilirsin
+connectionIssue_restart;Uygulamayı yeniden başlat
+infobox_openMessage;Açılmış ileti
+infobox_accountIsLocked;Avatarınız yasaklandı!
+auction_button_requirement;Açık artırmaların kilidini açmak için {{REQUIRED}} macera tamamla.\nKalan: {{INT}}
+auction_availableSilver;Mevcut gümüş:  {{iconName|Sprite}} {{currentSilver}}
+auction_deleteSelected;Seçili açık artırmaları sil
+auction_deletedAll_confirmation;Tüm açık artırmalar silindi!
+auction_deletedSelected_confirmation;{{data}} açık artırma [data>1:girdisi][data=1:girdisi] silindi!
+newVersionAvailable_title;Yeni sürüm mevcut
+newVersionAvailable_description;Uygulamamızı geliştirdik. Oynamaya devam etmek için lütfen güncelle.
+newVersionAvailable_joinDiscord;Yeni ne var? Daha fazla bilgi için Discord'a katıl.
+newVersionAvailable_toStore;Şimdi güncelle
+infobox_beginnerProtection_title;Başlangıç korumasını uzat
+infobox_beginnerProtection_question;Koruma süresini uzatmak istediğinizden emin misiniz?
+infobox_beginnerProtection_description;Koruma süresi boyunca diğer oyunculara hammadde gönderemez, saldıramaz ve saldırı almazsınız.
+sendResources_beginnersProtection;Başlangıç koruman etkin olduğu sürece diğer oyunculara hammadde gönderemezsin.
+sendTroops_beginnersProtection;Başlangıç koruman etkin olduğu sürece diğer oyunculara asker gönderemezsin.
+sendTroops_otherBeginnersProtection;Başlangıç koruması altında oldukları sürece diğer oyunculara asker gönderemezsin.
+buildingActivities_building_36;Üretimdeki tuzaklar
+tasks_collectAll;Hepsini topla ({{INT}})
+auction_bidMinPlaceholder;en az {{INT}}
+auction_buttonBidMinimum;Gereken asgari teklif
+hero_adventures_available;Mevcut Maceralar
+messages_freshDeskMessage_viewAndReplyInBrowser;Tarayıcıda görüntüle ve yanıtla
+messages_webViewRecommendation;İletinin içeriği tam olmayabilir.\nMesajı bir tarayıcıda görüntülemeni öneririz.
+rateThisApp_popup_title;Uygulamamızı beğendin mi?
+rateThisApp_popup_description;Uygulamamızı beğendiysen, lütfen bir dakikanı ayırıp puan ver.
+rateThisApp_popup_appreciatefeedback;Geri bildirimlerin bizim için önemli!
+rateThisApp_popup_btn_positive;Harika!
+rateThisApp_popup_btn_negative;Daha iyi olabilirdi
+rearrange_or_demolish_building;Binanın yerini değiştir veya yık
+mainBuilding_buildingArrangement;Bina düzenleme
+mainBuilding_openRearrangeMode;Düzenleme kipini aç
+mainBuilding_demolishBuildings;Binaları yık
+mainBuilding_openDemolishMode;Yıkım kipini aç
+mainBuilding_demolishBuildings_description;Konum değiştirmek için binaları sürükleyip bırak.
+rearrangeBuildingPopup_rearrangeDescription;<color={{colorValue|TextColor}}>{{buildingLevel}}</color> <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> binasının yeri değiştirilsin mi?
+rearrangeBuildingPopup_buildingsRearranged;Binalar düzenlendi
+rearrangeBuildingPopup_buildingRearranged;{{buildingName|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>{{buildingLevel}}</color>
+confirmRearrangeBuildingPopup_header;Alttaki binanın yerini değiştirmek ister misin?
+confirmRearrangeBuildingPopup_description;<b>{{villageName}}</b> köyündeki seçilen binaların yerini değiştirir.
+demolishBuildingPopup_title;Binayı yık
+demolishBuildingPopup_description;Yıkılacak bir bina seç
+demolishBuildingPopup_descriptionWithSelection;<color={{colorValue|TextColor}}>{{buildingLevel}}</color> <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> binasını yıkmak ister misin?
+demolishBuildingPopup_demolishLevel;Yıkım seviyesi
+demolishBuildingPopup_demolishCompletely;Tamamen yık
+confirmDemolishBuildingPopup_header;<color={{colorValue|TextColor}}>{{buildingLevel}}</color> <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> binasını hemen yıkmak ister misin?
+confirmDemolishBuildingPopup_description;Seçilen binayı hemen yıkar ve köyünden kaldırır.\nBu işlemin geriye alınması mümkün değildir.
+characterCount;{{COUNT}}/{{MAX}} karakter
+survey_button_description_reward;Travian: Legends uygulamasını geliştirmekte bize yardımcı olmak için bu kısa ankete katıl.\nDesteğin ödüllendirilecektir.
+cams_lobby_joinGameworld;Oyun dünyasına kaydol
+cams_lobby_gameworld_inviteOnly;Sadece davetliler
+cams_lobby_gameworld_inviteOnlyInfo;Bu oyun dünyası, özel bir davetiye koduna sahip oyuncularla sınırlıdır.
+cams_lobby_gameworld_inviteCodeEnter;Davetiye kodunu gir
+cams_lobby_gameworld_inviteCodeInfo;Bu oyun dünyası, özel bir davetiye koduna sahip oyuncularla sınırlıdır.\nEğer bir davetiye kodun varsa, oyun dünyasına katılmak için lütfen kodu gir.
+cams_lobby_gameworld_inviteCodePlaceholder;Örn: eThbt5OLyZ8D5xjhUaBAba
+cams_lobby_gameworld_inviteCodeErrorCharacterCount;Davetiye kodun çok kısa. Lütfen {{MAX}} karakterin hepsini gir.
+cams_lobby_gameworld_inviteCodeCooldown;Davetiye kodu geri sayımı ({{TIME|Countdown}})
+timeCountDown;{{TIME|Countdown}}
+attestation_failed;Cihaz doğrulama başarısız! Oynamak için lütfen bir mobil cihaz kullan.\nBu sorun devam ederse, destek ekibiyle iletişime geçmek için aşağıdaki yardım düğmesini kullan!
+mainBuilding_demolishBuildings_notAvailable;Binaları yıkmak için merkez binanın {{INT}}.  seviyede olması gerekir.
+mainBuilding_demolishBuildings_demolishing;<b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> binasını {{timestamp|Countdown}} içinde <b><color={{colorValue|TextColor}}>{{buildingLevel}}. seviyeye</color></b> kadar yıkar.
+demolishBuildingPopup_demolishing;<b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> binası <b><color={{colorValue|TextColor}}>{{buildingLevel}}. seviyeye</color></b> kadar yıkılıyor
+allianz.hinweis_text_NoConfederacy;Bir birliğe saldırmazlık antlaşması (SA) göndermeden önce diplomatik görgü kuralları gereği o birlikle bağlantıya geçmelisiniz.
+regions_canBeSettled;Yerleşilebilir mi?
+regions_regionStatusNoColon;Bölge durumu
+regions_top5AlliancesPopulation;En iyi 5 birliğin <b>nüfusu</b>
+regions_top5AlliancesVillages;En iyi 5 birliğin <b>köyleri</b>
+regions_neighboringRegions;Komşu bölgeler
+regions_regionPopulation;Bölge nüfusu
+regions_contested;Bölge çekişmeli
+cams_lobby_gameworld_disabledAndNotSupported;Oyun dünyası şu anda mobil uygulama üzerinden oynanamıyor.
+demolishBuildingPopup_impossible;Bu bina yıkılamaz.
+city_benefits;Şehir avantajları
+city_benefits_threeAdditionalSlots;Üç ilave inşaat boşluğu
+city_benefits_resourceFieldsLevel12;Hammadde alanları 12. seviyeye geliştirilir
+city_benefits_watchTowers;Surlar gözetleme kuleleri ile geliştirilir
+city_upgradeToACity;{{villageName}} köyünü şehre geliştir.
+city_culturePointsForNext;(bir sonraki {{culturePoints}} kültür puanı sonra)
+city_upgradeVillage;Köyü geliştir
+city_confirm_upgradeVillage;Şehre geliştir
+city_confirm_header;{{villageName}} köyünü bir şehre geliştirmek istiyor musun?
+city_confirm_description;Bir köyü şehre yükseltmek {{time}} sürer ve bir yerleşim boşluğu gerektirir.
+city_upgrading;{{villageId|VillageLink}} {{text}}
+city_upgraded;{{villageId|VillageLink}} zaten bir şehir.
+combatSimulator_selectTarget;Hedef seç
+mainMenu_goToLobby;Lobiye Git
+mainMenu_yourPlayerProfile;Oyuncu Profilin
+plus.plusAttackWarningText;Gelen saldırılar köy listesinde gösterilecek Yalnızca mobil cihazlarda: Köy görünümünde, sağ taraftaki köy listesini açacak ok vurgulanacaktır.
+production.crobBalanceTroopConsumptionAncientPower;Kadim güç katkısı
+filters_region_not_found;Bölge mevcut değil
+rallyPoint_troopsOverview_ownTroops_8;Kendi askerlerin: 
+rallyPoint_troopsOverview_ownTroops_9;Kendi askerlerin: 
+tradeOffice_merchantsCarryCapacity;Tüccar taşıma kapasitesi:
+tradeOffice_tradeShipsCarryCapacity;Ticaret gemisi taşıma kapasitesi:
+buildingActivities_building_48;İyileştirilen askerler
+playerDetails_victorPointsPerDay;{{PERDAY}} /gün
+allianz.numIncomingRaids;{{NUM_ATTACKS}} yağma
+allianz.numIncomingAttacks;{{NUM_ATTACKS}} saldırı
+allianz.MerchantCapacityAndSpeedNew;Ticaret
+alliance_regionalTabButton;Bölgesel
+alliance_regionalTabTop5Description;İttifakınızın, bölge hakimiyetine göre ilk 5 ittifak arasında yer aldığı bölgeler.
+alliance_regionalTabTitle;Bölgesel en iyi 5
+alliance_regionalTabTop5Empty;- Hiçbir bölgede yeterli bölgesel hakimiyet yok -
+alliance_ShowDetails;Ayrıntıları göster
+regions_withFactions_yourFactionHasMoreThan50PercentSecured;Birliğiniz >{{PERCENT}} bölge hakimiyetine sahip.<br><br>Bölgesel gücü etkinleştirmek için bir hazine binasına ihtiyacın var.
+wall_upgradesInProgress;Geliştirmeler devam ediyor
+extension_upgradeStarted;Geliştirme başarıyla başlatıldı!
+extension_constructionList;İnşaat listesi
+upgradeLevel;Geliştirme seviyesi
+infoTab_upgradingToLevelForExtension;Şu anda {{buildingName}} binası {{level}}. seviyeye geliştiriliyor:
+infoTab_genericCurrentlyForExtension;{{extensionName}} içeren şu anki {{buildingName}} katkısı:
+infoTab_genericAtLevelForExtension;{{extensionName}} ile {{a}}. seviyede {{b}}. seviye:
+ratioValuesNumeratorBold;<b>{{a}}</b>/{{b}}
+infoTab_productionCosts_title;Üretim maliyeti
+harbour_shipsInConstruction;İnşa halindeki gemiler
+unitInfo_troopsCarriage;<b>{{INT}}</b> askere kadar
+unitInfo_velocityRaid;Yağma için:
+city_benefits_resourceFieldsLevel12inCapital;Hammadde alanlarını 12'nci seviyeye yükseltir; bununla birlikte merkez köyünde bunları daha da fazla yükseltebilirsin.
+infoTab_genericCurrentlyMoreExplicit;Şu anki {{buildingName}} katkısı:
+merchant_merchantOverview_noIncomingDeliveries;- Gelen teslimat yok. -
+merchant_merchantOverview_noOutgoingDeliveries;- Giden teslimat yok. -
+merchant_merchantOverview_incoming;Gelen ({{INT}})
+merchant_merchantOverview_outgoing;Giden ({{INT}})
+achievementQuests.achQuest_03_Territory_step_01_description;Bir Natar köyü yağmalamak/saldırmak için askerler gönder. Askerlerinin ulaşması halinde, bütün askerlerin ölüp ölmemesine bakılmaksızın ödev tamamlanmış sayılır.<br><br>Bu görevle günde {{NUMBER_OF_TASKS_PER_DAY}} kez puan kazanılabilinir.\n
+allianz.MerchantCapacityTitle_Harbours;Tüccar/gemi kapasitesi ve hız katkısı
+market_tradeRoutes_invalidTarget_Territory;Ticaret yolları sadece kendi köylerine gidebilir.
+market_selectResources;Hammadde seç
+market_selectResources_requiredTradeShips;Gerekli ticaret gemileri
+market_resourcesWillBeSendByTradeShip;Hammaddeler ticaret gemisi ile gönderilecektir.
+manual.gid38_Territory;Büyük depo, normal hammadde deposundan 3 kat daha fazla kapasiteye sahiptir.<br><br>Bu bina sadece depolama ana planı kadim gücü ile inşa edilebilir.
+manual.gid39_Territory;Büyük tahıl ambarı, normal tahıl ambarından 3 kat daha fazla kapasiteye sahiptir.<br><br>Bu bina sadece depolama ana planı kadim gücü ile inşa edilebilir.\n
+harbour_noAvailableShips;Şu anda bu limanda konuşlanmış herhangi bir gemi bulunmamaktadır.
+harbour_destroy_title;Gemileri yok et
+harbour_destroy_desc_title;Yok etmek istediğin gemi türünü ve miktarını seç.
+harbour_destroy_desc;Sadece şu anda burada konuşlanan gemiler yakılabilir; bunu yaptığında herhangi bir hammadde geri alamazsın.
+harbour_destroy_timeNotice;Gemiler derhal imha edilecektir.
+harbour_destroy_selectedTotalAmount;Seçilen gemiler: <b>{{AMOUNT}}</b>
+harbour_destroy_shipSelectTitle;<b>{{ShipID|TranslateSuffixFor|gid49.type_t}}</b> (burada <b>{{Amount}}</b> gemi konuşlanıyor)
+extension_fullyExtended;{{NAME}} tamamen genişletildi.
+extension_willBeFullyExtended;{{NAME}} tamamen genişletiliyor.
+layout.directLinkMarketplaceTrader;Boştaki tüccarlar: {{INT}}/{{INT2}}
+UnitProduction_ViewBuildingList;Bina listesine göz at
+raidList_useRaidShipsInfo;Yağma gemiler müsait olduğunda kendiliğinden kullanılır. Yağma gemin kalmadıysa birliklerin normal şekilde seyahat edecektir.
+buildingActivities_maxReached;Azami miktara ulaşıldı
+buildingActivities_building_49;Üretimdeki gemiler
+buildingActivities_buildingAdditional_48;Yaralı asker yok
+residence_expansion_villagesRatio;Köyler: {{COUNT}}/{{MAX}}
+residence_expansion_slotFree;Kullanımdaki boşluklar.
+residence_expansion_slotPrerequisites;Önkoşullar <b>{{BuildingID|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>{{Level}}. seviye </color></b>
+residence_expansion_culturePointsPerDay;Günlük kültür puanı üretimi
+search_region;Bölge arama
+search_select_region;Bölge seç
+statistiken.progressionStepTitle_start_achieved;Sunucu {{VALUE}} tarihinde başladı
+statistiken.progressionStepTitle_serverEnd_locked;Sunucu {{VALUE}} tarihinde sona erecek
+filters_artefact_not_found;Tılsım mevcut değil
+sendTroops_settlersChangeTribe;İlk {{INT}} yerleşimde, kurmak istediğin köyün hangi halktan olacağını seçebilirsin. Dikkatli seçmelisin.
+gid17.nextTradingRoute;Bir sonraki ticaret yolu saat <b>{{HOUR}}</b> olduğunda başlar ve <b>{{MERCHANTS}}</b> [MERCHANTS>1:tüccara][MERCHANTS=1:tüccara] gereksinim duyar.
+gid17.nextTradingRouteWithShips;Bir sonraki ticaret yolu saat <b>{{HOUR}}</b> olduğunda başlar ve <b>{{SHIPS}}</b> [SHIPS>1:ticaret gemisine][SHIPS=1:ticaret gemisine] gereksinim duyar.
+market_tradeRoutes_merchants;[merchants>1:{{merchants}} tüccar][merchants=1:{{merchants}} tüccar]
+market_tradeRoutes_tradeShips;[tradeShips>1:{{tradeShips}} ticaret gemisi][tradeShips=1:{{tradeShips}} ticaret gemisi]
+market_tradeRoutes_repeats;{{repeats}} x
+market_tradeRoutes_usesShip;Gemi kullanır
+troopsCheckout_shipUseInfo;{{Distance}} kare | {{ShipID|Bold}} | {{duration|Bold}} saat kazandırır
+troopInfoPopup_shipsTitle;Köyde konuşlanan gemiler
+language_nl-NL;Felemenkçe
+cropfinder_cropperType;Tarla tipi:
+valueInBrackets;({{VALUE}})
+residence_settlementSlotsUsed;Kullanılan yerleşim boşlukları
+residence_settlementCPNeededForNextSlot;Bir sonraki yerleşim boşluğu için kültür puanına ihtiyaç var:
+gid27.ancient_power_detail_;{{INT}}
+artefact_effect_value;Etki: <b>{{EFFECT}}</b>
+ancientPower_overview;Bölgesel güçler
+ancientPower_no_ancientPower;Bu sunucuda kadim güç yok
+ancientPower_tip_large;Büyük kadim güçler <b>20.</b> seviye hazine binası gerektirir ve <b>tüm köylerinizi</b> etkiler
+ancientPower_tip_small;Küçük kadim güçler <b>10.</b> seviye hazine binası gerektirir ve sadece etkinleştirildikleri <b>köyü</b> etkiler
+ancientPower_tip_nearby;{{villagenamelong|Bold}} çevresindeki kadim güçler
+ancientPower_stored_title;Birlik tarafından elde tutulan bölgesel güçler
+ancientPower_stored_noContent;Birliğinizce hiçbir bölge kontrol altına alınmadı
+ancientPower_stored_nextFree;Bir sonraki ücretsiz etkinleştirmenin mevcut olacağı zaman: [isFree=0:<color={{colorValue|TextColor}}>]{{timeStamp|Countdown?Bold}}[isFree=0:</color>]
+ancientPower_stored_notActivatable;Etkinleştirilecek kadim güç yok.
+ancientPower_stored_activated;Kadim güç etkinleştirildi.
+ancientPower_stored_alreadyActive_account;Etkinleştirildiğinde tüm köyleri etkileyen bir kadim gücün zaten var.
+ancientPower_stored_alreadyActive_village;Etkinleştirildiğinde bu köyü etkileyen bir kadim gücün zaten var.
+ancientPower_stored_alreadyActive;Bu kadim güç zaten etkinleştirildi.
+filters_ancientPower_not_found;Kadim güç mevcut değil
+regions_withFactions_yourAllianceHasMoreThan50PercentSecured;Birliğin >%{{PERCENT}} bir bölge hakimiyetine sahip.<br><br>Bölgesel gücü etkinleştirmek için bir hazine binasına ihtiyacın var.
+language_en-NT;Geliştirici dili
+settings_notNow;Şimdi değil
+settings_dontAskAgain;Bir daha sorma.
+cams_lobby_gameworld_lastPlayedTime;{{TIME}}s
+cams_settings_DirectLoginTitle;Oyun dünyasına doğrudan giriş
+cams_settings_DirectLoginInfo;Legends lobisindeki oyun dünyası seçimini atla ve uygulamayı açtığında doğrudan en son oynadığın oyun dünyasına giriş yap.
+cams_settings_DirectLoginActive;Doğrudan oturum açma etkinleştirildi
+cams_settings_DirectLoginInactive;Doğrudan oturum açma devreden çıkarıldı
+cams_directLoginPopUp_Info;Uygulamayı başlattığında doğrudan oyun dünyana giriş yapmak istiyor musun?
+cams_directLoginPopUp_youCanChange;Seçimini istediğin zaman lobi ayarlarından değiştirebilirsin.
+cams_directLoginPopUp_Accept;Evet, doğrudan giriş yap
+language_ro-RO;Rumence
+language_hu-HU;Macarca
+language_ar-AE;Arapça
+autoLoginFailed.;Kendiliğinden oturum açma başarısız oldu.
+needInternetToPlay;Oynamak için internet bağlantısına ihtiyacın var. Lütfen bağlantını kontrol et ve tekrar dene.
+mapCellInfoWindow_removeFromLists;Tüm listelerden kaldır
+removeFromListsPopup_Title;{{TARGETNAME}} hedefini {{INT}} yağma listesinden kaldırmak istiyor musun?
+removeFromListsPopup_Description;Hedefi yağma listelerine daha sonra tekrar ekleyebilirsin.
+removeFromListsPopup_ConfirmButton;Hedefi kaldır
+social_continueWith;Veya şununla devam et:
+social_loginWith;Veya şununla giriş yap:
+social_backToRegistration;Kayıt sayfasına geri dön
+social_createAccountTitle;Legends lobi hesabı oluştur
+social_errorTitle_NoEmailProvided;Eposta izni eksik
+social_errorMsg_NoEmailProvided;Travian: Legends oynamaya başlamak için <b>eposta adresinize erişim iznine ihtiyacımız var.</b>
+social_errorInfo_NoEmailProvided;Lütfen doğru izin ayarlarıyla tekrar dene veya başka bir kayıt yöntemi seç.
+social_errorTitle_AlreadyExists;Eposta zaten kullanımda
+social_errorMsg_AlreadyExists;Girilen eposta adresi zaten bir Travian: Legends lobi hesabı için kullanılıyor.
+social_errorInfo_AlreadyExists;Giriş yapmak için lütfen hesabına bağlı eposta adresini kullan.
+social_acceptTOS;"Onayla"ya tıklayarak <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">GŞK</link></style>'yi kabul etmiş, <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">Cayma Hakkına İlişkin Bilgiler</link></style> ve <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">Gizlilik Politikası</link></style>'nın mevcudiyenin bilincinde olduğunu onaylamış olursun.
+linkNotWorking;Bağlantı çalışmıyor
+linkNotWorkingDescription;Göründüğü kadarıyla bu bağlantı şu anda Travian: Legends uygulamasında çalışmıyor. Bununla birlikte internet tarayıcınızda çalışabilir.
+openLinkInBrowser;Bağlantıyı tarayıcıda aç
+settings_language_useArabicNumerals_activated;Doğu Arap rakamlarının kullanımı etkinleştirildi
+settings_language_useArabicNumerals_deactivated;Doğu Arap rakamlarının kullanımı devreden çıkartıldı
+artefact_inventory_active_empty;Hiçbir tılsım etkinleştirilmedi
+social_errorTitle_Unknown;tanımsız hata
+social_errorMsg_Unknown;Bilinmeyen bir hata oluştu. Lütfen bu işlemi yeniden deneyin.
+loadingScreen_text_01;Kahramanınız saçını düzeltiyor, lütfen bekleyin.
+loadingScreen_text_02;Ambar dolup taşıyor. Köylüler artık tahılı ceplerinde saklıyor.
+loadingScreen_text_03;Elçilik bir parti veriyor - sadece diplomatlar.
+loadingScreen_text_04;Askeri üs artık bir piknik yeri - askerler sandviçlerin tadını çıkarıyor.
+loadingScreen_text_05;Demirci bir kılıç dövüyor... spagettiden kılıç.
+loadingScreen_text_06;Yapı ustaları planı... tersinden okuyor.
+loadingScreen_text_07;Natarlar köyün kitap kulübüne katıldılar. Kimse kadim efsunların nasıl okunacağını bilmiyor.
+loadingScreen_text_08;Casuslar düşman birliklerini sayıyor... ama sayacak parmak kalmadı.
+loadingScreen_text_09;Dünya Harikası güvercinlerin saldırısı altında. Temizlik ekibini gönderiyoruz.
+loadingScreen_text_10;Köle milisler sendika talep ediyor - grevlere hazırlan.
+loadingScreen_text_11;Birileri savaş simülatörünü açıklayana kadar birlikler saldırmayı reddediyor.
+loadingScreen_text_12;Köylüler iki tavuğun kavgasını izlemek için çalışmayı bıraktı.
+loadingScreen_text_13;Mancınıkların hangi binayı önce vuracakları konusunda tartışıyor.
+loadingScreen_text_14;Lütfen sabırlı ol - kahraman at yerine Alman Demiryolları'nı kullandı.
+loadingScreen_text_15;Bu sığınakta sadece hammadde değil, köy dedikoduları da saklanıyor.
+loadingScreen_text_16;Kışla bir yetenek gösterisine ev sahipliği yapıyor - eğitim ertelendi.
+loadingScreen_text_17;Surun neredeyse bitti. Sadece boyanın kurumasını bekliyoruz.
+loadingScreen_text_18;Lejyonerler yürüyüşe geçmeden önce bir kahve molası talep ettiler.
+loadingScreen_text_19;Galyalılar Romalılara çitin ne olduğunu anlatıyorlar - 3 saat geçti.
+loadingScreen_text_20;Teslimatı hızlandırmak için tüccarlara rüşvet veriliyor.
+loadingScreen_text_21;Kahramanın ata binme kursuna gidiyor - bu biraz zaman alabilir.
+loadingScreen_text_22;Tüccarlar yavaş bir öküzün arkasında sıkışmış durumda.
+loadingScreen_text_23;Birlik önderleri bir savaş stratejisi hazırlıyor... parmak boyalarıyla.
+loadingScreen_text_24;Ambar kurabiyelerle dolu - kaynak yönetiminin en iyi örneği.
+loadingScreen_text_25;Gözetleme yarıda kesildi - Heimdall'ın gözünde bir şey var.
+changeAccountNameSubtitle;Kullanıcı adı ve/veya etiket değiştir.
+changeAccountNamePleaseNote;Hesap adını değiştirdikten sonra tekrar değiştirebilmek için {{DAYS}} [DAYS>1:gün][DAYS=1:gün] beklemen gerektiğini lütfen unutma.
+changeAccountNameWaiting;İsmini tekrar değiştirebilmek için beklemen gerekiyor:
+changeAccountNameUpdated;Hesap adı güncellendi
+changeAccountNameUpdatedSubtitle;Hesap ismin başarıyla şu şekilde güncellendi: <b>{{playerName}}</b>
+alliance_top10Title;Birlik içi en iyi 10
+gameworldCalendarNoGameworld;Yaklaşan oyun dünyası bulunamadı. \nYükleniyor veya planlanmamış olabilirler.
+gameworldCalendar_title;Oyun dünyası takvimi
+valueWithModifierBefore;{{value|Round|2}}x
+goldShop_purchaseCanceled;Satın alma iptal edildi!
+goldShop_pendingRestored;Önceki satın alma işleminiz başarıyla geri yüklendi.
+hero_consumablePopup_healthByOintment;Merhem başına kazanılan sağlık:
+unknown;?
+serverSelection_gameworldSpeed_short;{{INT}}x
+gameworldCalendarDetails_title;Oyun Dünyası Ayrıntıları
+gameworldCalendarDetails_shareLink;Oyun dünyası bağlantısını paylaş
+gameWorldEndCondition;Oyun dünyası bitiş koşulu
+gameWorldEndCondition_WonderOfTheWorld;Dünya Harikası {{Level}}
+gameWorldEndCondition_VictoryPoints;Zafer puanları
+gameWorldRestriction_InvitationCode;Bu oyun dünyası, özel bir davetiye koduna sahip oyuncularla sınırlıdır.
+gameWorldRestriction_MobilePlayers;Bu oyun dünyasına yalnızca mobil oyuncular erişebilir.
+gameWorldSpecial;Bu, yalnızca sınırlı bir süre için açık olacak ve Klasik oyun dünyalarından farklı özelliklere sahip olabilen özel bir oyun dünyasıdır.
+gameWorldUndefinedDetails;Oyun dünyasının tüm ayrıntıları henüz belirlenmedi. Güncellendiğinde lobinde bir bildirim alacaksın.
+bonusValueWithPercentNoSpace;+%{{value}}
+startDate;Başlangıç tarihi
+startTime;Çıkış saati
+UTC+1;(UTC+1)
+goldShop_GoldPromotion;Altın promosyonu
+auction_FeePopupTitle;Açık Artırma Ücreti
+auction_FeePopupText;Müzayede evi satışlarında%{{value}} harç ödemek zorundasınız. Alacağınız tutar, satış fiyatı eksi açık artırma ücretidir.
+auction_FeePopupExample;Örnek hesaplama
+auction_FeePopupSalePrice;Satış fiyatı
+auction_FeePopupFee;Açık artırma ücreti (%{{value}})
+auction_FeePopupPayout;Ödeme
+auction_sellHouseFeeInfo;Ödeme, satış fiyatından%{{value}} açık artırma ücretinin çıkartılmasıyla elde edilir.
+gold_action_finishImmediately;Hemen tamamla
+mapCellInfoWindow_villageReports;Köy raporlarını göster
+hero_crafting_title_refine;Ekipmanı saflaştır
+hero_crafting_title_smelt;Ekipmanı erit
+hero_crafting_title_forge;Ekipmanı işle
+hero_crafting_title_reforge;Ekipmanı yeniden işle
+hero_crafting_action_refine;Saflaştır
+hero_crafting_action_smelt;Erit
+hero_crafting_action_forge;İşle
+hero_crafting_action_takeMaterials;Malzemeleri al ({{INT}}/{{MAX}})
+hero_crafting_action_takeAllMaterials;Malzemeleri al
+hero_crafting_action_reforge;Yeniden işle
+hero_crafting_action_take;Al
+hero_crafting_action_pick;Eşya seç
+hero_crafting_action_equip;Kuşan
+hero_crafting_action_buy_material;Malzeme satın al
+hero_crafting_action_buy_item;Eşya satın al
+hero_crafting_action_craft_material;Malzemeyi erit
+hero_crafting_action_moveToInventory;Heybeye
+hero_crafting_action_select_item;Seç
+hero_crafting_action_remove_item;Sil
+hero_crafting_action_error_equipment;Eşya, kahraman donanımı olmalıdır.
+hero_crafting_action_error_rarity;Eşyalar aynı nadirliğe sahip olmalıdır.
+hero_crafting_action_error_category;Eşyalar aynı donanım kategorisinde olmalıdır.
+hero_crafting_action_error_id;Eşyalar aynı olmalıdır.
+hero_crafting_action_error_missingItem;Seçtiğin öğelerden biri veya daha fazlası artık mevcut değil.
+hero_crafting_refine_tip;Destansı kahraman eşyaları, aynı eşya kategorisindeki başka bir destansı kahraman eşyasıyla geliştirilebilir.
+hero_crafting_refine_tip_error;Saflaştırılacak hiçbir kahraman eşyan yok. Maceralarda eşyalar bul veya müzayede evinden eşyalar satın al ve onları saflaştırarak geliştir.
+hero_crafting_smelt_info;Şimdi {{INT}} malzeme al veya bekleyip {{MAX}} malzeme al.
+hero_crafting_reforge_text;Donanımı yeniden işleyerek farklı bir nadirlik ve kaliteye sahip olabilecek başka bir eşya elde et.\nYeniden işledikten sonra, istediğin eşyayı seçip alabilir veya bunlardan birini yeniden işleyebilirsin.\nDikkat: Yeniden işledikten sonra, her yeniden işlenen nesne kaybolacak ve geri getirilemeyecektir.
+inventoryItem_quality_title;Kalite
+inventoryItem_rarity_title;Nadirlik
+inventoryItem_rarity_quality_title;Nadirlik & Kalite
+inventoryItem_rarity_common;Sıradan
+inventoryItem_rarity_uncommon;Sıradışı
+inventoryItem_rarity_rare;Nadir
+inventoryItem_rarity_epic;Destansı
+inventoryItem_rarity_legendary;Efsanevi
+search_for_village;Köy arama
+search_for_player;Oyuncu arama
+villageList_EditMode;Düzenleme kipi
+villageList_MaxGroupAmount;Azami köy grubu sayısına ulaşıldı.
+hero_crafting_action_error_material;Eşya bir malzeme olmalıdır.
+villageList_ReorderError;Geçersiz hedef
+textMatchingInput_Title;"{{WORD}}" yazarak onayla
+hero_inventory_category_empty;- Bu kategoride eşya yok -
+hero_crafting_action_refine_success;Donanım saflaştırıldı
+hero_crafting_action_smelt_success;Donanım eritildi
+hero_crafting_action_forge_success;Donanım işlendi
+hero_crafting_result_item_equipped;Eşya donanıldı
+hero_crafting_result_item_taken;Eşya heybeye taşındı.
+hero_crafting_result_material_taken;Malzeme heybeye taşındı
+hero_crafting_action_error_quality;Eşyalar aynı kalitede olmalıdır.
+hero_crafting_action_error_epic;Aynı kategori ve kalitede başka bir destansı ürün olmalı.
+inventoryItem_rarity_none;Nadirlik yok
+dailyQuests_rewardOverview_short;Ödül görünümü
+avatar_confirmation_title_delete;Avatarı Sil
+avatar_confirmation_header_delete;Avatarını silmek istiyor musun?
+avatar_confirmation_infoText_delete;Silme işlemini başlattıktan sonra avatarının silinme işleminin tamamlanması <b>3 gün</b> sürecektir.\nSilinen bir avatar artık açık artırmaya veya takas bürosuna erişemez.\nSilme işlemini istediğin zaman buradan iptal edebilirsin.
+avatar_confirmation_requiredWord_delete;sil
+avatar_confirmation_title_respawn;Avatarı Sıfırla
+avatar_confirmation_header_respawn;Avatarını sıfırlamak istiyor musun?
+avatar_confirmation_infoText_respawn;Bu işlem, bu noktaya kadar kaydettiğin tüm ilerlemeyi silecek ve başlangıç köyünü haritada yeni bir konuma yerleştirecektir.\n\nSatın alınan tüm Altınlar kendiliğinden aktarılacaktır.
+avatar_confirmation_requiredWord_respawn;sıfırla
+settings_app_title;tüm oyun dünyaları
+settings_app_Animations_title;Canlandırma
+settings_app_Animations_description;Uygulamada hangi canlandırmaları görmek istediğini seç.
+settings_app_Animations_activated;Köy/hammadde görünümünde bulut canlandırmaları etkin
+settings_app_Animations_deactivated;Köy/hammadde görünümünde bulut canlandırmaları devre dışı
+settings_app_NightMode_title;Gece Kipi
+settings_app_NightMode_description;Köylüleriniz meşaleleri yaktı; ocakların ateşleri, gece göğündeki yıldızların loş ışığı altında çıtırdıyor.
+settings_app_NightMode_activated;Gece kipi etkin
+settings_app_NightMode_deactivated;Gece kipi devre dışı
+settings_app_WinterMode_title;Kış Kipi
+settings_app_WinterMode_description;Kar sessizce yağıyor, her sesin buz gibi havada eriyip gittiği köyü aldatıcı bir sessizlik sarıyor.
+settings_app_WinterMode_activated;Kış kipi etkin
+settings_app_WinterMode_deactivated;Kış kipi devre dışı
+settings_app_VillagePanning_title;Köy/Hammadde alanında hareket etme
+settings_app_VillagePanning_description;Köy görünümünde ve hammadde alanlarında hareket edebilirsin.
+settings_app_VillagePanning_activated;Hareket etme etkin
+settings_app_VillagePanning_deactivated;Hareket etme devre dışı
+settings_app_PushNotifications_title;Genel anlık bildirimler
+settings_app_PushNotifications_description;Anlık bildirimlerle uygulama ve oyunla ilgili genel haberlerden haberdar ol.
+settings_app_PushNotifications_activated;Oyun dünyası başlangıç bildirimi etkinleştirildi
+settings_app_PushNotifications_deactivated;Oyun dünyası başlangıç bildirimi devreden çıkartıldı
+settings_app_EnergySaving_title;Enerji Tasarrufu Kipi
+settings_app_EnergySaving_description;Daha düşük bir FPS oranıyla cihaz pilinden tasarruf et.\nEnerji tasarrufu kipinin etkinleştirilmesi, uygulamayı kullanırken bazı görsel gecikmelere neden olabilir.
+settings_app_EnergySaving_activated;Enerji tasarrufu kipi etkin
+settings_app_EnergySaving_deactivated;Enerji tasarrufu kipi devre dışı
+settings_app_DataSaving_title;Mobil Veri Tasarrufu Kipi
+settings_app_DataSaving_description;Daha az sunucu isteği yaparak mobil veriden/bant genişliğinden tasarruf et.\nMobil veri tasarrufu kipinin etkinleştirilmesi, oyun içi veriler için daha uzun bir yenileme aralığına yol açabilir.
+settings_app_DataSaving_activated;Mobil veri tasarrufu kipi etkin
+settings_app_DataSaving_deactivated;Mobil veri tasarrufu kipi devre dışı
+auction_FilterType;Eşya türü
+auction_bidTooLow;Teklif çok düşük.
+villageList_Delete_Title;Köy Grubunu Sil
+villageList_Delete_Button;Grubu sil
+villageList_Delete_Description;Bu köy grubunu silmek ister misin?
+villageList_Delete_Description2;Bu gruptaki köyler bundan etkilenmeyecektir.
+gameworldNews_title;Haberler ve güncellemeler
+moreInformation;Daha fazla bilgi
+remainingGold;Kalan Altın: {{goldIcon|Sprite}} {{goldAmount}}
+messages_addEmoji_title;İfade ekle
+messages_select_emojis;İfade seç
+cams_resend_email_wait_error;Lütfen yeni bir eposta göndermek için bekle.
+cams_settings_accountDeletion_infoGold;Avatarını sildikten sonra, kalan Altınını başka bir avatara nasıl aktaracağını açıklayan bir eposta alacaksın.\n<b>Lütfen dikkat:</b>  Kalan Altının yalnızca belirli oyun dünyalarına aktarılabilir.
+cams_changeMail_title;Eposta adresini değiştir
+cams_changeMail_description;Eposta adresini değiştirmek için şu anki ve yeni eposta adresine erişebiliyor olman gerekir.
+cams_changeMail_socialHint;Eposta adresini değiştirmen  Facebook, Google veya Apple ile oturum açmana etki etmez.
+cams_changeMail_cantAccess;Eposta adresine erişemiyor musun?
+cams_changeMail_sentVerification;Şuraya bir doğrulama epostası gönderdik: {{mail}}
+cams_changeMail_checkInbox;Lütfen gelen kutunu kontrol et ve devam etmek için talimatları izle.
+cams_changeMail_verificationCode;Eposta doğrulama kodu:
+cams_changeMail_verifyButton;Eposta doğrulama
+cams_changeMail_enterNew_description;Lütfen aşağıya yeni eposta adresini gir. Bu adrese bir doğrulama epostası göndereceğiz.
+cams_changeMail_enterNew_description2;Değişikliği tamamlamak için lütfen epostadaki talimatları izle.
+cams_changeMail_enterNew_input;Yeni eposta adresini gir:
+cams_changeMail_enterNew_input_placeholder;Yeni eposta adresi
+cams_changeMail_enterNew_button;Epostanı değiştir
+cams_changeMail_done_title;Eposta güncellendi
+cams_changeMail_done_description1;Eposta adresin {{mail}} olarak başarıyla güncellendi
+cams_changeMail_done_description2;Kendiliğinden çıkış yapacak ve giriş sayfasına yönlendirileceksin. Lütfen giriş yapmak için yeni eposta adresini kullan.
+cams_changeMail_done_redirecting;Girişe yönlendiriliyor {{time}}...
+bonusValue;+ {{value}}
+value;{{value}}
+ratioValues_Colon;{{a}}:{{b}}
+genericValue;{{VALUE}}
+enterAmount;Miktarı gir
+symbol_minus;-
+applyFilter;Filtreyi uygula
+resetFilter;Filtreyi sıfırla
+rallyPoint_troopsOverview_outgoingMission_50_heroCentricAdventure;Macera keşfi
+rallyPoint_troopsOverview_returningFromAdventure_heroCentricAdventure;Maceradan dönüş
+silverExchangePopup_AvailableSilver;Mevcut gümüş
+silverExchangePopup_SilverStatus;Şu anda {{AMOUNT|LongNumber}} gümüşün etkin açık artırmalarda rehin.
+silverExchangePopup_SilverError;Bu eylem için yeterli gümüşün yok.
+silverExchangePopup_GoldError;Bu eylem için yeterli Altının yok.
+hero.status50_heroCentricAdventure;Kahramanın bir maceraya doğru yola çıktı.
+inventoryItem_quality_1;1'inci kalite
+inventoryItem_quality_2;2'nci kalite
+inventoryItem_quality_3;3'üncü kalite
+inventoryItem_rarity_common_headGear;Sıradan Kafa Teçhizatı
+inventoryItem_rarity_uncommon_headGear;Sıradışı Kafa Teçhizatı
+inventoryItem_rarity_rare_headGear;Nadir Kafa Teçhizatı
+inventoryItem_rarity_epic_headGear;Destansı Kafa Teçhizatı
+inventoryItem_rarity_legendary_headGear;Efsanevi Kafa Teçhizatı
+inventoryItem_rarity_common_utility;Sıradan Yardımcı Eşya
+inventoryItem_rarity_uncommon_utility;Sıradışı Yardımcı Eşya
+inventoryItem_rarity_rare_utility;Nadir Yardımcı Eşya
+inventoryItem_rarity_epic_utility;Destansı Yardımcı Eşya
+inventoryItem_rarity_legendary_utility;Efsanevi Yardımcı Eşya
+inventoryItem_rarity_common_weapon;Sıradan Silah
+inventoryItem_rarity_uncommon_weapon;Sıradışı Silah
+inventoryItem_rarity_rare_weapon;Nadir Silah
+inventoryItem_rarity_epic_weapon;Destansı Silah
+inventoryItem_rarity_legendary_weapon;Efsanevi Silah
+inventoryItem_rarity_common_armour;Sıradan Zırh
+inventoryItem_rarity_uncommon_armour;Sıradışı Zırh
+inventoryItem_rarity_rare_armour;Nadir Zırh
+inventoryItem_rarity_epic_armour;Destansı Zırh
+inventoryItem_rarity_legendary_armour;Efsanevi Zırh
+inventoryItem_rarity_common_boots;Sıradan Çizme
+inventoryItem_rarity_uncommon_boots;Sıradışı Çizme
+inventoryItem_rarity_rare_boots;Nadir Çizme
+inventoryItem_rarity_epic_boots;Destansı Çizme
+inventoryItem_rarity_legendary_boots;Efsanevi Çizme
+inventoryItem_rarity_common_consumable;Sarf malzemesi
+inventoryItem_rarity_uncommon_consumable;Sıradışı Sarf Malzemesi
+inventoryItem_rarity_rare_consumable;Nadir Sarf Malzemesi
+inventoryItem_rarity_epic_consumable;Destansı Sarf Malzemesi
+inventoryItem_rarity_common_horse;At
+inventoryItem_rarity_uncommon_horse;Sıradışı At
+inventoryItem_rarity_rare_horse;Nadir At
+inventoryItem_rarity_epic_horse;Destansı At
+inventoryItem_rarity_legendary_horse;Efsanevi At
+inventoryItem_rarity_common_material;Sarf malzemesi
+inventoryItem_rarity_uncommon_material;Sıradışı Sarf Malzemesi
+inventoryItem_rarity_rare_material;Nadir Sarf Malzemesi
+inventoryItem_rarity_epic_material;Destansı Sarf Malzemesi
+search_item;Eşya ara
+search_select_item;Eşya seç
+avatar_confirmation_infoText_delete_goldBough;Bu avatar yakın zamanda Altın satın alma işlemi için kullanıldığından, silme işlemi başlatıldıktan sonra silinmesi en az <b>üç gün sürecektir</b>.\nSilinen bir avatar artık açık artırmaya veya takas bürosuna erişemez.\nSilme işlemini istediğin zaman buradan iptal edebilirsin.
+combatSimulator_addItemEffect;Eşya etkisi ekle
+combatSimulator_editItemEffect;Eşya etkisini düzenle
+addItemEffect_title;Kahraman eşyası etkisi ekle
+addItemEffect_description;Mümkün olan tüm kahraman eşyalarının ayrı ayrı katkılarını yansıtmak için farklı etkiler ekle.
+addItemEffect_importHeroEquipment;Kendi kahraman donanımını getir
+addItemEffect_importHeroEquipment_success;Getirilen kahraman eşyaları
+addItemEffect_selectEffect;Bir eşya etkisi seç
+addItemEffect_selectItem;Bir eşya seç
+addItemEffect_selectMagnitude;Büyüklük seç
+addItemEffect_selectUnit;Birim seç
+addItemEffect_missingMagnitude;Eksik büyüklük
+addItemEffect_effect_2;Azaltılmış hasar
+addItemEffect_effect_6;+ Her gün ilave sağlık puanı
+addItemEffect_effect_12;+ Belirli bir birim için artırılmış saldırı ve savunma
+addItemEffect_effect_13;+ Artırılmış savaş gücü
+cams_newMail_title;Yeni eposta adresi
+cams_verifyNewMail_title;Yeni eposta adresini doğrula
+cams_verifyCurrentMail_title;Şu anki eposta adresini doğrula
+auction_notEnoughSilver;Yeterli gümüşün yok.
+auction_itemGroups;Eşya grupları
+auction_unknown;?
+auction_sortingOption_itemName;Eşya adı
+auction_sortingOption_bidCount;Teklif sayısı
+auction_sortingOption_finishedAt;Biteceği süre:
+auction_sortingOption_highestBid;En yüksek teklif
+auction_sortingOption_highestBidder_player;En yüksek teklif sahibi (oyuncu)
+auction_sortingOption_highestBidder_alliance;En yüksek teklif sahibi (birlik)
+auction_sortingOption_auctionAmount;Mevcut açık artırmaların sayısı
+auction_sortingOption_nextFinishedAt;Biteceği sonraki süre:
+auction_sellingPrice;Satış fiyatı
+auction_sellingPrice_lowest;En düşük
+auction_sellingPrice_average;Ortalama
+auction_sellingPrice_highest;En yüksek
+auction_result_won;<color={{colorValue|TextColor}}>Kazandın</color>
+auction_result_lost;<color={{colorValue|TextColor}}>Teklifin geçildi</color>
+auction_sellingPrice_averagePrice;Ortalama fiyat
+auction_bidProcessTitle;Teklif verme süreci
+auction_bidProcessDescription1;İlgilendiğin ürünler için teklifler verebilirsin.
+auction_bidProcessDescription2;Mevcut teklifin üzerine çıkmak için en az asgari tutarı teklif etmelisin.
+auction_maxBidFeatureTitle;Azami teklif özelliği
+auction_maxBidFeatureDescription1;Bir eşya için azami bütçeni girebilirsin.
+auction_maxBidFeatureDescription2;Sistem, belirlediğin azami değere kadar senin yerine kendiliğinden teklif verecektir.
+auction_maxBidFeatureDescription3;Teklifin, sadece en yüksek teklifi veren olarak kalmanı sağlayacak kadar artar.
+auction_maxBidFeatureDescription4;Teklif verme, sen kazanana veya azami bütçeni aşana kadar devam eder.
+auction_auctionDurationTitle;Açık artırma süresi
+auction_auctionDurationDescription1;Kalan açık artırma süresi {{DURATION|Duration}}'dan azsa, en yüksek teklifi veren değiştiğinde süre {{DURATION|Duration}} kadar uzar.
+auction_auctionWinningTitle;Kazanma
+auction_auctionWinningDescription1;Açık artırma sona erdiğinde en yüksek teklifi veren eşyayı kazanır.
+auction_auctionFinished;Açık artırma çoktan sona erdi
+auction_wasJustOutbid;Şu anda en yüksek teklifi veren sen değilsin.
+auction_currentHighestBidder;Şu anki en yüksek teklifi veren
+auction_currentHighestBid;Şu anki en yüksek teklif
+auction_yourMaximumBid;Azami teklifin
+auction_showFinished;Sona erenleri göster
+auction_deleteAllFinished;Tüm sona erenleri sil
+auction_startedAt;Başladığı zaman: {{TIME|DateTime}} | Devam ediyor
+auction_canceled;İptal edilmiş
+auction_finished;Sona ermiş
+auction_finishedAt;Sona ermiş: {{TIME|DateTime}}
+auction_itemAuction_title;Eşya açık artırması
+auction_itemAuction_info;Bir açık artırma başlatmak için heybendeki bir eşyaya tıkla. Diğer oyuncular buna teklif verebilir. Bir açık artırma {{INT}} saat sürebilir.
+auction_whatHappensNext_title;Sonra ne oluyor
+auction_whatHappensNext_info1;Süre dolduğunda en yüksek teklifi vermiş olan, ürünü kendiliğinden satın alır.
+auction_whatHappensNext_info2;Satış yapıldığında gümüş alırsın.
+auction_whatHappensNext_info3;Eşyan satıldığında bilgilendirilirsin.
+auction_error_cannotSell;Bu eşya müzayede evinde satılamaz.
+auction_error_onlyHorse;Tek kalan atını satamazsın.
+auction_sellItem;Eşya sat
+auction_sales;Satışlar
+auction_selectBatchSize;Grup boyutunu seç
+auction_selectBatchSize_batches;<b>{{COUNT}}x</b> eşya grubu
+auction_selectFilter_title;Filtre seç
+goldShop_upTo;Şuna kadar:
+shopPromotion_openShop;Mağazayı aç
+shopPromotion_goldPromotionTitle;Etkin Altın promosyonu8
+shopPromotion_limitedTimeOffer;Sınırlı süreli teklif!
+shopPromotion_goldPromotionDescription;Şimdi paranın karşılığında daha fazla Altın al.
+shopPromotion_timeRemaining;Kalan süre:
+hero_adventures_watchAdReduceDuration_title;Macera süresini%{{AMOUNT}} kısalt
+hero_adventures_watchAdReduceDuration_description;Kahramanının <b>sonraki</b> macera süresini kısaltmak için bir video izle.
+hero_adventures_watchAdIncreaseDanger_title;Macera tehlike düzeyini zor seviyesine artır
+hero_adventures_watchAdIncreaseDanger_description;Daha fazla kahraman DP'ı için <b>bir sonraki normal</b> maceranın tehlike düzeyini zor seviyesine yükseltmek için bir video izle.
+hero_adventures_watchAdActive;Bir sonraki macera için etkin.
+hero_adventures_watchAdActiveNormal;Bir sonraki normal macera için etkin.
+hero_crafting_action_error_nonEpic;Aynı nadirlikte ve kalitede özdeş bir ürün olmalıdır.
+berichte.adventure_heroCentric;{{VILLAGE_NAME}} köyü maceraya çıkıyor
+reports_share_notShareable;Bu rapor paylaşılamaz.
+dailyQuests_dailyMaxReached;Günlük azami sayıya ulaşıldı
+achievementQuests.DailyQuest_12_description;Oyunu bilgisayarındaki bir tarayıcıda aç ve bir video izle.
+achievementQuests.DailyQuest_12_additionalInformation;www.travian.com
+achievementQuests.DailyQuest_13_description;Örneğin, binalarını daha hızlı yükseltmek için bir video izle.
+achievementQuests.DailyQuest_13_additionalInformation;Veya ek faydalar olmadan doğrudan bir video izlemek için "Videoyu izle" düğmesine tıkla.
+addItemEffect_effect_11;+ Natarlara karşı artırılmış saldırı gücü
+auction_started;Açık artırma başladı
+auction_error_batchSize;Satacak yeterli ürün yok.
+auction_graph_notEnoughData;Yeterli veri yok
+auction_emptyInventory;- Şu anda satacak ürünün yok -
+RelativeTime_2_word;[data>1:{{data}} saat][data<2:{{data}} saat]
+gold_action_halveDuration;Süreyi yarıya indir
+goldShop_advantage_Value_Duration;<b>+%{{VALUE}}</b> için <b>[DURATION>6:{{DURATION}} gün][DURATION<7:{{DURATION|Mult|24}} saat]</b>
+goldShop_advantage_Value_Active;<b>+%{{VALUE}}</b> etkin:
+goldShop_upgrade;Geliştir
+goldShop_advantage_stillActiveFor;Etkin olacağı süre:
+goldShop_advantage_stillActiveFor_Value;{{DURATION}} gün saat {{TIME}}
+goldShop_advantage_videoFeatureOnCD;Video katkıyı günde yalnızca bir kez etkinleştirebilirsin.\n{{TIMESTAMP|Countdown}} içinde günlük sıfırlama
+goldShop_advantage_popup_mainInfoHeader_ProductionboostLumber;Tüm köylerindeki <b>odun üretimini</b> artır.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostClay;Tüm köylerindeki <b>kil üretimini</b> artır.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostIron;Tüm köylerindeki <b>demir üretimini</b> artır.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostCrop;Tüm köylerindeki <b>tahıl üretimini</b> artır.
+goldShop_advantage_popup_mainInfoBody;Katkı, temel üretime ve tüm diğer ilave katkılara uygulanır.
+goldShop_advantage_popup_premiumInfo;Altınla katkıyı etkinleştirebilir, +%{{VALUE}} üretim katkısı elde edebilirsin.\nKalıcı bir katkı süresi için kendiliğinden uzatmayı etkinleştirebilirsin.
+goldShop_advantage_popup_videoFeatureInfo;Veya kısa bir video izleyebilir ve daha küçük +%{{VALUE}} üretim katkısı elde edebilirsin.\n<b>Video katkısı her hammadde için günde yalnızca bir kez etkinleştirilebilir.</b>
+goldShop_advantage_popup_upgradeInfo;İstediğin zaman Altın ile +%{{VALUE}} üretim katkısına artırabilirsin.
+goldShop_advantage_upgradePopupInfo1;Hammadde katkısını geliştirmek şu anki etkin katkıyı kaldırır.
+goldShop_advantage_upgradePopupInfo2;Bunun yerine [DURATION>6:{{DURATION}} gün][DURATION<7:{{DURATION|Mult|24}}] için +%{{VALUE}} elde edeceksin.
+goldShop_advantage_upgradePopup_title;Geliştirme katkısı
+productionOverview_Bonus;+%{{VALUE}} üretim
+hero_adventures_watchAdReduceDuration_toast;Macera süresi kısaldı.
+hero_adventures_watchAdIncreaseDanger_toast;Macera tehlike seviyesi arttı.
+hero_consumablePopup_amountEquippedAfter;Sonrasında donatılan miktar:
+hero_consumablePopup_amountEquippedAfterUse;Kullanımdan sonra donatılan miktar:
+hero_consumablePopup_amountLeftInInventory;Heybede kalan miktar:
+cams_recover_password_cooldown;Lütfen bekleyin: {{VALUE}}
+cams_settings_changePassword_cooldown;Lütfen bekleyin: {{VALUE}}
+infobox_productionBoost_upgradeButton;Geliştir
+infobox_productionBoost_upgradeBonusWithGold;{{TIME}} saat boyunca +%{{PREMIUM_PERCENTAGE}} elde etmek için katkını Altınla yükselt ve uzat
+infobox_productionBoost_expires;{{PERCENTAGE}} {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresLumber;+%{{PERCENTAGE}} odun üretimi katkısı {{TIME_COUNTER|Countdown?Bold}} içinde sona eriyor
+infobox_productionBoost_expiresClay;+%{{PERCENTAGE}} kil üretimi katkısı {{TIME_COUNTER|Countdown?Bold}} içinde sona eriyor
+infobox_productionBoost_expiresIron;+%{{PERCENTAGE}} demir üretimi katkısı {{TIME_COUNTER|Countdown?Bold}} içinde sona eriyor
+infobox_productionBoost_expiresCrop;+%{{PERCENTAGE}} tahıl üretimi katkısı {{TIME_COUNTER|Countdown?Bold}} içinde sona eriyor
+infobox_productionBoost_expired;{{PERCENTAGE}}
+infobox_productionBoost_expiredLumber;+%{{PERCENTAGE}} odun üretimi katkısı <b>sona erdi</b>.
+infobox_productionBoost_expiredClay;+%{{PERCENTAGE}} kil üretimi katkısı <b>sona erdi</b>.
+infobox_productionBoost_expiredIron;+%{{PERCENTAGE}} demir üretimi katkısı <b>sona erdi</b>.
+infobox_productionBoost_expiredCrop;+%{{PERCENTAGE}} tahıl üretimi katkısı <b>sona erdi</b>.
+infobox_levelUpProductionReminder;Altın karşılığında (+%{{PREMIUM_PERCENTAGE}}) veya bir video izleyerek (+%{{VIDEO_PERCENTAGE}}) tüm köylerindeki hammadde üretimini artır
+infobox_oneTimeProductionBoostReminder;Artık bir video izleyerek +%{{VIDEO_PERCENTAGE}} hammadde katkını tekrar etkinleştirebilirsin.
+travelSimulator_title;Yolculuk süresi simülatörü
+travelSimulator_sourceTribe;Başlangıç konumundaki halk
+travelSimulator_noLocationSelected;Konum seçilmedi
+travelSimulator_slowestUnit_title;En yavaş birim
+travelSimulator_slowestUnit_settings;{{UNIT}} | Hız: {{SPEED}}
+travelSimulator_TournamentSquareLevel_info;(Sadece >20 kare mesafe için)
+travelSimulator_tournamentSquareLevel_option;{{LEVEL}} |%{{VALUE}}
+travelSimulator_unitSelection_title;En yavaş birimi seç
+travelSimulator_unitSelection_unitType;Birim türü
+travelSimulator_unitSelection_unitSpeed;Birim hızı
+travelSimulator_unitSelection_selectedUnitSpeed;Hız: {{SPEED}}
+travelSimulator_calculation_land;<b>Kara:</b> {{VALUE}}
+travelSimulator_calculation_sea;<b>Deniz:</b> {{VALUE}}
+travelSimulator_heroAttending;Kahraman katılıyor
+travelSimulator_vikingRaidBonus;Viking yağma katkısı
+travelSimulator_troopSpeedArtefactEffect;Asker hızı tılsım etkisi
+travelSimulator_toast_selectSourceAndTarget;Geçerli bir başlangıç ve hedef konumu seç!
+travelSimulator_toast_selectSourceTribe;Geçerli bir halk seç!
+IOSAppTrackingTransparencyMessage;"İzin Ver"e basıldığında daha alakalı reklam içeriği için cihaz bilgileri kullanılır
+goldShop_advantage_Value_Duration_Hours;<b>{{DURATION}} saatliğine</b> <b>+%{{VALUE}}</b>
+travelSimulator_tournamentSquareLevel_title;Turnuva yeri seviyesi
+travelSimulator_troopSpeedAncientPower;Askeri birlik hızı kadim güç
+RelativeTime_Formatted;[weeks>0:{{weeks}}h ][days>0:{{days}}g ]{{data}}
+settings_account_tab;Hesap
+settings_notification_tab;Anlık Bildirimler
+settings_app_PushNotifications_popup_title;Anlık Bildirimler
+settings_app_PushNotifications_popup_header;Sana bildirim göndermemize izin ver
+settings_app_PushNotifications_popup_info1;Oyunla ilgili haberler ve faydalı bilgiler içeren anlık bildirimler almak için lütfen önce bizden gelen bildirimlere izin ver.
+settings_app_PushNotifications_popup_info2;Cihazının uygulama ayarlarından bildirimleri etkinleştirebilirsin.
+settings_app_PushNotifications_popup_info3;Bildirimleri tekrar devre dışı bırakmak istediğinde yine buraya dönebilirsin.
+settings_app_PushNotifications_popup_action_button;Uygulama ayarlarını aç
+ratioValueMax;/ {{a}}
+market_sendResources_completed;Tamamlandı
+market_sendResources_villageNotFound;Bulunamadı. Sadece kendi köylerinize, birliğinizin üyelerine veya ittifaklarınızın üyelerine hammadde gönderebilirsiniz.
+no_ads_popup_title;Video reklam yok
+no_ads_popup_header;Bir video reklam gösterilmeye çalışılırken bir sorun oluştu.
+no_ads_popup_info1;Bunun birkaç nedeni olabilir:
+no_ads_popup_info2; • Bölgenizin olduğu reklam havuzunda şu anda görüntülenebilir bir reklam yok.
+no_ads_popup_info3; • Gizlilik ayarlarınız, gösterilebilecek reklam sayısını sınırlıyor.
+no_ads_popup_info4; • Uygulamamız veya reklam sağlayıcımızla ilgili teknik sorunlar.
+no_ads_popup_settings_msg;Lütfen gizlilik ayarlarından kişiselleştirilmiş reklamlara izin verdiğinden emin ol.
+no_ads_popup_support_msg;Sorun devam ederse lütfen destek ekibimizle iletişime geç.
+no_ads_popup_support_button;Destekle İletişime Geç
+city_upgradeToACity_wwVillageNotUpgradeable;Dünya Harikası köyleri şehirlere yükseltilemez.
+travelSimulator_selectMagnitude;Büyüklük seç
+marketplace_merchantsOverview_returningTo;<b>{{Player}}</b> adlı oyuncunun <b>{{Village}}</b> köyüne dönüyor
+market_sendResources_sendAgain;Tekrar gönder
+search_village_notFound;Bulunamadı. Sadece kendi köylerinize, birliğinizin üyelerine veya ittifaklarınızın üyelerine hammadde gönderebilirsiniz.
+settings_app_AnimationsPayoffs_activated;Asker/tüccar gönderme animasyonu etkinleştirildi
+settings_app_AnimationsPayoffs_deactivated;Asker/tüccar gönderme animasyonu devreden çıkartıldı
+hero_resourceTransferPopup_empty;Kahraman heybesinden aktarabileceğin hiçbir hammadde yok.
+hero_toast_appearanceChanged;Görünüm değiştirildi
+alliance_editMemberPopup_customNote;Özel not
+alliance_editMemberPopup_titleOfRole;Rolün ismi
+alliance_editMemberPopup_setSpecialization;Uzmanlığı ayarla
+alliance_role_offensive;Saldırgan
+alliance_role_defensive;Savungan
+alliance_role_hybrid;Karışık
+alliance_role_scout;Casus
+alliance_role_support;Destek
+alliance_role_wow_hammer;DH Çekici
+alliance_role_none;Hiçbiri
+ad_fallback_popup_title;Ödülünü al
+ad_fallback_popup_info;Şu anda video reklam yok ama bağlılığını yine de ödüllendirmek istiyoruz! Ödülü hazırlarken lütfen bir dakika bekle.
+ad_fallback_popup_rewardGranted;Ödül verildi
+ad_fallback_popup_claim;Ödülü al
+ad_fallback_popup_closeWarning;Bu ekranı erken kapatırsan, ödül iptal olur
+gameplay_tip_1;Yerleşimcileri köşkte veya sarayda eğitebilirsin (ilki seviye 10'da).
+gameplay_tip_2;Avatar başına yalnızca bir saray inşa edebilirsin. Saray en fazla 3 genişleme boşluğu sağlarken, köşk yalnızca 2 sağlar.
+gameplay_tip_3;Merkezini değiştirmek için yeni bir köyünde bir saray inşa et. Eski merkezindeki özel binaların yok olacağını veya seviyelerinin düşeceğini unutma.
+gameplay_tip_4;Yeterli kültür puanın olduğunda yeni bir köy kurabilir veya başka bir köyü fethedebilirsin.
+gameplay_tip_5;Binaları geliştirerek ve belediyede festival düzenleyerek kültür puanı kazanabilirsin.
+gameplay_tip_6;Büyük festivaller belediyede (10. seviye) düzenlenebilir; daha fazla kültür puanı kazandırırlar ama daha çok hammaddeye mal olurlar.
+gameplay_tip_7;Bir köyü fethetmek için köşkünde ya da sarayında eğitilmiş şehir idarecilerini kullanarak köyün vatan sevgisini sıfıra düşür.
+gameplay_tip_8;Şehir idarecilerini, köşkte ya da sarayda eğitmeden önce akademide araştır.
+gameplay_tip_9;Natarların veya diğer oyuncuların köylerini fethedebilirsin.
+gameplay_tip_10;Merkez köyün diğer oyuncular tarafından fethedilemez.
+gameplay_tip_11;Daha büyük bir orduyu destekleyebilecek 9 tahıllı veya 15 tahıllı köyleri bulmak için tahıl köyü bulucusunu kullan.
+gameplay_tip_12;Merkezindeki hammadde alanları diğer köyleredekinden daha yüksek seviyelere geliştirilebilir.
+gameplay_tip_13;Pazaryerini kullanarak dost köylere hammadde gönder.
+gameplay_tip_14;Pazaryerinde diğer oyuncularla hammadde ticareti yapabilirsin.
+gameplay_tip_15;Ticari merkezi geliştirerek tüccarlarının taşıma sığasını artırabilirsin.
+gameplay_tip_16;Bir vahayı ilhak etmek ve hammadde üretimini artırmak için kahraman kışlanı 10. seviyeye yükselt.
+gameplay_tip_17;Askerlerinin gücünü dökümhanede geliştir. Bu geliştirmeler, daha önce eğitilmiş olanlar da dahil olmak üzere, o türe ait tüm askerlere anında uygulanır.
+gameplay_tip_18;Saldırmadan önce muhtemel savaş sonuçlarını tahmin etmek için savaş simülatörünü kullan. Simülasyona ne kadar çok ayrıntı eklersen sonuç da o kadar doğru olur.
+gameplay_tip_19;Altın üyelik ile merkez köyünde asker kaçırmayı etkinleştirerek gelen saldırılardan ordunu kendiliğinden kurtarabilirsin.
+gameplay_tip_20;Askerlerin eve döndüğünde, asker kaçırma 10 saniyeliğine devre dışı kalır.
+gameplay_tip_21;Casusluk yeteneklerini artırmak için casuslarını dökümhanede geliştir.
+gameplay_tip_22;Surlar, köyünün savunmasını önemli ölçüde artırır.
+gameplay_tip_23;Hammaddelerini düşman yağmalarından korumak için sığınaklar inşa et.
+gameplay_tip_24;Galyalılar, savaş başlamadan önce saldıranları yakalamak için tuzakçılar eğitebilir.
+gameplay_tip_25;Tuzağa düşen askerleri kurtarmak için onları tuzağa düşüren köye başarılı bir normal saldırı düzenle.
+gameplay_tip_26;Saldıran oyuncular tuzağa düşen askerlerinin%75'ini kurtarabilir, ancak savunan oyuncu isterse bunların%100'ünü barışçıl yolla serbest bırakmayı seçebilir.
+gameplay_tip_27;Savaşta kaybettiğin askerlerinin%40'ını iyileştirmek için bir hastane inşa et.
+gameplay_tip_28;Galyalılar, savaş daha başlamadan saldıran askerleri yakalamak için tuzakçı eğitebilir.
+gameplay_tip_29;Binalarının mancınık ve koçbaşlarına karşı dayanıklılığını artırmak için merkezinde bir taş ustası loncası inşa et.
+gameplay_tip_30;Merkez köyüne yapılan düşman saldırıları sırasında kahramanını güvende tutmak için saklanacak şekilde ayarlayabilirsin.
+gameplay_tip_31;İlave hammadde kazanmak için boş vahalardaki hayvanları alt et. Daha güçlü hayvanlar daha fazla hammadde verir.
+gameplay_tip_32;Deneyim kazanmak için kahramanınla boş vahalardaki hayvanları alt et.
+gameplay_tip_33;Boş vahalardaki hayvanları yakalayıp köyünü desteklemeleri için kafesleri kullan.
+gameplay_tip_34;Kahramanının sağlık yenilenmesini hızlandırmak için şifa merhemleri ve özel zırh gibi eşyalarla donat.
+gameplay_tip_35;Kahramanını, hammadde harcayarak zaman içinde veya bir su kovası kullanarak anında dirilt.
+gameplay_tip_36;Merkez binan 10. seviyeye ulaştığında binaları yıkabilirsin.
+gameplay_tip_37;Bir birliğe katılmak veya kendi birliğini kurmak için bir elçilik inşa et.
+vacationMode_title;Tatil Kipi
+vacationMode_vacation;Tatil
+vacationMode_vacationModeActive;Tatil kipi etkin
+vacationMode_info;Uzakta olduğunda köylerini korumak için tatil kipini kullan. Tatil kipi boyunca aşağıdaki eylemler devre dışı kalır:
+vacationMode_deactivated_action1;Asker göndermek veya almak
+vacationMode_deactivated_action2;Kahramanınla maceralara çıkma
+vacationMode_deactivated_action3;Yeni bina talimatları vermek veya asker eğitmek
+vacationMode_deactivated_action4;Pazaryerini kullanmak (ticaret yolları dahil)
+vacationMode_deactivated_action5;Festival düzenlemek, araştırma başlatmak veya geliştirme yapmak
+vacationMode_deactivated_action6;Birlik oluşturmak veya birliklere katılmak
+vacationMode_deactivated_action7;Birlik katkısına hammadde bağışlamak
+vacationMode_deactivated_action8;Açık artırmalara katılmak
+vacationMode_deactivated_action9;Merkezini değiştirmek
+vacationMode_deactivated_action10;Hesabını silmek
+vacationMode_deactivated_territory_action1;Bir köyü şehre yükseltmek
+vacationMode_deactivated_territory_action2;Hesabın, birliğinin bölge nüfusuna katkıda bulunmaz ve köylerin herhangi bir zafer puanı elde etmez
+vacationMode_conditions_title;Tatil koşulları sağlandı
+vacationMode_duration_info;Tatil modu kaç gün sürsün
+vacationMode_durationUntil;<b>{{DATE}}</b> tarihine kadar tatil
+vacationMode_availableDays;Kalan günler: <b>{{AVAILABLE}}/{{TOTAL}}</b>
+vacationMode_startButton;Tatil kipine şimdi gir
+vacationMode_error_noCancelTime;Tatil kipini ancak {{HOURS}} saat sonra durdurabilirsin
+vacationMode_error_missingRequirement;Tatil kipine girmek için tüm koşulları yerine getir
+vacationMode_error_noVacationDaysLeft;Tatil kipine girmek için kullanılabilir günün kalmadı
+vacationMode_error_cooldown;Tatil kipini ancak, son bitiş zamanından {{HOURS}} saat sonra başlatabilirsin
+vacationMode_abortSuccess;Tatil kipi durduruldu!
+vacationMode_remainingDays;Tatil kipinde kalan gün sayısı
+vacationMode_runsUntil;Tatil modunun bitiş tarihi
+vacationMode_abortInfo;Tatil kipini en erken <b>{{DATE}}</b> tarihinde durdurabilirsin
+vacationMode_abortAvailable;Tatil kipini şimdi iptal edebilirsin
+vacationMode_abortConfirmHeader;Tatil kipini iptal etmek istediğinden emin misin?
+vacationMode_abortConfirmInfo;Kullanılmamış günler iade edilecektir. Bu işlem geri alınamaz.
+vacationMode_startCooldownInfo;Tatil kipini en erken <b>{{DATE}}</b> tarihinde başlatabilirsin
+vacationMode_abortButton;Tatil kipini durdur
+vacationMode_conditions_has_outgoing_troops;Giden asker olmamalı
+vacationMode_conditions_has_incoming_troops;Köylerine veya vahalarına gelen asker olmamalı
+vacationMode_conditions_has_reinforcing_troops_for;Diğer oyunculara gönderdiğin destek birlikler olmamalı
+vacationMode_conditions_has_reinforcing_troops_from;Köylerinde veya vahalarında başka oyunculardan gelen destek birlikler olmamalı
+vacationMode_conditions_has_ww_village;Bir Dünya Harikası köyüne sahip olmamalısın
+vacationMode_conditions_has_artifact_village;Bir tılsım köyüne sahip olmamalısın
+vacationMode_conditions_has_beginners_protection;Başlangıç koruması olmamalı
+vacationMode_conditions_has_trapped_troops;Tuzaklarında esir alınmış asker yok; ayrıca kahramanın da dahil olmak üzere kendi askerlerinin hiçbiri tuzağa düşmemiş
+vacationMode_conditions_has_deletion_event;Avatarın silinmeye alınmış olmamalı
+vacationMode_conditions_has_conquered_oase;Son {{HOURS}} saat içinde bir vaha ilhak etmedin. Bir vaha ilhak ettikten veya kaybettikten {{HOURS}} saat sonra tatil kipine girebilirsin.
+vacationModePopup_info;Tatil kipi boyunca hesabın korunacaktır. Bununla birlikte hammadde alanların üretime, askerlerin ise tahıl tüketmeye devam edecektir. <color=red>Bu durum askerlerinin açlıktan ölmesine neden olabilir.</color>
+vacationModePopup_start_info;<b>{{DAYS}}</b> [DAYS>1:gün][DAYS<2:gün] boyunca tatil kipine girmek istediğinden emin misin? Tatil kipini {{COOLDOWN}} saatlik bekleme süresinin ardından Altın kullanarak iptal edebilirsin.
+vacationModePopup_troopConsumption;Kendi askerlerinin tüketimi
+vacationModePopup_starvationEstimate;Açlığın en erken başlayacağı zaman
+vacationModePopup_starvationTitle;Kendi askerlerinin tüketimi
+goldTransfer_accept_gift;Evet, Altını aktar
+goldTransfer_decline_gift;Hayır, Altını reddet
+goldTransfer_accepted_toast;Altın aktarımı kabul edildi.
+goldTransfer_declined_toast;Altın aktarımı reddedildi.
+smithy_requirementsNotSatisfied;Bu birimi geliştirmek için gereken koşullar karşılanmıyor
+vacationModeLobby_status;Tatilde
+block_vacationMode_toast;Bu işlemi tatil kipindeyken yapamazsın.
+goldTransfer_verifyOwnership_title;Sahipliği doğrula
+goldTransfer_verifyOwnership_description;Satın aldığın ama henüz harcamadığın Altınları mevcut bir avatara aktarmak için lütfen önce aktarım kodunun gönderildiği eposta adresini girerek altınların sana ait olduğunu doğrula.
+goldTransfer_verifyOwnership_emailPlaceholder;Eposta adresi
+goldTransfer_verifyOwnership_errorNoEmail;Lütfen eposta adresini gir.
+goldTransfer_verifyOwnership_errorAlreadyUsed;Bu Altın aktarım bağlantısı daha önce kullanılmış.
+goldTransfer_verifyOwnership_errorInUse;Bu Altın aktarım bağlantısı geçersiz.
+goldTransfer_verifyOwnership_verifyButton;Doğrula
+goldTransfer_selectTargetAvatar_title;Hedef avatarı seç
+goldTransfer_selectTargetAvatar_description;Lütfen Altını aktarmak istediğin avatarı seç.
+goldTransfer_transferableGold_label;Aktarılabilir Altın:
+goldTransfer_enterAvatarName_header;Avatar adı gir:
+goldTransfer_avatarName_placeholder;Avatar adı
+goldTransfer_searchAvatar_Button;Avatar ara
+goldTransfer_searchAvatarNothingFound_error;Bu isme sahip etkin bir avatar bulunamadı.
+goldTransfer_ownAvatarList_header;Etkin avatarlarından seç ({{account}})
+goldTransfer_selectOwnAvatarConfirm_Button;Avatar seç
+goldTransfer_selectGameworld_title;Lütfen oyun dünyası seç
+goldTransfer_selectGameworld_description;Bu avatar adı birden çok oyun dünyasında bulundu. Altını yalnızca bir avatara aktarabilirsin. Lütfen bir oyun dünyası seç.
+goldTransfer_selectGameworldConfirm_Button;Lütfen oyun dünyası seç
+goldTransfer_changeAvatar_Button;Avatar adını değiştir
+goldTransfer_confirm_title;Aktarımı onayla
+goldTransfer_confirm_Button;Aktarımı onayla
+goldTransfer_confirmAvatarOnOneWorld_info;Avatar adı bir oyun dünyasında bulundu:
+goldTransfer_confirmAvatarName_prefix;Avatar:
+goldTransfer_confirmGameworld_prefix;Oyun dünyası:
+goldTransfer_transferComplete_title;Aktarma işlemi başarılı
+goldTransfer_transferComplete_description;Altının, <b>{{gameworldname}}</b> oyun dünyasındaki <b>{{avatarname}}</b> adlı avatara başarıyla aktarıldı.
+goldTransfer_transferComplete_returnButton;Oyuna dön
+cams_settings_accountDeletion_information_warning_v2;Bu işlem hesabını kalıcı olarak siler. Hesabınla ilişkili aşağıdaki içerik yok olur:\n<indent=0.5em>•  Hesabına ait tüm avatarlar\n•  Hesabında kazandığın tüm madalyalar</indent>\n\nOnaylamak için aşağıdaki alana "sil" yaz.
+mapMarkers_popupTitle;İm belirle
+mapMarkers_markerType;İm türü
+mapMarkers_markerColor;İm rengi
+mapMarkers_setAlliance;Birliğim için bir im ekle
+mapMarkers_type_field;Kare
+mapMarkers_addMsg_success;İm başarıyla eklendi!
+mapMarkers_saveMsg_success;İm başarıyla kaydedildi!
+mapMarkers_noPermission_error;Birlik liderinden izin iste.
+mapMarkers_marker;İm
+mapMarkers_markers;İmler
+mapMarkers_listAllianceTitle;Birlik imleri
+mapMarkers_listPlayerTitle;Oyuncu imleri
+mapMarkers_listAlliances;Birlikler
+mapMarkers_listPlayers;Oyuncu:
+mapMarkers_listFlags;Bayraklar
+mapMarkers_deleteMarker;İmi sil
+mapMarkers_deleteMarkerMessage;Bu imi silmek ister misin?
+mapMarkers_showOnMap;İmlerimi haritada göster
+embassy_general_subtab;Genel
+embassy_villagesNearby_subtab;Yakındaki Köyler
+embassy_villagesNearby_listHeader;Birlik / ittifak köyleri

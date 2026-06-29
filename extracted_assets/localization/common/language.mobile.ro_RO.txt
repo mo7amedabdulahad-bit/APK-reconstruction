@@ -1,0 +1,2081 @@
+﻿detail_window_header_title;{{buildingName|TranslateSuffixFor|allgemein.gid}}
+;{{INT}}
+levelWithValue;Nivel {{level}}
+valueWithPercent;{{value}}%
+valueAsRankingPosition;{{value}}.
+valueChangeInBrackets;({{change|Sign}})
+valueChangeInBracketsWithPercent;({{change|Sign}}%)
+ratioValues;{{a}}/{{b}}
+coordinates;<nobr>({{x}}|{{y}})</nobr>
+village_with_coordinates;{{villageName}} <nobr>({{x}}|{{y}})</nobr>
+village_with_clickable_coordinates;{{villageName}} {{mapId|Coordinates}}
+valuePerHour;{{a}}/h
+back;Înapoi
+fill;Umple
+hero;Erou
+done;Gata
+remove;Șterge
+prerequisites;Condiții prealabile:
+newAmount;Cantitate nouă
+before;înainte
+after;după
+permissions;Permisiuni
+changesSaved;Modificările au fost salvate!
+genericError;Eroare neprevăzută
+allianceTagInBrackets;[{{allianceId|AllianceLink}}]
+autocompleteNoResult;Nu s-a găsit niciun rezultat
+medalAdded;Medalie adăugată
+continueEdit;Continuă editarea
+levelUp;Trecere la un nivel nou!
+non_existing_object;[?]
+sorting;Sortare
+copiedToClipboard;Text copiat
+maximumLengthError;Lungime maximă: {{max}}.
+sortingOptions;Opțiuni de sortare
+WIP_comingSoon;Funcție disponibilă în curând!
+upgradeTab_fastForward_button;{{Percent}}% mai rapid
+upgradeTab_masterBuilder_button;Construiește cu \nMaster Builder{{goldIcon|Sprite}}{{goldCost}}
+upgradeTab_adBoostPopup_boost;{{BOOST}}% boost
+infoTab_upgradingToLevel;În curs de trecere la nivelul {{level}}:
+infoTab_genericCurrently;În prezent:
+infoTab_genericAtLevel;La nivelul {{INT}}:
+infoTab_genericEffect;{{INT}}
+infoTab_currentProduction;Producţie curentă:
+infoTab_productionAtLevel;Producţie la nivelul {{INT}}:
+infoTab_effectPerHour;{{INT}} pe oră
+networkIssues;Conexiunea la serverul de joc a fost pierdută.
+cantLoadServerList;Lista serverelor nu a putut fi încărcată din cauza unor probleme de rețea. Te rugăm să verifici dacă dispozitivul este conectat la internet și să încerci din nou.
+barracks_TrainTroops_Action;Instruieşte trupe
+barracks_ViewTrainingsList;Vezi lista de instruire
+barracks_unitNeedsToBeResearched;Unitatea trebuie să fie cercetată în
+barracks_requiresLabel;Necesită:
+barracks_trainingCosts;Costuri de instruire a trupelor
+barracks_troopsInTraining;Trupe în instruire
+training_started;Instruirea a început cu succes!
+targetSelection_relationLabel;Status:
+targetSelection_selectedVillage;Sat selectat
+targetSelection_noSelectedVillage;Nu a fost selectat niciun sat
+targetSelection_ownVillages;Satele proprii
+targetSelection_relation0;Neutru
+targetSelection_relation1;Prietenos
+targetSelection_relation2;Alianță proprie
+targetSelection_relation3;Alianța proprie
+targetSelection_alreadyThere_troops;Satul propriu
+targetSelection_alreadyThere_merchants;Negustorii tăi sunt deja acolo.
+rallyPoint_button_confirmTarget;Confirmă ținta
+rallyPoint_button_prepareTroops;Pregătește trupele
+rallyPoint_button_updateWave;Actualizează valul
+rallyPoint_button_copyWave;Duplică valul
+rallyPoint_button_newWave;Adaugă un val nou
+rallyPoint_sendTroops_chooseDestination;Trimite trupe - Alege destinația
+rallyPoint_sendTroops_sendTroopAction_1;Trimite trupe - Confirmă
+rallyPoint_sendTroops_sendTroopAction_3;Trimite trupe - Confirmă
+rallyPoint_sendTroops_sendTroopAction_4;Trimite trupe - Confirmă
+rallyPoint_sendTroops_sendTroopAction_5;Trimite trupe - Confirmă
+rallyPoint_sendTroops_sendTroopAction_72;Redirecționează trupe - Confirmă
+rallyPoint_sendTroops_sendTroopAction_9;Retrage trupe - Confirmă
+rallyPoint_sendTroops_sendTroopAction_10;Întemeiază un sat nou
+rallyPoint_sendTroops_sendTroopButton_1;Trimite trupe
+rallyPoint_sendTroops_sendTroopButton_3;Trimite trupe
+rallyPoint_sendTroops_sendTroopButton_4;Trimite trupe
+rallyPoint_sendTroops_sendTroopButton_5;Trimite trupe
+rallyPoint_sendTroops_sendTroopButton_72;Redirecționează trupe
+rallyPoint_sendTroops_sendTroopButton_9;Trimite trupe înapoi
+rallyPoint_sendTroops_sendTroopButton_10;Fondează un sat nou
+rallyPoint_sendTroops_coordinateX;Coordinata <b>X</b>:
+rallyPoint_sendTroops_coordinateY;Coordinata <b>Y</b>:
+rallyPoint_sendTroops_selectOnMap;Sau selectează o locație pe hartă:
+rallyPoint_sendTroops_arrivalTime;<b>{{hoursLeft|Duration}}</b> la <b>{{hoursLeft|TimeCountUp}}</b>
+rallyPoint_sendTroops_catapultTargetPopup;Selectează ținta catapultei:
+rallyPoint_sendTroops_catapultTarget_category_1;Clădiri de infrastructură
+rallyPoint_sendTroops_catapultTarget_category_2;Clădiri militare
+rallyPoint_sendTroops_catapultTarget_category_3;Clădiri pentru resurse
+rallyPoint_sendTroops_catapultTarget_random;Aleatorie
+rallyPoint_sendTroops_catapultTarget_noBuilding;Selectează clădirea
+rallyPoint_sendTroops_catapultTarget_recentTargets;Cea mai recentă selecție:
+rallyPoint_sendTroops_changeHeroHomeVillage;Schimbă satul de reședință al eroului
+rallyPoint_sendTroops_attackNoSelection;Selectează tipul de atac
+rallyPoint_sendTroops_movementType_5;Întăriri
+rallyPoint_sendTroops_movementType_3;Atac
+rallyPoint_sendTroops_movementType_4;Raid
+rallyPoint_sendTroops_attackForwarding;Se redirecționează
+rallyPoint_sendTroops_noTroopsSelected;- Nu a fost selectată nicio trupă -
+rallyPoint_sendTroops_noTroopsAvailable;Nu se pot trimite trupe. Nu există trupe disponibile în acest sat.
+rallyPoint_sendTroops_forwardingVillageError;Trupele pot fi trimise doar către membrii alianței sau către propriile sate.
+rallyPoint_sendTroops_forwardingDestination;Redirecționează trupe - Selectează ținta
+rallyPoint_sendTroops_WaveRemoved;Val eliminat
+rallyPoint_sendTroops_maxWaves;S-a atins numărul maxim de valuri
+rallyPoint_sendTroops_notEnoughTroopsToCopy;Nu sunt suficiente trupe pentru a duplica valul.
+rallyPoint_sendTroops_troopsSent;Trupe trimise!
+rallyPoint_sendTroops_toOverview;Către prezentarea generală
+rallyPoint_sendTroops_backToVillage;Înapoi în sat
+rallyPoint_sendTroops_mission;Misiune:
+rallyPoint_troopsOverview_1;Atacuri și raiduri primite
+rallyPoint_troopsOverview_2;Atacuri și raiduri expediate
+rallyPoint_troopsOverview_3;Trupe care se întorc
+rallyPoint_troopsOverview_4;Trupe proprii în acest sat și în oazele sale
+rallyPoint_troopsOverview_5;Trupe străine în sat
+rallyPoint_troopsOverview_6;Trupe proprii în alte sate sau oaze
+rallyPoint_troopsOverview_7;Intăriri pe drum
+rallyPoint_troopsOverview_8;Întăriri expediate
+rallyPoint_troopsOverview_9;Întăriri expediate
+rallyPoint_troopsOverview;Prezentare generală a trupelor
+rallyPoint_troopsOverview_consumption;Consum: {{cropConsumption|ShortenNumber|10000}}  {{iconName|Sprite}} pe oră
+rallyPoint_troopsOverview_arrivalTime;Timpul de sosire: <b>{{Duration|Countdown}}</b> pe <b>{{date|Time}}</b> 
+rallyPoint_troopsOverview_incomingMission_3;Atac primit de la: 
+rallyPoint_troopsOverview_incomingMission_4;Raid primit de la: 
+rallyPoint_troopsOverview_outgoingMission_3;Atacuri 
+rallyPoint_troopsOverview_outgoingMission_4;Raiduri 
+rallyPoint_troopsOverview_outgoingMission_5;Întăriri 
+rallyPoint_troopsOverview_outgoingMission_50;Pornește în aventură spre 
+rallyPoint_troopsOverview_outgoingMission_72;Trupe redirecționate către 
+rallyPoint_troopsOverview_outgoingMission_10;Se fondează un sat nou 
+rallyPoint_troopsOverview_outgoingMission_40;Trupele se refugiază în ascunzișul din pădure
+rallyPoint_troopsOverview_returningMission;Se întorc din: 
+rallyPoint_troopsOverview_ownTroops_1;Trupe proprii în 
+rallyPoint_troopsOverview_ownTroops_2;Trupe proprii în 
+rallyPoint_troopsOverview_ownTroops_3;Trupe proprii în 
+rallyPoint_troopsOverview_ownTroops_4;<b>Natură</b> în 
+rallyPoint_troopsOverview_ownTroops_5;Trupe proprii în 
+rallyPoint_troopsOverview_ownTroops_6;Trupe proprii în 
+rallyPoint_troopsOverview_ownTroops_7;Trupe proprii în 
+rallyPoint_troopsOverview_foreignTroops_2;Trupe de întărire din 
+rallyPoint_troopsOverview_foreignTroops_4;Trupe încarcerate din 
+rallyPoint_troopsOverview_ownTroopsInOther_2;Trupe proprii de întărire pentru 
+rallyPoint_troopsOverview_ownTroopsInOther_4;Trupe proprii încarcerate în 
+rallyPoint_troopsOverview_origin;Origine: 
+rallyPoint_troopsOverview_reinforcement;Întărire din 
+rallyPoint_troopsOverview_killed;Trupe ucise!
+rallyPoint_troopsOverview_released;Trupe eliberate!
+rallyPoint_troopsOverview_forwardedTroopsButton;Trupe redirecționate
+rallyPoint_troopsOverview_returnToOverview;Înapoi la prezentarea generală
+rallyPoint_troopsOverview_incomingAttacks;<color={{colorValue|TextColor}}>{{incomings}}</color> primite
+rallyPoint_troopsOverview_amountIncoming;{{value}} primite
+rallyPoint_troopsOverview_amountOutgoing;{{value}} expediate
+rallyPoint_troopsOverview_amountReturning;{{value}} se întorc
+rallyPoint_troopsOverview_firstArrivalTime;În {{timestamp|Countdown}} ore
+rallyPoint_troopsOverview_forwardTroops;Redirecționează
+rallyPoint_troopsOverview_MergeTroops;Încorporează în sat
+rallyPoint_troopsOverview_WithdrawTroops;Trimite înapoi
+rallyPoint_troopsOverview_sort_1;Mai întâi deplasările semnalate
+rallyPoint_troopsOverview_sort_2;Mai întâi cele care sosesc primele
+rallyPoint_troopsOverview_sort_3;Mai întâi cele care sosesc ultimele
+rallyPoint_troopsOverview_sort_4;Mai întâi trupele trimise cel mai recent
+rallyPoint_troopsOverview_sort_5;Mai întâi trupele trimise cel mai demult
+rallyPoint_troopsMerge_troopsToBeMerged;Trupe selectate pentru a fi unificate:
+rallyPoint_troopsMerge_currentGold;Aur disponibil:  {{iconName|Sprite}} {{currentGold}}
+rallyPoint_troopsMerge_goldLeft_0;{{remainingGold}} / {{maxAllowedGold}} Aur rămas pentru unificarea trupelor astăzi.
+rallyPoint_troopsMerge_goldLeft_1;{{remainingGold}} / {{maxAllowedGold}} Aur rămas pentru unificarea trupelor astăzi. Încă mai poți unifica folosind resurse
+rallyPoint_troopsMerge_troopsMergedToast;Trupe unificate!
+rallyPoint_raidList_beingRaided;{{current}}/{{total}} sunt sub raid
+rallyPoint_infoTab_EvasionShortDescription;Activează eschiva trupelor pentru capitală
+rallyPoint_farmList_createNewTitle;Creează listă nouă
+rallyPoint_farmList_editTitle;Modifică lista
+rallyPoint_farmList_listName;Denumire listă
+rallyPoint_farmList_selectDefaultTroops;Selectează trupele implicite
+rallyPoint_farmList_addTroopsButton;Adaugă trupe
+rallyPoint_farmList_editTroopsButton;Modifică trupe
+rallyPoint_farmList_setTroopsButton;Setează trupe
+rallyPoint_farmList_createListButton;Creează listă
+rallyPoint_farmList_editListButton;Actualizează lista
+rallyPoint_farmList_editTroopsTitle;Modifică trupele din lista de raiduri
+rallyPoint_farmList_deleteList;Șterge lista
+rallyPoint_selectTroops;Selectează trupe
+rallyPoint_farmList_listCreated;Listă creată
+rallyPoint_farmList_exitList;Ieși din listă
+rallyPoint_farmList_startAll;Activează toate țintele
+rallyPoint_farmList_startAllLists;Activează-le pe toate
+rallyPoint_farmList_startSelected;Activează-le pe cele selectate
+rallyPoint_farmList_noTarget;- Nu a fost selectată nicio țintă -
+rallyPoint_farmList_noTargetExist;Această listă nu conține ținte
+rallyPoint_farmList_selectedAmount;{{amount}} selectate:
+rallyPoint_farmList_listUpdated;Listă actualizată
+rallyPoint_farmList_listDeleted;Listă ștearsă
+rallyPoint_farmList_editWarning;- Ștergerea listei va elimina toate țintele din listă\n- Modificarea trupelor va afecta doar trupele implicite pentru țintele viitoare
+rallyPoint_farmList_sortingFailed;Sortarea a eșuat! Te rugăm să încerci din nou!
+rallyPoint_farmList_notStartedPopupTitle;Raidurile nu au început
+rallyPoint_farmList_notStartedPopupElement;<b>{{total}}</b> din cauza {{message}}
+rallyPoint_farmList_NotStartedPopupButtonGoTo;Accesează lista de raiduri
+rallyPoint_farmList_AddTargetTitle;Adaugă țintă
+rallyPoint_farmList_changeTroops;Modifică trupele
+rallyPoint_farmList_targetAdded;Țintă adăugată
+rallyPoint_farmList_targetAlreadyOnList;Ținta există deja în această listă de raiduri. Te rugăm să alegi altă listă sau să creezi una nouă.
+rallyPoint_farmList_choose;Alege lista de raiduri
+rallyPoint_farmList_notYetRaided;Nu a fost încă raidat
+rallyPoint_farmList_EditRaids;Modifică [raidsAmount=1:țintă][raidsAmount>1:ținte]
+rallyPoint_farmList_DeleteRaidsPlayerQuestion;Confirmi că dorești să ștergi [raidsAmount=1:această țintă][raidsAmount>1:aceste ținte]?
+rallyPoint_farmList_ChangeRaidList;Modifică lista de raiduri
+rallyPoint_farmList_ChangeTarget;Modifică ținta
+rallyPoint_farmList_ChangeTroops;Modifică trupele
+rallyPoint_farmList_DeactivateTarget;Dezactivează [raidsAmount=1:ținta][raidsAmount>1:țintele]
+rallyPoint_farmList_MultiEditWarning;Se modifică mai multe ținte. Modificările efectuate vor afecta toate țintele selectate
+rallyPoint_farmList_UpdateRaids;Actualizează [raidsAmount=1:ținta][raidsAmount>1:țintele]
+rallyPoint_farmList_filterShowTroopsTitle;Afișează trupele
+rallyPoint_farmList_filterShowTroopsDescription;Afișează trupele selectate per țintă
+rallyPoint_farmList_filterShowPopulationTitle;Afișează populația țintei
+rallyPoint_farmList_filterShowPopulationDescription;Afișează populația din satul țintei
+rallyPoint_farmList_filterShowDistanceTitle;Afișează distanța
+rallyPoint_farmList_filterShowDistanceDescription;Afișează distanța dintre țintă și satul tău
+rallyPoint_farmList_filterShowLastRaidTitle;Afișează informațiile despre ultimul raid
+rallyPoint_farmList_filterShowLastRaidDescription;Afișează informațiile despre ultimul raid al țintei
+rallyPoint_farmList_filterShowBountyTitle;Afișează recompensa și resursele
+rallyPoint_farmList_filterShowBountyDescription;Afișează recompensa și resursele obținute
+marketplace_createOffer;Creează ofertă
+marketplace_myOffers_title;Ofertele mele
+marketplace_myOffers_merchants;Negustori: {{count}}
+marketplace_myOffers_alliance_True;Alianță: Da
+marketplace_myOffers_alliance_False;-
+marketplace_myOffers_interval;{{amount}} ore
+marketplace_myOffers_offerDeleted;Ofertă ștearsă
+marketplace_merchantsOverview_arrival;{{duration}} ore Sosire la {{arrivalTime}}
+marketplace_merchantsOverview_incomingMerchants;Livrări primite: {{count}}
+marketplace_merchantsOverview_outgoingMerchants;Livrări expediate: {{count}}
+marketplace_merchantsOverview_noIncomingMerchants;- Niciun negustor nu sosește -
+marketplace_merchantsOverview_noOutgoingMerchants;- Niciun negustor nu pleacă -
+marketplace_merchantsOverview_IncomingCat;În sosire
+marketplace_merchantsOverview_outgoingCat;În plecare
+marketplace_merchantsOverview_capacity;Capacitate: {{capacity}}
+marketplace_merchantsOverview_merchantsOverview;Privire generală asupra negustorului
+marketplace_merchantsOverview_ArrivingSoonest;Cei care sosesc cel mai devreme
+marketplace_merchantsOverview_ArrivingLatest;Cei care sosesc cel mai târziu
+marketplace_merchantsOverview_ShortestDistance;Cea mai scurtă distanță
+marketplace_merchantsOverview_LongestDistance;Cea mai lungă distanță
+marketplace_merchantsOverview_transportTo;Transport către satul <b>{{Village}}</b> al lui <b>{{Player}}</b>
+marketplace_merchantsOverview_transportFrom;Transport din satul <b>{{Village}}</b> al lui <b>{{Player}}</b>
+marketplace_merchantsOverview_returningFrom;Revenire din satul <b>{{Village}}</b> al lui <b>{{Player}}</b>
+academy_research_viewResearchList;Cercetare în curs
+academy_research_allUnitsResearched;Toate unitățile au fost cercetate.
+academy_researchListPopup_title;Trupe în curs de cercetare
+academy_researchListPopup_remainingTime;Timp rămas: {{timeLeft}} Gata la {{readyAt}}
+academy_researchListPopup_constructImmediately;Construiește imediat
+research_started;Cercetarea a început cu succes!
+research_timeLeft;Timp rămas: {{TIME|Countdown}}
+townHall_celebration_ongoingCelebration;În desfășurare
+topBar_perHourLabel;/h:
+topBar_maxLabel;Max:
+topBar_resourceFull;Plin
+leftPanel_infoBox;Casetă info
+villagePanel_playerNameTitle;Sate deținute de {{playerName}}
+villagePanel_toStatistics;Spre statisticile satului
+villagePanel_culturePointsNeeded;Puncte de cultură necesare pentru următorul sat
+mapCell_type;{{x}}{{y}}
+mapCell_type_village;{{villageName}}
+mapCell_type_1;Sate
+mapCell_type_2;Vale
+mapCell_type_3;Oază liberă
+mapCell_type_4;Oază ocupată
+mapCell_type_5;Pustietate
+mapCell_Owner;Proprietar
+mapCell_type_valley;Vale
+mapCell_Wilderness;Această locație nu prezintă niciun punct de interes.
+mapCell_Distance;{{distance|Round|1}} câmpuri
+mapCell_locationInfo;Informații despre locație
+mapCell_surroundings;Împrejurimi
+mapCell_actions_editFarmlist;Modifică lista de raiduri
+mapCell_actions_addFarmlist;Adaugă în lista de raiduri.
+mapCell_actions_raidOasis;Lansează un raid asupra oazei
+mapCell_showOnMap;Afișează pe hartă
+mapCell_noReports;- Nicio informație disponibilă pentru această locație -
+berichte.region_;{{PLAYERACTIVE}}{{PLAYERPASSIVE}}{{VILLAGE}}{{NAME1}}{{NAME2}}{{ALLY1}}{{ALLY2}}{{NAME}}
+mapCell_goToOwnVillage;Mergi la satul tău
+constructionQueue_timeLeftToFinish;Timp rămas: {{timestamp|Countdown}} Gata la {{timestamp|Time}}
+constructionQueue_timeUntilStart;Începe în {{timestamp|Countdown}}
+constructionQueue_MasterBuilderTitle;Coada Master Builder (costă {{masterBuilderCost|Sprite}} {{masterBuilderCost}} la începutul construcției)
+constructionQueue_Constructing;Construcție în curs
+constructionImmediatelyPopup_topText;Următoarele comenzi vor fi finalizate instantaneu:
+constructionImmediatelyPopup_title;Finalizează instantaneu
+newBuildingConstructionDetail_dateTimeEnoughResources;Resurse suficiente la {{date|Date}}, ora {{time|Time}}
+newBuildingConstruction_noBuildingsAvailable;În acest moment nu pot fi construite clădiri.
+goldclubpopup_currentGold;Aur disponibil:  {{iconName|Sprite}} <color={{colorValue|TextColor}}>{{currentGold}}</color>
+goldclubpopup_activated_toastMessage;Clubul Gold activat!
+loginPage_version;Versiunea {{currentVersion}}
+loginPage_loginBlocked;Conectare blocată
+loginPage_loginBlocked_fails;Prea multe încercări de conectare eșuate
+loginPage_loginBlocked_message;Contul tău a fost blocat din cauza numărului excesiv de încercări de conectare eșuate.
+loginPage_loginBlocked_resolve;Pentru a debloca contul, conectează-te prin browser la adresa
+serverSelection_selectRegion;Selectează regiunea
+serverSelection_selectGameWorld;Selectează lumea de joc
+serverSelection_0;International
+serverSelection_1;Arabics
+serverSelection_2;Asia
+serverSelection_3;Europe
+serverSelection_4;America
+serverSelection_99;Dev
+serverSelection_mapSize;Dimensiunea hărții:
+serverSelection_mapSize_0;Mică
+serverSelection_mapSize_1;Mare
+serverSelection_artifacts;Artefacte:
+serverSelection_constructionPlans;Planuri de construcție:
+serverSelection_changeGameWorld;Schimbă lumea de joc
+serverSelection_username;Numele de utilizator:
+serverSelection_password;Parola:
+serverSelection_loginButton;Conectează-te și joacă
+serverSelection_forgotPassword;Mi-am uitat parola
+serverSelection_noAccount;Nu am un cont
+serverSelection_loginError;Numele de utilizator sau parola sunt incorecte
+serverSelection_graphQlError;Eroare la recuperarea datelor de pe server
+serverSelection_tokenRefreshError;Eroare de conectare la ultimul server utilizat. Te rugăm să te conectezi din nou.
+serverSelection_stayLoggedIn;Rămâi conectat la lumea de joc
+troopsInfo_title;Trupe în {{villageName}}
+unitInfo_velocity;<b>{{fields}}</b> câmpuri pe oră
+unitInfo_resourceCarriage;<b>{{INT}}</b> resurse
+unitInfo_researchPrerequisites;Condiții prealabile pentru cercetare:
+unitInfo_trainingPrerequisites;Condiții prealabile pentru instruire:
+unitInfo_canCarry;Capacitate de transport:
+exchangeResources_currentTitle;Cantitate nouă
+exchangeResources_lockAmount;Blochează cantitatea
+exchangeResources_changeTitle;Modifică
+exchangeResources_restTitle;Rest
+exchangeResources_buildingPossible_True;Îmbunătățire posibilă
+exchangeResources_buildingPossible_False;Îmbunătățire imposibilă
+exchangeResources_mergePossible_True;Unificare posibilă
+exchangeResources_mergePossible_False;Unificare imposibilă
+exchangeResources_researchPossible_True;Cercetare posibilă
+exchangeResources_researchPossible_False;Cercetare imposibilă
+exchangeResources_celebrationPossible_True;Petrecere posibilă
+exchangeResources_celebrationPossible_False;Petrecere imposibilă
+exchangeResources_reviveHero_True;Reînvierea eroului este posibilă 
+exchangeResources_reviveHero_False;Reînvierea eroului nu este posibilă
+exchangeResources_currentlyAvailable;Disponibil în prezent: <b>{{amount}}</b>
+exchangeResources_maximumAvailable;Disponibilitate maximă: <b>{{amount}}</b>
+exchangeResources_distributeEvenly;Distribuie uniform resursele rămase
+exchangeResources_distributeOnResource;Sau alocă resursele rămase prioritar pentru:
+exchangeResources_distributeAuto;Distribuție automată
+exchangeResources_distributeManual;Distribuție manuală
+exchangeResources_availableTroops;Trupe disponibile: {{amount}}
+buildingActivities_title;Activități de construcție
+buildingActivities_idle;Inactiv
+buildingActivities_type;Tip
+buildingActivities_building_13;Îmbunătățiri:
+buildingActivities_building_16;Listă de raiduri
+buildingActivities_building_17;Negustori
+buildingActivities_building_19;Trupe în instruire
+buildingActivities_building_20;Cavalerie în instruire
+buildingActivities_building_29;Trupe în instruire
+buildingActivities_building_30;Cavalerie în instruire
+buildingActivities_building_21;Trupe în instruire
+buildingActivities_building_22;Cercetează
+buildingActivities_building_24;Petreceri
+buildingActivities_building_46;Vindecarea trupelor
+buildingActivities_buildingAction_;{{amount}}{{max}}
+buildingActivities_buildingAction_16;{{amount}} raiduri în desfășurare
+buildingActivities_buildingAction_17;{{amount}}/{{max}} disponibile
+mainMenu_title;Meniul principal
+mainMenu_quests;Misiuni
+playerDetails_infoTab;Informații despre jucător
+playerDetails_villageTabTitle;{{villages}} sate cu {{oases}} oaze  
+playerDetails_SortBy_1;Număr locuitori
+playerDetails_SortBy_2;Puncte de victorie
+playerDetails_SortBy_3;Nume sat
+playerDetails_SortBy_4;Nume regiune
+player_gender_DontSpecify;Nu specifica
+player_gender_Other;Altul
+player_gender0;Masculin
+player_gender1;Feminin
+player_gender2;Altul
+player_gender3;Nu specifica
+playerDetails_NotesFor;Note pentru {{playerName}}
+playerDetails_NoDescription_Others;- Acest jucător nu a adăugat o descriere -
+playerDetails_NoDescription_Own;- Încă nu s-a adăugat nicio descriere -
+playerDetails_editLanguages;Modifică limbile
+playerDetails_searchLanguage;Limba de căutare
+goldShopPlaceholder_title;Magazinul va fi disponibil în curând! 
+goldShopPlaceholder_description;Magazinul de Aur încă nu este disponibil în aplicația mobilă<br><br> Pentru a achiziționa Aur, te rugăm să te conectezi la contul tău prin intermediul browser-ului.
+goldShop_title;Magazin de Aur
+goldShop_advantage_5;Travian Plus
+goldShop_advantage_4;Lemn
+goldShop_advantage_1;Lut
+goldShop_advantage_2;Fier
+goldShop_advantage_3;Grâu
+goldShop_feature_activated;Funcție activată!
+goldShop_purchaseFailed;Achiziție eșuată!
+goldShop_purchaseSuccess;Achiziție reușită.
+goldShop_transactionInProgress;Tranzacție în curs.\nTe rugăm să aștepți.
+goldShop_transactionFailed;Ceva nu a mers bine.\nTe rugăm să încerci din nou mai târziu.
+goldShop_transactionTimeout;Dragă jucătorule, plata ta a depășit termenul limită și este posibil să nu fi fost procesată corect. Te rugăm să contactezi <style="link"><link="https://support.travian.com/support/tickets/new">serviciul nostru de asistență pentru plăți</link></style> dacă întâmpini probleme.
+market_sendResources_requiredMerchants;Negustori necesari:
+market_sendResources_capacityPerMerchant;Capacitate per negustor
+market_sendResources_amountRepeats;Numărul de repetări:
+market_sendResources_confirmResources;Confirmă resursele
+market_sendResources_amountWithX;{{amount}}x
+market_sendResources_sent;Resursele au fost trimise!
+market_offer_maxDuration;Timpul maxim de transport:
+market_offer_confirm;Confirmă oferta
+market_offers_title;Oferte
+market_capacity;Capacitate: {{capacity}}
+market_offers_offering;Ofer:
+market_offers_searching;Caut:
+market_offers_offered;Trimiți
+market_offers_wanted;Primești
+market_offers_accepted;Ofertă acceptată! Resursele sunt pe drum și negustorii au fost trimiși.
+market_offers_ownAllianceOnly;Doar jucători din propria alianță
+market_ratio_11;1:1
+market_ratio_1X;1 : X
+market_tradeRoutes_to;Spre:
+market_tradeRoutes_entryAmount;<b>{{amount}}</b> voci
+market_tradeRoutes_noRoutes;- Nu s-au creat rute comerciale - 
+market_tradeRoutes_travelTime;Durata călătoriei: {{time|Duration}} ore
+market_tradeRoutes_activeRatio;{{active}}/{{total}} active
+market_tradeRoutes_active;Activă
+market_tradeRoutes_paused;În pauză
+market_tradeRoutes_updated;Rute actualizate
+market_tradeRoutes_deleted;Rute comerciale șterse
+market_tradeRoutes_returnAt;revino la {{time|Time}}
+market_tradeRoutes_merchantsAndRepeat;{{merchants}} negustori, {{repeats}}x
+market_tradeRoutes_filterOptions;Opțiuni de filtrare
+market_tradeRoutes_showMerchants;Afișează negustorii
+market_tradeRoutes_showMerchantsText;Arată numărul de negustori folosiți
+market_tradeRoutes_showResources;Afișează resursele
+market_tradeRoutes_showResourcesText;Arată cantitatea de resurse transportată
+market_tradeRoutes_afterInputFieldsSuffix;Ore
+market_tradeRoutes_interval;{{INT}} ore
+market_tradeRoutes_confirmTarget;Confirmă ținta
+market_tradeRoutes_arrivalTime;{{duration|Duration}} la {{arrivalTime|Time}}
+market_tradeRoutes_created;Rută comercială creată
+market_tradeRoutes_edit;Modifică [routeAmount=1:ruta comercială][routeAmount>1:rutele comerciale]
+market_tradeRoutes_update;Actualizează [routeAmount=1:ruta comercială][routeAmount>1:rutele comerciale]
+market_tradeRoutes_multiEditWarning;Modifici mai multe rute comerciale. Schimbările efectuate vor afecta toate cele {{routeAmount}} rute.
+market_tradeRoutes_editResourcesTitle;Schimbă resurse
+market_tradeRoutes_editResourcesButton;Modifică resurse
+market_tradeRoutes_setResourcesButton;Setează resurse
+market_tradeRoutes_updateResourcesButton;Actualizează resurse
+market_tradeRoutes_pause;Întrerupe temporar [routeAmount=1:ruta comercială][routeAmount>1:rutele comerciale]
+market_tradeRoutes_pauseDescription;Ruta comercială va fi întreruptă, dar va rămâne disponibilă în piață.
+market_tradeRoutes_delete;Șterge [routeAmount=1:ruta comercială][routeAmount>1:rutele comerciale]
+market_tradeRoutes_deleteConfirmQuestion;Sigur dorești să ștergi [routeAmount=1:această][routeAmount>1:aceste] [routeAmount=1:rută comercială][routeAmount>1:rute comerciale]?
+market_tradeRoutes_invalidTarget;Rutele comerciale pot fi trimise doar către satele cu o Minune a Lumii și către satele membrilor alianței sau confederației care dețin artefacte sau planuri de construcție pentru o Minune a Lumii.
+hero.status;{{NAME}}
+hero_adventures_selectVillage;Selectează sat
+hero_adventures_explore;Explorează
+hero_adventures_sendHero;Trimite erou
+hero_adventures_sent;Aventura a început
+hero_status_reviveWithBucket;Folosește pentru a reînvia eroul imediat.
+hero_status_reviveWithRes;Folosește resurse pentru a reînvia eroul.
+hero_inventory_consumablePopupTitle;Obiect utilizabil
+hero_resourceTransferPopup_title;Transferă resurse
+hero_resourceTransferPopup_ReadyForTransfer;Gata pentru transfer
+hero_resourceTransferPopup_transferSelected;Transfer selectat
+hero_resourceTransferPopup_transferMax;Transferă cantitatea maximă
+hero_resourceTransferPopup_storageFull;Spațiul de stocare este plin. Nu poți transfera mai multe resurse.
+hero_inventory_transferToCurrentVillage;Transferat către satul activ în prezent: <b>{{VILLAGE}}</b>
+hero.itemDescriptionV2Details;{{PERCENTAGE}}{{EXPERIENCE}}{{RAISE}}{{LIMIT}}{{MAX}}{{TIME}}
+hero.itemDescriptionV2;{{VALUE}}
+hero_consumablePopup_currentEquippedItems;Numărul de obiecte echipate în prezent:
+hero_consumablePopup_itemsLeftInInventory;Numărul de obiecte rămase în inventar:
+hero.itemTypeV2_inventory;Consumabil
+hero.cooldownWithTime;Are o perioadă de cooldown de {{COOLDOWN}}h care se termină la {{DATE|DateTime}}.
+reports_overview_title;{{COUNT}} rapoarte
+reports_overview_title_selected;{{SELECTED}} / {{COUNT}} rapoarte selectate
+reports_overview_title_archived;Rapoarte arhivate
+reports_overview_archived_noReports;- Nu sunt disponibile rapoarte arhivate -
+reports_filters_title;Selectează filtrul
+reports_filters_allReports;Toate rapoartele
+reports_filters_applyButton;Aplică {{COUNT}} filtre
+reports_filters_noFilter;Nu a fost selectat niciun filtru
+reports_detail_title;Detalii raport
+berichte.;{{NAME1}}{{NAME2}}{{VILLAGE_NAME}}{{X}}{{Y}}{{COORDS}}{{NAME}}
+reports_player_from_village;[{{allianceId|AllianceLink}}] {{playerId|PlayerLink}} din satul {{villageId|VillageLink}}
+reports_troops_lost;Trupe pierdute:
+reports_troops_hospitalized;Trupe spitalizate:
+reports_xp_gained;{{amount}} XP câștigat
+reports_health_change;-{{change}}% sănătate
+reports_hero_died;Eroul tău a murit în timpul aventurii
+reports_scouted_building;{{buildingType|TranslateSuffixFor|allgemein.gid}} nivel <b>{{level}}</b>
+reports_refreshed;Rapoarte actualizate!
+reports_deleteReportPopup_title;Șterge raport/rapoarte
+reports_deleteReportPopup_warningTitle;Sigur dorești să ștergi {{X}} raport/rapoarte?
+reports_deleteReportPopup_warningTitleAll;Sigur dorești să ștergi toate rapoartele?
+reports_deleteReportPopup_warningDescription;După ștergere, raportul va dispărea definitiv. Nu îl vei mai putea recupera.
+reports_deleted;Raport șters!
+reports_markedUnread;Raport marcat ca necitit!
+reports_archived;Raport arhivat!
+reports_deleted_all;Toate rapoartele au fost șterse!
+reports_deleted_selected;{{X}} raport/rapoarte șters(e)
+reports_markedRead_all;Toate rapoartele au fost marcate ca fiind citite!
+reports_markedRead_selected;{{X}} raport/rapoarte marcat(e) ca fiind citite!
+alliance_nameAndTagPair;{{allianceName}} | {{allianceTag}}
+alliance_editAllianceName;Modifică denumirea alianței
+alliance_name;Denumirea alianței
+alliance_nameError;Denumirea alianței nu poate fi goală
+alliance_tag;Eticheta alianței
+alliance_tagError;Eticheta alianței nu poate fi goală
+alliance_profileTab_inviteNewPlayer;Invită un jucător nou
+alliance_profileTab_showInvitedPlayers;Afișează jucătorii invitați
+alliance_invitedPopup_title;Jucători invitați
+alliance_invitedPopup_invitationRemoved;Invitație eliminată!
+alliance_invitePlayerPopup_title;Invită jucător
+alliance_invitePlayerPopup_noPlayerFound;Nu s-a găsit niciun jucător
+alliance_invitePlayerPopup_playerInvited;Jucător invitat!
+alliance_editMemberPopup_title;Modifică membru
+alliance_editMemberPopup_customMessage;Mesaj personalizat
+alliance_editMemberPopup_setRole;Setează rol
+alliance_editMemberPopup_kickPlayerFromAlliance;Exclude un jucător din alianță
+alliance_editMemberPopup_cantChangePermission;Nu poți modifica permisiunea actuală. Vezi avertismentul.
+alliance_kickPlayerPopup_areYouSure;Confirmi excluderea lui {{Player}} din alianță?
+alliance_kickPlayerPopup_playerKicked;Jucătorul a fost exclus!
+alliance_editAllianceDescription;Modifică descrierea alianței
+alliance_topColumn;Coloana de sus
+alliance_bottomColumn;Coloana de jos
+alliance_bbCodeAdded;Cod BB adăugat
+alliance_generalInformation;Informații generale
+alliance_confederacy_tab;Confederaţie
+alliance_diplomacy;Diplomație
+alliance_diplomacy_tab1;PNA / Război
+alliance_diplomacy_send_new;Trimite nou(ă)
+alliance_diplomacy_openRequests;Solicitări deschise
+alliance_diplomacy_otherOffered;{{allianceId|AllianceLink}} a oferit {{type|TranslateSuffixFor|alliance_diplomacy_type}}
+alliance_diplomacy_youOffered;Ai oferit {{type|TranslateSuffixFor|alliance_diplomacy_type}} cu {{allianceId|AllianceLink}}
+alliance_diplomacy_offerDeclare;Oferă / Declară
+alliance_diplomacy_type;Tip
+alliance_diplomacy_type1;confederaţie
+alliance_diplomacy_type2;PNA
+alliance_diplomacy_type3;război
+alliance_diplomacy_type4;confederaţie
+alliance_diplomacy_typekick;excludere din confederație
+alliance_diplomacy_deleteText_;{{type|TranslateSuffixFor|alliance_diplomacy_type}}{{alliance|AllianceLink}}
+alliance_diplomacy_deleteTitle_RemoveRequest;Elimină solicitarea
+alliance_diplomacy_deleteText_RemoveRequest;Confirmi eliminarea ofertei pentru {{type|TranslateSuffixFor|alliance_diplomacy_type}} cu {{alliance|AllianceLink}}?
+alliance_diplomacy_deleteTitle_TerminateExisting;Desființează
+alliance_diplomacy_deleteText_TerminateExisting;Confirmi desființarea {{type|TranslateSuffixFor|alliance_diplomacy_type}} cu {{alliance|AllianceLink}}?
+alliance_diplomacy_deleteTitle_ConfederacyKickVote;Desființează
+alliance_diplomacy_deleteText_ConfederacyKickVote;Excluderea jucătorului {{subject|AllianceLink}} necesită confirmarea celorlalți membri ai confederației.\n\nDorești să continui și să informezi celelalte alianțe cu privire la decizia ta? 
+alliance_diplomacy_deleteTitle_QuitConfederacy;Desființează
+alliance_diplomacy_deleteText_QuitConfederacy;Confirmi desființarea confederației cu următorii membri?
+alliance_diplomacy_deleteTitle_RemoveConfederacyProposal;Elimină solicitarea
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Kick;Confirmi respingerea solicitării de la {{alliance|AllianceLink}} de excludere a jucătorului {{subject|AllianceLink}} din confederație?
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Join;Confirmi respingerea solicitării de la {{alliance|AllianceLink}} pentru alăturarea jucătorului {{subject|AllianceLink}} la confederație?
+alliance_diplomacy_sent;Ofertă trimisă
+alliance_diplomacy_accepted;Relație diplomatică acceptată
+alliance_diplomacy_canceled;Relație diplomatică anulată
+alliance_diplomacy_declined;Solicitare refuzată
+alliance_diplomacy_kickStarted;Solicitare trimisă
+alliance_diplomacy_proposal_approved;Solicitare aprobată
+alliance_diplomacy_noContract;Alianța ta nu are tratate active cu alte alianțe.
+alliance_diplomacy_noConfederacy;Alianța ta nu face parte dintr-o confederație.
+alliance_diplomacy_alreadyOpenOffer;Există deja o ofertă deschisă pentru această alianță.
+alliance_diplomacy_alreadyExistingContract;Există deja un tratat cu această alianță.
+alliance_diplomacy_warInDeletion;Așteaptă ca și cealaltă alianță să pună capăt războiului.
+alliance_union_leave;Părăsește confederația
+alliance_union_add;Adaugă o nouă solicitare
+allianz.diplomacy_with_type;{{NAME}}
+allianz.diplomacy_with_type4;Confederație cu {{NAME}}
+alliance_newsBbDescription;Ajustează „numărul” pentru a modifica numărul de știri afișate
+alliance_LossesBBName;pierderi
+alliance_LossesBBDescription;Modifică „numele” pentru a selecta alianța de comparație
+alliance_NapBBName;Pacte de neagresiune
+alliance_WarsBBName;Războaie
+alliance_addBBCode;Adaugă codul BB
+alliance_addMedal;Adaugă medalie
+alliance_assignToPosition;Stabilește rolurile membrilor și modifică denumirea alianței
+alliance_editPermissions;Modifică permisiunile
+alliance_roleTitle;Titlul rolului:
+alliance_assignToPosition_onlyMemberError;Ești unicul membru al acestei alianțe. Stabilirea rolurilor membrilor și modificarea denumirii alianței nu pot fi dezactivate.
+alliance_noAllianceEvents;- Nu există evenimente ale alianței de afișat -
+alliance_dailyContribution;Contribuția zilnică
+alliance_contributionAmount;Contribuția: <b>{{AMOUNT}}</b>
+alliance_resourcesContributed;{{current}}/{{max}} resurse alocate
+alliance_contributionResetIn;Resetare în {{time|Countdown}}
+alliance_resUntilNext;Resurse până la următorul nivel: {{resources|LongNumber}}
+alliance_bonusCurrentlyActivating;Bonusul se activează în: {{resources|Countdown}}
+alliance_bonusMaxed;Bonus maximizat
+alliance_tripledContribution;Ți-ai triplat contribuția!
+alliance_contributionStatistics;Statistici privind contribuția
+alliance_contributionNone;- Nu există contribuitori în acest moment -
+auth_clientVerificationFailed;Clientul nu a putut fi verificat. Te rugăm să încerci din nou.
+banned_seeMessage;Vezi mesajul
+banned_acceptPunishment;Acceptă pedeapsa
+residence_settlement;Colonie
+residence_settlementVillages1;Locuri de decontare ocupate de sate
+residence_settlementVillages2;Satele ocupă 1 loc de decontare
+residence_settlementAvailableSlots;Sloturi de decontare disponibile
+residence_nextSlot;Next settlement slot unlock: {{current}}/{{required}} culture points
+residence_slotsUsed;Slots used:
+residence_settlementDetails;Detalii privind decontarea
+residence_settlementSlotX;Settlement slot {{number}}
+residence_settlementUpgradeNeeded;Upgrade {{buildingType|TranslateSuffixFor|allgemein.gid}} pentru a debloca acest loc de decontare
+residence_settlementSettle;Pentru a fonda un sat nou, trimite coloniștii către un câmp liber de pe hartă. Ai nevoie de 3 coloniști; 750 din fiecare resursă și suficiente puncte de cultură pentru a controla un alt sat.
+residence_settlementChief;Pentru a cuceri un alt sat, trebuie să îi reduceți loialitatea la 0. Pentru asta aveți nevoie de {{senatorId|TranslateSuffixFor|truppen.tid}} , iar acolo nu trebuie să mai existe un Palat, o Reședință sau un Centru de comandă. You also need enough culture points to control another village.
+palace_capital;Setează acest sat drept capitala mea.
+palace_setAsCapital;Setează ca capitală
+palace_enterPassword;Introdu parola din motive de securitate:
+embassy_GoToAlliance;Mergi la alianță
+embassy_Invitation;Alianța {{AllianceId|AllianceLink}}, invitat de {{playerId|PlayerLink}}
+embassy_VillagesInRange;Sate în rază de acțiune
+embassy_LeaveAllianceToJoin;Pentru a intra într-o alianță nouă, trebuie mai întâi să părăsești alianța actuală.
+embassy_ConfirmLeaveAlliance;Confirmă și părăsește alianța
+embassy_InvitationAccepted;Invitație acceptată
+embassy_AllianceFounded;Alianță înființată cu succes
+embassy_LeftAlliance;A părăsit cu succes alianța
+embassy_acceptInvitationQuestion;Confirmi că dorești să te alături alianței {{allianceId|AllianceLink}}?
+embassy_acceptInvitationWarning;Nu vei putea părăsi alianța timp de {{hours}} ore după aderare.
+embassy_acceptInvite;Da, mă alătur alianței
+embassy_declineInvite;Nu, respinge invitația
+embassy_noAlliancesNearby;Nu s-au găsit alianțe în zona învecinată.
+smithy_improveTo;Îmbunătățește până la nivelul {{level}}
+smithy_viewList;Vezi dezvoltarea
+smithy_upgradeStarted;{{unitId|TranslateSuffixFor|truppen.tid}} îmbunătățire inițiată
+smithy_researchFirst;Unitatea trebuie cercetată în Academie
+smithy_levelTooLow;Nivel Fierărie prea scăzut; îmbunătățește Fierăria
+allBuildings_10;Toate hambarele:
+allBuildings_11;Toate grânarele:
+allBuildings_23;Toate beciurile:
+allBuildings_38;Toate hambarele:
+allBuildings_39;Toate grânarele:
+currentBuildingValue;{{type|TranslateSuffixFor|allgemein.gid}} curent(ă):
+ad_successful;Reclamă vizionată cu succes!
+externalLink_title;Link extern
+externalLink_description1;<b>Atenție!</b><br>Ești pe cale să deschizi următorul link extern:
+externalLink_description2;Travian Games nu poate controla sau verifica acest link.
+externalLink_description3;Continuă pe propriul tău risc.
+externalLink_description4;Confirmi că dorești să continui?
+externalLink_continue;Continuă către link
+search_village;Caută sat
+search_select_village;Selectează sat
+search_three_characters;Introdu cel puțin {{amount}} caractere
+search_no_result;Nu s-a găsit niciun rezultat
+search_player;Caută jucător
+search_player_invite;Invită jucător
+search_select_player;Selectează jucător
+search_select_player_invite;Invită un jucător nou
+search_alliance;Caută alianță
+search_select_alliance;Selectează alianță
+gid27.arte_detail_;{{INT}}
+artefact_inventory_level_effect;Trezorerie: {{LEVEL}}, efect: {{EFFECT}}
+artefact_inventory_village;Sat:
+artefact_inventory_conquered;Cucerit
+artefact_inventory_active;Activ: activ la
+artefact_inventory_active_already;Activ: <b>Activat</b>
+artefact_inventory_show_active_only;Arată doar artefactele mele active
+artefact_overview;Prezentare generală a artefactului
+artefact_tip_large;Artefactele mari necesită Trezorerie nivel <b>20</b> și afectează întregul <b>avatar</b>
+artefact_tip_small;Artefactele mici necesită Trezorerie nivel <b>10</b> și afectează doar <b>satul</b>
+artefact_tip_nearby;Artefacte în apropiere de {{villagenamelong|Bold}}
+artefact_small;Mici
+artefact_large;Mari
+artefact_nearby;În apropiere
+artefact_village;Sat
+artefact_button_former_owners;Vezi proprietarii anteriori
+artefact_already_active;Deja activat
+artefact_required_level_value;Trezorerie <b>nivel {{LEVEL}}</b>
+artefact_details;Detalii:
+number_counter;{{NUMBER}}.
+tasks_villageTasks;Sarcini în sat
+tasks_nextHeroLevelBonus;Următorul bonus pentru nivelul eroului = {{value}}%
+villageOverview_building_headline;Clădiri
+villageOverview_building_slotIdle;Nicio construcție în desfășurare
+villageOverview_resource_sorting1;Lista satelor
+villageOverview_resource_sorting2;Cea mai scurtă durată pentru Grânar
+villageOverview_resource_sorting3;Cea mai lungă durată pentru Grânar
+villageOverview_resource_sorting4;Cea mai scurtă durată pentru Hambar
+villageOverview_resource_sorting5;Cea mai lungă durată pentru Hambar
+villageOverview_resource_sorting6;Producție negativă
+villageOverview_troops_stationed;Trupe staționate în sat
+villageOverview_troops_sum;Total trupe proprii
+villageOverview_troops_tab_training;Instruire
+villageOverview_culture_slots;Sloturi sat
+cancelPopup_Improvement;Anulează îmbunătățirea
+cancelPopup_Research;Anulează cercetarea
+cancelPopup_Construction;Anulează construcția
+cancelPopup_text_;{{NAME}} {{LEVEL}}
+cancelPopup_text_Improvement;Dorești să anulezi îmbunătățirea pentru {{NAME}} nivel {{LEVEL}}?
+cancelPopup_text_Research;Dorești să anulezi cercetarea pentru {{NAME}}?
+cancelPopup_text_Construction;Dorești să anulezi construcția pentru {{NAME}} nivel {{LEVEL}}?
+cancelPopup_text_refund;Vei primi înapoi {{INT}}% din costurile de îmbunătățire:
+dailyQuests_timeRemaining;Timp rămas: {{time|Countdown}}
+dailyQuests_rewardOverview;Vezi perspectiva recompensei
+dailyQuests_claimRewards;Revendică recompensele
+dailyQuests_pointsEarned;Puncte câștigate: <b>{{current}}/{{max}}</b>
+dailyQuests_rewardDescription;Acestea sunt recompensele pe care le poți debloca îndeplinind misiunile zilnice de astăzi:
+dailyQuests_claimAction;Revendică
+dailyQuests_alreadyClaimed;Revendicată
+dailyQuests_questDetailTitle;Informaţii
+dailyQuests_quest_worth;Această misiune valorează:
+dailyQuests_quest_worth_points;+{{points}} [points=1:punct][points>1:puncte]
+dailyQuests_quest_repeated;Această misiune poate fi repetată:
+dailyQuests_quest_repeated_amount;{{amount}} [amount=1:dată][amount>1:ori]
+dailyQuests_quest_completed;Repetiții efectuate:
+dailyQuests_quest_difficulty;Nivel de dificultate:
+dailyQuests_quest_requirement;Cerință:
+dailyQuests_backToOverview;Înapoi la perspectivă
+dailyQuests_difficulty_moderate;Moderat
+dailyQuests_difficulty_hard;Greu
+dailyQuests_difficulty_challenging;Provocator
+achievementQuests.achQuest_;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+achievementQuests.achQuest__step_01_description;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+heroMansion_Loyalty;Loialitate: {{INT}}%
+heroMansion_Conquered;Cucerită la {{TIME|DateTime}}
+heroMansion_SlotFree;Este disponibil următorul slot de oază
+heroMansion_SlotBlocked;Următoarea oază din <color={{colorValue|TextColor}}>Reședința eroului</color> <color={{colorValue2|TextColor}}>nivel {{REQUIRMENT}}</color>
+heroMansion_Undo;Anulează
+heroMansion_FinishedAt;Finalizată la: {{TIME|Time}}
+waterworks_NoneOasesAcquired;Nicio oază anexată
+waterworks_BonusCalculation;+ ({{INT}}% din {{INT2}}%) = 
+waterworks_CurrentBonus;Bonusul actual al Centrului de irigație: +{{INT}}% la resursele oazei
+waterworks_Oases;Oaze anexate
+messages_inbox_title;{{COUNT}} mesaje
+messages_inbox_title_selected;Mesaje selectate: {{SELECTED}} / {{COUNT}} 
+messages_newMessage;Mesaj nou
+messages_messageSent;Mesaj trimis!
+messages_exitPreview;Închide previzualizarea
+messages_previewTitle;Previzualizează mesajul
+messages_unread_count;{{COUNT}} necitit(e)
+reportPlayer_selectReason;Selectează motivul raportului
+reportPlayer_reasonPlaceholder;Motivul raportului
+reportPlayer_addNote;Adaugă o notă la raport (opțional):
+reportPlayer_alsoBlock;În plus, ignoră acest jucător
+reportPlayer_maximumLength;Lungimea maximă: {{text|TextLength}}/300
+reportPlayer_nowIgnored;Acum ignori acest jucător.
+reportPlayer_nowUnignored;Nu mai ignori acest jucător.
+statistics_general;Statistici generale
+statistics_seeDetails;Vezi detalii
+statistiken.progressionStepTitle_;{{VALUE}}{{DATETIME}}
+language_com;Limba dezvoltatorilor
+language_de-DE;Germană
+language_en-US;Engleză
+language_fr-FR;Franceză
+language_ru-RU;Rusă
+statistics_villageAndHero;Cel mai mare sat / erou
+RelativeTime_0;{{data}} s
+RelativeTime_1;{{data}} m
+RelativeTime_2;{{data}} h
+RelativeTime_3;[data>1:{{data}} zile][data<2:{{data}} zi]
+RelativeTime_4;[data>1:{{data}} săptămâni][data<2:{{data}} săptămână]
+RelativeTime.Separator; 
+RelativeTime.Wrapper.Past;Acum {{time}}
+RelativeTime.Wrapper.Future;Peste {{time}}
+mapCell_tooFewSettlers;{{current}}/3 coloniști disponibili
+mapCell_heroNotIdle;Eroul tău nu este inactiv
+mapCell_cantAddOwn;Nu poți adăuga propriile tale sate
+mapCell_alreadyInVillage;Ești deja în acel sat
+serverSelection_rememberPassword;Reține parola
+serverSelection_savedWorldsTitle;Lumile tale de joc
+serverSelection_removeWorldTitle;Șterge lumea de joc
+serverSelection_removeWorldQuestion;Confirmi că vrei să ștergi această lume de joc din lista ta?
+serverSelection_removeWorldDescription;Atenție: Această acțiune nu-ți va șterge contul din lumea de joc. Poți reveni oricând să adaugi lumea și contul înapoi în lista ta de lumi de joc.
+serverSelection_removeWorldButton;Șterge din listă
+serverSelection_addWorldText;+ Adaugă lume de joc
+buildingActivities_buildingAdditional_;{{amount}}
+buildingActivities_buildingAdditional_17;{{amount}} rute comerciale active
+reports_filters_reset;Resetează filtrele
+palace_capitalSet;Capitala a fost setată!
+palace_isCapital;Aceasta este capitala ta.
+messages_unread_count_full;{{COUNT}} [COUNT=1:mesaj necitit][COUNT>1:mesaje necitite]
+statistics_alliance;Statistici alianță
+statistics_alliances_best_off;Cele mai bune alianțe (atacatori)
+statistics_alliances_best_def;Cele mai bune alianțe (apărători)
+statistics_offensiveStrength;Puterea de atac a satului tău {{VILLAGEID|VillageLink}} pe acest server
+statistics_offensiveStrengthAlliance;Puterea de atac a satului tău {{VILLAGEID|VillageLink}} în alianță
+statistics_offensiveStrengthVillage;Puterea de atac a acestui sat:
+statistics_defensiveStrength;Puterea ta de apărare pe acest server
+statistics_defensiveStrengthAlliance;Puterea ta de apărare în alianță
+statistics_defensiveStrengthVillage;Puterea de apărare a acestui sat:
+statistics_defensiveStrengthVillageSum;Puterea de apărare totală a tuturor satelor:
+recent;Recent
+appliedFilters;Ai {{COUNT}} filtre active.
+allgemein.gid99;Aleatoriu
+rallyPoint_troopsOverview_10;Perspectivă detaliată a trupelor
+rallyPoint_troopsOverview_returningFromAdventure;Se întorc din aventură: 
+rallyPoint_troopsOverview_detailedView;Prezentare detaliată
+rallyPoint_troopsOverview_noMovements;- Nu sunt mișcări de trupe în desfășurare -
+rallyPoint_troopsOverview_Target;Țintă: {{Target|NamedCoordinates}}
+rallyPoint_troopsOverview_Origin;Origine: {{Target|NamedCoordinates}}
+hero_adventures_number;Nr. {{INT}}
+hero_status_regeneration;<b>Regenerarea sănătății:</b> {{VALUE}}% pe zi
+hero_status_regeneration_details;{{HERO}}% pe zi de la erou {{EQUIPMENT}}% pe zi de la echipament
+hero_status_experience;<b>Experiență:</b> {{VALUE}}%
+hero_status_experience_bonus;Bonus: {{VALUE}}%
+search_results;Rezultate căutare
+search_player_link;Link jucător
+search_select_player_link;Selectează jucător
+search_recipient;Caută destinatar
+search_select_recipient;Selectează destinatarul
+search_alliance_link;Link alianță
+search_select_alliance_link;Selectează alianța
+messages_fullView_title;Mesaj
+messages_recipient_placeholder;Selectează destinatarul
+messages_title_placeholder;Introdu titlul mesajului tău
+messages_message_placeholder;Introdu mesajul
+messages_ownAlliance;Alianță proprie
+messages_selectedRecipients;Selectați
+messages_ownAlliance_[ally];Toți membrii alianței
+messages_ownAlliance_[off];Membri de atac ai alianței
+messages_ownAlliance_[def];Membri de apărare ai alianței
+messages_discard_title;Ignoră mesajul
+messages_discard_text_header;Dorești să ignori acest mesaj?
+messages_discard_text;Conținutul mesajului va fi pierdut ireversibil.
+messages_confirm_deletion_title;Șterge mesajele
+messages_confirm_deletion_text_header;Confirmi că dorești să ștergi [data>1:{{data}} mesaje][data=1:{{data}} mesaj]?
+messages_confirm_deletion_text;Mesajele șterse nu mai pot fi recuperate.
+messages_confirm_deletion_button;Șterge [data>1:{{data}} mesaje][data=1:{{data}} mesaj]
+icon_selection_title;Adaugă pictogramă
+icon_selection_button;Selectează pictograma
+icon_selection_resourcesAndHero;Resurse / Erou
+icon_selection_natureAndNatars;Natură și Natari
+upgrading;Se îmbunătățește!
+buildingActivities_buildingAdditional_46;Nu există trupe rănite
+playerDetails_ignorePlayerDescription;Jucătorul va fi ignorat.
+reports_share;Partajează raport
+search_select_village_link;Selectează sat
+search_village_link;Asociază sat
+search_report_link;Asociază raport
+search_select_report_link;Selectează raport
+messages_banned;Poți trimite mesaje doar membrilor alianței tale.
+messages_template_title;Șabloane
+messages_template_none;Nu există șabloane disponibile
+messages_template_edit_title;Modifică șablon
+messages_template_delete_title;Șterge șablon
+messages_template_delete_question;Confirmi ștergerea acestui șablon?
+messages_template_delete_desc;Odată șters, șablonul nu mai poate fi recuperat.
+messages_template_create;Crează șablon nou
+messages_template_create_descr;Crează șablon nou pe baza mesajului actual:
+messages_template_created;Șablon creat!
+messages_template_deleted;Șablon șters!
+statistics_culturePoints_productionRank;Poziția ta în clasamentul producției PC pe acest server
+statistics_culturePoints_productionRankAlliance;Poziția ta în clasamentul producției PC în cadrul alianței
+statistics_culturePoints_production;PC
+statistics_resourceRank_production;Producție: {{VALUE|ShortenNumber}}
+statistics_resourceRank_productionRank;Poziția ta în clasamentul producției pe acest server
+statistics_resourceRank_productionRankAlliance;Poziția ta în clasamentul producției în cadrul alianței
+statistics_resourceRank_bounty_lost;Pierdută
+statistics_wonderOfTheWorld_header;Cele mai bune Minuni ale Lumii
+hospital_healing_costs;Costul vindecării trupelor
+hospital_healing_action;Vindecă trupele
+hospital_healing_list;Vezi lista trupelor de vindecat
+hospital_healing_list_title;Vindecarea trupelor
+hospital_healing_started;Vindecare începută
+bonusValueWithPercent;+{{value}}%
+village_with_isCapital;{{villageName}} (capitală)
+maximumTextLengthError;{{CONTEXT}} nu poate avea mai mult de {{AMOUNT}} caractere
+infoTab_genericEffectInBrackets;({{INT|Sign}})
+infoTab_effectPercentage;{{INT}}%
+infoTab_effectInBracketsPercentage;({{INT|Sign}}%)
+infoTab_trapperCurrently;Capacitatea maximă temniței curente:
+trapper_Build_Action;Construiește capcane
+trapper_ProductionCosts;Costul producerii capcanelor
+trapper_TrapsInConstruction;Capcane în curs de construcție
+trapper_MaxBuilt;Numărul maxim de capcane a fost atins.
+truppen.tid119;Capcană
+truppen.tid119p;Capcane
+rallyPoint_troopsOverview_outgoingMission_scouting_1;Se cercetează apărarea și trupele din 
+rallyPoint_troopsOverview_outgoingMission_scouting_0;Se cercetează resursele și trupele din 
+rallyPoint_troopsOverview_returningRegeneratedMission;Trupele regenerate se întorc din: 
+rallyPoint_troopsOverview_returningFleeingMission;Trupele se întorc din ascunzișul din pădure: 
+rallyPoint_troopsOverview_foreignTroopsIn;Staționate în: 
+rallyPoint_celebration_hint;Petrecerea din berărie ar putea afecta trupele.
+building_not_built;Clădire neconstruită
+berichte.report_icon_24;Raport
+allBuildings_36;Număr maxim de capcane în toate temnițele:
+cropFinder_min_oasis_crop_bonus;Min. Bonus grâu oază: 
+cropFinder_select_minimum_crop_bonus;Selectează bonusul minim pentru grâu
+cropFinder_unoccupied;Liber
+search_by_location;Caută după locație
+search_by_player;Caută după jucător
+search_village_from_player;Caută satul după jucător
+enter_player_name;Introdu numele jucătorului
+messages_template_newConditionsNotMet;Șablonul trebuie să conțină un titlu și un mesaj.
+message_report_isAlready;Mesajul actual a fost deja raportat ca: {{REASON}}
+tutorial_begin;Începe ghidul
+tutorial_title_0;Salutări, războinic neînfricat! 
+tutorial_text_0;Bine ai venit pe câmpurile de luptă ale Travian: Legends. Hai să te pregătim pentru conducerea așezărilor tale și organizarea armatelor invincibile.\n\nEști gata?
+tutorial_title_1;Prezentare generală a navigației
+tutorial_text_1;Aici vei găsi tot ce-ți trebuie, de la hartă până la instrumentele de comunicare și informare. Tot aici sunt ascunse cu grijă misiunile zilnice, setările personalizate și multe alte funcționalități utile.
+tutorial_title_3;Resursele tale
+tutorial_text_3;Aici se găsesc resursele satului tău. Apasă pe bara de resurse pentru mai multe detalii.
+tutorial_title_4;Resursele tale
+tutorial_text_4;Apasă din nou pe bara de resurse pentru a ascunde detaliile.
+tutorial_title_5;Satul tău
+tutorial_text_5;Aici găsești toate informațiile despre satul tău. De la lista de sarcini la privirea de ansamblu asupra trupelor și coada de construcție — totul este aici. O funcționalitate recent adăugată în aplicație, monitorul Activități clădiri îți oferă o privire de ansamblu asupra evenimentelor active din clădirile tale. 
+tutorial_title_7;Satul tău
+tutorial_text_7;Când construiești Adunarea, vei putea vedea toate mișcările de trupe în desfășurare. În plus, vei avea acces rapid la Adunare.
+tutorial_title_8;Meniul lateral
+tutorial_text_8;Apasă pe săgeți sau glisează pentru a deschide meniul lateral. Poți face acest lucru oricând.
+tutorial_title_9;Lista satelor
+tutorial_text_9;Poți comuta rapid între sate deschizând panoul lateral. Tot aici vei găsi și statisticile satului.\n\nȘi cu asta am încheiat ghidul. Ce mai aștepți?! Explorează universul Travian: Legends și transformă-l în terenul tău de strategie.\n\nMultă baftă!
+tutorial_finish;Încheie ghidul
+filters_report_not_found;Raportul nu există
+filters_player_not_found;Jucătorul nu există
+filters_alliance_not_found;Alianţa nu există
+filters_village_not_found;Satul nu există
+settings_game;Această lume de joc
+language_app_selection;Alege limba aplicației:
+settings_sitter;Locțiitor {{VALUE}}:
+settings_sitterTab_yourSitters;Locțiitorii tăi
+settings_sitterTab_SittingFor;Locţiitor pentru
+search_player_addSitter;Adaugă locțiitor
+search_select_player_addSitter;Adaugă locțiitor
+search_player_addSitter_additionalEmptyResultInfo;Nu s-a găsit niciun jucător.\nDoar jucătorii din alianța/confederația ta pot fi locțiitori pentru avatarul tău.
+settings_sitter_sitterAdded;Locţiitor adăugat!
+settings_sitter_sitterRemoved;Locţiitor eliminat!
+settings_sitter_sitterPermissionChangesSaved;Modificările permisiunilor au fost salvate cu succes!
+settings_sitter_confirm_remove_text_header;Confirmi eliminarea jucătorului {{PlayerName}} din funcția de locțiitor?
+settings_sittersFor;Locțiitor pentru alt(e) avatar(uri)
+settings_sittersFor_info;Ți-a fost atribuită funcția de locţiitor pentru următoarele avataruri. Poți renunța la funcția de locțiitor apăsând pe X-ul roșu.
+settings_sittersFor_none;În prezent nu ești locțiitor pentru niciun alt avatar.
+settings_sitterFor;Ești locțiitor pentru {{VALUE}}:
+settings_sitterFor_sittingRemoved;Nu mai ești locțiitor pentru {{PlayerName}}!
+settings_sitterFor_confirm_remove_header;Dorești să renunți la funcția de locțiitor pentru 
+settings_sitterFor_confirm_remove_header_questionmark;?
+settings_sitterFor_confirm_remove_info;Nu poți anula această acțiune. Doar alți jucători pot să te adauge ca locțiitor.
+brewery_celebration_attackStrength;({{INT}}% putere de atac)
+brewery_celebration_hint;Trupele aflate în marș vor fi afectate de petrecere
+settings_game_newLanguage;Limba a fost schimbată în {{language}}.
+wonderOfTheWorld_name;Denumirea Minunii Lumii:
+combatSimulator_title;Simulează - {{role|TranslateSuffixFor|combatSimulator_as}}
+combatSimulator_cataTargetLevel;Nivelul <b>țintei catapultelor nr. {{index}}</b>
+combatSimulator_troopLevel;Nivel fierărie trupe:
+combatSimulator_asAttacker;Ca atacator
+combatSimulator_asDefender;Ca apărător
+combatSimulator_result;Simulează rezultatele
+combatSimulator_addReinforcement;Adaugă întăriri
+valueWithModifier;{{value|Round|2}}x
+valuePlusInBracketsWithPercent;(+{{change}}%)
+none;Niciunul/niciuna
+marketplace_traderoute_repeatEveryHour;Repetă la fiecare: (ore)
+block_sitter_warning;Ca locțiitor, nu ai permisiunea să faci asta.
+settings_openConsentWindow;Setări de confidențialitate
+combatSimulator_adjustHeroStats;Ajustează statisticile eroului
+combatSimulator_eagleEyeTitle;Selectează bonusul Ochi de vultur
+combatSimulator_architectSecretTitle;Selectează bonusul Secretul arhitectului
+combatSimulator_metallurgyBonus;Selectează bonusul Metalurgie
+combatSimulator_rightHand;Selectează obiectul din dreapta
+combatSimulator_leftHand;Selectează obiectul din stânga
+combatSimulator_bodyItem;Selectează obiectul pentru corp
+combatSimulator_inventoryItem;Selectează obiectul din inventar
+combatSimulator_selectBuildingLevel_35;Selectează nivelul berăriei
+combatSimulator_selectBuildingLevel_26;Selectează nivelul palatului
+combatSimulator_selectBuildingLevel_34;Selectează nivelul lojei masonului
+combatSimulator_selectBuildingLevel_31;Selectează nivelul zidului
+combatSimulator_selectBuildingLevel_32;Selectează nivelul zidului
+combatSimulator_selectBuildingLevel_33;Selectează nivelul zidului
+combatSimulator_selectBuildingLevel_43;Selectează nivelul zidului
+combatSimulator_selectBuildingLevel_42;Selectează nivelul zidului
+combatSimulator_selectTargetLevel;Selectează nivelul țintei catapultei
+combatSimulator_selectTroopLevel;Selectează nivelul trupelor
+survey_title;Sondaj Travian: Legends
+gdpr_title;Consimțământ pentru prelucrarea datelor
+gdpr_description;Cu acordul tău, colectăm anumite informații privind dispozitivul tău, adresa IP, modul de utilizare și identificatorii pentru publicitate. Acest lucru ne permite să îți afișăm reclame relevante și să îți optimizăm experiența în aplicație.
+gdpr_basic_functions;Necesar pentru funcționalitățile de bază ale aplicației.
+gdpr_advertisement;Utilizarea datelor cu caracter personal pentru publicitate.
+gdpr_analytics;Utilizarea datelor cu caracter personal în scopuri analitice.
+gdpr_acceptAll;Acceptă tot
+gdpr_save_and_exit;Salvează și ieși
+gdpr_rejectAll;Respinge tot
+gdpr_privacy_policy;Politica de confidențialitate
+gdpr_terms_and_conditions;Termenii și condițiile de utilizare
+plus.plus.browserOnly;(doar pentru browser)
+hero_inventory_already_equipped;Acest obiect este deja echipat.
+survey_button_title;Chestionar de feedback
+survey_button_description;Completează acest scurt sondaj pentru a ne ajuta să îmbunătățim Travian: Legends.
+goldShop_extend;Extinde
+goldShop_remaining;A mai rămas:
+goldShop_advantage_activated;Activat
+search_select_recipient_removeAll;Elimină tot
+messages_messageTopic_noTopic;Fără subiect/implicit
+messages_messageTopic_resources;Despre resurse
+messages_messageTopic_defenses;Despre apărări
+messages_messageTopic_attacks;Despre atacuri
+messages_messageTopic_strategies;Despre strategii
+messages_messageTopic_information;Informații generale
+messages_messageTopic_important;Informații importante
+messages_messageTopic_selectionTitle;Selectează subiectul mesajului
+farmlist_confirm_deletion_header;Confirmi ștergerea listei de raiduri selectate?
+farmlist_confirm_deletion_text;Această acțiune este ireversibilă.
+farmlist_target_confirm_deletion_header;Confirmi că vrei să ștergi [data>1:aceste {{data}} ținte][data=1:această țintă]?
+upgrade_queue_cantConstructImmediately;Această clădire nu poate fi construită imediat
+language_cs-CZ;Cehă
+language_es-ES;Spaniolă
+language_pl-PL;Poloneză
+language_pt-PT;Portugheză
+language_tr-TR;Turcă
+language_it-IT;Italiană
+playerDetails_victorPoints_summary;{{TOTAL}} | {{PERDAY}}/zi
+settings_selectFormat;Selectează formatul:
+settings_selectFormat_dialog_title;Selectează formatul datei
+settings_game_newDateFormat;Formatul datei a fost schimbat în {{dateFormat}}.
+help_getHelp;Obține ajutor
+help_getHelpDescription;Dacă ai nevoie de ajutor sau dorești să raportezi o problemă, poți contacta asistența din joc aici.
+help_learnAboutGame;Află mai multe despre joc
+help_learnAboutGameDescription;Aici găsești toate informațiile detaliate despre joc și modul său de funcționare.
+help_gameRules;Învață regulile jocului
+help_gameRulesDescription;Aici poți consulta regulile jocului.
+help_joinDiscord;Intră pe Discord
+help_joinDiscordDescription;Oferă-ne feedback pe serverul nostru Discord pentru mobil.
+PLAYERARG;{{PLAYER}}
+referAFriend_friendJoinedDescription;Pentru a primi Aur din invitație, prietenul tău trebuie să fondeze <b>al doilea sat</b>. Asigură-te că îl ajuți să atingă acest obiectiv! Vezi progresul în prezentarea generală a invitațiilor mai jos.
+referAFriend_rewardAddedVillage2Title_PLAYERARG;Prietenul tău {{PLAYER}} a fondat al 2-lea sat
+referAFriend_rewardAddedVillage3Title_PLAYERARG;Prietenul tău {{PLAYER}} a fondat al 3-lea sat
+referAFriend_rewardAddedVillage4Title_PLAYERARG;Prietenul tău {{PLAYER}} a fondat al 4-lea sat
+referAFriend_rewardAddedVillage5Title_PLAYERARG;Prietenul tău {{PLAYER}} a fondat al 5-lea sat
+referAFriend_rewardAddedVillage6Title_PLAYERARG;Prietenul tău {{PLAYER}} a fondat al 6-lea sat
+referAFriend_rewardAddedVillage7Title_PLAYERARG;Prietenul tău {{PLAYER}} a fondat al 7-lea sat
+referAFriend_rewardAddedVillage8Title_PLAYERARG;Prietenul tău {{PLAYER}} a fondat al 8-lea sat
+referAFriend_rewardAddedVillage9Title_PLAYERARG;Prietenul tău {{PLAYER}} a fondat al 9-lea sat
+referAFriend_rewardAddedVillage10Title_PLAYERARG;Prietenul tău {{PLAYER}} a fondat al 10-lea sat
+sysmsg_truce_learnMore;Află mai multe despre armistițiu
+worldEnded_ww_playerWon_topAlliance;La ora {{WORLD_END_TIME|DateTime}}, muncitorii din satul {{WW_VILLAGE|VillageLink}} au așezat ultima piatră, finalizând astfel una dintre cele mai mărețe construcții din istorie.<br>Împreună cu alianța {{WW_ALLIANCE|AllianceLink}}, {{WW_PLAYER|PlayerLink}} a finalizat primul Minunea Lumii. După ce a folosit nenumărate resurse și a protejat creația cu sute de mii de apărători curajoși, {{WW_PLAYER|PlayerLink}} a primit titlul de „Câștigător al acestei epoci”.
+worldEnded_as2022_topAlliances;Felicitări alianței {{ALLIANCE_TOP_1|AllianceLink}}, care a devenit liderul Europei cu {{VICTORY_POINTS_TOP_1}} puncte de victorie! {{ALLIANCE_TOP_2|AllianceLink}} s-a clasat pe locul al doilea după ce a luptat cu curaj pentru a-și revendica victoria, în timp ce {{ALLIANCE_TOP_3|AllianceLink}} i-a călcat rapid pe urme, situându-se pe locul al treilea.
+worldEnded_playerRanks_population;{{PLAYER_POPULATION_TOP_1|PlayerLink}} a domnit peste cel mai vast imperiu personal, urmat îndeaproape de {{PLAYER_POPULATION_TOP_2|PlayerLink}} și {{PLAYER_POPULATION_TOP_3|PlayerLink}}.
+worldEnded_playerRanks_offender;{{PLAYER_OFFENDER_TOP_1|PlayerLink}} a învins cei mai mulți adversari și a fost cel mai temut comandant.
+worldEnded_playerRanks_defender;{{PLAYER_DEFENDER_TOP_1|PlayerLink}} s-a dovedit a fi cel mai glorios apărător, respingând inamicii la porțile satului și împânzind cu sângele lor pământurile din jur.
+rallyPoint_startWithValue;Începe ({{value}})
+rallyPoint_farmList_raidsStarted;{{INT}} raiduri trimise.
+rallyPoint_farmList_CantAddToAbandonList;Nu poți adăuga ținte la o listă de raiduri abandonată.
+rallyPoint_farmList_CantActivateInToAbandonList;Nu poți activa țintele dintr-o listă de raiduri abandonată.
+rallyPoint_farmList_CantDuplicateInToAbandonList;Nu poți duplica țintele dintr-o listă de raiduri abandonată.
+rallyPoint_farmList_DuplicateRaids;Duplică [raidsAmount=1:ținta][raidsAmount>1:țintele]
+rallyPoint_farmList_SlotsDuplicated;[raidsAmount=1:Țintă duplicată][raidsAmount>1:Ținte duplicate]!
+rallyPoint_farmList_pleaseSelectTheList;Selectează lista la care dorești să adaugi ținta ta.
+rallyPoint_farmList_farmlistFull;Lista de raiduri este plină. Te rugăm să selectezi o altă listă sau să creezi una nouă. 
+rallyPoint_farmList_targetName;Nume țintă
+rallyPoint_farmList_differentTroopsWarning;Efectivele trupelor vor rămâne neschimbate, cu excepția cazului în care introduci o valoare nouă în câmpurile de mai jos.
+rallyPoint_farmList_noobProtectionWarning;În perioada de protecție pentru începători, nu poți ataca alți jucători, dar poți ataca oaze libere și sate Natare.
+rallyPoint_farmList_noFarmLists;Nu s-a creat nicio listă de raiduri
+rallyPoint_farmList_CreateNewFarmList;Creează o listă de raiduri
+rallyPoint_farmList_currentAmount;Liste de raiduri: <b>{{amount}}</b>/{{max}}
+rallyPoint_farmList_differentTribe;Satul aparține unui trib diferit față de satul sursă actual. Verifică valorile trupelor.
+rallyPoint_farmList_overrideTarget;Suprascrie ținta
+rallyPoint_farmList_selectedActivated;Țintele selectate au fost activate.
+rallyPoint_farmList_selectedDeactivate;Țintele selectate au fost dezactivate.
+rallyPoint_farmList_LastRaid;<b>Ultima inițiată:</b> <nobr>{{lastStarted|DateTime}}</nobr>
+mapCell_editTargetListAmount;<nobr>Modifică ținta</nobr> <nobr>(Liste: {{INT}})</nobr>
+goldShop_shopDisabled;Magazinul de Aur este dezactivat în această lume de joc
+infobox_accountLockGameEnd;Această rundă de joc a luat sfârșit!
+applySorting;Aplică sortarea
+truppen.tid931;Capcană
+truppen.tid931p;Capcane
+mainMenu_switchBackFromAvatar;{{iconName|Sprite}} Revino la {{playerName}}
+pending;(În așteptare)
+featureNotAvailableInVacationMode;Această funcție nu este disponibilă în modul Vacanță.
+notAllowed;Nu ai permisiunea să efectuezi această acțiune.
+settings_avatarDeletionInfo;După inițierea procesului de ștergere, avatarul tău va fi șters definitiv în <b>3 zile</b>.\nUn avatar șters nu mai poate accesa licitațiile sau biroul de schimb.\nPoți anula procesul de ștergere oricând din această pagină.
+settings_avatarDeletionCountDown;Avatarul va fi șters în
+deleteAvatar_confirmation_header;Dorești să-ți ștergi avatarul?
+cams_info_subHeader;Un singur login pentru toate lumile tale de joc
+cams_info_text;Creează-ți un cont de lobby Legends pentru o conectare ușoară și acces neîntrerupt la toate lumile tale de joc printr-un singur login.
+cams_info_lessInfo;Mai puține informații
+cams_info_Question_WhatIsLegendsLobbyAccount;Ce este contul de lobby Legends?
+cams_info_Answer_WhatIsLegendsLobbyAccount;Datorită contului de lobby, nu va mai trebui să te înregistrezi într-o nouă lume de joc. Va fi suficient să te conectezi și să accesezi lumile de joc active sau să începi una nouă din lobby — fie în browser, fie în aplicația mobilă.
+cams_info_Question_WhatAreAvatars;Ce sunt avatarurile?
+cams_info_Answer_WhatAreAvatars;În cadrul unui cont de lobby, profilul tău într-o lume de joc individuală se numește avatar. Dispui de un singur cont de lobby, care poate avea mai multe avataruri, unul pentru fiecare lume de joc.
+cams_info_Question_WhatsWithCurrentGameworlds;Ce se va întâmpla cu lumile mele de joc actuale?
+cams_info_Answer_WhatsWithCurrentGameworlds;Toate lumile de joc active care folosesc aceeași adresă de e-mail ca și contul tău de lobby vor fi asociate și vor putea fi accesate prin lobby. Poți conecta avatarurile actuale active dintr-o lume de joc la adresa de e-mail potrivită înainte de crearea contului tău de lobby.
+cams_info_Question_WhatsWithSitters;Voi putea continua să folosesc locțiitori?
+cams_info_Answer_WhatsWithSitters;Da, locțiitorii vor putea fi atribuiți ca de obicei, în setările corespunzătoare lumii de joc. Vei putea accesa avatarul pentru care ai fost desemnat ca locțiitor direct în lumea de joc.
+cams_info_Question_WhatsWithDuals;Voi putea continua să joc în dublu cu alți jucători?
+cams_info_Answer_WhatsWithDuals;Dublurile pot fi atribuite unei lumi de joc introducând numele contului de lobby al jucătorului din lobby. Asta înseamnă că un dublu are nevoie mai întâi de un cont de lobby și că va putea accesa avatarul prin intermediul lobby-ului după ce a acceptat invitația. Te rugăm să nu divulgi nimănui parola contului tău de lobby.
+cams_info_Question_WhatsWithoutLobbyAccount;Pot juca fără a crea un cont de lobby Legends?
+cams_info_Answer_WhatsWithoutLobbyAccount;Poți continua să te conectezi direct la lumile tale de joc actuale folosind URL-ul respectiv. Cu toate acestea, dacă dorești să începi o nouă lume de joc sau să folosești aplicația mobilă, va trebui să creezi un cont de lobby.
+cams_playerDecision_register_info;Noul cont de lobby îți permite să te conectezi la lumile tale de joc actuale și viitoare printr-un singur login.
+cams_playerDecision_login_info;Ai deja un cont de lobby?\n\nConectează-te și continuă aventura.
+cams_playerDecision_register_header;Creează cont
+cams_playerDecision_register_create_new_account;Creează cont de lobby
+cams_playerDecision_register_login;Conectează-te la lobby
+cams_playerDecision_extra_info;Pentru a putea juca Travian: Legends, trebuie să creezi un cont de lobby.
+cams_register_header;Creează cont de lobby Legends
+cams_register_email_label;Introdu adresa de e-mail:
+cams_register_email_address;Înregistrează adresa de e-mail
+cams_register_email_address_missing;Te rugăm să introduci adresa de e-mail.
+cams_register_email_address_not_valid;Introdu o adresă de e-mail validă. De exemplu: mymail@provider.com
+cams_register_email_address_already_exists;Această adresă de e-mail este deja asociată unui cont de lobby.
+cams_register_redirecting_to_login;Se redirecționează către pagina de login {{INT}}...
+cams_register_hintMessage_same_email_address;Folosește adresa de e-mail a avatarurilor tale existente din respectiva lume de joc pentru a le asocia automat contului tău de lobby.
+cams_register_receive newsletter;Doresc să primesc buletinul informativ.
+cams_register_already_have_an_account;Ai deja un cont?
+cams_register_log_in_now;Conectează-te acum
+cams_acceptTOS;Făcând clic pe „Înregistrează adresa de e-mail”, accepți <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">Termenii și condițiile generale</link></style> și confirmi că ai citit <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">Informațiile privind dreptul de retragere</link></style> și <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">Politica de confidențialitate</link></style>.
+cams_activation_header;Activează contul de lobby Legends
+cams_activation_info;Am trimis link-ul de activare la <b>{{emailAdress}}</b>.<br>Urmează instrucțiunile din e-mail pentru a continua.
+cams_activation_enter_code;Introdu codul de activare:
+cams_activation_code_example;De exemplu: 123456
+cams_activation_entered_code;{{INT}}/6 cifre
+cams_activation_cta_activate_account;Activează contul
+cams_activation_email_lost;Nu ai primit e-mailul?
+cams_activation_email_resend;Retrimite e-mailul
+cams_activation_email_wrong;Adresa de e-mail este greșită?
+cams_activation_email_change;Modifică adresa de e-mail
+cams_activation_code_missing;Introdu codul de activare pe care l-ai primit prin e-mail.
+cams_activation_code_too_short;Codul de activare este prea scurt. Te rugăm să introduci toate cele șase cifre.
+cams_activation_code_format_incorrect;Formatul codului de activare este incorect. Te rugăm să te asiguri că codul conține exact șase cifre.
+cams_activation_code_incorrect;Codul de activare este incorect. Introdu codul de activare pe care l-ai primit prin e-mail.
+cams_activation_code_expired;Codul de activare a expirat.
+cams_activation_code_start_again;Începe din nou
+cams_login_header;Conectează-te la lobby-ul Legends
+cams_login_enter_email;Introdu adresa de e-mail sau numele contului:
+cams_login_enter_password;Introdu parola:
+cams_login_hintMessage_email_already_connected;Adresa de e-mail introdusă este deja asociată unui cont de lobby. Conectează-te sau <style="SimpleLink"><link="BackToRegistrationLink">revino la înregistrare</link></style>.
+cams_login_hintMessage_passwordUpdated;Parola ta a fost actualizată cu succes
+cams_forgot_password;Ai uitat parola?
+cams_recover_password;Recuperează parola
+cams_login_no_account_yet;Nu ai încă cont?
+cams_login_create_account;Creează cont
+cams_loginMask_accountNameRequired;Te rugăm să introduci adresa de e-mail sau numele contului tău.
+cams_loginMask_passwordRequired;Te rugăm să introduci parola.
+cams_loginMask_passwordAndUsernameAreWrong;E-mail, nume de cont sau parolă greșite.
+cams_loginMask_emailOrAccountName_placeholder;Adresă e-mail / nume cont
+cams_loginMask_temporaryInfobox;NOU: Pentru a-ți accesa lumile de joc, trebuie să creezi un cont de lobby.\n\nDacă nu ai încă un cont de lobby, <style="SimpleLink"><link="CreateAccountLink">creează unul acum</link></style>.
+cams_setPassword_header;Setează parola
+cams_setPassword_info;Creează o parolă pentru contul tău care să conțină minimum opt caractere.
+cams_setPassword_enter_password;Alege o parolă:
+cams_setPassword_strength_label;Complexitatea parolei
+cams_setPassword_strength_missing;Introdu o parolă pentru a-i verifica complexitatea.
+cams_setPassword_strength_1;foarte slabă
+cams_setPassword_strength_2;destul de slabă
+cams_setPassword_strength_3and4;moderată
+cams_setPassword_strength_5;destul de sigură
+cams_setPassword_strength_6;foarte sigură
+cams_setPassword_strength_PasswordTooShort;Cu cât parola este mai lungă, cu atât mai sigură va fi (16+ caractere)
+cams_setPassword_strength_PasswordGoodLength;Parola are o lungime adecvată
+cams_setPassword_strength_OneType;S-a folosit doar un singur tip de caractere
+cams_setPassword_strength_TwoTypes;S-au folosit două tipuri de caractere
+cams_setPassword_strength_ThreeTypes;S-au folosit trei tipuri de caractere
+cams_setPassword_strength_NoNumbers;Nu s-au folosit numere
+cams_setPassword_strength_NoLetters;Nu s-au folosit litere
+cams_setPassword_strength_NoSpecialCharacters;Nu s-a folosit niciun caracter special
+cams_setPassword_strength_NoUpperAndLowerCase;Nu s-a folosit o combinație de majuscule și minuscule
+cams_setPassword_strength_UpperAndLowerCase;S-au folosit majuscule și minuscule
+cams_activation_cta_set_password;Setează parola
+cams_activation_password_length;8-64 caractere
+cams_resetPassword_header;Setează o parolă nouă
+cams_resetPassword_info;Creează o parolă nouă pentru contul tău de lobby cu o lungime minimă de opt caractere.
+cams_setUsername_header;Alege un nume pentru contul tău de lobby Legends
+cams_setUsername_info;Alege numele de utilizator și eticheta pentru a-ți crea identitatea unică în lobby.
+cams_setUsername_username_label;Alege un nume de utilizator:
+cams_setUsername_tagline_label;Alege o etichetă:
+cams_setUsername_tagline_example;de exemplu: TAG12
+cams_setUsername_tagline;Etichetă:
+cams_setUsername_condition_onlyLettersAndNumbers;Numai litere și cifre
+cams_setUsername_username_condition_Length;3-15 caractere
+cams_setUsername_tagline_condition_Length;2-5 caractere
+cams_setUsername_hint;Combinația dintre numele de utilizator și etichetă va forma numele tău unic în lobby. Atâta timp cât este disponibilă, poți alege orice combinație dorești.\n\nAceastă alegere nu afectează numele tău din lumea de joc.
+cams_setUsername_cta_createAccount;Creează cont
+cams_setUsername_username_missing;Te rugăm să introduci un nume de utilizator și o etichetă.
+cams_setUsername_accountName_preview;Previzualizare nume cont:
+cams_setUsernameConfirmPopup_header;Contul de lobby Legends a fost creat!
+cams_setUsernameConfirmPopup_info;Contul tău de lobby Legends cu numele de utilizator <b>{{playerName}}</b> a fost creat cu succes.
+cams_setUsernameConfirmPopup_GameworldAndAvatar_header;Lumile de joc și avatarurile tale
+cams_setUsernameConfirmPopup_GameworldAndAvatar_info;Am conectat la noul tău cont de lobby următoarele avataruri existente care folosesc aceeași adresă de e-mail.
+cams_avatar_name;Numele avatarului
+cams_looby_welcomeMessage;Bine ai venit!\n<b>{{playerName}}</b>
+cams_looby_header;Lumile tale de joc
+cams_looby_noGameWorlds;În prezent nu ai un avataruri active în nicio lume de joc. Alătură-te unei noi lumi de joc și începe aventura.
+cams_looby_joinNewGameworld;Intră într-o nouă lume de joc
+cams_looby_playNow;JOACĂ ACUM
+cams_looby_gameworldsLinked;Lumi de joc asociate contului tău
+cams_looby_invitePenging;[data>1:{{data}} invitații][data=1:invitație] în așteptare
+cams_looby_localGameWorld;LUME DE JOC LOCALĂ
+cams_looby_avatarInDeletion;Se șterge
+cams_removeDualAccount_header;Elimină jucător dublu
+cams_removeDualAccount_info;Dorești să elimini accesul jucătorului <b>{{lobbyAccountName}}</b> la avatarul tău <b>{{avatarName}}</b>?\n\n<b>{{lobbyAccountName}}</b> nu va mai putea accesa avatarul tău.
+cams_removeDualAccount_removeDual;Elimină dublu
+cams_addDualPlayer_info;Introdu numele contului de lobby al jucătorului:
+cams_addDualPlayer_placeholder;nume utilizator#etichetă
+cams_addDualPlayer_addPlayer;[data>1:Adaugă jucători][data=1:Adaugă jucător][data=0:Adaugă jucător]
+search_addDualPlayeradditionalEmptyResultInfo;Jucătorul nu a fost găsit sau a fost deja invitat ca dublu
+cams_dualInventation_header;Invitație dublu
+cams_dualInventation_invitations;Invitaţii:
+cams_dualInventation_info;Dacă accepți invitația, vei putea accesa acest avatar folosind contul tău de lobby.
+cams_dualInventation_moreInfo;Poți accepta o singură invitație de jucător dublu per lume de joc.
+cams_dualInventation_invite;<b>{{LobbyAccountName}}</b> ți-a oferit acces la avatarul <b>{{avatarName}}</b>
+cams_dualInventation_AcceptInvite;Acceptă invitația
+cams_acceptDualInvitation_header;Acceptă invitația de jucător dublu
+cams_acceptDualInvitation_info;Vrei să accepți invitația lui <b>{{lobbyAccountName}}</b> pentru a accesa avatarul <b>{{avatarName}}</b> în lumea <b>{{gameworldName}}</b> ca jucător dublu?
+cams_acceptDualInvitation_moreInfo;Ai mai multe invitații de jucător dublu în așteptare pentru această lume de joc, dar poți accepta doar una per lume.
+cams_acceptDualInvitation_avatarInDeletion;Conform regulilor noastre privind statutul de dublu, poți avea un singur avatar activ per lume de joc. \nAcceptarea invitației de jucător dublu va bloca posibilitatea de a șterge avatarul {{avatarName}} din această lume de joc. \nOdată blocat, procesul de ștergere nu va mai putea fi reluat.
+cams_dualSettings_header;Setări jucător dublu
+cams_dualSettings_info;Poți renunța oricând la rolul de jucător dublu pentru acest avatar.
+cams_dualSettings_leaveDualPlay;Renunță la rolul de jucător dublu
+cams_confirmLeaveDualPlay_info;Nu mai vrei să fii jucător dublu pentru <b>{{avatarName}}</b> în <b>{{gameworldName}}</b>?\n\nDupă ce renunți la rolul de jucător dublu, poți să îți creezi un avatar nou sau să accepți o altă invitație de jucător dublu în această lume de joc.
+cams_recoverPassword_header;Recuperează parola
+cams_recoverPassword_goBackToLogin;Înapoi la conectare
+cams_recoverPassword_info;Introdu adresa de e-mail asociată contului tău de lobby. Îți vom trimite instrucțiuni pentru resetarea parolei
+cams_recoverPasswordEmailSent_header;E-mail trimis
+cams_recoverPasswordEmailSent_info;Dacă există un cont de lobby asociat adresei <b>{{emailAdress}}</b>, am trimis instrucțiuni pentru resetarea parolei.\n\nTe vei putea autentifica din nou după ce îți vei recupera parola.
+cams_recoverPasswordEmailSent_goBackToLogin;Înapoi la conectare
+cams_editDualAccounts_header;Jucători dubli
+cams_editDualAccounts_gameworld;Lume de joc: {{gameworldName}}
+cams_editDualAccounts_avatar;Avatar: {{avatarName}}
+cams_editDualAccounts_avatarOwner;Proprietarul avatarului:
+cams_editDualAccounts_noDualsAdded;- Nu s-au adăugat jucători dubli pentru acest avatar -
+cams_editDualAccounts_info;Jucătorii dubli au <b>acces complet</b> la acest avatar și pot efectua orice acțiune în joc, inclusiv să cheltuiască și să cumpere Aur.\n\nJucătorii dubli pot folosi propriul cont de lobby pentru a accesa acest avatar și NU pot invita alți jucători dubli.
+cams_editDualAccounts_warningHint;Nu împărtăși datele contului tău de lobby cu alți jucători pentru a evita accesul neautorizat la celelalte avataruri din lumea de joc și la datele contului tău.
+cams_editDualAccounts_addDualPlayer;Adaugă jucător dublu
+cams_editDualAccounts_avatarInDeletion;Avatarul tău {{avatarName}} din această lume de joc este în proces de ștergere. Din acest motiv, nu poți invita jucători dubli.
+cams_settings_title;Setări
+cams_settings_changePassword_information;Pentru a-ți schimba parola, vom trimite un e-mail la adresa asociată contului tău.
+cams_settings_changePassword_sendEmail;Trimite e-mail
+cams_settings_changePassword_emailSent;Ți-am trimis un e-mail cu instrucțiuni pentru schimbarea parolei.
+cams_settings_accountDeletion_title;Ștergerea contului de lobby
+cams_settings_accountDeletion_info;Șterge-ți contul de lobby Legends, inclusiv toate lumile de joc și avatarurile asociate.
+cams_settings_accountDeletion_action;Șterge contul de lobby
+cams_settings_accountDeletion_warning;Atenție: Această acțiune nu poate fi anulată!
+cams_settings_accountDeletion_warning_content;Ștergerea contului tău de lobby devine permanentă după 72 de ore, nu poate fi anulată și afectează toate avatarurile tale. \n\nContul tău poate fi șters doar după ce toate avatarurile tale sunt setate pentru ștergere.
+cams_settings_accountDeletion_requirementsInformation;Pentru a putea șterge contul, toate avatarurile tale trebuie să fie în curs de ștergere sau să fi fost deja șterse.
+cams_settings_accountDeletion_information_warning;Această acțiune va marca contul tău pentru ștergere. Scrie „delete” (șterge) în câmpul de mai jos pentru a confirma că înțelegi că contul tău și toate avatarurile și datele asociate vor fi șterse definitiv.
+cams_settings_accountDeletion_information_error;Nu poți șterge contul cât timp există avataruri care nu sunt setate pentru ștergere.\nConectează-te la lumile de joc menționate și șterge-ți avatarurile.
+cams_settings_accountDeletion_noAvatarsFound;Nu s-au găsit lumi de joc sau avataruri active.\nTotul este în regulă!
+cams_settings_accountDeletion_understandmentConfirmation;Înțeleg
+cams_settings_accountInDeletion_title;Cont în curs de ștergere
+cams_settings_accountInDeletion_info;Contul tău de lobby <b>{{NAME}}</b> va fi șters definitiv în <b>{{TIMESTAMP|Countdown}}</b>.
+cams_settings_accountInDeletion_action;Anulează ștergerea
+cams_mainMenu_dataConsent;Consimțământ privind datele
+gameworld_gameworld;Lume de joc
+infobox.productionboost;{{RES}}{{TIME_COUNTER}}
+infobox_notesCount;{{COUNT}} [COUNT=1:notă][COUNT>1:note]
+auction_placeBid;Plasează o ofertă
+auction_auctionsAmount;{{COUNT}} licitații
+auction_bidsRefreshed;Oferte actualizate!
+auction_currentSilver;Argint curent:  {{iconName|Sprite}} {{currentSilver}}
+auction_availableAmount;Cantitatea disponibilă:
+auction_toSellAmount;Vinde cantitatea:
+auction_selectAmountToSellHeader;Selectează cantitatea pentru vânzare
+auction_soldHorseForSilver;S-a vândut calul pentru {{amount}} Argint.
+auction_currentCurrency;Suma curentă:
+auction_newCurrencyValues;Noua sumă:
+auction_exchangeExplanationGoldToSilverTitle;Poți schimba Aurul în Argint pentru a cumpăra accesorii pentru erou la casa de licitații.
+auction_exchangeExplanationGoldToSilverMore;Introdu suma de Aur pe care dorești să o schimbi:
+auction_exchangeExplanationSilverToGoldTitle;Poți schimba Argintul din vânzarea accesoriilor pentru erou la casa de licitații în Aur.
+auction_exchangeExplanationSilverToGoldMore;Introdu suma de Argint pe care dorești să o schimbi:
+auction_countAndName;{{AMOUNT}}×{{ITEM_NAME}}
+auction_deleteAll;Șterge toate licitațiile
+auction_confirm_deletion_title;Elimină licitația [date>1:{{data}} înregistrări][date=1:înregistrare]
+auction_confirm_deletion_button;Elimină [data>1:înregistrări][data=1:înregistrare]
+auction_confirm_deletion_text_header;Sigur dorești să elimini [data>1:{{data}} înregistrări de licitație][data=1:această înregistrare de licitație]?
+auction_confirm_deletion_text;Odată ce elimini o înregistrare, aceasta va fi pierdută definitiv. Nu îl vei mai putea recupera.
+cams_looby_noMatchingGameworlds;Nu există lumi de joc care să corespundă selecției tale.
+serverSelection_5;Dev
+serverSelection_header;Selectează filtru pentru lumea de joc
+serverSelection_filter_gameworldSpeed;Viteza lumii de joc
+serverSelection_gameworldSpeed;Viteză x{{INT}}
+serverSelection_filer_gameworldLifetime;Durata lumii de joc
+serverSelection_gameworldLifetime;{{INT}}-{{INT2}} zile
+serverSelection_gameworldLifetime_XorMore;{{INT}} sau mai multe zile
+filters_applyButton;Aplică [COUNT=0:filtre][COUNT=1:filtru][COUNT>1:{{COUNT}} filtre]
+filters_reset;Resetează [COUNT<2:filtru][COUNT>1:filtre]
+cams_avatarCreation_cancel_title;Anulează crearea avatarului
+cams_avatarCreation_cancel_reconfirmationText;Confirmi că dorești să anulezi crearea avatarului tău în {{gameworldName}}?
+cams_avatarCreation_cancel_explanation;Vei pierde tot progresul din această lume de joc, inclusiv selecția tribului, locația pe hartă și numele avatarului.
+cams_avatarCreation_button_startPlaying;Începe jocul
+cams_avatarCreation_button_changeSector;Schimbă poziția
+cams_avatarCreation_button_selectTribe;Selectează tribul
+cams_avatarCreation_button_updateTribe;Actualizează tribul
+cams_avatarCreation_button_selectSector;Selectează poziția
+cams_avatarCreation_button_updateSector;Actualizează poziția
+cams_avatarCreation_name_title;Introdu numele avatarului:
+cams_avatarCreation_name_tip;Acesta va fi numele avatarului tău în lumea de joc.
+cams_avatarCreation_name_errorEmpty;Te rugăm să introduci un nume de avatar.
+cams_avatarCreation_name_placeHolder;Numele avatarului
+cams_looby_avatarInDeletionBlockPlayNow;Ai acceptat o invitație de jucător dublu în această lume de joc ({{gameworldName}}), deci nu o poți accesa decât ca jucător dublu.
+infobox_openMessage;Deschide mesaj
+infobox_accountIsLocked;Avatarul tău a fost blocat!
+auction_button_requirement;Finalizează {{REQUIRED}} aventuri pentru a debloca licitațiile.\nA rămas: {{INT}}
+auction_availableSilver;Argint disponibil:  {{iconName|Sprite}} {{currentSilver}}
+auction_deleteSelected;Șterge licitațiile selectate
+auction_deletedAll_confirmation;S-au șters toate licitațiile!
+auction_deletedSelected_confirmation;{{data}} licitație [data>1:înregistrări][data=1:înregistrare] eliminată!
+newVersionAvailable_title;Este disponibilă o nouă versiune
+newVersionAvailable_description;Am îmbunătățit aplicația. Te rugăm să o actualizezi pentru a continua să joci.
+newVersionAvailable_joinDiscord;Ce e nou? Intră pe Discord pentru mai multe informații.
+newVersionAvailable_toStore;Actualizează acum
+infobox_beginnerProtection_title;Extinde protecția pentru începători
+infobox_beginnerProtection_question;Confirmi că dorești să extinzi perioada de protecție pentru începători?
+infobox_beginnerProtection_description;Nu poți fi atacat, nu poți ataca și nu poți trimite resurse altor jucători cât timp ești în perioada de protecție pentru începători.
+sendResources_beginnersProtection;Atâta timp cât este activă protecția pentru începători, nu poți trimite resurse altor jucători.
+sendTroops_beginnersProtection;Atâta timp cât este activă protecția pentru începători, nu poți trimite trupe altor jucători.
+sendTroops_otherBeginnersProtection;Nu poți trimite trupe jucătorilor care au activă protecția pentru începători.
+buildingActivities_building_36;Capcane în producție
+tasks_collectAll;Colectează toate ({{INT}})
+auction_bidMinPlaceholder;min. {{INT}}
+auction_buttonBidMinimum;Oferta minimă necesară
+hero_adventures_available;Aventuri disponibile
+messages_freshDeskMessage_viewAndReplyInBrowser;Vizualizează și răspunde în browser
+messages_webViewRecommendation;Acest mesaj ar putea fi incomplet.\nRecomandăm deschiderea mesajului în browser.
+rateThisApp_popup_title;Îți place aplicația noastră?
+rateThisApp_popup_description;Dacă îți place aplicația, acordă-i un moment pentru evaluare.
+rateThisApp_popup_appreciatefeedback;Feedback-ul tău este important!
+rateThisApp_popup_btn_positive;Este excelentă!
+rateThisApp_popup_btn_negative;Mai necesită îmbunătățiri
+rearrange_or_demolish_building;Rearanjează sau demolează clădirea
+mainBuilding_buildingArrangement;Aranjarea clădirii
+mainBuilding_openRearrangeMode;Deschide modul de rearanjare
+mainBuilding_demolishBuildings;Demolează clădiri
+mainBuilding_openDemolishMode;Deschide modul de demolare
+mainBuilding_demolishBuildings_description;Trage și plasează clădirile pentru a le schimba poziția.
+rearrangeBuildingPopup_rearrangeDescription;Vrei să rearanjezi <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>?
+rearrangeBuildingPopup_buildingsRearranged;Clădiri rearanjate
+rearrangeBuildingPopup_buildingRearranged;{{buildingName|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>{{buildingLevel}}</color>
+confirmRearrangeBuildingPopup_header;Vrei să rearanjezi următoarea clădire?
+confirmRearrangeBuildingPopup_description;Rearanjează clădirile selectate din satul <b>{{villageName}}</b>.
+demolishBuildingPopup_title;Demolează clădire
+demolishBuildingPopup_description;Selectează clădirea pe care vrei să o demolezi
+demolishBuildingPopup_descriptionWithSelection;Vrei să demolezi <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>?
+demolishBuildingPopup_demolishLevel;Demolează nivel
+demolishBuildingPopup_demolishCompletely;Demolează complet
+confirmDemolishBuildingPopup_header;Vrei să demolezi <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color> imediat?
+confirmDemolishBuildingPopup_description;Demolează imediat clădirea selectată și o elimină din satul tău.\nAceastă acțiune este ireversibilă.
+characterCount;{{COUNT}}/{{MAX}} caractere
+survey_button_description_reward;Completează acest scurt sondaj pentru a ne ajuta să îmbunătățim aplicația Travian: Legends.\nVei primi o recompensă pentru ajutorul tău.
+cams_lobby_joinGameworld;Intră în lumea de joc
+cams_lobby_gameworld_inviteOnly;Doar pe bază de invitații
+cams_lobby_gameworld_inviteOnlyInfo;Această lume de joc este rezervată jucătorilor care dețin un cod special de invitație.
+cams_lobby_gameworld_inviteCodeEnter;Introdu codul de invitație
+cams_lobby_gameworld_inviteCodeInfo;Această lume de joc este rezervată jucătorilor care dețin un cod special de invitație.\nDacă ai unul, te rugăm să îl introduci pentru a intra în lumea de joc.
+cams_lobby_gameworld_inviteCodePlaceholder;De exemplu: eThbt5OLyZ8D5xjhUaBAba
+cams_lobby_gameworld_inviteCodeErrorCharacterCount;Codul de invitație este prea scurt. Te rugăm să introduci toate cele {{MAX}} caractere.
+cams_lobby_gameworld_inviteCodeCooldown;Cooldown cod invitație ({{TIME|Countdown}})
+timeCountDown;{{TIME|Countdown}}
+attestation_failed;Atestarea dispozitivului a eșuat!  Te rugăm să folosești un dispozitiv mobil pentru a juca.\nDacă problema persistă, folosește butonul de ajutor de mai jos pentru a contacta echipa de asistență!
+mainBuilding_demolishBuildings_notAvailable;Pentru a putea demola clădiri, ai nevoie de o Primărie de nivel {{INT}}.
+mainBuilding_demolishBuildings_demolishing;Demolează <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> la <b><color={{colorValue|TextColor}}>nivelul {{buildingLevel}}</color></b> în {{timestamp|Countdown}}.
+demolishBuildingPopup_demolishing;Demolează <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> la <b><color={{colorValue|TextColor}}>nivelul {{buildingLevel}}</color></b>
+allianz.hinweis_text_NoConfederacy;Conform etichetei diplomatice, trebuie să discuți cu o altă alianță și să inițiezi un proces de negociere înainte de a trimite o ofertă pentru un pact de neagresiune (PNA).
+regions_canBeSettled;Poate fi colonizată?
+regions_regionStatusNoColon;Status regiune
+regions_top5AlliancesPopulation;<b>Populația</b> primelor 5 alianțe
+regions_top5AlliancesVillages;<b>Satele</b> primelor 5 alianțe
+regions_neighboringRegions;Regiuni învecinate
+regions_regionPopulation;Populația regiunii
+regions_contested;Regiune disputată
+cams_lobby_gameworld_disabledAndNotSupported;Lumea de joc nu este disponibilă momentan prin aplicația mobilă.
+demolishBuildingPopup_impossible;Această clădire nu poate fi demolată.
+city_benefits;Beneficiile orașului
+city_benefits_threeAdditionalSlots;Trei sloturi suplimentare pentru construcții
+city_benefits_resourceFieldsLevel12;Permite dezvoltarea câmpurilor de resurse până la nivelul 12
+city_benefits_watchTowers;Îmbunătățește Zidul cu Turnuri de veghe
+city_upgradeToACity;Transformă {{villageName}} în oraș.
+city_culturePointsForNext;({{culturePoints}} puncte de cultură necesare pentru nivelul următor)
+city_upgradeVillage;Îmbunătățește satul
+city_confirm_upgradeVillage;Transformă în oraș
+city_confirm_header;Dorești să transformi {{villageName}} într-un oraș?
+city_confirm_description;Transformarea unui sat în oraș durează {{time}} și consumă unul dintre sloturile de expansiune.
+city_upgrading;{{villageId|VillageLink}} {{text}}
+city_upgraded;{{villageId|VillageLink}} este deja un oraș.
+combatSimulator_selectTarget;Selectează ținta
+mainMenu_goToLobby;Accesează lobby-ul
+mainMenu_yourPlayerProfile;Profilul tău de jucător
+plus.plusAttackWarningText;Atacurile asupra satului tău vor fi afișate în lista satelor. Exclusiv pe mobil: În fereastra satului, săgeata din dreapta pentru deschiderea listei satelor va fi evidențiată.
+production.crobBalanceTroopConsumptionAncientPower;Bonus putere antică
+filters_region_not_found;Regiunea nu există
+rallyPoint_troopsOverview_ownTroops_8;Trupe proprii în 
+rallyPoint_troopsOverview_ownTroops_9;Trupe proprii în 
+tradeOffice_merchantsCarryCapacity;Capacitatea de transport a negustorului:
+tradeOffice_tradeShipsCarryCapacity;Capacitatea de transport a navei de comerț:
+buildingActivities_building_48;Vindecarea trupelor
+playerDetails_victorPointsPerDay;{{PERDAY}} /zi
+allianz.numIncomingRaids;{{NUM_ATTACKS}} [NUM_ATTACKS=1:raid][NUM_ATTACKS>1:raiduri]
+allianz.numIncomingAttacks;{{NUM_ATTACKS}} [NUM_ATTACKS=1:atac][NUM_ATTACKS>1:atacuri]
+allianz.MerchantCapacityAndSpeedNew;Comerț
+alliance_regionalTabTop5Description;Regiunile în care alianța ta se află în top 5 după controlul teritorial.
+alliance_regionalTabTitle;Clasament regional: top 5
+alliance_regionalTabTop5Empty;- Nu se deține suficient control teritorial în nicio regiune -
+alliance_ShowDetails;Afișează detalii
+regions_withFactions_yourFactionHasMoreThan50PercentSecured;Alianța ta are >{{PERCENT}} control teritorial<br><br>Ai nevoie de o trezorerie pentru a activa puterea regională.
+wall_upgradesInProgress;Îmbunătățiri în curs
+extension_upgradeStarted;Îmbunătățirea a început cu succes!
+extension_constructionList;Lista de construcții
+upgradeLevel;Nivel îmbunătățire
+infoTab_upgradingToLevelForExtension;{{buildingName}} este în curs de trecere la nivelul {{level}}:
+infoTab_genericCurrentlyForExtension;Bonus curent pentru {{buildingName}}, inclusiv {{extensionName}}:
+infoTab_genericAtLevelForExtension;La nivelul {{a}} cu {{extensionName}} nivel {{b}}:
+ratioValuesNumeratorBold;<b>{{a}}</b>/{{b}}
+infoTab_productionCosts_title;Costuri de producție
+harbour_shipsInConstruction;Nave în construcție
+unitInfo_troopsCarriage;până la <b>{{INT}}</b> trupe
+unitInfo_velocityRaid;Pentru raiduri:
+city_benefits_resourceFieldsLevel12inCapital;Îmbunătățește câmpurile de resurse până la nivelul 12 (în capitală poți depăși acest nivel).
+infoTab_genericCurrentlyMoreExplicit;Bonus curent pentru {{buildingName}}:
+merchant_merchantOverview_noIncomingDeliveries;- Nu există transporturi în curs de sosire. -
+merchant_merchantOverview_noOutgoingDeliveries;- Nu există transporturi în curs de trimitere. -
+merchant_merchantOverview_incoming;În curs de sosire ({{INT}})
+merchant_merchantOverview_outgoing;În curs de trimitere ({{INT}})
+achievementQuests.achQuest_03_Territory_step_01_description;Trimite trupe pentru un atac normal sau un raid asupra unui sat Natar. Această misiune este îndeplinită imediat ce armata ajunge la destinație, chiar dacă este nimicită în luptă.<br><br>Punctele pentru această misiune pot fi obținute de {{NUMBER_OF_TASKS_PER_DAY}} ori pe zi.\n
+allianz.MerchantCapacityTitle_Harbours;Capacitate negustor/navă de comerț și bonus de viteză
+market_tradeRoutes_invalidTarget_Territory;Rutele comerciale pot fi stabilite doar către satele proprii.
+market_selectResources;Selectează resursele
+market_selectResources_requiredTradeShips;Nave de comerț necesare
+market_resourcesWillBeSendByTradeShip;Resursele vor fi transportate cu nave de comerț.
+manual.gid38_Territory;Hambarul extins are o capacitate de trei ori mai mare decât hambarul normal.<br><br>Această clădire poate fi construită doar dacă deții puterea antică Plan principal de depozitare.
+manual.gid39_Territory;Grânarul extins are o capacitate de trei ori mai mare decât grânarul normal.<br><br>Această clădire poate fi construită doar dacă deții puterea antică Plan principal de depozitare.\n
+harbour_noAvailableShips;Nu există nave ancorate în acest port.
+harbour_destroy_title;Distruge nave
+harbour_destroy_desc_title;Selectează tipul și numărul de nave pe care dorești să le distrugi.
+harbour_destroy_desc;Pot fi distruse doar navele ancorate aici și nu vei primi nicio resursă înapoi.
+harbour_destroy_timeNotice;Navele vor fi distruse imediat.
+harbour_destroy_selectedTotalAmount;Nave selectate: <b>{{AMOUNT}}</b>
+harbour_destroy_shipSelectTitle;<b>{{ShipID|TranslateSuffixFor|gid49.type_t}}</b> (<b>{{Amount}}</b> [Amount=1:navă ancorată][Amount>1:nave ancorate] aici)
+extension_fullyExtended;{{NAME}} sunt extinse complet.
+extension_willBeFullyExtended;{{NAME}} sunt în curs de extindere completă.
+layout.directLinkMarketplaceTrader;Negustori inactivi: {{INT}}/{{INT2}}
+UnitProduction_ViewBuildingList;Vezi lista clădirilor
+raidList_useRaidShipsInfo;Navele de raid sunt folosite automat când sunt disponibile. Dacă nu mai ai nave de raid, trupele tale vor călători în mod obișnuit.
+buildingActivities_maxReached;Valoare maximă atinsă
+buildingActivities_building_49;Nave în construcție
+buildingActivities_buildingAdditional_48;Nu există trupe rănite
+residence_expansion_villagesRatio;Sate: {{COUNT}}/{{MAX}}
+residence_expansion_slotFree;Slot neutilizat.
+residence_expansion_slotPrerequisites;Condiții prealanbile <b>{{BuildingID|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>nivel {{Level}}</color></b>
+residence_expansion_culturePointsPerDay;Producția zilnică de puncte de cultură
+search_region;Căutare regiune
+search_select_region;Selectează regiunea
+statistiken.progressionStepTitle_start_achieved;Serverul s-a deschis la {{VALUE}}
+statistiken.progressionStepTitle_serverEnd_locked;Serverul se va închide la {{VALUE}}
+filters_artefact_not_found;Artefactul nu există
+sendTroops_settlersChangeTribe;Pentru primele {{INT}} colonii, poți alege tribul satului pe care vrei să îl întemeiezii. Alege cu înțelepciune.
+gid17.nextTradingRoute;Următoarea rută comercială începe la <b>{{HOUR}}</b> și are nevoie de <b>{{MERCHANTS}}</b> [MERCHANTS>1:negustori][MERCHANTS=1:negustor].
+gid17.nextTradingRouteWithShips;Următoarea rută comercială începe la <b>{{HOUR}}</b> și are nevoie de <b>{{SHIPS}}</b> [SHIPS>1:nave de comerț][SHIPS=1:navă de comerț].
+market_tradeRoutes_merchants;[merchants>1:{{merchants}} negustori][merchants=1:{{merchants}} negustor]
+market_tradeRoutes_tradeShips;[tradeShips>1:{{tradeShips}} nave de comerț][tradeShips=1:{{tradeShips}} navă de comerț]
+market_tradeRoutes_repeats;{{repeats}} x
+market_tradeRoutes_usesShip;Folosește nave
+troopsCheckout_shipUseInfo;{{Distance}} parcele | {{ShipID|Bold}} | Economisește {{duration|Bold}} ore
+troopInfoPopup_shipsTitle;Nave staționate în sat
+language_nl-NL;Olandeză
+cropfinder_cropperType;Tip cropper:
+valueInBrackets;({{VALUE}})
+residence_settlementSlotsUsed;Sloturi de colonizare expansiune
+residence_settlementCPNeededForNextSlot;Puncte de cultură necesare pentru următorul slot de expansiune:
+gid27.ancient_power_detail_;{{INT}}
+artefact_effect_value;Efect: <b>{{EFFECT}}</b>
+ancientPower_overview;Puteri regionale
+ancientPower_no_ancientPower;Nu există nicio putere antică pe acest server
+ancientPower_tip_large;Puterile antice mari necesită o trezorerie de nivel <b>20</b> și afectează <b>toate satele tale</b>
+ancientPower_tip_small;Puterile antice mici necesită o trezorerie de nivel <b>10</b> și afectează doar <b>satul</b> în care sunt activate
+ancientPower_tip_nearby;Puteri antice în zona din jurul satului {{villagenamelong|Bold}}
+ancientPower_stored_title;Puteri regionale asigurate prin alianță
+ancientPower_stored_noContent;Nu există regiuni asigurate de alianța ta
+ancientPower_stored_nextFree;Următoarea activare gratuită este disponibilă în: [isFree=0:<color={{colorValue|TextColor}}>]{{timeStamp|Countdown?Bold}}[isFree=0:</color>]
+ancientPower_stored_notActivatable;Nu se poate activa nicio putere antică.
+ancientPower_stored_activated;Putere antică activată.
+ancientPower_stored_alreadyActive_account;Ai deja o putere antică care afectează toate satele atunci când este activă.
+ancientPower_stored_alreadyActive_village;Ai deja o putere antică care afectează acest sat atunci când este activă.
+ancientPower_stored_alreadyActive;Această putere antică este deja activată.
+filters_ancientPower_not_found;Puterea antică nu există
+regions_withFactions_yourAllianceHasMoreThan50PercentSecured;Alianța ta are >{{PERCENT}}% control teritorial.<br><br>Ai nevoie de o trezorerie pentru a activa puterea regională.
+language_en-NT;Limba dezvoltatorilor
+settings_notNow;Nu acum
+settings_dontAskAgain;Nu mai întreba.
+cams_lobby_gameworld_lastPlayedTime;{{TIME}} ore
+cams_settings_DirectLoginTitle;Conectare directă la lumea de joc
+cams_settings_DirectLoginInfo;Sari peste procesul de selecție a lumii de joc din lobby-ul Legends și conectează-te la cea mai recentă lume de joc în care ai jucat direct când deschizi aplicația.
+cams_settings_DirectLoginActive;Conectarea directă este activată
+cams_settings_DirectLoginInactive;Conectarea directă este dezactivată
+cams_directLoginPopUp_Info;Vrei să te conectezi la lumea ta de joc direct când pornești aplicația?
+cams_directLoginPopUp_youCanChange;Îți poți schimba alegerea în orice moment în setările lobby-ului.
+cams_directLoginPopUp_Accept;Da, conectează-mă direct
+language_ro-RO;Română
+language_hu-HU;Maghiară
+language_ar-AE;Arabă
+autoLoginFailed.;Autentificarea automată a eșuat.
+needInternetToPlay;Ai nevoie de o conexiune la internet pentru a juca. Te rugăm să verifici conexiunea și să încerci din nou.
+mapCellInfoWindow_removeFromLists;Elimină din toate listele
+removeFromListsPopup_Title;Vrei să elimini {{TARGETNAME}} din {{INT}} liste de raiduri?
+removeFromListsPopup_Description;Vei putea adăuga ținta în mod individual în listele de raiduri ulterior.
+removeFromListsPopup_ConfirmButton;Elimină ținta
+social_continueWith;Sau continuă cu:
+social_loginWith;Sau conectează-te cu:
+social_backToRegistration;Înapoi la înregistrare
+social_createAccountTitle;Creează cont de lobby Legends
+social_errorTitle_NoEmailProvided;Lipsă permisiune e-mail
+social_errorMsg_NoEmailProvided;Pentru a începe să joci Travian: Legends, trebuie să ne acorzi <b>permisiunea de a-ți accesa adresa de e-mail.</b>
+social_errorInfo_NoEmailProvided;Te rugăm să reîncerci cu permisiunile configurate corect sau să alegi o metodă alternativă de înregistrare.
+social_errorTitle_AlreadyExists;E-mail deja utilizat
+social_errorMsg_AlreadyExists;Adresa de e-mail furnizată este deja utilizată pentru un cont de lobby Travian: Legends.
+social_errorInfo_AlreadyExists;Te rugăm să folosești adresa de e-mail asociată contului tău pentru a te conecta.
+social_acceptTOS;Făcând clic pe „Confirmă”, accepți <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">Termenii și condițiile generale</link></style> și confirmi că ai luat la cunoștință <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">Informațiile privind dreptul de retragere</link></style> și <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">Politica de confidențialitate</link></style>.
+linkNotWorking;Link-ul nu funcționează
+linkNotWorkingDescription;Se pare că link-ul nu este funcțional în acest moment în aplicația Travian: Legends. Încearcă să-l deschizi în browserul tău web.
+openLinkInBrowser;Deschide link-ul în browser
+settings_language_useArabicNumerals_activated;Utilizarea cifrelor arabe orientale este activată
+settings_language_useArabicNumerals_deactivated;Utilizarea cifrelor arabe orientale este dezactivată
+artefact_inventory_active_empty;Nu s-a activat niciun artefact
+social_errorTitle_Unknown;Eroare necunoscută
+social_errorMsg_Unknown;A survenit o eroare necunoscută. Te rugăm să încerci din nou.
+loadingScreen_text_01;Eroul tău își aranjează părul; te rugăm să aștepți.
+loadingScreen_text_02;Grânarul este plin. Sătenii au început să folosească buzunarele pentru a depozita cereale.
+loadingScreen_text_03;Ambasada găzduiește un eveniment exclusiv, rezervat exclusiv membrilor corpului diplomatic.
+loadingScreen_text_04;Adunarea s-a transformat într-o zonă de picnic, unde trupele se delectează cu sandvișuri.
+loadingScreen_text_05;Fierarul făurește o sabie... din spaghete.
+loadingScreen_text_06;Maeștrii constructori examinează schița... cu susul în jos.
+loadingScreen_text_07;Natarii s-au înscris în clubul de lectură din sat. Nimeni nu știe cum să citească runele antice.
+loadingScreen_text_08;Cercetașii numără trupele inamice... dar au rămas fără degete.
+loadingScreen_text_09;Minunea Lumii este atacată de porumbei. Se trimite echipa de curățenie.
+loadingScreen_text_10;Membrii unității Slave Militia solicită formarea unui sindicat – pregătește-te pentru greve.
+loadingScreen_text_11;Trupele refuză să atace până când cineva le explică cum funcționează simulatorul de luptă.
+loadingScreen_text_12;Sătenii s-au oprit din lucru pentru a privi lupta dintre două găini.
+loadingScreen_text_13;Catapultele tale sunt în dispută referitor la clădirea ce ar trebui vizată inițial.
+loadingScreen_text_14;Îți cerem îngăduință: eroul a optat pentru Căile Ferate Române în detrimentul unui cal.
+loadingScreen_text_15;Beciul ascunde nu doar resursele, ci și bârfele satului.
+loadingScreen_text_16;Cazarma găzduiește un spectacol de talente – instruirea se amână.
+loadingScreen_text_17;Zidul tău este aproape gata. Se așteaptă doar uscarea vopselei.
+loadingScreen_text_18;Legionarii au cerut o pauză de cafea înainte de marș.
+loadingScreen_text_19;Dacii le explică romanilor ce este o palisadă – au trecut 3 ore.
+loadingScreen_text_20;Se aplică metode neconvenționale de motivare a negustorilor pentru livrări accelerate.
+loadingScreen_text_21;Eroul tău urmează un curs de echitație – s-ar putea să dureze ceva timp.
+loadingScreen_text_22;Deplasarea negustorilor este obstrucționată de o căruță ce se mișcă extrem de încet.
+loadingScreen_text_23;Liderii Alianței elaborează o strategie de luptă... prin metode de pictură tactilă.
+loadingScreen_text_24;Grânarul este plin de prăjituri – un exemplu remarcabil de management al resurselor.
+loadingScreen_text_25;Operațiunea de spionaj a fost compromisă – Heimdall are ceva în ochi.
+changeAccountNameSubtitle;Schimbă numele de utilizator și/sau eticheta.
+changeAccountNamePleaseNote;Te rugăm să reții că, după ce îți schimbi numele de cont, trebuie să aștepți {{DAYS}} [DAYS>1:zile][DAYS=1:zi] înainte de a-l putea schimba din nou.
+changeAccountNameWaiting;Este necesară o perioadă de așteptare înainte de a putea efectua o nouă schimbare a numelui.
+changeAccountNameUpdated;Nume cont actualizat
+changeAccountNameUpdatedSubtitle;Numele contului tău a fost actualizat cu succes la: <b>{{playerName}}</b>
+alliance_top10Title;Top 10 intern al Alianței
+gameworldCalendarNoGameworld;Nu s-au găsit lumi de jocuri în perspectivă. \nAcestea pot fi în curs de încărcare sau neplanificate.
+gameworldCalendar_title;Calendarul lumilor de joc
+valueWithModifierBefore;{{value|Round|2}}x
+goldShop_purchaseCanceled;Achiziție anulată!
+goldShop_pendingRestored;Achiziția ta anterioară a fost restabilită cu succes.
+hero_consumablePopup_healthByOintment;Sănătate câștigată per alifie:
+unknown;?
+serverSelection_gameworldSpeed_short;{{INT}}x
+gameworldCalendarDetails_title;Detalii lume de joc
+gameworldCalendarDetails_shareLink;Partajează link pentru lumea de joc
+gameWorldEndCondition;Condiție pentru încheierea lumii de joc
+gameWorldEndCondition_WonderOfTheWorld;Minunea Lumii {{Level}}
+gameWorldEndCondition_VictoryPoints;Puncte de victorie
+gameWorldRestriction_InvitationCode;Această lume de joc este rezervată jucătorilor care dețin un cod special de invitație.
+gameWorldRestriction_MobilePlayers;Această lume de joc este accesibilă doar pentru jucătorii de pe mobil.
+gameWorldSpecial;Aceasta este o lume specială disponibilă doar pentru o perioadă limitată și cu caracteristici diferite față de lumile de joc clasice.
+gameWorldUndefinedDetails;Încă nu au fost definite toate detaliile lumii de joc. Vei primi o notificare în lobby-ul tău odată ce acestea au fost actualizate.
+bonusValueWithPercentNoSpace;+{{value}}%
+startDate;Data de start
+startTime;timp start
+UTC+1;(UTC+1)
+goldShop_GoldPromotion;Promoție Aur
+auction_FeePopupTitle;Comision de participare la licitație
+auction_FeePopupText;Trebuie să plătești o comision de {{value}}% pentru tranzacțiile de la casa de licitații. Suma pe care o vei primi este prețul de vânzare din care se scade comisionul de participare la licitație.
+auction_FeePopupExample;Exemplu de calcul
+auction_FeePopupSalePrice;Preț de vânzare
+auction_FeePopupFee;Comision de participare la licitație ({{value}}%)
+auction_FeePopupPayout;Plată
+auction_sellHouseFeeInfo;Suma pe care o vei primi este prețul de vânzare din care se scade comisionul de participare la licitație de {{value}}%.
+gold_action_finishImmediately;Termină imediat
+mapCellInfoWindow_villageReports;Afișează rapoartele satului
+hero_crafting_title_refine;Refinează echipamentul
+hero_crafting_title_smelt;Topește echipamentul
+hero_crafting_title_forge;Forjează echipamentul
+hero_crafting_title_reforge;Reforjează echipamentul
+hero_crafting_action_refine;Rafinează
+hero_crafting_action_smelt;Topește
+hero_crafting_action_forge;Forjează
+hero_crafting_action_takeMaterials;Ia ({{INT}}/{{MAX}}) materiale
+hero_crafting_action_takeAllMaterials;Ia materialele
+hero_crafting_action_reforge;Reforjează
+hero_crafting_action_take;Ia
+hero_crafting_action_pick;Alege articolul
+hero_crafting_action_equip;Creează
+hero_crafting_action_buy_material;Cumpără material
+hero_crafting_action_buy_item;Cumpără obiect
+hero_crafting_action_craft_material;Topește materialul
+hero_crafting_action_moveToInventory;Accesează inventarul
+hero_crafting_action_select_item;Selectează
+hero_crafting_action_remove_item;Șterge
+hero_crafting_action_error_equipment;Obiectul trebuie să fie echipament de erou.
+hero_crafting_action_error_rarity;Obiectele trebuie să aibă aceeași raritate.
+hero_crafting_action_error_category;Obiectele trebuie să aparțină aceleiași categorii de echipament.
+hero_crafting_action_error_id;Obiectele trebuie să fie identice.
+hero_crafting_action_error_missingItem;Unul sau mai multe dintre articolele pe care le-ai selectat nu mai sunt disponibile.
+hero_crafting_refine_tip;Obiectele epice pentru eroi pot fi rafinate folosind orice alt obiect epic pentru eroi din aceeași categorie.
+hero_crafting_refine_tip_error;Nu ai niciun obiect pentru erou care să poată fi rafinat. Obține obiecte din aventuri sau cumpără-le din casa de licitații și îmbunătățește-le prin rafinare.
+hero_crafting_smelt_info;Ia {{INT}} materiale [INT>1:s] acum sau așteaptă și vei primi {{MAX}}.
+hero_crafting_reforge_text;Reforjează echipamentul pentru a crea un alt obiect, potențial cu raritate și calitate diferite.\nDupă reforjare, ai opțiunea să păstrezi obiectul obținut sau să îl reforjezi din nou.\nAtenție: După reforjare, obiectul din fiecare etapă ulterioară de reforjare va dispărea definitiv și nu va mai putea fi recuperat.
+inventoryItem_quality_title;Calitate
+inventoryItem_rarity_title;Raritate
+inventoryItem_rarity_quality_title;Raritate și calitate
+inventoryItem_rarity_common;Obișnuit
+inventoryItem_rarity_uncommon;Neobișnuit
+inventoryItem_rarity_rare;Rar
+inventoryItem_rarity_epic;Epic
+inventoryItem_rarity_legendary;Legendar
+search_for_village;Căutare în sat
+search_for_player;Căutare jucător
+villageList_EditMode;Mod editare
+villageList_MaxGroupAmount;S-a atins numărul maxim de grupuri de sate.
+hero_crafting_action_error_material;Obiectul trebuie să fie un material.
+villageList_ReorderError;Țintă nevalidă
+textMatchingInput_Title;Confirmă apăsând „{{WORD}}”
+hero_inventory_category_empty;- Nu există articole în această categorie -
+hero_crafting_action_refine_success;Echipament rafinat
+hero_crafting_action_smelt_success;Echipament topit
+hero_crafting_action_forge_success;Echipament forjat
+hero_crafting_result_item_equipped;Obiect echipat
+hero_crafting_result_item_taken;Obiect mutat în inventar
+hero_crafting_result_material_taken;Material mutat în inventar
+hero_crafting_action_error_quality;Obiectele trebuie să fie de aceeași calitate.
+hero_crafting_action_error_epic;Trebuie să fie un alt obiect epic din aceeași categorie și de aceeași calitate.
+inventoryItem_rarity_none;Fără raritate
+dailyQuests_rewardOverview_short;Informații generale despre recompense
+avatar_confirmation_title_delete;Șterge avatar
+avatar_confirmation_header_delete;Dorești să-ți ștergi avatarul?
+avatar_confirmation_infoText_delete;După inițierea procesului de ștergere, avatarul tău va fi șters definitiv în <b>3 zile</b>.\nUn avatar șters nu mai poate accesa licitațiile sau biroul de schimb.\nPoți anula procesul de ștergere oricând din această pagină.
+avatar_confirmation_requiredWord_delete;şterge
+avatar_confirmation_title_respawn;Respawnează avatar
+avatar_confirmation_header_respawn;Dorești să-ți respawnezi avatarul?
+avatar_confirmation_infoText_respawn;Această acțiune va șterge toate progresele pe care le-ai înregistrat până în acel moment și va plasa satul tău inițial într-o locație nouă pe hartă.\n\nTot Aurul cumpărat va fi transferat automat.
+avatar_confirmation_requiredWord_respawn;respawnează
+settings_app_title;Toate lumile de joc
+settings_app_Animations_title;Animații
+settings_app_Animations_description;Alege animațiile pe care dorești să le vezi în aplicație.
+settings_app_Animations_activated;Animația Nor pentru afișarea satului/resurselor este activată
+settings_app_Animations_deactivated;Animația Nor pentru afișarea satului/resurselor este dezactivată
+settings_app_NightMode_title;Modul Nocturn
+settings_app_NightMode_description;Locuitorii satului aprind torțele, iar flăcările cuptoarelor scânteie sub lumina palidă a stelelor de pe cerul nocturn.
+settings_app_NightMode_activated;Modul Nocturn este activat
+settings_app_NightMode_deactivated;Modul Nocturn este dezactivat
+settings_app_WinterMode_title;Modul Iarnă
+settings_app_WinterMode_description;Zăpada coboară în linișe, învelind satul într-o seninătate înșelătoare, în care orice foșnet pare să se evapore în răceala atmosferei.
+settings_app_WinterMode_activated;Modul Iarnă este activat
+settings_app_WinterMode_deactivated;Modul Iarnă este dezactivat
+settings_app_VillagePanning_title;Deplasare prin sat / câmp de resurse
+settings_app_VillagePanning_description;Poți naviga prin panoul de vizualizare a satului și prin câmpurile de resurse.
+settings_app_VillagePanning_activated;Deplasarea este activată
+settings_app_VillagePanning_deactivated;Deplasarea este dezactivată
+settings_app_PushNotifications_title;Notificări push generale
+settings_app_PushNotifications_description;Fii la curent cu noutățile despre aplicație și joc prin notificări push.
+settings_app_PushNotifications_activated;Notificarea de start a lumii de joc este activată
+settings_app_PushNotifications_deactivated;Notificarea de start a lumii de joc este dezactivată
+settings_app_EnergySaving_title;Modul Consum Redus
+settings_app_EnergySaving_description;Conservă bateria dispozitivelor tale cu o rată FPS redusă.\nActivarea modului Consum Redus poate provoca unele întârzieri vizuale în timpul folosirii aplicației.
+settings_app_EnergySaving_activated;Modul Consum Redus este activat
+settings_app_EnergySaving_deactivated;Modul Consum Redus este dezactivat
+settings_app_DataSaving_title;Modul Economisire Date Mobile
+settings_app_DataSaving_description;Economisește traficul de date/banda disponibilă prin limitarea cererilor către server.\nActivarea modului de Economisire Date Mobile poate rezulta în timpi de reîmprospătare mai lungi pentru datele din joc.
+settings_app_DataSaving_activated;Modul Economisire Date Mobile este activat
+settings_app_DataSaving_deactivated;Modul Economisire Date Mobile este dezactivat
+auction_FilterType;Tip obiect
+auction_bidTooLow;Ofertă prea mică.
+villageList_Delete_Title;Șterge grup de sate
+villageList_Delete_Button;Șterge grup
+villageList_Delete_Description;Vrei să ștergi acest grup de sate?
+villageList_Delete_Description2;Satele din acest grup nu vor fi afectate.
+gameworldNews_title;Știri și actualizări
+moreInformation;Mai multe informaţii
+remainingGold;Aur rămas: {{goldIcon|Sprite}} {{goldAmount}}
+messages_addEmoji_title;Adaugă emoji-uri
+messages_select_emojis;Selectează emoji-uri
+cams_resend_email_wait_error;Te rugăm să aștepți înainte de a trimite un alt e-mail.
+cams_settings_accountDeletion_infoGold;După ștergerea avatarului, vei primi un e-mail în care ți se va explica cum să transferi Aurul rămas către un alt avatar.\n<b>Atenție:</b>  Aurul rămas poate fi transferat numai către anumite lumi de joc.
+cams_changeMail_title;Schimbă adresa de e-mail
+cams_changeMail_description;Pentru a schimba adresa de e-mail, trebuie să ai acces atât la adresa veche, cât și la cea nouă.
+cams_changeMail_socialHint;Schimbarea adresei de e-mail nu va avea impact asupra  credențialelor tale de conectare prin Facebook, Google sau Apple.
+cams_changeMail_cantAccess;Nu ai acces la adresa ta de e-mail?
+cams_changeMail_sentVerification;Am trimis un e-mail de verificare la: {{mail}}
+cams_changeMail_checkInbox;Te rugăm să verifici inbox-ul și să urmezi instrucțiunile pentru a continua.
+cams_changeMail_verificationCode;Cod de verificare prin e-mail:
+cams_changeMail_verifyButton;Verifică e-mail
+cams_changeMail_enterNew_description;Introdu noua adresă de e-mail mai jos. Vom trimite un e-mail de verificare la această adresă.
+cams_changeMail_enterNew_description2;Urmează instrucțiunile din e-mail pentru a finaliza modificarea.
+cams_changeMail_enterNew_input;Introdu noua adresă de e-mail:
+cams_changeMail_enterNew_input_placeholder;Noua adresă de e-mail
+cams_changeMail_enterNew_button;Schimbă adresa de e-mail
+cams_changeMail_done_title;E-mail actualizat
+cams_changeMail_done_description1;Noua ta adresă de e-mail este {{mail}}
+cams_changeMail_done_description2;Vei fi deconectat(ă) automat și redirecționat(ă) către pagina de conectare. Te rugăm să folosești noua adresă de e-mail pentru a te conecta.
+cams_changeMail_done_redirecting;Se redirecționează către pagina de login {{time}}...
+bonusValue;+ {{value}}
+value;{{value}}
+ratioValues_Colon;{{a}}:{{b}}
+genericValue;{{VALUE}}
+enterAmount;Inserează cantitatea
+symbol_minus;-
+applyFilter;Aplică filtrul
+resetFilter;Resetează filtrul
+rallyPoint_troopsOverview_outgoingMission_50_heroCentricAdventure;Explorând aventura
+rallyPoint_troopsOverview_returningFromAdventure_heroCentricAdventure;Revenind din aventură
+silverExchangePopup_AvailableSilver;Argint disponibil
+silverExchangePopup_SilverStatus;În prezent, {{AMOUNT|LongNumber}} din argintul tău este blocat în licitații active.
+silverExchangePopup_SilverError;Nu ai suficient argint pentru această acțiune.
+silverExchangePopup_GoldError;Nu ai suficient Aur pentru această acțiune.
+hero.status50_heroCentricAdventure;Eroul tău este pe cale să pornească într-o aventură.
+inventoryItem_quality_1;Calitate 1
+inventoryItem_quality_2;Calitate 2
+inventoryItem_quality_3;Calitate 3
+inventoryItem_rarity_common_headGear;Echipament pentru cap obișnuit
+inventoryItem_rarity_uncommon_headGear;Echipament pentru cap neobișnuit
+inventoryItem_rarity_rare_headGear;Echipament pentru cap rar
+inventoryItem_rarity_epic_headGear;Echipament pentru cap epic
+inventoryItem_rarity_legendary_headGear;Echipament pentru cap legendar
+inventoryItem_rarity_common_utility;Utilitate obișnuită
+inventoryItem_rarity_uncommon_utility;Utilitate neobișnuită
+inventoryItem_rarity_rare_utility;Utilitate rară
+inventoryItem_rarity_epic_utility;Utilitate epică
+inventoryItem_rarity_legendary_utility;Utilitate legendară
+inventoryItem_rarity_common_weapon;Armă obișnuită
+inventoryItem_rarity_uncommon_weapon;Armă neobișnuită
+inventoryItem_rarity_rare_weapon;Armă rară
+inventoryItem_rarity_epic_weapon;Armă epică
+inventoryItem_rarity_legendary_weapon;Armă legendară
+inventoryItem_rarity_common_armour;Armură obișnuită
+inventoryItem_rarity_uncommon_armour;Armură neobișnuită
+inventoryItem_rarity_rare_armour;Armură rară
+inventoryItem_rarity_epic_armour;Armură epică
+inventoryItem_rarity_legendary_armour;Armură legendară
+inventoryItem_rarity_common_boots;Cizme obișnuite
+inventoryItem_rarity_uncommon_boots;Cizme neobișnuite
+inventoryItem_rarity_rare_boots;Cizme rare
+inventoryItem_rarity_epic_boots;Cizme epice
+inventoryItem_rarity_legendary_boots;Cizme legendare
+inventoryItem_rarity_common_consumable;Consumabil
+inventoryItem_rarity_uncommon_consumable;Consumabil neobișnuit
+inventoryItem_rarity_rare_consumable;Consumabil rar
+inventoryItem_rarity_epic_consumable;Consumabil epic
+inventoryItem_rarity_common_horse;Cal
+inventoryItem_rarity_uncommon_horse;Cal neobișnuit
+inventoryItem_rarity_rare_horse;Cal rar
+inventoryItem_rarity_epic_horse;Cal epic
+inventoryItem_rarity_legendary_horse;Cal legendar
+inventoryItem_rarity_common_material;Consumabil
+inventoryItem_rarity_uncommon_material;Consumabil neobișnuit
+inventoryItem_rarity_rare_material;Consumabil rar
+inventoryItem_rarity_epic_material;Consumabil epic
+search_item;Caută accesoriu
+search_select_item;Selectează accesoriu
+avatar_confirmation_infoText_delete_goldBough;După inițierea procesului de ștergere, va dura <b>cel puțin trei zile</b> pentru a-ți șterge avatarul, deoarece acesta a fost folosit recent pentru a cumpăra Aur.\nUn avatar șters nu mai poate accesa licitațiile sau biroul de schimb.\nPoți anula procesul de ștergere oricând din această pagină.
+combatSimulator_addItemEffect;Adaugă un efect pentru obiect
+combatSimulator_editItemEffect;Modifică efectul obiectului
+addItemEffect_title;Adaugă efect la accesoriul eroului
+addItemEffect_description;Adaugă efecte separate pentru a reflecta bonusurile individuale ale tuturor accesoriilor posibile ale eroului.
+addItemEffect_importHeroEquipment;Importă propriul echipament pentru erou
+addItemEffect_importHeroEquipment_success;Accesorii pentru erou importate
+addItemEffect_selectEffect;Selectează un efect pentru obiect
+addItemEffect_selectItem;Selectează un obiect
+addItemEffect_selectMagnitude;Selectează magnitudinea
+addItemEffect_selectUnit;Selectează unitatea
+addItemEffect_missingMagnitude;Magnitudine lipsă
+addItemEffect_effect_2;Daune reduse
+addItemEffect_effect_6;+ Puncte de sănătate suplimentare zilnic
+addItemEffect_effect_12;+ Atac și apărare sporite pentru unități specifice
+addItemEffect_effect_13;+ Putere de luptă sporită
+cams_newMail_title;Noua adresă de e-mail
+cams_verifyNewMail_title;Verifică noua adresă de e-mail
+cams_verifyCurrentMail_title;Verifică adresa de e-mail curentă
+auction_notEnoughSilver;Nu ai suficient argint.
+auction_itemGroups;Grupuri de accesorii
+auction_unknown;?
+auction_sortingOption_itemName;Denumirea obiectului
+auction_sortingOption_bidCount;Numărul de oferte
+auction_sortingOption_finishedAt;Finalizată în
+auction_sortingOption_highestBid;Cea mai mare ofertă
+auction_sortingOption_highestBidder_player;Cel mai mare ofertant (jucător)
+auction_sortingOption_highestBidder_alliance;Cel mai mare ofertant (alianță)
+auction_sortingOption_auctionAmount;Numărul licitațiilor curente
+auction_sortingOption_nextFinishedAt;Următoarea finalizată în
+auction_sellingPrice;Prețul de vânzare
+auction_sellingPrice_lowest;Cel mai mic
+auction_sellingPrice_average;Medie
+auction_sellingPrice_highest;Cel mai mare
+auction_result_won;<color={{colorValue|TextColor}}>Câștigată</color>
+auction_result_lost;<color={{colorValue|TextColor}}>Supralicitat</color>
+auction_sellingPrice_averagePrice;Preț mediu
+auction_bidProcessTitle;Procesul de licitație
+auction_bidProcessDescription1;Poți licita pentru articolele care te interesează.
+auction_bidProcessDescription2;Trebuie să licitezi cel puțin suma minimă pentru a depăși oferta curentă.
+auction_maxBidFeatureTitle;Opțiunea „Ofertă maximă”
+auction_maxBidFeatureDescription1;Poți introduce bugetul maxim pentru un articol.
+auction_maxBidFeatureDescription2;Sistemul va licita automat pentru tine până la limita maximă stabilită.
+auction_maxBidFeatureDescription3;Oferta ta crește doar cât este necesar pentru a rămâne cel mai bun licitant.
+auction_maxBidFeatureDescription4;Licitația continuă până când câștigi sau ești întrecut de o ofertă care depășește bugetul tău maxim.
+auction_auctionDurationTitle;Durata licitației
+auction_auctionDurationDescription1;Dacă timpul rămas până la încheierea licitației este mai mic de {{DURATION|Duration}}, durata se prelungește până la {{DURATION|Duration}} când se schimbă cel mai mare licitant.
+auction_auctionWinningTitle;Câștigătorul
+auction_auctionWinningDescription1;Cel care a licitat cel mai mult la finalul licitației câștigă articolul.
+auction_auctionFinished;Licitația s-a încheiat deja.
+auction_wasJustOutbid;În prezent, nu ești cel mai mare licitant.
+auction_currentHighestBidder;Cel mai mare licitant curent
+auction_currentHighestBid;Cea mai mare ofertă curentă
+auction_yourMaximumBid;Oferta ta maximă
+auction_showFinished;Afișează finalizată
+auction_deleteAllFinished;Șterge toate cele finalizate
+auction_startedAt;Început: {{TIME|DateTime}} | În desfășurare
+auction_canceled;Anulat
+auction_finished;complet
+auction_finishedAt;Finalizată la: {{TIME|DateTime}}
+auction_itemAuction_title;Licitație de articole
+auction_itemAuction_info;Dă clic pe un articol din inventarul tău pentru a începe o licitație. Alți jucători pot licita pentru el. O licitație durează maximum {{INT}} ore.
+auction_whatHappensNext_title;Ce se întâmplă mai departe
+auction_whatHappensNext_info1;Licitantul cu oferta cea mai mare cumpără automat articolul la expirarea timpului.
+auction_whatHappensNext_info2;Vei primi argint când se realizează vânzarea.
+auction_whatHappensNext_info3;Vei primi notificare când articolul tău va fi vândut.
+auction_error_cannotSell;Acest obiect nu poate fi vândut în casa de licitații.
+auction_error_onlyHorse;Nu poți vinde singurul tău cal.
+auction_sellItem;Vinde obiect
+auction_sales;Vânzări
+auction_selectBatchSize;Selectează dimensiunea lotului
+auction_selectBatchSize_batches;loturi de <b>{{COUNT}}x</b> articole
+auction_selectFilter_title;Selectează filtrul
+goldShop_upTo;Până la
+shopPromotion_openShop;Deschide magazinul
+shopPromotion_goldPromotionTitle;Promoție Aur activă
+shopPromotion_limitedTimeOffer;Ofertă cu durată limitată!
+shopPromotion_goldPromotionDescription;Acum primești mai mult Aur pe banii tăi.
+shopPromotion_timeRemaining;Timp rămas:
+hero_adventures_watchAdReduceDuration_title;Scurtează durata aventurii cu {{AMOUNT}}%
+hero_adventures_watchAdReduceDuration_description;Vizionează un videoclip pentru a reduce durata <b>următoarei</b> aventuri a eroului tău.
+hero_adventures_watchAdIncreaseDanger_title;Mărește dificultatea aventurii la nivel ridicat
+hero_adventures_watchAdIncreaseDanger_description;Vizionează un videoclip pentru a crește dificultatea <b>următoarei aventuri normale</b> la nivel ridicat și a obține mai mult XP pentru erou.
+hero_adventures_watchAdActive;Activ pentru următoarea aventură.
+hero_adventures_watchAdActiveNormal;Activ pentru următoarea aventură normală.
+hero_crafting_action_error_nonEpic;Trebuie să fie un obiect identic cu aceeași raritate și calitate.
+berichte.adventure_heroCentric;{{VILLAGE_NAME}} pornește într-o aventură
+reports_share_notShareable;Acest raport nu poate fi partajat.
+dailyQuests_dailyMaxReached;Ai atins limita zilnică
+achievementQuests.DailyQuest_12_description;Deschide jocul într-un browser pe computer și vizionează un videoclip.
+achievementQuests.DailyQuest_12_additionalInformation;www.travian.ro
+achievementQuests.DailyQuest_13_description;De exemplu, urmărește un videoclip pentru a-ți îmbunătăți clădirile mai repede.
+achievementQuests.DailyQuest_13_additionalInformation;Sau dă clic pe „Urmărește videoclipul” ca să vezi direct un videoclip, fără alte beneficii.
+addItemEffect_effect_11;+ Putere de atac crescută împotriva Natarilor
+auction_started;Licitația a început
+auction_error_batchSize;Nu sunt suficiente articole de vânzare.
+auction_graph_notEnoughData;Date insuficiente
+auction_emptyInventory;- În prezent nu ai articole de vânzare -
+RelativeTime_2_word;[data>1:{{data}} ore][data<2:{{data}} oră]
+gold_action_halveDuration;Înjumătățește durata
+goldShop_advantage_Value_Duration;<b>+{{VALUE}}%</b> pentru <b>[DURATION>6:{{DURATION}} zile][DURATIION<7:{{DURATION|Mult|24}} ore]</b>
+goldShop_advantage_Value_Active;<b>+{{VALUE}}%</b> activ pentru:
+goldShop_upgrade;Modernizează
+goldShop_advantage_stillActiveFor;În continuare activ pentru:
+goldShop_advantage_stillActiveFor_Value;{{DURATION}} până la ora {{TIME}}
+goldShop_advantage_videoFeatureOnCD;Poți activa bonusul video o singură dată pe zi.\nResetare zilnică peste: {{TIMESTAMP|Countdown}}
+goldShop_advantage_popup_mainInfoHeader_ProductionboostLumber;Sporește <b>producția de lemn</b> în toate satele tale.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostClay;Sporește <b>producția de lut</b> în toate satele tale.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostIron;Sporește <b>producția de fier</b> în toate satele tale.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostCrop;Sporește <b>producția de hrană</b> în toate satele tale.
+goldShop_advantage_popup_mainInfoBody;Bonusul se aplică la producția de bază și la toate bonusurile suplimentare.
+goldShop_advantage_popup_premiumInfo;Poți  activa bonusul cu Aur și primi un bonus de producție +{{VALUE}}%.\nPoți activa extensia automată pentru ca bonusul să fie permanent.
+goldShop_advantage_popup_videoFeatureInfo;Sau poți viziona un videoclip scurt și primi bonusul de producție redus în valoare de +{{VALUE}}%.\n<b>Bonusul video poate fi activat o singură dată pe zi pentru fiecare resursă.</b>
+goldShop_advantage_popup_upgradeInfo;Poți oricând face upgrade la bonusul de producție de +{{VALUE}}% cu Aur.
+goldShop_advantage_upgradePopupInfo1;Upgrade-ul bonusului de resurse va anula bonusul activ curent.
+goldShop_advantage_upgradePopupInfo2;În schimb, vei primi +{{VALUE}}% pentru [DURATION>6:{{DURATION}} zile][DURATION<7:{{DURATION|Mult|24}}].
+goldShop_advantage_upgradePopup_title;Bonus pentru upgrade
+productionOverview_Bonus;+{{VALUE}}% producție
+hero_adventures_watchAdReduceDuration_toast;Durata aventurii: redusă.
+hero_adventures_watchAdIncreaseDanger_toast;Dificultatea aventurii: crescută.
+hero_consumablePopup_amountEquippedAfter;Număr echipat după:
+hero_consumablePopup_amountEquippedAfterUse;Număr echipat după utilizare:
+hero_consumablePopup_amountLeftInInventory;Număr rămase în inventar:
+cams_recover_password_cooldown;Te rugăm să aștepți {{VALUE}}
+cams_settings_changePassword_cooldown;Te rugăm să aștepți {{VALUE}}
+infobox_productionBoost_upgradeButton;Modernizează
+infobox_productionBoost_upgradeBonusWithGold;Fă upgrade și prelungește bonusul tău cu Aur pentru a obține  +{{PREMIUM_PERCENTAGE}}% timp de {{TIME}} ore.
+infobox_productionBoost_expires;{{PERCENTAGE}} {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresLumber;Bonusul de +{{PERCENTAGE}}% la producția de lemn se termină în {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresClay;Bonusul de +{{PERCENTAGE}}% la producția de lut se termină în {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresIron;Bonusul de +{{PERCENTAGE}}% la producția de fier se termină în {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresCrop;Bonusul de +{{PERCENTAGE}}% la producția de hrană se termină în {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expired;{{PERCENTAGE}}
+infobox_productionBoost_expiredLumber;Bonusul de +{{PERCENTAGE}}% la producția de lemn <b>a expirat</b>.
+infobox_productionBoost_expiredClay;Bonusul de +{{PERCENTAGE}}% la producția de lut <b>a expirat</b>.
+infobox_productionBoost_expiredIron;Bonusul de +{{PERCENTAGE}}% la producția de fier <b>a expirat</b>.
+infobox_productionBoost_expiredCrop;Bonusul de +{{PERCENTAGE}}% la producția de hrană <b>a expirat</b>.
+infobox_levelUpProductionReminder;Crește producția de resurse în toate satele tale cu Aur (+{{PREMIUM_PERCENTAGE}}%) sau vizionând un videoclip (+{{VIDEO_PERCENTAGE}}%)
+infobox_oneTimeProductionBoostReminder;Acum poți reactiva bonusul de +{{VIDEO_PERCENTAGE}}% la producția de resurse prin vizionarea unui clip.
+travelSimulator_title;Simulator durată călătorie
+travelSimulator_sourceTribe;Trib locație sursă
+travelSimulator_noLocationSelected;Nu s-a selectat nicio locație
+travelSimulator_slowestUnit_title;Cea mai lentă unitate
+travelSimulator_slowestUnit_settings;{{UNIT}} | Viteză: {{SPEED}}
+travelSimulator_TournamentSquareLevel_info;(Doar pentru distanțe >20 câmpuri)
+travelSimulator_tournamentSquareLevel_option;{{LEVEL}} | {{VALUE}}%
+travelSimulator_unitSelection_title;Selectează cea mai lentă unitate
+travelSimulator_unitSelection_unitType;Tip unitate
+travelSimulator_unitSelection_unitSpeed;Viteză unitate
+travelSimulator_unitSelection_selectedUnitSpeed;Viteză: {{SPEED}}
+travelSimulator_calculation_land;<b>Pământ:</b> {{VALUE}}
+travelSimulator_calculation_sea;<b>Mare:</b> {{VALUE}}
+travelSimulator_heroAttending;Erou participant
+travelSimulator_vikingRaidBonus;Bonus raid viking
+travelSimulator_troopSpeedArtefactEffect;Efect artefact viteză trupe
+travelSimulator_toast_selectSourceAndTarget;Selectează locații sursă și țintă valide!
+travelSimulator_toast_selectSourceTribe;Selectează un trib valid!
+IOSAppTrackingTransparencyMessage;Apăsând „Permite” folosești informațiile dispozitivului pentru reclame mai relevante
+goldShop_advantage_Value_Duration_Hours;<b>+{{VALUE}}%</b> pentru <b>{{DURATION}} ore</b>
+travelSimulator_tournamentSquareLevel_title;Nivelul arenei
+travelSimulator_troopSpeedAncientPower;Putere antică viteză trupe
+RelativeTime_Formatted;[weeks>0:{{weeks}}săpt. ][days>0:{{days}}z. ]{{data}}
+settings_account_tab;Cont
+settings_notification_tab;Notificări push
+settings_app_PushNotifications_popup_title;Notificări push
+settings_app_PushNotifications_popup_header;Permite-ne să-ți trimitem notificări
+settings_app_PushNotifications_popup_info1;Pentru a primi știri și informații utile despre joc prin notificări push, te rugăm să activezi notificările.
+settings_app_PushNotifications_popup_info2;Notificările pot fi activate din setările aplicației de pe dispozitivul tău.
+settings_app_PushNotifications_popup_info3;Te poți întoarce oricând aici pentru a dezactiva notificările.
+settings_app_PushNotifications_popup_action_button;Deschide setările aplicației
+ratioValueMax;/ {{a}}
+market_sendResources_completed;Finalizat
+market_sendResources_villageNotFound;Nu s-a găsit. Poți trimite resurse doar propriilor tale sate, membrilor alianței sau membrilor confederației tale.
+no_ads_popup_title;Fără reclame video
+no_ads_popup_header;A apărut o problemă în timpul încercării de a afișa un videoclip publicitar.
+no_ads_popup_info1;Există mai multe cauze posibile:
+no_ads_popup_info2; • Momentan, nu sunt reclame disponibile în fluxul publicitar pentru regiunea ta.
+no_ads_popup_info3; • Setările tale de confidențialitate restricționează volumul de anunțuri publicitare disponibile.
+no_ads_popup_info4; • Probleme tehnice la nivelul aplicației sau al partenerului publicitar.
+no_ads_popup_settings_msg;Asigură-te că permiți reclamele personalizate în setările de confidențialitate.
+no_ads_popup_support_msg;Te rugăm să contactezi echipa de asistență dacă problema persistă.
+no_ads_popup_support_button;Contactează Echipa de Asistență
+city_upgradeToACity_wwVillageNotUpgradeable;Satele cu Minuni ale Lumii nu pot fi transformate în orașe.
+travelSimulator_selectMagnitude;Selectează magnitudinea
+marketplace_merchantsOverview_returningTo;Revenire în satul <b>{{Village}}</b> al lui <b>{{Player}}</b>
+market_sendResources_sendAgain;Trimite din nou
+search_village_notFound;Nu s-a găsit. Poți trimite resurse doar propriilor tale sate, membrilor alianței sau membrilor confederației tale.
+settings_app_AnimationsPayoffs_activated;Animația de trimitere a trupelor/negustorilor este activată
+settings_app_AnimationsPayoffs_deactivated;Animația de trimitere a trupelor/negustorilor este dezactivată
+hero_resourceTransferPopup_empty;Nu sunt resurse disponibile pentru transfer din inventarul eroului.
+hero_toast_appearanceChanged;Aspect modificat
+alliance_editMemberPopup_customNote;Notă personalizată
+alliance_editMemberPopup_titleOfRole;Titlul rolului
+alliance_editMemberPopup_setSpecialization;Alege specializarea
+alliance_role_offensive;Atac
+alliance_role_defensive;Apărare
+alliance_role_hybrid;Hibrid
+alliance_role_scout;Spion
+alliance_role_support;Suport
+alliance_role_wow_hammer;Ciocan WoW
+alliance_role_none;Niciunul
+ad_fallback_popup_title;Revendică-ți recompensa
+ad_fallback_popup_info;Momentan nu sunt reclame video disponibile, însă vrem să-ți răsplătim loialitatea! Te rugăm să aștepți puțin, în timp ce pregătim o recompensă.
+ad_fallback_popup_rewardGranted;Recompensă acordată
+ad_fallback_popup_claim;Revendică recompensa
+ad_fallback_popup_closeWarning;Dacă închizi acest ecran prea devreme, recompensa va fi anulată
+gameplay_tip_1;Poți instrui coloniști într-o vilă sau într-un palat (de la nivelul 10).
+gameplay_tip_2;Pentru fiecare avatar poate fi construit un singur palat. Acesta oferă până la 3 sloturi de expansiune, față de doar 2 pentru o vilă.
+gameplay_tip_3;Ca să-ți schimbi capitala, construiește un palat într-un sat nou. Ține cont că clădirile exclusive din fosta capitală vor fi pierdute sau retrogradate.
+gameplay_tip_4;Cu suficiente puncte de cultură, poți coloniza sau cuceri un alt sat.
+gameplay_tip_5;Punctele de cultură se obțin prin modernizarea clădirilor și organizarea de petreceri la casa de cultură.
+gameplay_tip_6;Petrecerile mari devin disponibile la casa de cultură de la nivelul 10; acestea aduc mai multe puncte de cultură, dar implică un cost mai mare în resurse.
+gameplay_tip_7;Ca să cucerești un sat, trebuie să-i aduci loialitatea la zero cu ajutorul administratorilor instruiți în vilă sau în palat.
+gameplay_tip_8;Înainte de a-i instrui în vilă sau în palat, cercetează administratorii în academie.
+gameplay_tip_9;Satele pot fi cucerite de la Natari sau de la alți jucători.
+gameplay_tip_10;Capitala ta nu poate fi cucerită de alți jucători.
+gameplay_tip_11;Folosește crop finder-ul pentru a localiza sate cu 9 sau 15 câmpuri, capabile să susțină o armată mai mare.
+gameplay_tip_12;În capitală, câmpurile de resurse pot fi upgradare la niveluri mai mari decât în celelalte sate.
+gameplay_tip_13;Folosește târgul pentru a trimite resurse către satele prietene.
+gameplay_tip_14;Târgul îți permite să faci schimb de resurse cu alți jucători.
+gameplay_tip_15;Mărește capacitatea negustorilor prin modernizarea oficiului de comerț.
+gameplay_tip_16;Upgradează reședința eroului la nivelul 10 pentru a anexa o oază și a crește producția de resurse.
+gameplay_tip_17;Sporește puterea trupelor tale în fierărie. Îmbunătățirile se aplică imediat tuturor trupelor de același tip, inclusiv celor deja instruite.
+gameplay_tip_18;Simulatorul de luptă îți permite să estimezi rezultatul bătăliilor înainte de a ataca. Cu cât introduci mai multe detalii, cu atât simularea va fi mai precisă.
+gameplay_tip_19;Gold Club îți permite să activezi eschiva trupelor în capitală, protejând automat armata de atacurile inamice.
+gameplay_tip_20;La întoarcerea trupelor acasă, eschiva este dezactivată temporar pentru 10 secunde.
+gameplay_tip_21;Upgradează-ți spionii în fierărie pentru a le crește capacitățile de spionaj.
+gameplay_tip_22;Zidurile cresc semnificativ apărarea satului tău.
+gameplay_tip_23;Construiește beciuri pentru a-ți proteja resursele de raidurile inamice.
+gameplay_tip_24;Dacii pot instrui unități de temnițe pentru a captura atacatorii înainte de începerea luptei.
+gameplay_tip_25;Ca să-ți eliberezi trupele captive, lansează un atac normal reușit asupra satului care le-a capturat.
+gameplay_tip_26;Atacatorul poate elibera 75% din trupele captive, în timp ce apărătorul poate opta să le elibereze pașnic în totalitate (100%).
+gameplay_tip_27;Cu un spital, poți vindeca până la 40% din trupele pierdute în luptă.
+gameplay_tip_28;Dacii pot instrui unități de temnițe pentru a captura atacatorii chiar înainte ca bătălia să înceapă.
+gameplay_tip_29;Construiește Arhitectul în capitală pentru a îmbunătăți rezistența clădirilor împotriva catapultelor și a berbecilor.
+gameplay_tip_30;Eroul poate fi setat să se ascundă în timpul atacurilor inamice asupra satului tău de reședință, păstrându-l astfel în siguranță.
+gameplay_tip_31;Învinge animalele din oazele libere pentru a câștiga resurse suplimentare. Cu cât animalele sunt mai puternice, cu atât recompensa va fi mai mare.
+gameplay_tip_32;Trimite-ți eroul să învingă animalele din oazele libere pentru a acumula experiență.
+gameplay_tip_33;Cu ajutorul cuștilor, capturează animale din oazele libere pentru a-ți consolida satul.
+gameplay_tip_34;Echipează-ți eroul cu armuri speciale sau alifii pentru a accelera regenerarea sănătății sale.
+gameplay_tip_35;Învierea eroului se poate face treptat, cu resurse, sau instant, cu o găleată.
+gameplay_tip_36;Clădirile pot fi demolate după ce primăria atinge nivelul 10.
+gameplay_tip_37;Construiește o ambasadă pentru a te alătura unei alianțe sau pentru a-ți crea propria alianță.
+vacationMode_title;Mod Vacanță
+vacationMode_vacation;Vacanță
+vacationMode_vacationModeActive;Modul Vacanță este activ
+vacationMode_info;Modul Vacanță îți protejează satele cât timp ești plecat. Următoarele acțiuni sunt indisponibile în acest mod:
+vacationMode_deactivated_action1;Trimiterea sau primirea de trupe
+vacationMode_deactivated_action2;Participarea eroului tău la aventuri
+vacationMode_deactivated_action3;Inițierea de noi comenzi de construcție sau instruirea de trupe
+vacationMode_deactivated_action4;Folosirea târgului (inclusiv a rutelor de comerț)
+vacationMode_deactivated_action5;Organizarea de petreceri, inițierea de cercetări sau efectuarea de îmbunătățiri
+vacationMode_deactivated_action6;Crearea sau aderarea la alianțe
+vacationMode_deactivated_action7;Contribuirea cu resurse la bonusurile alianței
+vacationMode_deactivated_action8;Participarea la licitații
+vacationMode_deactivated_action9;Schimbarea capitalei
+vacationMode_deactivated_action10;Ștergerea contului
+vacationMode_deactivated_territory_action1;Transformarea unui sat într-un oraș
+vacationMode_deactivated_territory_action2;Contul tău nu contribuie la populația regională a alianței, iar satele tale sunt excluse de la acumularea punctelor de victorie
+vacationMode_conditions_title;Cerințele pentru modul Vacanță sunt satisfăcute
+vacationMode_duration_info;Câte zile dorești să dureze modul Vacanță?
+vacationMode_durationUntil;Vacanță până la <b>{{DATE}}</b>
+vacationMode_availableDays;Zile disponibile <b>{{AVAILABLE}}/{{TOTAL}}</b>
+vacationMode_startButton;Intră acum în modul Vacanță
+vacationMode_error_noCancelTime;Modul Vacanță nu poate fi dezactivat înainte de {{HOURS}} ore
+vacationMode_error_missingRequirement;Pentru a activa modul Vacanță, trebuie să îndeplinești toate cerințele.
+vacationMode_error_noVacationDaysLeft;Ai epuizat zilele disponibile pentru modul Vacanță
+vacationMode_error_cooldown;Modul Vacanță poate fi activat din nou doar după {{HOURS}} ore de la ultima dezactivare
+vacationMode_abortSuccess;Modul Vacanță a fost oprit!
+vacationMode_remainingDays;Zile rămase în modul Vacanță
+vacationMode_runsUntil;Modul Vacanță este activ până la
+vacationMode_abortInfo;Modul Vacanță poate fi oprit cel mai curând pe <b>{{DATE}}</b>
+vacationMode_abortAvailable;Poți anula modul Vacanță acum
+vacationMode_abortConfirmHeader;Sigur vrei să anulezi modul Vacanță?
+vacationMode_abortConfirmInfo;Zilele neutilizate vor fi returnate. Această acțiune este ireversibilă.
+vacationMode_startCooldownInfo;Poți începe modul Vacanță cel mai devreme pe <b>{{DATE}}</b>
+vacationMode_abortButton;Oprește modul Vacanță
+vacationMode_conditions_has_outgoing_troops;Nicio trupă expediată
+vacationMode_conditions_has_incoming_troops;Nicio trupă nu se îndreaptă spre satele sau oazele tale
+vacationMode_conditions_has_reinforcing_troops_for;Nicio trupă de întărire trimisă altor jucători
+vacationMode_conditions_has_reinforcing_troops_from;Nicio întărire primită de la alți jucători în satele sau oazele tale
+vacationMode_conditions_has_ww_village;Niciunul dintre satele tale nu conține o Minune a Lumii
+vacationMode_conditions_has_artifact_village;Niciunul dintre satele tale nu conține un artefact
+vacationMode_conditions_has_beginners_protection;Protecția pentru începători nu este activă
+vacationMode_conditions_has_trapped_troops;Capcanele tale sunt goale, iar trupele tale — inclusiv eroul — nu sunt prinse
+vacationMode_conditions_has_deletion_event;Avatarul tău nu este marcat pentru ștergere
+vacationMode_conditions_has_conquered_oase;Nu ai anexat nicio oază în ultimele {{HOURS}} ore. Poți intra în modul Vacanță după ce au trecut {{HOURS}} ore de la anexarea sau pierderea unei oaze.
+vacationModePopup_info;Contul tău va fi protejat cât timp ești în modul Vacanță. Cu toate acestea, producția de resurse va continua, iar trupele tale vor continua să consume hrană. <color=red>Acest lucru poate duce la înfometarea trupelor.</color>
+vacationModePopup_start_info;Confirmi că vrei să activezi modul Vacanță pentru <b>{{DAYS}}</b> [DAYS>1: zile][DAYS<2: zi]? Modul Vacanță poate fi dezactivat cu Aur după {{COOLDOWN}} ore.
+vacationModePopup_troopConsumption;Consumul trupelor proprii
+vacationModePopup_starvationEstimate;Prima înfometare posibilă la
+vacationModePopup_starvationTitle;Consumul trupelor proprii
+goldTransfer_accept_gift;Da, transferă Aurul
+goldTransfer_decline_gift;Nu, refuză Aurul
+goldTransfer_accepted_toast;Transferul de Aur a fost acceptat.
+goldTransfer_declined_toast;Transferul de Aur a fost refuzat.
+smithy_requirementsNotSatisfied;Nu sunt îndeplinite cerințele pentru upgradarea acestei unități
+vacationModeLobby_status;În vacanță
+block_vacationMode_toast;Nu poți face acest lucru cât timp ești în modul Vacanță.
+goldTransfer_verifyOwnership_title;Verifică dreptul de proprietate
+goldTransfer_verifyOwnership_description;Pentru a transfera Aurul neutilizat către un avatar existent, confirmă-ți mai întâi dreptul de proprietate introducând adresa de e-mail la care a fost trimis codul de transfer.
+goldTransfer_verifyOwnership_emailPlaceholder;Adresa de e-mail
+goldTransfer_verifyOwnership_errorNoEmail;Te rugăm să introduci adresa de e-mail.
+goldTransfer_verifyOwnership_errorAlreadyUsed;Acest link de transfer Aur a fost deja utilizat.
+goldTransfer_verifyOwnership_errorInUse;Acest link de transfer Aur este nevalid.
+goldTransfer_verifyOwnership_verifyButton;Verifică
+goldTransfer_selectTargetAvatar_title;Selectează avatarul țintă
+goldTransfer_selectTargetAvatar_description;Selectează avatarul către care dorești să transferi Aurul.
+goldTransfer_transferableGold_label;Aur transferabil:
+goldTransfer_enterAvatarName_header;Introdu numele avatarului:
+goldTransfer_avatarName_placeholder;Numele avatarului
+goldTransfer_searchAvatar_Button;Caută avatarul
+goldTransfer_searchAvatarNothingFound_error;Niciun avatar activ nu a fost găsit cu acest nume.
+goldTransfer_ownAvatarList_header;Alege unul dintre avatarurile tale active ({{account}})
+goldTransfer_selectOwnAvatarConfirm_Button;Selectează avatarul
+goldTransfer_selectGameworld_title;Te rugăm să selectezi lumea de joc
+goldTransfer_selectGameworld_description;Numele avatarului a fost găsit în mai multe lumi de joc. Aurul poate fi transferat către un singur avatar. Alege o lume de joc.
+goldTransfer_selectGameworldConfirm_Button;Te rugăm să selectezi lumea de joc
+goldTransfer_changeAvatar_Button;Schimbă numele avatarului
+goldTransfer_confirm_title;Confirmă transferul
+goldTransfer_confirm_Button;Confirmă transferul
+goldTransfer_confirmAvatarOnOneWorld_info;Avatarul a fost identificat într-o singură lume de joc:
+goldTransfer_confirmAvatarName_prefix;Nume avatar:
+goldTransfer_confirmGameworld_prefix;Lume de joc:
+goldTransfer_transferComplete_title;Transferul a fost realizat cu succes
+goldTransfer_transferComplete_description;Aurul tău a fost transferat cu succes către <b>{{avatarname}}</b> pe <b>{{gameworldname}}.</b>
+goldTransfer_transferComplete_returnButton;Înapoi în joc
+cams_settings_accountDeletion_information_warning_v2;Această acțiune va șterge definitiv contul tău. Următorul conținut va fi pierdut iremediabil:\n<indent=0.5em>•  Toate avatarurile asociate contului tău\n•  Toate medaliile câștigate pe contul tău</indent>\n\nConfirmă acțiunea tastând „delete” în câmpul de mai jos.
+mapMarkers_popupTitle;Setează un marcaj
+mapMarkers_markerType;Tip de marcaj
+mapMarkers_markerColor;Culoare marcaj
+mapMarkers_setAlliance;Setează un marcaj pentru alianța mea
+mapMarkers_type_field;Câmp
+mapMarkers_addMsg_success;Marcajul a fost adăugat cu succes!
+mapMarkers_saveMsg_success;Marcajul a fost salvat cu succes!
+mapMarkers_noPermission_error;Cere permisiunea liderului alianței tale.
+mapMarkers_marker;Marcaj
+mapMarkers_markers;Marcaje
+mapMarkers_listAllianceTitle;Marcaje de alianță
+mapMarkers_listPlayerTitle;Marcaje de jucători
+mapMarkers_listAlliances;Alianţe
+mapMarkers_listPlayers;Jucători
+mapMarkers_listFlags;Steaguri
+mapMarkers_deleteMarker;Șterge marcajul
+mapMarkers_deleteMarkerMessage;Vrei să ștergi acest marcaj?
+mapMarkers_showOnMap;Afișează marcajele mele pe hartă
+embassy_general_subtab;General
+embassy_villagesNearby_subtab;Sate din apropiere
+embassy_villagesNearby_listHeader;Satele alianței/confederației

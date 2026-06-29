@@ -1,0 +1,121 @@
+# ============================================================
+# Travian Legends Mobile - Reverse Engineering Project
+# ============================================================
+
+# ---- OS / Editor ----
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.sln
+*.csproj
+
+# ---- APK / XAPK / Binary Packages ----
+*.apk
+*.xapk
+*.aab
+*.ipa
+
+# ---- Raw Binaries (download separately) ----
+tools/libil2cpp.so
+Il2CppDumper_Output/libil2cpp.so
+Il2CppDumper_Output/global-metadata.dat
+RecoveredProject/raw/assets/bin/Data/Managed/Metadata/global-metadata.dat
+
+# ---- Tools (too large for git, document in README) ----
+tools/ghidra_12.1.2_PUBLIC/
+tools/ghidra_project/
+tools/ghidra_project2/
+tools/jdk21.0.11_10/
+tools/Cpp2IL/
+tools/Il2CppDumper/
+tools/corretto21.zip
+
+# ---- Large JSON / Data Dumps ----
+tools/il2cpp_metadata_with_addresses/il2cpp.json
+tools/il2cpp_metadata_with_addresses/il2cpp.h
+tools/il2cpp_inspector_output/cs/il2cpp.cs
+metadata_output/types_v39.json
+metadata_output/parameters.json
+metadata_output/properties.json
+metadata_output/methods.json
+metadata_output/all_types.json
+
+# ---- Ghidra Temp / Lock Files ----
+tools/ghidra_project2/tlmobile.lock
+tools/ghidra_project2/tlmobile.lock~
+tools/ghidra_project2/tlmobile.gpr
+
+# ---- Build Artifacts ----
+il2cpp_recovery_studio/dist/
+il2cpp_recovery_studio/build/
+il2cpp_recovery_studio/__pycache__/
+il2cpp_recovery_studio/.pytest_cache/
+il2cpp_recovery_studio/*.egg-info/
+*.pyc
+__pycache__/
+
+# ---- Extracted Asset Binaries (too large) ----
+extracted_assets/Images/
+extracted_assets/Sprites/
+extracted_assets/Prefabs/
+extracted_assets/Materials/
+extracted_assets/Shaders/
+extracted_assets/Animations/
+extracted_assets/SpriteAtlases/
+
+# ---- Keep these from extracted_assets ----
+# extracted_assets/localization/    (kept - 86 MB of text)
+# extracted_assets/Config/           (kept - settings, manifests)
+# extracted_assets/Data/             (kept - small data files)
+# extracted_assets/Scripts/          (kept - small script configs)
+# extracted_assets/Other/            (kept - catalog, etc.)
+
+# ---- Exclude MonoBehaviours (4,769 raw JSON, minimal data) ----
+extracted_assets/MonoBehaviours/
+
+# ---- Exclude il2cpp_recovery_studio build/dist ----
+il2cpp_recovery_studio/dist/
+il2cpp_recovery_studio/build/
+il2cpp_recovery_studio/.pytest_cache/
+il2cpp_recovery_studio/__pycache__/
+il2cpp_recovery_studio/*.egg-info/
+il2cpp_recovery_studio/analysis/
+il2cpp_recovery_studio/assets/
+il2cpp_recovery_studio/binary/
+il2cpp_recovery_studio/core/
+il2cpp_recovery_studio/crossref/
+il2cpp_recovery_studio/database/
+il2cpp_recovery_studio/decompiler/
+il2cpp_recovery_studio/docs_gen/
+il2cpp_recovery_studio/documentation/
+il2cpp_recovery_studio/exporters/
+il2cpp_recovery_studio/ghidra/
+il2cpp_recovery_studio/graphs/
+il2cpp_recovery_studio/gui/
+il2cpp_recovery_studio/metadata/
+il2cpp_recovery_studio/methodmap/
+il2cpp_recovery_studio/network/
+il2cpp_recovery_studio/performance/
+il2cpp_recovery_studio/plugins/
+il2cpp_recovery_studio/reconstructor/
+il2cpp_recovery_studio/recovery/
+il2cpp_recovery_studio/reports/
+il2cpp_recovery_studio/search/
+il2cpp_recovery_studio/strings/
+il2cpp_recovery_studio/tests/
+il2cpp_recovery_studio/unity/
+il2cpp_recovery_studio/unity_assets/
+
+# ---- Temp Files ----
+*.tmp
+*.log
+*.bak
+*.ps1
+tools/ghidra_export_log*.txt
+tools/ghidra_pid*.txt
+tools/run_ghidra*.bat

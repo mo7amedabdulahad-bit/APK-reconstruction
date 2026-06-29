@@ -1,0 +1,2068 @@
+detail_window_header_title;{{buildingName|TranslateSuffixFor|allgemein.gid}}
+;{{INT}}
+levelWithValue;Επίπεδο {{level}}
+valueWithPercent;{{value}}%
+valueAsRankingPosition;{{value}}.
+valueChangeInBrackets;({{change|Sign}})
+valueChangeInBracketsWithPercent;({{change|Sign}}%)
+ratioValues;{{a}}/{{b}}
+coordinates;<nobr>({{x}}|{{y}})</nobr>
+village_with_coordinates;{{villageName}} <nobr>({{x}}|{{y}})</nobr>
+village_with_clickable_coordinates;{{villageName}} {{mapId|Coordinates}}
+valuePerHour;{{a}}/ώρα
+back;Πίσω
+fill;Συμπλήρωση
+hero;Ήρωας
+done;Τέλειωσε
+remove;Αφαίρεσε
+prerequisites;Προϋποθέσεις:
+newAmount;Νέο ποσό
+before;πριν
+after;μετά
+permissions;Δικαιώματα
+changesSaved;Οι αλλαγές έχουν αποθηκευθεί!
+genericError;Απρόσμενο σφάλμα
+allianceTagInBrackets;[{{allianceId|AllianceLink}}]
+autocompleteNoResult;Δεν βρέθηκε αντιστοιχία
+medalAdded;Προστέθηκε μετάλλιο
+continueEdit;Συνέχεια επεξεργασίας
+levelUp;Άνοδος επιπέδου!
+non_existing_object;[?]
+sorting;Ταξινόμηση
+copiedToClipboard;Αντιγραφή στο πρόχειρο
+maximumLengthError;Μέγιστο μήκος: {{max}}.
+sortingOptions;Επιλογές ταξινόμησης
+WIP_comingSoon;Η δυνατότητα έρχεται σύντομα!
+upgradeTab_fastForward_button;{{Percent}}% γρηγορότερα
+upgradeTab_masterBuilder_button;Κατασκευή με\nτον αρχιμάστορα {{goldIcon|Sprite}}{{goldCost}}
+upgradeTab_adBoostPopup_boost;{{BOOST}}% ενίσχυση
+infoTab_upgradingToLevel;Κατασκευή στο επίπεδο {{level}}:
+infoTab_genericCurrently;Αυτή τη στιγμή:
+infoTab_genericAtLevel;Στο επίπεδο {{INT}}:
+infoTab_genericEffect;{{INT}}
+infoTab_currentProduction;Τρέχουσα παραγωγή:
+infoTab_productionAtLevel;Παραγωγή στο επίπεδο {{INT}}:
+infoTab_effectPerHour;{{INT}} την ώρα
+networkIssues;Χάθηκε η σύνδεση με τον διακομιστή του παιχνιδιού.
+cantLoadServerList;Δεν ήταν δυνατή η φόρτωση της λίστας διακομιστών λόγω προβλημάτων δικτύου. Βεβαιωθείτε ότι η συσκευή είναι συνδεδεμένη στο διαδίκτυο και δοκιμάστε ξανά.
+barracks_TrainTroops_Action;Εκπαίδευσε στρατό
+barracks_ViewTrainingsList;Προβολή λίστας εκπαίδευσης
+barracks_unitNeedsToBeResearched;Η μονάδα πρέπει να ερευνηθεί σε
+barracks_requiresLabel;Απαιτούνται:
+barracks_trainingCosts;Δαπάνες εκπαίδευσης στρατευμάτων
+barracks_troopsInTraining;Στράτευμα σε εκπαίδευση
+training_started;Η εκπαίδευση ξεκίνησε με επιτυχία!
+targetSelection_relationLabel;Κατάσταση:
+targetSelection_selectedVillage;Επιλέξτε χωριό
+targetSelection_noSelectedVillage;Δεν επιλέχθηκε χωριό
+targetSelection_ownVillages;Τα χωριά μου
+targetSelection_relation0;Ουδέτερη
+targetSelection_relation1;Φιλικό
+targetSelection_relation2;Στη δική μου συμμαχία
+targetSelection_relation3;Στο δικό μου χωριό
+targetSelection_alreadyThere_troops;Τα στρατεύματά σας ήδη βρίσκονται εκεί.
+targetSelection_alreadyThere_merchants;Οι έμποροι σας είναι ήδη εκεί.
+rallyPoint_button_confirmTarget;Επιβεβαίωση στόχου
+rallyPoint_button_prepareTroops;Προετοιμάστε τα στρατεύματα
+rallyPoint_button_updateWave;Ενημέρωση κύματος
+rallyPoint_button_copyWave;Αντιγραφή κύματος
+rallyPoint_button_newWave;Προσθέστε ένα νέο κύμα
+rallyPoint_sendTroops_chooseDestination;Αποστολή στρατευμάτων - Επιλέξτε προορισμό
+rallyPoint_sendTroops_sendTroopAction_1;Αποστολή στρατευμάτων - Επιβεβαίωση
+rallyPoint_sendTroops_sendTroopAction_3;Αποστολή στρατευμάτων - Επιβεβαίωση
+rallyPoint_sendTroops_sendTroopAction_4;Αποστολή στρατευμάτων - Επιβεβαίωση
+rallyPoint_sendTroops_sendTroopAction_5;Αποστολή στρατευμάτων - Επιβεβαίωση
+rallyPoint_sendTroops_sendTroopAction_72;Προώθηση στρατευμάτων - Επιβεβαίωση
+rallyPoint_sendTroops_sendTroopAction_9;Απόσυρση στρατευμάτων - Επιβεβαίωση
+rallyPoint_sendTroops_sendTroopAction_10; Ίδρυσε ένα νέο χωριό
+rallyPoint_sendTroops_sendTroopButton_1;Αποστολή στρατευμάτων
+rallyPoint_sendTroops_sendTroopButton_3;Αποστολή στρατευμάτων
+rallyPoint_sendTroops_sendTroopButton_4;Αποστολή στρατευμάτων
+rallyPoint_sendTroops_sendTroopButton_5;Αποστολή στρατευμάτων
+rallyPoint_sendTroops_sendTroopButton_72;Προώθηση στρατευμάτων
+rallyPoint_sendTroops_sendTroopButton_9;Επιστροφή στρατευμάτων
+rallyPoint_sendTroops_sendTroopButton_10;Ίδρυση νέου χωριού
+rallyPoint_sendTroops_coordinateX;<b>X</b> συντεταγμένη:
+rallyPoint_sendTroops_coordinateY;<b>Υ</b> συντεταγμένη:
+rallyPoint_sendTroops_selectOnMap;Ή επιλέξτε την τοποθεσία στο χάρτη:
+rallyPoint_sendTroops_arrivalTime;<b>{{hoursLeft|Duration}}</b> aστις <b>{{hoursLeft|TimeCountUp}}</b>
+rallyPoint_sendTroops_catapultTargetPopup;Επιλογή στόχου καταπέλτη
+rallyPoint_sendTroops_catapultTarget_category_1;Κτίρια υποδομής
+rallyPoint_sendTroops_catapultTarget_category_2;Στρατιωτικά κτίρια
+rallyPoint_sendTroops_catapultTarget_category_3;Κτίρια υλών
+rallyPoint_sendTroops_catapultTarget_random;Τυχαία
+rallyPoint_sendTroops_catapultTarget_noBuilding;Επιλέξτε κτίριο
+rallyPoint_sendTroops_catapultTarget_recentTargets;Πιο πρόσφατα επιλεγμένο:
+rallyPoint_sendTroops_changeHeroHomeVillage;Αλλαγή χωριού βάσης του ήρωα
+rallyPoint_sendTroops_attackNoSelection;Επιλέξτε τύπο επίθεσης
+rallyPoint_sendTroops_movementType_5;Ενισχύσεις
+rallyPoint_sendTroops_movementType_3;Επίθεση
+rallyPoint_sendTroops_movementType_4;Επιδρομή
+rallyPoint_sendTroops_attackForwarding;Προώθηση
+rallyPoint_sendTroops_noTroopsSelected;- Δεν επιλέχτηκαν στρατεύματα -
+rallyPoint_sendTroops_noTroopsAvailable;Δεν μποροούν να σταλούν στρατεύματα. Δεν υπάρχουν διαθέσιμα στρατεύματα σε αυτό το χωριό.
+rallyPoint_sendTroops_forwardingVillageError;Τα στρατεύματα μπορούν να προωθηθούν μόνο σε μέλη της συμμαχίας ή σε δικά τους χωριά.
+rallyPoint_sendTroops_forwardingDestination;Προώθηση στρατευμάτων - Επιλέξτε στόχο
+rallyPoint_sendTroops_WaveRemoved;Το κύμα αφαιρέθηκε
+rallyPoint_sendTroops_maxWaves;Μέγιστο πλήθος κυμάτων
+rallyPoint_sendTroops_notEnoughTroopsToCopy;Δεν υπάρχουν αρκετά στρατεύματα για την αναπαραγωγή του κύματος.
+rallyPoint_sendTroops_troopsSent;Τα στρατεύματα αποστέλλονται!
+rallyPoint_sendTroops_toOverview;Επισκόπηση
+rallyPoint_sendTroops_backToVillage;Πίσω στο χωριό.
+rallyPoint_sendTroops_mission;Αποστολή:
+rallyPoint_troopsOverview_1;Εισερχόμενες επιθέσεις και επιδρομές
+rallyPoint_troopsOverview_2;Εξερχόμενες επιθέσεις και επιδρομές
+rallyPoint_troopsOverview_3;Στρατεύματα που επιστρέφουν
+rallyPoint_troopsOverview_4;Τα στρατεύματά σας στο αυτό χωριό και τις οάσεις του
+rallyPoint_troopsOverview_5;Ξένα στρατεύματα στο χωριό
+rallyPoint_troopsOverview_6;Στρατεύματά σας  σε άλλα χωριά ή οάσεις ()
+rallyPoint_troopsOverview_7;Εισερχόμενες ενισχύσεις
+rallyPoint_troopsOverview_8;Εξερχόμενα στρατεύματα
+rallyPoint_troopsOverview_9;Εξερχόμενα στρατεύματα
+rallyPoint_troopsOverview;Επισκόπηση στρατεύματος
+rallyPoint_troopsOverview_consumption;Κατανάλωση: {{cropConsumption|ShortenNumber|10000}}  {{iconName|Sprite}} την ώρα
+rallyPoint_troopsOverview_arrivalTime;Άφιξη σε: <b>{{Duration|Countdown}}</b> στις <b>{{date|Time}}</b> 
+rallyPoint_troopsOverview_incomingMission_3;Εισερχόμενες επιθέσεις από: 
+rallyPoint_troopsOverview_incomingMission_4;Εισερχόμενες επιδρομές από: 
+rallyPoint_troopsOverview_outgoingMission_3;Επιθέσεις 
+rallyPoint_troopsOverview_outgoingMission_4;Επιδρομές 
+rallyPoint_troopsOverview_outgoingMission_5;Ενισχύσεις 
+rallyPoint_troopsOverview_outgoingMission_50;Περιπέτεια στο 
+rallyPoint_troopsOverview_outgoingMission_72;Στρατεύματα προωθημένα στο 
+rallyPoint_troopsOverview_outgoingMission_10;Ίδρυση νέου χωριού 
+rallyPoint_troopsOverview_outgoingMission_40;Τα στρατεύματα διέφυγαν στην κρυψώνα του δάσους.
+rallyPoint_troopsOverview_returningMission;Επιστροφή από: 
+rallyPoint_troopsOverview_ownTroops_1;Τα στρατεύματά μου σε 
+rallyPoint_troopsOverview_ownTroops_2;Τα στρατεύματά μου σε 
+rallyPoint_troopsOverview_ownTroops_3;Τα στρατεύματά μου σε 
+rallyPoint_troopsOverview_ownTroops_4;<b>Φύση</b> σε 
+rallyPoint_troopsOverview_ownTroops_5;Τα στρατεύματά μου σε 
+rallyPoint_troopsOverview_ownTroops_6;Τα στρατεύματά μου σε 
+rallyPoint_troopsOverview_ownTroops_7;Τα στρατεύματά μου σε 
+rallyPoint_troopsOverview_foreignTroops_2;Στρατεύματα ενίσχυσης από 
+rallyPoint_troopsOverview_foreignTroops_4;Φυλακισμένα στρατεύματα από 
+rallyPoint_troopsOverview_ownTroopsInOther_2;Στρατεύματα ενίσχυσης για 
+rallyPoint_troopsOverview_ownTroopsInOther_4;Τα φυλακισμένα στρατεύματά σας σε 
+rallyPoint_troopsOverview_origin;Προέλευση: 
+rallyPoint_troopsOverview_reinforcement;Ενίσχυση από  
+rallyPoint_troopsOverview_killed;Σκοτωμένα στρατεύματα!
+rallyPoint_troopsOverview_released;Στρατεύματα που απελευθερώθηκαν!
+rallyPoint_troopsOverview_forwardedTroopsButton;Προωθημένα στρατεύματα
+rallyPoint_troopsOverview_returnToOverview;Επιστροφή στην επισκόπηση
+rallyPoint_troopsOverview_incomingAttacks;<color={{colorValue|TextColor}}>{{incomings}}</color> εισερχόμενο
+rallyPoint_troopsOverview_amountIncoming;{{value}} εισερχόμενο
+rallyPoint_troopsOverview_amountOutgoing;{{value}} εξερχόμενο
+rallyPoint_troopsOverview_amountReturning;{{value}} επιστρέφοντας
+rallyPoint_troopsOverview_firstArrivalTime;Σε {{timestamp|Countdown}} ώρες
+rallyPoint_troopsOverview_forwardTroops;Προώθηση
+rallyPoint_troopsOverview_MergeTroops;Ένταξη στο χωριό
+rallyPoint_troopsOverview_WithdrawTroops;Αποστολή πίσω
+rallyPoint_troopsOverview_sort_1;Πρώτα επισημαίνονται οι κινήσεις
+rallyPoint_troopsOverview_sort_2;Νεότερη άφιξη πρώτα
+rallyPoint_troopsOverview_sort_3;Τελευταία άφιξη πρώτα
+rallyPoint_troopsOverview_sort_4;Πρώτα τα στρατεύματα που έχουν σταλεί πρόσφατα
+rallyPoint_troopsOverview_sort_5;Ο παλαιότερος έστειλε στρατεύματα πρώτος
+rallyPoint_troopsMerge_troopsToBeMerged;Στρατεύματα που επιλέχθηκαν για συγχώνευση:
+rallyPoint_troopsMerge_currentGold;Τρέχον χρυσός:  {{iconName|Sprite}} {{currentGold}}
+rallyPoint_troopsMerge_goldLeft_0;{{remainingGold}} / {{maxAllowedGold}} χρυσάφι που έχει απομείνει για τη συγχώνευση στρατευμάτων σήμερα.
+rallyPoint_troopsMerge_goldLeft_1;{{remainingGold}} / {{maxAllowedGold}} χρυσάφι που έχει απομείνει για τη συγχώνευση στρατευμάτων σήμερα. Μπορείτε ακόμα να συγχωνευτείτε με ύλες:
+rallyPoint_troopsMerge_troopsMergedToast;Συγχώνευση στρατευμάτων!
+rallyPoint_raidList_beingRaided;{{current}}/{{total}} επιτίθεται
+rallyPoint_infoTab_EvasionShortDescription;Ενεργοποίηση διαφυγής στρατευμάτων για την πρωτεύουσα
+rallyPoint_farmList_createNewTitle;Δημιουργία νέας λίστας
+rallyPoint_farmList_editTitle;Επεξεργασία λίστας
+rallyPoint_farmList_listName;Όνομα λίστας
+rallyPoint_farmList_selectDefaultTroops;Επιλέξτε προεπιλεγμένα στρατεύματα
+rallyPoint_farmList_addTroopsButton;Προσθέστε στρατεύματα
+rallyPoint_farmList_editTroopsButton;Επεξεργασία στρατευμάτων
+rallyPoint_farmList_setTroopsButton;Ορίστε στρατεύματα
+rallyPoint_farmList_createListButton;Δημιουργία λίστας
+rallyPoint_farmList_editListButton;Ενημέρωση λίστας
+rallyPoint_farmList_editTroopsTitle;Επεξεργασίας λίστας με φάρμες στρατευμάτων
+rallyPoint_farmList_deleteList;Διαγραφή λίστας
+rallyPoint_selectTroops;Επιλέξτε στρατεύματα
+rallyPoint_farmList_listCreated;Λίστα που δημιουργήθηκε
+rallyPoint_farmList_exitList;Έξοδος από την λίστα
+rallyPoint_farmList_startAll;Έναρξη όλων των στόχων
+rallyPoint_farmList_startAllLists;Εκκίνηση όλων
+rallyPoint_farmList_startSelected;Εκκίνηση επιλεγμένων
+rallyPoint_farmList_noTarget;- Δεν επιλέχτηκαν στόχοι -
+rallyPoint_farmList_noTargetExist;Δεν υπάρχουν στόχοι σε αυτή τη λίστα
+rallyPoint_farmList_selectedAmount;{{amount}} επιλεγμένο:
+rallyPoint_farmList_listUpdated;Ενημερωμένη λίστα
+rallyPoint_farmList_listDeleted;Η λίστα διαγράφηκε
+rallyPoint_farmList_editWarning;- Η διαγραφή της λίστας θα διαγράψει όλους τους στόχους σε αυτή τη λίστα\n- Η επεξεργασία στρατευμάτων θα επηρεάσει μόνο τα προεπιλεγμένα στρατεύματα μελλοντικών στόχων
+rallyPoint_farmList_sortingFailed;Η ταξινόμηση απέτυχε! Παρακαλώ δοκιμάστε ξανά!
+rallyPoint_farmList_notStartedPopupTitle; Οι επιδρομές δεν ξεκίνησαν:
+rallyPoint_farmList_notStartedPopupElement;<b>{{total}}</b> λόγω {{message}}
+rallyPoint_farmList_NotStartedPopupButtonGoTo;Πηγαίνετε στη λίστα φάρμας
+rallyPoint_farmList_AddTargetTitle;Προσθέστε στόχο
+rallyPoint_farmList_changeTroops;Αλλαγή στρατευμάτων
+rallyPoint_farmList_targetAdded;Στόχος προστέθηκε
+rallyPoint_farmList_targetAlreadyOnList;Ο στόχος είναι ήδη στη λίστα αυτής της φάρμας, παρακαλώ επιλέξτε μια άλλη λίστα φάρμας ή δημιουργήστε μια νέα.
+rallyPoint_farmList_choose;Επιλέξτε λίστα φάρμας
+rallyPoint_farmList_notYetRaided;Δεν έχει γίνει ακόμη επιδρομή
+rallyPoint_farmList_EditRaids;Επεξεργασία [raidsAmount=1:στόχου][raidsAmount>1:στόχων]
+rallyPoint_farmList_DeleteRaidsPlayerQuestion;Είστε σίγουροι ότι θέλετε να διαγράψετε [raidsAmount=1:αυτόν τον στόχο][raidsAmount>1:αυτούς τους στόχους];
+rallyPoint_farmList_ChangeRaidList;Αλλαγή λίστας φάρμας
+rallyPoint_farmList_ChangeTarget;Αλλαγή στόχου
+rallyPoint_farmList_ChangeTroops;Αλλαγή στρατευμάτων
+rallyPoint_farmList_DeactivateTarget;Απενεργοποίηση [raidsAmount=1:στόχου][raidsAmount>1:στόχων]
+rallyPoint_farmList_MultiEditWarning;Επεξεργάζεστε πολλαπλούς στόχους. Οι αλλαγές που έγιναν θα επηρεάσουν όλους τους επιλεγμένους στόχους
+rallyPoint_farmList_UpdateRaids;Ενημέρωση [raidsAmount=1:στόχου][raidsAmount>1:στόχων]
+rallyPoint_farmList_filterShowTroopsTitle;Εμφάνιση στρατευμάτων
+rallyPoint_farmList_filterShowTroopsDescription;Εμφανίζει τα επιλεγμένα στρατεύματα ανά στόχο
+rallyPoint_farmList_filterShowPopulationTitle;Εμφάνιση στοχευόμενου πληθυσμού
+rallyPoint_farmList_filterShowPopulationDescription;Δείχνει τον πληθυσμό του χωριού του στόχου
+rallyPoint_farmList_filterShowDistanceTitle;Εμφάνιση απόστασης
+rallyPoint_farmList_filterShowDistanceDescription;Εμφανίζει την απόσταση του στόχου από το χωριό σας
+rallyPoint_farmList_filterShowLastRaidTitle;Εμφάνιση πληροφοριών τελευταίας επιδρομής
+rallyPoint_farmList_filterShowLastRaidDescription;Εμφάνιση πληροφοριών τελευταίου στόχου επιδρομής
+rallyPoint_farmList_filterShowBountyTitle;Εμφάνιση επικηρύξεων και πόρων
+rallyPoint_farmList_filterShowBountyDescription;Δείχνει την αμοιβή και τις ύλες που αποκτήθηκαν
+marketplace_createOffer;Δημιουργία προσφοράς
+marketplace_myOffers_title;Οι προσφορές μου
+marketplace_myOffers_merchants;Έμποροι: {{count}}
+marketplace_myOffers_alliance_True;Συμμαχία: Ναι
+marketplace_myOffers_alliance_False;-
+marketplace_myOffers_interval;{{amount}} ώρες
+marketplace_myOffers_offerDeleted;Διαγραφή προσφοράς
+marketplace_merchantsOverview_arrival;{{duration}} ώρες Άφιξη στο {{arrivalTime}}
+marketplace_merchantsOverview_incomingMerchants;Εισερχόμενες παραδόσεις: {{count}}
+marketplace_merchantsOverview_outgoingMerchants;Εξερχόμενες παραδόσεις: {{count}}
+marketplace_merchantsOverview_noIncomingMerchants;- Δεν υπάρχουν εισερχόμενοι έμποροι -
+marketplace_merchantsOverview_noOutgoingMerchants;- Δεν υπάρχουν εξερχόμενοι έμποροι -
+marketplace_merchantsOverview_IncomingCat;Εισερχόμενο
+marketplace_merchantsOverview_outgoingCat;Εξερχόμενο
+marketplace_merchantsOverview_capacity;Χωρητικότητα: {{capacity}}
+marketplace_merchantsOverview_merchantsOverview;Επισκόπηση εμπόρων
+marketplace_merchantsOverview_ArrivingSoonest;Άφιξη το συντομότερο
+marketplace_merchantsOverview_ArrivingLatest;Τελευταία άφιξη
+marketplace_merchantsOverview_ShortestDistance;Μικρότερη απόσταση
+marketplace_merchantsOverview_LongestDistance;Μεγαλύτερη απόσταση
+marketplace_merchantsOverview_transportTo;Μεταφορά στο <b>{{Village}}</b> από <b>{{Player}}</b>
+marketplace_merchantsOverview_transportFrom;Μεταφορά από <b>{{Village}}</b> σε <b>{{Player}}</b>
+marketplace_merchantsOverview_returningFrom;Επιστροφή από <b>{{Village}}</b> σε <b>{{Player}}</b>
+academy_research_viewResearchList;Έρευνα σε εξέλιξη
+academy_research_allUnitsResearched;Όλες οι μονάδες έχουν ερευνηθεί.
+academy_researchListPopup_title;Στρατεύματα που ερευνώνται
+academy_researchListPopup_remainingTime;{{timeLeft}} αριστερά. Έτοιμο σε {{readyAt}}
+academy_researchListPopup_constructImmediately;Άμεση ολοκλήρωση κατασκευής
+research_started;Η έρευνα ξεκίνησε με επιτυχία!
+research_timeLeft;{{TIME|Countdown}} αριστερά
+townHall_celebration_ongoingCelebration;Σε εξέλιξη
+topBar_perHourLabel;/h:
+topBar_maxLabel;Ανώτατο:
+topBar_resourceFull;Πλήρες
+leftPanel_infoBox;Κουτί πληροφοριών
+villagePanel_playerNameTitle;Χωριά που ανήκουν σε {{playerName}}
+villagePanel_toStatistics;Στα στατιστικά χωριού
+villagePanel_culturePointsNeeded;Πόντοι πολιτισμού για δημιουργία επόμενου χωριού
+mapCell_type;{{x}}{{y}}
+mapCell_type_village;{{villageName}}
+mapCell_type_1;Χωριό
+mapCell_type_2;Κοιλάδα
+mapCell_type_3;Μη κατειλημμένη όαση
+mapCell_type_4;Κατειλημμένη ὀαση
+mapCell_type_5;Ερημιά
+mapCell_Owner;Ιδιοκτήτης
+mapCell_type_valley;Κοιλάδα
+mapCell_Wilderness;Δεν υπάρχει τίποτα ενδιαφέρον σε αυτή την τοποθεσία.
+mapCell_Distance;{{distance|Round|1}} πεδία
+mapCell_locationInfo;Πληροφορίες τοποθεσίας
+mapCell_surroundings;Περιβάλλον
+mapCell_actions_editFarmlist;Επεξεργασίας λίστας με φάρμες
+mapCell_actions_addFarmlist;Πρόσθεσε στην λίστα με φάρμες
+mapCell_actions_raidOasis;Επιδρομή όασης
+mapCell_showOnMap;Εμφάνιση στον χάρτη
+mapCell_noReports;- Δεν υπάρχουν διαθέσιμες πληροφορίες για αυτή την τοποθεσία -
+berichte.region_;{{PLAYERACTIVE}}{{PLAYERPASSIVE}}{{VILLAGE}}{{NAME1}}{{NAME2}}{{ALLY1}}{{ALLY2}}{{NAME}}
+mapCell_goToOwnVillage;Πήγαινε σε χωριό που σου ανήκει
+constructionQueue_timeLeftToFinish;{{timestamp|Countdown}} αριστερά. Έτοιμο σε {{timestamp|Time}}
+constructionQueue_timeUntilStart;Αρχίζει σε {{timestamp|Countdown}}
+constructionQueue_MasterBuilderTitle;Ουρά Αρχιμάστορα (κόστος {{masterBuilderCost|Sprite}} {{masterBuilderCost}} κατά την έναρξη της κατασκευής)
+constructionQueue_Constructing;Κατασκευάζοντας κτίρια
+constructionImmediatelyPopup_topText;Οι ακόλουθες παραγγελίες θα ολοκληρωθούν άμεσα:
+constructionImmediatelyPopup_title;Ολοκληρώστε αμέσως
+newBuildingConstructionDetail_dateTimeEnoughResources;Αρκετές ύλες στις {{date|Date}} στις {{time|Time}}.
+newBuildingConstruction_noBuildingsAvailable;Δεν μπορούν να κατασκευαστούν κτίρια αυτήν την στιγμή.
+goldclubpopup_currentGold;Τρέχον χρυσός:  {{iconName|Sprite}} <color={{colorValue|TextColor}}>{{currentGold}}</color>
+goldclubpopup_activated_toastMessage;Ενεργοποίηση Gold Club!
+loginPage_version;Έκδοση {{currentVersion}}
+loginPage_loginBlocked;Σύνδεση μπλοκαρισμένη
+loginPage_loginBlocked_fails;Πολλές αποτυχημένες προσπάθειες σύνδεσης
+loginPage_loginBlocked_message;Ο λογαριασμός σας έχει μπλοκαριστεί λόγω υπερβολικών αποτυχημένων προσπαθειών σύνδεσης.
+loginPage_loginBlocked_resolve;Για να ξεκλειδώσετε τον λογαριασμό σας, συνδεθείτε μέσω προγράμματος περιήγησης στο
+serverSelection_selectRegion;Επιλέξτε περιοχή
+serverSelection_selectGameWorld;Επιλογή κόσμου παιχνιδιού
+serverSelection_0;Διεθνής
+serverSelection_1;Αραβόφωνος κόσμος
+serverSelection_2;Ασία
+serverSelection_3;Ευρώπη
+serverSelection_4;Αμερική
+serverSelection_99;Ανάπτυξη
+serverSelection_mapSize;Μέγεθος χάρτη:
+serverSelection_mapSize_0;Μικρό
+serverSelection_mapSize_1;Μεγάλο
+serverSelection_artifacts;Πολύτιμα αντικείμενα:
+serverSelection_constructionPlans;Σχέδιο κατασκευής:
+serverSelection_changeGameWorld;Αλλαγή κόσμου παιχνιδιού
+serverSelection_username;Όνομα χρήστη:
+serverSelection_password;Κωδικός:
+serverSelection_loginButton;Συνδεθείτε και παίξτε
+serverSelection_forgotPassword;Ξέχασα τον κωδικό πρόσβασης
+serverSelection_noAccount;Δεν έχω λογαριασμό
+serverSelection_loginError;Λάθος όνομα χρήστη ή κωδικός πρόσβασης
+serverSelection_graphQlError;Σφάλμα στη λήψη των δεδομένων από το διακομιστή
+serverSelection_tokenRefreshError;Σφάλμα κατά την είσοδο στον τελευταίο χρησιμοποιημένο διακομιστή: παρακαλώ ξανασυνδεθείτε.
+serverSelection_stayLoggedIn;Μείνετε συνδεδεμένοι στον κόσμο παιχνιδιού
+troopsInfo_title;Στρατεύματα σε {{villageName}}
+unitInfo_velocity;<b>{{fields}}</b> πεδία ανά ώρα
+unitInfo_resourceCarriage;<b>{{INT}}</b> Πρώτες ύλες
+unitInfo_researchPrerequisites;Προϋποθέσεις για την έρευνα:
+unitInfo_trainingPrerequisites;Προαπαιτούμενα για την εκπαίδευση:
+unitInfo_canCarry;Μπορεί να μεταφέρει:
+exchangeResources_currentTitle;Νέο ποσό
+exchangeResources_lockAmount;Ποσό κλειδώματος
+exchangeResources_changeTitle;Αλλαγή
+exchangeResources_restTitle;Υπόλοιπο
+exchangeResources_buildingPossible_True;Πιθανή αναβάθμιση
+exchangeResources_buildingPossible_False;Η αναβάθμιση δεν είναι δυνατή
+exchangeResources_mergePossible_True;Συγχώνευση δυνατή
+exchangeResources_mergePossible_False;Συγχώνευση αδύνατη
+exchangeResources_researchPossible_True;Δυνατότητα έρευνας
+exchangeResources_researchPossible_False;Μη δυνατότητα έρευνας
+exchangeResources_celebrationPossible_True;Δυνατότητα γιορτής
+exchangeResources_celebrationPossible_False;Μη δυνατότητα γιορτής
+exchangeResources_reviveHero_True;Η αναβίωση του Ήρωα είναι δυνατή
+exchangeResources_reviveHero_False;Η αναβίωση του Ήρωα δεν είναι δυνατή
+exchangeResources_currentlyAvailable;Διαθέσιμο αυτή τη στιγμή: <b>{{amount}}</b>
+exchangeResources_maximumAvailable;Μέγιστο διαθέσιμο: <b>{{amount}}</b>
+exchangeResources_distributeEvenly;Μοίρασμα των εναπομεινάντων υλών ισομερώς:
+exchangeResources_distributeOnResource;Ή να δώσετε προτεραιότητα στις εναπομείναντες ύλεσ πρώτα σε:
+exchangeResources_distributeAuto;Αυτόματη διανομή
+exchangeResources_distributeManual;Χειροκίνητη διανομή
+exchangeResources_availableTroops;Διαθέσιμα στρατεύματα: {{amount}}
+buildingActivities_title;Δραστηριότητες κατασκευής
+buildingActivities_idle;Άεργο
+buildingActivities_type;Τύπος
+buildingActivities_building_13;Βελτιώσεις:
+buildingActivities_building_16;Φάρμες
+buildingActivities_building_17;Έμποροι
+buildingActivities_building_19;Στράτευμα σε εκπαίδευση
+buildingActivities_building_20;Ιππικό σε εκπαίδευση
+buildingActivities_building_29;Στράτευμα σε εκπαίδευση
+buildingActivities_building_30;Ιππικό σε εκπαίδευση
+buildingActivities_building_21;Στράτευμα σε εκπαίδευση
+buildingActivities_building_22;Έρευνα
+buildingActivities_building_24;Εορτασμοί
+buildingActivities_building_46;Στρατεύματα που έχουν θεραπευτεί
+buildingActivities_buildingAction_;{{amount}}{{max}}
+buildingActivities_buildingAction_16;{{amount}} επιδρομές σε εξέλιξη
+buildingActivities_buildingAction_17;{{amount}}/{{max}} διαθέσιμο
+mainMenu_title;Κύριο μενού
+mainMenu_quests;Αποστολές
+playerDetails_infoTab;Πληροφορίες παίκτη
+playerDetails_villageTabTitle;{{villages}} χωριά με {{oases}} οάσεις
+playerDetails_SortBy_1;Πληθυσμός μέγεθος
+playerDetails_SortBy_2;Πόντοι νίκης
+playerDetails_SortBy_3;Όνομα χωριού:
+playerDetails_SortBy_4;Όνομα περιοχής
+player_gender_DontSpecify;Αδιευκρίνιστο
+player_gender_Other;Άλλο
+player_gender0;Άνδρας
+player_gender1;Γυναίκα
+player_gender2;Άλλο
+player_gender3;Αδιευκρίνιστο
+playerDetails_NotesFor;Σημειώσεις για {{playerName}}
+playerDetails_NoDescription_Others;- Αυτός ο παίκτης δεν έχει προσθέσει περιγραφή -
+playerDetails_NoDescription_Own;- Δεν έχει προστεθεί ακόμα περιγραφή -
+playerDetails_editLanguages;Επεξεργασία γλωσσών
+playerDetails_searchLanguage;Αναζήτηση γλώσσας
+goldShopPlaceholder_title;Το κατάστημα έρχεται σύντομα!
+goldShopPlaceholder_description;Το κατάστημα χρυσού δεν έχει υλοποιηθεί ακόμη στην εφαρμογή για κινητά.<br><br> Για να αγοράσετε χρυσό, συνδεθείτε στο λογαριασμό σας μέσω του προγράμματος περιήγησης.
+goldShop_title;Κατάστημα χρυσού
+goldShop_advantage_5;Travian Plus
+goldShop_advantage_4;Ξύλο
+goldShop_advantage_1;Πηλός
+goldShop_advantage_2;Σίδερο
+goldShop_advantage_3;Σιτάρι
+goldShop_feature_activated;Ενεργοποίηση της λειτουργίας!
+goldShop_purchaseFailed;Η αγορά απέτυχε!
+goldShop_purchaseSuccess;Αγορά επιτυχής.
+goldShop_transactionInProgress;Συναλλαγή σε εξέλιξη.\nΠαρακαλούμε περιμένετε.
+goldShop_transactionFailed;Κάτι πήγε λάθος.\nΠαρακαλώ προσπαθήστε αργότερα.
+goldShop_transactionTimeout;Αγαπητέ παίκτη, η πληρωμή σας ξεπέρασε το χρονικό όριο και ενδέχεται να μην έχει επεξεργαστεί σωστά. Παρακαλώ επικοινωνήστε με την <style="link"><link="https://support.travian.com/support/tickets/new">υποστήριξη πληρωμών</link></style> αν αντιμετωπίσετε οποιοδήποτε πρόβλημα.
+market_sendResources_requiredMerchants;Απαιτούμενοι έμποροι:
+market_sendResources_capacityPerMerchant;Χωρητικότητα ανά έμπορο
+market_sendResources_amountRepeats;Αριθμός επαναλήψεων:
+market_sendResources_confirmResources;Επιβεβαίωση υλών
+market_sendResources_amountWithX;{{amount}}x
+market_sendResources_sent;Πρώτες ύλες στάλθηκαν!
+market_offer_maxDuration;Μέγιστος χρόνος μεταφορών:
+market_offer_confirm;Επιβεβαίωση προσφοράς
+market_offers_title;Προσφορές
+market_capacity;Χωρητικότητα: {{capacity}}
+market_offers_offering;Προσφέρω:
+market_offers_searching;Αναζητώ:
+market_offers_offered;Στέλνετε
+market_offers_wanted;Λαμβάνετε
+market_offers_accepted;Η προσφορά δεν έγινε δεκτή! Οι ύλες είναι καθ' οδόν και οι έμποροι έχουν αποσταλεί.
+market_offers_ownAllianceOnly;Παίκτες από τη δική σας συμμαχία μόνο
+market_ratio_11;1.1.
+market_ratio_1X;1 : X
+market_tradeRoutes_to;Προς:
+market_tradeRoutes_entryAmount;<b>{{amount}}</b> εγγραφές
+market_tradeRoutes_noRoutes;- Δεν έχουν δημιουργηθεί εμπορική οδοί -
+market_tradeRoutes_travelTime;Διάρκεια αποστολής: {{time|Duration}} ώρες
+market_tradeRoutes_activeRatio;{{active}}/{{total}} ενεργό
+market_tradeRoutes_active;Ενεργό
+market_tradeRoutes_paused;Παύση
+market_tradeRoutes_updated;Οι εμπορικές οδοί ενημερώθηκαν
+market_tradeRoutes_deleted;Διαγραφή εμπορικών οδών
+market_tradeRoutes_returnAt;επιστροφή σε {{time|Time}}
+market_tradeRoutes_merchantsAndRepeat;{{merchants}} έμποροι, {{repeats}}x
+market_tradeRoutes_filterOptions;Επιλογές φίλτρου
+market_tradeRoutes_showMerchants;Εμφάνιση εμπόρων
+market_tradeRoutes_showMerchantsText;Δείχνει πόσοι έμποροι χρησιμοποιούνται
+market_tradeRoutes_showResources;Εμφάνιση υλών
+market_tradeRoutes_showResourcesText;Δείχνει την ποσότητα των υλών που μεταφέρονται
+market_tradeRoutes_afterInputFieldsSuffix;Ώρες
+market_tradeRoutes_interval;{{INT}} ώρες
+market_tradeRoutes_confirmTarget;Επιβεβαίωση στόχου
+market_tradeRoutes_arrivalTime;{{duration|Duration}} στις {{arrivalTime|Time}}
+market_tradeRoutes_created;Έχει δημιουργηθεί εμπορική οδός
+market_tradeRoutes_edit;Επεξεργασία [routeAmount=1:εμπορικής οδού][routeAmount>1:εμπορικών οδών]
+market_tradeRoutes_update;Ενημέρωση [routeAmount=1:εμπορικής οδού][routeAmount>1:εμπορικών οδών]
+market_tradeRoutes_multiEditWarning;Επεξεργάζεστε πολλαπλές εμπορικές οδούς Οι αλλαγές που έγιναν θα επηρεάσουν όλες τις {{routeAmount}} διαδρομές.
+market_tradeRoutes_editResourcesTitle;Αλλαγή πρώτων υλών.
+market_tradeRoutes_editResourcesButton;Επεξεργασία υλών
+market_tradeRoutes_setResourcesButton;Επιλέξτε ύλες
+market_tradeRoutes_updateResourcesButton;Ενημέρωση υλών
+market_tradeRoutes_pause;Παύση [routeAmount=1:εμπορικής οδού][routeAmount>1:εμπορικών οδών]
+market_tradeRoutes_pauseDescription;Η εμπορική διαδρομή θα μεταφερθεί στη λίστα αναμονής αλλά θα παραμείνει στην αγορά σας.
+market_tradeRoutes_delete;Διαγραφή [routeAmount=1:εμπορικής οδού][routeAmount>1:εμπορικών οδών]
+market_tradeRoutes_deleteConfirmQuestion;Είστε σίγουροι ότι θέλετε να διαγράψετε [routeAmount=1:αυτή την εμπορική οδό][routeAmount>1:αυτές τις εμπορικές οδούς];
+market_tradeRoutes_invalidTarget;Οι εμπορικές διαδρομές μπορούν να σταλούν μόνο σε χωριά θαυμάτων του κόσμου και σε χωριά με αντικείμενα ή σχέδια κατασκευής θαυμάτων του κόσμου των μελών της συμμαχίας ή της ομοσπονδίας
+hero.status;{{NAME}}
+hero_adventures_selectVillage;Επιλέξτε χωριό
+hero_adventures_explore;Εξερευνήστε
+hero_adventures_sendHero;Στείλτε τον ήρωα
+hero_adventures_sent;Η περιπέτεια ξεκίνησε
+hero_status_reviveWithBucket;Χρησιμοποιήστε το για να αναγεννήσετε τον ήρωά σας αμέσως.
+hero_status_reviveWithRes;Χρησιμοποιήστε ύλες για να αναγεννήσετε τον ήρωα.
+hero_inventory_consumablePopupTitle;Χρήσιμο αντικείμενο
+hero_resourceTransferPopup_title;Ύλες μεταφοράς
+hero_resourceTransferPopup_ReadyForTransfer;Έτοιμο για μεταφορά
+hero_resourceTransferPopup_transferSelected;Μεταφορά επιλεγμένη
+hero_resourceTransferPopup_transferMax;Μέγιστη μεταφορά
+hero_resourceTransferPopup_storageFull;Η αποθήκη είναι γεμάτη. Δεν μπορείτε να μεταφέρετε περαιτέρω ύλες.
+hero_inventory_transferToCurrentVillage;Μεταφέρθηκε στο τρέχον ενεργό χωριό: <b>{{VILLAGE}}</b>
+hero.itemDescriptionV2Details;{{PERCENTAGE}}{{EXPERIENCE}}{{RAISE}}{{LIMIT}}{{MAX}}{{TIME}}
+hero.itemDescriptionV2;{{VALUE}}
+hero_consumablePopup_currentEquippedItems;Ποσότητα των εξοπλισμένων αντικειμένων:
+hero_consumablePopup_itemsLeftInInventory;Ποσότητα στοιχείων που έχουν απομείνει στην απογραφή:
+hero.itemTypeV2_inventory;Αναλώσιμα
+hero.cooldownWithTime;Έχει μία {{COOLDOWN}}ώρη αντίστροφη μέτρηση, που τελειώνει στις {{DATE|DateTime}}.
+reports_overview_title;{{COUNT}} αναφορές
+reports_overview_title_selected;Επιλεγμένες {{SELECTED}} / {{COUNT}} αναφορές
+reports_overview_title_archived;Αρχειοθετημένες αναφορές
+reports_overview_archived_noReports;- Δεν υπάρχουν διαθέσιμες αρχειοθετημένες αναφορές -
+reports_filters_title;Επιλέξτε φίλτρο
+reports_filters_allReports;Όλες οι αναφορές
+reports_filters_applyButton;Εφαρμόστε φίλτρα {{COUNT}} 
+reports_filters_noFilter;Δεν έχει επιλεγεί φίλτρο
+reports_detail_title;Λεπτομέρειες αναφοράς
+berichte.;{{NAME1}}{{NAME2}}{{VILLAGE_NAME}}{{X}}{{Y}}{{COORDS}}{{NAME}}
+reports_player_from_village;[{{allianceId|AllianceLink}}] {{playerId|PlayerLink}} από το χωριό {{villageId|VillageLink}}
+reports_troops_lost;Χαμένα στρατεύματα:
+reports_troops_hospitalized;Νοσηλεύεται στο νοσοκομείο:
+reports_xp_gained;{{amount}} Κερδισμένα XP
+reports_health_change;-{{change}}% υγεία
+reports_hero_died;Ο ήρωάς σας πέθανε κατά τη διάρκεια της περιπέτειας
+reports_scouted_building;{{buildingType|TranslateSuffixFor|allgemein.gid}} επίπεδο <b>{{level}}</b>
+reports_refreshed;Αναφορές ανανεωμένες!
+reports_deleteReportPopup_title;Διαγραφή Αναφοράς (ών)
+reports_deleteReportPopup_warningTitle;Είστε σίγουροι ότι θέλετε να διαγράψετε την/τις {{X}} αναφορά/ες;
+reports_deleteReportPopup_warningTitleAll;Είστε σίγουροι ότι θέλετε να διαγράψετε όλες τις αναφορές;
+reports_deleteReportPopup_warningDescription;Μόλις διαγράψετε μια αναφορά, αυτή θα εξαφανιστεί οριστικά. Δεν θα μπορέσετε να το ανακτήσετε.
+reports_deleted;Η αναφορά διαγράφηκε!
+reports_markedUnread;Αναφορά σημειωμένη ως μη αναγνωσμένη!
+reports_archived;Η αναφορά αρχειοθετήθηκε!
+reports_deleted_all;Όλες οι αναφορές διαγράφονται!
+reports_deleted_selected;{{X}} Η/Οι αναφορά /ες διαγράφηκαν!
+reports_markedRead_all;Όλες οι αναφορές έχουν επισημανθεί ως αναγνωσμένες!
+reports_markedRead_selected;{{X}} αναφορά/ές έχουν επισημανθεί ως αναγνωσμένες!
+alliance_nameAndTagPair;{{allianceName}} | {{allianceTag}}
+alliance_editAllianceName;Επεξεργασία ονόματος συμμαχίας
+alliance_name;Όνομα συμμαχίας
+alliance_nameError;Το όνομα της συμμαχίας δεν μπορεί να είναι κενό
+alliance_tag;Σήμα συμμαχίας
+alliance_tagError;Το σήμα της συμμαχίας δεν μπορεί να είναι κενό
+alliance_profileTab_inviteNewPlayer;Προσκάλεσε νέο παίκτη
+alliance_profileTab_showInvitedPlayers;Εμφάνιση προσκεκλημένων παικτών
+alliance_invitedPopup_title;Προσκάλεσε παίκτες
+alliance_invitedPopup_invitationRemoved;Η πρόσκληση αφαιρέθηκε!
+alliance_invitePlayerPopup_title;Προσκάλεσε παίκτη
+alliance_invitePlayerPopup_noPlayerFound;Δεν βρέθηκε παίκτης
+alliance_invitePlayerPopup_playerInvited;Προσκεκλημένος παίκτης!
+alliance_editMemberPopup_title;Επεξεργασία μέλους
+alliance_editMemberPopup_customMessage;Προσαρμοσμένο μήνυμα
+alliance_editMemberPopup_setRole;Ορισμός ρόλου
+alliance_editMemberPopup_kickPlayerFromAlliance;Αποβολή παίκτη από τη συμμαχία
+alliance_editMemberPopup_cantChangePermission;Δεν μπορείτε να αλλάξετε το τρέχον δικαίωμα: δείτε την προειδοποίηση.
+alliance_kickPlayerPopup_areYouSure;Είσαι σίγουρος ότι θέλεις να διώξεις το {{Player}} από τη συμμαχία
+alliance_kickPlayerPopup_playerKicked;Ο παίκτης αποβλήθηκε!
+alliance_editAllianceDescription;Επεξεργασία περιγραφής της συμμαχίας
+alliance_topColumn;Επάνω στήλη
+alliance_bottomColumn;Κάτω στήλη
+alliance_bbCodeAdded;Προστέθηκε κωδικός BB
+alliance_generalInformation;Γενικές πληροφορίες
+alliance_confederacy_tab;Συνομοσπονδία
+alliance_diplomacy;Διπλωματία
+alliance_diplomacy_tab1;NAP / Πόλεμος
+alliance_diplomacy_send_new;Στείλτε νέα
+alliance_diplomacy_openRequests;Ανοιχτά αιτήματα
+alliance_diplomacy_otherOffered;{{allianceId|AllianceLink}} σε προσφορά {{type|TranslateSuffixFor|alliance_diplomacy_type}}
+alliance_diplomacy_youOffered;Προσφέρατε ένα {{type|TranslateSuffixFor|alliance_diplomacy_type}} με {{allianceId|AllianceLink}}
+alliance_diplomacy_offerDeclare;Προσφορά / δήλωση
+alliance_diplomacy_type;Τύπος
+alliance_diplomacy_type1;συνασπισμός
+alliance_diplomacy_type2;NAP
+alliance_diplomacy_type3;πόλεμος
+alliance_diplomacy_type4;συνασπισμός
+alliance_diplomacy_typekick;αποβολή από τη συνομοσπονδία
+alliance_diplomacy_deleteText_;{{type|TranslateSuffixFor|alliance_diplomacy_type}}{{alliance|AllianceLink}}
+alliance_diplomacy_deleteTitle_RemoveRequest;Αφαίρεση αιτήματος
+alliance_diplomacy_deleteText_RemoveRequest;Είστε σίγουρος ότι θέλετε να καταργήσετε την προσφορά για ένα {{type|TranslateSuffixFor|alliance_diplomacy_type}} με το {{alliance|AllianceLink}}
+alliance_diplomacy_deleteTitle_TerminateExisting;Τερματισμός
+alliance_diplomacy_deleteText_TerminateExisting;Είστε σίγουροι ότι θέλετε να τερματίσετε το {{type|TranslateSuffixFor|alliance_diplomacy_type}} με το {{alliance|AllianceLink}}
+alliance_diplomacy_deleteTitle_ConfederacyKickVote;Τερματισμός
+alliance_diplomacy_deleteText_ConfederacyKickVote;Χρειάζεστε επιβεβαίωση από άλλα μέλη της συνομοσπονδίας για αποβολή της συμμαχίας {{subject|AllianceLink}}.\n\nΘέλετε να προχωρήσετε και να ενημερώσετε τις άλλες συμμαχίες για την απόφασή σας;
+alliance_diplomacy_deleteTitle_QuitConfederacy;Τερματισμός
+alliance_diplomacy_deleteText_QuitConfederacy;Είστε σίγουροι ότι θέλετε να τερματίσετε τη συνομοσπονδία σας με τα ακόλουθα μέλη
+alliance_diplomacy_deleteTitle_RemoveConfederacyProposal;Αφαίρεση αιτήματος
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Kick;Είσαι σίγουρος ότι θέλεις να απορρίψεις το αίτημα του {{alliance|AllianceLink}} να διώξεις το {{subject|AllianceLink}} από τη συνομοσπονδία
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Join;Είσαι σίγουρος ότι θέλεις να απορρίψεις το αίτημα του {{alliance|AllianceLink}} αποδοχής και ένταξης του {{subject|AllianceLink}} στη συνομοσπονδία;
+alliance_diplomacy_sent;Αποστολή προσφοράς
+alliance_diplomacy_accepted;Αποδεκτή διπλωματική σχέση
+alliance_diplomacy_canceled;Η διπλωματική σχέση ακυρώθηκε
+alliance_diplomacy_declined;Το αίτημα απορρίφθηκε
+alliance_diplomacy_kickStarted;Αποστολή αιτήματος
+alliance_diplomacy_proposal_approved;Το αίτημα εγκρίθηκε
+alliance_diplomacy_noContract;Η συμμαχία σας δεν έχει ενεργά συμβόλαια με άλλες συμμαχίες.
+alliance_diplomacy_noConfederacy;Η συμμαχία σας δεν είναι μέρος μιας συνομοσπονδίας.
+alliance_diplomacy_alreadyOpenOffer;Υπάρχει ήδη ανοικτή προσφορά για αυτή τη συμμαχία.
+alliance_diplomacy_alreadyExistingContract;Υπάρχει ήδη μια συμφωνία με αυτή τη συμμαχία.
+alliance_diplomacy_warInDeletion;Περιμένετε την άλλη συμμαχία να τερματίσει επίσης τον πόλεμο.
+alliance_union_leave;Αφήστε τη συνομοσπονδία
+alliance_union_add;Προσθήκη νέου αιτήματος
+allianz.diplomacy_with_type;{{NAME}}
+allianz.diplomacy_with_type4;Συνομοσπονδία με {{NAME}}
+alliance_newsBbDescription;Αλλάξτε το κείμενο 'αριθμός' για να επεξεργαστείτε τον αριθμό των ειδήσεων
+alliance_LossesBBName;Απώλειες
+alliance_LossesBBDescription;Αλλάξτε το "όνομα" για να επιλέξετε τη συμμαχία με την οποία θέλετε να συγκρίνετε
+alliance_NapBBName;Σύμφωνο μη επιθέσεων
+alliance_WarsBBName;Πόλεμοι
+alliance_addBBCode;Προσθήκη κωδικού BB
+alliance_addMedal;Προσθήκη μεταλλίου
+alliance_assignToPosition;Ανάθεση μελών σε θέση και αλλαγή ονόματος συμμαχίας
+alliance_editPermissions;Επεξεργασία δικαιωμάτων
+alliance_roleTitle;Τίτλος ρόλου:
+alliance_assignToPosition_onlyMemberError;Είστε το μοναδικό μέλος αυτής της συμμαχίας. Η ανάθεση μελών σε θέσεις και η αλλαγή του ονόματος της συμμαχίας δεν μπορούν να αποεπιλεγούν.
+alliance_noAllianceEvents;- Δεν υπάρχουν γεγονότα συμμαχίας για να δείξετε -
+alliance_dailyContribution;Ημερήσια συνεισφορά
+alliance_contributionAmount;Συνεισφορά <b>{{AMOUNT}}</b>
+alliance_resourcesContributed;{{current}}/{{max}} πόροι που συνεισέφεραν
+alliance_contributionResetIn;Επανεκκίνηση σε: {{time|Countdown}}
+alliance_resUntilNext;Πόροι μέχρι το επόμενο επίπεδο: {{resources|LongNumber}}
+alliance_bonusCurrentlyActivating;Ενεργοποίηση επιδόματος: {{resources|Countdown}}
+alliance_bonusMaxed;Το μπόνους μεγιστοποιήθηκε
+alliance_tripledContribution;Τριπλασίασες την συνεισφορά σου!
+alliance_contributionStatistics;Στατιστικά στοιχεία συνεισφοράς
+alliance_contributionNone;- Δεν υπάρχουν συνεισφέροντες αυτή τη στιγμή -
+auth_clientVerificationFailed;Δεν μπόρεσε να επαληθευθεί ο πελάτης. Παρακαλώ δοκιμάστε και πάλι.
+banned_seeMessage;Δείτε το μήνυμα
+banned_acceptPunishment;Αποδεχτείτε την τιμωρία
+residence_settlement;Εποικισμός
+palace_capital;Ορίστε αυτό το χωριό ως πρωτεύουσά μου.
+palace_setAsCapital;Ορισμός ως κεφάλαιο
+palace_enterPassword;Εισάγετε τον κωδικό πρόσβασης για λόγους ασφαλείας:
+embassy_GoToAlliance;Πηγαίνετε στη συμμαχία
+embassy_Invitation;Η συμμαχία {{AllianceId|AllianceLink}}, προσκλήθηκε από {{playerId|PlayerLink}}
+embassy_VillagesInRange;Χωριά σε ακτίνα
+embassy_LeaveAllianceToJoin;Για ένταξη σε αυτήν τη συμμαχία, απαιτείται πρώτα αποχώρηση από την τρέχουσα συμμαχία.
+embassy_ConfirmLeaveAlliance;Επιβεβαίωση και αποχώρηση από τη συμμαχία
+embassy_InvitationAccepted;Πρόσκληση αποδεκτή
+embassy_AllianceFounded;Συμμαχία που ιδρύθηκε με επιτυχία
+embassy_LeftAlliance;Αποχώρησε επιτυχώς από τη συμμαχία
+embassy_acceptInvitationQuestion;Είσαι σίγουρος ότι θέλεις να συμμετάσχεις στο {{allianceId|AllianceLink}}
+embassy_acceptInvitationWarning;Δεν θα μπορείτε να αποχωρήσετε από τη συμμαχία για {{hours}} ώρες μετά την ένταξή σας.
+embassy_acceptInvite;Ναι, συμμετοχή στη συμμαχία
+embassy_declineInvite;Όχι, αφαιρέστε την πρόσκληση
+embassy_noAlliancesNearby;Δεν βρέθηκαν συμμαχίες στην κοντινή περιοχή.
+smithy_improveTo;Βελτίωση στο επίπεδο {{level}}
+smithy_viewList;Προβολή ανάπτυξης
+smithy_upgradeStarted;{{unitId|TranslateSuffixFor|truppen.tid}} βελτίωση ξεκίνησε
+smithy_researchFirst;Η μονάδα πρέπει να ερευνηθεί στην Ακαδημία
+smithy_levelTooLow;Το επίπεδο του σιδηρουργείου είναι πολύ χαμηλό, παρακαλώ αναβαθμίστε το σιδηρουργείο
+allBuildings_10;Όλες οι αποθήκες:
+allBuildings_11;Όλες οι σιταποθήκες:
+allBuildings_23;Όλες τα ορύγματα:
+allBuildings_38;Όλες οι αποθήκες:
+allBuildings_39;Όλες οι σιταποθήκες:
+currentBuildingValue;Τρέχον {{type|TranslateSuffixFor|allgemein.gid}}:
+ad_successful;Διαφήμιση παρακολουθείται με επιτυχία!
+externalLink_title;Εξωτερικά link
+externalLink_description1;<b>Προσοχή!</b><br>Πρόκειται να ανοίξετε τον ακόλουθο εξωτερικό σύνδεσμο:
+externalLink_description2;Η Travian Games δεν μπορεί να ελέγξει ούτε να επαληθεύσει αυτόν τον σύνδεσμο.
+externalLink_description3;Προχωρήστε με δική σας ευθύνη.
+externalLink_description4;Είστε σίγουρος ότι θέλετε να συνεχίσετε
+externalLink_continue;Συνεχίστε στο σύνδεσμο
+search_village;Αναζήτηση χωριού
+search_select_village;Επιλέξτε χωριό
+search_three_characters;Πληκτρολογήστε τουλάχιστον {{amount}} χαρακτήρες
+search_no_result;Δεν βρέθηκε αντιστοιχία
+search_player;Αναζήτηση παίκτη
+search_player_invite;Προσκάλεσε παίκτη
+search_select_player;Επιλέξτε παίκτη
+search_select_player_invite;Προσκάλεσε νέο παίκτη
+search_alliance;Αναζήτηση συμμαχίας
+search_select_alliance;Επιλέξτε συμμαχία
+gid27.arte_detail_;{{INT}}
+artefact_inventory_village;Χωριό:
+artefact_inventory_conquered;Κατακτήθηκε:
+artefact_inventory_active;Ενεργό: ενεργό σε
+artefact_inventory_active_already;Ενεργό: <b>Ενεργοποιήθηκε</b>
+artefact_inventory_show_active_only;Εμφάνιση μόνο των ενεργοποιημένων αντικειμένων μου
+artefact_overview;Επισκόπηση τεχνουργήματος
+artefact_tip_large;Τα μεγάλα τεχνουργήματα απαιτούν επίπεδο θησαυροφυλακίου <b>20</b> και επηρεάζουν ολόκληρο το <b>avatar σας</b>
+artefact_tip_small;Τα μικρά τεχνουργήματα απαιτούν επίπεδο θησαυροφυλακίου <b>10</b> και επηρεάζουν μόνο το χωριό <b></b>
+artefact_tip_nearby;Αντικείμενα που βρίσκονται στην περιοχή γύρω από το {{villagenamelong|Bold}}
+artefact_small;Μικρό
+artefact_large;Μεγάλο
+artefact_nearby;Κοντά στο
+artefact_village;Χωριό
+artefact_button_former_owners;Δείτε τους προηγούμενους ιδιοκτήτες
+artefact_already_active;Έχει ήδη ενεργοποιηθεί
+artefact_required_level_value;Θησαυροφυλάκιο  <b>επίπεδο{{LEVEL}}</b>
+artefact_details;Λεπτομέρειες
+number_counter;{{NUMBER}}.
+tasks_villageTasks;Εργασίες του χωριού
+tasks_nextHeroLevelBonus;Μπόνους επόμενου επιπέδου ήρωα = {{value}}%
+villageOverview_building_headline;Κτήριο
+villageOverview_building_slotIdle;Καμία κατασκευή σε εξέλιξη
+villageOverview_resource_sorting1;Λίστα χωριών
+villageOverview_resource_sorting2;Σιταποθήκη χαμηλότερη διάρκεια
+villageOverview_resource_sorting3;Σιταποθήκη υψηλότερη διάρκεια
+villageOverview_resource_sorting4;Αποθήκη εμπορευμάτων χαμηλότερη διάρκεια
+villageOverview_resource_sorting5;Αποθήκη εμπορευμάτων υψηλότερη διάρκεια
+villageOverview_resource_sorting6;Αρνητική παραγωγή
+villageOverview_troops_stationed;Τα στρατεύματα είναι εγκατεστημένα στο χωριό
+villageOverview_troops_sum;Σύνολο στρατευμάτων σας
+villageOverview_troops_tab_training;Εκπαίδευση
+villageOverview_culture_slots;Θέσεις χωριών
+cancelPopup_Improvement;Ακύρωση βελτίωσης
+cancelPopup_Research;Ακύρωση έρευνας
+cancelPopup_Construction;Ακύρωση κατασκευής
+cancelPopup_text_;{{NAME}} {{LEVEL}}
+cancelPopup_text_Improvement;Θέλετε να ακυρώσετε την βελτίωση του {{NAME}} επιπέδου {{LEVEL}};
+cancelPopup_text_Research;Θέλετε να ακυρώσετε την έρευνα για το {{NAME}};
+cancelPopup_text_Construction;Θέλετε να ματαιώσετε την κατασκευή του {{NAME}} επιπέδου {{LEVEL}};
+cancelPopup_text_refund;Θα σας επιστραφούν {{INT}}% από το κόστος βελτίωσης:
+dailyQuests_timeRemaining;Υπολειπόμενος χρόνος: {{time|Countdown}}
+dailyQuests_rewardOverview;Δείτε την επισκόπηση ανταμοιβής
+dailyQuests_claimRewards;Διεκδίκηση ανταμοιβών
+dailyQuests_pointsEarned;Κερδισμένοι πόντοι: <b>{{current}}/{{max}}</b>
+dailyQuests_rewardDescription;Αυτές είναι οι ανταμοιβές που μπορείτε να ξεκλειδώσετε ολοκληρώνοντας τις σημερινές καθημερινές αποστολές:
+dailyQuests_claimAction;Διεκδίκηση
+dailyQuests_alreadyClaimed;Διεκδίκηση
+dailyQuests_questDetailTitle;Πληροφορίες
+dailyQuests_quest_worth;Αυτή η αποστολή αξίζει:
+dailyQuests_quest_worth_points;+{{points}} [points=1:σημείο][points>1:σημεία]
+dailyQuests_quest_repeated;Αυτή η αναζήτηση μπορεί να επαναληφθεί:
+dailyQuests_quest_repeated_amount;{{amount}} [amount=1:χρόνος][amount>1:χρόνοι]
+dailyQuests_quest_completed;Οι επαναλήψεις ολοκληρώθηκαν:
+dailyQuests_quest_difficulty;Δυσκολία:
+dailyQuests_quest_requirement;Απαίτηση:
+dailyQuests_backToOverview;Επιστροφή στην επισκόπηση
+dailyQuests_difficulty_moderate;Μέτριος
+dailyQuests_difficulty_hard;Δύσκολη
+dailyQuests_difficulty_challenging;Προκλητικό
+achievementQuests.achQuest_;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+achievementQuests.achQuest__step_01_description;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+heroMansion_Loyalty;Πίστη: {{INT}}%
+heroMansion_Conquered;Κατακτήθηκε: {{TIME|DateTime}}
+heroMansion_SlotFree;Η επόμενη θέση όασης είναι διαθέσιμη
+heroMansion_SlotBlocked;Επόμενη όαση από τη <color={{colorValue|TextColor}}>Περιοχή ηρώων</color> <color={{colorValue2|TextColor}}>επίπεδο {{REQUIRMENT}}</color>
+heroMansion_Undo;Αναίρεση
+heroMansion_FinishedAt;Τέλειωσε: {{TIME|Time}}
+waterworks_NoneOasesAcquired;Καμία όαση δεν προσαρτάται
+waterworks_BonusCalculation;+ ({{INT}}% του {{INT2}}%) = 
+waterworks_CurrentBonus;Τρέχον μπόνους υδραυλικών έργων: +{{INT}}% για της ύλες της όασης
+waterworks_Oases;Προσαρτημένες οάσεις
+messages_inbox_title;{{COUNT}} μηνύματα
+messages_inbox_title_selected;Επιλεγμένα μηνύματα {{SELECTED}} / {{COUNT}} 
+messages_newMessage;Νέο μήνυμα
+messages_messageSent;Αποστολή μηνύματος!
+messages_exitPreview;Προεπισκόπηση εξόδου
+messages_previewTitle;Προεπισκόπηση μηνύματος
+messages_unread_count;{{COUNT}} αδιάβαστο
+reportPlayer_selectReason;Επιλέξτε το λόγο για την έκθεση
+reportPlayer_reasonPlaceholder;Αιτία της έκθεσης
+reportPlayer_addNote;Προσθέστε μια σημείωση στην αναφορά (προαιρετικά):
+reportPlayer_alsoBlock;Αγνοήστε επίσης αυτόν τον παίκτη
+reportPlayer_maximumLength;Μέγιστο μήκος: {{text|TextLength}}/300
+reportPlayer_nowIgnored;Ο παίκτης τώρα αγνοείτε.
+reportPlayer_nowUnignored;Δεν αγνοήστε πλέον αυτόν τον παίκτη.
+statistics_general;Γενικές στατιστικές
+statistics_seeDetails;Δείτε λεπτομέρειες
+statistiken.progressionStepTitle_;{{VALUE}}{{DATETIME}}
+language_de-DE;Γερμανικά
+language_en-US;Ελληνικά
+language_fr-FR;Γαλλικά
+language_ru-RU;Ρωσική
+statistics_villageAndHero;Μεγαλύτερο χωριό / ήρωας
+RelativeTime_0;{{data}} s
+RelativeTime_1;{{data}} m
+RelativeTime_2;{{data}} ώρα
+RelativeTime_3;[data>1:{{data}} ημέρες][data<2:{{data}} ημέρα]
+RelativeTime_4;[data>1:{{data}} εβδομάδες][data<2:{{data}} εβδομάδα]
+RelativeTime.Separator; 
+RelativeTime.Wrapper.Past;{{time}} πριν
+RelativeTime.Wrapper.Future;Στο {{time}}
+mapCell_tooFewSettlers;{{current}}/3 διαθέσιμοι άποικοι
+mapCell_heroNotIdle;Ο ήρωάς σας δεν είναι αδρανής
+mapCell_cantAddOwn;Δεν μπορείτε να προσθέσετε τα δικά σας χωριά
+mapCell_alreadyInVillage;Είστε ήδη σε αυτό το χωριό
+serverSelection_rememberPassword;Θυμηθείτε τον κωδικό μου
+serverSelection_savedWorldsTitle;Κόσμοι παιχνιδιού σας
+serverSelection_removeWorldTitle;Αφαίρεση του κόσμου του παιχνιδιού
+serverSelection_removeWorldQuestion;Θέλετε πραγματικά να αφαιρέσετε αυτόν τον κόσμο παιχνιδιού από τη λίστα σας
+serverSelection_removeWorldDescription;Προειδοποίηση: Αυτό δεν θα διαγράψει το λογαριασμό σας στον κόσμο του παιχνιδιού. Μπορείτε να επιστρέψετε ανά πάσα στιγμή και να προσθέσετε τον κόσμο του παιχνιδιού, συμπεριλαμβανομένου του λογαριασμού σας, στη λίστα με τους κόσμους του παιχνιδιού σας.
+serverSelection_removeWorldButton;Αφαίρεση από τη λίστα
+serverSelection_addWorldText;+Πρόσθεσε κόσμο παιχνιδιού
+buildingActivities_buildingAdditional_;{{amount}}
+buildingActivities_buildingAdditional_17;{{amount}} ενεργές εμπορικές οδοί
+reports_filters_reset;Επαναφορά φίλτρων
+palace_capitalSet;Σετ πρωτεύουσας!
+palace_isCapital;Αυτή είναι η πρωτεύουσα σου
+messages_unread_count_full;{{COUNT}} μη [COUNT=1:αναγνωσμένο μήνυμα][COUNT>1:αναγνωσμένα μηνύματα]
+statistics_alliance;Στατιστικά συμμαχιών
+statistics_alliances_best_off;Οι καλύτερες συμμαχίες (επιτιθέμενος)
+statistics_alliances_best_def;Οι καλύτερες συμμαχίες (αμυνόμενος)
+statistics_offensiveStrength;Η επιθετική σας δύναμη του {{VILLAGEID|VillageLink}} σε αυτόν τον διακομιστή
+statistics_offensiveStrengthAlliance;Η επιθετική σας δύναμη του {{VILLAGEID|VillageLink}} στη συμμαχία σας
+statistics_offensiveStrengthVillage;Δύναμη επίθεσης αυτού του χωριού:
+statistics_defensiveStrength;Η αμυντική σας δύναμη του σε αυτόν τον διακομιστή
+statistics_defensiveStrengthAlliance;Η αμυντική σας δύναμη του στη συμμαχία σας
+statistics_defensiveStrengthVillage;Δύναμη άμυνας αυτού του χωριού:
+statistics_defensiveStrengthVillageSum;Άθροισμα της αμυντικής δύναμης όλων των χωριών:
+recent;Πρόσφατο
+appliedFilters;Έχετε εφαρμόσει τα φίλτρα {{COUNT}}.
+allgemein.gid99;Τυχαία
+rallyPoint_troopsOverview_10;Λεπτομερής επισκόπηση στρατευμάτων
+rallyPoint_troopsOverview_returningFromAdventure;Επιστροφή από περιπέτεια: 
+rallyPoint_troopsOverview_detailedView;Λεπτομερής προβολή
+rallyPoint_troopsOverview_noMovements;- Καμία μετακίνηση στρατευμάτων σε εξέλιξη -
+rallyPoint_troopsOverview_Target;Στόχος: {{Target|NamedCoordinates}}
+rallyPoint_troopsOverview_Origin;Προέλευση: {{Target|NamedCoordinates}}
+hero_adventures_number;Αρ. {{INT}}
+hero_status_regeneration;<b>Αναγέννηση υγείας:</b> {{VALUE}}% ανά μέρα
+hero_status_regeneration_details;{{HERO}}% ανά ημέρα από τον ήρωα {{EQUIPMENT}}% ανά ημέρα από τον εξοπλισμό
+hero_status_experience;<b>Εμπειρία:</b> {{VALUE}}%
+hero_status_experience_bonus;Επίδομα {{VALUE}}%
+search_results;Αποτελέσματα αναζήτησης
+search_player_link;Σύνδεσμος παίκτη
+search_select_player_link;Επιλέξτε παίκτη
+search_recipient;Αναζήτηση παραλήπτη
+search_select_recipient;Επιλέξτε παραλήπτη
+search_alliance_link;Σύνδεσμος συμμαχίας
+search_select_alliance_link;Επιλέξτε συμμαχία
+messages_fullView_title;Μήνυμα
+messages_recipient_placeholder;Επιλέξτε παραλήπτη
+messages_title_placeholder;Εισάγετε τον τίτλο του μηνύματός σας
+messages_message_placeholder;Εισάγετε το μηνύματός σας
+messages_ownAlliance;Στη δική μου συμμαχία
+messages_selectedRecipients; Επιλέχθηκε
+messages_ownAlliance_[ally];Όλα τα μέλη συμμαχίας
+messages_ownAlliance_[off];Μέλη επιθετικής συμμαχίας
+messages_ownAlliance_[def];Μέλη αμυντικής συμμαχίας
+messages_discard_title;Απορρίψτε το μήνυμα
+messages_discard_text_header;Θέλετε να απορρίψετε αυτό το μήνυμα
+messages_discard_text;Το περιεχόμενο του μηνύματος θα χαθεί οριστικά.
+messages_confirm_deletion_title;Διαγραφή μηνυμάτων
+messages_confirm_deletion_text_header;Σίγουρα θέλετε να διαγράψετε [data>1:{{data}} μηνύματα][data=1:{{data}} μήνυμα]
+messages_confirm_deletion_text;Μόλις διαγραφούν τα μηνύματα, δεν υπάρχει τρόπος να επανέλθουν.
+messages_confirm_deletion_button;Διαγραφή [data>1:{{data}} μηνύματα][data=1:{{data}} μήνυμα]
+icon_selection_title;Προσθήκη εικονιδίου
+icon_selection_button;Επιλέξτε εικονίδιο
+icon_selection_resourcesAndHero;Πόροι / Ήρωας
+icon_selection_natureAndNatars;Φύση και Νατάριοι
+upgrading;Αναβαθμίστηκε!
+buildingActivities_buildingAdditional_46;Μη τραυματισμένα στρατεύματα
+playerDetails_ignorePlayerDescription;Ο παίκτης θα αγνοηθεί
+reports_share;Αναφορά κοινοποίησης
+search_select_village_link;Επιλέξτε χωριό
+search_village_link;Χωριό σύνδεσμος
+search_report_link;Link σε μια αναφορά
+search_select_report_link;Επιλέξτε αναφορά
+messages_banned;Μπορείτε να γράφετε μηνύματα μόνο σε άλλα μέλη της συμμαχίας σας.
+messages_template_title;Πρότυπα
+messages_template_none;Δεν υπάρχουν διαθέσιμα πρότυπα
+messages_template_edit_title;Επεξεργασία προτύπου
+messages_template_delete_title;Διαγραφή προτύπου
+messages_template_delete_question;Είστε σίγουροι ότι θέλετε να διαγράψετε το πρότυπο;
+messages_template_delete_desc;Μόλις διαγραφεί, δεν μπορείτε πλέον να την ανακτήσετε.
+messages_template_create;Δημιουργία νέου προτύπου
+messages_template_create_descr;Δημιουργήστε ένα νέο πρότυπο από το τρέχον μήνυμά σας:
+messages_template_created;Το πρότυπο δημιουργήθηκε!
+messages_template_deleted;Το πρότυπο διαγράφηκε!
+statistics_culturePoints_productionRank;Η κατάταξή σας όσον αφορά την παραγωγή σε αυτόν τον server
+statistics_culturePoints_productionRankAlliance;Η κατάταξή σας όσον αφορά την παραγωγή εντός της συμμαχίας σας
+statistics_culturePoints_production;ΠΠ
+statistics_resourceRank_production;Παραγωγή: {{VALUE|ShortenNumber}}
+statistics_resourceRank_productionRank;Η κατάταξή σας όσον αφορά την παραγωγή σε αυτόν τον server
+statistics_resourceRank_productionRankAlliance;Η κατάταξή σας όσον αφορά την παραγωγή εντός της συμμαχίας σας
+statistics_resourceRank_bounty_lost;Χαμένο
+statistics_wonderOfTheWorld_header;Τα καλύτερα Παγκόσμια Θαύματα
+hospital_healing_costs;Κόστος θεραπείας στρατευμάτων
+hospital_healing_action;Θεραπεία στρατευμάτων
+hospital_healing_list;Προβολή λίστας θεραπείας
+hospital_healing_list_title;Θεραπεία στρατευμάτων
+hospital_healing_started;Η θεραπεία ξεκίνησε
+bonusValueWithPercent;+{{value}}%
+village_with_isCapital;{{villageName}} (πρωτεύουσα)
+maximumTextLengthError;{{CONTEXT}} μπορεί να έχει μέγιστο αριθμό χαρακτήρων {{AMOUNT}} 
+infoTab_genericEffectInBrackets;({{INT|Sign}})
+infoTab_effectPercentage;{{INT}}%
+infoTab_effectInBracketsPercentage;({{INT|Sign}}%)
+infoTab_trapperCurrently;Τρέχον μέγιστη ποσότητα κατασκευαστή παγίδων:
+trapper_Build_Action;Κατασκευάστε παγίδες
+trapper_ProductionCosts;Κόστος παραγωγής παγίδων
+trapper_TrapsInConstruction;Παγίδες στις κατασκευές
+trapper_MaxBuilt;Μέγιστος αριθμός παγίδων που έχει ήδη χτιστεί.
+truppen.tid119;Παγίδα
+truppen.tid119p;Παγίδες
+rallyPoint_troopsOverview_outgoingMission_scouting_1;Ανίχνευση άμυνας και στρατευμάτων του 
+rallyPoint_troopsOverview_outgoingMission_scouting_0;Ανίχνευση πρώτων υλών και στρατευμάτων του 
+rallyPoint_troopsOverview_returningRegeneratedMission;Επιστροφή αναγεννημένων στρατευμάτων από: 
+rallyPoint_troopsOverview_returningFleeingMission;Οι στρατιώτες επιστρέφουν από τη κρυψώνα του δάσους: 
+rallyPoint_troopsOverview_foreignTroopsIn;Σε στάση σε: 
+rallyPoint_celebration_hint;Η γιορτή στο ζυθοποιείο μπορεί να επηρεάσει τα στρατεύματα.
+building_not_built;Κτίριο που δεν κατασκευάστηκε
+berichte.report_icon_24;Αναφορά
+allBuildings_36;Όλοι οι παγιδευτές μέγιστο ποσό:
+cropFinder_min_oasis_crop_bonus;Ελάχ. Οάσεις με μπόνους σιταριού:
+cropFinder_select_minimum_crop_bonus;Επιλέξτε ελάχιστο μπόνους καλλιέργειας
+cropFinder_unoccupied;Μη κατειλημμένο
+search_by_location;Αναζήτηση ανά τοποθεσία
+search_by_player;Αναζήτηση ανά παίκτη
+search_village_from_player;Αναζήτηση χωριού από τον παίκτη
+enter_player_name;Εισάγετε όνομα παίκτη
+messages_template_newConditionsNotMet;Τα πρότυπα πρέπει να περιέχουν έναν τίτλο και ένα μήνυμα.
+message_report_isAlready;Το συγκεκριμένο μήνυμα έχει ήδη αναφερθεί σαν: {{REASON}}
+tutorial_begin;Ξεκινήστε την ξενάγηση
+tutorial_title_0;Χαιρετισμούς, ατρόμητε πρωταθλητή! 
+tutorial_text_0;Καλώς ήρθατε στο άγριο πεδίο μάχης του Travian: Legends. Ας σας προετοιμάσουμε γρήγορα για να κυβερνήσετε τους δυναμικούς οικισμούς σας και να επιστρατεύσετε τις ασταμάτητες δυνάμεις σας.\n\nΕίστε έτοιμοι;
+tutorial_title_1;Επισκόπηση πλοήγησης
+tutorial_text_1;Εδώ, θα ανακαλύψετε τα πάντα, από το χάρτη μέχρι την αποτελεσματική επικοινωνία και τα διορατικά εργαλεία πληροφόρησης. Εδώ θα βρείτε επίσης τις καθημερινές σας αποστολές, τις εξατομικευμένες ρυθμίσεις και ένα πλήθος άλλων λειτουργιών.
+tutorial_title_3;Οι Ύλες σας
+tutorial_text_3;Οι ύλες του χωριού σας μπορούν να βρεθούν εδώ. Πατώντας στη γραμμή υλών εμφανίζονται περισσότερες λεπτομέρειες.
+tutorial_title_4;Οι Ύλες σας
+tutorial_text_4;Πατώντας στη γραμμή υλών ξανά κρύβονται οι λεπτομέρειες.
+tutorial_title_5;Το Χωριό σας
+tutorial_text_5;Εδώ θα βρείτε όλες τις απαραίτητες πληροφορίες για το χωριό σας. Από τον κατάλογο των εργασιών μέχρι την επισκόπηση των στρατευμάτων σας και την ουρά οικοδόμησης, τα πάντα βρίσκονται ακριβώς εδώ. Μια πρόσφατη προσθήκη στην εφαρμογή, η λειτουργία Δραστηριότητες κτιρίου, παρέχει μια γρήγορη σύνοψη των εξελίξεων που συμβαίνουν στα κτίριά σας.
+tutorial_title_7;Το χωριό σας
+tutorial_text_7;Εάν το Σημείο Συγκέντρωσης έχει κατασκευαστεί, αυτό θα παρέχει μια ολοκληρωμένη εικόνα όλων των μετακινήσεων των στρατευμάτων που βρίσκονται σε εξέλιξη. Επιπλέον, προσφέρει μια γρήγορη συντόμευση προς το σημείο συγκέντρωσης.
+tutorial_title_8;Πλευρικό μενού
+tutorial_text_8;Μπορείτε να πατήσετε τα βέλη ή να σύρετε το δάχτυλό σας για να ανοίξετε το πλευρικό μενού. Αυτό μπορεί να γίνει ανά πάσα στιγμή.
+tutorial_title_9;Λίστα Χωριών
+tutorial_text_9;Μπορείτε να εναλλάσσεστε γρήγορα μεταξύ των χωριών σας, σαρώνοντας το πλευρικό πλαίσιο που ανοίγει ανά πάσα στιγμή. Εκεί θα βρείτε επίσης τα στατιστικά στοιχεία του χωριού.\n\nΚαι έτσι ολοκληρώνεται η ξενάγηση. Τι περιμένετε λοιπόν! Βυθιστείτε, εξερευνήστε και αφήστε τον κόσμο του Travian: Legends να γίνει η στρατηγική σας παιδική χαρά.\n\nΚαλή τύχη!
+tutorial_finish;Τέλος ξενάγησης
+filters_report_not_found;Η έκθεση δεν υπάρχει
+filters_player_not_found;Ο παίκτης δεν υπάρχει.
+filters_alliance_not_found;Η συμμαχία δεν υπάρχει.
+filters_village_not_found;Το χωριό δεν υπάρχει
+settings_game;Αυτός ο κόσμος παιχνιδιού
+language_app_selection;Επιλέξτε app γλώσσα:
+settings_sitter;Αναπληρωτής {{VALUE}}:
+settings_sitterTab_yourSitters;Οι αναπληρωτές σας
+settings_sitterTab_SittingFor;Αναπλήρωση για
+search_player_addSitter;Προσθέστε Αναπληρωτή
+search_select_player_addSitter;Προσθέστε Αναπληρωτή
+search_player_addSitter_additionalEmptyResultInfo;Δεν βρέθηκε παίκτης\nΜόνο οι παίκτες της δικής σας συμμαχίας / συνομοσπονδίας μπορούν να σας αντικαταστήσουν ως αναπληρωτές το άβατάρ σας.
+settings_sitter_sitterAdded;Προστέθηκε Αναπληρωτής!
+settings_sitter_sitterRemoved;Ο αναπληρωτής αφαιρέθηκε!
+settings_sitter_sitterPermissionChangesSaved;Οι αλλαγές δικαιωμάτων αποθηκεύτηκαν!
+settings_sitter_confirm_remove_text_header;Θέλετε να αφαιρέσετε το {{PlayerName}} από αναπληρωτής σας;
+settings_sittersFor;Αναπληρώνει για άλλο ή άλλα άβαταρ
+settings_sittersFor_info;Έχετε οριστεί αναπληρωτής (sitter) για τα ακόλουθα άβαταρ. Μπορείς να ακυρώσεις αυτή την ιδιότητα πατώντας το κόκκινο Χ.
+settings_sittersFor_none;Προς το παρόν δεν αναπληρώνετε άλλο avatar.
+settings_sitterFor;Αναπλήρωση για {{VALUE}}:
+settings_sitterFor_sittingRemoved;Σταμάτησε να αναπληρώνετε για {{PlayerName}}!
+settings_sitterFor_confirm_remove_header;Θέλεις να σταματήσεις την αναπλήρωση για 
+settings_sitterFor_confirm_remove_header_questionmark;;
+settings_sitterFor_confirm_remove_info;Δεν μπορείτε να αναιρέσετε αυτή την ενέργεια. Μόνο άλλοι παίκτες μπορούν να σας προσθέσουν ως αναπληρωτή τους.
+brewery_celebration_attackStrength;({{INT}}% δύναμη επίθεσης)
+brewery_celebration_hint;Τα στρατεύματα που ήδη παρελαύνουν θα επηρεαστούν από τον εορτασμό
+settings_game_newLanguage;Η γλώσσα άλλαξε σε {{language}}.
+wonderOfTheWorld_name;Το Παγκόςμιο Θαύμα Όνομα:
+combatSimulator_title;Προσομοίωση - {{role|TranslateSuffixFor|combatSimulator_as}}
+combatSimulator_cataTargetLevel;Επίπεδο του <b>{{index}}, πρώτου στόχου του καταπέλτη</b>
+combatSimulator_troopLevel;Επίπεδο σιδηρουργείου στρατευμάτων:
+combatSimulator_asAttacker;Ως επιτιθέμενος
+combatSimulator_asDefender;Ως αμυνόμενος
+combatSimulator_result;Προσομοίωση αποτελεσμάτων
+combatSimulator_addReinforcement;Πρόσθεση ενίσχυση
+valueWithModifier;{{value|Round|2}}x
+valuePlusInBracketsWithPercent;(+{{change}}%)
+none;Κανένα
+marketplace_traderoute_repeatEveryHour;Επανάληψη κάθε: (ώρες)
+block_sitter_warning;Δεν σας επιτρέπεται σαν Sitter να κάνετε κάτι τέτοιο.
+settings_openConsentWindow;Ρυθμίσεις απορρήτου
+combatSimulator_adjustHeroStats;Προσαρμόστε τα στατιστικά του ήρωα
+combatSimulator_eagleEyeTitle;Επιλέξτε μπόνους Μάτια Αετών
+combatSimulator_architectSecretTitle;Επιλέξτε Αρχιτέκτονες Μυστικό μπόνους
+combatSimulator_metallurgyBonus;Επιλέξτε μπόνους Μεταλλουργίας
+combatSimulator_rightHand;Επιλέξτε αντικείμενο για το δεξί χέρι
+combatSimulator_leftHand;Επιλέξτε αντικείμενο για το αριστερό χέρι
+combatSimulator_bodyItem;Επιλέξτε στοιχείο σώματος
+combatSimulator_inventoryItem;Επιλογή στοιχείου ευρετηρίου
+combatSimulator_selectBuildingLevel_35;Επιλέξτε επίπεδο ζυθοποιίας
+combatSimulator_selectBuildingLevel_26;Επιλέξτε επίπεδο παλατιού
+combatSimulator_selectBuildingLevel_34;Επιλέξτε το επίπεδο λιθοδόμου
+combatSimulator_selectBuildingLevel_31;Επιλέξτε επίπεδο τοίχου
+combatSimulator_selectBuildingLevel_32;Επιλέξτε επίπεδο τοίχου
+combatSimulator_selectBuildingLevel_33;Επιλέξτε επίπεδο τοίχου
+combatSimulator_selectBuildingLevel_43;Επιλέξτε επίπεδο τοίχου
+combatSimulator_selectBuildingLevel_42;Επιλέξτε επίπεδο τοίχου
+combatSimulator_selectTargetLevel;Επιλογή επίπεδο στόχου καταπέλτη
+combatSimulator_selectTroopLevel;Επιλέξτε επίπεδο στρατευμάτων
+survey_title;Travian: Legends έρευνα
+gdpr_title;Συγκατάθεση στην επεξεργασία δεδομένων
+gdpr_description;Με τη συγκατάθεσή σας, συλλέγουμε ορισμένες πληροφορίες σχετικά με τη συσκευή σας, τη διεύθυνση IP, τη χρήση και τα αναγνωριστικά διαφήμισης. Αυτό μας βοηθά να σας εμφανίζουμε πιο σχετικές διαφημίσεις και βελτιώνει τη συνολική εμπειρία της εφαρμογής σας.
+gdpr_basic_functions;Απαιτείται για τις βασικές λειτουργίες της εφαρμογής.
+gdpr_advertisement;Χρήση προσωπικών δεδομένων για διαφήμιση.
+gdpr_analytics;Χρήση προσωπικών δεδομένων για διαφήμιση.
+gdpr_acceptAll;Αποδοχή όλων
+gdpr_save_and_exit;Αποθήκευση + Έξοδος
+gdpr_rejectAll;Απόρριψη όλων
+gdpr_privacy_policy;Πολιτική Προσωπικού Απορρήτου
+gdpr_terms_and_conditions;T&Cs
+plus.plus.browserOnly;(μόνο για πρόγραμμα περιήγησης)
+hero_inventory_already_equipped;Το ίδιο αντικείμενο είναι ήδη εξοπλισμένο.
+survey_button_title;Έρευνα σχολίων
+survey_button_description;Πάρτε μέρος σε αυτή τη σύντομη έρευνα για να μας βοηθήσετε να βελτιώσουμε την εφαρμογή Travian: Legends.
+goldShop_extend;επέκταση
+goldShop_remaining;Υπολειπόμενα: 
+goldShop_advantage_activated;Ενεργοποιημένο
+search_select_recipient_removeAll;Αφαιρέστε όλα
+messages_messageTopic_noTopic;Δεν υπάρχει θέμα/προεπιλογή
+messages_messageTopic_resources;Σχετικά με της ύλες
+messages_messageTopic_defenses;Σχετικά με τις άμυνες
+messages_messageTopic_attacks;Σχετικά με τις επιθέσεις
+messages_messageTopic_strategies;Σχετικά με τις στρατηγικές
+messages_messageTopic_information;Γενικές πληροφορίες
+messages_messageTopic_important;Σημαντικές πληροφορίες
+messages_messageTopic_selectionTitle;Επιλέξτε θέμα μηνύματος
+farmlist_confirm_deletion_header;Είστε σίγουροι ότι θέλετε να διαγράψετε την επιλεγμένη λίστα φάρμας;
+farmlist_confirm_deletion_text;Αυτό δεν μπορεί να αναιρεθεί.
+farmlist_target_confirm_deletion_header;Είστε σίγουροι ότι θέλετε να διαγράψετε  [data>1:αυτούς τους{{data}} στόχους][data=1:αυτό τον στόχο];
+upgrade_queue_cantConstructImmediately;Αυτό το κτίριο δεν μπορεί να κατασκευαστεί αμέσως
+language_cs-CZ;Τσεχική
+language_es-ES;Ισπανικά
+language_pl-PL;Πολωνικά
+language_pt-PT;Πορτογαλικά
+language_tr-TR;Τουρκικά
+language_it-IT;Ιταλικά
+playerDetails_victorPoints_summary;{{TOTAL}} | {{PERDAY}}/ημέρα
+settings_selectFormat;Επιλέξτε μορφή:
+settings_selectFormat_dialog_title;Επιλέξτε μορφή ημερομηνίας
+settings_game_newDateFormat;Η μορφή ημερομηνίας άλλαξε σε {{dateFormat}}.
+help_getHelp;Ζητήστε βοήθεια
+help_getHelpDescription;Αν χρειάζεστε βοήθεια ή θέλετε να αναφέρετε ένα πρόβλημα, επικοινωνήστε με την υποστήριξη του παιχνιδιού εδώ.
+help_learnAboutGame;Μάθετε για το παιχνίδι
+help_learnAboutGameDescription;Ό,τι χρειάζεται να ξέρετε για το παιχνίδι, πώς λειτουργούν τα πράγματα λεπτομερώς, μπορείτε να το βρείτε εδώ.
+help_gameRules;Μάθετε τους κανόνες του παιχνιδιού
+help_gameRulesDescription;Εδώ μπορείτε να βρείτε τους κανόνες του παιχνιδιού.
+help_joinDiscord;Εγγραφείτε στο Discord
+help_joinDiscordDescription;Μοιραστείτε τα σχόλιά σας μαζί μας στον ειδικό διακομιστή Mobile Discord.
+PLAYERARG;{{PLAYER}}
+referAFriend_friendJoinedDescription;Για να λάβετε Χρυσό για τη σύσταση που κάνατε, ο φίλος σας πρέπει να εποικίσει το <b>2ο χωριό</b> του. Φροντίστε να τον βοηθήσετε να φτάσει τον στόχο του! Δείτε την πρόοδό του στην επισκόπηση συστάσεων παρακάτω.
+referAFriend_rewardAddedVillage2Title_PLAYERARG;Ο φίλος σας {{PLAYER}} έχει εποικίσει το 2ο χωριό του
+referAFriend_rewardAddedVillage3Title_PLAYERARG;Ο φίλος σας {{PLAYER}} έχει εποικίσει το 3ο χωριό του
+referAFriend_rewardAddedVillage4Title_PLAYERARG;Ο φίλος σας {{PLAYER}} έχει εποικίσει το 4ο χωριό του
+referAFriend_rewardAddedVillage5Title_PLAYERARG;Ο φίλος σας {{PLAYER}}έχει εποικίσει το 5ο χωριό του
+referAFriend_rewardAddedVillage6Title_PLAYERARG;Ο φίλος σας {{PLAYER}} έχει εποικίσει το 6ο χωριό του
+referAFriend_rewardAddedVillage7Title_PLAYERARG;Ο φίλος σας {{PLAYER}} έχει εποικίσει το 7ο χωριό του
+referAFriend_rewardAddedVillage8Title_PLAYERARG;Ο φίλος σας {{PLAYER}} έχει εποικίσει το 8ο χωριό του
+referAFriend_rewardAddedVillage9Title_PLAYERARG;Ο φίλος σας {{PLAYER}} έχει εποικίσει το 9ο χωριό του
+referAFriend_rewardAddedVillage10Title_PLAYERARG;Ο φίλος σας {{PLAYER}} έχει εποικίσει το 10ο χωριό του
+sysmsg_truce_learnMore;Μάθετε περισσότερα για την εκεχειρία
+worldEnded_ww_playerWon_topAlliance;Οι εργάτες στο χωριό {{WW_VILLAGE|VillageLink}}, και την ώρα {{WORLD_END_TIME|DateTime}}, έβαλαν την τελευταία πέτρα για να θεμελιώσουν μια από τις πιο σημαντικές δημιουργίες στην ιστορία. <br>Μαζί με τις συμμαχίες, {{WW_ALLIANCE|AllianceLink}} {{WW_PLAYER|PlayerLink}} ήταν οι πρώτες που ολοκλήρωσαν το Παγκόσμιο Θαύμα. Μετά τη χρήση αμέτρητων πρώτων υλών και προστατεύοντας την περιοχή με εκατοντάδες χιλιάδες γενναίους αμυνόμενους, ο {{WW_PLAYER|PlayerLink}} έλαβε τον τίτλο "Νικητής της Εποχής"
+worldEnded_as2022_topAlliances;Συγχαρητήρια στη συμμαχία {{ALLIANCE_TOP_1|AllianceLink}}, που αναδείχθηκαν σε ηγέτες της Ευρώπης, με {{VICTORY_POINTS_TOP_1}} πόντους νίκης! Η συμμαχία  {{ALLIANCE_TOP_2|AllianceLink}} πολέμησε γενναία για να διεκδικήσει τη νίκη και κατέκτησε τη δεύτερη θέση, ενώ η {{ALLIANCE_TOP_3|AllianceLink}} ακολούθησε γρήγορα στην τρίτη θέση.
+worldEnded_playerRanks_population;Ο {{PLAYER_POPULATION_TOP_1|PlayerLink}} ήταν κυβερνήτης της μεγαλύτερης προσωπικής αυτοκρατορίας, ακολουθούμενος από κοντά από τους {{PLAYER_POPULATION_TOP_2|PlayerLink}} και {{PLAYER_POPULATION_TOP_3|PlayerLink}}.
+worldEnded_playerRanks_offender;Ο παίκτης {{PLAYER_OFFENDER_TOP_1|PlayerLink}} νίκησε περισσότερους από οποιονδήποτε άλλον και ήταν ο πιο τρομερός διοικητής.
+worldEnded_playerRanks_defender;Ο παίκτης {{PLAYER_DEFENDER_TOP_1|PlayerLink}} ήταν ο καλύτερος αμυνόμενος, κατανικώντας εχθρούς στις πύλες των χωριών του και γεμίζοντας με λίμνες αίματος τη γη στα περίχωρά τους.
+rallyPoint_startWithValue;Έναρξη: ({{value}})
+rallyPoint_farmList_raidsStarted;{{INT}} αποστολή επιδρομών.
+rallyPoint_farmList_CantAddToAbandonList;Δεν μπορείτε να προσθέσετε στόχους σε μια εγκαταλελειμμένη λίστα φάρμας.
+rallyPoint_farmList_CantActivateInToAbandonList;Δεν μπορείτε να ενεργοποιήσετε στόχους σε μια εγκαταλελειμμένη λίστα φάρμας.
+rallyPoint_farmList_CantDuplicateInToAbandonList;Δεν μπορείτε να αντιγράψετε στόχους σε μια εγκαταλελειμμένη λίστα φάρμας.
+rallyPoint_farmList_DuplicateRaids;Αντιγραφή [raidsAmount=1:στόχου][raidsAmount>1:στόχων]
+rallyPoint_farmList_SlotsDuplicated;[raidsAmount=1:Ο στόχος αντιγράφηκε][raidsAmount>1:Οι στόχοι αντιγράφηκαν]!
+rallyPoint_farmList_pleaseSelectTheList;Επιλέξτε τη λίστα στην οποία επιθυμείτε να προσθέσετε τον στόχο σας.
+rallyPoint_farmList_farmlistFull;Η λίστα αυτής της φάρμας είναι γεμάτη, παρακαλώ επιλέξτε μια άλλη λίστα φάρμας ή δημιουργήστε μια νέα.
+rallyPoint_farmList_targetName;Όνομα στόχου
+rallyPoint_farmList_differentTroopsWarning;Το πλήθος στρατευμάτων δεν θα τροποποιηθεί, εκτός εάν τα αντικαταστήσετε εισάγοντας μια νέα τιμή παρακάτω.
+rallyPoint_farmList_noobProtectionWarning;Ενόσω ισχύει η προστασία αρχαρίων δεν μπορείτε να κάνετε επιδρομές εναντίον άλλων παικτών, αλλά μπορείτε να επιδράμετε σε άδειες οάσεις και χωριά Νατάριων.
+rallyPoint_farmList_noFarmLists;Δεν έχει δημιουργηθεί κατάλογος εκμεταλλεύσεων
+rallyPoint_farmList_CreateNewFarmList;Δημιουργία λίστα φάρμας
+rallyPoint_farmList_currentAmount;Λίστες φάρμας: <b>{{amount}}</b>/{{max}}
+rallyPoint_farmList_differentTribe;Το χωριό έχει διαφορετική φυλή από το τρέχων χωριό. Ελέγξτε τις αξίες των στρατευμάτων.
+rallyPoint_farmList_overrideTarget;Αναίρεση στόχου
+rallyPoint_farmList_selectedActivated;Οι επιλεγμένοι στόχοι τέθηκαν ενεργοί.
+rallyPoint_farmList_selectedDeactivate;Οι επιλεγμένοι στόχοι τέθηκαν ανενεργοί.
+rallyPoint_farmList_LastRaid;<b>Τελευταία έναρξη:</b> <nobr>{{lastStarted|DateTime}}</nobr>
+mapCell_editTargetListAmount;<nobr>Επεξεργασία στόχου</nobr> <nobr>(Λίστες: {{INT}})</nobr>
+goldShop_shopDisabled;Το κατάστημα χρυσού είναι απενεργοποιημένο σε αυτόν τον κόσμο παιχνιδιού
+infobox_accountLockGameEnd;Αυτός ο γύρος του παιχνιδιού ολοκληρώθηκε!
+applySorting;Εφαρμόστε ταξινόμηση
+truppen.tid931;Παγίδα
+truppen.tid931p;Παγίδες
+mainMenu_switchBackFromAvatar;{{iconName|Sprite}} Επιστρέψτε στο {{playerName}}
+pending; (Σε αναμονή)
+featureNotAvailableInVacationMode;Αυτή η λειτουργία δεν είναι διαθέσιμη κατά τη λειτουργία διακοπών.
+notAllowed;Δεν σας επιτρέπεται να κάνετε κάτι τέτοιο.
+settings_avatarDeletionInfo;Αφού αρχίσετε τη διαδικασία διαγραφής, θα χρειαστούν <b>3 ημέρες</b> για να ολοκληρωθεί η διαγραφή του άβατάρ σας.\nΈνα avatar προς διαγραφή δεν μπορεί πλέον να αποκτήσει πρόσβαση σε δημοπρασίες ή στο ανταλλακτήριο.\nΜπορείτε να ακυρώσετε τη διαγραφή ανά πάσα στιγμή εδώ.
+settings_avatarDeletionCountDown;Το άβαταρ θα διαγραφεί μέσα σε
+deleteAvatar_confirmation_header;Θέλετε να διαγράψετε το avatar σας;
+cams_info_subHeader;Μία σύνδεση για όλους τους κόσμους του παιχνιδιού σας
+cams_info_text;Δημιουργήστε το λογαριασμό σας στο Legends Lobby για εύκολη είσοδο και απρόσκοπτη πρόσβαση σε όλους τους κόσμους παιχνιδιού σας μέσω μιας ενιαίας σύνδεσης.
+cams_info_lessInfo;Λιγότερες πληροφορίες
+cams_info_Question_WhatIsLegendsLobbyAccount;Τι είναι ο Legends λόμπι λογαριασμός;
+cams_info_Answer_WhatIsLegendsLobbyAccount;Με το λόμπι λογαριασμό, δεν χρειάζεται ποτέ να εγγραφείτε για ένα νέο κόσμο παιχνίδι και πάλι. Απλά συνδεθείτε και να αποκτήσετε πρόσβαση στους ενεργούς κόσμους του παιχνιδιού σας ή ξεκινήστε ένα νέο στο λόμπι, είτε στο πρόγραμμα περιήγησης είτε στην εφαρμογή για κινητά.
+cams_info_Question_WhatAreAvatars;Τι είναι τα άβαταρ;
+cams_info_Answer_WhatAreAvatars;Με τον λόμπι λογαριασμό, το προφίλ σας σε ένα μεμονωμένο κόσμο παιχνιδιού ονομάζεται άβαταρ. Έχετε ένα λόμπι λογαριασμό που μπορεί να έχει πολλαπλά άβαταρς, ένα για κάθε κόσμο του παιχνιδιού.
+cams_info_Question_WhatsWithCurrentGameworlds;Τι θα συμβεί με τους τρέχοντες κόσμους του παιχνιδιού μου;
+cams_info_Answer_WhatsWithCurrentGameworlds;Όλοι οι ενεργοί κόσμοι παιχνιδιών που χρησιμοποιούν την ίδια διεύθυνση ηλεκτρονικού ταχυδρομείου με τον λόμπι λογαριασμό σας θα συνδεθούν και θα είναι δυνατή η πρόσβαση σε αυτούς μέσω του λόμπι. Μπορείτε να αλλάξετε τα τρέχοντα ενεργά άβαταρ του κόσμου παιχνιδιού στη σωστή διεύθυνση ηλεκτρονικού ταχυδρομείου, προτού δημιουργηθεί ο λόμπι λογαριασμό σας.
+cams_info_Question_WhatsWithSitters;Μπορώ ακόμα να έχω αναπληρωτές;
+cams_info_Answer_WhatsWithSitters;Ναι, οι αναπληρωτές μπορούν να οριστούν ως φυσιολογικοί στις ρυθμίσεις του κόσμου του παιχνιδιού. Μπορείτε να αποκτήσετε πρόσβαση σε ένα άβαταρ που έχετε διοριστεί ως αναπληρωτής απευθείας στον κόσμο του παιχνιδιού.
+cams_info_Question_WhatsWithDuals;Μπορώ ακόμα να παίξω ως διπλός με άλλους παίκτες;
+cams_info_Answer_WhatsWithDuals;Οι Διπλοί λογαριασμοί μπορούν να ανατεθούν σε έναν κόσμο παιχνιδιού, εισάγοντας το όνομα λόμπι λογαριασμού του παίκτη στο λόμπι. Αυτό σημαίνει ότι ένας διπλός λογαριασμός χρειάζεται πρώτα έναν λόμπι λογαριασμό και μπορεί να έχει πρόσβαση στο άβαταρ μέσω του λόμπι μετά την αποδοχή της πρόσκλησης. Μην μοιράζεστε τον κωδικό πρόσβασης του λόμπι λογαριασμού με κανέναν.
+cams_info_Question_WhatsWithoutLobbyAccount;Μπορώ να παίξω χωρίς να δημιουργήσω έναν Legends λόμπι λογαριασμό;
+cams_info_Answer_WhatsWithoutLobbyAccount;Μπορείτε ακόμα να συνδεθείτε στους τρέχοντες κόσμους του παιχνιδιού σας απευθείας χρησιμοποιώντας την αντίστοιχη διεύθυνση URL. Ωστόσο, αν θέλετε να ξεκινήσετε έναν νέο κόσμο παιχνιδιού ή να χρησιμοποιήσετε την εφαρμογή για κινητά, πρέπει να δημιουργηθεί μια λόμπι λογαριασμό.
+cams_playerDecision_register_info;Ο νέος Λογαριασμός Λόμπι σας επιτρέπει να συνδέσετε τους τρέχοντες και τους μελλοντικούς κόσμους παιχνιδιού σας με μία μόνο σύνδεση.
+cams_playerDecision_login_info;Έχετε ήδη Λόμπι Λογαριασμό;\n\nΣυνδεθείτε και συνεχίστε την περιπέτειά σας.
+cams_playerDecision_register_header;Δημιουργία λογαριασμού
+cams_playerDecision_register_create_new_account;Δημιουργία λογαριασμού λόμπι
+cams_playerDecision_register_login;Σύνδεση στο Λόμπι
+cams_playerDecision_extra_info;Για να μπορέσετε να παίξετε το Travian: Legends, πρέπει να δημιουργήσετε έναν Λογαριασμό Λόμπι.
+cams_register_header;Δημιουργία Legends λόμπι λογαριασμό
+cams_register_email_label;Εισαγάγετε τη διεύθυνση ηλεκτρονικού ταχυδρομείου σας
+cams_register_email_address;Εγγραφή διεύθυνσης ηλεκτρονικού ταχυδρομείου
+cams_register_email_address_missing;Εισαγάγετε τη διεύθυνση ηλεκτρονικού ταχυδρομείου σας
+cams_register_email_address_not_valid;Παρακαλώ εισάγετε μία έγκυρη ηλεκτρονική διεύθυνση ταχυδρομείου. Π.χ. mymail@provider.com
+cams_register_email_address_already_exists;Η διεύθυνση email σας είναι ήδη συνδεδεμένη με έναν Λόμπι Λογαριασμό Legends.
+cams_register_redirecting_to_login;Ανακατεύθυνση στη σύνδεση {{INT}}...
+cams_register_hintMessage_same_email_address;Χρησιμοποιήστε την ίδια διεύθυνση ηλεκτρονικού ταχυδρομείου με τα υπάρχοντα άβαταρς του κόσμου του παιχνιδιού σας, για να τα συνδέσετε αυτόματα με τον λόμπι λογαριασμό σας.
+cams_register_receive newsletter;Θέλω να λαμβάνω το ενημερωτικό δελτίο.
+cams_register_already_have_an_account;Διαθέτετε ήδη λογαριασμό;
+cams_register_log_in_now;Σύνδεση τώρα
+cams_acceptTOS;Κάνοντας κλικ στην επιλογή "Εγγραφή διεύθυνσης ηλεκτρονικού ταχυδρομείου" αποδέχεστε τους ΓΟΣ <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID"></link></style> και επιβεβαιώνετε ότι έχετε λάβει υπόψη σας τις πληροφορίες <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">σχετικά με το δικαίωμα ανάκλησης</link></style> και την πολιτική απορρήτου <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID"></link></style>.
+cams_activation_header;Ενεργοποίηση Legends λόμπι λογαριασμού
+cams_activation_info;Σας στείλαμε τον σύνδεσμό σας για ενεργοποίηση στο <b>{{emailAdress}}</b>.<br>Ακολουθήστε τις οδηγίες στο email για να συνεχίσετε.
+cams_activation_enter_code;Εισάγετε τον κωδικό ενεργοποίησης
+cams_activation_code_example;Π.χ. 123456
+cams_activation_entered_code;{{INT}}/6 ψηφία
+cams_activation_cta_activate_account;Ενεργοποίηση λογαριασμού
+cams_activation_email_lost;Δεν λάβατε email;
+cams_activation_email_resend;Επαναποστολή email
+cams_activation_email_wrong;Λανθασμένη διεύθυνση ηλεκτρονικού ταχυδρομείου;
+cams_activation_email_change;Αλλαγή Email
+cams_activation_code_missing;Εισαγάγετε τον κωδικό ενεργοποίησης που λάβατε στο μήνυμα ηλεκτρονικού ταχυδρομείου.
+cams_activation_code_too_short;Ο κωδικός ενεργοποίησης είναι πολύ σύντομος. Εισαγάγετε όλα τα 6 ψηφία.
+cams_activation_code_format_incorrect;Η μορφή του κωδικού ενεργοποίησης είναι εσφαλμένη. Βεβαιωθείτε ότι ο κωδικός αποτελείται μόνο από 6 αριθμούς.
+cams_activation_code_incorrect;Ο κωδικός ενεργοποίησης είναι πολύ λανθασμένος. Εισαγάγετε τον κωδικό ενεργοποίησης που λάβατε στο μήνυμα ηλεκτρονικού ταχυδρομείου.
+cams_activation_code_expired;Ο κωδικός ενεργοποίησης έληξε.
+cams_activation_code_start_again;Επανεκκίνηση
+cams_login_header;Σύνδεση στο Legends Λόμπι
+cams_login_enter_email;Εισαγάγετε τη διεύθυνση email ή το όνομα λογαριασμού σας:
+cams_login_enter_password;Εισαγάγετε κωδικό πρόσβασης:
+cams_login_hintMessage_email_already_connected;Η διεύθυνση email που εισάγατε είναι ήδη συνδεδεμένη με έναν Λόμπι Λογαριασμό Legends. Σύνδεση ή <style="SimpleLink"><link="BackToRegistrationLink">επιστροφή στην εγγραφή</link></style>.
+cams_login_hintMessage_passwordUpdated;Ο κωδικός πρόσβασης ενημερώθηκε με επιτυχία
+cams_forgot_password;Ξεχάσατε τον κωδικό πρόσβασής σας;
+cams_recover_password;Ανάκτηση κωδικού πρόσβασης
+cams_login_no_account_yet;Δεν έχετε λογαριασμό ακόμα;
+cams_login_create_account;Δημιουργία λογαριασμού
+cams_loginMask_accountNameRequired;Εισαγάγετε τη διεύθυνση email σας ή το όνομα λογαριασμού σας
+cams_loginMask_passwordRequired;Εισαγάγετε τον κωδικό πρόσβασής σας.
+cams_loginMask_passwordAndUsernameAreWrong;Εσφαλμένα διεύθυνση ηλεκτρονικού ταχυδρομείου, όνομα λογαριασμού ή κωδικός πρόσβασης
+cams_loginMask_emailOrAccountName_placeholder;Διεύθυνση email / όνομα λογαριασμού
+cams_loginMask_temporaryInfobox;ΝΕΟ: Πρέπει να δημιουργήσετε έναν Λογαριασμό Λόμπι για να αποκτήσετε πρόσβαση στους κόσμους παιχνιδιού σας.\n\nΕάν δεν έχετε ακόμη Λογαριασμό Λόμπι, <style="SimpleLink"><link="CreateAccountLink">δημιουργήστε λογαριασμό</link></style>.
+cams_setPassword_header;Ορίστε τον κωδικό πρόσβασής σας.
+cams_setPassword_info;Δημιουργήστε έναν κωδικό πρόσβασης για το λογαριασμό σας με ελάχιστο μήκος  8 χαρακτήρων.
+cams_setPassword_enter_password;Επιλέξτε κωδικό πρόσβασης:
+cams_setPassword_strength_label;Ισχύς κωδικού πρόσβασης
+cams_setPassword_strength_missing;Πληκτρολογήστε έναν κωδικό πρόσβασης για να ελέγξετε την ισχύ του.
+cams_setPassword_strength_1;πολύ αδύναμο
+cams_setPassword_strength_2;αρκετά αδύναμο
+cams_setPassword_strength_3and4;μέτριο
+cams_setPassword_strength_5;αρκετά ισχυρό
+cams_setPassword_strength_6;πολύ ισχυρό
+cams_setPassword_strength_PasswordTooShort;Όσο πιο μακρύ, τόσο το καλύτερο (16+ χαρακτήρες)
+cams_setPassword_strength_PasswordGoodLength;Ο κωδικός πρόσβασης έχει καλό μήκος
+cams_setPassword_strength_OneType;Χρησιμοποιείται μόνο ένας τύπος χαρακτήρα
+cams_setPassword_strength_TwoTypes;Δύο τύποι χαρακτήρων που χρησιμοποιούνται
+cams_setPassword_strength_ThreeTypes;Τρία είδη χαρακτήρων χρησιμοποιούνται
+cams_setPassword_strength_NoNumbers;Δεν χρησιμοποιούνται αριθμοί
+cams_setPassword_strength_NoLetters;Δεν χρησιμοποιούνται γράμματα
+cams_setPassword_strength_NoSpecialCharacters;Δεν χρησιμοποιούνται ειδικοί χαρακτήρες
+cams_setPassword_strength_NoUpperAndLowerCase;Χωρίς συνδυασμό κεφαλαίων και πεζών
+cams_setPassword_strength_UpperAndLowerCase;Κεφαλαία και πεζά που χρησιμοποιήθηκαν
+cams_activation_cta_set_password;Ορισμός κωδικού πρόσβασης
+cams_activation_password_length;8-64 χαρακτήρες
+cams_resetPassword_header;Ορισμός νέου κωδικού πρόσβασης
+cams_resetPassword_info;Δημιουργήστε έναν νέο κωδικό πρόσβασης για το Λόμπι Λογαριασμό σας με ελάχιστο μήκος 8 χαρακτήρων.
+cams_setUsername_header;Διαλέξτε ένα όνομα για τον Legends Λόμπι Λογαριασμό σας
+cams_setUsername_info;Επιλέξτε όνομα χρήστη και συντομογραφία για να δημιουργήσετε τον μοναδικό σας λόμπι λογαριασμό.
+cams_setUsername_username_label;Επιλέξτε ένα όνομα χρήστη:
+cams_setUsername_tagline_label;Επιλογή συντομογραφίας:
+cams_setUsername_tagline_example;π.χ. TAG12
+cams_setUsername_tagline;Ετικέτα:
+cams_setUsername_condition_onlyLettersAndNumbers;Μόνο γράμματα και αριθμοί
+cams_setUsername_username_condition_Length;3-15 χαρακτήρες
+cams_setUsername_tagline_condition_Length;2-5 χαρακτήρες
+cams_setUsername_hint;Ο συνδυασμός του ονόματος χρήστη και της συντομογραφίας σας θα είναι το μοναδικό όνομα Λόμπι Λογαριασμού σας. Όσο ο συνδυασμός είναι διαθέσιμος, μπορείτε να επιλέξετε οποιοδήποτε συνδυασμό που σας αρέσει.\n\nΑυτό δεν επηρεάζει το όνομα στον κόσμο του παιχνιδιού σας.
+cams_setUsername_cta_createAccount;Δημιουργία λογαριασμού
+cams_setUsername_username_missing;Παρακαλώ εισάγετε ένα όνομα χρήστη και μία συντομογραφία.
+cams_setUsername_accountName_preview;Προεπισκόπηση ονόματος λογαριασμού:
+cams_setUsernameConfirmPopup_header;Ο Legends Λόμπι Λογαριασμός δημιουργήθηκε!
+cams_setUsernameConfirmPopup_info;Ο Legends λόμπι λογαριασμός με το όνομα σύνδεσης <b>{{playerName}}</b> δημιουργήθηκε με επιτυχία.
+cams_setUsernameConfirmPopup_GameworldAndAvatar_header;Οι κόσμοι παιχνιδιού σας και τα άβαταρς σας
+cams_setUsernameConfirmPopup_GameworldAndAvatar_info;Συνδέσαμε τα ακόλουθα υπάρχοντα avatars του gameworld με την ίδια διεύθυνση ηλεκτρονικού ταχυδρομείου με τον νέο σας Λογαριασμό Λόμπι.
+cams_avatar_name;Όνομα άβαταρ
+cams_looby_welcomeMessage;Καλώς ήρθατε!\n<b>{{playerName}}</b>
+cams_looby_header;Κόσμοι παιχνιδιού σας
+cams_looby_noGameWorlds;Προς το παρόν δεν έχετε ενεργό avatar σε κανέναν κόσμο παιχνιδιού. Μπείτε σε έναν νέο κόσμο παιχνιδιού και ξεκινήστε να παίζετε.
+cams_looby_joinNewGameworld;Συμμετοχή σε νέο κόσμο του παιχνιδιού
+cams_looby_playNow;ΠΑΙΞΕ ΤΩΡΑ
+cams_looby_gameworldsLinked;Κόσμοι παιχνιδιών που συνδέονται με το λογαριασμό σας
+cams_looby_invitePenging;[data>1:{{data}} προσκλήσεις][data=1:Προσκλήσεις] Εκκρεμεί
+cams_looby_localGameWorld;ΤΟΠΙΚΟΣ ΚΟΣΜΟΣ ΠΑΙΧΝΙΔΙΟΥ
+cams_looby_avatarInDeletion;Διαγραφή
+cams_removeDualAccount_header;Αφαίρεση διπλού παίκτη
+cams_removeDualAccount_info;Θέλεις να αφαιρέσεις <b>{{lobbyAccountName}}</b> ως διπλό παίκτη για το avatar σου <b>{{avatarName}}</b>;\n\n<b>{{lobbyAccountName}}</b> δεν θα έχει πρόσβαση στο avatar σου πια.
+cams_removeDualAccount_removeDual;Αφαίρεση διπλού παίκτη
+cams_addDualPlayer_info;Εισαγωγή ονόματος Λογαριασμού Λόμπι του διπλού παίκτη (dual):
+cams_addDualPlayer_placeholder;όνομα χρήστη#ετικέτα
+cams_addDualPlayer_addPlayer;[data>1:Προσθήκη παικτών][data=1:Προσθήκη παικτών][data=0:Προσθήκη παικτών]
+search_addDualPlayeradditionalEmptyResultInfo;Ο παίκτης δεν βρέθηκε ή έχει ήδη προσκληθεί ως διπλός
+cams_dualInventation_header;Πρόσκληση διπλού λογαριασμού 
+cams_dualInventation_invitations;Προσκλήσεις:
+cams_dualInventation_info;Εάν αποδεχτείτε την πρόσκληση, μπορείτε να συνδεθείτε με τον δικό σας Λογαριασμό λόμπι για να αποκτήσετε πρόσβαση σε αυτό το avatar.
+cams_dualInventation_moreInfo;Μπορείτε να αποδεχτείτε μόνο μία διπλή πρόσκληση για κάθε κόσμο παιχνιδιού.
+cams_dualInventation_invite;<b>{{LobbyAccountName}}</b> σας προσκάλεσε να παίξετε <b>{{avatarName}}</b>
+cams_dualInventation_AcceptInvite;Αποδοχή πρόσκλησης
+cams_acceptDualInvitation_header;Αποδοχή πρόσκλησης διπλού παίκτη
+cams_acceptDualInvitation_info;Θέλετε να αποδεχτείτε τη διπλή πρόσκληση από το <b>{{lobbyAccountName}}</b> για να παίξετε <b>{{avatarName}}</b> στο <b>{{gameworldName}}</b>
+cams_acceptDualInvitation_moreInfo;Έχετε πολλαπλές διπλές προσκλήσεις για τον ίδιο κόσμο παιχνιδιού σε εκκρεμότητα, αλλά μπορείτε να αποδεχτείτε μόνο μία διπλή πρόσκληση για κάθε κόσμο παιχνιδιού.
+cams_acceptDualInvitation_avatarInDeletion;Σύμφωνα με τους κανόνες παιχνιδιού μας για τους διπλούς λογαριασμού, μπορείτε να έχετε μόνο ένα ενεργό avatar ανά κόσμο παιχνιδιού. \nΗ αποδοχή πρόσκλησης διπλού παίκτη θα αφαιρέσει την πρόσβαση {{avatarName}} στο avatar σας  και θα σας διαγράψει από τον συγκεκριμένο κόσμο παιχνιδιού. \nΔεν μπορείτε να ακυρώσετε τη διαδικασία διαγραφής στη συνέχεια.
+cams_dualSettings_header;Ρυθμίσεις διπλού παίκτη
+cams_dualSettings_info;Μπορείτε να σταματήσετε να παίζετε ως διπλός παίκτης για το εν λόγω avatar ανά πάσα στιγμή.
+cams_dualSettings_leaveDualPlay;Σταματήστε το παιχνίδι διπλού παίκτη
+cams_confirmLeaveDualPlay_info;Θέλεις να σταματήσεις να παίζεις διπλός παίκτης για το <b>{{avatarName}}</b> στο <b>{{gameworldName}}</b>;\n\nΑφού εγκαταλείψετε το διπλό παιχνίδι, μπορείτε να δημιουργήσετε ένα δικό σας avatar ή να συμμετάσχετε σε ένα άλλο avatar για διπλό παιχνίδι σε αυτόν τον κόσμο παιχνιδιού και πάλι.
+cams_recoverPassword_header;Ανάκτηση κωδικού πρόσβασης
+cams_recoverPassword_goBackToLogin;Επιστροφή στη σύνδεση
+cams_recoverPassword_info;Εισαγάγετε τη διεύθυνση ηλεκτρονικού ταχυδρομείου που σχετίζεται με τον Legends Λόμπι Λογαριασμό. Θα σας στείλουμε οδηγίες σχετικά με τον τρόπο επαναφοράς του κωδικού πρόσβασής σας
+cams_recoverPasswordEmailSent_header;Email εστάλη
+cams_recoverPasswordEmailSent_info;Αν υπάρχει Λόμπι Λογαριασμός για αυτήν τη διεύθυνση ηλεκτρονικού ταχυδρομείου <b>{{emailAdress}}</b>, σας στείλαμε οδηγίες για να επαναφέρετε τον κωδικό πρόσβασης στα μηνύματα ηλεκτρονικού ταχυδρομείου σας.\n\nΜόλις ανακτήσετε τον κωδικό πρόσβασής σας, μπορείτε να συνδεθείτε ξανά.
+cams_recoverPasswordEmailSent_goBackToLogin;Επιστροφή στη σύνδεση
+cams_editDualAccounts_header;Διπλοί Παίκτες
+cams_editDualAccounts_gameworld;Κόσμος παιχνιδιού: {{gameworldName}}
+cams_editDualAccounts_avatar;Άβαταρ: {{avatarName}}
+cams_editDualAccounts_avatarOwner;Ιδιοκτήτης άβαταρ:
+cams_editDualAccounts_noDualsAdded;- Δεν έχουν προστεθεί διπλοί παίκτες για αυτό το άβαταρ -
+cams_editDualAccounts_info;Ο διπλός παίκτης θα μπορεί <b>να εκτελεί κάθε ενέργεια</b> στο παιχνίδι, συμπεριλαμβανομένων των δαπανών και της αγοράς Χρυσού.\n\nΟι διπλοί παίκτες μπορούν να συνδεθούν με το δικό τους λογαριασμό λόμπι για να έχουν πρόσβαση σε αυτό το avatar και ΔΕΝ μπορούν να προσκαλέσουν άλλους διπλούς παίκτες.
+cams_editDualAccounts_warningHint;Μην μοιράζεστε τα δεδομένα σύνδεσης του Λογαριασμού λόμπι με άλλους παίκτες για να αποτρέψετε την ανεπιθύμητη πρόσβαση σε άλλα avatars του κόσμου παιχνιδιού και στα δεδομένα του λογαριασμού σας.
+cams_editDualAccounts_addDualPlayer;Προσθήκη διπλού παίκτη
+cams_editDualAccounts_avatarInDeletion;Το avatar σας {{avatarName}} σε αυτόν τον κόσμο του παιχνιδιού διαγράφεται. Επομένως, δεν μπορείτε να στείλετε πρόσκληση για διπλό παίκτη.
+cams_settings_title;Επιλογές
+cams_settings_changePassword_information;Για να αλλάξετε τον κωδικό πρόσβασής σας, θα σας στείλουμε ένα μήνυμα ηλεκτρονικού ταχυδρομείου στη διεύθυνση ηλεκτρονικού ταχυδρομείου του λογαριασμού σας.
+cams_settings_changePassword_sendEmail;Αποστολή email
+cams_settings_changePassword_emailSent;Σας στείλαμε ένα email για να αλλάξετε τον κωδικό πρόσβασής σας.
+cams_settings_accountDeletion_title;Διαγραφή Λογαριασμού Λόμπι.
+cams_settings_accountDeletion_info;Διαγράψτε τον Legends Λόμπι Λογαριασμό, συμπεριλαμβανομένων όλων των κόσμων παιχνιδιού και των avatars από αυτόν το λογαριασμό.
+cams_settings_accountDeletion_action;Διαγραφή Λόμπι Λογαριασμού
+cams_settings_accountDeletion_warning;Προσοχή: Αυτήν η ενέργεια δεν μπορεί να ακυρωθεί!
+cams_settings_accountDeletion_warning_content;Η διαγραφή του λογαριασμού σας στο λόμπι είναι μόνιμη μετά από αντίστροφη μέτρηση 72 ωρών, δεν μπορεί να ανατραπεί και επηρεάζει όλα τα avatars σας. \n\nΟ λογαριασμός σας μπορεί να τεθεί σε διαγραφή μόνο αν πρώτα όλα τα τρέχοντα avatar βρίσκονται στη διαδικασία διαγραφής.
+cams_settings_accountDeletion_requirementsInformation;Για να διαγράψετε το λογαριασμός σας, όλα τα avatar σας πρέπει να βρίσκονται στη διαδικασία διαγραφής ή να έχουν ήδη διαγραφεί.
+cams_settings_accountDeletion_information_warning;Αυτή η ενέργεια θέτει τον λογαριασμό σας σε διαδικασία διαγραφής. Βεβαιωθείτε ότι γνωρίζετε ότι ο λογαριασμός σας, και όλα τα σχετικά avatar και δεδομένα θα διαγραφούν νόμιμα, πληκτρολογώντας "delete" στο πεδίο εισαγωγής.
+cams_settings_accountDeletion_information_error;Δεν μπορείτε να διαγράψετε το λογαριασμό αν ένα avatar δεν είναι σε διαγραφή.\nΠαρακαλούμε συνδεθείτε στους αναφερόμενους κόσμους του παιχνιδιού και διαγράψτε το άβατάρ σας.
+cams_settings_accountDeletion_noAvatarsFound;Δεν βρέθηκαν ενεργοί κόσμοι παιχνιδιού/αβατάρ.\nΕίστε έτοιμοι να ξεκινήσετε!
+cams_settings_accountDeletion_understandmentConfirmation;Καταλαβαίνω
+cams_settings_accountInDeletion_title;Λογαριασμός σε διαγραφή.
+cams_settings_accountInDeletion_info;Ο Λόμπι Λογαριασμός σας <b>{{NAME}}</b> θα διαγραφεί οριστικά στο <b>{{TIMESTAMP|Countdown}}</b>.
+cams_settings_accountInDeletion_action;Ακύρωση διαγραφής
+cams_mainMenu_dataConsent;Συγκατάθεση δεδομένων
+gameworld_gameworld;Κόσμος παιχνιδιού
+infobox.productionboost;{{RES}}{{TIME_COUNTER}}
+infobox_notesCount;{{COUNT}} [COUNT=1:σημείωση][COUNT>1:σημειώσεις]
+auction_placeBid;Τοποθετήστε μια προσφορά
+auction_auctionsAmount;{{COUNT}} δημοπρασίες
+auction_bidsRefreshed;Οι προσφορές ανανεώθηκαν!
+auction_currentSilver;Τρέχον ασήμι:  {{iconName|Sprite}} {{currentSilver}}
+auction_availableAmount;Διαθέσιμο ποσό:
+auction_toSellAmount;Ποσό πώλησης:
+auction_selectAmountToSellHeader;Επιλέξτε το ποσό προς πώληση
+auction_soldHorseForSilver;Πούλησε το άλογο για {{amount}} ασήμι.
+auction_currentCurrency;Τρέχον:
+auction_newCurrencyValues;Νέο:
+auction_exchangeExplanationGoldToSilverTitle;Μπορείτε να ανταλλάξετε χρυσό σε ασήμι για να αγοράσετε αντικείμενα ηρώων στον οίκο δημοπρασιών.
+auction_exchangeExplanationGoldToSilverMore;Εισάγετε το ποσό χρυσού που θέλετε να ανταλλάξετε:
+auction_exchangeExplanationSilverToGoldTitle;Μπορείτε να ανταλλάξετε το ασήμι, που αποκτάτε πουλώντας τα αντικείμενα του ήρωα στις δημοπρασίες, σε χρυσό.
+auction_exchangeExplanationSilverToGoldMore;Εισάγετε το ποσό ασημιού που θέλετε να ανταλλάξετε:
+auction_countAndName;{{AMOUNT}}×{{ITEM_NAME}}
+auction_deleteAll;Διαγραφή όλων των δημοπρασιών
+auction_confirm_deletion_title;Διαγραφή δημοπρασίας [data>1:{{data}} entries][data=1:entry]
+auction_confirm_deletion_button;Διαγραφή [data>1:entries][data=1:entry]
+auction_confirm_deletion_text_header;Σίγουρα θέλετε να διαγράψετε [data>1:{{data}} auction entries][data=1:this auction entry];
+auction_confirm_deletion_text;Μόλις διαγράψετε μια καταχώρηση, αυτή θα εξαφανιστεί οριστικά. Δεν θα μπορέσετε να το ανακτήσετε.
+cams_looby_noMatchingGameworlds;Δεν υπάρχουν αντίστοιχοι κόσμοι παιχνιδιών για την επιλογή σας.
+serverSelection_5;Ανάπτυξη
+serverSelection_header;Επιλογή φίλτρο κόσμου παιχνιδιού
+serverSelection_filter_gameworldSpeed;Ταχύτητα κόσμου παιχνιδιού
+serverSelection_gameworldSpeed;x{{INT}} ταχύτητα
+serverSelection_filer_gameworldLifetime;Διάρκεια ζωής κόσμου παιχνιδιού
+serverSelection_gameworldLifetime;{{INT}}-{{INT2}} μέρες
+serverSelection_gameworldLifetime_XorMore;{{INT}} ή περισσότερες ημέρες
+filters_applyButton;Εφαρμογή [COUNT<2:φίλτρο][COUNT>1:{{COUNT}} φίλτρα]
+filters_reset;Επαναφορά [COUNT<2:φίλτρο][COUNT>1:φίλτρα]
+cams_avatarCreation_cancel_title;Ακύρωση δημιουργίας avatar
+cams_avatarCreation_cancel_reconfirmationText;Είστε σίγουρος ότι θέλετε να ακυρώσετε τη δημιουργία του avatar σας στο {{gameworldName}};
+cams_avatarCreation_cancel_explanation;Θα χάσετε όλη την πρόοδό σας σε αυτόν τον κόσμο παιχνιδιού, συμπεριλαμβανομένης της επιλογής της φυλής σας, της τοποθεσίας στο χάρτη και του ονόματος του avatar σας.
+cams_avatarCreation_button_startPlaying;Άρχισε να παίζεις
+cams_avatarCreation_button_changeSector;Αλλαγή θέσης
+cams_avatarCreation_button_selectTribe;Επίλεξε φυλή
+cams_avatarCreation_button_updateTribe;Ενημέρωση φυλής
+cams_avatarCreation_button_selectSector;Επιλέξτε περιοχή
+cams_avatarCreation_button_updateSector;Ενημέρωση θέσης
+cams_avatarCreation_name_title;Εισάγετε όνομα άβαταρ:
+cams_avatarCreation_name_tip;Αυτό είναι το όνομα άβατάρ σας στον κόσμο του παιχνιδιού.
+cams_avatarCreation_name_errorEmpty;Παρακαλούμε γράψτε ένα όνομα άβαταρ.
+cams_avatarCreation_name_placeHolder;Όνομα άβαταρ
+cams_looby_avatarInDeletionBlockPlayNow;Έχετε αποδεχτεί μια πρόσκληση πρόσβασης ως αντικαταστάτης για αυτόν τον κόσμο παιχνιδιού, {{gameworldName}}, οπότε μπορείτε πλέον να έχετε πρόσβαση σε αυτόν αποκλειστικά και μόνο με την χρήση αυτής της λειτουργίας.
+infobox_openMessage;Ανοιχτό μήνυμα
+infobox_accountIsLocked;Το άβατάρ σας είχε αποκλειστεί!
+auction_button_requirement;Ολοκληρώστε τις περιπέτειες {{REQUIRED}} για να ξεκλειδώσετε τις δημοπρασίες.\n Αριστερά: {{INT}}
+auction_availableSilver;Διαθέσιμο ασήμι:  {{iconName|Sprite}} {{currentSilver}}
+auction_deleteSelected;Διαγραφή επιλεγμένων δημοπρασιών
+auction_deletedAll_confirmation;Διαγράφηκαν όλες οι δημοπρασίες!
+auction_deletedSelected_confirmation;{{data}} δημοπρασία [data>1:entries][data=1:entry] deleted!
+newVersionAvailable_title;Νέα έκδοση διαθέσιμη
+newVersionAvailable_description;Βελτιώσαμε την εφαρμογή μας. Παρακαλούμε ενημερώστε για να συνεχίσετε να παίζετε.
+newVersionAvailable_joinDiscord;Τι νέο υπάρχει; Εγγραφείτε στο Discord για περισσότερες πληροφορίες.
+newVersionAvailable_toStore;Ενημέρωση τώρα
+infobox_beginnerProtection_title;Επέκταση προστασίας αρχαρίων
+infobox_beginnerProtection_question;Είστε σίγουρος/η ότι θέλετε να επεκτείνετε την προστασία νέου παίκτη;
+infobox_beginnerProtection_description;Δεν μπορείτε να στείλετε ύλες σε άλλους παίκτες, να τους επιτεθείτε ή να δεχθείτε επιθέσεις όταν βρίσκεστε σε προστασία αρχαρίου.
+sendResources_beginnersProtection;Δεν μπορείτε να στείλετε ύλες σε άλλους παίκτες όταν η προστασία αρχαρίου είναι ενεργή.
+sendTroops_beginnersProtection;Δεν μπορείτε να στείλετε στρατεύματα σε άλλους παίκτες όταν η προστασία αρχαρίου είναι ενεργή.
+sendTroops_otherBeginnersProtection;Δεν μπορείτε να στείλετε στρατεύματα σε άλλους παίκτες όταν βρίσκεστε υπό προστασία αρχαρίου.
+buildingActivities_building_36;Παγίδες στην παραγωγή
+tasks_collectAll;Συλλέξτε όλα ({{INT}})
+auction_bidMinPlaceholder;ελάχ. {{INT}}
+auction_buttonBidMinimum;Ελάχιστη απαιτούμενη προσφορά
+hero_adventures_available;Διαθέσιμες περιπέτειες
+messages_freshDeskMessage_viewAndReplyInBrowser;Προβολή και απάντηση στο πρόγραμμα περιήγησης
+messages_webViewRecommendation;Το περιεχόμενο του μηνύματος ενδέχεται να μην είναι πλήρες.\nΣας συνιστούμε να δείτε το μήνυμα στο πρόγραμμα περιήγησης.
+rateThisApp_popup_title;Σας αρέσει η εφαρμογή μας;
+rateThisApp_popup_description;Αν σας αρέσει η εφαρμογή μας, παρακαλούμε αφιερώστε λίγο χρόνο για να την αξιολογήσετε.
+rateThisApp_popup_appreciatefeedback;Τα σχόλιά σας είναι σημαντικά για εμάς!
+rateThisApp_popup_btn_positive;Είναι υπέροχο!
+rateThisApp_popup_btn_negative;Θα μπορούσε να είναι καλύτερο
+rearrange_or_demolish_building;Αναδιάταξη ή κατεδάφιση κτιρίου
+mainBuilding_buildingArrangement;Διάταξη κτιρίου
+mainBuilding_openRearrangeMode;Ανοίξτε τη λειτουργία αναδιάταξης
+mainBuilding_demolishBuildings;Κατεδάφιση κτιρίων
+mainBuilding_openDemolishMode;Ανοίξτε τη λειτουργία κατεδάφισης
+mainBuilding_demolishBuildings_description;Σύρετε και αφήστε τα κτίρια για να αλλάξετε θέση.
+rearrangeBuildingPopup_rearrangeDescription;Αναδιατάξτε το <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>;
+rearrangeBuildingPopup_buildingsRearranged;Κτίρια αναδιαταγμένα
+rearrangeBuildingPopup_buildingRearranged;{{buildingName|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>{{buildingLevel}}</color>
+confirmRearrangeBuildingPopup_header;Θέλετε να αναδιατάξετε το ακόλουθο κτίριο;
+confirmRearrangeBuildingPopup_description;Αναδιατάσσει τα επιλεγμένα κτίρια του χωριού <b>{{villageName}}</b>.
+demolishBuildingPopup_title;Κατεδάφιση κτιρίου
+demolishBuildingPopup_description;Επιλέξτε ένα κτίριο προς κατεδάφιση
+demolishBuildingPopup_descriptionWithSelection;Θα κατεδαφίσεις το <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>;
+demolishBuildingPopup_demolishLevel;Επίπεδο κατεδάφισης
+demolishBuildingPopup_demolishCompletely;Ολοκληρωτική Κατεδάφιση
+confirmDemolishBuildingPopup_header;Θέλετε να κατεδαφίσετε αμέσως το <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>;
+confirmDemolishBuildingPopup_description;Κατεδαφίζει αμέσως το επιλεγμένο κτίριο και το αφαιρεί από το χωριό σας.\nΑυτήν η ενέργεια δεν μπορεί να ακυρωθεί.
+characterCount;{{COUNT}}/{{MAX}} χαρακτήρες
+survey_button_description_reward;Πάρτε μέρος σε αυτή τη σύντομη έρευνα για να μας βοηθήσετε να βελτιώσουμε την εφαρμογή Travian: Legends.\nΗ υποστήριξή σας θα ανταμειφθεί.
+cams_lobby_joinGameworld;Συμμετοχή στο κόσμο του παιχνιδιού
+cams_lobby_gameworld_inviteOnly;Μόνο με πρόσκληση
+cams_lobby_gameworld_inviteOnlyInfo;Ο κόσμος αυτού του παιχνιδιού περιορίζεται σε παίκτες με έναν ειδικό κωδικό πρόσκλησης.
+cams_lobby_gameworld_inviteCodeEnter;Εισαγάγετε τον κωδικό πρόσκλησης
+cams_lobby_gameworld_inviteCodeInfo;Ο κόσμος αυτού του παιχνιδιού περιορίζεται σε παίκτες με έναν ειδικό κωδικό πρόσκλησης.\nΑν έχετε ένα, παρακαλούμε εισάγετε το για να μπείτε στον κόσμο του παιχνιδιού.
+cams_lobby_gameworld_inviteCodePlaceholder;Π.χ. eThbt5OLyZ8D5xjhUaBAba
+cams_lobby_gameworld_inviteCodeErrorCharacterCount;Ο κωδικός πρόσκλησης είναι πολύ σύντομος. Παρακαλώ εισάγετε όλους τους χαρακτήρες {{MAX}} .
+cams_lobby_gameworld_inviteCodeCooldown;Χρόνος για την ενεργοποίηση του κωδικού πρόσκλησης ({{TIME|Countdown}})
+timeCountDown;{{TIME|Countdown}}
+attestation_failed;Η πιστοποίηση συσκευής απέτυχε! Παρακαλούμε χρησιμοποιήστε μια κινητή συσκευή για να παίξετε.\nΑν αυτό το πρόβλημα συνεχίζεται, χρησιμοποιήστε το παρακάτω κουμπί βοήθειας για να επικοινωνήσετε με την υποστήριξη!
+mainBuilding_demolishBuildings_notAvailable;Κεντρικό κτήριο επιπέδου {{INT}} που απαιτείται για την κατεδάφιση κτιρίων.
+mainBuilding_demolishBuildings_demolishing;Κατεδαφίζει το <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> στο <b><color={{colorValue|TextColor}}>επίπεδο {{buildingLevel}}</color></b> στο {{timestamp|Countdown}}.
+demolishBuildingPopup_demolishing;Κατεδαφίζει το <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> στο <b><color={{colorValue|TextColor}}>επίπεδο{{buildingLevel}}</color></b>
+allianz.hinweis_text_NoConfederacy;Θα αποτελούσε διπλωματική εθιμοτυπία να έχετε μιλήσει με την άλλη συμμαχία και να έχετε διαπραγματευτεί πριν προσφέρετε ένα σύμφωνο μη επίθεσης (NAP).
+regions_canBeSettled;Μπορεί να αποικηθεί;
+regions_regionStatusNoColon;Κατάσταση περιοχής
+regions_top5AlliancesPopulation;<b>Πληθυσμός</b> 5 κορυφαίων συμμαχιών
+regions_top5AlliancesVillages;<b>Χωριά</b> 5 κορυφαίων συμμαχιών
+regions_neighboringRegions;Γειτονικές περιοχές
+regions_regionPopulation;Πληθυσμός περιοχής
+regions_contested;Η περιοχή αμφισβητείται
+cams_lobby_gameworld_disabledAndNotSupported;Ο κόσμος του παιχνιδιού δεν είναι διαθέσιμος προς παιχνίδι μέσω της εφαρμογής κινητού.
+demolishBuildingPopup_impossible;Αυτό το κτίριο δεν μπορεί να κατεδαφιστεί.
+city_benefits;Οφέλη πόλης
+city_benefits_threeAdditionalSlots;Τρεις πρόσθετες θέσεις οικοδόμησης
+city_benefits_resourceFieldsLevel12;Αναβάθμισε τα πεδία υλών στο επίπεδο 12
+city_benefits_watchTowers;Αναβάθμισε τον τοίχο με πύργους σκοπιάς
+city_upgradeToACity;Αναβάθμιση {{villageName}} σε πόλη.
+city_culturePointsForNext;(επόμενη σε {{culturePoints}} πόντους πολιτισμού)
+city_upgradeVillage;Αναβάθμιση χωριού
+city_confirm_upgradeVillage;Αναβάθμιση σε πόλη
+city_confirm_header;Θέλετε αναβάθμιση του {{villageName}} σε πόλη;
+city_confirm_description;Η αναβάθμιση ενός χωριού σε πόλη απαιτεί το {{time}} και μία από τις θέσεις εγκατάστασης.
+city_upgrading;{{villageId|VillageLink}} {{text}}
+city_upgraded;{{villageId|VillageLink}} είναι ήδη μια πόλη.
+combatSimulator_selectTarget;Επιλογή στόχου
+mainMenu_goToLobby;Μετάβαση στο λόμπι
+mainMenu_yourPlayerProfile;Το Προφίλ του Παίκτη σας
+plus.plusAttackWarningText;Οι εισερχόμενες επιθέσεις θα φαίνονται στην λίστα των χωριών σας. Μόνο για κινητά: Στην προβολή του χωριού, το βέλος για το άνοιγμα της λίστας του χωριού στη δεξιά πλευρά θα είναι επισημασμένο.
+production.crobBalanceTroopConsumptionAncientPower;Αρχαία δύναμη επίδραση
+filters_region_not_found;Η περιοχή δεν υπάρχει
+rallyPoint_troopsOverview_ownTroops_8;Τα στρατεύματά μου σε 
+rallyPoint_troopsOverview_ownTroops_9;Τα στρατεύματά μου σε 
+tradeOffice_merchantsCarryCapacity;Χωρητικότητα μεταφοράς εμπόρων:
+tradeOffice_tradeShipsCarryCapacity;Χωρητικότητα μεταφοράς εμπορικών πλοίων:
+buildingActivities_building_48;Στρατεύματα που έχουν θεραπευτεί
+playerDetails_victorPointsPerDay;{{PERDAY}} /ημέρα
+allianz.numIncomingRaids;{{NUM_ATTACKS}} [NUM_ATTACKS=1:επιδρομή][NUM_ATTACKS>1:επιδρομές]
+allianz.numIncomingAttacks;{{NUM_ATTACKS}} [NUM_ATTACKS=1:επίθεση][NUM_ATTACKS>1:επιθέσεις]
+allianz.MerchantCapacityAndSpeedNew;Εμπόριο
+alliance_regionalTabTop5Description;Περιφέρειες στις οποίες η συμμαχία σας ανήκει στις 5 κορυφαίες συμμαχίες με βάση τον εδαφικό έλεγχο.
+alliance_regionalTabTitle;Περιοχή Top 5
+alliance_regionalTabTop5Empty;- Δεν υπάρχει επαρκής εδαφικός έλεγχος σε καμία περιοχή -
+alliance_ShowDetails;Εμφάνιση λεπτομερειών
+wall_upgradesInProgress;Αναβαθμίσεις σε εξέλιξη
+extension_upgradeStarted;Η αναβάθμιση ξεκίνησε με επιτυχία!
+extension_constructionList;Κατάλογος κατασκευών
+upgradeLevel;Αναβάθμιση στο επίπεδο
+infoTab_upgradingToLevelForExtension;Τρέχον αναβάθμιση από το {{buildingName}} στο επίπεδο {{level}}:
+infoTab_genericCurrentlyForExtension;Τρέχον μπόνους {{buildingName}} συμπεριλαμβανομένου του {{extensionName}}:
+infoTab_genericAtLevelForExtension;Στο επίπεδο {{a}} με {{extensionName}} επίπεδο {{b}}:
+ratioValuesNumeratorBold;<b>{{a}}</b>/{{b}}
+infoTab_productionCosts_title;Κόστη παραγωγής
+harbour_shipsInConstruction;Πλοία σε κατασκευή
+unitInfo_troopsCarriage;έως <b>{{INT}}</b> στρατεύματα
+unitInfo_velocityRaid;Για επιδρομές:
+city_benefits_resourceFieldsLevel12inCapital;Αναβαθμίστε τα πεδία πόρων στο επίπεδο 12, ωστόσο στην πρωτεύουσά σας μπορείτε να τα αναβαθμίσετε περαιτέρω
+infoTab_genericCurrentlyMoreExplicit;Τρέχον {{buildingName}} μπόνους:
+merchant_merchantOverview_noIncomingDeliveries;- Δεν υπάρχουν εισερχόμενες παραδόσεις. -
+merchant_merchantOverview_noOutgoingDeliveries;- Δεν υπάρχουν εξερχόμενες παραδόσεις. -
+merchant_merchantOverview_incoming;Εισερχόμενα ({{INT}})
+merchant_merchantOverview_outgoing;Εξερχόμενα  ({{INT}})
+achievementQuests.achQuest_03_Territory_step_01_description;Στείλε στρατό να κάνει επιδρομή/επίθεση σε ένα χωριό Νατάριων. Η εργασία αυτή θα ολοκληρωθεί όταν ο στρατός φτάσει, ακόμα και αν σκοτωθούν όλα τα στρατεύματα στην μάχη.<br><br>Οι πόντοι αυτής της εργασίας μπορούν να επιτευχθούν {{NUMBER_OF_TASKS_PER_DAY}} φορές την μέρα.\n
+allianz.MerchantCapacityTitle_Harbours;Επίδομα χωρητικότητας και ταχύτητας έμπορου/πλοίου
+market_tradeRoutes_invalidTarget_Territory;Οι εμπορικές οδοί μπορούν να σταλούν μόνο στα δικά σας χωριά.
+market_selectResources;Επιλέξτε ύλες
+market_selectResources_requiredTradeShips;Απαιτούμενα εμπορικά πλοία
+market_resourcesWillBeSendByTradeShip;Οι ύλες θα αποστέλλονται με εμπορικό πλοίο.
+manual.gid38_Territory;Η μεγάλη αποθήκη πρώτων υλών σας προσφέρει περισσότερο χώρο για να κρατήσει τους πόρους σας ξηρούς και ασφαλείς όπως και η κανονική.<br><br>Αυτό το κτίριο μπορεί να κατασκευαστεί μόνο με σχέδιο αποθήκευσης αρχαίας ισχύος.
+manual.gid39_Territory;Η μεγάλη σιταποθήκη σας προσφέρει περισσότερο χώρο για να κρατήσετε τις συγκομιδές σας ξηρές και ασφαλείς όπως στην κανονική.<br><br>Αυτό το κτίριο μπορεί να κατασκευαστεί μόνο με το masterplan αποθήκευσης αρχαίας ισχύος.\n
+harbour_noAvailableShips;Προς το παρόν δεν υπάρχουν πλοία που να σταθμεύουν σε αυτό το λιμάνι.
+harbour_destroy_title;Καταστροφή πλοίων
+harbour_destroy_desc_title;Επιλέξτε τον τύπο του πλοίου και την ποσότητα που θέλετε να καταστρέψετε.
+harbour_destroy_desc;Μόνο τα πλοία που βρίσκονται αυτή τη στιγμή εδώ σε στάση μπορούν να καταστραφούν και δεν θα λάβετε ύλες πίσω.
+harbour_destroy_timeNotice;Τα πλοία θα καταστραφούν αμέσως.
+harbour_destroy_selectedTotalAmount;Επιλεγμένα πλοία: <b>{{AMOUNT}}</b>
+harbour_destroy_shipSelectTitle;<b>{{ShipID|TranslateSuffixFor|gid49.type_t}}</b> (<b>{{Amount}}</b> πλοίο[Ποσότητα>1:s] σταθμευμένο εδώ)
+extension_fullyExtended;{{NAME}} έχουν επεκταθεί πλήρως.
+extension_willBeFullyExtended;{{NAME}} βρίσκονται σε πλήρη επέκταση.
+layout.directLinkMarketplaceTrader;Άεργοι έμποροι: {{INT}} / {{INT2}}
+UnitProduction_ViewBuildingList;Προβολή λίστας κτιρίων
+raidList_useRaidShipsInfo;Τα πλοία επιδρομών χρησιμοποιούνται αυτόματα όταν είναι διαθέσιμα. Αν δεν έχετε πλοία επιδρομών, τα στρατεύματά σας θα ταξιδέψουν κανονικά.
+buildingActivities_maxReached;Μέγιστο ποσό που έχει επιτευχθεί
+buildingActivities_building_49;Πλοία στην παραγωγή
+buildingActivities_buildingAdditional_48;Μη τραυματισμένα στρατεύματα
+residence_expansion_villagesRatio;Χωριά: {{COUNT}}/{{MAX}}
+residence_expansion_slotFree;Η υποδοχή δεν χρησιμοποιείται.
+residence_expansion_slotPrerequisites;Προϋποθέσεις <b>{{BuildingID|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>επίπεδο {{Level}}</color></b>
+residence_expansion_culturePointsPerDay;Παραγωγή πόντων πολιτισμού ανά μέρα
+search_region;Αναζήτηση περιοχής
+search_select_region;Επιλέξτε περιοχή
+statistiken.progressionStepTitle_start_achieved;Έναρξη διακομιστή στις {{VALUE}}
+statistiken.progressionStepTitle_serverEnd_locked;Ο διακομιστής θα τελειώσει στις {{VALUE}}
+filters_artefact_not_found;Το πολύτιμο αντικείμενο δεν υπάρχει
+sendTroops_settlersChangeTribe;Για τους {{INT}} πρώτους εποικισμούς, μπορείτε να επιλέξετε ποια φυλή θα έχει το εποικισμένο χωριό. Επιλέξτε προσεκτικά.
+gid17.nextTradingRoute;Η επόμενη εμπορική διαδρομή ξεκινά από το <b>{{HOUR}}</b> και χρειάζεται <b>{{MERCHANTS}}</b> [MERCHANTS>1:έμποροι][MERCHANTS=1:έμπορος].
+gid17.nextTradingRouteWithShips;Η επόμενη εμπορική διαδρομή ξεκινά από το <b>{{HOUR}}</b> και χρειάζεται <b>{{SHIPS}}</b> [SHIPS>1:εμπορικά πλοία][SHIPS=1:εμπορικό πλοίο].
+market_tradeRoutes_merchants;[έμποροι>1:{{merchants}} έμποροι][έμποροι=1:{{merchants}} έμπορος]
+market_tradeRoutes_tradeShips;[tradeShips>1:{{tradeShips}} εμπορικά πλοία][tradeShips=1:{{tradeShips}} εμπορικό πλοίο]
+market_tradeRoutes_repeats;{{repeats}} x
+market_tradeRoutes_usesShip;Χρήση πλοίων
+troopsCheckout_shipUseInfo;{{Distance}} πεδίο | {{ShipID|Bold}} | Αποθήκευση {{duration|Bold}} ώρες
+troopInfoPopup_shipsTitle;Πλοία εγκατεστημένα στο χωριό
+language_nl-NL;Ολλανδικά
+cropfinder_cropperType;Τύπος Καλλιεργητή:
+valueInBrackets;({{VALUE}})
+residence_settlementSlotsUsed;Θέση εποικισμού που δεν χρησιμοποιείται
+residence_settlementCPNeededForNextSlot;Πόντοι πολιτισμού που απαιτούνται για την επόμενη θέση οικισμού:
+gid27.ancient_power_detail_;{{INT}}
+artefact_effect_value;Επίδραση: <b>{{EFFECT}}</b>
+ancientPower_overview;Δυνάμεις περιοχής
+ancientPower_no_ancientPower;Δεν υπάρχει αρχαία δύναμη σε αυτόν τον διακομιστή
+ancientPower_tip_large;Οι μεγάλες αρχαίες δυνάμεις απαιτούν επίπεδο θησαυροφυλακίου <b>20</b> και επηρεάζουν <b>όλα τα χωριά σας</b>
+ancientPower_tip_small;Οι μικρές αρχαίες δυνάμεις απαιτούν επίπεδο θησαυροφυλακίου <b>10</b> και επηρεάζουν μόνο το χωριό <b></b>
+ancientPower_tip_nearby;Αρχαίες δυνάμεις στην περιοχή γύρω από {{villagenamelong|Bold}}
+ancientPower_stored_title;Οι αρχαίες δυνάμεις προστατεύονται από την συμμαχία
+ancientPower_stored_noContent;Περιοχές που δεν προστατεύονται από την συμμαχίας σου
+ancientPower_stored_nextFree;Επόμενη δωρεάν ενεργοποίηση διαθέσιμη σε: [isFree=0:<color={{colorValue|TextColor}}>]{{timeStamp|Countdown?Bold}}[isFree=0:</color>]
+ancientPower_stored_notActivatable;Δεν υπάρχει αρχαία δύναμη προς ενεργοποίηση.
+ancientPower_stored_activated;Ενεργοποίηση αρχαίας δύναμης.
+ancientPower_stored_alreadyActive_account;Έχετε ήδη ενεργή μια αρχαία δύναμη που επηρεάζει όλα τα χωριά.
+ancientPower_stored_alreadyActive_village;Έχετε ήδη ενεργή μια αρχαία δύναμη που επηρεάζει αυτό το χωριό.
+ancientPower_stored_alreadyActive;Αυτή η αρχαία δύναμη έχει ήδη ενεργοποιηθεί.
+filters_ancientPower_not_found;Η αρχαία δύναμη δεν υπάρχει
+regions_withFactions_yourAllianceHasMoreThan50PercentSecured;Η συμμαχία ελέγχει >{{PERCENT}}% της περιοχής.<br><br>Χρειάζεστε θησαυροφυλάκιο για να ενεργοποιήσετε την δύναμη περιοχής.
+language_en-NT;Γλώσσα προγραμματισμού
+settings_notNow;Όχι τώρα
+settings_dontAskAgain;Μην ξαναρωτήσεις.
+cams_lobby_gameworld_lastPlayedTime;{{TIME}}h
+cams_settings_DirectLoginTitle;Άμεση σύνδεση στον κόσμο παιχνιδιού
+cams_settings_DirectLoginInfo;Παρακάμψτε την επιλογή κόσμου παιχνιδιού στο λόμπι Legends και συνδεθείτε απευθείας στον κόσμο παιχνιδιού που παίξατε τελευταία φορά όταν ανοίγετε την εφαρμογή.
+cams_settings_DirectLoginActive;Η απευθείας σύνδεση είναι ενεργοποιημένη
+cams_settings_DirectLoginInactive;Η απευθείας σύνδεση είναι απενεργοποιημένη
+cams_directLoginPopUp_Info;Θέλετε να συνδεθείτε απευθείας στον κόσμο παιχνιδιού σας όταν ξεκινάτε την εφαρμογή
+cams_directLoginPopUp_youCanChange;Μπορείτε να αλλάξετε την επιλογή σας ανά πάσα στιγμή στις ρυθμίσεις του Λόμπι.
+cams_directLoginPopUp_Accept;Ναι, συνδεθείτε απευθείας
+language_ro-RO;Ρουμανικά
+language_hu-HU;Ουγγρικά
+language_ar-AE;Αραβικά
+autoLoginFailed.;Η αυτόματη σύνδεση απέτυχε.
+needInternetToPlay;Χρειάζεστε σύνδεση στο διαδίκτυο για να παίξετε. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.
+mapCellInfoWindow_removeFromLists;Κατάργηση από όλες τις λίστες
+removeFromListsPopup_Title;Θέλετε να αφαιρέσετε το {{TARGETNAME}} από {{INT}} τις λίστες φάρμας;
+removeFromListsPopup_Description;Μπορείτε να προσθέσετε τον στόχο μεμονωμένα στις λίστες φάρμας αργότερα.
+removeFromListsPopup_ConfirmButton;Αφαίρεση στόχου
+social_continueWith;Ή συνεχίστε με:
+social_loginWith;Ή συνδεθείτε με:
+social_backToRegistration;Επιστροφή στην εγγραφή
+social_createAccountTitle;Δημιουργία Legends λόμπι λογαριασμό
+social_errorTitle_NoEmailProvided;Λείπει η άδεια ηλεκτρονικού ταχυδρομείου
+social_errorMsg_NoEmailProvided;Για να ξεκινήσετε να παίζετε το Travian: Legends, χρειαζόμαστε <b>την άδειά σας για να έχουμε πρόσβαση στη διεύθυνση email σας. </b>
+social_errorInfo_NoEmailProvided;Δοκιμάστε ξανά με τις σωστές ρυθμίσεις δικαιωμάτων ή δοκιμάστε μια άλλη μέθοδο εγγραφής.
+social_errorTitle_AlreadyExists;Το email χρησιμοποιείται ήδη
+social_errorMsg_AlreadyExists;Η διεύθυνση email που δώσατε χρησιμοποιείται ήδη για έναν λογαριασμό λόμπι Travian: Legends.
+social_errorInfo_AlreadyExists;Παρακαλούμε χρησιμοποιήστε τη διεύθυνση ηλεκτρονικού ταχυδρομείου που είναι συνδεδεμένη με το λογαριασμό σας για να συνδεθείτε.
+social_acceptTOS;Κάνοντας κλικ στην επιλογή "Επιβεβαίωση" αποδέχεστε τους ΓΟΣ <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID"></link></style> και επιβεβαιώνετε ότι έχετε λάβει υπόψη σας τις πληροφορίες <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">σχετικά με το δικαίωμα ανάκλησης</link></style> και την πολιτική απορρήτου <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID"></link></style>.
+linkNotWorking;Ο σύνδεσμος δεν δουλεύει
+linkNotWorkingDescription;Φαίνεται ότι αυτός ο σύνδεσμος δεν λειτουργεί προς το παρόν στην εφαρμογή Travian: Legends. Μπορεί να λειτουργεί στο πρόγραμμα περιήγησης στο διαδίκτυο.
+openLinkInBrowser;Άνοιγμα σε πρόγραμμα περιήγησης
+settings_language_useArabicNumerals_activated;Ενεργοποιείται η χρήση ανατολικών Αραβικών αριθμών
+settings_language_useArabicNumerals_deactivated;Απενεργοποιείται η χρήση ανατολικών Αραβικών αριθμών
+artefact_inventory_active_empty;Δεν ενεργοποιήθηκαν πολύτιμα αντικείμενα
+social_errorTitle_Unknown;Άγνωστο λάθος
+social_errorMsg_Unknown;Παρουσιάστηκε ένα άγνωστο λάθος. Παρακαλώ δοκιμάστε και πάλι.
+loadingScreen_text_01;Ο ήρωάς σας φτιάχνει τα μαλλιά του, παρακαλώ περιμένετε.
+loadingScreen_text_02;Η σιταποθήκη ξεχειλίζει. Οι χωρικοί αποθηκεύουν τώρα σιτηρά στις τσέπες τους.
+loadingScreen_text_03;Η πρεσβεία διοργανώνει πάρτι - μόνο για διπλωμάτες.
+loadingScreen_text_04;Το σημείο συγκέντρωσης είναι τώρα σημείο πικνίκ - τα στρατεύματα απολαμβάνουν σάντουιτς.
+loadingScreen_text_05;Ο σιδηρουργός σφυρηλατεί ένα σπαθί... από μακαρόνια.
+loadingScreen_text_06;Οι αρχιτέκτονες οικοδόμοι διαβάζουν το σχέδιο... ανάποδα.
+loadingScreen_text_07;Ο Νατάριοι εντάχθηκε στην λέσχη βιβλίου του χωριού. Κανείς δεν ξέρει να διαβάζει αρχαίους ρούνους.
+loadingScreen_text_08;Οι ανιχνευτές μετράνε τα εχθρικά στρατεύματα... αλλά τους τελείωσαν τα δάχτυλα.
+loadingScreen_text_09;Το Παγκόσμιο Θαύμα δέχεται επίθεση από περιστέρια. Στέλνει το συνεργείο καθαρισμού.
+loadingScreen_text_10;Η Πολιτοφυλακή των Σκλάβων απαιτεί συνδικαλιστική οργάνωση - προετοιμαστείτε για απεργίες.
+loadingScreen_text_11;Τα στρατεύματα αρνούνται να επιτεθούν μέχρι κάποιος να εξηγήσει τον προσομοιωτή μάχης.
+loadingScreen_text_12;Οι κάτοικοι του χωριού σταμάτησαν να εργάζονται για να παρακολουθήσουν τον αγώνα δύο κοτόπουλων.
+loadingScreen_text_13;Οι καταπέλτες σας διαφωνούν για το ποιο κτίριο θα χτυπήσουν πρώτα.
+loadingScreen_text_14;Παρακαλώ να είστε υπομονετικοί, ο ήρωας πήρε τους Γερμανικούς Σιδηρόδρομους αντί για άλογο.
+loadingScreen_text_15;Η κρύπτη κρύβει όχι μόνο πόρους, αλλά και τα κουτσομπολιά του χωριού.
+loadingScreen_text_16;Οι στρατώνες διοργανώνουν ένα σόου ταλέντων - η εκπαίδευση αναβάλλεται.
+loadingScreen_text_17;Ο τοίχος σας είναι σχεδόν έτοιμος. Απλά περιμένω να στεγνώσει η μπογιά.
+loadingScreen_text_18;Οι λεγεωνάριοι απαίτησαν ένα διάλειμμα για καφέ πριν από την πορεία.
+loadingScreen_text_19;Οι Γαλάτες εξηγούν στους Ρωμαίους τι είναι το Palisade, έχουν περάσει 3 ώρες.
+loadingScreen_text_20;Δωροδοκία εμπόρων για να επιταχύνουν τις παραδόσεις.
+loadingScreen_text_21;Ο ήρωάς σας παρακολουθεί μαθήματα ιππασίας, μπορεί να πάρει λίγο χρόνο.
+loadingScreen_text_22;Οι έμποροι έχουν κολλήσει πίσω από ένα αργό βόδι.
+loadingScreen_text_23;Οι ηγέτες της Συμμαχίας καταρτίζουν μια στρατηγική μάχης... με μπογιές.
+loadingScreen_text_24;Η σιταποθήκη είναι γεμάτη μπισκότα - η διαχείριση πόρων στα καλύτερά της.
+loadingScreen_text_25;Διακόπηκε η ανίχνευση - κάτι είναι στο μάτι του Χάιμνταλ.
+changeAccountNameSubtitle;Αλλαγή ονόματος χρήστη ή/και Συντομογραφίας.
+changeAccountNamePleaseNote;Σημειώστε ότι μετά την αλλαγή του ονόματος του λογαριασμού σας, πρέπει να περιμένετε {{DAYS}} [DAYS>1:μέρες][DAYS=1:μέρα] για να μπορέσετε να το αλλάξετε ξανά.
+changeAccountNameWaiting;Πρέπει να περιμένετε μέχρι να μπορέσετε να αλλάξετε το όνομά σας ξανά:
+changeAccountNameUpdated;Το όνομα λογαριασμού ενημερώθηκε
+changeAccountNameUpdatedSubtitle;Το όνομα του λογαριασμού σας έχει επιτυχώς ενημερωθεί σε: <b>{{playerName}}</b>
+alliance_top10Title;Εσωτερική δεκάδα κατάταξη συμμαχίας
+gameworldCalendarNoGameworld;Δεν βρέθηκαν επερχόμενοι κόσμοι παιχνιδιών. \nΜπορεί να φορτώνουν ή να είναι μη προγραμματισμένα.
+gameworldCalendar_title;Ημερολόγιο κόσμου παιχνιδιού
+valueWithModifierBefore;{{value|Round|2}}x
+goldShop_purchaseCanceled;Η αγορά ακυρώθηκε!
+goldShop_pendingRestored;Η προηγούμενη αγορά σας έχει αποκατασταθεί με επιτυχία.
+hero_consumablePopup_healthByOintment;Υγεία που αποκτάται ανά αλοιφή:
+unknown;;
+serverSelection_gameworldSpeed_short;{{INT}}x
+gameworldCalendarDetails_title;Λεπτομέρειες για τον κόσμο του παιχνιδιού
+gameworldCalendarDetails_shareLink;Μοιραστείτε τον σύνδεσμο του κόσμου παιχνιδιού
+gameWorldEndCondition;Κατάσταση τέλους του κόσμου του παιχνιδιού
+gameWorldEndCondition_WonderOfTheWorld;Παγκόσμιο Θαύμα {{Level}}
+gameWorldEndCondition_VictoryPoints;Πόντοι νίκης
+gameWorldRestriction_InvitationCode;Ο κόσμος αυτού του παιχνιδιού περιορίζεται σε παίκτες με έναν ειδικό κωδικό πρόσκλησης.
+gameWorldRestriction_MobilePlayers;Αυτός ο κόσμος του παιχνιδιού είναι προσβάσιμος μόνο για παίκτες κινητών τηλεφώνων.
+gameWorldSpecial;Αυτός είναι ένας ειδικός κόσμος παιχνιδιού που μπορεί να είναι διαθέσιμος μόνο για περιορισμένο χρονικό διάστημα και μπορεί να έχει διαφορετικά χαρακτηριστικά από τους κλασικούς κόσμους παιχνιδιού.
+gameWorldUndefinedDetails;Δεν έχουν ακόμη καθοριστεί όλες οι λεπτομέρειες του κόσμου του παιχνιδιού. Θα λάβετε μια ειδοποίηση στο λόμπι σας μόλις ενημερωθούν.
+bonusValueWithPercentNoSpace;+{{value}}%
+startDate;Ημερομηνία έναρξης
+startTime;Έναρξη χρόνου
+UTC+1;(UTC+1)
+goldShop_GoldPromotion;Προσφορά Χρυσού
+auction_FeePopupTitle;Τέλος Δημοπρασίας
+auction_FeePopupText;Πρέπει να πληρώσετε ένα τέλος {{value}}% για τις πωλήσεις σε οίκους δημοπρασιών. Η πληρωμή σας είναι η τιμή πώλησης μείον την αμοιβή δημοπρασίας.
+auction_FeePopupExample;Παράδειγμα υπολογισμού
+auction_FeePopupSalePrice;Τιμή πώλησης
+auction_FeePopupFee;Τέλος Δημοπρασίας ({{value}}%)
+auction_FeePopupPayout;Πληρωμή
+auction_sellHouseFeeInfo;Η πληρωμή σας είναι η τιμή πώλησης μείον το {{value}}% τέλος δημοπρασίας.
+gold_action_finishImmediately;Άμεση ολοκλήρωση
+mapCellInfoWindow_villageReports;Εμφάνιση αναφορές χωριού
+hero_crafting_title_refine;Βελτίωση του εξοπλισμού
+hero_crafting_title_smelt;Εξοπλισμός τήξης
+hero_crafting_title_forge;Εξοπλισμός σφυρηλάτησης
+hero_crafting_title_reforge;Εξοπλισμός ανακατασκευής
+hero_crafting_action_refine;Εξευγενίστε
+hero_crafting_action_smelt;Λιώσιμο
+hero_crafting_action_forge;Σφυρηλάτηση
+hero_crafting_action_takeMaterials;Πάρτε ({{INT}}/{{MAX}}) υλικά
+hero_crafting_action_takeAllMaterials;Πάρτε υλικά
+hero_crafting_action_reforge;Ανακατασκευή
+hero_crafting_action_take;Πάρτε το
+hero_crafting_action_pick;Διαλέξτε αντικείμενο
+hero_crafting_action_equip;Εξοπλισμός
+hero_crafting_action_buy_material;Αγοράστε υλικό
+hero_crafting_action_buy_item;Αγοράστε αντικείμενο
+hero_crafting_action_craft_material;Υλικό τήξης
+hero_crafting_action_moveToInventory;Στο ευρετήριο
+hero_crafting_action_select_item;Επιλογή
+hero_crafting_action_remove_item;Αφαίρεσε
+hero_crafting_action_error_equipment;Το αντικείμενο πρέπει να είναι εξοπλισμός ήρωα.
+hero_crafting_action_error_rarity;Τα αντικείμενα πρέπει να έχουν την ίδια σπανιότητα.
+hero_crafting_action_error_category;Τα είδη πρέπει να ανήκουν στην ίδια κατηγορία εξοπλισμού.
+hero_crafting_action_error_id;Τα αντικείμενα πρέπει να είναι πανομοιότυπα.
+hero_crafting_action_error_missingItem;Ένα ή περισσότερα από τα στοιχεία που έχετε επιλέξει δεν είναι πλέον διαθέσιμα.
+hero_crafting_refine_tip;Τα αντικείμενα επικών ηρώων μπορούν να βελτιωθούν με οποιοδήποτε άλλο αντικείμενο επικού ήρωα της ίδιας κατηγορίας αντικειμένων.
+hero_crafting_refine_tip_error;Δεν έχετε κανένα αντικείμενο ήρωα να βελτιώσετε. Βρείτε αντικείμενα σε περιπέτειες ή αγοράστε αντικείμενα από τον οίκο δημοπρασιών και βελτιώστε τα με εξευγενισμό.
+hero_crafting_smelt_info;Πάρτε το υλικό {{INT}} [INT>1:s] τώρα ή περιμένετε και πάρτε το {{MAX}}.
+hero_crafting_reforge_text;Ανακατασκευάστε τον εξοπλισμό για να αποκτήσετε ένα άλλο αντικείμενο, πιθανώς διαφορετικής σπανιότητας και ποιότητας.\nΜετά την αναμόρφωση, μπορείτε να επιλέξετε ποιο αντικείμενο θέλετε να πάρετε ή να αναμορφώσετε ξανά.\nΝα είστε προσεκτικοί: Το αντικείμενο κάθε επόμενου βήματος επανασυναρμολόγησης θα εξαφανιστεί και δεν θα μπορεί να αλλάξει πίσω.
+inventoryItem_quality_title;Ποιότητα
+inventoryItem_rarity_title;Σπανιότητα
+inventoryItem_rarity_quality_title;Σπανιότητα & Ποιότητα
+inventoryItem_rarity_common;Συνηθισμένο
+inventoryItem_rarity_uncommon;Μη Συνηθισμένο
+inventoryItem_rarity_rare;Σπάνια
+inventoryItem_rarity_epic;Επικό
+inventoryItem_rarity_legendary;Θρυλικό
+search_for_village;Αναζήτηση χωριού
+search_for_player;Αναζήτηση παίκτη
+villageList_EditMode;Λειτουργία επεξεργασίας
+villageList_MaxGroupAmount;Μέγιστος αριθμός ομάδων χωριών επιτεύχθηκε.
+hero_crafting_action_error_material;Το στοιχείο πρέπει να είναι υλικό.
+villageList_ReorderError;Λάθος στόχος
+textMatchingInput_Title;Επιβεβαίωση πληκτρολογώντας "{{WORD}}"
+hero_inventory_category_empty;- Δεν υπάρχουν αντικείμενα σε αυτή την κατηγορία -
+hero_crafting_action_refine_success;Εξοπλισμός εκλεπτυσμένος
+hero_crafting_action_smelt_success;Εξοπλισμός λιωσίματος
+hero_crafting_action_forge_success;Εξοπλισμός σφυρηλάτησης
+hero_crafting_result_item_equipped;Αντικείμενο εξόπλισης
+hero_crafting_result_item_taken;Αντικείμενο που μεταφέρθηκε στο ευρετήριο
+hero_crafting_result_material_taken;Υλικό που μεταφέρθηκε το ευρετήριο
+hero_crafting_action_error_quality;Τα αντικείμενα πρέπει να είναι ίδιας ποιότητας.
+hero_crafting_action_error_epic;Πρέπει να υπάρχει ένα άλλο επικό αντικείμενο της ίδιας κατηγορίας και ποιότητας.
+inventoryItem_rarity_none;Όχι σπάνιο
+dailyQuests_rewardOverview_short;Επισκόπηση ανταμοιβής
+avatar_confirmation_title_delete;Διαγραφή Άβαταρ
+avatar_confirmation_header_delete;Θέλετε να διαγράψετε το άβατάρ σας;
+avatar_confirmation_infoText_delete;Αφού αρχίσετε τη διαδικασία διαγραφής, θα χρειαστούν <b>3 ημέρες</b> για να ολοκληρωθεί η διαγραφή του άβατάρ σας.\nΈνα avatar προς διαγραφή δεν μπορεί πλέον να αποκτήσει πρόσβαση σε δημοπρασίες ή στο ανταλλακτήριο.\nΜπορείτε να ακυρώσετε τη διαγραφή ανά πάσα στιγμή εδώ.
+avatar_confirmation_requiredWord_delete;διαγραφή
+avatar_confirmation_title_respawn;Επαναφορά Άβαταρ
+avatar_confirmation_header_respawn;Θέλετε να επαναφέρετε το άβατάρ σας;
+avatar_confirmation_infoText_respawn;Αυτή η ενέργεια θα διαγράψει όλη την πρόοδο που έχετε κάνει μέχρι αυτό το σημείο και θα τοποθετήσει το αρχικό σας χωριό σε μια νέα θέση στον χάρτη.\n\nΌλος ο χρυσός που έχουν αγοραστεί θα μεταφερθούν αυτόματα.
+avatar_confirmation_requiredWord_respawn;απόκριση
+settings_app_title;Για όλους τους κόσμους παιχνιδιού
+settings_app_Animations_title;Κινούμενα σχέδια
+settings_app_Animations_description;Επιλέξτε ποια κινούμενα σχέδια θέλετε να βλέπετε στην εφαρμογή.
+settings_app_Animations_activated;Ενεργοποιείται το cloud κινούμενων σχεδίων για την προβολή χωριών/υλών
+settings_app_Animations_deactivated;Το cloud κινούμενων σχεδίων για την προβολή χωριών/υλών είναι απενεργοποιημένο
+settings_app_NightMode_title;Νυχτερινή Λειτουργία
+settings_app_NightMode_description;Οι χωρικοί σας άναψαν τους πυρσούς, και οι φωτιές των καμίνων τρίζουν κάτω από το αμυδρό φως των αστεριών στον νυχτερινό ουρανό.
+settings_app_NightMode_activated;Η νυχτερινή λειτουργία είναι ενεργοποιημένη
+settings_app_NightMode_deactivated;Η νυχτερινή λειτουργία είναι απενεργοποιημένη
+settings_app_WinterMode_title;Χειμερινή Λειτουργία
+settings_app_WinterMode_description;Το χιόνι πέφτει αθόρυβα, τυλίγοντας το χωριό σε μια απατηλή σιωπή, όπου κάθε ήχος μοιάζει να διαλύεται στον παγωμένο αέρα.
+settings_app_WinterMode_activated;Ενεργοποιείται η χειμερινή λειτουργία
+settings_app_WinterMode_deactivated;Απενεργοποιείται η χειμερινή λειτουργία
+settings_app_VillagePanning_title;Μετακίνηση σε χωριά/πεδία υλών
+settings_app_VillagePanning_description;Μπορείτε να μετακινηθείτε στην προβολή του χωριού σας και στα πεδία υλών.
+settings_app_VillagePanning_activated;Η κίνηση ενεργοποιείται
+settings_app_VillagePanning_deactivated;Η κίνηση απενεργοποιείται
+settings_app_PushNotifications_title;Γενικές ειδοποιήσεις push
+settings_app_PushNotifications_description;Ενημερωθείτε για γενικά νέα σχετικά με την εφαρμογή και το παιχνίδι με ειδοποιήσεις push.
+settings_app_PushNotifications_activated;Η ειδοποίηση έναρξης του κόσμου του παιχνιδιού είναι ενεργοποιημένη
+settings_app_PushNotifications_deactivated;Η ειδοποίηση έναρξης του κόσμου του παιχνιδιού είναι απενεργοποιημένη
+settings_app_EnergySaving_title;Λειτουργία Εξοικονόμησης Ενέργειας
+settings_app_EnergySaving_description;Εξοικονομήστε την μπαταρία της συσκευής σας με χαμηλότερο ρυθμό FPS.\nΗ ενεργοποίηση της λειτουργίας εξοικονόμησης ενέργειας ενδέχεται να οδηγήσει σε κάποια οπτική καθυστέρηση κατά τη χρήση της εφαρμογής.
+settings_app_EnergySaving_activated;Ενεργοποιείται η λειτουργία εξοικονόμησης ενέργειας
+settings_app_EnergySaving_deactivated;Απενεργοποιείται η λειτουργία εξοικονόμησης ενέργειας
+settings_app_DataSaving_title;Λειτουργία Εξοικονόμησης Δεδομένων Κινητής Τηλεφωνίας
+settings_app_DataSaving_description;Εξοικονόμηση δεδομένων/ευρυζωνικού εύρους κινητής τηλεφωνίας με λιγότερα αιτήματα διακομιστή.\nΗ ενεργοποίηση της λειτουργίας εξοικονόμησης δεδομένων κινητής τηλεφωνίας ενδέχεται να οδηγήσει σε μεγαλύτερο διάστημα ανανέωσης των δεδομένων εντός του παιχνιδιού.
+settings_app_DataSaving_activated;Η λειτουργία εξοικονόμησης δεδομένων κινητής τηλεφωνίας είναι ενεργοποιημένη
+settings_app_DataSaving_deactivated;Η λειτουργία εξοικονόμησης δεδομένων κινητής τηλεφωνίας είναι απενεργοποιημένη
+auction_FilterType;Τύπος στοιχείου
+auction_bidTooLow;Πολύ χαμηλή προσφορά.
+villageList_Delete_Title;Διαγραφή Ομάδας Χωριού
+villageList_Delete_Button;Διαγραφή ομάδας
+villageList_Delete_Description;Θέλετε να διαγράψετε αυτήν την ομάδα χωριού;
+villageList_Delete_Description2;Τα χωριά αυτής της ομάδας δεν θα επηρεαστούν.
+gameworldNews_title;Νέα και ενημερώσεις
+moreInformation;Περισσότερες πληροφορίες
+remainingGold;Υπόλοιπο Χρυσoύ: {{goldIcon|Sprite}} {{goldAmount}}
+messages_addEmoji_title;Προσθέστε emojis
+messages_select_emojis;Επιλέξτε emojis
+cams_resend_email_wait_error;Παρακαλούμε περιμένετε για να στείλετε άλλο email.
+cams_settings_accountDeletion_infoGold;Μετά τη διαγραφή του άβατάρ σας, θα σας αποσταλεί ένα email που θα σας εξηγεί πως να μεταφέρετε το υπόλοιπο Χρυσού σε άλλο άβαταρ.\n<b>Παρακαλώ σημειώστε:</b> Ο  υπόλοιπος Χρυσός σας μπορεί να μεταφερθεί μόνο σε ορισμένους κόσμους παιχνιδιού.
+cams_changeMail_title;Αλλαγή διεύθυνσης email
+cams_changeMail_description;Για να αλλάξετε τη διεύθυνση ηλεκτρονικού ταχυδρομείου σας, χρειάζεστε πρόσβαση στην τρέχουσα και τη νέα διεύθυνση ηλεκτρονικού ταχυδρομείου.
+cams_changeMail_socialHint;Η αλλαγή της διεύθυνσης email σας δεν θα επηρεάσει  τη σύνδεσή σας με το Facebook, τη Google ή την Apple.
+cams_changeMail_cantAccess;Δεν έχετε πρόσβαση στο email σας;
+cams_changeMail_sentVerification;Στείλαμε ένα email επαλήθευσης στο: {{mail}}
+cams_changeMail_checkInbox;Ελέγξτε τα εισερχόμενά σας και ακολουθήστε τις οδηγίες για να συνεχίσετε.
+cams_changeMail_verificationCode;Κωδικός επαλήθευσης email:
+cams_changeMail_verifyButton;Επαλήθευση email
+cams_changeMail_enterNew_description;Εισαγάγετε τη νέα διεύθυνση ηλεκτρονικού ταχυδρομείου παρακάτω. Θα σας στείλουμε ένα email επαλήθευσης σε αυτή τη διεύθυνση.
+cams_changeMail_enterNew_description2;Ακολουθήστε τις οδηγίες στο email για να ολοκληρώσετε την αλλαγή.
+cams_changeMail_enterNew_input;Εισαγάγετε τη νέα διεύθυνση ηλεκτρονικού ταχυδρομείου:
+cams_changeMail_enterNew_input_placeholder;Νέα διεύθυνση email
+cams_changeMail_enterNew_button;Αλλαγή του email σας
+cams_changeMail_done_title;Ενημερωμένο email
+cams_changeMail_done_description1;Η ηλεκτρονική σας διεύθυνση έχει ενημερωθεί επιτυχώς σε {{mail}}
+cams_changeMail_done_description2;Θα αποσυνδεθείτε αυτόματα και θα μεταφερθείτε στη σελίδα σύνδεσης. Παρακαλούμε χρησιμοποιήστε τη νέα σας διεύθυνση ηλεκτρονικού ταχυδρομείου για να συνδεθείτε.
+cams_changeMail_done_redirecting;Ανακατεύθυνση στη σύνδεση {{time}}...
+bonusValue;+ {{value}}
+value;{{value}}
+ratioValues_Colon;{{a}}:{{b}}
+genericValue;{{VALUE}}
+enterAmount;Πληκτρολογήστε το ποσό
+symbol_minus;-
+applyFilter;Εφαρμόστε φίλτρο
+resetFilter;Επαναφορά φίλτρου
+rallyPoint_troopsOverview_outgoingMission_50_heroCentricAdventure;Εξερεύνηση σε περιπέτεια
+rallyPoint_troopsOverview_returningFromAdventure_heroCentricAdventure;Επιστροφή από περιπέτεια
+silverExchangePopup_AvailableSilver;Διαθέσιμο ασήμι
+silverExchangePopup_SilverStatus;Επί του παρόντος, το {{AMOUNT|LongNumber}} του ασημιού σας είναι δεσμευμένο σε ενεργές δημοπρασίες.
+silverExchangePopup_SilverError;Δεν έχετε αρκετό ασήμι για αυτή την ενέργεια.
+silverExchangePopup_GoldError;Δεν έχετε αρκετό Χρυσό για αυτή την ενέργεια.
+hero.status50_heroCentricAdventure;Ο ήρωάς σας βρίσκεται στον δρόμο προς μια περιπέτεια.
+inventoryItem_quality_1;Ποιότητα 1
+inventoryItem_quality_2;Ποιότητα 2
+inventoryItem_quality_3;Ποιότητα 3
+inventoryItem_rarity_common_headGear;Κοινός Εξοπλισμός Κεφαλής
+inventoryItem_rarity_uncommon_headGear;Μη Συνηθισμένος Εξοπλισμός Κεφαλής
+inventoryItem_rarity_rare_headGear;Σπάνιος Εξοπλισμός Κεφαλής
+inventoryItem_rarity_epic_headGear;Επικός Εξοπλισμός Κεφαλής
+inventoryItem_rarity_legendary_headGear;Θρυλικός Εξοπλισμός Κεφαλής
+inventoryItem_rarity_common_utility;Κοινό Βοήθημα
+inventoryItem_rarity_uncommon_utility;Μη Συνηθισμένο Βοήθημα
+inventoryItem_rarity_rare_utility;Σπάνιο Βοήθημα
+inventoryItem_rarity_epic_utility;Επικό Βοήθημα
+inventoryItem_rarity_legendary_utility;Θρυλικό Βοήθημα
+inventoryItem_rarity_common_weapon;Κοινό Όπλο
+inventoryItem_rarity_uncommon_weapon;Μη Συνηθισμένο Όπλο
+inventoryItem_rarity_rare_weapon;Σπάνιο Όπλο
+inventoryItem_rarity_epic_weapon;Επική Όπλο
+inventoryItem_rarity_legendary_weapon;Θρυλικό Όπλο
+inventoryItem_rarity_common_armour;Κοινή Πανοπλία
+inventoryItem_rarity_uncommon_armour;Μη Συνηθισμένη Πανοπλία
+inventoryItem_rarity_rare_armour;Σπάνια Πανοπλία
+inventoryItem_rarity_epic_armour;Επική Πανοπλία
+inventoryItem_rarity_legendary_armour;Θρυλικό Θωράκισμα
+inventoryItem_rarity_common_boots;Κοινές Μπότες
+inventoryItem_rarity_uncommon_boots;Μη Συνηθισμένες Μπότες
+inventoryItem_rarity_rare_boots;Σπάνιες Μπότες
+inventoryItem_rarity_epic_boots;Επικές Μπότες
+inventoryItem_rarity_legendary_boots;Θρυλικές Μπότες
+inventoryItem_rarity_common_consumable;Αναλώσιμα
+inventoryItem_rarity_uncommon_consumable;Ασυνήθιστο Αναλώσιμο
+inventoryItem_rarity_rare_consumable;Σπάνιο Αναλώσιμο
+inventoryItem_rarity_epic_consumable;Επικό Αναλώσιμο
+inventoryItem_rarity_common_horse;Άλογο
+inventoryItem_rarity_uncommon_horse;Ασυνήθιστο άλογο
+inventoryItem_rarity_rare_horse;Σπάνιο Άλογο
+inventoryItem_rarity_epic_horse;Επική Άλογο
+inventoryItem_rarity_legendary_horse;Θρυλικό Άλογο
+inventoryItem_rarity_common_material;Αναλώσιμα
+inventoryItem_rarity_uncommon_material;Ασυνήθιστο Αναλώσιμο
+inventoryItem_rarity_rare_material;Σπάνιο Αναλώσιμο
+inventoryItem_rarity_epic_material;Επικό Αναλώσιμο
+search_item;Αναζήτηση αντικειμένου
+search_select_item;Επιλέξτε ένα αντικείμενο
+avatar_confirmation_infoText_delete_goldBough;Μετά την έναρξη της διαδικασίας διαγραφής, θα χρειαστούν <b>τουλάχιστον τρεις ημέρες</b>για να διαγραφεί το άβατάρ σας, διότι αυτό το άβαταρ έχει πρόσφατα χρησιμοποιηθεί για τη αγορά Χρυσού.\nΈνα avatar προς διαγραφή δεν μπορεί πλέον να αποκτήσει πρόσβαση σε δημοπρασίες ή στο ανταλλακτήριο.\nΜπορείτε να ακυρώσετε τη διαγραφή ανά πάσα στιγμή εδώ.
+combatSimulator_addItemEffect;Προσθήκη εφέ αντικειμένου
+combatSimulator_editItemEffect;Επεξεργασία εφέ αντικειμένου
+addItemEffect_title;Προσθέστε εφέ αντικειμένου ήρωα
+addItemEffect_description;Προσθέστε ξεχωριστά εφέ για να αντικατοπτρίζουν τα ατομικά μπόνους όλα τα δυνατά αντικείμενα ήρωα.
+addItemEffect_importHeroEquipment;Εισαγωγή ιδίου εξοπλισμού ήρωα
+addItemEffect_importHeroEquipment_success;Εισαγόμενα στοιχεία ήρωα
+addItemEffect_selectEffect;Επιλέξτε ένα εφέ αντικειμένου
+addItemEffect_selectItem;Επιλέξτε ένα αντικείμενο
+addItemEffect_selectMagnitude;Επιλέξτε μέγεθος
+addItemEffect_selectUnit;Επιλέξτε μονάδα
+addItemEffect_missingMagnitude;Λείπει το μέγεθος
+addItemEffect_effect_2;Μειωμένη ζημιά
+addItemEffect_effect_6;+ Πρόσθετοι πόντοι υγείας ανά ημέρα
+addItemEffect_effect_12;+ Αυξημένη επίθεση και άμυνα για συγκεκριμένη μονάδα
+addItemEffect_effect_13;+ Αυξημένη δύναμη μάχης
+cams_newMail_title;Νέα διεύθυνση email
+cams_verifyNewMail_title;Επιβεβαίωση νέας διεύθυνσης email
+cams_verifyCurrentMail_title;Επιβεβαίωση τρέχουμε διεύθυνσης email
+auction_notEnoughSilver;Δεν έχετε αρκετό ασήμι
+auction_itemGroups;Ομάδες αντικειμένων
+auction_unknown;;
+auction_sortingOption_itemName;Όνομα στοιχείου
+auction_sortingOption_bidCount;Αριθμός προσφορών
+auction_sortingOption_finishedAt;Ολοκλήρωση σε 
+auction_sortingOption_highestBid;Υψηλότερη προσφορά
+auction_sortingOption_highestBidder_player;Υψηλότερος πλειοδότης (παίκτης)
+auction_sortingOption_highestBidder_alliance;Υψηλότερος πλειοδότης (συμμαχία)
+auction_sortingOption_auctionAmount;Αριθμός τρέχων δημοπρασιών
+auction_sortingOption_nextFinishedAt;Ολοκλήρωση επόμενης σε 
+auction_sellingPrice;Τιμή πώλησης
+auction_sellingPrice_lowest;Χαμηλότερο
+auction_sellingPrice_average;Μέσος όρος
+auction_sellingPrice_highest;Υψηλότερη
+auction_result_won;<color={{colorValue|TextColor}}>Κέρδισε</color>
+auction_result_lost;<color={{colorValue|TextColor}}>Μειοδότησε</color>
+auction_sellingPrice_averagePrice;Μέση τιμή
+auction_bidProcessTitle;Διαδικασία υποβολής προσφορών
+auction_bidProcessDescription1;Μπορείτε να κάνετε προσφορές για τα αντικείμενα που σας ενδιαφέρουν.
+auction_bidProcessDescription2;Πρέπει να προσφέρετε τουλάχιστον το ελάχιστο ποσό για να ξεπεράσετε την τρέχουσα προσφορά.
+auction_maxBidFeatureTitle;Χαρακτηριστικό μέγιστης προσφοράς
+auction_maxBidFeatureDescription1;Μπορείτε να εισαγάγετε τον μέγιστο προϋπολογισμό σας για ένα στοιχείο.
+auction_maxBidFeatureDescription2;Το σύστημα θα προσφέρει αυτόματα για εσάς μέχρι το ανώτατο όριο που έχετε ορίσει.
+auction_maxBidFeatureDescription3;Η προσφορά σας αυξάνεται μόνο όσο χρειάζεται για να παραμείνετε ο πλειοδότης.
+auction_maxBidFeatureDescription4;Οι προσφορές συνεχίζονται μέχρι να κερδίσετε ή να υπερβείτε τον μέγιστο προϋπολογισμό σας.
+auction_auctionDurationTitle;Διάρκεια δημοπρασίας
+auction_auctionDurationDescription1;Εάν ο εναπομείνας χρόνος πλειστηριασμού είναι μικρότερος από τις {{DURATION|Duration}} , η διάρκεια παρατείνεται έως τις {{DURATION|Duration}} όταν αλλάξει ο πλειοδότης.
+auction_auctionWinningTitle;Κερδίζοντας
+auction_auctionWinningDescription1;Ο πλειοδότης με την υψηλότερη προσφορά κατά τη λήξη της δημοπρασίας κερδίζει το αντικείμενο.
+auction_auctionFinished;Η δημοπρασία έχει ήδη τελειώσει.
+auction_wasJustOutbid;Προς το παρόν δεν είστε ο πλειοδότης.
+auction_currentHighestBidder;Τρέχον μεγαλύτερος πλειοδότης
+auction_currentHighestBid;Τρέχον μεγαλύτερη προσφορά
+auction_yourMaximumBid;Η μέγιστη προσφορά σας
+auction_showFinished;Εμφάνιση ολοκληρώθηκε
+auction_deleteAllFinished;Διαγράψτε όλα τα ολοκληρωμένα
+auction_startedAt;Ξεκίνησε: {{TIME|DateTime}} | Τρέχει
+auction_canceled;Ακυρώθηκε
+auction_finished;Τέλειωσε
+auction_finishedAt;Τέλειωσε: {{TIME|DateTime}}
+auction_itemAuction_title;Αντικείμενο δημοπρασίας
+auction_itemAuction_info;Κάντε κλικ σε ένα αντικείμενο στο ευρετήριό σας για να ξεκινήσετε μία δημοπρασία. Οι άλλοι παίκτες μπορούν να υποβάλουν προσφορά. Μια δημοπρασία μπορεί να διαρκέσει μέχρι {{INT}} ώρες
+auction_whatHappensNext_title;Τι θα συμβεί στη συνέχεια
+auction_whatHappensNext_info1;Ο πλειοδότης με την υψηλότερη προσφορά αγοράζει αυτόματα το αντικείμενο όταν λήξει ο χρόνος.
+auction_whatHappensNext_info2;Θα λάβετε το ασήμι όταν γίνει η πώληση.
+auction_whatHappensNext_info3;Θα ειδοποιηθείτε όταν το αντικείμενό σας πωληθεί.
+auction_error_cannotSell;Αυτό το αντικείμενο δεν μπορεί να πουληθεί στον οίκο δημοπρασιών.
+auction_error_onlyHorse;Δεν μπορείς να πουλήσεις το άλογό σου.
+auction_sellItem;Πουλήστε αντικείμενο
+auction_sales;Πωλήσεις
+auction_selectBatchSize;Επιλέξτε μέγεθος παρτίδας
+auction_selectBatchSize_batches;<b>{{COUNT}}x</b> παρτίδες αντικειμένων
+auction_selectFilter_title;Επιλέξτε φίλτρο
+goldShop_upTo;Μέχρι
+shopPromotion_openShop;Άνοιγμα καταστήματος
+shopPromotion_goldPromotionTitle;Ενεργή προσφορά Χρυσού
+shopPromotion_limitedTimeOffer;Προσφορά περιορισμένου χρόνου!
+shopPromotion_goldPromotionDescription;Αποκτήστε περισσότερο χρυσό για τα χρήματά σας τώρα.
+shopPromotion_timeRemaining;Υπολειπόμενος χρόνος: 
+hero_adventures_watchAdReduceDuration_title;Μειώστε τη διάρκεια της περιπέτειας κατά {{AMOUNT}}%
+hero_adventures_watchAdReduceDuration_description;Παρακολουθήστε ένα βίντεο για να μειώσετε τη διάρκεια της <b>επόμενης</b> περιπέτειας του ήρωά σας.
+hero_adventures_watchAdIncreaseDanger_title;Αυξημένος κίνδυνος δύσκολης περιπέτειας
+hero_adventures_watchAdIncreaseDanger_description;Παρακολουθήστε ένα βίντεο για να αυξήσετε τον κίνδυνο να <b>την επόμενη κανονική περιπέτεια</b> σε δύσκολη για περισσότερα XP ήρωα.
+hero_adventures_watchAdActive;Ενεργό για την επόμενη περιπέτεια.
+hero_adventures_watchAdActiveNormal;Ενεργό για την επόμενη κανονική περιπέτεια.
+hero_crafting_action_error_nonEpic;Πρέπει να είναι πανομοιότυπο αντικείμενο της ίδιας σπανιότητας και ποιότητας.
+berichte.adventure_heroCentric;{{VILLAGE_NAME}} ξεκινάει μια περιπέτεια
+reports_share_notShareable;Αυτή η αναφορά δεν μπορεί να κοινοποιηθεί.
+dailyQuests_dailyMaxReached;Ημερήσιο μέγιστο που επιτεύχθηκε
+achievementQuests.DailyQuest_12_description;Ανοίξτε το παιχνίδι σε ένα πρόγραμμα περιήγησης στον υπολογιστή σας και παρακολουθήστε ένα βίντεο.
+achievementQuests.DailyQuest_12_additionalInformation;www.travian.gr
+achievementQuests.DailyQuest_13_description;Παρακολουθήστε ένα βίντεο για να αναβαθμίσετε τα κτίριά σας γρηγορότερα, για παράδειγμα.
+achievementQuests.DailyQuest_13_additionalInformation;Ή κάντε κλικ στο κουμπί "Παρακολούθηση βίντεο" για να παρακολουθήσετε απευθείας ένα βίντεο χωρίς πρόσθετα οφέλη.
+addItemEffect_effect_11; + Αυξημένοι πόντοι πολιτισμού την ημέρα
+auction_started;Η δημοπρασία ξεκίνησε
+auction_error_batchSize;Δεν υπάρχουν αρκετά αντικείμενα προς πώληση.
+auction_graph_notEnoughData;Δεν υπάρχουν αρκετά δεδομένα
+auction_emptyInventory;- Προς το παρόν δεν έχετε αντικείμενα προς πώληση -
+RelativeTime_2_word;[data>1:{{data}} ώρες][data<2:{{data}} ώρα]
+gold_action_halveDuration;Μείωση της διάρκειας στο μισό
+goldShop_advantage_Value_Duration;<b>+{{VALUE}}%</b> για <b>[DURATION>6:{{DURATION}} ημέρες][DURATION<7:{{DURATION|Mult|24}} ώρες]</b>
+goldShop_advantage_Value_Active;<b>+{{VALUE}}%</b> ενεργοποίηση για:
+goldShop_upgrade;Αναβάθμιση
+goldShop_advantage_stillActiveFor;Εξακολουθεί να είναι ενεργή για:
+goldShop_advantage_stillActiveFor_Value;{{DURATION}} μέχρι {{TIME}} η ώρα
+goldShop_advantage_videoFeatureOnCD;Μπορείτε να ενεργοποιήσετε το μπόνους βίντεο μόνο μία φορά την ημέρα.\nΚαθημερινή επαναφορά σε: {{TIMESTAMP|Countdown}}
+goldShop_advantage_popup_mainInfoHeader_ProductionboostLumber;Αύξηση <b>παραγωγής ξυλείας</b> σε όλα τα χωριά σας.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostClay;Αύξηση <b>παραγωγής πηλού</b> σε όλα τα χωριά σας.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostIron;Αύξηση <b>παραγωγής σιδήρου</b> σε όλα τα χωριά σας.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostCrop;Αύξηση <b>παραγωγής σιταριού</b> σε όλα τα χωριά σας.
+goldShop_advantage_popup_mainInfoBody;Το μπόνους  ισχύει για την βασική παραγωγή υλών και για όλα τα άλλα μπόνους!
+goldShop_advantage_popup_premiumInfo;Μπορείτε να ενεργοποιήσετε το μπόνους με Χρυσό και να λάβετε ένα μπόνους παραγωγής +{{VALUE}}%.\nΜπορείτε να ενεργοποιήσετε την αυτόματη επέκταση για μια μόνιμη διάρκεια μπόνους.
+goldShop_advantage_popup_videoFeatureInfo;Ή μπορείτε να παρακολουθήσετε ένα σύντομο βίντεο και να λάβετε το μικρότερο μπόνους παραγωγής +{{VALUE}}%.\n<b>Το μπόνους βίντεο μπορεί να ενεργοποιηθεί μόνο μία φορά την ημέρα για κάθε πόρο.</b>
+goldShop_advantage_popup_upgradeInfo;Ανά πάσα στιγμή, μπορείτε να αναβαθμίσετε το μπόνους παραγωγής +{{VALUE}}% για Χρυσό.
+goldShop_advantage_upgradePopupInfo1;Η αναβάθμιση του μπόνους πόρων θα αφαιρέσει το τρέχον ενεργό μπόνους σας.
+goldShop_advantage_upgradePopupInfo2;Θα λάβετε +{{VALUE}}% για [DURATION>6:{{DURATION}} ημέρες][DURATION<7:{{DURATION|Mult|24}}] αντ' αυτού.
+goldShop_advantage_upgradePopup_title;Μπόνους αναβάθμισης
+productionOverview_Bonus;+{{VALUE}}% παραγωγή
+hero_adventures_watchAdReduceDuration_toast;Η διάρκειας περιπέτειας μειώθηκε.
+hero_adventures_watchAdIncreaseDanger_toast;Ο κίνδυνος περιπέτειας αυξήθηκε.
+hero_consumablePopup_amountEquippedAfter;Ποσότητα που εξοπλίστηκε μετά από:
+hero_consumablePopup_amountEquippedAfterUse;Ποσότητα που είναι εξοπλισμένη μετά τη χρήση:
+hero_consumablePopup_amountLeftInInventory;Ποσότητα που έχει απομείνει στο ευρετήριο:
+cams_recover_password_cooldown;Παρακαλούμε περιμένετε {{VALUE}}
+cams_settings_changePassword_cooldown;Παρακαλούμε περιμένετε {{VALUE}}
+infobox_productionBoost_upgradeButton;Αναβάθμιση
+infobox_productionBoost_upgradeBonusWithGold;Αναβαθμίστε και επεκτείνετε το μπόνους σας με Χρυσό για να λάβετε +{{PREMIUM_PERCENTAGE}}% για {{TIME}} ώρες.
+infobox_productionBoost_expires;{{PERCENTAGE}} {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresLumber;Το +{{PERCENTAGE}}% παραγωγής ξυλείας λήγει σε {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresClay;Το +{{PERCENTAGE}}% παραγωγής πηλού λήγει σε {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresIron;Το +{{PERCENTAGE}}% παραγωγής σιδήρου λήγει σε {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresCrop;Το +{{PERCENTAGE}}% παραγωγής σιταριού λήγει σε {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expired;{{PERCENTAGE}}
+infobox_productionBoost_expiredLumber;Το +{{PERCENTAGE}}% παραγωγής ξυλείας έχει <b>λήξει</b>.
+infobox_productionBoost_expiredClay;Το +{{PERCENTAGE}}% παραγωγής πηλού έχει <b>λήξει</b>.
+infobox_productionBoost_expiredIron;Το +{{PERCENTAGE}}% παραγωγής σιδήρου έχει <b>λήξει</b>.
+infobox_productionBoost_expiredCrop;Το +{{PERCENTAGE}}% παραγωγής σιταριού έχει <b>λήξει</b>.
+infobox_levelUpProductionReminder;Αυξήστε την παραγωγή πόρων σε όλα τα χωριά σας για Χρυσό (+{{PREMIUM_PERCENTAGE}}%) ή παρακολουθώντας ένα βίντεο (+{{VIDEO_PERCENTAGE}}%)
+infobox_oneTimeProductionBoostReminder;Μπορείτε τώρα να ενεργοποιήσετε ξανά το μπόνους υλών +{{VIDEO_PERCENTAGE}}% παρακολουθώντας ένα βίντεο.
+travelSimulator_title;Προσομοιωτής διαδρομής
+travelSimulator_sourceTribe;Φυλή προέλευσης
+travelSimulator_noLocationSelected;Δεν έχει επιλεγεί τοποθεσία
+travelSimulator_slowestUnit_title;Η πιο αργή μονάδα
+travelSimulator_slowestUnit_settings;{{UNIT}} | Ταχύτητα: {{SPEED}}
+travelSimulator_TournamentSquareLevel_info;(Μόνο για απόσταση >20 πλακιδίων)
+travelSimulator_tournamentSquareLevel_option;{{LEVEL}} | {{VALUE}}%
+travelSimulator_unitSelection_title;Επιλέξτε πιο αργή μονάδα
+travelSimulator_unitSelection_unitType;Τύπος μονάδας
+travelSimulator_unitSelection_unitSpeed;Ταχύτητα μονάδας
+travelSimulator_unitSelection_selectedUnitSpeed;Ταχύτητα {{SPEED}}
+travelSimulator_calculation_land;<b>Γη:</b> {{VALUE}}
+travelSimulator_calculation_sea;<b>Θάλασσα:</b> {{VALUE}}
+travelSimulator_heroAttending;Ήρωας που παρακολουθεί
+travelSimulator_vikingRaidBonus;Μπόνους επιδρομής Βίκινγκ
+travelSimulator_troopSpeedArtefactEffect;Ταχύτητα στρατευμάτων με επίδραση πολύτιμου αντικειμένου
+travelSimulator_toast_selectSourceAndTarget;Επιλέξτε μια έγκυρη τοποθεσία πηγής και στόχου!
+travelSimulator_toast_selectSourceTribe;Επιλέξτε μια έγκυρη φυλή!
+IOSAppTrackingTransparencyMessage;Πατώντας "Επιτρέψτε" χρησιμοποιούνται πληροφορίες συσκευής για πιο σχετικό περιεχόμενο διαφήμισης
+goldShop_advantage_Value_Duration_Hours;<b>+{{VALUE}}%</b> για <b>{{DURATION}} ώρες</b>
+travelSimulator_tournamentSquareLevel_title;Χώρος αθλημάτων τουρνουά
+travelSimulator_troopSpeedAncientPower;Ταχύτητα στρατού αρχαία δύναμη
+RelativeTime_Formatted;[weeks>0:{{weeks}}ε ][days>0:{{days}}η ]{{data}}
+settings_account_tab;Λογαριασμός
+settings_notification_tab;Ειδοποιήσεις Push
+settings_app_PushNotifications_popup_title;Ειδοποιήσεις Push
+settings_app_PushNotifications_popup_header;Επιτρέψτε μας να σας στέλνουμε ειδοποιήσεις
+settings_app_PushNotifications_popup_info1;Για να λαμβάνετε ειδοποιήσεις push με νέα και χρήσιμες πληροφορίες σχετικά με το παιχνίδι, παρακαλούμε να επιτρέψετε πρώτα τις ειδοποιήσεις από εμάς.
+settings_app_PushNotifications_popup_info2;Μπορείτε να ενεργοποιήσετε τις ειδοποιήσεις στις ρυθμίσεις εφαρμογών της συσκευής σας.
+settings_app_PushNotifications_popup_info3;Μπορείτε επίσης να επιστρέψετε εδώ όποτε θέλετε για να απενεργοποιήσετε ξανά τις ειδοποιήσεις.
+settings_app_PushNotifications_popup_action_button;Ανοίξτε τις ρυθμίσεις της εφαρμογής
+ratioValueMax;/ {{a}}
+market_sendResources_completed;Ολοκληρώθηκε
+market_sendResources_villageNotFound;Δεν βρέθηκε Μπορείτε να στείλετε ύλες μόνο στα δικά σας χωριά, μέλη συμμαχίας ή μέλη συνομοσπονδίας.
+no_ads_popup_title;Κανένα βίντεο διαφημίσεων
+no_ads_popup_header;Παρουσιάστηκε ένα πρόβλημα κατά την προσπάθεια προβολής μιας διαφήμισης βίντεο.
+no_ads_popup_info1;Αυτό μπορεί να οφείλεται σε διάφορους λόγους:
+no_ads_popup_info2; • Προς το παρόν δεν υπάρχουν διαθέσιμες διαφημίσεις στη δεξαμενή διαφημίσεων για την περιοχή σας.
+no_ads_popup_info3; • Οι ρυθμίσεις απορρήτου σας περιορίζουν τον αριθμό των διαφημίσεων που μπορούν να παρασχεθούν.
+no_ads_popup_info4; • Τεχνικά ζητήματα με την εφαρμογή μας ή τον πάροχο διαφημίσεων.
+no_ads_popup_settings_msg;Βεβαιωθείτε ότι επιτρέπετε τις εξατομικευμένες διαφημίσεις στις ρυθμίσεις απορρήτου σας.
+no_ads_popup_support_msg;Παρακαλούμε επικοινωνήστε με την υποστήριξή μας εάν το πρόβλημα επιμένει.
+no_ads_popup_support_button;Επικοινωνήστε με την Υποστήριξη
+city_upgradeToACity_wwVillageNotUpgradeable;Τα χωριά Παγκόσμιου Θαύματος δεν μπορούν να αναβαθμιστούν σε πόλεις.
+travelSimulator_selectMagnitude;Επιλέξτε μέγεθος
+marketplace_merchantsOverview_returningTo;Επιστροφή σε <b>{{Village}}</b> από σε <b>{{Player}}</b>
+market_sendResources_sendAgain;Στείλτε ξανά
+search_village_notFound;Δεν βρέθηκε Μπορείτε να στείλετε ύλες μόνο στα δικά σας χωριά, μέλη συμμαχίας ή μέλη συνομοσπονδίας.
+settings_app_AnimationsPayoffs_activated;Η αποστολή στρατευμάτων/εμπόρων εμψύχωσης ενεργοποιήθηκε
+settings_app_AnimationsPayoffs_deactivated;Η αποστολή στρατευμάτων/εμπόρων εμψύχωσης απενεργοποιήθηκε
+hero_resourceTransferPopup_empty;Δεν υπάρχουν ύλες για μεταφορά από το ευρετήριο του ήρωα.
+hero_toast_appearanceChanged;Η εμφάνιση έχει αλλάξει
+alliance_editMemberPopup_customNote;Προσαρμοσμένη σημείωση
+alliance_editMemberPopup_titleOfRole;Τίτλος ρόλου
+alliance_editMemberPopup_setSpecialization;Ορισμός ειδικότητας
+alliance_role_offensive;Επιθετική
+alliance_role_defensive;Αμυντική
+alliance_role_hybrid;Υβριδικό
+alliance_role_scout;Ανιχνευτής
+alliance_role_support;Υποστήριξη
+alliance_role_wow_hammer;Σφυρί WoW
+alliance_role_none;Κανένα
+ad_fallback_popup_title;Παράλαβε την ανταμοιβή σου
+ad_fallback_popup_info;Προς το παρόν δεν υπάρχουν διαθέσιμα διαφημιστικά βίντεο, αλλά παρόλα αυτά θέλουμε να επιβραβεύσουμε την πίστη σου! Περίμενε λίγο ενώ ετοιμάζουμε μια ανταμοιβή.
+ad_fallback_popup_rewardGranted;Η ανταμοιβή δόθηκε
+ad_fallback_popup_claim;Παράλαβε την ανταμοιβή
+ad_fallback_popup_closeWarning;Το πρόωρο κλείσιμο αυτής της οθόνης θα ακυρώσει την ανταμοιβή
+gameplay_tip_1;Μπορείς να εκπαιδεύσεις εποίκους στο μέγαρο ή στο παλάτι (το πρώτο από αυτά στο επίπεδο 10).
+gameplay_tip_2;Μπορείς να χτίσεις μόνο ένα παλάτι για κάθε άβαταρ. Το παλάτι προσφέρει έως και 3 Θέσεις επέκτασης, ενώ το μέγαρο προσφέρει μόνο 2.
+gameplay_tip_3;Για να αλλάξεις την πρωτεύουσά σου, χτίσε ένα παλάτι σε νέο χωριό. Έχε υπόψη ότι τα αποκλειστικά κτίρια της παλιάς σου πρωτεύουσας θα χαθούν ή θα υποβαθμιστούν.
+gameplay_tip_4;Μπορείς να εποικίσεις ή να κατακτήσεις άλλο Χωριό αν έχεις επαρκείς Πόντους πολιτισμού.
+gameplay_tip_5;Κέρδισε πόντους πολιτισμού αναβαθμίζοντας κτίρια και διοργανώνοντας εορτασμούς στο δημαρχείο.
+gameplay_tip_6;Μεγάλοι εορτασμοί μπορούν να διοργανωθούν στο δημαρχείο (επίπεδο 10). Προσφέρουν περισσότερους πόντους πολιτισμού, αλλά κοστίζουν περισσότερες ύλες.
+gameplay_tip_7;Για να κατακτήσεις ένα χωριό, μείωσε την πίστη του στο μηδέν χρησιμοποιώντας διαχειριστές που έχεις εκπαιδεύσει στο μέγαρο ή στο παλάτι σου.
+gameplay_tip_8;Κάνε έρευνα για τους διαχειριστές στην ακαδημία πριν τους εκπαιδεύσεις στο μέγαρο ή στο παλάτι.
+gameplay_tip_9;Μπορείς να κατακτήσεις χωριά από τους Νατάριους ή από άλλους παίκτες.
+gameplay_tip_10;Η πρωτεύουσά σου δεν μπορεί να κατακτηθεί από άλλους παίκτες.
+gameplay_tip_11;Χρησιμοποίησε την αναζήτηση χωραφιών για να εντοπίσεις χωριά 9-ρια ή 15-ρια που μπορούν να υποστηρίξουν μεγαλύτερο στρατό.
+gameplay_tip_12;Τα πεδία υλών στην πρωτεύουσά σου μπορούν να αναβαθμιστούν σε υψηλότερα επίπεδα από ό,τι στα άλλα χωριά.
+gameplay_tip_13;Στείλε ύλες σε φιλικά χωριά χρησιμοποιώντας την αγορά.
+gameplay_tip_14;Μπορείς να κάνεις εμπόριο υλών με άλλους παίκτες στην αγορά.
+gameplay_tip_15;Αύξησε τη χωρητικότητα των εμπόρων σου αναβαθμίζοντας το εμπορικό γραφείο.
+gameplay_tip_16;Αναβάθμισε την περιοχή ηρώων στο επίπεδο 10 για να προσαρτήσεις μια όαση και να ενισχύσεις την παραγωγή υλών.
+gameplay_tip_17;Αναβάθμισε τη δύναμη των στρατευμάτων σου στο σιδηρουργείο. Αυτές οι αναβαθμίσεις εφαρμόζονται αμέσως σε όλα τα στρατεύματα αυτού του τύπου, συμπεριλαμβανομένων και όσων έχουν ήδη εκπαιδευτεί.
+gameplay_tip_18;Χρησιμοποίησε τον προσομοιωτή μάχης για να εκτιμήσεις την έκβαση μιας μάχης πριν επιτεθείς. Όσο περισσότερες λεπτομέρειες προσθέτεις στην προσομοίωση, τόσο πιο ακριβές θα είναι το αποτέλεσμα.
+gameplay_tip_19;Με το Gold club μπορείς να ενεργοποιήσεις τη διαφυγή στρατευμάτων στην πρωτεύουσά σου, ώστε τα στρατεύματά σου να σώζονται αυτόματα από τις επερχόμενες επιθέσεις.
+gameplay_tip_20;Όταν τα στρατεύματά σου επιστρέφουν στο χωριό σου, η διαφυγή των στρατευμάτων απενεργοποιείται προσωρινά για 10 δευτερόλεπτα.
+gameplay_tip_21;Αναβάθμισε τους ανιχνευτές σου στο σιδηρουργείο για να βελτιώσεις τις δυνατότητες κατασκοπίας τους.
+gameplay_tip_22;Τα τείχη αυξάνουν σημαντικά την άμυνα του χωριού σου.
+gameplay_tip_23;Κατασκεύασε κρυψώνες για να προστατέψεις τις πρώτες ύλες σου από επιδρομές.
+gameplay_tip_24;Οι Γαλάτες μπορούν να εκπαιδεύουν κατασκευαστές παγίδων, ώστε να αιχμαλωτίζουν τους επιτιθέμενους πριν από τη μάχη.
+gameplay_tip_25;Για να απελευθερώσεις αιχμαλωτισμένα στρατεύματα, πρέπει να ξεκινήσεις μια κανονική επίθεση στο χωριό όπου κρατούνται.
+gameplay_tip_26;Οι επιτιθέμενοι παίκτες μπορούν να απελευθερώσουν το 75% των αιχμαλωτισμένων στρατευμάτων, αλλά ο αμυνόμενος μπορεί να επιλέξει να απελευθερώσει ειρηνικά το 100%.
+gameplay_tip_27;Χτίσε ένα νοσοκομείο για να επαναφέρεις έως και το 40% των στρατευμάτων σου που χάθηκαν στη μάχη.
+gameplay_tip_28;Οι Γαλάτες μπορούν να εκπαιδεύουν έναν κατασκευαστή παγίδων, ώστε να αιχμαλωτίζει τα εχθρικά στρατεύματα πριν καν αρχίσει η μάχη.
+gameplay_tip_29;Χτίσε έναν λιθοδόμο στην πρωτεύουσά σου, για να αυξήσεις την αντοχή των κτιρίων σου απέναντι σε καταπέλτες και κριούς.
+gameplay_tip_30;Μπορείς να κρύψεις τον ήρωά σου όταν οι εχθροί επιτίθενται στο χωριό βάσης σου, ώστε να παραμένει ασφαλής.
+gameplay_tip_31;Νίκησε ζώα σε ελεύθερες οάσεις για να κερδίσεις επιπλέον ύλες. Πιο δυνατά ζώα δίνουν περισσότερες ύλες.
+gameplay_tip_32;Νίκησε ζώα σε ελεύθερες οάσεις με τον ήρωά σου για να κερδίσεις εμπειρία.
+gameplay_tip_33;Χρησιμοποίησε κλουβιά για να αιχμαλωτίσεις ζώα σε ελεύθερες οάσεις και να ενισχύσεις το χωριό σου.
+gameplay_tip_34;Εξόπλισε τον ήρωά σου με αντικείμενα όπως αλοιφές ή ειδικές πανοπλίες για να επιταχύνεις την ανάρρωσή του.
+gameplay_tip_35;Μπορείς να αναστήσεις τον ήρωά σου ξοδεύοντας ύλες με την πάροδο του χρόνου ή αμέσως με ένα δοχείο.
+gameplay_tip_36;Μπορείς να κατεδαφίσεις κτίρια αφού το κεντρικό κτήριο φτάσει στο επίπεδο 10.
+gameplay_tip_37;Κτίσε μια πρεσβεία για να μπεις σε μια συμμαχία ή να ιδρύσεις τη δική σου.
+vacationMode_title;Κατάσταση διακοπών
+vacationMode_vacation;Διακοπές
+vacationMode_vacationModeActive;Η κατάσταση διακοπών είναι ενεργή
+vacationMode_info;Χρησιμοποίησε την κατάσταση διακοπών για να προστατεύεις τα χωριά σου όταν λείπεις. Οι παρακάτω ενέργειες είναι ανενεργές κατά τη διάρκεια της κατάστασης διακοπών:
+vacationMode_deactivated_action1;αποστολή ή παραλαβή στρατευμάτων
+vacationMode_deactivated_action2;Πηγαίνοντας σε περιπέτειες με τον ήρωά σου
+vacationMode_deactivated_action3;Έναρξη νέων εντολών κατασκευής ή εκπαίδευσης στρατευμάτων
+vacationMode_deactivated_action4;Χρήση της αγοράς (συμπεριλαμβανομένων των εμπορικών οδών)
+vacationMode_deactivated_action5;Διοργάνωσε εορτασμούς, ξεκίνα έρευνα ή πραγματοποίησε αναβαθμίσεις
+vacationMode_deactivated_action6;Δημιουργία ή ένταξη σε συμμαχίες
+vacationMode_deactivated_action7;προσφορά υλών στα επιδόματα της συμμαχίας
+vacationMode_deactivated_action8;Συμμετοχή στις δημοπρασίες
+vacationMode_deactivated_action9;Άλλαξε την πρωτεύουσά σου
+vacationMode_deactivated_action10;διαγράψτε τον λογαριασμό σας
+vacationMode_deactivated_territory_action1;Αναβάθμιση ενός χωριού σε πόλη
+vacationMode_deactivated_territory_action2;Ο λογαριασμός σου δε συνεισφέρει στον πληθυσμό περιοχής της συμμαχίας σου και τα χωριά σου δε λαμβάνουν πόντους νίκης
+vacationMode_conditions_title;Πληρούνται οι προϋποθέσεις για διακοπές
+vacationMode_duration_info;Πόσες ημέρες θέλεις να διαρκέσει η κατάσταση διακοπών σου;
+vacationMode_durationUntil;Διακοπές μέχρι <b>{{DATE}}</b>
+vacationMode_availableDays;Διαθέσιμες ημέρες <b>{{AVAILABLE}}/{{TOTAL}}</b>
+vacationMode_startButton;Μπες σε κατάσταση διακοπών τώρα
+vacationMode_error_noCancelTime;Μπορείς να σταματήσεις την κατάσταση διακοπών μόνο μετά από {{HOURS}} ώρες
+vacationMode_error_missingRequirement;Ολοκλήρωσε όλες τις απαιτήσεις για να μπεις σε κατάσταση διακοπών
+vacationMode_error_noVacationDaysLeft;Δεν έχεις διαθέσιμες ημέρες για να μπεις σε κατάσταση διακοπών
+vacationMode_error_cooldown;Μπορείς να ξεκινήσεις την κατάσταση διακοπών μόνο {{HOURS}} ώρες αφού έληξε για τελευταία φορά
+vacationMode_abortSuccess;Η κατάσταση διακοπών σταμάτησε!
+vacationMode_remainingDays;Υπόλοιπες ημέρες σε κατάσταση διακοπών
+vacationMode_runsUntil;Η κατάσταση διακοπών ισχύει μέχρι τις
+vacationMode_abortInfo;Μπορείς να σταματήσεις την κατάσταση διακοπών το νωρίτερο στις <b>{{DATE}}</b>
+vacationMode_abortAvailable;Μπορείτε να βγείτε από την κατάσταση διακοπών τώρα
+vacationMode_abortConfirmHeader;Είστε σίγουρος ότι θέλετε να βγείτε από την κατάσταση διακοπών;
+vacationMode_abortConfirmInfo;Οι αχρησιμοποίητες ημέρες θα αποζημιωθούν. Αυτή η ενέργεια δεν μπορεί να αναιρεθεί.
+vacationMode_startCooldownInfo;Μπορείς να ξεκινήσεις την κατάσταση διακοπών το νωρίτερο στις <b>{{DATE}}</b>
+vacationMode_abortButton;Έξοδος από κατάσταση διακοπών
+vacationMode_conditions_has_outgoing_troops;Δεν υπάρχουν εξερχόμενα στρατεύματα
+vacationMode_conditions_has_incoming_troops;Δεν υπάρχουν εισερχόμενα στρατεύματα προς τα χωριά ή τις οάσεις σου
+vacationMode_conditions_has_reinforcing_troops_for;Δεν έχουν σταλεί ενισχύσεις σε άλλους παίκτες
+vacationMode_conditions_has_reinforcing_troops_from;Δεν υπάρχουν ενισχύσεις από άλλους παίκτες στα χωριά ή στις οάσεις σου
+vacationMode_conditions_has_ww_village;Δε σου ανήκει χωριό Παγκοσμίου Θαύματος
+vacationMode_conditions_has_artifact_village;Δε σου ανήκει χωριό με πολύτιμο αντικείμενο
+vacationMode_conditions_has_beginners_protection;Δεν έχεις προστασία αρχαρίων
+vacationMode_conditions_has_trapped_troops;Δεν υπάρχουν στρατεύματα στις παγίδες σου και κανένα από τα δικά σου στρατεύματα, συμπεριλαμβανομένου του ήρωά σου, δεν είναι παγιδευμένο
+vacationMode_conditions_has_deletion_event;Το άβατάρ σου δεν είναι σημειωμένο για διαγραφή
+vacationMode_conditions_has_conquered_oase;Δεν έχεις προσαρτήσει όαση τις τελευταίες {{HOURS}} ώρες. Μπορείς να μπεις σε κατάσταση διακοπών όταν περάσουν {{HOURS}} ώρες από την προσάρτηση μιας όασης ή αφού χάσεις μία.
+vacationModePopup_info;Ο λογαριασμός σου θα προστατεύεται όσο βρίσκεσαι σε κατάσταση διακοπών. Ωστόσο, η παραγωγή υλών θα συνεχιστεί και τα στρατεύματά σου θα συνεχίσουν να καταναλώνουν σιτάρι. <color=red>Αυτό μπορεί να οδηγήσει σε λιμοκτονία των στρατευμάτων σου.</color>
+vacationModePopup_start_info;Είσαι σίγουρος ότι θέλεις να μπεις σε κατάσταση διακοπών για <b>{{DAYS}}</b> [DAYS>1:μέρες][DAYS<2:μέρα]? Η κατάσταση διακοπών μπορεί να ακυρωθεί με Χρυσό μετά από χρόνο αναμονής {{COOLDOWN}} ωρών.
+vacationModePopup_troopConsumption;Κατανάλωση δικού σου στρατού
+vacationModePopup_starvationEstimate;Πρώτη λιμοκτονία στις
+vacationModePopup_starvationTitle;Κατανάλωση δικού σου στρατού
+goldTransfer_accept_gift;Ναι, μετέφερε τον Χρυσό
+goldTransfer_decline_gift;Όχι, απόρριψε τον Χρυσό
+goldTransfer_accepted_toast;Η μεταφορά Χρυσού έγινε αποδεκτή.
+goldTransfer_declined_toast;Η μεταφορά Χρυσού απορρίφθηκε.
+smithy_requirementsNotSatisfied;Δεν πληρούνται οι απαιτήσεις για την αναβάθμιση αυτής της μονάδας
+vacationModeLobby_status;Σε διακοπές
+block_vacationMode_toast;Δεν μπορείς να το κάνεις αυτό ενώ βρίσκεσαι σε κατάσταση διακοπών.
+goldTransfer_verifyOwnership_title;Επαλήθευση ιδιοκτησίας
+goldTransfer_verifyOwnership_description;Για να μεταφέρεις τον αχρησιμοποίητο Χρυσό που έχεις αγοράσει σε ένα υπάρχον άβαταρ, πρώτα επαλήθευσε ότι είσαι ο κάτοχος του Χρυσού, εισάγοντας τη διεύθυνση email στην οποία στάλθηκε ο κωδικός μεταφοράς.
+goldTransfer_verifyOwnership_emailPlaceholder;Διεύθυνση ηλεκτρονικού ταχυδρομείου
+goldTransfer_verifyOwnership_errorNoEmail;Εισαγάγετε τη διεύθυνση ηλεκτρονικού ταχυδρομείου σας
+goldTransfer_verifyOwnership_errorAlreadyUsed;Αυτός ο σύνδεσμος μεταβίβασης Χρυσού έχει ήδη χρησιμοποιηθεί.
+goldTransfer_verifyOwnership_errorInUse;Αυτός ο σύνδεσμος μεταβίβασης Χρυσού δεν είναι έγκυρος.
+goldTransfer_verifyOwnership_verifyButton;Επιβεβαίωση
+goldTransfer_selectTargetAvatar_title;Επίλεξε το άβαταρ-στόχο
+goldTransfer_selectTargetAvatar_description;Επίλεξε το άβαταρ στο οποίο θέλεις να μεταβιβάσεις τον Χρυσό.
+goldTransfer_transferableGold_label;Μεταβιβάσιμος Χρυσός:
+goldTransfer_enterAvatarName_header;Εισάγετε όνομα άβαταρ:
+goldTransfer_avatarName_placeholder;Όνομα άβαταρ
+goldTransfer_searchAvatar_Button;Αναζήτησε άβαταρ
+goldTransfer_searchAvatarNothingFound_error;Δε βρέθηκε ενεργό άβαταρ με αυτό το όνομα.
+goldTransfer_ownAvatarList_header;Επίλεξε από τα ενεργά άβαταρ σου ({{account}})
+goldTransfer_selectOwnAvatarConfirm_Button;Επίλεξε άβαταρ
+goldTransfer_selectGameworld_title;Επιλέξτε κόσμο παιχνιδιού
+goldTransfer_selectGameworld_description;Το όνομα του άβαταρ βρέθηκε σε πολλούς κόσμους του παιχνιδιού. Μπορείς να μεταφέρεις τον χρυσό μόνο σε ένα άβαταρ. Επίλεξε έναν κόσμο του παιχνιδιού.
+goldTransfer_selectGameworldConfirm_Button;Επιλέξτε κόσμο παιχνιδιού
+goldTransfer_changeAvatar_Button;Αλλαγή ονόματος άβαταρ
+goldTransfer_confirm_title;Επιβεβαίωση μεταφοράς
+goldTransfer_confirm_Button;Επιβεβαίωση μεταφοράς
+goldTransfer_confirmAvatarOnOneWorld_info;Το όνομα του άβαταρ βρέθηκε σε έναν κόσμο του παιχνιδιού:
+goldTransfer_confirmAvatarName_prefix;Όνομα άβαταρ:
+goldTransfer_confirmGameworld_prefix;Κόσμος παιχνιδιού:
+goldTransfer_transferComplete_title;Η μεταβίβαση ολοκληρώθηκε με επιτυχία
+goldTransfer_transferComplete_description;Ο Χρυσός σου μεταβιβάστηκε με επιτυχία στο <b>{{avatarname}}</b> στον <b>{{gameworldname}}.</b>
+goldTransfer_transferComplete_returnButton;Επιστροφή στο παιχνίδι
+cams_settings_accountDeletion_information_warning_v2;Αυτή η ενέργεια θα διαγράψει οριστικά τον λογαριασμό σου. Το παρακάτω περιεχόμενο που σχετίζεται με τον λογαριασμό σου θα χαθεί:\n<indent=0,5em>•  Όλα τα άβαταρ που ανήκουν στον λογαριασμό σου\n•  Όλα τα μετάλλια που έχει κερδίσει ο λογαριασμός σου</indent>\n\nΕπιβεβαίωσε πληκτρολογώντας "delete" στο πεδίο παρακάτω.
+mapMarkers_popupTitle;Ορισμός δείκτη
+mapMarkers_markerType;Τύπος δείκτη
+mapMarkers_markerColor;Χρώμα δείκτη
+mapMarkers_setAlliance;Όρισε έναν δείκτη για τη συμμαχία σου
+mapMarkers_type_field;Πεδίο
+mapMarkers_addMsg_success;Ο δείκτης προστέθηκε με επιτυχία!
+mapMarkers_saveMsg_success;Ο δείκτης αποθηκεύτηκε με επιτυχία!
+mapMarkers_noPermission_error;Ζήτα άδεια από τον αρχηγό της συμμαχίας σου.
+mapMarkers_marker;Δείκτης
+mapMarkers_markers;Δείκτες
+mapMarkers_listAllianceTitle;Δείκτες συμμαχίας
+mapMarkers_listPlayerTitle;Δείκτες παίκτη
+mapMarkers_listAlliances;Συμμαχία
+mapMarkers_listPlayers;Παίκτες:
+mapMarkers_listFlags;Σημαίες
+mapMarkers_deleteMarker;Διαγραφή δείκτη
+mapMarkers_deleteMarkerMessage;Θέλεις να διαγράψεις αυτόν τον δείκτη;
+mapMarkers_showOnMap;Δείξε τους δείκτες μου στον χάρτη
+embassy_general_subtab;Γενικά
+embassy_villagesNearby_subtab;Κοντινά χωριά
+embassy_villagesNearby_listHeader;Χωριά της συμμαχίας/συνομοσπονδίας

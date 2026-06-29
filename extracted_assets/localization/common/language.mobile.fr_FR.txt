@@ -1,0 +1,2115 @@
+detail_window_header_title;{{buildingName|TranslateSuffixFor|allgemein.gid}}
+;{{INT}}
+levelWithValue;Niveau {{level}}
+valueWithPercent;{{value}} %
+valueAsRankingPosition;{{value}}.
+valueChangeInBrackets;({{change|Sign}})
+valueChangeInBracketsWithPercent;({{change|Sign}} %)
+ratioValues;{{a}}/{{b}}
+coordinates;<nobr>({{x}}|{{y}})</nobr>
+village_with_coordinates;{{villageName}} <nobr>({{x}}|{{y}})</nobr>
+village_with_clickable_coordinates;{{villageName}} {{mapId|Coordinates}}
+valuePerHour;{{a}}/h
+back;Retour
+fill;Max.
+hero;Héros
+done;Terminé
+remove;Retirer
+prerequisites;Prérequis :
+newAmount;Nouveau montant
+before;avant
+after;après
+permissions;Autorisations
+changesSaved;Modification enregistrée !
+genericError;Erreur inattendue
+allianceTagInBrackets;[{{allianceId|AllianceLink}}]
+autocompleteNoResult;Aucun résultat
+medalAdded;Médaille ajoutée
+continueEdit;Continuer l'édition
+levelUp;Niveau supérieur !
+non_existing_object;[?]
+sorting;Tri
+copiedToClipboard;Copié dans le presse-papier
+maximumLengthError;Longueur maximum : {{max}}.
+sortingOptions;Options de tri
+WIP_comingSoon;Fonctionnalités à venir !
+upgradeTab_fastForward_button;{{Percent}} % plus rapide
+upgradeTab_masterBuilder_button;Construire avec\nMaître constructeur {{goldCost}} {{goldIcon|Sprite}}
+upgradeTab_adBoostPopup_boost;{{BOOST}} % de bonus
+infoTab_upgradingToLevel;En construction vers le niveau {{level}}:
+infoTab_genericCurrently;Actuellement :
+infoTab_genericAtLevel;Au niveau {{INT}} :
+infoTab_genericEffect;{{INT}}
+infoTab_currentProduction;Production actuelle :
+infoTab_productionAtLevel;Production au niveau {{INT}}:
+infoTab_effectPerHour;{{INT}} par heure
+networkIssues;Perte de connexion avec le serveur de jeu.
+cantLoadServerList;Impossible de charger la liste des serveurs en raison de problèmes de réseau. Veuillez vérifier que l'appareil est connecté à Internet et réessayer.
+barracks_TrainTroops_Action;Entrainer des troupes
+barracks_ViewTrainingsList;Afficher la liste d'entraînement
+barracks_unitNeedsToBeResearched;L'unité doit être recherchée dans
+barracks_requiresLabel;Nécessite :
+barracks_trainingCosts;Coûts de formation des troupes
+barracks_troopsInTraining;Troupes en formation
+training_started;Entraînement effectué avec succès !
+targetSelection_relationLabel;Statut :
+targetSelection_selectedVillage;Village sélectionné
+targetSelection_noSelectedVillage;Aucun village sélectionné
+targetSelection_ownVillages;Propres villages
+targetSelection_relation0;Neutre
+targetSelection_relation1;Amical
+targetSelection_relation2;Propre alliance
+targetSelection_relation3;Propre village
+targetSelection_alreadyThere_troops;Vos troupes sont déjà là.
+targetSelection_alreadyThere_merchants;Vos marchands sont déjà là.
+rallyPoint_button_confirmTarget;Confirmer la cible
+rallyPoint_button_prepareTroops;Préparer les troupes
+rallyPoint_button_updateWave;Mise à jour de la vague
+rallyPoint_button_copyWave;Dupliquer la vague
+rallyPoint_button_newWave;Ajouter une nouvelle vague
+rallyPoint_sendTroops_chooseDestination;Envoyer des troupes - Choisir une destination
+rallyPoint_sendTroops_sendTroopAction_1;Envoyer des troupes - Confirmer
+rallyPoint_sendTroops_sendTroopAction_3;Envoyer des troupes - Confirmer
+rallyPoint_sendTroops_sendTroopAction_4;Envoyer des troupes - Confirmer
+rallyPoint_sendTroops_sendTroopAction_5;Envoyer des troupes - Confirmer
+rallyPoint_sendTroops_sendTroopAction_72;Transférer des troupes - Confirmer
+rallyPoint_sendTroops_sendTroopAction_9;Retirer des troupes - Confirmer
+rallyPoint_sendTroops_sendTroopAction_10;Fonder un nouveau village
+rallyPoint_sendTroops_sendTroopButton_1;Envoyer des troupes
+rallyPoint_sendTroops_sendTroopButton_3;Envoyer des troupes
+rallyPoint_sendTroops_sendTroopButton_4;Envoyer des troupes
+rallyPoint_sendTroops_sendTroopButton_5;Envoyer des troupes
+rallyPoint_sendTroops_sendTroopButton_72;Transférer des troupes
+rallyPoint_sendTroops_sendTroopButton_9;Renvoyer des troupes
+rallyPoint_sendTroops_sendTroopButton_10;Fonder un nouveau village
+rallyPoint_sendTroops_coordinateX;Coordonnée <b>X</b><nobr> :</nobr>
+rallyPoint_sendTroops_coordinateY;Coordonnée <b>Y</b><nobr> :</nobr>
+rallyPoint_sendTroops_selectOnMap;Ou sélectionnez un emplacement sur la carte :
+rallyPoint_sendTroops_arrivalTime;<b>{{hoursLeft|Duration}}</b> à <b>{{hoursLeft|TimeCountUp}}</b>
+rallyPoint_sendTroops_catapultTargetPopup;Cible des catapultes :
+rallyPoint_sendTroops_catapultTarget_category_1;Bâtiments d'infrastructure
+rallyPoint_sendTroops_catapultTarget_category_2;Bâtiments militaires
+rallyPoint_sendTroops_catapultTarget_category_3;Bâtiments de ressources
+rallyPoint_sendTroops_catapultTarget_random;Aléatoire
+rallyPoint_sendTroops_catapultTarget_noBuilding;Sélectionner le bâtiment
+rallyPoint_sendTroops_catapultTarget_recentTargets;Sélection la plus récente :
+rallyPoint_sendTroops_changeHeroHomeVillage;Changer le village du héros
+rallyPoint_sendTroops_attackNoSelection;Choisir un type d'attaque
+rallyPoint_sendTroops_movementType_5;Assistance
+rallyPoint_sendTroops_movementType_3;Attaque
+rallyPoint_sendTroops_movementType_4;Pillage
+rallyPoint_sendTroops_attackForwarding;Transfert
+rallyPoint_sendTroops_noTroopsSelected;- Aucune troupe sélectionnée -
+rallyPoint_sendTroops_noTroopsAvailable;Impossible d'envoyer des troupes. Aucune troupe disponible dans ce village.
+rallyPoint_sendTroops_forwardingVillageError;Les troupes ne peuvent être transférées qu'aux membres de l'alliance ou à vos propres villages.
+rallyPoint_sendTroops_forwardingDestination;Transférer des troupes - Choisir une cible
+rallyPoint_sendTroops_WaveRemoved;Vague supprimée
+rallyPoint_sendTroops_maxWaves;Nombre maximum de vagues atteint
+rallyPoint_sendTroops_notEnoughTroopsToCopy;Pas assez de troupes pour dupliquer la vague.
+rallyPoint_sendTroops_troopsSent;Troupes envoyées !
+rallyPoint_sendTroops_toOverview;Vers la vue globale
+rallyPoint_sendTroops_backToVillage;Retour au village
+rallyPoint_sendTroops_mission;Objectif :
+rallyPoint_troopsOverview_1;Attaques et pillages entrants
+rallyPoint_troopsOverview_2;Attaques et pillages sortants
+rallyPoint_troopsOverview_3;Retour de troupes
+rallyPoint_troopsOverview_4;Propres troupes dans ce village et ses oasis
+rallyPoint_troopsOverview_5;Troupes étrangères dans le village
+rallyPoint_troopsOverview_6;Propres troupes dans d'autres villages et oasis
+rallyPoint_troopsOverview_7;Assistances en approche
+rallyPoint_troopsOverview_8;Assistances envoyées
+rallyPoint_troopsOverview_9;Assistances envoyées
+rallyPoint_troopsOverview;Vue générale des troupes
+rallyPoint_troopsOverview_consumption;Consommation : {{cropConsumption|ShortenNumber|10000}}  {{iconName|Sprite}} par heure
+rallyPoint_troopsOverview_arrivalTime;Arrivée dan<nobr>s </nobr>: <b>{{Duration|Countdown}}</b> à <b>{{date|Time}}</b> 
+rallyPoint_troopsOverview_incomingMission_3;Attaque entrante de :  
+rallyPoint_troopsOverview_incomingMission_4;Pillage entrant de :  
+rallyPoint_troopsOverview_outgoingMission_3;Attaque 
+rallyPoint_troopsOverview_outgoingMission_4;Pille 
+rallyPoint_troopsOverview_outgoingMission_5;Assiste 
+rallyPoint_troopsOverview_outgoingMission_6;Défenses de reconnaissance et troupes de 
+rallyPoint_troopsOverview_outgoingMission_50;Aventure à 
+rallyPoint_troopsOverview_outgoingMission_72;Transfert de troupes à 
+rallyPoint_troopsOverview_outgoingMission_10;Fondation d'un nouveau village 
+rallyPoint_troopsOverview_outgoingMission_40;Les troupes se cachent au plus profond de la forêt.
+rallyPoint_troopsOverview_returningMission;Retour de : 
+rallyPoint_troopsOverview_ownTroops_1;Propres troupes à 
+rallyPoint_troopsOverview_ownTroops_2;Propres troupes à 
+rallyPoint_troopsOverview_ownTroops_3;Propres troupes à 
+rallyPoint_troopsOverview_ownTroops_4;<b>Nature</b> à 
+rallyPoint_troopsOverview_ownTroops_5;Propres troupes à 
+rallyPoint_troopsOverview_ownTroops_6;Propres troupes à 
+rallyPoint_troopsOverview_ownTroops_7;Propres troupes à 
+rallyPoint_troopsOverview_foreignTroops_2;Troupes en assistance de 
+rallyPoint_troopsOverview_foreignTroops_4;Troupes emprisonnées de 
+rallyPoint_troopsOverview_ownTroopsInOther_2;Propres troupes en assistance de 
+rallyPoint_troopsOverview_ownTroopsInOther_4;Propres troupes emprisonnées à 
+rallyPoint_troopsOverview_origin;Origine : 
+rallyPoint_troopsOverview_reinforcement;Assistance de 
+rallyPoint_troopsOverview_killed;Troupes tuées !
+rallyPoint_troopsOverview_released;Troupes libérées !
+rallyPoint_troopsOverview_forwardedTroopsButton;Troupes transférées
+rallyPoint_troopsOverview_returnToOverview;Retour à la vue générale
+rallyPoint_troopsOverview_incomingAttacks;<color={{colorValue|TextColor}}>{{incomings}}</color> entrante(s)
+rallyPoint_troopsOverview_amountIncoming;{{value}} entrante(s)
+rallyPoint_troopsOverview_amountOutgoing;{{value}} sortante(s)
+rallyPoint_troopsOverview_amountReturning;{{value}} de retour
+rallyPoint_troopsOverview_firstArrivalTime;Dans {{timestamp|Countdown}} heures
+rallyPoint_troopsOverview_forwardTroops;Transférer
+rallyPoint_troopsOverview_MergeTroops;Intégrer au village
+rallyPoint_troopsOverview_WithdrawTroops;Renvoyer
+rallyPoint_troopsOverview_sort_1;Mouvements marqués en premier
+rallyPoint_troopsOverview_sort_2;Premiers arrivés en premier
+rallyPoint_troopsOverview_sort_3;Derniers arrivés en premier
+rallyPoint_troopsOverview_sort_4;Dernières troupes envoyées en premier
+rallyPoint_troopsOverview_sort_5;Premières troupes envoyées en premier
+rallyPoint_troopsMerge_troopsToBeMerged;Troupes sélectionnées pour la fusion :
+rallyPoint_troopsMerge_currentGold;Pièces d'or actuelles :  {{iconName|Sprite}} {{currentGold}}
+rallyPoint_troopsMerge_goldLeft_0;{{remainingGold}} / {{maxAllowedGold}} pièces d'or restantes pour fusionner les troupes aujourd'hui.
+rallyPoint_troopsMerge_goldLeft_1;{{remainingGold}} / {{maxAllowedGold}} pièces d'or restantes pour fusionner les troupes aujourd'hui. Vous pouvez encore fusionner avec des ressources.
+rallyPoint_troopsMerge_troopsMergedToast;Les troupes ont été fusionnées !
+rallyPoint_raidList_beingRaided;{{current}}/{{total}} en cours de pillage
+rallyPoint_infoTab_EvasionShortDescription;Activer l'évasion des troupes pour votre capitale
+rallyPoint_farmList_createNewTitle;Créer une nouvelle liste
+rallyPoint_farmList_editTitle;Modifier la liste
+rallyPoint_farmList_listName;Nom de la liste
+rallyPoint_farmList_selectDefaultTroops;Sélectionner les troupes par défaut
+rallyPoint_farmList_addTroopsButton;Ajouter des troupes
+rallyPoint_farmList_editTroopsButton;Modifier les troupes
+rallyPoint_farmList_setTroopsButton;Définir les troupes
+rallyPoint_farmList_createListButton;Créer une liste
+rallyPoint_farmList_editListButton;Mise à jour de la liste
+rallyPoint_farmList_editTroopsTitle;Modifier les troupes de la liste
+rallyPoint_farmList_deleteList;Supprimer la liste
+rallyPoint_selectTroops;Sélectionner des troupes
+rallyPoint_farmList_listCreated;Liste créée
+rallyPoint_farmList_exitList;Sortie de la liste
+rallyPoint_farmList_startAll;Lancer toutes les cibles
+rallyPoint_farmList_startAllLists;Tout lancer
+rallyPoint_farmList_startSelected;Lancer la sélection
+rallyPoint_farmList_noTarget;- Aucune cible sélectionnée -
+rallyPoint_farmList_noTargetExist;Aucune cible dans cette liste
+rallyPoint_farmList_selectedAmount;{{amount}} sélectionnée(s)
+rallyPoint_farmList_listUpdated;Liste mise à jour
+rallyPoint_farmList_listDeleted;Liste supprimée
+rallyPoint_farmList_editWarning;- La suppression de la liste supprimera toutes les cibles de cette liste\n- La modification des troupes n'affectera que les futures troupes ciblées par défaut
+rallyPoint_farmList_sortingFailed;Échec du tri ! Veuillez réessayer !
+rallyPoint_farmList_notStartedPopupTitle;Pillages non lancés
+rallyPoint_farmList_notStartedPopupElement;<b>{{total}}</b> à cause de {{message}}
+rallyPoint_farmList_NotStartedPopupButtonGoTo;Aller à la liste de pillage
+rallyPoint_farmList_AddTargetTitle;Ajouter une cible
+rallyPoint_farmList_changeTroops;Changer les troupes
+rallyPoint_farmList_targetAdded;Cible ajoutée
+rallyPoint_farmList_targetAlreadyOnList;La cible figure déjà dans cette liste, veuillez en choisir une autre ou en créer une nouvelle.
+rallyPoint_farmList_choose;Choisir une liste
+rallyPoint_farmList_notYetRaided;Pas encore pillé
+rallyPoint_farmList_EditRaids;Éditer la cible[raidsAmount>1:s]
+rallyPoint_farmList_DeleteRaidsPlayerQuestion;Voulez-vous vraiment supprimer [raidsAmount=1:cette cible][raidsAmount>1:ces cibles] ?
+rallyPoint_farmList_ChangeRaidList;Changer de liste de pillage
+rallyPoint_farmList_ChangeTarget;Changer la cible
+rallyPoint_farmList_ChangeTroops;Changer les troupes
+rallyPoint_farmList_DeactivateTarget;Désactiver la cible[raidsAmount>1:s]
+rallyPoint_farmList_MultiEditWarning;Vous éditez plusieurs cibles. Les modifications apportées affecteront toutes les cibles sélectionnées
+rallyPoint_farmList_UpdateRaids;Mettre à jour la cible[raidsAmount>1:s]
+rallyPoint_farmList_filterShowTroopsTitle;Afficher les troupes
+rallyPoint_farmList_filterShowTroopsDescription;Affiche les troupes sélectionnées par cible
+rallyPoint_farmList_filterShowPopulationTitle;Afficher la population de la cible
+rallyPoint_farmList_filterShowPopulationDescription;Affiche la population du village cible
+rallyPoint_farmList_filterShowDistanceTitle;Afficher la distance
+rallyPoint_farmList_filterShowDistanceDescription;Affiche la distance de votre cible par rapport à votre village
+rallyPoint_farmList_filterShowLastRaidTitle;Afficher l'information sur le dernier pillage
+rallyPoint_farmList_filterShowLastRaidDescription;Affiche l'information sur le dernier pillage de la cible
+rallyPoint_farmList_filterShowBountyTitle;Afficher les butins et les ressources
+rallyPoint_farmList_filterShowBountyDescription;Affiche le butin et les ressources obtenus
+marketplace_createOffer;Créer une offre
+marketplace_myOffers_title;Mes offres
+marketplace_myOffers_merchants;Marchand(s) : {{count}}
+marketplace_myOffers_alliance_True;Alliance : Oui
+marketplace_myOffers_alliance_False;-
+marketplace_myOffers_interval;{{amount}} heures
+marketplace_myOffers_offerDeleted;Offre supprimée
+marketplace_merchantsOverview_arrival;{{duration}} heures Arrivée à {{arrivalTime}}
+marketplace_merchantsOverview_incomingMerchants;Livraisons entrantes : {{count}}
+marketplace_merchantsOverview_outgoingMerchants;Livraisons sortantes : {{count}}
+marketplace_merchantsOverview_noIncomingMerchants;- Pas de marchand entrant -
+marketplace_merchantsOverview_noOutgoingMerchants;- Pas de marchand sortant -
+marketplace_merchantsOverview_IncomingCat;Entrant(s)
+marketplace_merchantsOverview_outgoingCat;Sortant(s)
+marketplace_merchantsOverview_capacity;Capacité : {{capacity}}
+marketplace_merchantsOverview_merchantsOverview;Aperçu des marchands
+marketplace_merchantsOverview_ArrivingSoonest;Arrivée la plus proche
+marketplace_merchantsOverview_ArrivingLatest;Arrivée la plus lointaine
+marketplace_merchantsOverview_ShortestDistance;Distance la plus courte
+marketplace_merchantsOverview_LongestDistance;Distance la plus longue
+marketplace_merchantsOverview_transportTo;Transport vers <b>{{Village}}</b> de <b>{{Player}}</b>
+marketplace_merchantsOverview_transportFrom;Transport de <b>{{Village}}</b> de <b>{{Player}}</b>
+marketplace_merchantsOverview_returningFrom;Retour de <b>{{Village}}</b> de <b>{{Player}}</b>
+academy_research_viewResearchList;Recherche en cours
+academy_research_allUnitsResearched;Toutes les unités ont été recherchées.
+academy_researchListPopup_title;Troupes en recherche
+academy_researchListPopup_remainingTime;{{timeLeft}} restant. Prêt à {{readyAt}}
+academy_researchListPopup_constructImmediately;Construction immédiate
+research_started;Recherche débutée avec succès !
+research_timeLeft;{{TIME|Countdown}} restant
+townHall_celebration_ongoingCelebration;En cours
+topBar_perHourLabel;/h :
+topBar_maxLabel;Max :
+topBar_resourceFull;Plein
+leftPanel_infoBox;Info-box
+villagePanel_playerNameTitle;Villages de {{playerName}}
+villagePanel_toStatistics;Vers les statistiques des villages
+villagePanel_culturePointsNeeded;Points de culture nécessaires pour le prochain village
+mapCell_type;{{x}}{{y}}
+mapCell_type_village;{{villageName}}
+mapCell_type_1;Village
+mapCell_type_2;Vallée
+mapCell_type_3;Oasis inoccupée
+mapCell_type_4;Oasis occupée
+mapCell_type_5;Désert
+mapCell_Owner;Propriétaire
+mapCell_type_valley;Vallée
+mapCell_Wilderness;Il n'y a rien d'intéressant à cet emplacement.
+mapCell_Distance;{{distance|Round|1}} cases
+mapCell_locationInfo;Information sur l'emplacement
+mapCell_surroundings;Environs
+mapCell_actions_editFarmlist;Éditer la liste de pillage
+mapCell_actions_addFarmlist;Ajouter à la liste de pillage
+mapCell_actions_raidOasis;Piller l'oasis
+mapCell_showOnMap;Afficher sur la carte
+mapCell_noReports;- Aucune information disponible pour cet emplacement -
+berichte.region_;{{PLAYERACTIVE}}{{PLAYERPASSIVE}}{{VILLAGE}}{{NAME1}}{{NAME2}}{{ALLY1}}{{ALLY2}}{{NAME}}
+mapCell_goToOwnVillage;Aller au village
+constructionQueue_timeLeftToFinish;{{timestamp|Countdown}} restant. Prêt à {{timestamp|Time}}
+constructionQueue_timeUntilStart;Débute dans {{timestamp|Countdown}}
+constructionQueue_MasterBuilderTitle;File du maître constructeur (coûts {{masterBuilderCost}} {{masterBuilderCost|Sprite}} au début de la construction)
+constructionQueue_Constructing;Construction d'un bâtiment
+constructionImmediatelyPopup_topText;Les ordres de construction suivants seront complétés instantanément :
+constructionImmediatelyPopup_title;Terminer instantanément
+newBuildingConstructionDetail_dateTimeEnoughResources;Assez de ressources le {{date|Date}} à {{time|Time}}.
+newBuildingConstruction_noBuildingsAvailable;Vous ne pouvez actuellement construire aucun bâtiment.
+goldclubpopup_currentGold;Pièces d'or actuelles :  {{iconName|Sprite}} <color={{colorValue|TextColor}}>{{currentGold}}</color>
+goldclubpopup_activated_toastMessage;Club Gold activé !
+loginPage_version;Version {{currentVersion}}
+loginPage_loginBlocked;Connexion bloquée
+loginPage_loginBlocked_fails;Trop d'échecs de connexion
+loginPage_loginBlocked_message;Votre compte a été bloqué suite à un nombre trop important de tentatives de connexion refusées.
+loginPage_loginBlocked_resolve;Pour déverrouiller votre compte, connectez-vous par navigateur à
+serverSelection_selectRegion;Sélectionnez une région
+serverSelection_selectGameWorld;Sélectionner un monde de jeu
+serverSelection_0;International
+serverSelection_1;Pays arabes
+serverSelection_2;Asie
+serverSelection_3;Europe
+serverSelection_4;Amérique
+serverSelection_99;Développement
+serverSelection_mapSize;Taille de la carte :
+serverSelection_mapSize_0;Petite
+serverSelection_mapSize_1;Grande
+serverSelection_artifacts;Artéfacts :
+serverSelection_constructionPlans;Plans de construction :
+serverSelection_inXdays;In {{days}} days
+serverSelection_changeGameWorld;Changer de monde de jeu
+serverSelection_username;Nom d'utilisateur :
+serverSelection_password;Mot de passe :
+serverSelection_loginButton;Se connecter et jouer
+serverSelection_forgotPassword;J'ai oublié mon mot de passe
+serverSelection_noAccount;Je n'ai pas de compte
+serverSelection_loginError;Pseudo ou mot de passe incorrect
+serverSelection_graphQlError;Erreur lors de la récupération des données du serveur
+serverSelection_tokenRefreshError;Erreur de connexion au dernier serveur utilisé : veuillez vous connecter à nouveau.
+serverSelection_stayLoggedIn;Rester connecté sur le monde de jeu
+troopsInfo_title;Troupes à {{villageName}}
+unitInfo_velocity;<b>{{fields}}</b> cases par heure
+unitInfo_resourceCarriage;<b>{{INT}}</b> ressources
+unitInfo_researchPrerequisites;Prérequis pour la recherche :
+unitInfo_trainingPrerequisites;Prérequis pour l'entraînement :
+unitInfo_canCarry;Capacité de transport :
+exchangeResources_currentTitle;Nouveau montant
+exchangeResources_lockAmount;Bloquer le montant
+exchangeResources_changeTitle;Modification
+exchangeResources_restTitle;Reste
+exchangeResources_buildingPossible_True;Amélioration possible
+exchangeResources_buildingPossible_False;Amélioration impossible
+exchangeResources_mergePossible_True;Fusion possible
+exchangeResources_mergePossible_False;Fusion impossible
+exchangeResources_researchPossible_True;Recherche possible
+exchangeResources_researchPossible_False;Recherche impossible
+exchangeResources_celebrationPossible_True;Fête possible
+exchangeResources_celebrationPossible_False;Fête impossible
+exchangeResources_reviveHero_True;Régénération du héros possible
+exchangeResources_reviveHero_False;Régénération du héros impossible
+exchangeResources_currentlyAvailable;Disponibl<nobr>e </nobr>: <b>{{amount}}</b>
+exchangeResources_maximumAvailable;Maximum disponibl<nobr>e </nobr>: <b>{{amount}}</b>
+exchangeResources_distributeEvenly;Répartir équitablement les ressources restantes :
+exchangeResources_distributeOnResource;Ou donner la priorité à :
+exchangeResources_distributeAuto;Distribution automatique
+exchangeResources_distributeManual;Distribution manuelle
+exchangeResources_availableTroops;Troupes disponibles : {{amount}}
+buildingActivities_title;Bâtiments
+buildingActivities_idle;En attente
+buildingActivities_type;Type
+buildingActivities_building_13;Améliorations :
+buildingActivities_building_16;Liste de pillages
+buildingActivities_building_17;Marchands
+buildingActivities_building_19;Troupes en formation
+buildingActivities_building_20;Cavalerie en formation
+buildingActivities_building_29;Troupes en formation
+buildingActivities_building_30;Cavalerie en formation
+buildingActivities_building_21;Troupes en formation
+buildingActivities_building_22;Recherche
+buildingActivities_building_24;Fêtes
+buildingActivities_building_46;Guérison des troupes
+buildingActivities_buildingAction_;{{amount}}{{max}}
+buildingActivities_buildingAction_16;{{amount}} pillage(s) en cours
+buildingActivities_buildingAction_17;{{amount}}/{{max}} disponibles
+mainMenu_title;Menu principal
+mainMenu_quests;Quêtes
+playerDetails_infoTab;Infos joueur
+playerDetails_villageTabTitle;{{villages}} villages avec {{oases}} oasis
+playerDetails_SortBy_1;Population
+playerDetails_SortBy_2;Points de victoire
+playerDetails_SortBy_3;Nom du village
+playerDetails_SortBy_4;Nom de région
+player_gender_DontSpecify;Ne pas préciser
+player_gender_Other;Autre
+player_gender0;Masculin
+player_gender1;Féminin
+player_gender2;Autre
+player_gender3;Ne pas préciser
+playerDetails_NotesFor;Notes pour {{playerName}}
+playerDetails_NoDescription_Others;- Ce joueur n'a pas ajouté de description -
+playerDetails_NoDescription_Own;- Aucune description ajoutée -
+playerDetails_editLanguages;Configurer la Langue
+playerDetails_searchLanguage;Langue de recherche
+goldShopPlaceholder_title;La boutique ouvre bientôt !
+goldShopPlaceholder_description;La Boutique n'est pas encore intégrée à l'application.<br><br> Pour acheter de l'or, veuillez vous connecter à votre compte via votre navigateur.
+goldShop_title;Boutique
+goldShop_advantage_5;Travian Plus
+goldShop_advantage_4;Bois
+goldShop_advantage_1;Argile
+goldShop_advantage_2;Fer
+goldShop_advantage_3;Céréales
+goldShop_feature_activated;Fonction activée !
+goldShop_purchaseFailed;Échec de l'achat !
+goldShop_purchaseSuccess;Achat effectué.
+goldShop_transactionInProgress;Transaction en cours.\nMerci de patienter.
+goldShop_transactionFailed;Une erreur s'est produite.\nMerci de réessayer plus tard.
+goldShop_transactionTimeout;Votre paiement a dépassé le délai maximum et n'a peut-être pas été correctement pris en compte. Merci de contacter notre <style="link"><link="https://support.travian.com/support/tickets/new">support de paiement</link></style> si vous rencontrez des difficultés.
+forceUpdate_title;Mise à jour de l'application
+forceUpdate_description;Vous utilisez une version non prise en charge de l'application mobile Travia<nobr>n L</nobr>egends. Rendez-vous sur la page de l'Ap<nobr>p S</nobr>tore pour mettre à jour l'application.<br><br>Après la mise à jour, redémarrez l'application pour continuer à jouer.
+forceUpdate_toStore;Vers l'App Store
+market_sendResources_requiredMerchants;Marchands nécessaires :
+market_sendResources_capacityPerMerchant;Capacité par marchand
+market_sendResources_amountRepeats;Nombre de répétitions :
+market_sendResources_confirmResources;Confirmer les ressources
+market_sendResources_amountWithX;{{amount}}x
+market_sendResources_sent;Ressources envoyées !
+market_offer_maxDuration;Durée maximale du transport :
+market_offer_confirm;Confirmer l'offre
+market_offers_title;Offres
+market_capacity;Capacité : {{capacity}}
+market_offers_offering;J'offre :
+market_offers_searching;Je demande :
+market_offers_offered;Vous envoyez
+market_offers_wanted;You recevez
+market_offers_accepted;Offre acceptée ! Les ressources sont en route et les marchands ont été envoyés.
+market_offers_ownAllianceOnly;Joueurs de mon alliance uniquement
+market_ratio_11;1:1
+market_ratio_1X;1 : X
+market_tradeRoutes_to;À :
+market_tradeRoutes_entryAmount;<b>{{amount}}</b> entrées
+market_tradeRoutes_noRoutes;- Aucune route commerciale n'a été créée -
+market_tradeRoutes_travelTime;Temps de trajet : {{time|Duration}} heures
+market_tradeRoutes_activeRatio;{{active}}/{{total}} active(s)
+market_tradeRoutes_active;Actif
+market_tradeRoutes_paused;En pause
+market_tradeRoutes_updated;Routes commerciales mises à jour
+market_tradeRoutes_deleted;Routes commerciales supprimées
+market_tradeRoutes_returnAt;Retour à {{time|Time}}
+market_tradeRoutes_merchantsAndRepeat;{{merchants}} marchands, {{repeats}}x
+market_tradeRoutes_filterOptions;Options de filtrage
+market_tradeRoutes_showMerchants;Afficher les marchands
+market_tradeRoutes_showMerchantsText;Affiche le nombre de marchands utilisés
+market_tradeRoutes_showResources;Afficher les ressources
+market_tradeRoutes_showResourcesText;Affiche la quantité de ressources transportée
+market_tradeRoutes_afterInputFieldsSuffix;Heures
+market_tradeRoutes_interval;{{INT}} heures
+market_tradeRoutes_confirmTarget;Confirmer la cible
+market_tradeRoutes_arrivalTime;{{duration|Duration}} à {{arrivalTime|Time}}
+market_tradeRoutes_created;Route commerciale créée
+market_tradeRoutes_edit;Modification de route[routeAmount>1:s] commerciale[routeAmount>1:s]
+market_tradeRoutes_update;Mise à jour de route[routeAmount>1:s] commerciale[routeAmount>1:s]
+market_tradeRoutes_multiEditWarning;Vous éditez plusieurs routes commerciales. Les changements apportés affecteront toutes les {{routeAmount}}routes.
+market_tradeRoutes_editResourcesTitle;Modification des ressources
+market_tradeRoutes_editResourcesButton;Modifier les ressources
+market_tradeRoutes_setResourcesButton;Définir les ressources
+market_tradeRoutes_updateResourcesButton;Mise à jour des ressources
+market_tradeRoutes_pause;Mise en pause de route[routeAmount>1:s] commerciale[routeAmount>1:s]
+market_tradeRoutes_pauseDescription;Les routes commerciales seront déplacées vers la liste "en pause" mais resteront visibles dans le marché.
+market_tradeRoutes_delete;Suppression de route[routeAmount>1:s] commerciale[routeAmount>1:s]
+market_tradeRoutes_deleteConfirmQuestion;Voulez-vous vraiment supprimer [routeAmount=1:cette route commerciale][routeAmount>1:ces routes commerciales] ?
+market_tradeRoutes_invalidTarget;Les routes commerciales ne peuvent être envoyées qu'aux villages possédant une Merveille du monde ou des artéfacts ou un plan de construction d'un membre de l'alliance ou de la coalition.
+hero.status;{{NAME}}
+hero_adventures_selectVillage;Sélectionner le village
+hero_adventures_explore;Explorer
+hero_adventures_sendHero;Envoyer le héros
+hero_adventures_sent;Aventure débutée
+hero_status_reviveWithBucket;Utilisez-le pour ranimer votre héros immédiatement.
+hero_status_reviveWithRes;Utilisez les ressources pour ressusciter le héros.
+hero_inventory_consumablePopupTitle;Objet utilisable
+hero_resourceTransferPopup_title;Transfert de ressources
+hero_resourceTransferPopup_ReadyForTransfer;Prêt pour le transfert
+hero_resourceTransferPopup_transferSelected;Transfert sélection
+hero_resourceTransferPopup_transferMax;Transfert maximum
+hero_resourceTransferPopup_storageFull;Stockage saturé. Vous ne pouvez pas transférer plus de ressources.
+hero_inventory_transferToCurrentVillage;Transféré au village acti<nobr>f </nobr>: <b>{{VILLAGE}}</b>
+hero.itemDescriptionV2Details;{{PERCENTAGE}}{{EXPERIENCE}}{{RAISE}}{{LIMIT}}{{MAX}}{{TIME}}
+hero.itemDescriptionV2;{{VALUE}}
+hero_consumablePopup_currentEquippedItems;Quantité d'objets équipés :
+hero_consumablePopup_itemsLeftInInventory;Quantité d'objets restante dans l'inventaire :
+hero.itemTypeV2_inventory;Consommables
+hero.cooldownWithTime;Réutilisation possible après {{COOLDOWN}} h, fin du compte à rebours : {{DATE|DateTime}}.
+reports_overview_title;{{COUNT}} Rapports
+reports_overview_title_selected;{{SELECTED}}/{{COUNT}} Rapports sélectionnés
+reports_overview_title_archived;Rapports archivés
+reports_overview_archived_noReports;- Aucun rapport archivé disponible -
+reports_filters_title;Sélectionner un filtre
+reports_filters_allReports;Tous les rapports
+reports_filters_applyButton;Appliquer {{COUNT}} filtre(s)
+reports_filters_noFilter;Aucun filtre sélectionné
+reports_detail_title;Détails du rapport
+berichte.;{{NAME1}}{{NAME2}}{{VILLAGE_NAME}}{{X}}{{Y}}{{COORDS}}{{NAME}}
+reports_player_from_village;[{{allianceId|AllianceLink}}] {{playerId|PlayerLink}} du village {{villageId|VillageLink}}
+reports_troops_lost;Troupes perdues :
+reports_troops_hospitalized;Hospitalisés :
+reports_xp_gained;{{amount}}  points d'expérience gagnés
+reports_health_change;-{{change}} % de santé
+reports_hero_died;Votre héros est mort pendant l'aventure
+reports_scouted_building;{{buildingType|TranslateSuffixFor|allgemein.gid}} niveau<nobr> </nobr><b>{{level}}</b>
+reports_refreshed;Rapports actualisés !
+reports_deleteReportPopup_title;Supprimer des rapports
+reports_deleteReportPopup_warningTitle;Voulez-vous vraiment supprimer {{X}} rapport(s) ?
+reports_deleteReportPopup_warningTitleAll;Voulez-vous vraiment supprimer tous les rapports ?
+reports_deleteReportPopup_warningDescription;Une fois supprimé, un rapport est supprimé de manière permanente. Vous ne pourrez pas le récupérer.
+reports_deleted;Rapport(s) supprimé(s) !
+reports_markedUnread;Rapport marqué comme non lu !
+reports_archived;Rapport archivé !
+reports_deleted_all;Tous les rapports ont été supprimés !
+reports_deleted_selected;{{X}}Rapport(s) supprimé(s) !
+reports_markedRead_all;Tous les rapports ont été marqués comme lus !
+reports_markedRead_selected;{{X}}Rapport(s) marqué(s) comme lu(s) !
+alliance_nameAndTagPair;{{allianceName}} | {{allianceTag}}
+alliance_editAllianceName;Modifier le nom de l'alliance
+alliance_name;Nom de l'alliance
+alliance_nameError;Le nom d'alliance ne peut pas être vide
+alliance_tag;Tag de l'alliance
+alliance_tagError;Le tag de l'alliance ne peut pas être vide
+alliance_profileTab_inviteNewPlayer;Inviter un nouveau joueur
+alliance_profileTab_showInvitedPlayers;Afficher les joueurs invités
+alliance_invitedPopup_title;Joueurs invités
+alliance_invitedPopup_invitationRemoved;Invitation supprimée !
+alliance_invitePlayerPopup_title;Inviter un joueur
+alliance_invitePlayerPopup_noPlayerFound;Aucun joueur trouvé
+alliance_invitePlayerPopup_playerInvited;Joueur invité !
+alliance_editMemberPopup_title;Modifier le membre
+alliance_editMemberPopup_customMessage;Message personnalisé
+alliance_editMemberPopup_setRole;Définir le rôle
+alliance_editMemberPopup_kickPlayerFromAlliance;Renvoyer un joueur de l'alliance
+alliance_editMemberPopup_cantChangePermission;Impossible de modifier l'autorisation actuelle : voir l'avertissement.
+alliance_kickPlayerPopup_areYouSure;Voulez-vous vraiment expulser {{Player}} de l'alliance ?
+alliance_kickPlayerPopup_playerKicked;Joueur expulsé !
+alliance_editAllianceDescription;Modifier la description d'alliance
+alliance_topColumn;Colonne supérieure
+alliance_bottomColumn;Colonne inférieure
+alliance_bbCodeAdded;Code BB ajouté
+alliance_generalInformation;Informations générales
+alliance_confederacy_tab;Coalition
+alliance_diplomacy;Diplomatie
+alliance_diplomacy_tab1;PNA / Guerre
+alliance_diplomacy_send_new;Envoyer un nouveau
+alliance_diplomacy_openRequests;Demandes en cours
+alliance_diplomacy_otherOffered;{{allianceId|AllianceLink}} a proposé {{type|TranslateSuffixFor|alliance_diplomacy_type}}
+alliance_diplomacy_youOffered;Vous avez proposé {{type|TranslateSuffixFor|alliance_diplomacy_type}} avec {{allianceId|AllianceLink}}
+alliance_diplomacy_offerDeclare;Proposer / Déclarer
+alliance_diplomacy_type;Type
+alliance_diplomacy_type1;coalition
+alliance_diplomacy_type2;PNA
+alliance_diplomacy_type3;guerre
+alliance_diplomacy_type4;coalition
+alliance_diplomacy_typekick;exclusion de la coalition
+alliance_diplomacy_deleteText_;{{type|TranslateSuffixFor|alliance_diplomacy_type}}{{alliance|AllianceLink}}
+alliance_diplomacy_deleteTitle_RemoveRequest;Demande retirée
+alliance_diplomacy_deleteText_RemoveRequest;Voulez-vous vraiment supprimer l'offre de {{type|TranslateSuffixFor|alliance_diplomacy_type}} avec {{alliance|AllianceLink}} ?
+alliance_diplomacy_deleteTitle_TerminateExisting;Mettre fin
+alliance_diplomacy_deleteText_TerminateExisting;Voulez-vous vraiment terminer le {{type|TranslateSuffixFor|alliance_diplomacy_type}} avec {{alliance|AllianceLink}} ?
+alliance_diplomacy_deleteTitle_ConfederacyKickVote;Mettre fin
+alliance_diplomacy_deleteText_ConfederacyKickVote;Vous avez besoin de la confirmation des autres membres de la coalition pour expulser {{subject|AllianceLink}}.\n\nVoulez-vous poursuivre et informer les autres alliances de votre décision ?
+alliance_diplomacy_deleteTitle_QuitConfederacy;Mettre fin
+alliance_diplomacy_deleteText_QuitConfederacy;Voulez-vous vraiment résilier votre coalition avec les membres suivants ?
+alliance_diplomacy_deleteTitle_RemoveConfederacyProposal;Demande retirée
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Kick;Voulez-vous vraiment refuser la demande de {{alliance|AllianceLink}} pour expulser {{subject|AllianceLink}} de la coalition ?
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Join;Voulez-vous vraiment refuser la demande de {{alliance|AllianceLink}}pour intégrer {{subject|AllianceLink}} à la coalition ?
+alliance_diplomacy_sent;Offre envoyée
+alliance_diplomacy_accepted;Relations diplomatiques acceptées
+alliance_diplomacy_canceled;Relations diplomatiques annulées
+alliance_diplomacy_declined;Requête refusée
+alliance_diplomacy_kickStarted;Demande envoyée
+alliance_diplomacy_proposal_approved;Requête acceptée
+alliance_diplomacy_noContract;Votre alliance n'a aucun traité avec les autres alliances.
+alliance_diplomacy_noConfederacy;Votre alliance ne fait pas partie d'une coalition.
+alliance_diplomacy_alreadyOpenOffer;Il y a déjà une offre en cours pour cette alliance.
+alliance_diplomacy_alreadyExistingContract;Il existe déjà un traité avec cette alliance.
+alliance_diplomacy_warInDeletion;Attendez que l'autre alliance mette aussi fin à la guerre.
+alliance_union_leave;Quitter la coalition
+alliance_union_add;Ajouter une nouvelle requête
+allianz.diplomacy_with_type;{{NAME}}
+allianz.diplomacy_with_type4;Coalition avec {{NAME}}
+alliance_newsBbDescription;Changez la valeur de "nombre" pour modifier le nombre d'informations
+alliance_LossesBBName;Pertes
+alliance_LossesBBDescription;Changer le "nom" pour sélectionner l'alliance à comparer
+alliance_NapBBName;Pactes de non-agression
+alliance_WarsBBName;Guerres
+alliance_addBBCode;Ajouter un code BB
+alliance_addMedal;Ajouter une médaille
+alliance_assignToPosition;Assigner un rôle aux membres et changer le nom de l'alliance
+alliance_editPermissions;Modifier les autorisations
+alliance_roleTitle;Titre du rôle :
+alliance_assignToPosition_onlyMemberError;Vous êtes le seul membre de cette alliance. L'attribution de rôles aux membres et le changement du nom de l'alliance ne peuvent pas être désactivés.
+alliance_noAllianceEvents;- Aucun événement d'alliance à afficher -
+alliance_dailyContribution;Don quotidien
+alliance_contributionAmount;Contributio<nobr>n </nobr>: <b>{{AMOUNT}}</b>
+alliance_resourcesContributed;{{current}}/{{max}} ressources offertes
+alliance_contributionResetIn;Remise à zéro dans {{time|Countdown}}
+alliance_resUntilNext;Ressources jusqu'au prochain niveau : {{resources|LongNumber}}
+alliance_bonusCurrentlyActivating;Activation du bonus dans : {{resources|Countdown}}
+alliance_bonusMaxed;Bonus maximisé
+alliance_tripledContribution;Vous avez triplé votre contribution !
+alliance_contributionStatistics;Statistiques des dons
+alliance_contributionNone;- Aucun contributeur pour l'instant -
+auth_clientVerificationFailed;Impossible de vérifier le client. Veuillez réessayer.
+banned_seeMessage;Voir le message
+banned_acceptPunishment;Accepter la pénalité
+residence_settlement;Colonisation
+residence_settlementVillages1;Emplacements de colonisation occupés par des villages
+residence_settlementVillages2;Les villages occupent 1 emplacement de colonisation
+residence_settlementAvailableSlots;Emplacements de colonisation disponibles
+residence_nextSlot;Déverrouillage du prochain emplacement de colonisation : {{current}}/{{required}} points de culture
+residence_slotsUsed;Emplacements utilisés :
+residence_settlementDetails;Détails de la colonie
+residence_settlementSlotX;Emplacement de colonisation {{number}}
+residence_settlementUpgradeNeeded;Améliorez {{buildingType|TranslateSuffixFor|allgemein.gid}} pour déverrouiller cet emplacement de colonisation
+residence_settlementSettle;Pour fonder un village, envoyez des colons vers un emplacement libre de la carte du monde. Vous avez besoin de 3 colons ; 750 unités de chaque ressource et assez de points de culture pour contrôler un autre village.
+residence_settlementChief;Pour conquérir un autre village, vous devez diminuer la loyauté à 0. Vous avez besoin d'un {{senatorId|TranslateSuffixFor|truppen.tid}} pour cela, et il ne doit pas y avoir de palais ni de résidence ni de yourte hunnique sur le village attaqué. Vous avez aussi besoin d'assez de points de culture pour contrôler un nouveau village.
+palace_capital;Définir ce village comme capitale.
+palace_setAsCapital;Définir comme capitale
+palace_enterPassword;Entrez le mot de passe pour des raisons de sécurité :
+embassy_GoToAlliance;Vers l'alliance
+embassy_Invitation;Alliance {{AllianceId|AllianceLink}}, invitation de {{playerId|PlayerLink}}
+embassy_VillagesInRange;Villages à portée
+embassy_LeaveAllianceToJoin;Pour rejoindre une nouvelle alliance, vous devez d'abord quitter la vôtre.
+embassy_ConfirmLeaveAlliance;Confirmer et quitter l'alliance
+embassy_InvitationAccepted;Invitation acceptée
+embassy_AllianceFounded;L'alliance a été fondée
+embassy_LeftAlliance;Vous avez quitté l'alliance
+embassy_acceptInvitationQuestion;Voulez-vous vraiment rejoindre {{allianceId|AllianceLink}} ?
+embassy_acceptInvitationWarning;Vous ne pourrez pas quitter l'alliance pendant {{hours}}  heures après l'avoir rejointe.
+embassy_acceptInvite;Oui, rejoindre l'alliance
+embassy_declineInvite;Non, refuser l'invitation
+embassy_noAlliancesNearby;Aucune alliance trouvée dans la zone proche.
+tos_title;Avertissement
+tos_disclaimer;L'application est actuellement sous statut <style="Mango">bêta. Plusieurs fonctionnalités du jeu ne sont pas encore disponibles dans l'application.</style>\nSi vous n'êtes pas un joueur expérimenté de Travian<nobr>: L</nobr>egends, nous vous recommandons de commencer votre aventure ic<nobr>i :</nobr> <style="link"><link="http://www.travian.com">www.travian.com</link></style> en jouant sur votre navigateur.
+tos_disclaimer2;Nous attendons avec impatience vos retours et commentaires au sujet de l'application sur notre <style="link"><link="https://discord.gg/fcsKvwcE2t">Discord</link></style>.
+tos_text;J'accepte les <style="link"><link="https://agb.traviangames.com/terms-en.pdf#cmpnoscreen">CGUs</link></style> et j'ai pris connaissance des <style="link"><link="https://agb.traviangames.com/right-of-withdrawal-EN.pdf">informations relatives au droit de rétractation</link></style> et de la <style="link"><link="https://www.traviangames.com/en/games-privacy-policy">Charte de confidentialité</link></style>
+tos_confirm;Confirmer
+smithy_improveTo;Améliorer au niveau {{level}}
+smithy_viewList;Vue du développement
+smithy_upgradeStarted;Amélioration de {{unitId|TranslateSuffixFor|truppen.tid}} débutée
+smithy_researchFirst;L'unité doit d'abord être recherchée dans l'Académie
+smithy_levelTooLow;Le niveau de la forge est trop faible, veuillez améliorer la forge
+allBuildings_10;Tous les dépôts de ressources :
+allBuildings_11;Tous les silos :
+allBuildings_23;Toutes les cachettes :
+allBuildings_38;Tous les dépôts de ressources :
+allBuildings_39;Tous les silos :
+currentBuildingValue;Actuellement {{type|TranslateSuffixFor|allgemein.gid}} :
+ad_successful;Publicité visionnée avec succès !
+externalLink_title;Lien externe
+externalLink_description1;<b>Attention<nobr> !</nobr></b><br>Vous êtes sur le point d'ouvrir le lien externe suivan<nobr>t :</nobr>
+externalLink_description2;Travian Games ne peut pas vérifier ni contrôler ce lien.
+externalLink_description3;Vous poursuivrez à vos propres risques.
+externalLink_description4;Voulez-vous vraiment continuer ?
+externalLink_continue;Continuer vers le lien
+search_village;Recherche de village
+search_select_village;Sélectionner le village
+search_three_characters;Doit contenir au minimum {{amount}} caractères
+search_no_result;Aucun résultat
+search_player;Chercher un joueur
+search_player_invite;Inviter un joueur
+search_select_player;Sélectionner un joueur
+search_select_player_invite;Inviter un nouveau joueur
+search_alliance;Recherche d'alliance
+search_select_alliance;Sélectionner une alliance
+gid27.arte_detail_;{{INT}}
+artefact_inventory_level_effect;Chambre du trésor : {{LEVEL}}, effet : {{EFFECT}}
+artefact_inventory_village;Village :
+artefact_inventory_conquered;Conquête :
+artefact_inventory_active;Activité : actif à
+artefact_inventory_active_already;Activité<nobr> </nobr>: <b>Activé</b>
+artefact_inventory_show_active_only;Afficher seulement mes artéfacts activés
+artefact_overview;Aperçu de l'artéfact
+artefact_tip_large;Les artéfacts majeurs nécessitent une chambre du trésor de niveau <b>20</b> et affectent tout votre <b>avatar</b>
+artefact_tip_small;Les artéfacts mineurs nécessitent une chambre du trésor de nivea<nobr>u </nobr>10 <b></b> et n'affectent que le <b>village</b>
+artefact_tip_nearby;Artéfacts dans la zone proche de {{villagenamelong|Bold}}
+artefact_small;Mineur
+artefact_large;Majeurs
+artefact_nearby;Environs
+artefact_village;Village
+artefact_button_former_owners;Voir les anciens propriétaires
+artefact_already_active;Déjà activé
+artefact_required_level_value;Chambre du trésor <b>niveau<nobr> </nobr>{{LEVEL}}</b>
+artefact_details;Détails
+number_counter;{{NUMBER}}.
+tasks_villageTasks;Tâches du village
+tasks_nextHeroLevelBonus;Prochain niveau de bonus du héros = {{value}} %
+villageOverview_building_headline;Construction
+villageOverview_building_slotIdle;Aucune construction en cours
+villageOverview_resource_sorting1;Liste des villages
+villageOverview_resource_sorting2;Durée la plus faible du Silo
+villageOverview_resource_sorting3;Durée la plus forte du Silo
+villageOverview_resource_sorting4;Durée la plus faible du Dépôt
+villageOverview_resource_sorting5;Durée la plus forte du Dépôt
+villageOverview_resource_sorting6;Production négative
+villageOverview_troops_stationed;Troupes stationnées dans le village
+villageOverview_troops_sum;Total de vos propres troupes
+villageOverview_troops_tab_training;Entraînement
+villageOverview_culture_slots;Emplacements
+cancelPopup_Improvement;Annuler l'amélioration
+cancelPopup_Research;Annuler la recherche
+cancelPopup_Construction;Annuler la construction
+cancelPopup_text_;{{NAME}} {{LEVEL}}
+cancelPopup_text_Improvement;Voulez-vous annuler l'amélioration de {{NAME}} niveau {{LEVEL}}?
+cancelPopup_text_Research;Voulez-vous annuler la recherche de {{NAME}} ?
+cancelPopup_text_Construction;Voulez-vous annuler la construction de {{NAME}} niveau {{LEVEL}} ?
+cancelPopup_text_refund;Vous obtiendrez le remboursement de {{INT}} % des coûts d'amélioration :
+dailyQuests_timeRemaining;Temps restant  : {{time|Countdown}}
+dailyQuests_rewardOverview;Voir l'aperçu de la récompense
+dailyQuests_claimRewards;Réclamez vos récompenses
+dailyQuests_pointsEarned;Points gagnés<nobr> </nobr>: <b>{{current}}/{{max}}</b>
+dailyQuests_rewardDescription;Voici les récompenses que vous pouvez débloquer en réalisant les objectifs quotidiens d'aujourd'hui :
+dailyQuests_claimAction;Récupérer
+dailyQuests_alreadyClaimed;Déjà récupéré
+dailyQuests_autoCollect;Toutes les récompenses non réclamées à la fin de la journée seront automatiquement réclamées pour vous.
+dailyQuests_questDetailTitle;Information
+dailyQuests_quest_worth;Cet objectif vaut : 
+dailyQuests_quest_worth_points;+{{points}} point[points>1:s]
+dailyQuests_quest_repeated;Cette quête peut être répétée :
+dailyQuests_quest_repeated_amount;{{amount}} fois
+dailyQuests_quest_completed;Répétitions terminées :
+dailyQuests_quest_difficulty;Difficulté :
+dailyQuests_quest_requirement;Condition(s) :
+dailyQuests_backToOverview;Retour à la vue générale
+dailyQuests_difficulty_moderate;Modéré
+dailyQuests_difficulty_hard;Difficile
+dailyQuests_difficulty_challenging;Défi
+achievementQuests.achQuest_;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+achievementQuests.achQuest__step_01_description;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+heroMansion_Loyalty;Loyauté : {{INT}} %
+heroMansion_Conquered;Conquête : {{TIME|DateTime}}
+heroMansion_SlotFree;Le prochain emplacement d'oasis est disponible
+heroMansion_SlotBlocked;Prochaine oasis au <color={{colorValue|TextColor}}>Manoir du héros</color> <color={{colorValue2|TextColor}}>niveau {{REQUIRMENT}}</color>
+heroMansion_Undo;Annuler
+heroMansion_FinishedAt;Fin :{{TIME|Time}}
+waterworks_NoneOasesAcquired;Aucune oasis annexée
+waterworks_BonusCalculation;+ ({{INT}} % de {{INT2}} %) = 
+waterworks_CurrentBonus;Bonus actuel du Poste d'irrigation : +{{INT}} % sur les ressources des oasis
+waterworks_Oases;Oasis annexées
+messages_inbox_title;{{COUNT}} messages
+messages_inbox_title_selected;{{SELECTED}}/{{COUNT}} messages sélectionnés
+messages_newMessage;Nouveau message
+messages_messageSent;Message envoyé !
+messages_exitPreview;Quitter l'aperçu
+messages_previewTitle;Prévisualisation du message
+messages_unread_count;{{COUNT}} non lu(s)
+reportPlayer_selectReason;Choisir le motif du signalement
+reportPlayer_reasonPlaceholder;Raison du signalement
+reportPlayer_addNote;Ajouter un commentaire au signalement (optionnel) :
+reportPlayer_alsoBlock;Ignorer aussi ce joueur
+reportPlayer_maximumLength;Longueur maximum : {{text|TextLength}}/300
+reportPlayer_nowIgnored;Vous ignorez désormais ce joueur.
+reportPlayer_nowUnignored;Vous n'ignorez plus ce joueur.
+statistics_general;Statistiques générales
+statistics_seeDetails;Voir les détails
+statistiken.progressionStepTitle_;{{VALUE}}{{DATETIME}}
+language_com;Langue du développement
+language_de-DE;Allemand
+language_en-US;Anglais
+language_fr-FR;Français
+language_ru-RU;Russe
+statistics_villageAndHero;Plus grand village / héros
+RelativeTime_0;{{data}} s
+RelativeTime_1;{{data}} min
+RelativeTime_2;{{data}} h
+RelativeTime_3;[data>1:{{data}} jours][data<2:{{data}} jour]
+RelativeTime_4;[data>1:{{data}}semaines][data<2:{{data}} semaine]
+RelativeTime.Separator; 
+RelativeTime.Wrapper.Past;il y a {{time}}
+RelativeTime.Wrapper.Future;Dans {{time}}
+mapCell_tooFewSettlers;{{current}}/3 colons disponible(s)
+mapCell_heroNotIdle;Votre héros n'est pas inactif
+mapCell_cantAddOwn;Vous ne pouvez pas ajouter vos propres villages
+mapCell_alreadyInVillage;Vous êtes déjà dans ce village
+serverSelection_rememberPassword;Se souvenir de mon mot de passe
+serverSelection_savedWorldsTitle;Vos mondes de jeu
+serverSelection_removeWorldTitle;Supprimer le monde de jeu
+serverSelection_removeWorldQuestion;Voulez-vous vraiment supprimer ce monde de jeu de votre liste ?
+serverSelection_removeWorldDescription;Attention : cela ne supprimera pas votre compte sur le monde de jeu. Vous pourrez revenir à tout moment et ajouter le monde de jeu de votre compte à votre liste de mondes de jeu.
+serverSelection_removeWorldButton;Retirer de la liste
+serverSelection_addWorldText;+ Ajouter le monde de jeu
+buildingActivities_buildingAdditional_;{{amount}}
+buildingActivities_buildingAdditional_17;{{amount}} Routes commerciales actives
+reports_filters_reset;Réinitialiser les filtres
+palace_capitalSet;Désihné capitale !
+palace_isCapital;C'est votre capitale.
+messages_unread_count_full;{{COUNT}} message[COUNT>1:s] non lu[COUNT>1:s]
+statistics_alliance;Statistiques d'alliance 
+statistics_alliances_best_off;Meilleures alliances (off)
+statistics_alliances_best_def;Meilleures alliances (def)
+statistics_offensiveStrength;Force offensive de {{VILLAGEID|VillageLink}} sur ce serveur
+statistics_offensiveStrengthAlliance;Force offensive de {{VILLAGEID|VillageLink}} dans votre alliance
+statistics_offensiveStrengthVillage;Force d'attaque de ce village :
+statistics_defensiveStrength;Votre force défensive sur ce serveur
+statistics_defensiveStrengthAlliance;Votre force défensive dans votre alliance
+statistics_defensiveStrengthVillage;Force défensive de ce village :
+statistics_defensiveStrengthVillageSum;Force défensive totale des villages :
+recent;Récent
+appliedFilters;Vous avez {{COUNT}} filtres actifs.
+allgemein.gid99;Aléatoire
+rallyPoint_troopsOverview_10;Vue détaillée des troupes
+rallyPoint_troopsOverview_returningFromAdventure;Retour d'aventure : 
+rallyPoint_troopsOverview_detailedView;Vue détaillée
+rallyPoint_troopsOverview_noMovements;- Aucun mouvement de troupes -
+rallyPoint_troopsOverview_Target;Cible : {{Target|NamedCoordinates}}
+rallyPoint_troopsOverview_Origin;Origine : {{Target|NamedCoordinates}}
+hero_adventures_number;N° {{INT}}
+hero_status_regeneration;<b>Régénération de santé<nobr> :</nobr></b> {{VALUE}}<nobr>%</nobr> par jour
+hero_status_regeneration_details;{{HERO}} % par jour du héros, {{EQUIPMENT}} % par jour de l'équipement
+hero_status_experience;<b>Expérienc<nobr>e </nobr>:</b> {{VALUE}}<nobr>%</nobr>
+hero_status_experience_bonus;Bonus : {{VALUE}} %
+search_results;Résultats de recherche
+search_player_link;Lien vers le joueur
+search_select_player_link;Sélectionner un joueur
+search_recipient;Rechercher un destinataire
+search_select_recipient;Sélectionner un destinataire
+search_alliance_link;Lien d'alliance
+search_select_alliance_link;Sélectionner une alliance
+messages_fullView_title;message
+messages_recipient_placeholder;Sélectionner un destinataire
+messages_title_placeholder;Entrez le titre de votre message
+messages_message_placeholder;Ecrivez votre message
+messages_ownAlliance;Propre alliance
+messages_selectedRecipients;Sélectionnés
+messages_ownAlliance_[ally];Tous les membres de l'alliance
+messages_ownAlliance_[off];Membres offensifs de l'alliance 
+messages_ownAlliance_[def];Membres défensifs de l'alliance 
+messages_discard_title;Annuler le message
+messages_discard_text_header;Voulez-vous annuler ce message ?
+messages_discard_text;Le contenu du message sera perdu.
+messages_confirm_deletion_title;Supprimer les messages
+messages_confirm_deletion_text_header;Voulez -vous vraiment supprimer [data>1:{{data}} messages][data=1:{{data}} message] ?
+messages_confirm_deletion_text;Une fois les messages supprimés, il n'y a aucun moyen de les récupérer.
+messages_confirm_deletion_button;Supprimer [data>1:{{data}} messages][data=1:{{data}} message]
+icon_selection_title;Ajouter une icône
+icon_selection_button;Sélectionner l'icône
+icon_selection_resourcesAndHero;Ressources / Héros
+icon_selection_natureAndNatars;Nature et Natars
+upgrading;Amélioration !
+buildingActivities_buildingAdditional_46;Aucune troupe blessée
+playerDetails_ignorePlayerDescription;Le joueur sera ignoré.
+reports_share;Partager le rapport
+search_select_village_link;Sélectionner le village
+search_village_link;Lien vers le village
+search_report_link;Lien vers le rapport
+search_select_report_link;Sélectionner le rapport
+messages_banned;Vous ne pouvez écrire qu'aux autres membres de votre alliance.
+messages_template_title;Modèles
+messages_template_none;Aucun modèle disponible
+messages_template_edit_title;Modifier le modèle
+messages_template_delete_title;Supprimer le modèle
+messages_template_delete_question;Voulez-vous vraiment supprimer ce modèle ?
+messages_template_delete_desc;Une fois supprimé, vous ne pouvez plus le récupérer.
+messages_template_create;Créer un nouveau modèle
+messages_template_create_descr;Créez un nouveau modèle à partir de votre message actuel :
+messages_template_created;Modèle créé !
+messages_template_deleted;Modèle supprimé !
+statistics_culturePoints_productionRank;Votre classement de production de PC sur ce serveur
+statistics_culturePoints_productionRankAlliance;Votre classement de production de PC dans votre alliance
+statistics_culturePoints_production;PC
+statistics_resourceRank_production;Production : {{VALUE|ShortenNumber}}
+statistics_resourceRank_productionRank;Votre classement de production sur ce serveur
+statistics_resourceRank_productionRankAlliance;Votre classement de production dans votre alliance
+statistics_resourceRank_bounty_lost;Perdue
+statistics_wonderOfTheWorld_header;Meilleures Merveilles du monde
+hospital_healing_costs;Coûts de guérison des troupes
+hospital_healing_action;Soigner les troupes
+hospital_healing_list;Voir la liste des soins
+hospital_healing_list_title;Soins des troupes
+hospital_healing_started;Soins débutés
+bonusValueWithPercent;+{{value}}%
+village_with_isCapital;{{villageName}} (capitale)
+maximumTextLengthError;{{CONTEXT}} ne peut contenir qu'un maximum de {{AMOUNT}} caractères
+infoTab_genericEffectInBrackets;({{INT|Sign}})
+infoTab_effectPercentage;{{INT}}%
+infoTab_effectInBracketsPercentage;({{INT|Sign}} %)
+infoTab_trapperCurrently;Fabricant de pièges montant max. 
+trapper_ViewBuildingList;Voir la liste des constructions
+trapper_Build_Action;Construire des pièges
+trapper_ProductionCosts;Coûts de production du piège
+trapper_TrapsInConstruction;Pièges en construction
+trapper_MaxBuilt;Quantité maximum de pièges déjà construits.
+truppen.tid119;Piège
+truppen.tid119p;Pièges
+rallyPoint_troopsOverview_outgoingMission_scouting_1;Espionner les troupes et les défenses de 
+rallyPoint_troopsOverview_outgoingMission_scouting_0;Espionner les troupes et les ressources de 
+rallyPoint_troopsOverview_returningRegeneratedMission;Retour de troupes régénérées de : 
+rallyPoint_troopsOverview_returningFleeingMission;Troupes de retour de la cachette en forêt : 
+rallyPoint_troopsOverview_foreignTroopsIn;Stationnées à : 
+rallyPoint_celebration_hint;La fête dans la brasserie pourrait affecter les troupes.
+building_not_built;Bâtiment non construit
+berichte.report_icon_24;Rapport
+allBuildings_36;Montant max. de tous les fabricants de pièges :
+cropFinder_min_oasis_crop_bonus;Min. Bonus de céréales de l'oasis :
+cropFinder_select_minimum_crop_bonus;Sélectionnez le bonus minimum de céréales
+cropFinder_unoccupied;Inoccupée
+search_by_location;Recherche par emplacement
+search_by_player;Recherche par joueur
+search_village_from_player;Chercher le village du joueur
+enter_player_name;Entrer le nom du joueur
+messages_template_newConditionsNotMet;Les modèles doivent contenir un titre et un message.
+message_report_isAlready;Ce message a déjà été signalé pour {{REASON}}
+tutorial_begin;Débuter le tutoriel
+tutorial_title_0;Salutations, champion intrépide ! 
+tutorial_text_0;Bienvenue sur le champ de bataille de Travian: Legends. Nous allons vous apprendre rapidement à gérer l'essor de vos villages et à diriger vos troupes.\n\nÊtes-vous prêts ?
+tutorial_title_1;Vue d'ensemble de la navigation
+tutorial_text_1;Vous découvrirez ici tous les aspects de la carte, des outils de communication et des outils d'information utiles. Vous y trouverez également vos quêtes quotidiennes, vos paramètres personnalisés et une foule d'autres fonctions.
+tutorial_title_3;Vos ressources
+tutorial_text_3;Les ressources de votre village se trouvent ici. Touchez la barre des ressources pour plus de détails.
+tutorial_title_4;Vos ressources
+tutorial_text_4;Touchez à nouveau la barre des ressources pour cacher les détails.
+tutorial_title_5;Votre village
+tutorial_text_5;Vous trouverez ici toutes les informations utiles concernant votre village. De la liste des quêtes à l'aperçu de vos troupes et à la file d'attente de construction, tout est ici. La fonctionnalité de construction des bâtiments fournit un résumé rapide du développement en cours de vos bâtiments.
+tutorial_title_7;Votre village
+tutorial_text_7;Si votre place de rassemblement est construite, vous verrez ici la vue d'ensemble de tous les mouvements de troupes en cours. Cela vous permettra également de rejoindre rapidement votre place de rassemblement.
+tutorial_title_8;Menu latéral
+tutorial_text_8;Vous pouvez toucher les flèches ou faire glisser votre doigt pour ouvrir le menu latéral. Cela peut être fait à tout moment.
+tutorial_title_9;Liste des villages
+tutorial_text_9;Vous pouvez passer rapidement d'un village à l'autre en ouvrant le panneau latéral à tout moment. Vous pourrez également y trouver les statistiques des villages.\n\nEt cela termine la Tutoriel. Qu'attendez-vous encore ? Immergez-vous, explorez et faites du monde de Travian: Legends votre terrain de jeu stratégique.\n\nBonne chance !
+tutorial_finish;Terminer le tutoriel
+filters_report_not_found;Rapport inexistant
+filters_player_not_found;Joueur inexistant
+filters_alliance_not_found;Alliance inexistante
+filters_village_not_found;Village inexistant
+settings_game;Ce monde de jeu
+language_app_selection;Sélectionnez la langue :
+settings_sitter;Co-gestionnaire {{VALUE}} :
+settings_sitterTab_yourSitters;Vos co-gestionnaires
+settings_sitterTab_SittingFor;Co-gestionnaire de
+search_player_addSitter;Ajouter une cogestion
+search_select_player_addSitter;Ajouter une cogestion
+search_player_addSitter_additionalEmptyResultInfo;Aucun joueur trouvé.\nSeuls les joueurs de votre propre alliance/coalition peuvent co-gestionner votre avatar.
+settings_sitter_sitterAdded;Co-gestionnaire ajouté !
+settings_sitter_sitterRemoved;Co-gestionnaire retiré !
+settings_sitter_sitterPermissionChangesSaved;Modifications des autorisations sauvegardées !
+settings_sitter_confirm_remove_text_header;Voulez-vous vraiment supprimer le co-gestionnaire {{PlayerName}} ?
+settings_sittersFor;Co-gestion d'un autre compte
+settings_sittersFor_info;Vous êtes co-gestionnaire des avatars suivants. Vous pouvez annuler la cogestion en cliquant sur le X rouge.
+settings_sittersFor_none;Vous n'êtes pas co-gestionnaire d'un autre avatar.
+settings_sitterFor;Co-gestionnaire de {{VALUE}} :
+settings_sitterFor_sittingRemoved;Fin de co-gestion de {{PlayerName}} !
+settings_sitterFor_confirm_remove_header;Voulez-vous arrêter la co-gestion de 
+settings_sitterFor_confirm_remove_header_questionmark;?
+settings_sitterFor_confirm_remove_info;Vous ne pouvez pas annuler cette action. Seuls les autres joueurs peuvent vous ajouter comme co-gestionnaire.
+brewery_celebration_attackStrength;({{INT}} %de force d'attaque)
+brewery_celebration_hint;Les troupes déjà en mouvement seront affectées par la fête
+settings_game_newLanguage;Langue modifiée en {{language}}.
+wonderOfTheWorld_name;Nom de la merveille :
+combatSimulator_title;Simulateur - {{role|TranslateSuffixFor|combatSimulator_as}}
+combatSimulator_cataTargetLevel;Niveau de la <b>{{index}}cible  des catapultes</b>
+combatSimulator_troopLevel;Niveau de la forge :
+combatSimulator_asAttacker;Attaquant
+combatSimulator_asDefender;Défenseur
+combatSimulator_result;Résultats simulés
+combatSimulator_addReinforcement;Ajouter une assistance
+valueWithModifier;{{value|Round|2}}x
+valuePlusInBracketsWithPercent;(+{{change}} %)
+none;Aucun
+marketplace_traderoute_repeatEveryHour;Répéter toutes les : (heures)
+block_sitter_warning;non autorisé en tant que co-gestionnaire.
+settings_openConsentWindow;Paramètres de confidentialité
+combatSimulator_adjustHeroStats;Ajuster les stats du héros
+combatSimulator_eagleEyeTitle;Sélectionnez le bonus d'espionnage
+combatSimulator_architectSecretTitle;Sélectionnez le bonus de solidité
+combatSimulator_metallurgyBonus;Sélectionnez le bonus de Métallurgie
+combatSimulator_rightHand;Équipement main droite
+combatSimulator_leftHand;Équipement main gauche
+combatSimulator_bodyItem;Armure
+combatSimulator_inventoryItem;Sélectionner un objet de l'inventaire
+combatSimulator_selectBuildingLevel_35;Niveau de la brasserie
+combatSimulator_selectBuildingLevel_26;Niveau du palais
+combatSimulator_selectBuildingLevel_34;Niveau de l'atelier du tailleur de pierre
+combatSimulator_selectBuildingLevel_31;Niveau du mur
+combatSimulator_selectBuildingLevel_32;Niveau du mur
+combatSimulator_selectBuildingLevel_33;Niveau du mur
+combatSimulator_selectBuildingLevel_43;Niveau du mur
+combatSimulator_selectBuildingLevel_42;Niveau du mur
+combatSimulator_selectTargetLevel;Niveau de la cible des catapulte
+combatSimulator_selectTroopLevel;Niveau de l'unité
+survey_title;Sondage Travian: Legends
+tos_earlyAccess;L'application est actuellement en <style="Mango">accès anticipé.\n\nPlusieurs fonctionnalités du jeu ne sont pas encore disponibles dans l'application.</style>\n\nSi vous n'êtes pas un joueur expérimenté de Travian<nobr>: L</nobr>egends, nous vous recommandons de commencer votre aventure ic<nobr>i :</nobr> <style="link"><link="http://www.travian.com">www.travian.com</link></style> en jouant sur votre navigateur.
+tos_understood;Compris
+gdpr_title;Consentement au traitement des données
+gdpr_description;Avec votre consentement, nous recueillons certaines informations concernant votre appareil, votre adresse IP, votre utilisation et vos identifiants publicitaires. Cela nous aide à vous montrer des publicités plus pertinentes et à améliorer votre expérience globale de l'application.
+gdpr_basic_functions;Requis pour les fonctionnalités de base de l'application.
+gdpr_advertisement;Utilisation de données personnelles à des fins publicitaires.
+gdpr_analytics;Utilisation de données personnelles à des fins statistiques.
+gdpr_acceptAll;Tout accepter
+gdpr_save_and_exit;Sauvegarder + Quitter
+gdpr_rejectAll;Tout rejeter
+gdpr_privacy_policy;Confidentialité
+gdpr_terms_and_conditions;Conditions générales
+plus.plus.browserOnly;(navigateur seulement)
+hero_inventory_already_equipped;Le même objet est déjà équipé.
+survey_button_title;Enquête de satisfaction
+survey_button_description;Participez à cette courte enquête pour nous aider à améliorer l'application Travian: Legends.
+goldShop_extend;prolonger
+goldShop_remaining;Restant : 
+goldShop_advantage_activated;Activé
+search_select_recipient_removeAll;Tout supprimer
+messages_messageTopic_noTopic;Pas de sujet/par défaut
+messages_messageTopic_resources;À propos des ressources
+messages_messageTopic_defenses;À propos des défenses
+messages_messageTopic_attacks;À propos des attaques
+messages_messageTopic_strategies;À propos des stratégies
+messages_messageTopic_information;Informations générales
+messages_messageTopic_important;Informations importantes
+messages_messageTopic_selectionTitle;Choisir le sujet du message
+farmlist_confirm_deletion_header;Voulez-vous vraiment supprimer la liste de pillage sélectionnée ?
+farmlist_confirm_deletion_text;Cette action ne peut pas être annulée.
+farmlist_target_confirm_deletion_header;Voulez-vous vraiment supprimer [data>1:ces {{data}} cibles][data=1:cette cible] ?
+upgrade_queue_cantConstructImmediately;Ce bâtiment ne peut pas être construit immédiatement
+language_cs-CZ;Tchèque
+language_es-ES;Espagnol
+language_pl-PL;Polonais
+language_pt-PT;Portugais
+language_tr-TR;Turc
+language_it-IT;Italien
+playerDetails_victorPoints_summary;{{TOTAL}} | {{PERDAY}}/jour
+statistics_progressionStepTitle_;{{VALUE}}{{DATETIME}}
+statistics_progressionStepTitle_start_achieved;Serveur débuté le {{VALUE}}
+statistics_progressionStepTitle_secondVillage_locked;Personne n'a encore fondé de second village
+statistics_progressionStepTitle_secondVillage_achieved;Premier joueur à fonder son second village sur le serveur : {{VALUE}} le {{DATETIME}}
+statistics_progressionStepTitle_serverEnd_locked;Le serveur se terminera le {{VALUE}}
+statistics_progressionStepTitle_serverEnd_achieved;Serveur terminé le {{VALUE}}
+statistics_progressionStepTitle_artifacts_locked;Les artéfacts apparaîtront le {{VALUE}}
+statistics_progressionStepTitle_artifacts_unlocked;Les artéfacts sont apparus le {{VALUE}}
+statistics_progressionStepTitle_artifacts_achieved;Le premier artéfact a été conquis par {{VALUE}} le {{DATETIME}}
+statistics_progressionStepTitle_constructionPlans_locked;Les plans de constructions apparaîtront le {{VALUE}}
+statistics_progressionStepTitle_constructionPlans_unlocked;Les plans de constructions sont apparus le {{VALUE}}
+statistics_progressionStepTitle_constructionPlans_achieved;Premier joueur à posséder un plan de construction : {{VALUE}} le {{DATETIME}}
+statistics_progressionStepTitle_firstWWLevelOne_locked;Qui construira le premier niveau d'une Merveille du monde ?
+statistics_progressionStepTitle_firstWWLevelOne_achieved;Premier niveau d'une Merveille achevé par {{VALUE}} le {{DATETIME}}
+settings_selectFormat;Choisir le format :
+settings_selectFormat_dialog_title;Choisir le format de date :
+settings_game_newDateFormat;Format de date modifié en {{dateFormat}}
+help_getHelp;Obtenir de l'aide
+help_getHelpDescription;Si vous avez besoin d'aide ou si vous voulez signaler un dysfonctionnement, contactez le support en jeu ici.
+help_learnAboutGame;À propos du jeu
+help_learnAboutGameDescription;Tout ce qu'il faut savoir sur le jeu et son fonctionnement en détail peut être trouvé ici.
+help_gameRules;Consultez les règles du jeu
+help_gameRulesDescription;Ici, vous trouverez les règles du jeu.
+help_joinDiscord;Rejoignez Discord
+help_joinDiscordDescription;Partagez vos commentaires sur notre serveur Discord mobile dédié.
+PLAYERARG;{{PLAYER}}
+referAFriend_friendJoinedDescription;Pour que vous receviez de l'or pour votre parrainage, votre ami doit fonder son <b>deuxième village</b>. Aidez-le à atteindre cet objecti<nobr>f !</nobr> Suivez la progression dans l'aperçu des parrainages ci-dessous.
+referAFriend_rewardAddedVillage2Title_PLAYERARG;Votre ami {{PLAYER}} possède son 2e village
+referAFriend_rewardAddedVillage3Title_PLAYERARG;Votre ami {{PLAYER}} possède son 3e village
+referAFriend_rewardAddedVillage4Title_PLAYERARG;Votre ami {{PLAYER}} possède son 4e village
+referAFriend_rewardAddedVillage5Title_PLAYERARG;Votre ami {{PLAYER}} possède son 5e village
+referAFriend_rewardAddedVillage6Title_PLAYERARG;Votre ami {{PLAYER}} possède son 6e village
+referAFriend_rewardAddedVillage7Title_PLAYERARG;Votre ami {{PLAYER}} possède son 7e village
+referAFriend_rewardAddedVillage8Title_PLAYERARG;Votre ami {{PLAYER}} possède son 8e village
+referAFriend_rewardAddedVillage9Title_PLAYERARG;Votre ami {{PLAYER}} possède son 9e village
+referAFriend_rewardAddedVillage10Title_PLAYERARG;Votre ami {{PLAYER}} possède son 10e village
+sysmsg_truce_learnMore;Plus d'infos sur les trêves
+worldEnded_ww_playerWon_topAlliance;Les ouvriers du village {{WW_VILLAGE|VillageLink}} ont posé la dernière pierre à {{WORLD_END_TIME|DateTime}}, achevant ainsi l'une des créations les plus importantes de l'histoire.<br>Avec l'aide de son alliance {{WW_ALLIANCE|AllianceLink}}, {{WW_PLAYER|PlayerLink}}a été le plus rapide à achever la Merveille du Monde. Après avoir utilisé d'innombrables ressources et protégé le lieu avec des centaines de milliers de courageux défenseurs, {{WW_PLAYER|PlayerLink}} reçoit le titre de "Vainqueur de cette époque".
+worldEnded_as2022_topAlliances;Félicitations à {{ALLIANCE_TOP_1|AllianceLink}}, qui a conquis l'Europe avec {{VICTORY_POINTS_TOP_1}} points de victoire ! {{ALLIANCE_TOP_2|AllianceLink}} a combattu courageusement et se place deuxième, talonné par {{ALLIANCE_TOP_3|AllianceLink}} qui termine en troisième position.
+worldEnded_playerRanks_population;{{PLAYER_POPULATION_TOP_1|PlayerLink}} a régné sur le plus grand empire personnel, suivi de près par {{PLAYER_POPULATION_TOP_2|PlayerLink}} et {{PLAYER_POPULATION_TOP_3|PlayerLink}}.
+worldEnded_playerRanks_offender;{{PLAYER_OFFENDER_TOP_1|PlayerLink}} a vaincu plus d'ennemis que quiconque et était le chef le plus redouté.
+worldEnded_playerRanks_defender;{{PLAYER_DEFENDER_TOP_1|PlayerLink}} était le plus glorieux des défenseurs, terrassant les ennemis aux portes des villages et maculant de leur sang les terres environnantes.
+rallyPoint_startWithValue;Lancer ({{value}})
+rallyPoint_farmList_raidsStarted;{{INT}} pillages envoyés.
+rallyPoint_farmList_CantAddToAbandonList;Vous ne pouvez pas ajouter des cibles à une liste de pillage abandonnée.
+rallyPoint_farmList_CantActivateInToAbandonList;Vous ne pouvez pas activer des cibles dans une liste de pillage abandonnée.
+rallyPoint_farmList_CantDuplicateInToAbandonList;Vous ne pouvez pas dupliquer des cibles dans une liste de pillage abandonnée.
+rallyPoint_farmList_DuplicateRaids;Dupliquer [raidsAmount=1:la][raidsAmount>1:les] cible[raidsAmount>1:s]
+rallyPoint_farmList_SlotsDuplicated;Cible[raidsAmount>1:s] dupliquée[raidsAmount>1:s] !
+rallyPoint_farmList_pleaseSelectTheList;Veuillez sélectionner la liste à laquelle vous souhaitez ajouter votre cible.
+rallyPoint_farmList_farmlistFull;Liste de pillage saturée, merci de choisir une autre liste ou d'en créer une nouvelle.
+rallyPoint_farmList_targetName;Nom de la cible
+rallyPoint_farmList_differentTroopsWarning;Le nombre des unités ne sera pas modifié, à moins que vous ne le remplaciez par une nouvelle valeur.
+rallyPoint_farmList_noobProtectionWarning;Pendant la protection des débutants, vous ne pouvez pas piller les autres joueurs, mais vous pouvez piller les oasis inoccupées et les villages natars.
+rallyPoint_farmList_noFarmLists;Aucune liste de pillage créée
+rallyPoint_farmList_CreateNewFarmList;Créer une liste de pillage
+rallyPoint_farmList_currentAmount;Listes de pillag<nobr>e </nobr>: <b>{{amount}}</b>/{{max}}
+rallyPoint_farmList_differentTribe;Le village appartient à un peuple différent du village de départ indiqué. Veuillez vérifier le nombre des unités.
+rallyPoint_farmList_overrideTarget;Remplacer la cible
+rallyPoint_farmList_selectedActivated;Les cibles sélectionnées ont été activées.
+rallyPoint_farmList_selectedDeactivate;Les cibles sélectionnées ont été désactivées.
+rallyPoint_farmList_LastRaid;<b>Dernier lancemen<nobr>t </nobr>:</b> <nobr>{{lastStarted|DateTime}}</nobr>
+mapCell_editTargetListAmount;<nobr>Modifier la cible</nobr> <nobr>(Listes : {{INT}})</nobr>
+goldShop_shopDisabled;La boutique de pièces d'or est désactivée dans ce monde de jeu
+infobox_accountLockGameEnd;Ce serveur est terminé!
+applySorting;Effectuer le tri
+truppen.tid931;Piège
+truppen.tid931p;Pièges
+rallyPoint_attackWW_blocked;Il n'est pas encore possible d'attaquer les villages Merveille. Il sera possible d'envoyer des troupes au plus tôt  : {{timestamp|DateTime}}
+mainMenu_switchBackFromAvatar;{{iconName|Sprite}} Retour à {{playerName}}
+pending;(En attente)
+featureNotAvailableInVacationMode;Cette fonction n'est pas disponible en mode vacances.
+notAllowed;Cette action n'est pas autorisée.
+settings_avatarDeletionInfo;Une fois enclenché, le processus de suppression de l'avatar durera <b>3<nobr> j</nobr>ours</b>.\nUn avatar en suppression ne peut plus participer aux ventes aux enchères ni utiliser le centre d'échange.\nIci, vous pouvez annuler la suppression à tout moment.
+settings_avatarDeletionCountDown;L'avatar sera supprimé dans 
+deleteAvatar_confirmation_header;Voulez-vous supprimer votre avatar ?
+cams_info_subHeader;Une seule connexion pour tous vos mondes de jeu
+cams_info_text;Créez votre compte du lobby de Legends pour faciliter vos inscriptions et accéder facilement à tous vos mondes de jeu par le biais d'une seule authentification.
+cams_info_lessInfo;Moins d'informations
+cams_info_Question_WhatIsLegendsLobbyAccount;Qu'est-ce que le compte du lobby de Legends ?
+cams_info_Answer_WhatIsLegendsLobbyAccount;Avec le compte du lobby , vous n'aurez plus à vous inscrire à chaque nouveau monde de jeu. Il vous suffit de vous connecter et d'accéder à vos mondes de jeu actifs ou d'en démarrer un nouveau dans le lobby, que ce soit par navigateur ou sur l'application mobile.
+cams_info_Question_WhatAreAvatars;Que sont les avatars ?
+cams_info_Answer_WhatAreAvatars;Avec le Compte du lobby, votre profil dans un monde de jeu individuel s'appelle un avatar. Vous possédez un seul compte du lobby qui peut posséder plusieurs avatars, un pour chaque monde de jeu.
+cams_info_Question_WhatsWithCurrentGameworlds;Que se passera-t-il pour mes mondes de jeu actuels ?
+cams_info_Answer_WhatsWithCurrentGameworlds;Tous les mondes de jeu actifs utilisant la même adresse e-mail que votre compte du lobby seront liés et pourront être accessibles via le lobby. Vous pouvez transférer vos avatars du monde de jeu actif à l'adresse e-mail correcte avant la création de votre compte du lobby.
+cams_info_Question_WhatsWithSitters;Est-ce que je peux encore avoir des co-gestionnaires ?
+cams_info_Answer_WhatsWithSitters;Oui, les co-gestionnaires peuvent être assignés de manière normale dans les paramètres du monde de jeu. Vous pouvez accéder à l'avatar dont vous avez été nommé co-gestionnaire directement sur le monde de jeu.
+cams_info_Question_WhatsWithDuals;Est-ce que je peux encore jouer en dual avec d'autres joueurs ?
+cams_info_Answer_WhatsWithDuals;Les duals peuvent être affectés à un monde de jeu en saisissant le nom du compte du lobby du joueur dans le lobby. Cela signifie qu'un dual doit également posséder un compte du lobby et peut accéder à l'avatar via le lobby après avoir accepté l'invitation. Merci de ne pas communiquer le mot de passe de votre compte du lobby à quiconque.
+cams_info_Question_WhatsWithoutLobbyAccount;Est-ce que je peux jouer sans créer de compte du lobby de Legends ?
+cams_info_Answer_WhatsWithoutLobbyAccount;Vous pouvez toujours vous connecter à vos mondes de jeu directement à l'aide de l'URL adéquate. Toutefois, si vous voulez démarrer un nouveau monde de jeu ou utiliser l'application, un compte du lobby doit être créé.
+cams_playerDecision_register_info;Le nouveau compte du lobby vous permet de connecter vos mondes de jeu actuels et futurs à l'aide d'une seule authentification.
+cams_playerDecision_login_info;Vous possédez déjà un compte du lobby ?\n\nConnectez-vous et poursuivez votre aventure.
+cams_playerDecision_register_header;Créer un compte
+cams_playerDecision_register_create_new_account;Créer un compte de portail (lobby)
+cams_playerDecision_register_login;Connexion au lobby
+cams_playerDecision_extra_info;Pour pouvoir jouer à Travian: Legends, vous devez créer un compte du lobby.
+cams_register_header;Créer un compte du lobby
+cams_register_email_label;Entrez votre adresse e-mail :
+cams_register_email_address;Enregistrer l'adresse e-mail
+cams_register_email_address_missing;Merci d'indiquer votre adresse e-mail.
+cams_register_email_address_not_valid;Merci d'indiquer une adresse email valide. Ex. mymail@provider.com
+cams_register_email_address_already_exists;Votre adresse e-mail est déjà associée à un compte du lobby.
+cams_register_redirecting_to_login;Redirection vers la connexion {{INT}}...
+cams_register_hintMessage_same_email_address;Utilisez la même adresse e-mail pour les avatars existants dans le monde de jeu pour les lier automatiquement à votre compte du lobby.
+cams_register_receive newsletter;Je veux recevoir la lettre d'information.
+cams_register_already_have_an_account;Vous avez déjà un compte ?
+cams_register_log_in_now;Connectez-vous maintenant
+cams_acceptTOS;En cliquant sur "Enregistrer l'adresse e-mail", vous acceptez les <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">Conditions générales</link></style> et vous confirmez avoir lu les <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">Informations sur le droit de rétractation</link></style> et la <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">Charte de confidentialité</link></style>.
+cams_activation_header;Activer un compte du lobby 
+cams_activation_info;Nous vous avons envoyé votre lien d'activation à<nobr> :</nobr> <b>{{emailAdress}}</b>.<br>Merci de suivre les instructions contenues dans l'e-mail pour continuer.
+cams_activation_enter_code;Entrez votre code d'activation :
+cams_activation_code_example;Ex. : 123456
+cams_activation_entered_code;{{INT}}/6 chiffres
+cams_activation_cta_activate_account;Activez le compte
+cams_activation_email_lost;Vous n'avez pas reçu l'e-mail ?
+cams_activation_email_resend;Renvoyer l'e-mail
+cams_activation_email_wrong;Erreur d'adresse e-mail ?
+cams_activation_email_change;Changement d'adresse e-mail
+cams_activation_code_missing;Merci d'entrer le code d'activation que vous avez reçu par e-mail.
+cams_activation_code_too_short;Le code d'activation est trop court. Veuillez entrer les 6 chiffres.
+cams_activation_code_format_incorrect;Le code d'activation est incorrect. Merci de vous assurer que le code ne contient que 6 chiffres.
+cams_activation_code_incorrect;Le code d'activation est incorrect. Merci d'entrer le code d'activation que vous avez reçu par e-mail.
+cams_activation_code_expired;Le code d'activation a expiré.
+cams_activation_code_start_again;Recommencez
+cams_login_header;Connexion au lobby de Legends
+cams_login_enter_email;Entrez votre adresse e-mail ou votre nom de compte :
+cams_login_enter_password;Saisissez votre mot de passe :
+cams_login_hintMessage_email_already_connected;L'adresse e-mail indiquée est déjà associée à un compte du lobby. Se connecter ou <style="SimpleLink"><link="BackToRegistrationLink">retourner à l'inscription</link></style>.
+cams_login_hintMessage_passwordUpdated;Votre mot de passe a été mis à jour.
+cams_forgot_password;Mot de passe oublié ?
+cams_recover_password;Récupération de mot de passe
+cams_login_no_account_yet;Pas encore de compte ?
+cams_login_create_account;Créer un compte
+cams_loginMask_accountNameRequired;Merci d'indiquer votre adresse e-mail ou votre nom de compte.
+cams_loginMask_passwordRequired;Veuillez saisir votre mot de passe.
+cams_loginMask_passwordAndUsernameAreWrong;Erreur d'e-mail, de nom de compte ou de mot de passe.
+cams_loginMask_emailOrAccountName_placeholder;Adresse e-mail / nom de compte
+cams_loginMask_temporaryInfobox;NOUVEA<nobr>U </nobr>: vous devez créer un compte du lobby pour accéder à vos mondes de jeu.\n\nSi vous ne possédez pas encore de compte du lobby, <style="SimpleLink"><link="CreateAccountLink">créez un compte</link></style>.
+cams_setPassword_header;Définir un mot de passe
+cams_setPassword_info;Créez un mot de passe pour votre compte d'un minimum de huit caractères.
+cams_setPassword_enter_password;Choisissez un mot de passe :
+cams_setPassword_strength_label;Force du mot de passe
+cams_setPassword_strength_missing;Entrez un mot de passe pour vérifier sa force.
+cams_setPassword_strength_1;très faible
+cams_setPassword_strength_2;assez faible
+cams_setPassword_strength_3and4;modéré
+cams_setPassword_strength_5;assez fort
+cams_setPassword_strength_6;très fort
+cams_setPassword_strength_PasswordTooShort;Plus il sera long, mieux ce sera (plus de 16 caractères)
+cams_setPassword_strength_PasswordGoodLength;Mot de passe assez long
+cams_setPassword_strength_OneType;Un seul type de caractère a été utilisé.
+cams_setPassword_strength_TwoTypes;Deux types de caractères utilisés
+cams_setPassword_strength_ThreeTypes;Trois types de caractères utilisés
+cams_setPassword_strength_NoNumbers;Aucun chiffre utilisé
+cams_setPassword_strength_NoLetters;Aucune lettre utilisée
+cams_setPassword_strength_NoSpecialCharacters;Aucun caractère spécial
+cams_setPassword_strength_NoUpperAndLowerCase;Aucun mélange de majuscules et minuscules
+cams_setPassword_strength_UpperAndLowerCase;Majuscules et minuscules utilisées
+cams_activation_cta_set_password;Définition d'un mot de passe
+cams_activation_password_length;8-64 caractères
+cams_resetPassword_header;Définition d'un nouveau mot de passe
+cams_resetPassword_info;Créez un mot de passe pour votre compte lobby, d'un minimum de huit caractères.
+cams_setUsername_header;Choisissez un nom pour votre compte du lobby Legends
+cams_setUsername_info;Choisissez un nom d'utilisateur et un label pour créer votre nom unique de compte du lobby.
+cams_setUsername_username_label;Choisissez un nom d'utilisateur :
+cams_setUsername_tagline_label;Choisissez un label :
+cams_setUsername_tagline_example;ex. : lab12
+cams_setUsername_tagline;Tag:
+cams_setUsername_condition_onlyLettersAndNumbers;Chiffres et lettres uniquement
+cams_setUsername_username_condition_Length;3-15 caractères
+cams_setUsername_tagline_condition_Length;2-5 caractères
+cams_setUsername_hint;La combinaison de votre nom d'utilisateur et de votre label formera votre nom unique de compte du lobby. Tant que la combinaison est disponible, vous pouvez choisir n'importe quelle combinaison.\n\nCela n'affecte pas le nom sur votre monde de jeu.
+cams_setUsername_cta_createAccount;Créer un compte
+cams_setUsername_username_missing;Veuillez entrer un nom d'utilisateur et un label.
+cams_setUsername_accountName_preview;Prévisualisation du nom de compte :
+cams_setUsernameConfirmPopup_header;Compte du lobby Legends créé !
+cams_setUsernameConfirmPopup_info;Votre Compte du lobby avec le nom <b>{{playerName}}</b> a été créé avec succès.
+cams_setUsernameConfirmPopup_GameworldAndAvatar_header;Vos mondes de jeu et avatars
+cams_setUsernameConfirmPopup_GameworldAndAvatar_info;Nous avons connecté les avatars des mondes de jeu suivants associés à la même adresse e-mail à votre nouveau compte du lobby.
+cams_avatar_name;Nom d'avatar
+cams_looby_welcomeMessage;Bienvenu<nobr>e </nobr>!\n<b>{{playerName}}</b>
+cams_looby_header;Vos mondes de jeu
+cams_looby_noGameWorlds;Vous ne possédez actuellement aucun avatar actif sur aucun monde de jeu. Rejoignez un nouveau monde de jeu et commencez à jouer.
+cams_looby_joinNewGameworld;Rejoindre un nouveau monde de jeu
+cams_looby_playNow;JOUEZ !
+cams_looby_gameworldsLinked;Mondes de jeu associés à votre compte
+cams_looby_invitePenging;[data>1:{{data}} invitations][data=1:Invitation] en attente
+cams_looby_localGameWorld;MONDE DE JEU LOCAL
+cams_looby_avatarInDeletion;Suppression
+cams_removeDualAccount_header;Retrait de dual
+cams_removeDualAccount_info;Voulez-vous retirer le dual de <b>{{lobbyAccountName}}</b> pour votre avatar <b>{{avatarName}}</b><nobr> ?</nobr>\n\n<b>{{lobbyAccountName}}</b> n'aura plus accès à votre avatar.
+cams_removeDualAccount_removeDual;Supprimer le dual
+cams_addDualPlayer_info;Entrer le nom de compte du lobby du joueur :
+cams_addDualPlayer_placeholder;nomdecompte#label
+cams_addDualPlayer_addPlayer;[data>1:Ajouter les joueurs][data=1:Ajouter le joueur][data=0:Ajouter un Joueur]
+search_addDualPlayeradditionalEmptyResultInfo;Joueur non trouvé ou déjà invité en tant que dual
+cams_dualInventation_header;Invitation de jeu en dual
+cams_dualInventation_invitations;Invitations:
+cams_dualInventation_info;Si vous acceptez, vous pourrez vous connecter avec votre propre compte du lobby pour accéder à cet avatar.
+cams_dualInventation_moreInfo;Vous ne pouvez accepter qu'une seule invitation de dual pour chaque monde de jeu.
+cams_dualInventation_invite;<b>{{LobbyAccountName}}</b> vous a invité à jouer sur <b>{{avatarName}}</b>
+cams_dualInventation_AcceptInvite;Accepter l'invitation
+cams_acceptDualInvitation_header;Accepter l'invitation de dual
+cams_acceptDualInvitation_info;Voulez-vous accepter l'invitation de <b>{{lobbyAccountName}}</b> pour jouer en dual sur <b>{{avatarName}}</b> du monde <b>{{gameworldName}}</b><nobr> ?</nobr>
+cams_acceptDualInvitation_moreInfo;Vous avez plusieurs invitations de dual en attente pour le même monde de jeu, mais vous ne pouvez accepter qu'une invitation pour chaque monde de jeu.
+cams_acceptDualInvitation_avatarInDeletion;Nos règles du jeu vous limitent à un seul avatar actif par monde de jeu. \nL'acceptation du dual entrainera la suppression de l'accès à votre avatar {{avatarName}} en suppression sur ce monde de jeu. \nVous ne pourrez plus annuler le processus de suppression.
+cams_dualSettings_header;Paramètres de dual
+cams_dualSettings_info;Vous pouvez arrêter de jouer en tant que dual de cet avatar à tout moment.
+cams_dualSettings_leaveDualPlay;Quitter le dual
+cams_confirmLeaveDualPlay_info;Voulez-vous arrêter de jouer en tant que dual de <b>{{avatarName}}</b> dans <b>{{gameworldName}}</b><nobr> ?</nobr>\n\nAprès avoir quitté le dual, vous pouvez créer votre propre avatar ou rejoindre un autre avatar pour jouer à nouveau en dual sur ce monde de jeu.
+cams_recoverPassword_header;Récupération de mot de passe
+cams_recoverPassword_goBackToLogin;Retour à l'authentification
+cams_recoverPassword_info;Entrez l'adresse e-mail associée à votre compte du lobby. Nous vous enverrons des instructions sur la façon de réinitialiser votre mot de passe.
+cams_recoverPasswordEmailSent_header;E-mail envoyé
+cams_recoverPasswordEmailSent_info;Si un compte du lobby est associé à l'adresse e-mail <b>{{emailAdress}}</b>, nous y avons envoyé les instructions pour réinitialiser votre mot de passe.\n\nUne fois que vous aurez récupéré votre mot de passe, vous pourrez vous connecter à nouveau.
+cams_recoverPasswordEmailSent_goBackToLogin;Retour à la connexion
+cams_editDualAccounts_header;Duals
+cams_editDualAccounts_gameworld;Monde de jeu : {{gameworldName}}
+cams_editDualAccounts_avatar;Avatar : {{avatarName}}
+cams_editDualAccounts_avatarOwner;Propriétaire de l'avatar :
+cams_editDualAccounts_noDualsAdded;- Aucun dual ajouté pour cet avatar -
+cams_editDualAccounts_info;Le dual possède un <b>accès complet</b> à cet avatar et peut effectuer toutes les actions en jeu , y compris dépenser et acheter de l'or.\n\nLes joueurs en dual peuvent se connecter avec leur propre compte du lobby pour accéder à cet avatar et ne peuvent PAS inviter d'autres joueurs en dual.
+cams_editDualAccounts_warningHint;Ne partagez pas les données de connexion de votre compte du lobby avec les autres joueurs pour éviter tout accès indésirable à vos autres avatars d'autres mondes de jeu et aux données de votre compte.
+cams_editDualAccounts_addDualPlayer;Ajouter un dual
+cams_editDualAccounts_avatarInDeletion;Votre avatar {{avatarName}} sur ce monde de jeu est en cours de suppression. Vous ne pouvez donc pas envoyer d'invitation de jeu en dual.
+cams_settings_title;Paramètres
+cams_settings_changePassword_information;Pour modifier votre mot de passe, nous enverrons un message à l'adresse e-mail de votre compte.
+cams_settings_changePassword_sendEmail;Envoyer l'e-mail
+cams_settings_changePassword_emailSent;Nous vous avons envoyé un e-mail pour changer votre mot de passe.
+cams_settings_accountDeletion_title;Suppression du compte du lobby
+cams_settings_accountDeletion_info;Supprime votre compte du lobby Legends, ainsi que tous les mondes de jeu et avatars associés à ce compte.
+cams_settings_accountDeletion_action;Supprimer le compte du lobby
+cams_settings_accountDeletion_warning;Attention : cette action est irréversible.
+cams_settings_accountDeletion_warning_content;La suppression de votre compte du lobby prend effet après un compte à rebours de 72 heures, elle ne peut pas être annulée et elle affecte tous vos avatars. \n\nVotre compte ne peut être supprimé que si tous vos avatars actuels sont en cours de suppression.
+cams_settings_accountDeletion_requirementsInformation;Pour supprimer votre compte, tous vos avatars doivent être en cours de suppression ou déjà supprimés.
+cams_settings_accountDeletion_information_warning;Cette action provoque la mise en suppression de votre compte. Gardez à l'esprit que votre compte, tous les avatars associés et les données seront définitivement supprimés lorsque vous entrerez le texte "supprimer" dans le champ de saisie.
+cams_settings_accountDeletion_information_error;Vous ne pouvez pas supprimer le compte si un avatar n'est pas en cours de suppression.\nVeuillez vous connecter aux mondes de jeu indiqués et supprimer votre avatar.
+cams_settings_accountDeletion_noAvatarsFound;Aucun monde de jeu/avatar actif trouvé.\nVous êtes prêt à partir !
+cams_settings_accountDeletion_understandmentConfirmation;Je comprends
+cams_settings_accountInDeletion_title;Compte en cours de suppression
+cams_settings_accountInDeletion_info;Votre compte du lobby <b>{{NAME}}</b> sera définitivement supprimé dans <b>{{TIMESTAMP|Countdown}}</b>.
+cams_settings_accountInDeletion_action;Annuler la suppression
+cams_mainMenu_dataConsent;Consentement à l'utilisation des données
+gameworld_gameworld;Serveur
+infobox.productionboost;{{RES}}{{TIME_COUNTER}}
+infobox_notesCount;{{COUNT}} note[COUNT>1:s]
+auction_placeBid;Miser
+auction_auctionsAmount;{{COUNT}} Enchères
+auction_bidsRefreshed;Les offres sont réactualisées !
+auction_currentSilver;Pièces d'argent actuelles :  {{iconName|Sprite}} {{currentSilver}}
+auction_availableAmount;Quantité disponible :
+auction_toSellAmount;Montant des ventes :
+auction_selectAmountToSellHeader;Choisir la quantité à vendre
+auction_soldHorseForSilver;Vendre le cheval pour {{amount}} Pièces d'argent.
+auction_currentCurrency;Actuel :
+auction_newCurrencyValues;Nouveau :
+auction_exchangeExplanationGoldToSilverTitle;Vous pouvez échanger de l'or contre de l'argent pour acheter des équipements de héros à l'hôtel des ventes.
+auction_exchangeExplanationGoldToSilverMore;Entrez le montant d'or que vous voulez échanger :
+auction_exchangeExplanationSilverToGoldTitle;Vous pouvez échanger l'argent gagné en vendant les équipements de héros à l'hôtel des ventes contre de l'or.
+auction_exchangeExplanationSilverToGoldMore;Entrez le montant d'argent que vous voulez échanger :
+auction_countAndName;{{AMOUNT}}×{{ITEM_NAME}}
+auction_deleteAll;Supprimer toutes les enchères
+auction_confirm_deletion_title;Supprimer {{data}} [data>1:entrées] [data=1:entrée] de la vente aux enchères
+auction_confirm_deletion_button;Supprimer  [data>1:les entrées] [data=1:l'entrée]
+auction_confirm_deletion_text_header;Voulez-vous vraiment supprimer [data>1:{{data}} entrées][data=1:cette entrée] ?
+auction_confirm_deletion_text;Une fois l'entrée supprimé, elle le sera de manière permanente. Vous ne pourrez pas le récupérer.
+cams_looby_noMatchingGameworlds;Il n'y a aucun monde de jeu correspondant à votre sélection.
+serverSelection_5;Développement
+serverSelection_header;Choisissez un filtre de monde de jeu
+serverSelection_filter_gameworldSpeed;Vitesse du monde de jeu
+serverSelection_gameworldSpeed;Vitesse x{{INT}}
+serverSelection_filer_gameworldLifetime;Âge du monde de jeu
+serverSelection_gameworldLifetime;{{INT}}-{{INT2}} jours
+serverSelection_gameworldLifetime_XorMore;{{INT}} jours ou plus
+filters_applyButton;Appliquer [COUNT<2:le filtre][COUNT>1:{{COUNT}} filtres]
+filters_reset;Retirer [COUNT<2:le filtre][COUNT>1:les  filtres]
+cams_avatarCreation_cancel_title;Annuler la création d'avatar
+cams_avatarCreation_cancel_reconfirmationText;Voulez-vous vraiment annuler la création de votre avatar sur {{gameworldName}} ?
+cams_avatarCreation_cancel_explanation;Vous perdrez toute votre progression dans ce monde de jeu, y compris la sélection du peuple, l'emplacement sur la carte et le nom d'avatar.
+cams_avatarCreation_button_startPlaying;Commencer à jouer
+cams_avatarCreation_button_changeSector;Changer la position
+cams_avatarCreation_button_selectTribe;Choix du peuple
+cams_avatarCreation_button_updateTribe;Changer de peuple
+cams_avatarCreation_button_selectSector;Choix de la position
+cams_avatarCreation_button_updateSector;Mise à jour de la position
+cams_avatarCreation_name_title;Indiquez le nom d'avatar :
+cams_avatarCreation_name_tip;Il s'agit du nom de votre avatar dans ce monde du jeu.
+cams_avatarCreation_name_errorEmpty;Merci d'indiquer un nom d'avatar.
+cams_avatarCreation_name_placeHolder;Nom d'avatar
+cams_looby_avatarInDeletionBlockPlayNow;Vous avez accepté une invitation de dual pour ce monde de jeu ({{gameworldName}}), vous ne pouvez donc plus y accéder en dehors du mode dual.
+connectionIssue_header;Connexion instable
+connectionIssue_info;Nous ne sommes pas en mesure de joindre le serveur pour le moment. Cela peut être dû à une connexion Internet instable.\n\nVous pouvez patienter ou...
+connectionIssue_tryAgain;Fermer le pop-up et réessayer
+connectionIssue_restart;Redémarrer l'appli
+infobox_openMessage;Ouvrir le message 
+infobox_accountIsLocked;Votre avatar est bloqué !
+auction_button_requirement;Achevez {{REQUIRED}} aventures pour accéder aux enchères.\nReste : {{INT}}
+auction_availableSilver;Pièces d'argent disponibles :  {{iconName|Sprite}} {{currentSilver}}
+auction_deleteSelected;Supprimer les enchères sélectionnées
+auction_deletedAll_confirmation;Toutes les enchères ont été supprimées !
+auction_deletedSelected_confirmation;{{data}} [data>1:entrées supprimées] [data=1:entrée supprimée] !
+newVersionAvailable_title;Nouvelle version disponible
+newVersionAvailable_description;Nous avons amélioré notre application. Merci de la mettre à jour pour continuer à jouer.
+newVersionAvailable_joinDiscord;Nouveautés Rejoignez Discord pour plus d'informations.
+newVersionAvailable_toStore;Mettre à jour maintenant
+infobox_beginnerProtection_title;Extension de la protection des débutants
+infobox_beginnerProtection_question;Êtes-vous sûr de vouloir prolonger votre protection débutant ?
+infobox_beginnerProtection_description;Vous ne pouvez pas envoyer de ressources à d'autres joueurs ni les attaquer ni vous faire attaquer pendant la protection débutant.
+sendResources_beginnersProtection;Vous ne pouvez pas envoyer des ressources à un autre joueur tant que vous êtes sous protection des débutants.
+sendTroops_beginnersProtection;Vous ne pouvez pas envoyer des troupes à un autre joueur tant que vous êtes sous protection des débutants.
+sendTroops_otherBeginnersProtection;Vous ne pouvez pas envoyer des troupes à un autre joueur tant qu'il est sous protection des débutants.
+buildingActivities_building_36;Pièges en production
+tasks_collectAll;Collecter tout ({{INT}})
+auction_bidMinPlaceholder;min. {{INT}}
+auction_buttonBidMinimum;Mise minimum requise
+hero_adventures_available;Aventures disponibles
+messages_freshDeskMessage_viewAndReplyInBrowser;Afficher et répondre via navigateur
+messages_webViewRecommendation;Le contenu du message pourrait être incomplet.\nNous vous recommandons d'afficher le message avec un navigateur.
+rateThisApp_popup_title;Vous appréciez notre application ?
+rateThisApp_popup_description;Si vous aimez notre application, prenez un moment pour l'évaluer.
+rateThisApp_popup_appreciatefeedback;Votre avis est important !
+rateThisApp_popup_btn_positive;C'est fantastique !
+rateThisApp_popup_btn_negative;Pourrait être améliorée
+rearrange_or_demolish_building;Ré-agencer ou démolir un bâtiment
+mainBuilding_buildingArrangement;Réagencer les bâtiments
+mainBuilding_openRearrangeMode;Activer le mode de réagencement
+mainBuilding_demolishBuildings;Démolir des bâtiments
+mainBuilding_openDemolishMode;Activer le mode démolition
+mainBuilding_demolishBuildings_description;Faites glisser et déposez des bâtiments pour changer leur position.
+rearrangeBuildingPopup_rearrangeDescription;Ré-agencer <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color><nobr> ?</nobr>
+rearrangeBuildingPopup_buildingsRearranged;Bâtiments réagencés
+rearrangeBuildingPopup_buildingRearranged;{{buildingName|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>{{buildingLevel}}</color>
+confirmRearrangeBuildingPopup_header;Voulez-vous repositionner le bâtiment suivant ?
+confirmRearrangeBuildingPopup_description;Ré-agence les bâtiments sélectionnés du village <b>{{villageName}}</b>.
+demolishBuildingPopup_title;Démolir le bâtiment
+demolishBuildingPopup_description;Sélectionnez un bâtiment à démolir
+demolishBuildingPopup_descriptionWithSelection;Voulez-vous démolir <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color><nobr> ?</nobr>
+demolishBuildingPopup_demolishLevel;Démolir d'un niveau
+demolishBuildingPopup_demolishCompletely;Démolir complétement
+confirmDemolishBuildingPopup_header;Voulez-vous démolir <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color> instantanément<nobr> ?</nobr>
+confirmDemolishBuildingPopup_description;Démolit immédiatement le bâtiment sélectionné et le supprime de votre village.\nCette action ne peut pas être annulée.
+characterCount;{{COUNT}}/{{MAX}} caractères
+survey_button_description_reward;Participez à cette courte enquête pour nous aider à améliorer l'application Travian: Legends.\nVotre soutien sera récompensé.
+cams_lobby_joinGameworld;Rejoindre le monde de jeu
+cams_lobby_gameworld_inviteOnly;Uniquement sur invitation 
+cams_lobby_gameworld_inviteOnlyInfo;Ce monde de jeu est restreint aux joueurs possédant un code d'invitation spécial.
+cams_lobby_gameworld_inviteCodeEnter;Saisir le code d'invitation
+cams_lobby_gameworld_inviteCodeInfo;Ce monde de jeu est restreint aux joueurs possédant un code d'invitation spécial.\nSi vous en possédez un, saisissez-le pour rejoindre le monde de jeu.
+cams_lobby_gameworld_inviteCodePlaceholder;Par exemple : eThbt5OLyZ8D5xjhUaBAba
+cams_lobby_gameworld_inviteCodeErrorCharacterCount;Le code d'invitation est trop court. Merci de saisir les {{MAX}} caractères.
+cams_lobby_gameworld_inviteCodeCooldown;Délai d'attente du code d'invitation ({{TIME|Countdown}})
+timeCountDown;{{TIME|Countdown}}
+attestation_failed;Échec d'attestation de l'appareil ! Merci d'utiliser un appareil mobile pour jouer.\nSi le problème persiste, utilisez le bouton d'aide ci-dessous pour contacter le support !
+mainBuilding_demolishBuildings_notAvailable;Un bâtiment principal de niveau {{INT}} est nécessaire pour démolir des bâtiments.
+mainBuilding_demolishBuildings_demolishing;Démolition de <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> au <b><color={{colorValue|TextColor}}>niveau<nobr> </nobr>{{buildingLevel}}</color></b> dans {{timestamp|Countdown}}.
+demolishBuildingPopup_demolishing;Démolition de <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> au <b><color={{colorValue|TextColor}}>niveau<nobr> </nobr>{{buildingLevel}}</color></b>
+allianz.hinweis_text_NoConfederacy;L'un des fondements de la diplomatie est de discuter et négocier avec l'alliance concernée avant d'envoyer une offre de pacte (pacte de non agression).
+regions_canBeSettled;Colonisable ?
+regions_regionStatusNoColon;Statut régional
+regions_top5AlliancesPopulation;<b>Population</b> du Top<nobr> 5</nobr> des alliances
+regions_top5AlliancesVillages;<b>Villages</b> du Top<nobr> 5</nobr> des alliances
+regions_neighboringRegions;Régions voisines
+regions_regionPopulation;Population régionale
+regions_contested;Région contestée
+cams_lobby_gameworld_disabledAndNotSupported;Ce monde de jeu n'est pas proposé sur l'application mobile.
+demolishBuildingPopup_impossible;Ce bâtiment ne peut pas être démoli.
+city_benefits;Bénéfices d'une cité
+city_benefits_threeAdditionalSlots;Trois emplacements de construction supplémentaires
+city_benefits_resourceFieldsLevel12;Champs de ressources améliorables au niveau 12
+city_benefits_watchTowers;Murs améliorables avec des Tours de guet.
+city_upgradeToACity;Transformer {{villageName}} en cité.
+city_culturePointsForNext;(prochaine cité dans {{culturePoints}} points de culture)
+city_upgradeVillage;Améliorer le village
+city_confirm_upgradeVillage;Transformer en cité
+city_confirm_header;Voulez-vous transformer {{villageName}} en cité ?
+city_confirm_description;L'amélioration d'un village en cité dure {{time}} et occupe un de vos emplacements d'extension.
+city_upgrading;{{villageId|VillageLink}} {{text}}
+city_upgraded;{{villageId|VillageLink}} est déjà une Cité.
+combatSimulator_selectTarget;Choisissez la cible
+mainMenu_goToLobby;Vers le Lobby
+mainMenu_yourPlayerProfile;Votre profil joueur
+plus.plusAttackWarningText;Les attaques sur vos villages seront affichées sur la liste des villages. Mobile uniquement : dans la vue des villages, la flèche permettant d'afficher la liste des villages sur le côté droit sera mise en évidence.
+production.crobBalanceTroopConsumptionAncientPower;Bonus de pouvoir ancien
+filters_region_not_found;La région n'existe pas
+rallyPoint_troopsOverview_ownTroops_8;Propres troupes à 
+rallyPoint_troopsOverview_ownTroops_9;Propres troupes à 
+tradeOffice_merchantsCarryCapacity;Capacité de transport des marchands : 
+tradeOffice_tradeShipsCarryCapacity;Capacité de transport des navires marchands : 
+buildingActivities_building_48;Soins des troupes
+playerDetails_victorPointsPerDay;{{PERDAY}} /jour
+allianz.numIncomingRaids;{{NUM_ATTACKS}} pillage[NUM_ATTACKS>1:s]
+allianz.numIncomingAttacks;{{NUM_ATTACKS}} attaque[NUM_ATTACKS>1:s]
+allianz.MerchantCapacityAndSpeedNew;Commerce
+alliance_regionalTabButton;Régional
+alliance_regionalTabTop5Description;Régions où votre alliance figure dans le top 5 du contrôle territorial.
+alliance_regionalTabTitle;Top 5 régional
+alliance_regionalTabTop5Empty;- Contrôle territorial  insuffisant dans les régions -
+alliance_ShowDetails;Voir les détails
+regions_withFactions_yourFactionHasMoreThan50PercentSecured;Votre alliance possède plus de {{PERCENT}} du contrôle territorial.<br><br>Une Chambre du trésor est nécessaire pour activer le pouvoir régional.
+wall_upgradesInProgress;Améliorations en cours
+extension_upgradeStarted;Amélioration débutée avec succès !
+extension_constructionList;Liste de construction
+upgradeLevel;Niveau d'amélioration
+infoTab_upgradingToLevelForExtension;Amélioration en cours du niveau {{buildingName}} vers le niveau {{level}} :
+infoTab_genericCurrentlyForExtension;Bonus actuel de {{buildingName}} incluant {{extensionName}} :
+infoTab_genericAtLevelForExtension;Au niveau {{a}} avec {{extensionName}} niveau {{b}} :
+ratioValuesNumeratorBold;<b>{{a}}</b>/{{b}}
+infoTab_productionCosts_title;Coûts de production
+harbour_shipsInConstruction;Navires en construction
+unitInfo_troopsCarriage;jusqu'à <b>{{INT}}</b><nobr> </nobr>unités
+unitInfo_velocityRaid;Pour les pillages :
+city_benefits_resourceFieldsLevel12inCapital;Amélioration des champs de ressource jusqu'au niveau 12, et encore plus dans votre capitale.
+infoTab_genericCurrentlyMoreExplicit;Bonus {{buildingName}} actuel :
+merchant_merchantOverview_noIncomingDeliveries;- Pas de livraisons entrantes. -
+merchant_merchantOverview_noOutgoingDeliveries;- Pas de livraisons sortantes. -
+merchant_merchantOverview_incoming;Livraisons entrantes ({{INT}}) 
+merchant_merchantOverview_outgoing;Livraisons sortantes ({{INT}})
+achievementQuests.achQuest_03_Territory_step_01_description;Envoyez des troupes pour piller ou attaquer un village Natar. La quête sera accomplie à l'arrivée de votre armée, même si vos troupes ne survivent pas au combat.<br><br>Les points pour cet objectif peuvent être obtenus {{NUMBER_OF_TASKS_PER_DAY}}<nobr> </nobr>fois par jour.\n
+allianz.MerchantCapacityTitle_Harbours;Capacité des marchands / navires et bonus de vitesse
+market_tradeRoutes_invalidTarget_Territory;Les routes commerciales ne peuvent cibler que vos propres villages.
+market_selectResources;Sélectionner les ressources
+market_selectResources_requiredTradeShips;Navires marchands nécessaires
+market_resourcesWillBeSendByTradeShip;Les ressources seront envoyées par navire marchand.
+manual.gid38_Territory;Le grand dépôt offre 3 fois plus de place pour stocker vos ressources qu'un dépôt normal.<br><br>Ce Bâtiment ne peut être construit qu'avec le pouvoir ancien du plan de stockage.
+manual.gid39_Territory;Le grand silo offre 3 fois plus de place pour stocker vos céréales qu'un silo normal.<br><br>Ce Bâtiment ne peut être construit qu'avec le pouvoir ancien du plan de stockage.\n
+harbour_noAvailableShips;Il n'y a actuellement aucun navire ancré dans ce Port.
+harbour_destroy_title;Détruire les navires
+harbour_destroy_desc_title;Sélectionnez le type et le nombre de navires à détruire.
+harbour_destroy_desc;Seuls les navires ancrés ici peuvent être détruits et vous ne recevrez pas de ressources en retour.
+harbour_destroy_timeNotice;Les navires seront détruits immédiatement.
+harbour_destroy_selectedTotalAmount;Navires sélectionnés<nobr> </nobr>: <b>{{AMOUNT}}</b>
+harbour_destroy_shipSelectTitle;<b>{{ShipID|TranslateSuffixFor|gid49.type_t}}</b> (<b>{{Amount}}</b> Navire[Amount>1:s] ancré[Amount>1:s] ici)
+extension_fullyExtended;{{NAME}} complétement amélioré(e).
+extension_willBeFullyExtended;{{NAME}} en cours d'amélioration complète.
+layout.directLinkMarketplaceTrader;Marchands inactifs : {{INT}}/{{INT2}}
+UnitProduction_ViewBuildingList;Voir la liste des constructions
+raidList_useRaidShipsInfo;Note : les navires de raid sont utilisés automatiquement lorsqu'ils sont disponibles. Si vous manquez de navires de raid, vos troupes voyageront normalement.
+buildingActivities_maxReached;Montant max. atteint
+buildingActivities_building_49;Navires en construction
+buildingActivities_buildingAdditional_48;Aucune troupe blessée
+residence_expansion_villagesRatio;Villages : {{COUNT}}/{{MAX}}
+residence_expansion_slotFree;Emplacement non utilisé.
+residence_expansion_slotPrerequisites;Prérequi<nobr>s </nobr>: <b>{{BuildingID|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>niveau {{Level}}</color></b>
+residence_expansion_culturePointsPerDay;Production quotidienne de points de culture
+search_region;Recherche de région
+search_select_region;Sélectionnez une région
+statistiken.progressionStepTitle_start_achieved;Serveur débuté le {{VALUE}}
+statistiken.progressionStepTitle_serverEnd_locked;Le serveur se terminera le {{VALUE}}
+filters_artefact_not_found;Artéfact inexistant
+sendTroops_settlersChangeTribe;Pour les {{INT}} premières colonies, vous pouvez choisir le peuple du village à coloniser. Choisissez avec soin.
+gid17.nextTradingRoute;La prochaine route commerciale commence à <b>{{HOUR}}</b> et nécessite <b>{{MERCHANTS}}</b> [MERCHANTS>1:marchands][MERCHANTS=1:marchand].
+gid17.nextTradingRouteWithShips;La prochaine route commerciale commence à <b>{{HOUR}}</b> et nécessite <b>{{SHIPS}}</b> [SHIPS>1:navires marchands][SHIPS=1:navire marchand].
+market_tradeRoutes_merchants;[merchants>1:{{merchants}} marchands][merchants=1:{{merchants}} marchand]
+market_tradeRoutes_tradeShips;[tradeShips>1:{{tradeShips}} navires marchands][tradeShips=1 :{{tradeShips}} navire marchand]
+market_tradeRoutes_repeats;x {{repeats}}
+market_tradeRoutes_usesShip;Utilisation de navires
+troopsCheckout_shipUseInfo;{{Distance}} cases | {{ShipID|Bold}} | Économisez {{duration|Bold}} heures
+troopInfoPopup_shipsTitle;Navire amarrés dans le village
+language_nl-NL;Néerlandais
+cropfinder_cropperType;Type de céréalier :
+valueInBrackets;({{VALUE}})
+residence_settlementSlotsUsed;Emplacements de colonisation utilisés
+residence_settlementCPNeededForNextSlot;Points de culture nécessaires pour le prochain emplacement de colonisation :
+gid27.ancient_power_detail_;{{INT}}
+artefact_effect_value;Effe<nobr>t </nobr>: <b>{{EFFECT}}</b>
+ancientPower_overview;Pouvoir régionaux
+ancientPower_no_ancientPower;Pas de pouvoirs anciens sur ce serveur
+ancientPower_tip_large;Les pouvoirs anciens majeurs nécessitent une chambre du trésor de nivea<nobr>u </nobr><b>20</b> et affectent <b>tous vos villages</b>
+ancientPower_tip_small;Les pouvoirs anciens mineurs nécessitent une chambre du trésor de nivea<nobr>u </nobr><b>10</b> et affectent uniquement le <b>village</b> où ils sont activés
+ancientPower_tip_nearby;Pouvoirs anciens autour de {{villagenamelong|Bold}}
+ancientPower_stored_title;Pouvoirs anciens sécurisés par l'alliance
+ancientPower_stored_noContent;Aucune région sécurisée par votre alliance
+ancientPower_stored_nextFree;Prochaine activation gratuite disponible dans : [isFree=0 :<color={{colorValue|TextColor}}>]{{timeStamp|Countdown?Bold}}[isFree=0 :</color>]
+ancientPower_stored_notActivatable;Aucun pouvoir ancien à activer.
+ancientPower_stored_activated;Pouvoir ancien activé.
+ancientPower_stored_alreadyActive_account;Vous possédez déjà un pouvoir ancien qui affecte tous les villages lorsqu'il est actif.
+ancientPower_stored_alreadyActive_village;Vous possédez déjà un pouvoir ancien qui affecte ce village lorsqu'il est actif.
+ancientPower_stored_alreadyActive;Ce pouvoir ancien est déjà activé.
+filters_ancientPower_not_found;Ce pouvoir ancien n'existe pas
+regions_withFactions_yourAllianceHasMoreThan50PercentSecured;Votre alliance possède plus de {{PERCENT}}<nobr>%</nobr> du contrôle territorial.<br><br>Une Chambre du trésor est nécessaire pour activer le pouvoir régional.
+language_en-NT;Langue du développement
+settings_notNow;Pas maintenant
+settings_dontAskAgain;Ne pas reposer cette question.
+cams_lobby_gameworld_lastPlayedTime;{{TIME}} h
+cams_settings_DirectLoginTitle;Connexion directe au monde du jeu
+cams_settings_DirectLoginInfo;Passer la sélection du monde de jeu dans le lobby et se connecter au monde de jeu le plus récemment joué directement à l'ouverture de l'appli.
+cams_settings_DirectLoginActive;La connexion directe est activée
+cams_settings_DirectLoginInactive;La connexion directe est désactivée
+cams_directLoginPopUp_Info;Voulez-vous vous connecter directement à votre monde de jeu au démarrage de l'appli ?
+cams_directLoginPopUp_youCanChange;Vous pouvez modifier ce choix à tout moment dans les paramètres du lobby.
+cams_directLoginPopUp_Accept;Oui, connectez-moi directement
+language_ro-RO;Roumain
+language_hu-HU;Hongrois
+language_ar-AE;Arabe
+autoLoginFailed.;La connexion automatique a échoué.
+needInternetToPlay;Une connexion Internet est nécessaire pour jouer. Vérifiez votre connexion et réessayez.
+mapCellInfoWindow_removeFromLists;Retirer de toutes les listes
+removeFromListsPopup_Title;Voulez-vous retirer {{TARGETNAME}} de {{INT}} listes ?
+removeFromListsPopup_Description;Vous pourrez rajouter la cible individuellement aux listes de pillage.
+removeFromListsPopup_ConfirmButton;Retirer la cible
+social_continueWith;Ou continuez avec :
+social_loginWith;Ou connectez-vous avec :
+social_backToRegistration;Retour à l'inscription
+social_createAccountTitle;Créer un compte du lobby
+social_errorTitle_NoEmailProvided;Autorisation d'e-mail manquante
+social_errorMsg_NoEmailProvided;Pour lancer Travian<nobr>: </nobr>Legends, nous avons besoin de votre <b>permission pour accéder à votre adresse e-mail.</b>
+social_errorInfo_NoEmailProvided;Essayez à nouveau avec les paramètres d'autorisation corrects ou essayez une autre méthode d'enregistrement.
+social_errorTitle_AlreadyExists;E-mail déjà utilisée
+social_errorMsg_AlreadyExists;L'adresse électronique fournie est déjà utilisée pour un compte de lobby Travian: Legends.
+social_errorInfo_AlreadyExists;Utilisez l'adresse électronique associée à votre compte pour vous connecter.
+social_acceptTOS;En cliquant sur "Confirmer", vous acceptez les <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">Conditions générales</link></style> et vous confirmez avoir pris connaissance des <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">Informations sur le droit de rétractation</link></style> et la <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">Charte de confidentialité</link></style>.
+linkNotWorking;Lien non fonctionnel
+linkNotWorkingDescription;Il semble que ce lien ne fonctionne pas actuellement dans l'application Travian: Legends. Il se peut qu'il fonctionne dans le navigateur Internet.
+openLinkInBrowser;Ouvrir le lien dans le navigateur
+settings_language_useArabicNumerals_activated;Chiffres arabes orientaux activés
+settings_language_useArabicNumerals_deactivated;Chiffres arabes orientaux désactivés
+artefact_inventory_active_empty;Aucun artefact activé
+social_errorTitle_Unknown;Erreur inconnue
+social_errorMsg_Unknown;Une erreur inconnue s'est produite. Veuillez réessayer.
+loadingScreen_text_01;Votre héros se recoiffe, attendez un peu.
+loadingScreen_text_02;Le silo déborde. Les villageois remplissent leurs poches de céréales.
+loadingScreen_text_03;L'ambassade organise une fête réservée aux diplomates.
+loadingScreen_text_04;La place de rassemblement est transformée en zone de pique-nique, les troupes dégustent des sandwiches.
+loadingScreen_text_05;Le forgeron façonne une épée... en spaghettis.
+loadingScreen_text_06;Les maîtres constructeurs étudient les plans... à l'envers.
+loadingScreen_text_07;Les Natars ont rejoint le club de lecture du village. Personne ne sait lire les runes anciennes.
+loadingScreen_text_08;Les espions comptent les troupes ennemies... mais ils n'ont pas assez de doigts.
+loadingScreen_text_09;La Merveille du monde est attaquée par des pigeons. L'équipe de nettoyage est en chemin.
+loadingScreen_text_10;Les milices d'esclaves réclament un syndicat - préparez-vous à la grève.
+loadingScreen_text_11;Les troupes refusent d'attaquer jusqu'à ce que quelqu'un leur explique le simulateur de combat.
+loadingScreen_text_12;Les villageois se sont arrêtés de travailler pour regarder deux poulets se battre.
+loadingScreen_text_13;Vos catapultes hésitent sur le bâtiment à frapper en premier.
+loadingScreen_text_14;Faites preuve de patience, votre héros a choisi de voyager en train plutôt qu'à cheval.
+loadingScreen_text_15;Cette cachette protège des ressources, mais aussi les ragots du village.
+loadingScreen_text_16;La caserne organise un concours de talents - l'entraînement est reporté.
+loadingScreen_text_17;Votre mur est presque terminé. Attendons que la peinture soit sèche.
+loadingScreen_text_18;Les légionnaires ont exigé une pause-café avant le défilé.
+loadingScreen_text_19;Cela fait trois heures. que les Gaulois expliquent aux Romains ce qu'est une palissade. 
+loadingScreen_text_20;Les pots-de-vin versés aux marchands accélèrent les livraisons.
+loadingScreen_text_21;Votre héros prend un cours d'équitation – cela pourrait durer un certain temps.
+loadingScreen_text_22;Les commerçants sont retardés par un bœuf très lent.
+loadingScreen_text_23;Les dirigeants de l'alliance dessinent une stratégie de combat... avec de la peinture pour doigts.
+loadingScreen_text_24;Le silo est plein de cookies - la gestion des ressources est à son apogée.
+loadingScreen_text_25;L'espionnage est interrompu, il y a une poussière dans l’œil d'Horus
+changeAccountNameSubtitle;Changer le nom du compte et/ou le label.
+changeAccountNamePleaseNote;Notez qu'après avoir changé le nom de votre compte, vous devez attendre {{DAYS}} [DAYS>1:jours][DAYS=1:jour] avant de pouvoir le changer à nouveau.
+changeAccountNameWaiting;Vous devez attendre avant de pouvoir changer de nom à nouveau :
+changeAccountNameUpdated;Nom du compte modifié
+changeAccountNameUpdatedSubtitle;Votre nom de compte a été modifié en<nobr> </nobr>: <b>{{playerName}}</b>
+alliance_top10Title;Top 10 interne de l'alliance
+gameworldCalendarNoGameworld;Aucun monde de jeu à venir n'a été trouvé. \nIls peuvent être en cours de mise en place ou non programmés.
+gameworldCalendar_title;Calendrier du monde de jeu
+valueWithModifierBefore;{{value|Round|2}}x
+goldShop_purchaseCanceled;Achat annulé !
+goldShop_pendingRestored;Votre achat précédent a été restauré avec succès.
+hero_consumablePopup_healthByOintment;Santé gagnée par onguent :
+unknown;?
+serverSelection_gameworldSpeed_short;{{INT}}x
+gameworldCalendarDetails_title;Détails du monde de jeu
+gameworldCalendarDetails_shareLink;Partager le lien du monde de jeu
+gameWorldEndCondition;Condition de fin de partie
+gameWorldEndCondition_WonderOfTheWorld;Merveille du monde {{Level}}
+gameWorldEndCondition_VictoryPoints;Points de victoire
+gameWorldRestriction_InvitationCode;Ce monde de jeu est restreint aux joueurs possédant un code d'invitation spécial.
+gameWorldRestriction_MobilePlayers;Ce monde de jeu n'est accessible qu'aux appareils mobiles.
+gameWorldSpecial;Il s'agit d'un monde de jeu spécial à durée limitée et dont les caractéristiques peuvent être différentes de celles des mondes de jeu classiques.
+gameWorldUndefinedDetails;Tous les détails du monde de jeu n'ont pas encore été définis. Vous recevrez une notification sur votre compte du lobby une fois la mise à jour effectuée.
+bonusValueWithPercentNoSpace;+{{value}}%
+startDate;Date de début
+startTime;Heure de départ
+UTC+1;(UTC+1)
+goldShop_GoldPromotion;Promotion sur l'or
+auction_FeePopupTitle;Frais de vente aux enchères
+auction_FeePopupText;Vous devez payer des frais de {{value}} % sur les ventes effectuées aux enchères. Votre gain correspond au prix de vente diminué des frais d'enchère.
+auction_FeePopupExample;Exemple de calcul
+auction_FeePopupSalePrice;Prix de vente
+auction_FeePopupFee;Frais de vente ({{value}} %)
+auction_FeePopupPayout;Paiement
+auction_sellHouseFeeInfo;Votre gain correspond au prix de vente diminué des frais d'enchère de {{value}} %.
+gold_action_finishImmediately;Terminer immédiatement
+mapCellInfoWindow_villageReports;Voir les rapports du village
+hero_crafting_title_refine;Raffiner l'équipement
+hero_crafting_title_smelt;Fondre l'équipement
+hero_crafting_title_forge;Forger l'équipement
+hero_crafting_title_reforge;Reforger l'équipement
+hero_crafting_action_refine;Raffiner
+hero_crafting_action_smelt;Fondre
+hero_crafting_action_forge;Forger
+hero_crafting_action_takeMaterials;Prendre ({{INT}}/{{MAX}}) matériaux
+hero_crafting_action_takeAllMaterials;Prendre les matériaux
+hero_crafting_action_reforge;Reforger
+hero_crafting_action_take;Prendre
+hero_crafting_action_pick;Prendre un article
+hero_crafting_action_equip;Équiper
+hero_crafting_action_buy_material;Acheter des matériaux
+hero_crafting_action_buy_item;Acheter un objet
+hero_crafting_action_craft_material;Fondre des matériaux
+hero_crafting_action_moveToInventory;Vers l'inventaire
+hero_crafting_action_select_item;Sélectionner
+hero_crafting_action_remove_item;Retirer
+hero_crafting_action_error_equipment;L'objet doit être un équipement de héros.
+hero_crafting_action_error_rarity;Les objets doivent avoir la même rareté.
+hero_crafting_action_error_category;Les articles doivent appartenir à la même catégorie d'équipement.
+hero_crafting_action_error_id;Les articles doivent être identiques.
+hero_crafting_action_error_missingItem;Un ou plusieurs articles sélectionnés ne sont plus disponibles.
+hero_crafting_refine_tip;Les objets de héros épiques peuvent être raffinés avec n'importe quel autre objet de héros épique de la même catégorie d'objet.
+hero_crafting_refine_tip_error;Vous n'avez aucun objet de héros à raffiner. Trouvez des objets lors d'aventures ou achetez des objets aux enchères et améliorez-les en les raffinant.
+hero_crafting_smelt_info;Prenez {{INT}}matériau[INT>1:x] maintenant ou attendez et obtenez en {{MAX}}.
+hero_crafting_reforge_text;Reforgez l'équipement pour obtenir un autre objet possiblement d'une rareté et d'une qualité différentes.\nAprès avoir reforgé, vous pouvez choisir quel objet vous souhaitez prendre ou reforger à nouveau.\nAttention : Après le reforgeage, l'objet de chaque étape de reforgeage ultérieure disparaîtra et ne pourra plus être changé.
+inventoryItem_quality_title;Qualité
+inventoryItem_rarity_title;Rareté
+inventoryItem_rarity_quality_title;Rareté et qualité
+inventoryItem_rarity_common;Commun
+inventoryItem_rarity_uncommon;Peu courant
+inventoryItem_rarity_rare;Rare
+inventoryItem_rarity_epic;Épique
+inventoryItem_rarity_legendary;Légendaire
+search_for_village;Recherche de village
+search_for_player;Recherche de joueur
+villageList_EditMode;Mode édition
+villageList_MaxGroupAmount;Nombre maximum de groupes de village atteint.
+hero_crafting_action_error_material;L'élément doit être un matériau.
+villageList_ReorderError;Cible non valide
+textMatchingInput_Title;Confirmez en entrant "{{WORD}}"
+hero_inventory_category_empty;- Aucun article dans cette catégorie -
+hero_crafting_action_refine_success;Matériel raffiné
+hero_crafting_action_smelt_success;Matériel fondu
+hero_crafting_action_forge_success;Matériel forgé
+hero_crafting_result_item_equipped;Article équipé
+hero_crafting_result_item_taken;Article déplacé vers l'inventaire
+hero_crafting_result_material_taken;Matériau déplacé vers l'inventaire
+hero_crafting_action_error_quality;Les articles doivent être de la même qualité.
+hero_crafting_action_error_epic;Ce doit être un autre article épique de la même catégorie et de la même qualité.
+inventoryItem_rarity_none;Aucune rareté
+dailyQuests_rewardOverview_short;Aperçu de la récompense
+avatar_confirmation_title_delete;Supprimer l'avatar
+avatar_confirmation_header_delete;Voulez-vous supprimer votre avatar ?
+avatar_confirmation_infoText_delete;Une fois enclenché, le processus de suppression de l'avatar durera <b>3<nobr> j</nobr>ours</b>.\nUn avatar en suppression ne peut plus participer aux ventes aux enchères ni utiliser le centre d'échange.\nIci, vous pouvez annuler la suppression à tout moment.
+avatar_confirmation_requiredWord_delete;supprimer
+avatar_confirmation_title_respawn;Régénération de l'avatar
+avatar_confirmation_header_respawn;Voulez-vous régénérer votre avatar ?
+avatar_confirmation_infoText_respawn;Cette action supprimera toute votre progression jusqu'à ce point et placera votre village de départ à un nouvel emplacement sur la carte.\n\nToutes les pièces d'or achetées seront automatiquement transférées.
+avatar_confirmation_requiredWord_respawn;régénération
+settings_app_title;Tous les mondes de jeu
+settings_app_Animations_title;Animations
+settings_app_Animations_description;Sélectionnez les animations souhaitées dans l'appli.
+settings_app_Animations_activated;L'animation des nuages pour la vue du village/des ressources est activée
+settings_app_Animations_deactivated;L'animation des nuages pour la vue du village/des ressources est désactivée
+settings_app_NightMode_title;Mode nocturne
+settings_app_NightMode_description;Vos villageois allument les torches, et les feux crépitent sous la faible lumière des étoiles dans le ciel nocturne.
+settings_app_NightMode_activated;Le mode nocturne est activé
+settings_app_NightMode_deactivated;Le mode nocturne est désactivé
+settings_app_WinterMode_title;Mode hiver
+settings_app_WinterMode_description;La neige tombe lentement, enveloppant le village d'un silence illusoire, chaque son semblant se dissoudre dans l'air glacé.
+settings_app_WinterMode_activated;Le mode hiver est activé
+settings_app_WinterMode_deactivated;Le mode hiver est désactivé
+settings_app_VillagePanning_title;Déplacement dans le village/les champs de ressources
+settings_app_VillagePanning_description;Vous pouvez parcourir la vue du village et de vos champs de ressources.
+settings_app_VillagePanning_activated;Le mouvement est activé
+settings_app_VillagePanning_deactivated;Le mouvement est désactivé
+settings_app_PushNotifications_title;Notifications générales
+settings_app_PushNotifications_description;Restez informé des nos actualités liées à l'application et au jeu avec des notifications push.
+settings_app_PushNotifications_activated;La notification de démarrage de monde du jeu est activée
+settings_app_PushNotifications_deactivated;La notification de démarrage de monde du jeu est désactivée
+settings_app_EnergySaving_title;Mode économie d'énergie
+settings_app_EnergySaving_description;Économise la batterie de votre appareil en réduisant le nombre d'images par seconde.\nL'activation du mode d'économie d'énergie peut entraîner un certain décalage visuel lors de l'utilisation de l'appli.
+settings_app_EnergySaving_activated;Le mode économie d'énergie est activé
+settings_app_EnergySaving_deactivated;Le mode économie d'énergie est désactivé
+settings_app_DataSaving_title;Mode économie des données mobiles
+settings_app_DataSaving_description;Économisez les données mobiles/la bande passante en limitant les requêtes au serveur.\nL'activation du mode économie des données mobiles peut entraîner un intervalle de rafraîchissement plus long des données du jeu.
+settings_app_DataSaving_activated;Mode économie des données mobiles activé
+settings_app_DataSaving_deactivated;Mode économie des données mobiles désactivé
+auction_FilterType;Type d'article
+auction_bidTooLow;L'offre est trop basse.
+villageList_Delete_Title;Supprimer le groupe de villages
+villageList_Delete_Button;Supprimer ce groupe
+villageList_Delete_Description;Voulez-vous supprimer ce groupe de village ?
+villageList_Delete_Description2;Les villages du groupe ne seront pas affectés.
+gameworldNews_title;Nouvelles et mises à jour
+moreInformation;Plus d'informations
+remainingGold;Or restant : {{goldAmount}} {{goldIcon|Sprite}}
+messages_addEmoji_title;Ajouter un émojis
+messages_select_emojis;Sélectionne l'émojis
+cams_resend_email_wait_error;Merci de patienter avant d'envoyer un autre e-mail.
+cams_settings_accountDeletion_infoGold;Après avoir supprimé votre avatar, vous recevrez un e-mail pour transférer votre or restant vers un autre avatar. \n<b>Gardez à l'espri<nobr>t :</nobr></b>  l'or restant ne peut être transféré que dans certains mondes de jeu.
+cams_changeMail_title;Changer l'adresse e-mail
+cams_changeMail_description;Pour changer votre adresse e-mail, vous devez pouvoir accéder à l'adresse e-mail actuelle et à la nouvelle.
+cams_changeMail_socialHint;Le fait de changer d'e-mail n'affectera pas  votre connexion avec Facebook, Google ou Apple.
+cams_changeMail_cantAccess;Vous ne pouvez pas accéder à votre e-mail ?
+cams_changeMail_sentVerification;Nous avons envoyé un e-mail de vérification à :{{mail}}
+cams_changeMail_checkInbox;Merci de vérifier votre boîte de réception et de suivre les instructions pour continuer.
+cams_changeMail_verificationCode;Code de confirmation d'e-mail :
+cams_changeMail_verifyButton;Vérifier l'e-mail
+cams_changeMail_enterNew_description;Entrez votre nouvelle adresse e-mail ci-dessous. Nous enverrons un e-mail de confirmation à cette adresse.
+cams_changeMail_enterNew_description2;Suivrez les instructions contenues dans l'e-mail pour continuer.
+cams_changeMail_enterNew_input;Entrez votre nouvelle adresse e-mail :
+cams_changeMail_enterNew_input_placeholder;Nouvelle adresse e-mail
+cams_changeMail_enterNew_button;Changer d'adresse e-mail
+cams_changeMail_done_title;Adresse e-mail mise à jour
+cams_changeMail_done_description1;Votre adresse e-mail a été mise à jour pour {{mail}}
+cams_changeMail_done_description2;Vous serez automatiquement déconnecté(e) et redirigé(e) vers la page de connexion. Merci d'utiliser votre nouvelle adresse e-mail pour vous connecter.
+cams_changeMail_done_redirecting;Redirection vers la connexion {{time}}...
+bonusValue;+ {{value}}
+value;{{value}}
+ratioValues_Colon;{{a}}:{{b}}
+genericValue;{{VALUE}}
+enterAmount;Saisir la quantité
+symbol_minus;-
+applyFilter;Appliquer le filtre
+resetFilter;Réinitialiser le filtre
+rallyPoint_troopsOverview_outgoingMission_50_heroCentricAdventure;En route pour l'aventure
+rallyPoint_troopsOverview_returningFromAdventure_heroCentricAdventure;Revient d'une aventure
+silverExchangePopup_AvailableSilver;Pièces d'argent disponibles
+silverExchangePopup_SilverStatus;Actuellement, {{AMOUNT|LongNumber}} de vos pièces d'argent sont placées dans des ventes en cours
+silverExchangePopup_SilverError;Vous n'avez pas assez d'argent pour réaliser cette action.
+silverExchangePopup_GoldError;Vous n'avez pas assez d'or pour réaliser cette action.
+hero.status50_heroCentricAdventure;Votre héros est parti pour une aventure.
+inventoryItem_quality_1;Qualité 1
+inventoryItem_quality_2;Qualité 2
+inventoryItem_quality_3;Qualité 3
+inventoryItem_rarity_common_headGear;Casque commun
+inventoryItem_rarity_uncommon_headGear;Casque peu courant
+inventoryItem_rarity_rare_headGear;Casque rare
+inventoryItem_rarity_epic_headGear;Casque épique
+inventoryItem_rarity_legendary_headGear;Casque légendaire
+inventoryItem_rarity_common_utility;Équipement commun
+inventoryItem_rarity_uncommon_utility;Équipement peu courant
+inventoryItem_rarity_rare_utility;Équipement rare
+inventoryItem_rarity_epic_utility;Équipement épique
+inventoryItem_rarity_legendary_utility;Équipement légendaire
+inventoryItem_rarity_common_weapon;Arme commune
+inventoryItem_rarity_uncommon_weapon;Arme peu courante
+inventoryItem_rarity_rare_weapon;Arme rare
+inventoryItem_rarity_epic_weapon;Arme épique
+inventoryItem_rarity_legendary_weapon;Arme légendaire
+inventoryItem_rarity_common_armour;Armure commune
+inventoryItem_rarity_uncommon_armour;Armure peu courante
+inventoryItem_rarity_rare_armour;Armure rare
+inventoryItem_rarity_epic_armour;Armure épique
+inventoryItem_rarity_legendary_armour;Armure légendaire
+inventoryItem_rarity_common_boots;Bottes communes
+inventoryItem_rarity_uncommon_boots;Bottes peu courantes
+inventoryItem_rarity_rare_boots;Bottes rares
+inventoryItem_rarity_epic_boots;Bottes épiques
+inventoryItem_rarity_legendary_boots;Bottes légendaires
+inventoryItem_rarity_common_consumable;Consommables
+inventoryItem_rarity_uncommon_consumable;Consommable peu courant
+inventoryItem_rarity_rare_consumable;Consommable rare
+inventoryItem_rarity_epic_consumable;Consommable épique
+inventoryItem_rarity_common_horse;Monture
+inventoryItem_rarity_uncommon_horse;Cheval peu commun
+inventoryItem_rarity_rare_horse;Cheval rare
+inventoryItem_rarity_epic_horse;Cheval épique
+inventoryItem_rarity_legendary_horse;Cheval légendaire
+inventoryItem_rarity_common_material;Consommables
+inventoryItem_rarity_uncommon_material;Consommable peu courant
+inventoryItem_rarity_rare_material;Consommable rare
+inventoryItem_rarity_epic_material;Consommable épique
+search_item;Rechercher un article
+search_select_item;Sélectionner un article
+avatar_confirmation_infoText_delete_goldBough;Une fois lancé, le processus de suppression de votre avatar durera <b>au moins trois jours</b>, car cet avatar a été concerné par un achat d'or récent.\nUn avatar en suppression ne peut plus participer aux ventes aux enchères ni utiliser le centre d'échange.\nIci, vous pouvez annuler la suppression à tout moment.
+combatSimulator_addItemEffect;Ajouter un effet d'objet
+combatSimulator_editItemEffect;Modifier l'effet de l'objet
+addItemEffect_title;Ajouter un effet d'objet du héros
+addItemEffect_description;Ajouter des effets distincts pour refléter les bonus individuels de tous les objets possibles du héros.
+addItemEffect_importHeroEquipment;Importer l'équipement de votre héros
+addItemEffect_importHeroEquipment_success;Équipement de héros importé
+addItemEffect_selectEffect;Sélectionner un effet d'objet
+addItemEffect_selectItem;Sélectionner un objet
+addItemEffect_selectMagnitude;Sélectionner la grandeur
+addItemEffect_selectUnit;Sélectionnez l'unité
+addItemEffect_missingMagnitude;Absence d'amplitude
+addItemEffect_effect_2;Réduction des dommages
+addItemEffect_effect_6;+ Points de santé supplémentaires par jour
+addItemEffect_effect_12;+ Augmentation d'attaque et de défense pour une unité spécifique
+addItemEffect_effect_13;+ Augmentation de force de combat
+cams_newMail_title;Nouvelle adresse e-mail
+cams_verifyNewMail_title;Confirmez votre nouvelle adresse e-mail
+cams_verifyCurrentMail_title;Confirmer l'adresse e-mail actuelle
+auction_notEnoughSilver;Vous n'avez pas assez d'argent.
+auction_itemGroups;Groupes d'articles
+auction_unknown;?
+auction_sortingOption_itemName;Nom de l'article
+auction_sortingOption_bidCount;Nombre de mises
+auction_sortingOption_finishedAt;Terminée dans
+auction_sortingOption_highestBid;Plus forte mise
+auction_sortingOption_highestBidder_player;Plus offrant (joueur)
+auction_sortingOption_highestBidder_alliance;Plus offrant (alliance)
+auction_sortingOption_auctionAmount;Nombre d'enchères en cours
+auction_sortingOption_nextFinishedAt;Prochaine terminée dans
+auction_sellingPrice;Prix de vente
+auction_sellingPrice_lowest;Le plus bas
+auction_sellingPrice_average;Moyennes
+auction_sellingPrice_highest;Le plus haut
+auction_result_won;<color={{colorValue|TextColor}}>Gagnée</color>
+auction_result_lost;<color={{colorValue|TextColor}}>surenchéri</color>
+auction_sellingPrice_averagePrice;Prix moyen
+auction_bidProcessTitle;Processus d'enchères
+auction_bidProcessDescription1;Vous pouvez placer des mises sur les objets qui vous intéressent.
+auction_bidProcessDescription2;Vous devez miser au moins le montant minimum pour surenchérir sur l'offre en cours.
+auction_maxBidFeatureTitle;Fonctionnalité de mise maximale
+auction_maxBidFeatureDescription1;Vous pouvez saisir votre budget maximal pour un article.
+auction_maxBidFeatureDescription2;Le système enchérit automatiquement pour vous jusqu'au maximum que vous avez fixé.
+auction_maxBidFeatureDescription3;Votre offre n'augmente que si cela est nécessaire pour que vous restiez le meilleur enchérisseur.
+auction_maxBidFeatureDescription4;Les enchères se poursuivent jusqu'à ce que vous gagnez ou qu'une autre offre dépasse votre budget maximum.
+auction_auctionDurationTitle;Durée des enchères
+auction_auctionDurationDescription1;Si le temps restant de l'enchère est inférieur à {{DURATION|Duration}}, la durée est augmentée de {{DURATION|Duration}} lorsque le meilleur enchérisseur change.
+auction_auctionWinningTitle;Gagner
+auction_auctionWinningDescription1;Le plus offrant à la fin de l'enchère remporte l'article.
+auction_auctionFinished;Cette enchère est déjà terminée.
+auction_wasJustOutbid;Vous n'êtes actuellement pas le meilleur enchérisseur.
+auction_currentHighestBidder;meilleur enchérisseur actuel
+auction_currentHighestBid;Plus forte mise actuelle
+auction_yourMaximumBid;Votre mise maximum
+auction_showFinished;Afficher les enchères terminées
+auction_deleteAllFinished;Effacer toutes les enchères terminées
+auction_startedAt;Démarrée(s) : {{TIME|DateTime}} | En cours
+auction_canceled;Annulé
+auction_finished;Terminé
+auction_finishedAt;Fin :{{TIME|DateTime}}
+auction_itemAuction_title;Vente aux enchères
+auction_itemAuction_info;Cliquez sur un article de votre inventaire pour démarrer une enchère. D'autres joueurs peuvent faire une offre pour l'obtenir. Une enchère peut durer jusqu'à {{INT}} heures.
+auction_whatHappensNext_title;Que se passe-t-il ensuite ?
+auction_whatHappensNext_info1;Le meilleur enchérisseur achète automatiquement l'objet lorsque le temps est écoulé.
+auction_whatHappensNext_info2;Vous recevrez l'argent lorsque la vente sera terminée.
+auction_whatHappensNext_info3;Vous serez informé lorsque votre article sera vendu.
+auction_error_cannotSell;Cet équipement ne peut pas être vendu aux enchères.
+auction_error_onlyHorse;Vous ne pouvez pas vendre votre seul cheval.
+auction_sellItem;Vendre un objet
+auction_sales;Ventes
+auction_selectBatchSize;Sélectionnez la taille du lot
+auction_selectBatchSize_batches;<b>{{COUNT}}x</b> lots d'objets
+auction_selectFilter_title;Sélectionner un filtre
+goldShop_upTo;Jusqu'à
+shopPromotion_openShop;Ouvrir la boutique
+shopPromotion_goldPromotionTitle;Promotion d'or active
+shopPromotion_limitedTimeOffer;Offre à durée limitée !
+shopPromotion_goldPromotionDescription;Obtenez plus d'or pour le même prix maintenant.
+shopPromotion_timeRemaining;Temps restant :
+hero_adventures_watchAdReduceDuration_title;Réduire la durée de l'aventure de {{AMOUNT}} %
+hero_adventures_watchAdReduceDuration_description;Regardez une vidéo pour réduire la durée de la <b>prochaine</b> aventure de votre héros.
+hero_adventures_watchAdIncreaseDanger_title;Augmenter le danger de l'aventure à difficile
+hero_adventures_watchAdIncreaseDanger_description;Regardez une vidéo pour augmenter le danger de <b>la prochaine aventure normale</b> à difficile pour gagner plus d'XP de héros.
+hero_adventures_watchAdActive;Actif pour la prochaine aventure.
+hero_adventures_watchAdActiveNormal;Actif pour la prochaine aventure.
+hero_crafting_action_error_nonEpic;Il doit s'agir d'un article identique, de même rareté et de même qualité.
+berichte.adventure_heroCentric;{{VILLAGE_NAME}} se lance à l'aventure
+reports_share_notShareable;Ce rapport ne peut pas être partagé.
+dailyQuests_dailyMaxReached;Maximum journalier atteint
+achievementQuests.DailyQuest_12_description;Ouvrir le jeu dans un navigateur sur ordinateur et regarder une vidéo.
+achievementQuests.DailyQuest_12_additionalInformation;www.travian.com/fr
+achievementQuests.DailyQuest_13_description;Regardez une vidéo pour améliorer vos bâtiments plus rapidement, par exemple.
+achievementQuests.DailyQuest_13_additionalInformation;Ou cliquez sur le bouton "Regarder la vidéo" pour regarder directement une vidéo sans avantages supplémentaires.
+addItemEffect_effect_11;+ Augmentation de la puissance d'attaque contre les Natars
+auction_started;La vente aux enchères a commencé
+auction_error_batchSize;Il n'y a pas assez d'articles à vendre.
+auction_graph_notEnoughData;Données insuffisantes
+auction_emptyInventory;- Vous n'avez actuellement aucun article à vendre -
+RelativeTime_2_word;[data>1:{{data}}heures] [data<2:{{data}} heure]
+gold_action_halveDuration;durée réduite de moitié
+goldShop_advantage_Value_Duration;<b>+{{VALUE}}<nobr> </nobr>%</b> pour <b>[DURATION>6:{{DURATION}} jours] [DURATION<7:{{DURATION|Mult|24}} heures]</b>
+goldShop_advantage_Value_Active;<b>+{{VALUE}}<nobr>%</nobr></b> actif pou<nobr>r :</nobr>
+goldShop_upgrade;Développer
+goldShop_advantage_stillActiveFor;Encore actif pendant :
+goldShop_advantage_stillActiveFor_Value;{{DURATION}} jusqu'à {{TIME}}
+goldShop_advantage_videoFeatureOnCD;Vous ne pouvez activer le bonus vidéo qu'une fois par jour.\nRemise à zéro quotidienne dans : {{TIMESTAMP|Countdown}}
+goldShop_advantage_popup_mainInfoHeader_ProductionboostLumber;Augmente la <b>production de bois</b> dans tous vos villages.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostClay;Augmente la <b>production d'argile</b> dans tous vos villages.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostIron;Augmente la <b>production de fer</b> dans tous vos villages.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostCrop;Augmente la <b>production de céréales</b> dans tous vos villages.
+goldShop_advantage_popup_mainInfoBody;Le bonus s'applique à la production de base et à tous les autres bonus supplémentaires.
+goldShop_advantage_popup_premiumInfo;Vous pouvez activer le bonus avec de l'or et obtenir un bonus de production de +{{VALUE}} %.\nVous pouvez activer a prolongation automatique pour une durée de bonus permanente.
+goldShop_advantage_popup_videoFeatureInfo;Ou vous pouvez regarder une courte vidéo et obtenir un plus petit bonus de production de +{{VALUE}}<nobr> </nobr>%.\n<b>Le bonus vidéo ne peut être activé qu'une fois par jour pour chaque ressource.</b>
+goldShop_advantage_popup_upgradeInfo;À tout moment, vous pouvez passer au bonus de production de +{{VALUE}} % avec de l'or.
+goldShop_advantage_upgradePopupInfo1;La mise à niveau du bonus de ressource supprimera votre bonus actif actuel.
+goldShop_advantage_upgradePopupInfo2;Vous obtiendrez +{{VALUE}}% pour [DURATION>6:{{DURATION}} jours][DURATION<7:{{DURATION|Mult|24}}] à la place.
+goldShop_advantage_upgradePopup_title;Bonus d'amélioration
+productionOverview_Bonus;+{{VALUE}}% production
+hero_adventures_watchAdReduceDuration_toast;Durée de l'aventure réduite.
+hero_adventures_watchAdIncreaseDanger_toast;Danger de l'aventure augmenté.
+hero_consumablePopup_amountEquippedAfter;Quantité équipée après :
+hero_consumablePopup_amountEquippedAfterUse;Quantité équipée après utilisation :
+hero_consumablePopup_amountLeftInInventory;Quantité restante dans l'inventaire :
+cams_recover_password_cooldown;Merci de patienter {{VALUE}}
+cams_settings_changePassword_cooldown;Merci de patienter {{VALUE}}
+infobox_productionBoost_upgradeButton;Développer
+infobox_productionBoost_upgradeBonusWithGold;Améliorez et prolongez votre bonus avec de l'or pour obtenir +{{PREMIUM_PERCENTAGE}} % pendant {{TIME}} heures.
+infobox_productionBoost_expires;{{PERCENTAGE}} {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresLumber;Le bonus de +{{PERCENTAGE}} % de production de bois expire dans {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresClay;Le bonus de +{{PERCENTAGE}} % de production d'argile expire dans {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresIron;Le bonus de +{{PERCENTAGE}} % de production de fer expire dans {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresCrop;Le bonus de +{{PERCENTAGE}} % de production de céréales expire dans {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expired;{{PERCENTAGE}}
+infobox_productionBoost_expiredLumber;Le bonus de +{{PERCENTAGE}}<nobr> </nobr>% de production de bois a <b>expiré</b>.
+infobox_productionBoost_expiredClay;Le bonus de +{{PERCENTAGE}}<nobr> </nobr>% de production d'argile a <b>expiré</b>.
+infobox_productionBoost_expiredIron;Le bonus de +{{PERCENTAGE}}<nobr> </nobr>% de production de fer a <b>expiré</b>.
+infobox_productionBoost_expiredCrop;Le bonus de +{{PERCENTAGE}}<nobr> </nobr>% de production de céréales a <b>expiré</b>.
+infobox_levelUpProductionReminder;Augmentez la production de ressources dans tous vos villages contre de l'or (+{{PREMIUM_PERCENTAGE}} %) ou en regardant une vidéo (+{{VIDEO_PERCENTAGE}} %)
+infobox_oneTimeProductionBoostReminder;Vous pouvez maintenant réactiver votre bonus de ressources de +{{VIDEO_PERCENTAGE}} % en regardant une vidéo.
+travelSimulator_title;Simulateur de temps de trajet
+travelSimulator_sourceTribe;Emplacement de départ
+travelSimulator_noLocationSelected;Aucun lieu n'est sélectionné
+travelSimulator_slowestUnit_title;Unité la plus lente
+travelSimulator_slowestUnit_settings;{{UNIT}} | Vitesse : {{SPEED}}
+travelSimulator_TournamentSquareLevel_info;(Seulement pour une distance >20 cases)
+travelSimulator_tournamentSquareLevel_option;{{LEVEL}} | {{VALUE}} %
+travelSimulator_unitSelection_title;Sélectionnez l'unité la plus lente
+travelSimulator_unitSelection_unitType;Type d'unité
+travelSimulator_unitSelection_unitSpeed;Vitesse de l'unité
+travelSimulator_unitSelection_selectedUnitSpeed;Vitesse : {{SPEED}}
+travelSimulator_calculation_land;<b>Terre<nobr> </nobr>:</b> {{VALUE}}
+travelSimulator_calculation_sea;<b>Mer<nobr> </nobr>:</b> {{VALUE}}
+travelSimulator_heroAttending;Héros présent
+travelSimulator_vikingRaidBonus;Prime Viking de raid
+travelSimulator_troopSpeedArtefactEffect;Effet de l'artéfact "troupes plus rapides"
+travelSimulator_toast_selectSourceAndTarget;Sélectionnez un emplacement de départ et une destination valides !
+travelSimulator_toast_selectSourceTribe;Sélectionnez un peuple valide !
+IOSAppTrackingTransparencyMessage;Choisissez "Autoriser" pour utiliser les informations de l'appareil pour un contenu publicitaire plus pertinent
+goldShop_advantage_Value_Duration_Hours;<b>+{{VALUE}}<nobr> </nobr>%</b> pour <b>{{DURATION}}<nobr> </nobr>heures</b>
+travelSimulator_tournamentSquareLevel_title;Niveau de la place du tournoi
+travelSimulator_troopSpeedAncientPower;Pouvoir ancien de vitesse des troupes
+RelativeTime_Formatted;[weeks>0 :{{weeks}} s ][days>0 :{{days}} j ]{{data}}
+settings_account_tab;Compte
+settings_notification_tab;Notifications de push
+settings_app_PushNotifications_popup_title;Notifications de push
+settings_app_PushNotifications_popup_header;Permettez-nous de vous envoyer des notifications
+settings_app_PushNotifications_popup_info1;Pour recevoir des notifications push avec des actualités et des informations utiles sur le jeu, autorisez d'abord les notifications de notre part.
+settings_app_PushNotifications_popup_info2;Vous pouvez activer les notifications dans les paramètres de l'application de votre mobile.
+settings_app_PushNotifications_popup_info3;Vous pouvez également revenir ici quand vous le souhaitez pour désactiver à nouveau les notifications.
+settings_app_PushNotifications_popup_action_button;Ouvrir les paramètres de l'application
+ratioValueMax;/ {{a}}
+market_sendResources_completed;Achevé
+market_sendResources_villageNotFound;Introuvable. Vous ne pouvez envoyer des ressources que vers vos propres villages, les membres de votre alliance et de votre coalition.
+no_ads_popup_title;Pas de publicité vidéo
+no_ads_popup_header;Un problème s'est produit lors de la lecture d'une publicité vidéo.
+no_ads_popup_info1;Il peut y avoir plusieurs raisons à cela :
+no_ads_popup_info2; • Il n'y a actuellement aucune annonce disponible pour votre région.
+no_ads_popup_info3; • Vos paramètres de confidentialité limitent le nombre d'annonces qui peuvent être fournies.
+no_ads_popup_info4; • Un problème technique avec notre application ou notre fournisseur de publicités.
+no_ads_popup_settings_msg;Veuillez autoriser les annonces personnalisées dans vos paramètres de confidentialité.
+no_ads_popup_support_msg;Contactez notre assistance si le problème persiste.
+no_ads_popup_support_button;Contacter le support
+city_upgradeToACity_wwVillageNotUpgradeable;Les villages Merveilles du monde ne peuvent pas être transformés en cités.
+travelSimulator_selectMagnitude;Sélectionner la grandeur
+marketplace_merchantsOverview_returningTo;Retour à <b>{{Village}}</b> de <b>{{Player}}</b>
+market_sendResources_sendAgain;Renvoyer
+search_village_notFound;Introuvable. Vous ne pouvez envoyer des ressources que vers vos propres villages, les membres de votre alliance et de votre coalition.
+settings_app_AnimationsPayoffs_activated;L'animation d'envoi de troupes/marchands est activée
+settings_app_AnimationsPayoffs_deactivated;L'animation d'envoi de troupes/marchands est désactivée
+hero_resourceTransferPopup_empty;Il n'y a pas de ressources à transférer depuis l'inventaire du héros.
+hero_toast_appearanceChanged;Apparence modifiée
+alliance_editMemberPopup_customNote;Note personnalisée
+alliance_editMemberPopup_titleOfRole;Rôle
+alliance_editMemberPopup_setSpecialization;Spécialisation
+alliance_role_offensive;Attaque
+alliance_role_defensive;Défense
+alliance_role_hybrid;Hybride
+alliance_role_scout;Éclaireur
+alliance_role_support;Soutien
+alliance_role_wow_hammer;Missile
+alliance_role_none;Aucun
+ad_fallback_popup_title;Réclamez vos récompenses
+ad_fallback_popup_info;Aucune publicité vidéo n'est actuellement disponible, mais nous voulons tout de même récompenser votre fidélité ! Veuillez patienter pendant que nous préparons une récompense.
+ad_fallback_popup_rewardGranted;Récompense accordée
+ad_fallback_popup_claim;Réclamer la récompense
+ad_fallback_popup_closeWarning;Fermer cet écran avant la fin annulera la récompense
+gameplay_tip_1;Vous pouvez former des colons dans une résidence ou un palais (le premier au niveau 10).
+gameplay_tip_2;Vous ne pouvez construire qu'un seul palais par avatar. Il fournit jusqu'à trois emplacements d'extension, tandis qu'une résidence n'en fournit que deux.
+gameplay_tip_3;Pour changer de capitale, construisez un palais dans un nouveau village. Notez que les bâtiments spécifiques de votre ancienne capitale seront perdus ou déclassés.
+gameplay_tip_4;Vous pouvez fonder ou conquérir un autre village avec suffisamment de points de culture.
+gameplay_tip_5;Gagnez des points de culture en améliorant les bâtiments et en organisant des fêtes dans l'hôtel de ville.
+gameplay_tip_6;Les grandes fêtes peuvent être organisées à l'hôtel de ville (niveau 10). Elles rapportent plus de points de culture, mais coûtent davantage de ressources.
+gameplay_tip_7;Pour conquérir un village, réduisez sa loyauté jusqu'à zéro grâce à des administrateurs formés dans votre résidence ou votre palais.
+gameplay_tip_8;Effectuez la recherche des administrateurs dans l'académie avant de les entraîner dans une résidence ou un palais.
+gameplay_tip_9;Vous pouvez conquérir des villages appartenant aux Natars ou aux autres joueurs.
+gameplay_tip_10;Votre capitale ne peut pas être conquise par d'autres joueurs.
+gameplay_tip_11;Utilisez le scanner de céréaliers pour trouver des villages possédant 9 ou 15 champs de céréales et capables de subvenir aux besoins d'une armée plus importante.
+gameplay_tip_12;Dans la capitale, les champs de ressources peuvent être améliorés à un niveau plus élevé que dans les autres villages.
+gameplay_tip_13;Envoyez des ressources aux villages alliés en utilisant la place du marché.
+gameplay_tip_14;Vous pouvez échanger des ressources avec d'autres joueurs sur la place de marché.
+gameplay_tip_15;Augmentez la capacité de vos marchands en améliorant le comptoir de commerce.
+gameplay_tip_16;Améliorez le manoir du héros au niveau 10 pour annexer une oasis et augmenter votre production de ressources.
+gameplay_tip_17;Améliorez la force de vos troupes à la forge. Ces améliorations s'appliquent immédiatement à toutes les unités de ce type, y compris celles déjà entraînées.
+gameplay_tip_18;Utilisez le simulateur de combat pour estimer l'issue des batailles avant d'attaquer. Plus vous ajoutez d'informations à la simulation, plus le résultat sera précis.
+gameplay_tip_19;Avec le Club Gold, vous pouvez activer l'évasion des troupes dans votre capitale pour protéger automatiquement votre armée des attaques entrantes.
+gameplay_tip_20;Quand vos troupes reviennent au village, l'évasion des troupes est temporairement désactivée pour une durée de 10 secondes.
+gameplay_tip_21;Améliorez vos espions à la forge pour renforcer leurs capacités d'espionnage.
+gameplay_tip_22;Les murs augmentent considérablement la défense de votre village.
+gameplay_tip_23;Construisez des cachettes pour protéger vos ressources des pillages ennemis.
+gameplay_tip_24;Les Gaulois peuvent utiliser des fabricants de pièges pour capturer les attaquants avant même que la bataille ne commence.
+gameplay_tip_25;Pour libérer les troupes piégées, lancez et gagnez une attaque normale contre le village qui les a piégées.
+gameplay_tip_26;Les attaquants peuvent libérer 75% des troupes piégées, mais le défenseur peut choisir de libérer pacifiquement 100% d'entre elles.
+gameplay_tip_27;Construisez un hôpital pour soigner jusqu'à 40% de vos troupes perdues au combat.
+gameplay_tip_28;Les Gaulois peuvent utiliser un fabricant de pièges pour capturer les troupes attaquantes avant même que la bataille ne commence.
+gameplay_tip_29;Construisez un tailleur de pierre dans votre capitale pour augmenter la résistance de vos bâtiments face aux catapultes et aux béliers.
+gameplay_tip_30;Vous pouvez mettre votre héros à l'abri pendant les attaques ennemies contre son village de rattachement afin de le protéger.
+gameplay_tip_31;Éliminez des animaux dans des oasis inoccupées pour gagner des ressources supplémentaires. Les animaux les plus forts rapportent plus de ressources.
+gameplay_tip_32;Éliminez des animaux dans des oasis inoccupées avec votre héros pour gagner de l'expérience.
+gameplay_tip_33;Utilisez des cages pour capturer des animaux dans des oasis inoccupées et renforcer votre village.
+gameplay_tip_34;Équipez votre héros d'objets comme des onguents ou une armure spécifique pour accélérer la régénération de sa santé.
+gameplay_tip_35;Réanimez progressivement votre héros  avec des ressources, ou instantanément avec un seau.
+gameplay_tip_36;Vous pouvez détruire des bâtiments une fois que votre bâtiment principal atteint le niveau 10.
+gameplay_tip_37;Construisez une ambassade pour rejoindre une alliance ou fonder la vôtre.
+vacationMode_title;Mode vacances
+vacationMode_vacation;Vacances
+vacationMode_vacationModeActive;Mode vacances activé
+vacationMode_info;Utilisez le mode vacances pour protéger vos villages pendant votre absence. Les actions suivantes sont désactivées en mode vacances :
+vacationMode_deactivated_action1;Envoyer ou recevoir des troupes
+vacationMode_deactivated_action2;Partir à l'aventure avec le héros
+vacationMode_deactivated_action3;Donner de nouveaux ordres de construction ou entraîner des troupes
+vacationMode_deactivated_action4;Utiliser la place du marché (y compris les routes commerciales)
+vacationMode_deactivated_action5;Organiser des fêtes, lancer des recherches ou des améliorations
+vacationMode_deactivated_action6;Créer ou rejoindre des alliances
+vacationMode_deactivated_action7;Donner des ressources pour les bonus d'alliance
+vacationMode_deactivated_action8;Participer aux enchères
+vacationMode_deactivated_action9;Changer de capitale
+vacationMode_deactivated_action10;Supprimer votre compte
+vacationMode_deactivated_territory_action1;Améliorer un village en cité
+vacationMode_deactivated_territory_action2;Votre compte ne contribue pas à la population régionale de votre alliance et vos villages ne reçoivent aucun point de victoire.
+vacationMode_conditions_title;Conditions réunies pour activer le mode vacances
+vacationMode_duration_info;Combien de jours le mode vacances doit-il durer ?
+vacationMode_durationUntil;Mode vacances jusqu'au <b>{{DATE}}</b>
+vacationMode_availableDays;Jours disponibles restants <b>{{AVAILABLE}}/{{TOTAL}}</b>
+vacationMode_startButton;Activer le mode vacances maintenant
+vacationMode_error_noCancelTime;Vous ne pouvez désactiver le mode vacances qu'après {{HOURS}} heures
+vacationMode_error_missingRequirement;Vous devez remplir toutes les conditions pour activer le mode vacances
+vacationMode_error_noVacationDaysLeft;Vous n'avez plus de jours de vacances disponibles
+vacationMode_error_cooldown;Vous ne pouvez activer le mode vacances que {{HOURS}} heures après sa dernière désactivation
+vacationMode_abortSuccess;Le mode vacances a été désactivé !
+vacationMode_remainingDays;Jours restants en mode vacances
+vacationMode_runsUntil;Mode vacances actif jusqu'au
+vacationMode_abortInfo;Vous pouvez désactiver le mode vacances au plus tôt le <b>{{DATE}}</b>
+vacationMode_abortAvailable;Vous pouvez maintenant annuler le mode vacances
+vacationMode_abortConfirmHeader;Voulez-vous vraiment annuler le mode vacances ?
+vacationMode_abortConfirmInfo;Les jours non utilisés seront remboursés. Cette action ne peut pas être annulée.
+vacationMode_startCooldownInfo;Vous pouvez activer le mode vacances au plus tôt le <b>{{DATE}}</b>
+vacationMode_abortButton;Désactiver le mode vacances
+vacationMode_conditions_has_outgoing_troops;Pas de troupes sortantes
+vacationMode_conditions_has_incoming_troops;Pas de troupes entrantes vers vos villages ou vos oasis
+vacationMode_conditions_has_reinforcing_troops_for;Aucune assistance envoyée à d'autres joueurs
+vacationMode_conditions_has_reinforcing_troops_from;Aucun renfort d'autres joueurs dans vos villages ou vos oasis
+vacationMode_conditions_has_ww_village;Aucun village Merveille du monde possédé
+vacationMode_conditions_has_artifact_village;Aucun village artéfact possédé
+vacationMode_conditions_has_beginners_protection;Pas de protection des débutants
+vacationMode_conditions_has_trapped_troops;Il n'y a aucune troupe dans vos pièges, et aucune de vos troupes, y compris votre héros, n'est prise au piège
+vacationMode_conditions_has_deletion_event;Votre avatar n'est pas en cours de suppression
+vacationMode_conditions_has_conquered_oase;Aucune oasis annexée au cours des {{HOURS}} dernières heures. Vous pouvez activer le mode vacances une fois que {{HOURS}} heures se sont écoulées depuis l'annexion ou la perte d'une oasis.
+vacationModePopup_info;Votre compte sera protégé pendant le mode vacances. Cependant, votre production de ressources continuera et vos troupes consommeront toujours des céréales. <color=red>Cela peut entraîner la mort de vos troupes par famine.</color>
+vacationModePopup_start_info;Êtes-vous sûr de vouloir activer le mode vacances pour <b>{{DAYS}}</b> [DAYS>1:jours][DAYS<2:jour] ? Le mode vacances peut être annulé avec de l'or après un temps de recharge de {{COOLDOWN}} heures.
+vacationModePopup_troopConsumption;Consommation de vos propres troupes
+vacationModePopup_starvationEstimate;Début de famine estimée à
+vacationModePopup_starvationTitle;Consommation de vos propres troupes
+goldTransfer_accept_gift;Oui, transférez l'or
+goldTransfer_decline_gift;Non, ne transférez pas l'or
+goldTransfer_accepted_toast;Transfert d'or accepté.
+goldTransfer_declined_toast;Transfert d'or refusé.
+smithy_requirementsNotSatisfied;Les conditions pour améliorer cette unité ne sont pas remplies
+vacationModeLobby_status;En vacances
+block_vacationMode_toast;Action interdite pendant le mode vacances.
+goldTransfer_verifyOwnership_title;Vérification de propriété
+goldTransfer_verifyOwnership_description;Pour transférer l'or acheté et non utilisé à un avatar existant, vous devez d'abord confirmer que vous en êtes propriétaire en saisissant l'adresse e-mail à laquelle le code de transfert a été envoyé.
+goldTransfer_verifyOwnership_emailPlaceholder;Adresse e-mail
+goldTransfer_verifyOwnership_errorNoEmail;Merci d'indiquer votre adresse e-mail.
+goldTransfer_verifyOwnership_errorAlreadyUsed;Ce lien de transfert d'or a déjà été utilisé.
+goldTransfer_verifyOwnership_errorInUse;Ce lien de transfert d'or n'est pas valide.
+goldTransfer_verifyOwnership_verifyButton;Vérifier
+goldTransfer_selectTargetAvatar_title;Sélectionnez l'avatar cible
+goldTransfer_selectTargetAvatar_description;Sélectionnez l'avatar vers lequel vous souhaitez transférer votre or.
+goldTransfer_transferableGold_label;Or transférable :
+goldTransfer_enterAvatarName_header;Indiquez le nom d'avatar :
+goldTransfer_avatarName_placeholder;Nom d'avatar
+goldTransfer_searchAvatar_Button;Rechercher un avatar
+goldTransfer_searchAvatarNothingFound_error;Aucun avatar actif portant ce nom n'a été trouvé.
+goldTransfer_ownAvatarList_header;Sélectionnez l'un de vos avatars actifs ({{account}})
+goldTransfer_selectOwnAvatarConfirm_Button;Sélectionner l'avatar
+goldTransfer_selectGameworld_title;Choisissez un monde de jeu
+goldTransfer_selectGameworld_description;Ce nom d'avatar a été trouvé sur plusieurs mondes de jeu. Vous ne pouvez transférer votre or qu'à un seul avatar. Sélectionnez un monde de jeu.
+goldTransfer_selectGameworldConfirm_Button;Choisissez un monde de jeu
+goldTransfer_changeAvatar_Button;Changer le nom d'avatar
+goldTransfer_confirm_title;Confirmez le transfert
+goldTransfer_confirm_Button;Confirmez le transfert
+goldTransfer_confirmAvatarOnOneWorld_info;Ce nom d'avatar a été trouvé sur un monde de jeu :
+goldTransfer_confirmAvatarName_prefix;Votre nom de compte :
+goldTransfer_confirmGameworld_prefix;Monde de jeu :
+goldTransfer_transferComplete_title;Transfert réussi
+goldTransfer_transferComplete_description;Votre or a bien été transféré à <b>{{avatarname}}</b> sur <b>{{gameworldname}}.</b>
+goldTransfer_transferComplete_returnButton;Retour au jeu
+cams_settings_accountDeletion_information_warning_v2;Cette action supprimera définitivement votre compte. Le contenu suivant associé à votre compte sera perdu :\n<indent=0.5em>•  Tous les avatars appartenant à votre compte\n•  Toutes les médailles gagnées sur votre compte</indent>\n\nConfirmez en écrivant "supprimer" dans le champ ci-dessous.
+mapMarkers_popupTitle;Placer un marqueur
+mapMarkers_markerType;Type de marqueur
+mapMarkers_markerColor;Couleur du marqueur
+mapMarkers_setAlliance;Placer un marqueur pour mon alliance
+mapMarkers_type_field;Vallée
+mapMarkers_addMsg_success;Le marqueur a bien été ajouté !
+mapMarkers_saveMsg_success;Le marqueur a bien été enregistré !
+mapMarkers_noPermission_error;Demandez l'autorisation à votre chef d'alliance.
+mapMarkers_marker;Marqueur
+mapMarkers_markers;Marqueurs
+mapMarkers_listAllianceTitle;Marqueurs d'alliance
+mapMarkers_listPlayerTitle;Marqueurs de joueur
+mapMarkers_listAlliances;Alliance
+mapMarkers_listPlayers;Joueurs
+mapMarkers_listFlags;Marqueurs
+mapMarkers_deleteMarker;Supprimer le marqueur
+mapMarkers_deleteMarkerMessage;Voulez-vous supprimer ce marqueur ?
+mapMarkers_showOnMap;Afficher mes marqueurs sur la carte
+embassy_general_subtab;Général
+embassy_villagesNearby_subtab;Villages à proximité
+embassy_villagesNearby_listHeader;Villages de l'alliance/de la coalition

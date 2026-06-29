@@ -1,0 +1,2068 @@
+detail_window_header_title;{{buildingName|TranslateSuffixFor|allgemein.gid}}
+;{{INT}}
+levelWithValue;Trin {{level}}
+valueWithPercent;{{value}}%
+valueAsRankingPosition;{{value}}.
+valueChangeInBrackets;({{change|Sign}})
+valueChangeInBracketsWithPercent;({{change|Sign}}%)
+ratioValues;{{a}}/{{b}}
+coordinates;<nobr>({{x}}|{{y}})</nobr>
+village_with_coordinates;{{villageName}} <nobr>({{x}}|{{y}})</nobr>
+village_with_clickable_coordinates;{{villageName}} {{mapId|Coordinates}}
+valuePerHour;{{a}}/t
+back;Tilbage
+fill;Fyld
+hero;Helt
+done;Færdig
+remove;Fjern
+prerequisites;Forudsætninger:
+newAmount;Ny mængde
+before;før
+after;efter
+permissions;Tilladelser
+changesSaved;Ændringer gemt!
+genericError;Uventet fejl
+allianceTagInBrackets;[{{allianceId|AllianceLink}}]
+autocompleteNoResult;Intet match fundet
+medalAdded;Medalje tilføjet
+continueEdit;Fortsæt med at redigere
+levelUp;Opgraderet!
+non_existing_object;[?]
+sorting;Sortering
+copiedToClipboard;Kopieret til udklipsholder
+maximumLengthError;Maksimal længde: {{max}}.
+sortingOptions;Indstillinger for sortering
+WIP_comingSoon;Funktionen kommer snart!
+upgradeTab_fastForward_button;{{Percent}}% hurtigere
+upgradeTab_masterBuilder_button;Opfør med\nBygmester {{goldIcon|Sprite}}{{goldCost}}
+upgradeTab_adBoostPopup_boost;{{BOOST}}% boost
+infoTab_upgradingToLevel;Opgraderer nu til trin {{level}}:
+infoTab_genericCurrently;I øjeblikket:
+infoTab_genericAtLevel;På niveau {{INT}}:
+infoTab_genericEffect;{{INT}}
+infoTab_currentProduction;Nuværende produktion:
+infoTab_productionAtLevel;Produktion ved trin {{INT}}:
+infoTab_effectPerHour;{{INT}} pr. time
+networkIssues;Mistet forbindelsen til spilserveren.
+cantLoadServerList;Serverlisten kunne ikke indlæses på grund af netværksproblemer. Kontroller, at enheden har forbindelse til internettet, og prøv igen.
+barracks_TrainTroops_Action;Træn tropper
+barracks_ViewTrainingsList;Se træningsliste
+barracks_unitNeedsToBeResearched;Enhed skal først udforskes i
+barracks_requiresLabel;Kræver:
+barracks_trainingCosts;Omkostninger til troppetræning
+barracks_troopsInTraining;Tropper i træning
+training_started;Træningen er startet med succes!
+targetSelection_relationLabel;Status:
+targetSelection_selectedVillage;Valgt landsby
+targetSelection_noSelectedVillage;Ingen landsby valgt
+targetSelection_ownVillages;Egne landsbyer
+targetSelection_relation0;Neutral
+targetSelection_relation1;Venlig
+targetSelection_relation2;Egen alliance
+targetSelection_relation3;Egen landsby
+targetSelection_alreadyThere_troops;Dine tropper er der allerede.
+targetSelection_alreadyThere_merchants;Dine købmænd er der allerede.
+rallyPoint_button_confirmTarget;Bekræft mål
+rallyPoint_button_prepareTroops;Forbered tropperne
+rallyPoint_button_updateWave;Opdater bølge
+rallyPoint_button_copyWave;Kopier bølge
+rallyPoint_button_newWave;Tilføj en ny bølge
+rallyPoint_sendTroops_chooseDestination;Send tropper - Vælg destination
+rallyPoint_sendTroops_sendTroopAction_1;Send tropper - bekræft
+rallyPoint_sendTroops_sendTroopAction_3;Send tropper - bekræft
+rallyPoint_sendTroops_sendTroopAction_4;Send tropper - bekræft
+rallyPoint_sendTroops_sendTroopAction_5;Send tropper - bekræft
+rallyPoint_sendTroops_sendTroopAction_72;Videresend tropper - bekræft
+rallyPoint_sendTroops_sendTroopAction_9;Træk tropperne tilbage - bekræft
+rallyPoint_sendTroops_sendTroopAction_10;Bosæt ny landsby!
+rallyPoint_sendTroops_sendTroopButton_1;Send tropper
+rallyPoint_sendTroops_sendTroopButton_3;Send tropper
+rallyPoint_sendTroops_sendTroopButton_4;Send tropper
+rallyPoint_sendTroops_sendTroopButton_5;Send tropper
+rallyPoint_sendTroops_sendTroopButton_72;Videresend tropper
+rallyPoint_sendTroops_sendTroopButton_9;Send tropper tilbage
+rallyPoint_sendTroops_sendTroopButton_10;Grundlæg ny landsby
+rallyPoint_sendTroops_coordinateX;<b>X</b> koordinat:
+rallyPoint_sendTroops_coordinateY;<b>Y</b> koordinat:
+rallyPoint_sendTroops_selectOnMap;Eller vælg placering på kort:
+rallyPoint_sendTroops_arrivalTime;<b>{{hoursLeft|Duration}}</b> kl. <b>{{hoursLeft|TimeCountUp}}</b>
+rallyPoint_sendTroops_catapultTargetPopup;Vælg katapultmål
+rallyPoint_sendTroops_catapultTarget_category_1;Bygninger til infrastruktur
+rallyPoint_sendTroops_catapultTarget_category_2;Militære bygninger
+rallyPoint_sendTroops_catapultTarget_category_3;Råstofbygninger
+rallyPoint_sendTroops_catapultTarget_random;Vilkårlig
+rallyPoint_sendTroops_catapultTarget_noBuilding;Vælg bygning
+rallyPoint_sendTroops_catapultTarget_recentTargets;Senest valgt:
+rallyPoint_sendTroops_changeHeroHomeVillage;Skift heltens hjemmelandsby
+rallyPoint_sendTroops_attackNoSelection;Vælg angrebstype
+rallyPoint_sendTroops_movementType_5;Opbakninger
+rallyPoint_sendTroops_movementType_3;Angreb
+rallyPoint_sendTroops_movementType_4;Plyndring
+rallyPoint_sendTroops_attackForwarding;Videresendelse
+rallyPoint_sendTroops_noTroopsSelected;- Ingen tropper valgt -
+rallyPoint_sendTroops_noTroopsAvailable;Kan ikke sende tropper. Der er ingen tropper til rådighed i denne landsby.
+rallyPoint_sendTroops_forwardingVillageError;Tropper kan kun videresendes til alliancemedlemmer eller egne landsbyer.
+rallyPoint_sendTroops_forwardingDestination;Videresend tropper - vælg mål
+rallyPoint_sendTroops_WaveRemoved;Bølge fjernet
+rallyPoint_sendTroops_maxWaves;Maksimalt antal bølger nået
+rallyPoint_sendTroops_notEnoughTroopsToCopy;Ikke nok tropper til at kopiere bølgen.
+rallyPoint_sendTroops_troopsSent;Tropper sendt!
+rallyPoint_sendTroops_toOverview;Til oversigten
+rallyPoint_sendTroops_backToVillage;Tilbage til landsby
+rallyPoint_sendTroops_mission;Mission:
+rallyPoint_troopsOverview_1;Indkommende angreb og plyndringer
+rallyPoint_troopsOverview_2;Udgående angreb og plyndringer
+rallyPoint_troopsOverview_3;Tilbagevendende tropper
+rallyPoint_troopsOverview_4;Egne tropper i denne landsby og dens oaser
+rallyPoint_troopsOverview_5;Fremmede tropper i landsby
+rallyPoint_troopsOverview_6;Egne tropper i andre landsbyer eller oaser
+rallyPoint_troopsOverview_7;Indkommende opbakning
+rallyPoint_troopsOverview_8;Udgående opbakning
+rallyPoint_troopsOverview_9;Udgående opbakning
+rallyPoint_troopsOverview;Oversigt over tropper
+rallyPoint_troopsOverview_consumption;Forbrug: {{cropConsumption|ShortenNumber|10000}}  {{iconName|Sprite}} pr. time
+rallyPoint_troopsOverview_arrivalTime;Ankomst om: <b>{{Duration|Countdown}}</b> d. <b>{{date|Time}}</b> 
+rallyPoint_troopsOverview_incomingMission_3;Indkommende angreb fra: 
+rallyPoint_troopsOverview_incomingMission_4;Indkommende plyndring fra: 
+rallyPoint_troopsOverview_outgoingMission_3;Angreb 
+rallyPoint_troopsOverview_outgoingMission_4;Plyndringer 
+rallyPoint_troopsOverview_outgoingMission_5;Forstærker 
+rallyPoint_troopsOverview_outgoingMission_50;Eventyr til 
+rallyPoint_troopsOverview_outgoingMission_72;Tropper videresendt til 
+rallyPoint_troopsOverview_outgoingMission_10;Grundlæggelse af en ny landsby 
+rallyPoint_troopsOverview_outgoingMission_40;Tropper flygter ud i skoven
+rallyPoint_troopsOverview_returningMission;På vej tilbage fra: 
+rallyPoint_troopsOverview_ownTroops_1;Egne tropper i 
+rallyPoint_troopsOverview_ownTroops_2;Egne tropper i 
+rallyPoint_troopsOverview_ownTroops_3;Egne tropper i 
+rallyPoint_troopsOverview_ownTroops_4;<b>Natur</b> i 
+rallyPoint_troopsOverview_ownTroops_5;Egne tropper i 
+rallyPoint_troopsOverview_ownTroops_6;Egne tropper i 
+rallyPoint_troopsOverview_ownTroops_7;Egne tropper i 
+rallyPoint_troopsOverview_foreignTroops_2;Opbakkende tropper fra 
+rallyPoint_troopsOverview_foreignTroops_4;Fangede tropper fra 
+rallyPoint_troopsOverview_ownTroopsInOther_2;Egne opbakkende tropper til 
+rallyPoint_troopsOverview_ownTroopsInOther_4;Egne fangede tropper i 
+rallyPoint_troopsOverview_origin;Oprindelse: 
+rallyPoint_troopsOverview_reinforcement;Opbakning fra 
+rallyPoint_troopsOverview_killed;Tropper dræbt!
+rallyPoint_troopsOverview_released;Tropper frigivet!
+rallyPoint_troopsOverview_forwardedTroopsButton;Videresendte tropper
+rallyPoint_troopsOverview_returnToOverview;Tilbage til oversigt
+rallyPoint_troopsOverview_incomingAttacks;<color={{colorValue|TextColor}}>{{incomings}}</color> indkommende
+rallyPoint_troopsOverview_amountIncoming;{{value}} indkommende
+rallyPoint_troopsOverview_amountOutgoing;{{value}} udgående
+rallyPoint_troopsOverview_amountReturning;{{value}} vender tilbage
+rallyPoint_troopsOverview_firstArrivalTime;Om {{timestamp|Countdown}} timer
+rallyPoint_troopsOverview_forwardTroops;Videresend
+rallyPoint_troopsOverview_MergeTroops;Saml i landsby
+rallyPoint_troopsOverview_WithdrawTroops;Send tilbage
+rallyPoint_troopsOverview_sort_1;Markerede bevægelser først
+rallyPoint_troopsOverview_sort_2;Tidligst ankommende først
+rallyPoint_troopsOverview_sort_3;Senest ankommende først
+rallyPoint_troopsOverview_sort_4;Senest sendte tropper først
+rallyPoint_troopsOverview_sort_5;Ældste sendte tropper først
+rallyPoint_troopsMerge_troopsToBeMerged;Tropper udvalgt til at blive samlet:
+rallyPoint_troopsMerge_currentGold;Nuværende guld:  {{iconName|Sprite}} {{currentGold}}
+rallyPoint_troopsMerge_goldLeft_0;{{remainingGold}} / {{maxAllowedGold}} guld tilbage til samling af tropper i dag.
+rallyPoint_troopsMerge_goldLeft_1;{{remainingGold}} / {{maxAllowedGold}} guld tilbage til samling af tropper i dag. Du kan stadig samle med råstoffer.
+rallyPoint_troopsMerge_troopsMergedToast;Tropper samlet!
+rallyPoint_raidList_beingRaided;{{current}}/{{total}} bliver plyndret
+rallyPoint_infoTab_EvasionShortDescription;Aktiver troppeundvigelse i din hovedlandsby
+rallyPoint_farmList_createNewTitle;Lav ny liste
+rallyPoint_farmList_editTitle;Rediger liste
+rallyPoint_farmList_listName;Listenavn
+rallyPoint_farmList_selectDefaultTroops;Vælg standardtropper
+rallyPoint_farmList_addTroopsButton;Tilføj tropper
+rallyPoint_farmList_editTroopsButton;Rediger tropper
+rallyPoint_farmList_setTroopsButton;Vælg tropper
+rallyPoint_farmList_createListButton;Opret liste
+rallyPoint_farmList_editListButton;Opdater liste
+rallyPoint_farmList_editTroopsTitle;Rediger tropper for plyndringsliste
+rallyPoint_farmList_deleteList;Slet liste
+rallyPoint_selectTroops;Vælg tropper
+rallyPoint_farmList_listCreated;Liste oprettet
+rallyPoint_farmList_exitList;Forlad liste
+rallyPoint_farmList_startAll;Start alle mål
+rallyPoint_farmList_startAllLists;Start alle
+rallyPoint_farmList_startSelected;Start valgte
+rallyPoint_farmList_noTarget;- Intet mål valgt -
+rallyPoint_farmList_noTargetExist;Ingen mål på denne liste
+rallyPoint_farmList_selectedAmount;{{amount}} valgt:
+rallyPoint_farmList_listUpdated;Listen er opdateret
+rallyPoint_farmList_listDeleted;Liste slettet
+rallyPoint_farmList_editWarning;- Sletning af listen sletter alle mål på denne liste\n- Redigering af tropper påvirker kun standardtropper for fremtidige mål
+rallyPoint_farmList_sortingFailed;Sorteringen mislykkedes! Prøv venligst igen!
+rallyPoint_farmList_notStartedPopupTitle;Plyndringer ikke begyndt
+rallyPoint_farmList_notStartedPopupElement;<b>{{total}}</b> på grund af {{message}}
+rallyPoint_farmList_NotStartedPopupButtonGoTo;Gå til plyndringsliste
+rallyPoint_farmList_AddTargetTitle;Tilføj mål
+rallyPoint_farmList_changeTroops;Ændr tropper
+rallyPoint_farmList_targetAdded;Mål tilføjet
+rallyPoint_farmList_targetAlreadyOnList;Målet er allerede på denne plyndringsliste, vælg venligst en anden plyndringsliste eller opret en ny.
+rallyPoint_farmList_choose;Vælg plyndringsliste
+rallyPoint_farmList_notYetRaided;Endnu ikke plyndret
+rallyPoint_farmList_EditRaids;Rediger mål
+rallyPoint_farmList_DeleteRaidsPlayerQuestion;Er du sikker på, at du vil slette [raidsAmount=1:dette mål][raidsAmount>1:disse mål]?
+rallyPoint_farmList_ChangeRaidList;Skift plyndringsliste
+rallyPoint_farmList_ChangeTarget;Skift mål
+rallyPoint_farmList_ChangeTroops;Skift tropper
+rallyPoint_farmList_DeactivateTarget;Deaktiver mål
+rallyPoint_farmList_MultiEditWarning;Du redigerer flere mål. Ændringer vil påvirke alle valgte mål
+rallyPoint_farmList_UpdateRaids;Opdater mål
+rallyPoint_farmList_filterShowTroopsTitle;Vis tropper
+rallyPoint_farmList_filterShowTroopsDescription;Viser de valgte tropper pr. mål
+rallyPoint_farmList_filterShowPopulationTitle;Vis målets indbyggertal
+rallyPoint_farmList_filterShowPopulationDescription;Viser indbyggertallet i målets landsby
+rallyPoint_farmList_filterShowDistanceTitle;Vis afstand
+rallyPoint_farmList_filterShowDistanceDescription;Viser målets afstand til din landsby
+rallyPoint_farmList_filterShowLastRaidTitle;Vis oplysninger om sidste plyndring
+rallyPoint_farmList_filterShowLastRaidDescription;Viser oplysninger om sidste plyndring af målet
+rallyPoint_farmList_filterShowBountyTitle;Vis bytte og råstoffer
+rallyPoint_farmList_filterShowBountyDescription;Viser opnået bytte og råstoffer
+marketplace_createOffer;Opret tilbud
+marketplace_myOffers_title;Mine tilbud
+marketplace_myOffers_merchants;Handelsmænd: {{count}}
+marketplace_myOffers_alliance_True;Alliance: Ja
+marketplace_myOffers_alliance_False;-
+marketplace_myOffers_interval;{{amount}} timer
+marketplace_myOffers_offerDeleted;Tilbud slettet
+marketplace_merchantsOverview_arrival;{{duration}} timer Ankommer kl. {{arrivalTime}}
+marketplace_merchantsOverview_incomingMerchants;Indkommende leverancer: {{count}}
+marketplace_merchantsOverview_outgoingMerchants;Udgående leverancer: {{count}}
+marketplace_merchantsOverview_noIncomingMerchants;- Der er ingen indkommende købmænd -
+marketplace_merchantsOverview_noOutgoingMerchants;- Der er ingen udgående købmænd -
+marketplace_merchantsOverview_IncomingCat; Indkommende
+marketplace_merchantsOverview_outgoingCat; Udgående
+marketplace_merchantsOverview_capacity;Kapacitet: {{capacity}}
+marketplace_merchantsOverview_merchantsOverview;Oversigt over købmænd
+marketplace_merchantsOverview_ArrivingSoonest;Ankommer først
+marketplace_merchantsOverview_ArrivingLatest;Ankommer senest
+marketplace_merchantsOverview_ShortestDistance;Korteste afstand
+marketplace_merchantsOverview_LongestDistance;Længste afstand
+marketplace_merchantsOverview_transportTo;Transport til <b>{{Village}}</b> tilhørende <b>{{Player}}</b>
+marketplace_merchantsOverview_transportFrom;Transport fra <b>{{Village}}</b> tilhørende <b>{{Player}}</b>
+marketplace_merchantsOverview_returningFrom;På vej tilbage fra <b>{{Village}}</b> tilhørende <b>{{Player}}</b>
+academy_research_viewResearchList;Forskning i gang
+academy_research_allUnitsResearched;Alle enheder er udforsket.
+academy_researchListPopup_title;Tropper, der udforskes
+academy_researchListPopup_remainingTime;{{timeLeft}} tilbage Klar kl. {{readyAt}}
+academy_researchListPopup_constructImmediately;Færdiggør øjeblikkeligt
+research_started;Forskningen er startet med succes!
+research_timeLeft;{{TIME|Countdown}} tilbage
+townHall_celebration_ongoingCelebration;Løbende
+topBar_perHourLabel;/h:
+topBar_maxLabel;Max:
+topBar_resourceFull;Fuld
+leftPanel_infoBox;Info box
+villagePanel_playerNameTitle;Landsbyer ejet af {{playerName}}
+villagePanel_toStatistics;Til landsbystatistikken
+villagePanel_culturePointsNeeded;Kulturpoint nødvendige til næste landsby
+mapCell_type;{{x}}{{y}}
+mapCell_type_village;{{villageName}}
+mapCell_type_1;Lokal
+mapCell_type_2;Dal
+mapCell_type_3;Ubesat oase
+mapCell_type_4;Besat oase
+mapCell_type_5;Vildmark
+mapCell_Owner;Ejer
+mapCell_type_valley;Dal
+mapCell_Wilderness;Der er ikke noget af interesse på dette sted.
+mapCell_Distance;{{distance|Round|1}} felter
+mapCell_locationInfo;Info om placering
+mapCell_surroundings;Nærområde
+mapCell_actions_editFarmlist;Rediger farmliste
+mapCell_actions_addFarmlist;Tilføj til farmliste
+mapCell_actions_raidOasis;Plyndr oase
+mapCell_showOnMap;Vis på kort
+mapCell_noReports;- Ingen information tilgængelig for dette sted -
+berichte.region_;{{PLAYERACTIVE}}{{PLAYERPASSIVE}}{{VILLAGE}}{{NAME1}}{{NAME2}}{{ALLY1}}{{ALLY2}}{{NAME}}
+mapCell_goToOwnVillage;Gå til egen landsby
+constructionQueue_timeLeftToFinish;{{timestamp|Countdown}} tilbage. Klar kl. {{timestamp|Time}}
+constructionQueue_timeUntilStart;Starter om {{timestamp|Countdown}}
+constructionQueue_MasterBuilderTitle;Bygmesterkø (koster {{masterBuilderCost|Sprite}} {{masterBuilderCost}} ved byggestart)
+constructionQueue_Constructing;Opfører bygning
+constructionImmediatelyPopup_topText;Følgende ordrer færdiggøres øjeblikkeligt:
+constructionImmediatelyPopup_title;Fuldfør med det samme
+newBuildingConstructionDetail_dateTimeEnoughResources;Råstoffer nok den {{date|Date}} kl. {{time|Time}}
+newBuildingConstruction_noBuildingsAvailable;I øjeblikket er der ingenting at bygge.
+goldclubpopup_currentGold;Nuværende guld:  {{iconName|Sprite}} <color={{colorValue|TextColor}}>{{currentGold}}</color>
+goldclubpopup_activated_toastMessage;Guldklubben er aktiveret!
+loginPage_version;Version {{currentVersion}}
+loginPage_loginBlocked;Login blokeret
+loginPage_loginBlocked_fails;For mange mislykkede loginforsøg
+loginPage_loginBlocked_message;Din konto er blevet blokeret på grund af for mange mislykkede login-forsøg.
+loginPage_loginBlocked_resolve;For at låse din konto op skal du logge ind via browseren på
+serverSelection_selectRegion;Vælg region
+serverSelection_selectGameWorld;Vælg spilverden
+serverSelection_0;International
+serverSelection_1;Arabisk
+serverSelection_2;Asien
+serverSelection_3;Europa
+serverSelection_4;Amerika
+serverSelection_99;Dev
+serverSelection_mapSize;Kortstørrelse:
+serverSelection_mapSize_0;Lille
+serverSelection_mapSize_1;Stor
+serverSelection_artifacts;Artefakter:
+serverSelection_constructionPlans;Byggeplaner:
+serverSelection_changeGameWorld;Skift spilverden
+serverSelection_username;Brugernavn
+serverSelection_password;Kodeord:
+serverSelection_loginButton;Log ind og spil
+serverSelection_forgotPassword;Jeg har glemt min adgangskode
+serverSelection_noAccount;Jeg har ingen konto
+serverSelection_loginError;Forkert brugernavn eller adgangskode
+serverSelection_graphQlError;Fejl i hentning af data fra serveren
+serverSelection_tokenRefreshError;Fejl i login til den sidst anvendte server: log venligst ind igen.
+serverSelection_stayLoggedIn;Bliv ved med at være logget ind i spilverdenen
+troopsInfo_title;Tropper i {{villageName}}
+unitInfo_velocity;<b>{{fields}}</b> felter i timen
+unitInfo_resourceCarriage;<b>{{INT}}</b> råstoffer
+unitInfo_researchPrerequisites;Forudsætninger for udforskning:
+unitInfo_trainingPrerequisites;Forudsætninger for træning:
+unitInfo_canCarry;Bæreevne:
+exchangeResources_currentTitle;Ny mængde
+exchangeResources_lockAmount;Lås mængde
+exchangeResources_changeTitle;Skift
+exchangeResources_restTitle;Rest
+exchangeResources_buildingPossible_True;Opgradering mulig
+exchangeResources_buildingPossible_False;Opgradering ikke mulig
+exchangeResources_mergePossible_True;Samling mulig
+exchangeResources_mergePossible_False;Samling ikke mulig
+exchangeResources_researchPossible_True;Udforskning mulig
+exchangeResources_researchPossible_False;Udforskning ikke mulig
+exchangeResources_celebrationPossible_True;Fejring mulig
+exchangeResources_celebrationPossible_False;Fejring ikke mulig
+exchangeResources_reviveHero_True;Det er muligt at genoplive helten
+exchangeResources_reviveHero_False;Det er ikke muligt at genoplive helten
+exchangeResources_currentlyAvailable;Tilgængelige i øjeblikket: <b>{{amount}}</b>
+exchangeResources_maximumAvailable;Maksimalt tilgængelige: <b>{{amount}}</b>
+exchangeResources_distributeEvenly;Fordel resterende råstoffer ligeligt:
+exchangeResources_distributeOnResource;Eller prioriter først de resterende råstoffer til:
+exchangeResources_distributeAuto;Automatisk fordeling
+exchangeResources_distributeManual;Manuel fordeling
+exchangeResources_availableTroops;Tilgængelige tropper: {{amount}}
+buildingActivities_title;Bygningsaktiviteter
+buildingActivities_idle;Inaktiv
+buildingActivities_type;Type
+buildingActivities_building_13;Forbedringer:
+buildingActivities_building_16;Plyndringsliste
+buildingActivities_building_17;Handelsmænd
+buildingActivities_building_19;Tropper i træning
+buildingActivities_building_20;Kavaleri i træning
+buildingActivities_building_29;Tropper i træning
+buildingActivities_building_30;Kavaleri i træning
+buildingActivities_building_21;Tropper i træning
+buildingActivities_building_22;Udforskning
+buildingActivities_building_24;Fester
+buildingActivities_building_46;Tropper helbredes
+buildingActivities_buildingAction_;{{amount}}{{max}}
+buildingActivities_buildingAction_16;{{amount}} plyndringer i gang
+buildingActivities_buildingAction_17;{{amount}}/{{max}} tilgængelige
+mainMenu_title;Hovedmenu
+mainMenu_quests;Opgaver
+playerDetails_infoTab;Spillerinfo
+playerDetails_villageTabTitle;{{villages}} landsbyer med {{oases}} oaser
+playerDetails_SortBy_1;Indbyggertal
+playerDetails_SortBy_2;Sejrspoint
+playerDetails_SortBy_3;Landsbynavn
+playerDetails_SortBy_4;Regionsnavn
+player_gender_DontSpecify;Specificer ikke
+player_gender_Other;Andet
+player_gender0;Mand
+player_gender1;Kvinde
+player_gender2;Andet
+player_gender3;Specificer ikke
+playerDetails_NotesFor;Noter til {{playerName}}
+playerDetails_NoDescription_Others;- Denne spiller har ikke tilføjet en beskrivelse -
+playerDetails_NoDescription_Own;- Ingen beskrivelse tilføjet endnu -
+playerDetails_editLanguages;Rediger sprog
+playerDetails_searchLanguage;Søg på sprog
+goldShopPlaceholder_title;Butikken kommer snart!
+goldShopPlaceholder_description;Guldbutikken er endnu ikke implementeret i mobilappen.<br><br> For at købe guld skal du logge ind på din konto via browseren.
+goldShop_title;Guldbutik
+goldShop_advantage_5;Travian: Legends Plus
+goldShop_advantage_4;Tømmer
+goldShop_advantage_1;Ler
+goldShop_advantage_2;Jern
+goldShop_advantage_3;Korn
+goldShop_feature_activated;Funktion aktiveret!
+goldShop_purchaseFailed;Køb mislykkedes!
+goldShop_purchaseSuccess;Køb gennemført.
+goldShop_transactionInProgress;Transaktion i gang.\nVent venligst.
+goldShop_transactionFailed;Noget gik galt.\nForsøg venligst igen senere.
+goldShop_transactionTimeout;Kære spiller, din betaling overskred tidsgrænsen og er muligvis ikke blevet behandlet korrekt. Kontakt venligst vores <style="link"><link="https://support.travian.com/support/tickets/new">betalingssupport</link></style>, hvis du støder på problemer.
+market_sendResources_requiredMerchants;Nødvendige handelsmænd:
+market_sendResources_capacityPerMerchant;Kapacitet pr. handelsmand
+market_sendResources_amountRepeats;Antal gentagelser:
+market_sendResources_confirmResources;Bekræft råstoffer
+market_sendResources_amountWithX;{{amount}}x
+market_sendResources_sent;Råstoffer sendt!
+market_offer_maxDuration;Maksimalt antal timers transport:
+market_offer_confirm;Bekræft tilbud
+market_offers_title;Tilbud
+market_capacity;Kapacitet: {{capacity}}
+market_offers_offering;Jeg tilbyder:
+market_offers_searching;Jeg søger:
+market_offers_offered;Du sender
+market_offers_wanted;Du modtager
+market_offers_accepted;Tilbud accepteret! Råstoffer er på vej, og handelsmænd er sendt af sted.
+market_offers_ownAllianceOnly;Kun spillere fra egen alliance
+market_ratio_11;1:1
+market_ratio_1X;1 : X
+market_tradeRoutes_to;Til:
+market_tradeRoutes_entryAmount;<b>{{amount}}</b> indtastninger
+market_tradeRoutes_noRoutes;- Ingen handelsruter oprettet -
+market_tradeRoutes_travelTime;Rejsetid: {{time|Duration}} time(r)
+market_tradeRoutes_activeRatio;{{active}}/{{total}} aktive
+market_tradeRoutes_active;Aktiv
+market_tradeRoutes_paused;På pause
+market_tradeRoutes_updated;Ruter opdaterede
+market_tradeRoutes_deleted;Handelsruter slettet
+market_tradeRoutes_returnAt;vender tilbage kl. {{time|Time}}
+market_tradeRoutes_merchantsAndRepeat;{{merchants}} Handelsmænd, {{repeats}}x
+market_tradeRoutes_filterOptions;Filtreringsmuligheder
+market_tradeRoutes_showMerchants;Vis handelsmænd
+market_tradeRoutes_showMerchantsText;Viser, hvor mange handelsmænd der bruges
+market_tradeRoutes_showResources;Vis råstoffer
+market_tradeRoutes_showResourcesText;Viser mængden af medbragte råstoffer
+market_tradeRoutes_afterInputFieldsSuffix;Timer
+market_tradeRoutes_interval;{{INT}} timer
+market_tradeRoutes_confirmTarget;Bekræft mål
+market_tradeRoutes_arrivalTime;{{duration|Duration}} kl. {{arrivalTime|Time}}
+market_tradeRoutes_created;Handelsrute oprettet
+market_tradeRoutes_edit;Rediger handelsrute[routeAmount>1:r]
+market_tradeRoutes_update;Opdater handelsrute[routeAmount>1:r]
+market_tradeRoutes_multiEditWarning;Du redigerer flere handelsruter. Ændringer vil påvirke alle {{routeAmount}} ruter.
+market_tradeRoutes_editResourcesTitle;Ændr råstoffer
+market_tradeRoutes_editResourcesButton;Rediger råstoffer
+market_tradeRoutes_setResourcesButton;Indstil råstoffer
+market_tradeRoutes_updateResourcesButton;Opdater råstoffer
+market_tradeRoutes_pause;Sæt handelsrute[routeAmount>1:r] på pause
+market_tradeRoutes_pauseDescription;Handelsruten flyttes til pauselisten, men forbliver på din markedsplads.
+market_tradeRoutes_delete;Slet handelsrute[routeAmount>1:r]
+market_tradeRoutes_deleteConfirmQuestion;Er du sikker på, at du vil slette [routeAmount=1:denne][routeAmount>1:disse] handelsrute[routeAmount>1:r]?
+market_tradeRoutes_invalidTarget;Handelsruter kan kun sendes til verdensvidunderlandsbyer og landsbyer med artefakter eller verdensvidunderbyggeplaner fra alliance- eller forbundsmedlemmer.
+hero.status;{{NAME}}
+hero_adventures_selectVillage;Vælg landsby
+hero_adventures_explore;Udforsk
+hero_adventures_sendHero;Send helt
+hero_adventures_sent;Eventyr begyndt
+hero_status_reviveWithBucket;Brug for at genoplive din helt øjeblikkeligt.
+hero_status_reviveWithRes;Brug råstoffer til at genoplive helten.
+hero_inventory_consumablePopupTitle;Brugsgenstand
+hero_resourceTransferPopup_title;Overfør råstoffer
+hero_resourceTransferPopup_ReadyForTransfer;Klar til overførsel
+hero_resourceTransferPopup_transferSelected;Overførsel valgt
+hero_resourceTransferPopup_transferMax;Overfør maksimum
+hero_resourceTransferPopup_storageFull;Lager fyldt. Du kan ikke overføre flere råstoffer.
+hero_inventory_transferToCurrentVillage;Overført til den aktuelt aktive landsby: <b>{{VILLAGE}}</b>
+hero.itemDescriptionV2Details;{{PERCENTAGE}}{{EXPERIENCE}}{{RAISE}}{{LIMIT}}{{MAX}}{{TIME}}
+hero.itemDescriptionV2;{{VALUE}}
+hero_consumablePopup_currentEquippedItems;Antal genstande i brug i øjeblikket:
+hero_consumablePopup_itemsLeftInInventory;Antal genstande tilbage i inventaret:
+hero.itemTypeV2_inventory;Forbrugsgenstand
+hero.cooldownWithTime;Har en {{COOLDOWN}} timers nedkølingsperiode, som slutter d. {{DATE|DateTime}}.
+reports_overview_title;{{COUNT}} rapporter
+reports_overview_title_selected;Valgt {{SELECTED}} / {{COUNT}} rapporter
+reports_overview_title_archived;Arkiverede rapporter
+reports_overview_archived_noReports;- Ingen arkiverede rapporter tilgængelige -
+reports_filters_title;Vælg filter
+reports_filters_allReports;Alle rapporter
+reports_filters_applyButton;Anvend {{COUNT}} filtre
+reports_filters_noFilter;Intet filter valgt
+reports_detail_title;Rapport-detaljer
+berichte.;{{NAME1}}{{NAME2}}{{VILLAGE_NAME}}{{X}}{{Y}}{{COORDS}}{{NAME}}
+reports_player_from_village;[{{allianceId|AllianceLink}}] {{playerId|PlayerLink}} fra landsbyen {{villageId|VillageLink}}
+reports_troops_lost;Mistede tropper:
+reports_troops_hospitalized;Indlagt på hospitalet:
+reports_xp_gained;{{amount}} XP opnået
+reports_health_change;-{{change}}% livspoint
+reports_hero_died;Din helt døde under eventyret
+reports_scouted_building;{{buildingType|TranslateSuffixFor|allgemein.gid}} trin <b>{{level}}</b>
+reports_refreshed;Rapporterne er opdateret!
+reports_deleteReportPopup_title;Slet rapport(er)
+reports_deleteReportPopup_warningTitle;Er du sikker på, at du vil slette {{X}} rapport(er)?
+reports_deleteReportPopup_warningTitleAll;Er du sikker på, at du vil slette alle rapporter?
+reports_deleteReportPopup_warningDescription;Når du har slettet en rapport, er den væk for altid. Du vil ikke være i stand til at gendanne den.
+reports_deleted;Rapport slettet!
+reports_markedUnread;Rapport markeret som ulæst!
+reports_archived;Rapport arkiveret!
+reports_deleted_all;Alle rapporter er slettet!
+reports_deleted_selected;{{X}} rapport(er) slettet!
+reports_markedRead_all;Alle rapporter markeret som læst!
+reports_markedRead_selected;{{X}} rapport(er) markeret som læst!
+alliance_nameAndTagPair;{{allianceName}} | {{allianceTag}}
+alliance_editAllianceName;Rediger alliancenavn
+alliance_name;Alliancenavn
+alliance_nameError;Alliancens navn må ikke være tomt
+alliance_tag;Allianceforkortelse
+alliance_tagError;Alliancens forkortelse må ikke være tom
+alliance_profileTab_inviteNewPlayer;Inviter ny spiller
+alliance_profileTab_showInvitedPlayers;Vis inviterede spillere
+alliance_invitedPopup_title;Inviterede spillere
+alliance_invitedPopup_invitationRemoved;Invitation fjernet!
+alliance_invitePlayerPopup_title;inviter spiller
+alliance_invitePlayerPopup_noPlayerFound;Ingen spiller fundet
+alliance_invitePlayerPopup_playerInvited;Spiller inviteret!
+alliance_editMemberPopup_title;Rediger medlem
+alliance_editMemberPopup_customMessage;Brugerdefineret besked
+alliance_editMemberPopup_setRole;Indstil rolle
+alliance_editMemberPopup_kickPlayerFromAlliance;Smid spiller ud af alliancen
+alliance_editMemberPopup_cantChangePermission;Kan ikke ændre den aktuelle tilladelse: se advarsel.
+alliance_kickPlayerPopup_areYouSure;Er du sikker på, at du vil smide {{Player}} ud af alliancen?
+alliance_kickPlayerPopup_playerKicked;Spiller smidt ud!
+alliance_editAllianceDescription;Rediger alliancebeskrivelse
+alliance_topColumn;Øverste kolonne
+alliance_bottomColumn;Nederste kolonne
+alliance_bbCodeAdded;BB-kode tilføjet
+alliance_generalInformation;Generel information
+alliance_confederacy_tab;Forbund
+alliance_diplomacy;Diplomati
+alliance_diplomacy_tab1;IAP / Krig
+alliance_diplomacy_send_new;Send ny
+alliance_diplomacy_openRequests;Åbne anmodninger
+alliance_diplomacy_otherOffered;{{allianceId|AllianceLink}} tilbød {{type|TranslateSuffixFor|alliance_diplomacy_type}}
+alliance_diplomacy_youOffered;Du tilbød {{type|TranslateSuffixFor|alliance_diplomacy_type}} med {{allianceId|AllianceLink}}
+alliance_diplomacy_offerDeclare;Tilbud/erklæring
+alliance_diplomacy_type;Type
+alliance_diplomacy_type1;forbund
+alliance_diplomacy_type2;IAP
+alliance_diplomacy_type3;krig
+alliance_diplomacy_type4;forbund
+alliance_diplomacy_typekick;afskedigelse fra forbundet
+alliance_diplomacy_deleteText_;{{type|TranslateSuffixFor|alliance_diplomacy_type}}{{alliance|AllianceLink}}
+alliance_diplomacy_deleteTitle_RemoveRequest;Fjern anmodning
+alliance_diplomacy_deleteText_RemoveRequest;Er du sikker på, at du vil fjerne tilbuddet om {{type|TranslateSuffixFor|alliance_diplomacy_type}} med {{alliance|AllianceLink}}?
+alliance_diplomacy_deleteTitle_TerminateExisting;Afslut
+alliance_diplomacy_deleteText_TerminateExisting;Er du sikker på, at du vil afslutte {{type|TranslateSuffixFor|alliance_diplomacy_type}} med {{alliance|AllianceLink}}?
+alliance_diplomacy_deleteTitle_ConfederacyKickVote;Afslut
+alliance_diplomacy_deleteText_ConfederacyKickVote;Du skal bruge en bekræftelse fra andre medlemmer af forbundet for at smide {{subject|AllianceLink}} ud.\n\nØnsker du, at fortsætte og informere de andre alliancer om din beslutning?
+alliance_diplomacy_deleteTitle_QuitConfederacy;Afslut
+alliance_diplomacy_deleteText_QuitConfederacy;Er du sikker på, at du vil afslutte dit forbund med følgende medlemmer?
+alliance_diplomacy_deleteTitle_RemoveConfederacyProposal;Fjern anmodning
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Kick;Er du sikker på, at du vil afvise {{alliance|AllianceLink}}s anmodning om at smide {{subject|AllianceLink}} ud af forbundet?
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Join;Er du sikker på, at du vil afvise {{alliance|AllianceLink}}s anmodning om at lade {{subject|AllianceLink}} komme med i forbundet?
+alliance_diplomacy_sent;Tilbud sendt
+alliance_diplomacy_accepted;Diplomatisk forhold accepteret
+alliance_diplomacy_canceled;Diplomatisk forhold annulleret
+alliance_diplomacy_declined;Anmodning afvist
+alliance_diplomacy_kickStarted;Anmodning sendt
+alliance_diplomacy_proposal_approved;Anmodning godkendt
+alliance_diplomacy_noContract;Din alliance har ingen aktive kontrakter med andre alliancer.
+alliance_diplomacy_noConfederacy;Din alliance er ikke en del af et forbund.
+alliance_diplomacy_alreadyOpenOffer;Der er allerede et åbent tilbud til denne alliance.
+alliance_diplomacy_alreadyExistingContract;Der er allerede en traktat med denne alliance.
+alliance_diplomacy_warInDeletion;Vent på, at den anden alliance også afslutter krigen.
+alliance_union_leave;Forlad forbund
+alliance_union_add;Tilføj ny anmodning
+allianz.diplomacy_with_type;{{NAME}}
+allianz.diplomacy_with_type4;Forbund med {{NAME}}
+alliance_newsBbDescription;Ændr teksten med 'antal' for at redigere antallet af nyheder
+alliance_LossesBBName;Tab
+alliance_LossesBBDescription;Skift 'navn' for at vælge den alliance, der skal sammenlignes med
+alliance_NapBBName;Ikke-angrebspagter
+alliance_WarsBBName;Krige
+alliance_addBBCode;Tilføj BB-kode
+alliance_addMedal;Tilføj medalje
+alliance_assignToPosition;Tildel medlemmer til positioner og skift alliancenavn
+alliance_editPermissions;Rediger tilladelser
+alliance_roleTitle;Titel på rolle:
+alliance_assignToPosition_onlyMemberError;Du er det eneste medlem af denne alliance. Tildeling af medlemmer til positioner og ændring af alliancenavn kan ikke fjernes.
+alliance_noAllianceEvents;- Ingen alliancebegivenheder at vise -
+alliance_dailyContribution;Dagligt bidrag
+alliance_contributionAmount;Bidrag: <b>{{AMOUNT}}</b>
+alliance_resourcesContributed;{{current}}/{{max}} råstoffer bidraget
+alliance_contributionResetIn;Nulstilles om: {{time|Countdown}}
+alliance_resUntilNext;Råstoffer indtil næste niveau: {{resources|LongNumber}}
+alliance_bonusCurrentlyActivating;Bonusaktivering: {{resources|Countdown}}
+alliance_bonusMaxed;Bonus maksimeret
+alliance_tripledContribution;Du har tredoblet dit bidrag!
+alliance_contributionStatistics;Statistik over bidrag
+alliance_contributionNone;- Ingen bidragsydere i øjeblikket -
+auth_clientVerificationFailed;Kunne ikke verificere klienten. Prøv venligst igen.
+banned_seeMessage;Se besked
+banned_acceptPunishment;Accepter straf
+residence_settlement;Bosættelse
+palace_capital;Gør denne landsby til min hovedlandsby.
+palace_setAsCapital;Gør til hovedlandsby
+palace_enterPassword;Indtast adgangskode af sikkerhedsmæssige årsager:
+embassy_GoToAlliance;Gå til alliancen
+embassy_Invitation;Alliancen {{AllianceId|AllianceLink}}, inviteret af {{playerId|PlayerLink}}
+embassy_VillagesInRange;Landsbyer indenfor rækkevidde
+embassy_LeaveAllianceToJoin;For at komme med i en ny alliance, skal du først forlade din nuværende alliance.
+embassy_ConfirmLeaveAlliance;Bekræft og forlad alliancen
+embassy_InvitationAccepted;Invitation accepteret
+embassy_AllianceFounded;Alliance grundlagt med succes
+embassy_LeftAlliance;Forlod alliancen med succes
+embassy_acceptInvitationQuestion;Er du sikker på, at du vil være med i {{allianceId|AllianceLink}}?
+embassy_acceptInvitationWarning;Du kan ikke forlade alliancen i {{hours}} timer efter, at du har meldt dig ind.
+embassy_acceptInvite;Ja, tiltræd alliancen
+embassy_declineInvite;Nej, fjern invitationen
+embassy_noAlliancesNearby;Der er ikke fundet nogen alliancer i nærområdet.
+smithy_improveTo;Forbedr til niveau {{level}}
+smithy_viewList;Se udvikling
+smithy_upgradeStarted;{{unitId|TranslateSuffixFor|truppen.tid}} forbedring påbegyndt
+smithy_researchFirst;Enhed skal udforskes i akademiet
+smithy_levelTooLow;Smedjens niveau er for lavt, opgrader venligst smedjen
+allBuildings_10;Alle råstoflagre:
+allBuildings_11;Alle kornkamre:
+allBuildings_23;Alle gemmesteder:
+allBuildings_38;Alle råstoflagre:
+allBuildings_39;Alle kornkamre:
+currentBuildingValue;Nuværende {{type|TranslateSuffixFor|allgemein.gid}}:
+ad_successful;Annonce set med succes!
+externalLink_title;Eksternt link
+externalLink_description1;<b>Advarsel!</b><br>Du er ved at åbne følgende eksterne link:
+externalLink_description2;Travian Games kan ikke kontrollere eller verificere dette link.
+externalLink_description3;Fortsæt på egen risiko.
+externalLink_description4;Er du sikker på, at du vil fortsætte?
+externalLink_continue;Fortsæt til link
+search_village;Søg efter landsby
+search_select_village;Vælg landsby
+search_three_characters;Skriv mindst {{amount}} tegn
+search_no_result;Intet match fundet
+search_player;Søg efter spillere
+search_player_invite;inviter spiller
+search_select_player;Vælg spiller
+search_select_player_invite;Inviter ny spiller
+search_alliance;Søg efter alliance
+search_select_alliance;Vælg alliance
+gid27.arte_detail_;{{INT}}
+artefact_inventory_village;Landsby:
+artefact_inventory_conquered;Erobret:
+artefact_inventory_active;Aktiv: aktiv kl.
+artefact_inventory_active_already;Aktiv: <b>Aktiveret</b>
+artefact_inventory_show_active_only;Vis kun mine aktiverede artefakter
+artefact_overview;Oversigt over artefakter
+artefact_tip_large;Store artefakter kræver skatkammer niveau <b>20</b> og påvirker hele din <b>avatar</b>
+artefact_tip_small;Små artefakter kræver skatkammer niveau <b>10</b> og påvirker kun <b>landsbyen</b>
+artefact_tip_nearby;Artefakter, der er i området omkring {{villagenamelong|Bold}}
+artefact_small;Små
+artefact_large;Store
+artefact_nearby;I nærheden
+artefact_village;Landsby
+artefact_button_former_owners;Se tidligere ejere
+artefact_already_active;Allerede aktiveret
+artefact_required_level_value;Skatkammer <b>niveau {{LEVEL}}</b>
+artefact_details;Detaljer
+number_counter;{{NUMBER}}.
+tasks_villageTasks;Landsbyens opgaver
+tasks_nextHeroLevelBonus;Næste helteniveau-bonus = {{value}}%
+villageOverview_building_headline;Bygning
+villageOverview_building_slotIdle;Intet igangværende byggeri
+villageOverview_resource_sorting1;Landsbyliste
+villageOverview_resource_sorting2;Kornkammer korteste varighed
+villageOverview_resource_sorting3;Kornkammer længste varighed
+villageOverview_resource_sorting4;Råstoflager korteste varighed
+villageOverview_resource_sorting5;Råstoflager længste varighed
+villageOverview_resource_sorting6;Negativ produktion
+villageOverview_troops_stationed;Tropper stationeret i landsby
+villageOverview_troops_sum;Egne tropper i alt
+villageOverview_troops_tab_training;Uddannelse
+villageOverview_culture_slots;Landsbypladser
+cancelPopup_Improvement;Annuller forbedring
+cancelPopup_Research;Annuller udforskning
+cancelPopup_Construction;Annuller byggeri
+cancelPopup_text_;{{NAME}} {{LEVEL}}
+cancelPopup_text_Improvement;Vil du annullere forbedringen af {{NAME}} trin {{LEVEL}}?
+cancelPopup_text_Research;Vil du annullere udforskningen af {{NAME}}?
+cancelPopup_text_Construction;Vil du afbryde konstruktionen af {{NAME}} trin {{LEVEL}}?
+cancelPopup_text_refund;Du vil få refunderet {{INT}}% af omkostningerne til forbedringen:
+dailyQuests_timeRemaining;Tid tilbage: {{time|Countdown}}
+dailyQuests_rewardOverview;Se oversigt over belønninger
+dailyQuests_claimRewards;Hent belønninger
+dailyQuests_pointsEarned;Optjente point: <b>{{current}}/{{max}}</b>
+dailyQuests_rewardDescription;Dette er de belønninger, du kan låse op for ved at gennemføre dagens daglige opgaver:
+dailyQuests_claimAction;Hent
+dailyQuests_alreadyClaimed;Gjort krav på
+dailyQuests_questDetailTitle;Info
+dailyQuests_quest_worth;Denne opgave har en værdi af:
+dailyQuests_quest_worth_points;+{{points}} point
+dailyQuests_quest_repeated;Denne mission kan gentages:
+dailyQuests_quest_repeated_amount;{{amount}} gang[amount>1:e]
+dailyQuests_quest_completed;Gentagelser gennemført:
+dailyQuests_quest_difficulty;Sværhedsgrad:
+dailyQuests_quest_requirement;Forudsætning:
+dailyQuests_backToOverview;Tilbage til overblik
+dailyQuests_difficulty_moderate;Moderat
+dailyQuests_difficulty_hard;Svær
+dailyQuests_difficulty_challenging;Udfordrende
+achievementQuests.achQuest_;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+achievementQuests.achQuest__step_01_description;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+heroMansion_Loyalty;Sammenhold: {{INT}}%
+heroMansion_Conquered;Erobrede{{TIME|DateTime}}
+heroMansion_SlotFree;Næste oaseplads er tilgængelig
+heroMansion_SlotBlocked;Næste oase fra <color={{colorValue|TextColor}}>heltebygning</color> <color={{colorValue2|TextColor}}>niveau {{REQUIRMENT}}</color>
+heroMansion_Undo;Fortryd
+heroMansion_FinishedAt;Færdig: {{TIME|Time}}
+waterworks_NoneOasesAcquired;Ingen oase annekteret
+waterworks_BonusCalculation;+ ({{INT}}% af {{INT2}}%) = 
+waterworks_CurrentBonus;Nuværende vandværksbonus: +{{INT}}% på oaseråstoffer
+waterworks_Oases;Annekterede oaser
+messages_inbox_title;{{COUNT}} beskeder
+messages_inbox_title_selected;Valgte {{SELECTED}} / {{COUNT}} beskeder
+messages_newMessage;Ny besked
+messages_messageSent;Besked sendt!
+messages_exitPreview;Gå ud af forhåndsvisning
+messages_previewTitle;Forhåndsvisning af besked
+messages_unread_count;{{COUNT}} ulæst
+reportPlayer_selectReason;Vælg årsag til rapporten
+reportPlayer_reasonPlaceholder;Årsag til rapport
+reportPlayer_addNote;Tilføj en note til rapporten (valgfrit):
+reportPlayer_alsoBlock;Ignorer også denne spiller
+reportPlayer_maximumLength;Maksimal længde: {{text|TextLength}}/300
+reportPlayer_nowIgnored;Du ignorerer nu denne spiller.
+reportPlayer_nowUnignored;Du ignorerer ikke længere denne spiller.
+statistics_general;Generel statistik
+statistics_seeDetails;Se detaljer
+statistiken.progressionStepTitle_;{{VALUE}}{{DATETIME}}
+language_de-DE;Tysk
+language_en-US;Engelsk
+language_fr-FR;Fransk
+language_ru-RU;Russisk
+statistics_villageAndHero;Største landsby / helt
+RelativeTime_0;{{data}} s
+RelativeTime_1;{{data}} m
+RelativeTime_2;{{data}} t
+RelativeTime_3;[data>1:{{data}} dage][data<2:{{data}} dag]
+RelativeTime_4;[data>1:{{data}} uger][data<2:{{data}} uge]
+RelativeTime.Separator; 
+RelativeTime.Wrapper.Past;{{time}} siden
+RelativeTime.Wrapper.Future;Om {{time}}
+mapCell_tooFewSettlers;{{current}}/3 bosættere tilgængelige
+mapCell_heroNotIdle;Din helt er ikke inaktiv
+mapCell_cantAddOwn;Du kan ikke tilføje dine egene landsbyer
+mapCell_alreadyInVillage;Du er allerede i den landsby
+serverSelection_rememberPassword;Husk min adgangskode
+serverSelection_savedWorldsTitle;Dine spilverdener
+serverSelection_removeWorldTitle;Fjern spilverdenen
+serverSelection_removeWorldQuestion;Vil du virkelig fjerne denne spilverden fra din liste?
+serverSelection_removeWorldDescription;Advarsel: Dette vil ikke slette din konto i spilverdenen. Du kan til enhver tid vende tilbage og tilføje spilverdenen med din konto til din liste over spilverdener.
+serverSelection_removeWorldButton;Fjern fra liste
+serverSelection_addWorldText;+ tilføj spilverden
+buildingActivities_buildingAdditional_;{{amount}}
+buildingActivities_buildingAdditional_17;{{amount}} aktive handelsruter
+reports_filters_reset;Nulstil filtre
+palace_capitalSet;Hovedstaden er indstillet!
+palace_isCapital;Dette er din hovedlandsby.
+messages_unread_count_full;{{COUNT}} [COUNT>1:ulæste beskeder][COUNT=1:ulæst besked]
+statistics_alliance;Alliancestatistikker
+statistics_alliances_best_off;De bedste alliancer (angriber)
+statistics_alliances_best_def;De bedste alliancer (forsvarer)
+statistics_offensiveStrength;Din offensive styrke i {{VILLAGEID|VillageLink}} på denne server
+statistics_offensiveStrengthAlliance;Din offensive styrke i {{VILLAGEID|VillageLink}} i din alliance
+statistics_offensiveStrengthVillage;Denne landsbys offensive styrke:
+statistics_defensiveStrength;Din defensive styrke på denne server
+statistics_defensiveStrengthAlliance;Din defensive styrke i din alliance
+statistics_defensiveStrengthVillage;Denne landsbys defensive styrke:
+statistics_defensiveStrengthVillageSum;Summen af alle landsbyers defensive styrke:
+recent;Seneste
+appliedFilters;Du anvender {{COUNT}} filtre.
+allgemein.gid99;Vilkårlig
+rallyPoint_troopsOverview_10;Detaljeret troppeoversigt
+rallyPoint_troopsOverview_returningFromAdventure;Returnerer fra eventyr: 
+rallyPoint_troopsOverview_detailedView;Detaljeret oversigt
+rallyPoint_troopsOverview_noMovements;- Ingen udgående troppebevægelser -
+rallyPoint_troopsOverview_Target;Mål: {{Target|NamedCoordinates}}
+rallyPoint_troopsOverview_Origin;Oprindelse: {{Target|NamedCoordinates}}
+hero_adventures_number;Nr. {{INT}}
+hero_status_regeneration;<b>Regenerering af livspoint:</b> {{VALUE}}% pr. dag
+hero_status_regeneration_details;{{HERO}}% pr. dag fra helt {{EQUIPMENT}}% pr. dag fra udstyr
+hero_status_experience;<b>Erfaring:</b> {{VALUE}}%
+hero_status_experience_bonus;Bonus: {{VALUE}}%
+search_results;Søgeresultater
+search_player_link;Spiller-link
+search_select_player_link;Vælg spiller
+search_recipient;Søg efter modtager
+search_select_recipient;Vælg modtager
+search_alliance_link;Alliance-link
+search_select_alliance_link;Vælg alliance
+messages_fullView_title;Besked
+messages_recipient_placeholder;Vælg modtager
+messages_title_placeholder;Indtast titlen på din besked
+messages_message_placeholder;Skriv din besked
+messages_ownAlliance;Egen alliance
+messages_selectedRecipients;Valgt
+messages_ownAlliance_[ally];Alle alliancemedlemmer
+messages_ownAlliance_[off];Offensive alliancemedlemmer
+messages_ownAlliance_[def];Defensive alliancemedlemmer
+messages_discard_title;Kassér besked
+messages_discard_text_header;Vil du kassere denne besked?
+messages_discard_text;Indholdet af beskeden vil gå uigenkaldeligt tabt.
+messages_confirm_deletion_title;Slet beskeder
+messages_confirm_deletion_text_header;Er du sikker på, at du vil slette [data>1:{{data}} beskeder][data=1:{{data}} besked]?
+messages_confirm_deletion_text;Når beskeder først er slettet, er der ingen måde at få dem tilbage på.
+messages_confirm_deletion_button;Slet [data>1:{{data}} beskeder][data=1:{{data}} besked]
+icon_selection_title;Tilføj ikon
+icon_selection_button;Vælg ikon
+icon_selection_resourcesAndHero;Ressourcer / Helt
+icon_selection_natureAndNatars;Natur og natarer
+upgrading;Opgraderer!
+buildingActivities_buildingAdditional_46;Ingen sårede tropper
+playerDetails_ignorePlayerDescription;Spiller vil være blokeret.
+reports_share;Del rapport
+search_select_village_link;Vælg landsby
+search_village_link;Link til landsby
+search_report_link;Link til rapport
+search_select_report_link;Vælg rapport
+messages_banned;Du kan kun skrive beskeder til andre medlemmer af din alliance.
+messages_template_title;Skabeloner
+messages_template_none;Ingen tilgængelige skabeloner
+messages_template_edit_title;Rediger skabelon
+messages_template_delete_title;Slet skabelon
+messages_template_delete_question;Er du sikker på at du vil slette denne skabelon?
+messages_template_delete_desc;Når den er slettet, kan du ikke længere gendanne den.
+messages_template_create;Opret en ny skabelon
+messages_template_create_descr;Opret en ny skabelon ud fra din nuværende besked:
+messages_template_created;Skabelon oprettet!
+messages_template_deleted;Skabelon slettet!
+statistics_culturePoints_productionRank;Din rang for produktion af kulturpoint på denne server
+statistics_culturePoints_productionRankAlliance;Din rang for produktion af kulturpoint i din alliance
+statistics_culturePoints_production;KP
+statistics_resourceRank_production;Produktion: {{VALUE|ShortenNumber}}
+statistics_resourceRank_productionRank;Din rang for produktion på denne server
+statistics_resourceRank_productionRankAlliance;Din rang for produktion i din alliance
+statistics_resourceRank_bounty_lost;Tabt
+statistics_wonderOfTheWorld_header;Bedste verdensvidundere
+hospital_healing_costs;Omkostninger til helbredelse af tropper
+hospital_healing_action;Helbred tropper
+hospital_healing_list;Se helbredelsesliste
+hospital_healing_list_title;Tropper der helbredes
+hospital_healing_started;Helbredelsen er begyndt
+bonusValueWithPercent;+{{value}}%
+village_with_isCapital;{{villageName}} (hovedlandsby)
+maximumTextLengthError;{{CONTEXT}} kan kun have et maksimum på {{AMOUNT}} tegn
+infoTab_genericEffectInBrackets;({{INT|Sign}})
+infoTab_effectPercentage;{{INT}}%
+infoTab_effectInBracketsPercentage;({{INT|Sign}}%)
+infoTab_trapperCurrently;Nuværende fældebygger maksimalt antal:
+trapper_Build_Action;Byg fælder
+trapper_ProductionCosts;Produktionsomkostninger for fælder
+trapper_TrapsInConstruction;Fælder under opbygning
+trapper_MaxBuilt;Maks. antal fælder er allerede bygget
+truppen.tid119;Fælde
+truppen.tid119p;Fælder
+rallyPoint_troopsOverview_outgoingMission_scouting_1;Spionér forsvarsanlæg og tropper i 
+rallyPoint_troopsOverview_outgoingMission_scouting_0;Spionerer råstoffer og tropper i 
+rallyPoint_troopsOverview_returningRegeneratedMission;Tilbagevendende regenererede tropper fra: 
+rallyPoint_troopsOverview_returningFleeingMission;Tropper vender tilbage fra skovens gemmested: 
+rallyPoint_troopsOverview_foreignTroopsIn;Stationeret i: 
+rallyPoint_celebration_hint;Festen i bryggeriet kan påvirke tropperne.
+building_not_built;Bygning ikke bygget
+berichte.report_icon_24;Rapport
+allBuildings_36;Alle fældebyggere max. antal:
+cropFinder_min_oasis_crop_bonus;Min. Oase-kornbonus:
+cropFinder_select_minimum_crop_bonus;Vælg mindste kornbonus
+cropFinder_unoccupied;Ledig
+search_by_location;Søg efter placering
+search_by_player;Søg efter spiller
+search_village_from_player;Søg landsby fra spiller
+enter_player_name;Indtast spillernavn
+messages_template_newConditionsNotMet;Skabeloner skal indeholde en titel og en besked.
+message_report_isAlready;Nuværende besked er allerede anmeldt som: {{REASON}}
+tutorial_begin;Begynd turen
+tutorial_title_0;Vær hilset, frygtløse mester! 
+tutorial_text_0;Velkommen til den voldsomme slagmark i Travian: Legends. Lad os hurtigt gøre dig klar til at styre dine dynamiske bosættelser og regere over dine ustoppelige styrker.\n\nEr du klar?
+tutorial_title_1;Oversigt over navigation
+tutorial_text_1;Her finder du alt fra kortet til effektiv kommunikation og indsigtsfulde informationsværktøjer. Her findes også dine daglige opgaver, personlige indstillinger og et væld af andre funktioner.
+tutorial_title_3;Dine råstoffer
+tutorial_text_3;Din landsbys råstoffer kan findes her. Hvis du trykker på råstofbjælken, får du flere detaljer.
+tutorial_title_4;Dine råstoffer
+tutorial_text_4;Hvis du trykker på råstofbjælken igen, forsvinder detaljerne.
+tutorial_title_5;Din landsby
+tutorial_text_5;Her finder du alle de nødvendige oplysninger om din landsby. Fra listen over opgaver til oversigten over dine tropper og byggekøen - alt er lige her. En ny tilføjelse til appen, funktionen bygningsaktiviteter, giver en hurtig oversigt over den igangværende udvikling i dine bygninger.
+tutorial_title_7;Din landsby
+tutorial_text_7;Hvis din forsamlingsplads bliver bygget, vil dette give et omfattende overblik over alle igangværende troppebevægelser. Derudover giver den en hurtig genvej til din forsamlingsplads.
+tutorial_title_8;Sidemenu
+tutorial_text_8;Du kan trykke på pilene eller stryge med fingeren for at åbne sidemenuen. Det kan gøres når som helst.
+tutorial_title_9;Landsbyliste
+tutorial_text_9;Du kan hurtigt skifte mellem dine landsbyer ved at stryge sidepanelet op når som helst. Du vil også kunne finde landsbyens statistikker der.\n\nOg dette afslutter turen. Hvad venter du på! Dyk ned, udforsk, og lad Travian: Legends' verden blive din strategiske legeplads.\n\nHeld og lykke!
+tutorial_finish;Afslut turen
+filters_report_not_found;Rapporten findes ikke
+filters_player_not_found;Spilleren findes ikke
+filters_alliance_not_found;Alliancen eksisterer ikke
+filters_village_not_found;Landsbyen eksisterer ikke
+settings_game;Denne spilverden
+language_app_selection;Vælg appens sprog:
+settings_sitter;Sitter {{VALUE}}:
+settings_sitterTab_yourSitters;Dine sittere
+settings_sitterTab_SittingFor;Sitter for
+search_player_addSitter;Tilføj sitter
+search_select_player_addSitter;Tilføj sitter
+search_player_addSitter_additionalEmptyResultInfo;Ingen spiller fundet.\nKun spillere fra din egen alliance/dit eget forbund kan sitte din avatar.
+settings_sitter_sitterAdded;Sitter tilføjet!
+settings_sitter_sitterRemoved;Sitter fjernet!
+settings_sitter_sitterPermissionChangesSaved;Ændringer i tilladelser gemt!
+settings_sitter_confirm_remove_text_header;Vil du fjerne {{PlayerName}} som sitter?
+settings_sittersFor;Sitter for avataren/avatarerne
+settings_sittersFor_info;Du er sat på som sitter for følgende avatarer. Du kan fjerne dig selv som sitter ved at klikke på det røde X.
+settings_sittersFor_none;Du sitter i øjeblikket ikke nogen anden avatar.
+settings_sitterFor;Sitter for {{VALUE}}:
+settings_sitterFor_sittingRemoved;Stoppede med at sitte for {{PlayerName}}!
+settings_sitterFor_confirm_remove_header;Vil du stoppe med at sitte for 
+settings_sitterFor_confirm_remove_header_questionmark;?
+settings_sitterFor_confirm_remove_info;Du kan ikke fortryde denne handling. Kun andre spillere kan tilføje dig som deres sitter.
+brewery_celebration_attackStrength;({{INT}}% angrebsstyrke)
+brewery_celebration_hint;Tropper, der allerede marcherer, vil blive påvirket af fejringen
+settings_game_newLanguage;Sprog ændret til {{language}}.
+wonderOfTheWorld_name;Verdensvidunder-navn:
+combatSimulator_title;Simuler - {{role|TranslateSuffixFor|combatSimulator_as}}
+combatSimulator_cataTargetLevel;Niveau på <b>{{index}}. katapultmål</b>
+combatSimulator_troopLevel;Troppers smedjeniveau:
+combatSimulator_asAttacker;Som angriber
+combatSimulator_asDefender;Som forsvarer
+combatSimulator_result;Simuler resultater
+combatSimulator_addReinforcement;tilføj opbakning
+valueWithModifier;{{value|Round|2}}x
+valuePlusInBracketsWithPercent;(+{{change}}%)
+none;Ingen
+marketplace_traderoute_repeatEveryHour;Gentag hver: (timer)
+block_sitter_warning;Som sitter har du ikke tilladelse til at gøre dette.
+settings_openConsentWindow;Privatlivsindstillinger
+combatSimulator_adjustHeroStats;Juster helte-statistikker
+combatSimulator_eagleEyeTitle;Vælg ørneøjne-bonus
+combatSimulator_architectSecretTitle;Vælg bonus for arkitekternes hemmelighed
+combatSimulator_metallurgyBonus;Vælg bonus for smedearbejde
+combatSimulator_rightHand;Vælg højrehåndsgenstand
+combatSimulator_leftHand;Vælg venstrehåndsgenstand
+combatSimulator_bodyItem;Vælg kropsgenstand
+combatSimulator_inventoryItem;Vælg en vare i inventaret
+combatSimulator_selectBuildingLevel_35;Vælg bryggeriniveau
+combatSimulator_selectBuildingLevel_26;Vælg palads-niveau
+combatSimulator_selectBuildingLevel_34;Vælg niveau for stenhugger
+combatSimulator_selectBuildingLevel_31;Vælg niveau for mur
+combatSimulator_selectBuildingLevel_32;Vælg niveau for mur
+combatSimulator_selectBuildingLevel_33;Vælg niveau for mur
+combatSimulator_selectBuildingLevel_43;Vælg niveau for mur
+combatSimulator_selectBuildingLevel_42;Vælg niveau for mur
+combatSimulator_selectTargetLevel;Vælg niveau for katapultmål
+combatSimulator_selectTroopLevel;Vælg troppers niveau
+survey_title;Travian: Legends-spørgeskemaundersøgelse
+gdpr_title;Samtykke til databehandling
+gdpr_description;Med dit samtykke indsamler vi visse oplysninger om din enhed, IP-adresse, brug og reklameidentifikatorer. Det hjælper os med at vise dig mere relevante annoncer og forbedrer din samlede app-oplevelse.
+gdpr_basic_functions;Påkrævet for appens grundlæggende funktioner.
+gdpr_advertisement;Personlig data der bruges til reklame.
+gdpr_analytics;Personlig data der bruges til analyser.
+gdpr_acceptAll;Accepter alle
+gdpr_save_and_exit;Gem + Afslut
+gdpr_rejectAll;Afvis alle
+gdpr_privacy_policy;Privatlivspolitik
+gdpr_terms_and_conditions;Vilkår og betingelser
+plus.plus.browserOnly;(kun browser)
+hero_inventory_already_equipped;Allerede udstyret med den samme genstand.
+survey_button_title;Feedback-undersøgelse
+survey_button_description;Deltag i denne korte undersøgelse for at hjælpe os med at forbedre Travian: Legends-appen.
+goldShop_extend;Forlæng
+goldShop_remaining;Resterende:
+goldShop_advantage_activated;Aktiveret
+search_select_recipient_removeAll;Fjern alle
+messages_messageTopic_noTopic;Intet emne/standard
+messages_messageTopic_resources;Om råstoffer
+messages_messageTopic_defenses;Om forsvar
+messages_messageTopic_attacks;Om angreb
+messages_messageTopic_strategies;Om strategier
+messages_messageTopic_information;Generel information
+messages_messageTopic_important;Vigtig information
+messages_messageTopic_selectionTitle;Vælg besked-emne
+farmlist_confirm_deletion_header;Er du sikker på, at du vil slette den valgte plydringsliste?
+farmlist_confirm_deletion_text;Dette kan ikke fortrydes.
+farmlist_target_confirm_deletion_header;Er du sikker på, at du vil slette [data>1:disse {{data}} mål][data=1:dette mål]?
+upgrade_queue_cantConstructImmediately;Denne bygning kan ikke opføres øjeblikkeligt
+language_cs-CZ;Tjekkisk
+language_es-ES;Spansk
+language_pl-PL;Polsk
+language_pt-PT;Portugisisk
+language_tr-TR;Tyrkisk
+language_it-IT;Italiensk
+playerDetails_victorPoints_summary;{{TOTAL}} | {{PERDAY}}/dag
+settings_selectFormat;Vælg format:
+settings_selectFormat_dialog_title;Vælg datoformat
+settings_game_newDateFormat;Datoformat ændret til {{dateFormat}}.
+help_getHelp;Få hjælp
+help_getHelpDescription;Hvis du har brug for hjælp eller vil rapportere et problem, kan du kontakte spillets support her.
+help_learnAboutGame;Lær mere om spillet
+help_learnAboutGameDescription;Alt, hvad du har brug for at vide om spillet, hvordan tingene fungerer i detaljer, kan du finde her.
+help_gameRules;Lær spillets regler
+help_gameRulesDescription;Her finder du de gældende spilleregler.
+help_joinDiscord;Tilslut til Discord
+help_joinDiscordDescription;Del din feedback med os på vores dedikerede mobil-Discordserver.
+PLAYERARG;{{PLAYER}}
+referAFriend_friendJoinedDescription;For at du modtager guld for din henvisning, skal din ven bosætte sin <b>anden landsby</b>. Sørg for at hjælpe din ven med at nå dette mål! Se din vens fremskridt i henvisningsoversigten herunder.
+referAFriend_rewardAddedVillage2Title_PLAYERARG;Din ven {{PLAYER}} har bosat sin 2. landsby
+referAFriend_rewardAddedVillage3Title_PLAYERARG;Din ven {{PLAYER}} har bosat sin 3. landsby
+referAFriend_rewardAddedVillage4Title_PLAYERARG;Din ven {{PLAYER}} har bosat sin 4. landsby
+referAFriend_rewardAddedVillage5Title_PLAYERARG;Din ven {{PLAYER}} har bosat sin 5. landsby
+referAFriend_rewardAddedVillage6Title_PLAYERARG;Din ven {{PLAYER}} har bosat sin 6. landsby
+referAFriend_rewardAddedVillage7Title_PLAYERARG;Din ven {{PLAYER}} har bosat sin 7. landsby
+referAFriend_rewardAddedVillage8Title_PLAYERARG;Din ven {{PLAYER}} har bosat sin 8. landsby
+referAFriend_rewardAddedVillage9Title_PLAYERARG;Din ven {{PLAYER}} har bosat sin 9. landsby
+referAFriend_rewardAddedVillage10Title_PLAYERARG;Din ven {{PLAYER}} har bosat sin 10. landsby
+sysmsg_truce_learnMore;Lær mere om fred
+worldEnded_ww_playerWon_topAlliance;Arbejderne i landsbyen {{WW_VILLAGE|VillageLink}}, lagde klokken {{WORLD_END_TIME|DateTime}} den sidste sten for at cementere en af de mest betydningsfulde frembringelser i historien.<br>Sammen med alliancerne {{WW_ALLIANCE|AllianceLink}}, var {{WW_PLAYER|PlayerLink}} den første til at færdiggøre verdensvidunderet. Efter at have brugt utallige råstoffer og beskyttet stedet med hundredetusinder modige forsvarer, blev {{WW_PLAYER|PlayerLink}} modtager af titlen som  "Vinder af denne æra."
+worldEnded_as2022_topAlliances;Tillykke til {{ALLIANCE_TOP_1|AllianceLink}}, som blev Europas leder med {{VICTORY_POINTS_TOP_1}} sejrspoint! {{ALLIANCE_TOP_2|AllianceLink}} kæmpede bravt for at gøre krav på deres sejr og kom på en andenplads, mens {{ALLIANCE_TOP_3|AllianceLink}} fulgte på tredjepladsen.
+worldEnded_playerRanks_population;{{PLAYER_POPULATION_TOP_1|PlayerLink}} var hersker over det største personlige imperium, tæt forfulgt af {{PLAYER_POPULATION_TOP_2|PlayerLink}} og {{PLAYER_POPULATION_TOP_3|PlayerLink}}.
+worldEnded_playerRanks_offender;{{PLAYER_OFFENDER_TOP_1|PlayerLink}} besejrede flere end nogen anden og var den mest frygtede hærfører.
+worldEnded_playerRanks_defender;{{PLAYER_DEFENDER_TOP_1|PlayerLink}} var den mest glorværdige forsvarer, besejrede fjender ved landsbyportene og farvede landskaberne omkring disse landsbyer med deres blod.
+rallyPoint_startWithValue;Start ({{value}})
+rallyPoint_farmList_raidsStarted;{{INT}} plyndringer sendt.
+rallyPoint_farmList_CantAddToAbandonList;Du kan ikke tilføje mål til en forladt plyndringsliste.
+rallyPoint_farmList_CantActivateInToAbandonList;Du kan ikke aktivere mål på en forladt plyndringsliste.
+rallyPoint_farmList_CantDuplicateInToAbandonList;Du kan ikke duplikere mål på en forladt plyndringsliste.
+rallyPoint_farmList_DuplicateRaids;Dupliker mål
+rallyPoint_farmList_SlotsDuplicated;Mål duplikeret!
+rallyPoint_farmList_pleaseSelectTheList;Vælg den liste du vil tilføje dit mål til.
+rallyPoint_farmList_farmlistFull;Plyndringsliste er fuld, vælg venligst en anden plyndringsliste eller opret en ny.
+rallyPoint_farmList_targetName;Målets navn
+rallyPoint_farmList_differentTroopsWarning;Troppetal vil ikke blive ændret, medmindre du overskriver dem herunder ved at indtaste en ny værdi.
+rallyPoint_farmList_noobProtectionWarning;Når du er under begynderbeskyttelse, kan du ikke plyndre andre spillere, men du kan plyndre ubesatte oaser og natar-landsbyer.
+rallyPoint_farmList_noFarmLists;Ingen plyndringsliste oprettet
+rallyPoint_farmList_CreateNewFarmList;Opret plyndringsliste
+rallyPoint_farmList_currentAmount;Plyndringslister: <b>{{amount}}</b>/{{max}}
+rallyPoint_farmList_differentTribe;Landsbyen har et andet folkeslag end den nuværende kilde-landsby. Kontroller troppeværdier.
+rallyPoint_farmList_overrideTarget;Overskriv mål
+rallyPoint_farmList_selectedActivated;Valgte mål blev sat til aktive.
+rallyPoint_farmList_selectedDeactivate;Valgte mål blev sat til inaktive.
+rallyPoint_farmList_LastRaid;<b>Sidst startet:</b> <nobr>{{lastStarted|DateTime}}</nobr>
+mapCell_editTargetListAmount;<nobr>Rediger mål</nobr> <nobr>(Lister: {{INT}})</nobr>
+goldShop_shopDisabled;Guldbutikken er deaktiveret i denne spilverden
+infobox_accountLockGameEnd;Denne spilrunde er slut!
+applySorting;Anvend sortering
+truppen.tid931;Fælde
+truppen.tid931p;Fælder
+mainMenu_switchBackFromAvatar;{{iconName|Sprite}} Gå tilbage til {{playerName}}
+pending;(Venter)
+featureNotAvailableInVacationMode;Denne funktion er ikke tilgængelig i ferietilstand.
+notAllowed;Du har ikke tilladelse til at gøre dette.
+settings_avatarDeletionInfo;Efter påbegyndelse af sletningen, vil det tage <b>3 dage</b> før sletningen af din avatar er gennemført. \nEn avatar under sletning kan ikke længere deltage i auktioner eller bruge vekselkontoret!\nDu kan til enhver tid annullere sletningen her.
+settings_avatarDeletionCountDown;Avataren vil blive slettet om
+deleteAvatar_confirmation_header;Vil du slette din avatar?
+cams_info_subHeader;Et login til alle dine spilverdener
+cams_info_text;Opret din Legends-lobbykonto, så du nemt kan logge ind og få problemfri adgang til alle dine spilverdener gennem et samlet login.
+cams_info_lessInfo;Mindre information
+cams_info_Question_WhatIsLegendsLobbyAccount;Hvad er Legends-lobbykontoen?
+cams_info_Answer_WhatIsLegendsLobbyAccount;Med lobbykontoen behøver du aldrig at registrere dig til en ny spilverden igen. Du logger bare ind og får adgang til dine aktive spilverdener, eller starter en ny i lobbyen, uanset om det er i browseren eller i mobilappen.
+cams_info_Question_WhatAreAvatars;Hvad er avatarer?
+cams_info_Answer_WhatAreAvatars;Med lobbykontoen kaldes din profil i en individuel spilverden for en avatar. Du har én lobbykonto, som kan have flere avatarer, én for hver spilverden.
+cams_info_Question_WhatsWithCurrentGameworlds;Hvad sker der med mine nuværende spilverdener?
+cams_info_Answer_WhatsWithCurrentGameworlds;Alle aktive spilverdener, der bruger samme e-mailadresse som din lobbykonto , bliver forbundet og kan tilgås via lobbyen. Du kan ændre dine nuværende, aktive spilverden-avatarer til den rigtige e-mailadresse, inden din lobbykonto oprettes.
+cams_info_Question_WhatsWithSitters;Kan jeg stadig have sittere?
+cams_info_Answer_WhatsWithSitters;Ja, sittere kan tildeles som normalt i indstillingerne på spilverdenen. Du kan få adgang til en avatar, som du er blevet udpeget til som sitter, direkte i spilverdenen.
+cams_info_Question_WhatsWithDuals;Kan jeg stadig spille som dual med andre spillere?
+cams_info_Answer_WhatsWithDuals;Duals kan tildeles til en spilverden ved at indtaste navnet på lobbykontoen for spilleren i lobbyen. Det betyder, at en dual også skal have en lobbykonto først og kan få adgang til avataren via lobbyen efter at have accepteret invitationen. Du må ikke dele din adgangskode til lobbykontoen med nogen.
+cams_info_Question_WhatsWithoutLobbyAccount;Kan jeg spille uden at oprette en Legends-lobbykonto?
+cams_info_Answer_WhatsWithoutLobbyAccount;Du kan stadig logge direkte ind på dine nuværende spilverdener via den respektive URL. Men hvis du vil starte en ny spilverden eller bruge mobilappen, skal du oprette en lobbykonto.
+cams_playerDecision_register_info;Den nye lobbykonto giver dig mulighed for at forbinde dine nuværende og fremtidige spilverdener med en enkelt login.
+cams_playerDecision_login_info;Har du allerede en lobbykonto?\n\nLog ind og fortsæt dit eventyr.
+cams_playerDecision_register_header;Opret konto
+cams_playerDecision_register_create_new_account;Opret en lobby-konto
+cams_playerDecision_register_login;Log ind på lobbyen
+cams_playerDecision_extra_info;For at kunne spille Travian: Legends skal du oprette en lobbykonto.
+cams_register_header;Opret Legends-lobbykonto
+cams_register_email_label;Indtast din e-mailadresse:
+cams_register_email_address;Registrer e-mailadresse
+cams_register_email_address_missing;Skriv venligst din e-mailadresse.
+cams_register_email_address_not_valid;Indtast venligst en gyldig e-mailadresse. F.eks. minmail@udbyder.com
+cams_register_email_address_already_exists;Din e-mailadresse er allerede forbundet til en Legends-lobbykonto.
+cams_register_redirecting_to_login;Omdirigerer til login {{INT}} ...
+cams_register_hintMessage_same_email_address;Brug den samme e-mailadresse som til dine eksisterende spilverden-avatarer for automatisk at linke dem til din lobbykonto.
+cams_register_receive newsletter;Jeg vil gerne modtage nyhedsbrevet.
+cams_register_already_have_an_account;Har du allerede en konto?
+cams_register_log_in_now;Log ind nu
+cams_acceptTOS;Ved at klikke på "Registrer e-mailadresse" accepterer du <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">Betingelser & Vilkår</link></style> og bekræfter, at du har bemærket <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">Information om fortrydelsesret</link></style> og <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">Privatlivspolitikken</link></style>.
+cams_activation_header;Aktiver Legends-lobbykonto
+cams_activation_info;Vi har sendt dig et aktiveringslink til <b>{{emailAdress}}</b>.<br>Følg instruktionerne i e-mailen for at fortsætte.
+cams_activation_enter_code;Indtast aktiveringskoden:
+cams_activation_code_example;F.eks. 123456
+cams_activation_entered_code;{{INT}}/6 cifre
+cams_activation_cta_activate_account;Aktiver konto
+cams_activation_email_lost;Har du ikke fået en e-mail?
+cams_activation_email_resend;Gensend e-mail
+cams_activation_email_wrong;Forkert e-mailadresse?
+cams_activation_email_change;Ændr email
+cams_activation_code_missing;Indtast venligst den aktiveringskode, du har modtaget i e-mailen.
+cams_activation_code_too_short;Aktiveringskoden er for kort. Indtast alle seks cifre.
+cams_activation_code_format_incorrect;Aktiveringskodens format er forkert. Sørg for, at koden kun består af 6 tal.
+cams_activation_code_incorrect;Aktiveringskoden er forkert. Indtast venligst den aktiveringskode, du har modtaget i e-mailen.
+cams_activation_code_expired;Aktiveringskoden er udløbet.
+cams_activation_code_start_again;Begynd igen
+cams_login_header;Log ind på Legends-lobbyen
+cams_login_enter_email;Indtast din e-mailadresse eller dit kontonavn:
+cams_login_enter_password;Indtast dit kodeord:
+cams_login_hintMessage_email_already_connected;Den e-mailadresse du indtastede er allerede forbundet til en Legends-lobbykonto. Log ind eller <style="SimpleLink"><link="BackToRegistrationLink">gå tilbage til tilmelding</link></style>.
+cams_login_hintMessage_passwordUpdated;Din adgangskode er blevet opdateret
+cams_forgot_password;Har du glemt dit kodeord?
+cams_recover_password;Gendan adgangskode
+cams_login_no_account_yet;Ingen konto endnu?
+cams_login_create_account;Opret konto
+cams_loginMask_accountNameRequired;Indtast venligst din e-mailadresse eller dit kontonavn.
+cams_loginMask_passwordRequired;Indtast venligst dit kodeord.
+cams_loginMask_passwordAndUsernameAreWrong;Forkert e-mail, kontonavn eller adgangskode.
+cams_loginMask_emailOrAccountName_placeholder;E-mailadresse / kontonavn
+cams_loginMask_temporaryInfobox;NYT: Du skal oprette en lobbykonto for at få adgang til dine spilverdener.\n\nHvis du ikke har en lobbykonto endnu, kan du <style="SimpleLink"><link="CreateAccountLink">oprette en konto</link></style>.
+cams_setPassword_header;Vælg din adgangskode.
+cams_setPassword_info;Opret en adgangskode til din konto med en minimumslængde på otte tegn.
+cams_setPassword_enter_password;Vælg en adgangskode:
+cams_setPassword_strength_label;Adgangskodestyrke
+cams_setPassword_strength_missing;Indtast en adgangskode for at kontrollere dens styrke.
+cams_setPassword_strength_1;meget svag
+cams_setPassword_strength_2;ret svag
+cams_setPassword_strength_3and4;moderat
+cams_setPassword_strength_5;ret stærk
+cams_setPassword_strength_6;meget stærk
+cams_setPassword_strength_PasswordTooShort;Jo længere, jo bedre (16+ tegn)
+cams_setPassword_strength_PasswordGoodLength;Adgangskoden har en god længde
+cams_setPassword_strength_OneType;Kun én type tegn brugt
+cams_setPassword_strength_TwoTypes;Der er brugt to typer tegn
+cams_setPassword_strength_ThreeTypes;Der er brugt tre typer tegn
+cams_setPassword_strength_NoNumbers;Ingen tal brugt
+cams_setPassword_strength_NoLetters;Ingen bogstaver brugt
+cams_setPassword_strength_NoSpecialCharacters;Ingen specialtegn brugt
+cams_setPassword_strength_NoUpperAndLowerCase;Ingen blanding af store og små bogstaver
+cams_setPassword_strength_UpperAndLowerCase;Store og små bogstaver er brugt
+cams_activation_cta_set_password;Vælg adgangskode
+cams_activation_password_length;8-64 tegn
+cams_resetPassword_header;Vælg ny adgangskode
+cams_resetPassword_info;Opret en ny adgangskode til din lobbykonto med en minimumslængde på otte tegn.
+cams_setUsername_header;Vælg et navn til din Legends-lobbykonto
+cams_setUsername_info;Vælg et brugernavn og en forkortelse for at oprette din unikke lobbykonto.
+cams_setUsername_username_label;Vælg et brugernavn:
+cams_setUsername_tagline_label;Vælg en forkortelse:
+cams_setUsername_tagline_example;f.eks. KORT2
+cams_setUsername_tagline;Forkortelse:
+cams_setUsername_condition_onlyLettersAndNumbers;Kun bogstaver og tal
+cams_setUsername_username_condition_Length;3-15 tegn
+cams_setUsername_tagline_condition_Length;2-5 tegn
+cams_setUsername_hint;Kombinationen af dit brugernavn og din forkortelse bliver dit unikke lobbykonto-navn. Så længe kombinationen er tilgængelig, kan du vælge hvilken som helst kombination du vil.\n\nDette påvirker ikke navnet på din spilverden.
+cams_setUsername_cta_createAccount;Opret konto
+cams_setUsername_username_missing;Indtast venligst et brugernavn og en forkortelse.
+cams_setUsername_accountName_preview;Forhåndsvisning af kontonavn:
+cams_setUsernameConfirmPopup_header;Legends-lobbykonto oprettet!
+cams_setUsernameConfirmPopup_info;Din Legends-lobbykonto med login-navnet <b>{{playerName}}</b> er blevet oprettet.
+cams_setUsernameConfirmPopup_GameworldAndAvatar_header;Dine spilverdener & avatarer
+cams_setUsernameConfirmPopup_GameworldAndAvatar_info;Vi har forbundet følgende eksisterende spilverdens-avatarer med samme e-mailadresse til din nye lobbykonto.
+cams_avatar_name;Avatarnavn
+cams_looby_welcomeMessage;Velkommen!\n<b>{{playerName}}</b>
+cams_looby_header;Dine spilverdener
+cams_looby_noGameWorlds;Du har i øjeblikket ikke en aktiv avatar på nogen spilverden. Deltag i en ny spilverden, og begynd at spille.
+cams_looby_joinNewGameworld;Deltag i ny spilverden
+cams_looby_playNow;SPIL NU
+cams_looby_gameworldsLinked;Spilverdener knyttet til din konto
+cams_looby_invitePenging;[data>1:{{data}} Invitationer][data=1:Invitation] afventer
+cams_looby_localGameWorld;LOKAL SPILVERDEN
+cams_looby_avatarInDeletion;Sletter
+cams_removeDualAccount_header;Fjern dual-spiller
+cams_removeDualAccount_info;Vil du fjerne <b>{{lobbyAccountName}}</b> som dual for din avatar <b>{{avatarName}}</b>?\n\n<b>{{lobbyAccountName}}</b> vil ikke længere have adgang til din avatar.
+cams_removeDualAccount_removeDual;Fjern dual
+cams_addDualPlayer_info;Indtast spillerens lobbykonto-navn:
+cams_addDualPlayer_placeholder;brugernavn#forkortelse
+cams_addDualPlayer_addPlayer;[data>1:Tilføj spillere][data=1:Tilføj spiller][data=0:Tilføj spiller]
+search_addDualPlayeradditionalEmptyResultInfo;Spiller ikke fundet eller er allerede inviteret som dual
+cams_dualInventation_header;Dual-invitation
+cams_dualInventation_invitations;Invitationer:
+cams_dualInventation_info;Hvis du accepterer invitationen, kan du logge ind med din egen lobbykonto for at få adgang til denne avatar.
+cams_dualInventation_moreInfo;Du kan kun acceptere én dual-invitation for hver spilverden.
+cams_dualInventation_invite;<b>{{LobbyAccountName}}</b> inviterede dig til at spille <b>{{avatarName}}</b>
+cams_dualInventation_AcceptInvite;Accepter invitation
+cams_acceptDualInvitation_header;Accepter dual-invitation
+cams_acceptDualInvitation_info;Vil du tage imod dual-invitationen fra <b>{{lobbyAccountName}}</b> til at spille <b>{{avatarName}}</b> på <b>{{gameworldName}}</b>?
+cams_acceptDualInvitation_moreInfo;Du har flere ventende dual-invitationer til den samme spilverden, men kan kun acceptere én dualinvitation til hver spilverden.
+cams_acceptDualInvitation_avatarInDeletion;Grundet vores dualregler, kan du kun have én aktiv avatar pr. spilverden. \nAccept af dual-invitationen vil fjerne adgangen til din avatar {{avatarName}}, som er under sletning på den spilverden. \nDu kan ikke annullere sletningsprocessen længere bagefter.
+cams_dualSettings_header;Dual-indstillinger
+cams_dualSettings_info;Du kan til enhver tid stoppe med at spille som dual for den nævnte avatar.
+cams_dualSettings_leaveDualPlay;Forlad dual-spil
+cams_confirmLeaveDualPlay_info;Vil du holde op med at spille dual for <b>{{avatarName}}</b> på <b>{{gameworldName}}</b>?\n\nNår du har forladt din dual, kan du oprette din egen avatar eller slutte dig til en anden avatar for at spille dual på denne spilverden igen.
+cams_recoverPassword_header;Gendan adgangskode
+cams_recoverPassword_goBackToLogin;Gå tilbage til login
+cams_recoverPassword_info;Indtast den e-mailadresse, der er tilknyttet din lobbykonto. Vi sender dig instruktioner om, hvordan du nulstiller din adgangskode.
+cams_recoverPasswordEmailSent_header;E-mail sendt
+cams_recoverPasswordEmailSent_info;Hvis der findes en lobbykonto til e-mailadressen <b>{{emailAdress}}</b>, har vi sendt dig instruktioner om at nulstille din adgangskode.\n\nNår du har gendannet din adgangskode, kan du logge ind igen.
+cams_recoverPasswordEmailSent_goBackToLogin;Tilbage til login
+cams_editDualAccounts_header;Dualer
+cams_editDualAccounts_gameworld;Spilverden: {{gameworldName}}
+cams_editDualAccounts_avatar;Avatar: {{avatarName}}
+cams_editDualAccounts_avatarOwner;Avatar-ejer:
+cams_editDualAccounts_noDualsAdded;- Ingen dual-spillere tilføjet til denne avatar -
+cams_editDualAccounts_info;Dual-spillere vil have <b>fuld adgang</b> til denne avatar og kan udføre alle handlinger i spillet, herunder at bruge og købe guld.\n\nDualspillere kan logge ind med deres egen lobbykonto for at få adgang til denne avatar og kan IKKE invitere andre dualspillere.
+cams_editDualAccounts_warningHint;Del ikke dine login-data til lobbykontoen med andre spillere, for at forhindre uønsket adgang til andre avatarer på spilverdner og dine kontodata.
+cams_editDualAccounts_addDualPlayer;Tilføj dualspiller
+cams_editDualAccounts_avatarInDeletion;Din avatar {{avatarName}} i denne spilverden bliver slettet. Derfor kan du ikke sende en dualinvitation.
+cams_settings_title;Indstillinger
+cams_settings_changePassword_information;Hvis du vil ændre din adgangskode, sender vi dig en e-mail til din kontos e-mailadresse.
+cams_settings_changePassword_sendEmail;Send e-mail
+cams_settings_changePassword_emailSent;Vi har sendt dig en e-mail, så du kan ændre din adgangskode.
+cams_settings_accountDeletion_title;Sletning af lobby-konto
+cams_settings_accountDeletion_info;Slet din Legends-lobbykonto inklusiv alle spilverdener og avatarer fra denne konto.
+cams_settings_accountDeletion_action;Slet lobbykonto
+cams_settings_accountDeletion_warning;Advarsel: Denne handling kan ikke fortrydes!
+cams_settings_accountDeletion_warning_content;En sletning af din lobbykonto er permanent efter en nedtælling på 72 timer, kan ikke fortrydes og påvirker alle dine avatarer. \n\nDin konto kan kun sættes til sletning, hvis alle dine avatarer er sat til sletning først.
+cams_settings_accountDeletion_requirementsInformation;For at slette din konto skal alle dine avatarer være under sletning eller allerede være slettet.
+cams_settings_accountDeletion_information_warning;Denne handling sætter din konto i gang med at blive slettet. Bekræft venligst, at du er klar over, at din konto, alle tilknyttede avatarer og data vil blive permanent slettet, ved at skrive "slet" i inputfeltet.
+cams_settings_accountDeletion_information_error;Du kan ikke slette kontoen, hvis en avatar ikke er til sletning.\nLog ind på de angivne spilverdener, og slet din avatar.
+cams_settings_accountDeletion_noAvatarsFound;Ingen aktive spilverdener/avatarer fundet.\nDu er klar til at gå!
+cams_settings_accountDeletion_understandmentConfirmation;Jeg forstår
+cams_settings_accountInDeletion_title;Konto under sletning
+cams_settings_accountInDeletion_info;Din lobbykonto <b>{{NAME}}</b> vil blive slettet permanent om <b>{{TIMESTAMP|Countdown}}</b>.
+cams_settings_accountInDeletion_action;Annuller sletning
+cams_mainMenu_dataConsent;Datasamtykke
+gameworld_gameworld;Spilverden
+infobox.productionboost;{{RES}}{{TIME_COUNTER}}
+infobox_notesCount;{{COUNT}} note[COUNT>1:r]
+auction_placeBid;Afgiv et bud
+auction_auctionsAmount;{{COUNT}} auktioner
+auction_bidsRefreshed;Buddene er opdateret!
+auction_currentSilver;Nuværende sølv:  {{iconName|Sprite}} {{currentSilver}}
+auction_availableAmount;Tilgængeligt beløb:
+auction_toSellAmount;Sælg beløb:
+auction_selectAmountToSellHeader;Vælg det beløb, der skal sælges
+auction_soldHorseForSilver;Solgte hest for {{amount}} sølv.
+auction_currentCurrency;Nuværende:
+auction_newCurrencyValues;Ny:
+auction_exchangeExplanationGoldToSilverTitle;Du kan veksle guld til sølv for at købe heltegenstande i auktionshuset.
+auction_exchangeExplanationGoldToSilverMore;Indtast det guldbeløb, du gerne vil veksle:
+auction_exchangeExplanationSilverToGoldTitle;Du kan veksle sølvet fra salg af heltegenstande i auktionshuset til guld.
+auction_exchangeExplanationSilverToGoldMore;Indtast det sølvbeløb, du gerne vil veksle:
+auction_countAndName;{{AMOUNT}}×{{ITEM_NAME}}
+auction_deleteAll;Slet alle auktioner
+auction_confirm_deletion_title;Slet [data>1:{{data}} auktionsposter][data=1:auktionspost]
+auction_confirm_deletion_button;Slet [data>1:poster][data=1:post]
+auction_confirm_deletion_text_header;Er du sikker på at du vil slette [data>1:{{data}} auktionsposter][data=1:denne auktionspost]?
+auction_confirm_deletion_text;Når du har slettet en post, er den væk for altid. Du vil ikke være i stand til at gendanne den.
+cams_looby_noMatchingGameworlds;Der er ingen matchende spilverdener til dit valg.
+serverSelection_5;Dev
+serverSelection_header;Vælg filter for spilverdener
+serverSelection_filter_gameworldSpeed;Spilverdens hastighed
+serverSelection_gameworldSpeed;x{{INT}} speed
+serverSelection_filer_gameworldLifetime;Spilverdens levetid
+serverSelection_gameworldLifetime;{{INT}}-{{INT2}} dage
+serverSelection_gameworldLifetime_XorMore;{{INT}} eller flere dage
+filters_applyButton;Anvend [COUNT<2:filter][COUNT>1:{{COUNT}} filtre]
+filters_reset;Nulstil [COUNT<2:filter][COUNT>1:filtre]
+cams_avatarCreation_cancel_title;Annuller oprettelse af avatar
+cams_avatarCreation_cancel_reconfirmationText;Er du sikker på, at du vil annullere oprettelsen af din avatar på {{gameworldName}}?
+cams_avatarCreation_cancel_explanation;Du vil miste alle dine fremskridt i denne spilverden, herunder dit valg af folkeslag, kortplacering og avatarnavn.
+cams_avatarCreation_button_startPlaying;Begynd at spille
+cams_avatarCreation_button_changeSector;Skift position
+cams_avatarCreation_button_selectTribe;Vælg folkeslag
+cams_avatarCreation_button_updateTribe;Opdater folkeslag
+cams_avatarCreation_button_selectSector;Vælg placering
+cams_avatarCreation_button_updateSector;Opdater position
+cams_avatarCreation_name_title;Indtast avatarnavn
+cams_avatarCreation_name_tip;Dette er dit avatarnavn på spilverdenen.
+cams_avatarCreation_name_errorEmpty;Indtast et avatarnavn.
+cams_avatarCreation_name_placeHolder;Avatarnavn
+cams_looby_avatarInDeletionBlockPlayNow;Du har accepteret en dualinvitation til denne spilverden, {{gameworldName}}, så du kan ikke længere få adgang til den i ikke-dual tilstand.
+infobox_openMessage;Åben besked
+infobox_accountIsLocked;Din avatar blev spærret!
+auction_button_requirement;Gennemfør {{REQUIRED}} eventyr for at låse op for auktioner.\nTilbage: {{INT}}
+auction_availableSilver;Tilgængeligt sølv:  {{iconName|Sprite}} {{currentSilver}}
+auction_deleteSelected;Slet valgte auktioner
+auction_deletedAll_confirmation;Alle auktioner slettet!
+auction_deletedSelected_confirmation;{{data}} auktions [data>1:poster][data=1:post] slettet!
+newVersionAvailable_title;Ny version tilgængelig
+newVersionAvailable_description;Vi har forbedret vores app. Opdater venligst for at fortsætte med at spille.
+newVersionAvailable_joinDiscord;Nyheder? Deltag på Discord for mere information.
+newVersionAvailable_toStore;Opdater nu
+infobox_beginnerProtection_title;Forlæng begynderbeskyttelse
+infobox_beginnerProtection_question;Er du sikker på at du vil forlænge din beskyttelse?
+infobox_beginnerProtection_description;Du kan ikke sende råstoffer til andre spillere, angribe dem eller selv blive angrebet mens du er i begynderbeskyttelse.
+sendResources_beginnersProtection;Du kan ikke sende råstoffer til andre spillere mens din begynderbeskyttelse er aktiv.
+sendTroops_beginnersProtection;Du kan ikke sende tropper til andre spillere mens din begynderbeskyttelse er aktiv.
+sendTroops_otherBeginnersProtection;Du kan ikke sende tropper til andre spillere mens de er under begynderbeskyttelse.
+buildingActivities_building_36;Fælder i produktion
+tasks_collectAll;Saml alle ({{INT}})
+auction_bidMinPlaceholder;min. {{INT}}
+auction_buttonBidMinimum;Byd mindste krævede
+hero_adventures_available;Tilgængelige eventyr
+messages_freshDeskMessage_viewAndReplyInBrowser;Se og svar i browser
+messages_webViewRecommendation;Indholdet af beskeden er måske ikke komplet.\nVi anbefaler at se beskeden i en browser.
+rateThisApp_popup_title;Kan du lide vores app?
+rateThisApp_popup_description;Hvis du kan lide vores app, så tag venligst et øjeblik til at bedømme den.
+rateThisApp_popup_appreciatefeedback;Din mening betyder meget for os!
+rateThisApp_popup_btn_positive;Den er fantastisk!
+rateThisApp_popup_btn_negative;Kunne være bedre
+rearrange_or_demolish_building;Omplacer eller nedriv bygning
+mainBuilding_buildingArrangement;Flytning af bygninger
+mainBuilding_openRearrangeMode;Åbn flyttetilstand
+mainBuilding_demolishBuildings;Nedriv bygninger
+mainBuilding_openDemolishMode;Åbn nedrivningstilstand
+mainBuilding_demolishBuildings_description;Træk og slip bygninger for at ændre position.
+rearrangeBuildingPopup_rearrangeDescription;Flyt <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>?
+rearrangeBuildingPopup_buildingsRearranged;Bygninger flyttet
+rearrangeBuildingPopup_buildingRearranged;{{buildingName|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>{{buildingLevel}}</color>
+confirmRearrangeBuildingPopup_header;Vil du flytte følgende bygning?
+confirmRearrangeBuildingPopup_description;Flytter de udvalgte bygninger i landsbyen <b>{{villageName}}</b>.
+demolishBuildingPopup_title;Nedriv bygning
+demolishBuildingPopup_description;Vælg en bygning, der skal rives ned
+demolishBuildingPopup_descriptionWithSelection;Vil du nedrive <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>?
+demolishBuildingPopup_demolishLevel;Nedrivning af niveau
+demolishBuildingPopup_demolishCompletely;Nedriv fuldstændigt
+confirmDemolishBuildingPopup_header;Vil du rive <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color> ned med det samme?
+confirmDemolishBuildingPopup_description;Nedriver øjeblikkeligt den valgte bygning og fjerner den fra din landsby.\nDenne handling kan ikke fortrydes.
+characterCount;{{COUNT}}/{{MAX}} tegn
+survey_button_description_reward;Deltag i denne korte undersøgelse for at hjælpe os med at forbedre Travian: Legends-appen.\nDin støtte vil blive belønnet.
+cams_lobby_joinGameworld;Tilmeld til spilverden
+cams_lobby_gameworld_inviteOnly;Kun invitationer
+cams_lobby_gameworld_inviteOnlyInfo;Denne spilverden er begrænset til spillere med en særlig invitationskode.
+cams_lobby_gameworld_inviteCodeEnter;Indtast invitationskode
+cams_lobby_gameworld_inviteCodeInfo;Denne spilverden er begrænset til spillere med en særlig invitationskode.\nHvis du har en, skal du indtaste den for at komme med på spilverdenen.
+cams_lobby_gameworld_inviteCodePlaceholder;F.eks. eThbt5OLyZ8D5xjhUaBAba
+cams_lobby_gameworld_inviteCodeErrorCharacterCount;Invitationskoden er for kort. Indtast alle {{MAX}} anslag.
+cams_lobby_gameworld_inviteCodeCooldown;Nedkølingsperiode for invitationskode ({{TIME|Countdown}})
+timeCountDown;{{TIME|Countdown}}
+attestation_failed;Enhedsattestering mislykkedes! Brug venligst en mobil enhed til at spille.\nHvis problemet fortsætter, skal du bruge hjælpeknappen nedenfor til at kontakte support!
+mainBuilding_demolishBuildings_notAvailable;Hovedbygning niveau {{INT}} er nødvendig for at nedrive bygninger.
+mainBuilding_demolishBuildings_demolishing;Nedriver <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> til <b><color={{colorValue|TextColor}}>niveau {{buildingLevel}}</color></b> om {{timestamp|Countdown}}.
+demolishBuildingPopup_demolishing;Nedriver <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> til <b><color={{colorValue|TextColor}}>niveau {{buildingLevel}}</color></b>
+allianz.hinweis_text_NoConfederacy;Det er diplomatisk etikette at tale med en anden alliance og forhandle, inden et tilbud om en ikke-angrebspagt (IAP) sendes.
+regions_canBeSettled;Kan bosættes?
+regions_regionStatusNoColon;Regionsstatus
+regions_top5AlliancesPopulation;Top-5-alliancers <b>indbyggere</b>
+regions_top5AlliancesVillages;Top-5-alliancers <b>landsbyer</b>
+regions_neighboringRegions;Naboregioner
+regions_regionPopulation;Regions indbyggertal
+regions_contested;Regionen er åben
+cams_lobby_gameworld_disabledAndNotSupported;Spilverden kan i øjeblikket ikke spilles via mobilappen.
+demolishBuildingPopup_impossible;Denne bygning kan ikke rives ned.
+city_benefits;Fordele ved fæstningsby
+city_benefits_threeAdditionalSlots;Tre ekstra byggegrunde
+city_benefits_resourceFieldsLevel12;Opgrader råstoffelter til trin 12.
+city_benefits_watchTowers;Opgrader mur med vagttårne
+city_upgradeToACity;Opgrader {{villageName}} til en fæstningsby.
+city_culturePointsForNext;(næste om {{culturePoints}} kulturpoint)
+city_upgradeVillage;Opgrader landsby
+city_confirm_upgradeVillage;Opgrader til fæstningsby
+city_confirm_header;Vil du opgradere {{villageName}} til en fæstningsby?
+city_confirm_description;At opgradere en landsby til en fæstningsby tager {{time}} og en af dine bosættelsespladser.
+city_upgrading;{{villageId|VillageLink}} {{text}}
+city_upgraded;{{villageId|VillageLink}} er allerede en fæstningsby.
+combatSimulator_selectTarget;Vælg mål
+mainMenu_goToLobby;Gå til lobby
+mainMenu_yourPlayerProfile;Din spillerprofil
+plus.plusAttackWarningText;Indkommende angreb vises på landsbylisten. Kun på mobilen: I landsbyvisningen vil pilen til at åbne landsbylisten i højre side være fremhævet.
+production.crobBalanceTroopConsumptionAncientPower;Bonus fra oldtidskraft
+filters_region_not_found;Regionen findes ikke
+rallyPoint_troopsOverview_ownTroops_8;Egne tropper i 
+rallyPoint_troopsOverview_ownTroops_9;Egne tropper i 
+tradeOffice_merchantsCarryCapacity;Handelsmænds bæreevne:
+tradeOffice_tradeShipsCarryCapacity;Handelsskibes lasteevne:
+buildingActivities_building_48;Tropper helbredes
+playerDetails_victorPointsPerDay;{{PERDAY}} /dag
+allianz.numIncomingRaids;{{NUM_ATTACKS}} plyndring[NUM_ATTACKS>1:er]
+allianz.numIncomingAttacks;{{NUM_ATTACKS}} angreb
+allianz.MerchantCapacityAndSpeedNew;Handel
+alliance_regionalTabTop5Description;Regioner, hvor din alliance er en del af top-5-alliancerne baseret på territorial kontrol.
+alliance_regionalTabTitle;Regional top-5
+alliance_regionalTabTop5Empty;- Ikke nok territorial kontrol i nogen region -
+alliance_ShowDetails;Vis detaljer
+wall_upgradesInProgress;Opgraderinger i gang
+extension_upgradeStarted;Opgraderingen er startet med succes!
+extension_constructionList;Liste over byggeordre
+upgradeLevel;Opgrader niveau
+infoTab_upgradingToLevelForExtension;Opgraderer nu {{buildingName}} til niveau {{level}}:
+infoTab_genericCurrentlyForExtension;Nuværende {{buildingName}}-bonus inklusiv {{extensionName}}:
+infoTab_genericAtLevelForExtension;På niveau {{a}} med {{extensionName}} niveau {{b}}:
+ratioValuesNumeratorBold;<b>{{a}}</b>/{{b}}
+infoTab_productionCosts_title;Produktionsomkostninger
+harbour_shipsInConstruction;Skibe under opbygning
+unitInfo_troopsCarriage;op til <b>{{INT}}</b> tropper
+unitInfo_velocityRaid;Til plyndringer:
+city_benefits_resourceFieldsLevel12inCapital;Opgrader råstoffelter til niveau 12, men i din hovedstad kan du stadig opgradere dem yderligere
+infoTab_genericCurrentlyMoreExplicit;Nuværende {{buildingName}} bonus:
+merchant_merchantOverview_noIncomingDeliveries;- Der er ingen indkommende leverancer. -
+merchant_merchantOverview_noOutgoingDeliveries;- Der er ingen udgående leverancer. -
+merchant_merchantOverview_incoming;Indkommende ({{INT}})
+merchant_merchantOverview_outgoing;Udgående ({{INT}})
+achievementQuests.achQuest_03_Territory_step_01_description;Send tropper på plyndring/angreb mod en natarisk landsby. Denne opgave fuldføres så snart din hær ankommer, også selvom den dør i kampen.<br><br>Point for denne opgave, kan opnås {{NUMBER_OF_TASKS_PER_DAY}} gange hver dag.\n
+allianz.MerchantCapacityTitle_Harbours;Bonus på handelsmænds/skibes kapacitet og hastighed
+market_tradeRoutes_invalidTarget_Territory;Handelsruter kan kun sendes til dine egne landsbyer.
+market_selectResources;Vælg råstoffer
+market_selectResources_requiredTradeShips;Nødvendige handelsskibe
+market_resourcesWillBeSendByTradeShip;Råstoffer vil blive sendt med handelsskib.
+manual.gid38_Territory;Det store råstoflager har 3 gange så stor kapacitet som et normalt råstoflager.<br><br>Denne bygning kan kun bygges med lagerplan-oldtidskraften.
+manual.gid39_Territory;Det store kornkammer har 3 gange så stor kapacitet som et normalt kornkammer.<br><br>Denne bygning kan kun bygges med lagerplan-oldtidskraften.\n
+harbour_noAvailableShips;Der er i øjeblikket ingen skibe stationeret i denne havn.
+harbour_destroy_title;Ødelæg skibe
+harbour_destroy_desc_title;Vælg skibstype og den mængde, du vil ødelægge.
+harbour_destroy_desc;Kun skibe, der i øjeblikket er stationeret her, kan ødelægges, og du vil ikke få nogen råstoffer tilbage.
+harbour_destroy_timeNotice;Skibe vil blive ødelagt med det samme.
+harbour_destroy_selectedTotalAmount;Valgte skibe: <b>{{AMOUNT}}</b>
+harbour_destroy_shipSelectTitle;<b>{{ShipID|TranslateSuffixFor|gid49.type_t}}</b> (<b>{{Amount}}</b> skib[Amount>1:e] udstationeret her)
+extension_fullyExtended;{{NAME}} er komplet udbygget.
+extension_willBeFullyExtended;{{NAME}} er komplet udbygget.
+layout.directLinkMarketplaceTrader;Ventende handelsmænd: {{INT}}/{{INT2}}
+UnitProduction_ViewBuildingList;Se bygningsliste
+raidList_useRaidShipsInfo;Plyndringsskibe bruges automatisk, når de er tilgængelige. Hvis du ikke har flere plyndringsskibe, vil dine tropper rejse normalt.
+buildingActivities_maxReached;Maks. beløb nået
+buildingActivities_building_49;Skibe i produktion
+buildingActivities_buildingAdditional_48;Ingen sårede tropper
+residence_expansion_villagesRatio;Landsbyer: {{COUNT}}/{{MAX}}
+residence_expansion_slotFree;Plads ikke i brug.
+residence_expansion_slotPrerequisites;Forudsætninger <b>{{BuildingID|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>niveau {{Level}}</color></b>
+residence_expansion_culturePointsPerDay;Daglig produktion af kulturpoint
+search_region;Regionsøgning
+search_select_region;Vælg region
+statistiken.progressionStepTitle_start_achieved;Serveren startede den {{VALUE}}
+statistiken.progressionStepTitle_serverEnd_locked;Serveren slutter den {{VALUE}}
+filters_artefact_not_found;Artefaktet eksisterer ikke
+sendTroops_settlersChangeTribe;For de første {{INT}} bosættelser, kan du vælge hvilket folkeslags landsby, der skal bosættes. Vælg omhyggeligt.
+gid17.nextTradingRoute;Næste handelsrute starter kl. <b>{{HOUR}}</b> og har brug for <b>{{MERCHANTS}}</b> [MERCHANTS>1:handelsmænd][MERCHANTS=1:handelsmand].
+gid17.nextTradingRouteWithShips;Næste handelsrute starter kl. <b>{{HOUR}}</b> og har brug for <b>{{SHIPS}}</b> [SHIPS>1:handelsskibe][SHIPS=1:handelsskib].
+market_tradeRoutes_merchants;[merchants>1:{{merchants}} handelsmænd][merchants=1:{{merchants}} handelsmand]
+market_tradeRoutes_tradeShips;[tradeShips>1:{{tradeShips}} handelsskibe][tradeShips=1:{{tradeShips}} handelsskib]
+market_tradeRoutes_repeats;{{repeats}} x
+market_tradeRoutes_usesShip;Bruger skibe
+troopsCheckout_shipUseInfo;{{Distance}} felt | {{ShipID|Bold}} | Spar {{duration|Bold}} timer
+troopInfoPopup_shipsTitle;Skibe stationeret i landsby
+language_nl-NL;Hollandsk
+cropfinder_cropperType;Cropper-type:
+valueInBrackets;({{VALUE}})
+residence_settlementSlotsUsed;Brugte bosættelsespladser
+residence_settlementCPNeededForNextSlot;Kulturpoint nødvendige for næste bosættelsesplads:
+gid27.ancient_power_detail_;{{INT}}
+artefact_effect_value;Effekt: <b>{{EFFECT}}</b>
+ancientPower_overview;Regionale kræfter
+ancientPower_no_ancientPower;Ingen oldtidskraft på denne server
+ancientPower_tip_large;Store oldtidskræfter kræver skatkammer niveau <b>20</b> og påvirker <b>alle dine landsbyer</b>
+ancientPower_tip_small;Små oldtidskræfter kræver skatkammer niveau <b>10</b> og påvirker kun <b>landsbyen</b> hvori de aktiveres
+ancientPower_tip_nearby;Oldtidskræfter i området omkring {{villagenamelong|Bold}}
+ancientPower_stored_title;Regionale kræfter sikret af din alliance
+ancientPower_stored_noContent;Ingen regioner sikret af din alliance
+ancientPower_stored_nextFree;Næste gratis aktivering er tilgængelig om: [isFree=0:<color={{colorValue|TextColor}}>]{{timeStamp|Countdown?Bold}}[isFree=0:</color>]
+ancientPower_stored_notActivatable;Ingen oldtidskraft at aktivere.
+ancientPower_stored_activated;Oldtidskraft aktiveret.
+ancientPower_stored_alreadyActive_account;Du har allerede en aktiv oldtidskraft, der påvirker alle landsbyer.
+ancientPower_stored_alreadyActive_village;Du har allerede en aktiv oldtidskraft, der påvirker denne landsby.
+ancientPower_stored_alreadyActive;Denne oldtidskraft er allerede aktiveret.
+filters_ancientPower_not_found;Oldtidskraften findes ikke
+regions_withFactions_yourAllianceHasMoreThan50PercentSecured;Din alliance har >{{PERCENT}}% territorialkontrol.<br><br>Du skal bruge et skatkammer for at aktivere den regionale kraft.
+language_en-NT;Udviklingssprog
+settings_notNow;Ikke nu
+settings_dontAskAgain;Spørg ikke igen.
+cams_lobby_gameworld_lastPlayedTime;{{TIME}}t
+cams_settings_DirectLoginTitle;Direkte login til spilverden
+cams_settings_DirectLoginInfo;Spring valget af spilverden over i Legends-lobbyen, og log direkte ind på din sidst spillede spilverden, når du åbner appen.
+cams_settings_DirectLoginActive;Direkte login er aktiveret
+cams_settings_DirectLoginInactive;Direkte login er deaktiveret
+cams_directLoginPopUp_Info;Vil du logge direkte på din spilverden, når du starter appen?
+cams_directLoginPopUp_youCanChange;Du kan til enhver tid ændre dit valg i lobbyindstillingerne.
+cams_directLoginPopUp_Accept;Ja, log mig direkte ind
+language_ro-RO;Rumænsk
+language_hu-HU;Ungarsk
+language_ar-AE;Arabisk
+autoLoginFailed.;Automatisk login mislykkedes.
+needInternetToPlay;Du skal have internetforbindelse for at spille. Kontroller forbindelsen og prøv igen.
+mapCellInfoWindow_removeFromLists;Fjern fra alle farmlister
+removeFromListsPopup_Title;Vil du fjerne {{TARGETNAME}} fra {{INT}} plyndringslister?
+removeFromListsPopup_Description;Du kan tilføje målet individuelt til plyndringslisterne igen senere.
+removeFromListsPopup_ConfirmButton;Fjern mål
+social_continueWith;Eller fortsæt med:
+social_loginWith;Eller log ind med:
+social_backToRegistration;Tilbage til tilmelding
+social_createAccountTitle;Opret Legends-lobbykonto
+social_errorTitle_NoEmailProvided;E-mail-tilladelse mangler
+social_errorMsg_NoEmailProvided;For at begynde at spille Travian: Legends skal vi bruge din <b>tilladelse til at tilgå din e-mailadresse.</b>
+social_errorInfo_NoEmailProvided;Prøv igen med de rigtige tilladelser, eller prøv en anden registreringsmetode.
+social_errorTitle_AlreadyExists;E-mail allerede brugt
+social_errorMsg_AlreadyExists;Den angivne e-mailadresse bruges allerede til en Travian: Legends-lobbykonto.
+social_errorInfo_AlreadyExists;Brug venligst den e-mailadresse, der er knyttet til din konto, til at logge ind.
+social_acceptTOS;Ved at klikke på "Bekræft" accepterer du <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">Betingelser & Vilkår</link></style> og bekræfter, at du har bemærket <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">Information om fortrydelsesret</link></style> og <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">Privatlivspolitikken</link></style>.
+linkNotWorking;Link virker ikke
+linkNotWorkingDescription;Det ser ud til, at dette link i øjeblikket ikke virker i Travian: Legends-appen. Det virker måske i din internetbrowser.
+openLinkInBrowser;Åben link i browser
+settings_language_useArabicNumerals_activated;Brug af østarabiske tal er aktiveret
+settings_language_useArabicNumerals_deactivated;Brug af østarabiske tal er deaktiveret
+artefact_inventory_active_empty;Ingen artefakter aktiveret
+social_errorTitle_Unknown;Ukendt fejl
+social_errorMsg_Unknown;Der er opstået en ukendt fejl. Prøv venligst igen.
+loadingScreen_text_01;Din helt er ved at ordne sit hår, vent venligst.
+loadingScreen_text_02;Kornkammeret er overfyldt. Landsbyboere opbevarer nu korn i deres lommer.
+loadingScreen_text_03;Ambassaden holder fest – kun for diplomater.
+loadingScreen_text_04;Forsamlingspladsen er nu et picnicsted – tropperne nyder sandwicher.
+loadingScreen_text_05;Smeden smeder et sværd ... af spaghetti.
+loadingScreen_text_06;Bygmestrene læser arbejdstegningen ... på hovedet.
+loadingScreen_text_07;Natarerne kom med i landsbyens bogklub. Ingen ved, hvordan man læser oldtidens runer.
+loadingScreen_text_08;Spejderne tæller fjendens tropper ... men er løbet tør for fingre.
+loadingScreen_text_09;Verdensvidunderet er under angreb af duer. Sender rengøringsholdet ind.
+loadingScreen_text_10;Slavemilitsen kræver en fagforening – forbered dig på strejker.
+loadingScreen_text_11;Tropperne nægter at angribe, indtil nogen forklarer kampsimulatoren.
+loadingScreen_text_12;Landsbyboerne stoppede med at arbejde for at se to høns slås.
+loadingScreen_text_13;Dine katapulter skændes om, hvilken bygning de skal ramme først.
+loadingScreen_text_14;Vær tålmodig, helten tog Deutsche Bahn i stedet for hest.
+loadingScreen_text_15;Gemmestedet gemmer ikke bare på råstoffer, men også på landsbyens sladder.
+loadingScreen_text_16;Kasernen er vært for et talentshow – træningen er udskudt.
+loadingScreen_text_17;Din mur er næsten færdig. Venter bare på, at malingen tørrer.
+loadingScreen_text_18;Legionærerne krævede en kaffepause, før de marcherede.
+loadingScreen_text_19;Gallerne forklarer romerne, hvad en palisade er, og der er gået tre timer.
+loadingScreen_text_20;Bestikker handelsmænd for at fremskynde leverancer.
+loadingScreen_text_21;Din helt tager et ridekursus, det kan tage et stykke tid.
+loadingScreen_text_22;Handelsmændene sidder fast bag en langsom okse.
+loadingScreen_text_23;Alliancens ledere udarbejder en kampstrategi ... med fingermaling.
+loadingScreen_text_24;Kornkammeret er fyldt med småkager – råstofforvaltning, når det er bedst.
+loadingScreen_text_25;Spejderarbejde afbrudt – Heimdall har fået noget i øjet.
+changeAccountNameSubtitle;Skift brugernavn og/eller forkortelse.
+changeAccountNamePleaseNote;Vær opmærksom på, at når du har ændret dit kontonavn, skal du vente {{DAYS}} [DAYS>1:dage][DAYS=1:dag], før du kan ændre det igen.
+changeAccountNameWaiting;Du er nødt til at vente, indtil du kan ændre dit navn igen:
+changeAccountNameUpdated;Kontonavn opdateret
+changeAccountNameUpdatedSubtitle;Dit kontonavn er blevet opdateret til: <b>{{playerName}}</b>
+alliance_top10Title;Alliancens interne top-10
+gameworldCalendarNoGameworld;Ingen kommende spilverdener fundet. \nDe kan være under indlæsning eller uplanlagte.
+gameworldCalendar_title;Spilverdenskalender
+valueWithModifierBefore;{{value|Round|2}} x
+goldShop_purchaseCanceled;Køb annulleret!
+goldShop_pendingRestored;Dit tidligere køb er blevet gendannet med succes.
+hero_consumablePopup_healthByOintment;Livspoint opnået pr. salve:
+unknown;?
+serverSelection_gameworldSpeed_short;{{INT}} x
+gameworldCalendarDetails_title;Spilverdens-detaljer
+gameworldCalendarDetails_shareLink;Del link til spilverden
+gameWorldEndCondition;Spilverdens slutbetingelse
+gameWorldEndCondition_WonderOfTheWorld;Verdensvidunder {{Level}}
+gameWorldEndCondition_VictoryPoints;Sejrspoint
+gameWorldRestriction_InvitationCode;Denne spilverden er begrænset til spillere med en særlig invitationskode.
+gameWorldRestriction_MobilePlayers;Denne spilverden er kun tilgængelig for mobilspillere.
+gameWorldSpecial;Dette er en særlig spilverden, som måske kun er tilgængelig i en begrænset periode, og som kan have andre funktioner end Classic-spilverdener.
+gameWorldUndefinedDetails;Ikke alle detaljer om spilverdenen er defineret endnu. Du får en besked i din lobby, når de er blevet opdateret.
+bonusValueWithPercentNoSpace;+ {{value}}%
+startDate;Startdato
+startTime;Starttidspunkt
+UTC+1;(UTC+1)
+goldShop_GoldPromotion;Guldtilbud
+auction_FeePopupTitle;Auktionsgebyr
+auction_FeePopupText;Du skal betale et gebyr på {{value}}% af salg i auktionshuset. Din udbetaling er salgsprisen minus auktionsgebyret.
+auction_FeePopupExample;Eksempel på beregning
+auction_FeePopupSalePrice;Salgspris
+auction_FeePopupFee;Auktionsgebyr ({{value}}%)
+auction_FeePopupPayout;Udbetaling
+auction_sellHouseFeeInfo;Din udbetaling er salgsprisen minus auktionsgebyret på {{value}}%.
+gold_action_finishImmediately;Færdiggør øjeblikkeligt
+mapCellInfoWindow_villageReports;Vis landsbyens rapporter
+hero_crafting_title_refine;Forfin udstyr
+hero_crafting_title_smelt;Smelt udstyr
+hero_crafting_title_forge;Smed udstyr
+hero_crafting_title_reforge;Gensmed udstyr
+hero_crafting_action_refine;Forfin
+hero_crafting_action_smelt;Smelt
+hero_crafting_action_forge;Smed
+hero_crafting_action_takeMaterials;Tag ({{INT}}/{{MAX}}) materialer
+hero_crafting_action_takeAllMaterials;Tag materialer
+hero_crafting_action_reforge;Gensmed
+hero_crafting_action_take;Tag
+hero_crafting_action_pick;Vælg genstand
+hero_crafting_action_equip;Påsæt
+hero_crafting_action_buy_material;Køb materiale
+hero_crafting_action_buy_item;Køb genstand
+hero_crafting_action_craft_material;Smelt materiale
+hero_crafting_action_moveToInventory;Til inventar
+hero_crafting_action_select_item;Vælg
+hero_crafting_action_remove_item;Fjern
+hero_crafting_action_error_equipment;Genstanden skal være helteudstyr.
+hero_crafting_action_error_rarity;Genstande skal have samme sjældenhed.
+hero_crafting_action_error_category;Genstande skal være fra samme udstyrskategori.
+hero_crafting_action_error_id;Genstande skal være identiske.
+hero_crafting_action_error_missingItem;En eller flere af de varer, du har valgt, er ikke længere tilgængelige.
+hero_crafting_refine_tip;Episke heltegenstande kan forfines med enhver anden episk heltegenstand i samme genstandskategori.
+hero_crafting_refine_tip_error;Du har ikke nogen heltegenstande at forfine. Find genstande på eventyr, eller køb genstande i auktionshuset, og forbedr dem ved at forædle dem.
+hero_crafting_smelt_info;Tag {{INT}} materiale[INT>1:r] nu, eller vent og få {{MAX}}.
+hero_crafting_reforge_text;Gensmed udstyr for at få en anden genstand, muligvis af en anden sjældenhed og kvalitet.\nEfter gensmedning kan du vælge, hvilken genstand du vil tage eller gensmede igen.\nVær opmærksom på dette: Efter gensmedning vil genstanden fra hvert yderligere gensmedningstrin være væk og kan ikke ændres tilbage.
+inventoryItem_quality_title;Kvalitet
+inventoryItem_rarity_title;Sjældenhed
+inventoryItem_rarity_quality_title;Sjældenhed & kvalitet
+inventoryItem_rarity_common;Almindelig
+inventoryItem_rarity_uncommon;Ualmindelig
+inventoryItem_rarity_rare;Sjælden
+inventoryItem_rarity_epic;Episk
+inventoryItem_rarity_legendary;Legendarisk
+search_for_village;Landsby-søgning
+search_for_player;Spiller-søgning
+villageList_EditMode;Redigeringstilst.
+villageList_MaxGroupAmount;Maks. antal landsbygrupper nået.
+hero_crafting_action_error_material;Genstanden skal være et materiale.
+villageList_ReorderError;Ugyldig destination
+textMatchingInput_Title;Bekræft ved at skrive "{{WORD}}"
+hero_inventory_category_empty;- Ingen varer i denne kategori -
+hero_crafting_action_refine_success;Udstyr forfinet
+hero_crafting_action_smelt_success;Udstyr smeltet
+hero_crafting_action_forge_success;Udstyr smedet
+hero_crafting_result_item_equipped;Genstand påsat
+hero_crafting_result_item_taken;Genstand flyttet til rygsæk
+hero_crafting_result_material_taken;Materiale flyttet til inventar
+hero_crafting_action_error_quality;Genstandene skal have samme kvalitet.
+hero_crafting_action_error_epic;Skal være en anden episk genstand af samme kategori og kvalitet.
+inventoryItem_rarity_none;Ingen sjældenhed
+dailyQuests_rewardOverview_short;Belønningsoversigt
+avatar_confirmation_title_delete;Slet avatar
+avatar_confirmation_header_delete;Vil du slette din avatar?
+avatar_confirmation_infoText_delete;Efter påbegyndelse af sletningen, vil det tage <b>3 dage</b> før sletningen af din avatar er gennemført. \nEn avatar under sletning kan ikke længere deltage i auktioner eller bruge vekselkontoret!\nDu kan til enhver tid annullere sletningen her.
+avatar_confirmation_requiredWord_delete;slet
+avatar_confirmation_title_respawn;Start din avatar forfra
+avatar_confirmation_header_respawn;Vil du starte din avatar forfra?
+avatar_confirmation_infoText_respawn;Det sletter alle de fremskridt, du har gjort indtil nu, og placerer din startlandsby et nyt sted på kortet.\n\nAlt købt guld bliver automatisk overført.
+avatar_confirmation_requiredWord_respawn;start forfra
+settings_app_title;Alle spilverdener
+settings_app_Animations_title;Animationer
+settings_app_Animations_description;Vælg, hvilke animationer du gerne vil se i appen.
+settings_app_Animations_activated;Skyanimation for landsby-/råstofvisning er aktiveret
+settings_app_Animations_deactivated;Skyanimation for landsby-/råstofvisning er deaktiveret
+settings_app_NightMode_title;Nattilstand
+settings_app_NightMode_description;Dine landsbyboere har tændt faklerne, og ilden i ovnene knitrer under det svage lys fra stjernerne på nattehimlen.
+settings_app_NightMode_activated;Nattilstand er aktiveret
+settings_app_NightMode_deactivated;Nattilstand er deaktiveret
+settings_app_WinterMode_title;Vintertilstand
+settings_app_WinterMode_description;Sneen falder stille og indhyller landsbyen i en bedragerisk stilhed, hvor enhver lyd synes at opløses i den frostklare luft.
+settings_app_WinterMode_activated;Vintertilstand er aktiveret
+settings_app_WinterMode_deactivated;Vintertilstand er deaktiveret
+settings_app_VillagePanning_title;Flytning af landsby/råstoffelt
+settings_app_VillagePanning_description;Du kan flytte din landsbyvisning og dine råstoffelter.
+settings_app_VillagePanning_activated;Bevægelse er aktiveret
+settings_app_VillagePanning_deactivated;Bevægelse er deaktiveret
+settings_app_PushNotifications_title;Generelle pushmeddelelser
+settings_app_PushNotifications_description;Bliv informeret om generelle app- og spilrelaterede nyheder med push-meddelelser.
+settings_app_PushNotifications_activated;Meddelelse om start af spilverden er aktiveret
+settings_app_PushNotifications_deactivated;Meddelelse om start af spilverden er deaktiveret
+settings_app_EnergySaving_title;Energibesparende tilstand
+settings_app_EnergySaving_description;Spar på din enheds batteri med en lavere FPS-rate.\nAktivering af energibesparende tilstand kan føre til en vis visuel forsinkelse, når du bruger appen.
+settings_app_EnergySaving_activated;Energibesparende tilstand er aktiveret
+settings_app_EnergySaving_deactivated;Energibesparende tilstand er deaktiveret
+settings_app_DataSaving_title;Mobildata-besparende tilstand
+settings_app_DataSaving_description;Spar mobildata/båndbredde ved at lave færre serveranmodninger.\nAktivering af mobildata-besparende tilstand kan føre til et længere opdateringsinterval for data i spillet.
+settings_app_DataSaving_activated;Mobildata-besparende tilstand er aktiveret
+settings_app_DataSaving_deactivated;Mobildata-besparende tilstand er deaktiveret
+auction_FilterType;Genstandstype
+auction_bidTooLow;Bud for lavt.
+villageList_Delete_Title;Slet landsbygruppe
+villageList_Delete_Button;Slet gruppe
+villageList_Delete_Description;Ønsker du at slette denne landsbygruppe?
+villageList_Delete_Description2;Landsbyer i denne gruppe vil ikke blive berørt.
+gameworldNews_title;Nyheder og opdateringer
+moreInformation;Mere information
+remainingGold;Resterende guld: {{goldIcon|Sprite}} {{goldAmount}}
+messages_addEmoji_title;Tilføj emojis
+messages_select_emojis;Vælg emojis
+cams_resend_email_wait_error;Vent venligst med at sende en ny e-mail.
+cams_settings_accountDeletion_infoGold;Når du har slettet din avatar, vil du få en e-mail, der forklarer hvordan du overfører dit resterende guld til en anden avatar.\n<b>Bemærk venligst:</b> Dit  resterende guld kan kun overføres til bestemte spilverdener.
+cams_changeMail_title;Skift e-mailadresse
+cams_changeMail_description;For at ændre din e-mailadresse, skal du have adgang til den nuværende og den nye e-mailadresse.
+cams_changeMail_socialHint;Ændring af din e-mailadresse påvirker ikke  dit login med Facebook, Google eller Apple.
+cams_changeMail_cantAccess;Kan du ikke få adgang til din e-mail?
+cams_changeMail_sentVerification;Vi har sendt en bekræftelsesmail til: {{mail}}
+cams_changeMail_checkInbox;Kig i din indbakke og følg instruktionerne for at fortsætte.
+cams_changeMail_verificationCode;E-mail-bekræftelseskode:
+cams_changeMail_verifyButton;Bekræft e-mail
+cams_changeMail_enterNew_description;Indtast din nye e-mailadresse herunder. Vi sender en bekræftelsesmail til denne adresse.
+cams_changeMail_enterNew_description2;Følg instruktionerne i e-mailen for at fuldføre ændringen.
+cams_changeMail_enterNew_input;Indtast din nye e-mailadresse:
+cams_changeMail_enterNew_input_placeholder;Ny e-mailadresse
+cams_changeMail_enterNew_button;Skift din e-mail
+cams_changeMail_done_title;E-mail opdateret
+cams_changeMail_done_description1;Din e-mailadresse er blevet opdateret til {{mail}}
+cams_changeMail_done_description2;Du bliver automatisk logget ud og videresendt til login-siden. Brug din nye e-mailadresse til at logge ind.
+cams_changeMail_done_redirecting;Omdirigerer til login {{time}} ...
+bonusValue;+ {{value}}
+value;{{value}}
+ratioValues_Colon;{{a}}:{{b}}
+genericValue;{{VALUE}}
+enterAmount;Indtast antal
+symbol_minus;-
+applyFilter;Anvend filter
+resetFilter;Nulstil filter
+rallyPoint_troopsOverview_outgoingMission_50_heroCentricAdventure;Udforsker på eventyr
+rallyPoint_troopsOverview_returningFromAdventure_heroCentricAdventure;Returnerer fra eventyr
+silverExchangePopup_AvailableSilver;Tilgængeligt sølv
+silverExchangePopup_SilverStatus;I øjeblikket er {{AMOUNT|LongNumber}} af dit sølv bundet i aktive auktioner.
+silverExchangePopup_SilverError;Du har ikke nok sølv til denne handling.
+silverExchangePopup_GoldError;Du har ikke nok guld til denne handling.
+hero.status50_heroCentricAdventure;Din helt er på vej mod et eventyr.
+inventoryItem_quality_1;Kvalitet 1
+inventoryItem_quality_2;Kvalitet 2
+inventoryItem_quality_3;Kvalitet 3
+inventoryItem_rarity_common_headGear;Almindeligt hovedudstyr
+inventoryItem_rarity_uncommon_headGear;Ualmindeligt hovedudstyr
+inventoryItem_rarity_rare_headGear;Sjældent hovedudstyr
+inventoryItem_rarity_epic_headGear;Episk hovedudstyr
+inventoryItem_rarity_legendary_headGear;Legendarisk hovedudstyr
+inventoryItem_rarity_common_utility;Almindelig nyttegenstand
+inventoryItem_rarity_uncommon_utility;Ualmindelig nyttegenstand
+inventoryItem_rarity_rare_utility;Sjælden nyttegenstand
+inventoryItem_rarity_epic_utility;Episk nyttegenstand
+inventoryItem_rarity_legendary_utility;Legendarisk nyttegenstand
+inventoryItem_rarity_common_weapon;Almindeligt våben
+inventoryItem_rarity_uncommon_weapon;Ualmindeligt våben
+inventoryItem_rarity_rare_weapon;Sjældent våben
+inventoryItem_rarity_epic_weapon;Episk våben
+inventoryItem_rarity_legendary_weapon;Legendarisk våben
+inventoryItem_rarity_common_armour;Almindelig rustning
+inventoryItem_rarity_uncommon_armour;Ualmindelig rustning
+inventoryItem_rarity_rare_armour;Sjælden rustning
+inventoryItem_rarity_epic_armour;Episk rustning
+inventoryItem_rarity_legendary_armour;Legendarisk rustning
+inventoryItem_rarity_common_boots;Almindelige støvler
+inventoryItem_rarity_uncommon_boots;Ualmindelige støvler
+inventoryItem_rarity_rare_boots;Sjældne støvler
+inventoryItem_rarity_epic_boots;Episke støvler
+inventoryItem_rarity_legendary_boots;Legendariske støvler
+inventoryItem_rarity_common_consumable;Forbrugsgenstand
+inventoryItem_rarity_uncommon_consumable;Ualmindelig forbrugsgenstand
+inventoryItem_rarity_rare_consumable;Sjælden forbrugsgenstand
+inventoryItem_rarity_epic_consumable;Episk forbrugsgenstand
+inventoryItem_rarity_common_horse;Hest
+inventoryItem_rarity_uncommon_horse;Ualmindelig hest
+inventoryItem_rarity_rare_horse;Sjælden hest
+inventoryItem_rarity_epic_horse;Episk hest
+inventoryItem_rarity_legendary_horse;Legendarisk hest
+inventoryItem_rarity_common_material;Forbrugsgenstand
+inventoryItem_rarity_uncommon_material;Ualmindelig forbrugsgenstand
+inventoryItem_rarity_rare_material;Sjælden forbrugsgenstand
+inventoryItem_rarity_epic_material;Episk forbrugsgenstand
+search_item;Søg efter genstand
+search_select_item;Vælg genstand
+avatar_confirmation_infoText_delete_goldBough;Efter påbegyndelse af sletningen, vil det tage <b>mindst tre dage</b> at slette din avatar, da denne avatar er blevet brugt til at købe guld for nylig. \nEn avatar under sletning kan ikke længere deltage i auktioner eller bruge vekselkontoret!\nDu kan til enhver tid annullere sletningen her.
+combatSimulator_addItemEffect;Tilføj genstandseffekt
+combatSimulator_editItemEffect;Rediger genstandseffekt
+addItemEffect_title;Tilføj heltegenstands-effekt
+addItemEffect_description;Tilføj separate effekter for at afspejle individuelle bonusser for alle mulige heltegenstande.
+addItemEffect_importHeroEquipment;Importer eget helteudstyr
+addItemEffect_importHeroEquipment_success;Heltegenstande importeret
+addItemEffect_selectEffect;Vælg en genstandseffekt
+addItemEffect_selectItem;Vælg en genstand.
+addItemEffect_selectMagnitude;Vælg størrelse
+addItemEffect_selectUnit;Vælg enhed
+addItemEffect_missingMagnitude;Manglende størrelse
+addItemEffect_effect_2;Reduceret skade
+addItemEffect_effect_6;+ Ekstra livspoint pr. dag
+addItemEffect_effect_12;+ Øget angreb og forsvar for specifik enhed
+addItemEffect_effect_13;+ Øget kampstyrke
+cams_newMail_title;Ny e-mailadresse
+cams_verifyNewMail_title;Bekræft ny e-mailadresse
+cams_verifyCurrentMail_title;Bekræft nuværende e-mailadresse:
+auction_notEnoughSilver;Du har ikke nok sølv.
+auction_itemGroups;Genstandsgrupper
+auction_unknown;?
+auction_sortingOption_itemName;Genstandens navn
+auction_sortingOption_bidCount;Antal bud
+auction_sortingOption_finishedAt;Færdig om
+auction_sortingOption_highestBid;Højeste bud
+auction_sortingOption_highestBidder_player;Højestbydende (spiller)
+auction_sortingOption_highestBidder_alliance;Højestbydende (alliance)
+auction_sortingOption_auctionAmount;Antal nuværende auktioner
+auction_sortingOption_nextFinishedAt;Næste færdig om
+auction_sellingPrice;Salgspris
+auction_sellingPrice_lowest;Laveste
+auction_sellingPrice_average;Gennemsnit
+auction_sellingPrice_highest;Højeste
+auction_result_won;<color={{colorValue|TextColor}}>Vundet</color>
+auction_result_lost;<color={{colorValue|TextColor}}>Overbudt</color>
+auction_sellingPrice_averagePrice;Gennemsnitspris
+auction_bidProcessTitle;Budproces
+auction_bidProcessDescription1;Du kan afgive bud på genstande, du er interesseret i.
+auction_bidProcessDescription2;Du skal mindst byde minimumsbeløbet for at overbyde det aktuelle bud.
+auction_maxBidFeatureTitle;Funktion for maksimalt bud
+auction_maxBidFeatureDescription1;Du kan indtaste dit maksimale budget for en genstand.
+auction_maxBidFeatureDescription2;Systemet vil automatisk byde for dig op til dit indstillede maksimum.
+auction_maxBidFeatureDescription3;Dit bud stiger kun, hvis det er nødvendigt, for at du kan forblive den højestbydende.
+auction_maxBidFeatureDescription4;Budgivningen fortsætter, indtil du vinder eller bliver overbudt ud over dit maksimale budget.
+auction_auctionDurationTitle;Auktionens varighed
+auction_auctionDurationDescription1;Hvis den resterende auktionstid er mindre end {{DURATION|Duration}}, forlænges varigheden til {{DURATION|Duration}}, når den højestbydende skifter.
+auction_auctionWinningTitle;Vinder
+auction_auctionWinningDescription1;Den højestbydende, når auktionen slutter, vinder genstanden.
+auction_auctionFinished;Auktionen er allerede afsluttet.
+auction_wasJustOutbid;Du er i øjeblikket ikke den højeste byder.
+auction_currentHighestBidder;Nuværende højestbydende
+auction_currentHighestBid;Nuværende højeste bud
+auction_yourMaximumBid;Dit maksimumbud
+auction_showFinished;Vis færdige
+auction_deleteAllFinished;Slet alle færdige
+auction_startedAt;Begyndt: {{TIME|DateTime}} | I gang
+auction_canceled;Annulleret
+auction_finished;Færdig
+auction_finishedAt;Færdig: {{TIME|DateTime}}
+auction_itemAuction_title;Genstandsauktion
+auction_itemAuction_info;Klik på en genstand i dit inventar for at starte en auktion. Andre spillere kan byde på den. En auktion kan vare op til {{INT}} timer.
+auction_whatHappensNext_title;Hvad der så sker
+auction_whatHappensNext_info1;Den højestbydende køber automatisk varen, når tiden løber ud.
+auction_whatHappensNext_info2;Du modtager sølv, når salget er gennemført.
+auction_whatHappensNext_info3;Du får besked, når din vare er solgt.
+auction_error_cannotSell;Denne genstand kan ikke sælges på auktionshuset.
+auction_error_onlyHorse;Du kan ikke sælge din eneste hest.
+auction_sellItem;Sælg genstand
+auction_sales;Salg
+auction_selectBatchSize;Vælg lot-størrelse
+auction_selectBatchSize_batches;<b>{{COUNT}}x</b> genstands-lots
+auction_selectFilter_title;Vælg filter
+goldShop_upTo;Op til
+shopPromotion_openShop;Åbn butik
+shopPromotion_goldPromotionTitle;Aktivt guldtilbud
+shopPromotion_limitedTimeOffer;Tidsbegrænset tilbud!
+shopPromotion_goldPromotionDescription;Få mere guld for dine penge nu.
+shopPromotion_timeRemaining;Tid tilbage:
+hero_adventures_watchAdReduceDuration_title;Reducer eventyrets varighed med {{AMOUNT}}%
+hero_adventures_watchAdReduceDuration_description;Se en video for at reducere varigheden af din helts <b>næste</b> eventyr.
+hero_adventures_watchAdIncreaseDanger_title;Øg eventyrfare til svær
+hero_adventures_watchAdIncreaseDanger_description;Se en video for at øge faren ved <b>det næste normale</b> eventyr til svær for at få mere helte-XP.
+hero_adventures_watchAdActive;Aktiv for næste eventyr.
+hero_adventures_watchAdActiveNormal;Aktiv for næste normale eventyr.
+hero_crafting_action_error_nonEpic;Det skal være en identisk genstand af samme sjældenhed og kvalitet.
+berichte.adventure_heroCentric;{{VILLAGE_NAME}} drager ud på et eventyr
+reports_share_notShareable;Denne rapport kan ikke deles.
+dailyQuests_dailyMaxReached;Dagligt maksimum nået
+achievementQuests.DailyQuest_12_description;Åbn spillet i en browser på din computer og se en video.
+achievementQuests.DailyQuest_12_additionalInformation;www.travian.dk
+achievementQuests.DailyQuest_13_description;Se f.eks. en video for at opgradere dine bygninger hurtigere.
+achievementQuests.DailyQuest_13_additionalInformation;Eller klik på knappen "Se video" for at se en video direkte uden yderligere fordele.
+addItemEffect_effect_11;+ øget angrebsstyrke imod Natarer
+auction_started;Auktionen er startet
+auction_error_batchSize;Ikke nok genstande til at sælge.
+auction_graph_notEnoughData;Ikke nok data
+auction_emptyInventory;- Du har i øjeblikket ingen genstande at sælge -
+RelativeTime_2_word;[data>1:{{data}} timer][data<2:{{data}} time]
+gold_action_halveDuration;Halver varigheden
+goldShop_advantage_Value_Duration;<b>+{{VALUE}}%</b> i <b>[DURATION>6:{{DURATION}} dage][DURATION<7:{{DURATION|Mult|24}} timer]</b>
+goldShop_advantage_Value_Active;<b>+{{VALUE}}%</b> aktiv i:
+goldShop_upgrade;Opgrader
+goldShop_advantage_stillActiveFor;Stadig aktiv i:
+goldShop_advantage_stillActiveFor_Value;{{DURATION}} indtil kl. {{TIME}}
+goldShop_advantage_videoFeatureOnCD;Du kan kun aktivere videobonussen én gang om dagen.\nDaglig nulstilling om: {{TIMESTAMP|Countdown}}
+goldShop_advantage_popup_mainInfoHeader_ProductionboostLumber;Øg produktionen af <b>tømmer</b> i alle dine landsbyer.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostClay;Øg produktionen af <b>ler</b> i alle dine landsbyer.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostIron;Øg produktionen af <b>jern</b> i alle dine landsbyer.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostCrop;Øg produktionen af <b>korn</b> i alle dine landsbyer.
+goldShop_advantage_popup_mainInfoBody;Bonussen lægges både på basisproduktionen og på alle øvrige bonusser.
+goldShop_advantage_popup_premiumInfo;Du kan aktivere bonussen med guld og få en produktionsbonus på +{{VALUE}}%.\nDu kan aktivere automatisk forlængelse for at gøre en bonus permanent.
+goldShop_advantage_popup_videoFeatureInfo;Eller du kan se en kort video og få den mindre produktionsbonus på +{{VALUE}}%.\n<b>Videobonussen kan kun aktiveres én gang om dagen for hver ressource.</b>
+goldShop_advantage_popup_upgradeInfo;Du kan til enhver tid opgradere til produktionsbonussen på +{{VALUE}}% for guld.
+goldShop_advantage_upgradePopupInfo1;Hvis du opgraderer ressourcebonussen, fjernes din nuværende aktive bonus.
+goldShop_advantage_upgradePopupInfo2;Du får +{{VALUE}}% i [DURATION>6:{{DURATION}} dage][DURATION<7:{{DURATION|Mult|24}}] i stedet.
+goldShop_advantage_upgradePopup_title;Opgraderingsbonus
+productionOverview_Bonus;+{{VALUE}}% produktion
+hero_adventures_watchAdReduceDuration_toast;Eventyrets varighed er reduceret.
+hero_adventures_watchAdIncreaseDanger_toast;Eventyrfaren er øget.
+hero_consumablePopup_amountEquippedAfter;Antal påsat efter:
+hero_consumablePopup_amountEquippedAfterUse;Antal påsat efter brug:
+hero_consumablePopup_amountLeftInInventory;Antal tilbage i inventaret:
+cams_recover_password_cooldown;Vent venligst {{VALUE}}
+cams_settings_changePassword_cooldown;Vent venligst {{VALUE}}
+infobox_productionBoost_upgradeButton;Opgrader
+infobox_productionBoost_upgradeBonusWithGold;Opgrader og forlæng din bonus med guld for at få +{{PREMIUM_PERCENTAGE}}% i {{TIME}} timer.
+infobox_productionBoost_expires;{{PERCENTAGE}} {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresLumber;+{{PERCENTAGE}}% tømmer-produktionsbonus slutter om {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresClay;+{{PERCENTAGE}}% ler-produktionsbonus slutter om {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresIron;+{{PERCENTAGE}}% jern-produktionsbonus slutter om {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresCrop;+{{PERCENTAGE}}% korn-produktionsbonus slutter om {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expired;{{PERCENTAGE}}
+infobox_productionBoost_expiredLumber;+{{PERCENTAGE}}% tømmer-produktionsbonus er <b>udløbet</b>.
+infobox_productionBoost_expiredClay;+{{PERCENTAGE}}% ler-produktionsbonus er <b>udløbet</b>.
+infobox_productionBoost_expiredIron;+{{PERCENTAGE}}% jern-produktionsbonus er <b>udløbet</b>.
+infobox_productionBoost_expiredCrop;+{{PERCENTAGE}}% korn-produktionsbonus er <b>udløbet</b>.
+infobox_levelUpProductionReminder;Forøg råstofproduktionen i alle dine landsbyer for guld (+{{PREMIUM_PERCENTAGE}}%) eller ved at se en video (+{{VIDEO_PERCENTAGE}}%)
+infobox_oneTimeProductionBoostReminder;Du kan nu aktivere din råstofbonus på +{{VIDEO_PERCENTAGE}}% igen ved at se en video.
+travelSimulator_title;Rejsetidssimulator
+travelSimulator_sourceTribe;Oprindelseslokations folkeslag
+travelSimulator_noLocationSelected;Ingen lokation valgt
+travelSimulator_slowestUnit_title;Langsomste enhed
+travelSimulator_slowestUnit_settings;{{UNIT}} | Hastighed: {{SPEED}}
+travelSimulator_TournamentSquareLevel_info;(Kun for en afstand på >20 felter)
+travelSimulator_tournamentSquareLevel_option;{{LEVEL}} | {{VALUE}}%
+travelSimulator_unitSelection_title;Vælg langsomste enhed
+travelSimulator_unitSelection_unitType;Enhedstype
+travelSimulator_unitSelection_unitSpeed;Enhedens hastighed
+travelSimulator_unitSelection_selectedUnitSpeed;Hastighed: {{SPEED}}
+travelSimulator_calculation_land;<b>Land:</b> {{VALUE}}
+travelSimulator_calculation_sea;<b>Hav:</b> {{VALUE}}
+travelSimulator_heroAttending;Helt der deltager
+travelSimulator_vikingRaidBonus;Vikingernes plyndrings-bonus
+travelSimulator_troopSpeedArtefactEffect;Effekt af artefakt for troppehastighed
+travelSimulator_toast_selectSourceAndTarget;Vælg en gyldig oprindelses- og målplacering!
+travelSimulator_toast_selectSourceTribe;Vælg et gyldigt folkeslag!
+IOSAppTrackingTransparencyMessage;Hvis du trykker på "Tillad", bruges enhedsoplysninger til mere relevant annonceindhold
+goldShop_advantage_Value_Duration_Hours;<b>+{{VALUE}}%</b> i <b>{{DURATION}} timer</b>
+travelSimulator_tournamentSquareLevel_title;Niveau på turneringsplads
+travelSimulator_troopSpeedAncientPower;Oldtidskraft for troppehastighed
+RelativeTime_Formatted;[weeks>0:{{weeks}}u ][days>0:{{days}}d ]{{data}}
+settings_account_tab;Konto
+settings_notification_tab;Pushmeddelelser
+settings_app_PushNotifications_popup_title;Pushmeddelelser
+settings_app_PushNotifications_popup_header;Giv os lov til at sende dig notifikationer
+settings_app_PushNotifications_popup_info1;Hvis du vil modtage push-meddelelser med nyheder og nyttige oplysninger om spillet, skal du først tillade meddelelser fra os.
+settings_app_PushNotifications_popup_info2;Du kan aktivere notifikationer i din enheds app-indstillinger.
+settings_app_PushNotifications_popup_info3;Du kan også vende tilbage hertil, når du vil deaktivere notifikationer igen.
+settings_app_PushNotifications_popup_action_button;Åbn appens indstillinger
+ratioValueMax;/ {{a}}
+market_sendResources_completed;Udført
+market_sendResources_villageNotFound;Ikke fundet. Du kan kun sende råstoffer til dine egne landsbyer samt alliance- eller forbundsmedlemmer.
+no_ads_popup_title;Ingen videoannoncer
+no_ads_popup_header;Der opstod et problem under forsøget på at vise en videoannonce.
+no_ads_popup_info1;Det kan der være flere grunde til:
+no_ads_popup_info2; • Der er i øjeblikket ingen tilgængelige annoncer i annoncepuljen for din region.
+no_ads_popup_info3; • Dine privatlivsindstillinger begrænser antallet af annoncer, der kan vises.
+no_ads_popup_info4; • Tekniske problemer med vores app eller annonceudbyder.
+no_ads_popup_settings_msg;Sørg for at tillade personaliserede annoncer i dine privatlivsindstillinger.
+no_ads_popup_support_msg;Kontakt vores support, hvis problemet fortsætter.
+no_ads_popup_support_button;Kontakt Support
+city_upgradeToACity_wwVillageNotUpgradeable;Verdensvidunder-landsbyer kan ikke opgraderes til fæstningsbyer.
+travelSimulator_selectMagnitude;Vælg størrelse
+marketplace_merchantsOverview_returningTo;På vej tilbage til <b>{{Village}}</b> tilhørende <b>{{Player}}</b>
+market_sendResources_sendAgain;Send igen
+search_village_notFound;Ikke fundet. Du kan kun sende råstoffer til dine egne landsbyer samt alliance- eller forbundsmedlemmer.
+settings_app_AnimationsPayoffs_activated;Send tropper/handelsmænd-animation er aktiveret
+settings_app_AnimationsPayoffs_deactivated;Send tropper/handelsmænd-animation er deaktiveret
+hero_resourceTransferPopup_empty;Der er ingen råstoffer at overføre fra heltens inventar.
+hero_toast_appearanceChanged;Udseende ændret
+alliance_editMemberPopup_customNote;Brugerdefineret note
+alliance_editMemberPopup_titleOfRole;Titel på rolle
+alliance_editMemberPopup_setSpecialization;Indstil specialisering
+alliance_role_offensive;Angreb
+alliance_role_defensive;Forsvar
+alliance_role_hybrid;Hybrid
+alliance_role_scout;Spejder
+alliance_role_support;Support
+alliance_role_wow_hammer;WW-cleaner
+alliance_role_none;Ingen
+ad_fallback_popup_title;Hent din belønning
+ad_fallback_popup_info;Der er ingen videoannoncer tilgængelige i øjeblikket, men vi vil stadig gerne belønne din loyalitet! Vent venligst et øjeblik, mens vi forbereder en belønning.
+ad_fallback_popup_rewardGranted;Belønning tildelt
+ad_fallback_popup_claim;Hent belønning
+ad_fallback_popup_closeWarning;Hvis du lukker denne skærm for tidligt, bliver belønningen annulleret
+gameplay_tip_1;Du kan uddanne bosættere i en residens eller et palads (de første fra trin 10).
+gameplay_tip_2;Du kan kun bygge ét palads pr. avatar. Det giver op til 3 udvidelsespladser, mens en residens kun giver 2.
+gameplay_tip_3;For at ændre din hovedlandsby skal du bygge et palads i en ny landsby. Bemærk, at eksklusive bygninger i din gamle hovedlandsby går tabt eller nedgraderes.
+gameplay_tip_4;Du kan grundlægge eller erobre en ny landsby, hvis du har nok kulturpoint.
+gameplay_tip_5;Optjen kulturpoint ved at opgradere bygninger og holde fester i rådhuset.
+gameplay_tip_6;Store fester kan holdes i rådhuset (trin 10) og giver flere kulturpoint, men koster også flere råstoffer.
+gameplay_tip_7;For at erobre en landsby skal du reducere dens sammenhold til nul ved at bruge byforvaltere, der er uddannet i din residens eller dit palads.
+gameplay_tip_8;Udforst byforvaltere i akademiet, før du uddanner dem i en residens eller et palads.
+gameplay_tip_9;Du kan erobre landsbyer fra Natarer eller andre spillere.
+gameplay_tip_10;Din hovedlandsby kan ikke erobres af andre spillere.
+gameplay_tip_11;Brug cropfinder til at finde landsbyer med 9 eller 15 kornfelter, der kan forsyne en større hær.
+gameplay_tip_12;Råstoffelter kan opgraderes til højere trin i din hovedlandsby end i andre landsbyer.
+gameplay_tip_13;Send råstoffer til venlige landsbyer via markedspladsen.
+gameplay_tip_14;Du kan handle råstoffer med andre spillere på markedspladsen.
+gameplay_tip_15;Forøg dine handelsmænds kapacitet ved at opgradere handelskontoret.
+gameplay_tip_16;Opgrader din heltebygning til trin 10 for at overtage en oase og øge din råstofproduktion.
+gameplay_tip_17;Opgrader styrken hos dine tropper i smedjen. Disse opgraderinger træder straks i kraft for alle tropper af den pågældende type, også dem, der allerede er uddannede.
+gameplay_tip_18;Brug kampsimulatoren til at forudsige udfaldet af kampe, før du angriber. Jo flere oplysninger du tilføjer i simuleringen, jo mere præcist bliver resultatet.
+gameplay_tip_19;Med guldklubben kan du aktivere troppeundvigelse i din hovedlandsby for automatisk at redde din hær fra indkommende angreb.
+gameplay_tip_20;Når dine tropper vender hjem, er troppeundvigelse midlertidigt deaktiveret i 10 sekunder.
+gameplay_tip_21;Opgrader dine spejdere i smedjen for at forbedre deres spionageevner.
+gameplay_tip_22;Murene øger din landsbys forsvar betydeligt.
+gameplay_tip_23;Byg gemmesteder for at beskytte dine råstoffer mod fjendtlige plyndringer.
+gameplay_tip_24;Gallere kan uddanne fældebyggere til at fange angribende tropper, inden kampen begynder.
+gameplay_tip_25;For at befri fangede tropper skal du gennemføre et normalt angreb på den landsby, hvor de blev fanget.
+gameplay_tip_26;Angribende spillere kan befri 75% af de fangede tropper, men forsvareren kan vælge at frigive 100% af dem uden kamp.
+gameplay_tip_27;Byg et hospital for at helbrede op til 40% af dine tropper, der er faldet i kamp.
+gameplay_tip_28;Gallere kan uddanne en fældebygger til at fange angribende tropper, inden kampen overhovedet begynder.
+gameplay_tip_29;Byg en stenhugger i din hovedlandsby for at øge bygningernes holdbarhed mod katapulter og rambukke.
+gameplay_tip_30;Du kan indstille din helt til at gemme sig under fjendtlige angreb på sin hjemmelandsby, så din helt er i sikkerhed.
+gameplay_tip_31;Besejr dyr i ubesatte oaser for at få ekstra råstoffer. Jo stærkere dyrene er, desto flere råstoffer giver de.
+gameplay_tip_32;Besejr dyr i ubesatte oaser med din helt for at få erfaring.
+gameplay_tip_33;Brug bure til at fange dyr i ubesatte oaser og forstærke din landsby.
+gameplay_tip_34;Udrust din helt med genstande som salver eller specifikke rustninger for at fremskynde din helts helbredsregenerering.
+gameplay_tip_35;Genopliv din helt over tid ved at bruge råstoffer eller straks med en spand.
+gameplay_tip_36;Du kan nedrive bygninger, når din hovedbygning når niveau 10.
+gameplay_tip_37;Byg en ambassade for at slutte dig til en alliance eller oprette din egen.
+vacationMode_title;Ferietilstand
+vacationMode_vacation;Ferie
+vacationMode_vacationModeActive;Ferietilstand er aktiv
+vacationMode_info;Brug ferietilstand til at beskytte dine landsbyer, når du er væk. Følgende handlinger er deaktiveret i ferietilstand:
+vacationMode_deactivated_action1;Sende eller modtage tropper
+vacationMode_deactivated_action2;Tage på eventyr med din helt
+vacationMode_deactivated_action3;Starte nye byggeordrer eller træne tropper
+vacationMode_deactivated_action4;Brug af markedspladsen (herunder handelsruter)
+vacationMode_deactivated_action5;Holde fester, starte udforskning, eller gennemføre opgraderinger
+vacationMode_deactivated_action6;Oprettelse af eller tilslutning til alliancer
+vacationMode_deactivated_action7;Bidrage med råstoffer til alliancebonusser
+vacationMode_deactivated_action8;Deltage i auktioner
+vacationMode_deactivated_action9;Skifte din hovedlandsby
+vacationMode_deactivated_action10;Slette din konto
+vacationMode_deactivated_territory_action1;Opgradere en landsby til en fæstningsby
+vacationMode_deactivated_territory_action2;Din konto bidrager ikke til den regionale befolkning i din alliance, og dine landsbyer får ingen sejrspoint
+vacationMode_conditions_title;betingelser for ferietilstand opfyldt
+vacationMode_duration_info;Hvor mange dage skal ferietilstanden vare?
+vacationMode_durationUntil;Ferie indtil <b>{{DATE}}</b>
+vacationMode_availableDays;Tilgængelige dage <b>{{AVAILABLE}}/{{TOTAL}}</b>
+vacationMode_startButton;Gå i ferietilstand nu
+vacationMode_error_noCancelTime;Du kan først stoppe ferietilstand efter {{HOURS}} timer
+vacationMode_error_missingRequirement;Opfyld alle forudsætninger for at gå i ferietilstand
+vacationMode_error_noVacationDaysLeft;Du har ingen tilgængelige dage tilbage til at gå i ferietilstand
+vacationMode_error_cooldown;Du kan først starte ferietilstand igen {{HOURS}} timer efter, at den sidst sluttede
+vacationMode_abortSuccess;Ferietilstand er stoppet!
+vacationMode_remainingDays;Resterende dage i ferietilstand
+vacationMode_runsUntil;Ferietilstand varer indtil
+vacationMode_abortInfo;Du kan tidligst afbryde ferietilstand den <b>{{DATE}}</b>
+vacationMode_abortAvailable;Du kan afbryde ferietilstanden nu
+vacationMode_abortConfirmHeader;Vil du virkelig afbryde ferietilstand?
+vacationMode_abortConfirmInfo;Ubenyttede dage bliver tilbagebetalt. Denne handling kan ikke fortrydes.
+vacationMode_startCooldownInfo;Du kan tidligst aktivere ferietilstand den <b>{{DATE}}</b>
+vacationMode_abortButton;Stop ferietilstand
+vacationMode_conditions_has_outgoing_troops;Ingen udgående tropper
+vacationMode_conditions_has_incoming_troops;Ingen indkommende tropper mod dine landsbyer eller oaser
+vacationMode_conditions_has_reinforcing_troops_for;Ingen forstærkninger sendt til andre spillere
+vacationMode_conditions_has_reinforcing_troops_from;Ingen forstærkninger fra andre spillere i dine landsbyer eller oaser
+vacationMode_conditions_has_ww_village;Intet ejerskab af en verdensvidunder-landsby
+vacationMode_conditions_has_artifact_village;Intet ejerskab af en landsby med et artefakt
+vacationMode_conditions_has_beginners_protection;Ingen begynderbeskyttelse
+vacationMode_conditions_has_trapped_troops;Der er ingen tropper i dine fælder, og ingen af dine egne tropper, inklusive din helt, er fanget
+vacationMode_conditions_has_deletion_event;Din avatar er ikke markeret til sletning
+vacationMode_conditions_has_conquered_oase;Du har ikke annekteret en oase inden for de sidste {{HOURS}} timer. Du kan gå i ferietilstand, når der er gået {{HOURS}} timer, siden du annekterede en oase, eller efter du har mistet en.
+vacationModePopup_info;Din konto vil være beskyttet under ferietilstand. Din råstofproduktion fortsætter dog, og dine tropper vil stadig forbruge korn. <color=red>Dette kan føre til, at dine tropper sulter.</color>
+vacationModePopup_start_info;Er du sikker på, at du vil aktivere ferietilstand i <b>{{DAYS}}</b> [DAYS>1:dage][DAYS<2:dag]? Ferietilstanden kan afbrydes ved at bruge guld efter en {{COOLDOWN}}-timers nedkølingsperiode.
+vacationModePopup_troopConsumption;Forbrug for egne tropper
+vacationModePopup_starvationEstimate;Tidligste tidspunkt for sult
+vacationModePopup_starvationTitle;Forbrug for egne tropper
+goldTransfer_accept_gift;Ja, overfør guldet
+goldTransfer_decline_gift;Nej, afvis guldet
+goldTransfer_accepted_toast;Guldoverførsel accepteret.
+goldTransfer_declined_toast;Guldoverførsel afvist.
+smithy_requirementsNotSatisfied;Forudsætningerne for at opgradere denne enhed er ikke opfyldt
+vacationModeLobby_status;På ferie
+block_vacationMode_toast;Du kan ikke gøre dette, mens du er i ferietilstand.
+goldTransfer_verifyOwnership_title;Bekræft ejerskab
+goldTransfer_verifyOwnership_description;For at overføre det ubrugte guld, du har købt, til en eksisterende avatar, skal du først bekræfte, at du ejer guldet, ved at indtaste den e-mailadresse, som overførselskoden blev sendt til.
+goldTransfer_verifyOwnership_emailPlaceholder;E-mailadresse
+goldTransfer_verifyOwnership_errorNoEmail;Skriv venligst din e-mailadresse.
+goldTransfer_verifyOwnership_errorAlreadyUsed;Dette guldlink er allerede blevet brugt.
+goldTransfer_verifyOwnership_errorInUse;Dette guldlink er ugyldigt.
+goldTransfer_verifyOwnership_verifyButton;Verificer
+goldTransfer_selectTargetAvatar_title;Vælg mål-avatar
+goldTransfer_selectTargetAvatar_description;Vælg den avatar, du ønsker at overføre guldet til.
+goldTransfer_transferableGold_label;Overførbart guld:
+goldTransfer_enterAvatarName_header;Indtast avatarnavn
+goldTransfer_avatarName_placeholder;Avatarnavn
+goldTransfer_searchAvatar_Button;Søg efter avatar
+goldTransfer_searchAvatarNothingFound_error;Der blev ikke fundet nogen aktiv avatar med dette navn.
+goldTransfer_ownAvatarList_header;Vælg en af dine aktive avatarer ({{account}})
+goldTransfer_selectOwnAvatarConfirm_Button;Vælg avatar
+goldTransfer_selectGameworld_title;Vælg venligst spilverden
+goldTransfer_selectGameworld_description;Avatarnavnet findes på flere spilverdener. Du kan kun overføre guldet til én avatar. Vælg venligst en spilverden.
+goldTransfer_selectGameworldConfirm_Button;Vælg venligst spilverden
+goldTransfer_changeAvatar_Button;Skift avatarnavn
+goldTransfer_confirm_title;Bekræft overførsel
+goldTransfer_confirm_Button;Bekræft overførsel
+goldTransfer_confirmAvatarOnOneWorld_info;Avatarnavnet blev fundet på én spilverden:
+goldTransfer_confirmAvatarName_prefix;Avatarnavn:
+goldTransfer_confirmGameworld_prefix;Spilverden:
+goldTransfer_transferComplete_title;Overførsel gennemført
+goldTransfer_transferComplete_description;Dit guld er blevet overført til <b>{{avatarname}}</b> på <b>{{gameworldname}}.</b>
+goldTransfer_transferComplete_returnButton;Vend tilbage til spillet
+cams_settings_accountDeletion_information_warning_v2;Denne handling vil slette din konto permanent. Følgende indhold, der er knyttet til din konto, vil gå tabt:\n<indent=0.5em>•  Alle avatarer ejet af din konto\n•  Alle medaljer optjent på din konto</indent>\n\nBekræft ved at indtaste "slet" i feltet nedenfor.
+mapMarkers_popupTitle;Sæt en markør
+mapMarkers_markerType;Markørtype
+mapMarkers_markerColor;Markørfarve
+mapMarkers_setAlliance;Sæt en markør for min alliance
+mapMarkers_type_field;Felt
+mapMarkers_addMsg_success;Markøren blev tilføjet!
+mapMarkers_saveMsg_success;Markøren blev gemt!
+mapMarkers_noPermission_error;Anmod om tilladelse fra din allianceleder.
+mapMarkers_marker;Markør
+mapMarkers_markers;Markører
+mapMarkers_listAllianceTitle;Alliancemarkører
+mapMarkers_listPlayerTitle;Spillermarkører
+mapMarkers_listAlliances;Alliance
+mapMarkers_listPlayers;Spillere:
+mapMarkers_listFlags;Flag
+mapMarkers_deleteMarker;Slet markør
+mapMarkers_deleteMarkerMessage;Vil du slette denne markør?
+mapMarkers_showOnMap;Vis mine markører på kortet
+embassy_general_subtab;Generelt
+embassy_villagesNearby_subtab;Landsbyer i nærheden
+embassy_villagesNearby_listHeader;Alliancens/forbundets landsbyer

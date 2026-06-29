@@ -1,0 +1,1792 @@
+list_tag;قائمة
+listelement_tag;*
+bold_tag;عريض
+italic_tag;مائل
+underscore_tag;نص تحته خط
+coordinate_tag;س|ع
+report_tag;تقرير
+report_not_found;لم يتم العثور على التقرير
+alliance_tag;تحالف
+alliance_not_found;لم يتم العثور على التحالف
+player_tag;اللاعب
+player_not_found;لم يتم العثور على اللاعب
+troop_tag;قوات
+troop_tag_hero;بطل
+color_tag;اللون
+quote_tag;نسبة
+quote_title;إقتباس: {{TITEL}}
+resource_tag_wood;خشب
+resource_tag_claim;طين
+resource_tag_iron;حديد
+resource_tag_grain;قمح
+buttonBold;خط عريض
+buttonItalic;مائل
+buttonUnderscore;نص تحته خط
+buttonAlliance;تحالف
+buttonPlayer;لاعب
+buttonCoordinate;إحداثيّات
+buttonReport;تقرير
+buttonResource;موارد
+buttonSmilie;ابتسامات
+buttonTroop;قوات
+buttonPreview;عرض أولي
+news_tag;الجديد على الساحة
+news_not_found;لم يتم العثور على الرسالة
+casualty_tag;الخسائر
+stats_tag;الإحصائيات
+stats_fightingPower;قوة قتالية
+stats_fightingPoints;نقاط قتالية
+forum_tag;منتدى
+number;عدد
+bb_codes;BB-أكواد
+report_category_not_allowed;يمكنك فقط الاختيار بين الهجوم الكامل أو التجسس
+report_no_access;ليست لديك صلاحية للاطلاع على هذا التقرير
+report_invalid_id;رقم تقرير خاطئ
+urlTag;رابط
+descriptionCoordinatesTag;أنشأ رابطاً إلى هذه الاحداثيات
+descriptionReportsTag;رابط إلى تقرير
+descriptionResourceIconTag;إظهار أيقونة موارد
+descriptionUrlTag;أنشأ HTML-رابط
+descriptionAllianceTag;رابط إلى تحالف
+descriptionPlayerTag;رابط إلى صفحة لاعب
+descriptiontroopIconTag;إظهار أيقونة القوات
+descriptionStatsTag;استعراض الاحصائيات
+descriptionForumTag;استعراض آخر مستجدات المنتدى
+descriptionNewsTag;استعراض آخر الأخبار
+uidTag;مُعرَّف مُستخدِم
+descriptionUidTag;رابط إلى لاعب في لوحة التحكم
+aidTag;مُعرَّف تحالف
+descriptionAidTag;رابط إلى تحالف في لوحة التحكم
+ipTag;رقم بروتوكول الإنترنت
+descriptionIpTag;رابط إلى عنوان IP في لوحة التحكم
+ckeyTag;ckey
+descriptionCkeyTag;رابط إلى Ckey في لوحة التحكم
+botUidTag;bot_uid
+descriptionBotUidTag;رابط إلى لاعب (فحص البوت) في لوحة التحكم
+resource_tag_lumber;خشب
+region_tag;الإقليم
+descriptionRegionTag;ربط بإقليم
+region_not_found;الإقليم غير موجود
+coordinate_not_found;تنسيق غير موجود
+list_tag;лист
+bold_tag;b
+italic_tag;i
+underscore_tag;u
+coordinate_tag;x|y
+report_tag;доклад
+report_not_found;доклада не е открит
+alliance_tag;клан
+alliance_not_found;клана не е намерен
+player_tag;играч
+player_not_found;играча не е намерен
+troop_tag;tid
+troop_tag_hero;герой
+color_tag;цвят
+quote_tag;цитат
+quote_title;Цитат: {{TITEL}}
+resource_tag_wood;д
+resource_tag_claim;г
+resource_tag_iron;ж
+resource_tag_grain;п
+buttonBold;удебелено
+buttonItalic;наклонено
+buttonUnderscore;подчертано
+buttonAlliance;клан
+buttonPlayer;играч
+buttonCoordinate;координати
+buttonReport;доклад
+buttonResource;ресурси
+buttonSmilie;усмивки
+buttonTroop;войски
+buttonPreview;преглед
+news_tag;новини
+news_not_found;няма открити новини
+casualty_tag;загуби
+stats_tag;стат
+stats_fightingPower;сила
+stats_fightingPoints;точки атака
+forum_tag;форум
+number;номер
+bb_codes;BB кодове
+report_category_not_allowed;Може да избирате само доклади от битка или шпионаж.
+report_no_access;Нямате права да видите този доклад
+report_invalid_id;Невалиден номер ID на доклада.
+urlTag;url
+descriptionCoordinatesTag;Създай връзка до тези координати
+descriptionReportsTag;Връзка към доклада
+descriptionResourceIconTag;Покажи иконите за ресурси
+descriptionUrlTag;Създай HTML-връзка
+descriptionAllianceTag;Връзка до клана
+descriptionPlayerTag;Връзка до профила на играч
+descriptiontroopIconTag;Покажи иконите за войска
+descriptionStatsTag;Покажи статистики
+descriptionForumTag;Покажи последните мнения във форума
+descriptionNewsTag;Покажи последните новини
+uidTag;uid
+descriptionUidTag;Връзка до играч в ACP
+aidTag;aid
+descriptionAidTag;Връзка до клан в ACP
+ipTag;ip
+descriptionIpTag;Връзка до IP адрес в ACP
+descriptionCkeyTag;Връзка до Ckey в ACP
+descriptionBotUidTag;Връзка до играч (бот засичане) в ACP
+resource_tag_lumber;д
+region_tag;регион
+descriptionRegionTag;Връзка към регион
+region_not_found;Регионът не е открит
+coordinate_not_found;Не е намерена координата
+list_tag;popis
+report_tag;izvještaj
+report_not_found;izvještaj nije pronađen
+alliance_tag;alijansa
+alliance_not_found;alijansa nije pronađena
+player_tag;Igrač
+player_not_found;igrač nije pronađen
+troop_tag_hero;heroj
+color_tag;boja
+quote_tag;citat
+quote_title;Citat: {{TITEL}}
+resource_tag_wood;l
+resource_tag_claim;cl
+resource_tag_iron;i
+resource_tag_grain;c
+buttonBold;Podebljano
+buttonItalic;Nakošeno
+buttonUnderscore;Podvučeno
+buttonAlliance;alijansa
+buttonPlayer;Igrač
+buttonCoordinate;Koordinate
+buttonReport;Izvještaj
+buttonResource;Resursi
+buttonSmilie;Smajliji
+buttonTroop;Jedinice
+buttonPreview;Prikaz
+news_tag;Novosti
+news_not_found;Nema novosti
+casualty_tag;Gubici
+stats_tag;Statistike
+stats_fightingPower;Snaga
+stats_fightingPoints;Borbeni poeni
+forum_tag;Forum
+number;Broj
+bb_codes;BB kodovi
+report_category_not_allowed;Možete izabrati samo borbene i izviđačke izvještaje
+report_no_access;Nije dozvoljeno da vidite izvještaj
+report_invalid_id;Neispravan ID izvještaja
+descriptionCoordinatesTag;Napraviti link ka ovim koordinatama
+descriptionReportsTag;Link ka izvještaju
+descriptionResourceIconTag;Prikazati sliku resursa
+descriptionUrlTag;Napraviti HTML-Link
+descriptionAllianceTag;Link ka alijansi
+descriptionPlayerTag;Link ka profilu igrača
+descriptiontroopIconTag;Prikazati sliku jedinice
+descriptionStatsTag;Prikazati statistiku
+descriptionForumTag;Prikazati zadnje postove na forumu.
+descriptionNewsTag;Prikazati novosti.
+descriptionUidTag;Povezivanje s igračem u ACP-u
+descriptionAidTag;Povezivanje s alijansom u APC-u
+descriptionIpTag;Povezivanje sa IP adresom u ACP-u
+descriptionCkeyTag;Povezivanje sa ckey u ACP-u
+descriptionBotUidTag;Povezivanje s igračem (bot detekcija) u ACP-u
+resource_tag_lumber;l
+region_tag;Regija
+descriptionRegionTag;Link ka regiji
+region_not_found;Regija nije pronađena
+coordinate_not_found;Koordinata nije pronađena
+list_tag;list
+report_tag;report
+report_not_found;hlášení nenalezeno
+alliance_tag;ally
+alliance_not_found;aliance nenalezena
+player_tag;player
+player_not_found;hráč nenalezen
+troop_tag_hero;hero
+color_tag;color
+quote_tag;quote
+quote_title;Citace: {{TITEL}}
+resource_tag_wood;d
+resource_tag_claim;h
+resource_tag_iron;z
+resource_tag_grain;o
+buttonBold;Tučně
+buttonItalic;Kurzíva
+buttonUnderscore;Podtrženě
+buttonAlliance;Aliance
+buttonPlayer;Hráč
+buttonCoordinate;Souřadnice
+buttonReport;Hlášení
+buttonResource;Suroviny
+buttonSmilie;Smajlíci
+buttonTroop;Jednotky
+buttonPreview;Náhled
+news_tag;novinky
+news_not_found;žádné novinky nenalezeny
+casualty_tag;ztráty
+stats_tag;statistiky
+stats_fightingPower;síla
+stats_fightingPoints;body
+forum_tag;fórum
+number;počet
+bb_codes;BB-Kódy
+report_category_not_allowed;Povolená jsou pouze hlášení z útoků a špehování
+report_no_access;Nemáš povolení vidět toto hlášení
+report_invalid_id;Neplatné ID hlášení
+descriptionCoordinatesTag;Vytvoří odkaz na tyto souřadnice
+descriptionReportsTag;Odkaz na hlášení
+descriptionResourceIconTag;Zobrazí ikonu suroviny
+descriptionUrlTag;Vytvoří HTML odkaz
+descriptionAllianceTag;Odkaz na alianci
+descriptionPlayerTag;Odkaz na profil hráče
+descriptiontroopIconTag;Zobrazí ikonu jednotky
+descriptionStatsTag;Zobrazí statistiky
+descriptionForumTag;Zobrazí poslední příspěvky na fóru
+descriptionNewsTag;Zobrazí poslední novinky.
+descriptionUidTag;Odkaz na hráče v ACP
+descriptionAidTag;Odkaz na alianci v ACP
+descriptionIpTag;Odkaz na IP adresu v ACP
+descriptionCkeyTag;Odkaz na ckey v ACP
+descriptionBotUidTag;Odkaz na hráče (detekce botů) v ACP
+resource_tag_lumber;d
+region_tag;region
+descriptionRegionTag;Odkaz na region
+region_not_found;Region nenalezen
+coordinate_not_found;Souřadnice nenalezeny
+list_tag;liste
+report_tag;rapport
+report_not_found;rapport ikke fundet
+alliance_tag;alliance
+alliance_not_found;alliance blev ikke fundet
+player_tag;Spiller
+player_not_found;Spiller blev ikke fundet
+troop_tag_hero;helt
+color_tag;farve
+resource_tag_iron;ir
+buttonBold;fed
+buttonItalic;kursiv
+buttonUnderscore;understreget
+buttonAlliance;Alliance
+buttonPlayer;Spiller
+buttonCoordinate;Koordinater
+buttonReport;Rapport
+buttonResource;Råstoffer
+buttonSmilie;Smilies
+buttonTroop;Tropper
+buttonPreview;Vis prøve
+news_tag;nyheder
+news_not_found;ingen nyheder fundet
+casualty_tag;tab
+stats_tag;statistik
+stats_fightingPower;styrke
+stats_fightingPoints;styrke point
+forum_tag;forum
+number;nummer
+bb_codes;BB koder
+report_category_not_allowed;Du kan kun vælge kamp- og spionrapporter.
+report_no_access;Du har ikke tilladelse til at se denne rapport
+report_invalid_id;Ugyldigt rapport ID
+descriptionCoordinatesTag;Skaber et link til disse koordinater
+descriptionReportsTag;Link til en rapport
+descriptionResourceIconTag;Viser et råstofikon
+descriptionUrlTag;Skaber et HTML-Link
+descriptionAllianceTag;Link til en alliance
+descriptionPlayerTag;Link til en spillerprofil
+descriptiontroopIconTag;Viser et troppeikon
+descriptionStatsTag;Viser statistik
+descriptionForumTag;Viser seneste indlæg på forum.
+descriptionNewsTag;Viser seneste nyheder.
+descriptionUidTag;Link til en spiller i ACP
+descriptionAidTag;Link til en alliance i ACP
+descriptionIpTag;Link til en IP-adresse i ACP
+descriptionCkeyTag;Link til en Ckey i ACP
+descriptionBotUidTag;Link til en spiller (bot detection) i ACP
+descriptionRegionTag;Link til en region
+region_not_found;Region ikke fundet
+coordinate_not_found;Koordinat ikke fundet
+report_not_found;Bericht nicht gefunden
+alliance_tag;allianzID
+alliance_not_found;Allianz nicht gefunden
+player_tag;spieler
+player_not_found;Spieler nicht gefunden
+quote_title;Zitat: {{TITEL}}
+resource_tag_wood;h
+resource_tag_claim;l
+resource_tag_iron;e
+resource_tag_grain;g
+buttonBold;Fett
+buttonItalic;Kursiv
+buttonUnderscore;Unterstrichen
+buttonAlliance;Allianz
+buttonPlayer;Spieler
+buttonCoordinate;Koordinaten
+buttonReport;Bericht
+buttonResource;Rohstoffe
+buttonSmilie;smilies
+buttonTroop;Truppen
+buttonPreview;Vorschau
+news_tag;news
+news_not_found;Nachricht nicht gefunden
+casualty_tag;verluste
+stats_tag;stats
+stats_fightingPower;kampfkraft
+stats_fightingPoints;kampfpunkte
+number;anzahl
+bb_codes;BB-Codes
+report_category_not_allowed;Es sind nur Kampf- und Spähberichte erlaubt
+report_no_access;Keine Zugriffsrechte auf diesen Bericht
+report_invalid_id;Ungültige Berichts-ID
+descriptionCoordinatesTag;Erstellt einen Link zu den Koordinaten
+descriptionReportsTag;Verlinkung auf einen Bericht
+descriptionResourceIconTag;Zeigt ein Rohstofficon
+descriptionUrlTag;Erstellt einen HTML-Link
+descriptionAllianceTag;Verlinkung auf eine Allianz
+descriptionPlayerTag;Verlinkung auf ein Spielerprofil
+descriptiontroopIconTag;Erstellt ein Icon für die Truppe
+descriptionStatsTag;Zeigt Statistiken
+descriptionForumTag;Zeigt die letzten Forenbeiträge.
+descriptionNewsTag;Zeigt die letzten News.
+descriptionUidTag;Verlinkung auf einen Spieler im ACP
+descriptionAidTag;Verlinkung auf eine Allianz im ACP
+descriptionIpTag;Verlinkung auf eine IP-Adresse im ACP
+descriptionCkeyTag;Verlinkung auf einen CKEY im ACP
+descriptionBotUidTag;Verlinkung auf einen Spieler (Boterkennung) im ACP
+resource_tag_lumber;h
+region_tag;Region
+descriptionRegionTag;Link zu einer Region
+region_not_found;Region nicht gefunden
+coordinate_not_found;Koordinate nicht gefunden
+list_tag;λίστα
+report_tag;αναφορά
+report_not_found;η αναφορά δεν βρέθηκε
+alliance_tag;συμμαχία
+alliance_not_found;Η συμμαχία δεν βρέθηκε.
+player_tag;παίκτης
+player_not_found;Ο παίκτης δεν βρέθηκε
+troop_tag_hero;ήρωας
+color_tag;χρώμα
+quote_title;Quote: {{TITEL}}
+resource_tag_wood;ξ
+resource_tag_claim;π
+resource_tag_iron;σ
+resource_tag_grain;σ
+buttonBold;έντονα
+buttonItalic;πλάγια
+buttonUnderscore;υπογραμμισμένα
+buttonAlliance;Συμμαχία
+buttonPlayer;Παίκτης
+buttonCoordinate;Συντεταγμένες
+buttonReport;Αναφορά
+buttonResource;Ύλες
+buttonTroop;στρατεύματα
+buttonPreview;Επισκόπηση
+news_tag;νέα
+news_not_found;δεν βρέθηκαν νέα
+casualty_tag;απώλειες
+stats_tag;στατιστικά
+stats_fightingPower;δύναμη
+stats_fightingPoints;πόντοι μάχης
+forum_tag;φόρουμ
+number;αριθμός
+bb_codes;κωδικοί BB
+report_category_not_allowed;Μπορείτε μόνο να επιλέξετε μια αναφορά μάχης ή ανίχνευσης.
+report_no_access;Δεν έχετε άδεια να δείτε αυτήν την αναφορά
+report_invalid_id;Άκυρο ID αναφοράς
+descriptionCoordinatesTag;Δημιουργία link σε αυτές τις συντεταγμένες
+descriptionReportsTag;Link σε μια αναφορά
+descriptionResourceIconTag;Δείχνει μια εικόνα υλών
+descriptionUrlTag;Δημιουργεί ένα HTML-Link
+descriptionAllianceTag;Link σε μια συμμαχία
+descriptionPlayerTag;Link στο προφίλ ενός παίκτη
+descriptiontroopIconTag;Δείχνει μια εικόνα στρατεύματος
+descriptionStatsTag;Δείχνει στατιστικά
+descriptionForumTag;Δείχνει τις τελευταίες εμφανίσεις του φόρουμ.
+descriptionNewsTag;Δείχνει τα τελευταία νέα.
+descriptionUidTag;Σύνδεση σε έναν παίκτη στο ACP
+descriptionAidTag;Σύνδεση σε μια συμμαχία στο ACP
+descriptionIpTag;Σύνδεση σε μια διεύθυνση IP στο ACP
+descriptionCkeyTag;Σύνδεση σε ένα Ckey στο ACP
+descriptionBotUidTag;Σύνδεση σε έναν παίκτη (εντοπισμός bot) στο ACP
+resource_tag_lumber;ξ
+region_tag;περιοχή
+descriptionRegionTag;Σύνδεση με μία περιοχή
+region_not_found;Η περιοχή δεν βρέθηκε
+coordinate_not_found;Δεν βρέθηκε η συντεταγμένη
+report_not_found;report not found
+alliance_not_found;alliance not found
+player_not_found;player not found
+color_tag;colour
+buttonBold;bold
+buttonItalic;italic
+buttonUnderscore;underline
+buttonAlliance;alliance
+buttonPlayer;player
+buttonCoordinate;coordinates
+buttonReport;report
+buttonResource;resources
+buttonTroop;troops
+buttonPreview;preview
+news_not_found;no news found
+casualty_tag;losses
+stats_fightingPower;strength
+stats_fightingPoints;fighting points
+number;number
+bb_codes;BB codes
+report_category_not_allowed;Only battle and scouting reports are permitted.
+report_no_access;You do not have permission to view this report.
+report_invalid_id;invalid report ID
+descriptionCoordinatesTag;Creates a link to these coordinates
+descriptionReportsTag;Link to a report
+descriptionResourceIconTag;Displays a ressource icon
+descriptionUrlTag;Creates a HTML-Link
+descriptionAllianceTag;Link to an alliance
+descriptionPlayerTag;Link to a player profile
+descriptiontroopIconTag;Displays a troop icon
+descriptionStatsTag;Displays statistics
+descriptionForumTag;Displays latest forum entries.
+descriptionNewsTag;Displays latest news.
+descriptionUidTag;Link to a player in ACP
+descriptionAidTag;Link to an alliance in ACP
+descriptionIpTag;Link to an IP address in ACP
+descriptionCkeyTag;Link to a Ckey in ACP
+descriptionBotUidTag;Link to a player (Bot detection) in ACP
+descriptionRegionTag;Link to a region
+region_not_found;region not found
+coordinate_not_found;coordinate not found
+descriptionBotUidTag;Link to a player (bot detection) in ACP
+region_not_found;Region not found
+coordinate_not_found;Coordinate not found
+list_tag;lista
+report_tag;reporte
+report_not_found;reporte no encontrado
+alliance_tag;alianza
+alliance_not_found;alianza no encontrada
+player_tag;Jugador
+player_not_found;Jugador no encontrado
+troop_tag_hero;héroe
+quote_tag;citar
+quote_title;Cita: {{TITEL}}
+buttonBold;negrita
+buttonItalic;cursiva
+buttonUnderscore;subrayado
+buttonAlliance;Alianza
+buttonPlayer;Jugador
+buttonCoordinate;Coordenadas
+buttonReport;Reporte
+buttonResource;Materias
+buttonSmilie;Caritas
+buttonTroop;Tropas
+buttonPreview;Previo
+news_tag;noticias
+news_not_found;no se encontraron noticias
+casualty_tag;pérdidas
+stats_tag;estadísticas
+stats_fightingPower;Fortaleza
+stats_fightingPoints;Puntos de lucha
+forum_tag;foro
+number;número
+bb_codes;Códigos BB
+report_category_not_allowed;Sólo están permitidos reportes de espionajes y batallas.
+report_no_access;No tienes permiso para ver este reportes.
+report_invalid_id;ID de reporte inválido.
+descriptionCoordinatesTag;crea un link a estas coordenadas
+descriptionReportsTag;Link a reporte
+descriptionResourceIconTag;Muestra un icono de recursos
+descriptionUrlTag;crea un link HTML
+descriptionAllianceTag;Link a la alianza
+descriptionPlayerTag;Link a el perfil de un jugador
+descriptiontroopIconTag;Muestra un icono de tropas
+descriptionStatsTag;Muestra las estadísticas
+descriptionForumTag;Muestra los últimos posts en el foro
+descriptionNewsTag;Muestra las ultimas novedades.
+descriptionUidTag;Enlace a un jugador en el ACP
+descriptionAidTag;Enlace a una alianza en el ACP
+descriptionIpTag;Enlace a una dirección IP en el ACP
+descriptionCkeyTag;Enlace a un Ckey en el ACP
+descriptionBotUidTag;Enlace a un jugador (detección de bots) en el ACP
+region_tag;región
+descriptionRegionTag;Enlace a una región
+region_not_found;Región no encontrada
+coordinate_not_found;Coordenadas no encontradas
+report_tag;informe
+quote_tag;cita
+resource_tag_iron;h
+buttonReport;Informe
+buttonResource;Recursos
+buttonSmilie;Emoticonos
+buttonPreview;Vista Previa
+news_not_found;no hay noticias
+casualty_tag;perdidas
+stats_fightingPower;fuerza
+stats_fightingPoints;puntos de lucha
+number;numero
+bb_codes;Código BB
+report_category_not_allowed;Solo puedes elegir reportes de batalla y acechos
+report_no_access;No tienes permiso para ver este reporte
+report_invalid_id;ID de reporte no válido
+descriptionCoordinatesTag;Crear un link a estas coordenadas
+descriptionReportsTag;Link a un reporte
+descriptionUrlTag;Crea un HTML-Link
+descriptionPlayerTag;Link al perfil de un jugador
+descriptionForumTag;Muestra las últimas entradas del foro.
+descriptionNewsTag;Muestra las últimas noticias.
+descriptionUidTag;Enlace al jugador en el ACP
+descriptionAidTag;Enlace a la alianza en el ACP
+ipTag;IP
+descriptionIpTag;Enlace a la IP en el ACP
+descriptionCkeyTag;Enlace a la ckey en el ACP
+descriptionBotUidTag;Enlace al jugador (detección de bot) en el ACP
+descriptionRegionTag;Enlace a la región
+region_not_found;No se encuentra la región
+list_tag;loend
+report_tag;raport
+report_not_found;raportit ei leitud
+alliance_tag;liit
+alliance_not_found;liitu ei leitud
+player_tag;Mängija
+player_not_found;Mängijat ei leitud
+troop_tag;väeliik
+troop_tag_hero;väejuht
+color_tag;värv
+quote_tag;tsiteeri
+quote_title;Tsiteeri: {{TITEL}}
+resource_tag_wood;p
+resource_tag_claim;s
+resource_tag_iron;r
+resource_tag_grain;v
+buttonBold;rasvane
+buttonItalic;kaldkiri
+buttonUnderscore;allajoonitud
+buttonAlliance;Liit
+buttonPlayer;Mängija
+buttonCoordinate;Koordinaadid
+buttonReport;Raport
+buttonResource;Varud
+buttonSmilie;Smailid
+buttonTroop;Sõdurid
+buttonPreview;Eelvaade
+news_tag;uudised
+news_not_found;uudiseid ei leitud
+casualty_tag;kaotused
+stats_tag;stat.
+stats_fightingPower;tugevus
+stats_fightingPoints;võitluse punktid
+forum_tag;foorum
+bb_codes;BB-koodid
+report_category_not_allowed;Ainult lahingute ja luuramiste raportid on lubatud.
+report_no_access;Selle raporti vaatamiseks puuduvad õigused.
+report_invalid_id;Vigane raporti ID
+urlTag;link
+descriptionCoordinatesTag;Loob antud koordinaatidega asukoha lingi
+descriptionReportsTag;Link raporti jaoks
+descriptionResourceIconTag;Kuvab varude ikoone
+descriptionUrlTag;Loob HTML-Lingi
+descriptionAllianceTag;Liidule viitav link
+descriptionPlayerTag;Mängija profiilile suunav link
+descriptiontroopIconTag;Kuvab sõdurite ikoone
+descriptionStatsTag;Kuvab statistikad
+descriptionForumTag;Kuvab viimased sisestused foorumisse.
+descriptionNewsTag;Kuvab viimased uudised.
+descriptionUidTag;Link mängija ACP-sse
+descriptionAidTag;Link liidu ACP-sse
+descriptionIpTag;Link IP-aadressi ACP-sse
+descriptionCkeyTag;Link ckey ACP-sse
+descriptionBotUidTag;Link mängija botituvastuse ACP-sse
+resource_tag_lumber;p
+region_tag;piirkond
+descriptionRegionTag;Link piirkonnale
+region_not_found;Piirkonda ei leidnud
+coordinate_not_found;Koordinaate ei leitud
+report_not_found;Raporttia ei löytynyt
+alliance_tag;liittouma
+alliance_not_found;Liittoumaa ei löytynyt
+player_tag;pelaaja
+player_not_found;Pelaajaa ei löytynyt
+quote_title;Lainaus: {{TITEL}}
+buttonBold;Lihavointi
+buttonItalic;Kursiivi
+buttonUnderscore;Alleviivaus
+buttonAlliance;Liittouma
+buttonPlayer;Pelaaja
+buttonCoordinate;Koordinaatit
+buttonReport;Raportti
+buttonResource;Resurssit
+buttonSmilie;Hymiöt
+buttonTroop;Joukot
+buttonPreview;Esikatselu
+report_category_not_allowed;Vain taistelu- ja tiedusteluraportit ovat sallittuja.
+report_no_access;Sinulla ei ole oikeuksia tämän raportin katsomiseen.
+report_invalid_id;Raportin ID ei kelpaa.
+descriptionCoordinatesTag;Luo linkin näihin koordinaatteihin.
+descriptionReportsTag;Linkki raporttiin
+descriptionResourceIconTag;Näyttää resurssikuvakkeen
+descriptionUrlTag;Luo HTML-linkin
+descriptionAllianceTag;Linkki liittoumaan
+descriptionPlayerTag;Linkki pelaajaprofiiliin
+descriptiontroopIconTag;Näyttää joukkokuvakkeen
+descriptionStatsTag;Näyttää tilastot
+descriptionForumTag;Näyttää viimeisimmät foorumikirjoitukset
+descriptionNewsTag;Näyttää viimeisimmät uutiset
+uidTag;UID
+descriptionUidTag;Pelaajan ACP-linkki
+aidTag;AID
+descriptionAidTag;Liittouman ACP-linkki
+descriptionIpTag;IP-osoitteen ACP-linkki
+ckeyTag;CKEY
+descriptionCkeyTag;CKEY:n ACP-linkki
+descriptionBotUidTag;Pelaajan (bottitunnistus) ACP-linkki
+region_tag;alue
+descriptionRegionTag;Linkki alueelle
+region_not_found;Aluetta ei löytynyt
+coordinate_not_found;Koordinaattia ei löytynyt
+list_tag;Liste
+report_not_found;rapport non trouvé
+alliance_not_found;alliance non trouvé
+player_tag;Joueur
+player_not_found;Joueur non trouvé
+troop_tag_hero;héros
+color_tag;couleur
+quote_tag;citation
+quote_title;Citation : {{TITEL}}
+resource_tag_wood;bo
+resource_tag_claim;a
+resource_tag_iron;f
+buttonBold;gras
+buttonItalic;italique
+buttonUnderscore;souligné
+buttonPlayer;joueur
+buttonCoordinate;coordonnées
+buttonReport;rapport
+buttonResource;ressources
+buttonSmilie;smileys
+buttonTroop;troupes
+buttonPreview;aperçu
+news_not_found;aucune news trouvée
+casualty_tag;pertes
+stats_fightingPower;force
+stats_fightingPoints;points de combat
+number;nombre
+report_category_not_allowed;Vous ne pouvez choisir que les rapports de combat et d'espionnage
+report_no_access;Vous n'avez pas l'autorisation de voir ce rapport
+report_invalid_id;ID de rapport invalide
+descriptionCoordinatesTag;Créer un lien vers ces coordonnées
+descriptionReportsTag;Lien vers un rapport
+descriptionResourceIconTag;icône de ressource
+descriptionUrlTag;Créer un lien internet
+descriptionAllianceTag;Lien vers une alliance
+descriptionPlayerTag;Lien vers le profil d'un joueur
+descriptiontroopIconTag;Icône de troupe
+descriptionStatsTag;Afficher les statistiques
+descriptionForumTag;Afficher les dernières entrées forum.
+descriptionNewsTag;Afficher els dernières informations.
+descriptionUidTag;Lien vers un joueur dans l'ACP
+descriptionAidTag;Lien vers une alliance dans l'ACP
+descriptionIpTag;Lien vers une adresse IP dans l'ACP
+descriptionCkeyTag;Lien vers un Ckey dans l'ACP
+descriptionBotUidTag;Lien vers un joueur (détection bot) dans l'ACP
+resource_tag_lumber;bo
+region_tag;région
+descriptionRegionTag;Lien vers une région
+region_not_found;Région introuvable
+coordinate_not_found;Coordonnées non trouvées
+list_tag;רשימה
+report_tag;דוח
+report_not_found;דוח לא נמצא
+alliance_tag;ברית
+alliance_not_found;ברית לא נמצאה
+player_tag;שחקן
+player_not_found;שחקן לא נמצא
+troop_tag_hero;גיבור
+color_tag;צבע
+quote_tag;ציטוט
+quote_title;ציטוט: {{TITEL}}
+buttonBold;בולט
+buttonItalic;מוטה
+buttonUnderscore;קו תחתון
+buttonAlliance;ברית
+buttonPlayer;שחקן
+buttonCoordinate;נקודות ציון
+buttonReport;דוח
+buttonResource;משאבים
+buttonSmilie;סמיילים
+buttonTroop;כוחות
+buttonPreview;תצוגה מקדימה
+news_tag;חדשות
+news_not_found;לא נמצאו חדשות
+casualty_tag;אבידות
+stats_tag;נתונים
+stats_fightingPower;כוח
+stats_fightingPoints;נקודות לחימה
+forum_tag;פורום
+number;מספר
+bb_codes;BB קוד
+report_category_not_allowed;ניתן לבחור רק דוחות קרב וריגול
+report_no_access;אין הרשאה לצפות בדוח זה
+report_invalid_id;מספר הזיהוי של הדוח לא תקין
+urlTag;קישור
+descriptionCoordinatesTag;יוצר קישור לנקודות הציון האלו
+descriptionReportsTag;קישור לדוח
+descriptionResourceIconTag;מציג אייקון משאבים
+descriptionUrlTag;יוצר קישור HTML
+descriptionAllianceTag;קישור לברית
+descriptionPlayerTag;קישור לפרופיל שחקן
+descriptiontroopIconTag;מציג אייקון כוחות
+descriptionStatsTag;מציג סטטיסטיקות
+descriptionForumTag;מציג הודעות אחרונות בפורום.
+descriptionNewsTag;מציג את החדשות האחרונות.
+descriptionUidTag;קישור לשחקן ב-ACP
+aidTag;עזרה
+descriptionAidTag;קישור לברית ב-ACP
+descriptionIpTag;קישור לכתובת IP ב-ACP
+descriptionCkeyTag;קישור ל- Ckey ב-ACP
+descriptionBotUidTag;קישור לשחקן (איתור בּוֹט) ב-ACP
+region_tag;אזור
+descriptionRegionTag;קישור לאזור
+region_not_found;האזור לא נמצא
+coordinate_not_found;קואורדינציות לא נמצאו
+bold_tag;B
+italic_tag;I
+underscore_tag;U
+coordinate_tag;X|Y
+alliance_tag;savez
+alliance_not_found;savez nije pronađen
+player_tag;igrač
+troop_tag;Tid
+buttonUnderscore;Podcrtano
+buttonAlliance;Savez
+casualty_tag;Gubitci
+stats_tag;statistike
+stats_fightingPower;snaga
+stats_fightingPoints;borbeni bodovi
+number;broj
+bb_codes;BB kod
+report_category_not_allowed;Možete izabrati samo borbena izvješća i izviđanja.
+report_no_access;Nemate dopuštenje da vidite ovaj izvještaj.
+report_invalid_id;Krivi ID izvještaja
+descriptionAllianceTag;Link ka savezu
+descriptionAidTag;Povezivanje sa savezom u APC-u
+descriptionIpTag;Povezivanje s IP adresom u ACP-u
+descriptionCkeyTag;Povezivanje s ckey u ACP-u
+descriptionRegionTag;Poveznica ka regiji
+report_tag;jelentes
+report_not_found;Jelentés nem található
+alliance_tag;klan
+alliance_not_found;Klán nem található
+player_tag;jatekos
+player_not_found;Játékos nem található
+troop_tag_hero;hos
+quote_tag;idezet
+quote_title;Idézet: {{TITEL}}
+resource_tag_wood;f
+resource_tag_iron;v
+resource_tag_grain;z
+buttonBold;Vastag
+buttonItalic;Dőlt
+buttonUnderscore;Aláhúzás
+buttonAlliance;Klán
+buttonPlayer;Játékos
+buttonCoordinate;Koordináták
+buttonReport;Jelentés
+buttonResource;Nyersanyagok
+buttonSmilie;Szmájlik
+buttonTroop;Seregek
+buttonPreview;Előnézet
+news_tag;hir
+news_not_found;A hír nem található
+casualty_tag;veszteseg
+stats_fightingPower;tamadoero
+stats_fightingPoints;tamadopont
+number;db
+bb_codes;BB-kódok
+report_category_not_allowed;Csak harci és kémjelentések engedélyezettek
+report_no_access;Ennek a jelentésnek a megtekintéséhez nincsen jogosultságod
+report_invalid_id;Érvénytelen jelentés-ID
+descriptionCoordinatesTag;létrehoz egy linket a megadott koordinátákhoz
+descriptionReportsTag;Link egy jelentéshez
+descriptionResourceIconTag;Nyersanyag ikon megjelenítése
+descriptionUrlTag;Létrehoz egy HTML-Linket
+descriptionAllianceTag;Link egy klánhoz
+descriptionPlayerTag;Link egy játékos profiljához
+descriptiontroopIconTag;Létrehoz egy ikont a csapatnak
+descriptionStatsTag;Statisztikát jelenít meg
+descriptionForumTag;Megmutatja a legutolsó fórumbejegyzéseket.
+descriptionNewsTag;Megmutatja a legutolsó híreket.
+descriptionUidTag;Link egy játékosra ACP-ben
+descriptionAidTag;Link egy klánhoz ACP-ben
+descriptionIpTag;Link egy IP-címre ACP-ben
+descriptionCkeyTag;Link egy Ckeyre ACP-ben
+descriptionBotUidTag;Link egy játékosra (bot érzékelés) ACP-ben
+resource_tag_lumber;f
+region_tag;régió
+descriptionRegionTag;Link egy régióhoz
+region_not_found;A régió nem található
+coordinate_not_found;A koordináta nem található
+list_tag;daftar
+report_tag;laporan
+report_not_found;laporan tidak ditemukan
+alliance_tag;aliansi
+alliance_not_found;aliansi tidak ditemukan
+player_tag;Pemain
+player_not_found;Pemain tidak ditemukan
+troop_tag_hero;kesatria
+color_tag;warna
+quote_tag;kutip
+quote_title;Kutip: {{TITEL}}
+buttonBold;tebal
+buttonItalic;miring
+buttonUnderscore;garis bawah
+buttonAlliance;Aliansi
+buttonPlayer;Pemain
+buttonCoordinate;Koordinat
+buttonReport;Laporan
+buttonResource;sumberdaya
+buttonSmilie;Senyum
+buttonTroop;Pasukan
+buttonPreview;Tinjau
+news_tag;berita
+news_not_found;tidak ada berita
+casualty_tag;kehilangan
+stats_fightingPower;kekuatan
+stats_fightingPoints;nilai juang
+number;nomor
+report_category_not_allowed;Hanya laporan serangan dan intai yang diperbolehkan.
+report_no_access;Anda tidak diperbolehkan melihar laporan ini
+report_invalid_id;ID laporan salah
+descriptionCoordinatesTag;Buat link untuk kordinat ini
+descriptionReportsTag;Link ke laporan
+descriptionResourceIconTag;Tampilkan icon sumberdaya
+descriptionUrlTag;Buat link HTML
+descriptionAllianceTag;Link ke aliansi
+descriptionPlayerTag;Link ke profil pemain
+descriptiontroopIconTag;Tampilkan icon pasukan
+descriptionStatsTag;Tampilkan statistik
+descriptionForumTag;Tampilkan masukan forum terakhir.
+descriptionNewsTag;Tampilkan berita terkini.
+descriptionUidTag;Link ke pemain dalam ACP
+descriptionAidTag;Link ke aliansi di ACP
+descriptionIpTag;Link ke alamat IP dalam ACP
+descriptionCkeyTag;Link ke Ckey dalam ACP
+descriptionBotUidTag;Link ke pemain (deteksi bot) dalam ACP
+region_tag;wilayah
+descriptionRegionTag;Tautan ke wilayah
+region_not_found;Wilayah tidak ditemukan
+coordinate_not_found;Koordinat tidak ditemukan
+report_not_found;report non trovato
+alliance_tag;alleanza
+alliance_not_found;alleanza non trovata
+player_tag;giocatore
+player_not_found;giocatore non trovato
+troop_tag_hero;eroe
+color_tag;colore
+buttonBold;grassetto
+buttonItalic;corsivo
+buttonUnderscore;sottolineato
+buttonAlliance;alleanza
+buttonPlayer;giocatore
+buttonCoordinate;coordinate
+buttonResource;risorse
+buttonSmilie;faccine
+buttonTroop;truppe
+buttonPreview;anteprima
+news_not_found;nessuna news trovata
+casualty_tag;perdite
+stats_tag;statistiche
+stats_fightingPower;forza
+stats_fightingPoints;punti battaglia
+bb_codes;codici BB
+report_category_not_allowed;Puoi scegliere solo i report di combattimento e di esplorazione.
+report_no_access;Non hai nessun permesso per vedere questo report.
+report_invalid_id;Report con ID non valido.
+descriptionCoordinatesTag;Crea un link a queste coordinate
+descriptionReportsTag;Link del report
+descriptionResourceIconTag;Visualizza una icona delle risorse
+descriptionAllianceTag;Link dell'alleanza
+descriptionPlayerTag;Link del profilo di un giocatore
+descriptiontroopIconTag;Visualizza una icona delle truppe
+descriptionStatsTag;Visualizza le statistiche
+descriptionForumTag;Visualizza i post del forum più recenti.
+descriptionNewsTag;Visualizza le ultime notizie.
+descriptionUidTag;Link del giocatore su ACP
+descriptionAidTag;Link dell'alleanza su ACP
+descriptionIpTag;Link dell'indirizzo IP su ACP
+ckeyTag;Tasto c
+descriptionCkeyTag;Link del tasto c su ACP
+descriptionBotUidTag;Link del giocatore (rilevamento bot) su ACP
+region_tag;regione
+descriptionRegionTag;Collega a una regione
+region_not_found;Regione non trovata
+coordinate_not_found;Coordinate non trovate
+list_tag;リスト
+report_tag;レポート
+report_not_found;レポートはありません
+alliance_tag;同盟
+alliance_not_found;同盟はありません
+player_tag;プレイヤー
+player_not_found;プレイヤーはいません
+troop_tag_hero;英雄
+color_tag;色
+quote_tag;引用
+quote_title;引用: {{TITEL}}
+buttonBold;太字
+buttonItalic;イタリック
+buttonUnderscore;下線
+buttonAlliance;同盟
+buttonPlayer;プレイヤー
+buttonCoordinate;座標
+buttonReport;レポート
+buttonResource;資源
+buttonSmilie;スマイリー
+buttonTroop;兵士
+buttonPreview;プレビュー
+news_tag;ニュース
+news_not_found;ニュースはありません
+casualty_tag;損失
+stats_tag;統計
+stats_fightingPower;強さ
+stats_fightingPoints;戦闘ポイント
+forum_tag;フォーラム
+number;数
+bb_codes;BBコード
+report_category_not_allowed;戦闘と偵察のレポートしか選べません。
+report_no_access;このレポートを読む権限がありません。
+report_invalid_id;無効なレポートIDです
+descriptionCoordinatesTag;この座標のリンクを作成する
+descriptionReportsTag;レポートへのリンク
+descriptionResourceIconTag;資源アイコンの表示
+descriptionUrlTag;HTMLリンクの作成
+descriptionAllianceTag;同盟へのリンク
+descriptionPlayerTag;プレイヤープロフィールへのリンク
+descriptiontroopIconTag;兵士アイコンの表示
+descriptionStatsTag;統計の表示
+descriptionForumTag;最新のフォーラム投稿表示
+descriptionNewsTag;最新のニュースを表示します。
+descriptionUidTag;ACPのプレイヤーにリンクする
+descriptionAidTag;ACPの同盟にリンクする
+descriptionIpTag;ACPのIPアドレスにリンクする
+descriptionCkeyTag;ACPのCkeyにリンクする
+descriptionBotUidTag;ACPのプレイヤー（ボット検出）にリンクする
+region_tag;地域
+descriptionRegionTag;地域にリンクする
+region_not_found;地域が見つかりませんでした
+coordinate_not_found;座標が見つかりません
+list_tag;Sąrašas
+report_tag;ataskaita
+report_not_found;ataskaita nerasta
+alliance_tag;aljansas
+alliance_not_found;aljansas nerastas
+player_tag;žaidėjas
+player_not_found;žaidėjas nerastas
+troop_tag_hero;karžygys
+color_tag;spalva
+quote_tag;citata
+quote_title;Citata: {{TITEL}}
+resource_tag_wood;mediena
+resource_tag_claim;molis
+resource_tag_iron;gelezis
+resource_tag_grain;grudai
+buttonBold;paryškintas
+buttonItalic;pasviręs
+buttonUnderscore;pabrauktas
+buttonAlliance;aljansas
+buttonPlayer;žaidėjas
+buttonCoordinate;koordinatės
+buttonReport;ataskaita
+buttonResource;resursai
+buttonSmilie;šypsenos
+buttonTroop;kariai
+buttonPreview;peržiūra
+news_tag;naujienos
+news_not_found;naujienų nerasta
+casualty_tag;nuostoliai
+stats_tag;rodikliai
+stats_fightingPower;pajėgumas
+stats_fightingPoints;kovos taškai
+forum_tag;forumas
+number;skaičius
+bb_codes;BB kodai
+report_category_not_allowed;Galite pasirinkti tik mūšio ir žvalgybos ataskaitas
+report_no_access;Nepakanka teisių ataskaitai peržiūrėti
+report_invalid_id;Neteisingas ataskaitos ID-numeris
+descriptionCoordinatesTag;Sudaro nuorodą į šias koordinates
+descriptionReportsTag;Sudaro nuorodą į ataskaitą
+descriptionResourceIconTag;Rodomas resursų simbolius
+descriptionUrlTag;Sudaro HTML nuorodą
+descriptionAllianceTag;Sudaro nuorodą į aljansą
+descriptionPlayerTag;Sudaro nuorodą į žaidėjo aprašymą
+descriptiontroopIconTag;Rodomas pajėgų simbolius
+descriptionStatsTag;Parodo statistiką
+descriptionForumTag;Parodo paskutinius forumo pranešimus
+descriptionNewsTag;Parodo paskutines naujienas
+uidTag;Identifikacinis numeris
+descriptionUidTag;Susieti su žaidėju ACP
+aidTag;pagalba
+descriptionAidTag;Sudaro nuorodą į aljansą ACP
+descriptionIpTag;Susieti su IP adresu ACP
+ckeyTag;craktas
+descriptionCkeyTag;Susieti su craktu ACP
+descriptionBotUidTag;Susieti su žaidėju (botų aptikimas) ACP
+resource_tag_lumber;mediena
+region_tag;regionas
+descriptionRegionTag;Nuoroda į regioną
+region_not_found;Regionas nerastas
+coordinate_not_found;Koordinatės nerastos
+report_not_found;neatrada atskaiti
+alliance_not_found;neatrada aliansi
+player_not_found;neatrada spēlētāju
+quote_title;Citāts: {{TITEL}}
+buttonAlliance;alianse
+buttonPlayer;spēlētājs
+buttonCoordinate;koordinātes
+buttonReport;atskaite
+buttonResource;resursi
+buttonSmilie;smailiji
+buttonTroop;kareivji
+buttonPreview;apskatīt
+news_not_found;neatrada nevienu jaunumu
+stats_fightingPower;spēks
+stats_fightingPoints;cīņas punktu
+number;cipars
+bb_codes;BB kodi
+report_category_not_allowed;Jūs variet izvēlēties tikai kaujas vai izlūkošanas atskaites.
+report_no_access;Jums attiecīgās pieejas, lai apskatītos šo atskaiti!
+report_invalid_id;Nederīgs ID
+descriptionCoordinatesTag;Izveido saiti uz šīm koordinātēm
+descriptionReportsTag;Saite uz atskaiti
+descriptionResourceIconTag;Parāda resursu ikonu
+descriptionUrlTag;Izveido HTML saiti
+descriptionAllianceTag;Saite uz aliansi
+descriptionPlayerTag;Saite uz spēlētāja profilu
+descriptiontroopIconTag;Izveido kareivja ikonu
+descriptionStatsTag;Parāda statistikas
+descriptionForumTag;Parādā pēdejos foruma ierakstus
+descriptionNewsTag;Parāda pēdējos jaunumus.
+descriptionUidTag;Saite uz spēlētāju ACP panelī
+descriptionAidTag;Saite uz aliansi ACP panelī
+descriptionIpTag;Saite uz IP adresi ACP panelī
+descriptionCkeyTag;Saite uz Ckey ACP panelī
+descriptionBotUidTag;Saite uz spēlētāju (botu atklāšana) ACP panelī
+region_tag;reģions
+descriptionRegionTag;Saite uz reģionu
+region_not_found;Reģions nav atrasts
+coordinate_not_found;Koordinātes nav atrastas.
+list_tag;senarai
+report_not_found;laporan tidak ditemui
+alliance_tag;persekutuan
+alliance_not_found;persekutuan tidak ditemui
+player_not_found;Pemain tidak ditemui
+troop_tag_hero;wira
+resource_tag_wood;k
+resource_tag_claim;tl
+resource_tag_iron;b
+resource_tag_grain;t
+buttonAlliance;Persekutuan
+buttonResource;Sumber
+buttonTroop;Askar
+buttonPreview;Preview
+news_not_found;tiada berita ditemui
+casualty_tag;kerugian
+stats_fightingPoints;mata berperang
+number;nombor
+bb_codes;Kod BB
+report_category_not_allowed;Hanya laporan pertempuran dan peninjauan dibenarkan.
+report_no_access;Anda tidak memiliki kebenaran untuk melihat laporan ini.
+report_invalid_id;ID laporan tidak sah.
+descriptionCoordinatesTag;Cipta pautan ke koordinat berikut
+descriptionReportsTag;Pautan ke laporan
+descriptionResourceIconTag;Paparkan ikon sumber
+descriptionUrlTag;Cipta pautan HTML
+descriptionAllianceTag;Pautan ke persekutuan
+descriptionPlayerTag;Pautan ke profil pemain
+descriptiontroopIconTag;Paparkan ikon askar
+descriptionStatsTag;Paparkan statistik
+descriptionForumTag;Paparkan kemasukan terbaru forum
+descriptionNewsTag;Paparkan berita terbaru
+descriptionUidTag;Pautan ke pemain dalam ACP
+aidTag;bantuan
+descriptionAidTag;Pautan ke persekutuan dalam ACP
+descriptionIpTag;Pautan ke alamat IP dalam ACP
+descriptionCkeyTag;Pautan ke Ckey dalam ACP
+descriptionBotUidTag;Pautan ke pemain (pengesanan bot) dalam ACP
+resource_tag_lumber;k
+descriptionRegionTag;Pautan ke wilayah
+region_not_found;Wilayah tidak ditemui
+coordinate_not_found;Koordinat tidak dijumpai
+list_tag;Lijst
+report_tag;Rapport
+report_not_found;Rapportage niet gevonden
+alliance_tag;Alliantie
+alliance_not_found;Alliantie niet gevonden
+player_tag;Speler
+player_not_found;Speler niet gevonden
+troop_tag_hero;Held
+color_tag;Kleur
+quote_tag;Quote
+resource_tag_claim;k
+buttonBold;Vet
+buttonItalic;Cursief
+buttonUnderscore;Onderstreept
+buttonAlliance;Alliantie
+buttonPlayer;Speler
+buttonCoordinate;Coördinaten
+buttonReport;Rapportage
+buttonResource;Grondstoffen
+buttonTroop;troepen
+buttonPreview;voorbeeld
+news_tag;nieuws
+news_not_found;Geen nieuws gevonden
+casualty_tag;verliezen
+stats_fightingPower;sterkte
+stats_fightingPoints;vechtpunten
+report_category_not_allowed;Je kan alleen aanval- en scoutrapportages kiezen.
+report_no_access;Er is geen toestemming om deze rapportage te zien.
+report_invalid_id;Ongeldigde rapportage ID
+descriptionCoordinatesTag;Creëert een koppeling naar deze coördinaten.
+descriptionReportsTag;Koppeling naar een rapport
+descriptionResourceIconTag;Toont een grondstof afbeelding
+descriptionUrlTag;Creëert een HTML-Link
+descriptionAllianceTag;Koppeling naar een alliantie
+descriptionPlayerTag;koppeling naar een spelers profiel
+descriptiontroopIconTag;Toont een troepen afbeelding
+descriptionStatsTag;Toont de statistieken
+descriptionForumTag;Toont de laatste forum post
+descriptionNewsTag;Toont het laatste nieuws
+descriptionUidTag;Link naar een speler in ACP
+descriptionAidTag;Link naar een alliantie in ACP
+descriptionIpTag;Link naar een IP-adres in ACP
+descriptionCkeyTag;Link naar een Ckey in ACP
+botUidTag;bot-uid
+descriptionBotUidTag;Link naar een speler (botdetectie) in ACP
+region_tag;regio
+descriptionRegionTag;Link naar een regio
+region_not_found;Regio niet gevonden
+coordinate_not_found;Coördinaat niet gevonden
+report_not_found;finner ikke rapporten
+alliance_tag;allianse
+alliance_not_found;finner ikke alliansen
+player_tag;spiller
+player_not_found;finner ikke spilleren
+color_tag;farge
+resource_tag_wood;t
+resource_tag_iron;j
+resource_tag_grain;k
+buttonBold;fet
+buttonUnderscore;understreket
+buttonAlliance;allianse
+buttonPlayer;spiller
+buttonCoordinate;koordinater
+buttonResource;ressurser
+buttonSmilie;smiley
+buttonTroop;tropper
+buttonPreview;forhåndsvis
+news_tag;nyheter
+news_not_found;ingen nyheter funnet
+casualty_tag;tap
+stats_tag;statistikk
+stats_fightingPoints;kamppoeng
+report_category_not_allowed;Kun kamp- og speiderrapporter er tillatt.
+report_no_access;Du har ikke tillatelse til å se denne rapporten.
+report_invalid_id;Ugyldig rapport-ID
+descriptionCoordinatesTag;Legger inn en link til disse koordinatene
+descriptionResourceIconTag;Viser et ressurs-ikon
+descriptionUrlTag;Lager en HTML-link
+descriptionAllianceTag;Link til en allianse
+descriptionStatsTag;Viser statistikk
+descriptionForumTag;Viser siste forumposter.
+descriptionNewsTag;Viser siste nyheter.
+descriptionUidTag;Tilknytt en spiller i ACP
+descriptionAidTag;Link til en allianse i ACP
+descriptionIpTag;Tilknytt en IP-adresse i ACP
+descriptionCkeyTag;Tilknytt en Ckey i ACP
+descriptionBotUidTag;Tilknytt en spiller (bot-gjenkjenning) i ACP
+resource_tag_lumber;t
+descriptionRegionTag;Lenke til en region
+region_not_found;Region ikke funnet
+coordinate_not_found;Koordinat ikke funnet
+report_not_found;Raport nieznaleziony
+alliance_not_found;Nie znaleziono sojuszu
+player_not_found;Gracz nieznaleziony
+quote_title;Cytat: {{TITEL}}
+buttonBold;pogrubienie
+buttonItalic;kursywa
+buttonAlliance;Sojusz
+buttonPlayer;Gracz
+buttonCoordinate;Koordynaty
+buttonReport;raport
+buttonResource;surowców
+buttonSmilie;Uśmieszki
+buttonTroop;Wojska
+buttonPreview;podgląd
+news_tag;wiadomości
+news_not_found;nie ma nowości
+casualty_tag;straty
+stats_fightingPower;siła
+stats_fightingPoints;punkty walki
+number;liczba
+report_category_not_allowed;Możesz wybrać tylko raporty z walki lub szpiegowskie.
+report_no_access;Nie możesz obejrzeć tego raportu.
+report_invalid_id;Nieprawidłowe ID raportu.
+descriptionCoordinatesTag;Tworzy link do tych współrzędnych
+descriptionReportsTag;Link do raportu
+descriptionResourceIconTag;Wyświetla ikonę surowców
+descriptionUrlTag;Tworzy link html
+descriptionAllianceTag;Link do sojuszu
+descriptionPlayerTag;Link do profilu gracza
+descriptiontroopIconTag;Wyświetla ikonę jednostki
+descriptionStatsTag;Wyświetla statystyki
+descriptionForumTag;Wyświetla ostatnie wpisy na forum
+descriptionNewsTag;Wyświetla ostatnie nowości
+descriptionUidTag;Link do gracza w ACP
+descriptionAidTag;Link do sojuszu w ACP
+descriptionIpTag;Link do adresu IP w ACP
+descriptionCkeyTag;Link do ckeya w ACP
+descriptionBotUidTag;Link do gracza (detekcja botów) w ACP
+descriptionRegionTag;Link do regionu
+region_not_found;Nie znaleziono takiego regionu
+coordinate_not_found;Nie znaleziono koordynat
+report_tag;relatório
+report_not_found;relatório não encontrado
+alliance_tag;aliança
+alliance_not_found;aliança não encontrada
+player_tag;jogador
+player_not_found;jogador não encontrado
+troop_tag_hero;herói
+color_tag;cor
+quote_title;Citando: {{TITEL}}
+resource_tag_wood;ma
+resource_tag_claim;ba
+resource_tag_iron;fe
+resource_tag_grain;ce
+buttonBold;negrito
+buttonItalic;itálico
+buttonUnderscore;sublinhado
+buttonAlliance;aliança
+buttonPlayer;jogador
+buttonCoordinate;coordenadas
+buttonReport;relatório
+buttonResource;recursos
+buttonTroop;tropas
+buttonPreview;prever
+news_tag;notícias
+news_not_found;notícias não encontradas
+casualty_tag;perdas
+stats_tag;estatística
+stats_fightingPower;força
+stats_fightingPoints;pontos de batalha
+bb_codes;código BB
+report_category_not_allowed;Apenas relatórios de batalha e reconhecimento são permitidos.
+report_no_access;Você não tem permissão para ver este relatório.
+report_invalid_id;ID do relatório inválida
+descriptionCoordinatesTag;Criar um link para estas coordenadas
+descriptionReportsTag;Link para o relatória.
+descriptionResourceIconTag;Mostra o símbolo dum recurso
+descriptionUrlTag;Criar um link HTML
+descriptionAllianceTag;Link para aliança
+descriptionPlayerTag;Link para perfil do jogador
+descriptiontroopIconTag;Mostra símbolo da tropa
+descriptionStatsTag;Mostra estatísticas
+descriptionForumTag;Mostra as últimas entradas no forum.
+descriptionNewsTag;Mostra as últimas notícias.
+descriptionUidTag;Link para um jogador em ACP
+descriptionAidTag;Link para uma aliança em ACP
+descriptionIpTag;Link para um endereço IP em ACP
+descriptionCkeyTag;Link para um Ckey em ACP
+descriptionBotUidTag;Link para um jogador (detecção de bot) em ACP
+resource_tag_lumber;ma
+region_tag;região
+descriptionRegionTag;Link para uma região
+region_not_found;Região não encontrada
+coordinate_not_found;Coordenada não encontrada
+list_tag;Lista
+report_tag;relatorio
+alliance_tag;alianca
+player_not_found;Jogador não encontrado
+troop_tag_hero;heroi
+quote_title;Citar: {{TITEL}}
+buttonAlliance;Aliança
+buttonPlayer;Jogador
+buttonReport;Relatório
+buttonPreview;Prever
+news_not_found;nenhuma notícia encontrada
+casualty_tag;baixas
+stats_tag;estatísticas
+stats_fightingPower;Poder de Combate
+stats_fightingPoints;Pontos de Combate
+report_category_not_allowed;Apenas podes escolher relatórios de combates e espianço
+report_no_access;Sem permissão para visualizar este relatório.
+report_invalid_id;ID de relatório inválido
+descriptionReportsTag;Link para um relatório
+descriptionResourceIconTag;Mostra um icone de recursos
+descriptionUrlTag;Cria um link-HTML
+descriptionAllianceTag;Link para a aliança
+descriptionPlayerTag;Link para o perfil do jogador
+descriptiontroopIconTag;Mostra o icone da tropa
+descriptionForumTag;Mostra as ultimas entradas no forum.
+descriptionUidTag;Link para um jogador no ACP
+aidTag;ajuda
+descriptionAidTag;Link para uma aliança no ACP
+descriptionIpTag;Link para um endereço de IP no ACP
+descriptionCkeyTag;Link para uma Ckey no ACP
+descriptionBotUidTag;Link para um jogador (deteção de bots) no ACP
+descriptionRegionTag;Ligação para uma região
+list_tag;listă
+report_not_found;raportul nu poate fi găsit
+alliance_tag;alianță
+alliance_not_found;alianța nu poate fi găsită
+player_tag;jucător
+player_not_found;jucătorul nu poate fi găsit
+troop_tag_hero;erou
+color_tag;culoare
+resource_tag_wood;Le
+resource_tag_claim;L
+resource_tag_iron;F
+resource_tag_grain;H
+buttonUnderscore;subliniat
+buttonAlliance;alianță
+buttonPlayer;jucător
+buttonCoordinate;coordonate
+buttonResource;resurse
+buttonSmilie;emoticoane
+buttonTroop;trupe
+buttonPreview;previzualizare
+news_tag;știri
+news_not_found;nu au fost găsite știri
+casualty_tag;pierderi
+stats_tag;statistici
+stats_fightingPower;tărie
+stats_fightingPoints;puncte experiență în bătălii
+number;număr
+bb_codes;cod BB
+report_category_not_allowed;Poți alege doar rapoarte de atac și spionaj
+report_no_access;Nu ai permisiunea de a vizualiza acest raport
+report_invalid_id;ID raport invalid
+descriptionCoordinatesTag;Creează un link la aceste coordonate
+descriptionReportsTag;Link spre un raport
+descriptionResourceIconTag;Afișează un simbol al unei resurse
+descriptionUrlTag;Creează un HTML-Link
+descriptionAllianceTag;Link spre o alianță
+descriptionPlayerTag;Link spre profilul unui jucător
+descriptiontroopIconTag;Afișează un simbol al unei trupe
+descriptionStatsTag;Afișează statisticile
+descriptionForumTag;Afișează ultimele postări pe forum.
+descriptionNewsTag;Afișează ultimele știri.
+descriptionUidTag;Link către un jucător în ACP
+descriptionAidTag;Link către o alianță în ACP
+descriptionIpTag;Link către o adresă IP în ACP
+descriptionCkeyTag;Link către un Ckey în ACP
+descriptionBotUidTag;Link către un jucător (detectare bot) în ACP
+resource_tag_lumber;Le
+region_tag;regiune
+descriptionRegionTag;Link spre o regiune
+region_not_found;Regiunea nu a fost găsită
+coordinate_not_found;Coordonata nu a fost găsită
+bold_tag;б
+report_tag;отчёт
+report_not_found;Отчёт не найден
+alliance_tag;IDальянса
+alliance_not_found;Альянс не найден
+player_tag;игрок
+player_not_found;Игрок не найден
+color_tag;цвет
+quote_tag;цитата
+quote_title;Цитата: {{TITEL}}
+buttonBold;Полужирный
+buttonItalic;Курсив
+buttonUnderscore;Подчёркнутый
+buttonAlliance;Альянс
+buttonPlayer;Игрок
+buttonCoordinate;Координаты
+buttonReport;Отчёт
+buttonResource;Ресурсы
+buttonSmilie;Смайлы
+buttonTroop;Войска
+buttonPreview;Редактировать
+news_tag;новости
+news_not_found;Сообщение не найдено
+casualty_tag;потери
+stats_tag;статы
+stats_fightingPower;сила альянса
+stats_fightingPoints;очки альянса
+number;количество
+bb_codes;BB-коды
+report_category_not_allowed;Разрешены только отчёты о сражении и разведке.
+report_no_access;Никаких прав доступа для этого отчёта.
+report_invalid_id;Недействительный номер отчёта.
+urlTag;URL
+descriptionCoordinatesTag;Создать ссылку на координаты
+descriptionReportsTag;Ссылка на отчёт
+descriptionResourceIconTag;Показывает значок ресурса
+descriptionUrlTag;Создаёт HTML-ссылку
+descriptionAllianceTag;Ссылка на альянс
+descriptionPlayerTag;Ссылка на профиль игрока
+descriptiontroopIconTag;Создаёт значок для войск
+descriptionStatsTag;Показывает статистику
+descriptionForumTag;Показывает последние записи на форуме
+descriptionNewsTag;Показывает последние новости
+descriptionUidTag;Ссылка на игрока в ACP
+descriptionAidTag;Ссылка на альянс в ACP
+descriptionIpTag;Ссылка на IP-адрес в ACP
+descriptionCkeyTag;Ссылка на Ckey в ACP
+descriptionBotUidTag;Ссылка на игрока (в бот детекторе) в ACP
+descriptionRegionTag;Ссылка на регион
+region_not_found;Регион не найден
+coordinate_not_found;Координаты не найдены.
+report_not_found;report nebol nájdený
+alliance_not_found;aliancia nebola nájdená
+player_not_found;Hráč nebol nájdený
+quote_title;Cituj: {{TITEL}}
+buttonBold;tučné písmo
+buttonItalic;kurzíva
+buttonUnderscore;podčiarknuté
+buttonAlliance;Aliancia
+buttonCoordinate;Súradnice
+buttonTroop;Vojaci
+buttonPreview;ukážka
+news_not_found;Žiadne novinky
+casualty_tag;Straty
+stats_tag;Štatistiky
+stats_fightingPower;Sila
+stats_fightingPoints;bodov z boja
+number;číslo
+bb_codes;BB kódy
+report_category_not_allowed;Môžeš si vybrať len medzi bojovými reportami a reportami špehovania
+report_no_access;Nemáš oprávnenia k prezretiu tohoto reportu
+report_invalid_id;Nesprávne ID reportu
+descriptionCoordinatesTag;Vytvor link s týmito súradnicami
+descriptionReportsTag;Link k reportu
+descriptionResourceIconTag;Zobraz ikonku surovín
+descriptionUrlTag;Vytvor HTML-Link
+descriptionAllianceTag;Link do aliancie
+descriptionPlayerTag;Link do hráčskeho profilu
+descriptiontroopIconTag;Zobraz ikonku vojakov
+descriptionStatsTag;Zobraz štatistiky
+descriptionForumTag;Zobraz posledné príspevky na fóre.
+descriptionNewsTag;Zobraz posledné novinky
+descriptionUidTag;Odkaz k hráčovi v ACP
+descriptionAidTag;Odkaz k aliancii v ACP
+descriptionIpTag;Odkaz k IP adrese v ACP
+descriptionCkeyTag;Odkaz k ckey v ACP
+descriptionBotUidTag;Odkaz k hráčovi (detekcia botu) v ACP
+descriptionRegionTag;Odkaz na región
+region_not_found;Región nenájdený
+coordinate_not_found;Súradnica sa nenašla
+list_tag;Seznam
+report_tag;Poročilo
+report_not_found;Poročilo ni najdeno
+alliance_tag;Aliansa
+alliance_not_found;Aliansa ni najdena
+player_tag;Igralec
+player_not_found;Igralec ni najden
+troop_tag_hero;Heroj
+color_tag;Barva
+quote_tag;Citat
+buttonBold;Krepko
+buttonItalic;Poševno
+buttonUnderscore;Podčrtano
+buttonAlliance;Aliansa
+buttonPlayer;Igralec
+buttonReport;Poročilo
+buttonResource;Surovine
+buttonSmilie;Smeškoti
+buttonTroop;Enote
+buttonPreview;Predogled
+news_tag;Novice
+news_not_found;Ni svežih novic
+casualty_tag;Izgube
+stats_fightingPower;Moč
+stats_fightingPoints;Bojne točke
+number;Število
+bb_codes;BB kode
+report_category_not_allowed;Izbereš lahko samo bojna in izvidniška poročila
+report_no_access;Nimaš dovoljenja za pregled tega poročila
+report_invalid_id;Napačen ID poročila
+descriptionCoordinatesTag;Ustvari link teh koordinat
+descriptionReportsTag;Link poročila
+descriptionResourceIconTag;Prikaže ikono surovine
+descriptionUrlTag;Ustvari HTML-Link
+descriptionAllianceTag;Link do alianse
+descriptionPlayerTag;Link do profila igralca
+descriptiontroopIconTag;Prikaže ikono enote
+descriptionStatsTag;Prikaže statistiko
+descriptionForumTag;Prikaže najnovejši vnos na forum.
+descriptionNewsTag;Prikaže najnovejšo novico.
+descriptionUidTag;Povezava do igralca v ACP
+descriptionAidTag;Povezava do alianse v ACP
+descriptionIpTag;Povezava do IP naslova v ACP
+descriptionCkeyTag;Povezava do Ckeya v ACP
+descriptionBotUidTag;Povezava do igralca (bot zaznava) v ACP
+region_tag;regija
+descriptionRegionTag;Povezava do regije
+region_not_found;Regija ni najdena
+coordinate_not_found;Koordinate ni bilo mogoče najti
+report_tag;извештај
+report_not_found;извештај није пронађен
+alliance_tag;савез
+alliance_not_found;савез није пронађен
+player_not_found;играч није пронађен
+troop_tag_hero;херој
+resource_tag_claim;гл
+resource_tag_iron;г
+resource_tag_grain;ж
+buttonBold;подебљано
+buttonItalic;курзив
+buttonUnderscore;подвучено
+buttonAlliance;савез
+buttonCoordinate;координате
+buttonReport;извештај
+buttonResource;сировине
+buttonSmilie;смајлији
+buttonTroop;војска
+news_tag;вести
+news_not_found;вест није пронађена
+casualty_tag;губици
+stats_tag;статискике
+stats_fightingPower;снага
+stats_fightingPoints;борбени_поени
+number;број
+bb_codes;ББ кодови
+report_category_not_allowed;Можете изабрати само извештаје борбе и извиђања.
+report_no_access;Немате дозволу да видите овај извештај.
+report_invalid_id;неважећи ИД извештаја
+descriptionCoordinatesTag;Прави линк до тих координата
+descriptionReportsTag;Линк до извештаја
+descriptionResourceIconTag;Приказује сличицу сировина
+descriptionUrlTag;Прави HTML линк
+descriptionAllianceTag;Линк до савеза
+descriptionPlayerTag;Линк до профила играча
+descriptiontroopIconTag;Приказује сличице војске
+descriptionStatsTag;Приказује статистике
+descriptionForumTag;Приказује најновије поруке са форума.
+descriptionNewsTag;Приказује најновије вести.
+descriptionUidTag;Линк до играча у АКП
+descriptionAidTag;Линк до савеза у АКП
+descriptionIpTag;Линк до ИП адресе у АКП
+descriptionCkeyTag;Линк до Ckey у АКП
+descriptionBotUidTag;Линк до играча (детекција бота) у АКП
+descriptionRegionTag;Линк до региона
+region_not_found;Регион није пронађен
+coordinate_not_found;Координате нису пронађене
+report_not_found;rapporten hittades inte
+alliance_tag;allians
+alliance_not_found;alliansen hittades inte
+player_tag;Spelare
+player_not_found;Spelaren hittades inte
+troop_tag_hero;hjälte
+color_tag;färg
+buttonUnderscore;understruken
+buttonAlliance;Allians
+buttonPlayer;Spelare
+buttonResource;Råvaror
+buttonTroop;Trupper
+buttonPreview;Förhandsgranska
+news_not_found;inga nyheter hittades
+casualty_tag;förluster
+stats_fightingPower;styrka
+stats_fightingPoints;stridspoäng
+bb_codes;BB-koder
+report_category_not_allowed;Du kan bara välja attack- och scoutrapporter
+report_no_access;Inte tillstånd att se den här rapporten
+report_invalid_id;Ogiltigt rapport ID
+descriptionCoordinatesTag;Skapar en länk till de här koordinaterna
+descriptionReportsTag;Länk till en rapport
+descriptionResourceIconTag;Visar en råvaru-ikon
+descriptionUrlTag;Skapar en HTML-länk
+descriptionAllianceTag;Länk till en allians
+descriptionPlayerTag;Länk till en spelarprofil
+descriptiontroopIconTag;Visar en trupp-ikon
+descriptionStatsTag;Visar statistik
+descriptionForumTag;Visar de senaste forumsposterna
+descriptionNewsTag;Visar senaste nyheter
+descriptionUidTag;Länk till en spelare i ACP
+descriptionAidTag;Länk till en allians i ACP
+descriptionIpTag;Länk till en IP-adress i ACP
+descriptionCkeyTag;Länk till en Ckey i ACP
+descriptionBotUidTag;Länk till en spelare (botdetektering) i ACP
+descriptionRegionTag;Länk till en region
+region_not_found;Regionen hittades inte
+coordinate_not_found;Koordinaten hittades inte
+report_tag;รายงาน
+report_not_found;ไม่พบรายงานดังกล่าว
+alliance_tag;พันธมิตร
+alliance_not_found;ไม่พบพันธมิตรดังกล่าว
+player_tag;ผู้เล่น
+player_not_found;ไม่พบผู้เล่นดังกล่าว
+troop_tag_hero;ฮีโร่
+color_tag;สี
+quote_tag;อ้างอิง
+quote_title;อ้างอิง: {{TITEL}}
+buttonBold;ตัวหนา
+buttonItalic;ตัวเอียง
+buttonUnderscore;ขีดเส้นใต้
+buttonAlliance;พันธมิตร
+buttonPlayer;ผู้เล่น
+buttonCoordinate;พิกัด
+buttonReport;รายงาน
+buttonResource;ทรัพยากร
+buttonSmilie;ตัวยิ้ม
+buttonTroop;ทหาร
+buttonPreview;แสดงตัวอย่าง
+news_tag;ข่าว
+news_not_found;ไม่พบข่าวใดๆ
+casualty_tag;สูญเสีย
+stats_tag;สถิติ
+stats_fightingPower;พลัง
+stats_fightingPoints;คะแนนโจมตี
+forum_tag;ฟอรัม
+number;จำนวน
+report_category_not_allowed;มีแค่รายงานการโจมตีและสอดแนมที่ได้รับอนุญาตเท่านั้น
+report_no_access;คุณไม่ได้รับอนุญาตให้ดูรายงานนี้
+report_invalid_id;ไม่มี ID รายงานนี้
+descriptionCoordinatesTag;สร้างลิงก์ไปยังพิกัดนี้
+descriptionReportsTag;ลิงก์ไปยังรายงาน
+descriptionResourceIconTag;แสดงไอคอนทรัพยากร
+descriptionUrlTag;สร้างลิงก์ HTML
+descriptionAllianceTag;ลิงก์ไปยังพันธมิตร
+descriptionPlayerTag;ลิงก์ไปยังประวัติของผู้เล่น
+descriptiontroopIconTag;แสดงไอคอนทหาร
+descriptionStatsTag;แสดงสถิติ
+descriptionForumTag;แสดงข้อความในฟอรัมครั้งล่าสุด
+descriptionNewsTag;แสดงข่าวล่าสุด
+descriptionUidTag;ลิงก์ไปยังผู้เล่นใน ACP
+descriptionAidTag;ลิงก์ไปยังพันธมิตรใน ACP
+descriptionIpTag;ลิงก์ไปยังที่อยู่ IP ใน ACP
+descriptionCkeyTag;ลิงก์ไปยัง Ckey ใน ACP
+descriptionBotUidTag;ลิงก์ไปยังผู้เล่น (ตรวจจับบอท) ใน ACP
+region_tag;แคว้น
+descriptionRegionTag;เชื่อมโยงไปยังแคว้น
+region_not_found;ไม่พบแคว้น
+coordinate_not_found;ไม่พบพิกัด
+report_tag;rapor
+report_not_found;Rapor bulunamadı
+alliance_tag;birlik
+alliance_not_found;Birlik bulunamadı
+player_tag;oyuncu
+player_not_found;Oyuncu bulunamadı
+troop_tag_hero;kahraman
+color_tag;renk
+quote_tag;alıntı
+quote_title;Alıntı: {{TITEL}}
+buttonBold;Kalın
+buttonItalic;Italik
+buttonUnderscore;Altını çiz
+buttonAlliance;Birlik
+buttonPlayer;Oyuncu
+buttonCoordinate;Koordinatları
+buttonReport;Rapor
+buttonResource;Hammaddeler
+buttonSmilie;Simgeler
+buttonTroop;Askerler
+buttonPreview;Ön bakış
+news_tag;haberler
+news_not_found;Mesaj bulunamadı
+casualty_tag;kayıplar
+stats_tag;durum
+stats_fightingPower;saldırı gücü
+stats_fightingPoints;saldırı puanı
+number;miktar
+report_category_not_allowed;Sadece savaş ve casusluk raporları için kullanılabilir.
+report_no_access;Bu bölüme giriş yetkiniz yok
+report_invalid_id;Geçersiz Rapor-ID
+descriptionCoordinatesTag;Bu koordinatlara bir bağlantı oluşturur
+descriptionReportsTag;Bir rapora bağlantı
+descriptionResourceIconTag;Hammadde simgesi gösterir
+descriptionUrlTag;Bir HTML-Bağlantı oluşturur
+descriptionAllianceTag;Bir birliğe bağlantı
+descriptionPlayerTag;Bir oyuncu profiline bağlantı
+descriptiontroopIconTag;Bir askeri birlik için simge oluşturur
+descriptionStatsTag;İstatistikleri gösterir
+descriptionForumTag;Son forum mesajlarını gösterir
+descriptionNewsTag;Son mesajları gösterir
+descriptionUidTag;ACP'de bir oyuncuya bağlantı ver
+descriptionAidTag;ACP'de bir birliğe bağlantı ver
+descriptionIpTag;ACP'de bir IP adresine bağlantı ver
+descriptionCkeyTag;ACP'de bir Ckey'e bağlantı ver
+descriptionBotUidTag;ACP'de bir oyuncuya (bot saptama) bağlantı ver
+region_tag;bölge
+descriptionRegionTag;Bir bölgeye bağlantı
+region_not_found;Bölge bulunamadı
+coordinate_not_found;Koordinat bulunamadı
+report_not_found;không tìm thấy báo cáo
+alliance_not_found;không tìm thấy liên minh
+player_not_found;Không tìm thấy người chơi
+buttonBold;in đậm
+buttonItalic;in nghiêng
+buttonUnderscore;gạch dưới
+buttonAlliance;Liên minh
+buttonPlayer;Người chơi
+buttonCoordinate;Tọa độ
+buttonReport;Báo cáo
+buttonResource;Tài nguyên
+buttonSmilie;Biểu tượng mặt cười
+buttonTroop;Quân đội
+buttonPreview;Xem trước
+report_category_not_allowed;Chỉ cho phép báo cáo trận chiến và do thám.
+report_no_access;Bạn không được quyền xem báo cáo này.
+report_invalid_id;ID của báo cáo không tồn tại.
+descriptionCoordinatesTag;Tạo đường dẫn tới tọa độ
+descriptionReportsTag;Đường dẫn tới báo cáo
+descriptionResourceIconTag;Hiển thị một biểu tượng tài nguyên
+descriptionUrlTag;Tạo một Liên kết HTML
+descriptionAllianceTag;Đường dẫn tới liên minh
+descriptionPlayerTag;Đường dẫn tới hồ sơ người chơi
+descriptiontroopIconTag;Hiển thị một biểu tượng quân đội
+descriptionStatsTag;Hiển thị thống kê
+descriptionForumTag;Hiển thị các bài viết diễn đàn mới nhất.
+descriptionNewsTag;Hiển thị tin tức mới nhất.
+descriptionUidTag;Liên kết đến một người chơi trong ACP
+descriptionAidTag;Liên kết đến một liên minh trong ACP
+descriptionIpTag;Liên kết đến một địa chỉ IP trong ACP
+descriptionCkeyTag;Liên kết đến một Ckey trong ACP
+descriptionBotUidTag;Liên kết đến một người chơi (phát hiện là bot) trong ACP
+region_tag;vùng
+descriptionRegionTag;Liên kết đến một vùng
+region_not_found;Không tìm thấy vùng
+coordinate_not_found;Không tìm thấy tọa độ
+list_tag;列表
+report_tag;報告
+report_not_found;找不到有關的報告
+alliance_not_found;找不到有關的同盟
+player_tag;玩家
+player_not_found;找不到有關的玩家
+color_tag;顏色
+quote_tag;quote引用
+quote_title;引用　: {{TITEL}}
+resource_tag_wood;木
+resource_tag_claim;泥
+resource_tag_iron;鐵
+resource_tag_grain;米
+buttonBold;粗體
+buttonItalic;斜體
+buttonPlayer;玩家
+buttonReport;報告
+buttonSmilie;圖示
+buttonTroop;軍隊
+buttonPreview;預覽
+news_tag;報告
+news_not_found;找不到有關報告
+stats_fightingPower;力量
+stats_fightingPoints;戰鬥點數
+forum_tag;論壇
+number;數量
+bb_codes;BB代碼
+report_category_not_allowed;你只可選擇戰報及偵查紀錄。
+report_no_access;你未授權查看有關報告。
+report_invalid_id;錯誤的報告編號
+urlTag;連結
+descriptionCoordinatesTag;為這些座標建立快速連結
+descriptionReportsTag;報告連結
+descriptionResourceIconTag;展示資源符號
+descriptionUrlTag;建立ＨＴＭＬ連結
+descriptionAllianceTag;聯盟連結
+descriptionPlayerTag;玩家連結
+descriptiontroopIconTag;展示兵種符號
+descriptionStatsTag;展示統計
+descriptionForumTag;展示最新的論壇主題
+descriptionNewsTag;展示最新的新聞內容
+descriptionUidTag;鏈接至ACP裡的玩家
+descriptionAidTag;鏈接至ACP裡的聯盟
+descriptionIpTag;鏈接至ACP裡的IP地址
+descriptionCkeyTag;鏈接至ACP裡的Ckey
+descriptionBotUidTag;鏈接至ACP裡的玩家（bot detection）
+resource_tag_lumber;木
+region_tag;地區
+descriptionRegionTag;連結至一個地區
+region_not_found;找不到地區
+coordinate_not_found;找不到座標

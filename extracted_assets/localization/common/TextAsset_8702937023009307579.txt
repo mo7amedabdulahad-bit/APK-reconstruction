@@ -1,0 +1,2115 @@
+detail_window_header_title;{{buildingName|TranslateSuffixFor|allgemein.gid}}
+;{{INT}}
+levelWithValue;Уровень {{level}}
+valueWithPercent;{{value}}%
+valueAsRankingPosition;{{value}}.
+valueChangeInBrackets;({{change|Sign}})
+valueChangeInBracketsWithPercent;({{change|Sign}}%)
+ratioValues;{{a}}/{{b}}
+coordinates;<nobr>({{x}}|{{y}})</nobr>
+village_with_coordinates;{{villageName}} <nobr>({{x}}|{{y}})</nobr>
+village_with_clickable_coordinates;{{villageName}} {{mapId|Coordinates}}
+valuePerHour;{{a}}/ч
+back;Назад
+fill;Все
+hero;Герой
+done;Готово
+remove;Удалить
+prerequisites;Условия:
+newAmount;Новое количество
+before;до
+after;после
+permissions;Права
+changesSaved;Изменения сохранены!
+genericError;Непредвиденная ошибка
+allianceTagInBrackets;[{{allianceId|AllianceLink}}]
+autocompleteNoResult;Совпадений не найдено
+medalAdded;Добавлена медаль
+continueEdit;Продолжить редактирование
+levelUp;Новый уровень!
+non_existing_object;[?]
+sorting;Сортировка
+copiedToClipboard;Скопировано в буфер
+maximumLengthError;Максимальная длина: {{max}}.
+sortingOptions;Варианты сортировки
+WIP_comingSoon;Скоро будет добавлена новая функция!
+upgradeTab_fastForward_button;{{Percent}}% быстрее
+upgradeTab_masterBuilder_button;Построить с\n архитектором{{goldIcon|Sprite}}{{goldCost}}
+upgradeTab_adBoostPopup_boost;{{BOOST}}% бонус
+infoTab_upgradingToLevel;В процессе строительства до уровня {{level}}:
+infoTab_genericCurrently;Сейчас:
+infoTab_genericAtLevel;На уровне {{INT}}:
+infoTab_genericEffect;{{INT}}
+infoTab_currentProduction;Производство:
+infoTab_productionAtLevel;Производство на уровне {{INT}}:
+infoTab_effectPerHour;{{INT}} в час
+networkIssues;Потеряно соединение с сервером.
+cantLoadServerList;Невозможно загрузить список серверов из-за проблем с сетью. Пожалуйста, проверьте, что устройство подключено к Интернету, и попытайтесь еще раз.
+barracks_TrainTroops_Action;Обучение войск
+barracks_ViewTrainingsList;Посмотреть список обучения
+barracks_unitNeedsToBeResearched;Требуется исследование в академии
+barracks_requiresLabel;Требуется:
+barracks_trainingCosts;Стоимость обучения
+barracks_troopsInTraining;Войска в обучении
+training_started;Обучение успешно началось!
+targetSelection_relationLabel;Статус:
+targetSelection_selectedVillage;Выбранная деревня
+targetSelection_noSelectedVillage;Деревня не выбрана
+targetSelection_ownVillages;Свои деревни
+targetSelection_relation0;Остальные
+targetSelection_relation1;Дружественные
+targetSelection_relation2;Свой альянс
+targetSelection_relation3;Своя деревня
+targetSelection_alreadyThere_troops;Войска уже там.
+targetSelection_alreadyThere_merchants;Твои торговцы уже там.
+rallyPoint_button_confirmTarget;Подтвердить цель
+rallyPoint_button_prepareTroops;Подготовить войска
+rallyPoint_button_updateWave;Обновить волну
+rallyPoint_button_copyWave;Копировать
+rallyPoint_button_newWave;Добавить новую волну
+rallyPoint_sendTroops_chooseDestination;Отправка войск — Выбрать цель
+rallyPoint_sendTroops_sendTroopAction_1;Отправка войск - Подтвердить
+rallyPoint_sendTroops_sendTroopAction_3;Отправка войск - Подтвердить
+rallyPoint_sendTroops_sendTroopAction_4;Отправка войск - Подтвердить
+rallyPoint_sendTroops_sendTroopAction_5;Отправка войск - Подтвердить
+rallyPoint_sendTroops_sendTroopAction_72;Перенаправление войск - Подтвердить
+rallyPoint_sendTroops_sendTroopAction_9;Отозвать войска - Подтвердить
+rallyPoint_sendTroops_sendTroopAction_10;Основание новой деревни
+rallyPoint_sendTroops_sendTroopButton_1;Отправка войск
+rallyPoint_sendTroops_sendTroopButton_3;Отправка войск
+rallyPoint_sendTroops_sendTroopButton_4;Отправка войск
+rallyPoint_sendTroops_sendTroopButton_5;Отправка войск
+rallyPoint_sendTroops_sendTroopButton_72;Перемещение войск
+rallyPoint_sendTroops_sendTroopButton_9;Отправить назад
+rallyPoint_sendTroops_sendTroopButton_10;Новая деревня
+rallyPoint_sendTroops_coordinateX;<b>X</b> Координаты:
+rallyPoint_sendTroops_coordinateY;<b>Y</b> Координаты:
+rallyPoint_sendTroops_selectOnMap;Или выберите место на карте:
+rallyPoint_sendTroops_arrivalTime;<b>{{hoursLeft|Duration}}</b> в <b>{{hoursLeft|TimeCountUp}}</b>
+rallyPoint_sendTroops_catapultTargetPopup;Выбрать цель катапульт:
+rallyPoint_sendTroops_catapultTarget_category_1;Инфраструктурные здания
+rallyPoint_sendTroops_catapultTarget_category_2;Военные здания
+rallyPoint_sendTroops_catapultTarget_category_3;Ресурсные здания
+rallyPoint_sendTroops_catapultTarget_random;Случайно
+rallyPoint_sendTroops_catapultTarget_noBuilding;Выбери здание
+rallyPoint_sendTroops_catapultTarget_recentTargets;Последние выбранные:
+rallyPoint_sendTroops_changeHeroHomeVillage;Прописать героя
+rallyPoint_sendTroops_attackNoSelection;Выберите тип атаки
+rallyPoint_sendTroops_movementType_5;Подкрепление
+rallyPoint_sendTroops_movementType_3;Нападение
+rallyPoint_sendTroops_movementType_4;Набег
+rallyPoint_sendTroops_attackForwarding;Перенаправление
+rallyPoint_sendTroops_noTroopsSelected;- Войска не выбраны -
+rallyPoint_sendTroops_noTroopsAvailable;Невозможно отправить войска. В деревне нет доступных войск.
+rallyPoint_sendTroops_forwardingVillageError;Войска можно отправить только в деревни участников альянса или в свои деревни.
+rallyPoint_sendTroops_forwardingDestination;Перенаправить войска ― Выбрать цель
+rallyPoint_sendTroops_WaveRemoved;Волна удалена
+rallyPoint_sendTroops_maxWaves;Достигнуто макс. количество волн
+rallyPoint_sendTroops_notEnoughTroopsToCopy;Недостаточно войск для дублирования волны.
+rallyPoint_sendTroops_troopsSent;Войска отправлены!
+rallyPoint_sendTroops_toOverview;К обзору
+rallyPoint_sendTroops_backToVillage;Назад в деревню
+rallyPoint_sendTroops_mission;Миссия:
+rallyPoint_troopsOverview_1;Входящие нападения и набеги
+rallyPoint_troopsOverview_2;Исходящие нападения и набеги
+rallyPoint_troopsOverview_3;Возвращающиеся войска
+rallyPoint_troopsOverview_4;Свои войска в деревне и оазисах
+rallyPoint_troopsOverview_5;Чужие войска в деревне
+rallyPoint_troopsOverview_6;Свои войска в других деревнях и оазисах
+rallyPoint_troopsOverview_7;Прибывающие подкрепление
+rallyPoint_troopsOverview_8;Исходящее подкрепление
+rallyPoint_troopsOverview_9;Исходящее подкрепление
+rallyPoint_troopsOverview;Обзор войск
+rallyPoint_troopsOverview_consumption;Потребление: {{cropConsumption|ShortenNumber|10000}}  {{iconName|Sprite}} в час
+rallyPoint_troopsOverview_arrivalTime;Прибытие: <b>{{Duration|Countdown}}</b> в <b>{{date|Time}}</b> 
+rallyPoint_troopsOverview_incomingMission_3;Прибывающая атака из: 
+rallyPoint_troopsOverview_incomingMission_4;Прибывающий набег из: 
+rallyPoint_troopsOverview_outgoingMission_3;Атакует 
+rallyPoint_troopsOverview_outgoingMission_4;Совершает набег 
+rallyPoint_troopsOverview_outgoingMission_5;В подкреплении 
+rallyPoint_troopsOverview_outgoingMission_6;Разведка оборонительных сооружений и войск 
+rallyPoint_troopsOverview_outgoingMission_50;В приключении 
+rallyPoint_troopsOverview_outgoingMission_72;Войска перенаправлены в 
+rallyPoint_troopsOverview_outgoingMission_10;Основание нового поселения 
+rallyPoint_troopsOverview_outgoingMission_40;Войска скрываются в лесное убежище
+rallyPoint_troopsOverview_returningMission;Возвращается из: 
+rallyPoint_troopsOverview_ownTroops_1;Свои войска в 
+rallyPoint_troopsOverview_ownTroops_2;Свои войска в 
+rallyPoint_troopsOverview_ownTroops_3;Свои войска в 
+rallyPoint_troopsOverview_ownTroops_4;<b>Природа</b> в 
+rallyPoint_troopsOverview_ownTroops_5;Свои войска в 
+rallyPoint_troopsOverview_ownTroops_6;Свои войска в 
+rallyPoint_troopsOverview_ownTroops_7;Свои войска в 
+rallyPoint_troopsOverview_foreignTroops_2;Подкрепление игрока 
+rallyPoint_troopsOverview_foreignTroops_4;Пойманные войска из деревни 
+rallyPoint_troopsOverview_ownTroopsInOther_2;Собственные подкрепления для 
+rallyPoint_troopsOverview_ownTroopsInOther_4;Собственные пойманные войска в 
+rallyPoint_troopsOverview_origin;Происхождение: 
+rallyPoint_troopsOverview_reinforcement;Подкрепление: 
+rallyPoint_troopsOverview_killed;Войска убиты!
+rallyPoint_troopsOverview_released;Войска освобождены!
+rallyPoint_troopsOverview_forwardedTroopsButton;Перенаправленные войска
+rallyPoint_troopsOverview_returnToOverview;Перейти к обзору
+rallyPoint_troopsOverview_incomingAttacks;Входящие: <color={{colorValue|TextColor}}>{{incomings}}</color>
+rallyPoint_troopsOverview_amountIncoming;Входящие: {{value}}
+rallyPoint_troopsOverview_amountOutgoing;Исходящие: {{value}}
+rallyPoint_troopsOverview_amountReturning;Возвращение: {{value}}
+rallyPoint_troopsOverview_firstArrivalTime;Через {{timestamp|Countdown}} ч.
+rallyPoint_troopsOverview_forwardTroops;Вперед
+rallyPoint_troopsOverview_MergeTroops;Интегрировать в деревню
+rallyPoint_troopsOverview_WithdrawTroops;Отправить назад
+rallyPoint_troopsOverview_sort_1;Сначала отмеченные передвижения
+rallyPoint_troopsOverview_sort_2;Показать с самых ранних
+rallyPoint_troopsOverview_sort_3;Показать с самых поздних
+rallyPoint_troopsOverview_sort_4;В порядке отправления с самых ранних
+rallyPoint_troopsOverview_sort_5;В порядке отправления с самых поздних
+rallyPoint_troopsMerge_troopsToBeMerged;Выбранное войско для объединения:
+rallyPoint_troopsMerge_currentGold;Текущее золото:  {{iconName|Sprite}} {{currentGold}}
+rallyPoint_troopsMerge_goldLeft_0;{{remainingGold}} / {{maxAllowedGold}} золота осталось для объединения войск.
+rallyPoint_troopsMerge_goldLeft_1;{{remainingGold}} / {{maxAllowedGold}} золота осталось для объединения войск. Вы по-прежнему можете объединить за ресурсы.
+rallyPoint_troopsMerge_troopsMergedToast;Войска объединены!
+rallyPoint_raidList_beingRaided;{{current}}/{{total}} совершают набег
+rallyPoint_infoTab_EvasionShortDescription;Активировать автоматический увод войск для столицы.
+rallyPoint_farmList_createNewTitle;Создать новый список
+rallyPoint_farmList_editTitle;Редактировать список
+rallyPoint_farmList_listName;Название списка
+rallyPoint_farmList_selectDefaultTroops;Выбрать войска по умолчанию
+rallyPoint_farmList_addTroopsButton;Добавить войска
+rallyPoint_farmList_editTroopsButton;Редактировать войска
+rallyPoint_farmList_setTroopsButton;Установить войска
+rallyPoint_farmList_createListButton;Создать список
+rallyPoint_farmList_editListButton;Обновить список
+rallyPoint_farmList_editTroopsTitle;Редактировать войска в списке
+rallyPoint_farmList_deleteList;Удалить список
+rallyPoint_selectTroops;Выбрать войска
+rallyPoint_farmList_listCreated;Список создан
+rallyPoint_farmList_exitList;Выйти из списка
+rallyPoint_farmList_startAll;Запустить все цели
+rallyPoint_farmList_startAllLists;Начать все
+rallyPoint_farmList_startSelected;Начать выбранные
+rallyPoint_farmList_noTarget;- Цели не выбраны -
+rallyPoint_farmList_noTargetExist;В этом списке нет целей
+rallyPoint_farmList_selectedAmount;Выбрано {{amount}}
+rallyPoint_farmList_listUpdated;Список обновлен
+rallyPoint_farmList_listDeleted;Список удален
+rallyPoint_farmList_editWarning;- Удаление списка приведет к удалению всех целей в этом списке.\n- Редактирование войск влияет только на войска в будущем.
+rallyPoint_farmList_sortingFailed;Сортировка не удалась! Пожалуйста, попробуйте еще раз.
+rallyPoint_farmList_notStartedPopupTitle;Набеги не начались
+rallyPoint_farmList_notStartedPopupElement;<b>{{total}}</b> из-за {{message}}
+rallyPoint_farmList_NotStartedPopupButtonGoTo;Перейти к спискам целей
+rallyPoint_farmList_AddTargetTitle;Добавить цель
+rallyPoint_farmList_changeTroops;Изменить войска
+rallyPoint_farmList_targetAdded;Цель добавлена
+rallyPoint_farmList_targetAlreadyOnList;Цель уже имеется в этом списке. Пожалуйста, выберите другой список или создайте новый.
+rallyPoint_farmList_choose;Выбрать список целей
+rallyPoint_farmList_notYetRaided;Набегов пока нет
+rallyPoint_farmList_EditRaids;Редактировать [raidsAmount=1:цель][raidsAmount>1:цели]
+rallyPoint_farmList_DeleteRaidsPlayerQuestion;Вы уверены, что хотите удалить [raidsAmount=1:эту цель][raidsAmount>1:эти цели]?
+rallyPoint_farmList_ChangeRaidList;Изменить список целей
+rallyPoint_farmList_ChangeTarget;Изменить цель
+rallyPoint_farmList_ChangeTroops;Изменить войска
+rallyPoint_farmList_DeactivateTarget;Отключить [raidsAmount=1:цель][raidsAmount>1:цели]
+rallyPoint_farmList_MultiEditWarning;Вы редактируете несколько целей. Внесенные изменения коснутся всех выбранных целей.
+rallyPoint_farmList_UpdateRaids;Обновить [raidsAmount=1:цель][raidsAmount>1:цели]
+rallyPoint_farmList_filterShowTroopsTitle;Показать войска
+rallyPoint_farmList_filterShowTroopsDescription;Показывает выбранное войско на цель
+rallyPoint_farmList_filterShowPopulationTitle;Показать целевое население
+rallyPoint_farmList_filterShowPopulationDescription;Показывает население деревни цели
+rallyPoint_farmList_filterShowDistanceTitle;Показать расстояние
+rallyPoint_farmList_filterShowDistanceDescription;Показывает расстояние от цели до вашей деревни.
+rallyPoint_farmList_filterShowLastRaidTitle;Показать информацию о последнем набеге
+rallyPoint_farmList_filterShowLastRaidDescription;Показывает информацию о последнем набеге
+rallyPoint_farmList_filterShowBountyTitle;Показать добычу и ресурсы
+rallyPoint_farmList_filterShowBountyDescription;Показывает добычу и ресурсы
+marketplace_createOffer;Создать предложение
+marketplace_myOffers_title;Мои предложения
+marketplace_myOffers_merchants;Торговцы: {{count}}
+marketplace_myOffers_alliance_True;Альянс: да
+marketplace_myOffers_alliance_False;-
+marketplace_myOffers_interval;{{amount}} ч.
+marketplace_myOffers_offerDeleted;Предложение удалено
+marketplace_merchantsOverview_arrival;{{duration}} ч. Прибытие в {{arrivalTime}}
+marketplace_merchantsOverview_incomingMerchants;Входящие поставки: {{count}}
+marketplace_merchantsOverview_outgoingMerchants;Исходящие поставки: {{count}}
+marketplace_merchantsOverview_noIncomingMerchants;- Нет приходящих торговцев -
+marketplace_merchantsOverview_noOutgoingMerchants;- Нет исходящих торговцев -
+marketplace_merchantsOverview_IncomingCat;Входящие
+marketplace_merchantsOverview_outgoingCat;Исходящие
+marketplace_merchantsOverview_capacity;Вместимость: {{capacity}}
+marketplace_merchantsOverview_merchantsOverview;Обзор торговцев
+marketplace_merchantsOverview_ArrivingSoonest;Начиная с ближайших
+marketplace_merchantsOverview_ArrivingLatest;Начиная с самых поздних
+marketplace_merchantsOverview_ShortestDistance;Кратчайшее расстояние
+marketplace_merchantsOverview_LongestDistance;Наибольшее расстояние
+marketplace_merchantsOverview_transportTo;Транспортировка в <b>{{Village}}</b> игрока <b>{{Player}}</b>
+marketplace_merchantsOverview_transportFrom;Транспортировка из <b>{{Village}}</b> игрока <b>{{Player}}</b>
+marketplace_merchantsOverview_returningFrom;Возвращение из <b>{{Village}}</b> игрока <b>{{Player}}</b>
+academy_research_viewResearchList;Исследование в процессе.
+academy_research_allUnitsResearched;Все войска исследованы.
+academy_researchListPopup_title;Исследуемые войска
+academy_researchListPopup_remainingTime;Осталось {{timeLeft}} Готово в {{readyAt}}
+academy_researchListPopup_constructImmediately;Завершить немедленно
+research_started;Исследование успешно начато!
+research_timeLeft;Осталось {{TIME|Countdown}}
+townHall_celebration_ongoingCelebration;В процессе
+topBar_perHourLabel;/ч:
+topBar_maxLabel;Макс:
+topBar_resourceFull;Полон
+leftPanel_infoBox;Информация
+villagePanel_playerNameTitle;Деревни принадлежащие игроку {{playerName}}
+villagePanel_toStatistics;В статистику деревень
+villagePanel_culturePointsNeeded;Достаточно единиц культуры для следующей деревни
+mapCell_type;{{x}}{{y}}
+mapCell_type_village;{{villageName}}
+mapCell_type_1;Местные войска
+mapCell_type_2;Долина
+mapCell_type_3;Свободный оазис
+mapCell_type_4;Захваченный оазис
+mapCell_type_5;Дикая местность
+mapCell_Owner;Владелец
+mapCell_type_valley;Долина
+mapCell_Wilderness;В этом месте нет ничего интересного.
+mapCell_Distance;Полей: {{distance|Round|1}}
+mapCell_locationInfo;Информация о месте
+mapCell_surroundings;Окрестность
+mapCell_actions_editFarmlist;Редактировать список
+mapCell_actions_addFarmlist;Добавить в список избранных целей
+mapCell_actions_raidOasis;Набег на оазис
+mapCell_showOnMap;Показать на карте
+mapCell_noReports;- Нет информации об этом месте -
+berichte.region_;{{PLAYERACTIVE}}{{PLAYERPASSIVE}}{{VILLAGE}}{{NAME1}}{{NAME2}}{{ALLY1}}{{ALLY2}}{{NAME}}
+mapCell_goToOwnVillage;В свою деревню
+constructionQueue_timeLeftToFinish;Осталось {{timestamp|Countdown}} Готово в {{timestamp|Time}}
+constructionQueue_timeUntilStart;Начало в{{timestamp|Countdown}}
+constructionQueue_MasterBuilderTitle;Очередь архитектора (стоимость {{masterBuilderCost|Sprite}} {{masterBuilderCost}} в начале строительства)
+constructionQueue_Constructing;Строительство здания
+constructionImmediatelyPopup_topText;Моментальное завершение следующих поручений:
+constructionImmediatelyPopup_title;Завершить моментально
+newBuildingConstructionDetail_dateTimeEnoughResources;Достаточно ресурсов {{date|Date}} в {{time|Time}}
+newBuildingConstruction_noBuildingsAvailable;В настоящий момент нет доступных зданий данной категории.
+goldclubpopup_currentGold;Текущее золото:  {{iconName|Sprite}} <color={{colorValue|TextColor}}>{{currentGold}}</color>
+goldclubpopup_activated_toastMessage;Золотой клуб активирован!
+loginPage_version;Версия {{currentVersion}}
+loginPage_loginBlocked;Вход заблокирован
+loginPage_loginBlocked_fails;Слишком много неудачных попыток входа
+loginPage_loginBlocked_message;Ваша учетная запись заблокирована из-за большого количества неудачных попыток входа.
+loginPage_loginBlocked_resolve;Чтобы разблокировать учетную запись, войдите в игру через браузер по адресу
+serverSelection_selectRegion;Выбрать регион
+serverSelection_selectGameWorld;Выберите игровой мир
+serverSelection_0;Международный
+serverSelection_1;Arabics
+serverSelection_2;Asia
+serverSelection_3;Europe
+serverSelection_4;America
+serverSelection_99;Разработчики
+serverSelection_mapSize;Размер карты:
+serverSelection_mapSize_0;Малый
+serverSelection_mapSize_1;Большой
+serverSelection_artifacts;Артефакты:
+serverSelection_constructionPlans;Строительные свитки:
+serverSelection_inXdays;In {{days}} days
+serverSelection_changeGameWorld;Изменить игровой мир
+serverSelection_username;Имя игрока:
+serverSelection_password;Пароль:
+serverSelection_loginButton;Войти в игру
+serverSelection_forgotPassword;Я забыл свой пароль
+serverSelection_noAccount;У меня нет учетной записи
+serverSelection_loginError;Неверное имя или пароль
+serverSelection_graphQlError;Ошибка получения данных с сервера.
+serverSelection_tokenRefreshError;Ошибка входа на последний сервер. Пожалуйста, зайдите снова.
+serverSelection_stayLoggedIn;Оставаться в игровом мире
+troopsInfo_title;Войска в {{villageName}}
+unitInfo_velocity;<b>{{fields}}</b> пол. в час
+unitInfo_resourceCarriage;<b>{{INT}}</b> ресурсов
+unitInfo_researchPrerequisites;Требования к исследованию:
+unitInfo_trainingPrerequisites;Требования к обучению:
+unitInfo_canCarry;Грузоподъемность:
+exchangeResources_currentTitle;Новое количество
+exchangeResources_lockAmount;Фиксировать
+exchangeResources_changeTitle;Поменять
+exchangeResources_restTitle;Остаток
+exchangeResources_buildingPossible_True;Улучшение возможно
+exchangeResources_buildingPossible_False;Улучшение невозможно
+exchangeResources_mergePossible_True;Объединение возможно
+exchangeResources_mergePossible_False;Объединение невозможно
+exchangeResources_researchPossible_True;Исследование возможно
+exchangeResources_researchPossible_False;Исследование невозможно
+exchangeResources_celebrationPossible_True;Празднование возможно
+exchangeResources_celebrationPossible_False;Празднование невозможно
+exchangeResources_reviveHero_True;Восстановление героя возможно
+exchangeResources_reviveHero_False;Восстановление героя невозможно
+exchangeResources_currentlyAvailable;В настоящий момент доступно: <b>{{amount}}</b>
+exchangeResources_maximumAvailable;Доступно не более: <b>{{amount}}</b>
+exchangeResources_distributeEvenly;Равномерно распределить оставшиеся ресурсы:
+exchangeResources_distributeOnResource;Или же распределить оставшиеся ресурсы с уклоном в:
+exchangeResources_distributeAuto;Автоматическое распределение
+exchangeResources_distributeManual;Распределение вручную
+exchangeResources_availableTroops;Доступных войск: {{amount}}
+buildingActivities_title;Строительство
+buildingActivities_idle;Бездействует
+buildingActivities_type;Тип
+buildingActivities_building_13;Улучшения:
+buildingActivities_building_16;Список целей
+buildingActivities_building_17;Торговцы
+buildingActivities_building_19;Войска в обучении
+buildingActivities_building_20;Обучение кавалерии
+buildingActivities_building_29;Войска в обучении
+buildingActivities_building_30;Обучение кавалерии
+buildingActivities_building_21;Войска в обучении
+buildingActivities_building_22;Исследование
+buildingActivities_building_24;Праздники
+buildingActivities_building_46;Исцеление войск
+buildingActivities_buildingAction_;{{amount}}{{max}}
+buildingActivities_buildingAction_16;Набегов в процессе: {{amount}}
+buildingActivities_buildingAction_17;{{amount}}/{{max}} доступно
+mainMenu_title;Главное меню
+mainMenu_quests;Задания
+playerDetails_infoTab;Информация об игроке
+playerDetails_villageTabTitle;Деревни с {{oases}} оаз.: {{villages}}
+playerDetails_SortBy_1;Население
+playerDetails_SortBy_2;Победные очки
+playerDetails_SortBy_3;Название деревни
+playerDetails_SortBy_4;Название региона
+player_gender_DontSpecify;Не указывать
+player_gender_Other;Другое
+player_gender0;Мужской
+player_gender1;Женский
+player_gender2;Другое
+player_gender3;Не указано
+playerDetails_NotesFor;Заметки для {{playerName}}
+playerDetails_NoDescription_Others;- Этот игрок не добавил описание -
+playerDetails_NoDescription_Own;- Описание еще не добавлено -
+playerDetails_editLanguages;Редактировать языки
+playerDetails_searchLanguage;Язык поиска
+goldShopPlaceholder_title;Магазин скоро появится!
+goldShopPlaceholder_description;Магазин золота еще не внедрен в мобильное приложение.<br><br> Для покупки золота, пожалуйста, зайдите в свою учетную запись через браузер.
+goldShop_title;Магазин золота
+goldShop_advantage_5;Travian Plus
+goldShop_advantage_4;Древесина
+goldShop_advantage_1;Глина
+goldShop_advantage_2;Железо
+goldShop_advantage_3;Зерно
+goldShop_feature_activated;Функция активирована!
+goldShop_purchaseFailed;Покупка не удалась!
+goldShop_purchaseSuccess;Покупка прошла успешно.
+goldShop_transactionInProgress;Транзакция в процессе.\nПожалуйста, подождите.
+goldShop_transactionFailed;Что-то пошло не так.\nПожалуйста, попробуй позднее.
+goldShop_transactionTimeout;Уважаемый игрок! Ваш платеж превысил лимит по времени и мог быть обработан неверно. Пожалуйста, свяжитесь со <style="link"><link="https://support.travian.com/support/tickets/new">службой поддержки платежей</link></style>,  если у вас возникнут проблемы.
+forceUpdate_title;Обновить приложение
+forceUpdate_description;Вы используете неподдерживаемую версию мобильного приложения Travian: Legends. Пожалуйста, перейдите на страницу App Store, чтобы обновить приложение.<br><br>Перезапустите приложение после обновления, чтобы продолжить игру.
+forceUpdate_toStore;Перейти в App Store
+market_sendResources_requiredMerchants;Требуемые торговцы:
+market_sendResources_capacityPerMerchant;Грузоподъемность одного торговца
+market_sendResources_amountRepeats;Количество повторов:
+market_sendResources_confirmResources;Подтвердить ресурсы
+market_sendResources_amountWithX;x{{amount}}
+market_sendResources_sent;Ресурсы отправлены!
+market_offer_maxDuration;Максимальное время доставки:
+market_offer_confirm;Подтвердить предложение
+market_offers_title;Предложения
+market_capacity;Вместимость: {{capacity}}
+market_offers_offering;Предлагаю:
+market_offers_searching;Ищу:
+market_offers_offered;Вы отправляете
+market_offers_wanted;Вы получаете
+market_offers_accepted;Предложение принято! Ресурсы в пути, торговцы уже отправлены.
+market_offers_ownAllianceOnly;Только игрокам из своего альянса
+market_ratio_11;1:1
+market_ratio_1X;1 : X
+market_tradeRoutes_to;Кому:
+market_tradeRoutes_entryAmount;Записи: <b>{{amount}}</b>
+market_tradeRoutes_noRoutes;- Нет созданных торговых путей -
+market_tradeRoutes_travelTime;Время в пути: {{time|Duration}} часов
+market_tradeRoutes_activeRatio;{{active}}/{{total}} активно
+market_tradeRoutes_active;Активно
+market_tradeRoutes_paused;Пауза
+market_tradeRoutes_updated;Пути обновлены
+market_tradeRoutes_deleted;Пути удалены
+market_tradeRoutes_returnAt;Возвращение в {{time|Time}}
+market_tradeRoutes_merchantsAndRepeat;Торговцы: {{merchants}}, {{repeats}}x
+market_tradeRoutes_filterOptions;Фильтры
+market_tradeRoutes_showMerchants;Показать торговцев
+market_tradeRoutes_showMerchantsText;Показывает, сколько торговцев используется
+market_tradeRoutes_showResources;Показать ресурсы
+market_tradeRoutes_showResourcesText;Показывает количество переносимого ресурса
+market_tradeRoutes_afterInputFieldsSuffix;Часы
+market_tradeRoutes_interval;{{INT}} ч.
+market_tradeRoutes_confirmTarget;Подтвердить цель
+market_tradeRoutes_arrivalTime;{{duration|Duration}} в {{arrivalTime|Time}}
+market_tradeRoutes_created;Торговый путь создан
+market_tradeRoutes_edit;Редактировать [routeAmount=1:путь][routeAmount>1:пути]
+market_tradeRoutes_update;Обновить [routeAmount=1:путь][routeAmount>1:пути]
+market_tradeRoutes_multiEditWarning;Вы редактируете несколько торговых путей. Внесенные изменения коснутся всех путей: {{routeAmount}}.
+market_tradeRoutes_editResourcesTitle;Изменить ресурсы
+market_tradeRoutes_editResourcesButton;Редактировать ресурсы
+market_tradeRoutes_setResourcesButton;Установить ресурсы
+market_tradeRoutes_updateResourcesButton;Обновить ресурсы
+market_tradeRoutes_pause;Приостановить [routeAmount=1:путь][routeAmount>1:пути]
+market_tradeRoutes_pauseDescription;Торговые пути будут перемещены в список приостановленных, но останутся на рынке.
+market_tradeRoutes_delete;Удалить [routeAmount=1:путь][routeAmount>1:пути]
+market_tradeRoutes_deleteConfirmQuestion;Вы уверены, что хотите удалить [routeAmount=1: этот][routeAmount>1:эти] [routeAmount=1:путь][routeAmount>1:пути]?
+market_tradeRoutes_invalidTarget;Торговые пути можно отправить только в деревни с Чудом света, а также в деревни с артефактами и строительными свитками участников альянса или конфедерации.
+hero.status;{{NAME}}
+hero_adventures_selectVillage;Выбрать деревню
+hero_adventures_explore;В путь!
+hero_adventures_sendHero;Отправить героя
+hero_adventures_sent;Приключение началось
+hero_status_reviveWithBucket;Используйте, чтобы немедленно оживить героя.
+hero_status_reviveWithRes;Используйте ресурсы для оживления героя.
+hero_inventory_consumablePopupTitle;Используемый предмет
+hero_resourceTransferPopup_title;Перенос ресурсов
+hero_resourceTransferPopup_ReadyForTransfer;Готово к переносу
+hero_resourceTransferPopup_transferSelected;Перенести выбранное
+hero_resourceTransferPopup_transferMax;Максимум
+hero_resourceTransferPopup_storageFull;Склад полон. Вы не можете перенести больше ресурсов.
+hero_inventory_transferToCurrentVillage;Применено в текущей открытой деревне: <b>{{VILLAGE}}</b>
+hero.itemDescriptionV2Details;{{PERCENTAGE}}{{EXPERIENCE}}{{RAISE}}{{LIMIT}}{{MAX}}{{TIME}}
+hero.itemDescriptionV2;{{VALUE}}
+hero_consumablePopup_currentEquippedItems;Количество используемых предметов:
+hero_consumablePopup_itemsLeftInInventory;Количество предметов, которые остались в инвентаре:
+hero.itemTypeV2_inventory;Употребляемые предметы
+hero.cooldownWithTime;Можно использовать раз в {{COOLDOWN}} ч. Доступно в {{DATE|DateTime}}.
+reports_overview_title;Отчеты: {{COUNT}}
+reports_overview_title_selected;Выбрано {{SELECTED}}/{{COUNT}} отчетов
+reports_overview_title_archived;Архивные отчеты
+reports_overview_archived_noReports;- Нет доступных отчетов в архиве -
+reports_filters_title;Выбрать фильтр
+reports_filters_allReports;Все отчеты
+reports_filters_applyButton;Применить фильтры: {{COUNT}}
+reports_filters_noFilter;Фильтр не выбран
+reports_detail_title;Детали отчёта
+berichte.;{{NAME1}}{{NAME2}}{{VILLAGE_NAME}}{{X}}{{Y}}{{COORDS}}{{NAME}}
+reports_player_from_village;[{{allianceId|AllianceLink}}] {{playerId|PlayerLink}} из деревни {{villageId|VillageLink}}
+reports_troops_lost;Потери:
+reports_troops_hospitalized;Госпитализировано:
+reports_xp_gained;{{amount}} опыта
+reports_health_change;-{{change}}% здоровья
+reports_hero_died;Ваш герой погиб в приключении.
+reports_scouted_building;{{buildingType|TranslateSuffixFor|allgemein.gid}} уровень <b>{{level}}</b>
+reports_refreshed;Отчеты обновлены
+reports_deleteReportPopup_title;Удалить отчет(ы)
+reports_deleteReportPopup_warningTitle;Вы уверены, что хотите удалить {{X}} отчетов?
+reports_deleteReportPopup_warningTitleAll;Вы уверены, что хотите удалить все отчеты?
+reports_deleteReportPopup_warningDescription;Как только вы удалите отчет, он исчезнет навсегда. Вы не сможете восстановить его.
+reports_deleted;Отчет удален.
+reports_markedUnread;Отчет отмечен непрочитанным!
+reports_archived;Отчет в архиве
+reports_deleted_all;Все отчеты удалены.
+reports_deleted_selected;Удалено отчетов: {{X}}
+reports_markedRead_all;Все отчеты отмечены прочитанными
+reports_markedRead_selected;Прочитано отчетов: {{X}}
+alliance_nameAndTagPair;{{allianceName}} | {{allianceTag}}
+alliance_editAllianceName;Редактировать название альянса
+alliance_name;Альянс
+alliance_nameError;Название альянса не может быть пустым
+alliance_tag;Тег альянса
+alliance_tagError;Тег альянса не может быть пустым
+alliance_profileTab_inviteNewPlayer;Пригласить игрока
+alliance_profileTab_showInvitedPlayers;Показать приглашенных игроков
+alliance_invitedPopup_title;Приглашенные игроки
+alliance_invitedPopup_invitationRemoved;Приглашение удалено!
+alliance_invitePlayerPopup_title;Пригласить игрока
+alliance_invitePlayerPopup_noPlayerFound;Игрок не найден
+alliance_invitePlayerPopup_playerInvited;Приглашенный игрок!
+alliance_editMemberPopup_title;Редактировать участника
+alliance_editMemberPopup_customMessage;Пользовательское сообщение
+alliance_editMemberPopup_setRole;Установить роль
+alliance_editMemberPopup_kickPlayerFromAlliance;Исключить игрока из альянса
+alliance_editMemberPopup_cantChangePermission;Невозможно изменить текущие права: см. предупреждение.
+alliance_kickPlayerPopup_areYouSure;Вы уверены, что хотите исключить {{Player}} из альянса?
+alliance_kickPlayerPopup_playerKicked;Игрок исключен!
+alliance_editAllianceDescription;Редактировать описание альянса
+alliance_topColumn;Верхняя часть
+alliance_bottomColumn;Нижняя часть
+alliance_bbCodeAdded;Добавлен BB-код
+alliance_generalInformation;Общая информация
+alliance_confederacy_tab;Союзы
+alliance_diplomacy;Дипломатия
+alliance_diplomacy_tab1;ПОН / Война
+alliance_diplomacy_send_new;Отправить новое предложение
+alliance_diplomacy_openRequests;Открытые запросы
+alliance_diplomacy_otherOffered;Альянс {{allianceId|AllianceLink}} предложил {{type|TranslateSuffixFor|alliance_diplomacy_type}}
+alliance_diplomacy_youOffered;Вы предложили {{type|TranslateSuffixFor|alliance_diplomacy_type}} альянсу {{allianceId|AllianceLink}}
+alliance_diplomacy_offerDeclare;Предложить / Объявить
+alliance_diplomacy_type;Тип
+alliance_diplomacy_type1;союз
+alliance_diplomacy_type2;ПОН
+alliance_diplomacy_type3;войну
+alliance_diplomacy_type4;союз
+alliance_diplomacy_typekick;исключение из союза
+alliance_diplomacy_deleteText_;{{type|TranslateSuffixFor|alliance_diplomacy_type}}{{alliance|AllianceLink}}
+alliance_diplomacy_deleteTitle_RemoveRequest;Удалить запрос
+alliance_diplomacy_deleteText_RemoveRequest;Вы уверены, что убрать {{type|TranslateSuffixFor|alliance_diplomacy_type}} с альянсом {{alliance|AllianceLink}}?
+alliance_diplomacy_deleteTitle_TerminateExisting;Приостановить
+alliance_diplomacy_deleteText_TerminateExisting;Вы уверены, что хотите прекратить {{type|TranslateSuffixFor|alliance_diplomacy_type}} с альянсом {{alliance|AllianceLink}}?
+alliance_diplomacy_deleteTitle_ConfederacyKickVote;Приостановить
+alliance_diplomacy_deleteText_ConfederacyKickVote;Для расторжения отношений с {{subject|AllianceLink}} вам необходимо подтверждение от других участников союза.\n\nЖелаете продолжить и сообщить другим союзникам о вашем решении?
+alliance_diplomacy_deleteTitle_QuitConfederacy;Приостановить
+alliance_diplomacy_deleteText_QuitConfederacy;Вы уверены, что хотите расторгнуть союз со следующими участниками?
+alliance_diplomacy_deleteTitle_RemoveConfederacyProposal;Удалить запрос
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Kick;Вы уверены, что хотите отклонить запрос {{alliance|AllianceLink}} об исключении {{subject|AllianceLink}} из союза?
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Join;Вы уверены, что хотите отклонить запрос {{alliance|AllianceLink}} о принятии {{subject|AllianceLink}} в союз?
+alliance_diplomacy_sent;Предложение отправлено
+alliance_diplomacy_accepted;Дипломатические отношения приняты
+alliance_diplomacy_canceled;Дипломатические отношения отменены
+alliance_diplomacy_declined;Запрос отклонен
+alliance_diplomacy_kickStarted;Запрос отправлен
+alliance_diplomacy_proposal_approved;Запрос одобрен
+alliance_diplomacy_noContract;У вашего альянса нет активных договоров с другими альянсами.
+alliance_diplomacy_noConfederacy;Ваш альянс не является частью союза.
+alliance_diplomacy_alreadyOpenOffer;По этому альянсу уже есть открытое предложение.
+alliance_diplomacy_alreadyExistingContract;С этим альянсом уже имеется договор.
+alliance_diplomacy_warInDeletion;Подождите, пока другой альянс также прекратит войну.
+alliance_union_leave;Покинуть союз
+alliance_union_add;Добавить новый запрос
+allianz.diplomacy_with_type;{{NAME}}
+allianz.diplomacy_with_type4;Союз с {{NAME}}
+alliance_newsBbDescription;Измените «число», чтобы редактировать количество новостей.
+alliance_LossesBBName;Потери
+alliance_LossesBBDescription;Измените «Название», чтобы выбрать альянс для сравнения
+alliance_NapBBName;Пакты о ненападении
+alliance_WarsBBName;Войны
+alliance_addBBCode;Добавить BB-код
+alliance_addMedal;Добавить медаль
+alliance_assignToPosition;Назначить участников на должность и изменить название альянса
+alliance_editPermissions;Редактировать права
+alliance_roleTitle;Название роли:
+alliance_assignToPosition_onlyMemberError;Вы единственный участник этого альянса. Назначение участников на роли и изменение названия альянса нельзя снять.
+alliance_noAllianceEvents;- Нет событий в альянсе -
+alliance_dailyContribution;Ежедневное пожертвование
+alliance_contributionAmount;Пожертвование: <b>{{AMOUNT}}</b>
+alliance_resourcesContributed;{{current}}/{{max}} ресурсов
+alliance_contributionResetIn;Сброс через {{time|Countdown}}.
+alliance_resUntilNext;Ресурсов до следующего уровня: {{resources|LongNumber}}
+alliance_bonusCurrentlyActivating;Активация бонуса: {{resources|Countdown}}
+alliance_bonusMaxed;Бонус достигнут
+alliance_tripledContribution;Вы утроили ваше пожертвование!
+alliance_contributionStatistics;Статистика пожертвований
+alliance_contributionNone;- Нет пожертвований -
+auth_clientVerificationFailed;Невозможно подтвердить сервер. Пожалуйста, попробуйте еще раз.
+banned_seeMessage;Посмотреть сообщение
+banned_acceptPunishment;Принять штраф
+residence_settlement;Поселения
+residence_settlementVillages1;Слоты поселений заняты деревнями
+residence_settlementVillages2;Деревни занимают 1 слот поселения
+residence_settlementAvailableSlots;Доступные слоты поселения
+residence_nextSlot;До следующего слота поселения необходимо  {{current}}/{{required}} единиц культуры
+residence_slotsUsed;Использованные слоты:
+residence_settlementDetails;Информация по поселению
+residence_settlementSlotX;Слоты поселения: {{number}}
+residence_settlementUpgradeNeeded;Улучшите здание: {{buildingType|TranslateSuffixFor|allgemein.gid}}, чтобы открыть слот поселения.
+residence_settlementSettle;Для того, чтобы основать деревню, отправьте поселенцев на свободную клетку на карте. Вам нужны 3 поселенца, по 750 единиц каждого ресурса и достаточно единиц культуры для захвата еще одной деревни.
+residence_settlementChief;Для захвата следующей деревни вам нужно понизить одобрение до 0. Для этого вам нужен {{senatorId|TranslateSuffixFor|truppen.tid}}, при этом в деревне не должно быть дворца, резиденции или дома полководца. Также вам необходимо иметь достаточно единиц культуры для следующей деревни.
+palace_capital;Сделать эту деревню столицей.
+palace_setAsCapital;Установить столицу
+palace_enterPassword;Введите пароль для безопасности:
+embassy_GoToAlliance;Перейти в альянс
+embassy_Invitation;Альянс {{AllianceId|AllianceLink}}, приглашение от {{playerId|PlayerLink}}
+embassy_VillagesInRange;Деревень в пределах досягаемости
+embassy_LeaveAllianceToJoin;Прежде чем вступить в этот альянс, вам необходимо покинуть тот, в котором вы уже состоите.
+embassy_ConfirmLeaveAlliance;Подтвердить и покинуть альянс
+embassy_InvitationAccepted;Приглашение принято
+embassy_AllianceFounded;Альянс успешно основан
+embassy_LeftAlliance;Успешный выход из альянса
+embassy_acceptInvitationQuestion;Вы уверены, что хотите присоединиться к {{allianceId|AllianceLink}}?
+embassy_acceptInvitationWarning;Вы не можете покинуть альянс в течение {{hours}} часов после вступления.
+embassy_acceptInvite;Да, вступить в альянса
+embassy_declineInvite;Нет, удалить приглашение
+embassy_noAlliancesNearby;Альянсы поблизости не найдены.
+tos_title;Отказ от ответственности
+tos_disclaimer;У приложения сейчас <style="Mango">статус бета. Некоторые функции игры пока недоступны в приложении.</style>\nЕсли вы не слишком опытный игрок Travian: Legends, мы рекомендуем начать свой путь  в браузере на странице <style="link"><link="http://www.travian.com">www.travian.com</link></style> 
+tos_disclaimer2;Мы с нетерпением ждем ваших отзывов о текущем статусе приложения на нашем канале в <style="link"><link="https://discord.gg/fcsKvwcE2t">Discord</link></style>.
+tos_text;Я прочитал(а) и принимаю <style="link"><link="https://agb.traviangames.com/terms-en.pdf#cmpnoscreen">Общие условия</link></style>, <style="link"><link="https://agb.traviangames.com/right-of-withdrawal-EN.pdf">Право на отзыв</link></style> и <style="link"><link="https://www.traviangames.com/en/games-privacy-policy">Положения о защите данных</link></style>.
+tos_confirm;Подтвердить
+smithy_improveTo;Улучшить до уровня {{level}}
+smithy_viewList;Посмотреть развитие
+smithy_upgradeStarted;Начато улучшение: {{unitId|TranslateSuffixFor|truppen.tid}}
+smithy_researchFirst;Это войско необходимо сначала исследовать в академии.
+smithy_levelTooLow;Недостаточный уровень кузницы. Пожалуйста, улучшите кузницу.
+allBuildings_10;Все склады:
+allBuildings_11;Все амбары:
+allBuildings_23;Все тайники:
+allBuildings_38;Все склады:
+allBuildings_39;Все амбары:
+currentBuildingValue;Текущий {{type|TranslateSuffixFor|allgemein.gid}}:
+ad_successful;Объявление успешно просмотрено!
+externalLink_title;Внешние ссылки
+externalLink_description1;<b>Внимание!</b><br>Вы собираетесь открыть следующую ссылку:
+externalLink_description2;Travian Games не может проверить или подтвердить эту ссылку.
+externalLink_description3;Вы действуете на свой страх и риск.
+externalLink_description4;Вы действительно хотите продолжить?
+externalLink_continue;Продолжить по ссылке
+search_village;Поиск деревень
+search_select_village;Выбрать деревню
+search_three_characters;Введите не менее {{amount}} знаков
+search_no_result;Совпадений не найдено
+search_player;Поиск игрока
+search_player_invite;Пригласить игрока
+search_select_player;Выбрать игрока
+search_select_player_invite;Пригласить игрока
+search_alliance;Поиск альянса
+search_select_alliance;Выбрать альянс
+gid27.arte_detail_;{{INT}}
+artefact_inventory_level_effect;Сокровищница: {{LEVEL}}, эффект: {{EFFECT}}
+artefact_inventory_village;Деревня:
+artefact_inventory_conquered;Захвачено:
+artefact_inventory_active;Активен: активен в
+artefact_inventory_active_already;Активен: <b>Активирован</b>
+artefact_inventory_show_active_only;Показать только активированные артефакты
+artefact_overview;Обзор артефактов
+artefact_tip_large;Большие артефакты требуют <b>20</b> уровень сокровищницы и влияют на весь <b>персонаж</b>.
+artefact_tip_small;Маленькие артефакты требуют <b>10</b> уровень сокровищницы и влияют только на <b>деревню</b>.
+artefact_tip_nearby;Артефакты недалеко от деревни {{villagenamelong|Bold}}
+artefact_small;Малый
+artefact_large;Большой
+artefact_nearby;Окрестности
+artefact_village;Деревня
+artefact_button_former_owners;Посмотреть предыдущих владельцев
+artefact_already_active;Уже активированы
+artefact_required_level_value;Сокровищница <b>уровня {{LEVEL}}</b>
+artefact_details;Данные
+number_counter;{{NUMBER}}.
+tasks_villageTasks;Задания в деревне
+tasks_nextHeroLevelBonus;Бонус следующего уровня героя = {{value}}%
+villageOverview_building_headline;Строит-во
+villageOverview_building_slotIdle;Сейчас ничего не строится
+villageOverview_resource_sorting1;Список деревень
+villageOverview_resource_sorting2;Наименьшее время до заполнения амбара
+villageOverview_resource_sorting3;Наибольшее время до заполнения амбара
+villageOverview_resource_sorting4;Наименьшее время до заполнения склада
+villageOverview_resource_sorting5;Наибольшее время до заполнения склада
+villageOverview_resource_sorting6;Отрицательное производство
+villageOverview_troops_stationed;Войска в деревне
+villageOverview_troops_sum;Всего своих войск
+villageOverview_troops_tab_training;Обучение
+villageOverview_culture_slots;Деревни
+cancelPopup_Improvement;Отменить
+cancelPopup_Research;Отменить
+cancelPopup_Construction;Отменить строительство
+cancelPopup_text_;{{NAME}} {{LEVEL}}
+cancelPopup_text_Improvement;Желаете отменить улучшение войска «{{NAME}}» до уровня {{LEVEL}}?
+cancelPopup_text_Research;Желаете отменить исследования типа войск «{{NAME}}»?
+cancelPopup_text_Construction;Отменить строительство {{LEVEL}} уровня здания «{{NAME}}»?
+cancelPopup_text_refund;Вам будет возвращено {{INT}}% от потраченных ресурсов:
+dailyQuests_timeRemaining;Оставшееся время: {{time|Countdown}}
+dailyQuests_rewardOverview;Обзор наград
+dailyQuests_claimRewards;Получить награду
+dailyQuests_pointsEarned;Очки: <b>{{current}}/{{max}}</b>
+dailyQuests_rewardDescription;Вот награды, которые вы можете открыть, выполняя ежедневные задания:
+dailyQuests_claimAction;Получить
+dailyQuests_alreadyClaimed;Получено
+dailyQuests_autoCollect;Любые награды, которые не были востребованы в конце дня, будут зачислены вам автоматически.
+dailyQuests_questDetailTitle;Информация
+dailyQuests_quest_worth;Очки за это задание:
+dailyQuests_quest_worth_points;+{{points}} оч.
+dailyQuests_quest_repeated;Задание можно повторить:
+dailyQuests_quest_repeated_amount;{{amount}} раз(а)
+dailyQuests_quest_completed;Завершено повторений:
+dailyQuests_quest_difficulty;Сложность:
+dailyQuests_quest_requirement;Требования:
+dailyQuests_backToOverview;Перейти к обзору
+dailyQuests_difficulty_moderate;Умеренная
+dailyQuests_difficulty_hard;Тяжелая
+dailyQuests_difficulty_challenging;Сложная
+achievementQuests.achQuest_;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+achievementQuests.achQuest__step_01_description;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+heroMansion_Loyalty;Одобрение: {{INT}}%
+heroMansion_Conquered;Захвачено {{TIME|DateTime}}
+heroMansion_SlotFree;Следующий слот оазиса доступен
+heroMansion_SlotBlocked;Следующий оазис можно захватить с <color={{colorValue|TextColor}}>таверной</color> <color={{colorValue2|TextColor}}>{{REQUIRMENT}}</color>-го уровня
+heroMansion_Undo;Отменить
+heroMansion_FinishedAt;Готово: {{TIME|Time}}
+waterworks_NoneOasesAcquired;Нет захваченных оазисов
+waterworks_BonusCalculation;+ ({{INT}}% из {{INT2}}%) = 
+waterworks_CurrentBonus;Текущий бонус водопровода: +{{INT}}% на ресурсы оазиса
+waterworks_Oases;Присоединенные оазисы
+messages_inbox_title;Сообщения: {{COUNT}}
+messages_inbox_title_selected;Выбрано сообщений: {{SELECTED}}/{{COUNT}}
+messages_newMessage;Новое сообщение
+messages_messageSent;Сообщение отправлено!
+messages_exitPreview;Выйти из просмотра
+messages_previewTitle;Просмотр сообщения
+messages_unread_count;Не прочитано: {{COUNT}}
+reportPlayer_selectReason;Выберите причину жалобы
+reportPlayer_reasonPlaceholder;Причина жалобы
+reportPlayer_addNote;Добавить заметку к жалобе (необязательно):
+reportPlayer_alsoBlock;Добавить в черный список
+reportPlayer_maximumLength;Максимальная длина: {{text|TextLength}}/300.
+reportPlayer_nowIgnored;Вы добавили этого игрока в черный список.
+reportPlayer_nowUnignored;Вы убрали этого игрока из черного списка.
+statistics_general;Общая статистика
+statistics_seeDetails;Подробности
+statistiken.progressionStepTitle_;{{VALUE}}{{DATETIME}}
+language_com;Язык разработки
+language_de-DE;Немецкий
+language_en-US;English
+language_fr-FR;Французский
+language_ru-RU;Русский
+statistics_villageAndHero;Крупнейшая деревня / герой
+RelativeTime_0;{{data}} сек.
+RelativeTime_1;{{data}} мин.
+RelativeTime_2;{{data}} ч.
+RelativeTime_3;[data>1:{{data}} дн.][data<2:{{data}} день]
+RelativeTime_4;[data>1:{{data}} нед.][data<2:{{data}} неделя]
+RelativeTime.Separator; 
+RelativeTime.Wrapper.Past;{{time}} назад
+RelativeTime.Wrapper.Future;Через {{time}}
+mapCell_tooFewSettlers;{{current}}/3 поселенцев готово
+mapCell_heroNotIdle;Ваш герой не бездействует
+mapCell_cantAddOwn;Вы не можете добавлять собственные деревни
+mapCell_alreadyInVillage;Вы уже в этой деревне.
+serverSelection_rememberPassword;Запомнить пароль
+serverSelection_savedWorldsTitle;Ваши игровые миры
+serverSelection_removeWorldTitle;Удалить игровой мир
+serverSelection_removeWorldQuestion;Вы действительно хотите удалить этот игровой мир из списка?
+serverSelection_removeWorldDescription;Предупреждение: Это не удалит вашу учетную запись в игровом мире. Вы можете вернуться в любое время и добавить игровой мир, в котором находится ваша учетная запись, в список игровых миров.
+serverSelection_removeWorldButton;Убрать из списка
+serverSelection_addWorldText;+Добавить мир
+buildingActivities_buildingAdditional_;{{amount}}
+buildingActivities_buildingAdditional_17;Активные пути: {{amount}}
+reports_filters_reset;Сбросить фильтры
+palace_capitalSet;Столица!
+palace_isCapital;Эта деревня является столицей
+messages_unread_count_full;Непрочитанные сообщения: {{COUNT}}
+statistics_alliance;Статистика альянсов
+statistics_alliances_best_off;Лучшие альянсы (атака)
+statistics_alliances_best_def;Лучшие альянсы (защита)
+statistics_offensiveStrength;Ваша сила атаки: {{VILLAGEID|VillageLink}} на этом сервере
+statistics_offensiveStrengthAlliance;Ваша сила атаки: {{VILLAGEID|VillageLink}} в альянсе
+statistics_offensiveStrengthVillage;Сила атаки этой деревни:
+statistics_defensiveStrength;Ваш рейтинг по силе защиты (сервер)
+statistics_defensiveStrengthAlliance;Ваш рейтинг по силе защиты (альянс)
+statistics_defensiveStrengthVillage;Сила защиты этой деревни:
+statistics_defensiveStrengthVillageSum;Общая сила защиты всех деревень:
+recent;Недавно
+appliedFilters;У вас активировано {{COUNT}} фильтров.
+allgemein.gid99;Случайно
+rallyPoint_troopsOverview_10;Детальный обзор войск
+rallyPoint_troopsOverview_returningFromAdventure;Возвращение из приключения: 
+rallyPoint_troopsOverview_detailedView;Детальная информация
+rallyPoint_troopsOverview_noMovements;- Нет передвижений войск -
+rallyPoint_troopsOverview_Target;Цель: {{Target|NamedCoordinates}}
+rallyPoint_troopsOverview_Origin;Родная деревня: {{Target|NamedCoordinates}}
+hero_adventures_number;№ {{INT}}
+hero_status_regeneration;<b>Восстановление: </b> {{VALUE}} ед. здоровья в день 
+hero_status_regeneration_details;{{HERO}}% в день от героя, {{EQUIPMENT}}% в день от снаряжения
+hero_status_experience;<b>Опыт героя: </b>{{VALUE}}%
+hero_status_experience_bonus;Бонус: {{VALUE}}%
+search_results;Результаты
+search_player_link;Ссылка на игрока
+search_select_player_link;Выбрать игрока
+search_recipient;Поиск получателя
+search_select_recipient;Выбрать получателя
+search_alliance_link;Ссылка на альянс
+search_select_alliance_link;Выбрать альянс
+messages_fullView_title;Сообщение:
+messages_recipient_placeholder;Выбрать получателя
+messages_title_placeholder;Введите название сообщения
+messages_message_placeholder;Введите сообщение
+messages_ownAlliance;Свой альянс
+messages_selectedRecipients;Выбрано
+messages_ownAlliance_[ally];Все участники альянса
+messages_ownAlliance_[off];Офферы альянса
+messages_ownAlliance_[def];Деферы альянса
+messages_discard_title;Сбросить сообщение
+messages_discard_text_header;Желаете удалить это сообщение?
+messages_discard_text;Содержимое сообщения будет потеряно безвозвратно.
+messages_confirm_deletion_title;Удалить сообщения
+messages_confirm_deletion_text_header;Вы уверены, что хотите удалить [data>1: {{data}} сообщений][data=1:{{data}} сообщение]?
+messages_confirm_deletion_text;Удаленные сообщения невозможно восстановить.
+messages_confirm_deletion_button;Удалить [data>1:{{data}} сообщений][data=1:{{data}}сообщение].
+icon_selection_title;Добавить иконку
+icon_selection_button;Выбрать иконку
+icon_selection_resourcesAndHero;Ресурсы / Герой
+icon_selection_natureAndNatars;Природа и Натары
+upgrading;Улучшается!
+buildingActivities_buildingAdditional_46;Нет раненых войск
+playerDetails_ignorePlayerDescription;Игрок был добавлен в черный список
+reports_share;Поделиться
+search_select_village_link;Выбрать деревню
+search_village_link;Ссылка на деревню
+search_report_link;Ссылка на отчет
+search_select_report_link;Выбрать отчет
+messages_banned;Вы можете отправлять сообщения только участникам своего альянса.
+messages_template_title;Шаблоны
+messages_template_none;Нет доступных шаблонов
+messages_template_edit_title;Редактировать шаблон
+messages_template_delete_title;Удалить шаблон
+messages_template_delete_question;Вы действительно хотите удалить шаблон?
+messages_template_delete_desc;Как только шаблон будет удален, вы не сможете восстановить его.
+messages_template_create;Создать новый шаблон
+messages_template_create_descr;Создайте новый шаблон из текущего сообщения:
+messages_template_created;Шаблон создан!
+messages_template_deleted;Шаблон удален.
+statistics_culturePoints_productionRank;Ваш рейтинг по производству единиц культуры (сервер)
+statistics_culturePoints_productionRankAlliance;Ваш рейтинг по производству единиц культуры (альянс)
+statistics_culturePoints_production;ЕК
+statistics_resourceRank_production;Производство: {{VALUE|ShortenNumber}}
+statistics_resourceRank_productionRank;Ваш рейтинг по производству ресурсов (сервер)
+statistics_resourceRank_productionRankAlliance;Ваш рейтинг по производству ресурсов (альянс)
+statistics_resourceRank_bounty_lost;Потеряно
+statistics_wonderOfTheWorld_header;Лучшие Чудеса света
+hospital_healing_costs;Стоимость исцеления войск
+hospital_healing_action;Исцелить войска
+hospital_healing_list;Посмотреть список исцеления
+hospital_healing_list_title;Войска исцеляются
+hospital_healing_started;Началось исцеление
+bonusValueWithPercent;+{{value}}%
+village_with_isCapital;{{villageName}} (столица)
+maximumTextLengthError;{{CONTEXT}} может содержать максимум {{AMOUNT}} символов
+infoTab_genericEffectInBrackets;({{INT|Sign}})
+infoTab_effectPercentage;{{INT}}%
+infoTab_effectInBracketsPercentage;({{INT|Sign}}%)
+infoTab_trapperCurrently;Текущий капканщик - макс. ловушек:
+trapper_ViewBuildingList;Посмотреть список зданий
+trapper_Build_Action;Построить ловушки
+trapper_ProductionCosts;Стоимость ловушек
+trapper_TrapsInConstruction;Ловушки строятся
+trapper_MaxBuilt;Максимальное количество ловушек уже построено
+truppen.tid119;Ловушка
+truppen.tid119p;Ловушки
+rallyPoint_troopsOverview_outgoingMission_scouting_1;Разведать войска и оборонительные сооружения 
+rallyPoint_troopsOverview_outgoingMission_scouting_0;Разведать ресурсы и войска противника 
+rallyPoint_troopsOverview_returningRegeneratedMission;Возвращающиеся восстановленные войска из: 
+rallyPoint_troopsOverview_returningFleeingMission;Возвращение войск из убежища: 
+rallyPoint_troopsOverview_foreignTroopsIn;В подкреплении: 
+rallyPoint_celebration_hint;Празднование в пивоварне может затронуть войска.
+building_not_built;Здание не построено
+berichte.report_icon_24;Отчёт
+allBuildings_36;Все капканщики - макс. ловушек:
+cropFinder_min_oasis_crop_bonus;Мин. Бонус зерна от оазисов
+cropFinder_select_minimum_crop_bonus;Выбрать минимальный бонус зерна
+cropFinder_unoccupied;Свободно
+search_by_location;Поиск по местоположению
+search_by_player;Поиск по игроку
+search_village_from_player;Искать деревню игрока
+enter_player_name;Ввести имя игрока
+messages_template_newConditionsNotMet;Темы должна содержать заголовок и сообщение.
+message_report_isAlready;Выбранное сообщение уже было помечено спамом. {{REASON}}
+tutorial_begin;Начать обзор
+tutorial_title_0;Приветствуем, бесстрашный чемпион! 
+tutorial_text_0;Добро пожаловать на ожесточенное поле боя Travian: Legends. Давайте снарядим вас, чтобы вы могли править своими поселениями и возглавить неостановимые армии.\n\nГотовы?
+tutorial_title_1;Обзор навигации
+tutorial_text_1;Здесь вы откроете для себя все: от карты до эффективного общения и бесценной информации. Также здесь находятся ежедневные задания, персональные настройки и множество других функций.
+tutorial_title_3;Ваши ресурсы
+tutorial_text_3;Здесь можно найти ресурсы вашей деревни. Нажав на шкалу ресурсов, вы сможете увидеть больше информации.
+tutorial_title_4;Ваши ресурсы
+tutorial_text_4;Коснувшись шкалы ресурсов, вы сможете увидеть больше информации.
+tutorial_title_5;Ваша деревня
+tutorial_text_5;Здесь вы найдете всю необходимую информацию о своей деревне. От списка заданий до обзора войск и очереди строительства — все находится здесь. Недавнее дополнение к приложению – функция обзора строительства дает беглое представление о текущем строительстве ваших зданий.
+tutorial_title_7;Ваша деревня
+tutorial_text_7;Если ваш пункт сбора будет построен, то вы получите полный обзор всех текущих передвижений войск. Кроме того, она дает возможность быстро добраться до пункта сбора.
+tutorial_title_8;Боковое меню
+tutorial_text_8;Коснитесь стрелок или проведите по экрану, чтобы открыть боковое меню. Это можно сделать в любое время.
+tutorial_title_9;Список деревень
+tutorial_text_9;Вы можете быстро переключаться между своими деревнями, активировав боковую панель в любое время. Там вы также сможете найти статистику деревень.\n\nНа этом наш тур завершается. Чего же вы ждете? Вникайте, исследуйте, и позвольте миру Travian: Legends стать вашей стратегической площадкой.\n\nУдачи!
+tutorial_finish;Конец тура
+filters_report_not_found;Отчет не существует
+filters_player_not_found;Игрок не существует
+filters_alliance_not_found;Альянс не существует.
+filters_village_not_found;Деревня не существует.
+settings_game;В этом игровом мире
+language_app_selection;Выберите язык приложения:
+settings_sitter;Заместитель {{VALUE}}:
+settings_sitterTab_yourSitters;Заместители
+settings_sitterTab_SittingFor;Заместитель
+search_player_addSitter;Добавить заместителя
+search_select_player_addSitter;Добавить заместителя
+search_player_addSitter_additionalEmptyResultInfo;Игрок не найден.\nЗаместителем вашего персонажа могут быть игроки только из вашего альянса / союза.
+settings_sitter_sitterAdded;Заместитель добавлен!
+settings_sitter_sitterRemoved;Заместитель удален!
+settings_sitter_sitterPermissionChangesSaved;Изменения прав сохранены!
+settings_sitter_confirm_remove_text_header;Вы действительно хотите удалить игрока {{PlayerName}} из заместителей?
+settings_sittersFor;Заместитель для других учетных записей
+settings_sittersFor_info;Вы являетесь заместителем следующих персонажей. Чтобы снять с себя полномочия, нажмите на красный символ Х.
+settings_sittersFor_none;В данный момент вы не замещаете других игроков.
+settings_sitterFor;Заместитель для {{VALUE}}:
+settings_sitterFor_sittingRemoved;Прекращено замещение игрока {{PlayerName}}!
+settings_sitterFor_confirm_remove_header;Желаете перестать быть заместителем игрока 
+settings_sitterFor_confirm_remove_header_questionmark;?
+settings_sitterFor_confirm_remove_info;Вы не можете отменить это действие. Только другие игроки могут добавить вас в качестве заместителя.
+brewery_celebration_attackStrength;({{INT}}% сила атаки)
+brewery_celebration_hint;Войска, которые уже находятся в марше, будут затронуты празднованием
+settings_game_newLanguage;Язык изменен на {{language}}.
+wonderOfTheWorld_name;Название Чуда света:
+combatSimulator_title;Рассчитать - {{role|TranslateSuffixFor|combatSimulator_as}}
+combatSimulator_cataTargetLevel;Уровень <b>{{index}}. цели катапульт</b>
+combatSimulator_troopLevel;Уровень кузницы:
+combatSimulator_asAttacker;Как атакующий
+combatSimulator_asDefender;Как обороняющийся
+combatSimulator_result;Результат симулятора
+combatSimulator_addReinforcement;Добавить подкрепление
+valueWithModifier;x{{value|Round|2}}
+valuePlusInBracketsWithPercent;(+{{change}}%)
+none;Ничего
+marketplace_traderoute_repeatEveryHour;Повторять каждые: (часов)
+block_sitter_warning;Недоступно для заместителя учетной записи.
+settings_openConsentWindow;Настройки конфиденциальноси
+combatSimulator_adjustHeroStats;Изменить параметры героя
+combatSimulator_eagleEyeTitle;Выбрать бонус разведки
+combatSimulator_architectSecretTitle;Выбрать бонус архитектора
+combatSimulator_metallurgyBonus;Выбрать бонус металлургии
+combatSimulator_rightHand;Выбрать предмет правой руки
+combatSimulator_leftHand;Выбрать предмет левой руки
+combatSimulator_bodyItem;Выбрать предмет для тела
+combatSimulator_inventoryItem;Выбрать предмет инвентаря
+combatSimulator_selectBuildingLevel_35;Выбрать уровень пивоварни
+combatSimulator_selectBuildingLevel_26;Выбрать уровень дворца
+combatSimulator_selectBuildingLevel_34;Выбрать уровень каменотеса
+combatSimulator_selectBuildingLevel_31;Выбрать уровень стены
+combatSimulator_selectBuildingLevel_32;Выбрать уровень стены
+combatSimulator_selectBuildingLevel_33;Выбрать уровень стены
+combatSimulator_selectBuildingLevel_43;Выбрать уровень стены
+combatSimulator_selectBuildingLevel_42;Выбрать уровень стены
+combatSimulator_selectTargetLevel;Выбрать уровень цели катапульт
+combatSimulator_selectTroopLevel;Выбрать уровень войск
+survey_title;Опрос Travian: Legends
+tos_earlyAccess;Приложение сейчас находится на <style="Mango">раннем доступе.\n\nНекоторые функции игры пока недоступны в приложении.</style>\n\nЕсли вы не слишком опытный игрок Travian: Legends, мы рекомендуем начать свой путь  в браузере на странице <style="link"><link="http://www.travian.com">www.travian.com</link></style> 
+tos_understood;Понятно
+gdpr_title;Согласие на обработку данных
+gdpr_description;С вашего согласия мы собираем определенную информацию, касающуюся вашего устройства, IP-адреса, использования и торговых идентификаторов. Это помогает нам показывать более актуальную рекламу, а также улучшает общее впечатление от приложения.
+gdpr_basic_functions;Требуется для работы базового функционала приложения.
+gdpr_advertisement;Использование данных в рекламе
+gdpr_analytics;Использование данных для аналитики
+gdpr_acceptAll;Принять все
+gdpr_save_and_exit;Сохранить + Выйти
+gdpr_rejectAll;Отклонить все
+gdpr_privacy_policy;Положение о защите данных
+gdpr_terms_and_conditions;Общие условия
+plus.plus.browserOnly;(только браузер)
+hero_inventory_already_equipped;Этот предмет уже имеется в слоте предметов.
+survey_button_title;Опрос: Ваше мнение
+survey_button_description;Примите участие в коротком опросе, чтобы помочь нам улучшить приложение Travian: Legends.
+goldShop_extend;Продлить
+goldShop_remaining;Осталось: 
+goldShop_advantage_activated;Активирован
+search_select_recipient_removeAll;Удалить все
+messages_messageTopic_noTopic;Без темы/по умолчанию
+messages_messageTopic_resources;О ресурсах
+messages_messageTopic_defenses;О защите
+messages_messageTopic_attacks;Об атаках
+messages_messageTopic_strategies;О стратегиях
+messages_messageTopic_information;Общая информация
+messages_messageTopic_important;Важная информация
+messages_messageTopic_selectionTitle;Выберите тему сообщения
+farmlist_confirm_deletion_header;Вы уверены, что хотите удалить выбранный список целей?
+farmlist_confirm_deletion_text;Это действие необратимо.
+farmlist_target_confirm_deletion_header;Вы уверены что хотите удалить  [data>1: эти цели ({{data}})targets][data=1:эту цель]?
+upgrade_queue_cantConstructImmediately;Это здание нельзя построить моментально.
+language_cs-CZ;Чешский
+language_es-ES;Испанский
+language_pl-PL;Польский
+language_pt-PT;Португальский
+language_tr-TR;Турецкий
+language_it-IT;Итальянский
+playerDetails_victorPoints_summary;{{TOTAL}} | {{PERDAY}}/д.
+statistics_progressionStepTitle_;{{VALUE}}{{DATETIME}}
+statistics_progressionStepTitle_start_achieved;Игровой мир начался {{VALUE}}
+statistics_progressionStepTitle_secondVillage_locked;Никто еще не основал вторую деревню.
+statistics_progressionStepTitle_secondVillage_achieved;Первый игрок, сумевший основать вторую деревню на сервере: {{VALUE}} {{DATETIME}}
+statistics_progressionStepTitle_serverEnd_locked;Игровой мир завершится {{VALUE}}
+statistics_progressionStepTitle_serverEnd_achieved;Игровой мир завершился {{VALUE}}
+statistics_progressionStepTitle_artifacts_locked;Артефакты появятся {{VALUE}}
+statistics_progressionStepTitle_artifacts_unlocked;Артефакты появились {{VALUE}}
+statistics_progressionStepTitle_artifacts_achieved;Первый артефакт захвачен игроком {{VALUE}} {{DATETIME}}
+statistics_progressionStepTitle_constructionPlans_locked;Строительные свитки появятся {{VALUE}}
+statistics_progressionStepTitle_constructionPlans_unlocked;Строительные свитки появились {{VALUE}}
+statistics_progressionStepTitle_constructionPlans_achieved;Первый строительный свиток захвачен игроком {{VALUE}} {{DATETIME}}
+statistics_progressionStepTitle_firstWWLevelOne_locked;Кто сумеет построить самый первый уровень Чуда света?
+statistics_progressionStepTitle_firstWWLevelOne_achieved;Первый уровень Чуда света построен игроком {{VALUE}} {{DATETIME}}
+settings_selectFormat;Выберите формат
+settings_selectFormat_dialog_title;Выберите формат даты
+settings_game_newDateFormat;Формат даты изменен на {{dateFormat}}.
+help_getHelp;Получить помощь
+help_getHelpDescription;Если вам нужна помощь или вы хотите сообщить о проблеме, здесь вы можете обратиться в игровую службу поддержки.
+help_learnAboutGame;Узнать больше об игре
+help_learnAboutGameDescription;Все, что вам нужно знать об игре и как все работает, можно найти здесь.
+help_gameRules;Изучить правила игры
+help_gameRulesDescription;Здесь вы можете найти актуальные правила игры.
+help_joinDiscord;Присоединиться к Discord
+help_joinDiscordDescription;Поделитесь с нами своим отзывом в нашем канале о приложении в Discord.
+PLAYERARG;{{PLAYER}}
+referAFriend_friendJoinedDescription;Чтобы вы могли получить золото за приглашенного игрока, вашему другу необходимо основать <b>вторую деревню</b>. Помогите ему достичь этой цели! Прогресс друзей вы можете видеть в обзоре ниже.
+referAFriend_rewardAddedVillage2Title_PLAYERARG;Друг {{PLAYER}} основал 2-ю деревню.
+referAFriend_rewardAddedVillage3Title_PLAYERARG;Друг {{PLAYER}} основал 3-ю деревню.
+referAFriend_rewardAddedVillage4Title_PLAYERARG;Друг {{PLAYER}} основал 4-ю деревню.
+referAFriend_rewardAddedVillage5Title_PLAYERARG;Друг {{PLAYER}} основал 5-ю деревню.
+referAFriend_rewardAddedVillage6Title_PLAYERARG;Друг {{PLAYER}} основал 6-ю деревню.
+referAFriend_rewardAddedVillage7Title_PLAYERARG;Друг {{PLAYER}} основал 7-ю деревню.
+referAFriend_rewardAddedVillage8Title_PLAYERARG;Друг {{PLAYER}} основал 8-ю деревню.
+referAFriend_rewardAddedVillage9Title_PLAYERARG;Друг {{PLAYER}} основал 9-ю деревню.
+referAFriend_rewardAddedVillage10Title_PLAYERARG;Друг {{PLAYER}} основал 10-ю деревню.
+sysmsg_truce_learnMore;Больше информации о перемириях
+worldEnded_ww_playerWon_topAlliance;Рабочие деревни {{WW_VILLAGE|VillageLink}} в {{WORLD_END_TIME|DateTime}} возложили последний камень и тем самым завершили создание одного из самых значительных монументов в истории.<br>Совместно с альянсом {{WW_ALLIANCE|AllianceLink}}, игрок  {{WW_PLAYER|PlayerLink}} стал первым, кто построил Чудо Света. Бесчисленное количество ресурсов и сотни тысяч воинов были положены на алтарь победы, чтобы игрок {{WW_PLAYER|PlayerLink}} получил титул «Победителя эпохи».
+worldEnded_as2022_topAlliances;Мы славим альянс {{ALLIANCE_TOP_1|AllianceLink}}, установивший лидерство над Европой с {{VICTORY_POINTS_TOP_1}} оч. победы! Альянс {{ALLIANCE_TOP_2|AllianceLink}} сражался отчаянно и получил второе место в рейтинге, а альянс {{ALLIANCE_TOP_3|AllianceLink}} расположился на третьем месте.
+worldEnded_playerRanks_population;Игрок {{PLAYER_POPULATION_TOP_1|PlayerLink}} создал самую большую империю, за ним следуют игроки {{PLAYER_POPULATION_TOP_2|PlayerLink}} и {{PLAYER_POPULATION_TOP_3|PlayerLink}}.
+worldEnded_playerRanks_offender;Игрок {{PLAYER_OFFENDER_TOP_1|PlayerLink}} поразил больше всего врагов и признан самым устрашающим командиром.
+worldEnded_playerRanks_defender;Игрок {{PLAYER_DEFENDER_TOP_1|PlayerLink}} признан самым лучшим обороняющимся, отважно с мечом в руке встречая противника у ворот, орошая земли вокруг своих деревень кровью тех, кто посмел напасть на мирных жителей.
+rallyPoint_startWithValue;Запуск: ({{value}})
+rallyPoint_farmList_raidsStarted;Отправлено набегов: {{INT}}
+rallyPoint_farmList_CantAddToAbandonList;Вы не можете добавить цели в покинутый список целей.
+rallyPoint_farmList_CantActivateInToAbandonList;Вы не можете активировать цели в покинутом списке целей.
+rallyPoint_farmList_CantDuplicateInToAbandonList;Вы не можете копировать цели в покинутый список целей.
+rallyPoint_farmList_DuplicateRaids;Копировать [raidsAmount=1:цель][raidsAmount>1:цели]
+rallyPoint_farmList_SlotsDuplicated;[raidsAmount=1:Цель][raidsAmount>1:Цели] скопированы!
+rallyPoint_farmList_pleaseSelectTheList;Пожалуйста, выберите список, куда вы хотите добавить вашу цель.
+rallyPoint_farmList_farmlistFull;Список целей полон. Пожалуйста, выберите другой список или создайте новый.
+rallyPoint_farmList_targetName;Имя цели
+rallyPoint_farmList_differentTroopsWarning;Количество войск не будет изменено, если вы не перепишете их, введя новые значения.
+rallyPoint_farmList_noobProtectionWarning;Пока действует защита новичка, вы не можете совершать набеги на других игроков, но вам доступны набеги на незанятые оазисы и деревни Натар.
+rallyPoint_farmList_noFarmLists;Список целей не создан
+rallyPoint_farmList_CreateNewFarmList;Создать список целей
+rallyPoint_farmList_currentAmount;Списки целей <b>{{amount}}</b>/{{max}}
+rallyPoint_farmList_differentTribe;Деревня принадлежит другому народу. Пожалуйста, проверьте назначенные войска.
+rallyPoint_farmList_overrideTarget;Переписать цель
+rallyPoint_farmList_selectedActivated;Выбранные цели стали активными.
+rallyPoint_farmList_selectedDeactivate;Выбранные цели стали неактивными.
+rallyPoint_farmList_LastRaid;<b>Последний запуск:</b> <nobr>{{lastStarted|DateTime}}</nobr>
+mapCell_editTargetListAmount;<nobr>Редактировать цели</nobr> <nobr>(Списки: {{INT}})</nobr>
+goldShop_shopDisabled;Магазин покупки золота отключен в этом игровом мире.
+infobox_accountLockGameEnd;Игра закончилась!
+applySorting;Применить сортировку
+truppen.tid931;Ловушка
+truppen.tid931p;Ловушки
+rallyPoint_attackWW_blocked;Атаки на деревни с Чудесами света пока невозможны. Войска можно отправить не ранее: {{timestamp|DateTime}}
+mainMenu_switchBackFromAvatar;{{iconName|Sprite}} Вернуться к {{playerName}}
+pending; (в обработке)
+featureNotAvailableInVacationMode;Эта функция недоступна в режиме отпуска.
+notAllowed;Вы не можете выполнить это действие.
+settings_avatarDeletionInfo;Процесс удаления длится <b>3 дня</b>, то есть только через 72 часа персонаж будет удален полностью.\nУ персонажа, находящегося на удалении, отключена возможность пользоваться аукционом и пунктом обмена!\nВы можете в любое время отменить процесс удаления.
+settings_avatarDeletionCountDown;Персонаж будет удален через
+deleteAvatar_confirmation_header;Желаете удалить персонажа?
+cams_info_subHeader;Одна учетная запись для всех игровых миров
+cams_info_text;Создайте учетную запись лобби, чтобы получить доступ ко всем игровым мирам с помощью одного входа.
+cams_info_lessInfo;Меньше информации
+cams_info_Question_WhatIsLegendsLobbyAccount;Что такое лобби-аккаунт?
+cams_info_Answer_WhatIsLegendsLobbyAccount;С лобби-аккаунтом (учетной записью лобби) вам никогда не придется регистрироваться в новом игровом мире. Вы просто заходите в игру и получаете доступ к своим активным игровым мирам или открываете новый мир в лобби, будь то в браузере или в мобильном приложении.
+cams_info_Question_WhatAreAvatars;Кто такие персонажи?
+cams_info_Answer_WhatAreAvatars;С учетной записью лобби ваш профиль в игровом мире называется персонажем. У вас одна учетная запись в лобби, на которой может быть сохранено множество персонажей, по одному в каждом игровом мире.
+cams_info_Question_WhatsWithCurrentGameworlds;Что случится с текущими игровыми мирами?
+cams_info_Answer_WhatsWithCurrentGameworlds;Все активные игровые миры, в которых используется тот же электронный адрес, что и на вашей учетной записи лобби, будут связаны с учетной записью. Вы можете поменять свои текущие активные персонажи в игровых мирах на правильный адрес электронной почты до того, как будет создан ваш лобби-аккаунт.
+cams_info_Question_WhatsWithSitters;Могу ли я по-прежнему назначать заместителей?
+cams_info_Answer_WhatsWithSitters;Да, заместителей можно назначить, как обычно, в настройках игрового мира. Вы можете получить доступ к персонажу, к которому назначен заместитель, непосредственно в игровом мире.
+cams_info_Question_WhatsWithDuals;Могу ли я играть дуалом с другими игроками?
+cams_info_Answer_WhatsWithDuals;Дуалов можно назначить в определенном игровом мире, если ввести имя лобби-аккаунта дуала. Это означает, что дуалу необходимо зарегистрироваться в лобби, и он сможет получить доступ к персонажу через свое лобби после того, как примет приглашение стать дуалом. Пожалуйста, не сообщайте никому пароль от учетной записи лобби.
+cams_info_Question_WhatsWithoutLobbyAccount;Могу ли я играть, не создавая лобби-аккаунт Legends?
+cams_info_Answer_WhatsWithoutLobbyAccount;Вы по-прежнему можете зайти в свои текущие игровые миры, используя соответствующую ссылку. Однако, если вы хотите начать новый игровой мир или использовать мобильное приложение, вам необходимо зарегистрировать лобби-аккаунт.
+cams_playerDecision_register_info;Новая учетная запись лобби позволяет вам объединить текущий и будущие игровые миры под одним входом.
+cams_playerDecision_login_info;У вас уже есть учетная запись лобби?\n\nЗаходите в игру и продолжайте свое приключения.
+cams_playerDecision_register_header;Создать учетную запись
+cams_playerDecision_register_create_new_account;Создать учетную запись лобби
+cams_playerDecision_register_login;Войти в лобби
+cams_playerDecision_extra_info;Для игры в Travian: Legends вам необходимо создать учетную запись лобби .
+cams_register_header;Создать учетную запись лобби
+cams_register_email_label;Введите ваш адрес электронной почты
+cams_register_email_address;Зарегистрировать адрес электронной почты
+cams_register_email_address_missing;Пожалуйста, укажите адрес электронной почты
+cams_register_email_address_not_valid;Пожалуйста, укажите действительный адрес электронной почты. Например, immail@specific.com
+cams_register_email_address_already_exists;Ваш адрес электронной почты уже связан с учетной записью лобби .
+cams_register_redirecting_to_login;Перенаправление на страницу входа {{INT}}...
+cams_register_hintMessage_same_email_address;Используйте тот же адрес электронной почты, что и существующие персонажи в игровом мире, чтобы автоматически связать их с вашей учетной записи лобби.
+cams_register_receive newsletter;Я хочу получать рассылки.
+cams_register_already_have_an_account;Уже есть учетная запись?
+cams_register_log_in_now;Войти
+cams_acceptTOS;Нажав на «Регистрация адреса электронной почты» вы принимаете <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">Основные положения</link></style> и подтверждаете, что прочитали <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">Информация о праве на отзыв</link></style> и <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">Положения о защите данных</link></style>.
+cams_activation_header;Активировать учетную запись лобби
+cams_activation_info;Мы отправили вам ссылку для активации на адрес: <b>{{emailAdress}}</b><br>Пожалуйста, следуйте инструкциям в письме для продолжения.
+cams_activation_enter_code;Введите код активации:
+cams_activation_code_example;Например, 123456
+cams_activation_entered_code;{{INT}}/6 цифр
+cams_activation_cta_activate_account;Активировать учетную запись
+cams_activation_email_lost;Не получили письмо?
+cams_activation_email_resend;Отправить повторно
+cams_activation_email_wrong;Неправильный адрес электронной почты?
+cams_activation_email_change;Смена адреса электронной почты
+cams_activation_code_missing;Пожалуйста, введите код активации, который вы получили в письме.
+cams_activation_code_too_short;Код активации слишком короткий. Пожалуйста, введите все 6 цифр.
+cams_activation_code_format_incorrect;Неверный формат кода активации. Пожалуйста, убедитесь, что код состоит из шести цифр.
+cams_activation_code_incorrect;Неверный код активации. Пожалуйста, введите код активации, который вы получили в письме.
+cams_activation_code_expired;Срок действия кода активации истек.
+cams_activation_code_start_again;Начать заново
+cams_login_header;Войти в лобби Legends
+cams_login_enter_email;Введите ваш адрес эл. почты или имя учетной записи:
+cams_login_enter_password;Введите пароль
+cams_login_hintMessage_email_already_connected;Ваш адрес электронной почты уже связан с учетной записью лобби. Зайдите в игру или <style="SimpleLink"><link="BackToRegistrationLink">вернитесь к регистрации</link></style>.
+cams_login_hintMessage_passwordUpdated;Пароль успешно обновлен
+cams_forgot_password;Забыли пароль?
+cams_recover_password;Восстановить пароль
+cams_login_no_account_yet;У вас еще нет учетной записи?
+cams_login_create_account;Создать учетную запись
+cams_loginMask_accountNameRequired;Введите ваш адрес эл. почты или имя учетной записи.
+cams_loginMask_passwordRequired;Пожалуйста, введите пароль.
+cams_loginMask_passwordAndUsernameAreWrong;Неправильный адрес электронной почты, имя учетной записи или пароль.
+cams_loginMask_emailOrAccountName_placeholder;Имя учетной записи или E-Mail
+cams_loginMask_temporaryInfobox;НОВОЕ: Вам необходимо создать учетную запись лобби, чтобы получить доступ к игровым мирам.\n\nЕсли у вас еще нет учетной записи лобби, <style="SimpleLink"><link="CreateAccountLink">создайте ее</link></style>.
+cams_setPassword_header;Пожалуйста, установите пароль.
+cams_setPassword_info;Придумайте пароль к учетной записи , используя минимум 8 символов.
+cams_setPassword_enter_password;Выберите пароль:
+cams_setPassword_strength_label;Сила пароля
+cams_setPassword_strength_missing;Введите пароль и проверьте его надежность
+cams_setPassword_strength_1;очень слабый
+cams_setPassword_strength_2;довольно слабый
+cams_setPassword_strength_3and4;средний
+cams_setPassword_strength_5;довольно надежный
+cams_setPassword_strength_6;очень надежный
+cams_setPassword_strength_PasswordTooShort;Чем длиннее, тем лучше (16+ символов)
+cams_setPassword_strength_PasswordGoodLength;Пароль имеет хорошую длину
+cams_setPassword_strength_OneType;Использован только один тип знаков
+cams_setPassword_strength_TwoTypes;Использованы два типа знаков
+cams_setPassword_strength_ThreeTypes;Используются три типа знаков
+cams_setPassword_strength_NoNumbers;Цифры не используются
+cams_setPassword_strength_NoLetters;Буквы не используются
+cams_setPassword_strength_NoSpecialCharacters;Специальные символы не используются
+cams_setPassword_strength_NoUpperAndLowerCase;Нет смешения прописных и строчных букв
+cams_setPassword_strength_UpperAndLowerCase;Используются верхние и нижние регистры
+cams_activation_cta_set_password;Установить пароль
+cams_activation_password_length;8 - 16 символов
+cams_resetPassword_header;Установить новый пароль
+cams_resetPassword_info;Придумайте новый пароль к учетной записи , используя минимум 8 символов.
+cams_setUsername_header;Выберите имя для вашей учетной записи в лобби Legends
+cams_setUsername_info;Выберите имя игрока и тег, чтобы создать уникальную учетную запись лобби.
+cams_setUsername_username_label;Выберите имя:
+cams_setUsername_tagline_label;Выберите тег
+cams_setUsername_tagline_example;например, TAG12
+cams_setUsername_tagline;Тег:
+cams_setUsername_condition_onlyLettersAndNumbers;Только буквы и цифры
+cams_setUsername_username_condition_Length;3 - 15 символов
+cams_setUsername_tagline_condition_Length;2 - 5 символов
+cams_setUsername_hint;Комбинация имени и тега будет вашим уникальным именем в лобби. Пока комбинация свободна, вы можете выбрать любую, которая вам нравится.\n\nЭто не повлияет на имя в игровом мире.
+cams_setUsername_cta_createAccount;Создать учетную запись
+cams_setUsername_username_missing;Пожалуйста, введите имя игрока и тег.
+cams_setUsername_accountName_preview;Предварительный просмотр имени:
+cams_setUsernameConfirmPopup_header;Учетная запись лобби создана!
+cams_setUsernameConfirmPopup_info;Ваша учетная запись Legends с именем <b>{{playerName}}</b> была успешно создана.
+cams_setUsernameConfirmPopup_GameworldAndAvatar_header;Ваши игровые миры и персонажи
+cams_setUsernameConfirmPopup_GameworldAndAvatar_info;Мы привязали следующих персонажей к вашей новой учетной записи лобби .
+cams_avatar_name;Имя персонажа
+cams_looby_welcomeMessage;Добро пожаловать!\n<b>{{playerName}}</b>
+cams_looby_header;Ваши игровые миры
+cams_looby_noGameWorlds;У вас нет персонажа в этом игровом мире. Присоединяйтесь к новому игровому миру и начните игру.
+cams_looby_joinNewGameworld;Начать игру в новом мире
+cams_looby_playNow;ИГРАТЬ СЕЙЧАС
+cams_looby_gameworldsLinked;Игровые миры, связанные с вашей учетной записью
+cams_looby_invitePenging;[data>1:{{data}} приглашений][data=1:приглашение] в процессе
+cams_looby_localGameWorld;МЕСТНЫЙ ИГРОВОЙ МИР
+cams_looby_avatarInDeletion;На удалении
+cams_removeDualAccount_header;Удаление дуала
+cams_removeDualAccount_info;Желаете удалить <b>{{lobbyAccountName}}</b> из дуалов для своего персонажа <b>{{avatarName}}</b>?\n\n<b>{{lobbyAccountName}}</b> больше не будет иметь доступа к вашему персонажу.
+cams_removeDualAccount_removeDual;Удалить дуала
+cams_addDualPlayer_info;Введите имя учетной записи дуала
+cams_addDualPlayer_placeholder;имя_дуала#тег
+cams_addDualPlayer_addPlayer;[data>1:Добавить игроков][data=1:Добавить игрока][data=0:Добавить игрока]
+search_addDualPlayeradditionalEmptyResultInfo;Игрок не найден или уже приглашен в качестве дуала.
+cams_dualInventation_header;Приглашение в дуалы
+cams_dualInventation_invitations;Приглашения:
+cams_dualInventation_info;Если вы примете приглашение, то сможете зайти в игру под своей учетной записью, чтобы получить доступ к этому персонажу.
+cams_dualInventation_moreInfo;Вы можете принять только одно приглашение в дуалы для каждого игрового мира.
+cams_dualInventation_invite;Игрок <b>{{LobbyAccountName}}</b> приглашает вас в дуалы на персонажа <b>{{avatarName}}</b>
+cams_dualInventation_AcceptInvite;Принять приглашение
+cams_acceptDualInvitation_header;Принять приглашение в дуалы
+cams_acceptDualInvitation_info;Желаете принять приглашение от игрока <b>{{lobbyAccountName}}</b> и начать игру персонажем <b>{{avatarName}}</b> в игровом мире <b>{{gameworldName}}</b>?
+cams_acceptDualInvitation_moreInfo;У вас имеется несколько дуал-приглашений в один и тот же игровой мир, но вы можете принять только одно дуал-приглашение в каждый игровой мир.
+cams_acceptDualInvitation_avatarInDeletion;Согласно правилам игры о дуалах, у вас может быть только один персонаж в одном игровом мире. \nЕсли вы примете приглашение в дуалы, вы потеряете доступ к персонажу {{avatarName}}, который находится в процессе удаления в этом игровом мире. \nВы не сможете отменить удаление.
+cams_dualSettings_header;Настройки дуалов
+cams_dualSettings_info;Вы можете прекратить игру дуалом для этого персонажа в любое время.
+cams_dualSettings_leaveDualPlay;Отказаться от игры дуалом
+cams_confirmLeaveDualPlay_info;Вы действительно желаете перестать быть дуалом персонажа <b>{{avatarName}}</b> в мире <b>{{gameworldName}}</b>?\n\nПерестав быть дуалом, вы можете создать нового персонажа или стать дуалом другого игрока в том же игровом мире.
+cams_recoverPassword_header;Восстановить пароль
+cams_recoverPassword_goBackToLogin;Назад к входу
+cams_recoverPassword_info;Введите адрес электронной почты, связанный с вашей учетной записью лобби. Мы вышлем вам инструкцию, как сбросить пароль.
+cams_recoverPasswordEmailSent_header;Письмо отправлено
+cams_recoverPasswordEmailSent_info;Если для адреса электронной почты <b>{{emailAdress}}</b> существует учетная запись лобби, мы отправили вам инструкцию по сбросу пароля.\n\nКак только вы восстановите пароль, вы сможете снова войти в игру.
+cams_recoverPasswordEmailSent_goBackToLogin;Назад к экрану входа
+cams_editDualAccounts_header;Дуалы
+cams_editDualAccounts_gameworld;Игровой мир: {{gameworldName}}
+cams_editDualAccounts_avatar;Персонаж: {{avatarName}}
+cams_editDualAccounts_avatarOwner;Владелец персонажа:
+cams_editDualAccounts_noDualsAdded;- Для этого персонажа не добавлены дуалы -
+cams_editDualAccounts_info;Дуалы получают <b>полный доступ</b> к персонажу и могут выполнять все действия в игре, включая трату и покупку золота.\n\nДуал игроки могут зайти в игру под своей учетной записью, чтобы получить доступ к этому персонажу, и НЕ могут пригласить других дуалов.
+cams_editDualAccounts_warningHint;Не сообщайте другим игрокам данные о вашей учетной записи лобби, чтобы предотвратить нежелательный доступ к персонажам в других игровых мирах и данным вашей учетной записи.
+cams_editDualAccounts_addDualPlayer;Добавить дуала
+cams_editDualAccounts_avatarInDeletion;Ваш персонаж {{avatarName}} в этом игровом мире удаляется. По этой причине вы не можете отправить приглашение в дуалы.
+cams_settings_title;Настройки
+cams_settings_changePassword_information;Чтобы изменить пароль, мы отправим письмо на адрес электронной почты, указанный в учетной записи.
+cams_settings_changePassword_sendEmail;Отправить
+cams_settings_changePassword_emailSent;Мы отправили вам электронное письмо с предложением изменить пароль.
+cams_settings_accountDeletion_title;Удаление лобби-аккаунта
+cams_settings_accountDeletion_info;Удалить учетную запись лобби в Legends, а также все игровые миры и всех персонажей этой учетной записи.
+cams_settings_accountDeletion_action;Удалить учетную запись лобби
+cams_settings_accountDeletion_warning;Предупреждение: Это действие необратимо.
+cams_settings_accountDeletion_warning_content;Удаление учетная записи лобби становится необратимым через 72 часа и затрагивает все ваши персонажи. \n\nУчетную запись можно удалить только в том случае, если все ваши текущие персонажи находятся в процессе удаления.
+cams_settings_accountDeletion_requirementsInformation;Для удаления учетной записи все ваши персонажи должны быть в процессе удаления.
+cams_settings_accountDeletion_information_warning;Это действие поставит вашу учетную запись на удаление. Пожалуйста, подтвердите, что вы знаете, что ваша учетная запись, все связанные с ней персонажи и данные будут удалены навсегда, если вы наберете «удалить» в поле ввода данных.
+cams_settings_accountDeletion_information_error;Вы не можете удалить учетную запись, если персонаж не поставлен на удаление.\nПожалуйста, зайдите в ваши игровые миры и поставьте персонажей на удаление.
+cams_settings_accountDeletion_noAvatarsFound;Нет активных игровых миров/персонажей.\nТеперь вы можете продолжить.
+cams_settings_accountDeletion_understandmentConfirmation;Я понимаю
+cams_settings_accountInDeletion_title;Учетная запись удаляется
+cams_settings_accountInDeletion_info;Учетная запись лобби <b>{{NAME}}</b> будет удалена навсегда через <b>{{TIMESTAMP|Countdown}}</b>.
+cams_settings_accountInDeletion_action;Отменить удаление
+cams_mainMenu_dataConsent;Согласие на использование данных
+gameworld_gameworld;Игровой мир
+infobox.productionboost;{{RES}}{{TIME_COUNTER}}
+infobox_notesCount;{{COUNT}} заметка[COUNT>1:заметки]
+auction_placeBid;Сделать ставку
+auction_auctionsAmount;Аукционов: {{COUNT}}
+auction_bidsRefreshed;Ставки обновлены!
+auction_currentSilver;Текущее серебро:  {{iconName|Sprite}} {{currentSilver}}
+auction_availableAmount;Доступное количество:
+auction_toSellAmount;Сумма продажи:
+auction_selectAmountToSellHeader;Выберите количество для продажи
+auction_soldHorseForSilver;Продать лошадь за {{amount}} серебра.
+auction_currentCurrency;Текущее:
+auction_newCurrencyValues;Новое:
+auction_exchangeExplanationGoldToSilverTitle;Вы можете обменять золото на серебро, чтобы купить предметы героя на аукционе.
+auction_exchangeExplanationGoldToSilverMore;Укажите количество золота, которое вы желаете обменять:
+auction_exchangeExplanationSilverToGoldTitle;Вы можете обменять серебро от продажи предметов героя на золото, чтобы купить предметы героя на аукционе.
+auction_exchangeExplanationSilverToGoldMore;Укажите количество серебра, которое вы желаете обменять:
+auction_countAndName;{{AMOUNT}}×{{ITEM_NAME}}
+auction_deleteAll;Удалить все аукционы
+auction_confirm_deletion_title;Удалить [data>1:{{data}} записей][data=1:запись] аукциона
+auction_confirm_deletion_button;Удалить [data>1:записей][data=1:запись]
+auction_confirm_deletion_text_header;Вы уверены, что хотите удалить [data>1:{{data}} записей аукциона][data=1:эту запись аукциона]?
+auction_confirm_deletion_text;После того как Вы удалите запись, она исчезнет навсегда. Вы не сможете восстановить его.
+cams_looby_noMatchingGameworlds;Нет игровых миров, соответствующих Вашему запросу.
+serverSelection_5;Разработчики
+serverSelection_header;Выберите фильтр игровых миров
+serverSelection_filter_gameworldSpeed;Скорость мира
+serverSelection_gameworldSpeed;x{{INT}}
+serverSelection_filer_gameworldLifetime;Время жизни игрового мира
+serverSelection_gameworldLifetime;{{INT}}-{{INT2}} дн.
+serverSelection_gameworldLifetime_XorMore;{{INT}} или более дней
+filters_applyButton;Применить [COUNT<2:фильтр][COUNT>1:{{COUNT}} фильтра]
+filters_reset;Сбросить [COUNT<2:фильтр][COUNT>1: фильтра]
+cams_avatarCreation_cancel_title;Отменить создание персонажа
+cams_avatarCreation_cancel_reconfirmationText;Вы уверены, что хотите отменить создание персонажа в мире {{gameworldName}}?
+cams_avatarCreation_cancel_explanation;Вы потеряете весь свой прогресс в этом игровом мире, включая выбор народа, положение на карте и имя персонажа.
+cams_avatarCreation_button_startPlaying;Начать игру
+cams_avatarCreation_button_changeSector;Изменить позицию
+cams_avatarCreation_button_selectTribe;Выбрать народ
+cams_avatarCreation_button_updateTribe;Обновить народ
+cams_avatarCreation_button_selectSector;Выбрать позицию
+cams_avatarCreation_button_updateSector;Обновить позицию
+cams_avatarCreation_name_title;Введите имя персонажа:
+cams_avatarCreation_name_tip;Это имя вашего персонажа в игровом мире.
+cams_avatarCreation_name_errorEmpty;Пожалуйста, введите имя персонажа.
+cams_avatarCreation_name_placeHolder;Имя персонажа
+cams_looby_avatarInDeletionBlockPlayNow;Вы приняли дуал-приглашение в этот игровой мир ({{gameworldName}}), поэтому вы не можете зайти в него иначе, чем дуалом.
+connectionIssue_header;Нестабильное соединение
+connectionIssue_info;В данный момент мы не можем установить связь с сервером. Это может быть вызвано нестабильным подключением к Интернету.\n\nВы можете подождать или...
+connectionIssue_tryAgain;Закройте всплывающее окно и попытайтесь еще раз.
+connectionIssue_restart;Перезапустить приложение
+infobox_openMessage;Открыть сообщение
+infobox_accountIsLocked;Ваш персонаж был заблокирован.
+auction_button_requirement;Пройдите {{REQUIRED}} приключений, чтобы открыть аукцион.\nОсталось: {{INT}}
+auction_availableSilver;Доступное серебро:  {{iconName|Sprite}} {{currentSilver}}
+auction_deleteSelected;Удалить выбранные аукционы
+auction_deletedAll_confirmation;Все аукционы удалены
+auction_deletedSelected_confirmation;Удалено {{data}} [data>1:записей][data=1:запись] аукциона!
+newVersionAvailable_title;Доступна новая версия
+newVersionAvailable_description;Мы улучшили наше приложение. Пожалуйста, обновите игру, чтобы продолжить игру.
+newVersionAvailable_joinDiscord;Что нового? Присоединяйтесь к Discord, чтобы узнать больше.
+newVersionAvailable_toStore;Обновить сейчас
+infobox_beginnerProtection_title;Продлить защиту новичка
+infobox_beginnerProtection_question;Вы уверены, что хотите продлить вашу защиту?
+infobox_beginnerProtection_description;Вы не можете отправлять ресурсы другим игрокам во время защиты новичка, а также атаковать их или быть атакованными другими игроками.
+sendResources_beginnersProtection;Вы не можете отправить ресурсы другим игрокам, пока вы находитесь под защитой новичка.
+sendTroops_beginnersProtection;Вы не можете отправлять войска другим игрокам, пока вы находитесь под защитой новичка.
+sendTroops_otherBeginnersProtection;Вы не можете отправлять войска другим игрокам, пока они находятся под защитой новичка.
+buildingActivities_building_36;Ловушки в производстве
+tasks_collectAll;Собрать все ({{INT}})
+auction_bidMinPlaceholder;Мин. {{INT}}
+auction_buttonBidMinimum;Требуется минимальная ставка
+hero_adventures_available;Доступные приключения
+messages_freshDeskMessage_viewAndReplyInBrowser;Посмотреть и ответить в браузере
+messages_webViewRecommendation;Содержание сообщения может быть не полным.\nРекомендуем просмотреть сообщение в браузере.
+rateThisApp_popup_title;Нравится приложение?
+rateThisApp_popup_description;Если вам нравится приложение, пожалуйста, потратьте время и оцените его.
+rateThisApp_popup_appreciatefeedback;Ваш отзыв важен для нас!
+rateThisApp_popup_btn_positive;Отлично!
+rateThisApp_popup_btn_negative;Могло быть и лучше
+rearrange_or_demolish_building;Переместить или снести здание
+mainBuilding_buildingArrangement;Перестановка зданий
+mainBuilding_openRearrangeMode;Открыть режим перестановки
+mainBuilding_demolishBuildings;Снести здание
+mainBuilding_openDemolishMode;Открыть режим сноса
+mainBuilding_demolishBuildings_description;Перемещайте здания , чтобы изменить их положение.
+rearrangeBuildingPopup_rearrangeDescription;Переместить <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>?
+rearrangeBuildingPopup_buildingsRearranged;Здания переставлены
+rearrangeBuildingPopup_buildingRearranged;{{buildingName|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>{{buildingLevel}}</color>
+confirmRearrangeBuildingPopup_header;Вы хотите переместить следующее здание?
+confirmRearrangeBuildingPopup_description;Перемещает здания в деревне <b>{{villageName}}</b>.
+demolishBuildingPopup_title;Снести здание
+demolishBuildingPopup_description;Выберите здание , которое вы хотите снести.
+demolishBuildingPopup_descriptionWithSelection;Желаете снести <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>?
+demolishBuildingPopup_demolishLevel;Снести уровень
+demolishBuildingPopup_demolishCompletely;Снести полностью
+confirmDemolishBuildingPopup_header;Желаете снести <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color> немедленно?
+confirmDemolishBuildingPopup_description;Немедленно уничтожает выбранное здание и удаляет его из вашей деревня.\nЭто действие необратимо.
+characterCount;{{COUNT}}/{{MAX}} символов
+survey_button_description_reward;Примите участие в коротком опросе, чтобы помочь нам улучшить приложение Travian: Legends.\nВаша поддержка будет вознаграждена.
+cams_lobby_joinGameworld;Начать игру в мире
+cams_lobby_gameworld_inviteOnly;Только по приглашению
+cams_lobby_gameworld_inviteOnlyInfo;В этот игровой мир могут войти игроки, имеющие особый код приглашения.
+cams_lobby_gameworld_inviteCodeEnter;Ввести код приглашения
+cams_lobby_gameworld_inviteCodeInfo;В этот игровой мир могут войти игроки, имеющие особый код приглашения.\nЕсли он у вас есть, пожалуйста, введите его, чтобы присоединиться к игровому миру.
+cams_lobby_gameworld_inviteCodePlaceholder;Например, eThbt5OLyZ8D5xjhUaBAba
+cams_lobby_gameworld_inviteCodeErrorCharacterCount;Код приглашения слишком короткий. Пожалуйста, введите не менее {{MAX}} знаков.
+cams_lobby_gameworld_inviteCodeCooldown;Отсчет кода приглашения ({{TIME|Countdown}})
+timeCountDown;{{TIME|Countdown}}
+attestation_failed;Аттестация устройства не удалась! Пожалуйста, используйте мобильное устройство.\nЕсли проблема сохранится, воспользуйтесь кнопкой помощи ниже, чтобы обратиться в службу поддержки!
+mainBuilding_demolishBuildings_notAvailable;Для сноса здания необходимо Главное здание {{INT}} уровня.
+mainBuilding_demolishBuildings_demolishing;Сносит здание <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> до <b><color={{colorValue|TextColor}}>уровня {{buildingLevel}}</color></b> в {{timestamp|Countdown}}.
+demolishBuildingPopup_demolishing;Сносит здание <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> до <b><color={{colorValue|TextColor}}>уровня {{buildingLevel}}</color></b>
+allianz.hinweis_text_NoConfederacy;Следуя дипломатическому этикету, сперва необходимо установить связь с другим альянсом, прежде чем отправлять предложение о заключении пакта о ненападении.
+regions_canBeSettled;Может быть заселен?
+regions_regionStatusNoColon;Статус региона
+regions_top5AlliancesPopulation;<b>Население</b> топ-5 альянсов:
+regions_top5AlliancesVillages;<b>Деревни</b> топ-5 альянсов:
+regions_neighboringRegions;Соседние регионы
+regions_regionPopulation;Население региона
+regions_contested;Регион спорный
+cams_lobby_gameworld_disabledAndNotSupported;В настоящий момент игровой мир недоступен из мобильного приложения.
+demolishBuildingPopup_impossible;Это здание нельзя снести.
+city_benefits;Преимущества города
+city_benefits_threeAdditionalSlots;Три дополнительных слота строительства
+city_benefits_resourceFieldsLevel12;Возможность улучшения ресурсных полей до 12 уровня
+city_benefits_watchTowers;Укрепление стены дозорными башнями
+city_upgradeToACity;Даровать деревне {{villageName}} привилегии города
+city_culturePointsForNext;(до следующего слота {{culturePoints}} единиц культуры)
+city_upgradeVillage;Улучшить деревню
+city_confirm_upgradeVillage;Сделать деревню городом
+city_confirm_header;Желаете повысить деревню {{villageName}} до города?
+city_confirm_description;Чтобы даровать деревне статус города, потребуется {{time}} и один из слотов поселения.
+city_upgrading;{{villageId|VillageLink}} {{text}}
+city_upgraded;{{villageId|VillageLink}} уже является городом.
+combatSimulator_selectTarget;Выберите цель
+mainMenu_goToLobby;В лобби
+mainMenu_yourPlayerProfile;Ваш игровой профиль
+plus.plusAttackWarningText;Нападения на ваши деревни и оазисы будут отображены в списке деревень. Только для мобильных устройств: в режиме просмотра деревни справа будет подсвечена стрелка, открывающая список деревень.
+production.crobBalanceTroopConsumptionAncientPower;Бонус древней силы
+filters_region_not_found;Регион не существует
+rallyPoint_troopsOverview_ownTroops_8;Свои войска в 
+rallyPoint_troopsOverview_ownTroops_9;Свои войска в 
+tradeOffice_merchantsCarryCapacity;Грузоподъемность торговцев:
+tradeOffice_tradeShipsCarryCapacity;Грузоподъемность торгового корабля:
+buildingActivities_building_48;Войска исцеляются
+playerDetails_victorPointsPerDay;{{PERDAY}} /сутки
+allianz.numIncomingRaids;{{NUM_ATTACKS}} набегов[NUM_ATTackS>1:с]
+allianz.numIncomingAttacks;{{NUM_ATTACKS}} атак[NUM_ATTackS>1:с]
+allianz.MerchantCapacityAndSpeedNew;Торговля
+alliance_regionalTabButton;Региональный
+alliance_regionalTabTop5Description;Регионы, в которых ваш альянс входит в топ-5 альянсов по территориальному контролю.
+alliance_regionalTabTitle;Региональный топ 5
+alliance_regionalTabTop5Empty;- Отсутствие достаточного территориального контроля в регионах -
+alliance_ShowDetails;Показать детали
+regions_withFactions_yourFactionHasMoreThan50PercentSecured;Твой альянс достиг >{{PERCENT}} регионального контроля.<br><br>Вам нужна сокровищница, чтобы активировать региональную силу.
+wall_upgradesInProgress;Идет процесс модернизации
+extension_upgradeStarted;Модернизация успешно начата!
+extension_constructionList;Перечень строительных работ
+upgradeLevel;Уровень модернизации
+infoTab_upgradingToLevelForExtension;Идет модернизация {{buildingName}} до уровня {{level}}:
+infoTab_genericCurrentlyForExtension;Текущий бонус {{buildingName}}, включающий {{extensionName}}:
+infoTab_genericAtLevelForExtension;На уровне {{a}} с {{extensionName}} уровня {{b}}:
+ratioValuesNumeratorBold;<b>{{a}}</b>/{{b}}
+infoTab_productionCosts_title;Стоимость производства
+harbour_shipsInConstruction;Строящиеся корабли
+unitInfo_troopsCarriage;до <b>{{INT}}</b> воинов
+unitInfo_velocityRaid;Для набегов:
+city_benefits_resourceFieldsLevel12inCapital;Улучшайте ресурсные поля до 12-го уровня, но в своей столице вы можете улучшить их еще сильнее.
+infoTab_genericCurrentlyMoreExplicit;Текущий {{buildingName}} бонус:
+merchant_merchantOverview_noIncomingDeliveries;- Нет входящих доставок. -
+merchant_merchantOverview_noOutgoingDeliveries;- Нет исходящих доставок. -
+merchant_merchantOverview_incoming;Входящие ({{INT}})
+merchant_merchantOverview_outgoing;Исходящие ({{INT}})
+achievementQuests.achQuest_03_Territory_step_01_description;Отправьте войска в набег или атаку на деревню Натар. Задание считается выполненным, как только ваши войска прибудут к месту назначения, даже если они погибнут в ходе боя.<br><br>За это задание можно получить очки {{NUMBER_OF_TASKS_PER_DAY}} лишь один раз в сутки.\n
+allianz.MerchantCapacityTitle_Harbours;Бонус к грузоподъемности и скорости торговцев/кораблей
+market_tradeRoutes_invalidTarget_Territory;Торговые пути можно установить только между своими деревнями.
+market_selectResources;Выберите ресурсы
+market_selectResources_requiredTradeShips;Необходимые торговые корабли
+market_resourcesWillBeSendByTradeShip;Сырье будет отправляться на торговом корабле.
+manual.gid38_Territory;Большой склад вмещает в себя в 3 раза больше ресурсов, чем обычный Склад.<br><br>Здание может быть построено только с соответствующей древней силой.
+manual.gid39_Territory;Большой амбар вмещает в себя в 3 раза больше ресурсов, чем обычный амбар.<br><br>Здание может быть построено только с соответствующей древней силой.\n
+harbour_noAvailableShips;В настоящее время в этой гавани нет ни одного корабля.
+harbour_destroy_title;Уничтожить корабли
+harbour_destroy_desc_title;Выбери тип и количество кораблей которые вы хотите уничтожить.
+harbour_destroy_desc;Уничтожены могут быть только корабли, находящиеся в гавани. Вы не получите возмещение ресурсов, затраченных на их постройку.
+harbour_destroy_timeNotice;Корабли будут немедленно уничтожены.
+harbour_destroy_selectedTotalAmount;Выбранные корабли: <b>{{AMOUNT}}</b>
+harbour_destroy_shipSelectTitle;<b>{{ShipID|TranslateSuffixFor|gid49.type_t}}</b> (<b>{{Amount}}</b> кораблей[Amount>1:s] размещены здесь)
+extension_fullyExtended;{{NAME}} Эти здания отстроены полностью.
+extension_willBeFullyExtended;{{NAME}} Эти здания отстроены полностью.
+layout.directLinkMarketplaceTrader;Доступные торговцы: {{INT}} / {{INT2}}
+UnitProduction_ViewBuildingList;Посмотреть список зданий
+raidList_useRaidShipsInfo;Рейдовые корабли используются автоматически, когда они доступны Если у вас закончились рейдовые корабли, ваши войска будут путешествовать как обычно.
+buildingActivities_maxReached;Достигнут максимальный лимит
+buildingActivities_building_49;Корабли в процессе сборки
+buildingActivities_buildingAdditional_48;Нет раненых войск
+residence_expansion_villagesRatio;Деревни: {{COUNT}}/{{MAX}}
+residence_expansion_slotFree;Слот не используется.
+residence_expansion_slotPrerequisites;Условия <b>{{BuildingID|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>уровень {{Level}}</color></b>
+residence_expansion_culturePointsPerDay;Производство культуры в день
+search_region;Поиск по региону
+search_select_region;Выбрать регион
+statistiken.progressionStepTitle_start_achieved;Игровой мир начался {{VALUE}}
+statistiken.progressionStepTitle_serverEnd_locked;Игровой мир завершится {{VALUE}}
+filters_artefact_not_found;Артефакт не существует
+sendTroops_settlersChangeTribe;Для первых {{INT}} оснований деревень вы можете выбрать народ будущей деревни. Выбирайте вдумчиво.
+gid17.nextTradingRoute;Следующий торговый путь начнется в <b>{{HOUR}}</b> и ему потребуется <b>{{MERCHANTS}}</b> [MERCHANTS>1:торговцев][MERCHANTS=1:торговец].
+gid17.nextTradingRouteWithShips;Следующий торговый путь начнется в <b>{{HOUR}}</b> и ему потребуется <b>{{SHIPS}}</b> [SHIPS>1:торговых кораблей][SHIPS=1:торговый корабль].
+market_tradeRoutes_merchants;[merchants>1:{{merchants}} торговцев][merchants=1:{{merchants}} торговец]
+market_tradeRoutes_tradeShips;[tradeShips>1:{{tradeShips}} торговых кораблей][tradeShips=1:{{tradeShips}} торговый корабль]
+market_tradeRoutes_repeats;{{repeats}}: x
+market_tradeRoutes_usesShip;Используются корабли
+troopsCheckout_shipUseInfo;{{Distance}} клетки | {{ShipID|Bold}} | Сэкономьте {{duration|Bold}} ч.
+troopInfoPopup_shipsTitle;Корабли расположены в деревне
+language_nl-NL;Нидерландский
+cropfinder_cropperType;Тип зерновой клетки:
+valueInBrackets;({{VALUE}})
+residence_settlementSlotsUsed;Использованные слоты поселений
+residence_settlementCPNeededForNextSlot;Очки культуры необходимые для следующего слота поселения:
+gid27.ancient_power_detail_;{{INT}}
+artefact_effect_value;Влияние: <b>{{EFFECT}}</b>
+ancientPower_overview;Региональные силы
+ancientPower_no_ancientPower;На этом сервере нет древней силы
+ancientPower_tip_large;Для использования великих древних сил требуется сокровищница <b> 20</b> уровня. Они влияют на <b>все ваши деревни</b>
+ancientPower_tip_small;Для использования маленьких древних сил требуется сокровищница <b>10</b> уровня. Они влияют на <b>деревню</b>, где они активированы
+ancientPower_tip_nearby;Древние силы в окрестностях {{villagenamelong|Bold}}
+ancientPower_stored_title;Региональные силы под контролем альянса
+ancientPower_stored_noContent;Ваш альянс не контролирует ни одного региона
+ancientPower_stored_nextFree;Следующая бесплатная активация доступна в: [isFree=0:<color={{colorValue|TextColor}}>]{{timeStamp|Countdown?Bold}}[isFree=0:</color>]
+ancientPower_stored_notActivatable;Отсутствуют древние силы, готовые к активации.
+ancientPower_stored_activated;Древняя сила активирована.
+ancientPower_stored_alreadyActive_account;У вас уже активирована одна древняя сила, влияющая на все ваши деревни.
+ancientPower_stored_alreadyActive_village;У вас уже есть одна активная древняя сила, которая действует на эту деревню.
+ancientPower_stored_alreadyActive;Эта древняя сила уже активирована.
+filters_ancientPower_not_found;Древняя сила отсутствует
+regions_withFactions_yourAllianceHasMoreThan50PercentSecured;Ваш альянс достиг >{{PERCENT}}% регионального контроля.<br><br>Вам нужна сокровищница, чтобы активировать региональную силу.
+language_en-NT;Язык разработки
+settings_notNow;Не сейчас
+settings_dontAskAgain;Не спрашивай больше.
+cams_lobby_gameworld_lastPlayedTime;{{TIME}}ч
+cams_settings_DirectLoginTitle;Непосредственный вход в игровой мир
+cams_settings_DirectLoginInfo;Пропустить выбор игрового мира в лобби Legends и войти в последний игровой мир, в котором вы играли, непосредственно при открытии приложения.
+cams_settings_DirectLoginActive;Непосредственный вход активирован
+cams_settings_DirectLoginInactive;Непосредственный вход деактивирован
+cams_directLoginPopUp_Info;Хотите, чтобы при запуске приложения вы сразу попадали в игровой мир?
+cams_directLoginPopUp_youCanChange;Вы можете в любой момент изменить свой выбор в настройках лобби.
+cams_directLoginPopUp_Accept;Да, хочу непосредственный вход
+language_ro-RO;Румынский
+language_hu-HU;Венгерский
+language_ar-AE;Арабский
+autoLoginFailed.;Ошибка автоматического входа.
+needInternetToPlay;Для игры требуется подключение к интернету. Пожалуйста, проверьте ваше подключение к интернету и попробуйте снова.
+mapCellInfoWindow_removeFromLists;Убрать из всех списков
+removeFromListsPopup_Title;Желаете удалить {{TARGETNAME}} из {{INT}} списков выбранных целей?
+removeFromListsPopup_Description;Позже вы сможете снова добавлять цели в списки для нападений.
+removeFromListsPopup_ConfirmButton;Убрать цель
+social_continueWith;Или продолжить с:
+social_loginWith;Или войти в систему с помощью:
+social_backToRegistration;Вернуться к регистрации
+social_createAccountTitle;Создать учетную запись лобби
+social_errorTitle_NoEmailProvided;Отсутствует разрешение на отправку электронной почты
+social_errorMsg_NoEmailProvided;Чтобы начать играть в Travian: Legends, нам нужно ваше <b>разрешение на доступ к вашему электронному адресу.</b>
+social_errorInfo_NoEmailProvided;Пожалуйста, попробуйте снова с правильными настройками разрешений или используйте другой способ регистрации.
+social_errorTitle_AlreadyExists;Этот адрес электронной почты уже используется.
+social_errorMsg_AlreadyExists;Указанный адрес электронной почты уже используется в лобби Travian: Legends.
+social_errorInfo_AlreadyExists;Для входа в систему используйте адрес электронной почты, привязанный к вашему аккаунту.
+social_acceptTOS;Нажимая "Подтвердить", вы принимаете <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">Основные положения</link></style> и подтверждаете, что прочитали <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">Информация о праве на отзыв</link></style> и <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">Положения о защите данных</link></style>.
+linkNotWorking;Ссылка не работает.
+linkNotWorkingDescription;Вероятно, эта ссылка сейчас не работает в приложении Travian: Legends. Возможно, она будет работать в вашем интернет-браузере.
+openLinkInBrowser;Открыть ссылку в браузере
+settings_language_useArabicNumerals_activated;Использование восточных арабских цифр активировано
+settings_language_useArabicNumerals_deactivated;Использование восточно арабских цифр деактивировано
+artefact_inventory_active_empty;Никаких активированных артефактов
+social_errorTitle_Unknown;Неизвестная ошибка
+social_errorMsg_Unknown;Возникла неизвестная ошибка. Пожалуйста, попробуйте еще раз.
+loadingScreen_text_01;Ваш герой поправляет волосы, пожалуйста, подождите.
+loadingScreen_text_02;Амбар переполнен. Деревенские жители теперь хранят зерно в карманах.
+loadingScreen_text_03;Посольство устраивает вечеринку – только для дипломатов.
+loadingScreen_text_04;Место сбора стало местом для пикника – солдаты наслаждаются сэндвичами.
+loadingScreen_text_05;Кузнец выковывает меч... из спагетти.
+loadingScreen_text_06;Архитекторы читают чертеж... вверх ногами.
+loadingScreen_text_07;Натары присоединились к деревенскому книжному клубу. Никто не знает, как читать древние руны.
+loadingScreen_text_08;Разведчики подсчитывают вражеские войска... но у них закончились пальцы.
+loadingScreen_text_09;Чудо света подверглось атаке голубей. Отправка уборочной бригады.
+loadingScreen_text_10;Ополченцы требует создания профсоюза – готовьтесь к забастовкам.
+loadingScreen_text_11;Войска отказываются атаковать, пока кто-нибудь не объяснит, что такое боевой симулятор.
+loadingScreen_text_12;Жители деревни прекратили работу, чтобы посмотреть, как дерутся два цыпленка.
+loadingScreen_text_13;Ваши катапульты спорят, какое здание поразить первым.
+loadingScreen_text_14;Пожалуйста, будьте терпеливы – герой выбрал Deutsche Bahn вместо лошади.
+loadingScreen_text_15;Тайник скрывает не только ресурсы, но и деревенские сплетни.
+loadingScreen_text_16;В казармах проходит шоу талантов - тренировки откладываются.
+loadingScreen_text_17;Ваша стена почти готова. Просто жду, когда высохнет краска.
+loadingScreen_text_18;Легионеры потребовали сделать перерыв на кофе перед маршем.
+loadingScreen_text_19;Галлы объясняют Римлянам, что такое изгородь, - прошло уже 3 часа.
+loadingScreen_text_20;Чтобы ускорить доставку, торговцам дают взятки.
+loadingScreen_text_21;Ваш герой проходит курс верховой езды – это может занять некоторое время.
+loadingScreen_text_22;Обоз торговцев задержался из-за медленного вола.
+loadingScreen_text_23;Лидеры альянса составляют план сражения... используя пальчиковые краски.
+loadingScreen_text_24;В амбаре полно печенья - управление ресурсами в лучшем виде.
+loadingScreen_text_25;Разведка прервана - что-то попало в око Хеймдалля.
+changeAccountNameSubtitle;Изменить имя и/или сокращение
+changeAccountNamePleaseNote;Пожалуйста, обратите внимание, что после смены имени аккаунта вам придется подождать {{DAYS}} [DAYS>1:дн.][DAYS=1:день], прежде чем вы сможете изменить его снова.
+changeAccountNameWaiting;Вам нужно подождать, прежде чем вы сможете снова изменить свое имя:
+changeAccountNameUpdated;Название Учетная запись обновлено
+changeAccountNameUpdatedSubtitle;Имя вашей учетной записи успешно изменено на: <b>{{playerName}}</b>
+alliance_top10Title;Топ-10 альянса (внутренний)
+gameworldCalendarNoGameworld;Предстоящие игровые миры не найдены. \nВозможно, они загружаются или не запланированы.
+gameworldCalendar_title;Календарь игровых миров
+valueWithModifierBefore;x{{value|Round|2}}
+goldShop_purchaseCanceled;Покупка отменена!
+goldShop_pendingRestored;Ваша предыдущая покупка была успешно восстановлена.
+hero_consumablePopup_healthByOintment;Здоровье, получаемое за одну мазь:
+unknown;?
+serverSelection_gameworldSpeed_short;x{{INT}}
+gameworldCalendarDetails_title;Информация об игровом мире
+gameworldCalendarDetails_shareLink;Поделиться ссылкой на игровой мир
+gameWorldEndCondition;Условие победы (в игровом мире)
+gameWorldEndCondition_WonderOfTheWorld;Чудо Света {{Level}}
+gameWorldEndCondition_VictoryPoints;Победные очки
+gameWorldRestriction_InvitationCode;Этот игровой мир доступен только игрокам со специальным пригласительным кодом.
+gameWorldRestriction_MobilePlayers;Этот игровой мир доступен только для мобильных игроков.
+gameWorldSpecial;Это особый игровой мир, который может быть доступен только в течение ограниченного времени и может иметь особенности, отличные от классических игровых миров.
+gameWorldUndefinedDetails;Еще не все детали игрового мира определены. Вы получите уведомление в вашем лобби, как только они будут обновлены.
+bonusValueWithPercentNoSpace;+{{value}}%
+startDate;Дата старта
+startTime;Время старта
+UTC+1;(UTC+1)
+goldShop_GoldPromotion;Акция на Золото
+auction_FeePopupTitle;Аукционный сбор
+auction_FeePopupText;Вы должны заплатить комиссию в размере {{value}}% от продаж на аукционе. Ваша выплата — это цена продажи за вычетом аукционного сбора.
+auction_FeePopupExample;Пример расчета
+auction_FeePopupSalePrice;Цена продажи
+auction_FeePopupFee;Аукционный сбор ({{value}}%)
+auction_FeePopupPayout;Выплата
+auction_sellHouseFeeInfo;Ваша выплата — это цена продажи за вычетом {{value}}% аукционного сбора.
+gold_action_finishImmediately;Завершить моментально
+mapCellInfoWindow_villageReports;Показать сводки по деревням
+hero_crafting_title_refine;Улучшить снаряжение
+hero_crafting_title_smelt;Выплавить снаряжение
+hero_crafting_title_forge;Выковать снаряжение
+hero_crafting_title_reforge;Перековать снаряжение
+hero_crafting_action_refine;Улучшить
+hero_crafting_action_smelt;Выплавить
+hero_crafting_action_forge;Кузница
+hero_crafting_action_takeMaterials;Взять ({{INT}}/{{MAX}}) материалов
+hero_crafting_action_takeAllMaterials;Взять материалы
+hero_crafting_action_reforge;Перековать
+hero_crafting_action_take;Взять
+hero_crafting_action_pick;Выбрать предмет
+hero_crafting_action_equip;Надеть
+hero_crafting_action_buy_material;Купить материал
+hero_crafting_action_buy_item;Купи предмет
+hero_crafting_action_craft_material;Материал для плавки
+hero_crafting_action_moveToInventory;В инвентарь
+hero_crafting_action_select_item;Выбрать
+hero_crafting_action_remove_item;Удалить
+hero_crafting_action_error_equipment;Предмет должен быть экипировкой героя.
+hero_crafting_action_error_rarity;Предметы должны иметь одинаковую редкость.
+hero_crafting_action_error_category;Предметы должны относиться к одной категории снаряжения.
+hero_crafting_action_error_id;Предметы должны быть идентичными.
+hero_crafting_action_error_missingItem;Один или несколько из выбранных вами товаров больше недоступны.
+hero_crafting_refine_tip;Эпическую экипировку героя можно улучшить, используя любой другой эпический предмет из той же категории.
+hero_crafting_refine_tip_error;У вас нет предметов героя для улучшения. Находите предметы в приключениях или покупайте на аукционе и улучшайте их.
+hero_crafting_smelt_info;Возьмите {{INT}} [INT>1:s] единиц материала сейчас или подождите и получите {{MAX}}.
+hero_crafting_reforge_text;Перековать оборудование, чтобы получить другой предмет, возможно, другой редкости и качества.\nПосле перековки ты можешь выбрать, какой предмет ты хочешь взять или перековать снова.\nОбратите внимание: При перековке предмет, используемый для следующего улучшения, исчезает и не подлежит возврату
+inventoryItem_quality_title;Качество
+inventoryItem_rarity_title;Редкость
+inventoryItem_rarity_quality_title;Редкость & Качество
+inventoryItem_rarity_common;Обычный
+inventoryItem_rarity_uncommon;Редкий
+inventoryItem_rarity_rare;Уникальный
+inventoryItem_rarity_epic;Эпический
+inventoryItem_rarity_legendary;Легендарный
+search_for_village;Поиск деревни
+search_for_player;Поиск игрока
+villageList_EditMode;Редактирование
+villageList_MaxGroupAmount;Достигнут максимум групп деревень.
+hero_crafting_action_error_material;Предмет должен быть материалом.
+villageList_ReorderError;Цель недействительна
+textMatchingInput_Title;Подтвердите, набрав "{{WORD}}"
+hero_inventory_category_empty;- В этой категории пока ничего нет -
+hero_crafting_action_refine_success;Снаряжение улучшено
+hero_crafting_action_smelt_success;Снаряжение переплавлено
+hero_crafting_action_forge_success;Снаряжение выковано
+hero_crafting_result_item_equipped;Предмет экипирован
+hero_crafting_result_item_taken;Предмет перемещён в инвентарь
+hero_crafting_result_material_taken;Материал перемещен в инвентарь
+hero_crafting_action_error_quality;Предметы должны быть одинакового качества.
+hero_crafting_action_error_epic;Должен быть еще один эпический предмет той же категории и качества.
+inventoryItem_rarity_none;Без редкости
+dailyQuests_rewardOverview_short;Обзор наград
+avatar_confirmation_title_delete;Удалить Аватар
+avatar_confirmation_header_delete;Желаете удалить персонажа?
+avatar_confirmation_infoText_delete;Процесс удаления длится <b>3 дня</b>, то есть только через 72 часа персонаж будет удален полностью.\nУ персонажа, находящегося на удалении, отключена возможность пользоваться аукционом и пунктом обмена!\nВы можете в любое время отменить процесс удаления.
+avatar_confirmation_requiredWord_delete;удалить
+avatar_confirmation_title_respawn;Возродить Аватар
+avatar_confirmation_header_respawn;Желаете возродить свой аватар?
+avatar_confirmation_infoText_respawn;Это удалит весь прогресс, достигнутый к этому моменту, и ваша стартовая деревня появится в новой точке карты.\n\nВсе приобретенное золото будет автоматически перенесено.
+avatar_confirmation_requiredWord_respawn;начать заново
+settings_app_title;Все игровые миры
+settings_app_Animations_title;Анимация
+settings_app_Animations_description;Выберите, какие анимации вы хотели бы видеть в приложении.
+settings_app_Animations_activated;Анимация облаков для вида деревни/ресурсов активирована
+settings_app_Animations_deactivated;Анимация облаков для вида деревни/ресурсов деактивирована
+settings_app_NightMode_title;Ночной режим
+settings_app_NightMode_description;Ваши жители зажгли факелы, а огонь в печах потрескивает под тусклым светом звезд на ночном небе.
+settings_app_NightMode_activated;Ночной режим активирован
+settings_app_NightMode_deactivated;Ночной режим деактивирован
+settings_app_WinterMode_title;Зимний режим
+settings_app_WinterMode_description;Тихо падает снег, окутывая деревню обманчивой тишиной, где каждый звук словно растворяется в морозном воздухе.
+settings_app_WinterMode_activated;Зимний режим активирован
+settings_app_WinterMode_deactivated;Зимний режим деактивирован
+settings_app_VillagePanning_title;Перемещение по деревне/ресурсным полям
+settings_app_VillagePanning_description;Вы можете перемещаться по своей деревне и ресурсным полям.
+settings_app_VillagePanning_activated;Перемещение активировано
+settings_app_VillagePanning_deactivated;Перемещение деактивировано
+settings_app_PushNotifications_title;Общие push-уведомления
+settings_app_PushNotifications_description;Получайте push-уведомления об общих новостях приложения и игры.
+settings_app_PushNotifications_activated;Уведомление о старте игрового мира активировано
+settings_app_PushNotifications_deactivated;Уведомление о старте игрового мира деактивировано
+settings_app_EnergySaving_title;Режим энергосбережения
+settings_app_EnergySaving_description;Сэкономьте заряд батареи устройства, снизив частоту кадров.\nАктивация режима энергосбережения может привести к некоторой визуальной задержке при использовании приложения.
+settings_app_EnergySaving_activated;Режим энергосбережения активирован
+settings_app_EnergySaving_deactivated;Режим энергосбережения деактивирован
+settings_app_DataSaving_title;Режим экономии мобильного трафика
+settings_app_DataSaving_description;Экономия мобильного трафика за счёт уменьшения количества запросов к серверу\nАктивация режима экономии мобильного трафика может привести к увеличению интервала обновления данных в игре.
+settings_app_DataSaving_activated;Режим экономии мобильного трафика активирован
+settings_app_DataSaving_deactivated;Режим экономии мобильного трафика деактивирован
+auction_FilterType;Тип предмета
+auction_bidTooLow;Ставка слишком низкая.
+villageList_Delete_Title;Удалить группу деревень
+villageList_Delete_Button;Удалить группу
+villageList_Delete_Description;Вы хотите удалить эту группу деревень?
+villageList_Delete_Description2;При удалении группы сами деревни останутся без изменений.
+gameworldNews_title;Новости и обновления
+moreInformation;Больше информации
+remainingGold;Оставшееся Золото: {{goldIcon|Sprite}} {{goldAmount}}
+messages_addEmoji_title;Добавить эмодзи
+messages_select_emojis;Выберите эмодзи
+cams_resend_email_wait_error;Пожалуйста, подождите, чтобы отправить другое письмо.
+cams_settings_accountDeletion_infoGold;После удаления вашего аватара вам будет отправлено электронное письмо с объяснением, как перевести оставшееся Золото другому аватару.\n<b>Пожалуйста, обратите внимание:</b> Ваше  оставшееся золото можно перенести только в определенные игровые миры.
+cams_changeMail_title;Изменить адрес электронной почты
+cams_changeMail_description;Для смены адреса электронной почты необходимо иметь доступ к текущему и новому адресу электронной почты.
+cams_changeMail_socialHint;Изменение вашего адреса электронной почты не повлияет  ваш вход с Facebook, Google или Apple.
+cams_changeMail_cantAccess;Не можете получить доступ к своей электронной почте?
+cams_changeMail_sentVerification;Мы отправили проверочное письмо на: {{mail}}
+cams_changeMail_checkInbox;Проверьте входящие сообщения и выполните указанные действия, чтобы продолжить.
+cams_changeMail_verificationCode;Код подтверждения электронной почты:
+cams_changeMail_verifyButton;Подтвердите электронную почту
+cams_changeMail_enterNew_description;Укажите новый адрес электронной почты в поле ниже. Мы отправим на этот адрес проверочное письмо.
+cams_changeMail_enterNew_description2;Выполните действия, указанные в письме, для завершения изменения.
+cams_changeMail_enterNew_input;Введите новый адрес электронной почты:
+cams_changeMail_enterNew_input_placeholder;Новый адрес электронной почты
+cams_changeMail_enterNew_button;Смена адреса электронной почты
+cams_changeMail_done_title;Адрес электронной почты обновлен
+cams_changeMail_done_description1;Адрес электронной почты успешно изменен на {{mail}}
+cams_changeMail_done_description2;Сессия будет автоматически завершена, и вы будете перенаправлены на страницу входа в игру. Пожалуйста, используйте новый адрес электронной почты для входа в игру.
+cams_changeMail_done_redirecting;Перенаправление на страницу входа {{time}}...
+bonusValue;+{{value}}
+value;{{value}}
+ratioValues_Colon;{{a}}:{{b}}
+genericValue;{{VALUE}}
+enterAmount;Ввести количество
+symbol_minus;-
+applyFilter;Применить фильтр
+resetFilter;Сбросить фильтр
+rallyPoint_troopsOverview_outgoingMission_50_heroCentricAdventure;Отправиться на поиски приключений
+rallyPoint_troopsOverview_returningFromAdventure_heroCentricAdventure;Возвращение из приключения
+silverExchangePopup_AvailableSilver;Доступное серебро
+silverExchangePopup_SilverStatus;В настоящее время {{AMOUNT|LongNumber}} вашего серебра участвует в активных аукционах.
+silverExchangePopup_SilverError;У вас недостаточно серебра для этого действия.
+silverExchangePopup_GoldError;У вас недостаточно Золота для этого действия.
+hero.status50_heroCentricAdventure;Ваш герой отправился на поиски приключений.
+inventoryItem_quality_1;Качество: 1
+inventoryItem_quality_2;Качество: 2
+inventoryItem_quality_3;Качество: 3
+inventoryItem_rarity_common_headGear;Обычный головной убор
+inventoryItem_rarity_uncommon_headGear;Редкий головной убор
+inventoryItem_rarity_rare_headGear;Уникальный головной убор
+inventoryItem_rarity_epic_headGear;Эпический головной убор
+inventoryItem_rarity_legendary_headGear;Легендарный головной убор
+inventoryItem_rarity_common_utility;Обычный предмет
+inventoryItem_rarity_uncommon_utility;Редкий предмет
+inventoryItem_rarity_rare_utility;Уникальный предмет
+inventoryItem_rarity_epic_utility;Эпический предмет
+inventoryItem_rarity_legendary_utility;Легендарный предмет
+inventoryItem_rarity_common_weapon;Обычное оружие
+inventoryItem_rarity_uncommon_weapon;Редкое оружие
+inventoryItem_rarity_rare_weapon;Уникальное оружие
+inventoryItem_rarity_epic_weapon;Эпическое оружие
+inventoryItem_rarity_legendary_weapon;Легендарное оружие
+inventoryItem_rarity_common_armour;Обычная броня
+inventoryItem_rarity_uncommon_armour;Редкая броня
+inventoryItem_rarity_rare_armour;Уникальная броня
+inventoryItem_rarity_epic_armour;Эпическая броня
+inventoryItem_rarity_legendary_armour;Легендарная броня
+inventoryItem_rarity_common_boots;Обычные сапоги
+inventoryItem_rarity_uncommon_boots;Редкие сапоги
+inventoryItem_rarity_rare_boots;Уникальные сапоги
+inventoryItem_rarity_epic_boots;Эпические сапоги
+inventoryItem_rarity_legendary_boots;Легендарные сапоги
+inventoryItem_rarity_common_consumable;Употребляемые предметы
+inventoryItem_rarity_uncommon_consumable;Редкий Расходник
+inventoryItem_rarity_rare_consumable;Уникальный Расходник
+inventoryItem_rarity_epic_consumable;Эпический Расходник
+inventoryItem_rarity_common_horse;Лошадь
+inventoryItem_rarity_uncommon_horse;Редкая лошадь
+inventoryItem_rarity_rare_horse;Уникальная лошадь
+inventoryItem_rarity_epic_horse;Эпическая лошадь
+inventoryItem_rarity_legendary_horse;Легендарная лошадь
+inventoryItem_rarity_common_material;Употребляемые предметы
+inventoryItem_rarity_uncommon_material;Редкий Расходник
+inventoryItem_rarity_rare_material;Уникальный Расходник
+inventoryItem_rarity_epic_material;Эпический Расходник
+search_item;Поиск предмета
+search_select_item;Выбрать предмет
+avatar_confirmation_infoText_delete_goldBough;После запуска процесса удаления, удаление вашего аватара займёт <b>как минимум три дня</b>, так как этот аватар недавно использовался для покупки Золота.\nУ персонажа, находящегося на удалении, отключена возможность пользоваться аукционом и пунктом обмена!\nВы можете в любое время отменить процесс удаления.
+combatSimulator_addItemEffect;Добавить эффект предмета
+combatSimulator_editItemEffect;Редактировать эффект элемента
+addItemEffect_title;Применить эффект предмета для героя
+addItemEffect_description;Добавьте отдельные эффекты, чтобы отразить индивидуальные бонусы всех возможных предметов Героя.
+addItemEffect_importHeroEquipment;Загрузить снаряжение героя
+addItemEffect_importHeroEquipment_success;Импорт предметов героя выполнен
+addItemEffect_selectEffect;Выбрать эффект предмета
+addItemEffect_selectItem;Выбрать предмет
+addItemEffect_selectMagnitude;Выбрать величину
+addItemEffect_selectUnit;Выбрать юнит
+addItemEffect_missingMagnitude;Отсутствующая величина
+addItemEffect_effect_2;Уменьшение повреждений
+addItemEffect_effect_6;+ Дополнительные очки здоровья в день
+addItemEffect_effect_12;+ Увеличение атаки и защиты для определенного юнита
+addItemEffect_effect_13;+ Увеличенная боевая мощь
+cams_newMail_title;Новый адрес электронной почты
+cams_verifyNewMail_title;Проверьте новый адрес электронной почты
+cams_verifyCurrentMail_title;Проверьте текущий адрес электронной почты
+auction_notEnoughSilver;У вас недостаточно серебра.
+auction_itemGroups;Группы предметов
+auction_unknown;?
+auction_sortingOption_itemName;Название предмета
+auction_sortingOption_bidCount;Количество ставок
+auction_sortingOption_finishedAt;Завершится через
+auction_sortingOption_highestBid;Высшая ставка
+auction_sortingOption_highestBidder_player;Игрок, предложивший наивысшую цену
+auction_sortingOption_highestBidder_alliance;Альянс, предложивший наивысшую цену
+auction_sortingOption_auctionAmount;Количество текущих аукционов
+auction_sortingOption_nextFinishedAt;До завершения следующего осталось
+auction_sellingPrice;Цена продажи
+auction_sellingPrice_lowest;Самая низкая
+auction_sellingPrice_average;Средне
+auction_sellingPrice_highest;Самая высокая
+auction_result_won;<color={{colorValue|TextColor}}>Победа</color>
+auction_result_lost;<color={{colorValue|TextColor}}>Ставка перебита</color>
+auction_sellingPrice_averagePrice;Средняя цена
+auction_bidProcessTitle;Процесс торгов
+auction_bidProcessDescription1;Вы можете делать ставки на интересующие вас предметы.
+auction_bidProcessDescription2;Вы должны сделать ставку как минимум на минимальную сумму, чтобы перебить текущую ставку.
+auction_maxBidFeatureTitle;Автоматическое повышение ставки
+auction_maxBidFeatureDescription1;Вы можете установить свой максимальный бюджет для предмета.
+auction_maxBidFeatureDescription2;Система будет автоматически делать ставки за вас до установленного вами максимума.
+auction_maxBidFeatureDescription3;Ваша ставка увеличивается лишь настолько, насколько это необходимо для сохранения статуса лидера.
+auction_maxBidFeatureDescription4;Торги продолжаются до тех пор, пока вы не выиграете или вашу ставку не перебьют, превысив ваш максимальный бюджет.
+auction_auctionDurationTitle;Длительность аукциона
+auction_auctionDurationDescription1;Если оставшееся время аукциона меньше {{DURATION|Duration}}, то при смене лидера торгов продолжительность продлевается до {{DURATION|Duration}}.
+auction_auctionWinningTitle;Победа
+auction_auctionWinningDescription1;Побеждает тот, кто сделал самую высокую ставку на момент окончания аукциона.
+auction_auctionFinished;Аукцион уже завершён.
+auction_wasJustOutbid;В данный момент Вы не являетесь лидером торгов.
+auction_currentHighestBidder;Текущий лидер торгов
+auction_currentHighestBid;Текущая максимальная ставка
+auction_yourMaximumBid;Ваша максимальная ставка
+auction_showFinished;Отобразить завершённые
+auction_deleteAllFinished;Удалить все завершенные
+auction_startedAt;Начато: {{TIME|DateTime}} | Запущено
+auction_canceled;Отменено
+auction_finished;Готово
+auction_finishedAt;Готово: {{TIME|DateTime}}
+auction_itemAuction_title;Аукцион предметов
+auction_itemAuction_info;Нажмите на элемент в вашем инвентаре, чтобы начать аукцион. Другие игроки могут делать на него ставки. Торг длится не более {{INT}} часов
+auction_whatHappensNext_title;Что будет дальше
+auction_whatHappensNext_info1;Тот, кто сделал самую высокую ставку, автоматически покупает предмет, когда время истекает.
+auction_whatHappensNext_info2;Вы получите серебро, когда сделка будет завершена.
+auction_whatHappensNext_info3;Вы получите уведомление о продаже вашего предмета.
+auction_error_cannotSell;Предмет нельзя продать на аукционе.
+auction_error_onlyHorse;Вы не можете продать свою лошадь.
+auction_sellItem;Продай предмет
+auction_sales;Продажи
+auction_selectBatchSize;Выберите размер партии
+auction_selectBatchSize_batches;<b>{{COUNT}}x</b> партий товара
+auction_selectFilter_title;Выбрать фильтр
+goldShop_upTo;До
+shopPromotion_openShop;Открыть магазин
+shopPromotion_goldPromotionTitle;Акция на Золото
+shopPromotion_limitedTimeOffer;Предложение ограничено по времени!
+shopPromotion_goldPromotionDescription;Больше Золота за Ваши деньги!
+shopPromotion_timeRemaining;Оставшееся время:
+hero_adventures_watchAdReduceDuration_title;Сокращает длительность приключения на {{AMOUNT}}%
+hero_adventures_watchAdReduceDuration_description;Посмотрите видео, чтобы сократить продолжительность следующего <b>приключения</b> вашего героя.
+hero_adventures_watchAdIncreaseDanger_title;Уровень опасности приключения повышен до сложного
+hero_adventures_watchAdIncreaseDanger_description;Посмотрите видео, чтобы увеличить опасность <b>следующего нормального</b> приключения, ради большего  опыта героя.
+hero_adventures_watchAdActive;Готов к следующему приключению.
+hero_adventures_watchAdActiveNormal;Готов к следующему нормальному приключению.
+hero_crafting_action_error_nonEpic;Должен быть идентичный предмет такой же редкости и качества.
+berichte.adventure_heroCentric;{{VILLAGE_NAME}} отправляется в приключение
+reports_share_notShareable;Этим отчетом нельзя поделиться.
+dailyQuests_dailyMaxReached;Достигнут ежедневный максимум
+achievementQuests.DailyQuest_12_description;Откройте игру в браузере на вашем компьютере и посмотрите видео.
+achievementQuests.DailyQuest_12_additionalInformation;www.travian.com/ru
+achievementQuests.DailyQuest_13_description;Посмотрите видео, чтобы, например, быстрее модернизировать свои здания.
+achievementQuests.DailyQuest_13_additionalInformation;Или нажмите на кнопку "Смотреть видео", чтобы посмотреть видео напрямую без дополнительных преимуществ.
+addItemEffect_effect_11;+ Повышенная сила атаки против Натар
+auction_started;Аукцион начался
+auction_error_batchSize;Недостаточно товаров для продажи.
+auction_graph_notEnoughData;Недостаточно данных
+auction_emptyInventory;- У вас в настоящее время нет товаров для продажи -
+RelativeTime_2_word;[data>1:{{data}} часов][data<2:{{data}} час]
+gold_action_halveDuration;Сократить время вдвое
+goldShop_advantage_Value_Duration;<b>+{{VALUE}}%</b> еще <b>[DURATION>6:{{DURATION}} дней][DURATION<7:{{DURATION|Mult|24}} часов]</b>
+goldShop_advantage_Value_Active;<b>+{{VALUE}}%</b> активно:
+goldShop_upgrade;Улучшить
+goldShop_advantage_stillActiveFor;Все еще активен для:
+goldShop_advantage_stillActiveFor_Value;{{DURATION}} до {{TIME}} часов
+goldShop_advantage_videoFeatureOnCD;Вы можете активировать видео-бонус только один раз в день.\nОбновление через: {{TIMESTAMP|Countdown}}
+goldShop_advantage_popup_mainInfoHeader_ProductionboostLumber;Увеличить <b>производство древесины</b> во всех своих поселениях.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostClay;Увеличить <b>производство глины</b> во всех своих поселениях.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostIron;Увеличить <b>производство железа</b> во всех своих поселениях.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostCrop;Увеличить <b>производство зерна</b> во всех своих поселениях.
+goldShop_advantage_popup_mainInfoBody;Этот бонус суммируется с базовой добычей и всеми другими действующими бонусами.
+goldShop_advantage_popup_premiumInfo;Вы можете активировать бонус с помощью Золота и получить бонус к производству +{{VALUE}}%\nВы можете активировать автопродление для бессрочного действия бонуса.
+goldShop_advantage_popup_videoFeatureInfo;Или вы можете посмотреть короткое видео и получить меньший бонус к производству +{{VALUE}}%\n<b>Видео-бонус можно активировать только один раз в день для каждого ресурса.</b>
+goldShop_advantage_popup_upgradeInfo;В любой момент доступно улучшение бонуса производства +{{VALUE}}% за Золото.
+goldShop_advantage_upgradePopupInfo1;Улучшение бонуса производства аннулирует ваш текущий активный бонус.
+goldShop_advantage_upgradePopupInfo2;Вы получите +{{VALUE}}% на [DURATION>6:{{DURATION}} дней][DURATION<7:{{DURATION|Mult|24}}] вместо этого.
+goldShop_advantage_upgradePopup_title;Бонус за улучшение
+productionOverview_Bonus;+{{VALUE}}% производства
+hero_adventures_watchAdReduceDuration_toast;Длительность приключения уменьшена.
+hero_adventures_watchAdIncreaseDanger_toast;Опасность приключения повышена.
+hero_consumablePopup_amountEquippedAfter;Будет экипировано:
+hero_consumablePopup_amountEquippedAfterUse;Останется после использования:
+hero_consumablePopup_amountLeftInInventory;Осталось в инвентаре:
+cams_recover_password_cooldown;Пожалуйста, подождите {{VALUE}}
+cams_settings_changePassword_cooldown;Пожалуйста, подождите {{VALUE}}
+infobox_productionBoost_upgradeButton;Улучшить
+infobox_productionBoost_upgradeBonusWithGold;Используйте Золото, чтобы улучшить бонус до +{{PREMIUM_PERCENTAGE}}% на {{TIME}} ч.
+infobox_productionBoost_expires;{{PERCENTAGE}} {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresLumber;Бонус +{{PERCENTAGE}}% к производству древесины закончится через {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresClay;Бонус +{{PERCENTAGE}}% к производству глины закончится через {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresIron;Бонус +{{PERCENTAGE}}% к производству железа закончится через {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresCrop;Бонус +{{PERCENTAGE}}% к производству зерна закончится через {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expired;{{PERCENTAGE}}
+infobox_productionBoost_expiredLumber;Действие бонуса +{{PERCENTAGE}}% к производству древесины <b>истекло</b>.
+infobox_productionBoost_expiredClay;Действие бонуса +{{PERCENTAGE}}% к производству глины <b>истекло</b>.
+infobox_productionBoost_expiredIron;Действие бонуса +{{PERCENTAGE}}% к производству железа <b>истекло</b>.
+infobox_productionBoost_expiredCrop;Действие бонуса +{{PERCENTAGE}}% к производству зерна <b>истекло</b>.
+infobox_levelUpProductionReminder;Увеличьте производство ресурсов во всех своих деревнях за Золото (+{{PREMIUM_PERCENTAGE}}%) или за просмотр видео (+{{VIDEO_PERCENTAGE}}%)
+infobox_oneTimeProductionBoostReminder;Теперь вы можете снова активировать свой бонус к производству ресурсов +{{VIDEO_PERCENTAGE}}%, посмотрев видео.
+travelSimulator_title;Расчет времени в пути
+travelSimulator_sourceTribe;Исходное местоположение народа
+travelSimulator_noLocationSelected;Местоположение не выбрано
+travelSimulator_slowestUnit_title;Скорость самого медленного юнита
+travelSimulator_slowestUnit_settings;{{UNIT}} | Скорость: {{SPEED}}
+travelSimulator_TournamentSquareLevel_info;(Только для расстояния >20 клеток)
+travelSimulator_tournamentSquareLevel_option;{{LEVEL}} | {{VALUE}}%
+travelSimulator_unitSelection_title;Выбрать самый медленный юнит
+travelSimulator_unitSelection_unitType;Тип юнита
+travelSimulator_unitSelection_unitSpeed;Скорость юнита
+travelSimulator_unitSelection_selectedUnitSpeed;Скорость: {{SPEED}}
+travelSimulator_calculation_land;<b>Суша:</b> {{VALUE}}
+travelSimulator_calculation_sea;<b>Море:</b> {{VALUE}}
+travelSimulator_heroAttending;Герой участвует
+travelSimulator_vikingRaidBonus;Бонус набега викингов
+travelSimulator_troopSpeedArtefactEffect;Эффект артефакта на скорость войск
+travelSimulator_toast_selectSourceAndTarget;Выберите корректные начальную и конечную точки!
+travelSimulator_toast_selectSourceTribe;Выберите корректный народ!
+IOSAppTrackingTransparencyMessage;Нажатие кнопки «Разрешить» позволяет использовать данные устройства для показа более актуальной рекламы.
+goldShop_advantage_Value_Duration_Hours;<b>+{{VALUE}}%</b> для <b>{{DURATION}} ч.</b>
+travelSimulator_tournamentSquareLevel_title;Уровень арены
+travelSimulator_troopSpeedAncientPower;Древняя сила: скорость войск
+RelativeTime_Formatted;[недели>0:{{weeks}}н ][дни>0:{{days}}д ]{{data}}
+settings_account_tab;Учетная запись
+settings_notification_tab;Всплывающие уведомления
+settings_app_PushNotifications_popup_title;Всплывающие уведомления
+settings_app_PushNotifications_popup_header;Позвольте нам отправлять вам уведомления
+settings_app_PushNotifications_popup_info1;Чтобы получать push-уведомления с новостями и полезной информацией об игре, пожалуйста, сначала разрешите нам отправлять вам уведомления.
+settings_app_PushNotifications_popup_info2;Вы можете включить уведомления в настройках приложения вашего устройства.
+settings_app_PushNotifications_popup_info3;Вы также можете вернуться сюда в любое время, чтобы снова отключить уведомления.
+settings_app_PushNotifications_popup_action_button;Открыть настройки приложения
+ratioValueMax;/ {{a}}
+market_sendResources_completed;Завершено
+market_sendResources_villageNotFound;Не найдено. Отправка ресурсов ограничена: разрешено только для своих деревень, своего альянса и союзных альянсов.
+no_ads_popup_title;Видеореклама отсутствует
+no_ads_popup_header;Произошла ошибка при попытке показать видеорекламу.
+no_ads_popup_info1;Причины могут быть следующими:
+no_ads_popup_info2; • В данный момент в пуле объявлений для вашего региона нет доступных объявлений.
+no_ads_popup_info3; • Ваши настройки конфиденциальности ограничивают количество доступной рекламы.
+no_ads_popup_info4; • Технические проблемы с нашим приложением или рекламным провайдером.
+no_ads_popup_settings_msg;Пожалуйста, убедитесь, что вы разрешили персонализированную рекламу в настройках конфиденциальности.
+no_ads_popup_support_msg;Пожалуйста, свяжитесь с нашей поддержкой, если проблема не исчезнет.
+no_ads_popup_support_button;Обратиться в службу поддержки
+city_upgradeToACity_wwVillageNotUpgradeable;Деревни с Чудом Света невозможно преобразовать в города.
+travelSimulator_selectMagnitude;Выбрать величину
+marketplace_merchantsOverview_returningTo;Возвращение к <b>{{Village}}</b> из <b>{{Player}}</b>
+market_sendResources_sendAgain;Отправить снова
+search_village_notFound;Не найдено. Отправка ресурсов ограничена: разрешено только для своих деревень, своего альянса и союзных альянсов.
+settings_app_AnimationsPayoffs_activated;Анимация отправки войск/торговцев активирована
+settings_app_AnimationsPayoffs_deactivated;Анимация отправки войск/торговцев деактивирована
+hero_resourceTransferPopup_empty;В инвентаре героя нет ресурсов для перемещения.
+hero_toast_appearanceChanged;Внешность героя изменена
+alliance_editMemberPopup_customNote;Личная заметка
+alliance_editMemberPopup_titleOfRole;Наименование роли
+alliance_editMemberPopup_setSpecialization;Выбрать специализацию
+alliance_role_offensive;Нападение
+alliance_role_defensive;Защита
+alliance_role_hybrid;Гибридная
+alliance_role_scout;Разведка
+alliance_role_support;Поддержка
+alliance_role_wow_hammer;Молот WoW
+alliance_role_none;Отсутствует
+ad_fallback_popup_title;Забрать награду
+ad_fallback_popup_info;Сейчас видеореклама недоступна, но мы всё равно хотим вознаградить вас за лояльность! Пожалуйста, подождите немного, пока мы готовим вашу награду.
+ad_fallback_popup_rewardGranted;Вознаграждение начислено
+ad_fallback_popup_claim;Забрать награду
+ad_fallback_popup_closeWarning;Если вы закроете этот экран раньше времени, награда будет потеряна
+gameplay_tip_1;Вы можете обучать поселенцев в Резиденции или Дворце (начиная с 10 уровня).
+gameplay_tip_2;Для каждого аватара доступен только один Дворец. Он дает до 3 слотов экспансии, в то время как Резиденция — только 2.
+gameplay_tip_3;Чтобы перенести столицу, постройте Дворец в другой деревне. Обратите внимание: уникальные здания в старой столице будут потеряны или их уровень будет снижен.
+gameplay_tip_4;Основание и захват новых деревень возможны при наличии достаточного количества единиц культуры.
+gameplay_tip_5;Получайте единицы культуры путем повышения уровня зданий и организации праздников в Ратуше.
+gameplay_tip_6;Большие праздники можно проводить в Ратуше (с 10-го уровня). Они приносят больше единиц культуры, но требуют больше ресурсов.
+gameplay_tip_7;Чтобы захватить деревню, нужно снизить ее одобрение до нуля с помощью вождей, обученных в вашей Резиденции или Дворце.
+gameplay_tip_8;Прежде чем обучать вождей в Резиденции или Дворце, сначала исследуй их в Академии.
+gameplay_tip_9;Вы можете захватывать деревни Натаров или других игроков.
+gameplay_tip_10;Столица не может быть захвачена другими игроками.
+gameplay_tip_11;Используйте поиск зерновых клеток, чтобы найти деревни с 9 или 15 зерновыми клетками, которые смогут прокормить больше войск.
+gameplay_tip_12;Ресурсные поля в столице можно улучшать до более высоких уровней, чем в других деревнях.
+gameplay_tip_13;Для отправки ресурсов в дружественные поселения воспользуйтесь рынком.
+gameplay_tip_14;Вы можете торговать ресурсами с другими игроками на рынке.
+gameplay_tip_15;Увеличьте грузоподъемность торговцев, улучшая торговую палату.
+gameplay_tip_16;Улучшите таверну до 10-го уровня, чтобы захватить оазис и получить бонус к производству ресурсов.
+gameplay_tip_17;Повышайте характеристики войск в Кузнице. Бонусы действуют на все текущие и будущие отряды этого типа сразу после завершения улучшения.
+gameplay_tip_18;Используйте симулятор сражения, чтобы оценить возможный исход боя перед атакой. Чем больше деталей вы укажете, тем точнее будет результат.
+gameplay_tip_19;С Золотым клубом вы можете активировать автоматический увод войск в своей столице, чтобы автоматически спасти свою армию от вражеских атак.
+gameplay_tip_20;Когда ваши войска возвращаются домой, увод войск временно отключается на 10 секунд.
+gameplay_tip_21;Улучшайте разведчиков в кузнице, чтобы повысить их навыки шпионажа.
+gameplay_tip_22;Стены значительно усиливают оборону вашей деревни.
+gameplay_tip_23;Стройте тайники, чтобы защитить свои ресурсы от вражеских набегов.
+gameplay_tip_24;Галлы могут обучать капканщиков, которые захватывают атакующие войска еще до начала боя.
+gameplay_tip_25;Чтобы освободить захваченные войска, нужно успешно совершить обычную атаку на деревню, которая их захватила.
+gameplay_tip_26;При успешной атаке можно освободить 75% попавших в ловушки войск, но защитник может сам мирно отпустить 100% из них.
+gameplay_tip_27;Постройте госпиталь, чтобы исцелить до 40% войск, потерянных в бою.
+gameplay_tip_28;Галлы могут обучать капканщиков, которые захватывают атакующие войска еще до начала боя.
+gameplay_tip_29;Возведите дом каменотёса в столице — это укрепит стены и здания, сделав их устойчивее к ударам катапульт и таранов.
+gameplay_tip_30;Вы можете приказать герою прятаться во время вражеских атак на родную деревню, чтобы сохранить ему жизнь.
+gameplay_tip_31;Побеждайте животных в свободных оазисах, чтобы получить дополнительные ресурсы. Чем сильнее животные, тем больше награда.
+gameplay_tip_32;Используйте героя для зачистки оазисов от животных, чтобы заработать опыт.
+gameplay_tip_33;Используйте клетки, чтобы ловить животных в свободных оазисах и укреплять ими защиту своей деревни.
+gameplay_tip_34;Используйте такие предметы, как мази или специальные доспехи, чтобы ускорить регенерацию здоровья вашего героя.
+gameplay_tip_35;Воскрешайте героя постепенно за ресурсы или мгновенно с помощью ведра.
+gameplay_tip_36;Вы сможете сносить здания, как только главное здание достигнет 10-го уровня.
+gameplay_tip_37;Постройте посольство, чтобы вступить в альянс или основать собственный альянс.
+vacationMode_title;Режим отпуска
+vacationMode_vacation;Отпуск
+vacationMode_vacationModeActive;Режим отпуска включен
+vacationMode_info;Используйте режим отпуска, чтобы защитить свои деревни во время вашего отсутствия. Во время режима отпуска отключены следующие действия:
+vacationMode_deactivated_action1;Отправка и получение войск
+vacationMode_deactivated_action2;Отправка героя в приключения
+vacationMode_deactivated_action3;Запуск нового строительства и обучение войск
+vacationMode_deactivated_action4;Использование рынка (включая торговые пути)
+vacationMode_deactivated_action5;Проведение праздников, запуск исследований и улучшение войск
+vacationMode_deactivated_action6;Создание альянсов или вступление в них
+vacationMode_deactivated_action7;Пожертвование ресурсов на бонусы альянса
+vacationMode_deactivated_action8;Участие в аукционах
+vacationMode_deactivated_action9;Смена столицы
+vacationMode_deactivated_action10;Удаление своей учетной записи
+vacationMode_deactivated_territory_action1;Повышение статуса деревни до города
+vacationMode_deactivated_territory_action2;Ваше население не вносит вклад в региональный рейтинг альянса, и начисление победных очков в ваших деревнях приостановлено
+vacationMode_conditions_title;Условия для режима отпуска выполнены
+vacationMode_duration_info;Сколько дней должен длиться режим отпуска
+vacationMode_durationUntil;Режим отпуска до <b>{{DATE}}</b>
+vacationMode_availableDays;Доступно дней: <b>{{AVAILABLE}}/{{TOTAL}}</b>
+vacationMode_startButton;Включить режим отпуска
+vacationMode_error_noCancelTime;Вы сможете отключить режим отпуска только через {{HOURS}} ч
+vacationMode_error_missingRequirement;Чтобы включить режим отпуска, выполните все требования
+vacationMode_error_noVacationDaysLeft;Недостаточно свободных дней для активации режима отпуска
+vacationMode_error_cooldown;Вы сможете включить режим отпуска только через {{HOURS}} ч. после его последнего отключения
+vacationMode_abortSuccess;Режим отпуска прекращен!
+vacationMode_remainingDays;Осталось дней в режиме отпуска
+vacationMode_runsUntil;Режим отпуска действует до
+vacationMode_abortInfo;Вы сможете отключить режим отпуска не ранее <b>{{DATE}}</b>
+vacationMode_abortAvailable;Вы можете прервать режим отпуска прямо сейчас
+vacationMode_abortConfirmHeader;Вы уверены, что желаете прервать режим отпуска?
+vacationMode_abortConfirmInfo;Неиспользованные дни будут компенсированы. Это действие нельзя отменить.
+vacationMode_startCooldownInfo;Вы сможете активировать режим отпуска не ранее <b>{{DATE}}</b>
+vacationMode_abortButton;Остановить режим отпуска
+vacationMode_conditions_has_outgoing_troops;Отсутствие исходящих войск
+vacationMode_conditions_has_incoming_troops;Отсутствие войск, идущих к вашим деревням или оазисам
+vacationMode_conditions_has_reinforcing_troops_for;Отсутствие отправленных другим игрокам подкреплений
+vacationMode_conditions_has_reinforcing_troops_from;Отсутствие подкреплений от других игроков в ваших деревнях или оазисах
+vacationMode_conditions_has_ww_village;Вы не должны владеть деревней с Чудом Света
+vacationMode_conditions_has_artifact_village;Вы не должны владеть деревней с артефактом
+vacationMode_conditions_has_beginners_protection;Отсутствие защиты новичка
+vacationMode_conditions_has_trapped_troops;В ваших ловушках нет пленных, и никто из ваших войск, включая героя, не находится в плену
+vacationMode_conditions_has_deletion_event;Отсутствие активного запроса на удаление аватара
+vacationMode_conditions_has_conquered_oase;Вы не захватывали оазисы в последние {{HOURS}} ч. Вы сможете перейти в режим отпуска, когда пройдет {{HOURS}} ч. с момента захвата или потери оазиса.
+vacationModePopup_info;Ваша учетная запись будет защищена в режиме отпуска. Однако производство ресурсов продолжится, а войска по-прежнему будут потреблять зерно. <color=red>Это может привести к гибели войск от голода.</color>
+vacationModePopup_start_info;Вы уверены, что хотите активировать режим отпуска на <b>{{DAYS}}</b> [DAYS>1:дней][DAYS<2:день]? Режим отпуска можно будет прервать за Золото только после {{COOLDOWN}}-часовой задержки.
+vacationModePopup_troopConsumption;Расход на собственные войска
+vacationModePopup_starvationEstimate;Раньше всего голод начнется в
+vacationModePopup_starvationTitle;Расход на собственные войска
+goldTransfer_accept_gift;Да, перевести золото
+goldTransfer_decline_gift;Нет, отклонить перевод золота
+goldTransfer_accepted_toast;Перевод золота подтвержден.
+goldTransfer_declined_toast;Перевод золота отклонен.
+smithy_requirementsNotSatisfied;Требования для улучшения этого юнита не выполнены
+vacationModeLobby_status;В отпуске
+block_vacationMode_toast;Это действие недоступно в режиме отпуска.
+goldTransfer_verifyOwnership_title;Подтвердить собственность
+goldTransfer_verifyOwnership_description;Чтобы перенести неизрасходованное купленное Золото на существующий аватар, пожалуйста, сначала подтвердите свои права на него. Для этого укажите адрес электронной почты, на который был отправлен код переноса.
+goldTransfer_verifyOwnership_emailPlaceholder;Адрес электронной почты
+goldTransfer_verifyOwnership_errorNoEmail;Пожалуйста, укажите адрес электронной почты
+goldTransfer_verifyOwnership_errorAlreadyUsed;Данная ссылка на перенос золота уже была использована.
+goldTransfer_verifyOwnership_errorInUse;Недействительная ссылка на перенос золота.
+goldTransfer_verifyOwnership_verifyButton;Подтвердить
+goldTransfer_selectTargetAvatar_title;Выберите персонажа для перевода золота
+goldTransfer_selectTargetAvatar_description;Выберите персонажа, которому желаете перевести Золото.
+goldTransfer_transferableGold_label;Золото для перевода:
+goldTransfer_enterAvatarName_header;Введите имя персонажа:
+goldTransfer_avatarName_placeholder;Имя персонажа
+goldTransfer_searchAvatar_Button;Найти персонажа
+goldTransfer_searchAvatarNothingFound_error;Активный аватар с таким именем не найден.
+goldTransfer_ownAvatarList_header;Выберите один из ваших активных  аватаров ({{account}})
+goldTransfer_selectOwnAvatarConfirm_Button;Выбрать аватар
+goldTransfer_selectGameworld_title;Пожалуйста, выберите игровой мир
+goldTransfer_selectGameworld_description;Аватар с таким именем найден в нескольких игровых мирах. Вы можете перенести Золото только на один аватар. Пожалуйста, выберите игровой мир.
+goldTransfer_selectGameworldConfirm_Button;Пожалуйста, выберите игровой мир
+goldTransfer_changeAvatar_Button;Изменить имя
+goldTransfer_confirm_title;Подтвердить перевод
+goldTransfer_confirm_Button;Подтвердить перевод
+goldTransfer_confirmAvatarOnOneWorld_info;Аватар с таким именем найден в одном игровом мире:
+goldTransfer_confirmAvatarName_prefix;Персонаж:
+goldTransfer_confirmGameworld_prefix;Игровой мир:
+goldTransfer_transferComplete_title;Перенос Золота завершён
+goldTransfer_transferComplete_description;Ваше Золото успешно переведено персонажу <b>{{avatarname}}</b> в игровом мире <b>{{gameworldname}}.</b>
+goldTransfer_transferComplete_returnButton;Вернуться в игру
+cams_settings_accountDeletion_information_warning_v2;Это действие навсегда удалит вашу учётную запись. Следующие связанные с ней данные будут безвозвратно утеряны:\n<indent=0.5em>•  Все аватары, принадлежащие вашей учётной записи\n•  Все медали, полученные на вашей учётной записи</indent>\n\nДля подтверждения введите слово «delete» в поле ниже.
+mapMarkers_popupTitle;Установить маркер
+mapMarkers_markerType;Тип маркера
+mapMarkers_markerColor;Цвет маркера
+mapMarkers_setAlliance;Установить маркер для моего альянса
+mapMarkers_type_field;Поле
+mapMarkers_addMsg_success;Маркер успешно добавлен!
+mapMarkers_saveMsg_success;Маркер успешно сохранен!
+mapMarkers_noPermission_error;Попросить разрешения у лидера своего альянса.
+mapMarkers_marker;Маркер
+mapMarkers_markers;Маркеры
+mapMarkers_listAllianceTitle;Маркеры альянса
+mapMarkers_listPlayerTitle;Маркеры игроков
+mapMarkers_listAlliances;Альянсы
+mapMarkers_listPlayers;Игроков:
+mapMarkers_listFlags;Флаги
+mapMarkers_deleteMarker;Удалить маркер
+mapMarkers_deleteMarkerMessage;Вы хотите удалить этот маркер?
+mapMarkers_showOnMap;Показать мои маркеры на карте
+embassy_general_subtab;Общая
+embassy_villagesNearby_subtab;Ближайшие деревни
+embassy_villagesNearby_listHeader;Деревни альянса/союза

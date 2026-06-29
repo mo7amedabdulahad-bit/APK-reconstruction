@@ -1,0 +1,2068 @@
+detail_window_header_title;{{buildingName|TranslateSuffixFor|allgemein.gid}}
+;{{INT}}
+levelWithValue;Lygis {{level}}
+valueWithPercent;{{value}}%
+valueAsRankingPosition;{{value}}.
+valueChangeInBrackets;({{change|Sign}})
+valueChangeInBracketsWithPercent;({{change|Sign}}%)
+ratioValues;{{a}}/{{b}}
+coordinates;<nobr>({{x}}|{{y}})</nobr>
+village_with_coordinates;{{villageName}} <nobr>({{x}}|{{y}})</nobr>
+village_with_clickable_coordinates;{{villageName}} {{mapId|Coordinates}}
+valuePerHour;{{a}}/val.
+back;Atgal
+fill;Užpildykite
+hero;karžygys
+done;Įvykdyta
+remove;Pašalinti
+prerequisites;Reikalavimai:
+newAmount;Nauja suma
+before;prieš
+after;po
+permissions;Teisės
+changesSaved;Pakeitimai išsaugoti!
+genericError;Netikėta klaida
+allianceTagInBrackets;[{{allianceId|AllianceLink}}]
+autocompleteNoResult;Nerasta atitikmenų
+medalAdded;Pridėtas medalis
+continueEdit;Tęsti redagavimą
+levelUp;Lygio pakilimas!
+non_existing_object;[?]
+sorting;Rūšiavimas
+copiedToClipboard;Nukopijuota į iškarpinę
+maximumLengthError;Didžiausias ilgis: {{max}}.
+sortingOptions;Rūšiavimo parinktys
+WIP_comingSoon;Funkcija atkeliaus netrukus!
+upgradeTab_fastForward_button;{{Percent}}% greičiau
+upgradeTab_masterBuilder_button;Statyti su\nStatybų vadovu {{goldIcon|Sprite}}{{goldCost}}
+upgradeTab_adBoostPopup_boost;{{BOOST}}% priedas
+infoTab_upgradingToLevel;Statomas lygis {{level}}:
+infoTab_genericCurrently;Šiuo metu:
+infoTab_genericAtLevel;Lygis {{INT}}:
+infoTab_genericEffect;{{INT}}
+infoTab_currentProduction;Dabartinė gamybos apimtis:
+infoTab_productionAtLevel;Gamyba {{INT}} lygyje:
+infoTab_effectPerHour;{{INT}} per valandą
+networkIssues;Prarastas ryšys su žaidimo serveriu.
+cantLoadServerList;Dėl tinklo problemų nepavyko įkelti serverių sąrašo. Patikrinkite, ar prietaisas prijungtas prie interneto, ir bandykite dar kartą.
+barracks_TrainTroops_Action;Treniruoti karius
+barracks_ViewTrainingsList;Peržiūrėti treniravimo sąrašą
+barracks_unitNeedsToBeResearched;Karių tipą pirmiausia reikia išrasti
+barracks_requiresLabel;Reikia:
+barracks_trainingCosts;Karių ruošimo kaina
+barracks_troopsInTraining;Ruošiami kariai
+training_started;Ruošimas prasidėjo sėkmingai!
+targetSelection_relationLabel;Būsena:
+targetSelection_selectedVillage;Pasirinkta gyvenvietė
+targetSelection_noSelectedVillage;Nepasirinkta gyvenvietė
+targetSelection_ownVillages;Jūsų gyvenvietės
+targetSelection_relation0;Neutralus
+targetSelection_relation1;Draugiškas
+targetSelection_relation2;Jūsų aljansas
+targetSelection_relation3;Jūsų gyvenvietė
+targetSelection_alreadyThere_troops;Jūsų kariai jau ten.
+targetSelection_alreadyThere_merchants;Jūsų prekeiviai jau ten.
+rallyPoint_button_confirmTarget;Patvirtinti tikslą
+rallyPoint_button_prepareTroops;Paruošti karius
+rallyPoint_button_updateWave;Atnaujinti bangą
+rallyPoint_button_copyWave;Kopijuoti bangą
+rallyPoint_button_newWave;Pridėti naują bangą
+rallyPoint_sendTroops_chooseDestination;Siųsti karius – Pasirinkite kelionės tikslą
+rallyPoint_sendTroops_sendTroopAction_1;Siųsti karius – Patvirtinti
+rallyPoint_sendTroops_sendTroopAction_3;Siųsti karius – Patvirtinti
+rallyPoint_sendTroops_sendTroopAction_4;Siųsti karius – Patvirtinti
+rallyPoint_sendTroops_sendTroopAction_5;Siųsti karius – Patvirtinti
+rallyPoint_sendTroops_sendTroopAction_72;Persiųsti karius – Patvirtinti
+rallyPoint_sendTroops_sendTroopAction_9;Atsiimti karius – Patvirtinti
+rallyPoint_sendTroops_sendTroopAction_10;Įkurti naują gyvenvietę
+rallyPoint_sendTroops_sendTroopButton_1;Siųsti karius
+rallyPoint_sendTroops_sendTroopButton_3;Siųsti karius
+rallyPoint_sendTroops_sendTroopButton_4;Siųsti karius
+rallyPoint_sendTroops_sendTroopButton_5;Siųsti karius
+rallyPoint_sendTroops_sendTroopButton_72;Persiųsti karius
+rallyPoint_sendTroops_sendTroopButton_9;Siųsti karius atgal
+rallyPoint_sendTroops_sendTroopButton_10;Įkurti naują gyvenvietę
+rallyPoint_sendTroops_coordinateX;<b>X</b> koordinatė:
+rallyPoint_sendTroops_coordinateY;<b>Y</b> koordinatė:
+rallyPoint_sendTroops_selectOnMap;Arba pasirinkite vietą žemėlapyje:
+rallyPoint_sendTroops_arrivalTime;po <b>{{hoursLeft|Duration}}</b> – <b>{{hoursLeft|TimeCountUp}}</b> laiku
+rallyPoint_sendTroops_catapultTargetPopup;Pasirinkite katapultų taikinį:
+rallyPoint_sendTroops_catapultTarget_category_1;Infrastruktūros pastatai
+rallyPoint_sendTroops_catapultTarget_category_2;Kariniai pastatai
+rallyPoint_sendTroops_catapultTarget_category_3;Resursų pastatai
+rallyPoint_sendTroops_catapultTarget_random;Atsitiktinai
+rallyPoint_sendTroops_catapultTarget_noBuilding;Rinkitės pastatą
+rallyPoint_sendTroops_catapultTarget_recentTargets;Paskutinį kartą pasirinktas:
+rallyPoint_sendTroops_changeHeroHomeVillage;Pakeisti karžygio gimtąją gyvenvietę
+rallyPoint_sendTroops_attackNoSelection;Pasirinkite atakos tipą
+rallyPoint_sendTroops_movementType_5;Pastiprinimai
+rallyPoint_sendTroops_movementType_3;Puolimas
+rallyPoint_sendTroops_movementType_4;Reidas
+rallyPoint_sendTroops_attackForwarding;Persiuntimas
+rallyPoint_sendTroops_noTroopsSelected;- Kariai nepasirinkti -
+rallyPoint_sendTroops_noTroopsAvailable;Negalima siųsti karių. Šioje gyvenvietėje karių nėra.
+rallyPoint_sendTroops_forwardingVillageError;Kariai gali būti persiunčiami tik aljanso nariams arba savo gyvenvietėms.
+rallyPoint_sendTroops_forwardingDestination;Persiųsti karius – Pasirinkti taikinį
+rallyPoint_sendTroops_WaveRemoved;Pašalinta banga
+rallyPoint_sendTroops_maxWaves;Pasiektas didžiausias bangų kiekis
+rallyPoint_sendTroops_notEnoughTroopsToCopy;Nepakanka karių, kad būtų galima dubliuoti bangą.
+rallyPoint_sendTroops_troopsSent;Kariai išsiųsti!
+rallyPoint_sendTroops_toOverview;Prie apžvalgos
+rallyPoint_sendTroops_backToVillage;Atgal į gyvenvietę
+rallyPoint_sendTroops_mission;Misija:
+rallyPoint_troopsOverview_1;Atvykstančios atakos ir reidai
+rallyPoint_troopsOverview_2;Išvykstančios atakos ir reidai
+rallyPoint_troopsOverview_3;Grįžtantys kariai
+rallyPoint_troopsOverview_4;Jūsų kariai šioje gyvenvietėje ir jos oazėse
+rallyPoint_troopsOverview_5;Kitų kariai šioje gyvenvietėje
+rallyPoint_troopsOverview_6;Jūsų kariai kitose gyvenvietėse ar oazėse
+rallyPoint_troopsOverview_7;Atvykstantys pastiprinimai
+rallyPoint_troopsOverview_8;Išvykę pastiprinimai
+rallyPoint_troopsOverview_9;Išvykę pastiprinimai
+rallyPoint_troopsOverview;Karių apžvalga
+rallyPoint_troopsOverview_consumption;Išlaikymas: {{cropConsumption|ShortenNumber|10000}}  {{iconName|Sprite}} per valandą
+rallyPoint_troopsOverview_arrivalTime;Atvykimas po: <b>{{Duration|Countdown}}</b> – <b>{{date|Time}}</b> laiku 
+rallyPoint_troopsOverview_incomingMission_3;Atvykstanti ataka iš: 
+rallyPoint_troopsOverview_incomingMission_4;Atvykstantis reidas iš: 
+rallyPoint_troopsOverview_outgoingMission_3;Atakos 
+rallyPoint_troopsOverview_outgoingMission_4;Reidai 
+rallyPoint_troopsOverview_outgoingMission_5;Pastiprinimai 
+rallyPoint_troopsOverview_outgoingMission_50;Nuotykis į 
+rallyPoint_troopsOverview_outgoingMission_72;Kariai, persiųsti į 
+rallyPoint_troopsOverview_outgoingMission_10;Įkursiantys naują gyvenvietę 
+rallyPoint_troopsOverview_outgoingMission_40;Kariai pasitraukia į miško slėptuvę.
+rallyPoint_troopsOverview_returningMission;Grįžtantys iš: 
+rallyPoint_troopsOverview_ownTroops_1;Jūsų kariai 
+rallyPoint_troopsOverview_ownTroops_2;Jūsų kariai 
+rallyPoint_troopsOverview_ownTroops_3;Jūsų kariai 
+rallyPoint_troopsOverview_ownTroops_4;<b>Gamta</b> 
+rallyPoint_troopsOverview_ownTroops_5;Jūsų kariai 
+rallyPoint_troopsOverview_ownTroops_6;Jūsų kariai 
+rallyPoint_troopsOverview_ownTroops_7;Jūsų kariai 
+rallyPoint_troopsOverview_foreignTroops_2;Pastiprinimas iš 
+rallyPoint_troopsOverview_foreignTroops_4;Įkalinti kariai iš 
+rallyPoint_troopsOverview_ownTroopsInOther_2;Jūsų pastiprinimas 
+rallyPoint_troopsOverview_ownTroopsInOther_4;Jūsų įkalinti kariai 
+rallyPoint_troopsOverview_origin;Kilmė: 
+rallyPoint_troopsOverview_reinforcement;Pastiprinimas iš 
+rallyPoint_troopsOverview_killed;Kariai žuvo!
+rallyPoint_troopsOverview_released;Kariai paleisti!
+rallyPoint_troopsOverview_forwardedTroopsButton;Persiųsti kariai
+rallyPoint_troopsOverview_returnToOverview;Grįžti į apžvalgą
+rallyPoint_troopsOverview_incomingAttacks;<color={{colorValue|TextColor}}>{{incomings}}</color> atvyksta
+rallyPoint_troopsOverview_amountIncoming;{{value}} atvyksta
+rallyPoint_troopsOverview_amountOutgoing;{{value}} išvyksta
+rallyPoint_troopsOverview_amountReturning;{{value}} grįžta
+rallyPoint_troopsOverview_firstArrivalTime;Per {{timestamp|Countdown}} valandas (-ų)
+rallyPoint_troopsOverview_forwardTroops;Persiųsti
+rallyPoint_troopsOverview_MergeTroops;Prijungti prie gyvenvietės
+rallyPoint_troopsOverview_WithdrawTroops;Siųsti atgal
+rallyPoint_troopsOverview_sort_1;Pirmiausia pažymėti judėjimai
+rallyPoint_troopsOverview_sort_2;Pirmiausia atvykstantys anksčiausiai
+rallyPoint_troopsOverview_sort_3;Pirmiausia atvykstantys vėliausiai
+rallyPoint_troopsOverview_sort_4;Pirmiausia vėliausiai išsiųsti kariai
+rallyPoint_troopsOverview_sort_5;Pirmiausia anksčiausiai išsiųsti kariai
+rallyPoint_troopsMerge_troopsToBeMerged;Kariai, pasirinkti prijungimui:
+rallyPoint_troopsMerge_currentGold;Dabartinis auksas:  {{iconName|Sprite}} {{currentGold}}
+rallyPoint_troopsMerge_goldLeft_0;{{remainingGold}} / {{maxAllowedGold}} aukso liko prijungti karius šiandien.
+rallyPoint_troopsMerge_goldLeft_1;{{remainingGold}} / {{maxAllowedGold}} aukso liko prijungti karius šiandien. Vis dar galite prijungti su resursais.
+rallyPoint_troopsMerge_troopsMergedToast;Kariai prijungti!
+rallyPoint_raidList_beingRaided;{{current}}/{{total}} yra reidinami
+rallyPoint_infoTab_EvasionShortDescription;Nustatykite karių pasitraukimą sostinėje
+rallyPoint_farmList_createNewTitle;Sukurti naują sąrašą
+rallyPoint_farmList_editTitle;Redaguoti sąrašą
+rallyPoint_farmList_listName;Sąrašo pavadinimas
+rallyPoint_farmList_selectDefaultTroops;Pasirinkti karius pagal nutylėjimą
+rallyPoint_farmList_addTroopsButton;Pridėti karius
+rallyPoint_farmList_editTroopsButton;Taisyti karius
+rallyPoint_farmList_setTroopsButton;Nustatyti karius
+rallyPoint_farmList_createListButton;Sukurti sąrašą
+rallyPoint_farmList_editListButton;Atnaujinti sąrašą
+rallyPoint_farmList_editTroopsTitle;Redaguoti fermų sąrašo karius
+rallyPoint_farmList_deleteList;Ištrinti sąrašą
+rallyPoint_selectTroops;Pasirinkti karius
+rallyPoint_farmList_listCreated;Sąrašas sukurtas
+rallyPoint_farmList_exitList;Išeiti iš sąrašo
+rallyPoint_farmList_startAll;Paleisti visus taikinius
+rallyPoint_farmList_startAllLists;Pradėti visus
+rallyPoint_farmList_startSelected;Pradėti pasirinktus
+rallyPoint_farmList_noTarget;- Nepasirinkta jokių taikinių -
+rallyPoint_farmList_noTargetExist;Šiame sąraše nėra taikinių
+rallyPoint_farmList_selectedAmount;{{amount}} pasirinkta:
+rallyPoint_farmList_listUpdated;Sąrašas atnaujintas
+rallyPoint_farmList_listDeleted;Sąrašas ištrintas
+rallyPoint_farmList_editWarning;- Sąrašo ištrynimas ištrins visus šiame sąraše esančius taikinius\n- Karių redagavimas turės įtakos tik būsimų taikinių numatytiems kariams
+rallyPoint_farmList_sortingFailed;Rūšiavimas nepavyko! Pabandykite dar kartą!
+rallyPoint_farmList_notStartedPopupTitle;Reidai nepradėti
+rallyPoint_farmList_notStartedPopupElement;<b>{{total}}</b> dėl {{message}}
+rallyPoint_farmList_NotStartedPopupButtonGoTo;Eiti į fermų sąrašą
+rallyPoint_farmList_AddTargetTitle;Pridėti taikinį
+rallyPoint_farmList_changeTroops;Keisti karius
+rallyPoint_farmList_targetAdded;Taikinys pridėtas
+rallyPoint_farmList_targetAlreadyOnList;Taikinys jau yra šiame fermų sąraše, pasirinkite kitą fermų sąrašą arba sukurkite naują.
+rallyPoint_farmList_choose;Pasirinkite fermų sąrašą
+rallyPoint_farmList_notYetRaided;Dar nereidintas
+rallyPoint_farmList_EditRaids;Redaguoti [raidsAmount>1:taikinius][raidsAmount=1:taikinį]
+rallyPoint_farmList_DeleteRaidsPlayerQuestion;Ar tikrai norite ištrinti [raidsAmount=1:šį taikinį][raidsAmount>1:šiuos taikinius]?
+rallyPoint_farmList_ChangeRaidList;Keisti fermų sąrašą
+rallyPoint_farmList_ChangeTarget;Pakeisti taikinį
+rallyPoint_farmList_ChangeTroops;Keisti karius
+rallyPoint_farmList_DeactivateTarget;Deaktyvuoti [raidsAmount>1:taikinius][raidsAmount=1:taikinį]
+rallyPoint_farmList_MultiEditWarning;Redaguojate kelis taikinius. Atlikti pakeitimai turės įtakos visiems pasirinktiems taikiniams
+rallyPoint_farmList_UpdateRaids;Atnaujinti [raidsAmount>1:taikinius][raidsAmount=1:taikinį]
+rallyPoint_farmList_filterShowTroopsTitle;Rodyti karius
+rallyPoint_farmList_filterShowTroopsDescription;Rodo pasirinktus karius pagal taikinį
+rallyPoint_farmList_filterShowPopulationTitle;Rodyti taikinio populiaciją
+rallyPoint_farmList_filterShowPopulationDescription;Rodo taikinio gyvenvietės gyventojų skaičių
+rallyPoint_farmList_filterShowDistanceTitle;Rodyti atstumą
+rallyPoint_farmList_filterShowDistanceDescription;Rodo taikinio atstumą iki jūsų gyvenvietės
+rallyPoint_farmList_filterShowLastRaidTitle;Rodyti paskutinio reido informaciją
+rallyPoint_farmList_filterShowLastRaidDescription;Rodo paskutinio reido į taikinį informaciją
+rallyPoint_farmList_filterShowBountyTitle;Rodyti grobį ir resursus
+rallyPoint_farmList_filterShowBountyDescription;Rodomas gautas grobis ir resursai
+marketplace_createOffer;Sukurti pasiūlymą
+marketplace_myOffers_title;Mano pasiūlymai
+marketplace_myOffers_merchants;Prekeiviai: {{count}}
+marketplace_myOffers_alliance_True;Aljansai: Taip
+marketplace_myOffers_alliance_False;-
+marketplace_myOffers_interval;{{amount}} val.
+marketplace_myOffers_offerDeleted;Pasiūlymas ištrintas
+marketplace_merchantsOverview_arrival;{{duration}} val. Atvykimas: {{arrivalTime}}
+marketplace_merchantsOverview_incomingMerchants;Atvykstantys pristatymai: {{count}}
+marketplace_merchantsOverview_outgoingMerchants;Išvykstantys pristatymai: {{count}}
+marketplace_merchantsOverview_noIncomingMerchants;- Įeinančių prekeivių nėra -
+marketplace_merchantsOverview_noOutgoingMerchants;- Išvykstančių prekeivių nėra -
+marketplace_merchantsOverview_IncomingCat;Atvyksta
+marketplace_merchantsOverview_outgoingCat;Išvyksta
+marketplace_merchantsOverview_capacity;Talpa: {{capacity}}
+marketplace_merchantsOverview_merchantsOverview;Prekeivių apžvalga
+marketplace_merchantsOverview_ArrivingSoonest;Atvykstantys anksčiausiai
+marketplace_merchantsOverview_ArrivingLatest;Atvykstantys vėliausiai
+marketplace_merchantsOverview_ShortestDistance;Trumpiausias atstumas
+marketplace_merchantsOverview_LongestDistance;Ilgiausias atstumas
+marketplace_merchantsOverview_transportTo;Gabenama į <b>{{Village}}</b>, priklausančią <b>{{Player}}</b>
+marketplace_merchantsOverview_transportFrom;Gabenama iš <b>{{Village}}</b>, priklausančios <b>{{Player}}</b>
+marketplace_merchantsOverview_returningFrom;Grįžta iš <b>{{Village}}</b>, priklausančios <b>{{Player}}</b>
+academy_research_viewResearchList;Vykdomi tyrimai
+academy_research_allUnitsResearched;Visi kariai yra ištirti.
+academy_researchListPopup_title;Tiriami kariai
+academy_researchListPopup_remainingTime;{{timeLeft}} liko. Bus paruošta {{readyAt}}
+academy_researchListPopup_constructImmediately;Momentinė statyba
+research_started;Tyrimas pradėtas sėkmingai!
+research_timeLeft;{{TIME|Countdown}} liko
+townHall_celebration_ongoingCelebration;Vykdomi
+topBar_perHourLabel;/h:
+topBar_maxLabel;Daugiausiai:
+topBar_resourceFull;Pilnas
+leftPanel_infoBox;Informacija
+villagePanel_playerNameTitle;Gyvenvietės, priklausančios {{playerName}}
+villagePanel_toStatistics;Į gyvenvietės statistiką
+villagePanel_culturePointsNeeded;Kultūros taškai, reikalingi naujai gyvenvietei
+mapCell_type;{{x}}{{y}}
+mapCell_type_village;{{villageName}}
+mapCell_type_1;Vietinis
+mapCell_type_2;Slėnis
+mapCell_type_3;Laisva oazė
+mapCell_type_4;Užimta oazė
+mapCell_type_5;Gamta
+mapCell_Owner;Savininkas
+mapCell_type_valley;Slėnis
+mapCell_Wilderness;Šioje vietoje nėra nieko įdomaus.
+mapCell_Distance;{{distance|Round|1}} laukai
+mapCell_locationInfo;Informacija apie vietą
+mapCell_surroundings;Aplinka
+mapCell_actions_editFarmlist;Redaguoti fermų sąrašą
+mapCell_actions_addFarmlist;Pridėti prie fermų sąrašo
+mapCell_actions_raidOasis;Reidinti oazę
+mapCell_showOnMap;Rodyti žemėlapyje
+mapCell_noReports;- Informacijos apie šią vietą nėra -
+berichte.region_;{{PLAYERACTIVE}}{{PLAYERPASSIVE}}{{VILLAGE}}{{NAME1}}{{NAME2}}{{ALLY1}}{{ALLY2}}{{NAME}}
+mapCell_goToOwnVillage;Eiti į savo gyvenvietę
+constructionQueue_timeLeftToFinish;{{timestamp|Countdown}} liko. Paruošta {{timestamp|Time}}
+constructionQueue_timeUntilStart;Prasidės po {{timestamp|Countdown}}
+constructionQueue_MasterBuilderTitle;Statybų vadovo eilė (kainuoja {{masterBuilderCost|Sprite}} {{masterBuilderCost}} statybos pradžioje)
+constructionQueue_Constructing;Statomas pastatas
+constructionImmediatelyPopup_topText;Nedelsiant bus pabaigti šie statybų nurodymai:
+constructionImmediatelyPopup_title;Užbaigti iš karto
+newBuildingConstructionDetail_dateTimeEnoughResources;Pakankamai resursų bus {{date|Date}} {{time|Time}}
+newBuildingConstruction_noBuildingsAvailable;Šiuo metu negalite statyti pastatų.
+goldclubpopup_currentGold;Dabartinis auksas:  {{iconName|Sprite}} <color={{colorValue|TextColor}}>{{currentGold}}</color>
+goldclubpopup_activated_toastMessage;Aukso klubas aktyvuotas!
+loginPage_version;Versija {{currentVersion}}
+loginPage_loginBlocked;Prisijungimas užblokuotas
+loginPage_loginBlocked_fails;Per daug nepavykusių bandymų prisijungti
+loginPage_loginBlocked_message;Jūsų paskyra buvo užblokuota dėl per didelio nepavykusių bandymų prisijungti skaičiaus.
+loginPage_loginBlocked_resolve;Norėdami atrakinti paskyrą, prisijunkite per naršyklę adresu
+serverSelection_selectRegion;Pasirinkite regioną
+serverSelection_selectGameWorld;Pasirinkti žaidimo serverį
+serverSelection_0;Tarptautinis
+serverSelection_1;Arabija
+serverSelection_2;Azija
+serverSelection_3;Europa
+serverSelection_4;Amerika
+serverSelection_99;Dev
+serverSelection_mapSize;Žemėlapio dydis:
+serverSelection_mapSize_0;Mažas
+serverSelection_mapSize_1;Didelis
+serverSelection_artifacts;Artefaktai:
+serverSelection_constructionPlans;Statybų planai:
+serverSelection_changeGameWorld;Pakeisti žaidimo serverį
+serverSelection_username;Vartotojo vardas:
+serverSelection_password;Slaptažodis:
+serverSelection_loginButton;Prisijunkite ir žaiskite
+serverSelection_forgotPassword;Pamiršau slaptažodį
+serverSelection_noAccount;Neturiu paskyros
+serverSelection_loginError;Neteisingas vartotojo vardas arba slaptažodis
+serverSelection_graphQlError;Klaida gaunant duomenis iš žaidimo pasaulio
+serverSelection_tokenRefreshError;Prisijungimo prie paskutinio naudoto žaidimo pasaulio klaida: prašome prisijungti iš naujo.
+serverSelection_stayLoggedIn;Likite prisijungę prie žaidimo pasaulio
+troopsInfo_title;Kariai {{villageName}}
+unitInfo_velocity;<b>{{fields}}</b> laukų per valandą
+unitInfo_resourceCarriage;<b>{{INT}}</b> išteklių
+unitInfo_researchPrerequisites;Būtinos sąlygos tyrimui:
+unitInfo_trainingPrerequisites;Būtinos sąlygos treniravimui:
+unitInfo_canCarry;Gali panešti:
+exchangeResources_currentTitle;Nauja suma
+exchangeResources_lockAmount;Užrakinti sumą
+exchangeResources_changeTitle;Keisti
+exchangeResources_restTitle;Liko
+exchangeResources_buildingPossible_True;Patobulinimas galimas
+exchangeResources_buildingPossible_False;Patobulinimas negalimas
+exchangeResources_mergePossible_True;Prijungimas galimas
+exchangeResources_mergePossible_False;Prijungimas negalimas
+exchangeResources_researchPossible_True;Tyrimas galimas
+exchangeResources_researchPossible_False;Tyrimas negalimas
+exchangeResources_celebrationPossible_True;Šventė galima
+exchangeResources_celebrationPossible_False;Šventė negalima
+exchangeResources_reviveHero_True;Karžygio atgaivinimas galimas
+exchangeResources_reviveHero_False;Karžygio atgaivinimas negalimas
+exchangeResources_currentlyAvailable;Šiuo metu yra: <b>{{amount}}</b>
+exchangeResources_maximumAvailable;Daugiausiai galima: <b>{{amount}}</b>
+exchangeResources_distributeEvenly;Paskirstyti likusius resursus tolygiai:
+exchangeResources_distributeOnResource;Arba pirmenybę teikti šiems resursams pirmiausia:
+exchangeResources_distributeAuto;Automatinis paskirstymas
+exchangeResources_distributeManual;Rankinis paskirstymas
+exchangeResources_availableTroops;Galimi kariai: {{amount}}
+buildingActivities_title;Statybų veikla
+buildingActivities_idle;Nevyksta
+buildingActivities_type;Tipas
+buildingActivities_building_13;Patobulinimai:
+buildingActivities_building_16;"Mėgstamiausių" taikinių sąrašas
+buildingActivities_building_17;Prekeiviai
+buildingActivities_building_19;Ruošiami kariai
+buildingActivities_building_20;Ruošiama kavalerija
+buildingActivities_building_29;Ruošiami kariai
+buildingActivities_building_30;Ruošiama kavalerija
+buildingActivities_building_21;Ruošiami kariai
+buildingActivities_building_22;Tyrinėjimas
+buildingActivities_building_24;Šventės
+buildingActivities_building_46;Karių gydymas
+buildingActivities_buildingAction_;{{amount}}{{max}}
+buildingActivities_buildingAction_16;{{amount}} vykdomi reidai
+buildingActivities_buildingAction_17;{{amount}}/{{max}} prieinama
+mainMenu_title;Pagrindinis meniu
+mainMenu_quests;Užduotys
+playerDetails_infoTab;Žaidėjo informacija
+playerDetails_villageTabTitle;{{villages}} gyvenvietės su {{oases}} oazėmis
+playerDetails_SortBy_1;Gyventojų skaičius
+playerDetails_SortBy_2;Pergalės taškai
+playerDetails_SortBy_3;Gyvenvietės pavadinimas:
+playerDetails_SortBy_4;Regiono pavadinimas
+player_gender_DontSpecify;Nenurodyti
+player_gender_Other;Kita
+player_gender0;Vyras
+player_gender1;Moteris
+player_gender2;Kita
+player_gender3;Nenurodyti
+playerDetails_NotesFor;Pastabos apie žaidėją {{playerName}}
+playerDetails_NoDescription_Others;- Šis žaidėjas nepridėjo aprašymo -
+playerDetails_NoDescription_Own;- Aprašymas dar nepridėtas -
+playerDetails_editLanguages;Redaguoti kalbas
+playerDetails_searchLanguage;Ieškoti kalbos
+goldShopPlaceholder_title;Parduotuvė jau netrukus!
+goldShopPlaceholder_description;Aukso parduotuvė mobiliojoje programėlėje dar neįdiegta.<br><br> Norėdami įsigyti aukso, prisijunkite prie savo paskyros naršyklėje.
+goldShop_title;Aukso parduotuvė
+goldShop_advantage_5;Travian Plus
+goldShop_advantage_4;Mediena
+goldShop_advantage_1;Molis
+goldShop_advantage_2;Geležis
+goldShop_advantage_3;Grūdai
+goldShop_feature_activated;Funkcija aktyvuota!
+goldShop_purchaseFailed;Pirkimas nepavyko!
+goldShop_purchaseSuccess;Pirkimas sėkmingas.
+goldShop_transactionInProgress;Vykdomas pervedimas.\nPrašome palaukti.
+goldShop_transactionFailed;Įvyko klaida.\nPrašome pabandyti veliau.
+goldShop_transactionTimeout;Gerbiamas žaidėjau, jūsų mokėjimas viršijo nustatytą laiko limitą ir negalėjo būti teisingai apdorotas. Jei kyla problemų, susisiekite su mūsų <style="link"><link="https://support.travian.com/support/tickets/new">mokėjimo palaikymo tarnyba</link></style> .
+market_sendResources_requiredMerchants;Reikalingi prekeiviai:
+market_sendResources_capacityPerMerchant;Prekeivio talpa
+market_sendResources_amountRepeats;Pakartojimų skaičius:
+market_sendResources_confirmResources;Patvirtinkite resursus
+market_sendResources_amountWithX;{{amount}}x
+market_sendResources_sent;Resources sent!
+market_offer_maxDuration;Ilgiausias pristatymo laikas:
+market_offer_confirm;Patvirtinkite pasiūlymą
+market_offers_title;Pasiūlymai
+market_capacity;Talpa: {{capacity}}
+market_offers_offering;Siūlau:
+market_offers_searching;Ieškau:
+market_offers_offered;Jūs siunčiate
+market_offers_wanted;Jūs gaunate
+market_offers_accepted;Pasiūlymas priimtas! Resursai jau pakeliui, prekeiviai išsiųsti.
+market_offers_ownAllianceOnly;Tik savo aljanso žaidėjai
+market_ratio_11;1:1
+market_ratio_1X;1 : X
+market_tradeRoutes_to;Į:
+market_tradeRoutes_entryAmount;<b>{{amount}}</b> Įrašai
+market_tradeRoutes_noRoutes;- Nėra sukurtų prekybos maršrutų -
+market_tradeRoutes_travelTime;Kelionės laikas: {{time|Duration}} val.
+market_tradeRoutes_activeRatio;{{active}}/{{total}} aktyvūs
+market_tradeRoutes_active;Aktyvus
+market_tradeRoutes_paused;Sustabdytas
+market_tradeRoutes_updated;Maršrutai atnaujinti
+market_tradeRoutes_deleted;Prekybos maršrutai ištrinti
+market_tradeRoutes_returnAt;grįžti į {{time|Time}}
+market_tradeRoutes_merchantsAndRepeat;{{merchants}} prekeiviai, {{repeats}}x
+market_tradeRoutes_filterOptions;Filtravimo parinktys
+market_tradeRoutes_showMerchants;Rodyti prekeivius
+market_tradeRoutes_showMerchantsText;Rodo, kiek prekeivių yra naudojama
+market_tradeRoutes_showResources;Rodyti resursus
+market_tradeRoutes_showResourcesText;Rodo gabenamų resursų kiekį
+market_tradeRoutes_afterInputFieldsSuffix;Valandos
+market_tradeRoutes_interval;{{INT}} val.
+market_tradeRoutes_confirmTarget;Patvirtinti tikslą
+market_tradeRoutes_arrivalTime;po {{duration|Duration}} – {{arrivalTime|Time}} laiku
+market_tradeRoutes_created;Prekybos maršrutas sukurtas
+market_tradeRoutes_edit;Redaguoti prekybos [routeAmount=1:maršrutą][routeAmount>1:maršrutus]
+market_tradeRoutes_update;Atnaujinti prekybos [routeAmount1:maršrutą][routeAmount>1:maršrutus]
+market_tradeRoutes_multiEditWarning;Jūs redaguojate kelis prekybos maršrutus. Atlikti pakeitimai turės įtakos visiems {{routeAmount}} maršrutams.
+market_tradeRoutes_editResourcesTitle;Pakeisti resursus
+market_tradeRoutes_editResourcesButton;Redaguoti resursus
+market_tradeRoutes_setResourcesButton;Nustatyti resursus
+market_tradeRoutes_updateResourcesButton;Atnaujinti resursus
+market_tradeRoutes_pause;Sustabdyti prekybos [routeAmount1:maršrutą][routeAmount>1:maršrutus]
+market_tradeRoutes_pauseDescription;Prekybos maršrutas bus perkeltas į sustabdytųjų sąrašą, bet liks jūsų turgavietėje.
+market_tradeRoutes_delete;Ištrinti prekybos [routeAmount1:maršrutą][routeAmount>1:maršrutus]
+market_tradeRoutes_deleteConfirmQuestion;Ar tikrai norite ištrinti [routeAmount=1:šį][routeAmount>1:šiuos] prekybos [routeAmount=1:maršrutą][routeAmount>1:maršrutus]?
+market_tradeRoutes_invalidTarget;Prekybos maršrutus galima siųsti tik į aljanso ar sąjungos narių pasaulio stebuklų gyvenvietės bei gyvenvietes su artefaktais arba pasaulio stebuklų statybos planais
+hero.status;{{NAME}}
+hero_adventures_selectVillage;Pasirinkti gyvenvietę
+hero_adventures_explore;Tyrinėti
+hero_adventures_sendHero;Siųsti karžygį
+hero_adventures_sent;Nuotykis prasidėjo
+hero_status_reviveWithBucket;Naudokite, kad nedelsiant atgaivintumėte karžygį.
+hero_status_reviveWithRes;Naudokite resursus, kad atgaivintumėte karžygį.
+hero_inventory_consumablePopupTitle;Naudojamas daiktas
+hero_resourceTransferPopup_title;Perkelti resursus
+hero_resourceTransferPopup_ReadyForTransfer;Paruošta perkėlimui
+hero_resourceTransferPopup_transferSelected;Perkelti pasirinktus
+hero_resourceTransferPopup_transferMax;Perkelti didžiausią galimą kiekį
+hero_resourceTransferPopup_storageFull;Talpykla pilna. Negalite perkelti daugiau resursų.
+hero_inventory_transferToCurrentVillage;Perkelta į šiuo metu aktyvią gyvenvietę: <b>{{VILLAGE}}</b>
+hero.itemDescriptionV2Details;{{PERCENTAGE}}{{EXPERIENCE}}{{RAISE}}{{LIMIT}}{{MAX}}{{TIME}}
+hero.itemDescriptionV2;{{VALUE}}
+hero_consumablePopup_currentEquippedItems;Šiuo metu uždėtų daiktų kiekis:
+hero_consumablePopup_itemsLeftInInventory;Daiktų, likusių inventoriuje, kiekis:
+hero.itemTypeV2_inventory;Naudojami daiktai
+hero.cooldownWithTime;Turi {{COOLDOWN}} val. laukimo periodą, kuris baigiasi {{DATE|DateTime}}.
+reports_overview_title;{{COUNT}} ataskaitos
+reports_overview_title_selected;Pasirinkta {{SELECTED}} / {{COUNT}} ataskaitų
+reports_overview_title_archived;Archyvuotos ataskaitos
+reports_overview_archived_noReports;- Nėra archyvuotų ataskaitų -
+reports_filters_title;Pasirinkite filtrą
+reports_filters_allReports;Visos ataskaitos
+reports_filters_applyButton;Taikyti {{COUNT}} filtrus
+reports_filters_noFilter;Filtras nepasirinktas
+reports_detail_title;Ataskaitos informacija
+berichte.;{{NAME1}}{{NAME2}}{{VILLAGE_NAME}}{{X}}{{Y}}{{COORDS}}{{NAME}}
+reports_player_from_village;[{{allianceId|AllianceLink}}] {{playerId|PlayerLink}} iš gyvenvietės {{villageId|VillageLink}}
+reports_troops_lost;Prarasti kariai:
+reports_troops_hospitalized;Sužeisti:
+reports_xp_gained;Gauta {{amount}} patirties
+reports_health_change;-{{change}}% sveikatos
+reports_hero_died;Jūsų karžygys mirė nuotykio metu
+reports_scouted_building;{{buildingType|TranslateSuffixFor|allgemein.gid}} lygis <b>{{level}}</b>
+reports_refreshed;Ataskaitos atnaujintos!
+reports_deleteReportPopup_title;Ištrinti ataskaitą(-as)
+reports_deleteReportPopup_warningTitle;Ar tikrai norite ištrinti {{X}} ataskaitą(-as)?
+reports_deleteReportPopup_warningTitleAll;Ar tikrai norite ištrinti visas ataskaitas?
+reports_deleteReportPopup_warningDescription;Ištrynus ataskaitą, jos nebeliks visam laikui. Jo negalėsite susigrąžinti.
+reports_deleted;Ataskaita ištrinta!
+reports_markedUnread;Ataskaita pažymėta kaip neskaityta!
+reports_archived;Ataskaita archyvuota!
+reports_deleted_all;Visi ataskaitos ištrintos!
+reports_deleted_selected;Ištrinta {{X}} ataskaita(-os/-ų)
+reports_markedRead_all;Visos ataskaitos pažymėtos kaip akaitytos!
+reports_markedRead_selected;{{X}} ataskaita(-os/-ų) pažymėta(-os) kaip skaityta(-os)
+alliance_nameAndTagPair;{{allianceName}} | {{allianceTag}}
+alliance_editAllianceName;Redaguoti aljanso pavadinimą
+alliance_name;Aljanso pavadinimas
+alliance_nameError;Aljanso pavadinimas negali būti tuščias
+alliance_tag;Aljanso santrumpa
+alliance_tagError;Aljanso santrumpa negali būti tuščią
+alliance_profileTab_inviteNewPlayer;Pakviesti naują žaidėją
+alliance_profileTab_showInvitedPlayers;Rodyti pakviestus žaidėjus
+alliance_invitedPopup_title;Pakviesti žaidėjai
+alliance_invitedPopup_invitationRemoved;Kvietimas pašalintas!
+alliance_invitePlayerPopup_title;Pakviesti žaidėją
+alliance_invitePlayerPopup_noPlayerFound;Nerastas joks žaidėjas
+alliance_invitePlayerPopup_playerInvited;Žaidėjas pakviestas!
+alliance_editMemberPopup_title;Redaguoti narį
+alliance_editMemberPopup_customMessage;Pasirinktinė žinutė
+alliance_editMemberPopup_setRole;Nustatyti vaidmenį
+alliance_editMemberPopup_kickPlayerFromAlliance;Išmesti žaidėją iš aljanso
+alliance_editMemberPopup_cantChangePermission;Negalima pakeisti esamo leidimo: žr. įspėjimą.
+alliance_kickPlayerPopup_areYouSure;Ar tikrai norite išmesti {{Player}} iš aljanso?
+alliance_kickPlayerPopup_playerKicked;Žaidėjas išmestas!
+alliance_editAllianceDescription;Taisyti aljanso aprašymą
+alliance_topColumn;Viršutinis stulpelis
+alliance_bottomColumn;Apatinis stulpelis
+alliance_bbCodeAdded;Pridėtas BB kodas
+alliance_generalInformation;Bendroji informacija
+alliance_confederacy_tab;Sąjunga
+alliance_diplomacy;Diplomatija
+alliance_diplomacy_tab1;NAP / karas
+alliance_diplomacy_send_new;Siųsti naują
+alliance_diplomacy_openRequests;Atviri prašymai
+alliance_diplomacy_otherOffered;{{allianceId|AllianceLink}} pasiūlė {{type|TranslateSuffixFor|alliance_diplomacy_type}}
+alliance_diplomacy_youOffered;Jūs pasiūlėte {{type|TranslateSuffixFor|alliance_diplomacy_type}} su {{allianceId|AllianceLink}}
+alliance_diplomacy_offerDeclare;Siūlyti / deklaruoti
+alliance_diplomacy_type;Tipas
+alliance_diplomacy_type1;sąjunga
+alliance_diplomacy_type2;NAP
+alliance_diplomacy_type3;karas
+alliance_diplomacy_type4;sąjunga
+alliance_diplomacy_typekick;išmetimas iš konfederacijos
+alliance_diplomacy_deleteText_;{{type|TranslateSuffixFor|alliance_diplomacy_type}}{{alliance|AllianceLink}}
+alliance_diplomacy_deleteTitle_RemoveRequest;Pašalinti užklausą
+alliance_diplomacy_deleteText_RemoveRequest;Ar tikrai norite pašalinti pasiūlymą dėl {{type|TranslateSuffixFor|alliance_diplomacy_type}} su {{alliance|AllianceLink}}?
+alliance_diplomacy_deleteTitle_TerminateExisting;Nutraukti
+alliance_diplomacy_deleteText_TerminateExisting;Ar tikrai norite nutraukti {{type|TranslateSuffixFor|alliance_diplomacy_type}} su {{alliance|AllianceLink}}?
+alliance_diplomacy_deleteTitle_ConfederacyKickVote;Nutraukti
+alliance_diplomacy_deleteText_ConfederacyKickVote;Jums reikia kitų sąjungos narių patvirtinimo norint išmesti {{subject|AllianceLink}}.\n\nAr norite tęsti ir informuoti kitus aljansus apie savo sprendimą?
+alliance_diplomacy_deleteTitle_QuitConfederacy;Nutraukti
+alliance_diplomacy_deleteText_QuitConfederacy;Ar tikrai norite nutraukti sąjungą su šiais nariais?
+alliance_diplomacy_deleteTitle_RemoveConfederacyProposal;Pašalinti užklausą
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Kick;Ar tikrai norite atsisakyti {{alliance|AllianceLink}} prašymo išmesti {{subject|AllianceLink}} iš sąjungos?
+alliance_diplomacy_deleteText_RemoveConfederacyProposal_Join;Ar tikrai norite atsisakyti {{alliance|AllianceLink}} prašymo pridėti {{subject|AllianceLink}} prie sąjungos?
+alliance_diplomacy_sent;Pasiūlymas išsiųstas
+alliance_diplomacy_accepted;Diplomatiniai santykiai priimti
+alliance_diplomacy_canceled;Diplomatiniai santykiai atšaukti
+alliance_diplomacy_declined;Prašymas atmestas
+alliance_diplomacy_kickStarted;Prašymas nusiųstas
+alliance_diplomacy_proposal_approved;Prašymas patvirtintas
+alliance_diplomacy_noContract;Jūsų aljansas neturi aktyvių sutarčių su kitais aljansais.
+alliance_diplomacy_noConfederacy;Jūsų aljansas nėra sąjungos dalis.
+alliance_diplomacy_alreadyOpenOffer;Šiam aljansui jau pateiktas pasiūlymas.
+alliance_diplomacy_alreadyExistingContract;Su šiuo aljansu jau sudaryta sutartis.
+alliance_diplomacy_warInDeletion;Palaukite, kol kitas aljansas taip pat nutrauks karą.
+alliance_union_leave;Palikti sąjungą
+alliance_union_add;Pridėti naują užklausą
+allianz.diplomacy_with_type;{{NAME}}
+allianz.diplomacy_with_type4;Sąjunga su {{NAME}}
+alliance_newsBbDescription;Pakeiskite „skaičiaus“ tekstą, kad galėtumėte redaguoti naujienų skaičių
+alliance_LossesBBName;Nuostoliai
+alliance_LossesBBDescription;Pakeiskite „pavadinimą“, kad pasirinktumėte aljansą, su kuriuo norite lyginti
+alliance_NapBBName;Nepuolimo paktai
+alliance_WarsBBName;Karai
+alliance_addBBCode;Pridėti BB kodą
+alliance_addMedal;Pridėti medalį
+alliance_assignToPosition;Priskirti narius pareigoms ir pakeisti aljanso pavadinimą
+alliance_editPermissions;Redaguoti teises
+alliance_roleTitle;Pareigų pavadinimas:
+alliance_assignToPosition_onlyMemberError;Jūs esate vienintelis šio aljanso narys. Narių priskyrimas pareigoms ir aljanso pavadinimo keitimas negali būti atžymėtas.
+alliance_noAllianceEvents;- Nėra rodomų aljanso įvykių -
+alliance_dailyContribution;Kasdienis indėlis
+alliance_contributionAmount;Indėlis: <b>{{AMOUNT}}</b>
+alliance_resourcesContributed;{{current}}/{{max}} įnešti resursai
+alliance_contributionResetIn;Atsinaujins po: {{time|Countdown}}
+alliance_resUntilNext;Trūkstami resursai kitam lygiui: {{resources|LongNumber}}
+alliance_bonusCurrentlyActivating;Priedo aktyvavimas: {{resources|Countdown}}
+alliance_bonusMaxed;Priedas jau didžiausio lygio
+alliance_tripledContribution;Jūs patrigubinote indėlį!
+alliance_contributionStatistics;Indėlių statistika
+alliance_contributionNone;- Šiuo metu nėra prisidėjusių -
+auth_clientVerificationFailed;Nepavyko patvirtinti kliento. Bandykite dar kartą.
+banned_seeMessage;Žiūrėkite pranešimą
+banned_acceptPunishment;Priimti bausmę
+residence_settlement;Gyvenvietė
+palace_capital;Nustatyti šią gyvenvietę kaip mano sostinę.
+palace_setAsCapital;Nustatyti kaip sostinę
+palace_enterPassword;Saugumo sumetimais įveskite slaptažodį:
+embassy_GoToAlliance;Eiti į aljansą
+embassy_Invitation;Aljansas {{AllianceId|AllianceLink}}, pakviestas {{playerId|PlayerLink}}
+embassy_VillagesInRange;Gyvenvietės apylinkėje
+embassy_LeaveAllianceToJoin;Norėdami prisijungti prie naujo aljanso, turite palikti dabartinį.
+embassy_ConfirmLeaveAlliance;Patvirtinkite ir palikite aljansą
+embassy_InvitationAccepted;Kvietimas priimtas
+embassy_AllianceFounded;Aljansas sėkmingai įkurtas
+embassy_LeftAlliance;Sėkmingai pasitraukėte iš aljanso
+embassy_acceptInvitationQuestion;Ar tikrai norite prisijungti prie {{allianceId|AllianceLink}}?
+embassy_acceptInvitationWarning;Iš aljanso negalėsite pasitraukti {{hours}} val. po prisijungimo.
+embassy_acceptInvite;Taip, prisijungti prie aljanso
+embassy_declineInvite;Ne, pašalinti kvietimą
+embassy_noAlliancesNearby;Netoliese esančioje teritorijoje aljansų nerasta.
+smithy_improveTo;Patobulinti iki lygio {{level}}
+smithy_viewList;Peržiūrėti plėtrą
+smithy_upgradeStarted;{{unitId|TranslateSuffixFor|truppen.tid}} pradėtas tobulinimas
+smithy_researchFirst;Karių tipą pirmiausia reikia išrasti akademijoje
+smithy_levelTooLow;Kalvės lygis per žemas, prašome pakelti kalvės lygį
+allBuildings_10;Visi sandėliai:
+allBuildings_11;Visos klėtys:
+allBuildings_23;Visos slėptuvės:
+allBuildings_38;Visi sandėliai:
+allBuildings_39;Visos klėtys:
+currentBuildingValue;Dabartinis {{type|TranslateSuffixFor|allgemein.gid}}:
+ad_successful;Reklama peržiūrėta sėkmingai!
+externalLink_title;Išorinė nuoroda
+externalLink_description1;<b>Dėmesio!</b><br>Jūs ketinate atidaryti šią išorinę nuorodą:
+externalLink_description2;„Travian Games“ negali nei patikrinti, nei patvirtinti šios nuorodos.
+externalLink_description3;Tęskite savo rizika.
+externalLink_description4;Ar tikrai norite tęsti?
+externalLink_continue;Tęsti į nuorodą
+search_village;Ieškoti gyvenvietės
+search_select_village;Pasirinkti gyvenvietę
+search_three_characters;Įveskite bent {{amount}} simbolius.
+search_no_result;Nerasta atitikmenų
+search_player;Surasti žaidėją
+search_player_invite;Pakviesti žaidėją
+search_select_player;Pasirinkti žaidėją
+search_select_player_invite;Pakviesti naują žaidėją
+search_alliance;Ieškoti aljanso
+search_select_alliance;Pasirinkti aljansą
+gid27.arte_detail_;{{INT}}
+artefact_inventory_village;Gyvenvietė:
+artefact_inventory_conquered;Užkariauta:
+artefact_inventory_active;Aktyvus: aktyvus
+artefact_inventory_active_already;Aktyvus: <b>Aktyvuotas</b>
+artefact_inventory_show_active_only;Rodyti tik aktyvuotus artefaktus
+artefact_overview;Artefakto apžvalga
+artefact_tip_large;Didieji artefaktai reikalauja <b>20</b> iždinės lygio ir turi įtakos visam jūsų <b>avatarui</b>
+artefact_tip_small;Mažieji artefaktai reikalauja <b>10</b> iždinės lygio ir veikia tik <b>gyvenvietę</b>
+artefact_tip_nearby;Artefaktai, esantys apylinkėse {{villagenamelong|Bold}}
+artefact_small;Mažas
+artefact_large;Didelis
+artefact_nearby;Netoliese
+artefact_village;Gyvenvietė
+artefact_button_former_owners;Žiūrėti ankstesnius savininkus
+artefact_already_active;Jau aktyvuotas
+artefact_required_level_value;Iždinės <b>lygis {{LEVEL}}</b>
+artefact_details;Daugiau
+number_counter;{{NUMBER}}.
+tasks_villageTasks;Gyvenvietės užduotys
+tasks_nextHeroLevelBonus;Kitas karžygio lygio priedas = {{value}}%
+villageOverview_building_headline;Statybos
+villageOverview_building_slotIdle;Nevykdomi jokie statybos darbai
+villageOverview_resource_sorting1;Gyvenviečių sąrašas
+villageOverview_resource_sorting2;Mažiausia klėties trukmė
+villageOverview_resource_sorting3;Didžiausia klėties trukmė
+villageOverview_resource_sorting4;Mažiausia sandėlio trukmė
+villageOverview_resource_sorting5;Didžiausia sandėlio trukmė
+villageOverview_resource_sorting6;Neigiama gamyba
+villageOverview_troops_stationed;Kariai gyvenvietėje
+villageOverview_troops_sum;Iš viso karių
+villageOverview_troops_tab_training;Treniravimas
+villageOverview_culture_slots;Gyvenviečių laukeliai
+cancelPopup_Improvement;Atšaukti pagerinimą
+cancelPopup_Research;Atšaukti tyrinėjimą
+cancelPopup_Construction;Atšaukti statybą
+cancelPopup_text_;{{NAME}} {{LEVEL}}
+cancelPopup_text_Improvement;Ar norite atšaukti {{NAME}} {{LEVEL}} lygio pagerinimą?
+cancelPopup_text_Research;Ar norite atšaukti {{NAME}} tyrinėjimą?
+cancelPopup_text_Construction;Ar norite atšaukti {{NAME}} {{LEVEL}} lygio statybas?
+cancelPopup_text_refund;Atgausite {{INT}}% pagerinimo kainos:
+dailyQuests_timeRemaining;Likęs laikas: {{time|Countdown}}
+dailyQuests_rewardOverview;Žiūrėti atlygio apžvalgą
+dailyQuests_claimRewards;Atsiimti apdovanojimus
+dailyQuests_pointsEarned;Gauti taškai: <b>{{current}}/{{max}}</b>
+dailyQuests_rewardDescription;Tai apdovanojimai, kuriuos galite atrakinti atlikę šiandienos kasdienes užduotis:
+dailyQuests_claimAction;Pareikalauti
+dailyQuests_alreadyClaimed;Pareikalauta
+dailyQuests_questDetailTitle;Informacija
+dailyQuests_quest_worth;Ši užduotis verta:
+dailyQuests_quest_worth_points;+{{points}} [points=1:taškas][points>1:taškai]
+dailyQuests_quest_repeated;Šią užduotį galima pakartoti:
+dailyQuests_quest_repeated_amount;{{amount}} [amount=1:kartą][amount>1:kartus]
+dailyQuests_quest_completed;Atlikti pakartojimai:
+dailyQuests_quest_difficulty;Sunkumas:
+dailyQuests_quest_requirement;Reikalavimas:
+dailyQuests_backToOverview;Atgal prie apžvalgos
+dailyQuests_difficulty_moderate;Vidutinis
+dailyQuests_difficulty_hard;Sunkus
+dailyQuests_difficulty_challenging;Sudėtingas
+achievementQuests.achQuest_;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+achievementQuests.achQuest__step_01_description;{{NUM_CONTRIBUTION_NEEDED}}{{NUMBER_OF_TASKS_PER_DAY}}
+heroMansion_Loyalty;Lojalumas: {{INT}}%
+heroMansion_Conquered;Užkariauta {{TIME|DateTime}}
+heroMansion_SlotFree;Kitas oazės laukelis yra prieinamas
+heroMansion_SlotBlocked;Kitas oazės laukelis nuo <color={{colorValue|TextColor}}>Karžygio namų</color> <color={{colorValue2|TextColor}}>lygio {{REQUIRMENT}}</color>
+heroMansion_Undo;Atšaukti
+heroMansion_FinishedAt;Baigta: {{TIME|Time}}
+waterworks_NoneOasesAcquired;Nėra prijungtos oazės
+waterworks_BonusCalculation;+ ({{INT}}% iš {{INT2}}%) = 
+waterworks_CurrentBonus;Dabartinis vandentiekio priedas: +{{INT}}% oazės resursams
+waterworks_Oases;Prijungtos oazės
+messages_inbox_title;{{COUNT}} žinutės
+messages_inbox_title_selected;Pasirinktos {{SELECTED}} / {{COUNT}} žinutės
+messages_newMessage;Nauja žinutė
+messages_messageSent;Žinutė išsiųsta!
+messages_exitPreview;Išeiti iš peržiūros
+messages_previewTitle;Peržiūrėti žinutę
+messages_unread_count;{{COUNT}} neperskaityta
+reportPlayer_selectReason;Pasirinkite pranešimo priežastį
+reportPlayer_reasonPlaceholder;Pranešimo priežastis
+reportPlayer_addNote;Pridėkite pastabą prie pranešimo (neprivaloma):
+reportPlayer_alsoBlock;Taip pat ignoruokite šį žaidėją
+reportPlayer_maximumLength;Didžiausias ilgis: {{text|TextLength}}/300
+reportPlayer_nowIgnored;Dabar ignoruojate šį žaidėją.
+reportPlayer_nowUnignored;Daugiau šio žaidėjo nebeignoruojate.
+statistics_general;Bendroji statistika
+statistics_seeDetails;Žiūrėti daugiau informacijos
+statistiken.progressionStepTitle_;{{VALUE}}{{DATETIME}}
+language_de-DE;Vokiečių
+language_en-US;Anglų
+language_fr-FR;Prancūzų
+language_ru-RU;Rusų
+statistics_villageAndHero;Didžiausia gyvenvietė / karžygys
+RelativeTime_0;{{data}} s
+RelativeTime_1;{{data}} m
+RelativeTime_2;{{data}} h
+RelativeTime_3;[data>1:{{data}} dienos][data<2:{{data}} diena]
+RelativeTime_4;[data>1:{{data}} savaitės][data<2:{{data}} savaitė]
+RelativeTime.Separator; 
+RelativeTime.Wrapper.Past;prieš {{time}}
+RelativeTime.Wrapper.Future;Po {{time}}
+mapCell_tooFewSettlers;{{current}}/3 kolonistų prieinama
+mapCell_heroNotIdle;Jūsų karžygys nėra užsiėmęs
+mapCell_cantAddOwn;Negalite pridėti savo paties gyvenviečių
+mapCell_alreadyInVillage;Jūs jau esate toje gyvenvietėje
+serverSelection_rememberPassword;Įsiminti mano slaptažodį
+serverSelection_savedWorldsTitle;Jūsų žaidimo pasauliai
+serverSelection_removeWorldTitle;Pašalinti žaidimo pasaulį
+serverSelection_removeWorldQuestion;Ar tikrai norite pašalinti šį žaidimo pasaulį iš savo sąrašo?
+serverSelection_removeWorldDescription;Įspėjimas: tai neištrins jūsų paskyros žaidimo pasaulyje. Galite bet kada sugrįžti ir įtraukti žaidimo pasaulį, kuriame yra jūsų paskyra, į savo žaidimo pasaulių sąrašą.
+serverSelection_removeWorldButton;Pašalinti iš sąrašo
+serverSelection_addWorldText;+ Pridėti žaidimo pasaulį
+buildingActivities_buildingAdditional_;{{amount}}
+buildingActivities_buildingAdditional_17;{{amount}} aktyvūs prekybos maršrutai
+reports_filters_reset;Iš naujo nustatyti filtrus
+palace_capitalSet;Sostinė nustatyta!
+palace_isCapital;Ši gyvenvietė yra Jūsų sostinė
+messages_unread_count_full;{{COUNT}} [COUNT=1:neperskaityta žinutė][COUNT>1:neperskaitytos žinutės]
+statistics_alliance;Aljanso statistika
+statistics_alliances_best_off;Geriausi aljansai (puolėjai)
+statistics_alliances_best_def;Geriausi aljansai (gynėjai)
+statistics_offensiveStrength;Jūsų {{VILLAGEID|VillageLink}} puolimo jėga šiame žaidimo pasaulyje
+statistics_offensiveStrengthAlliance;Jūsų {{VILLAGEID|VillageLink}} puolamoji jėga jūsų aljanse
+statistics_offensiveStrengthVillage;Šios gyvenvietės puolimo jėga:
+statistics_defensiveStrength;Jūsų gynybos jėga šiame žaidimo pasaulyje
+statistics_defensiveStrengthAlliance;Jūsų gynybos jėga jūsų aljanse
+statistics_defensiveStrengthVillage;Šios gyvenvietės gynybos jėga:
+statistics_defensiveStrengthVillageSum;Visų gyvenviečių gynybos jėgos suma:
+recent;Naujausia
+appliedFilters;Taikomi {{COUNT}} filtrai.
+allgemein.gid99;Atsitiktinai
+rallyPoint_troopsOverview_10;Išsami karių apžvalga
+rallyPoint_troopsOverview_returningFromAdventure;Grįžta iš nuotykių: 
+rallyPoint_troopsOverview_detailedView;Išsamus vaizdas
+rallyPoint_troopsOverview_noMovements;- Nėra išeinančių karių judėjimo -
+rallyPoint_troopsOverview_Target;Taikinys: {{Target|NamedCoordinates}}
+rallyPoint_troopsOverview_Origin;Kilmė: {{Target|NamedCoordinates}}
+hero_adventures_number;Nr. {{INT}}
+hero_status_regeneration;<b>Sveikatos atgavimas:</b> {{VALUE}}% per dieną
+hero_status_regeneration_details;{{HERO}}% per dieną iš karžygio {{EQUIPMENT}}% per dieną iš aprangos
+hero_status_experience;<b>Patirtis:</b> {{VALUE}}%
+hero_status_experience_bonus;Priedas: {{VALUE}}%
+search_results;Paieškos rezultatai
+search_player_link;Žaidėjo nuoroda
+search_select_player_link;Pasirinkti žaidėją
+search_recipient;Ieškoti gavėjo
+search_select_recipient;Pasirinkti gavėją
+search_alliance_link;Aljanso nuoroda
+search_select_alliance_link;Pasirinkti aljansą
+messages_fullView_title;Žinutė
+messages_recipient_placeholder;Pasirinkti gavėją
+messages_title_placeholder;Įveskite žinutės pavadinimą
+messages_message_placeholder;Įveskite savo žinutę
+messages_ownAlliance;Jūsų aljansas
+messages_selectedRecipients;Pasirinkta
+messages_ownAlliance_[ally];Visi aljanso nariai
+messages_ownAlliance_[off];Puolantieji aljanso nariai
+messages_ownAlliance_[def];Ginantieji aljanso nariai
+messages_discard_title;Atmesti žinutę
+messages_discard_text_header;Ar norite atmesti šią žinutę?
+messages_discard_text;Pranešimo turinys bus negrįžtamai prarastas.
+messages_confirm_deletion_title;Ištrinti žinutes
+messages_confirm_deletion_text_header;Ar tikrai norite ištrinti [data>1:{{data}} žinutes][data=1:{{data}} žinutę]?
+messages_confirm_deletion_text;Kai žinutės ištrinamos, jų neįmanoma susigrąžinti.
+messages_confirm_deletion_button;Ištrinti [data>1:{{data}} žinutes][data=1:{{data}} žinutę]
+icon_selection_title;Pridėti piktogramą
+icon_selection_button;Pasirinkti piktogramą
+icon_selection_resourcesAndHero;Resursai / Karžygys
+icon_selection_natureAndNatars;Gamta ir Natarai
+upgrading;Tobulinama
+buildingActivities_buildingAdditional_46;Nėra sužeistų karių
+playerDetails_ignorePlayerDescription;Žaidėjas bus ignoruojamas.
+reports_share;Bendrinti ataskaitą
+search_select_village_link;Pasirinkti gyvenvietę
+search_village_link;Gyvenvietės nuoroda
+search_report_link;Ataskaitos nuoroda
+search_select_report_link;Pasirinkti ataskaitą
+messages_banned;Jūs galite rašyti žinutes tik kitiems savo aljanso nariams.
+messages_template_title;Šablonai
+messages_template_none;Šablonų nėra
+messages_template_edit_title;Redaguoti šabloną
+messages_template_delete_title;Ištrinti šabloną
+messages_template_delete_question;Ar tikrai norite ištrinti šį šabloną?
+messages_template_delete_desc;Vieną kartą ištrintos informacijos nebegalėsite atkurti.
+messages_template_create;Sukurti naują šabloną
+messages_template_create_descr;Sukurkite naują šabloną iš dabartinės žinutės:
+messages_template_created;Šablonas sukurtas!
+messages_template_deleted;Šablonas ištrintas!
+statistics_culturePoints_productionRank;Jūsų kultūros taškų našumo reitingas šiame žaidimo pasaulyje
+statistics_culturePoints_productionRankAlliance;Jūsų kultūros taškų našumo reitingas jūsų aljanse
+statistics_culturePoints_production;Kultūros taškai
+statistics_resourceRank_production;Gamyba: {{VALUE|ShortenNumber}}
+statistics_resourceRank_productionRank;Jūsų gamybos reitingas šiame žaidimo pasaulyje
+statistics_resourceRank_productionRankAlliance;Jūsų gamybos reitingas jūsų aljanse
+statistics_resourceRank_bounty_lost;Prarasta
+statistics_wonderOfTheWorld_header;Geriausi pasaulio stebuklai
+hospital_healing_costs;Karių gydymo išlaidos
+hospital_healing_action;Gydyti karius
+hospital_healing_list;Peržiūrėti gydymo sąrašą
+hospital_healing_list_title;Karių gydymas
+hospital_healing_started;Gydymas prasidėjo
+bonusValueWithPercent;+{{value}}%
+village_with_isCapital;{{villageName}} (sostinė)
+maximumTextLengthError;{{CONTEXT}} gali būti ne daugiau kaip {{AMOUNT}} simbolių
+infoTab_genericEffectInBrackets;({{INT|Sign}})
+infoTab_effectPercentage;{{INT}}%
+infoTab_effectInBracketsPercentage;({{INT|Sign}}%)
+infoTab_trapperCurrently;Didžiausias dabartinis spąstinės kiekis:
+trapper_Build_Action;Spęsti spąstus
+trapper_ProductionCosts;Spąstų gamybos sąnaudos
+trapper_TrapsInConstruction;Statomi spąstai
+trapper_MaxBuilt;Didžiausias spąstų kiekis jau pastatytas.
+truppen.tid119;Spąstas
+truppen.tid119p;Spąstai
+rallyPoint_troopsOverview_outgoingMission_scouting_1;Gynybinių fortifikacijų bei pajėgų žvalgymas 
+rallyPoint_troopsOverview_outgoingMission_scouting_0;Resursų bei pajėgų žvalgymas 
+rallyPoint_troopsOverview_returningRegeneratedMission;Atgaivintų karių grąžinimas iš: 
+rallyPoint_troopsOverview_returningFleeingMission;Iš miško slėptuvės grįžta kariai: 
+rallyPoint_troopsOverview_foreignTroopsIn;Dislokuota: 
+rallyPoint_celebration_hint;Šventė alaus darykloje gali turėti įtakos kariams.
+building_not_built;Pastatas nepastatytas
+berichte.report_icon_24;Pranešti
+allBuildings_36;Didžiausia visų spąstų suma:
+cropFinder_min_oasis_crop_bonus;Mažiausiai Oazės grūdų priedas:
+cropFinder_select_minimum_crop_bonus;Pasirinkite mažiausią grūdų priedą
+cropFinder_unoccupied;Neužimta
+search_by_location;Ieškoti pagal vietą
+search_by_player;Ieškoti pagal žaidėją
+search_village_from_player;Ieškoti žaidėjo gyvenvietės
+enter_player_name;Įveskite žaidėjo vardą
+messages_template_newConditionsNotMet;Šablonuose turi būti pavadinimas ir pranešimas.
+message_report_isAlready;Apie šį laišką jau pranešta kaip: {{REASON}}
+tutorial_begin;Pradėti turą
+tutorial_title_0;Sveikinimai, bebaimis čempione! 
+tutorial_text_0;Sveiki atvykę į nuožmų „Travian: Legends“ kovos lauką. Greitai paruoškime jus valdyti savo dinamiškas gyvenvietes ir sutelkti nenugalimas pajėgas.\n\nAr esate pasiruošę?
+tutorial_title_1;Navigacijos apžvalga
+tutorial_text_1;Čia sužinosite viską – nuo žemėlapio iki efektyvių komunikacijos ir įžvalgių informacijos priemonių. Čia taip pat yra kasdienės užduotys, asmeniniai nustatymai ir daugybė kitų funkcijų.
+tutorial_title_3;Jūsų resursai
+tutorial_text_3;Savo gyvenvietės resursus galite rasti čia. Paspaudus ant resursų juostos, pateikiama daugiau detalių.
+tutorial_title_4;Jūsų resursai
+tutorial_text_4;Paspaudus ant resursų juostos dar kartą, detalės paslepiamos.
+tutorial_title_5;Jūsų gyvenvietė
+tutorial_text_5;Čia rasite visą reikiamą informaciją apie savo gyvenvietę. Čia rasite viską – nuo užduočių sąrašo iki karių apžvalgos ir statybų eilės. Neseniai programėlę papildžiusi statybų veiklos funkcija suteikia greitą informaciją apie jūsų pastatuose vykstančius pokyčius.
+tutorial_title_7;Jūsų gyvenvietė
+tutorial_text_7;Jei bus pastatyta susibūrimo vieta, joje bus galima matyti visus vykstančius karių judėjimus. Be to, joje galima rasti greitą nuorodą į susibūrimo vietą.
+tutorial_title_8;Šoninis meniu
+tutorial_text_8;Norėdami atidaryti šoninį meniu, galite bakstelėti rodykles arba perbraukti pirštu. Tai galima padaryti bet kuriuo metu.
+tutorial_title_9;Gyvenviečių sąrašas
+tutorial_text_9;Bet kuriuo metu galite greitai perjungti savo gyvenvietes perbraukdami ir atidarydami šoninį skydelį. Čia taip pat rasite gyvenvietės statistiką.\n\nTuo kelionė baigiama. Ko dar laukiate! Pasinerkite, tyrinėkite ir leiskite „Travian: Legends“ pasauliui tapti jūsų strategine žaidimų aikštele.\n\nSėkmės!
+tutorial_finish;Turo pabaiga
+filters_report_not_found;Ataskaita neegzistuoja
+filters_player_not_found;Žaidėjas neegzistuoja
+filters_alliance_not_found;Aljansas neegzistuoja
+filters_village_not_found;Gyvenvietė neegzistuoja
+settings_game;Šis žaidimo pasaulis
+language_app_selection;Pasirinkti programėlės kalbą:
+settings_sitter;Pavaduotojas {{VALUE}}:
+settings_sitterTab_yourSitters;Jūsų pavaduotojai
+settings_sitterTab_SittingFor;Pavadavimas
+search_player_addSitter;Pridėti pavaduotoją
+search_select_player_addSitter;Pridėti pavaduotoją
+search_player_addSitter_additionalEmptyResultInfo;Nerastas joks žaidėjas.\nTik jūsų aljanso/sąjungos nariai gali būti jūsų avataro pavaduotojai.
+settings_sitter_sitterAdded;Pavaduotojas pridėtas!
+settings_sitter_sitterRemoved;Pavaduotojas pašalintas!
+settings_sitter_sitterPermissionChangesSaved;Leidimų pakeitimai išsaugoti!
+settings_sitter_confirm_remove_text_header;Ar norite pašalinti {{PlayerName}} kaip savo pavaduotoją?
+settings_sittersFor;Pavaduojami kiti avatarai
+settings_sittersFor_info;Jūs įregistruotas kaip šių avatarų pavaduotojas. Galite atsisakyti, paspausdami raudoną X.
+settings_sittersFor_none;Šiuo metu nepavaduojate kitų avatarų.
+settings_sitterFor;{{VALUE}} pavadavimas:
+settings_sitterFor_sittingRemoved;Nustojote pavaduoti {{PlayerName}}!
+settings_sitterFor_confirm_remove_header;Ar norite nustoti pavaduoti 
+settings_sitterFor_confirm_remove_header_questionmark;?
+settings_sitterFor_confirm_remove_info;Šio veiksmo atšaukti negalima. Tik kiti žaidėjai gali pridėti jus kaip savo pavaduotoją.
+brewery_celebration_attackStrength;({{INT}}% atakos jėga)
+brewery_celebration_hint;Šventė paveiks jau žygiuojančius karius
+settings_game_newLanguage;Kalba pakeista į {{language}}.
+wonderOfTheWorld_name;Pasaulio stebuklo pavadinimas:
+combatSimulator_title;Imituoti – {{role|TranslateSuffixFor|combatSimulator_as}}
+combatSimulator_cataTargetLevel;<b>{{index}} katapultų taikinio</b> lygis
+combatSimulator_troopLevel;Karių kalvės lygis:
+combatSimulator_asAttacker;Kaip puolėjas
+combatSimulator_asDefender;Kaip besiginantysis
+combatSimulator_result;Imituoti rezultatus
+combatSimulator_addReinforcement;Pridėti pastiprinimą
+valueWithModifier;{{value|Round|2}}x
+valuePlusInBracketsWithPercent;(+{{change}}%)
+none;Nėra
+marketplace_traderoute_repeatEveryHour;Kartoti kas: (val.)
+block_sitter_warning;Pavaduotojas gali atlikti ne visus veiksmus.
+settings_openConsentWindow;Privatumo nustatymai
+combatSimulator_adjustHeroStats;Koreguoti karžygio statistiką
+combatSimulator_eagleEyeTitle;Pasirinkti erelio akies priedą
+combatSimulator_architectSecretTitle;Pasirinkti architekto paslapties priedą
+combatSimulator_metallurgyBonus;Pasirinkti metalurgijos priedą
+combatSimulator_rightHand;Pasirinkti dešinės rankos daiktą
+combatSimulator_leftHand;Pasirinkti kairės rankos daiktą
+combatSimulator_bodyItem;Pasirinkti kūno daiktą
+combatSimulator_inventoryItem;Pasirinkti inventoriaus daiktą
+combatSimulator_selectBuildingLevel_35;Pasirinkti alaus daryklos lygį
+combatSimulator_selectBuildingLevel_26;Pasirinkti valdovų rūmų lygį
+combatSimulator_selectBuildingLevel_34;Pasirinkti mūrinės lygį
+combatSimulator_selectBuildingLevel_31;Pasirinkti sienos lygį
+combatSimulator_selectBuildingLevel_32;Pasirinkti sienos lygį
+combatSimulator_selectBuildingLevel_33;Pasirinkti sienos lygį
+combatSimulator_selectBuildingLevel_43;Pasirinkti sienos lygį
+combatSimulator_selectBuildingLevel_42;Pasirinkti sienos lygį
+combatSimulator_selectTargetLevel;Pasirinkti katapultų taikinio lygį
+combatSimulator_selectTroopLevel;Pasirinkti karių lygį
+survey_title;„Travian: Legends“ apklausa
+gdpr_title;Sutikimas tvarkyti duomenis
+gdpr_description;Gavę jūsų sutikimą, renkame tam tikrą informaciją apie jūsų įrenginį, IP adresą, naudojimo ir reklamos identifikatorius. Tai padeda mums rodyti jums labiau aktualias reklamas ir pagerina jūsų bendrą programėlės patirtį.
+gdpr_basic_functions;Būtina pagrindinėms programos funkcijoms.
+gdpr_advertisement;Asmeniniai duomenys, naudojami reklamai.
+gdpr_analytics;Asmeniniai duomenys, naudojami analitikai.
+gdpr_acceptAll;Priimti visus
+gdpr_save_and_exit;Išsaugoti + Išeiti
+gdpr_rejectAll;Atmesti visus
+gdpr_privacy_policy;Privatumo nuostatos
+gdpr_terms_and_conditions;Nuostatomis ir sąlygomis
+plus.plus.browserOnly;(tik naršyklėje)
+hero_inventory_already_equipped;Tas pats daiktas jau yra uždėtas.
+survey_button_title;Grįžtamojo ryšio apklausa
+survey_button_description;Dalyvaukite šioje trumpoje apklausoje ir padėkite mums tobulinti „Travian: Legends“ programėlę.
+goldShop_extend;Pratęsti
+goldShop_remaining;Liko:
+goldShop_advantage_activated;Aktyvuota
+search_select_recipient_removeAll;Pašalinti visus
+messages_messageTopic_noTopic;Be temos / numatytasis
+messages_messageTopic_resources;Apie resursus
+messages_messageTopic_defenses;Apie gynybą
+messages_messageTopic_attacks;Apie puolimus
+messages_messageTopic_strategies;Apie strategijas
+messages_messageTopic_information;Bendroji informacija
+messages_messageTopic_important;Svarbi informacija
+messages_messageTopic_selectionTitle;Pasirinkite žinutės temą
+farmlist_confirm_deletion_header;Ar tikrai norite ištrinti pasirinktą fermų sąrašą?
+farmlist_confirm_deletion_text;Šis veiksmas negali būti atšauktas.
+farmlist_target_confirm_deletion_header;Ar tikrai norite ištrinti [data=1:šį taikinį][data>1:šiuos {{data}} taikinius]?
+upgrade_queue_cantConstructImmediately;Šis pastatas negali būti pastatytas nedelsiant
+language_cs-CZ;Čekų
+language_es-ES;Ispanų
+language_pl-PL;Lenkų
+language_pt-PT;Portugalų
+language_tr-TR;Turkų
+language_it-IT;Italų
+playerDetails_victorPoints_summary;{{TOTAL}} | {{PERDAY}}/dieną
+settings_selectFormat;Pasirinkti formatą:
+settings_selectFormat_dialog_title;Pasirinkti datos formatą
+settings_game_newDateFormat;Datos formatas pakeistas į {{dateFormat}}.
+help_getHelp;Gauti pagalbą
+help_getHelpDescription;Jei reikia pagalbos arba norite pranešti apie problemą, kreipkitės į žaidimo pagalbos komandą čia.
+help_learnAboutGame;Sužinokite apie žaidimą
+help_learnAboutGameDescription;Viską, ką reikia žinoti apie žaidimą ir kaip viskas veikia, rasite čia.
+help_gameRules;Sužinokite žaidimo taisykles
+help_gameRulesDescription;Čia rasite dabartines žaidimo taisykles.
+help_joinDiscord;Prisijunkite prie „Discord“
+help_joinDiscordDescription;Dalinkitės savo atsiliepimais su mumis specialiame „Discord“ mobiliesiems įrenginiams skirtame serveryje.
+PLAYERARG;{{PLAYER}}
+referAFriend_friendJoinedDescription;Kad gautumėte auksinių už nukreipimą, jūsų draugas turi įkurti <b>antrą gyvenvietę</b>. Padėkite jam pasiekti šį tikslą! Patikrinkite jo progresą pakvietimų apžvalgoje žemiau.
+referAFriend_rewardAddedVillage2Title_PLAYERARG;Jūsų draugas {{PLAYER}} įkūrė savo antrąją gyvenvietę
+referAFriend_rewardAddedVillage3Title_PLAYERARG;Jūsų draugas {{PLAYER}} įkūrė savo trečiąją gyvenvietę
+referAFriend_rewardAddedVillage4Title_PLAYERARG;Jūsų draugas {{PLAYER}} įkūrė savo ketvirtąją gyvenvietę
+referAFriend_rewardAddedVillage5Title_PLAYERARG;Jūsų draugas {{PLAYER}} įkūrė savo penktąją gyvenvietę
+referAFriend_rewardAddedVillage6Title_PLAYERARG;Jūsų draugas {{PLAYER}} įkūrė savo šeštąją gyvenvietę
+referAFriend_rewardAddedVillage7Title_PLAYERARG;Jūsų draugas {{PLAYER}} įkūrė savo septintąją gyvenvietę
+referAFriend_rewardAddedVillage8Title_PLAYERARG;Jūsų draugas {{PLAYER}} įkūrė savo aštuntąją gyvenvietę
+referAFriend_rewardAddedVillage9Title_PLAYERARG;Jūsų draugas {{PLAYER}} įkūrė savo devintąją gyvenvietę
+referAFriend_rewardAddedVillage10Title_PLAYERARG;Jūsų draugas {{PLAYER}} įkūrė savo dešimtąją gyvenvietę
+sysmsg_truce_learnMore;Sužinokite daugiau apie paliaubas
+worldEnded_ww_playerWon_topAlliance;Gyvenvietės {{WW_VILLAGE|VillageLink}} darbuotojai {{WORLD_END_TIME|DateTime}} valandą padėjo paskutinį akmenį, kad sutvirtintų vieną svarbiausių istorijos kūrinių.<br>Kartu su aljansais {{WW_ALLIANCE|AllianceLink}}, {{WW_PLAYER|PlayerLink}} buvo pirma(-s) užbaigęs(-usi) Pasaulio stebuklą. Po nesuskaičiuojamų resursų sunaudojimo ir vietovės saugojimo šimtais tūkstančių drąsių gynėjų, {{WW_PLAYER|PlayerLink}} gaus „Šios eros laimėtojo“ titulą.
+worldEnded_as2022_topAlliances;Sveikiname {{ALLIANCE_TOP_1|AllianceLink}} tapus Europos lydere(-iu) su {{VICTORY_POINTS_TOP_1}} pergalės taškų! {{ALLIANCE_TOP_2|AllianceLink}} drąsiai kovojo, kad užtikrintų pergalę, ateidama(-s) antra(-s), o {{ALLIANCE_TOP_3|AllianceLink}} greitai sekė iš paskos trečioje vietoje.
+worldEnded_playerRanks_population;{{PLAYER_POPULATION_TOP_1|PlayerLink}} tapo didžiausiu asmeninės imperijos vadovu, o nuo jo nedaug atsiliko {{PLAYER_POPULATION_TOP_2|PlayerLink}} ir {{PLAYER_POPULATION_TOP_3|PlayerLink}}.
+worldEnded_playerRanks_offender;{{PLAYER_OFFENDER_TOP_1|PlayerLink}} nugalėjo daugiau negu bet kas kitas ir buvo baisiausia(-s) vadovė(-as).
+worldEnded_playerRanks_defender;{{PLAYER_DEFENDER_TOP_1|PlayerLink}} buvo garbingiausia(-s) gynėja(-s), kuri(-s) nugalėdavo priešus ties gyvenvietės vartais ir sutepdavo aplinkines žemes jų krauju.
+rallyPoint_startWithValue;Pradėti ({{value}})
+rallyPoint_farmList_raidsStarted;Išsiųsta {{INT}} reidų.
+rallyPoint_farmList_CantAddToAbandonList;Negalite įtraukti taikinių į apleistą fermų sąrašą.
+rallyPoint_farmList_CantActivateInToAbandonList;Negalite aktyvuoti taikinių apleistame fermų sąraše.
+rallyPoint_farmList_CantDuplicateInToAbandonList;Negalite dubliuoti taikinių apleistame fermų sąraše.
+rallyPoint_farmList_DuplicateRaids;Dubliuoti [raidsAmount>1:taikinius][raidsAmount=1:taikinį]
+rallyPoint_farmList_SlotsDuplicated; [raidsAmount>1:Taikiniai dubliuoti][raidsAmount=1:Taikinys dubliuotas]!
+rallyPoint_farmList_pleaseSelectTheList;Prašome pasirinkti sąrašą, į kurį norite pridėti taikinį.
+rallyPoint_farmList_farmlistFull;Fermų sąrašas pilnas, pasirinkite kitą fermų sąrašą arba sukurkite naują.
+rallyPoint_farmList_targetName;Taikinio pavadinimas
+rallyPoint_farmList_differentTroopsWarning;Karių skaičius nebus pakeistas, nebent perrašysite jį žemiau užrašydami naują vertę.
+rallyPoint_farmList_noobProtectionWarning;Kol naudojatės naujoko apsauga, negalite reidinti kitų žaidėjų, bet galite reidinti neužimtas oazes ir natarų gyvenvietes.
+rallyPoint_farmList_noFarmLists;Nėra jokio sukurto fermų sąrašo
+rallyPoint_farmList_CreateNewFarmList;Sukurti fermų sąrašą
+rallyPoint_farmList_currentAmount;Fermų sąrašai: <b>{{amount}}</b>/{{max}}
+rallyPoint_farmList_differentTribe;Gyvenvietė yra kitokios genties negu dabartinė ištakų gyvenvietė. Prašome patikrinti karių vertes.
+rallyPoint_farmList_overrideTarget;Pakeisti taikinį
+rallyPoint_farmList_selectedActivated;Pasirinkti taikiniai buvo nustatyti kaip aktyvūs.
+rallyPoint_farmList_selectedDeactivate;Pasirinkti taikiniai buvo nustatyti kaip neaktyvūs.
+rallyPoint_farmList_LastRaid;<b>Paskutinį kartą pradėta:</b> <nobr>{{lastStarted|DateTime}}</nobr>
+mapCell_editTargetListAmount;<nobr>Redaguoti taikinį</nobr> <nobr>(Sąrašai: {{INT}})</nobr>
+goldShop_shopDisabled;Aukso parduotuvė šiame žaidimo pasaulyje yra išjungta
+infobox_accountLockGameEnd;Šis žaidimo raundas jau baigėsi!
+applySorting;Taikyti rūšiavimą
+truppen.tid931;Spąstas
+truppen.tid931p;Spąstai
+mainMenu_switchBackFromAvatar;{{iconName|Sprite}} Grįžti į {{playerName}}
+pending;(Laukiama)
+featureNotAvailableInVacationMode;Atostogų režimu ši funkcija nepasiekiama.
+notAllowed;Jūs negalite atlikti šio veiksmo.
+settings_avatarDeletionInfo;Pradėjus naikinimo procesą, jis užtruks <b>3 dienas</b>panaikinti avatarui.\nŠalinamas avataras nebegali pasiekti aukcionų ar keityklos.\nBet kada atšaukti ištrynimą galite čia.
+settings_avatarDeletionCountDown;Avataras bus panaikintas po
+deleteAvatar_confirmation_header;Ar norite ištrinti savo avatarą?
+cams_info_subHeader;Vienas prisijungimas prie visų žaidimo pasaulių
+cams_info_text;Sukurkite „Legends Lobby“ paskyrą, kad lengvai prisijungtumėte ir turėtumėte sklandžią prieigą prie visų savo žaidimo pasaulių naudodamiesi vieningu prisijungimu.
+cams_info_lessInfo;Mažiau informacijos
+cams_info_Question_WhatIsLegendsLobbyAccount;Kas yra „Legends Lobby“ paskyra?
+cams_info_Answer_WhatIsLegendsLobbyAccount;Su „Lobby“ paskyra, jums niekada nebereikės registruotis į naują žaidimo pasaulį. Jūs tiesiog prisijungiate ir pasiekiate savo aktyvius žaidimo pasaulius ar pradedate naują per „Lobby“, tiek naršyklėje, tiek mobiliojoje programėlėje.
+cams_info_Question_WhatAreAvatars;Kas yra avatarai?
+cams_info_Answer_WhatAreAvatars;Su „Lobby“ paskyra jūsų profilis atskirame žaidimo pasaulyje vadinamas avataru. Jūs turite vieną „Lobby“ paskyrą, kuri gali turėti kelis avatarus, po vieną kiekvienam žaidimo pasauliui.
+cams_info_Question_WhatsWithCurrentGameworlds;Kas nutiks su mano dabartiniais žaidimo pasauliais?
+cams_info_Answer_WhatsWithCurrentGameworlds;Visi aktyvūs žaidimų pasauliai, naudojantys tą patį el. pašto adresą kaip ir jūsų „Lobby“ paskyra, bus susieti ir pasiekiami per „Lobby“. Prieš sukurdami savo paskyrą „Lobby“ paskyrą, galite pakeisti savo dabartinių aktyvių žaidimo pasaulių avatarų el. pašto adresus į tinkamą el. pašto adresą.
+cams_info_Question_WhatsWithSitters;Ar vis dar galiu turėti pavaduotojų?
+cams_info_Answer_WhatsWithSitters;Taip, pavaduotojai gali būti priskirti kaip įprasta žaidimo pasaulio nustatymuose. Jūs galite pasiekti avatarą, į kurį buvote paskirtas kaip pavaduotojas, tiesiogiai žaidimo pasaulyje.
+cams_info_Question_WhatsWithDuals;Ar vis dar galiu žaisti kaip dualas su kitais žaidėjais?
+cams_info_Answer_WhatsWithDuals;Dualus galima priskirti žaidimo pasauliui įvedant „Lobby“ paskyros vardą per „Lobby“. Tai reiškia, kad dualas taip pat pirmiausia turi turėti „Lobby“ paskyrą ir, priėmęs kvietimą, galės patekti į avatarą per „Lobby“. Prašome niekam neatskleisti savo „Lobby“ paskyros slaptažodžiu.
+cams_info_Question_WhatsWithoutLobbyAccount;Ar galiu žaisti nesukūręs „Legends Lobby“ paskyros?
+cams_info_Answer_WhatsWithoutLobbyAccount;Jūs vis dar galite prisijungti prie dabartinių žaidimo pasaulių tiesiogiai naudodami atitinkamą URL adresą. Tačiau jei norite pradėti naują žaidimo pasaulį arba naudotis mobiliąja programėle, reikia susikurti „Lobby“ paskyrą.
+cams_playerDecision_register_info;Naujoji „Lobby“ paskyra leidžia sujungti esamus ir būsimus žaidimo pasaulius vienu prisijungimu.
+cams_playerDecision_login_info;Jau turite „Lobby“ paskyrą?\n\nPrisijunkite ir tęskite nuotykius.
+cams_playerDecision_register_header;Sukurti paskyrą
+cams_playerDecision_register_create_new_account;Sukurti „Lobby“ paskyrą
+cams_playerDecision_register_login;Prisijungti prie „Lobby“
+cams_playerDecision_extra_info;Kad galėtumėte žaisti „Travian: Legends“, turite susikurti „Lobby“ paskyrą.
+cams_register_header;Sukurti „Legends Lobby“ paskyrą
+cams_register_email_label;Įveskite savo el. pašto adresą:
+cams_register_email_address;Registruoti el. pašto adresą
+cams_register_email_address_missing;Prašome nurodyti savo el. pašto adresą.
+cams_register_email_address_not_valid;Prašome nurodyti galiojantį el. pašto adresą. Pvz., mymail@provider.com
+cams_register_email_address_already_exists;Jūsų el. pašto adresas jau susietas su „Legends Lobby“ paskyra.
+cams_register_redirecting_to_login;Peradresuojama į prisijungimą {{INT}}...
+cams_register_hintMessage_same_email_address;Naudokite tą patį el. pašto adresą kaip ir jūsų esamų žaidimo pasaulių avatarai, kad jie būtų automatiškai susieti su jūsų „Lobby“ paskyra.
+cams_register_receive newsletter;Noriu gauti naujienlaiškį.
+cams_register_already_have_an_account;Jau turite paskyrą?
+cams_register_log_in_now;Prisijungti dabar
+cams_acceptTOS;Spausdami „Registruoti el. pašto adresą“ sutinkate su <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">Bendrosiomis sąlygomis</link></style> ir patvirtinate, kad susipažinote su <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">Informacija apie teisę atšaukti</link></style> ir <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">Privatumo politika</link></style>.
+cams_activation_header;Aktyvuoti „Legends Lobby“ paskyrą
+cams_activation_info;Išsiuntėme jūsų aktyvavimo nuorodą į <b>{{emailAdress}}</b><br>Norėdami tęsti, vadovaukitės el. laiške pateiktomis instrukcijomis.
+cams_activation_enter_code;Įveskite aktyvavimo kodą:
+cams_activation_code_example;Pvz., 123456
+cams_activation_entered_code;{{INT}}/6 skaitmenų
+cams_activation_cta_activate_account;Aktyvuokite paskyrą
+cams_activation_email_lost;Negavote el. laiško?
+cams_activation_email_resend;Iš naujo siųsti el. laišką
+cams_activation_email_wrong;Neteisingas el. pašto adresas?
+cams_activation_email_change;El. pašto adreso pakeitimas
+cams_activation_code_missing;Įveskite aktyvavimo kodą, kurį gavote el. paštu.
+cams_activation_code_too_short;Aktyvavimo kodas per trumpas. Įveskite visus šešis skaitmenis.
+cams_activation_code_format_incorrect;Aktyvavimo kodo formatas neteisingas. Užtikrinkite, kad kodą sudarytų tik šeši skaičiai.
+cams_activation_code_incorrect;Aktyvavimo kodas neteisingas. Įveskite aktyvavimo kodą, kurį gavote el. paštu.
+cams_activation_code_expired;Aktyvinimo kodo galiojimo laikas baigėsi.
+cams_activation_code_start_again;Pradėti iš naujo
+cams_login_header;Prisijungti prie „Legends Lobby“
+cams_login_enter_email;Įveskite savo el. pašto adresą arba paskyros vardą:
+cams_login_enter_password;Įveskite savo slaptažodį:
+cams_login_hintMessage_email_already_connected;El. pašto adresas, kurį įvedėte, jau susietas su „Legends Lobby“ paskyra. Prisijunkite arba <style="SimpleLink"><link="BackToRegistrationLink">grįžkite į registraciją</link></style>.
+cams_login_hintMessage_passwordUpdated;Jūsų slaptažodis sėkmingai atnaujintas
+cams_forgot_password;Pamiršote savo slaptažodį?
+cams_recover_password;Atkurti slaptažodį
+cams_login_no_account_yet;Dar neturite paskyros?
+cams_login_create_account;Sukurti paskyrą
+cams_loginMask_accountNameRequired;Prašome įvesti savo el. pašto adresą arba paskyros vardą.
+cams_loginMask_passwordRequired;Prašome įvesti savo slaptažodį.
+cams_loginMask_passwordAndUsernameAreWrong;Neteisingas el. pašto adresas, paskyros vardas arba slaptažodis.
+cams_loginMask_emailOrAccountName_placeholder;El. pašto adresas / paskyros vardas
+cams_loginMask_temporaryInfobox;NAUJIENA: norėdami pasiekti savo žaidimų pasaulius, turite susikurti „Lobby“ paskyrą.\n\nJei dar neturite „Lobby“ paskyros, <style="SimpleLink"><link="CreateAccountLink">susikurkite paskyrą</link></style>.
+cams_setPassword_header;Nustatykite savo slaptažodį
+cams_setPassword_info;Sukurkite paskyros slaptažodį, kurio minimalus ilgis – aštuoni simboliai.
+cams_setPassword_enter_password;Pasirinkite slaptažodį:
+cams_setPassword_strength_label;Slaptažodžio stiprumas
+cams_setPassword_strength_missing;Įveskite slaptažodį, kad patikrintumėte jo stiprumą.
+cams_setPassword_strength_1;labai silpnas
+cams_setPassword_strength_2;gana silpnas
+cams_setPassword_strength_3and4;vidutinis
+cams_setPassword_strength_5;gana stiprus
+cams_setPassword_strength_6;labai stiprus
+cams_setPassword_strength_PasswordTooShort;Kuo ilgesnis, tuo geriau (16+ simbolių)
+cams_setPassword_strength_PasswordGoodLength;Slaptažodis yra gero ilgio
+cams_setPassword_strength_OneType;Naudojamas tik vieno tipo simbolis
+cams_setPassword_strength_TwoTypes;Naudojami dviejų tipų simboliai
+cams_setPassword_strength_ThreeTypes;Naudojami trijų tipų simboliai
+cams_setPassword_strength_NoNumbers;Nenaudojama jokių skaičių
+cams_setPassword_strength_NoLetters;Nenaudojama raidės
+cams_setPassword_strength_NoSpecialCharacters;Nenaudojama jokių specialiųjų simbolių
+cams_setPassword_strength_NoUpperAndLowerCase;Jokio didžiųjų ir mažųjų raidžių derinio
+cams_setPassword_strength_UpperAndLowerCase;Naudojamos didžiosios ir mažosios raidės
+cams_activation_cta_set_password;Nustatyti slaptažodį
+cams_activation_password_length;8 — 64 simboliai
+cams_resetPassword_header;Nustatyti naują slaptažodį
+cams_resetPassword_info;Sukurkite naują „Lobby“ paskyros slaptažodį, kurio minimalus ilgis – aštuoni simboliai.
+cams_setUsername_header;Pasirinkite savo „Legends Lobby“ paskyros vardą
+cams_setUsername_info;Pasirinkite vartotojo vardą ir sutrumpinimą, kad sukurtumėte savo unikalią „Lobby“ paskyrą.
+cams_setUsername_username_label;Pasirinkite vartotojo vardą:
+cams_setUsername_tagline_label;Pasirinkite sutrumpinimą:
+cams_setUsername_tagline_example;pvz., TAG12
+cams_setUsername_tagline;Sutrumpinimas:
+cams_setUsername_condition_onlyLettersAndNumbers;Tik raidės ir skaičiai
+cams_setUsername_username_condition_Length;3 – 15 simbolių
+cams_setUsername_tagline_condition_Length;2 – 5 simboliai
+cams_setUsername_hint;Jūsų vartotojo vardo ir sutrumpinimo derinys bus jūsų unikalus „Lobby“ paskyros vardas. Jei derinys yra prieinamas, galite pasirinkti bet kokį norimą derinį.\n\nTai neturi įtakos vardui žaidimo pasaulyje.
+cams_setUsername_cta_createAccount;Sukurti paskyrą
+cams_setUsername_username_missing;Įveskite vartotojo vardą ir sutrumpinimą.
+cams_setUsername_accountName_preview;Paskyros vardo peržiūra:
+cams_setUsernameConfirmPopup_header;„Legends Lobby“ paskyra sukurta!
+cams_setUsernameConfirmPopup_info;Jūsų „Legends Lobby“ paskyra su prisijungimo vardu <b>{{playerName}}</b> buvo sėkmingai sukurta.
+cams_setUsernameConfirmPopup_GameworldAndAvatar_header;Jūsų žaidimo pasauliai ir avatarai
+cams_setUsernameConfirmPopup_GameworldAndAvatar_info;Prie jūsų naujos „Lobby“ paskyros prijungėme šiuos esamus žaidimo pasaulių avatarus su tuo pačiu el. pašto adresu.
+cams_avatar_name;Avataro vardas
+cams_looby_welcomeMessage;Sveiki atvykę!\n<b>{{playerName}}</b>
+cams_looby_header;Jūsų žaidimo pasauliai
+cams_looby_noGameWorlds;Šiuo metu neturite aktyvaus avataro jokiame žaidimo pasaulyje. Prisijunkite prie naujo žaidimo pasaulio ir pradėkite žaisti.
+cams_looby_joinNewGameworld;Pradėti naują žaidimo pasaulį
+cams_looby_playNow;ŽAISTI DABAR
+cams_looby_gameworldsLinked;Su jūsų paskyra susieti žaidimų pasauliai
+cams_looby_invitePenging;Laukia [data>1:{{data}} kvietimai][data=1:kvietimas]
+cams_looby_localGameWorld;VIETINIAI ŽAIDIMO PASAULIAI
+cams_looby_avatarInDeletion;Naikinama
+cams_removeDualAccount_header;Pašalinti dualą
+cams_removeDualAccount_info;Ar norite pašalinti <b>{{lobbyAccountName}}</b> kaip dualą savo avatarui <b>{{avatarName}}</b>?\n\n<b>{{lobbyAccountName}}</b> nebeturės prieigos prie jūsų avataro.
+cams_removeDualAccount_removeDual;Pašalinti dvigubą paskyrą
+cams_addDualPlayer_info;Įveskite žaidėjo „Lobby“ paskyros vardą:
+cams_addDualPlayer_placeholder;vartotojo vardas#žyma
+cams_addDualPlayer_addPlayer;[data>1:Pridėti žaidėjus][data=1:Pridėti žaidėją][data=0:Pridėti žaidėjų]
+search_addDualPlayeradditionalEmptyResultInfo;Žaidėjas nerastas arba jau yra pakviestas kaip dualas
+cams_dualInventation_header;Dualo pakvietimas
+cams_dualInventation_invitations;Pakvietimai:
+cams_dualInventation_info;Jei priimsite kvietimą, galėsite prisijungti prie šio avataro naudodami savo „Lobby“ paskyrą.
+cams_dualInventation_moreInfo;Kiekviename žaidimo pasaulyje galite priimti tik vieną dualo pakvietimą.
+cams_dualInventation_invite;<b>{{LobbyAccountName}}</b> pakvietė jus žaisti <b>{{avatarName}}</b>
+cams_dualInventation_AcceptInvite;Priimti pakvietimą
+cams_acceptDualInvitation_header;Priimti dualo pakvietimą
+cams_acceptDualInvitation_info;Ar norite priimti dualo pakvietimą iš <b>{{lobbyAccountName}}</b> žaisti <b>{{avatarName}}</b> <b>{{gameworldName}}</b>?
+cams_acceptDualInvitation_moreInfo;Jūs turite kelis dualų pakvietimus į tą patį žaidimų pasaulį, tačiau galite priimti tik vieną dualo pakvietimą kiekviename žaidimo pasaulyje.
+cams_acceptDualInvitation_avatarInDeletion;Dėl žaidimo dualais taisyklių, galite turėti tik vieną aktyvų avatarą viename žaidimo pasaulyje. \nDualo pakvietimo priėmimas panaikins jūsų prieigą prie jūsų naikinamo avataro {{avatarName}} tame žaidimo pasaulyje. \nPo to nebegalėsite atšaukti ištrynimo proceso.
+cams_dualSettings_header;Dualų nustatymai
+cams_dualSettings_info;Galite bet kada nustoti žaisti kaip dualas už minėtą avatarą.
+cams_dualSettings_leaveDualPlay;Palikite žaidimą dualu
+cams_confirmLeaveDualPlay_info;Ar norite nustoti žaisti dualu <b>{{avatarName}}</b> <b>{{gameworldName}}</b>?\n\nPalikę dualą, galite susikurti savo avatarą arba prisijungti prie kito avataro ir vėl žaisti kaip dualas šiame žaidimo pasaulyje.
+cams_recoverPassword_header;Atkurti slaptažodį
+cams_recoverPassword_goBackToLogin;Grįžti į prisijungimą
+cams_recoverPassword_info;Įveskite el. pašto adresą, susietą su jūsų „Lobby“ paskyra. Mes atsiųsime jums instrukcijas, kaip iš naujo nustatyti slaptažodį
+cams_recoverPasswordEmailSent_header;El. laiškas išsiųstas
+cams_recoverPasswordEmailSent_info;Jeigu egzistuoja su šiuo el. pašto adresu  <b>{{emailAdress}}</b> susieta „Lobby“ paskyra, tuomet el. paštu turėjote gauti instrukcijas, kaip atstatyti savo slaptažodį:\n\nAtkūrę slaptažodį galite vėl prisijungti.
+cams_recoverPasswordEmailSent_goBackToLogin;Grįžti į prisijungimą
+cams_editDualAccounts_header;Dualai
+cams_editDualAccounts_gameworld;Žaidimo pasaulis: {{gameworldName}}
+cams_editDualAccounts_avatar;Avataras: {{avatarName}}
+cams_editDualAccounts_avatarOwner;Avataro savininkas:
+cams_editDualAccounts_noDualsAdded;- Šiam avatarui nepridėta jokių dualų -
+cams_editDualAccounts_info;Dualai turi <b>pilną prieigą</b> prie šio avataro ir gali atlikti visus žaidimo veiksmus, įskaitant auksinių naudojimą ir pirkimą.\n\nDualai gali prisijungti prie šio avataro naudodamiesi savo „Lobby“ paskyra, bet NEGALI kviesti kitų ddualų.
+cams_editDualAccounts_warningHint;Nesidalinkite savo „Lobby“ paskyros prisijungimo duomenimis su kitais žaidėjais, kad išvengtumėte nepageidaujamos prieigos prie kitų žaidimo pasaulių avatarų ir savo paskyros duomenų.
+cams_editDualAccounts_addDualPlayer;Pridėti dualą
+cams_editDualAccounts_avatarInDeletion;Jūsų avataras {{avatarName}} šiame žaidimo pasaulyje yra ištrinamas. Todėl negalite siųsti dualo pakvietimo.
+cams_settings_title;Nustatymai
+cams_settings_changePassword_information;Kad pakeistumėte slaptažodį, atsiųsime jums el. laišką jūsų paskyros el. pašto adresu.
+cams_settings_changePassword_sendEmail;Siųsti el. laišką
+cams_settings_changePassword_emailSent;Išsiuntėme jums el. laišką, kad pakeistumėte slaptažodį.
+cams_settings_accountDeletion_title;„Lobby“ paskyros naikinimas
+cams_settings_accountDeletion_info;Ištrinkite savo „Legends Lobby“ paskyrą, įskaitant visus žaidimo pasaulius ir avatarus iš šios paskyros.
+cams_settings_accountDeletion_action;Panaikinti „Lobby“ paskyrą
+cams_settings_accountDeletion_warning;Dėmesio: Šis veiksmas negali būti atšauktas!
+cams_settings_accountDeletion_warning_content;„Lobby“ paskyros ištrynimas yra negrįžtamas po 72 valandų, jo negalima atšaukti ir jis paveikia visus jūsų avatarus. \n\nGalima pradėti paskyros naikinimą tik jeigu visi jūsų dabartiniai avatarai yra naikinami.
+cams_settings_accountDeletion_requirementsInformation;Jei norite panaikinti savo paskyrą, visi jūsų avatarai turi būti naikinami arba jau panaikinti.
+cams_settings_accountDeletion_information_warning;Šis veiksmas pakeičia jūsų paskyros būseną į naikinamą. Prašome patvirtinti, kad suprantate, jog jūsų paskyra ir visi susiję avatarai bei duomenys bus visam laikui panaikinti, įvesties laukelyje įvesdami „panaikinti“.
+cams_settings_accountDeletion_information_error;Negalite ištrinti paskyros, jei avataras nėra naikinamas.\nPrisijunkite prie nurodytų žaidimo pasaulių ir ištrinkite savo avatarą.
+cams_settings_accountDeletion_noAvatarsFound;Nerastas joks aktyvus žaidimo pasaulis/avataras.\nJūs galite tęsti!
+cams_settings_accountDeletion_understandmentConfirmation;Aš suprantu
+cams_settings_accountInDeletion_title;Paskyra yra naikinama
+cams_settings_accountInDeletion_info;Jūsų „Lobby“ paskyra <b>{{NAME}}</b> bus visam laikui ištrinta po <b>{{TIMESTAMP|Countdown}}</b>.
+cams_settings_accountInDeletion_action;Atšaukti naikinimą
+cams_mainMenu_dataConsent;Duomenų sutikimas
+gameworld_gameworld;Žaidimo pasaulis
+infobox.productionboost;{{RES}}{{TIME_COUNTER}}
+infobox_notesCount;{{COUNT}} [COUNT=1:pastaba][COUNT>1:pastabos]
+auction_placeBid;Daryti statymą
+auction_auctionsAmount;{{COUNT}} aukcionai
+auction_bidsRefreshed;Statymai atnaujinti!
+auction_currentSilver;Dabartinis sidabras:  {{iconName|Sprite}} {{currentSilver}}
+auction_availableAmount;Turima suma:
+auction_toSellAmount;Pardavimo suma:
+auction_selectAmountToSellHeader;Pasirinkite parduodamą sumą
+auction_soldHorseForSilver;Parduotas arklys už {{amount}} sidabro.
+auction_currentCurrency;Dabartinis:
+auction_newCurrencyValues;Naujas:
+auction_exchangeExplanationGoldToSilverTitle;Aukcione galite keisti auksą į sidabrą, kad pirktumėte karžygio daiktus.
+auction_exchangeExplanationGoldToSilverMore;Įveskite aukso sumą, kurią norite iškeisti:
+auction_exchangeExplanationSilverToGoldTitle;Aukcione galite iškeisti sidabrą, gautą parduodant karžygio daiktus, į auksą.
+auction_exchangeExplanationSilverToGoldMore;Įveskite sidabro sumą, kurią norite iškeisti:
+auction_countAndName;{{AMOUNT}}×{{ITEM_NAME}}
+auction_deleteAll;Ištrinti visus aukcionus
+auction_confirm_deletion_title;Ištrinti aukcioną [data>1:{{data}} įrašai][data=1:įrašas]
+auction_confirm_deletion_button;Ištrinti [data>1:įrašai][data=1:įrašas]
+auction_confirm_deletion_text_header;Ar tikrai norite ištrinti [data>1:{{data}} aukciono įrašus][data=1:šį aukctiono įrašą]?
+auction_confirm_deletion_text;Ištrynus įrašą, jos nebeliks visam laikui. Jo negalėsite susigrąžinti.
+cams_looby_noMatchingGameworlds;Nėra atitinkančių žaidimo pasaulių jūsų pasirinkimui.
+serverSelection_5;Dev
+serverSelection_header;Pasirinkti žaidimo pasaulių filtrą
+serverSelection_filter_gameworldSpeed;Žaidimo pasaulio greitis
+serverSelection_gameworldSpeed;x{{INT}} greitis
+serverSelection_filer_gameworldLifetime;Žaidimų pasaulio trukmė
+serverSelection_gameworldLifetime;{{INT}}—{{INT2}} dienos
+serverSelection_gameworldLifetime_XorMore;{{INT}} ir daugiau dienų
+filters_applyButton;Taikyti [COUNT<2:filtrą][COUNT>1:{{COUNT}} filtrus]
+filters_reset;Atstatyti [COUNT<2:filtrą][COUNT>1:filtrus]
+cams_avatarCreation_cancel_title;Atšaukti avataro kūrimą
+cams_avatarCreation_cancel_reconfirmationText;Ar tikrai norite atšaukti savo avataro sukūrimą {{gameworldName}}?
+cams_avatarCreation_cancel_explanation;Prarasite visą savo pažangą šiame žaidimo pasaulyje, įskaitant genties pasirinkimą, žemėlapio vietą ir avataro vardą.
+cams_avatarCreation_button_startPlaying;Pradėti žaidimą
+cams_avatarCreation_button_changeSector;Keisti vietą
+cams_avatarCreation_button_selectTribe;Pasirinkti gentį
+cams_avatarCreation_button_updateTribe;Atnaujinti gentį
+cams_avatarCreation_button_selectSector;Pasirinkti vietą
+cams_avatarCreation_button_updateSector;Atnaujinti vietą
+cams_avatarCreation_name_title;Įveskite avataro vardą:
+cams_avatarCreation_name_tip;Tai jūsų avataro vardas žaidimo pasaulyje.
+cams_avatarCreation_name_errorEmpty;Prašome nurodyti avataro vardą.
+cams_avatarCreation_name_placeHolder;Avataro vardas
+cams_looby_avatarInDeletionBlockPlayNow;Priėmėte dualo kvietimą į šį žaidimo pasaulį ({{gameworldName}}), todėl nebegalite jo pasiekti ne dualo režimu.
+infobox_openMessage;Atidaryti žinutę
+infobox_accountIsLocked;Jūsų avataras yra blokuotas!
+auction_button_requirement;Įveikite {{REQUIRED}} nuotykių, kad atrakintumėte aukcionus.\nLiko: {{INT}}
+auction_availableSilver;Galimas sidabras:  {{iconName|Sprite}} {{currentSilver}}
+auction_deleteSelected;Ištrinti pasirinktus aukcionus
+auction_deletedAll_confirmation;Visi aukcionai panaikinti!
+auction_deletedSelected_confirmation;{{data}} aukctiono [data>1:įrašai panaikinti][data=1:įrašas panaikintas]!
+newVersionAvailable_title;Prieinama nauja versija
+newVersionAvailable_description;Patobulinome savo programėlę. Jei norite tęsti žaidimą, atnaujinkite ją.
+newVersionAvailable_joinDiscord;Kas naujo? Prisijunkite prie „Discord“, kad gautumėte daugiau informacijos.
+newVersionAvailable_toStore;Atnaujinti dabar
+infobox_beginnerProtection_title;Pratęsti naujoko apsaugą
+infobox_beginnerProtection_question;Ar tikrai norite naujokų apsaugą pratęsti?
+infobox_beginnerProtection_description;Kol esate apsaugotas naujokų apsaugos, Jums nėra leidžiama siųsti resursų kitiems žaidėjams, pulti arba būti užpultam.
+sendResources_beginnersProtection;Kol turite naujoko apsaugą, negalite siųsti resursų kitiems žaidėjams.
+sendTroops_beginnersProtection;Kol turite naujoko apsaugą, negalite siųsti karių kitiems žaidėjams.
+sendTroops_otherBeginnersProtection;Negalite siųsti karių kitiems žaidėjams kol jie turi naujoko apsaugą.
+buildingActivities_building_36;Gaminami spąstai
+tasks_collectAll;Surinkti viską ({{INT}})
+auction_bidMinPlaceholder;Mažiausiai {{INT}}
+auction_buttonBidMinimum;Reikalaujamas mažiausias statymas
+hero_adventures_available;Prieinami nuotykiai
+messages_freshDeskMessage_viewAndReplyInBrowser;Peržiūrėti ir atsakyti naršyklėje
+messages_webViewRecommendation;Žinutės turinys gali būti neišsamus.\nRekomenduojame žinutę peržiūrėti naršyklėje.
+rateThisApp_popup_title;Patinka mūsų programėlė?
+rateThisApp_popup_description;Jei jums patinka mūsų programėlė, skirkite akimirką ir ją įvertinkite.
+rateThisApp_popup_appreciatefeedback;Jūsų atsiliepimai mums svarbūs!
+rateThisApp_popup_btn_positive;Ji puiki!
+rateThisApp_popup_btn_negative;Galėtų būti geriau
+rearrange_or_demolish_building;Perstatyti arba nugriauti pastatą
+mainBuilding_buildingArrangement;Pastato išdėstymas
+mainBuilding_openRearrangeMode;Atidaryti pertvarkymo režimą
+mainBuilding_demolishBuildings;Nugriauti pastatus
+mainBuilding_openDemolishMode;Atidaryti griovimo režimą
+mainBuilding_demolishBuildings_description;Norėdami pakeisti pastatų padėtį, vilkite ir paleiskite pastatus.
+rearrangeBuildingPopup_rearrangeDescription;Pertvarkyti <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>?
+rearrangeBuildingPopup_buildingsRearranged;Pertvarkyti pastatai
+rearrangeBuildingPopup_buildingRearranged;{{buildingName|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>{{buildingLevel}}</color>
+confirmRearrangeBuildingPopup_header;Ar norite pertvarkyti šį pastatą?
+confirmRearrangeBuildingPopup_description;Pertvarko pasirinktus gyvenvietės <b>{{villageName}}</b> pastatus.
+demolishBuildingPopup_title;Nugriauti pastatą
+demolishBuildingPopup_description;Pasirinkite pastatą, kurį norite nugriauti
+demolishBuildingPopup_descriptionWithSelection;Ar nugriauti <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>?
+demolishBuildingPopup_demolishLevel;Nugriauti lygį
+demolishBuildingPopup_demolishCompletely;Visiškai sugriauti
+confirmDemolishBuildingPopup_header;Ar norite nedelsiant nugriauti <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> <color={{colorValue|TextColor}}>{{buildingLevel}}</color>?
+confirmDemolishBuildingPopup_description;Nedelsiant nugriauna pasirinktą pastatą ir pašalina jį iš jūsų gyvenvietės.\nŠis veiksmas negali būti atšauktas.
+characterCount;{{COUNT}}/{{MAX}} simbolių
+survey_button_description_reward;Dalyvaukite šioje trumpoje apklausoje ir padėkite mums tobulinti „Travian: Legends“ programėlę.\nUž jūsų pagalbą bus atlyginta.
+cams_lobby_joinGameworld;Prisijungti prie žaidimo pasaulio
+cams_lobby_gameworld_inviteOnly;Tik su kvietimais
+cams_lobby_gameworld_inviteOnlyInfo;Šis žaidimo pasaulis skirtas tik žaidėjams, turintiems specialų pakvietimo kodą.
+cams_lobby_gameworld_inviteCodeEnter;Įveskite kvietimo kodą
+cams_lobby_gameworld_inviteCodeInfo;Šis žaidimo pasaulis skirtas tik žaidėjams, turintiems specialų pakvietimo kodą.\nJei jį turite, įveskite jį, kad galėtumėte prisijungti prie žaidimo pasaulio.
+cams_lobby_gameworld_inviteCodePlaceholder;Pvz., eThbt5OLyZ8D5xjhUaBAba
+cams_lobby_gameworld_inviteCodeErrorCharacterCount;Kvietimo kodas per trumpas. Įveskite visus {{MAX}} ženklus(-ų).
+cams_lobby_gameworld_inviteCodeCooldown;Kvietimo kodo atšalimas ({{TIME|Countdown}})
+timeCountDown;{{TIME|Countdown}}
+attestation_failed;Įrenginio patvirtinimas nepavyko! Norėdami žaisti, naudokite mobilųjį įrenginį.\nJei ši problema tęsiasi, naudokite toliau pateiktą pagalbos mygtuką ir kreipkitės į pagalbos tarnybą!
+mainBuilding_demolishBuildings_notAvailable;Pastatams nugriauti reikalingas {{INT}} gyvenamojo pastato lygis.
+mainBuilding_demolishBuildings_demolishing;Nugriauna <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> iki <b><color={{colorValue|TextColor}}>{{buildingLevel}} lygio</color></b> per {{timestamp|Countdown}}.
+demolishBuildingPopup_demolishing;Griaunama <b>{{buildingName|TranslateSuffixFor|allgemein.gid}}</b> iki <b><color={{colorValue|TextColor}}>{{buildingLevel}} lygio</color></b>
+allianz.hinweis_text_NoConfederacy;Prieš siunčiant nepuolimo pakto pasiūlymą (NAP), pagal diplomatijos etiketą reikėtų surengti derybas ir susitarti apie tai.
+regions_canBeSettled;Galima įsikurti?
+regions_regionStatusNoColon;Regiono būsena
+regions_top5AlliancesPopulation;Top 5 aljansų <b>populiacija</b>
+regions_top5AlliancesVillages;Top 5 aljansų <b>gyvenvietės</b>
+regions_neighboringRegions;Kaimynystėje esantys regionai
+regions_regionPopulation;Regiono populiacijas
+regions_contested;Regionas yra užkariaujamas
+cams_lobby_gameworld_disabledAndNotSupported;Šiuo metu žaidimo pasaulyje negalima žaisti per mobiliąją programėlę.
+demolishBuildingPopup_impossible;Šis pastatas negali būti nugriautas.
+city_benefits;Miesto naudos
+city_benefits_threeAdditionalSlots;Trys papildomi statybos laukeliai
+city_benefits_resourceFieldsLevel12;Išplėskite resursų telkinius iki 12-jo lygio
+city_benefits_watchTowers;Pagerinkite sieną statybos bokštais
+city_upgradeToACity;Patobulinkite {{villageName}} į miestą.
+city_culturePointsForNext;(kitas po {{culturePoints}} kultūros taškų)
+city_upgradeVillage;Patobulinti gyvenvietę
+city_confirm_upgradeVillage;Patobulinti į miestą
+city_confirm_header;Ar norite patobulinti {{villageName}} į miestą?
+city_confirm_description;Gyvenvietei patobulinti į miestą reikia {{time}} ir vieno iš jūsų įsikūrimo laukelių.
+city_upgrading;{{villageId|VillageLink}} {{text}}
+city_upgraded;{{villageId|VillageLink}} jau yra miestas.
+combatSimulator_selectTarget;Pasirinkti taikinį
+mainMenu_goToLobby;Eiti į „Lobby“
+mainMenu_yourPlayerProfile;Jūsų žaidėjo profilis
+plus.plusAttackWarningText;Atvykstantys puolimai bus rodomi gyvenviečių sąraše Tik mobiliesiems telefonams: gyvenvietės vaizde rodyklė atidaryti gyvenviečių sąrašą dešinėje pusėje bus paryškinta.
+production.crobBalanceTroopConsumptionAncientPower;Senovės galios priedas
+filters_region_not_found;Regionas neegzistuoja
+rallyPoint_troopsOverview_ownTroops_8;Jūsų kariai 
+rallyPoint_troopsOverview_ownTroops_9;Jūsų kariai 
+tradeOffice_merchantsCarryCapacity;Prekeivių gabenimo pajėgumas:
+tradeOffice_tradeShipsCarryCapacity;Prekybos laivų gabenimo pajėgumas:
+buildingActivities_building_48;Karių gydymas
+playerDetails_victorPointsPerDay;{{PERDAY}} /dieną
+allianz.numIncomingRaids;{{NUM_ATTACKS}} [NUM_ATTACKS=1:ataka][NUM_ATTACKS>1:atakos]
+allianz.numIncomingAttacks;{{NUM_ATTACKS}} [NUM_ATTACKS=1:ataka][NUM_ATTACKS>1:atakos]
+allianz.MerchantCapacityAndSpeedNew;Komercija
+alliance_regionalTabTop5Description;Regionai, kuriuose jūsų aljansas priklauso 5 geriausiems aljansams pagal teritorinę kontrolę.
+alliance_regionalTabTitle;Regiono top 5
+alliance_regionalTabTop5Empty;- Nepakankama teritorinė kontrolė jokiame regione -
+alliance_ShowDetails;Rodyti išsamiai
+wall_upgradesInProgress;Vykdomi atnaujinimai
+extension_upgradeStarted;Atnaujinimas pradėtas sėkmingai!
+extension_constructionList;Statybų sąrašas
+upgradeLevel;Pagerinimo lygis
+infoTab_upgradingToLevelForExtension;Dabar keliama {{buildingName}} į {{level}} lygį:
+infoTab_genericCurrentlyForExtension;Dabartinė {{buildingName}} premija, įskaitant {{extensionName}}:
+infoTab_genericAtLevelForExtension;{{a}} lygio su {{b}} lygio {{extensionName}}:
+ratioValuesNumeratorBold;<b>{{a}}</b>/{{b}}
+infoTab_productionCosts_title;Gamybos sąnaudos
+harbour_shipsInConstruction;Statomi laivai
+unitInfo_troopsCarriage;iki <b>{{INT}}</b> karių
+unitInfo_velocityRaid;Reidams:
+city_benefits_resourceFieldsLevel12inCapital;Resursų laukus patobulinkite iki 12 lygio, tačiau sostinėje juos galite tobulinti ir toliau
+infoTab_genericCurrentlyMoreExplicit;Dabartinis {{buildingName}} priedas:
+merchant_merchantOverview_noIncomingDeliveries;- Jokių atvykstančių pristatymų. -
+merchant_merchantOverview_noOutgoingDeliveries;- Jokių išvykstančių pristatymų. -
+merchant_merchantOverview_incoming;Atvyksta ({{INT}})
+merchant_merchantOverview_outgoing;Išvyksta ({{INT}})
+achievementQuests.achQuest_03_Territory_step_01_description;Užpulkite reidu arba ataka natarų gyvenvietę. Užduotis bus įvykdyta net jei visi kariai žus.<br><br>Taškus už šią užduotį galima gauti {{NUMBER_OF_TASKS_PER_DAY}} kartų per dieną.\n
+allianz.MerchantCapacityTitle_Harbours;Prekeivių/laivo pajėgumo ir greičio priedas
+market_tradeRoutes_invalidTarget_Territory;Prekybos maršrutai gali būti siunčiami tik į savo gyvenvietes.
+market_selectResources;Pasirinkti resursus
+market_selectResources_requiredTradeShips;Reikalingi prekybos laivai
+market_resourcesWillBeSendByTradeShip;Resursai bus siunčiami prekybos laivais.
+manual.gid38_Territory;Didžiajame sandėlyje telpa žymiai daugiau atsargų, negu paprastajame.<br><br>Šį pastatą galima statyti tik turint sandėliavimo plano senovės galią.
+manual.gid39_Territory;Didžiojoje klėtyje telpa žymiai daugiau grūdų, negu paprastojoje.<br><br>Šį pastatą galima statyti tik turint sandėliavimo plano senovės galią.\n
+harbour_noAvailableShips;Šiuo metu šiame uoste nėra dislokuotų laivų.
+harbour_destroy_title;Sunaikinti laivus
+harbour_destroy_desc_title;Pasirinkite laivo tipą ir kiekį, kurį norite sunaikinti.
+harbour_destroy_desc;Tik šiuo metu čia apsistoję laivai gali būti sunaikinti ir jūs neatgausite jokių resursų.
+harbour_destroy_timeNotice;Laivai bus sunaikinti nedelsiant.
+harbour_destroy_selectedTotalAmount;Pasirinkti laivai: <b>{{AMOUNT}}</b>
+harbour_destroy_shipSelectTitle;<b>{{ShipID|TranslateSuffixFor|gid49.type_t}}</b> (<b>{{Amount}}</b> čia [Amount=1:dislokuotas laivas][Amount>1:dislokuoti laivai])
+extension_fullyExtended;{{NAME}} yra visiškai pastatyti.
+extension_willBeFullyExtended;{{NAME}} yra visiškai pastatyti.
+layout.directLinkMarketplaceTrader;Laisvi prekeiviai: {{INT}}/{{INT2}}
+UnitProduction_ViewBuildingList;Peržiūrėti pastatų sąrašą
+raidList_useRaidShipsInfo;Reido laivai naudojami automatiškai, kai jie pasiekiami. Jei neturite reido laivų, jūsų kariai keliaus įprastai.
+buildingActivities_maxReached;Pasiekta didžiausia suma
+buildingActivities_building_49;Gaminami laivai
+buildingActivities_buildingAdditional_48;Nėra sužeistų karių
+residence_expansion_villagesRatio;Gyvenvietės: {{COUNT}}/{{MAX}}
+residence_expansion_slotFree;Laukelis nenaudojamas.
+residence_expansion_slotPrerequisites;Reikalavimai <b>{{BuildingID|TranslateSuffixFor|allgemein.gid}} <color={{colorValue|TextColor}}>{{Level}} lygis</color></b>
+residence_expansion_culturePointsPerDay;Kultūros taškų gamyba per dieną
+search_region;Regiono paieška
+search_select_region;Pasirinkite regioną
+statistiken.progressionStepTitle_start_achieved;Žaidimo pasaulis prasidėjo {{VALUE}}
+statistiken.progressionStepTitle_serverEnd_locked;Žaidimo pasaulis baigsis {{VALUE}}
+filters_artefact_not_found;Artefaktas neegzistuoja
+sendTroops_settlersChangeTribe;Galite pasirinkti gyvenvietės gentį pirmoms {{INT}} gyvenvietėms. Rinkitės atidžiai.
+gid17.nextTradingRoute;Kitas prekybos maršrutas prasideda <b>{{HOUR}}</b> ir jam reikia <b>{{MERCHANTS}}</b> [MERCHANTS>1:prekeivių][MERCHANTS=1:prekeivio].
+gid17.nextTradingRouteWithShips;Kitas prekybos maršrutas prasideda <b>{{HOUR}}</b> ir jam reikia <b>{{SHIPS}}</b> [SHIPS>1:prekybos laivų][SHIPS=1:prekybos laivo].
+market_tradeRoutes_merchants;[merchants>1:{{merchants}} prekeiviai][merchants=1:{{merchants}} prekeivis]
+market_tradeRoutes_tradeShips;[tradeShips>1:{{tradeShips}} prekybos laivai][tradeShips=1:{{tradeShips}} prekybos laivas]
+market_tradeRoutes_repeats;{{repeats}} x
+market_tradeRoutes_usesShip;Naudoja laivus
+troopsCheckout_shipUseInfo;{{Distance}} laukeliai | {{ShipID|Bold}} | Sutaupykite {{duration|Bold}} val.
+troopInfoPopup_shipsTitle;Laivai gyvenvietėje
+language_nl-NL;Olandų
+cropfinder_cropperType;Daugiagrūdžio tipas:
+valueInBrackets;({{VALUE}})
+residence_settlementSlotsUsed;Panaudoti įkūrimo laukeliai
+residence_settlementCPNeededForNextSlot;Kitam įkūrimo laukeliui reikalingi kultūros taškai:
+gid27.ancient_power_detail_;{{INT}}
+artefact_effect_value;Poveikis: <b>{{EFFECT}}</b>
+ancientPower_overview;Regiono galios
+ancientPower_no_ancientPower;Šiame žaidimo pasaulyje nėra senovinės galios
+ancientPower_tip_large;Didžiosios senovės galios reikalauja <b>20</b> iždinės lygio ir turi įtakos <b>visoms jūsų gyvenvietėms</b>
+ancientPower_tip_small;Mažosios senovės galios reikalauja <b>10</b> iždinės lygio ir veikia tik <b>gyvenvietę</b>, kurioje yra aktyvuotos
+ancientPower_tip_nearby;Senovės galios aplink {{villagenamelong|Bold}}
+ancientPower_stored_title;Senovės galios, įtvirtintos aljanso
+ancientPower_stored_noContent;Nėra regionų, įtvirtintų jūsų aljanso
+ancientPower_stored_nextFree;Kitas nemokamas aktyvavimas galimas: [isFree=0:<color={{colorValue|TextColor}}>]{{timeStamp|Countdown?Bold}}[isFree=0:</color>]
+ancientPower_stored_notActivatable;Nėra senovės galios, kurią būtų galima aktyvuoti.
+ancientPower_stored_activated;Senovės galia aktyvuota.
+ancientPower_stored_alreadyActive_account;Jau turite vieną aktyvią senovės galią, kuri veikia visas gyvenvietes.
+ancientPower_stored_alreadyActive_village;Jau turite vieną aktyvią senovės galią, kuri veikia šią gyvenvietę.
+ancientPower_stored_alreadyActive;Ši senovės galia jau aktyvuota.
+filters_ancientPower_not_found;Senovės galia neegzistuoja
+regions_withFactions_yourAllianceHasMoreThan50PercentSecured;Jūsų aljansas turi >{{PERCENT}}% teritorijos kontrolės.<br><br>Jums reikia iždinės, kad galėtumėte aktyvuoti senovės galią.
+language_en-NT;Dev kalba
+settings_notNow;Ne dabar
+settings_dontAskAgain;Daugiau nebeklausti.
+cams_lobby_gameworld_lastPlayedTime;{{TIME}} val.
+cams_settings_DirectLoginTitle;Tiesioginis prisijungimas prie žaidimo pasaulio
+cams_settings_DirectLoginInfo;Atidarę programėlę praleiskite žaidimo pasaulio pasirinkimą „Legends Lobby“ ir tiesiogiai prisijunkite prie paskutinio žaidžiamo žaidimo pasaulio.
+cams_settings_DirectLoginActive;Tiesioginis prisijungimas įjungtas
+cams_settings_DirectLoginInactive;Tiesioginis prisijungimas išjungtas
+cams_directLoginPopUp_Info;Ar norite, kad paleidę programėlę tiesiogiai prisijungtumėte prie savo žaidimo pasaulio?
+cams_directLoginPopUp_youCanChange;Savo pasirinkimą galite bet kada pakeisti „Lobby“ nustatymuose.
+cams_directLoginPopUp_Accept;Taip, prijungti mane tiesiogiai
+language_ro-RO;Rumunų
+language_hu-HU;Vengrų
+language_ar-AE;Arabų
+autoLoginFailed.;Automatinis prisijungimas nepavyko.
+needInternetToPlay;Norint žaisti, reikia interneto ryšio. Patikrinkite interneto ryšį ir bandykite dar kartą.
+mapCellInfoWindow_removeFromLists;Pašalinti iš visų sąrašų
+removeFromListsPopup_Title;Ar norite pašalinti {{TARGETNAME}} iš {{INT}} fermų sąrašų?
+removeFromListsPopup_Description;Vėliau ir vėl galite pridėti taikinį į kiekvieną fermų sąrašą atskirai.
+removeFromListsPopup_ConfirmButton;Pašalinti taikinį
+social_continueWith;Arba tęsti su:
+social_loginWith;Arba prisijunkite naudodami:
+social_backToRegistration;Grįžti į registraciją
+social_createAccountTitle;Sukurti „Legends Lobby“ paskyrą
+social_errorTitle_NoEmailProvided;Trūksta el. pašto leidimo
+social_errorMsg_NoEmailProvided;Norėdami pradėti žaisti „Travian: Legends“, mums reikia jūsų <b>leidimo pasiekti jūsų el. pašto adresą.</b>
+social_errorInfo_NoEmailProvided;Bandykite dar kartą naudodami teisingus leidimų nustatymus arba išbandykite kitą registracijos būdą.
+social_errorTitle_AlreadyExists;El. pašto adresas jau panaudotas
+social_errorMsg_AlreadyExists;Nurodytas el. pašto adresas jau naudojamas „Travian: Legends“ „Lobby“ paskyrai.
+social_errorInfo_AlreadyExists;Norėdami prisijungti, naudokite su paskyra susietą el. pašto adresą.
+social_acceptTOS;Spausdami „Patvirtinti“ sutinkate su <style="SimpleLinkDarkGreen"><link="CamsGtcLinkID">Bendrosiomis sąlygomis</link></style> ir patvirtinate, kad susipažinote su <style="SimpleLinkDarkGreen"><link="CamsWithdrawalLinkID">Informacija apie teisę atšaukti</link></style> ir <style="SimpleLinkDarkGreen"><link="CamsPrivacyLinkID">Privatumo politika</link></style>.
+linkNotWorking;Nuoroda neveikia
+linkNotWorkingDescription;Atrodo, kad ši nuoroda šiuo metu neveikia „Travian: Legends“ programėlėje. Ji gali veikti interneto naršyklėje.
+openLinkInBrowser;Atidaryti nuorodą naršyklėje
+settings_language_useArabicNumerals_activated;Rytų arabų skaitmenų naudojimas yra aktyvuotas
+settings_language_useArabicNumerals_deactivated;Rytų arabų skaitmenų naudojimas yra išjungtas
+artefact_inventory_active_empty;Nėra aktyvuotų artefaktų
+social_errorTitle_Unknown;Nenustatyta klaida
+social_errorMsg_Unknown;Įvyko nežinoma klaida. Bandykite dar kartą.
+loadingScreen_text_01;Jūsų karžygys taisosi plaukus, palaukite.
+loadingScreen_text_02;Perpildyta klėtis. Gyventojai dabar grūdus kaupia kišenėse.
+loadingScreen_text_03;Ambasada rengia vakarėlį – tik diplomatams.
+loadingScreen_text_04;Susibūrimo vietoje dabar vyksta iškylos – kariai vaišinasi sumuštiniais.
+loadingScreen_text_05;Kalvis kala kalaviją... iš spagečių.
+loadingScreen_text_06;Statybos vadovai skaito projektą... aukštyn kojomis.
+loadingScreen_text_07;Natars prisijungė prie gyvenvietės knygų klubo. Niekas nemoka skaityti senovinių runų.
+loadingScreen_text_08;Žvalgai skaičiuoja priešo karius... bet pritrūko pirštų.
+loadingScreen_text_09;Pasaulio stebuklą puola balandžiai. Siunčiama valymo komandą.
+loadingScreen_text_10;Vergų prižiūrėtojai reikalauja įsteigti profesinę sąjungą – ruoškitės streikams.
+loadingScreen_text_11;Kariai atsisako pulti, kol kas nors nepaaiškina, kaip veikia mūšio simuliatorius.
+loadingScreen_text_12;Kaimo gyventojai nustojo dirbti, kad stebėtų dviejų vištų kovą.
+loadingScreen_text_13;Jūsų katapultos ginčijasi, į kurį pastatą smogti pirmiausia.
+loadingScreen_text_14;Būkite kantrūs, karžygys keliauja Lietuvos geležinkeliais vietoje arklio.
+loadingScreen_text_15;Slėptuvėje slepiasi ne tik resursai, bet ir kaimo gandai.
+loadingScreen_text_16;Kareivinėse rengiamas talentų šou – treniruotės atidėtos.
+loadingScreen_text_17;Jūsų siena beveik baigta. Tik laukiama, kol išdžius dažai.
+loadingScreen_text_18;Prieš žygį legionieriai pareikalavo kavos pertraukėlės.
+loadingScreen_text_19;Galai aiškina romėnams, kas yra statinė tvora, jau praėjo 3 valandos.
+loadingScreen_text_20;Papirkinėjimi prekeiviai, kad pagreitintų pristatymą.
+loadingScreen_text_21;Jūsų karžygys lanko jojimo kursus, tai gali užtrukti.
+loadingScreen_text_22;Prekeiviai yra užstrigę už lėto jaučio.
+loadingScreen_text_23;Aljanso vadovai rengia kovos strategiją... pirštų dažais.
+loadingScreen_text_24;Klėtis pilna sausainių – geriausias resursų valdymas.
+loadingScreen_text_25;Žvalgyba nutraukta – Heimdalo akyje kažkas yra.
+changeAccountNameSubtitle;Keisti naudotojo vardą ir (arba) žymą.
+changeAccountNamePleaseNote;Atkreipkite dėmesį, kad pakeitę paskyros vardą, turite palaukti {{DAYS}}  [DAYS>1:dienas(-ų)][DAYS=1:dieną], kol galėsite jį pakeisti dar kartą.
+changeAccountNameWaiting;Turite palaukti, kol vėl galėsite pakeisti savo vardą:
+changeAccountNameUpdated;Paskyros vardas atnaujintas
+changeAccountNameUpdatedSubtitle;Jūsų paskyros vardas buvo sėkmingai pakeistas į: <b>{{playerName}}</b>
+alliance_top10Title;Aljanso vidinis top 10
+gameworldCalendarNoGameworld;Ateinančių žaidimo pasaulių nerasta. \nJie gali būti kraunami arba nesuplanuoti.
+gameworldCalendar_title;Žaidimo pasaulių kalendorius
+valueWithModifierBefore;{{value|Round|2}}x
+goldShop_purchaseCanceled;Pirkimas atšauktas!
+goldShop_pendingRestored;Jūsų ankstesnis pirkimas buvo sėkmingai atkurtas.
+hero_consumablePopup_healthByOintment;Sveikata, gaunama už tepalą:
+unknown;?
+serverSelection_gameworldSpeed_short;{{INT}}x
+gameworldCalendarDetails_title;Žaidimo pasaulio detalės
+gameworldCalendarDetails_shareLink;Dalintis žaidimo pasaulio nuoroda
+gameWorldEndCondition;Žaidimo pasaulio pabaigos sąlyga
+gameWorldEndCondition_WonderOfTheWorld;Pasaulio stebuklas {{Level}}
+gameWorldEndCondition_VictoryPoints;Pergalės taškai
+gameWorldRestriction_InvitationCode;Šis žaidimo pasaulis skirtas tik žaidėjams, turintiems specialų pakvietimo kodą.
+gameWorldRestriction_MobilePlayers;Šis žaidimo pasaulis prieinamas tik žaidėjams mobiliajame telefone.
+gameWorldSpecial;Tai specialus žaidimo pasaulis, kuris gali būti prieinamas tik ribotą laiką ir kurio funkcijos gali skirtis nuo klasikinių žaidimo pasaulių.
+gameWorldUndefinedDetails;Dar ne visos žaidimo pasaulio detalės yra numatytos. Kai tik jos bus atnaujintos, gausite pranešimą savo „Lobby“.
+bonusValueWithPercentNoSpace;+{{value}}%
+startDate;Pradžios data
+startTime;Pradžios laikas
+UTC+1;(UTC+1)
+goldShop_GoldPromotion;Auksinių akcija
+auction_FeePopupTitle;Aukciono mokestis
+auction_FeePopupText;Už aukciono pardavimus turite mokėti {{value}}% mokestį. Jūsų išmoka yra pardavimo kaina atėmus aukciono mokestį.
+auction_FeePopupExample;Skaičiavimo pavyzdys
+auction_FeePopupSalePrice;Pardavimo kaina
+auction_FeePopupFee;Aukciono mokestis ({{value}}%)
+auction_FeePopupPayout;Išmokėjimas
+auction_sellHouseFeeInfo;Jūsų išmoka yra pardavimo kaina atėmus {{value}}% aukciono mokestį.
+gold_action_finishImmediately;Momentinis užbaigimas
+mapCellInfoWindow_villageReports;Rodyti gyvenvietės ataskaitas
+hero_crafting_title_refine;Tobulinti daiktą
+hero_crafting_title_smelt;Lydyti daiktą
+hero_crafting_title_forge;Kalti daiktą
+hero_crafting_title_reforge;Perkalti daiktą
+hero_crafting_action_refine;Tobulinti
+hero_crafting_action_smelt;Lydyti
+hero_crafting_action_forge;Kalti
+hero_crafting_action_takeMaterials;Paimti ({{INT}}/{{MAX}}) medžiagų
+hero_crafting_action_takeAllMaterials;Paimti medžiagų
+hero_crafting_action_reforge;Perkalti
+hero_crafting_action_take;Paimti
+hero_crafting_action_pick;Pasirinkti daiktą
+hero_crafting_action_equip;Ekipuoti
+hero_crafting_action_buy_material;Pirkti medžiagą
+hero_crafting_action_buy_item;Pirkti daiktą
+hero_crafting_action_craft_material;Išlydyti medžiagą
+hero_crafting_action_moveToInventory;Į inventorių
+hero_crafting_action_select_item;Pasirinkti
+hero_crafting_action_remove_item;Pašalinti
+hero_crafting_action_error_equipment;Daiktas turi būti karžygio daiktas.
+hero_crafting_action_error_rarity;Daiktai turi būti tokio paties retumo.
+hero_crafting_action_error_category;Daiktai turi priklausyti tai pačiai daiktų kategorijai.
+hero_crafting_action_error_id;Daiktai turi būti identiški.
+hero_crafting_action_error_missingItem;Vieno ar daugiau pasirinktų daiktų nebėra.
+hero_crafting_refine_tip;Epinius karžygio daiktus galima tobulinti su bet kuriuo kitu tos pačios kategorijos epiniu karžygio daiktu.
+hero_crafting_refine_tip_error;Neturite jokių karžygio daiktų, kuriuos galėtumėte patobulinti. Ieškokite daiktų nuotykiuose arba pirkite daiktus aukcione ir pagerinkite juos tobulindami.
+hero_crafting_smelt_info;Paimkite {{INT}} medžiag[INT=1:ą][INT>1:as] dabar arba palaukite ir gaukite {{MAX}}.
+hero_crafting_reforge_text;Perkalkite daiktą, kad gautumėte kitą, galbūt kitokio retumo ir kokybės daiktą.\nPo perkalimo galite rinktis, kurį daiktą norite pasiimti arba vėl perdarinėti.\nAtkreipkite dėmesį: Po perkalimo kiekvieno tolesnio perkalimo etapo daiktas išnyks ir jo nebus galima pakeisti atgal.
+inventoryItem_quality_title;Kokybė
+inventoryItem_rarity_title;Retumas
+inventoryItem_rarity_quality_title;Retumas ir kokybė
+inventoryItem_rarity_common;Dažnas
+inventoryItem_rarity_uncommon;Nedažnas
+inventoryItem_rarity_rare;Retas
+inventoryItem_rarity_epic;Epinis
+inventoryItem_rarity_legendary;Legendinis
+search_for_village;Gyvenviečių paieška
+search_for_player;Žaidėjų paieška
+villageList_EditMode;Redagavimo režimas
+villageList_MaxGroupAmount;Pasiektas didžiausias gyvenviečių grupių skaičius.
+hero_crafting_action_error_material;Daiktas turi būti medžiaga.
+villageList_ReorderError;Netinkamas taikinys
+textMatchingInput_Title;Patvirtinkite įrašydami „{{WORD}}“
+hero_inventory_category_empty;- Šioje kategorijoje daiktų nėra -
+hero_crafting_action_refine_success;Daiktas patobulintas
+hero_crafting_action_smelt_success;Daiktas išlydytas
+hero_crafting_action_forge_success;Daiktas nukaltas
+hero_crafting_result_item_equipped;Daiktas uždėtas
+hero_crafting_result_item_taken;Daiktas perkeltas į inventorių
+hero_crafting_result_material_taken;Medžiaga perkelta į inventorių
+hero_crafting_action_error_quality;Daiktai turi būti tokios pat kokybės.
+hero_crafting_action_error_epic;Turi būti kitas tos pačios kategorijos ir kokybės epinis daiktas.
+inventoryItem_rarity_none;Jokio retumo
+dailyQuests_rewardOverview_short;Atlygio apžvalga
+avatar_confirmation_title_delete;Naikinti avatarą
+avatar_confirmation_header_delete;Ar norite ištrinti savo avatarą?
+avatar_confirmation_infoText_delete;Pradėjus naikinimo procesą, jis užtruks <b>3 dienas</b>panaikinti avatarui.\nŠalinamas avataras nebegali pasiekti aukcionų ar keityklos.\nBet kada atšaukti ištrynimą galite čia.
+avatar_confirmation_requiredWord_delete;panaikinti
+avatar_confirmation_title_respawn;Perkelti avatarą
+avatar_confirmation_header_respawn;Ar norite perkelti savo avatarą?
+avatar_confirmation_infoText_respawn;Tai panaikins visą iki šiol padarytą progresą ir pradinę gyvenvietę perkels į naują vietą žemėlapyje.\n\nVisi nupirkti auksiniai bus automatiškai perkelti.
+avatar_confirmation_requiredWord_respawn;perkelti
+settings_app_title;Visi žaidimo pasauliai
+settings_app_Animations_title;Animacijos
+settings_app_Animations_description;Pasirinkite, kokias animacijas norite matyti programėlėje.
+settings_app_Animations_activated;Įjungta debesų animacija gyvenviečių / resursų peržiūroje
+settings_app_Animations_deactivated;Išjungta debesų animacija gyvenviečių / resursų peržiūroje
+settings_app_NightMode_title;Naktinis režimas
+settings_app_NightMode_description;Jūsų gyventojai uždegė deglus, o krosnių ugnis spragsi po blausia žvaigždžių šviesa nakties danguje.
+settings_app_NightMode_activated;Įjungtas naktinis režimas
+settings_app_NightMode_deactivated;Išjungtas naktinis režimas
+settings_app_WinterMode_title;Žiemos režimas
+settings_app_WinterMode_description;Tyliai krentantis sniegas apgaubia gyvenvietę apgaulinga tyla, kai kiekvienas garsas tarsi ištirpsta šaltame ore.
+settings_app_WinterMode_activated;Įjungtas žiemos režimas
+settings_app_WinterMode_deactivated;Išjungtas žiemos režimas
+settings_app_VillagePanning_title;Gyvenvietės / resursų lauko judėjimas
+settings_app_VillagePanning_description;Galite judėti po gyvenvietės vaizdą ir resursų laukus.
+settings_app_VillagePanning_activated;Judėjimas yra aktyvuotas
+settings_app_VillagePanning_deactivated;Judėjimas yra deaktyvuotas
+settings_app_PushNotifications_title;Bendrieji tiesioginiai pranešimai
+settings_app_PushNotifications_description;Gaukite informaciją apie bendras programos ir žaidimo naujienas naudodami tiesioginius pranešimus.
+settings_app_PushNotifications_activated;Žaidimo pasaulio pradžios pranešimas aktyvuotas
+settings_app_PushNotifications_deactivated;Žaidimo pasaulio pradžios pranešimas išjungtas
+settings_app_EnergySaving_title;Energijos taupymo režimas
+settings_app_EnergySaving_description;Taupykite savo prietaisų bateriją naudodami mažesnį FPS dažnį.\nĮjungus energijos taupymo režimą, naudojant programėlę gali šiek tiek atsilikti vaizdas.
+settings_app_EnergySaving_activated;Įjungtas energijos taupymo režimas
+settings_app_EnergySaving_deactivated;Išjungtas energijos taupymo režimas
+settings_app_DataSaving_title;Mobiliųjų duomenų taupymo režimas
+settings_app_DataSaving_description;Taupykite mobiliuosius duomenis ir (arba) pralaidumą atlikdami mažiau serverio užklausų.\nĮjungus mobiliojo ryšio duomenų taupymo režimą gali pailgėti žaidimo duomenų atnaujinimo intervalas.
+settings_app_DataSaving_activated;Mobiliųjų duomenų taupymo režimas aktyvuotas
+settings_app_DataSaving_deactivated;Mobiliųjų duomenų taupymo režimas deaktyvuotas
+auction_FilterType;Daikto tipas
+auction_bidTooLow;Per mažas pasiūlymas.
+villageList_Delete_Title;Pašalinti gyvenviečių grupę
+villageList_Delete_Button;Pašalinti grupę
+villageList_Delete_Description;Ar norite pašalinti šią gyvenviečių grupę?
+villageList_Delete_Description2;Šios grupės gyvenvietės nebus paveiktos.
+gameworldNews_title;Naujienos ir atnaujinimai
+moreInformation;Daugiau informacijos
+remainingGold;Aukso likutis: {{goldIcon|Sprite}} {{goldAmount}}
+messages_addEmoji_title;Pridėti jaustukų
+messages_select_emojis;Pasirinkite jaustukus
+cams_resend_email_wait_error;Palaukite prieš siųsdami kitą el. laišką.
+cams_settings_accountDeletion_infoGold;Panaikinus avatarą, gausite el. laišką, kuriame bus paaiškinta, kaip pervesti aukso likutį į kitą avatarą.\n<b>Atminkite:</b> Jūsų  likusį auksą galima perkelti tik į tam tikrus žaidimo pasaulius.
+cams_changeMail_title;Pakeisti el. pašto adresą
+cams_changeMail_description;Norėdami pakeisti el. pašto adresą, turite turėti prieigą prie dabartinio ir naujojo el. pašto adreso.
+cams_changeMail_socialHint;El. pašto adreso keitimas neturės įtakos  prisijungimams su „Facebook“, „Google“ arba „Apple“.
+cams_changeMail_cantAccess;Negalite pasiekti savo el. pašto?
+cams_changeMail_sentVerification;Patvirtinimo el. laišką išsiuntėme į: {{mail}}
+cams_changeMail_checkInbox;Patikrinkite savo pašto dėžutę ir vykdykite tolesnius nurodymus.
+cams_changeMail_verificationCode;El. pašto adreso patvirtinimo kodas:
+cams_changeMail_verifyButton;Patvirtinkite el. paštą
+cams_changeMail_enterNew_description;Įveskite savo naują el. pašto adresą apačioje. Šiuo adresu išsiųsime patvirtinimo el. laišką.
+cams_changeMail_enterNew_description2;Norėdami tęsti, vadovaukitės el. laiške pateiktomis instrukcijomis.
+cams_changeMail_enterNew_input;Įveskite savo naują el. pašto adresą:
+cams_changeMail_enterNew_input_placeholder;Naujas el. pašto adresas
+cams_changeMail_enterNew_button;Pakeiskite savo el. pašto adresą
+cams_changeMail_done_title;El. paštas atnaujintas
+cams_changeMail_done_description1;Jūsų el. pašto adresas buvo sėkmingai pakeistas į {{mail}}
+cams_changeMail_done_description2;Būsite automatiškai atjungtas ir nukreiptas į prisijungimo puslapį. Norėdami prisijungti, naudokite naują el. pašto adresą.
+cams_changeMail_done_redirecting;Peradresuojama į prisijungimą {{time}}...
+bonusValue;+ {{value}}
+value;{{value}}
+ratioValues_Colon;{{a}}:{{b}}
+genericValue;{{VALUE}}
+enterAmount;Įveskite kiekį
+symbol_minus;-
+applyFilter;Taikyti filtrą
+resetFilter;Atstatyti filtrą
+rallyPoint_troopsOverview_outgoingMission_50_heroCentricAdventure;Tyrinėjimas nuotykyje
+rallyPoint_troopsOverview_returningFromAdventure_heroCentricAdventure;Grįžta iš nuotykių
+silverExchangePopup_AvailableSilver;Galimas sidabras
+silverExchangePopup_SilverStatus;Šiuo metu {{AMOUNT|LongNumber}} jūsų sidabro yra aktyviuose aukcionuose.
+silverExchangePopup_SilverError;Šiam veiksmui atlikti neturite pakankamai sidabro.
+silverExchangePopup_GoldError;Šiam veiksmui atlikti neturite pakankamai aukso.
+hero.status50_heroCentricAdventure;Jūsų karžygys šiuo metu keliauja į nuotykį.
+inventoryItem_quality_1;Kokybė 1
+inventoryItem_quality_2;Kokybė 2
+inventoryItem_quality_3;Kokybė 3
+inventoryItem_rarity_common_headGear;Dažnas galvos apdangalas
+inventoryItem_rarity_uncommon_headGear;Nedažnas galvos apdangalas
+inventoryItem_rarity_rare_headGear;Retas galvos apdangalas
+inventoryItem_rarity_epic_headGear;Epinis galvos apdangalas
+inventoryItem_rarity_legendary_headGear;Legendinis galvos apdangalas
+inventoryItem_rarity_common_utility;Dažnas pagalbinis daiktas
+inventoryItem_rarity_uncommon_utility;Nedažnas pagalbinis daiktas
+inventoryItem_rarity_rare_utility;Retas pagalbinis daiktas
+inventoryItem_rarity_epic_utility;Epinis pagalbinis daiktas
+inventoryItem_rarity_legendary_utility;Legendinis pagalbinis daiktas
+inventoryItem_rarity_common_weapon;Dažnas ginklas
+inventoryItem_rarity_uncommon_weapon;Nedažnas ginklas
+inventoryItem_rarity_rare_weapon;Retas ginklas
+inventoryItem_rarity_epic_weapon;Epinis ginklas
+inventoryItem_rarity_legendary_weapon;Legendinis ginklas
+inventoryItem_rarity_common_armour;Dažni šarvai
+inventoryItem_rarity_uncommon_armour;Nedažni šarvai
+inventoryItem_rarity_rare_armour;Reti šarvai
+inventoryItem_rarity_epic_armour;Epiniai šarvai
+inventoryItem_rarity_legendary_armour;Legendiniai šarvai
+inventoryItem_rarity_common_boots;Dažni batai
+inventoryItem_rarity_uncommon_boots;Nedažni batai
+inventoryItem_rarity_rare_boots;Reti batai
+inventoryItem_rarity_epic_boots;Epiniai batai
+inventoryItem_rarity_legendary_boots;Legendiniai batai
+inventoryItem_rarity_common_consumable;Naudojami daiktai
+inventoryItem_rarity_uncommon_consumable;Nedažnas naudojamas daiktas
+inventoryItem_rarity_rare_consumable;Retas naudojamas daiktas
+inventoryItem_rarity_epic_consumable;Epinis naudojamas daiktas
+inventoryItem_rarity_common_horse;Arklys
+inventoryItem_rarity_uncommon_horse;Nedažnas žirgas
+inventoryItem_rarity_rare_horse;Retas žirgas
+inventoryItem_rarity_epic_horse;Epinis žirgas
+inventoryItem_rarity_legendary_horse;Legendinis žirgas
+inventoryItem_rarity_common_material;Naudojami daiktai
+inventoryItem_rarity_uncommon_material;Nedažnas naudojamas daiktas
+inventoryItem_rarity_rare_material;Retas naudojamas daiktas
+inventoryItem_rarity_epic_material;Epinis naudojamas daiktas
+search_item;Ieškoti daikto
+search_select_item;Pasirinkite daiktą
+avatar_confirmation_infoText_delete_goldBough;Pradėjus naikinimo procesą, jis užtruks <b>mažiausiai tris dienas</b> panaikinti avatarui, nes šis avataras neseniai buvo panaudotas auksinių pirkimui.\nŠalinamas avataras nebegali pasiekti aukcionų ar keityklos.\nBet kada atšaukti ištrynimą galite čia.
+combatSimulator_addItemEffect;Pridėti daikto poveikį
+combatSimulator_editItemEffect;Redaguoti daikto poveikį
+addItemEffect_title;Pridėti karžygio daikto poveikį
+addItemEffect_description;Pridėti atskirus poveikius, atspindinčius visų karžygio daiktų individualius privalumus.
+addItemEffect_importHeroEquipment;Importuoti mano karžygio daiktus
+addItemEffect_importHeroEquipment_success;Karžygio daiktai importuoti
+addItemEffect_selectEffect;Pasirinkite daikto poveikį
+addItemEffect_selectItem;Pasirinkite daiktą
+addItemEffect_selectMagnitude;Pasirinkite dydį
+addItemEffect_selectUnit;Pasirinkite karius
+addItemEffect_missingMagnitude;Trūkstamas dydis
+addItemEffect_effect_2;Sumažinta žala
+addItemEffect_effect_6;+ Papildomi sveikatos taškai per dieną
+addItemEffect_effect_12;+ Padidėjusi konkrečių karių ataka ir gynyba
+addItemEffect_effect_13;+ Padidėjusi kovinė jėga
+cams_newMail_title;Naujas el. pašto adresas
+cams_verifyNewMail_title;Patvirtinkite naują el. pašto adresą
+cams_verifyCurrentMail_title;Patvirtinkite dabartinį el. pašto adresą
+auction_notEnoughSilver;Neturite pakankamai sidabro.
+auction_itemGroups;Daiktų grupės
+auction_unknown;?
+auction_sortingOption_itemName;Daikto pavadinimas
+auction_sortingOption_bidCount;Statymų skaičius
+auction_sortingOption_finishedAt;Pasibaigs po
+auction_sortingOption_highestBid;Didžiausias statymas
+auction_sortingOption_highestBidder_player;Didžiausias statytojas (žaidėjas)
+auction_sortingOption_highestBidder_alliance;Didžiausias statytojas (aljansas)
+auction_sortingOption_auctionAmount;Dabartinių aukcionų skaičius
+auction_sortingOption_nextFinishedAt;Kitas pasibaigs po
+auction_sellingPrice;Pardavimo kaina
+auction_sellingPrice_lowest;Mažiausias
+auction_sellingPrice_average;Vidurkis
+auction_sellingPrice_highest;Didžiausias
+auction_result_won;<color={{colorValue|TextColor}}>Laimėta</color>
+auction_result_lost;<color={{colorValue|TextColor}}>Statymas pralenktas</color>
+auction_sellingPrice_averagePrice;Vidutinė kaina
+auction_bidProcessTitle;Pasiūlymų procesas
+auction_bidProcessDescription1;Galite teikti pasiūlymus už jus dominančius daiktus.
+auction_bidProcessDescription2;Kad peržengtumėte dabartinį pasiūlymą, turite siūlyti bent minimalią sumą.
+auction_maxBidFeatureTitle;Didžiausio pasiūlymo funkcija
+auction_maxBidFeatureDescription1;Galite įvesti maksimalų biudžetą daiktui.
+auction_maxBidFeatureDescription2;Sistema už jus automatiškai pateiks pasiūlymą iki nustatytos didžiausios sumos.
+auction_maxBidFeatureDescription3;Jūsų pasiūlymas didinamas tik tiek, kiek reikia, kad išliktumėte didžiausios kainos siūlytoju.
+auction_maxBidFeatureDescription4;Pasiūlymai tęsiasi, kol laimite arba esate aplenkti virš savo maksimalaus biudžeto.
+auction_auctionDurationTitle;Aukciono trukmė
+auction_auctionDurationDescription1;Jei likęs aukciono laikas yra trumpesnis nei {{DURATION|Duration}}, pasikeitus didžiausią kainą pasiūliusiam dalyviui, aukciono trukmė pratęsiama iki {{DURATION|Duration}}.
+auction_auctionWinningTitle;Laimėjimas
+auction_auctionWinningDescription1;Aukciono pabaigoje prekę laimi didžiausią kainą pasiūlęs aukciono dalyvis.
+auction_auctionFinished;Aukcionas jau pasibaigė.
+auction_wasJustOutbid;Šiuo metu jūs nesate didžiausias statytojas.
+auction_currentHighestBidder;Dabartinis didžiausias statytojas
+auction_currentHighestBid;Dabartinis didžiausias statymas
+auction_yourMaximumBid;Jūsų maksimalus statymas
+auction_showFinished;Rodyti baigtus
+auction_deleteAllFinished;Ištrinti visus baigtus
+auction_startedAt;Pradėta: {{TIME|DateTime}} | Vyksta
+auction_canceled;Atšaukta
+auction_finished;baigta
+auction_finishedAt;Baigta: {{TIME|DateTime}}
+auction_itemAuction_title;Daiktų aukcionas
+auction_itemAuction_info;Paspauskite ant daikto savo inventoriuje, kad pradėtumėte aukcioną. Kiti žaidėjai gali teikti pasiūlymus. Aukcionas trunka iki {{INT}} val.
+auction_whatHappensNext_title;Kas bus toliau
+auction_whatHappensNext_info1;Pasibaigus laikui, prekę automatiškai nusiperka didžiausią kainą pasiūlęs dalyvis.
+auction_whatHappensNext_info2;Gausite sidabrą, kai daiktas bus parduotas.
+auction_whatHappensNext_info3;Jums bus pranešta, kai jūsų prekė bus parduota.
+auction_error_cannotSell;Šis daiktas negali būti parduotas aukcione.
+auction_error_onlyHorse;Jūs negalite parduoti savo vienintelio žirgo.
+auction_sellItem;Parduoti prekę
+auction_sales;Pardavimai
+auction_selectBatchSize;Pasirinkite partijos dydį
+auction_selectBatchSize_batches;<b>{{COUNT}}x</b> daiktų partijos
+auction_selectFilter_title;Pasirinkite filtrą
+goldShop_upTo;Iki
+shopPromotion_openShop;Atidaryti parduotuvę
+shopPromotion_goldPromotionTitle;Vykstanti auksinių akcija
+shopPromotion_limitedTimeOffer;Riboto laiko pasiūlymas!
+shopPromotion_goldPromotionDescription;Dabar gaukite daugiau aukso už savo pinigus.
+shopPromotion_timeRemaining;Liko laiko:
+hero_adventures_watchAdReduceDuration_title;Sutrumpinti nuotykio trukmę {{AMOUNT}}% 
+hero_adventures_watchAdReduceDuration_description;Žiūrėkite vaizdo įrašą, norėdami sutrumpinti <b>kito</b> karžygio nuotykio trukmę.
+hero_adventures_watchAdIncreaseDanger_title;Padidinti nuotykio pavojų iki sunkaus
+hero_adventures_watchAdIncreaseDanger_description;Žiūrėkite vaizdo įrašą, norėdami padidinti <b>kito įprasto</b> nuotykio pavojų iki sunkaus ir gauti daugiau karžygio patirties.
+hero_adventures_watchAdActive;Galioja kitam nuotykiui.
+hero_adventures_watchAdActiveNormal;Galioja kitam įprastam nuotykiui.
+hero_crafting_action_error_nonEpic;Turi būti identiškas to paties retumo ir kokybės daiktas.
+berichte.adventure_heroCentric;{{VILLAGE_NAME}} leidžiasi į nuotykį
+reports_share_notShareable;Šia ataskaita negalima dalytis.
+dailyQuests_dailyMaxReached;Pasiektas dienos limitas
+achievementQuests.DailyQuest_12_description;Atidarykite žaidimą kompiuterio naršyklėje ir žiūrėkite vaizdo įrašą.
+achievementQuests.DailyQuest_12_additionalInformation;www.travian.lt
+achievementQuests.DailyQuest_13_description;Pavyzdžiui, žiūrėkite vaizdo įrašą, norėdami greičiau patobulinti pastatus.
+achievementQuests.DailyQuest_13_additionalInformation;Arba spustelėkite mygtuką „Žiūrėti vaizdo įrašą“, norėdami peržiūrėti įrašą tiesiogiai be papildomos naudos.
+addItemEffect_effect_11;+ Padidinta puolimo galia prieš natarų gentį
+auction_started;Aukcionas pradėtas
+auction_error_batchSize;Nepakanka parduodamų daiktų.
+auction_graph_notEnoughData;Nepakankamai duomenų
+auction_emptyInventory;- Šiuo metu neturite parduodamų daiktų -
+RelativeTime_2_word;[data>1:{{data}} val.][data<2:{{data}} val.]
+gold_action_halveDuration;Sutrumpinti trukmę perpus
+goldShop_advantage_Value_Duration;<b>+{{VALUE}}%</b> už <b>[DURATION>6:{{DURATION}} dienų][DURATION<7:{{DURATION|Mult|24}} valandų]</b>
+goldShop_advantage_Value_Active;<b>+{{VALUE}}%</b> aktyvu:
+goldShop_upgrade;Naujovinti
+goldShop_advantage_stillActiveFor;Vis dar aktyvus:
+goldShop_advantage_stillActiveFor_Value;{{DURATION}} d. iki {{TIME}} val.
+goldShop_advantage_videoFeatureOnCD;Vaizdo premiją galite aktyvuoti tik kartą per dieną.\nKasdienis atkūrimas po: {{TIMESTAMP|Countdown}}
+goldShop_advantage_popup_mainInfoHeader_ProductionboostLumber;Padidinkite <b>medienos gamybą</b> visuose savo kaimuose.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostClay;Padidinkite <b>molio gamybą</b> visuose savo kaimuose.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostIron;Padidinkite <b>geležies gamybą</b> visuose savo kaimuose.
+goldShop_advantage_popup_mainInfoHeader_ProductionboostCrop;Padidinkite <b>grūdų gamybą</b> visuose savo kaimuose.
+goldShop_advantage_popup_mainInfoBody; priedas yra suteikiamas bazinei resursų gamybai ir visiems kitiems papildomiems priedams!
+goldShop_advantage_popup_premiumInfo;Galite aktyvuoti premiją naudodami auksą ir gauti +{{VALUE}}% gamybos bonusą.\nGalite įjungti automatinį pratęsimą nuolatinei bonuso trukmei.
+goldShop_advantage_popup_videoFeatureInfo;Arba galite pažiūrėti trumpą vaizdo įrašą ir gauti mažesnį +{{VALUE}}% gamybos bonusą.\n<b>Vaizdo premiją galima aktyvuoti tik kartą per dieną kiekvienam ištekliui.</b>
+goldShop_advantage_popup_upgradeInfo;Bet kuriuo metu galite pereiti prie +{{VALUE}}% gamybos bonuso už auksą.
+goldShop_advantage_upgradePopupInfo1;Išteklių premijos atnaujinimas panaikins jūsų dabartinę aktyvią premiją.
+goldShop_advantage_upgradePopupInfo2;Už [DURATION>6:{{DURATION}} dienų][DURATION<7:{{DURATION|Mult|24}}] vietoj to gausite +{{VALUE}}%.
+goldShop_advantage_upgradePopup_title;Atnaujinimo premija
+productionOverview_Bonus;+{{VALUE}}% gamybos
+hero_adventures_watchAdReduceDuration_toast;Nuotykio trukmė sutrumpinta.
+hero_adventures_watchAdIncreaseDanger_toast;Nuotykio pavojus padidintas.
+hero_consumablePopup_amountEquippedAfter;Kiekis užsidėjus po:
+hero_consumablePopup_amountEquippedAfterUse;Kiekis užsidėjus po panaudojimo:
+hero_consumablePopup_amountLeftInInventory;Kiekis, likęs inventoriuje:
+cams_recover_password_cooldown;Palaukite {{VALUE}}
+cams_settings_changePassword_cooldown;Palaukite {{VALUE}}
+infobox_productionBoost_upgradeButton;Naujovinti
+infobox_productionBoost_upgradeBonusWithGold;Pagerinkite ir pratęskite savo priedą už auksinius, kad gautumėte +{{PREMIUM_PERCENTAGE}}% {{TIME}} val.
+infobox_productionBoost_expires;{{PERCENTAGE}} {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresLumber;+{{PERCENTAGE}}% medienos gamybos bonusas baigiasi po {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresClay;+{{PERCENTAGE}}% molio gamybos bonusas baigiasi po {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresIron;+{{PERCENTAGE}}% geležies gamybos bonusas baigiasi po {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expiresCrop;+{{PERCENTAGE}}% grūdų gamybos bonusas baigiasi po {{TIME_COUNTER|Countdown?Bold}}
+infobox_productionBoost_expired;{{PERCENTAGE}}
+infobox_productionBoost_expiredLumber;+{{PERCENTAGE}}% medienos gamybos bonuso galiojimas <b>baigėsi</b>.
+infobox_productionBoost_expiredClay;+{{PERCENTAGE}}% molio gamybos bonuso galiojimas <b>baigėsi</b>.
+infobox_productionBoost_expiredIron;+{{PERCENTAGE}}% geležies gamybos bonuso galiojimas <b>baigėsi</b>.
+infobox_productionBoost_expiredCrop;+{{PERCENTAGE}}% grūdų gamybos bonuso galiojimas <b>baigėsi</b>.
+infobox_levelUpProductionReminder;Padidinkite išteklių gamybą visuose savo kaimuose už auksą (+{{PREMIUM_PERCENTAGE}}%) arba peržiūrėję vaizdo įrašą (+{{VIDEO_PERCENTAGE}}%)
+infobox_oneTimeProductionBoostReminder;Dabar galite vėl aktyvuoti +{{VIDEO_PERCENTAGE}}% išteklių priedą peržiūrėję vaizdo įrašą.
+travelSimulator_title;Kelionės laiko simuliatorius
+travelSimulator_sourceTribe;Pradinės vietos gentis
+travelSimulator_noLocationSelected;Nepasirinkta jokia vieta
+travelSimulator_slowestUnit_title;Lėčiausias vienetas
+travelSimulator_slowestUnit_settings;{{UNIT}} | greitis: {{SPEED}}
+travelSimulator_TournamentSquareLevel_info;(Tik kai atstumas >20 laukelių)
+travelSimulator_tournamentSquareLevel_option;{{LEVEL}} | {{VALUE}}%
+travelSimulator_unitSelection_title;Pasirinkite lėčiausią
+travelSimulator_unitSelection_unitType;Vieneto tipas
+travelSimulator_unitSelection_unitSpeed;Vieneto greitis
+travelSimulator_unitSelection_selectedUnitSpeed;Greitis: {{SPEED}}
+travelSimulator_calculation_land;<b>Sausuma:</b> {{VALUE}}
+travelSimulator_calculation_sea;<b>Jūra:</b> {{VALUE}}
+travelSimulator_heroAttending;Dalyvauja karžygys
+travelSimulator_vikingRaidBonus;Vikingų reido premija
+travelSimulator_troopSpeedArtefactEffect;Karių greičio artefakto poveikis
+travelSimulator_toast_selectSourceAndTarget;Pasirinkite tinkamą pradinę ir galutinę vietas!
+travelSimulator_toast_selectSourceTribe;Pasirinkite tinkamą gentį!
+IOSAppTrackingTransparencyMessage;Paspaudus „Leisti“, įrenginio informacija bus naudojama aktualesniam skelbimų turiniui rodyti
+goldShop_advantage_Value_Duration_Hours;<b>+{{VALUE}}%</b> <b>{{DURATION}} valandoms</b>
+travelSimulator_tournamentSquareLevel_title;Arenos lygis
+travelSimulator_troopSpeedAncientPower;Karių greičio senovinė galia
+RelativeTime_Formatted;[weeks>0:{{weeks}}sav.][days>0:{{days}}d.]{{data}}
+settings_account_tab;Vartotojas
+settings_notification_tab;Iššokantys pranešimai
+settings_app_PushNotifications_popup_title;Iššokantys pranešimai
+settings_app_PushNotifications_popup_header;Leiskite mums siųsti jums pranešimus
+settings_app_PushNotifications_popup_info1;Norėdami gauti tiesioginius pranešimus su naujienomis ir naudinga informacija apie žaidimą, pirmiausia leiskite mums juos siųsti.
+settings_app_PushNotifications_popup_info2;Galite įjungti pranešimus savo įrenginio programos nuostatose.
+settings_app_PushNotifications_popup_info3;Taip pat galite bet kada čia sugrįžti ir vėl išjungti pranešimus.
+settings_app_PushNotifications_popup_action_button;Atidaryti programos nuostatas
+ratioValueMax;/ {{a}}
+market_sendResources_completed;Užbaigta
+market_sendResources_villageNotFound;Nerasta. Resursus siųsti galima tik savo aljansui ir sąjungos nariams.
+no_ads_popup_title;Jokių vaizdo įrašų skelbimų
+no_ads_popup_header;Iškilo problemų bandant rodyti vaizdo įrašo skelbimą.
+no_ads_popup_info1;Dėl to gali būti kelios priežastys:
+no_ads_popup_info2; • Šiuo metu jūsų regione nėra tinkamų skelbimų.
+no_ads_popup_info3; • Jūsų privatumo nustatymai riboja pateikiamų skelbimų skaičių.
+no_ads_popup_info4; • Techninės problemos su mūsų programėle arba skelbimų teikėju.
+no_ads_popup_settings_msg;Įsitikinkite, kad privatumo nustatymuose suteikėte leidimą rodyti suasmenintus skelbimus.
+no_ads_popup_support_msg;Prašome susisiekti su mūsų palaikymo tarnyba, jei problema išlieka.
+no_ads_popup_support_button;Susisiekti su pagalbos tarnyba
+city_upgradeToACity_wwVillageNotUpgradeable;Pasaulio stebuklų kaimai negali būti patobulinti į miestus.
+travelSimulator_selectMagnitude;Pasirinkite dydį
+marketplace_merchantsOverview_returningTo;Returning to <b>{{Village}}</b> of <b>{{Player}}</b>
+market_sendResources_sendAgain;Siųsti dar kartą
+search_village_notFound;Nerasta. Resursus siųsti galima tik savo aljansui ir sąjungos nariams.
+settings_app_AnimationsPayoffs_activated;Įjungiama karių ir (arba) žandarų siuntimo animacija
+settings_app_AnimationsPayoffs_deactivated;Sending troops/merchants animation is deactivated
+hero_resourceTransferPopup_empty;Nėra resursų, kuriuos būtų galima perkelti iš karžygio inventoriaus.
+hero_toast_appearanceChanged;Išvaizda pakeista
+alliance_editMemberPopup_customNote;Specialus užrašas
+alliance_editMemberPopup_titleOfRole;Pareigų pavadinimas
+alliance_editMemberPopup_setSpecialization;Nustatyti specializaciją
+alliance_role_offensive;Puolimas
+alliance_role_defensive;Gynyba
+alliance_role_hybrid;Hibridinis
+alliance_role_scout;Žvalgas
+alliance_role_support;Palaikymo komandos narys
+alliance_role_wow_hammer;WoW plaktukas
+alliance_role_none;Nėra
+ad_fallback_popup_title;Atsiimk savo atlygį
+ad_fallback_popup_info;Šiuo metu nėra pasiekiamų vaizdo reklamų, bet vis tiek norime atlyginti tau už lojalumą! Luktelk, kol paruošime atlygį.
+ad_fallback_popup_rewardGranted;Atlygis gautas
+ad_fallback_popup_claim;Atsiimk atlygį
+ad_fallback_popup_closeWarning;Jei šį langą uždarysi per anksti, atlygis bus atšauktas
+gameplay_tip_1;Kolonistus gali paruošti rezidencijoje arba valdovų rūmuose (pirmuosius – kai pastatas pasiekia 10 lygį).
+gameplay_tip_2;Kiekvienam avatarui galima pastatyti tik vienus valdovų rūmus. Jie suteikia iki 3 plėtros vietų, o rezidencija – tik 2.
+gameplay_tip_3;Jei nori pakeisti savo sostinę, naujoje gyvenvietėje pastatyk valdovų rūmus. Atmink, kad senojoje sostinėje esantys išskirtiniai pastatai bus prarasti arba sumažinti keliais lygiais.
+gameplay_tip_4;Jei turi pakankamai kultūros taškų, gali įkurti naują arba užkariauti kitą gyvenvietę.
+gameplay_tip_5;Kultūros taškų gausi, kai kelsi pastatų lygius ir rengsi šventes rotušėje.
+gameplay_tip_6;Didžiąsias šventes gali rengti rotušėje (nuo 10 lygio). Jos suteikia daugiau kultūros taškų, bet joms reikia daugiau resursų.
+gameplay_tip_7;Gyvenvietę užkariausi tada, kai rezidencijoje ar valdovų rūmuose paruoštais vadais sumažinsi jos lojalumą iki nulio.
+gameplay_tip_8;Pirmiausia akademijoje ištirk vadus, o tik tada paruošk juos rezidencijoje ar valdovų rūmuose.
+gameplay_tip_9;Gyvenvietes gali užkariauti tiek iš Natarų genties, tiek iš kitų žaidėjų.
+gameplay_tip_10;Kiti žaidėjai negali užkariauti tavo sostinės.
+gameplay_tip_11;Naudokis daugiagrūdžių laukų paieška, kad rastum 9 ar 15 grūdų gyvenvietes, galinčias išmaitinti didesnę kariuomenę.
+gameplay_tip_12;Savo sostinėje resursų laukus gali kelti į aukštesnį lygį nei kitose gyvenvietėse.
+gameplay_tip_13;Per turgavietę siųsk resursus draugiškoms gyvenvietėms.
+gameplay_tip_14;Turgavietėje gali prekiauti resursais su kitais žaidėjais.
+gameplay_tip_15;Prekeivių gabenamą kiekį padidinsi, kai kelsi prekybos rūmų lygį.
+gameplay_tip_16;Karžygio namus pakelk iki 10 lygio, kad galėtum užimti oazę ir padidinti resursų gamybą.
+gameplay_tip_17;Kalvėje gali sustiprinti savo pajėgas. Šie patobulinimai iškart taikomi visoms tos rūšies pajėgoms, įskaitant jau paruoštas.
+gameplay_tip_18;Naudok mūšio imitatorių, kad prieš puolimą įvertintum galimas mūšio baigtis. Kuo daugiau detalių įvesi į simuliaciją, tuo tikslesnis bus rezultatas.
+gameplay_tip_19;Aukso klubas leidžia nurodyti sostinėje esantiems kariams automatiškai pasitraukti ir išvengti artėjančių puolimų.
+gameplay_tip_20;Kai tavo pajėgos grįžta namo, pajėgų patraukimas laikinai išjungiamas 10 sekundžių.
+gameplay_tip_21;Patobulink savo žvalgus kalvėje, kad pagerintum jų žvalgybos gebėjimus.
+gameplay_tip_22;Sienos gerokai sustiprina tavo gyvenvietės gynybą.
+gameplay_tip_23;Statyk slėptuves, kad apsaugotum savo resursus nuo reidų.
+gameplay_tip_24;Galai gali paruošti spąstines, kurios sugaudo puolėjus dar prieš prasidedant kovai.
+gameplay_tip_25;Norint išlaisvinti įkalintas pajėgas, reikia sėkmingai surengti įprastą ataką prieš gyvenvietę, kurioje jos įkalintos.
+gameplay_tip_26;Puolantis žaidėjas gali išlaisvinti 75% įkalintų pajėgų, tačiau gynėjas gali pasirinkti taikiai paleisti 100% jų.
+gameplay_tip_27;Pastatyk ligoninę, kad galėtum išgydyti iki 40% mūšyje prarastų pajėgų.
+gameplay_tip_28;Galai gali paruošti spąstinę, kuri sugaudo puoliančias pajėgas dar prieš prasidedant kovai.
+gameplay_tip_29;Pastatyk savo sostinėje mūrinę, kad pastatai būtų atsparesni katapultoms ir taranams.
+gameplay_tip_30;Gali nustatyti, kad tavo karžygys slėptųsi, kai priešas puola tavo namų gyvenvietę, ir liktų saugus.
+gameplay_tip_31;Kovok su gyvūnais laisvose oazėse, kad gautum papildomų resursų. Stipresni gyvūnai duoda daugiau resursų.
+gameplay_tip_32;Kovok su gyvūnais laisvose oazėse kartu su savo karžygiu, kad jis įgytų patirties.
+gameplay_tip_33;Pasinaudok narvais, kad pagautum gyvūnus laisvose oazėse ir sustiprintum savo gyvenvietę.
+gameplay_tip_34;Pasirūpink, kad tavo karžygys turėtų gydomųjų tepalų ar specialių šarvų ir galėtų greičiau susigrąžinti sveikatą.
+gameplay_tip_35;Atgaivink savo karžygį laikui bėgant naudodamas resursus arba iš karto su gyvuoju vandeniu.
+gameplay_tip_36;Kad galėtum griauti pastatus, tavo gyvenamasis pastatas turi būti 10 lygio.
+gameplay_tip_37;Pastatyk ambasadą, kad galėtum prisijungti prie aljanso arba įkurti savo aljansą.
+vacationMode_title;Atostogų režimas
+vacationMode_vacation;Atostogos
+vacationMode_vacationModeActive;Atostogų režimas yra įjungtas
+vacationMode_info;Naudok atostogų režimą, kad apsaugotum savo gyvenvietes, kol tavęs nėra. Atostogų režimo metu šie veiksmai yra išjungti:
+vacationMode_deactivated_action1;siųsti arba priimti pajėgas
+vacationMode_deactivated_action2;Leistis į nuotykius kartu su savo herojumi
+vacationMode_deactivated_action3;Pradėti naujų pastatų statybos užsakymus arba pajėgų mokymą
+vacationMode_deactivated_action4;Naudotis turgaviete (įskaitant prekybos maršrutus)
+vacationMode_deactivated_action5;Rengti šventes, pradėti tyrimus arba vykdyti atnaujinimus
+vacationMode_deactivated_action6;Kurti aljansus arba prie jų prisijungti
+vacationMode_deactivated_action7;prisidėti resursais prie aljanso priedų
+vacationMode_deactivated_action8;Dalyvauti aukcionuose
+vacationMode_deactivated_action9;Pakeisk savo sostinę
+vacationMode_deactivated_action10;pašalinti paskyrą
+vacationMode_deactivated_territory_action1;Aukštinti gyvenvietę iki miesto
+vacationMode_deactivated_territory_action2;Tavo paskyra neprisideda prie tavo aljanso regiono gyventojų skaičiaus, o tavo kaimai negauna jokių pergalės taškų
+vacationMode_conditions_title;Atostogų sąlygos įvykdytos
+vacationMode_duration_info;Kiek dienų turėtų trukti atostogų režimas
+vacationMode_durationUntil;Atostogos iki <b>{{DATE}}</b>
+vacationMode_availableDays;Galimų dienų: <b>{{AVAILABLE}}/{{TOTAL}}</b>
+vacationMode_startButton;Įjunk atostogų režimą dabar
+vacationMode_error_noCancelTime;Atostogų režimą galėsi išjungti tik po {{HOURS}} valandų
+vacationMode_error_missingRequirement;Įvykdyk visus reikalavimus, kad galėtum įjungti atostogų režimą
+vacationMode_error_noVacationDaysLeft;Neturi laisvų dienų, kad galėtum įjungti atostogų režimą
+vacationMode_error_cooldown;Atostogų režimą gali įjungti tik praėjus {{HOURS}} valandoms nuo paskutinio jo išjungimo
+vacationMode_abortSuccess;Atostogų režimas atšauktas!
+vacationMode_remainingDays;Atostogų režime likusios dienos
+vacationMode_runsUntil;Atostogų režimas galios iki
+vacationMode_abortInfo;Atostogų režimą galėsi išjungti anksčiausiai <b>{{DATE}}</b>
+vacationMode_abortAvailable;Atostogų režimą dabar galite atšaukti
+vacationMode_abortConfirmHeader;Ar tikrai norite atšaukti atostogų režimą?
+vacationMode_abortConfirmInfo;Nepanaudotos dienos bus grąžintos. Šio veiksmo negalima atšaukti.
+vacationMode_startCooldownInfo;Atostogų režimą galėsi įjungti anksčiausiai <b>{{DATE}}</b>
+vacationMode_abortButton;Atšaukti atostogų režimą
+vacationMode_conditions_has_outgoing_troops;Nėra išvykstančių pajėgų
+vacationMode_conditions_has_incoming_troops;Nėra į tavo gyvenvietes ar oazes atvykstančių pajėgų
+vacationMode_conditions_has_reinforcing_troops_for;Nėra išsiųstų pastiprinimų kitiems žaidėjams
+vacationMode_conditions_has_reinforcing_troops_from;Nėra kitų žaidėjų pastiprinimo tavo gyvenvietėse ar oazėse
+vacationMode_conditions_has_ww_village;Neturi pasaulio stebuklo gyvenvietės
+vacationMode_conditions_has_artifact_village;Neturi gyvenvietės su artefaktu
+vacationMode_conditions_has_beginners_protection;Neturi naujoko apsaugos
+vacationMode_conditions_has_trapped_troops;Tavo spąstuose nėra jokių pajėgų ir nė vienas iš tavo pajėgų, įskaitant karžygį, nėra įkliuvęs
+vacationMode_conditions_has_deletion_event;Tavo avataras nėra pažymėtas ištrinti
+vacationMode_conditions_has_conquered_oase;Per pastarąsias {{HOURS}} valandas neužėmei nė vienos oazės. Į atostogų režimą galėsi pereiti, kai nuo oazės užėmimo ar jos praradimo praeis {{HOURS}} valandų.
+vacationModePopup_info;Atostogų režimo metu tavo paskyra bus apsaugota. Tačiau resursų gamyba nesustos, o tavo pajėgos ir toliau naudos grūdus. <color=red>Dėl to pajėgos gali pradėti badauti.</color>
+vacationModePopup_start_info;Ar tikrai nori įjungti atostogų režimą <b>{{DAYS}}</b> [DAYS>1:dienoms][DAYS<2:dienai]? Atostogų režimą galima atšaukti panaudojus auksinius po {{COOLDOWN}} valandų pertraukos.
+vacationModePopup_troopConsumption;Nuosavų pajėgų sunaudojimas
+vacationModePopup_starvationEstimate;Ankstyviausia karių bado pradžia
+vacationModePopup_starvationTitle;Nuosavų pajėgų sunaudojimas
+goldTransfer_accept_gift;Taip, perkelkite auksą
+goldTransfer_decline_gift;Ne, nepriimkite auksų
+goldTransfer_accepted_toast;Aukso pervedimas priimtas.
+goldTransfer_declined_toast;Aukso pervedimas atmestas.
+smithy_requirementsNotSatisfied;Neatitinka reikalavimų, reikalingų šiam vienetui patobulinti
+vacationModeLobby_status;Atostogų režime
+block_vacationMode_toast;Tu to negali padaryti, kol esi atostogų režime.
+goldTransfer_verifyOwnership_title;Patvirtinti nuosavybę
+goldTransfer_verifyOwnership_description;Kad galėtum pervesti įsigytus, bet neišleistus auksinius į esamą avatarą, pirmiausia patvirtink, kad jie tau priklauso: įvesk el. pašto adresą, kuriuo buvo išsiųstas perkėlimo kodas.
+goldTransfer_verifyOwnership_emailPlaceholder;El. pašto adresas
+goldTransfer_verifyOwnership_errorNoEmail;Prašome nurodyti savo el. pašto adresą.
+goldTransfer_verifyOwnership_errorAlreadyUsed;Ši aukso perkėlimo nuoroda jau buvo panaudota.
+goldTransfer_verifyOwnership_errorInUse;Ši aukso perkėlimo nuoroda yra naudojama.
+goldTransfer_verifyOwnership_verifyButton;Patvirtinti
+goldTransfer_selectTargetAvatar_title;Pasirink tikslinį avatarą
+goldTransfer_selectTargetAvatar_description;Pasirink avatarą, kuriam nori pervesti auksinius.
+goldTransfer_transferableGold_label;Perkeliami auksiniai:
+goldTransfer_enterAvatarName_header;Įveskite avataro vardą:
+goldTransfer_avatarName_placeholder;Avataro vardas
+goldTransfer_searchAvatar_Button;Ieškoti avataro
+goldTransfer_searchAvatarNothingFound_error;Tokiu vardu nerastas joks aktyvus avataras.
+goldTransfer_ownAvatarList_header;Pasirink iš savo aktyvių avatarų ({{account}})
+goldTransfer_selectOwnAvatarConfirm_Button;Pasirinkti avatarą
+goldTransfer_selectGameworld_title;Pasirinkite žaidimo serverį
+goldTransfer_selectGameworld_description;Toks avataro vardas buvo rastas keliuose žaidimo pasauliuose. Auksinius gali perkelti tik į vieną avatarą. Pasirink žaidimo pasaulį.
+goldTransfer_selectGameworldConfirm_Button;Pasirinkite žaidimo serverį
+goldTransfer_changeAvatar_Button;Keisti avataro vardą
+goldTransfer_confirm_title;Patvirtinti pervedimą
+goldTransfer_confirm_Button;Patvirtinti pervedimą
+goldTransfer_confirmAvatarOnOneWorld_info;Avataro vardas rastas viename žaidimo pasaulyje:
+goldTransfer_confirmAvatarName_prefix;Avataro vardas:
+goldTransfer_confirmGameworld_prefix;Žaidimo serveris:
+goldTransfer_transferComplete_title;Pervedimas sėkmingas
+goldTransfer_transferComplete_description;Tavo auksiniai sėkmingai pervesti avatarui <b>{{avatarname}}</b> žaidimo pasaulyje <b>{{gameworldname}}.</b>
+goldTransfer_transferComplete_returnButton;Grįžti į žaidimą
+cams_settings_accountDeletion_information_warning_v2;Šis veiksmas negrįžtamai ištrins tavo paskyrą. Bus prarastas toliau išvardytas su tavo paskyra susijęs turinys:\n<indent=0.5em>•  Visi avatarai, priklausantys tavo paskyrai\n•  Visi tavo paskyroje uždirbti medaliai</indent>\n\nPatvirtinimui žemiau esančiame lauke įvesk žodį "delete".
+mapMarkers_popupTitle;Nustatyk žymeklį
+mapMarkers_markerType;Žymės tipas
+mapMarkers_markerColor;Žymės spalva
+mapMarkers_setAlliance;Nustatyti žymę savo aljansui
+mapMarkers_type_field;Laukas
+mapMarkers_addMsg_success;Žymė sėkmingai pridėta!
+mapMarkers_saveMsg_success;Žymė sėkmingai išsaugota!
+mapMarkers_noPermission_error;Paprašyk savo aljanso lyderio leidimo.
+mapMarkers_marker;Žymė
+mapMarkers_markers;Žymės
+mapMarkers_listAllianceTitle;Aljanso žymės
+mapMarkers_listPlayerTitle;Žaidėjo žymės
+mapMarkers_listAlliances;Aljansai
+mapMarkers_listPlayers;Žaidėjai
+mapMarkers_listFlags;Vėliavos
+mapMarkers_deleteMarker;Ištrinti žymę
+mapMarkers_deleteMarkerMessage;Ar norite ištrinti šią žymę?
+mapMarkers_showOnMap;Rodyti mano žymes žemėlapyje
+embassy_general_subtab;Bendra
+embassy_villagesNearby_subtab;Netoliese esančios gyvenvietės
+embassy_villagesNearby_listHeader;Aljanso/sąjungos gyvenvietės

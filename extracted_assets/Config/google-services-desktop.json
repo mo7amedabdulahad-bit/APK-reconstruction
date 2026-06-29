@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "574861169216",
+    "project_id": "travian-legends-f5595",
+    "storage_bucket": "travian-legends-f5595.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574861169216:android:944356ef388e4ddffac5a5",
+        "android_client_info": {
+          "package_name": "com.traviangames.travianlegendsmobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "574861169216-ra95v4mimtrloaurkjrtd8b8q1ihkr4t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.traviangames.travianlegendsmobile",
+            "certificate_hash": "7fb964c4265bcf86659190a9af66f68de3f26e4e"
+          }
+        },
+        {
+          "client_id": "574861169216-qjvcsrbpvahanigk8jg272eql56leh9n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfEYSEbBR56MUhnlt_OmKyOXmv8IBBd2g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "574861169216-7c2le2ie42ffamme4q3rsk9fkoph794a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "574861169216-fk6t29qcr18mibvn3rg44j6522hb8qvp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.traviangames.travianlegendsmobile",
+                "app_store_id": "1544118325"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
