@@ -195,6 +195,9 @@ class App(tk.Tk):
         # Tab 3: AI Export
         self._build_ai_export_tab()
 
+        # Tab 4: UI Screens
+        self._build_ui_screens_tab()
+
         # Status bar
         self._status_var = tk.StringVar(value="Ready")
         status_bar = tk.Label(self, textvariable=self._status_var, bg=_BG_DARK,
@@ -249,6 +252,8 @@ class App(tk.Tk):
 
         ttk.Button(action_frame, text="Start Extraction", style="Accent.TButton",
                     command=self._start_extraction).pack(side=tk.LEFT, padx=(0, 6))
+        ttk.Button(action_frame, text="Extract UI Screens", style="Accent.TButton",
+                    command=self._start_ui_extract).pack(side=tk.LEFT, padx=(0, 6))
         ttk.Button(action_frame, text="Rebuild & Sign APK", style="Green.TButton",
                     command=self._start_rebuild).pack(side=tk.LEFT)
 
@@ -374,6 +379,226 @@ class App(tk.Tk):
             state=tk.DISABLED, height=18,
         )
         self._ai_log_text.pack(fill=tk.BOTH, expand=True, padx=8, pady=(0, 8))
+
+    # ── Tab 4: UI Screens ────────────────────────────────────────────
+
+    def _build_ui_screens_tab(self):
+        tab = tk.Frame(self._notebook, bg=_BG)
+        self._notebook.add(tab, text="  UI Screens  ")
+
+        paned = tk.PanedWindow(tab, orient=tk.HORIZONTAL, bg=_BG, sashwidth=4,
+                                sashrelief=tk.FLAT)
+        paned.pack(fill=tk.BOTH, expand=True, padx=2, pady=2)
+
+        # Left pane: tree of JSON files
+        left = tk.Frame(paned, bg=_BG)
+        paned.add(left, width=300, minsize=180)
+
+        tk.Label(left, text="UI Screen Files", bg=_BG, fg=_ACCENT,
+                 font=("Segoe UI", 10, "bold")).pack(anchor="w", padx=4, pady=(4, 2))
+
+        self._ui_tree = ttk.Treeview(left, show="tree", selectmode="browse")
+        ui_scroll = ttk.Scrollbar(left, orient=tk.VERTICAL, command=self._ui_tree.yview)
+        self._ui_tree.configure(yscrollcommand=ui_scroll.set)
+        ui_scroll.pack(side=tk.RIGHT, fill=tk.Y)
+        self._ui_tree.pack(fill=tk.BOTH, expand=True, padx=(4, 0))
+        self._ui_tree.bind("<<TreeviewSelect>>", self._on_ui_tree_select)
+
+        ui_btn_frame = tk.Frame(left, bg=_BG)
+        ui_btn_frame.pack(fill=tk.X, padx=4, pady=4)
+        ttk.Button(ui_btn_frame, text="Refresh", command=self._refresh_ui_tree).pack(side=tk.LEFT, padx=(0, 4))
+        ttk.Button(ui_btn_frame, text="Open in Explorer", command=self._open_ui_folder).pack(side=tk.LEFT)
+
+        # Right pane: JSON + summary
+        right = tk.Frame(paned, bg=_BG)
+        paned.add(right, minsize=400)
+
+        self._ui_json_text = scrolledtext.ScrolledText(
+            right, wrap=tk.WORD, bg=_BG_DARK, fg=_FG,
+            insertbackground=_FG, font=("Consolas", 9),
+            state=tk.DISABLED, height=25,
+        )
+        self._ui_json_text.pack(fill=tk.BOTH, expand=True, padx=4, pady=(4, 2))
+
+        tk.Label(right, text="Summary", bg=_BG, fg=_ACCENT,
+                 font=("Segoe UI", 9, "bold")).pack(anchor="w", padx=4, pady=(2, 0))
+
+        self._ui_summary_text = scrolledtext.ScrolledText(
+            right, wrap=tk.WORD, bg=_BG_DARK, fg=_FG,
+            insertbackground=_FG, font=("Consolas", 9),
+            state=tk.DISABLED, height=10,
+        )
+        self._ui_summary_text.pack(fill=tk.BOTH, expand=True, padx=4, pady=(0, 4))
+
+        self._ui_screens_data: dict = {}
+
+    def _refresh_ui_tree(self):
+        self._ui_tree.delete(*self._ui_tree.get_children())
+        self._ui_screens_data.clear()
+        if not self._output_dir:
+            return
+        ui_dir = self._output_dir / "UI_Screens"
+        if not ui_dir.exists():
+            return
+        for faction_dir in sorted(ui_dir.iterdir()):
+            if not faction_dir.is_dir():
+                continue
+            f_id = self._ui_tree.insert("", "end", text=faction_dir.name, open=True)
+            for cat_dir in sorted(faction_dir.iterdir()):
+                if not cat_dir.is_dir():
+                    continue
+                c_id = self._ui_tree.insert(f_id, "end", text=cat_dir.name)
+                for jf in sorted(cat_dir.glob("*.json")):
+                    self._ui_tree.insert(c_id, "end", text=jf.name,
+                                          values=(str(jf),))
+
+    def _on_ui_tree_select(self, _event):
+        sel = self._ui_tree.selection()
+        if not sel:
+            return
+        item = sel[0]
+        vals = self._ui_tree.item(item, "values")
+        if not vals:
+            return
+        jpath = Path(vals[0])
+        if not jpath.exists():
+            return
+        try:
+            data = json.loads(jpath.read_text(encoding="utf-8"))
+        except Exception:
+            return
+
+        self._ui_json_text.configure(state=tk.NORMAL)
+        self._ui_json_text.delete("1.0", tk.END)
+        self._ui_json_text.insert("1.0", json.dumps(data, indent=2, ensure_ascii=False))
+        self._ui_json_text.configure(state=tk.DISABLED)
+
+        summary = self._build_ui_summary(data)
+        self._ui_summary_text.configure(state=tk.NORMAL)
+        self._ui_summary_text.delete("1.0", tk.END)
+        self._ui_summary_text.insert("1.0", summary)
+        self._ui_summary_text.configure(state=tk.DISABLED)
+
+    def _build_ui_summary(self, data: dict) -> str:
+        elements = 0
+        texts = []
+        sprites = []
+        buttons = []
+
+        def walk(node):
+            nonlocal elements
+            elements += 1
+            for comp in node.get("components", []):
+                t = comp.get("type", "")
+                if t == "Text":
+                    txt = comp.get("text", "")
+                    if txt:
+                        texts.append(txt)
+                elif t == "Image":
+                    sp = comp.get("sprite_name", "")
+                    if sp:
+                        sprites.append(sp)
+                elif t == "Button":
+                    name = node.get("name", "")
+                    buttons.append(name)
+            for child in node.get("children", []):
+                walk(child)
+
+        for child in data.get("children", []):
+            walk(child)
+
+        lines = [
+            f"Screen: {data.get('screen_name', '?')}",
+            f"Bundle: {data.get('source_bundle', '?')}",
+            f"Total elements: {elements}",
+            "",
+            f"Text strings ({len(texts)}):",
+        ]
+        for t in texts[:50]:
+            lines.append(f"  - {t}")
+        if len(texts) > 50:
+            lines.append(f"  ... and {len(texts) - 50} more")
+
+        lines.append("")
+        lines.append(f"Sprite references ({len(sprites)}):")
+        for s in sprites[:50]:
+            lines.append(f"  - {s}")
+        if len(sprites) > 50:
+            lines.append(f"  ... and {len(sprites) - 50} more")
+
+        lines.append("")
+        lines.append(f"Buttons ({len(buttons)}):")
+        for b in buttons[:30]:
+            lines.append(f"  - {b}")
+
+        return "\n".join(lines)
+
+    def _open_ui_folder(self):
+        if not self._output_dir:
+            return
+        ui_dir = self._output_dir / "UI_Screens"
+        if ui_dir.exists():
+            os.startfile(str(ui_dir))
+
+    def _start_ui_extract(self):
+        if not self._apk_path:
+            messagebox.showwarning("No APK", "Open an APK/XAPK file first.")
+            return
+        if not self._output_dir:
+            self._output_dir = self._apk_path.parent / "extracted_output"
+            self._out_label.config(text=str(self._output_dir.name), fg=_FG)
+
+        self._set_status("Extracting UI screens...")
+        self._start_progress()
+        self._log("Starting UI screen hierarchy extraction...")
+
+        def _run():
+            from il2cpp_recovery_studio.ui_extractor.hierarchy import UIHierarchyExtractor
+            import zipfile, UnityPy
+            ui_ext = UIHierarchyExtractor(output_dir=self._output_dir, log_callback=self._log)
+            apk = self._apk_path
+            total = 0
+            with zipfile.ZipFile(str(apk), 'r') as z:
+                inner_apks = [n for n in z.namelist() if n.endswith(".apk")]
+                if not inner_apks:
+                    return 0
+                main_apk = max(inner_apks, key=lambda n: z.getinfo(n).file_size)
+                apk_data = z.read(main_apk)
+            import tempfile
+            tp = Path(tempfile.gettempdir()) / "ui_extract.apk"
+            tp.write_bytes(apk_data)
+            del apk_data
+            with zipfile.ZipFile(str(tp), 'r') as z:
+                bundle_files = [n for n in z.namelist() if n.endswith('.bundle')]
+                for bi, bname in enumerate(bundle_files):
+                    try:
+                        bdata = z.read(bname)
+                        n = ui_ext.extract_from_bundle(bdata, bname)
+                        total += n
+                        del bdata
+                    except Exception:
+                        pass
+            try: tp.unlink()
+            except: pass
+            return total
+
+        def _on_done(count):
+            self._stop_progress()
+            self._set_status(f"UI extraction complete: {count} screen(s)")
+            self._log(f"=== UI extraction complete: {count} screen(s) ===")
+            self._refresh_ui_tree()
+            messagebox.showinfo(
+                "UI Extraction Complete",
+                f"Found {count} UI screen(s).\n"
+                f"Saved to: {self._output_dir}/UI_Screens/",
+            )
+
+        def _on_error(exc):
+            self._stop_progress()
+            self._set_status(f"UI extraction failed: {exc}")
+            self._log(f"ERROR: {exc}")
+
+        _run_in_thread(self, _run, on_done=_on_done, on_error=_on_error)
 
     # -- Logging -------------------------------------------------------------
 

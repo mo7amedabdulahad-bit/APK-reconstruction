@@ -775,7 +775,7 @@ def main(apk_path: Path, output_dir: Path, _log=None):
     _log("COMPLETE UNITY ASSET EXTRACTION (ALL ERRORS FIXED)")
     _log("="*70)
 
-    _log("\n[1/5] Loading XAPK...")
+    _log("\n[1/6] Loading XAPK...")
     with zipfile.ZipFile(XAPK, 'r') as z:
         apk_data = z.read('UnityDataAssetPack.apk')
     tp = Path(tempfile.gettempdir()) / 'unity_final.apk'
@@ -805,7 +805,7 @@ def main(apk_path: Path, output_dir: Path, _log=None):
     print(f"  Other files:     {len(other_files)}")
     print(f"  TOTAL SOURCES:   {total_sources}")
 
-    print("\n[2/5] PHASE 1: Building global texture registry...")
+    print("\n[2/6] PHASE 1: Building global texture registry...")
     with zipfile.ZipFile(tp, 'r') as z:
         for bi, bname in enumerate(bundle_files):
             bdata = z.read(bname)
@@ -882,7 +882,7 @@ def main(apk_path: Path, output_dir: Path, _log=None):
     print(f"  Total texture registry: {len(texture_registry)} textures")
     print(f"  Sprite registry (will be built during extraction): {len(sprite_registry)} sprites")
 
-    print(f"\n[3/5] PHASE 2: Extracting from BUNDLES...")
+    print(f"\n[3/6] PHASE 2: Extracting from BUNDLES...")
     for bi, bname in enumerate(bundle_files):
         bshort = Path(bname).name[:50]
         faction, cat = classify_source(bname)
@@ -906,7 +906,30 @@ def main(apk_path: Path, output_dir: Path, _log=None):
         except: pass
 
     print(f"  Sprite registry after Phase 2: {len(sprite_registry)//2} unique sprites")
-    print(f"\n[4/5] PHASE 3: Extracting from GUID FILES + RAW MONOBEHAVIOURS...")
+
+    print(f"\n[4/6] PHASE 2.5: Extracting UI Screen Hierarchies...")
+    try:
+        from il2cpp_recovery_studio.ui_extractor.hierarchy import UIHierarchyExtractor
+        ui_ext = UIHierarchyExtractor(output_dir=OUT, log_callback=print)
+        total_canvas = 0
+        for bi, bname in enumerate(bundle_files):
+            bshort = Path(bname).name[:50]
+            print(f"  [{bi+1}/{len(bundle_files)}] {bshort}", end='', flush=True)
+            with zipfile.ZipFile(tp, 'r') as z:
+                try:
+                    bdata = z.read(bname)
+                    n = ui_ext.extract_from_bundle(bdata, bname)
+                    total_canvas += n
+                    print(f" -> {n} canvas root(s)")
+                    del bdata
+                except Exception as e:
+                    print(f" ERROR: {e}")
+                    del bdata
+        print(f"  UI Screens total: {total_canvas} canvas root(s)")
+    except Exception as exc:
+        print(f"  UI hierarchy extraction skipped: {exc}")
+
+    print(f"\n[5/6] PHASE 3: Extracting from GUID FILES + RAW MONOBEHAVIOURS...")
     batch_size = 100
     for gi in range(0, len(guid_files), batch_size):
         batch = guid_files[gi:gi+batch_size]
@@ -952,7 +975,7 @@ def main(apk_path: Path, output_dir: Path, _log=None):
             stats.errors += 1
         del combined; gc.collect()
 
-    print(f"\n[4.5/5] PHASE 4: Re-resolving unresolved sprites from source files...")
+    print(f"\n[5.5/6] PHASE 4: Re-resolving unresolved sprites from source files...")
     unresolved_metas = list((OUT / 'Sprites').rglob('*_meta.json'))
     print(f"  Found {len(unresolved_metas)} unresolved sprite meta files")
     resolved_count = 0
@@ -1071,7 +1094,7 @@ def main(apk_path: Path, output_dir: Path, _log=None):
 
         print(f"  Phase 4 results: resolved={resolved_count}, still_failed={still_failed}")
 
-    print(f"\n[5/5] Extracting OTHER files ({len(other_files)} files)...")
+    print(f"\n[6/6] Extracting OTHER files ({len(other_files)} files)...")
     with zipfile.ZipFile(tp, 'r') as z:
         for fname in other_files:
             try:
