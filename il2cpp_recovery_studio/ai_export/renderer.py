@@ -137,6 +137,8 @@ class UIPreviewRenderer:
         canvas: Image.Image, sprite_path: Path, pos: tuple[int, int], size: tuple[int, int]
     ) -> None:
         """Open a sprite PNG, resize it, and paste onto *canvas* at *pos*."""
+        if size[0] <= 0 or size[1] <= 0:
+            return
         try:
             spr = Image.open(str(sprite_path)).convert("RGBA")
             spr = spr.resize(size, Image.LANCZOS)

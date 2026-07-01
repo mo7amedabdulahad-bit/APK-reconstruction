@@ -121,7 +121,7 @@ class AIExporter:
 
         # 9. Generate MISSING_ASSETS.md
         self._write_missing_assets(
-            screen_name, screen_dir, screen_json, components,
+            screen_name, screen_dir, screen_json, components, extracted_assets_dir,
         )
 
         return screen_dir
@@ -689,6 +689,7 @@ class AIExporter:
         screen_dir: Path,
         screen_json: Optional[dict],
         components: list[dict],
+        extracted_assets_dir: Path,
     ) -> None:
         """Generate MISSING_ASSETS.md for assets that could not be found."""
         missing_sprites: list[tuple[str, str]] = []
@@ -699,18 +700,21 @@ class AIExporter:
             for el in screen_json.get("elements", []):
                 el_name = el.get("name", el.get("id", "?"))
                 sprite = el.get("sprite_file", "") or el.get("sprite_name", "")
-                if sprite and (sprite.startswith("MISSING:") or not Path(sprite).is_file()):
+                full_path = extracted_assets_dir / sprite if sprite else None
+                if sprite and (sprite.startswith("MISSING:") or not full_path or not full_path.is_file()):
                     missing_sprites.append((sprite, el_name))
                 for fkey in ("font_file", "label_font_file"):
                     ff = el.get(fkey, "")
-                    if ff and (ff.startswith("MISSING:") or not Path(ff).is_file()):
+                    ff_path = extracted_assets_dir / ff if ff else None
+                    if ff and (ff.startswith("MISSING:") or not ff_path or not ff_path.is_file()):
                         missing_fonts.append((ff, el_name))
 
         # Also scan components for sprite references
         for comp in components:
             comp_name = comp.get("name", comp.get("script_name", "?"))
             sprite = comp.get("sprite_name", "")
-            if sprite and (sprite.startswith("MISSING:") or not Path(sprite).is_file()):
+            full_path = extracted_assets_dir / sprite if sprite else None
+            if sprite and (sprite.startswith("MISSING:") or not full_path or not full_path.is_file()):
                 entry = (sprite, comp_name)
                 if entry not in missing_sprites:
                     missing_sprites.append(entry)
