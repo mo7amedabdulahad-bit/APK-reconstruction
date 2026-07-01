@@ -1,28 +1,25 @@
 #!/usr/bin/env python3
 """
-IL2CPP Recovery Studio — Zero-Click Launcher (v2).
+IL2CPP Recovery Studio — Zero-Click Launcher (v3).
 
-Features
---------
-* Checks Python >= 3.10
-* Auto-installs / upgrades all required packages
-* Optional self-update from GitHub before launch
-* Launches the futuristic neon GUI
-
-Usage
------
-    python launch.py            # normal launch
-    python launch.py --update   # force Git pull before launch
+Fixes:
+- Prevents PyInstaller EXE respawn loops with multiprocessing.freeze_support()
+- Avoids calling pip from inside the frozen EXE
+- Launches the GUI safely in both source and packaged modes
 """
 import os
-import subprocess
 import sys
 import argparse
+import subprocess
+import multiprocessing
 from pathlib import Path
 
+# Critical for Windows/PyInstaller: prevents recursive child process spawning
+multiprocessing.freeze_support()
+
 REQUIRED_PYTHON = (3, 10)
-REPO_ROOT = Path(__file__).resolve().parent
-PACKAGE_DIR = REPO_ROOT / "il2cpp_recovery_studio"
+IS_FROZEN = getattr(sys, "frozen", False)
+REPO_ROOT = Path(sys.executable).resolve().parent if IS_FROZEN else Path(__file__).resolve().parent
 
 PKG_IMPORT_TO_PIP = {
     "UnityPy": "UnityPy>=1.5.0",
@@ -32,8 +29,9 @@ PKG_IMPORT_TO_PIP = {
 }
 
 
-# ──────────────────────────────────────────────────────────────────
 def check_python_version() -> bool:
+    if IS_FROZEN:
+        return True
     if sys.version_info < REQUIRED_PYTHON:
         major, minor = REQUIRED_PYTHON
         print(f"ERROR: Python {major}.{minor}+ is required.")
@@ -45,6 +43,9 @@ def check_python_version() -> bool:
 
 
 def ensure_dependencies() -> bool:
+    if IS_FROZEN:
+        return True
+
     missing = [
         pip_name
         for import_name, pip_name in PKG_IMPORT_TO_PIP.items()
@@ -70,7 +71,8 @@ def ensure_dependencies() -> bool:
 
 
 def self_update() -> None:
-    """Pull latest changes from GitHub (requires Git)."""
+    if IS_FROZEN:
+        return
     git = _find_git()
     if not git:
         print("  ⚠️  Git not found — skipping update.")
@@ -89,7 +91,6 @@ def self_update() -> None:
         print(f"  ⚠️  Update failed: {exc}")
 
 
-# ──────────────────────────────────────────────────────────────────
 def _can_import(name: str) -> bool:
     try:
         __import__(name)
@@ -113,30 +114,28 @@ def _find_git():
 
 
 def launch_gui() -> None:
-    if str(REPO_ROOT) not in sys.path:
+    if not IS_FROZEN and str(REPO_ROOT) not in sys.path:
         sys.path.insert(0, str(REPO_ROOT))
     try:
         from il2cpp_recovery_studio.gui.app import run_gui
         run_gui()
     except Exception as exc:
         import traceback
-        print(f"  ❌  Failed to launch GUI: {exc}")
-        traceback.print_exc()
-        input("Press Enter to exit...")
+        if IS_FROZEN:
+            err_path = REPO_ROOT / "startup_error.log"
+            err_path.write_text(traceback.format_exc(), encoding="utf-8")
+        else:
+            print(f"  ❌  Failed to launch GUI: {exc}")
+            traceback.print_exc()
+            input("Press Enter to exit...")
 
 
-# ──────────────────────────────────────────────────────────────────
 def main() -> None:
     parser = argparse.ArgumentParser(add_help=False)
     parser.add_argument("--update", action="store_true", help="Pull latest from GitHub before launch")
     args, _ = parser.parse_known_args()
 
     os.chdir(REPO_ROOT)
-    print("=" * 60)
-    print("  IL2CPP Recovery Studio  v2")
-    print("  Unity APK Extraction, Editing & Rebuild Tool")
-    print("=" * 60)
-    print()
 
     if not check_python_version():
         return
@@ -147,7 +146,6 @@ def main() -> None:
     if not ensure_dependencies():
         return
 
-    print("Launching GUI...")
     launch_gui()
 
 

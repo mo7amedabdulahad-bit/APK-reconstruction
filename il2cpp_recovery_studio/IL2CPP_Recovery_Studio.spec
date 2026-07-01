@@ -1,89 +1,42 @@
 # -*- mode: python ; coding: utf-8 -*-
 """PyInstaller spec file for IL2CPP Recovery Studio.
 
-Produces a single-folder or single-file .exe that launches the GUI automatically.
-Run: python build_exe.py
+Fixed for stable EXE startup.
 """
 from __future__ import annotations
-
-import os
-import sys
 from pathlib import Path
+import os
 
 block_cipher = None
-
 ROOT = Path(os.path.abspath(SPEC)).parent
-SRC = ROOT
+PROJECT_ROOT = ROOT.parent
+
+entry_script = PROJECT_ROOT / "launch.py"
+package_dir = PROJECT_ROOT / "il2cpp_recovery_studio"
+
 
 a = Analysis(
-    [str(SRC / "__main__.py")],
-    pathex=[str(SRC)],
+    [str(entry_script)],
+    pathex=[str(PROJECT_ROOT)],
     binaries=[],
-    datas=[],
+    datas=[(str(package_dir), "il2cpp_recovery_studio")],
     hiddenimports=[
+        "customtkinter",
+        "tkinter",
+        "tkinter.filedialog",
+        "UnityPy",
+        "PIL",
+        "PIL.Image",
+        "PIL.ImageTk",
+        "requests",
         "il2cpp_recovery_studio",
+        "il2cpp_recovery_studio.gui",
         "il2cpp_recovery_studio.gui.app",
-        "il2cpp_recovery_studio.gui.styles",
-        "il2cpp_recovery_studio.core.config",
-        "il2cpp_recovery_studio.core.logging",
-        "il2cpp_recovery_studio.apk.parser",
-        "il2cpp_recovery_studio.apk.models",
-        "il2cpp_recovery_studio.binary.analyzer",
-        "il2cpp_recovery_studio.binary.models",
-        "il2cpp_recovery_studio.recovery.orchestrator",
-        "il2cpp_recovery_studio.recovery.models",
-        "il2cpp_recovery_studio.recovery.database",
-        "il2cpp_recovery_studio.recovery.parsers",
-        "il2cpp_recovery_studio.recovery.tool_registry",
-        "il2cpp_recovery_studio.metadata.parser",
-        "il2cpp_recovery_studio.metadata.models",
-        "il2cpp_recovery_studio.methodmap.engine",
-        "il2cpp_recovery_studio.methodmap.models",
-        "il2cpp_recovery_studio.unity.analyzer",
-        "il2cpp_recovery_studio.unity.models",
-        "il2cpp_recovery_studio.network.analyzer",
-        "il2cpp_recovery_studio.network.models",
-        "il2cpp_recovery_studio.strings.analyzer",
-        "il2cpp_recovery_studio.strings.models",
-        "il2cpp_recovery_studio.assets.analyzer",
-        "il2cpp_recovery_studio.assets.models",
-        "il2cpp_recovery_studio.graphs.generator",
-        "il2cpp_recovery_studio.graphs.models",
-        "il2cpp_recovery_studio.search.engine",
-        "il2cpp_recovery_studio.search.models",
-        "il2cpp_recovery_studio.ghidra.engine",
-        "il2cpp_recovery_studio.ghidra.models",
-        "il2cpp_recovery_studio.plugins.manager",
-        "il2cpp_recovery_studio.exporters.exporters",
-        "il2cpp_recovery_studio.performance",
-        "il2cpp_recovery_studio.performance.cache",
-        "il2cpp_recovery_studio.performance.utils",
-        # Dependencies
-        "PySide6",
-        "PySide6.QtCore",
-        "PySide6.QtGui",
-        "PySide6.QtWidgets",
-        "lief",
-        "rich",
-        "rich.console",
-        "rich.progress",
-        "yaml",
-        "networkx",
     ],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
-    excludes=[
-        "tkinter",
-        "matplotlib",
-        "numpy",
-        "scipy",
-        "pandas",
-        "PIL",
-        "pytest",
-        "mypy",
-        "ruff",
-    ],
+    excludes=["pytest", "mypy", "ruff"],
     win_no_prefer_redirects=False,
     win_private_assemblies=False,
     cipher=block_cipher,
@@ -103,7 +56,7 @@ exe = EXE(
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
-    upx=True,
+    upx=False,
     upx_exclude=[],
     runtime_tmpdir=None,
     console=False,
