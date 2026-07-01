@@ -1,19 +1,23 @@
 #!/usr/bin/env python3
 """
-IL2CPP Recovery Studio — app.py v9
+IL2CPP Recovery Studio — app.py v10
 
-Fixes:
-- Windows apktool execution: runs .bat via shell on Windows and falls back to
-  'java -jar apktool.jar' directly when appropriate.
-- Re-run correctness: output folders are refreshed safely before each selected
-  stage instead of blindly skipping because a directory exists.
-- Unity usability: exports scene/UI information as JSON/text so the user can
-  inspect scenes, GameObjects, Canvas/UI hierarchy, sprites, and components.
+Changes vs v9:
+- apktool: Popen + streaming stdout/stderr → lines appear in log live.
+  10-minute hard timeout; process is killed if it exceeds it.
+- Unity: also scans raw/ for .bundle / .ab files and loads each via UnityPy.
+- Unity: much wider type coverage — VideoClip, AnimationClip, AnimatorController,
+  Cubemap, Sprite (explicit), plus a JSON fallback for any named object whose
+  type doesn't match a known handler.
+- Scene/UI dump limit raised to 20 000 entries per file.
+- apktool target APK is always the main APK inside the XAPK, not the outer
+  XAPK file itself (apktool cannot decompile XAPK directly).
 """
 from __future__ import annotations
 
 import json
 import os
+import queue
 import shutil
 import subprocess
 import sys
@@ -47,6 +51,7 @@ APKTOOL_URL = (
     f"v{APKTOOL_VER}/apktool_{APKTOOL_VER}.jar"
 )
 TOOLS_DIR = Path(__file__).parent / "tools"
+APKTOOL_TIMEOUT = 600  # 10 minutes
 
 
 def _count_files(path: Path) -> int:
@@ -57,6 +62,11 @@ def _wipe_dir(path: Path):
     if path.exists():
         shutil.rmtree(path, ignore_errors=True)
     path.mkdir(parents=True, exist_ok=True)
+
+
+def _safe_name(raw: str, fallback: str = "unnamed") -> str:
+    s = "".join(c if c.isalnum() or c in " _-." else "_" for c in str(raw)).strip()
+    return s or fallback
 
 
 def _find_apktool() -> tuple[str | None, Path | None]:
@@ -179,15 +189,16 @@ class IL2CPPStudio(ctk.CTk):
         self._running = False
         self._force_refresh = ctk.BooleanVar(value=True)
         self._ops = {
-            "extract_apk": ctk.BooleanVar(value=True),
-            "extract_assets": ctk.BooleanVar(value=True),
-            "extract_il2cpp": ctk.BooleanVar(value=True),
+            "extract_apk":     ctk.BooleanVar(value=True),
+            "extract_assets":  ctk.BooleanVar(value=True),
+            "extract_il2cpp":  ctk.BooleanVar(value=True),
             "decompile_smali": ctk.BooleanVar(value=False),
-            "gen_report": ctk.BooleanVar(value=True),
+            "gen_report":      ctk.BooleanVar(value=True),
         }
         self._build_ui()
         self.after(200, self._animate_header)
 
+    # ── UI ────────────────────────────────────────────────────────
     def _build_ui(self):
         hdr = ctk.CTkFrame(self, fg_color=BG_PANEL, height=66, corner_radius=0)
         hdr.pack(fill="x")
@@ -197,11 +208,9 @@ class IL2CPPStudio(ctk.CTk):
         ctk.CTkLabel(hdr, text="● SYSTEM ONLINE", font=FNT_BODY, text_color=NEON_GREEN).pack(side="right", padx=22)
         body = ctk.CTkFrame(self, fg_color=BG_DEEP)
         body.pack(fill="both", expand=True, padx=12, pady=8)
-        body.columnconfigure(0, weight=5)
-        body.columnconfigure(1, weight=7)
+        body.columnconfigure(0, weight=5); body.columnconfigure(1, weight=7)
         body.rowconfigure(0, weight=1)
-        self._build_left(body)
-        self._build_right(body)
+        self._build_left(body); self._build_right(body)
         bar = ctk.CTkFrame(self, fg_color=BG_PANEL, height=32, corner_radius=0)
         bar.pack(fill="x", side="bottom")
         bar.pack_propagate(False)
@@ -228,11 +237,11 @@ class IL2CPPStudio(ctk.CTk):
         ops_card = SectionCard(left, "⚙  OPERATIONS", NEON_GREEN)
         ops_card.pack(fill="x", pady=(0, 10))
         for key, label, desc in [
-            ("extract_apk", "📦  Extract APK/XAPK", "Rebuild raw/ from source"),
-            ("extract_assets", "🎨  Extract Unity assets", "Textures, sprites, audio, scene/UI dumps"),
-            ("extract_il2cpp", "🔍  Parse IL2CPP", "global-metadata.dat + libil2cpp.so"),
-            ("decompile_smali", "🖥  Decompile Smali", "Uses apktool, auto-installs if needed"),
-            ("gen_report", "📝  HTML Report", "Deep summary of extracted output"),
+            ("extract_apk",     "📦  Extract APK/XAPK",   "Rebuild raw/ from source"),
+            ("extract_assets",  "🎨  Extract Unity assets","Textures, audio, meshes, bundles, scenes"),
+            ("extract_il2cpp",  "🔍  Parse IL2CPP",         "global-metadata.dat + libil2cpp.so"),
+            ("decompile_smali", "🖥  Decompile Smali",      "Uses apktool, auto-installs if needed"),
+            ("gen_report",      "📝  HTML Report",          "Deep tree summary → report.html"),
         ]:
             row = ctk.CTkFrame(ops_card, fg_color="transparent")
             row.pack(fill="x", padx=14, pady=4)
@@ -255,8 +264,7 @@ class IL2CPPStudio(ctk.CTk):
     def _build_right(self, parent):
         right = ctk.CTkFrame(parent, fg_color=BG_DEEP)
         right.grid(row=0, column=1, sticky="nsew")
-        right.rowconfigure(1, weight=1)
-        right.columnconfigure(0, weight=1)
+        right.rowconfigure(1, weight=1); right.columnconfigure(0, weight=1)
         pg = SectionCard(right, "⚡  PROGRESS", NEON_CYAN)
         pg.grid(row=0, column=0, sticky="ew", pady=(0, 8))
         self._progress = ctk.CTkProgressBar(pg, fg_color=BG_DEEP, progress_color=NEON_CYAN,
@@ -275,23 +283,19 @@ class IL2CPPStudio(ctk.CTk):
                                            font=FNT_MONO_B, height=140, state="disabled")
         self._results_txt.pack(fill="x", padx=14, pady=10)
 
-    _GLYPHS = ["■", "□", "▒", "░", "□", "■"]
-    _glyph_i = 0
+    _GLYPHS = ["■", "□", "▒", "░", "□", "■"]; _glyph_i = 0
 
     def _animate_header(self):
-        if not self.winfo_exists():
-            return
+        if not self.winfo_exists(): return
         g = self._GLYPHS[self._glyph_i % len(self._GLYPHS)]
         self._hdr_lbl.configure(text=f"{g}  {self.APP_TITLE}  {g}")
         self._glyph_i += 1
         self.after(500, self._animate_header)
 
     def _animate_progress(self):
-        if not self._running or not self.winfo_exists():
-            return
+        if not self._running or not self.winfo_exists(): return
         v = self._progress.get()
-        if v < 0.93:
-            self._progress.set(v + 0.004)
+        if v < 0.93: self._progress.set(v + 0.004)
         self.after(100, self._animate_progress)
 
     def _browse_apk(self):
@@ -317,28 +321,24 @@ class IL2CPPStudio(ctk.CTk):
 
     def _start_analysis(self):
         if self._running:
-            self._status("⚠  Already running.")
-            return
+            self._status("⚠  Already running."); return
         if not self._apk_path:
-            messagebox.showerror("No File", "Click 'Browse APK / XAPK' first.", parent=self)
-            return
+            messagebox.showerror("No File", "Click 'Browse APK / XAPK' first.", parent=self); return
         if not self._apk_path.exists():
-            messagebox.showerror("Not Found", f"{self._apk_path}\n\nFile missing — re-select.", parent=self)
-            return
+            messagebox.showerror("Not Found", f"{self._apk_path}\n\nFile missing — re-select.", parent=self); return
         ops = {k: v.get() for k, v in self._ops.items()}
         if not any(ops.values()):
-            messagebox.showwarning("Nothing selected", "Tick at least one operation.", parent=self)
-            return
+            messagebox.showwarning("Nothing selected", "Tick at least one operation.", parent=self); return
         self._running = True
         self._run_btn.configure(state="disabled", text="  ⏳   RUNNING…")
-        self._log.clear()
-        self._set_results("")
+        self._log.clear(); self._set_results("")
         self._progress.set(0)
         self._prog_lbl.configure(text="Starting…", text_color=NEON_CYAN)
         self._status("►  Running — please wait…")
         self._animate_progress()
         threading.Thread(target=self._run_pipeline, args=(ops,), daemon=True).start()
 
+    # ── PIPELINE ──────────────────────────────────────────────────
     def _run_pipeline(self, ops: dict):
         out = self._output_dir
         apk = self._apk_path
@@ -351,35 +351,20 @@ class IL2CPPStudio(ctk.CTk):
             if ops["extract_apk"]:
                 self._step("Extracting package…")
                 if force:
-                    self._log_t("Force refresh enabled — rebuilding raw/", "INFO")
+                    self._log_t("Force refresh — rebuilding raw/", "INFO")
                     _wipe_dir(raw)
-                elif raw.exists() and _count_files(raw) > 0:
+                elif _count_files(raw) > 0:
                     self._log_t(f"raw/ has {_count_files(raw)} files — reusing.", "SKIP")
                 else:
                     raw.mkdir(parents=True, exist_ok=True)
                 if _count_files(raw) == 0:
-                    if apk.suffix.lower() == ".xapk":
-                        self._log_t("XAPK — extracting outer archive…", "INFO")
-                        with zipfile.ZipFile(apk) as z:
-                            z.extractall(raw)
-                        for inner in sorted(raw.rglob("*.apk")):
-                            inner_out = inner.parent / inner.stem
-                            if inner_out.exists() and force:
-                                shutil.rmtree(inner_out, ignore_errors=True)
-                            inner_out.mkdir(parents=True, exist_ok=True)
-                            with zipfile.ZipFile(inner) as z:
-                                z.extractall(inner_out)
-                            self._log_t(f"  {inner.name} → {inner_out.name}/", "OK")
-                    else:
-                        with zipfile.ZipFile(apk) as z:
-                            z.extractall(raw)
-                        self._log_t(f"APK → {raw}", "OK")
+                    self._extract_apk(apk, raw)
 
             if ops["extract_assets"]:
                 adir = out / "unity_assets"
                 self._step("Extracting Unity assets…")
                 if force:
-                    self._log_t("Force refresh enabled — rebuilding unity_assets/", "INFO")
+                    self._log_t("Force refresh — rebuilding unity_assets/", "INFO")
                     _wipe_dir(adir)
                 else:
                     adir.mkdir(parents=True, exist_ok=True)
@@ -392,7 +377,7 @@ class IL2CPPStudio(ctk.CTk):
                 mdir = out / "il2cpp_meta"
                 self._step("Parsing IL2CPP metadata…")
                 if force:
-                    self._log_t("Force refresh enabled — rebuilding il2cpp_meta/", "INFO")
+                    self._log_t("Force refresh — rebuilding il2cpp_meta/", "INFO")
                     _wipe_dir(mdir)
                 else:
                     mdir.mkdir(parents=True, exist_ok=True)
@@ -405,14 +390,16 @@ class IL2CPPStudio(ctk.CTk):
                 sdir = out / "smali"
                 self._step("Decompiling Smali…")
                 if force:
-                    self._log_t("Force refresh enabled — rebuilding smali/", "INFO")
+                    self._log_t("Force refresh — rebuilding smali/", "INFO")
                     _wipe_dir(sdir)
                 else:
                     sdir.mkdir(parents=True, exist_ok=True)
                     if _count_files(sdir) > 0:
                         self._log_t(f"smali/ has {_count_files(sdir)} files — reusing.", "SKIP")
                 if _count_files(sdir) == 0:
-                    self._do_apktool(apk, sdir)
+                    # apktool must target the main APK, not the outer XAPK
+                    target = self._find_main_apk(raw, apk)
+                    self._do_apktool(target, sdir)
 
             if ops["gen_report"]:
                 self._step("Generating HTML report…")
@@ -432,9 +419,39 @@ class IL2CPPStudio(ctk.CTk):
             self._running = False
             self.after(0, lambda: self._run_btn.configure(state="normal", text="  ▶   RUN ANALYSIS"))
 
+    def _extract_apk(self, apk: Path, raw: Path):
+        if apk.suffix.lower() == ".xapk":
+            self._log_t("XAPK — extracting outer archive…", "INFO")
+            with zipfile.ZipFile(apk) as z:
+                z.extractall(raw)
+            for inner in sorted(raw.rglob("*.apk")):
+                inner_out = inner.parent / inner.stem
+                inner_out.mkdir(parents=True, exist_ok=True)
+                with zipfile.ZipFile(inner) as z:
+                    z.extractall(inner_out)
+                self._log_t(f"  {inner.name} → {inner_out.name}/", "OK")
+        else:
+            with zipfile.ZipFile(apk) as z:
+                z.extractall(raw)
+            self._log_t(f"APK → {raw}", "OK")
+
+    def _find_main_apk(self, raw: Path, fallback: Path) -> Path:
+        """Return the main APK to pass to apktool (never the outer XAPK)."""
+        if fallback.suffix.lower() != ".xapk":
+            return fallback
+        candidates = sorted(raw.rglob("*.apk"))
+        for c in candidates:
+            if "config." not in c.name:
+                return c
+        return candidates[0] if candidates else fallback
+
+    # ── UNITY ─────────────────────────────────────────────────────
     def _do_unity(self, search_root: Path, out: Path):
         import UnityPy
+
         skip_dirs = {out, out.parent / "il2cpp_meta", out.parent / "smali"}
+
+        # 1. Load each Data/ directory as a whole environment
         data_dirs = [
             p for p in search_root.rglob("Data")
             if p.is_dir() and not any(p.is_relative_to(s) for s in skip_dirs)
@@ -449,152 +466,226 @@ class IL2CPPStudio(ctk.CTk):
                 except Exception as e:
                     self._log_t(f"  Warning loading {label}: {e}", "WARN")
         else:
-            files = []
             for p in search_root.rglob("*.assets"):
                 if not any(p.is_relative_to(s) for s in skip_dirs):
-                    files.append(p)
+                    try:
+                        env_list.append((p.name, UnityPy.load(str(p))))
+                    except Exception as e:
+                        self._log_t(f"  Skip {p.name}: {e}", "WARN")
             for p in search_root.rglob("level*"):
                 if p.is_file() and not p.suffix and not any(p.is_relative_to(s) for s in skip_dirs):
-                    files.append(p)
-            if not files:
-                self._log_t("No Unity asset files found.", "WARN")
-                return
-            for f in files:
-                try:
-                    env_list.append((f.name, UnityPy.load(str(f))))
-                except Exception as e:
-                    self._log_t(f"  Skip {f.name}: {e}", "WARN")
+                    try:
+                        env_list.append((p.name, UnityPy.load(str(p))))
+                    except Exception as e:
+                        self._log_t(f"  Skip {p.name}: {e}", "WARN")
+
+        # 2. Also load any .bundle / .ab files found in raw/
+        bundle_exts = {".bundle", ".ab", ".assetbundle"}
+        bundles = [
+            p for p in search_root.rglob("*")
+            if p.is_file() and p.suffix.lower() in bundle_exts
+            and not any(p.is_relative_to(s) for s in skip_dirs)
+        ]
+        if bundles:
+            self._log_t(f"  Found {len(bundles)} bundle file(s) — loading…", "INFO")
+        for b in bundles:
+            try:
+                env_list.append((f"bundle:{b.name}", UnityPy.load(str(b))))
+            except Exception as e:
+                self._log_t(f"  Skip bundle {b.name}: {e}", "WARN")
+
         if not env_list:
-            self._log_t("Nothing loaded from Unity assets.", "WARN")
+            self._log_t("No Unity asset files found.", "WARN")
             return
 
         total_saved = 0
-        total_scene_entries = 0
-        scenes_dir = out / "Scenes"
-        ui_dir = out / "UI"
-        scenes_dir.mkdir(parents=True, exist_ok=True)
-        ui_dir.mkdir(parents=True, exist_ok=True)
+        total_scene = 0
+        scenes_dir = out / "Scenes"; scenes_dir.mkdir(parents=True, exist_ok=True)
+        ui_dir = out / "UI"; ui_dir.mkdir(parents=True, exist_ok=True)
 
         for label, env in env_list:
-            saved = 0
-            scene_entries = []
-            ui_entries = []
-            for obj in env.objects:
-                try:
-                    data = obj.read()
-                    type_name = obj.type.name
-                    name = getattr(data, "name", None) or getattr(data, "m_Name", None) or f"obj_{obj.path_id}"
-                    safe = "".join(c if c.isalnum() or c in " _-." else "_" for c in str(name)).strip() or f"obj_{obj.path_id}"
-                    dest = out / type_name
-                    dest.mkdir(parents=True, exist_ok=True)
-
-                    if hasattr(data, "image") and PILImage:
-                        try:
-                            img = data.image
-                            if img:
-                                p = dest / f"{safe}.png"
-                                if not p.exists():
-                                    img.save(str(p))
-                                    saved += 1
-                        except Exception:
-                            pass
-                    elif type_name == "AudioClip":
-                        try:
-                            for clip_name, clip_data in data.samples.items():
-                                clip_safe = "".join(c if c.isalnum() or c in " _-." else "_" for c in clip_name).strip() or safe
-                                p = dest / f"{clip_safe}.wav"
-                                if not p.exists():
-                                    p.write_bytes(clip_data)
-                                    saved += 1
-                        except Exception:
-                            pass
-                    elif hasattr(data, "m_Script") and data.m_Script:
-                        p = dest / f"{safe}.txt"
-                        if not p.exists():
-                            content = data.m_Script
-                            if isinstance(content, bytes):
-                                content = content.decode("utf-8", errors="replace")
-                            else:
-                                content = str(content)
-                            p.write_text(content, encoding="utf-8", errors="replace")
-                            saved += 1
-                    elif type_name == "Mesh":
-                        try:
-                            exported = data.export()
-                            if exported:
-                                p = dest / f"{safe}.obj"
-                                if not p.exists():
-                                    p.write_text(str(exported), encoding="utf-8", errors="replace")
-                                    saved += 1
-                        except Exception:
-                            pass
-                    elif type_name == "Font":
-                        try:
-                            font_data = getattr(data, "m_FontData", None)
-                            if font_data:
-                                p = dest / f"{safe}.ttf"
-                                if not p.exists():
-                                    p.write_bytes(font_data)
-                                    saved += 1
-                        except Exception:
-                            pass
-                    elif hasattr(data, "m_Data") and getattr(data, "m_Data", None):
-                        try:
-                            p = dest / f"{safe}.bin"
-                            if not p.exists():
-                                p.write_bytes(bytes(data.m_Data))
-                                saved += 1
-                        except Exception:
-                            pass
-
-                    if type_name in {"GameObject", "Canvas", "RectTransform", "Transform", "MonoBehaviour"}:
-                        entry = {
-                            "path_id": getattr(obj, "path_id", None),
-                            "type": type_name,
-                            "name": str(name),
-                        }
-                        for attr in ("m_Layer", "m_TagString", "m_IsActive"):
-                            if hasattr(data, attr):
-                                try:
-                                    entry[attr] = getattr(data, attr)
-                                except Exception:
-                                    pass
-                        if type_name in {"Canvas", "RectTransform"} or "canvas" in str(name).lower() or any(x in str(name).lower() for x in ["ui", "button", "panel", "hud", "menu"]):
-                            ui_entries.append(entry)
-                        else:
-                            scene_entries.append(entry)
-                except Exception:
-                    pass
-
+            saved, scene_entries, ui_entries = self._dump_env(env, out, label)
             if scene_entries:
-                scene_file = scenes_dir / f"{label.replace(os.sep, '_').replace('/', '_')}.json"
-                scene_file.write_text(json.dumps(scene_entries[:5000], indent=2, ensure_ascii=False), encoding="utf-8")
+                scene_file = scenes_dir / (_safe_name(label.replace(os.sep, "_").replace("/", "_"), "scene") + ".json")
+                scene_file.write_text(
+                    json.dumps(scene_entries[:20000], indent=2, ensure_ascii=False), encoding="utf-8")
                 saved += 1
-                total_scene_entries += len(scene_entries)
+                total_scene += len(scene_entries)
             if ui_entries:
-                ui_file = ui_dir / f"{label.replace(os.sep, '_').replace('/', '_')}_ui.json"
-                ui_file.write_text(json.dumps(ui_entries[:5000], indent=2, ensure_ascii=False), encoding="utf-8")
+                ui_file = ui_dir / (_safe_name(label.replace(os.sep, "_").replace("/", "_"), "ui") + "_ui.json")
+                ui_file.write_text(
+                    json.dumps(ui_entries[:20000], indent=2, ensure_ascii=False), encoding="utf-8")
                 saved += 1
-
-            self._log_t(f"  {label}: {saved} file(s) saved, {len(scene_entries)} scene objs, {len(ui_entries)} UI objs", "OK")
+            self._log_t(f"  {label}: {saved} file(s), {len(scene_entries)} scene, {len(ui_entries)} UI", "OK")
             total_saved += saved
 
         if total_saved == 0:
-            self._log_t("WARNING: 0 files saved. This title may store most content in AssetBundles or encrypted containers.", "WARN")
+            self._log_t("WARNING: 0 files saved. Assets may be in encrypted bundles.", "WARN")
         else:
             self._log_t(f"Total saved: {total_saved} files → {out}", "OK")
-            self._log_t(f"Scene/UI dump entries: {total_scene_entries}", "INFO")
+            self._log_t(f"Scene entries: {total_scene}", "INFO")
 
+    def _dump_env(self, env, out: Path, label: str) -> tuple[int, list, list]:
+        saved = 0
+        scene_entries: list[dict] = []
+        ui_entries: list[dict] = []
+
+        for obj in env.objects:
+            try:
+                data = obj.read()
+                type_name = obj.type.name
+                raw_name = (getattr(data, "name", None) or
+                            getattr(data, "m_Name", None) or
+                            f"obj_{obj.path_id}")
+                safe = _safe_name(str(raw_name), f"obj_{obj.path_id}")
+                dest = out / type_name
+                dest.mkdir(parents=True, exist_ok=True)
+
+                # ── Texture2D / Sprite / Cubemap ──────────────────
+                if hasattr(data, "image") and PILImage:
+                    try:
+                        img = data.image
+                        if img:
+                            p = dest / f"{safe}.png"
+                            if not p.exists():
+                                img.save(str(p))
+                                saved += 1
+                    except Exception:
+                        pass
+
+                # ── AudioClip ─────────────────────────────────────
+                elif type_name == "AudioClip":
+                    try:
+                        for clip_name, clip_data in data.samples.items():
+                            cs = _safe_name(clip_name, safe)
+                            p = dest / f"{cs}.wav"
+                            if not p.exists():
+                                p.write_bytes(clip_data)
+                                saved += 1
+                    except Exception:
+                        pass
+
+                # ── TextAsset / MonoBehaviour (text script) ───────
+                elif hasattr(data, "m_Script") and data.m_Script:
+                    p = dest / f"{safe}.txt"
+                    if not p.exists():
+                        content = data.m_Script
+                        if isinstance(content, (bytes, bytearray)):
+                            content = content.decode("utf-8", errors="replace")
+                        p.write_text(str(content), encoding="utf-8", errors="replace")
+                        saved += 1
+
+                # ── VideoClip ─────────────────────────────────────
+                elif type_name == "VideoClip":
+                    try:
+                        vdata = getattr(data, "m_VideoData", None)
+                        if vdata:
+                            p = dest / f"{safe}.mp4"
+                            if not p.exists():
+                                p.write_bytes(bytes(vdata))
+                                saved += 1
+                    except Exception:
+                        pass
+
+                # ── Mesh ──────────────────────────────────────────
+                elif type_name == "Mesh":
+                    try:
+                        exported = data.export()
+                        if exported:
+                            p = dest / f"{safe}.obj"
+                            if not p.exists():
+                                p.write_text(str(exported), encoding="utf-8", errors="replace")
+                                saved += 1
+                    except Exception:
+                        pass
+
+                # ── Font ──────────────────────────────────────────
+                elif type_name == "Font":
+                    try:
+                        fdata = getattr(data, "m_FontData", None)
+                        if fdata:
+                            p = dest / f"{safe}.ttf"
+                            if not p.exists():
+                                p.write_bytes(fdata)
+                                saved += 1
+                    except Exception:
+                        pass
+
+                # ── AnimationClip ─────────────────────────────────
+                elif type_name == "AnimationClip":
+                    try:
+                        clip_info = {
+                            "name": str(raw_name),
+                            "m_Length": getattr(data, "m_MuscleClip", {}) and "present",
+                            "m_WrapMode": getattr(data, "m_WrapMode", None),
+                            "m_FrameRate": getattr(data, "m_SampleRate", None),
+                        }
+                        p = dest / f"{safe}.json"
+                        if not p.exists():
+                            p.write_text(json.dumps(clip_info, indent=2, ensure_ascii=False), encoding="utf-8")
+                            saved += 1
+                    except Exception:
+                        pass
+
+                # ── Generic binary fallback (m_Data) ──────────────
+                elif hasattr(data, "m_Data") and getattr(data, "m_Data", None):
+                    try:
+                        raw_bytes = bytes(data.m_Data)
+                        if raw_bytes:
+                            p = dest / f"{safe}.bin"
+                            if not p.exists():
+                                p.write_bytes(raw_bytes)
+                                saved += 1
+                    except Exception:
+                        pass
+
+                # ── JSON fallback for any other named object ───────
+                else:
+                    try:
+                        d = {k: v for k, v in vars(data).items()
+                             if not k.startswith("_") and isinstance(v, (str, int, float, bool, list, dict, type(None)))}
+                        if d:
+                            p = dest / f"{safe}.json"
+                            if not p.exists():
+                                p.write_text(json.dumps(d, indent=2, ensure_ascii=False, default=str),
+                                             encoding="utf-8")
+                                saved += 1
+                    except Exception:
+                        pass
+
+                # ── Scene / UI collection ─────────────────────────
+                if type_name in {"GameObject", "Canvas", "RectTransform", "Transform", "MonoBehaviour"}:
+                    entry: dict = {
+                        "path_id": getattr(obj, "path_id", None),
+                        "type": type_name,
+                        "name": str(raw_name),
+                    }
+                    for attr in ("m_Layer", "m_TagString", "m_IsActive", "m_IsStatic"):
+                        val = getattr(data, attr, None)
+                        if val is not None:
+                            try:
+                                entry[attr] = val
+                            except Exception:
+                                pass
+                    is_ui = (type_name in {"Canvas", "RectTransform"} or
+                             any(x in str(raw_name).lower()
+                                 for x in ["ui", "button", "panel", "hud", "menu", "canvas", "dialog", "popup"]))
+                    (ui_entries if is_ui else scene_entries).append(entry)
+
+            except Exception:
+                pass
+
+        return saved, scene_entries, ui_entries
+
+    # ── IL2CPP ────────────────────────────────────────────────────
     def _do_il2cpp(self, search_root: Path, out: Path):
         metas = [p for p in search_root.rglob("global-metadata.dat") if not p.is_relative_to(out)]
-        sos = [p for p in search_root.rglob("libil2cpp.so") if not p.is_relative_to(out)]
-        extra = [p for p in search_root.rglob("*.so") if "il2cpp" in p.name.lower() and p not in sos and not p.is_relative_to(out)]
+        sos   = [p for p in search_root.rglob("libil2cpp.so")        if not p.is_relative_to(out)]
+        extra = [p for p in search_root.rglob("*.so")
+                 if "il2cpp" in p.name.lower() and p not in sos and not p.is_relative_to(out)]
         sos.extend(extra)
-        if not metas:
-            self._log_t("global-metadata.dat not found.", "WARN")
-            self._log_t("  Expected: assets/bin/Data/Managed/Metadata/", "INFO")
-        if not sos:
-            self._log_t("libil2cpp.so not found.", "WARN")
+        if not metas: self._log_t("global-metadata.dat not found.", "WARN")
+        if not sos:   self._log_t("libil2cpp.so not found.", "WARN")
         copied = 0
         for f in metas + sos:
             rel = f"{f.parent.name}_{f.name}" if f.name == "libil2cpp.so" else f.name
@@ -603,52 +694,88 @@ class IL2CPPStudio(ctk.CTk):
                 shutil.copy2(f, d)
                 self._log_t(f"  Copied: {rel}", "OK")
                 copied += 1
-            else:
-                self._log_t(f"  Exists: {rel}", "SKIP")
         if copied:
             self._log_t(f"IL2CPP → {out}", "OK")
             self._log_t("Use Il2CppDumper or Ghidra on these files.", "INFO")
 
+    # ── APKTOOL (streaming) ───────────────────────────────────────
     def _do_apktool(self, apk: Path, out: Path):
         tool, jar = _find_apktool()
         if not tool and not jar:
             self._log_t("apktool not found — auto-installing…", "WARN")
             tool, jar = _install_apktool(self._log_t)
-        if shutil.which("java") is None and jar is not None:
-            self._log_t("Java is required for apktool but was not found on PATH.", "ERROR")
+        if shutil.which("java") is None:
+            self._log_t("Java not on PATH — install JRE/JDK 8+.", "ERROR")
             return
-        cmd = None
+
         use_shell = False
         if sys.platform == "win32":
             if tool and tool.lower().endswith(".bat"):
-                cmd = f'"{tool}" d "{apk}" -o "{out}" --force'
+                cmd: str | list = f'"{tool}" d "{apk}" -o "{out}" --force'
                 use_shell = True
-            elif tool:
-                cmd = [tool, "d", str(apk), "-o", str(out), "--force"]
             elif jar:
                 cmd = ["java", "-jar", str(jar), "d", str(apk), "-o", str(out), "--force"]
+            elif tool:
+                cmd = [tool, "d", str(apk), "-o", str(out), "--force"]
+            else:
+                self._log_t("Cannot build apktool command.", "ERROR"); return
         else:
             if tool:
                 cmd = [tool, "d", str(apk), "-o", str(out), "--force"]
             elif jar:
                 cmd = ["java", "-jar", str(jar), "d", str(apk), "-o", str(out), "--force"]
-        if cmd is None:
-            self._log_t("Could not build apktool command.", "ERROR")
-            return
-        self._log_t(f"apktool command ready", "INFO")
-        r = subprocess.run(cmd, shell=use_shell, capture_output=True, text=True)
-        if r.returncode == 0:
-            self._log_t(f"Smali → {out}", "OK")
-        else:
-            err = (r.stderr or r.stdout or "unknown error")[:1200]
-            self._log_t(f"apktool error:\n{err}", "ERROR")
+            else:
+                self._log_t("Cannot build apktool command.", "ERROR"); return
 
+        self._log_t(f"Running apktool on: {apk.name}  (timeout {APKTOOL_TIMEOUT}s)", "INFO")
+
+        # Stream stdout+stderr line-by-line so the user sees progress live
+        q: queue.Queue[str | None] = queue.Queue()
+
+        def _reader(pipe):
+            try:
+                for line in pipe:
+                    q.put(line.rstrip())
+            finally:
+                q.put(None)
+
+        proc = subprocess.Popen(
+            cmd, shell=use_shell,
+            stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+            text=True, encoding="utf-8", errors="replace",
+            bufsize=1,
+        )
+        t = threading.Thread(target=_reader, args=(proc.stdout,), daemon=True)
+        t.start()
+
+        deadline = time.monotonic() + APKTOOL_TIMEOUT
+        finished_readers = 0
+        while finished_readers < 1:
+            try:
+                line = q.get(timeout=1)
+                if line is None:
+                    finished_readers += 1
+                else:
+                    self._log_t(line, "INFO")
+            except queue.Empty:
+                pass
+            if time.monotonic() > deadline:
+                self._log_t(f"apktool exceeded {APKTOOL_TIMEOUT}s — killing process.", "ERROR")
+                proc.kill()
+                break
+
+        proc.wait()
+        if proc.returncode == 0:
+            self._log_t(f"Smali → {out}", "OK")
+        elif proc.returncode is not None:
+            self._log_t(f"apktool exited with code {proc.returncode}", "ERROR")
+
+    # ── REPORT ────────────────────────────────────────────────────
     def _do_report(self, out: Path):
         sections: dict[str, list[Path]] = {}
         for item in sorted(out.iterdir()):
             if item.is_dir() and item.name != "raw":
-                files = [f for f in sorted(item.rglob("*")) if f.is_file()]
-                sections[item.name] = files
+                sections[item.name] = [f for f in sorted(item.rglob("*")) if f.is_file()]
         top_files = sorted(f for f in out.iterdir() if f.is_file())
         sec_html = ""
         for sec, files in sections.items():
@@ -662,9 +789,10 @@ class IL2CPPStudio(ctk.CTk):
                 rows += (f"<tr><td style='color:{NEON_YEL}'>📂 {typ}</td>"
                          f"<td style='color:{TEXT_DIM}'>{len(names)} file(s)</td>"
                          f"<td style='color:{TEXT_DIM}'>{', '.join(names[:6])}{'...' if len(names) > 6 else ''}</td></tr>")
-            sec_html += (f"<h2 style='color:{NEON_GREEN}'>📁 {sec}/ <span style='font-size:13px;color:{TEXT_DIM}'>{len(files)} total file(s)</span></h2>"
-                         f"<table><tr><th>Type</th><th>Count</th><th>Samples</th></tr>{rows}</table>" if rows else
-                         f"<h2 style='color:{NEON_YEL}'>📁 {sec}/ (empty)</h2>")
+            sec_html += (f"<h2 style='color:{NEON_GREEN}'>📁 {sec}/ "
+                         f"<span style='font-size:13px;color:{TEXT_DIM}'>{len(files)} total</span></h2>"
+                         f"<table><tr><th>Type</th><th>Count</th><th>Samples</th></tr>{rows}</table>" if rows
+                         else f"<h2 style='color:{NEON_YEL}'>📁 {sec}/ (empty)</h2>")
         top_rows = "".join(f"<tr><td>📄</td><td>{f.name}</td></tr>" for f in top_files)
         html = (
             "<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'>"
@@ -679,37 +807,35 @@ class IL2CPPStudio(ctk.CTk):
             f"{sec_html}"
             f"<h2 style='color:{NEON_CYAN}'>Top-level files</h2>"
             f"<table><tr><th></th><th>Name</th></tr>{top_rows}</table>"
-            f"<hr><p style='color:#5c5c8a'>Generated by IL2CPP Recovery Studio v9</p>"
+            f"<hr><p style='color:#5c5c8a'>Generated by IL2CPP Recovery Studio v10</p>"
             "</body></html>"
         )
         rp = out / "report.html"
         rp.write_text(html, encoding="utf-8")
         self._log_t(f"Report → {rp}", "OK")
 
+    # ── RESULTS ───────────────────────────────────────────────────
     def _show_results(self, out: Path):
         lines = ["=" * 48, "   OUTPUT SUMMARY", "=" * 48]
         for d in sorted(out.iterdir()):
             if d.is_dir():
-                n = _count_files(d)
-                lines.append(f"  📁  {d.name}/  ({n} files)")
-        scenes = out / "unity_assets" / "Scenes"
-        ui = out / "unity_assets" / "UI"
-        if scenes.exists():
-            lines.append(f"  🎬  Scenes JSON files: {_count_files(scenes)}")
-        if ui.exists():
-            lines.append(f"  🖼   UI JSON files: {_count_files(ui)}")
+                lines.append(f"  📁  {d.name}/  ({_count_files(d)} files)")
+        for label, sub in [("🎬 Scenes", "unity_assets/Scenes"),
+                            ("🖼 UI",     "unity_assets/UI")]:
+            p = out / sub.replace("/", os.sep)
+            if p.exists():
+                lines.append(f"  {label}: {_count_files(p)} JSON file(s)")
         lines += ["", "  OPEN THESE FIRST:",
-                  "  1.  unity_assets/Scenes/",
-                  "  2.  unity_assets/UI/",
-                  "  3.  report.html",
-                  "  4.  il2cpp_meta/"]
+                  "  1.  unity_assets/Scenes/*.json",
+                  "  2.  unity_assets/UI/*.json",
+                  "  3.  report.html in browser",
+                  "  4.  il2cpp_meta/ with Il2CppDumper"]
         self._set_results("\n".join(lines))
 
     def _set_results(self, text):
         self._results_txt.configure(state="normal")
         self._results_txt.delete("0.0", "end")
-        if text:
-            self._results_txt.insert("0.0", text)
+        if text: self._results_txt.insert("0.0", text)
         self._results_txt.configure(state="disabled")
 
     def _step(self, msg):
@@ -725,12 +851,9 @@ class IL2CPPStudio(ctk.CTk):
 
     def _open_output(self):
         if self._output_dir and self._output_dir.exists():
-            if sys.platform == "win32":
-                os.startfile(self._output_dir)
-            elif sys.platform == "darwin":
-                subprocess.Popen(["open", str(self._output_dir)])
-            else:
-                subprocess.Popen(["xdg-open", str(self._output_dir)])
+            if sys.platform == "win32": os.startfile(self._output_dir)
+            elif sys.platform == "darwin": subprocess.Popen(["open", str(self._output_dir)])
+            else: subprocess.Popen(["xdg-open", str(self._output_dir)])
         else:
             messagebox.showinfo("No output yet", "Run the analysis first.", parent=self)
 
