@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """
-IL2CPP Recovery Studio — Futuristic Neon GUI (app.py v4)
-Fixes: browse dialogs brought to front, run button fully wired,
-       high-contrast bold text, larger fonts throughout.
+IL2CPP Recovery Studio — Futuristic Neon GUI (app.py v5)
+Fixes: NeonButton no longer crashes when caller passes font= kwarg.
 """
 from __future__ import annotations
 
@@ -24,7 +23,7 @@ try:
 except ImportError:
     Image = None  # type: ignore
 
-# ═══════════════════════ COLOUR PALETTE ═══════════════════════════
+# ═══════════════════════ COLOUR PALETTE ═══════════════════════════════
 BG_DEEP    = "#0a0a0f"
 BG_CARD    = "#111128"
 BG_PANEL   = "#0d0d22"
@@ -45,14 +44,20 @@ FNT_BODY   = ("Segoe UI", 13, "bold")
 FNT_SMALL  = ("Segoe UI", 11)
 FNT_MONO   = ("Courier New", 12)
 FNT_MONO_B = ("Courier New", 12, "bold")
+FNT_RUN    = ("Segoe UI", 16, "bold")
 
 
-# ═══════════════════════ WIDGETS ══════════════════════════════════
+# ═══════════════════════ WIDGETS ══════════════════════════════════════
 class NeonButton(ctk.CTkButton):
-    """Glowing bordered button with hover/pulse animations."""
+    """Glowing bordered button with hover/pulse animations.
+
+    Callers may pass font= to override the default FNT_BODY.
+    """
 
     def __init__(self, master, text, command=None, color=NEON_CYAN, **kw):
         kw.setdefault("height", 42)
+        # Allow caller to override font; default to FNT_BODY
+        font = kw.pop("font", FNT_BODY)
         super().__init__(
             master,
             text=text,
@@ -63,7 +68,7 @@ class NeonButton(ctk.CTkButton):
             text_color=color,
             hover_color=BTN_HOVER,
             corner_radius=8,
-            font=FNT_BODY,
+            font=font,
             **kw,
         )
         self._base_color = color
@@ -132,7 +137,6 @@ class LogConsole(ctk.CTkTextbox):
         )
         for tag, color in self.COLORS.items():
             self._textbox.tag_config(tag, foreground=color)
-        self._textbox.tag_config("bold", font=FNT_MONO_B)
 
     def log(self, message: str, level: str = "INFO"):
         tag = level if level in self.COLORS else "INFO"
@@ -149,7 +153,7 @@ class LogConsole(ctk.CTkTextbox):
         self.configure(state="disabled")
 
 
-# ═══════════════════════ MAIN WINDOW ══════════════════════════════
+# ═══════════════════════ MAIN WINDOW ══════════════════════════════════
 class IL2CPPStudio(ctk.CTk):
     APP_TITLE = "IL2CPP Recovery Studio  •  NEON v2"
     WIN_SIZE  = "1200x780"
@@ -178,9 +182,8 @@ class IL2CPPStudio(ctk.CTk):
         self._build_ui()
         self.after(200, self._animate_header)
 
-    # ─────────────────────────── UI BUILD ─────────────────────────
+    # ─────────────────────────── UI BUILD ─────────────────────────────
     def _build_ui(self):
-        # Header
         header = ctk.CTkFrame(self, fg_color=BG_PANEL, height=66, corner_radius=0)
         header.pack(fill="x")
         header.pack_propagate(False)
@@ -194,7 +197,6 @@ class IL2CPPStudio(ctk.CTk):
             font=FNT_BODY, text_color=NEON_GREEN,
         ).pack(side="right", padx=22)
 
-        # Body
         body = ctk.CTkFrame(self, fg_color=BG_DEEP)
         body.pack(fill="both", expand=True, padx=12, pady=8)
         body.columnconfigure(0, weight=5)
@@ -204,7 +206,6 @@ class IL2CPPStudio(ctk.CTk):
         self._build_left(body)
         self._build_right(body)
 
-        # Status bar
         bar = ctk.CTkFrame(self, fg_color=BG_PANEL, height=32, corner_radius=0)
         bar.pack(fill="x", side="bottom")
         bar.pack_propagate(False)
@@ -214,7 +215,7 @@ class IL2CPPStudio(ctk.CTk):
         )
         self._status_lbl.pack(side="left", padx=16)
 
-    # ──────────────────────────── LEFT PANEL ──────────────────────
+    # ──────────────────────────── LEFT PANEL ──────────────────────────
     def _build_left(self, parent):
         left = ctk.CTkScrollableFrame(
             parent, fg_color=BG_DEEP,
@@ -223,13 +224,12 @@ class IL2CPPStudio(ctk.CTk):
         )
         left.grid(row=0, column=0, sticky="nsew", padx=(0, 8))
 
-        # ── File picker card
+        # File picker
         fc = SectionCard(left, "📂  INPUT FILE", accent=NEON_PURP)
         fc.pack(fill="x", pady=(0, 10))
 
         self._file_lbl = ctk.CTkLabel(
-            fc,
-            text="No file selected",
+            fc, text="No file selected",
             font=FNT_BODY, text_color=TEXT_DIM,
             wraplength=340, anchor="w",
         )
@@ -243,13 +243,12 @@ class IL2CPPStudio(ctk.CTk):
             height=46,
         ).pack(fill="x", padx=14, pady=(4, 12))
 
-        # ── Output dir card
+        # Output dir
         oc = SectionCard(left, "📁  OUTPUT DIRECTORY", accent=NEON_CYAN)
         oc.pack(fill="x", pady=(0, 10))
 
         self._out_lbl = ctk.CTkLabel(
-            oc,
-            text="Auto: next to input file",
+            oc, text="Auto: next to input file",
             font=FNT_BODY, text_color=TEXT_DIM,
             wraplength=340, anchor="w",
         )
@@ -263,7 +262,7 @@ class IL2CPPStudio(ctk.CTk):
             height=42,
         ).pack(fill="x", padx=14, pady=(4, 12))
 
-        # ── Operations card
+        # Operations
         ops_card = SectionCard(left, "⚙  OPERATIONS", accent=NEON_GREEN)
         ops_card.pack(fill="x", pady=(0, 10))
 
@@ -302,14 +301,14 @@ class IL2CPPStudio(ctk.CTk):
             ).pack(anchor="w", padx=26)
         ctk.CTkFrame(ops_card, height=6, fg_color="transparent").pack()
 
-        # ── Action buttons
+        # Run button — passes font= which NeonButton now handles cleanly
         self._run_btn = NeonButton(
             left,
             text="  ▶   RUN ANALYSIS",
             command=self._start_analysis,
             color=NEON_GREEN,
             height=52,
-            font=("Segoe UI", 16, "bold"),
+            font=FNT_RUN,
         )
         self._run_btn.pack(fill="x", pady=(4, 6))
 
@@ -321,14 +320,13 @@ class IL2CPPStudio(ctk.CTk):
             height=42,
         ).pack(fill="x")
 
-    # ──────────────────────────── RIGHT PANEL ─────────────────────
+    # ──────────────────────────── RIGHT PANEL ─────────────────────────
     def _build_right(self, parent):
         right = ctk.CTkFrame(parent, fg_color=BG_DEEP)
         right.grid(row=0, column=1, sticky="nsew")
         right.rowconfigure(1, weight=1)
         right.columnconfigure(0, weight=1)
 
-        # Progress
         pg = SectionCard(right, "⚡  PROGRESS", accent=NEON_CYAN)
         pg.grid(row=0, column=0, sticky="ew", pady=(0, 8))
         self._progress = ctk.CTkProgressBar(
@@ -348,13 +346,11 @@ class IL2CPPStudio(ctk.CTk):
         )
         self._prog_lbl.pack(padx=14, pady=(0, 10))
 
-        # Log
         lg = SectionCard(right, "🖥  LOG CONSOLE", accent=NEON_PURP)
         lg.grid(row=1, column=0, sticky="nsew", pady=(0, 8))
         self._log = LogConsole(lg)
         self._log.pack(fill="both", expand=True, padx=14, pady=10)
 
-        # Results
         rs = SectionCard(right, "✅  RESULTS & NEXT STEPS", accent=NEON_GREEN)
         rs.grid(row=2, column=0, sticky="ew")
         self._results_txt = ctk.CTkTextbox(
@@ -367,7 +363,7 @@ class IL2CPPStudio(ctk.CTk):
         )
         self._results_txt.pack(fill="x", padx=14, pady=10)
 
-    # ──────────────────────────── ANIMATION ───────────────────────
+    # ──────────────────────────── ANIMATION ───────────────────────────
     _GLYPHS = ["■", "□", "▒", "░", "□", "■"]
     _glyph_i = 0
 
@@ -387,9 +383,8 @@ class IL2CPPStudio(ctk.CTk):
             self._progress.set(v + 0.004)
         self.after(100, self._animate_progress)
 
-    # ──────────────────────────── FILE PICKERS ────────────────────
+    # ──────────────────────────── FILE PICKERS ────────────────────────
     def _browse_apk(self):
-        # Bring window to front before opening dialog
         self.lift()
         self.focus_force()
         self.update()
@@ -437,7 +432,7 @@ class IL2CPPStudio(ctk.CTk):
             )
             self._status(f"►  Output set: {path}")
 
-    # ──────────────────────────── ANALYSIS ────────────────────────
+    # ──────────────────────────── ANALYSIS ────────────────────────────
     def _start_analysis(self):
         if self._running:
             self._status("⚠  Already running — please wait.")
@@ -563,7 +558,7 @@ class IL2CPPStudio(ctk.CTk):
             self.after(0, lambda: self._run_btn.configure(
                 state="normal", text="  ▶   RUN ANALYSIS"))
 
-    # ──────────────────────────── WORKERS ─────────────────────────
+    # ──────────────────────────── WORKERS ─────────────────────────────
     def _do_unity(self, raw: Path, out: Path):
         import UnityPy
         sources = list(raw.rglob("*.assets")) + list(raw.rglob("level*"))
@@ -647,7 +642,7 @@ class IL2CPPStudio(ctk.CTk):
         rp.write_text(html, encoding="utf-8")
         self._log_t(f"Report → {rp}", "OK")
 
-    # ──────────────────────────── RESULTS ─────────────────────────
+    # ──────────────────────────── RESULTS ─────────────────────────────
     def _show_results(self, out: Path):
         dirs = sorted(d.name for d in out.iterdir() if d.is_dir())
         lines = [
@@ -671,7 +666,7 @@ class IL2CPPStudio(ctk.CTk):
             self._results_txt.insert("0.0", text)
         self._results_txt.configure(state="disabled")
 
-    # ──────────────────────────── HELPERS ─────────────────────────
+    # ──────────────────────────── HELPERS ─────────────────────────────
     def _step(self, msg: str):
         self._log_t(msg, "STEP")
         self.after(0, lambda m=msg: self._prog_lbl.configure(
@@ -701,7 +696,7 @@ class IL2CPPStudio(ctk.CTk):
             )
 
 
-# ═══════════════════════════════════════════════════════════════════
+# ═══════════════════════════════════════════════════════════════════════
 def run_gui():
     app = IL2CPPStudio()
     app.mainloop()
