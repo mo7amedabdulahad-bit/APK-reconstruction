@@ -1,103 +1,154 @@
-# Travian Legends Mobile — IL2CPP Reverse Engineering
+# ⬡ IL2CPP Recovery Studio
 
-Reverse engineering of **Travian Legends Mobile v3.13.0** (Unity IL2CPP, Metadata v39 / Unity 6000.x).
+> **A futuristic neon-themed desktop tool for extracting, analysing and reverse-engineering Unity Android APK / XAPK files.**
 
-## Results
+---
 
-| Metric | Value |
-|--------|-------|
-| C# files generated | **5,019** |
-| Methods mapped | **143,813** |
-| Game methods (TLMobile.dll) | **32,842** |
-| Framework methods (TGFramework.dll) | **3,818** |
-| Unique game classes | **3,971** |
-| Ghidra functions decompiled | **2,674** |
-| Methods cross-referenced | **403** |
-| Extracted assets | **22,658 files** |
-| Localization strings | **12,529 (en-US)** |
+## 🖥️ What does this app do?
 
-## Project Structure
+You drop an APK or XAPK file into the app, tick the operations you want, press **Run** — and everything happens automatically:
 
-```
-├── COMPREHENSIVE_REVERSE_ENGINEERING_REPORT.md   ← Full report (start here)
-├── RecoveredSource/
-│   ├── IL2CPP_Annotated/        2,391 C# files with method addresses
-│   ├── IL2CPP_Extracted/        2,544 type stubs from metadata
-│   ├── IL2CPP_Decompiled/       403 methods with decompiled ARM64 code
-│   └── TLMobile/Scripts/        28 manually reconstructed files
-├── extracted_assets/
-│   ├── localization/            136 language files (12,529 en-US strings)
-│   ├── MonoBehaviours/          4,769 JSON files
-│   ├── Config/                  Settings, manifests, Firebase config
-│   └── Data/                    Game data files
-├── metadata_output/             Structured metadata JSONs
-├── tools/                       Analysis scripts (Python/Java)
-└── il2cpp_recovery_studio/      Recovery tooling (Python)
-```
+| Operation | What it does |
+|---|---|
+| Extract APK/XAPK | Unzips the package into raw folders |
+| Extract Unity Assets | Exports textures, audio, scenes using UnityPy |
+| Parse IL2CPP Metadata | Copies `global-metadata.dat` + `libil2cpp.so` for further analysis |
+| Decompile to Smali | Runs `apktool` to produce readable Smali source code |
+| Generate HTML Report | Creates a pretty `report.html` summary of all outputs |
 
-## Tools Used
+Files that already exist are **automatically skipped** — so re-runs are safe and fast.
 
-### Required (must install manually)
+---
 
-| Tool | Version | Purpose | Download |
-|------|---------|---------|----------|
-| **Il2CppInspectorRedux** | 2026.2 | IL2CPP metadata extraction (v39) | [GitHub](https://github.com/djkaty/Il2CppInspector) |
-| **Ghidra** | 12.1.2 | ARM64 binary decompilation | [ghidra-sre.org](https://ghidra-sre.org/) |
-| **Java (JDK)** | 21+ | Runtime for Ghidra | [Amazon Corretto](https://docs.aws.amazon.com/corretto/) |
-| **Python** | 3.10+ | Data processing scripts | [python.org](https://python.org) |
+## ✅ Requirements
 
-### Why these specific tools?
+| Tool | Version | Download |
+|---|---|---|
+| **Python** | 3.10 or newer | https://www.python.org/downloads/ |
+| **Git** *(optional)* | any | https://git-scm.com/ |
+| **apktool** *(optional)* | any | https://apktool.org |
 
-- **Il2CppDumper v6.7.46** and **Cpp2IL v2022.0.7** do NOT support metadata v39 (Unity 6000.x). They max out at v31.
-- **Il2CppInspectorRedux 2026.2** is the only tool that supports the v39 header format (`Il2CppSectionMetadata` structs).
-- **Ghidra** is used for ARM64 decompilation of `libil2cpp.so`.
+All Python libraries (customtkinter, UnityPy, Pillow, requests) are installed **automatically** when you launch the app.
 
-### What was NOT included (too large for git)
+---
 
-| File | Size | Purpose |
-|------|------|---------|
-| `tools/ghidra_12.1.2_PUBLIC/` | 872 MB | Ghidra installation |
-| `tools/jdk21.0.11_10/` | 328 MB | Java runtime |
-| `tools/libil2cpp.so` | 95 MB | ARM64 binary (extracted from APK) |
-| `tools/il2cpp_metadata_with_addresses/il2cpp.json` | 174 MB | Full metadata dump |
-| `extracted_assets/Images/` | 792 MB | Extracted images |
-| `extracted_assets/Sprites/` | 645 MB | Extracted sprites |
+## 🚀 Step-by-Step: Run from Source (No EXE needed)
 
-These files are generated during the analysis process. See the full report for instructions on regenerating them.
+### Step 1 — Install Python
 
-## Quick Start
+1. Open https://www.python.org/downloads/
+2. Download the latest **Python 3.10+** installer for Windows
+3. Run the installer — **tick "Add Python to PATH"** before clicking Install
+4. Open a terminal (`Win + R` → type `cmd` → Enter) and run:
+   ```
+   python --version
+   ```
+   You should see `Python 3.10.x` or higher.
 
-1. Read `COMPREHENSIVE_REVERSE_ENGINEERING_REPORT.md` for the full analysis
-2. Browse `RecoveredSource/IL2CPP_Annotated/` for annotated C# source with method addresses
-3. Browse `RecoveredSource/TLMobile/Scripts/` for manually reconstructed code with confidence scores
-4. Check `extracted_assets/localization/common/en-US.txt` for 12,529 game strings
+### Step 2 — Download this repository
 
-## Key Game Systems
-
-| System | Classes | Description |
-|--------|---------|-------------|
-| Village Management | OwnVillage, Village, Building | Building construction, demolition |
-| Hero System | OwnHero, HeroEquipment, HeroAppearance | Hero leveling, equipment, inventory |
-| Combat | CombatSimulator, AttackType, BattleReport | Attack, raid, reinforcement, scouting |
-| Alliance | OwnAlliance, Alliance | Membership, diplomacy, war |
-| Economy | ResourceAmounts, AuctionItem, FarmList | Resources, auction, farming |
-| UI Framework | 325 controller classes | Windows, popups, notifications |
-| Networking | GraphQL, RestAPI, WebSocket | API calls, real-time updates |
-
-## Metadata Version
-
-This project targets **metadata version 39** (Unity 6000.x / Unity 6), which uses a new header format:
-
-```
-Header: 8 bytes header + 31 × 12 bytes sections = 380 bytes
-Section format: Offset (int32) + SectionSize (int32) + Count (int32)
-Index sizes: TypeDefinitionIndex=2, GenericContainerIndex=2, TypeIndex=2, ParameterIndex=4
+**Option A — with Git (recommended):**
+```bash
+git clone https://github.com/mo7amedabdulahad-bit/APK-reconstruction.git
+cd APK-reconstruction
 ```
 
-## License
+**Option B — without Git:**
+1. Click the green **Code** button on GitHub → **Download ZIP**
+2. Extract the ZIP anywhere on your PC
+3. Open the extracted folder
 
-This project is for educational and research purposes only. Travian Legends Mobile is © Travian Games GmbH.
+### Step 3 — Launch the app
 
-## Author
+Double-click `launch.bat`  
+*or* open a terminal inside the folder and run:
+```bash
+python launch.py
+```
 
-[@mo7amedabdulahad-bit](https://github.com/mo7amedabdulahad-bit)
+The launcher will:
+- Check your Python version
+- Auto-install all required packages
+- Open the futuristic neon GUI
+
+> **First launch may take 30–60 seconds** while packages download.
+
+### Step 4 — Use the app
+
+1. **Click the purple drop zone** and select your `.apk` or `.xapk` file
+2. (Optional) Click **Browse Output…** to choose where results are saved
+3. **Tick the operations** you want — each one has a description
+4. Click **▶ RUN ANALYSIS**
+5. Watch the live log on the right — green = success, yellow = warning, red = error
+6. When complete, read the **Results & Next Steps** panel
+7. Click **📁 Open Output Folder** to see all extracted files
+
+---
+
+## 🛠️ Build a standalone .EXE (Windows)
+
+If you want a double-clickable `.exe` that works **without Python installed**:
+
+```bash
+python build_exe.py
+```
+
+This script:
+1. Installs PyInstaller automatically
+2. Builds the EXE into `dist/IL2CPP_Recovery_Studio.exe`
+3. Tells you exactly where the file is
+
+> Building takes 1–3 minutes. The output EXE is portable — just copy it.
+
+---
+
+## 🔄 Auto-update
+
+To pull the latest changes from GitHub before launching:
+```bash
+python launch.py --update
+```
+
+---
+
+## 📁 Output folder structure
+
+After running, your output folder contains:
+
+```
+your_app_output/
+├── raw/                  ← Unzipped APK contents
+│   └── base_extracted/   ← (XAPK only) inner APK contents
+├── unity_assets/
+│   ├── Texture2D/        ← PNG textures
+│   ├── AudioClip/        ← Audio files
+│   └── TextAsset/        ← Text / JSON data
+├── il2cpp_meta/
+│   ├── global-metadata.dat
+│   └── libil2cpp.so
+├── smali/                ← (if apktool used)
+└── report.html           ← Open this in your browser!
+```
+
+---
+
+## ❓ Troubleshooting
+
+| Problem | Solution |
+|---|---|
+| `python` not recognised | Re-install Python with "Add to PATH" ticked |
+| `ModuleNotFoundError` | Run `pip install customtkinter UnityPy Pillow requests` |
+| `apktool` not found | Download from https://apktool.org and add to PATH |
+| App opens but GUI is blank | Make sure you have Python 3.10+ (not 3.9 or below) |
+| XAPK says no APK inside | Some XAPK files use split APKs — check the `raw/` folder |
+
+---
+
+## 📜 Licence
+
+This project is for educational and research purposes only.  
+Do not use it to reverse-engineer apps you do not own or have permission to analyse.
+
+---
+
+*Made with ⬡ by IL2CPP Recovery Studio contributors*
