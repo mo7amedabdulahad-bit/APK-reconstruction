@@ -1,7 +1,12 @@
 #!/usr/bin/env python3
 """
-IL2CPP Recovery Studio — Futuristic Neon GUI (app.py v5)
-Fixes: NeonButton no longer crashes when caller passes font= kwarg.
+IL2CPP Recovery Studio — Futuristic Neon GUI (app.py v6)
+
+Root cause fix: subclassing CTkButton and calling self.bind() intercepts
+all mouse events (including clicks) before CTkButton's internal handler,
+making buttons appear dead. Fixed by using a plain factory function that
+creates CTkButton directly and wires hover via the widget's own bind on
+the INTERNAL _canvas child, not the outer widget.
 """
 from __future__ import annotations
 
@@ -16,14 +21,13 @@ from pathlib import Path
 
 import customtkinter as ctk
 from tkinter import filedialog, messagebox
-import tkinter as tk
 
 try:
     from PIL import Image  # noqa: F401
 except ImportError:
     Image = None  # type: ignore
 
-# ═══════════════════════ COLOUR PALETTE ═══════════════════════════════
+# ══════════════════════ COLOUR PALETTE ══════════════════════════════
 BG_DEEP    = "#0a0a0f"
 BG_CARD    = "#111128"
 BG_PANEL   = "#0d0d22"
@@ -33,11 +37,10 @@ NEON_GREEN = "#00ff88"
 NEON_PINK  = "#ff4488"
 NEON_YEL   = "#ffe040"
 TEXT_WHITE = "#ffffff"
-TEXT_BRIGHT= "#e8f0ff"
+TEXT_BRIGHT = "#e8f0ff"
 TEXT_DIM   = "#8888bb"
 BTN_HOVER  = "#1e1e44"
 
-# Font shortcuts
 FNT_TITLE  = ("Segoe UI", 18, "bold")
 FNT_HEAD   = ("Segoe UI", 14, "bold")
 FNT_BODY   = ("Segoe UI", 13, "bold")
@@ -47,75 +50,47 @@ FNT_MONO_B = ("Courier New", 12, "bold")
 FNT_RUN    = ("Segoe UI", 16, "bold")
 
 
-# ═══════════════════════ WIDGETS ══════════════════════════════════════
-class NeonButton(ctk.CTkButton):
-    """Glowing bordered button with hover/pulse animations.
-
-    Callers may pass font= to override the default FNT_BODY.
+def make_btn(
+    parent,
+    text: str,
+    command,
+    color: str = NEON_CYAN,
+    height: int = 42,
+    font=FNT_BODY,
+) -> ctk.CTkButton:
     """
-
-    def __init__(self, master, text, command=None, color=NEON_CYAN, **kw):
-        kw.setdefault("height", 42)
-        # Allow caller to override font; default to FNT_BODY
-        font = kw.pop("font", FNT_BODY)
-        super().__init__(
-            master,
-            text=text,
-            command=command,
-            fg_color=BG_CARD,
-            border_width=2,
-            border_color=color,
-            text_color=color,
-            hover_color=BTN_HOVER,
-            corner_radius=8,
-            font=font,
-            **kw,
-        )
-        self._base_color = color
-        self._pulsing = False
-        self.bind("<Enter>", self._on_enter)
-        self.bind("<Leave>", self._on_leave)
-
-    def _on_enter(self, _):
-        self.configure(border_color=NEON_PINK, text_color=NEON_PINK)
-
-    def _on_leave(self, _):
-        if not self._pulsing:
-            self.configure(border_color=self._base_color, text_color=self._base_color)
-
-    def start_pulse(self):
-        self._pulsing = True
-        self._pulse_step(True)
-
-    def stop_pulse(self):
-        self._pulsing = False
-        self.configure(border_color=self._base_color, text_color=self._base_color)
-
-    def _pulse_step(self, toggle):
-        if not self._pulsing:
-            return
-        c = NEON_PINK if toggle else self._base_color
-        self.configure(border_color=c, text_color=c)
-        self.after(500, lambda: self._pulse_step(not toggle))
+    Create a plain CTkButton (no subclassing, no .bind() override).
+    CTkButton's own click machinery stays intact.
+    Hover colour change is done via the built-in hover_color parameter.
+    """
+    btn = ctk.CTkButton(
+        parent,
+        text=text,
+        command=command,
+        fg_color=BG_CARD,
+        hover_color=BTN_HOVER,
+        border_width=2,
+        border_color=color,
+        text_color=color,
+        corner_radius=8,
+        font=font,
+        height=height,
+    )
+    return btn
 
 
 class SectionCard(ctk.CTkFrame):
-    """Titled glowing card."""
-
-    def __init__(self, master, title: str, accent=NEON_CYAN, **kw):
+    def __init__(self, master, title: str, accent: str = NEON_CYAN, **kw):
         super().__init__(master, fg_color=BG_CARD, border_width=1,
                          border_color=accent, corner_radius=10, **kw)
         ctk.CTkLabel(
             self, text=f"  {title}",
-            font=FNT_HEAD, text_color=accent,
-            fg_color=BG_CARD,
+            font=FNT_HEAD, text_color=accent, fg_color=BG_CARD,
         ).pack(anchor="nw", padx=14, pady=(10, 3))
         ctk.CTkFrame(self, height=1, fg_color=accent).pack(fill="x", padx=14)
 
 
 class LogConsole(ctk.CTkTextbox):
-    """Colour-coded terminal log."""
-
     COLORS = {
         "INFO":  NEON_CYAN,
         "OK":    NEON_GREEN,
@@ -140,9 +115,8 @@ class LogConsole(ctk.CTkTextbox):
 
     def log(self, message: str, level: str = "INFO"):
         tag = level if level in self.COLORS else "INFO"
-        prefix = f"[{level:<5}] "
         self.configure(state="normal")
-        self._textbox.insert("end", prefix, tag)
+        self._textbox.insert("end", f"[{level:<5}] ", tag)
         self._textbox.insert("end", message + "\n")
         self._textbox.see("end")
         self.configure(state="disabled")
@@ -153,7 +127,7 @@ class LogConsole(ctk.CTkTextbox):
         self.configure(state="disabled")
 
 
-# ═══════════════════════ MAIN WINDOW ══════════════════════════════════
+# ══════════════════════ MAIN WINDOW ══════════════════════════════════
 class IL2CPPStudio(ctk.CTk):
     APP_TITLE = "IL2CPP Recovery Studio  •  NEON v2"
     WIN_SIZE  = "1200x780"
@@ -162,7 +136,6 @@ class IL2CPPStudio(ctk.CTk):
         ctk.set_appearance_mode("dark")
         ctk.set_default_color_theme("dark-blue")
         super().__init__()
-
         self.title(self.APP_TITLE)
         self.geometry(self.WIN_SIZE)
         self.minsize(960, 680)
@@ -172,37 +145,32 @@ class IL2CPPStudio(ctk.CTk):
         self._output_dir: Path | None = None
         self._running = False
         self._ops = {
-            "extract_apk":    ctk.BooleanVar(value=True),
-            "extract_assets": ctk.BooleanVar(value=True),
-            "extract_il2cpp": ctk.BooleanVar(value=True),
+            "extract_apk":     ctk.BooleanVar(value=True),
+            "extract_assets":  ctk.BooleanVar(value=True),
+            "extract_il2cpp":  ctk.BooleanVar(value=True),
             "decompile_smali": ctk.BooleanVar(value=False),
-            "gen_report":     ctk.BooleanVar(value=True),
+            "gen_report":      ctk.BooleanVar(value=True),
         }
 
         self._build_ui()
         self.after(200, self._animate_header)
 
-    # ─────────────────────────── UI BUILD ─────────────────────────────
+    # ───────────────────────── UI BUILD ─────────────────────────────
     def _build_ui(self):
-        header = ctk.CTkFrame(self, fg_color=BG_PANEL, height=66, corner_radius=0)
-        header.pack(fill="x")
-        header.pack_propagate(False)
+        hdr = ctk.CTkFrame(self, fg_color=BG_PANEL, height=66, corner_radius=0)
+        hdr.pack(fill="x")
+        hdr.pack_propagate(False)
         self._hdr_lbl = ctk.CTkLabel(
-            header, text=self.APP_TITLE,
-            font=FNT_TITLE, text_color=NEON_CYAN,
-        )
+            hdr, text=self.APP_TITLE, font=FNT_TITLE, text_color=NEON_CYAN)
         self._hdr_lbl.pack(side="left", padx=22)
-        ctk.CTkLabel(
-            header, text="● SYSTEM ONLINE",
-            font=FNT_BODY, text_color=NEON_GREEN,
-        ).pack(side="right", padx=22)
+        ctk.CTkLabel(hdr, text="● SYSTEM ONLINE",
+                     font=FNT_BODY, text_color=NEON_GREEN).pack(side="right", padx=22)
 
         body = ctk.CTkFrame(self, fg_color=BG_DEEP)
         body.pack(fill="both", expand=True, padx=12, pady=8)
         body.columnconfigure(0, weight=5)
         body.columnconfigure(1, weight=7)
         body.rowconfigure(0, weight=1)
-
         self._build_left(body)
         self._build_right(body)
 
@@ -210,12 +178,11 @@ class IL2CPPStudio(ctk.CTk):
         bar.pack(fill="x", side="bottom")
         bar.pack_propagate(False)
         self._status_lbl = ctk.CTkLabel(
-            bar, text="►  Ready  —  Select a file to begin.",
-            font=FNT_SMALL, text_color=NEON_CYAN,
-        )
+            bar, text="►  Ready — select a file to begin.",
+            font=FNT_SMALL, text_color=NEON_CYAN)
         self._status_lbl.pack(side="left", padx=16)
 
-    # ──────────────────────────── LEFT PANEL ──────────────────────────
+    # ───────────────────────── LEFT PANEL ───────────────────────────
     def _build_left(self, parent):
         left = ctk.CTkScrollableFrame(
             parent, fg_color=BG_DEEP,
@@ -224,103 +191,62 @@ class IL2CPPStudio(ctk.CTk):
         )
         left.grid(row=0, column=0, sticky="nsew", padx=(0, 8))
 
-        # File picker
+        # ── File picker
         fc = SectionCard(left, "📂  INPUT FILE", accent=NEON_PURP)
         fc.pack(fill="x", pady=(0, 10))
-
         self._file_lbl = ctk.CTkLabel(
             fc, text="No file selected",
-            font=FNT_BODY, text_color=TEXT_DIM,
-            wraplength=340, anchor="w",
-        )
+            font=FNT_BODY, text_color=TEXT_DIM, wraplength=340, anchor="w")
         self._file_lbl.pack(fill="x", padx=14, pady=(8, 4))
+        make_btn(fc, "  Browse APK / XAPK…",
+                 self._browse_apk, NEON_PURP, 46
+                 ).pack(fill="x", padx=14, pady=(4, 12))
 
-        NeonButton(
-            fc,
-            text="  Browse APK / XAPK…",
-            command=self._browse_apk,
-            color=NEON_PURP,
-            height=46,
-        ).pack(fill="x", padx=14, pady=(4, 12))
-
-        # Output dir
+        # ── Output dir
         oc = SectionCard(left, "📁  OUTPUT DIRECTORY", accent=NEON_CYAN)
         oc.pack(fill="x", pady=(0, 10))
-
         self._out_lbl = ctk.CTkLabel(
             oc, text="Auto: next to input file",
-            font=FNT_BODY, text_color=TEXT_DIM,
-            wraplength=340, anchor="w",
-        )
+            font=FNT_BODY, text_color=TEXT_DIM, wraplength=340, anchor="w")
         self._out_lbl.pack(fill="x", padx=14, pady=(8, 4))
+        make_btn(oc, "  Browse Output Folder…",
+                 self._browse_output, NEON_CYAN, 42
+                 ).pack(fill="x", padx=14, pady=(4, 12))
 
-        NeonButton(
-            oc,
-            text="  Browse Output Folder…",
-            command=self._browse_output,
-            color=NEON_CYAN,
-            height=42,
-        ).pack(fill="x", padx=14, pady=(4, 12))
-
-        # Operations
+        # ── Operations
         ops_card = SectionCard(left, "⚙  OPERATIONS", accent=NEON_GREEN)
         ops_card.pack(fill="x", pady=(0, 10))
-
-        ops_def = [
-            ("extract_apk",    "📦  Extract APK/XAPK contents",
-             "Unzip the package into raw folders"),
-            ("extract_assets",  "🎨  Extract Unity assets",
-             "Export textures, audio, scenes via UnityPy"),
-            ("extract_il2cpp",  "🔍  Parse IL2CPP metadata",
-             "Copy global-metadata.dat & libil2cpp.so"),
-            ("decompile_smali", "🖥  Decompile to Smali",
-             "Requires apktool on PATH (optional)"),
-            ("gen_report",      "📝  Generate HTML report",
-             "Create a summary report.html in output"),
-        ]
-        for key, label, desc in ops_def:
+        for key, label, desc in [
+            ("extract_apk",    "📦  Extract APK/XAPK contents",  "Unzip the package into raw folders"),
+            ("extract_assets",  "🎨  Extract Unity assets",        "Export textures, audio, scenes via UnityPy"),
+            ("extract_il2cpp",  "🔍  Parse IL2CPP metadata",        "Copy global-metadata.dat & libil2cpp.so"),
+            ("decompile_smali", "🖥  Decompile to Smali",           "Requires apktool on PATH (optional)"),
+            ("gen_report",      "📝  Generate HTML report",          "Create a summary report.html in output"),
+        ]:
             row = ctk.CTkFrame(ops_card, fg_color="transparent")
             row.pack(fill="x", padx=14, pady=4)
             ctk.CTkCheckBox(
-                row,
-                text=label,
-                variable=self._ops[key],
-                font=FNT_BODY,
-                text_color=TEXT_WHITE,
-                checkmark_color=BG_DEEP,
-                fg_color=NEON_GREEN,
-                hover_color=NEON_PURP,
-                border_color=NEON_GREEN,
-                border_width=2,
+                row, text=label, variable=self._ops[key],
+                font=FNT_BODY, text_color=TEXT_WHITE,
+                checkmark_color=BG_DEEP, fg_color=NEON_GREEN,
+                hover_color=NEON_PURP, border_color=NEON_GREEN, border_width=2,
             ).pack(anchor="w")
-            ctk.CTkLabel(
-                row,
-                text=f"    {desc}",
-                font=FNT_SMALL, text_color=TEXT_DIM,
-                anchor="w",
-            ).pack(anchor="w", padx=26)
+            ctk.CTkLabel(row, text=f"    {desc}",
+                         font=FNT_SMALL, text_color=TEXT_DIM, anchor="w"
+                         ).pack(anchor="w", padx=26)
         ctk.CTkFrame(ops_card, height=6, fg_color="transparent").pack()
 
-        # Run button — passes font= which NeonButton now handles cleanly
-        self._run_btn = NeonButton(
-            left,
-            text="  ▶   RUN ANALYSIS",
-            command=self._start_analysis,
-            color=NEON_GREEN,
-            height=52,
-            font=FNT_RUN,
-        )
+        # ── Action buttons
+        self._run_btn = make_btn(
+            left, "  ▶   RUN ANALYSIS",
+            self._start_analysis, NEON_GREEN, 52, FNT_RUN)
         self._run_btn.pack(fill="x", pady=(4, 6))
 
-        NeonButton(
-            left,
-            text="  📁   Open Output Folder",
-            command=self._open_output,
-            color=NEON_PURP,
-            height=42,
-        ).pack(fill="x")
+        make_btn(left, "  📁   Open Output Folder",
+                 self._open_output, NEON_PURP, 42
+                 ).pack(fill="x")
 
-    # ──────────────────────────── RIGHT PANEL ─────────────────────────
+    # ───────────────────────── RIGHT PANEL ──────────────────────────
     def _build_right(self, parent):
         right = ctk.CTkFrame(parent, fg_color=BG_DEEP)
         right.grid(row=0, column=1, sticky="nsew")
@@ -330,20 +256,13 @@ class IL2CPPStudio(ctk.CTk):
         pg = SectionCard(right, "⚡  PROGRESS", accent=NEON_CYAN)
         pg.grid(row=0, column=0, sticky="ew", pady=(0, 8))
         self._progress = ctk.CTkProgressBar(
-            pg,
-            fg_color=BG_DEEP,
-            progress_color=NEON_CYAN,
-            border_width=1,
-            border_color=NEON_PURP,
-            height=20,
-            corner_radius=6,
-        )
+            pg, fg_color=BG_DEEP, progress_color=NEON_CYAN,
+            border_width=1, border_color=NEON_PURP, height=20, corner_radius=6)
         self._progress.set(0)
         self._progress.pack(fill="x", padx=14, pady=(10, 4))
         self._prog_lbl = ctk.CTkLabel(
             pg, text="Idle — waiting for input…",
-            font=FNT_BODY, text_color=TEXT_BRIGHT,
-        )
+            font=FNT_BODY, text_color=TEXT_BRIGHT)
         self._prog_lbl.pack(padx=14, pady=(0, 10))
 
         lg = SectionCard(right, "🖥  LOG CONSOLE", accent=NEON_PURP)
@@ -354,16 +273,11 @@ class IL2CPPStudio(ctk.CTk):
         rs = SectionCard(right, "✅  RESULTS & NEXT STEPS", accent=NEON_GREEN)
         rs.grid(row=2, column=0, sticky="ew")
         self._results_txt = ctk.CTkTextbox(
-            rs,
-            fg_color="#06060e",
-            text_color=NEON_GREEN,
-            font=FNT_MONO_B,
-            height=110,
-            state="disabled",
-        )
+            rs, fg_color="#06060e", text_color=NEON_GREEN,
+            font=FNT_MONO_B, height=110, state="disabled")
         self._results_txt.pack(fill="x", padx=14, pady=10)
 
-    # ──────────────────────────── ANIMATION ───────────────────────────
+    # ───────────────────────── ANIMATION ─────────────────────────────
     _GLYPHS = ["■", "□", "▒", "░", "□", "■"]
     _glyph_i = 0
 
@@ -383,7 +297,7 @@ class IL2CPPStudio(ctk.CTk):
             self._progress.set(v + 0.004)
         self.after(100, self._animate_progress)
 
-    # ──────────────────────────── FILE PICKERS ────────────────────────
+    # ───────────────────────── FILE PICKERS ────────────────────────
     def _browse_apk(self):
         self.lift()
         self.focus_force()
@@ -391,26 +305,17 @@ class IL2CPPStudio(ctk.CTk):
         path = filedialog.askopenfilename(
             parent=self,
             title="Select APK or XAPK file",
-            filetypes=[
-                ("APK / XAPK files", "*.apk *.xapk"),
-                ("All files", "*.*"),
-            ],
+            filetypes=[("APK / XAPK files", "*.apk *.xapk"), ("All files", "*.*")],
         )
         self.lift()
         self.focus_force()
         if path:
             self._apk_path = Path(path)
-            self._file_lbl.configure(
-                text=f"✅  {self._apk_path.name}",
-                text_color=NEON_GREEN,
-            )
+            self._file_lbl.configure(text=f"✅  {self._apk_path.name}", text_color=NEON_GREEN)
             self._status(f"►  File loaded: {self._apk_path.name}")
             if not self._output_dir:
                 self._output_dir = self._apk_path.parent / (self._apk_path.stem + "_output")
-                self._out_lbl.configure(
-                    text=str(self._output_dir),
-                    text_color=NEON_CYAN,
-                )
+                self._out_lbl.configure(text=str(self._output_dir), text_color=NEON_CYAN)
         else:
             self._status("⚠  No file selected.")
 
@@ -418,54 +323,41 @@ class IL2CPPStudio(ctk.CTk):
         self.lift()
         self.focus_force()
         self.update()
-        path = filedialog.askdirectory(
-            parent=self,
-            title="Select output directory",
-        )
+        path = filedialog.askdirectory(parent=self, title="Select output directory")
         self.lift()
         self.focus_force()
         if path:
             self._output_dir = Path(path)
-            self._out_lbl.configure(
-                text=str(self._output_dir),
-                text_color=NEON_CYAN,
-            )
+            self._out_lbl.configure(text=str(self._output_dir), text_color=NEON_CYAN)
             self._status(f"►  Output set: {path}")
 
-    # ──────────────────────────── ANALYSIS ────────────────────────────
+    # ───────────────────────── ANALYSIS ────────────────────────────
     def _start_analysis(self):
         if self._running:
             self._status("⚠  Already running — please wait.")
             return
-
         if not self._apk_path:
             messagebox.showerror(
                 "No File Selected",
                 "Please click 'Browse APK / XAPK' and select a file first.",
-                parent=self,
-            )
+                parent=self)
             self._status("❌  Select a file first!")
             return
-
         if not self._apk_path.exists():
             messagebox.showerror(
                 "File Not Found",
                 f"Cannot find:\n{self._apk_path}\n\nPlease re-select the file.",
-                parent=self,
-            )
+                parent=self)
             return
-
         ops = {k: v.get() for k, v in self._ops.items()}
         if not any(ops.values()):
             messagebox.showwarning(
                 "No Operations Selected",
                 "Please tick at least one operation before running.",
-                parent=self,
-            )
+                parent=self)
             return
 
         self._running = True
-        self._run_btn.start_pulse()
         self._run_btn.configure(state="disabled", text="  ⏳   RUNNING…")
         self._log.clear()
         self._set_results("")
@@ -490,15 +382,15 @@ class IL2CPPStudio(ctk.CTk):
                 else:
                     raw.mkdir(exist_ok=True)
                     if apk.suffix.lower() == ".xapk":
-                        self._log_t("XAPK detected — extracting inner APKs…", "INFO")
+                        self._log_t("XAPK — extracting inner APKs…", "INFO")
                         with zipfile.ZipFile(apk) as z:
                             z.extractall(raw)
                         base = raw / "base.apk"
                         if base.exists():
-                            base_out = raw / "base_extracted"
+                            bo = raw / "base_extracted"
                             with zipfile.ZipFile(base) as z:
-                                z.extractall(base_out)
-                            self._log_t(f"base.apk → {base_out}", "OK")
+                                z.extractall(bo)
+                            self._log_t(f"base.apk → {bo}", "OK")
                     else:
                         with zipfile.ZipFile(apk) as z:
                             z.extractall(raw)
@@ -541,8 +433,7 @@ class IL2CPPStudio(ctk.CTk):
                 self._do_report(out)
 
             self.after(0, lambda: self._progress.set(1.0))
-            self.after(0, lambda: self._prog_lbl.configure(
-                text="Done! ✅", text_color=NEON_GREEN))
+            self.after(0, lambda: self._prog_lbl.configure(text="Done! ✅", text_color=NEON_GREEN))
             self._status("✅  Analysis complete!")
             self._log_t("All done!", "OK")
             self._show_results(out)
@@ -554,11 +445,10 @@ class IL2CPPStudio(ctk.CTk):
             self._status("❌  Error — check the log.")
         finally:
             self._running = False
-            self.after(0, self._run_btn.stop_pulse)
             self.after(0, lambda: self._run_btn.configure(
                 state="normal", text="  ▶   RUN ANALYSIS"))
 
-    # ──────────────────────────── WORKERS ─────────────────────────────
+    # ───────────────────────── WORKERS ──────────────────────────────
     def _do_unity(self, raw: Path, out: Path):
         import UnityPy
         sources = list(raw.rglob("*.assets")) + list(raw.rglob("level*"))
@@ -608,10 +498,8 @@ class IL2CPPStudio(ctk.CTk):
             self._log_t("apktool not on PATH — Smali skipped.", "WARN")
             self._log_t("  Get it: https://apktool.org", "INFO")
             return
-        r = subprocess.run(
-            [tool, "d", str(apk), "-o", str(out), "--force"],
-            capture_output=True, text=True,
-        )
+        r = subprocess.run([tool, "d", str(apk), "-o", str(out), "--force"],
+                           capture_output=True, text=True)
         if r.returncode == 0:
             self._log_t(f"Smali → {out}", "OK")
         else:
@@ -625,12 +513,11 @@ class IL2CPPStudio(ctk.CTk):
         html = (
             "<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'>"
             "<title>IL2CPP Recovery Studio — Report</title>"
-            "<style>body{background:#0a0a0f;color:#e8f0ff;"
-            "font-family:'Segoe UI',sans-serif;padding:30px;font-size:15px}"
-            "h1{color:#00ffe7;border-bottom:2px solid #bf80ff;padding-bottom:8px}"
-            "h2{color:#00ff88}table{border-collapse:collapse;width:100%}"
-            "td{padding:6px 14px;border-bottom:1px solid #1a1a40;font-size:14px}"
-            "th{color:#bf80ff;text-align:left;padding:8px 14px}</style></head><body>"
+            "<style>body{background:#0a0a0f;color:#e8f0ff;font-family:'Segoe UI',sans-serif;"
+            "padding:30px;font-size:15px}h1{color:#00ffe7;border-bottom:2px solid #bf80ff;"
+            "padding-bottom:8px}h2{color:#00ff88}table{border-collapse:collapse;width:100%}"
+            "td{padding:6px 14px;border-bottom:1px solid #1a1a40}th{color:#bf80ff;"
+            "text-align:left;padding:8px 14px}</style></head><body>"
             f"<h1>● IL2CPP Recovery Studio Report</h1>"
             f"<p>Output: <code style='color:#ffe040'>{out}</code></p>"
             f"<h2>Folders</h2><table><tr><th></th><th>Name</th></tr>{dr}</table>"
@@ -642,16 +529,13 @@ class IL2CPPStudio(ctk.CTk):
         rp.write_text(html, encoding="utf-8")
         self._log_t(f"Report → {rp}", "OK")
 
-    # ──────────────────────────── RESULTS ─────────────────────────────
+    # ───────────────────────── RESULTS ───────────────────────────────
     def _show_results(self, out: Path):
         dirs = sorted(d.name for d in out.iterdir() if d.is_dir())
         lines = [
-            "=" * 48,
-            "   OUTPUT SUMMARY",
-            "=" * 48,
+            "=" * 48, "   OUTPUT SUMMARY", "=" * 48,
         ] + [f"  📁  {d}" for d in dirs] + [
-            "",
-            "  NEXT STEPS:",
+            "", "  NEXT STEPS:",
             "  1.  Open report.html in your browser",
             "  2.  Check unity_assets/ for textures",
             "  3.  Use Il2CppDumper on il2cpp_meta/",
@@ -666,15 +550,13 @@ class IL2CPPStudio(ctk.CTk):
             self._results_txt.insert("0.0", text)
         self._results_txt.configure(state="disabled")
 
-    # ──────────────────────────── HELPERS ─────────────────────────────
+    # ───────────────────────── HELPERS ────────────────────────────────
     def _step(self, msg: str):
         self._log_t(msg, "STEP")
-        self.after(0, lambda m=msg: self._prog_lbl.configure(
-            text=m, text_color=NEON_PURP))
+        self.after(0, lambda m=msg: self._prog_lbl.configure(text=m, text_color=NEON_PURP))
         self._status(f"►  {msg}")
 
     def _log_t(self, msg: str, level: str = "INFO"):
-        """Thread-safe log call."""
         self.after(0, lambda m=msg, lv=level: self._log.log(m, lv))
 
     def _status(self, msg: str):
@@ -689,14 +571,12 @@ class IL2CPPStudio(ctk.CTk):
             else:
                 subprocess.Popen(["xdg-open", str(self._output_dir)])
         else:
-            messagebox.showinfo(
-                "No Output Yet",
-                "No output folder yet. Run the analysis first.",
-                parent=self,
-            )
+            messagebox.showinfo("No Output Yet",
+                                "No output folder yet. Run the analysis first.",
+                                parent=self)
 
 
-# ═══════════════════════════════════════════════════════════════════════
+# ═════════════════════════════════════════════════════════════════════════
 def run_gui():
     app = IL2CPPStudio()
     app.mainloop()
