@@ -1,20 +1,26 @@
 #!/usr/bin/env python3
 """
-IL2CPP Recovery Studio — app.py v8
+IL2CPP Recovery Studio — app.py v9
 
 Fixes:
- 1. UnityPy: load the entire Data/ directory at once (not file-by-file).
-    Also dumps ALL object types (Texture2D, Sprite, AudioClip, TextAsset,
-    Mesh, Font, Shader … everything with a name) instead of only image/script.
- 2. Report: walks the full output tree (all sub-folders recursively) and
-    counts files per section so you can see what was actually extracted.
- 3. apktool download: chunked download with retry so partial downloads
-    don’t leave a broken .jar behind.
- 4. apktool wrapper uses 'call' so the bat exits cleanly on Windows.
+- Windows apktool execution: runs .bat via shell on Windows and falls back to
+  'java -jar apktool.jar' directly when appropriate.
+- Re-run correctness: output folders are refreshed safely before each selected
+  stage instead of blindly skipping because a directory exists.
+- Unity usability: exports scene/UI information as JSON/text so the user can
+  inspect scenes, GameObjects, Canvas/UI hierarchy, sprites, and components.
 """
 from __future__ import annotations
 
-import os, sys, threading, zipfile, shutil, urllib.request, subprocess, time
+import json
+import os
+import shutil
+import subprocess
+import sys
+import threading
+import time
+import urllib.request
+import zipfile
 from pathlib import Path
 
 import customtkinter as ctk
@@ -25,7 +31,6 @@ try:
 except ImportError:
     PILImage = None  # type: ignore
 
-# ══ PALETTE ═════════════════════════════════════════════════════════
 BG_DEEP = "#0a0a0f"; BG_CARD = "#111128"; BG_PANEL = "#0d0d22"
 NEON_CYAN = "#00ffe7"; NEON_PURP = "#bf80ff"; NEON_GREEN = "#00ff88"
 NEON_PINK = "#ff4488"; NEON_YEL = "#ffe040"
@@ -36,31 +41,43 @@ FNT_BODY = ("Segoe UI", 13, "bold"); FNT_SMALL = ("Segoe UI", 11)
 FNT_MONO = ("Courier New", 12); FNT_MONO_B = ("Courier New", 12, "bold")
 FNT_RUN = ("Segoe UI", 16, "bold")
 
-# ══ APKTOOL ══════════════════════════════════════════════════════════
 APKTOOL_VER = "2.9.3"
-APKTOOL_URL = (f"https://github.com/iBotPeaches/Apktool/releases/download/"
-               f"v{APKTOOL_VER}/apktool_{APKTOOL_VER}.jar")
+APKTOOL_URL = (
+    f"https://github.com/iBotPeaches/Apktool/releases/download/"
+    f"v{APKTOOL_VER}/apktool_{APKTOOL_VER}.jar"
+)
 TOOLS_DIR = Path(__file__).parent / "tools"
 
 
-def _find_apktool() -> str | None:
-    for name in ("apktool", "apktool.bat"):
-        if shutil.which(name):
-            return name
+def _count_files(path: Path) -> int:
+    return sum(1 for p in path.rglob("*") if p.is_file()) if path.exists() else 0
+
+
+def _wipe_dir(path: Path):
+    if path.exists():
+        shutil.rmtree(path, ignore_errors=True)
+    path.mkdir(parents=True, exist_ok=True)
+
+
+def _find_apktool() -> tuple[str | None, Path | None]:
+    for name in ("apktool.bat", "apktool"):
+        found = shutil.which(name)
+        if found:
+            return found, None
     bat = TOOLS_DIR / "apktool.bat"
     jar = TOOLS_DIR / "apktool.jar"
     if bat.exists() and jar.exists():
-        return str(bat)
-    return None
+        return str(bat), jar
+    if jar.exists():
+        return None, jar
+    return None, None
 
 
-def _install_apktool(log_fn) -> str | None:
-    """Chunked download with retry; cleans up partial file on failure."""
+def _install_apktool(log_fn) -> tuple[str | None, Path | None]:
     try:
         TOOLS_DIR.mkdir(parents=True, exist_ok=True)
         jar = TOOLS_DIR / "apktool.jar"
         bat = TOOLS_DIR / "apktool.bat"
-
         if not jar.exists():
             log_fn(f"Downloading apktool {APKTOOL_VER} (~22 MB) …", "INFO")
             tmp = jar.with_suffix(".tmp")
@@ -78,7 +95,7 @@ def _install_apktool(log_fn) -> str | None:
                                 done += len(chunk)
                     if total and done < total:
                         raise IOError(f"Incomplete: {done}/{total} bytes")
-                    tmp.rename(jar)
+                    tmp.replace(jar)
                     log_fn(f"apktool.jar downloaded ({done // 1024} KB)", "OK")
                     break
                 except Exception as e:
@@ -89,26 +106,22 @@ def _install_apktool(log_fn) -> str | None:
                         time.sleep(2)
             else:
                 log_fn("Download failed after 3 attempts.", "ERROR")
-                return None
+                return None, None
         else:
             log_fn("apktool.jar already cached.", "SKIP")
-
         if not bat.exists():
-            bat.write_text(
-                f'@echo off\ncall java -jar "{jar}" %*\n', encoding="ascii")
+            bat.write_text(f'@echo off\ncall java -jar "{jar}" %*\n', encoding="ascii")
             log_fn(f"apktool.bat written → {bat}", "OK")
-
         r = subprocess.run(["java", "-version"], capture_output=True, text=True)
         if r.returncode != 0:
-            log_fn("Java not found — install JRE 8+.", "WARN")
-            return None
-        return str(bat)
+            log_fn("Java not found — install JRE/JDK 8+.", "WARN")
+            return None, jar
+        return str(bat), jar
     except Exception as e:
         log_fn(f"apktool install failed: {e}", "ERROR")
-        return None
+        return None, None
 
 
-# ══ WIDGETS ══════════════════════════════════════════════════════════
 def make_btn(parent, text, command, color=NEON_CYAN, height=42, font=FNT_BODY):
     return ctk.CTkButton(parent, text=text, command=command,
                          fg_color=BG_CARD, hover_color=BTN_HOVER,
@@ -121,8 +134,7 @@ class SectionCard(ctk.CTkFrame):
         super().__init__(master, fg_color=BG_CARD, border_width=1,
                          border_color=accent, corner_radius=10, **kw)
         ctk.CTkLabel(self, text=f"  {title}", font=FNT_HEAD,
-                     text_color=accent, fg_color=BG_CARD
-                     ).pack(anchor="nw", padx=14, pady=(10, 3))
+                     text_color=accent, fg_color=BG_CARD).pack(anchor="nw", padx=14, pady=(10, 3))
         ctk.CTkFrame(self, height=1, fg_color=accent).pack(fill="x", padx=14)
 
 
@@ -150,10 +162,9 @@ class LogConsole(ctk.CTkTextbox):
         self.configure(state="disabled")
 
 
-# ══ MAIN WINDOW ════════════════════════════════════════════════════
 class IL2CPPStudio(ctk.CTk):
     APP_TITLE = "IL2CPP Recovery Studio  •  NEON v2"
-    WIN_SIZE  = "1200x780"
+    WIN_SIZE = "1200x780"
 
     def __init__(self):
         ctk.set_appearance_mode("dark")
@@ -166,68 +177,62 @@ class IL2CPPStudio(ctk.CTk):
         self._apk_path: Path | None = None
         self._output_dir: Path | None = None
         self._running = False
+        self._force_refresh = ctk.BooleanVar(value=True)
         self._ops = {
-            "extract_apk":     ctk.BooleanVar(value=True),
-            "extract_assets":  ctk.BooleanVar(value=True),
-            "extract_il2cpp":  ctk.BooleanVar(value=True),
+            "extract_apk": ctk.BooleanVar(value=True),
+            "extract_assets": ctk.BooleanVar(value=True),
+            "extract_il2cpp": ctk.BooleanVar(value=True),
             "decompile_smali": ctk.BooleanVar(value=False),
-            "gen_report":      ctk.BooleanVar(value=True),
+            "gen_report": ctk.BooleanVar(value=True),
         }
         self._build_ui()
         self.after(200, self._animate_header)
 
-    # ─ UI ────────────────────────────────────────────────────────────
     def _build_ui(self):
         hdr = ctk.CTkFrame(self, fg_color=BG_PANEL, height=66, corner_radius=0)
         hdr.pack(fill="x")
         hdr.pack_propagate(False)
-        self._hdr_lbl = ctk.CTkLabel(hdr, text=self.APP_TITLE,
-                                      font=FNT_TITLE, text_color=NEON_CYAN)
+        self._hdr_lbl = ctk.CTkLabel(hdr, text=self.APP_TITLE, font=FNT_TITLE, text_color=NEON_CYAN)
         self._hdr_lbl.pack(side="left", padx=22)
-        ctk.CTkLabel(hdr, text="● SYSTEM ONLINE",
-                     font=FNT_BODY, text_color=NEON_GREEN).pack(side="right", padx=22)
+        ctk.CTkLabel(hdr, text="● SYSTEM ONLINE", font=FNT_BODY, text_color=NEON_GREEN).pack(side="right", padx=22)
         body = ctk.CTkFrame(self, fg_color=BG_DEEP)
         body.pack(fill="both", expand=True, padx=12, pady=8)
-        body.columnconfigure(0, weight=5); body.columnconfigure(1, weight=7)
+        body.columnconfigure(0, weight=5)
+        body.columnconfigure(1, weight=7)
         body.rowconfigure(0, weight=1)
-        self._build_left(body); self._build_right(body)
+        self._build_left(body)
+        self._build_right(body)
         bar = ctk.CTkFrame(self, fg_color=BG_PANEL, height=32, corner_radius=0)
         bar.pack(fill="x", side="bottom")
         bar.pack_propagate(False)
-        self._status_lbl = ctk.CTkLabel(bar, text="►  Ready — select a file.",
-                                         font=FNT_SMALL, text_color=NEON_CYAN)
+        self._status_lbl = ctk.CTkLabel(bar, text="►  Ready — select a file.", font=FNT_SMALL, text_color=NEON_CYAN)
         self._status_lbl.pack(side="left", padx=16)
 
     def _build_left(self, parent):
         left = ctk.CTkScrollableFrame(parent, fg_color=BG_DEEP,
-                                       scrollbar_button_color=BG_CARD,
-                                       scrollbar_button_hover_color=NEON_PURP)
+                                      scrollbar_button_color=BG_CARD,
+                                      scrollbar_button_hover_color=NEON_PURP)
         left.grid(row=0, column=0, sticky="nsew", padx=(0, 8))
-        # input
         fc = SectionCard(left, "📂  INPUT FILE", NEON_PURP)
         fc.pack(fill="x", pady=(0, 10))
         self._file_lbl = ctk.CTkLabel(fc, text="No file selected", font=FNT_BODY,
-                                       text_color=TEXT_DIM, wraplength=340, anchor="w")
+                                      text_color=TEXT_DIM, wraplength=340, anchor="w")
         self._file_lbl.pack(fill="x", padx=14, pady=(8, 4))
-        make_btn(fc, "  Browse APK / XAPK…", self._browse_apk,
-                 NEON_PURP, 46).pack(fill="x", padx=14, pady=(4, 12))
-        # output
+        make_btn(fc, "  Browse APK / XAPK…", self._browse_apk, NEON_PURP, 46).pack(fill="x", padx=14, pady=(4, 12))
         oc = SectionCard(left, "📁  OUTPUT DIRECTORY", NEON_CYAN)
         oc.pack(fill="x", pady=(0, 10))
         self._out_lbl = ctk.CTkLabel(oc, text="Auto: next to input file", font=FNT_BODY,
-                                      text_color=TEXT_DIM, wraplength=340, anchor="w")
+                                     text_color=TEXT_DIM, wraplength=340, anchor="w")
         self._out_lbl.pack(fill="x", padx=14, pady=(8, 4))
-        make_btn(oc, "  Browse Output Folder…", self._browse_output,
-                 NEON_CYAN, 42).pack(fill="x", padx=14, pady=(4, 12))
-        # ops
+        make_btn(oc, "  Browse Output Folder…", self._browse_output, NEON_CYAN, 42).pack(fill="x", padx=14, pady=(4, 12))
         ops_card = SectionCard(left, "⚙  OPERATIONS", NEON_GREEN)
         ops_card.pack(fill="x", pady=(0, 10))
         for key, label, desc in [
-            ("extract_apk",    "📦  Extract APK/XAPK",    "Unzip package into raw/"),
-            ("extract_assets",  "🎨  Extract Unity assets", "All textures, audio, meshes…"),
-            ("extract_il2cpp",  "🔍  Parse IL2CPP",          "global-metadata.dat + libil2cpp.so"),
-            ("decompile_smali", "🖥  Decompile Smali",       "Auto-installs apktool if needed"),
-            ("gen_report",      "📝  HTML Report",           "Full tree summary report.html"),
+            ("extract_apk", "📦  Extract APK/XAPK", "Rebuild raw/ from source"),
+            ("extract_assets", "🎨  Extract Unity assets", "Textures, sprites, audio, scene/UI dumps"),
+            ("extract_il2cpp", "🔍  Parse IL2CPP", "global-metadata.dat + libil2cpp.so"),
+            ("decompile_smali", "🖥  Decompile Smali", "Uses apktool, auto-installs if needed"),
+            ("gen_report", "📝  HTML Report", "Deep summary of extracted output"),
         ]:
             row = ctk.CTkFrame(ops_card, fg_color="transparent")
             row.pack(fill="x", padx=14, pady=4)
@@ -238,27 +243,27 @@ class IL2CPPStudio(ctk.CTk):
                             border_width=2).pack(anchor="w")
             ctk.CTkLabel(row, text=f"    {desc}", font=FNT_SMALL,
                          text_color=TEXT_DIM, anchor="w").pack(anchor="w", padx=26)
-        ctk.CTkFrame(ops_card, height=6, fg_color="transparent").pack()
-        self._run_btn = make_btn(left, "  ▶   RUN ANALYSIS",
-                                  self._start_analysis, NEON_GREEN, 52, FNT_RUN)
+        ctk.CTkCheckBox(ops_card, text="♻  Force refresh selected outputs before run",
+                        variable=self._force_refresh, font=FNT_BODY,
+                        text_color=NEON_YEL, checkmark_color=BG_DEEP,
+                        fg_color=NEON_YEL, hover_color=NEON_PURP,
+                        border_color=NEON_YEL, border_width=2).pack(anchor="w", padx=14, pady=(8, 12))
+        self._run_btn = make_btn(left, "  ▶   RUN ANALYSIS", self._start_analysis, NEON_GREEN, 52, FNT_RUN)
         self._run_btn.pack(fill="x", pady=(4, 6))
-        make_btn(left, "  📁   Open Output Folder",
-                 self._open_output, NEON_PURP, 42).pack(fill="x")
+        make_btn(left, "  📁   Open Output Folder", self._open_output, NEON_PURP, 42).pack(fill="x")
 
     def _build_right(self, parent):
         right = ctk.CTkFrame(parent, fg_color=BG_DEEP)
         right.grid(row=0, column=1, sticky="nsew")
-        right.rowconfigure(1, weight=1); right.columnconfigure(0, weight=1)
+        right.rowconfigure(1, weight=1)
+        right.columnconfigure(0, weight=1)
         pg = SectionCard(right, "⚡  PROGRESS", NEON_CYAN)
         pg.grid(row=0, column=0, sticky="ew", pady=(0, 8))
-        self._progress = ctk.CTkProgressBar(pg, fg_color=BG_DEEP,
-                                             progress_color=NEON_CYAN,
-                                             border_width=1, border_color=NEON_PURP,
-                                             height=20, corner_radius=6)
+        self._progress = ctk.CTkProgressBar(pg, fg_color=BG_DEEP, progress_color=NEON_CYAN,
+                                            border_width=1, border_color=NEON_PURP, height=20, corner_radius=6)
         self._progress.set(0)
         self._progress.pack(fill="x", padx=14, pady=(10, 4))
-        self._prog_lbl = ctk.CTkLabel(pg, text="Idle…", font=FNT_BODY,
-                                       text_color=TEXT_BRIGHT)
+        self._prog_lbl = ctk.CTkLabel(pg, text="Idle…", font=FNT_BODY, text_color=TEXT_BRIGHT)
         self._prog_lbl.pack(padx=14, pady=(0, 10))
         lg = SectionCard(right, "🖥  LOG CONSOLE", NEON_PURP)
         lg.grid(row=1, column=0, sticky="nsew", pady=(0, 8))
@@ -266,45 +271,41 @@ class IL2CPPStudio(ctk.CTk):
         self._log.pack(fill="both", expand=True, padx=14, pady=10)
         rs = SectionCard(right, "✅  RESULTS", NEON_GREEN)
         rs.grid(row=2, column=0, sticky="ew")
-        self._results_txt = ctk.CTkTextbox(rs, fg_color="#06060e",
-                                            text_color=NEON_GREEN,
-                                            font=FNT_MONO_B, height=110,
-                                            state="disabled")
+        self._results_txt = ctk.CTkTextbox(rs, fg_color="#06060e", text_color=NEON_GREEN,
+                                           font=FNT_MONO_B, height=140, state="disabled")
         self._results_txt.pack(fill="x", padx=14, pady=10)
 
-    # ─ ANIMATION ──────────────────────────────────────────────────
-    _GLYPHS = ["■", "□", "▒", "░", "□", "■"]; _glyph_i = 0
+    _GLYPHS = ["■", "□", "▒", "░", "□", "■"]
+    _glyph_i = 0
 
     def _animate_header(self):
-        if not self.winfo_exists(): return
+        if not self.winfo_exists():
+            return
         g = self._GLYPHS[self._glyph_i % len(self._GLYPHS)]
         self._hdr_lbl.configure(text=f"{g}  {self.APP_TITLE}  {g}")
         self._glyph_i += 1
         self.after(500, self._animate_header)
 
     def _animate_progress(self):
-        if not self._running or not self.winfo_exists(): return
+        if not self._running or not self.winfo_exists():
+            return
         v = self._progress.get()
-        if v < 0.93: self._progress.set(v + 0.004)
+        if v < 0.93:
+            self._progress.set(v + 0.004)
         self.after(100, self._animate_progress)
 
-    # ─ FILE PICKERS ────────────────────────────────────────────
     def _browse_apk(self):
         self.lift(); self.focus_force(); self.update()
-        path = filedialog.askopenfilename(
-            parent=self, title="Select APK or XAPK",
-            filetypes=[("APK / XAPK", "*.apk *.xapk"), ("All", "*.*")])
+        path = filedialog.askopenfilename(parent=self, title="Select APK or XAPK",
+                                          filetypes=[("APK / XAPK", "*.apk *.xapk"), ("All", "*.*")])
         self.lift(); self.focus_force()
         if path:
             self._apk_path = Path(path)
-            self._file_lbl.configure(text=f"✅  {self._apk_path.name}",
-                                      text_color=NEON_GREEN)
+            self._file_lbl.configure(text=f"✅  {self._apk_path.name}", text_color=NEON_GREEN)
             self._status(f"►  Loaded: {self._apk_path.name}")
             if not self._output_dir:
-                self._output_dir = (self._apk_path.parent /
-                                    (self._apk_path.stem + "_output"))
-                self._out_lbl.configure(text=str(self._output_dir),
-                                         text_color=NEON_CYAN)
+                self._output_dir = self._apk_path.parent / (self._apk_path.stem + "_output")
+                self._out_lbl.configure(text=str(self._output_dir), text_color=NEON_CYAN)
 
     def _browse_output(self):
         self.lift(); self.focus_force(); self.update()
@@ -314,29 +315,29 @@ class IL2CPPStudio(ctk.CTk):
             self._output_dir = Path(path)
             self._out_lbl.configure(text=str(self._output_dir), text_color=NEON_CYAN)
 
-    # ─ ANALYSIS ─────────────────────────────────────────────────
     def _start_analysis(self):
         if self._running:
-            self._status("⚠  Already running."); return
+            self._status("⚠  Already running.")
+            return
         if not self._apk_path:
-            messagebox.showerror("No File",
-                "Click 'Browse APK / XAPK' first.", parent=self); return
+            messagebox.showerror("No File", "Click 'Browse APK / XAPK' first.", parent=self)
+            return
         if not self._apk_path.exists():
-            messagebox.showerror("Not Found",
-                f"{self._apk_path}\n\nFile missing — re-select.", parent=self); return
+            messagebox.showerror("Not Found", f"{self._apk_path}\n\nFile missing — re-select.", parent=self)
+            return
         ops = {k: v.get() for k, v in self._ops.items()}
         if not any(ops.values()):
-            messagebox.showwarning("Nothing selected",
-                "Tick at least one operation.", parent=self); return
+            messagebox.showwarning("Nothing selected", "Tick at least one operation.", parent=self)
+            return
         self._running = True
         self._run_btn.configure(state="disabled", text="  ⏳   RUNNING…")
-        self._log.clear(); self._set_results("")
+        self._log.clear()
+        self._set_results("")
         self._progress.set(0)
         self._prog_lbl.configure(text="Starting…", text_color=NEON_CYAN)
         self._status("►  Running — please wait…")
         self._animate_progress()
-        threading.Thread(target=self._run_pipeline,
-                         args=(ops,), daemon=True).start()
+        threading.Thread(target=self._run_pipeline, args=(ops,), daemon=True).start()
 
     def _run_pipeline(self, ops: dict):
         out = self._output_dir
@@ -344,82 +345,84 @@ class IL2CPPStudio(ctk.CTk):
         try:
             out.mkdir(parents=True, exist_ok=True)
             self._log_t(f"Output → {out}", "INFO")
+            force = self._force_refresh.get()
 
-            # ── 1. EXTRACT
             raw = out / "raw"
             if ops["extract_apk"]:
                 self._step("Extracting package…")
-                if raw.exists() and any(raw.iterdir()):
-                    self._log_t("raw/ already exists — skipping.", "SKIP")
+                if force:
+                    self._log_t("Force refresh enabled — rebuilding raw/", "INFO")
+                    _wipe_dir(raw)
+                elif raw.exists() and _count_files(raw) > 0:
+                    self._log_t(f"raw/ has {_count_files(raw)} files — reusing.", "SKIP")
                 else:
-                    raw.mkdir(exist_ok=True)
+                    raw.mkdir(parents=True, exist_ok=True)
+                if _count_files(raw) == 0:
                     if apk.suffix.lower() == ".xapk":
                         self._log_t("XAPK — extracting outer archive…", "INFO")
                         with zipfile.ZipFile(apk) as z:
                             z.extractall(raw)
                         for inner in sorted(raw.rglob("*.apk")):
                             inner_out = inner.parent / inner.stem
-                            inner_out.mkdir(exist_ok=True)
+                            if inner_out.exists() and force:
+                                shutil.rmtree(inner_out, ignore_errors=True)
+                            inner_out.mkdir(parents=True, exist_ok=True)
                             with zipfile.ZipFile(inner) as z:
                                 z.extractall(inner_out)
-                            self._log_t(
-                                f"  {inner.name} → {inner_out.name}/", "OK")
+                            self._log_t(f"  {inner.name} → {inner_out.name}/", "OK")
                     else:
                         with zipfile.ZipFile(apk) as z:
                             z.extractall(raw)
                         self._log_t(f"APK → {raw}", "OK")
-            else:
-                raw.mkdir(exist_ok=True)
 
-            # ── 2. UNITY ASSETS
             if ops["extract_assets"]:
                 adir = out / "unity_assets"
                 self._step("Extracting Unity assets…")
-                if adir.exists() and any(adir.iterdir()):
-                    self._log_t("unity_assets/ exists — skipped.", "SKIP")
+                if force:
+                    self._log_t("Force refresh enabled — rebuilding unity_assets/", "INFO")
+                    _wipe_dir(adir)
                 else:
-                    adir.mkdir(exist_ok=True)
-                    try:
-                        self._do_unity(out, adir)
-                    except Exception as e:
-                        self._log_t(f"Unity error: {e}", "ERROR")
-                        import traceback
-                        self._log_t(traceback.format_exc(), "ERROR")
+                    adir.mkdir(parents=True, exist_ok=True)
+                    if _count_files(adir) > 0:
+                        self._log_t(f"unity_assets/ has {_count_files(adir)} files — reusing.", "SKIP")
+                if _count_files(adir) == 0:
+                    self._do_unity(out, adir)
 
-            # ── 3. IL2CPP
             if ops["extract_il2cpp"]:
                 mdir = out / "il2cpp_meta"
                 self._step("Parsing IL2CPP metadata…")
-                if mdir.exists() and any(mdir.iterdir()):
-                    self._log_t("il2cpp_meta/ exists — skipped.", "SKIP")
+                if force:
+                    self._log_t("Force refresh enabled — rebuilding il2cpp_meta/", "INFO")
+                    _wipe_dir(mdir)
                 else:
-                    mdir.mkdir(exist_ok=True)
-                    try:
-                        self._do_il2cpp(out, mdir)
-                    except Exception as e:
-                        self._log_t(f"IL2CPP error: {e}", "ERROR")
+                    mdir.mkdir(parents=True, exist_ok=True)
+                    if _count_files(mdir) > 0:
+                        self._log_t(f"il2cpp_meta/ has {_count_files(mdir)} files — reusing.", "SKIP")
+                if _count_files(mdir) == 0:
+                    self._do_il2cpp(out, mdir)
 
-            # ── 4. SMALI
             if ops["decompile_smali"]:
                 sdir = out / "smali"
                 self._step("Decompiling Smali…")
-                if sdir.exists() and any(sdir.iterdir()):
-                    self._log_t("smali/ exists — skipped.", "SKIP")
+                if force:
+                    self._log_t("Force refresh enabled — rebuilding smali/", "INFO")
+                    _wipe_dir(sdir)
                 else:
+                    sdir.mkdir(parents=True, exist_ok=True)
+                    if _count_files(sdir) > 0:
+                        self._log_t(f"smali/ has {_count_files(sdir)} files — reusing.", "SKIP")
+                if _count_files(sdir) == 0:
                     self._do_apktool(apk, sdir)
 
-            # ── 5. REPORT  (always last, after all writes are done)
             if ops["gen_report"]:
                 self._step("Generating HTML report…")
                 self._do_report(out)
 
             self.after(0, lambda: self._progress.set(1.0))
-            self.after(0, lambda: self._prog_lbl.configure(
-                text="Done! ✅", text_color=NEON_GREEN))
+            self.after(0, lambda: self._prog_lbl.configure(text="Done! ✅", text_color=NEON_GREEN))
             self._status("✅  Complete!")
             self._log_t("All done!", "OK")
             self._show_results(out)
-
         except Exception as exc:
             import traceback
             self._log_t(f"FATAL: {exc}", "ERROR")
@@ -427,84 +430,64 @@ class IL2CPPStudio(ctk.CTk):
             self._status("❌  Error — check log.")
         finally:
             self._running = False
-            self.after(0, lambda: self._run_btn.configure(
-                state="normal", text="  ▶   RUN ANALYSIS"))
+            self.after(0, lambda: self._run_btn.configure(state="normal", text="  ▶   RUN ANALYSIS"))
 
-    # ─ WORKERS ───────────────────────────────────────────────────
     def _do_unity(self, search_root: Path, out: Path):
-        """
-        Load the entire Data/ directory at once via UnityPy so dependency
-        bundles are resolved. Falls back to per-file loading if no Data/
-        dir is found. Dumps EVERY named object, not just Texture2D/TextAsset.
-        """
         import UnityPy
-        from UnityPy.enums import ClassIDType
-
-        # Folders we must NOT scan (already-processed output)
-        skip_dirs = {out, out.parent / "il2cpp_meta",
-                     out.parent / "smali", out.parent / "raw" / "raw"}
-
-        # Prefer loading entire Data/ directories (handles bundles + deps)
+        skip_dirs = {out, out.parent / "il2cpp_meta", out.parent / "smali"}
         data_dirs = [
             p for p in search_root.rglob("Data")
-            if p.is_dir()
-            and not any(p.is_relative_to(s) for s in skip_dirs)
+            if p.is_dir() and not any(p.is_relative_to(s) for s in skip_dirs)
         ]
-
-        loaded_files: list[Path] = []
-        env_list = []  # list of (label, UnityPy.Environment)
-
+        env_list: list[tuple[str, object]] = []
         if data_dirs:
             for dd in data_dirs:
                 label = str(dd.relative_to(search_root))
                 self._log_t(f"  Loading Data dir: {label}", "INFO")
                 try:
-                    env = UnityPy.load(str(dd))
-                    env_list.append((label, env))
+                    env_list.append((label, UnityPy.load(str(dd))))
                 except Exception as e:
                     self._log_t(f"  Warning loading {label}: {e}", "WARN")
         else:
-            # Fallback: load individual .assets and level* files
+            files = []
             for p in search_root.rglob("*.assets"):
                 if not any(p.is_relative_to(s) for s in skip_dirs):
-                    loaded_files.append(p)
+                    files.append(p)
             for p in search_root.rglob("level*"):
-                if p.is_file() and not p.suffix and \
-                        not any(p.is_relative_to(s) for s in skip_dirs):
-                    loaded_files.append(p)
-            if not loaded_files:
+                if p.is_file() and not p.suffix and not any(p.is_relative_to(s) for s in skip_dirs):
+                    files.append(p)
+            if not files:
                 self._log_t("No Unity asset files found.", "WARN")
                 return
-            self._log_t(f"Found {len(loaded_files)} file(s) — loading…", "INFO")
-            for f in loaded_files:
+            for f in files:
                 try:
                     env_list.append((f.name, UnityPy.load(str(f))))
                 except Exception as e:
                     self._log_t(f"  Skip {f.name}: {e}", "WARN")
-
         if not env_list:
             self._log_t("Nothing loaded from Unity assets.", "WARN")
             return
 
         total_saved = 0
+        total_scene_entries = 0
+        scenes_dir = out / "Scenes"
+        ui_dir = out / "UI"
+        scenes_dir.mkdir(parents=True, exist_ok=True)
+        ui_dir.mkdir(parents=True, exist_ok=True)
+
         for label, env in env_list:
             saved = 0
+            scene_entries = []
+            ui_entries = []
             for obj in env.objects:
                 try:
                     data = obj.read()
-                    name = getattr(data, "name", None) or getattr(data, "m_Name", None)
-                    if not name:
-                        continue
-                    # Sanitise filename
-                    safe = "".join(c if c.isalnum() or c in " _-." else "_"
-                                   for c in name).strip()
-                    if not safe:
-                        continue
                     type_name = obj.type.name
+                    name = getattr(data, "name", None) or getattr(data, "m_Name", None) or f"obj_{obj.path_id}"
+                    safe = "".join(c if c.isalnum() or c in " _-." else "_" for c in str(name)).strip() or f"obj_{obj.path_id}"
                     dest = out / type_name
-                    dest.mkdir(exist_ok=True)
+                    dest.mkdir(parents=True, exist_ok=True)
 
-                    # ── Texture2D / Sprite ──
                     if hasattr(data, "image") and PILImage:
                         try:
                             img = data.image
@@ -515,79 +498,97 @@ class IL2CPPStudio(ctk.CTk):
                                     saved += 1
                         except Exception:
                             pass
-
-                    # ── AudioClip ──
                     elif type_name == "AudioClip":
                         try:
                             for clip_name, clip_data in data.samples.items():
-                                ext = ".wav"
-                                p = dest / f"{safe}{ext}"
+                                clip_safe = "".join(c if c.isalnum() or c in " _-." else "_" for c in clip_name).strip() or safe
+                                p = dest / f"{clip_safe}.wav"
                                 if not p.exists():
                                     p.write_bytes(clip_data)
                                     saved += 1
                         except Exception:
                             pass
-
-                    # ── TextAsset / MonoBehaviour / Shader ──
                     elif hasattr(data, "m_Script") and data.m_Script:
                         p = dest / f"{safe}.txt"
                         if not p.exists():
-                            p.write_text(data.m_Script,
-                                         encoding="utf-8", errors="replace")
+                            content = data.m_Script
+                            if isinstance(content, bytes):
+                                content = content.decode("utf-8", errors="replace")
+                            else:
+                                content = str(content)
+                            p.write_text(content, encoding="utf-8", errors="replace")
                             saved += 1
-
-                    # ── Mesh ──
                     elif type_name == "Mesh":
                         try:
-                            p = dest / f"{safe}.obj"
+                            exported = data.export()
+                            if exported:
+                                p = dest / f"{safe}.obj"
+                                if not p.exists():
+                                    p.write_text(str(exported), encoding="utf-8", errors="replace")
+                                    saved += 1
+                        except Exception:
+                            pass
+                    elif type_name == "Font":
+                        try:
+                            font_data = getattr(data, "m_FontData", None)
+                            if font_data:
+                                p = dest / f"{safe}.ttf"
+                                if not p.exists():
+                                    p.write_bytes(font_data)
+                                    saved += 1
+                        except Exception:
+                            pass
+                    elif hasattr(data, "m_Data") and getattr(data, "m_Data", None):
+                        try:
+                            p = dest / f"{safe}.bin"
                             if not p.exists():
-                                p.write_text(data.export(), encoding="utf-8",
-                                             errors="replace")
+                                p.write_bytes(bytes(data.m_Data))
                                 saved += 1
                         except Exception:
                             pass
 
-                    # ── Font ──
-                    elif type_name == "Font":
-                        try:
-                            if hasattr(data, "m_FontData") and data.m_FontData:
-                                ext = ".ttf"
-                                p = dest / f"{safe}{ext}"
-                                if not p.exists():
-                                    p.write_bytes(data.m_FontData)
-                                    saved += 1
-                        except Exception:
-                            pass
-
-                    # ── Generic binary fallback (VideoClip, etc.) ──
-                    elif hasattr(data, "m_Data") and data.m_Data:
-                        p = dest / f"{safe}.bin"
-                        if not p.exists():
-                            p.write_bytes(bytes(data.m_Data))
-                            saved += 1
-
+                    if type_name in {"GameObject", "Canvas", "RectTransform", "Transform", "MonoBehaviour"}:
+                        entry = {
+                            "path_id": getattr(obj, "path_id", None),
+                            "type": type_name,
+                            "name": str(name),
+                        }
+                        for attr in ("m_Layer", "m_TagString", "m_IsActive"):
+                            if hasattr(data, attr):
+                                try:
+                                    entry[attr] = getattr(data, attr)
+                                except Exception:
+                                    pass
+                        if type_name in {"Canvas", "RectTransform"} or "canvas" in str(name).lower() or any(x in str(name).lower() for x in ["ui", "button", "panel", "hud", "menu"]):
+                            ui_entries.append(entry)
+                        else:
+                            scene_entries.append(entry)
                 except Exception:
                     pass
 
-            self._log_t(f"  {label}: {saved} object(s) saved", "OK")
+            if scene_entries:
+                scene_file = scenes_dir / f"{label.replace(os.sep, '_').replace('/', '_')}.json"
+                scene_file.write_text(json.dumps(scene_entries[:5000], indent=2, ensure_ascii=False), encoding="utf-8")
+                saved += 1
+                total_scene_entries += len(scene_entries)
+            if ui_entries:
+                ui_file = ui_dir / f"{label.replace(os.sep, '_').replace('/', '_')}_ui.json"
+                ui_file.write_text(json.dumps(ui_entries[:5000], indent=2, ensure_ascii=False), encoding="utf-8")
+                saved += 1
+
+            self._log_t(f"  {label}: {saved} file(s) saved, {len(scene_entries)} scene objs, {len(ui_entries)} UI objs", "OK")
             total_saved += saved
 
         if total_saved == 0:
-            self._log_t(
-                "WARNING: 0 objects saved. Assets may be in AssetBundles — "
-                "check raw/ for .bundle files and extract them manually.", "WARN")
+            self._log_t("WARNING: 0 files saved. This title may store most content in AssetBundles or encrypted containers.", "WARN")
         else:
             self._log_t(f"Total saved: {total_saved} files → {out}", "OK")
+            self._log_t(f"Scene/UI dump entries: {total_scene_entries}", "INFO")
 
     def _do_il2cpp(self, search_root: Path, out: Path):
-        metas = [p for p in search_root.rglob("global-metadata.dat")
-                 if not p.is_relative_to(out)]
-        sos = [p for p in search_root.rglob("libil2cpp.so")
-               if not p.is_relative_to(out)]
-        extra = [p for p in search_root.rglob("*.so")
-                 if "il2cpp" in p.name.lower()
-                 and p not in sos
-                 and not p.is_relative_to(out)]
+        metas = [p for p in search_root.rglob("global-metadata.dat") if not p.is_relative_to(out)]
+        sos = [p for p in search_root.rglob("libil2cpp.so") if not p.is_relative_to(out)]
+        extra = [p for p in search_root.rglob("*.so") if "il2cpp" in p.name.lower() and p not in sos and not p.is_relative_to(out)]
         sos.extend(extra)
         if not metas:
             self._log_t("global-metadata.dat not found.", "WARN")
@@ -609,38 +610,48 @@ class IL2CPPStudio(ctk.CTk):
             self._log_t("Use Il2CppDumper or Ghidra on these files.", "INFO")
 
     def _do_apktool(self, apk: Path, out: Path):
-        tool = _find_apktool()
-        if not tool:
+        tool, jar = _find_apktool()
+        if not tool and not jar:
             self._log_t("apktool not found — auto-installing…", "WARN")
-            tool = _install_apktool(self._log_t)
-        if not tool:
-            self._log_t("Install Java 8+ then retry.", "ERROR")
+            tool, jar = _install_apktool(self._log_t)
+        if shutil.which("java") is None and jar is not None:
+            self._log_t("Java is required for apktool but was not found on PATH.", "ERROR")
             return
-        self._log_t(f"apktool: {tool}", "INFO")
-        r = subprocess.run([tool, "d", str(apk), "-o", str(out), "--force"],
-                           capture_output=True, text=True)
+        cmd = None
+        use_shell = False
+        if sys.platform == "win32":
+            if tool and tool.lower().endswith(".bat"):
+                cmd = f'"{tool}" d "{apk}" -o "{out}" --force'
+                use_shell = True
+            elif tool:
+                cmd = [tool, "d", str(apk), "-o", str(out), "--force"]
+            elif jar:
+                cmd = ["java", "-jar", str(jar), "d", str(apk), "-o", str(out), "--force"]
+        else:
+            if tool:
+                cmd = [tool, "d", str(apk), "-o", str(out), "--force"]
+            elif jar:
+                cmd = ["java", "-jar", str(jar), "d", str(apk), "-o", str(out), "--force"]
+        if cmd is None:
+            self._log_t("Could not build apktool command.", "ERROR")
+            return
+        self._log_t(f"apktool command ready", "INFO")
+        r = subprocess.run(cmd, shell=use_shell, capture_output=True, text=True)
         if r.returncode == 0:
             self._log_t(f"Smali → {out}", "OK")
         else:
-            self._log_t(f"apktool error:\n{r.stderr[:800]}", "ERROR")
+            err = (r.stderr or r.stdout or "unknown error")[:1200]
+            self._log_t(f"apktool error:\n{err}", "ERROR")
 
     def _do_report(self, out: Path):
-        """Walk the full output tree and build a rich HTML report."""
-        # Collect all sections with file counts
         sections: dict[str, list[Path]] = {}
         for item in sorted(out.iterdir()):
             if item.is_dir() and item.name != "raw":
-                files = sorted(item.rglob("*"))
-                files = [f for f in files if f.is_file()]
+                files = [f for f in sorted(item.rglob("*")) if f.is_file()]
                 sections[item.name] = files
-
-        # Top-level files
         top_files = sorted(f for f in out.iterdir() if f.is_file())
-
-        # Build section HTML
         sec_html = ""
         for sec, files in sections.items():
-            # group by sub-folder (type)
             by_type: dict[str, list[str]] = {}
             for f in files:
                 rel = f.relative_to(out / sec)
@@ -650,27 +661,16 @@ class IL2CPPStudio(ctk.CTk):
             for typ, names in sorted(by_type.items()):
                 rows += (f"<tr><td style='color:{NEON_YEL}'>📂 {typ}</td>"
                          f"<td style='color:{TEXT_DIM}'>{len(names)} file(s)</td>"
-                         f"<td style='color:{TEXT_DIM}'>{', '.join(names[:6])}"
-                         f"{'...' if len(names) > 6 else ''}</td></tr>")
-            sec_html += (
-                f"<h2 style='color:{NEON_GREEN}'>📁 {sec}/"
-                f" <span style='font-size:13px;color:{TEXT_DIM}'>"
-                f"{len(files)} total file(s)</span></h2>"
-                f"<table><tr><th>Type</th><th>Count</th><th>Samples</th></tr>"
-                f"{rows}</table>" if rows else
-                f"<h2 style='color:{NEON_YEL}'>📁 {sec}/ (empty)</h2>"
-            )
-
-        top_rows = "".join(
-            f"<tr><td>📄</td><td>{f.name}</td></tr>" for f in top_files)
-
+                         f"<td style='color:{TEXT_DIM}'>{', '.join(names[:6])}{'...' if len(names) > 6 else ''}</td></tr>")
+            sec_html += (f"<h2 style='color:{NEON_GREEN}'>📁 {sec}/ <span style='font-size:13px;color:{TEXT_DIM}'>{len(files)} total file(s)</span></h2>"
+                         f"<table><tr><th>Type</th><th>Count</th><th>Samples</th></tr>{rows}</table>" if rows else
+                         f"<h2 style='color:{NEON_YEL}'>📁 {sec}/ (empty)</h2>")
+        top_rows = "".join(f"<tr><td>📄</td><td>{f.name}</td></tr>" for f in top_files)
         html = (
             "<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'>"
             "<title>IL2CPP Recovery Studio — Report</title>"
-            f"<style>body{{background:{BG_DEEP};color:{TEXT_BRIGHT};"
-            "font-family:'Segoe UI',sans-serif;padding:30px;font-size:15px}}"
-            f"h1{{color:{NEON_CYAN};border-bottom:2px solid {NEON_PURP};"
-            "padding-bottom:8px}}"
+            f"<style>body{{background:{BG_DEEP};color:{TEXT_BRIGHT};font-family:'Segoe UI',sans-serif;padding:30px;font-size:15px}}"
+            f"h1{{color:{NEON_CYAN};border-bottom:2px solid {NEON_PURP};padding-bottom:8px}}"
             f"table{{border-collapse:collapse;width:100%;margin-bottom:20px}}"
             f"td,th{{padding:6px 14px;border-bottom:1px solid #1a1a40;text-align:left}}"
             f"th{{color:{NEON_PURP}}}</style></head><body>"
@@ -679,38 +679,42 @@ class IL2CPPStudio(ctk.CTk):
             f"{sec_html}"
             f"<h2 style='color:{NEON_CYAN}'>Top-level files</h2>"
             f"<table><tr><th></th><th>Name</th></tr>{top_rows}</table>"
-            f"<hr><p style='color:#5c5c8a'>Generated by IL2CPP Recovery Studio v8</p>"
+            f"<hr><p style='color:#5c5c8a'>Generated by IL2CPP Recovery Studio v9</p>"
             "</body></html>"
         )
         rp = out / "report.html"
         rp.write_text(html, encoding="utf-8")
         self._log_t(f"Report → {rp}", "OK")
 
-    # ─ RESULTS ───────────────────────────────────────────────────
     def _show_results(self, out: Path):
         lines = ["=" * 48, "   OUTPUT SUMMARY", "=" * 48]
         for d in sorted(out.iterdir()):
             if d.is_dir():
-                n = sum(1 for f in d.rglob("*") if f.is_file())
+                n = _count_files(d)
                 lines.append(f"  📁  {d.name}/  ({n} files)")
-        lines += ["", "  NEXT STEPS:",
-                  "  1.  Open report.html in browser",
-                  "  2.  unity_assets/ for textures & audio",
-                  "  3.  Il2CppDumper on il2cpp_meta/",
-                  "  4.  Click 'Open Output Folder'"]
+        scenes = out / "unity_assets" / "Scenes"
+        ui = out / "unity_assets" / "UI"
+        if scenes.exists():
+            lines.append(f"  🎬  Scenes JSON files: {_count_files(scenes)}")
+        if ui.exists():
+            lines.append(f"  🖼   UI JSON files: {_count_files(ui)}")
+        lines += ["", "  OPEN THESE FIRST:",
+                  "  1.  unity_assets/Scenes/",
+                  "  2.  unity_assets/UI/",
+                  "  3.  report.html",
+                  "  4.  il2cpp_meta/"]
         self._set_results("\n".join(lines))
 
     def _set_results(self, text):
         self._results_txt.configure(state="normal")
         self._results_txt.delete("0.0", "end")
-        if text: self._results_txt.insert("0.0", text)
+        if text:
+            self._results_txt.insert("0.0", text)
         self._results_txt.configure(state="disabled")
 
-    # ─ HELPERS ──────────────────────────────────────────────────
     def _step(self, msg):
         self._log_t(msg, "STEP")
-        self.after(0, lambda m=msg: self._prog_lbl.configure(
-            text=m, text_color=NEON_PURP))
+        self.after(0, lambda m=msg: self._prog_lbl.configure(text=m, text_color=NEON_PURP))
         self._status(f"►  {msg}")
 
     def _log_t(self, msg, level="INFO"):
@@ -721,16 +725,16 @@ class IL2CPPStudio(ctk.CTk):
 
     def _open_output(self):
         if self._output_dir and self._output_dir.exists():
-            if sys.platform == "win32": os.startfile(self._output_dir)
+            if sys.platform == "win32":
+                os.startfile(self._output_dir)
             elif sys.platform == "darwin":
                 subprocess.Popen(["open", str(self._output_dir)])
-            else: subprocess.Popen(["xdg-open", str(self._output_dir)])
+            else:
+                subprocess.Popen(["xdg-open", str(self._output_dir)])
         else:
-            messagebox.showinfo("No output yet",
-                                "Run the analysis first.", parent=self)
+            messagebox.showinfo("No output yet", "Run the analysis first.", parent=self)
 
 
-# ════════════════════════════════════════════════════════════════════════
 def run_gui():
     IL2CPPStudio().mainloop()
 
