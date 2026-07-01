@@ -13,12 +13,7 @@ from pathlib import Path
 from typing import Callable, Optional
 
 
-_INSTRUCTIONS = (
-    "You are receiving a complete dump of a Unity game screen. "
-    "Use the sprites, strings, component data, and method signatures below "
-    "to reconstruct this UI screen in [TARGET_FRAMEWORK]. "
-    "Maintain exact layout, colors, text, and button placement as described."
-)
+_DEFAULT_FRAMEWORK = "Flutter"
 
 
 class AIExporter:
@@ -45,11 +40,14 @@ class AIExporter:
         Searches extracted assets and method maps for anything matching
         screen_name (case-insensitive) and produces a folder containing:
 
-        - SCREEN_REPORT.md
+        - SCREEN_REPORT.md (with agent prompt + layout table)
         - sprites/ (copies of matching sprite PNGs)
         - strings.json
         - components.json
         - methods.json
+        - {screen_name}_PREVIEW.png (visual reference)
+        - {screen_name}_tokens.json (design tokens)
+        - MISSING_ASSETS.md (placeholder guidance)
 
         Returns the path to the screen output directory.
         """
@@ -99,12 +97,32 @@ class AIExporter:
             encoding="utf-8",
         )
 
-        # 5. Generate SCREEN_REPORT.md
+        # 5. Load UI screen JSON if available (for layout + tokens + preview)
+        screen_json = self._load_screen_json(screen_name, extracted_assets_dir)
+        canvas_size = screen_json.get("canvas_size", {"width": 1920, "height": 1080}) if screen_json else {"width": 1920, "height": 1080}
+        element_count = len(screen_json.get("elements", [])) if screen_json else 0
+
+        # 6. Render preview image
+        if screen_json:
+            self._render_preview(screen_json, screen_name, screen_dir, extracted_assets_dir)
+
+        # 7. Extract and write design tokens
+        if screen_json:
+            self._write_tokens(screen_json, screen_name, screen_dir, extracted_assets_dir)
+
+        # 8. Generate SCREEN_REPORT.md (with dynamic prompt + layout table)
+        framework = self._read_framework()
         report_path = screen_dir / "SCREEN_REPORT.md"
         self._write_screen_report(
-            report_path, screen_name, copied_sprites, strings, components, methods
+            report_path, screen_name, copied_sprites, strings, components,
+            methods, screen_json, canvas_size, element_count, framework,
         )
         self._log(f"  Report written: {report_path}")
+
+        # 9. Generate MISSING_ASSETS.md
+        self._write_missing_assets(
+            screen_name, screen_dir, screen_json, components,
+        )
 
         return screen_dir
 
@@ -387,8 +405,15 @@ class AIExporter:
         strings: dict[str, str],
         components: list[dict],
         methods: list[dict],
+        screen_json: Optional[dict] = None,
+        canvas_size: Optional[dict] = None,
+        element_count: int = 0,
+        framework: str = _DEFAULT_FRAMEWORK,
     ) -> None:
         """Write the SCREEN_REPORT.md for a single screen."""
+        if canvas_size is None:
+            canvas_size = {"width": 1920, "height": 1080}
+
         lines: list[str] = []
         lines.append(f"# Screen: {screen_name}")
         lines.append("")
@@ -396,14 +421,24 @@ class AIExporter:
         lines.append("")
         lines.append("---")
         lines.append("")
-        lines.append("## Instructions for AI Agent")
-        lines.append("")
-        lines.append(_INSTRUCTIONS)
-        lines.append("")
 
-        # Sprites
+        # Dynamic agent prompt at the top
+        lines.append(self._build_agent_prompt(
+            screen_name, canvas_size, framework, element_count,
+        ))
+        lines.append("")
         lines.append("---")
         lines.append("")
+
+        # Layout table (framework-ready coordinates)
+        if screen_json:
+            layout_lines = self._build_layout_table(screen_json, canvas_size)
+            lines.extend(layout_lines)
+            lines.append("")
+            lines.append("---")
+            lines.append("")
+
+        # Sprites
         lines.append("## Sprites")
         lines.append("")
         if sprite_paths:
@@ -451,6 +486,19 @@ class AIExporter:
             lines.append("*No matching methods found.*")
         lines.append("")
 
+        # Attached files reference
+        lines.append("---")
+        lines.append("")
+        lines.append("## Attached Files")
+        lines.append("")
+        lines.append(f"- `{screen_name}_PREVIEW.png` — visual reference, use it to verify your output")
+        lines.append(f"- `{screen_name}_tokens.json` — all colors, font sizes, and spacing values")
+        lines.append(f"- `sprites/` — all sprite PNGs referenced in this screen")
+        lines.append(f"- `strings.json` — all text strings")
+        lines.append(f"- `components.json` — raw Unity component data")
+        lines.append(f"- `MISSING_ASSETS.md` — assets that could not be found (use placeholders)")
+        lines.append("")
+
         report_path.write_text("\n".join(lines), encoding="utf-8")
 
     def _write_index(self, index_path: Path, entries: list[dict]) -> None:
@@ -478,3 +526,236 @@ class AIExporter:
         lines.append("")
 
         index_path.write_text("\n".join(lines), encoding="utf-8")
+
+    # ── New helpers for upgraded export ────────────────────────────────
+
+    @staticmethod
+    def _build_agent_prompt(
+        screen_name: str,
+        canvas_size: dict,
+        framework: str,
+        element_count: int,
+    ) -> str:
+        """Build a detailed, dynamic agent instruction prompt."""
+        cw = canvas_size.get("width", 1920)
+        ch = canvas_size.get("height", 1080)
+        return (
+            f"## Agent Instructions\n"
+            f"You are implementing the **{screen_name}** screen of a mobile game UI.\n"
+            f"Target framework: **{framework}**\n"
+            f"Canvas size: **{cw} x {ch} px**\n"
+            f"Total elements to implement: **{element_count}**\n"
+            f"\n"
+            f"### Rules - follow all of them exactly:\n"
+            f"1. Implement EVERY element listed in the Layout table below. Do not skip any.\n"
+            f"2. Use the \"Left%\" and \"Top%\" columns for positioning (percentage-based layout).\n"
+            f"3. Use the \"Width%\" and \"Height%\" columns for sizing.\n"
+            f"4. Use ONLY the sprite files listed in `asset_manifest.sprites_used` - no placeholders.\n"
+            f"5. Use ONLY the font files listed in `asset_manifest.fonts_used`.\n"
+            f"6. Use the EXACT hex color codes from `design_tokens.json`.\n"
+            f"7. Every Button must have a named handler stub: `on_{{button_name}}_pressed`.\n"
+            f"8. Every Text element must use the EXACT string from the JSON - do not paraphrase.\n"
+            f"9. Implement as a single self-contained component/widget file.\n"
+            f"10. At the end of your response, list every element and confirm it was implemented.\n"
+            f"\n"
+            f"### Coordinate system note:\n"
+            f"- All positions in the Layout table are already converted to top-left origin, Y-down.\n"
+            f"- Percentages are relative to canvas size ({cw}x{ch}).\n"
+            f"- Use these percentages directly in your layout (Positioned, Stack, absolute CSS, etc.)\n"
+            f"\n"
+            f"### Files attached to this report:\n"
+            f"- `{screen_name}_PREVIEW.png` - visual reference, use it to verify your output\n"
+            f"- `{screen_name}_tokens.json` - all colors, font sizes, and spacing values\n"
+            f"- `sprites/` - all sprite PNGs referenced in this screen\n"
+            f"- `strings.json` - all text strings\n"
+            f"- `components.json` - raw Unity component data"
+        )
+
+    @staticmethod
+    def _to_pixel_coords(element: dict, canvas_size: dict) -> dict:
+        """Convert a single element's Unity coords to pixel layout values."""
+        pos = element.get("position", {"x": 0, "y": 0})
+        size = element.get("size", {"width": 0, "height": 0})
+        cw = canvas_size.get("width", 1)
+        ch = canvas_size.get("height", 1)
+
+        left = cw / 2 + pos.get("x", 0) - size.get("width", 0) / 2
+        top = ch / 2 - pos.get("y", 0) - size.get("height", 0) / 2
+        w = size.get("width", 0)
+        h = size.get("height", 0)
+
+        return {
+            "left": round(left, 1),
+            "top": round(top, 1),
+            "width": round(w, 1),
+            "height": round(h, 1),
+            "left_pct": round(left / cw * 100, 1) if cw else 0,
+            "top_pct": round(top / ch * 100, 1) if ch else 0,
+            "width_pct": round(w / cw * 100, 1) if cw else 0,
+            "height_pct": round(h / ch * 100, 1) if ch else 0,
+        }
+
+    @classmethod
+    def _build_layout_table(
+        cls, screen_json: dict, canvas_size: dict
+    ) -> list[str]:
+        """Build the markdown layout table with framework-ready coordinates."""
+        elements = screen_json.get("elements", [])
+        cw = canvas_size.get("width", 0)
+        ch = canvas_size.get("height", 0)
+
+        lines: list[str] = []
+        lines.append(f"## Layout (Framework-Ready Coordinates)")
+        lines.append("")
+        lines.append(f"Canvas: {int(cw)} x {int(ch)} px")
+        lines.append("")
+        lines.append(
+            "| Element | Type | Left | Top | Width | Height | Left% | Top% | Width% | Height% |"
+        )
+        lines.append(
+            "|---------|------|------|-----|-------|--------|-------|------|--------|---------|"
+        )
+
+        for el in elements:
+            name = el.get("name", el.get("id", "?"))
+            el_type = el.get("type", "?")
+            coords = cls._to_pixel_coords(el, canvas_size)
+            lines.append(
+                f"| {name} | {el_type} "
+                f"| {int(coords['left'])} | {int(coords['top'])} "
+                f"| {int(coords['width'])} | {int(coords['height'])} "
+                f"| {coords['left_pct']}% | {coords['top_pct']}% "
+                f"| {coords['width_pct']}% | {coords['height_pct']}% |"
+            )
+
+        return lines
+
+    def _load_screen_json(
+        self, screen_name: str, extracted_assets_dir: Path
+    ) -> Optional[dict]:
+        """Try to load the UI screen JSON from UI_Screens/."""
+        ui_dir = extracted_assets_dir / "UI_Screens"
+        if not ui_dir.exists():
+            return None
+        for json_path in ui_dir.rglob(f"{screen_name}.json"):
+            try:
+                return json.loads(json_path.read_text(encoding="utf-8"))
+            except Exception:
+                pass
+        return None
+
+    def _render_preview(
+        self,
+        screen_json: dict,
+        screen_name: str,
+        screen_dir: Path,
+        extracted_assets_dir: Path,
+    ) -> None:
+        """Render a preview PNG and save it alongside the export."""
+        try:
+            from il2cpp_recovery_studio.ai_export.renderer import UIPreviewRenderer
+            renderer = UIPreviewRenderer(extracted_assets_dir, self._log)
+            preview_path = screen_dir / f"{screen_name}_PREVIEW.png"
+            renderer.render_screen(screen_json, preview_path)
+        except Exception as exc:
+            self._log(f"  [Preview] Render failed: {exc}")
+
+    def _write_tokens(
+        self,
+        screen_json: dict,
+        screen_name: str,
+        screen_dir: Path,
+        extracted_assets_dir: Path,
+    ) -> None:
+        """Extract design tokens and write them to the export folder."""
+        try:
+            from il2cpp_recovery_studio.ai_export.token_extractor import (
+                DesignTokenExtractor,
+            )
+            extractor = DesignTokenExtractor(extracted_assets_dir)
+            tokens = extractor.extract_for_screen(screen_json)
+            tokens_path = screen_dir / f"{screen_name}_tokens.json"
+            tokens_path.write_text(
+                json.dumps(tokens, indent=2, ensure_ascii=False),
+                encoding="utf-8",
+            )
+            self._log(f"  Tokens written: {tokens_path.name}")
+        except Exception as exc:
+            self._log(f"  [Tokens] Extraction failed: {exc}")
+
+    def _write_missing_assets(
+        self,
+        screen_name: str,
+        screen_dir: Path,
+        screen_json: Optional[dict],
+        components: list[dict],
+    ) -> None:
+        """Generate MISSING_ASSETS.md for assets that could not be found."""
+        missing_sprites: list[tuple[str, str]] = []
+        missing_fonts: list[tuple[str, str]] = []
+
+        # Scan screen_json elements
+        if screen_json:
+            for el in screen_json.get("elements", []):
+                el_name = el.get("name", el.get("id", "?"))
+                sprite = el.get("sprite_file", "") or el.get("sprite_name", "")
+                if sprite and (sprite.startswith("MISSING:") or not Path(sprite).is_file()):
+                    missing_sprites.append((sprite, el_name))
+                for fkey in ("font_file", "label_font_file"):
+                    ff = el.get(fkey, "")
+                    if ff and (ff.startswith("MISSING:") or not Path(ff).is_file()):
+                        missing_fonts.append((ff, el_name))
+
+        # Also scan components for sprite references
+        for comp in components:
+            comp_name = comp.get("name", comp.get("script_name", "?"))
+            sprite = comp.get("sprite_name", "")
+            if sprite and (sprite.startswith("MISSING:") or not Path(sprite).is_file()):
+                entry = (sprite, comp_name)
+                if entry not in missing_sprites:
+                    missing_sprites.append(entry)
+
+        if not missing_sprites and not missing_fonts:
+            return
+
+        lines: list[str] = []
+        lines.append(f"# Missing Assets - {screen_name}")
+        lines.append("")
+        lines.append(
+            "The following assets were referenced in the UI hierarchy but could not be found "
+            "in the extracted output. The agent should use a placeholder color for these."
+        )
+        lines.append("")
+
+        if missing_sprites:
+            lines.append("## Missing Sprites")
+            lines.append("")
+            for path, el_name in missing_sprites:
+                lines.append(f"- `{path}`  <- referenced by element \"{el_name}\"")
+            lines.append("")
+
+        if missing_fonts:
+            lines.append("## Missing Fonts")
+            lines.append("")
+            for path, el_name in missing_fonts:
+                lines.append(f"- `{path}`  <- used by element \"{el_name}\"")
+            lines.append("")
+
+        missing_path = screen_dir / "MISSING_ASSETS.md"
+        missing_path.write_text("\n".join(lines), encoding="utf-8")
+        self._log(f"  Missing assets report: {missing_path.name}")
+
+    def _read_framework(self) -> str:
+        """Read the AI export framework from .gui_config.json."""
+        config_path = (
+            Path(__file__).resolve().parent.parent.parent / ".gui_config.json"
+        )
+        if config_path.exists():
+            try:
+                cfg = json.loads(config_path.read_text(encoding="utf-8"))
+                fw = cfg.get("ai_export_framework", "")
+                if fw:
+                    return fw
+            except Exception:
+                pass
+        return _DEFAULT_FRAMEWORK

@@ -910,7 +910,7 @@ def main(apk_path: Path, output_dir: Path, _log=None):
     print(f"\n[4/6] PHASE 2.5: Extracting UI Screen Hierarchies...")
     try:
         from il2cpp_recovery_studio.ui_extractor.hierarchy import UIHierarchyExtractor
-        ui_ext = UIHierarchyExtractor(output_dir=OUT, log_callback=print)
+        ui_ext = UIHierarchyExtractor(output_dir=OUT, extracted_assets_dir=OUT, log_callback=print)
         total_canvas = 0
         for bi, bname in enumerate(bundle_files):
             bshort = Path(bname).name[:50]

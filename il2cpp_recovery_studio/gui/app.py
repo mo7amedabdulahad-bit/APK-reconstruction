@@ -407,7 +407,20 @@ class App(tk.Tk):
         ui_btn_frame = tk.Frame(left, bg=_BG)
         ui_btn_frame.pack(fill=tk.X, padx=4, pady=4)
         ttk.Button(ui_btn_frame, text="Refresh", command=self._refresh_ui_tree).pack(side=tk.LEFT, padx=(0, 4))
-        ttk.Button(ui_btn_frame, text="Open in Explorer", command=self._open_ui_folder).pack(side=tk.LEFT)
+        ttk.Button(ui_btn_frame, text="Open Folder", command=self._open_ui_folder).pack(side=tk.LEFT, padx=(0, 4))
+
+        tk.Label(ui_btn_frame, text="Framework:", bg=_BG, fg=_FG_DIM,
+                 font=("Segoe UI", 8)).pack(side=tk.LEFT, padx=(8, 2))
+        self._framework_var = tk.StringVar(value="Flutter")
+        framework_combo = ttk.Combobox(
+            ui_btn_frame, textvariable=self._framework_var, width=14,
+            values=["Flutter", "React Native", "HTML/CSS", "SwiftUI", "Jetpack Compose"],
+            state="readonly",
+        )
+        framework_combo.pack(side=tk.LEFT, padx=(0, 4))
+
+        ttk.Button(ui_btn_frame, text="Copy Agent Prompt",
+                    command=self._copy_agent_prompt).pack(side=tk.LEFT)
 
         # Right pane: JSON + summary
         right = tk.Frame(paned, bg=_BG)
@@ -480,39 +493,29 @@ class App(tk.Tk):
         self._ui_summary_text.configure(state=tk.DISABLED)
 
     def _build_ui_summary(self, data: dict) -> str:
-        elements = 0
-        texts = []
-        sprites = []
-        buttons = []
+        elements = data.get("elements", [])
+        manifest = data.get("asset_manifest", {})
 
-        def walk(node):
-            nonlocal elements
-            elements += 1
-            for comp in node.get("components", []):
-                t = comp.get("type", "")
-                if t == "Text":
-                    txt = comp.get("text", "")
-                    if txt:
-                        texts.append(txt)
-                elif t == "Image":
-                    sp = comp.get("sprite_name", "")
-                    if sp:
-                        sprites.append(sp)
-                elif t == "Button":
-                    name = node.get("name", "")
-                    buttons.append(name)
-            for child in node.get("children", []):
-                walk(child)
+        texts = manifest.get("texts_found", [])
+        sprites = manifest.get("sprites_used", [])
+        fonts = manifest.get("fonts_used", [])
+        colors = manifest.get("colors_used", [])
 
-        for child in data.get("children", []):
-            walk(child)
+        missing = []
+        for s in sprites:
+            if s.startswith("MISSING:"):
+                missing.append(s)
+        for f in fonts:
+            if f.startswith("MISSING:"):
+                missing.append(f)
 
         lines = [
             f"Screen: {data.get('screen_name', '?')}",
             f"Bundle: {data.get('source_bundle', '?')}",
-            f"Total elements: {elements}",
+            f"Canvas size: {data.get('canvas_size', {})}",
+            f"Total elements: {len(elements)}",
             "",
-            f"Text strings ({len(texts)}):",
+            f"Texts found ({len(texts)}):",
         ]
         for t in texts[:50]:
             lines.append(f"  - {t}")
@@ -520,16 +523,28 @@ class App(tk.Tk):
             lines.append(f"  ... and {len(texts) - 50} more")
 
         lines.append("")
-        lines.append(f"Sprite references ({len(sprites)}):")
+        lines.append(f"Sprites used ({len(sprites)}):")
         for s in sprites[:50]:
             lines.append(f"  - {s}")
         if len(sprites) > 50:
             lines.append(f"  ... and {len(sprites) - 50} more")
 
         lines.append("")
-        lines.append(f"Buttons ({len(buttons)}):")
-        for b in buttons[:30]:
-            lines.append(f"  - {b}")
+        lines.append(f"Fonts used ({len(fonts)}):")
+        for f in fonts[:30]:
+            lines.append(f"  - {f}")
+
+        if colors:
+            lines.append("")
+            lines.append(f"Colors ({len(colors)}):")
+            for c in colors[:20]:
+                lines.append(f"  - {c}")
+
+        if missing:
+            lines.append("")
+            lines.append(f"Missing assets ({len(missing)}):")
+            for m in missing[:20]:
+                lines.append(f"  - {m}")
 
         return "\n".join(lines)
 
@@ -539,6 +554,48 @@ class App(tk.Tk):
         ui_dir = self._output_dir / "UI_Screens"
         if ui_dir.exists():
             os.startfile(str(ui_dir))
+
+    def _copy_agent_prompt(self):
+        sel = self._ui_tree.selection()
+        if not sel:
+            messagebox.showinfo("No Selection", "Select a screen JSON file from the tree first.")
+            return
+        item = sel[0]
+        vals = self._ui_tree.item(item, "values")
+        if not vals:
+            return
+        jpath = Path(vals[0])
+        if not jpath.exists():
+            return
+        try:
+            data = json.loads(jpath.read_text(encoding="utf-8"))
+        except Exception:
+            return
+
+        framework = self._framework_var.get()
+        json_str = json.dumps(data, indent=2, ensure_ascii=False)
+
+        prompt = (
+            f"Implement this UI screen in {framework}. Here is the complete "
+            f"screen specification:\n\n```json\n{json_str}\n```\n\n"
+            "Rules:\n"
+            "- Every element in the JSON must be implemented. Do not skip any.\n"
+            "- Use the sprite_file paths exactly as listed in asset_manifest.sprites_used\n"
+            "- Use the font_file paths exactly as listed in asset_manifest.fonts_used\n"
+            "- Match position, size, color, and anchor values exactly\n"
+            "- Every Button element must have a named onPress handler stub\n"
+            "- Every Text element must use the exact text string from the JSON\n"
+            "- Output a single self-contained component file"
+        )
+
+        self.clipboard_clear()
+        self.clipboard_append(prompt)
+        self._set_status("Agent prompt copied to clipboard.")
+        messagebox.showinfo(
+            "Copied",
+            f"AI agent prompt ({framework}) copied to clipboard.\n"
+            f"Length: {len(prompt):,} characters",
+        )
 
     def _start_ui_extract(self):
         if not self._apk_path:
@@ -555,7 +612,11 @@ class App(tk.Tk):
         def _run():
             from il2cpp_recovery_studio.ui_extractor.hierarchy import UIHierarchyExtractor
             import zipfile, UnityPy
-            ui_ext = UIHierarchyExtractor(output_dir=self._output_dir, log_callback=self._log)
+            ui_ext = UIHierarchyExtractor(
+                output_dir=self._output_dir,
+                extracted_assets_dir=self._output_dir,
+                log_callback=self._log,
+            )
             apk = self._apk_path
             total = 0
             with zipfile.ZipFile(str(apk), 'r') as z:
