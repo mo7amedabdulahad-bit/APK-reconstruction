@@ -171,14 +171,20 @@ class UIHierarchyExtractor:
         canvas_size = self._determine_canvas_size(canvas_comp, go_data)
         bg_color = self._read_canvas_background(go_data)
 
+        # Build the GameObject index ONCE before walking the tree
+        go_index = self._index_game_objects(env)
+
         elements: list[dict] = []
         counter = [0]
 
         self._walk_tree(
-            go_data, env, elements, counter, parent_id=None, layer_order=0
+            go_data, go_index, elements, counter, parent_id=None, layer_order=0
         )
 
         manifest = self._collect_asset_manifest(elements)
+
+        # Write resolved sprite_file paths back into each element
+        self._resolve_sprite_paths(elements)
 
         return {
             "screen_name": screen_name,
@@ -190,24 +196,32 @@ class UIHierarchyExtractor:
         }
 
     def _determine_canvas_size(self, canvas_comp, go_data) -> dict:
-        """Try to infer canvas pixel dimensions."""
-        scaler_ref = getattr(canvas_comp, "m_UiScaleMode", None)
-        ref_res = getattr(canvas_comp, "m_ReferenceResolution", None)
-        if ref_res is not None:
-            w = _safe_float(getattr(ref_res, "x", None), 1920)
-            h = _safe_float(getattr(ref_res, "y", None), 1080)
-            return {"width": w, "height": h}
+        """Try to infer canvas pixel dimensions.
 
+        The reference resolution lives on the CanvasScaler MonoBehaviour,
+        not on the Canvas component itself.
+        """
+        # Try CanvasScaler MonoBehaviour first
+        scaler = self._find_mono_by_script(go_data, "CanvasScaler")
+        if scaler is not None:
+            ref_res = getattr(scaler, "m_ReferenceResolution", None)
+            if ref_res is not None:
+                return {
+                    "width": _safe_float(getattr(ref_res, "x", None), 1080),
+                    "height": _safe_float(getattr(ref_res, "y", None), 1920),
+                }
+
+        # Fallback to RectTransform sizeDelta
         rt = self._get_rect_transform(go_data)
         if rt is not None:
             sd = getattr(rt, "m_SizeDelta", None)
             if sd is not None:
                 return {
-                    "width": _safe_float(getattr(sd, "x", None), 1920),
-                    "height": _safe_float(getattr(sd, "y", None), 1080),
+                    "width": _safe_float(getattr(sd, "x", None), 1080),
+                    "height": _safe_float(getattr(sd, "y", None), 1920),
                 }
 
-        return {"width": 1920, "height": 1080}
+        return {"width": 1080, "height": 1920}
 
     def _read_canvas_background(self, go_data) -> dict:
         """Read a background colour from the Canvas GameObject if available."""
@@ -235,7 +249,7 @@ class UIHierarchyExtractor:
     def _walk_tree(
         self,
         go_data,
-        env,
+        go_index: dict[int, object],
         elements: list[dict],
         counter: list[int],
         parent_id: Optional[str],
@@ -293,22 +307,27 @@ class UIHierarchyExtractor:
         if comp_data:
             element.update(comp_data)
 
+        # For Button elements, capture label from child Text component
+        if comp_type == "Button":
+            label = self._find_button_label(go_data, go_index)
+            if label:
+                element["label"] = label
+
         elements.append(element)
 
-        # Discover child GameObjects
-        child_ids = self._get_child_ids(go_data)
-        go_by_path_id = self._index_game_objects(env)
+        # Discover child GameObjects using the pre-built index
+        child_ids = self._get_child_ids(go_data, go_index)
 
         child_element_ids: list[str] = []
         for order_offset, child_path_id in enumerate(child_ids):
-            child_go = go_by_path_id.get(child_path_id)
+            child_go = go_index.get(child_path_id)
             if child_go is None:
                 continue
             child_el_id = f"el_{counter[0]:03d}"
             child_element_ids.append(child_el_id)
             self._walk_tree(
                 child_go,
-                env,
+                go_index,
                 elements,
                 counter,
                 parent_id=node_id,
@@ -318,6 +337,39 @@ class UIHierarchyExtractor:
         element["children"] = child_element_ids
 
     # ── Component helpers ────────────────────────────────────────────────
+
+    def _find_button_label(self, go_data, go_index: dict[int, object]) -> str:
+        """Scan child GameObjects for a Text component and return its m_Text.
+
+        Unity Buttons use a child Text element for their label.  We walk the
+        immediate children of the Button's RectTransform looking for a
+        GameObject that has a Text MonoBehaviour.
+        """
+        rt = self._get_rect_transform(go_data)
+        if rt is None:
+            return ""
+        children_refs = getattr(rt, "m_Children", None)
+        if not children_refs:
+            return ""
+
+        for child_ref in children_refs:
+            try:
+                child_rt = child_ref.read()
+                go_ref = getattr(child_rt, "m_GameObject", None)
+                if go_ref is None:
+                    continue
+                child_go_id = getattr(go_ref, "path_id", None)
+                if child_go_id is None or child_go_id not in go_index:
+                    continue
+                child_go = go_index[child_go_id]
+                text_mono = self._find_mono_by_script(child_go, "Text")
+                if text_mono is not None:
+                    txt = getattr(text_mono, "m_Text", None)
+                    if txt:
+                        return _safe_str(txt)
+            except Exception:
+                pass
+        return ""
 
     def _read_primary_component(self, go_data) -> tuple[str, Optional[dict]]:
         """Return the most meaningful UI component type and its dict."""
@@ -433,19 +485,30 @@ class UIHierarchyExtractor:
 
     # ── Child / object index helpers ────────────────────────────────────
 
-    def _get_child_ids(self, go_data) -> list[int]:
-        """Get the path_ids of child GameObjects via RectTransform.m_Children."""
+    def _get_child_ids(self, go_data, go_index: dict[int, object]) -> list[int]:
+        """Get the path_ids of child GameObjects via RectTransform.m_Children.
+
+        m_Children holds RectTransform refs, not GameObject refs.  We read
+        each child RectTransform and follow its m_GameObject back to the
+        owning GameObject's path_id.
+        """
         rt = self._get_rect_transform(go_data)
         if rt is None:
             return []
         children_refs = getattr(rt, "m_Children", None)
-        if children_refs is None:
+        if not children_refs:
             return []
         ids = []
         for child_ref in children_refs:
-            cid = getattr(child_ref, "path_id", None)
-            if cid:
-                ids.append(cid)
+            try:
+                child_rt = child_ref.read()
+                go_ref = getattr(child_rt, "m_GameObject", None)
+                if go_ref is not None:
+                    go_id = getattr(go_ref, "path_id", None)
+                    if go_id:
+                        ids.append(go_id)
+            except Exception:
+                pass
         return ids
 
     def _index_game_objects(self, env) -> dict[int, object]:
@@ -459,6 +522,13 @@ class UIHierarchyExtractor:
         return idx
 
     # ── Asset manifest ──────────────────────────────────────────────────
+
+    def _resolve_sprite_paths(self, elements: list[dict]) -> None:
+        """Write resolved sprite_file paths back into each element."""
+        for el in elements:
+            raw_name = el.get("sprite_name", "") or el.get("texture_name", "")
+            if raw_name:
+                el["sprite_file"] = self._linker.find_sprite(raw_name)
 
     def _collect_asset_manifest(self, elements: list[dict]) -> dict:
         sprites_used: list[str] = []

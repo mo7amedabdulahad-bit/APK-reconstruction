@@ -408,7 +408,8 @@ class ComponentReader:
         raw_fields: dict = {}
         if hasattr(data, "__dict__"):
             for key, val in data.__dict__.items():
-                if key.startswith(("m_", "_")):
+                # Skip Python dunder/internal attributes, keep Unity m_ fields
+                if key.startswith("__"):
                     continue
                 if isinstance(val, float):
                     raw_fields[key] = _safe_float(val)
