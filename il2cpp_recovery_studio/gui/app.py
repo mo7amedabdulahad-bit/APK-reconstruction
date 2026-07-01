@@ -1,17 +1,14 @@
 #!/usr/bin/env python3
 """
-IL2CPP Recovery Studio — app.py v10
+IL2CPP Recovery Studio — app.py v11
 
-Changes vs v9:
-- apktool: Popen + streaming stdout/stderr → lines appear in log live.
-  10-minute hard timeout; process is killed if it exceeds it.
-- Unity: also scans raw/ for .bundle / .ab files and loads each via UnityPy.
-- Unity: much wider type coverage — VideoClip, AnimationClip, AnimatorController,
-  Cubemap, Sprite (explicit), plus a JSON fallback for any named object whose
-  type doesn't match a known handler.
-- Scene/UI dump limit raised to 20 000 entries per file.
-- apktool target APK is always the main APK inside the XAPK, not the outer
-  XAPK file itself (apktool cannot decompile XAPK directly).
+Changes vs v10:
+- Windows Java discovery: checks PATH, JAVA_HOME, common install folders, and
+  registry via `reg query`; uses full java.exe path when found.
+- apktool.bat now uses resolved java path, not bare `java`.
+- AudioClip fallback: writes raw m_AudioData when samples dict is empty.
+- Sprite naming: prefers m_Name/name/path_id and auto-deduplicates filenames.
+- Report now includes raw/ in the HTML summary.
 """
 from __future__ import annotations
 
@@ -51,7 +48,7 @@ APKTOOL_URL = (
     f"v{APKTOOL_VER}/apktool_{APKTOOL_VER}.jar"
 )
 TOOLS_DIR = Path(__file__).parent / "tools"
-APKTOOL_TIMEOUT = 600  # 10 minutes
+APKTOOL_TIMEOUT = 600
 
 
 def _count_files(path: Path) -> int:
@@ -67,6 +64,76 @@ def _wipe_dir(path: Path):
 def _safe_name(raw: str, fallback: str = "unnamed") -> str:
     s = "".join(c if c.isalnum() or c in " _-." else "_" for c in str(raw)).strip()
     return s or fallback
+
+
+def _unique_path(dest: Path, stem: str, ext: str) -> Path:
+    p = dest / f"{stem}{ext}"
+    if not p.exists():
+        return p
+    i = 2
+    while True:
+        p = dest / f"{stem}_{i}{ext}"
+        if not p.exists():
+            return p
+        i += 1
+
+
+def _find_java_from_registry() -> Path | None:
+    if sys.platform != "win32":
+        return None
+    queries = [
+        r'HKLM\SOFTWARE\JavaSoft\JDK',
+        r'HKLM\SOFTWARE\JavaSoft\Java Development Kit',
+        r'HKLM\SOFTWARE\JavaSoft\JRE',
+        r'HKLM\SOFTWARE\JavaSoft\Java Runtime Environment',
+        r'HKLM\SOFTWARE\WOW6432Node\JavaSoft\JDK',
+        r'HKLM\SOFTWARE\WOW6432Node\JavaSoft\Java Development Kit',
+        r'HKLM\SOFTWARE\WOW6432Node\JavaSoft\JRE',
+        r'HKLM\SOFTWARE\WOW6432Node\JavaSoft\Java Runtime Environment',
+    ]
+    for root in queries:
+        try:
+            r = subprocess.run(["reg", "query", root, "/s"], capture_output=True, text=True, encoding="utf-8", errors="replace")
+            if r.returncode != 0:
+                continue
+            for line in r.stdout.splitlines():
+                if "JavaHome" in line:
+                    parts = line.split()
+                    if parts:
+                        home = Path(parts[-1].strip())
+                        cand = home / "bin" / "java.exe"
+                        if cand.exists():
+                            return cand
+        except Exception:
+            pass
+    return None
+
+
+def _find_java() -> Path | str | None:
+    j = shutil.which("java")
+    if j:
+        return j
+    java_home = os.environ.get("JAVA_HOME")
+    if java_home:
+        cand = Path(java_home) / "bin" / ("java.exe" if sys.platform == "win32" else "java")
+        if cand.exists():
+            return cand
+    if sys.platform == "win32":
+        reg = _find_java_from_registry()
+        if reg:
+            return reg
+        roots = [
+            Path(r"C:\Program Files\Java"),
+            Path(r"C:\Program Files\Eclipse Adoptium"),
+            Path(r"C:\Program Files\AdoptOpenJDK"),
+            Path(r"C:\Program Files\Microsoft"),
+            Path(r"C:\Program Files (x86)\Java"),
+        ]
+        for root in roots:
+            if root.exists():
+                for cand in sorted(root.rglob("java.exe"), reverse=True):
+                    return cand
+    return None
 
 
 def _find_apktool() -> tuple[str | None, Path | None]:
@@ -88,6 +155,7 @@ def _install_apktool(log_fn) -> tuple[str | None, Path | None]:
         TOOLS_DIR.mkdir(parents=True, exist_ok=True)
         jar = TOOLS_DIR / "apktool.jar"
         bat = TOOLS_DIR / "apktool.bat"
+        java_cmd = _find_java()
         if not jar.exists():
             log_fn(f"Downloading apktool {APKTOOL_VER} (~22 MB) …", "INFO")
             tmp = jar.with_suffix(".tmp")
@@ -119,13 +187,15 @@ def _install_apktool(log_fn) -> tuple[str | None, Path | None]:
                 return None, None
         else:
             log_fn("apktool.jar already cached.", "SKIP")
-        if not bat.exists():
-            bat.write_text(f'@echo off\ncall java -jar "{jar}" %*\n', encoding="ascii")
+        if java_cmd and not bat.exists():
+            bat.write_text(f'@echo off\ncall "{java_cmd}" -jar "{jar}" %*\n', encoding="utf-8")
             log_fn(f"apktool.bat written → {bat}", "OK")
-        r = subprocess.run(["java", "-version"], capture_output=True, text=True)
-        if r.returncode != 0:
-            log_fn("Java not found — install JRE/JDK 8+.", "WARN")
-            return None, jar
+        elif not bat.exists():
+            bat.write_text(f'@echo off\ncall java -jar "{jar}" %*\n', encoding="utf-8")
+            log_fn(f"apktool.bat written → {bat}", "OK")
+        if not java_cmd:
+            log_fn("Java not found — install JRE/JDK 8+ or set JAVA_HOME.", "WARN")
+            return str(bat) if bat.exists() else None, jar
         return str(bat), jar
     except Exception as e:
         log_fn(f"apktool install failed: {e}", "ERROR")
@@ -189,16 +259,15 @@ class IL2CPPStudio(ctk.CTk):
         self._running = False
         self._force_refresh = ctk.BooleanVar(value=True)
         self._ops = {
-            "extract_apk":     ctk.BooleanVar(value=True),
-            "extract_assets":  ctk.BooleanVar(value=True),
-            "extract_il2cpp":  ctk.BooleanVar(value=True),
+            "extract_apk": ctk.BooleanVar(value=True),
+            "extract_assets": ctk.BooleanVar(value=True),
+            "extract_il2cpp": ctk.BooleanVar(value=True),
             "decompile_smali": ctk.BooleanVar(value=False),
-            "gen_report":      ctk.BooleanVar(value=True),
+            "gen_report": ctk.BooleanVar(value=True),
         }
         self._build_ui()
         self.after(200, self._animate_header)
 
-    # ── UI ────────────────────────────────────────────────────────
     def _build_ui(self):
         hdr = ctk.CTkFrame(self, fg_color=BG_PANEL, height=66, corner_radius=0)
         hdr.pack(fill="x")
@@ -208,9 +277,11 @@ class IL2CPPStudio(ctk.CTk):
         ctk.CTkLabel(hdr, text="● SYSTEM ONLINE", font=FNT_BODY, text_color=NEON_GREEN).pack(side="right", padx=22)
         body = ctk.CTkFrame(self, fg_color=BG_DEEP)
         body.pack(fill="both", expand=True, padx=12, pady=8)
-        body.columnconfigure(0, weight=5); body.columnconfigure(1, weight=7)
+        body.columnconfigure(0, weight=5)
+        body.columnconfigure(1, weight=7)
         body.rowconfigure(0, weight=1)
-        self._build_left(body); self._build_right(body)
+        self._build_left(body)
+        self._build_right(body)
         bar = ctk.CTkFrame(self, fg_color=BG_PANEL, height=32, corner_radius=0)
         bar.pack(fill="x", side="bottom")
         bar.pack_propagate(False)
@@ -237,11 +308,11 @@ class IL2CPPStudio(ctk.CTk):
         ops_card = SectionCard(left, "⚙  OPERATIONS", NEON_GREEN)
         ops_card.pack(fill="x", pady=(0, 10))
         for key, label, desc in [
-            ("extract_apk",     "📦  Extract APK/XAPK",   "Rebuild raw/ from source"),
-            ("extract_assets",  "🎨  Extract Unity assets","Textures, audio, meshes, bundles, scenes"),
-            ("extract_il2cpp",  "🔍  Parse IL2CPP",         "global-metadata.dat + libil2cpp.so"),
-            ("decompile_smali", "🖥  Decompile Smali",      "Uses apktool, auto-installs if needed"),
-            ("gen_report",      "📝  HTML Report",          "Deep tree summary → report.html"),
+            ("extract_apk", "📦  Extract APK/XAPK", "Rebuild raw/ from source"),
+            ("extract_assets", "🎨  Extract Unity assets", "Textures, audio, meshes, bundles, scenes"),
+            ("extract_il2cpp", "🔍  Parse IL2CPP", "global-metadata.dat + libil2cpp.so"),
+            ("decompile_smali", "🖥  Decompile Smali", "Uses apktool, auto-installs if needed"),
+            ("gen_report", "📝  HTML Report", "Deep tree summary → report.html"),
         ]:
             row = ctk.CTkFrame(ops_card, fg_color="transparent")
             row.pack(fill="x", padx=14, pady=4)
@@ -338,7 +409,6 @@ class IL2CPPStudio(ctk.CTk):
         self._animate_progress()
         threading.Thread(target=self._run_pipeline, args=(ops,), daemon=True).start()
 
-    # ── PIPELINE ──────────────────────────────────────────────────
     def _run_pipeline(self, ops: dict):
         out = self._output_dir
         apk = self._apk_path
@@ -397,7 +467,6 @@ class IL2CPPStudio(ctk.CTk):
                     if _count_files(sdir) > 0:
                         self._log_t(f"smali/ has {_count_files(sdir)} files — reusing.", "SKIP")
                 if _count_files(sdir) == 0:
-                    # apktool must target the main APK, not the outer XAPK
                     target = self._find_main_apk(raw, apk)
                     self._do_apktool(target, sdir)
 
@@ -436,7 +505,6 @@ class IL2CPPStudio(ctk.CTk):
             self._log_t(f"APK → {raw}", "OK")
 
     def _find_main_apk(self, raw: Path, fallback: Path) -> Path:
-        """Return the main APK to pass to apktool (never the outer XAPK)."""
         if fallback.suffix.lower() != ".xapk":
             return fallback
         candidates = sorted(raw.rglob("*.apk"))
@@ -445,17 +513,10 @@ class IL2CPPStudio(ctk.CTk):
                 return c
         return candidates[0] if candidates else fallback
 
-    # ── UNITY ─────────────────────────────────────────────────────
     def _do_unity(self, search_root: Path, out: Path):
         import UnityPy
-
         skip_dirs = {out, out.parent / "il2cpp_meta", out.parent / "smali"}
-
-        # 1. Load each Data/ directory as a whole environment
-        data_dirs = [
-            p for p in search_root.rglob("Data")
-            if p.is_dir() and not any(p.is_relative_to(s) for s in skip_dirs)
-        ]
+        data_dirs = [p for p in search_root.rglob("Data") if p.is_dir() and not any(p.is_relative_to(s) for s in skip_dirs)]
         env_list: list[tuple[str, object]] = []
         if data_dirs:
             for dd in data_dirs:
@@ -479,13 +540,8 @@ class IL2CPPStudio(ctk.CTk):
                     except Exception as e:
                         self._log_t(f"  Skip {p.name}: {e}", "WARN")
 
-        # 2. Also load any .bundle / .ab files found in raw/
         bundle_exts = {".bundle", ".ab", ".assetbundle"}
-        bundles = [
-            p for p in search_root.rglob("*")
-            if p.is_file() and p.suffix.lower() in bundle_exts
-            and not any(p.is_relative_to(s) for s in skip_dirs)
-        ]
+        bundles = [p for p in search_root.rglob("*") if p.is_file() and p.suffix.lower() in bundle_exts and not any(p.is_relative_to(s) for s in skip_dirs)]
         if bundles:
             self._log_t(f"  Found {len(bundles)} bundle file(s) — loading…", "INFO")
         for b in bundles:
@@ -507,14 +563,12 @@ class IL2CPPStudio(ctk.CTk):
             saved, scene_entries, ui_entries = self._dump_env(env, out, label)
             if scene_entries:
                 scene_file = scenes_dir / (_safe_name(label.replace(os.sep, "_").replace("/", "_"), "scene") + ".json")
-                scene_file.write_text(
-                    json.dumps(scene_entries[:20000], indent=2, ensure_ascii=False), encoding="utf-8")
+                scene_file.write_text(json.dumps(scene_entries[:20000], indent=2, ensure_ascii=False), encoding="utf-8")
                 saved += 1
                 total_scene += len(scene_entries)
             if ui_entries:
                 ui_file = ui_dir / (_safe_name(label.replace(os.sep, "_").replace("/", "_"), "ui") + "_ui.json")
-                ui_file.write_text(
-                    json.dumps(ui_entries[:20000], indent=2, ensure_ascii=False), encoding="utf-8")
+                ui_file.write_text(json.dumps(ui_entries[:20000], indent=2, ensure_ascii=False), encoding="utf-8")
                 saved += 1
             self._log_t(f"  {label}: {saved} file(s), {len(scene_entries)} scene, {len(ui_entries)} UI", "OK")
             total_saved += saved
@@ -534,84 +588,78 @@ class IL2CPPStudio(ctk.CTk):
             try:
                 data = obj.read()
                 type_name = obj.type.name
-                raw_name = (getattr(data, "name", None) or
-                            getattr(data, "m_Name", None) or
-                            f"obj_{obj.path_id}")
+                raw_name = (getattr(data, "m_Name", None) or getattr(data, "name", None) or f"obj_{obj.path_id}")
                 safe = _safe_name(str(raw_name), f"obj_{obj.path_id}")
                 dest = out / type_name
                 dest.mkdir(parents=True, exist_ok=True)
 
-                # ── Texture2D / Sprite / Cubemap ──────────────────
                 if hasattr(data, "image") and PILImage:
                     try:
                         img = data.image
                         if img:
-                            p = dest / f"{safe}.png"
-                            if not p.exists():
-                                img.save(str(p))
-                                saved += 1
+                            p = _unique_path(dest, safe, ".png")
+                            img.save(str(p))
+                            saved += 1
                     except Exception:
                         pass
 
-                # ── AudioClip ─────────────────────────────────────
                 elif type_name == "AudioClip":
                     try:
-                        for clip_name, clip_data in data.samples.items():
+                        wrote = False
+                        samples = getattr(data, "samples", {}) or {}
+                        for clip_name, clip_data in samples.items():
                             cs = _safe_name(clip_name, safe)
-                            p = dest / f"{cs}.wav"
-                            if not p.exists():
-                                p.write_bytes(clip_data)
+                            p = _unique_path(dest, cs, ".wav")
+                            p.write_bytes(clip_data)
+                            saved += 1
+                            wrote = True
+                        if not wrote:
+                            raw_audio = getattr(data, "m_AudioData", None)
+                            if raw_audio:
+                                p = _unique_path(dest, safe, ".bin")
+                                p.write_bytes(bytes(raw_audio))
                                 saved += 1
                     except Exception:
                         pass
 
-                # ── TextAsset / MonoBehaviour (text script) ───────
                 elif hasattr(data, "m_Script") and data.m_Script:
-                    p = dest / f"{safe}.txt"
-                    if not p.exists():
-                        content = data.m_Script
-                        if isinstance(content, (bytes, bytearray)):
-                            content = content.decode("utf-8", errors="replace")
-                        p.write_text(str(content), encoding="utf-8", errors="replace")
-                        saved += 1
+                    p = _unique_path(dest, safe, ".txt")
+                    content = data.m_Script
+                    if isinstance(content, (bytes, bytearray)):
+                        content = content.decode("utf-8", errors="replace")
+                    p.write_text(str(content), encoding="utf-8", errors="replace")
+                    saved += 1
 
-                # ── VideoClip ─────────────────────────────────────
                 elif type_name == "VideoClip":
                     try:
                         vdata = getattr(data, "m_VideoData", None)
                         if vdata:
-                            p = dest / f"{safe}.mp4"
-                            if not p.exists():
-                                p.write_bytes(bytes(vdata))
-                                saved += 1
+                            p = _unique_path(dest, safe, ".mp4")
+                            p.write_bytes(bytes(vdata))
+                            saved += 1
                     except Exception:
                         pass
 
-                # ── Mesh ──────────────────────────────────────────
                 elif type_name == "Mesh":
                     try:
                         exported = data.export()
                         if exported:
-                            p = dest / f"{safe}.obj"
-                            if not p.exists():
-                                p.write_text(str(exported), encoding="utf-8", errors="replace")
-                                saved += 1
+                            p = _unique_path(dest, safe, ".obj")
+                            p.write_text(str(exported), encoding="utf-8", errors="replace")
+                            saved += 1
                     except Exception:
                         pass
 
-                # ── Font ──────────────────────────────────────────
                 elif type_name == "Font":
                     try:
                         fdata = getattr(data, "m_FontData", None)
                         if fdata:
-                            p = dest / f"{safe}.ttf"
-                            if not p.exists():
-                                p.write_bytes(fdata)
-                                saved += 1
+                            p = _unique_path(dest, safe, ".ttf")
+                            p.write_bytes(fdata)
+                            saved += 1
                     except Exception:
                         pass
 
-                # ── AnimationClip ─────────────────────────────────
                 elif type_name == "AnimationClip":
                     try:
                         clip_info = {
@@ -620,46 +668,34 @@ class IL2CPPStudio(ctk.CTk):
                             "m_WrapMode": getattr(data, "m_WrapMode", None),
                             "m_FrameRate": getattr(data, "m_SampleRate", None),
                         }
-                        p = dest / f"{safe}.json"
-                        if not p.exists():
-                            p.write_text(json.dumps(clip_info, indent=2, ensure_ascii=False), encoding="utf-8")
-                            saved += 1
+                        p = _unique_path(dest, safe, ".json")
+                        p.write_text(json.dumps(clip_info, indent=2, ensure_ascii=False), encoding="utf-8")
+                        saved += 1
                     except Exception:
                         pass
 
-                # ── Generic binary fallback (m_Data) ──────────────
                 elif hasattr(data, "m_Data") and getattr(data, "m_Data", None):
                     try:
                         raw_bytes = bytes(data.m_Data)
                         if raw_bytes:
-                            p = dest / f"{safe}.bin"
-                            if not p.exists():
-                                p.write_bytes(raw_bytes)
-                                saved += 1
+                            p = _unique_path(dest, safe, ".bin")
+                            p.write_bytes(raw_bytes)
+                            saved += 1
                     except Exception:
                         pass
 
-                # ── JSON fallback for any other named object ───────
                 else:
                     try:
-                        d = {k: v for k, v in vars(data).items()
-                             if not k.startswith("_") and isinstance(v, (str, int, float, bool, list, dict, type(None)))}
+                        d = {k: v for k, v in vars(data).items() if not k.startswith("_") and isinstance(v, (str, int, float, bool, list, dict, type(None)))}
                         if d:
-                            p = dest / f"{safe}.json"
-                            if not p.exists():
-                                p.write_text(json.dumps(d, indent=2, ensure_ascii=False, default=str),
-                                             encoding="utf-8")
-                                saved += 1
+                            p = _unique_path(dest, safe, ".json")
+                            p.write_text(json.dumps(d, indent=2, ensure_ascii=False, default=str), encoding="utf-8")
+                            saved += 1
                     except Exception:
                         pass
 
-                # ── Scene / UI collection ─────────────────────────
                 if type_name in {"GameObject", "Canvas", "RectTransform", "Transform", "MonoBehaviour"}:
-                    entry: dict = {
-                        "path_id": getattr(obj, "path_id", None),
-                        "type": type_name,
-                        "name": str(raw_name),
-                    }
+                    entry = {"path_id": getattr(obj, "path_id", None), "type": type_name, "name": str(raw_name)}
                     for attr in ("m_Layer", "m_TagString", "m_IsActive", "m_IsStatic"):
                         val = getattr(data, attr, None)
                         if val is not None:
@@ -667,25 +703,19 @@ class IL2CPPStudio(ctk.CTk):
                                 entry[attr] = val
                             except Exception:
                                 pass
-                    is_ui = (type_name in {"Canvas", "RectTransform"} or
-                             any(x in str(raw_name).lower()
-                                 for x in ["ui", "button", "panel", "hud", "menu", "canvas", "dialog", "popup"]))
+                    is_ui = (type_name in {"Canvas", "RectTransform"} or any(x in str(raw_name).lower() for x in ["ui", "button", "panel", "hud", "menu", "canvas", "dialog", "popup"]))
                     (ui_entries if is_ui else scene_entries).append(entry)
-
             except Exception:
                 pass
-
         return saved, scene_entries, ui_entries
 
-    # ── IL2CPP ────────────────────────────────────────────────────
     def _do_il2cpp(self, search_root: Path, out: Path):
         metas = [p for p in search_root.rglob("global-metadata.dat") if not p.is_relative_to(out)]
-        sos   = [p for p in search_root.rglob("libil2cpp.so")        if not p.is_relative_to(out)]
-        extra = [p for p in search_root.rglob("*.so")
-                 if "il2cpp" in p.name.lower() and p not in sos and not p.is_relative_to(out)]
+        sos = [p for p in search_root.rglob("libil2cpp.so") if not p.is_relative_to(out)]
+        extra = [p for p in search_root.rglob("*.so") if "il2cpp" in p.name.lower() and p not in sos and not p.is_relative_to(out)]
         sos.extend(extra)
         if not metas: self._log_t("global-metadata.dat not found.", "WARN")
-        if not sos:   self._log_t("libil2cpp.so not found.", "WARN")
+        if not sos: self._log_t("libil2cpp.so not found.", "WARN")
         copied = 0
         for f in metas + sos:
             rel = f"{f.parent.name}_{f.name}" if f.name == "libil2cpp.so" else f.name
@@ -698,23 +728,25 @@ class IL2CPPStudio(ctk.CTk):
             self._log_t(f"IL2CPP → {out}", "OK")
             self._log_t("Use Il2CppDumper or Ghidra on these files.", "INFO")
 
-    # ── APKTOOL (streaming) ───────────────────────────────────────
     def _do_apktool(self, apk: Path, out: Path):
         tool, jar = _find_apktool()
         if not tool and not jar:
             self._log_t("apktool not found — auto-installing…", "WARN")
             tool, jar = _install_apktool(self._log_t)
-        if shutil.which("java") is None:
-            self._log_t("Java not on PATH — install JRE/JDK 8+.", "ERROR")
+
+        java_cmd = _find_java()
+        if not java_cmd:
+            self._log_t("Java not found — install JRE/JDK 8+ or set JAVA_HOME.", "ERROR")
             return
+        self._log_t(f"Java → {java_cmd}", "INFO")
 
         use_shell = False
         if sys.platform == "win32":
-            if tool and tool.lower().endswith(".bat"):
-                cmd: str | list = f'"{tool}" d "{apk}" -o "{out}" --force'
+            if jar:
+                cmd: str | list = [str(java_cmd), "-jar", str(jar), "d", str(apk), "-o", str(out), "--force"]
+            elif tool and tool.lower().endswith(".bat"):
+                cmd = f'"{tool}" d "{apk}" -o "{out}" --force'
                 use_shell = True
-            elif jar:
-                cmd = ["java", "-jar", str(jar), "d", str(apk), "-o", str(out), "--force"]
             elif tool:
                 cmd = [tool, "d", str(apk), "-o", str(out), "--force"]
             else:
@@ -723,13 +755,11 @@ class IL2CPPStudio(ctk.CTk):
             if tool:
                 cmd = [tool, "d", str(apk), "-o", str(out), "--force"]
             elif jar:
-                cmd = ["java", "-jar", str(jar), "d", str(apk), "-o", str(out), "--force"]
+                cmd = [str(java_cmd), "-jar", str(jar), "d", str(apk), "-o", str(out), "--force"]
             else:
                 self._log_t("Cannot build apktool command.", "ERROR"); return
 
         self._log_t(f"Running apktool on: {apk.name}  (timeout {APKTOOL_TIMEOUT}s)", "INFO")
-
-        # Stream stdout+stderr line-by-line so the user sees progress live
         q: queue.Queue[str | None] = queue.Queue()
 
         def _reader(pipe):
@@ -739,12 +769,8 @@ class IL2CPPStudio(ctk.CTk):
             finally:
                 q.put(None)
 
-        proc = subprocess.Popen(
-            cmd, shell=use_shell,
-            stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
-            text=True, encoding="utf-8", errors="replace",
-            bufsize=1,
-        )
+        proc = subprocess.Popen(cmd, shell=use_shell, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+                                text=True, encoding="utf-8", errors="replace", bufsize=1)
         t = threading.Thread(target=_reader, args=(proc.stdout,), daemon=True)
         t.start()
 
@@ -770,11 +796,10 @@ class IL2CPPStudio(ctk.CTk):
         elif proc.returncode is not None:
             self._log_t(f"apktool exited with code {proc.returncode}", "ERROR")
 
-    # ── REPORT ────────────────────────────────────────────────────
     def _do_report(self, out: Path):
         sections: dict[str, list[Path]] = {}
         for item in sorted(out.iterdir()):
-            if item.is_dir() and item.name != "raw":
+            if item.is_dir():
                 sections[item.name] = [f for f in sorted(item.rglob("*")) if f.is_file()]
         top_files = sorted(f for f in out.iterdir() if f.is_file())
         sec_html = ""
@@ -807,35 +832,30 @@ class IL2CPPStudio(ctk.CTk):
             f"{sec_html}"
             f"<h2 style='color:{NEON_CYAN}'>Top-level files</h2>"
             f"<table><tr><th></th><th>Name</th></tr>{top_rows}</table>"
-            f"<hr><p style='color:#5c5c8a'>Generated by IL2CPP Recovery Studio v10</p>"
+            f"<hr><p style='color:#5c5c8a'>Generated by IL2CPP Recovery Studio v11</p>"
             "</body></html>"
         )
         rp = out / "report.html"
         rp.write_text(html, encoding="utf-8")
         self._log_t(f"Report → {rp}", "OK")
 
-    # ── RESULTS ───────────────────────────────────────────────────
     def _show_results(self, out: Path):
         lines = ["=" * 48, "   OUTPUT SUMMARY", "=" * 48]
         for d in sorted(out.iterdir()):
             if d.is_dir():
                 lines.append(f"  📁  {d.name}/  ({_count_files(d)} files)")
-        for label, sub in [("🎬 Scenes", "unity_assets/Scenes"),
-                            ("🖼 UI",     "unity_assets/UI")]:
+        for label, sub in [("🎬 Scenes", "unity_assets/Scenes"), ("🖼 UI", "unity_assets/UI")]:
             p = out / sub.replace("/", os.sep)
             if p.exists():
                 lines.append(f"  {label}: {_count_files(p)} JSON file(s)")
-        lines += ["", "  OPEN THESE FIRST:",
-                  "  1.  unity_assets/Scenes/*.json",
-                  "  2.  unity_assets/UI/*.json",
-                  "  3.  report.html in browser",
-                  "  4.  il2cpp_meta/ with Il2CppDumper"]
+        lines += ["", "  OPEN THESE FIRST:", "  1.  unity_assets/Scenes/*.json", "  2.  unity_assets/UI/*.json", "  3.  report.html in browser", "  4.  il2cpp_meta/ with Il2CppDumper"]
         self._set_results("\n".join(lines))
 
     def _set_results(self, text):
         self._results_txt.configure(state="normal")
         self._results_txt.delete("0.0", "end")
-        if text: self._results_txt.insert("0.0", text)
+        if text:
+            self._results_txt.insert("0.0", text)
         self._results_txt.configure(state="disabled")
 
     def _step(self, msg):
@@ -851,9 +871,12 @@ class IL2CPPStudio(ctk.CTk):
 
     def _open_output(self):
         if self._output_dir and self._output_dir.exists():
-            if sys.platform == "win32": os.startfile(self._output_dir)
-            elif sys.platform == "darwin": subprocess.Popen(["open", str(self._output_dir)])
-            else: subprocess.Popen(["xdg-open", str(self._output_dir)])
+            if sys.platform == "win32":
+                os.startfile(self._output_dir)
+            elif sys.platform == "darwin":
+                subprocess.Popen(["open", str(self._output_dir)])
+            else:
+                subprocess.Popen(["xdg-open", str(self._output_dir)])
         else:
             messagebox.showinfo("No output yet", "Run the analysis first.", parent=self)
 
