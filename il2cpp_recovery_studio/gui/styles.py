@@ -1,11 +1,12 @@
 """Dark mode stylesheet for IL2CPP Recovery Studio.
 
-Catppuccin Mocha palette with enhanced visual polish:
-- Gradient-style active tab indicator
-- Animated progress bar shimmer (CSS animation via QSS)
+Catppuccin Mocha palette with enhanced visual polish.
+Includes styles for:
+- Main window, tabs, toolbars, menus
+- Screen browser panel and thumbnail cards
+- Diff badge colouring (added / removed / changed)
+- Flutter codegen button variant
 - Status-bar severity colouring helpers
-- Accent button variant for primary actions
-- Improved tree/table row alternation
 """
 from __future__ import annotations
 
@@ -164,6 +165,34 @@ QLabel[class="badge-error"] {
     color: #f38ba8;
     font-weight: bold;
 }
+/* Diff badges */
+QLabel[class="diff-added"] {
+    color: #a6e3a1;
+    font-weight: bold;
+    padding: 1px 6px;
+    border-radius: 4px;
+    background-color: #1e3a29;
+}
+QLabel[class="diff-removed"] {
+    color: #f38ba8;
+    font-weight: bold;
+    padding: 1px 6px;
+    border-radius: 4px;
+    background-color: #3a1e27;
+}
+QLabel[class="diff-changed"] {
+    color: #f9e2af;
+    font-weight: bold;
+    padding: 1px 6px;
+    border-radius: 4px;
+    background-color: #3a341e;
+}
+QLabel[class="diff-unchanged"] {
+    color: #a6adc8;
+    padding: 1px 6px;
+    border-radius: 4px;
+    background-color: #26263e;
+}
 
 /* ── Group Box ──────────────────────────────────────────────────────────── */
 QGroupBox {
@@ -206,7 +235,7 @@ QPushButton:disabled {
     background-color: #1e1e2e;
     border: 1px solid #313244;
 }
-/* Primary accent button — set objectName="primary" to activate */
+/* Primary accent button */
 QPushButton#primary {
     background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
         stop:0 #89b4fa, stop:1 #74c7ec);
@@ -222,7 +251,7 @@ QPushButton#primary:pressed {
     background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
         stop:0 #74a8e0, stop:1 #5eb8e0);
 }
-/* Danger button — set objectName="danger" */
+/* Danger button */
 QPushButton#danger {
     background-color: #f38ba8;
     color: #1e1e2e;
@@ -231,6 +260,84 @@ QPushButton#danger {
 }
 QPushButton#danger:hover {
     background-color: #f5a0b5;
+}
+/* Flutter / codegen button — teal-green accent */
+QPushButton#codegen {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #a6e3a1, stop:1 #94e2d5);
+    color: #1e1e2e;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 16px;
+    font-weight: bold;
+}
+QPushButton#codegen:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #b5f0b0, stop:1 #a8ede5);
+}
+QPushButton#codegen:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #8ecb89, stop:1 #7fcfc3);
+}
+/* Diff button — orange accent */
+QPushButton#diff {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #fab387, stop:1 #f9e2af);
+    color: #1e1e2e;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 16px;
+    font-weight: bold;
+}
+QPushButton#diff:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #ffbf98, stop:1 #fff0c0);
+}
+
+/* ── Screen Browser Panel ───────────────────────────────────────────────── */
+/* Card container for each screen entry in the browser */
+QFrame#screenCard {
+    background-color: #26263e;
+    border: 1px solid #313244;
+    border-radius: 8px;
+    padding: 4px;
+}
+QFrame#screenCard:hover {
+    border: 1px solid #89b4fa;
+    background-color: #2e2e4e;
+}
+QFrame#screenCard[selected="true"] {
+    border: 2px solid #89b4fa;
+    background-color: #2e2e4e;
+}
+/* Thumbnail label inside a screen card */
+QLabel#screenThumb {
+    border-radius: 4px;
+    background-color: #11111b;
+    border: 1px solid #313244;
+}
+/* Screen name label */
+QLabel#screenTitle {
+    color: #cdd6f4;
+    font-weight: bold;
+    font-size: 12px;
+}
+/* Element count badge */
+QLabel#screenCount {
+    color: #a6adc8;
+    font-size: 10px;
+}
+/* Search bar inside the browser */
+QLineEdit#browserSearch {
+    background-color: #181825;
+    border: 1px solid #45475a;
+    border-radius: 6px;
+    padding: 5px 10px;
+    color: #cdd6f4;
+    font-size: 13px;
+}
+QLineEdit#browserSearch:focus {
+    border: 1px solid #89b4fa;
 }
 
 /* ── Line / Text Edits ──────────────────────────────────────────────────── */
@@ -411,18 +518,16 @@ QToolTip {
 }
 """
 
+
 # ── Status-bar severity helpers ──────────────────────────────────────────────
 
 def status_ok(msg: str) -> str:
-    """Wrap *msg* in a green HTML span for QStatusBar display."""
     return f'<span style="color:#a6e3a1;">{msg}</span>'
 
 
 def status_warn(msg: str) -> str:
-    """Wrap *msg* in a yellow HTML span for QStatusBar display."""
     return f'<span style="color:#f9e2af;">{msg}</span>'
 
 
 def status_error(msg: str) -> str:
-    """Wrap *msg* in a red HTML span for QStatusBar display."""
     return f'<span style="color:#f38ba8;">{msg}</span>'

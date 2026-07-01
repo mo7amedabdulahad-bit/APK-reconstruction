@@ -11,6 +11,17 @@ except ImportError:
     ImageDraw = None  # type: ignore[assignment]
     ImageFont = None  # type: ignore[assignment]
 
+# Cross-platform font fallback chain (FIX Issue A/C)
+_FONT_FALLBACKS = [
+    "arial.ttf",        # Windows
+    "Arial.ttf",
+    "DejaVuSans.ttf",   # Linux
+    "LiberationSans-Regular.ttf",
+    "FreeSans.ttf",
+    "/System/Library/Fonts/Helvetica.ttc",  # macOS
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+]
+
 
 class UIPreviewRenderer:
     """Render a UI screen-spec JSON into a single composite PNG image."""
@@ -23,13 +34,7 @@ class UIPreviewRenderer:
         self._assets_dir = Path(assets_dir)
         self._log = log_callback or (lambda m: print(m))
 
-    # ── public ──────────────────────────────────────────────────────────
-
     def render_screen(self, screen_json: dict, output_path: Path) -> bool:
-        """Render a flat PNG preview of the screen.
-
-        Returns True on success, False if required data is missing.
-        """
         if Image is None:
             self._log("  [Preview] Pillow not installed – skipping preview render.")
             return False
@@ -42,7 +47,6 @@ class UIPreviewRenderer:
 
         cw = int(canvas_size.get("width", 1920))
         ch = int(canvas_size.get("height", 1080))
-
         bg = screen_json.get("background_color", {})
         bg_color = (
             int(bg.get("r", 0) * 255),
@@ -52,7 +56,6 @@ class UIPreviewRenderer:
 
         canvas = Image.new("RGBA", (cw, ch), bg_color + (255,))
         draw = ImageDraw.Draw(canvas)
-
         sorted_elements = sorted(elements, key=lambda e: e.get("layer_order", 0))
 
         for el in sorted_elements:
@@ -61,39 +64,40 @@ class UIPreviewRenderer:
 
             pos = el.get("position", {"x": 0, "y": 0})
             size = el.get("size", {"width": 0, "height": 0})
-            px, py = self._unity_pos_to_pixel(pos, size, {"width": cw, "height": ch})
             sw = int(size.get("width", 0))
             sh = int(size.get("height", 0))
+
+            # FIX (Issue A): skip zero-size elements — Pillow raises ValueError on resize((0,0))
+            if sw <= 0 or sh <= 0:
+                continue
+
+            px, py = self._unity_pos_to_pixel(pos, size, {"width": cw, "height": ch})
             el_type = el.get("type", "")
 
             sprite_file = el.get("sprite_file", "") or el.get("sprite_name", "")
-            if sprite_file and sw > 0 and sh > 0:
+            if sprite_file:
                 resolved = self._resolve_sprite(sprite_file)
                 if resolved:
                     self._paste_sprite(canvas, resolved, (px, py), (sw, sh))
 
-            if el_type == "Text" and sw > 0 and sh > 0:
+            if el_type == "Text":
                 text_str = el.get("text", "")
                 if text_str:
-                    font_size = el.get("font_size", 14)
-                    color = el.get("color", {"r": 1, "g": 1, "b": 1, "a": 1})
-                    font_file = el.get("font_file", "")
                     self._draw_text(
                         draw, text_str, (px, py), (sw, sh),
-                        font_size, color, font_file,
+                        el.get("font_size", 14),
+                        el.get("color", {"r": 1, "g": 1, "b": 1, "a": 1}),
+                        el.get("font_file", ""),
                     )
 
-            if el_type == "Button" and sw > 0 and sh > 0:
+            if el_type == "Button":
                 label = el.get("label", "")
                 if label:
-                    label_color = el.get(
-                        "label_color", {"r": 1, "g": 1, "b": 1, "a": 1}
-                    )
-                    label_font_size = el.get("label_font_size", 24)
-                    label_font_file = el.get("label_font_file", "")
                     self._draw_text(
                         draw, label, (px, py), (sw, sh),
-                        label_font_size, label_color, label_font_file,
+                        el.get("label_font_size", 24),
+                        el.get("label_color", {"r": 1, "g": 1, "b": 1, "a": 1}),
+                        el.get("label_font_file", ""),
                     )
 
         output_path = Path(output_path)
@@ -102,27 +106,26 @@ class UIPreviewRenderer:
         self._log(f"  [Preview] Saved: {output_path.name}")
         return True
 
-    # ── coordinate conversion ───────────────────────────────────────────
-
     @staticmethod
-    def _unity_pos_to_pixel(
-        pos: dict, size: dict, canvas_size: dict
-    ) -> tuple[int, int]:
-        """Convert Unity anchoredPosition (center-origin, Y-up) to pixel coords
-        (top-left origin, Y-down)."""
+    def _unity_pos_to_pixel(pos: dict, size: dict, canvas_size: dict) -> tuple[int, int]:
         cx = canvas_size.get("width", 0) / 2
         cy = canvas_size.get("height", 0) / 2
         px = int(cx + pos.get("x", 0) - size.get("width", 0) / 2)
         py = int(cy - pos.get("y", 0) - size.get("height", 0) / 2)
         return px, py
 
-    # ── sprite helpers ──────────────────────────────────────────────────
-
     def _resolve_sprite(self, sprite_name: str) -> Optional[Path]:
-        """Find a sprite PNG in the assets directory by name."""
         if not sprite_name:
             return None
-        stem = Path(sprite_name).stem.lower()
+        # Try as absolute or relative-to-assets path first
+        candidate = Path(sprite_name)
+        if candidate.is_absolute() and candidate.is_file():
+            return candidate
+        full = self._assets_dir / sprite_name
+        if full.is_file():
+            return full
+        # Fallback: search by stem
+        stem = candidate.stem.lower()
         for subdir in ("Sprites", "Images"):
             search = self._assets_dir / subdir
             if not search.is_dir():
@@ -133,12 +136,7 @@ class UIPreviewRenderer:
         return None
 
     @staticmethod
-    def _paste_sprite(
-        canvas: Image.Image, sprite_path: Path, pos: tuple[int, int], size: tuple[int, int]
-    ) -> None:
-        """Open a sprite PNG, resize it, and paste onto *canvas* at *pos*."""
-        if size[0] <= 0 or size[1] <= 0:
-            return
+    def _paste_sprite(canvas, sprite_path: Path, pos: tuple[int, int], size: tuple[int, int]) -> None:
         try:
             spr = Image.open(str(sprite_path)).convert("RGBA")
             spr = spr.resize(size, Image.LANCZOS)
@@ -146,11 +144,9 @@ class UIPreviewRenderer:
         except Exception:
             pass
 
-    # ── text drawing ────────────────────────────────────────────────────
-
     @staticmethod
     def _draw_text(
-        draw: ImageDraw.ImageDraw,
+        draw,
         text: str,
         pos: tuple[int, int],
         size: tuple[int, int],
@@ -158,27 +154,32 @@ class UIPreviewRenderer:
         color: dict,
         font_file: str,
     ) -> None:
-        """Draw *text* centred within the element bounding box."""
         r = int(color.get("r", 1) * 255)
         g = int(color.get("g", 1) * 255)
         b = int(color.get("b", 1) * 255)
         fill = (r, g, b, 255)
 
         font = ImageFont.load_default()
-        try:
-            if font_file and Path(font_file).is_file():
-                font = ImageFont.truetype(str(font_file), max(font_size, 8))
-            else:
-                font = ImageFont.truetype("arial.ttf", max(font_size, 8))
-        except Exception:
+        # FIX (Issue C): cross-platform font fallback chain
+        if font_file and Path(font_file).is_file():
             try:
-                font = ImageFont.truetype("arial.ttf", max(font_size, 8))
+                font = ImageFont.truetype(str(font_file), max(font_size, 8))
             except Exception:
-                font = ImageFont.load_default()
+                pass
+        else:
+            for fb in _FONT_FALLBACKS:
+                try:
+                    font = ImageFont.truetype(fb, max(font_size, 8))
+                    break
+                except Exception:
+                    continue
 
-        bbox = draw.textbbox((0, 0), text, font=font)
-        tw = bbox[2] - bbox[0]
-        th = bbox[3] - bbox[1]
+        try:
+            bbox = draw.textbbox((0, 0), text, font=font)
+            tw = bbox[2] - bbox[0]
+            th = bbox[3] - bbox[1]
+        except Exception:
+            tw, th = len(text) * 7, font_size
         x = pos[0] + (size[0] - tw) // 2
         y = pos[1] + (size[1] - th) // 2
         draw.text((x, y), text, fill=fill, font=font)
