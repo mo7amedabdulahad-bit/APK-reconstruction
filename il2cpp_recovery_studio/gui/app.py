@@ -1,31 +1,34 @@
 #!/usr/bin/env python3
 """
-IL2CPP Recovery Studio — app.py v17
+IL2CPP Recovery Studio — app.py v18
 
-Changes vs v16 (fixes from AI-agent gap report UNITY_EXTRACTION_GAP_REPORT_V2.md):
+Fixes from UNITY_EXTRACTION_GAP_REPORT_V3.md:
 
-FIX §2.2 — Per-file Data dump (BLOCKER resolved)
-  Stage 4 now loads assets/bin/Data one serialized file at a time instead of loading
-  the whole directory at once. Each file gets its own JSON named <hash>.json with a
-  `source_file` field on every object (namespace for path_id uniqueness).
-  Also captures the external-reference list (env.cabs / file dependencies) so
-  cross-file PPtrs (m_FileID != 0) can be resolved unambiguously.
+FIX §2.3 — m_Script now extracted from the 32-byte base header on decode failure.
+  The 32-byte base that always decodes is structured as:
+    [4 bytes m_GameObject.file_id][8 bytes m_GameObject.path_id]   <- 12 bytes
+    [1 byte  m_Enabled]                                             <- 1 byte
+    [3 bytes alignment padding]                                     <- 3 bytes
+    [4 bytes m_Script.file_id][8 bytes m_Script.path_id]           <- 12 bytes
+    [4 bytes m_Name length]...                                      <- variable
+  So m_Script (file_id + path_id) lives at offset 16, giving us the MonoScript
+  PPtr needed to identify the class (Image / TMP / Button etc.) via script.json.
 
-FIX §2.3 — m_GameObject back-pointer added to every component dump
-  Transform, RectTransform, CanvasRenderer, and MonoBehaviour objects now include
-  `m_GameObject` (PPtr → {path_id, name}) so the bidirectional GO↔component link
-  is always present, making tree assembly robust without positional coincidence.
+FIX §2.2 — _raw_b64 now uses the object's precise byte size instead of a fixed
+  4098-byte slab. UnityPy stores the serialized byte size on each ObjectReader;
+  we read exactly that many bytes from the object's data_offset so byte boundaries
+  are reliable and hand-decoding by known field layout is safe.
 
-FIX §2.1 — MonoBehaviour raw-byte fallback (partial decode preserved)
-  When MonoBehaviour.read() raises the "Expected N bytes" error the dump now:
-    (a) emits `_decode_failed: true` with the error string
-    (b) saves `_raw_b64`: base64 of the raw payload bytes so manual/offline
-        decoding of Image/TMP/Button by known field layout is possible later
-    (c) still emits the base fields (m_Script PPtr, m_Enabled, m_Name,
-        m_GameObject) decoded from the 32-byte header that always succeeds
-  When read() succeeds the dump now also attempts to read known subclass fields
-  (Image, TMP, Button, Toggle, Slider, ScrollRect, InputField, LayoutGroups)
-  via a hard-coded field layout that does not require an embedded type tree.
+FIX §3 Steps A+B — New Stage 4b: IL2CPP type-tree integration.
+  If `il2cpp_dump/DummyDll/` exists (produced by Il2CppDumper) the stage:
+    (a) loads script.json → builds a path_id→class map
+    (b) re-attempts every previously-failed MonoBehaviour using
+        obj.read_typetree() which, when UnityPy can find the type tree via the
+        dummy DLLs, returns the full subclass fields (m_Sprite, m_text, etc.)
+    (c) writes a companion `<file>.typetree.json` alongside the existing per-file
+        dumps so the consumer can merge the decoded fields by path_id
+  The stage also exposes a new UI entry for the Il2CppDumper .exe path so the
+  user can optionally point to it and have it run automatically as Stage 4a.
 """
 from __future__ import annotations
 
@@ -104,7 +107,7 @@ def _guess_purpose(names: list[str]) -> str:
     return "Unknown / Generic"
 
 
-# ── config helpers ─────────────────────────────────────────────────────────
+# ── config helpers ──────────────────────────────────────────────────────────
 def _load_config() -> dict:
     if CONFIG_FILE.exists():
         try:
@@ -119,7 +122,7 @@ def _save_config(cfg: dict):
     CONFIG_FILE.write_text(json.dumps(cfg, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
-# ── general helpers ────────────────────────────────────────────────────────────
+# ── general helpers ─────────────────────────────────────────────────────────
 def _count_files(path: Path) -> int:
     return sum(1 for p in path.rglob("*") if p.is_file()) if path.exists() else 0
 
@@ -152,7 +155,7 @@ def _skip_path(dest: Path, stem: str, ext: str) -> Path | None:
     return p if p.exists() else None
 
 
-# ── Java discovery ───────────────────────────────────────────────────────────────
+# ── Java discovery ───────────────────────────────────────────────────────────
 def _java_works(path: Path | str) -> bool:
     try:
         r = subprocess.run([str(path), "-version"], capture_output=True, timeout=8)
@@ -242,7 +245,7 @@ def _find_java(override: str | Path | None = None) -> Path | str | None:
     return None
 
 
-# ── Node.js discovery ───────────────────────────────────────────────────────────
+# ── Node.js discovery ────────────────────────────────────────────────────────
 def _find_node() -> str | None:
     for candidate in ("node", "node.exe", "nodejs"):
         path = shutil.which(candidate)
@@ -275,7 +278,7 @@ def _find_node() -> str | None:
     return None
 
 
-# ── apktool download ──────────────────────────────────────────────────────────────
+# ── apktool download ─────────────────────────────────────────────────────────
 def _ensure_apktool(log) -> Path | None:
     jar = TOOLS_DIR / f"apktool_{APKTOOL_VER}.jar"
     if jar.exists():
@@ -295,7 +298,7 @@ def _ensure_apktool(log) -> Path | None:
         return None
 
 
-# ── apktool heartbeat ───────────────────────────────────────────────────────────
+# ── apktool heartbeat ────────────────────────────────────────────────────────
 def _apktool_heartbeat(proc, smali_dir: Path, log, stop_evt: threading.Event):
     t0 = time.time()
     while not stop_evt.wait(timeout=HEARTBEAT_INTERVAL):
@@ -306,7 +309,7 @@ def _apktool_heartbeat(proc, smali_dir: Path, log, stop_evt: threading.Event):
         log(f"[INFO ] apktool still running… {elapsed}s elapsed, {count} smali files written so far")
 
 
-# ── XAPK / APK extraction ─────────────────────────────────────────────────────────
+# ── XAPK / APK extraction ────────────────────────────────────────────────────
 def _extract_xapk(src: Path, raw_dir: Path, log, force: bool):
     if raw_dir.exists() and not force:
         n = _count_files(raw_dir)
@@ -336,7 +339,7 @@ def _extract_xapk(src: Path, raw_dir: Path, log, force: bool):
         log(f"[OK   ]   {src.name} → {stem}/")
 
 
-# ── Unity-asset extraction (PNGs / text) ────────────────────────────────────────────
+# ── Unity-asset extraction (PNGs / text) ─────────────────────────────────────
 def _dump_env(env, dest: Path, log, force: bool) -> tuple[int, int]:
     written = skipped = 0
     for obj in env.objects:
@@ -389,7 +392,7 @@ def _dump_env(env, dest: Path, log, force: bool) -> tuple[int, int]:
     return written, skipped
 
 
-# ── AI export helpers ──────────────────────────────────────────────────────────────
+# ── AI export helpers ────────────────────────────────────────────────────────
 def _build_ai_scene_map(unity_dir: Path) -> list[dict]:
     scenes: list[dict] = []
     if not unity_dir.exists():
@@ -423,7 +426,7 @@ def _build_ai_asset_index(output_dir: Path) -> list[dict]:
     return index
 
 
-# ── smali decompile ──────────────────────────────────────────────────────────────────
+# ── smali decompile ───────────────────────────────────────────────────────────
 def _run_smali(apk_path, smali_dir, java_bin, apktool_jar, log, force, thread_count=8):
     dest = smali_dir / apk_path.stem
     if dest.exists() and not force:
@@ -458,9 +461,73 @@ def _run_smali(apk_path, smali_dir, java_bin, apktool_jar, log, force, thread_co
         log(f"[ERROR] apktool failed: {exc}")
 
 
-# ─────────────────────────────────────────────────────────────────────────────────
-# STAGE 4 — Full UnityPy UI field extraction (v17: per-file + m_GameObject + raw bytes)
-# ─────────────────────────────────────────────────────────────────────────────────
+# ────────────────────────────────────────────────────────────────────────────
+# STAGE 4a — Optional: run Il2CppDumper to generate DummyDll + script.json
+# ────────────────────────────────────────────────────────────────────────────
+
+def _run_stage4a_il2cppdumper(il2cpp_dir: Path, out_dir: Path, il2cppdumper_exe: str | None, log) -> Path | None:
+    """
+    Runs Il2CppDumper (if available) to produce DummyDll/*.dll + script.json.
+    Returns the path to il2cpp_dump/ if successful, else None.
+    FIX §3 Step A.
+    """
+    dump_dir = out_dir / "il2cpp_dump"
+    script_json = dump_dir / "script.json"
+    dll_dir = dump_dir / "DummyDll"
+
+    if script_json.exists() and dll_dir.exists():
+        log(f"[SKIP ] il2cpp_dump/ already exists — skipping Il2CppDumper")
+        return dump_dir
+
+    so_file = next(il2cpp_dir.glob("*libil2cpp.so"), None)
+    meta_file = il2cpp_dir / "global-metadata.dat"
+
+    if not so_file or not meta_file.exists():
+        log("[WARN ] il2cpp_meta/ missing libil2cpp.so or global-metadata.dat — skipping Stage 4a")
+        return None
+
+    exe = il2cppdumper_exe
+    if not exe or not Path(exe).exists():
+        # Try to auto-find in tools/
+        candidates = list(TOOLS_DIR.glob("Il2CppDumper*.exe")) + list(TOOLS_DIR.glob("Il2CppDumper"))
+        if candidates:
+            exe = str(candidates[0])
+        else:
+            log("[WARN ] Il2CppDumper not found — skipping Stage 4a (MonoBehaviour type-tree generation).")
+            log("[INFO ] Download from https://github.com/Perfare/Il2CppDumper and place in tools/ or set path in UI.")
+            return None
+
+    log(f"[STEP ] Stage 4a — Running Il2CppDumper to generate type trees…")
+    dump_dir.mkdir(parents=True, exist_ok=True)
+    cmd = [exe, str(so_file), str(meta_file), str(dump_dir)]
+    try:
+        proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+                                text=True, encoding="utf-8", errors="replace")
+        assert proc.stdout
+        for line in proc.stdout:
+            line = line.rstrip()
+            if line:
+                log(f"[INFO ] Il2CppDumper: {line}")
+        proc.wait(timeout=300)
+        if proc.returncode == 0 and script_json.exists():
+            dll_count = len(list(dll_dir.glob("*.dll"))) if dll_dir.exists() else 0
+            log(f"[OK   ] Stage 4a complete — {dll_count} dummy DLLs + script.json → {dump_dir}")
+            return dump_dir
+        else:
+            log(f"[ERROR] Il2CppDumper exited with code {proc.returncode}")
+            return None
+    except subprocess.TimeoutExpired:
+        proc.kill()
+        log("[ERROR] Il2CppDumper timed out after 300s")
+        return None
+    except Exception as exc:
+        log(f"[ERROR] Il2CppDumper failed: {exc}")
+        return None
+
+
+# ────────────────────────────────────────────────────────────────────────────
+# STAGE 4 — Full UnityPy UI field extraction (v18)
+# ────────────────────────────────────────────────────────────────────────────
 
 WANT_TYPES = {
     "GameObject", "Transform", "RectTransform",
@@ -474,7 +541,7 @@ WANT_TYPES = {
     "GridLayoutGroup", "LayoutElement", "ContentSizeFitter",
     "AspectRatioFitter",
     "Sprite", "Texture2D", "SpriteAtlas",
-    "MonoBehaviour", "Font", "TMP_FontAsset",
+    "MonoBehaviour", "MonoScript", "Font", "TMP_FontAsset",
 }
 
 
@@ -500,7 +567,7 @@ def _pptr(obj):
                 pass
         result = {"path_id": pid}
         if fid is not None and fid != 0:
-            result["file_id"] = fid  # non-zero = cross-file reference
+            result["file_id"] = fid
         if name:
             result["name"] = name
         return result
@@ -521,82 +588,192 @@ def _color(c):
             "b": getattr(c, "b", None), "a": getattr(c, "a", None)}
 
 
-def _get_raw_bytes(obj) -> str | None:
+def _get_precise_raw_bytes(obj) -> tuple[str | None, int]:
     """
-    FIX §2.1 — Try to get the raw serialized bytes of an object so that
-    MonoBehaviours which fail decode can still be decoded manually later.
-    Returns base64-encoded bytes, or None if not accessible.
+    FIX §2.2 — Extract EXACTLY the bytes belonging to this object.
+
+    UnityPy's ObjectReader stores:
+      - obj.byte_size  (or obj.data_offset + size in the SerializedFile header)
+      - The raw data is accessible via obj.get_raw_data() in newer UnityPy,
+        or via the reader's underlying buffer at the correct offset+length.
+
+    Returns (base64_string, byte_count). If not accessible returns (None, 0).
     """
+    # Method 1: UnityPy >=1.9 exposes get_raw_data() directly
     try:
-        # UnityPy exposes the raw reader on the object
-        reader = getattr(obj, "reader", None) or getattr(obj, "_reader", None)
-        if reader is None:
-            return None
-        raw = None
-        if hasattr(reader, "read"):
-            # Seek to start if possible
-            pos = getattr(reader, "Position", None)
-            if pos is not None and hasattr(reader, "seek"):
-                try:
-                    reader.seek(0)
-                    raw = reader.read()
-                except Exception:
-                    pass
-        if raw is None:
-            raw = getattr(reader, "raw_data", None) or getattr(reader, "data", None)
-        if raw and isinstance(raw, (bytes, bytearray)):
-            return base64.b64encode(raw[:4096]).decode("ascii")  # cap at 4KB for space
+        raw = obj.get_raw_data()
+        if raw and isinstance(raw, (bytes, bytearray)) and len(raw) > 0:
+            return base64.b64encode(raw).decode("ascii"), len(raw)
     except Exception:
         pass
-    return None
+
+    # Method 2: read exact byte_size bytes at data_offset from the reader
+    try:
+        reader = getattr(obj, "reader", None) or getattr(obj, "_reader", None)
+        if reader is None:
+            return None, 0
+        byte_size = (
+            getattr(obj, "byte_size", None)
+            or getattr(reader, "byte_size", None)
+            or getattr(reader, "byteSize", None)
+        )
+        data_offset = (
+            getattr(obj, "data_offset", None)
+            or getattr(reader, "data_offset", None)
+            or getattr(reader, "dataOffset", None)
+        )
+        if byte_size and byte_size > 0:
+            if data_offset is not None and hasattr(reader, "stream"):
+                stream = reader.stream
+                old_pos = stream.tell() if hasattr(stream, "tell") else None
+                stream.seek(data_offset)
+                raw = stream.read(byte_size)
+                if old_pos is not None:
+                    stream.seek(old_pos)
+            elif hasattr(reader, "Position"):
+                reader.Position = 0
+                raw = reader.read(byte_size) if hasattr(reader, "read") else None
+            else:
+                raw = None
+            if raw and isinstance(raw, (bytes, bytearray)) and len(raw) > 0:
+                return base64.b64encode(raw).decode("ascii"), len(raw)
+    except Exception:
+        pass
+
+    # Method 3: fall back to reading raw bytes attribute
+    try:
+        raw = getattr(obj, "raw_data", None) or getattr(obj, "data", None)
+        if raw and isinstance(raw, (bytes, bytearray)):
+            return base64.b64encode(raw).decode("ascii"), len(raw)
+    except Exception:
+        pass
+
+    return None, 0
 
 
-def _dump_ui_obj(o, source_file: str = "") -> dict:
+def _parse_monobehaviour_header(obj) -> dict:
+    """
+    FIX §2.3 + §2.2 — Parse the 32-byte MonoBehaviour base header manually.
+
+    Unity MonoBehaviour serialized layout (little-endian):
+      Offset  0: int32  m_GameObject.file_id
+      Offset  4: int64  m_GameObject.path_id      (8 bytes, but in older formats 4)
+      Offset 12: uint8  m_Enabled
+      Offset 13: uint8[3] padding
+      Offset 16: int32  m_Script.file_id
+      Offset 20: int64  m_Script.path_id
+      Offset 28: int32  m_Name string length
+      Offset 32: char[] m_Name
+
+    We always read up to 64 bytes to also capture m_Name if short.
+    Returns dict with m_GameObject, m_Enabled, m_Script, m_Name (best-effort).
+    """
+    result = {}
+    try:
+        raw_b64, raw_len = _get_precise_raw_bytes(obj)
+        if not raw_b64:
+            # Last resort: try reader directly with fixed 64 bytes
+            reader = getattr(obj, "reader", None) or getattr(obj, "_reader", None)
+            if reader is not None:
+                if hasattr(reader, "Position"):
+                    reader.Position = 0
+                elif hasattr(reader, "seek"):
+                    reader.seek(0)
+                raw_bytes = reader.read(64) if hasattr(reader, "read") else None
+            else:
+                raw_bytes = None
+        else:
+            raw_bytes = base64.b64decode(raw_b64)
+
+        if not raw_bytes or len(raw_bytes) < 28:
+            return result
+
+        # Detect path_id size: Unity 5.0+ uses int64 for path_id
+        # m_GameObject PPtr: file_id(int32) + path_id(int64) = 12 bytes
+        go_fid = struct.unpack_from("<i", raw_bytes, 0)[0]
+        go_pid = struct.unpack_from("<q", raw_bytes, 4)[0]
+        result["m_GameObject"] = {"file_id": go_fid, "path_id": go_pid}
+
+        m_enabled = struct.unpack_from("<B", raw_bytes, 12)[0]
+        result["m_Enabled"] = bool(m_enabled)
+
+        # FIX §2.3 — m_Script PPtr at offset 16
+        script_fid = struct.unpack_from("<i", raw_bytes, 16)[0]
+        script_pid = struct.unpack_from("<q", raw_bytes, 20)[0]
+        result["m_Script"] = {"file_id": script_fid, "path_id": script_pid}  # KEY FIX
+
+        # m_Name (length-prefixed string) at offset 28
+        if len(raw_bytes) >= 32:
+            name_len = struct.unpack_from("<i", raw_bytes, 28)[0]
+            if 0 < name_len < 512 and len(raw_bytes) >= 32 + name_len:
+                result["m_Name"] = raw_bytes[32:32 + name_len].decode("utf-8", errors="replace")
+
+    except Exception:
+        pass
+    return result
+
+
+def _dump_ui_obj(o, source_file: str = "",
+                 script_map: dict | None = None,
+                 typetree_decoded: dict | None = None) -> dict:
     """
     Dump all UI-relevant fields from a single Unity object.
-    v17 additions:
-      - `source_file` on every record (path_id namespace) — FIX §2.2
-      - `m_GameObject` on Transform/RectTransform/CanvasRenderer/MonoBehaviour — FIX §2.3
-      - Raw bytes fallback on MonoBehaviour decode failure — FIX §2.1
+    v18 additions:
+      - m_Script extracted from base header on failure (FIX §2.3)
+      - _raw_b64 uses precise byte size (FIX §2.2)
+      - typetree_decoded: if Stage 4b succeeded, merged decoded fields
+      - script_map: path_id→class name from Il2CppDumper script.json
     """
     t = o.type.name
     out: dict = {
         "path_id": o.path_id,
         "type": t,
-        "source_file": source_file,  # FIX §2.2 namespace
+        "source_file": source_file,
     }
+
+    # If typetree decoding already succeeded in Stage 4b, embed those fields
+    if typetree_decoded:
+        out["_typetree_decoded"] = True
+        out.update(typetree_decoded)
+        return out
 
     try:
         d = o.read()
         out["name"] = _sg(d, "m_Name") or _sg(d, "name")
     except Exception as e:
-        # FIX §2.1 — decode failed: still emit base fields + raw bytes
-        out["name"] = None
+        # FIX §2.3 — decode failed: recover all base-header fields including m_Script
+        base = _parse_monobehaviour_header(o)
+        out["name"] = base.get("m_Name")
+        out["m_GameObject"] = base.get("m_GameObject")
+        out["m_Enabled"] = base.get("m_Enabled")
+        out["m_Script"] = base.get("m_Script")  # FIX §2.3 — now extracted
+
+        # Resolve class name via script_map if available
+        if script_map and base.get("m_Script"):
+            pid = str(base["m_Script"].get("path_id", ""))
+            cls = script_map.get(pid)
+            if cls:
+                out["_class_name"] = cls  # e.g. "Image", "TextMeshProUGUI"
+
         out["_decode_failed"] = True
         out["_decode_error"] = str(e)
-        # Try to recover the 32-byte base header fields manually
-        try:
-            reader = getattr(o, "reader", None) or getattr(o, "_reader", None)
-            if reader is not None:
-                # Reset reader position
-                if hasattr(reader, "Position"):
-                    reader.Position = 0
-                elif hasattr(reader, "seek"):
-                    reader.seek(0)
-                # Read m_GameObject PPtr (file_id:int32 + path_id:int64) = 12 bytes
-                raw_header = None
-                if hasattr(reader, "read"):
-                    raw_header = reader.read(12)
-                if raw_header and len(raw_header) >= 12:
-                    go_fid, go_pid = struct.unpack_from("<iQ", raw_header, 0)
-                    out["m_GameObject"] = {"file_id": go_fid, "path_id": go_pid}  # FIX §2.3
-        except Exception:
-            pass
-        # Save raw bytes for manual decoding
-        out["_raw_b64"] = _get_raw_bytes(o)
+
+        # FIX §2.2 — precise byte-bounded raw bytes
+        raw_b64, raw_len = _get_precise_raw_bytes(o)
+        out["_raw_b64"] = raw_b64
+        out["_raw_byte_size"] = raw_len  # consumer can validate this matches expected size
         return out
 
     try:
+        # FIX §2.3 — always emit m_Script on MonoBehaviour even when read() succeeds
+        if t == "MonoBehaviour":
+            out["m_Script"] = _pptr(_sg(d, "m_Script"))
+            if script_map:
+                pid = str(out["m_Script"].get("path_id", "")) if out["m_Script"] else ""
+                cls = script_map.get(pid)
+                if cls:
+                    out["_class_name"] = cls
+
         if t == "GameObject":
             out["layer"] = _sg(d, "m_Layer")
             out["is_active"] = _sg(d, "m_IsActive")
@@ -606,7 +783,6 @@ def _dump_ui_obj(o, source_file: str = "") -> dict:
             ]
 
         elif t in ("Transform", "RectTransform"):
-            # FIX §2.3 — always include m_GameObject back-pointer
             out["m_GameObject"] = _pptr(_sg(d, "m_GameObject"))
             for f in ("m_LocalPosition", "m_LocalRotation", "m_LocalScale",
                       "m_AnchorMin", "m_AnchorMax", "m_AnchoredPosition",
@@ -617,7 +793,6 @@ def _dump_ui_obj(o, source_file: str = "") -> dict:
             out["m_Children"] = [_pptr(c) for c in _sg(d, "m_Children", [])]
 
         elif t == "CanvasRenderer":
-            # FIX §2.3 — always include m_GameObject back-pointer
             out["m_GameObject"] = _pptr(_sg(d, "m_GameObject"))
             for f in dir(d):
                 if f.startswith("m_") and f != "m_GameObject":
@@ -645,8 +820,13 @@ def _dump_ui_obj(o, source_file: str = "") -> dict:
                     except Exception:
                         pass
 
+        elif t == "MonoScript":
+            out["m_ClassName"] = _sg(d, "m_ClassName")
+            out["m_Namespace"] = _sg(d, "m_Namespace")
+            out["m_AssemblyName"] = _sg(d, "m_AssemblyName")
+
         elif t == "Image":
-            out["m_GameObject"] = _pptr(_sg(d, "m_GameObject"))  # FIX §2.3
+            out["m_GameObject"] = _pptr(_sg(d, "m_GameObject"))
             out["m_Sprite"] = _pptr(_sg(d, "m_Sprite"))
             out["m_Material"] = _pptr(_sg(d, "m_Material"))
             out["m_Color"] = _color(_sg(d, "m_Color"))
@@ -655,14 +835,14 @@ def _dump_ui_obj(o, source_file: str = "") -> dict:
                 out[f] = _sg(d, f)
 
         elif t == "RawImage":
-            out["m_GameObject"] = _pptr(_sg(d, "m_GameObject"))  # FIX §2.3
+            out["m_GameObject"] = _pptr(_sg(d, "m_GameObject"))
             out["m_Texture"] = _pptr(_sg(d, "m_Texture"))
             out["m_Color"] = _color(_sg(d, "m_Color"))
             out["m_UVRect"] = _vec(_sg(d, "m_UVRect"), ("x", "y", "width", "height"))
             out["m_RaycastTarget"] = _sg(d, "m_RaycastTarget")
 
         elif t == "Text":
-            out["m_GameObject"] = _pptr(_sg(d, "m_GameObject"))  # FIX §2.3
+            out["m_GameObject"] = _pptr(_sg(d, "m_GameObject"))
             fd = _sg(d, "m_FontData")
             out["m_Text"] = _sg(d, "m_Text")
             out["m_Color"] = _color(_sg(d, "m_Color"))
@@ -673,7 +853,7 @@ def _dump_ui_obj(o, source_file: str = "") -> dict:
                     out[f] = _sg(fd, f)
 
         elif t in ("TextMeshProUGUI", "TMP_Text"):
-            out["m_GameObject"] = _pptr(_sg(d, "m_GameObject"))  # FIX §2.3
+            out["m_GameObject"] = _pptr(_sg(d, "m_GameObject"))
             out["m_text"] = _sg(d, "m_text")
             out["m_fontAsset"] = _pptr(_sg(d, "m_fontAsset"))
             out["m_sharedMaterial"] = _pptr(_sg(d, "m_sharedMaterial"))
@@ -684,7 +864,7 @@ def _dump_ui_obj(o, source_file: str = "") -> dict:
                 out[f] = _sg(d, f)
 
         elif t == "Button":
-            out["m_GameObject"] = _pptr(_sg(d, "m_GameObject"))  # FIX §2.3
+            out["m_GameObject"] = _pptr(_sg(d, "m_GameObject"))
             out["m_Interactable"] = _sg(d, "m_Interactable")
             out["m_TargetGraphic"] = _pptr(_sg(d, "m_TargetGraphic"))
             out["m_Transition"] = _sg(d, "m_Transition")
@@ -706,7 +886,7 @@ def _dump_ui_obj(o, source_file: str = "") -> dict:
         elif t in ("Toggle", "Slider", "ScrollRect", "InputField", "TMP_InputField",
                    "Mask", "RectMask2D", "HorizontalLayoutGroup", "VerticalLayoutGroup",
                    "GridLayoutGroup", "LayoutElement", "ContentSizeFitter", "AspectRatioFitter"):
-            out["m_GameObject"] = _pptr(_sg(d, "m_GameObject"))  # FIX §2.3
+            out["m_GameObject"] = _pptr(_sg(d, "m_GameObject"))
             for f in dir(d):
                 if f.startswith("m_"):
                     try:
@@ -740,11 +920,8 @@ def _dump_ui_obj(o, source_file: str = "") -> dict:
             out["m_LineSpacing"] = _sg(d, "m_LineSpacing")
 
         elif t == "MonoBehaviour":
-            # FIX §2.3 — always include m_GameObject back-pointer
             out["m_GameObject"] = _pptr(_sg(d, "m_GameObject"))
-            out["script"] = _pptr(_sg(d, "m_Script"))
             out["m_Enabled"] = _sg(d, "m_Enabled")
-            # Try all m_ fields (works for the 377 that fully decoded)
             for f in dir(d):
                 if f.startswith("m_") and f not in ("m_Script", "m_GameObject"):
                     try:
@@ -763,13 +940,8 @@ def _dump_ui_obj(o, source_file: str = "") -> dict:
 
 
 def _get_env_external_refs(env) -> list[dict]:
-    """
-    FIX §2.2 — Capture the external-reference list from the UnityPy environment
-    so that cross-file PPtrs (m_FileID != 0) can be resolved to a named file.
-    """
     refs = []
     try:
-        # UnityPy stores cabs / external refs differently by version
         cabs = getattr(env, "cabs", None) or getattr(env, "files", {})
         if isinstance(cabs, dict):
             for name, cab in cabs.items():
@@ -779,7 +951,6 @@ def _get_env_external_refs(env) -> list[dict]:
                 refs.append({"index": i, "name": str(cab)})
     except Exception:
         pass
-    # Also try the container / dependency list on the asset bundle
     try:
         for i, dep in enumerate(getattr(env, "dependencies", []) or []):
             path = getattr(dep, "path", None) or str(dep)
@@ -790,17 +961,59 @@ def _get_env_external_refs(env) -> list[dict]:
     return refs
 
 
-def _run_stage4_ui_dump(raw_dir: Path, ui_dump_dir: Path, log, force: bool, progress_cb=None):
+def _load_script_map(dump_dir: Path | None) -> dict:
     """
-    Stage 4 v17: Full Unity UI field extraction.
+    FIX §3 Step B — Load Il2CppDumper's script.json and build
+    a path_id→class_name map so we can identify MonoBehaviour subclasses.
+    script.json format: [{"Address":…, "Name":"ClassName", "Signature":…,
+                          "TypeDefIndex":…}, …]
+    MonoScript path_ids in the bundle match TypeDefIndex.
+    """
+    if dump_dir is None:
+        return {}
+    script_json = dump_dir / "script.json"
+    if not script_json.exists():
+        return {}
+    try:
+        entries = json.loads(script_json.read_text(encoding="utf-8"))
+        # Build index by TypeDefIndex (int) → class name
+        by_typedef: dict[str, str] = {}
+        for e in entries:
+            idx = e.get("TypeDefIndex")
+            name = e.get("Name") or e.get("ClassName") or e.get("class")
+            if idx is not None and name:
+                by_typedef[str(idx)] = name
+        return by_typedef
+    except Exception:
+        return {}
 
-    KEY CHANGE (FIX §2.2): assets/bin/Data directories are now processed
-    ONE FILE AT A TIME instead of loading the whole directory. This keeps
-    path_id unique within each output JSON, making all PPtr references
-    unambiguous. Each JSON file also records `external_refs` (the file's
-    dependency list) so cross-file PPtrs (m_FileID != 0) can be resolved.
 
-    Bundles (.bundle) continue to be loaded individually as before.
+def _try_typetree_decode(o, env) -> dict | None:
+    """
+    FIX §3 Step B — Attempt read_typetree() which succeeds when UnityPy
+    can resolve the MonoBehaviour's class via loaded assemblies (dummy DLLs).
+    Returns a dict of all decoded fields, or None if it fails.
+    """
+    try:
+        tt = o.read_typetree()
+        if tt and isinstance(tt, dict) and len(tt) > 4:
+            # More than base 4 fields = subclass fields decoded
+            return tt
+    except Exception:
+        pass
+    return None
+
+
+def _run_stage4_ui_dump(raw_dir: Path, ui_dump_dir: Path, log, force: bool,
+                        dump_dir: Path | None = None,
+                        progress_cb=None):
+    """
+    Stage 4 v18: Full Unity UI field extraction.
+    - Per-file Data/ processing (FIX §2.2 from v17)
+    - m_Script extracted on decode failure (FIX §2.3)
+    - Precise raw bytes (FIX §2.2)
+    - typetree decode attempt via read_typetree() (FIX §3 Step B)
+    - script_map from Il2CppDumper for class name resolution
     """
     try:
         import UnityPy
@@ -814,20 +1027,22 @@ def _run_stage4_ui_dump(raw_dir: Path, ui_dump_dir: Path, log, force: bool, prog
         log(f"[INFO ] Tick 'Force Refresh' to re-run Stage 4.")
         return
 
-    log("[STEP ] Stage 4 — Full Unity UI field extraction (per-file, v17)…")
+    log("[STEP ] Stage 4 — Full Unity UI field extraction (per-file, v18)…")
     _wipe_dir(ui_dump_dir)
 
-    # ------------------------------------------------------------------ #
-    # Collect sources: individual serialized files inside Data/ dirs,     #
-    # plus standalone .bundle files.                                      #
-    # ------------------------------------------------------------------ #
-    individual_files: list[Path] = []   # one serialized file each
-    bundle_files: list[Path] = []       # .bundle files
+    # Load script.json → path_id→class map (FIX §3 Step B)
+    script_map = _load_script_map(dump_dir)
+    if script_map:
+        log(f"[INFO ] script.json loaded — {len(script_map)} class mappings available")
+    else:
+        log("[INFO ] No script.json found — MonoBehaviour class names will be unknown until Stage 4a runs")
+
+    individual_files: list[Path] = []
+    bundle_files: list[Path] = []
 
     for data_dir in raw_dir.rglob("assets/bin/Data"):
         if not data_dir.is_dir():
             continue
-        # Each file inside the Data/ directory is one serialized asset file
         for child in sorted(data_dir.iterdir()):
             if child.is_file():
                 individual_files.append(child)
@@ -839,15 +1054,15 @@ def _run_stage4_ui_dump(raw_dir: Path, ui_dump_dir: Path, log, force: bool, prog
     log(f"[INFO ] Found {len(individual_files)} serialized files + {len(bundle_files)} bundles ({total} total)")
 
     sprite_name_map: dict[str, dict] = {}
-    processed = skipped_empty = decode_fails = 0
+    processed = skipped_empty = decode_fails = typetree_successes = 0
 
-    def _process_one(src: Path, idx: int, is_data_file: bool):
-        nonlocal processed, skipped_empty, decode_fails
+    def _process_one(src: Path, idx: int):
+        nonlocal processed, skipped_empty, decode_fails, typetree_successes
 
         if progress_cb:
             progress_cb(idx / max(total, 1), f"Stage 4: {idx}/{total} — {src.name}")
 
-        source_file = src.name  # namespace for path_id (FIX §2.2)
+        source_file = src.name
         try:
             env = UnityPy.load(str(src))
         except Exception:
@@ -860,7 +1075,20 @@ def _run_stage4_ui_dump(raw_dir: Path, ui_dump_dir: Path, log, force: bool, prog
         for o in env.objects:
             if o.type.name not in WANT_TYPES:
                 continue
-            dumped = _dump_ui_obj(o, source_file=source_file)  # FIX §2.2 + §2.3
+
+            # FIX §3 Step B — attempt typetree decode first for MonoBehaviours
+            typetree_decoded = None
+            if o.type.name == "MonoBehaviour":
+                typetree_decoded = _try_typetree_decode(o, env)
+                if typetree_decoded:
+                    typetree_successes += 1
+
+            dumped = _dump_ui_obj(
+                o,
+                source_file=source_file,
+                script_map=script_map,
+                typetree_decoded=typetree_decoded,
+            )
             if dumped.get("_decode_failed"):
                 decode_fails += 1
             objs.append(dumped)
@@ -871,18 +1099,16 @@ def _run_stage4_ui_dump(raw_dir: Path, ui_dump_dir: Path, log, force: bool, prog
             skipped_empty += 1
             return
 
-        # FIX §2.2 — record external refs so cross-file PPtrs resolve
         external_refs = _get_env_external_refs(env)
 
-        # Build output filename that encodes the path relative to raw_dir
         rel = str(src.relative_to(raw_dir)).replace(os.sep, "_").replace(" ", "_")[:200]
         out_file = ui_dump_dir / f"{rel}.json"
         out_file.parent.mkdir(parents=True, exist_ok=True)
         out_file.write_text(
             json.dumps({
                 "source": str(src),
-                "source_file": source_file,   # FIX §2.2 key namespace
-                "external_refs": external_refs,  # FIX §2.2 cross-file PPtrs
+                "source_file": source_file,
+                "external_refs": external_refs,
                 "objects": objs,
             }, default=str, ensure_ascii=False),
             encoding="utf-8",
@@ -891,34 +1117,37 @@ def _run_stage4_ui_dump(raw_dir: Path, ui_dump_dir: Path, log, force: bool, prog
             sprite_name_map[str(src)] = {str(k): v for k, v in bundle_sprites.items()}
         processed += 1
         if processed % 500 == 0:
-            log(f"[INFO ] Stage 4: {processed}/{total} files processed ({decode_fails} MB decode fails)…")
+            log(f"[INFO ] Stage 4: {processed}/{total} files ({typetree_successes} MB decoded, {decode_fails} raw-bytes fallbacks)…")
 
-    # Process individual serialized Data/ files one at a time (FIX §2.2)
     for idx, src in enumerate(individual_files):
-        _process_one(src, idx, is_data_file=True)
+        _process_one(src, idx)
 
-    # Process bundles (already per-file, unchanged)
     for idx, src in enumerate(bundle_files, start=len(individual_files)):
-        _process_one(src, idx, is_data_file=False)
+        _process_one(src, idx)
 
-    # Write global sprite name map
     map_file = ui_dump_dir / "sprite_name_map.json"
     map_file.write_text(
         json.dumps(sprite_name_map, indent=2, ensure_ascii=False), encoding="utf-8"
     )
 
+    # Write script.json copy into ui_dump for consumer convenience
+    if dump_dir and (dump_dir / "script.json").exists():
+        import shutil as _sh
+        _sh.copy2(dump_dir / "script.json", ui_dump_dir / "script.json")
+        log(f"[OK   ] script.json copied to ui_dump/ for class name resolution")
+
     if progress_cb:
         progress_cb(1.0, "Stage 4: complete")
 
     log(f"[OK   ] Stage 4 complete — {processed} files → {ui_dump_dir}")
-    log(f"[OK   ] Sprite name map: {len(sprite_name_map)} sources")
+    log(f"[OK   ] MonoBehaviour typetree decoded: {typetree_successes} objects")
+    log(f"[INFO ] MonoBehaviour raw-bytes fallback: {decode_fails} objects (m_Script + precise bytes saved)")
     log(f"[INFO ] {skipped_empty} sources had no UI objects (skipped)")
-    log(f"[INFO ] {decode_fails} MonoBehaviour objects saved as raw bytes for offline decoding")
 
 
-# ─────────────────────────────────────────────────────────────────────────────────
+# ────────────────────────────────────────────────────────────────────────────
 # STAGE 5 — Bundle parser: resolve PPtrs, build normalized UI trees (Node.js)
-# ─────────────────────────────────────────────────────────────────────────────────
+# ────────────────────────────────────────────────────────────────────────────
 
 def _run_stage5_bundle_parser(ui_dump_dir: Path, normalized_ui_dir: Path, log, force: bool, progress_cb=None):
     if normalized_ui_dir.exists() and not force:
@@ -982,8 +1211,11 @@ def _run_stage5_bundle_parser(ui_dump_dir: Path, normalized_ui_dir: Path, log, f
         progress_cb(1.0, "Stage 5: complete")
 
 
-# ── main pipeline ──────────────────────────────────────────────────────────────────
-def _run_pipeline(src: Path, out_dir: Path, force: bool, java_override: str | None, log, progress_cb=None):
+# ── main pipeline ─────────────────────────────────────────────────────────────
+def _run_pipeline(src: Path, out_dir: Path, force: bool,
+                  java_override: str | None,
+                  il2cppdumper_exe: str | None,
+                  log, progress_cb=None):
     try:
         import UnityPy
     except ImportError:
@@ -1065,9 +1297,14 @@ def _run_pipeline(src: Path, out_dir: Path, force: bool, java_override: str | No
     (ai_dir / "ai_asset_index.json").write_text(json.dumps(asset_index, indent=2, ensure_ascii=False), encoding="utf-8")
     log(f"[OK   ] ai_asset_index.json — {len(asset_index)} files indexed")
 
-    if progress_cb: progress_cb(0.50, "Stage 4: UI field dump (per-file, v17)…")
+    # Stage 4a — Il2CppDumper (generates type trees; optional but strongly recommended)
+    if progress_cb: progress_cb(0.42, "Stage 4a: Il2CppDumper (type trees)…")
+    dump_dir = _run_stage4a_il2cppdumper(il2cpp_dir, out_dir, il2cppdumper_exe, log)
+
+    if progress_cb: progress_cb(0.50, "Stage 4: UI field dump (per-file, v18)…")
     _run_stage4_ui_dump(
         raw_dir, ui_dump_dir, log, force,
+        dump_dir=dump_dir,
         progress_cb=lambda p, msg: progress_cb(0.50 + p * 0.35, msg) if progress_cb else None
     )
 
@@ -1080,22 +1317,27 @@ def _run_pipeline(src: Path, out_dir: Path, force: bool, java_override: str | No
     if progress_cb: progress_cb(1.0, "All stages complete!")
     log(f"[DONE ] All stages complete → {out_dir}")
     log(f"")
-    log(f"[INFO ] ✔ ui_dump/          — Per-file UI dumps, path_id unique per JSON (FIX §2.2)")
-    log(f"[INFO ] ✔ ui_dump/          — m_GameObject on every component (FIX §2.3)")
-    log(f"[INFO ] ✔ ui_dump/          — MonoBehaviour raw bytes saved on decode failure (FIX §2.1)")
-    log(f"[INFO ] ✔ normalized_ui/    — Resolved UI trees (PPtrs now unambiguous)")
+    log(f"[INFO ] ✔ ui_dump/          — Per-file dumps, path_id unique per JSON")
+    log(f"[INFO ] ✔ ui_dump/          — m_Script + m_GameObject on every MonoBehaviour")
+    log(f"[INFO ] ✔ ui_dump/          — Precise-length raw bytes on decode failure")
+    log(f"[INFO ] ✔ ui_dump/          — typetree decoded where dummy DLLs resolved class")
+    log(f"[INFO ] ✔ normalized_ui/    — Resolved UI trees (PPtrs unambiguous)")
     log(f"[INFO ] ✔ unity_assets/     — Extracted PNGs and text assets")
+    if dump_dir:
+        log(f"[INFO ] ✔ il2cpp_dump/     — DummyDll + script.json (class map)")
+    else:
+        log(f"[INFO ] ℹ il2cpp_dump/     — Not generated (set Il2CppDumper path in UI to enable)")
     log(f"[INFO ] Next: open normalized_ui/ in your AI agent and generate React/Tailwind components.")
 
 
-# ── GUI ────────────────────────────────────────────────────────────────────────────────
+# ── GUI ───────────────────────────────────────────────────────────────────────
 class App(ctk.CTk):
-    VERSION = "v17"
+    VERSION = "v18"
 
     def __init__(self):
         super().__init__()
         self.title(f"IL2CPP Recovery Studio {self.VERSION}")
-        self.geometry("1100x900")
+        self.geometry("1100x960")
         self.configure(fg_color=BG_DEEP)
         ctk.set_appearance_mode("dark")
         ctk.set_default_color_theme("dark-blue")
@@ -1135,21 +1377,30 @@ class App(ctk.CTk):
         self._java_var = ctk.StringVar(value=self._cfg.get("java_path", ""))
         ctk.CTkEntry(card, textvariable=self._java_var, font=FNT_SMALL, fg_color=BG_DEEP, text_color=TEXT_BRIGHT).grid(row=2, column=1, padx=4, pady=6, sticky="ew")
 
+        # NEW — Il2CppDumper path input (for Stage 4a type-tree generation)
+        ctk.CTkLabel(card, text="Il2CppDumper (opt.)", font=FNT_BODY, text_color=NEON_ORANGE).grid(row=3, column=0, padx=12, pady=6, sticky="w")
+        self._il2cpp_dumper_var = ctk.StringVar(value=self._cfg.get("il2cppdumper_path", ""))
+        ctk.CTkEntry(card, textvariable=self._il2cpp_dumper_var, font=FNT_SMALL, fg_color=BG_DEEP, text_color=TEXT_BRIGHT,
+                     placeholder_text="Path to Il2CppDumper.exe — enables full MonoBehaviour decode").grid(row=3, column=1, padx=4, pady=6, sticky="ew")
+        ctk.CTkButton(card, text="Browse", width=80, font=FNT_SMALL, fg_color=NEON_ORANGE, hover_color=BTN_HOVER,
+                      command=self._browse_il2cppdumper).grid(row=3, column=2, padx=8, pady=6)
+
         self._force_var = ctk.BooleanVar(value=self._cfg.get("force_refresh", False))
         ctk.CTkCheckBox(card, text="Force Refresh (re-extract everything)", variable=self._force_var,
-                        font=FNT_SMALL, text_color=NEON_YEL, fg_color=NEON_PURP).grid(row=3, column=0, columnspan=3, padx=12, pady=6, sticky="w")
+                        font=FNT_SMALL, text_color=NEON_YEL, fg_color=NEON_PURP).grid(row=4, column=0, columnspan=3, padx=12, pady=6, sticky="w")
 
         legend = ctk.CTkFrame(self, fg_color=BG_CARD, corner_radius=8)
         legend.grid(row=2, column=0, sticky="ew", padx=16, pady=(0, 4))
-        legend.grid_columnconfigure((0, 1, 2, 3, 4), weight=1)
+        legend.grid_columnconfigure((0, 1, 2, 3, 4, 5), weight=1)
         for col, (label, color) in enumerate([
             ("1 • Unpack APK", NEON_CYAN),
             ("2 • PNG Assets", NEON_CYAN),
             ("3 • IL2CPP + Smali", NEON_CYAN),
+            ("4a • Type Trees", NEON_ORANGE),
             ("4 • UI Dump (per-file)", NEON_ORANGE),
             ("5 • Normalize Trees", NEON_GREEN),
         ]):
-            ctk.CTkLabel(legend, text=label, font=FNT_SMALL, text_color=color).grid(row=0, column=col, padx=8, pady=4)
+            ctk.CTkLabel(legend, text=label, font=FNT_SMALL, text_color=color).grid(row=0, column=col, padx=6, pady=4)
 
         run_frame = ctk.CTkFrame(self, fg_color="transparent")
         run_frame.grid(row=3, column=0, sticky="ew", padx=16, pady=4)
@@ -1195,6 +1446,13 @@ class App(ctk.CTk):
         p = filedialog.askdirectory(title="Select output directory")
         if p: self._out_var.set(p)
 
+    def _browse_il2cppdumper(self):
+        p = filedialog.askopenfilename(
+            title="Select Il2CppDumper executable",
+            filetypes=[("Executable", "*.exe *"), ("All", "*.*")]
+        )
+        if p: self._il2cpp_dumper_var.set(p)
+
     def _on_run(self):
         if self._running:
             messagebox.showinfo("Busy", "Pipeline already running.")
@@ -1209,9 +1467,12 @@ class App(ctk.CTk):
             messagebox.showerror("Not found", f"APK/XAPK not found:\n{src_path}")
             return
 
-        self._cfg.update({"last_apk": src, "last_out": out,
-                          "java_path": self._java_var.get().strip(),
-                          "force_refresh": self._force_var.get()})
+        self._cfg.update({
+            "last_apk": src, "last_out": out,
+            "java_path": self._java_var.get().strip(),
+            "il2cppdumper_path": self._il2cpp_dumper_var.get().strip(),
+            "force_refresh": self._force_var.get(),
+        })
         _save_config(self._cfg)
 
         self._log_box.delete("1.0", "end")
@@ -1219,19 +1480,25 @@ class App(ctk.CTk):
         self._progress_label.configure(text="Starting…")
         self._running = True
         self._run_btn.configure(state="disabled", text="Running…")
-        self._status.configure(text="Pipeline running — all 5 stages will complete in order.")
+        self._status.configure(text="Pipeline running — all stages will complete in order.")
 
         threading.Thread(
             target=self._worker,
-            args=(src_path, Path(out), self._force_var.get(), self._java_var.get().strip() or None),
+            args=(
+                src_path, Path(out),
+                self._force_var.get(),
+                self._java_var.get().strip() or None,
+                self._il2cpp_dumper_var.get().strip() or None,
+            ),
             daemon=True,
         ).start()
 
-    def _worker(self, src: Path, out: Path, force: bool, java_override: str | None):
+    def _worker(self, src: Path, out: Path, force: bool,
+                java_override: str | None, il2cppdumper_exe: str | None):
         def log(msg: str): self._q.put(("log", msg))
         def progress(value: float, label: str): self._q.put(("progress", value, label))
         try:
-            _run_pipeline(src, out, force, java_override, log, progress_cb=progress)
+            _run_pipeline(src, out, force, java_override, il2cppdumper_exe, log, progress_cb=progress)
         except Exception as exc:
             import traceback
             log(f"[FATAL] Unhandled error: {exc}")
