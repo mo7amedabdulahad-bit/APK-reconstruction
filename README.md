@@ -1,154 +1,145 @@
-# ⬡ IL2CPP Recovery Studio
+# APK Reconstruction — Travian Legends Mobile UI Extractor
 
-> **A futuristic neon-themed desktop tool for extracting, analysing and reverse-engineering Unity Android APK / XAPK files.**
+A two-stage pipeline to extract **pixel-exact Unity UI data** from the Travian Legends Mobile APK and convert it into normalized JSON trees ready for React/Tailwind code generation.
 
 ---
 
-## 🖥️ What does this app do?
+## Pipeline Overview
 
-You drop an APK or XAPK file into the app, tick the operations you want, press **Run** — and everything happens automatically:
+```
+APK / AssetBundles
+       │
+       ▼
+ [Stage 1]  extract_ui_full.py      →  ui_dump/          (one JSON per bundle)
+       │
+       ▼
+ [Stage 2]  scripts/parse-unity-bundle.mjs  →  normalized_ui/  (resolved UI trees)
+       │
+       ▼
+ [Stage 3]  AI Agent  →  React/Tailwind components
+```
 
-| Operation | What it does |
+---
+
+## Requirements
+
+```bash
+pip install -r requirements.txt
+node --version   # v18+ required for the parser script
+```
+
+---
+
+## Stage 1 — Full Unity Asset Extraction
+
+> **Script:** `extract_ui_full.py`  
+> **Engine:** [UnityPy](https://github.com/K0lb3/UnityPy) ≥ 1.20  
+> **Why:** The previous IL2CPP Recovery Studio tool only captured object names and loose PNGs. It left `m_Position = null` in all 37,223 RectTransform files and empty MonoBehaviour components — making pixel-exact layout reconstruction impossible. UnityPy reads all serialized fields natively.
+
+### Run
+
+```bash
+# Extract the main APK data
+python extract_ui_full.py "path/to/com.traviangames.travianlegendsmobile/assets/bin/Data" "ui_dump/main"
+
+# Extract the asset pack (most UI bundles live here)
+python extract_ui_full.py "path/to/UnityDataAssetPack/assets/bin/Data" "ui_dump/assetpack"
+```
+
+### Output
+
+- `ui_dump/<subfolder>/<bundle_name>.json` — one file per source bundle, `path_id` unique within each file
+- `ui_dump/<subfolder>/sprite_name_map.json` — maps every Sprite `path_id` → PNG filename for resolving `Image.m_Sprite`
+
+### What is extracted per object type
+
+| Type | Key fields captured |
 |---|---|
-| Extract APK/XAPK | Unzips the package into raw folders |
-| Extract Unity Assets | Exports textures, audio, scenes using UnityPy |
-| Parse IL2CPP Metadata | Copies `global-metadata.dat` + `libil2cpp.so` for further analysis |
-| Decompile to Smali | Runs `apktool` to produce readable Smali source code |
-| Generate HTML Report | Creates a pretty `report.html` summary of all outputs |
-
-Files that already exist are **automatically skipped** — so re-runs are safe and fast.
-
----
-
-## ✅ Requirements
-
-| Tool | Version | Download |
-|---|---|---|
-| **Python** | 3.10 or newer | https://www.python.org/downloads/ |
-| **Git** *(optional)* | any | https://git-scm.com/ |
-| **apktool** *(optional)* | any | https://apktool.org |
-
-All Python libraries (customtkinter, UnityPy, Pillow, requests) are installed **automatically** when you launch the app.
+| `RectTransform` | `m_AnchorMin/Max`, `m_AnchoredPosition`, `m_SizeDelta`, `m_OffsetMin/Max`, `m_Pivot`, `m_LocalScale`, `m_Father`, `m_Children` |
+| `Image` | `m_Sprite` (path_id + name), `m_Color` (RGBA), `m_Type` (Simple/Sliced/Tiled/Filled), `m_FillMethod/Amount` |
+| `TextMeshProUGUI` | `m_text`, `m_fontAsset`, `m_fontSize`, `m_fontStyle`, `m_alignment`, `m_color`, `m_margin` |
+| `Button` | `m_Interactable`, `m_Colors`, `m_OnClick` (target + method name) |
+| `CanvasScaler` | `m_UiScaleMode`, `m_ReferenceResolution`, `m_MatchWidthOrHeight` |
+| `LayoutGroup` | `m_Padding`, `m_Spacing`, `m_ChildAlignment`, expand/control flags |
+| `Sprite` | `m_Rect`, `m_Pivot`, `m_PixelsPerUnit`, `m_Border` (for 9-slice) |
+| `ScrollRect`, `Slider`, `Toggle`, `InputField` | All layout and value fields |
+| `Font` / `TMP_FontAsset` | Atlas texture reference, line spacing |
 
 ---
 
-## 🚀 Step-by-Step: Run from Source (No EXE needed)
+## Stage 2 — Bundle Parser & UI Tree Builder
 
-### Step 1 — Install Python
+> **Script:** `scripts/parse-unity-bundle.mjs`  
+> **Runtime:** Node.js 18+
 
-1. Open https://www.python.org/downloads/
-2. Download the latest **Python 3.10+** installer for Windows
-3. Run the installer — **tick "Add Python to PATH"** before clicking Install
-4. Open a terminal (`Win + R` → type `cmd` → Enter) and run:
-   ```
-   python --version
-   ```
-   You should see `Python 3.10.x` or higher.
+Reads the per-bundle JSONs from Stage 1, resolves PPtrs within each bundle, and builds a normalized element tree (layout, sprite, text, color, children) per UI window root.
 
-### Step 2 — Download this repository
-
-**Option A — with Git (recommended):**
-```bash
-git clone https://github.com/mo7amedabdulahad-bit/APK-reconstruction.git
-cd APK-reconstruction
-```
-
-**Option B — without Git:**
-1. Click the green **Code** button on GitHub → **Download ZIP**
-2. Extract the ZIP anywhere on your PC
-3. Open the extracted folder
-
-### Step 3 — Launch the app
-
-Double-click `launch.bat`  
-*or* open a terminal inside the folder and run:
-```bash
-python launch.py
-```
-
-The launcher will:
-- Check your Python version
-- Auto-install all required packages
-- Open the futuristic neon GUI
-
-> **First launch may take 30–60 seconds** while packages download.
-
-### Step 4 — Use the app
-
-1. **Click the purple drop zone** and select your `.apk` or `.xapk` file
-2. (Optional) Click **Browse Output…** to choose where results are saved
-3. **Tick the operations** you want — each one has a description
-4. Click **▶ RUN ANALYSIS**
-5. Watch the live log on the right — green = success, yellow = warning, red = error
-6. When complete, read the **Results & Next Steps** panel
-7. Click **📁 Open Output Folder** to see all extracted files
-
----
-
-## 🛠️ Build a standalone .EXE (Windows)
-
-If you want a double-clickable `.exe` that works **without Python installed**:
+### Run
 
 ```bash
-python build_exe.py
+node scripts/parse-unity-bundle.mjs ui_dump/assetpack normalized_ui
 ```
 
-This script:
-1. Installs PyInstaller automatically
-2. Builds the EXE into `dist/IL2CPP_Recovery_Studio.exe`
-3. Tells you exactly where the file is
+### Output format (one file per bundle)
 
-> Building takes 1–3 minutes. The output EXE is portable — just copy it.
-
----
-
-## 🔄 Auto-update
-
-To pull the latest changes from GitHub before launching:
-```bash
-python launch.py --update
-```
-
----
-
-## 📁 Output folder structure
-
-After running, your output folder contains:
-
-```
-your_app_output/
-├── raw/                  ← Unzipped APK contents
-│   └── base_extracted/   ← (XAPK only) inner APK contents
-├── unity_assets/
-│   ├── Texture2D/        ← PNG textures
-│   ├── AudioClip/        ← Audio files
-│   └── TextAsset/        ← Text / JSON data
-├── il2cpp_meta/
-│   ├── global-metadata.dat
-│   └── libil2cpp.so
-├── smali/                ← (if apktool used)
-└── report.html           ← Open this in your browser!
+```jsonc
+{
+  "source": "b_mapcellinfo_assets_all_xxx.bundle",
+  "roots": [
+    {
+      "path_id": 40,
+      "name": "MapCellInfoWindow",
+      "is_active": true,
+      "layout": {
+        "anchorMin": { "x": 0, "y": 0 },
+        "anchorMax": { "x": 1, "y": 1 },
+        "sizeDelta": { "x": 0, "y": 0 }
+      },
+      "image": { "sprite": "panel_bg", "color": "rgba(255,255,255,1.000)", "type": 1 },
+      "text": null,
+      "children": [ ... ]
+    }
+  ]
+}
 ```
 
 ---
 
-## ❓ Troubleshooting
+## Stage 3 — AI Agent Code Generation
 
-| Problem | Solution |
-|---|---|
-| `python` not recognised | Re-install Python with "Add to PATH" ticked |
-| `ModuleNotFoundError` | Run `pip install customtkinter UnityPy Pillow requests` |
-| `apktool` not found | Download from https://apktool.org and add to PATH |
-| App opens but GUI is blank | Make sure you have Python 3.10+ (not 3.9 or below) |
-| XAPK says no APK inside | Some XAPK files use split APKs — check the `raw/` folder |
+Feed the normalized JSON files from `normalized_ui/` to your AI agent with the prompt:
 
----
+> "Generate a pixel-exact React/Tailwind component for the UI tree in this JSON. Use absolute positioning derived from the `layout.anchorMin/Max/anchoredPosition/sizeDelta` fields. Reference sprites from `public/travian-ui/<screen>/<sprite>.png`. Apply colors from the `color` fields. Use the `text.content`, `text.fontSize`, and `text.color` fields for all text nodes."
 
-## 📜 Licence
+### Recommended validation order
 
-This project is for educational and research purposes only.  
-Do not use it to reverse-engineer apps you do not own or have permission to analyse.
+1. **MapCellInfoWindow** — small, self-contained, good first test
+2. Village overview screen
+3. Building detail panels
+4. Navigation / HUD elements
 
 ---
 
-*Made with ⬡ by IL2CPP Recovery Studio contributors*
+## Folder Structure
+
+```
+APK-reconstruction/
+├── extract_ui_full.py          ← Stage 1: UnityPy extractor
+├── scripts/
+│   └── parse-unity-bundle.mjs ← Stage 2: Node.js bundle parser
+├── ui_dump/                    ← Stage 1 output (gitignored, large)
+│   └── sprite_name_map.json
+├── normalized_ui/              ← Stage 2 output (gitignored, large)
+├── il2cpp_recovery_studio/     ← Existing IL2CPP code recovery tool
+├── extracted_assets/           ← Existing extracted PNGs
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## Known Limitations
+
+- **3D splash/loading screen hero** cannot be reconstructed from this pipeline. It requires exporting the SkinnedMesh to `.gltf/.glb` via Unity Editor or a dedicated mesh exporter.
+- **Dynamic/localized text**: `m_text` captures the inspector-default string. Runtime-localized strings are in `extracted_assets/localization/` — match them by the localization key stored in the `MonoBehaviour` component of each TMP object.
+- **Cross-bundle PPtrs** (`m_FileID != 0`) are noted in the output but not auto-resolved. If a sprite lives in a shared atlas bundle, search `sprite_name_map.json` by name.

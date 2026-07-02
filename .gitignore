@@ -35,6 +35,14 @@ metadata_output/properties.json
 metadata_output/methods.json
 metadata_output/all_types.json
 
+# ---- ui_dump: large extraction output (schema only committed) ----
+ui_dump/**/*.json
+!ui_dump/.gitkeep
+
+# ---- normalized_ui: large output (schema only committed) ----
+normalized_ui/**/*.json
+!normalized_ui/.gitkeep
+
 # ---- Build Artifacts ----
 *.pyc
 __pycache__/
