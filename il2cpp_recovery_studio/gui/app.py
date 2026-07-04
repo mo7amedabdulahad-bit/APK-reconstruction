@@ -498,6 +498,15 @@ def _dump_env(env, dest: Path, log, force: bool) -> tuple[int, int]:
             out = _unique_path(dest, stem, ext) if force else dest / f"{stem}{ext}"
             out.parent.mkdir(parents=True, exist_ok=True)
             out.write_bytes(raw); written += 1
+        elif t == "AudioClip":
+            if not force and _skip_path(dest, stem, ".wav"):
+                skipped += 1; continue
+            try:
+                for name, sample_data in data.samples.items():
+                    out = _unique_path(dest, stem, ".wav") if force else dest / f"{stem}.wav"
+                    out.parent.mkdir(parents=True, exist_ok=True)
+                    out.write_bytes(sample_data); written += 1
+            except Exception: pass
         elif t == "MonoBehaviour":
             if not force and _skip_path(dest, stem, ".json"):
                 skipped += 1; continue
@@ -676,6 +685,8 @@ WANT_TYPES = {
     "AspectRatioFitter",
     "Sprite", "Texture2D", "SpriteAtlas",
     "MonoBehaviour", "MonoScript", "Font", "TMP_FontAsset",
+    "Animator", "AnimationClip", "AnimatorController", "AnimatorOverrideController",
+    "TextAsset", "AudioClip",
 }
 
 
@@ -1014,9 +1025,10 @@ def _dump_ui_obj(
             out["m_FontSize"]     = _sg(d, "m_FontSize")
             out["m_LineSpacing"]  = _sg(d, "m_LineSpacing")
 
-        elif t == "MonoBehaviour":
-            out["m_GameObject"] = _p(_sg(d, "m_GameObject"))
-            out["m_Enabled"]    = _sg(d, "m_Enabled")
+        elif t in ("MonoBehaviour", "Animator", "AnimationClip", "AnimatorController", "AnimatorOverrideController"):
+            if t == "MonoBehaviour":
+                out["m_GameObject"] = _p(_sg(d, "m_GameObject"))
+                out["m_Enabled"]    = _sg(d, "m_Enabled")
             for f in dir(d):
                 if f.startswith("m_") and f not in ("m_Script", "m_GameObject"):
                     try:
@@ -1027,6 +1039,16 @@ def _dump_ui_obj(
                             out[f] = _p(v)
                     except Exception:
                         pass
+        elif t == "TextAsset":
+            out["m_Name"] = _sg(d, "m_Name")
+            out["text"] = getattr(d, "m_Script", "") or getattr(d, "m_Text", "") or getattr(d, "text", "")
+            if isinstance(out["text"], bytes):
+                try: out["text"] = out["text"].decode("utf-8")
+                except: out["text"] = "<binary_data>"
+        elif t == "AudioClip":
+            out["m_Name"] = _sg(d, "m_Name")
+            out["m_Length"] = _sg(d, "m_Length")
+            out["m_Frequency"] = _sg(d, "m_Frequency")
 
     except Exception as e:
         out["_field_error"] = str(e)
@@ -1104,6 +1126,26 @@ def _run_stage4_ui_dump(
 
     # 1. Load global environment and sprite index
     env = build_global_env(raw_dir, log)
+    
+    # 1b. Configure TypeTreeGenerator using DummyDlls
+    if dump_dir and (dump_dir / "DummyDll").exists():
+        try:
+            from TypeTreeGeneratorAPI import TypeTreeGenerator
+            # Determine Unity version from first available asset
+            unity_ver = "2021.3.11f1"
+            if env.objects:
+                unity_ver = getattr(env.objects[0].assets_file, "unity_version", unity_ver)
+            
+            generator = TypeTreeGenerator(unity_ver)
+            for dll_file in (dump_dir / "DummyDll").glob("*.dll"):
+                generator.load_dll(dll_file.read_bytes())
+            env.typetree_generator = generator
+            log(f"[INFO ] TypeTreeGenerator loaded {len(list((dump_dir / 'DummyDll').glob('*.dll')))} DummyDlls successfully (Unity {unity_ver}).")
+        except ImportError:
+            log("[WARN ] TypeTreeGeneratorAPI not installed. Run: pip install TypeTreeGeneratorAPI")
+        except Exception as e:
+            log(f"[WARN ] TypeTreeGenerator failed to load DummyDll: {e}")
+            
     sprite_index = build_global_sprite_index(env, log)
     script_map = _load_script_map(dump_dir)
 
@@ -1116,8 +1158,8 @@ def _run_stage4_ui_dump(
         
         # Determine source file name
         source_name = "unknown"
-        if hasattr(o, "assetsfile"):
-            source_name = getattr(o.assetsfile, "name", "unknown")
+        if getattr(o, "assets_file", None) is not None:
+            source_name = getattr(o.assets_file, "name", "unknown") or "unknown"
         
         if source_name not in objects_by_file:
             objects_by_file[source_name] = []
@@ -1141,10 +1183,11 @@ def _run_stage4_ui_dump(
 
     def _count_pptrs(data):
         if isinstance(data, dict):
-            if "unresolved" in data:
-                if data["unresolved"]:
+            # A PPtr dict has "path_id" — check if it was resolved
+            if "path_id" in data and data["path_id"] is not None:
+                if data.get("unresolved"):
                     stats["unresolved"] += 1
-                else:
+                elif data.get("name"):
                     stats["resolved"] += 1
             for v in data.values():
                 _count_pptrs(v)
@@ -1330,6 +1373,42 @@ def _run_pipeline(
     (ai_dir / "ai_scene_map.json").write_text(
         json.dumps(scene_map, indent=2, ensure_ascii=False), encoding="utf-8")
     log(f"[OK   ] ai_scene_map.json — {len(scene_map)} entries")
+
+    # Parse and export Addressables catalog if it exists
+    catalog_bin = None
+    for p in raw_dir.rglob("catalog.bin"):
+        catalog_bin = p
+        break
+    if catalog_bin:
+        try:
+            from addressablestools import parse_binary
+            catalog = parse_binary(catalog_bin.read_bytes())
+            out_catalog = {
+                "locator_id": catalog.locator_id,
+                "build_result_hash": catalog.build_result_hash,
+                "resources": {}
+            }
+            for key, locations in catalog.resources.items():
+                key_str = str(key)
+                out_locations = []
+                for loc in locations:
+                    loc_dict = {
+                        "primary_key": loc.primary_key,
+                        "internal_id": loc.internal_id,
+                        "provider_id": loc.provider_id,
+                        "type": loc.type.class_name if loc.type else None,
+                        "dependencies": [dep.primary_key for dep in loc.dependencies] if loc.dependencies else []
+                    }
+                    out_locations.append(loc_dict)
+                out_catalog["resources"][key_str] = out_locations
+            (ai_dir / "addressables_catalog.json").write_text(
+                json.dumps(out_catalog, indent=2, ensure_ascii=False), encoding="utf-8")
+            log(f"[OK   ] addressables_catalog.json — {len(out_catalog['resources'])} keys parsed")
+        except Exception as exc:
+            log(f"[WARN ] Failed to parse addressables catalog: {exc}")
+    else:
+        log("[INFO ] No catalog.bin found — skipping Addressables catalog export")
+
     asset_index = _build_ai_asset_index(out_dir)
     (ai_dir / "ai_asset_index.json").write_text(
         json.dumps(asset_index, indent=2, ensure_ascii=False), encoding="utf-8")
@@ -1353,6 +1432,14 @@ def _run_pipeline(
         progress_cb=lambda p, msg: progress_cb(0.85 + p * 0.14, msg) if progress_cb else None,
     )
 
+    # Rebuild ai_asset_index now that all stages have produced their output
+    log("[STEP ] Rebuilding AI asset index (post-pipeline)…")
+    ai_dir.mkdir(parents=True, exist_ok=True)
+    asset_index = _build_ai_asset_index(out_dir)
+    (ai_dir / "ai_asset_index.json").write_text(
+        json.dumps(asset_index, indent=2, ensure_ascii=False), encoding="utf-8")
+    log(f"[OK   ] ai_asset_index.json — {len(asset_index)} files indexed")
+
     if progress_cb: progress_cb(1.0, "All stages complete!")
     log(f"[DONE ] All stages complete → {out_dir}")
     log("")
@@ -1368,7 +1455,7 @@ def _run_pipeline(
 
 # ── GUI ───────────────────────────────────────────────────────────────────────
 class App(ctk.CTk):
-    VERSION = "v22"
+    VERSION = "v23"
 
     def __init__(self):
         super().__init__()

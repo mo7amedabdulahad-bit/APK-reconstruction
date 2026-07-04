@@ -36,7 +36,7 @@ def build_global_env(raw_dir: Path, log: Callable) -> object:
     log(f"[INFO ] Building merged environment from {len(all_files)} files…")
 
     # UnityPy.load() with a directory recursively loads all Unity asset files
-    env = UnityPy.load(raw_dir)
+    env = UnityPy.load(str(raw_dir))
 
     total_objects = sum(1 for _ in env.objects)
     log(f"[OK   ] Merged environment ready — {total_objects} objects across {len(all_files)} files")
@@ -59,7 +59,9 @@ def build_global_sprite_index(env, log: Callable) -> dict[str, dict]:
             name = getattr(data, "m_Name", None) or getattr(data, "name", None) or ""
         except Exception:
             name = ""
-        file_name = getattr(o.assetsfile, "name", "") if hasattr(o, "assetsfile") else ""
+        file_name = ""
+        if getattr(o, "assets_file", None) is not None:
+            file_name = getattr(o.assets_file, "name", "") or ""
         key = f"{file_name}|{o.path_id}"
         index[key] = {"name": name, "type": o.type.name, "path_id": o.path_id,
                       "file_name": file_name}
