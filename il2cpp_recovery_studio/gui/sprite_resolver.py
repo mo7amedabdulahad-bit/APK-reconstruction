@@ -23,23 +23,20 @@ def build_global_env(raw_dir: Path, log: Callable) -> object:
     """
     import UnityPy
 
+    # Count files for info message
     all_files: list[Path] = []
-
-    # Individual serialized files (assets/bin/Data/*)
     for data_dir in raw_dir.rglob("assets/bin/Data"):
         if data_dir.is_dir():
             for child in sorted(data_dir.iterdir()):
                 if child.is_file():
                     all_files.append(child)
-
-    # Bundle files
     for bundle in raw_dir.rglob("*.bundle"):
         all_files.append(bundle)
 
     log(f"[INFO ] Building merged environment from {len(all_files)} files…")
 
-    # UnityPy.load() accepts a list of paths and merges them into one env
-    env = UnityPy.load([str(f) for f in all_files])
+    # UnityPy.load() with a directory recursively loads all Unity asset files
+    env = UnityPy.load(raw_dir)
 
     total_objects = sum(1 for _ in env.objects)
     log(f"[OK   ] Merged environment ready — {total_objects} objects across {len(all_files)} files")
