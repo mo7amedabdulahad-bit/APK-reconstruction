@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 """
-IL2CPP Recovery Studio — app.py v20
+IL2CPP Recovery Studio — app.py v22
 
-Fixes vs v19:
+v22: Merged UnityPy environment for cross-bundle sprite resolution.
+     _run_stage4_ui_dump now loads ALL files into a single environment so
+     cross-bundle PPtrs resolve natively.  Unresolved refs produce explicit
+     {"unresolved": true, ...} dicts instead of null.
   1. DOWNLOAD FIX — urllib now sends a User-Agent header (GitHub blocks
      urlretrieve which sends no UA). Uses urllib.request.Request + urlopen.
   2. METADATA v39 FIX — Before running Il2CppDumper, writes a config.json
@@ -27,6 +30,12 @@ import time
 import urllib.request
 import zipfile
 from pathlib import Path
+
+from il2cpp_recovery_studio.gui.sprite_resolver import (
+    build_global_env,
+    build_global_sprite_index,
+    write_sprite_mapping_report,
+)
 
 import customtkinter as ctk
 from tkinter import filedialog, messagebox
@@ -677,7 +686,7 @@ def _sg(obj, field, default=None):
         return default
 
 
-def _pptr(obj):
+def _pptr(obj, sprite_index=None, current_file=""):
     if obj is None:
         return None
     try:
@@ -690,6 +699,16 @@ def _pptr(obj):
                 name = getattr(read, "m_Name", None) or getattr(read, "name", None)
             except Exception:
                 pass
+
+        # If local read failed to get a name and we have a global index,
+        # try cross-bundle resolution
+        if not name and sprite_index is not None:
+            try:
+                from il2cpp_recovery_studio.gui.sprite_resolver import resolve_pptr_global
+                return resolve_pptr_global(obj, current_file, sprite_index)
+            except Exception:
+                pass
+
         result = {"path_id": pid}
         if fid is not None and fid != 0:
             result["file_id"] = fid
@@ -805,6 +824,7 @@ def _dump_ui_obj(
     source_file:      str        = "",
     script_map:       dict | None = None,
     typetree_decoded: dict | None = None,
+    sprite_index:     dict | None = None,
 ) -> dict:
     t   = o.type.name
     out: dict = {
@@ -817,6 +837,10 @@ def _dump_ui_obj(
         out["_typetree_decoded"] = True
         out.update(typetree_decoded)
         return out
+
+    # Local binding so all _pptr calls inside this function pass through
+    # the global sprite_index and source_file for cross-bundle resolution.
+    _p = lambda obj: _pptr(obj, sprite_index=sprite_index, current_file=source_file)
 
     try:
         d = o.read()
@@ -841,7 +865,7 @@ def _dump_ui_obj(
 
     try:
         if t == "MonoBehaviour":
-            out["m_Script"] = _pptr(_sg(d, "m_Script"))
+            out["m_Script"] = _p(_sg(d, "m_Script"))
             if script_map:
                 pid = str(out["m_Script"].get("path_id", "")) if out["m_Script"] else ""
                 cls = script_map.get(pid)
@@ -853,21 +877,21 @@ def _dump_ui_obj(
             out["is_active"] = _sg(d, "m_IsActive")
             comps = _sg(d, "m_Component", [])
             out["components"] = [
-                _pptr(c.component) if hasattr(c, "component") else _pptr(c) for c in comps
+                _p(c.component) if hasattr(c, "component") else _p(c) for c in comps
             ]
 
         elif t in ("Transform", "RectTransform"):
-            out["m_GameObject"] = _pptr(_sg(d, "m_GameObject"))
+            out["m_GameObject"] = _p(_sg(d, "m_GameObject"))
             for f in ("m_LocalPosition", "m_LocalRotation", "m_LocalScale",
                       "m_AnchorMin", "m_AnchorMax", "m_AnchoredPosition",
                       "m_SizeDelta", "m_OffsetMin", "m_OffsetMax", "m_Pivot"):
                 if hasattr(d, f):
                     out[f] = _vec(getattr(d, f))
-            out["m_Father"]   = _pptr(_sg(d, "m_Father"))
-            out["m_Children"] = [_pptr(c) for c in _sg(d, "m_Children", [])]
+            out["m_Father"]   = _p(_sg(d, "m_Father"))
+            out["m_Children"] = [_p(c) for c in _sg(d, "m_Children", [])]
 
         elif t == "CanvasRenderer":
-            out["m_GameObject"] = _pptr(_sg(d, "m_GameObject"))
+            out["m_GameObject"] = _p(_sg(d, "m_GameObject"))
             for f in dir(d):
                 if f.startswith("m_") and f != "m_GameObject":
                     try: out[f] = _sg(d, f)
@@ -896,37 +920,37 @@ def _dump_ui_obj(
             out["m_AssemblyName"] = _sg(d, "m_AssemblyName")
 
         elif t == "Image":
-            out["m_GameObject"] = _pptr(_sg(d, "m_GameObject"))
-            out["m_Sprite"]     = _pptr(_sg(d, "m_Sprite"))
-            out["m_Material"]   = _pptr(_sg(d, "m_Material"))
+            out["m_GameObject"] = _p(_sg(d, "m_GameObject"))
+            out["m_Sprite"]     = _p(_sg(d, "m_Sprite"))
+            out["m_Material"]   = _p(_sg(d, "m_Material"))
             out["m_Color"]      = _color(_sg(d, "m_Color"))
             for f in ("m_Type", "m_PreserveAspect", "m_FillMethod", "m_FillAmount",
                       "m_FillCenter", "m_RaycastTarget", "m_Maskable"):
                 out[f] = _sg(d, f)
 
         elif t == "RawImage":
-            out["m_GameObject"]  = _pptr(_sg(d, "m_GameObject"))
-            out["m_Texture"]     = _pptr(_sg(d, "m_Texture"))
+            out["m_GameObject"]  = _p(_sg(d, "m_GameObject"))
+            out["m_Texture"]     = _p(_sg(d, "m_Texture"))
             out["m_Color"]       = _color(_sg(d, "m_Color"))
             out["m_UVRect"]      = _vec(_sg(d, "m_UVRect"), ("x", "y", "width", "height"))
             out["m_RaycastTarget"] = _sg(d, "m_RaycastTarget")
 
         elif t == "Text":
-            out["m_GameObject"] = _pptr(_sg(d, "m_GameObject"))
+            out["m_GameObject"] = _p(_sg(d, "m_GameObject"))
             fd = _sg(d, "m_FontData")
             out["m_Text"]  = _sg(d, "m_Text")
             out["m_Color"] = _color(_sg(d, "m_Color"))
             if fd:
-                out["m_Font"] = _pptr(_sg(fd, "m_Font"))
+                out["m_Font"] = _p(_sg(fd, "m_Font"))
                 for f in ("m_FontSize", "m_FontStyle", "m_Alignment", "m_RichText",
                           "m_HorizontalOverflow", "m_VerticalOverflow", "m_LineSpacing"):
                     out[f] = _sg(fd, f)
 
         elif t in ("TextMeshProUGUI", "TMP_Text"):
-            out["m_GameObject"]    = _pptr(_sg(d, "m_GameObject"))
+            out["m_GameObject"]    = _p(_sg(d, "m_GameObject"))
             out["m_text"]          = _sg(d, "m_text")
-            out["m_fontAsset"]     = _pptr(_sg(d, "m_fontAsset"))
-            out["m_sharedMaterial"] = _pptr(_sg(d, "m_sharedMaterial"))
+            out["m_fontAsset"]     = _p(_sg(d, "m_fontAsset"))
+            out["m_sharedMaterial"] = _p(_sg(d, "m_sharedMaterial"))
             out["m_color"]         = _color(_sg(d, "m_color"))
             for f in ("m_fontSize", "m_fontSizeMin", "m_fontSizeMax", "m_enableAutoSizing",
                       "m_fontStyle", "m_alignment", "m_margin", "m_richText",
@@ -934,9 +958,9 @@ def _dump_ui_obj(
                 out[f] = _sg(d, f)
 
         elif t == "Button":
-            out["m_GameObject"]   = _pptr(_sg(d, "m_GameObject"))
+            out["m_GameObject"]   = _p(_sg(d, "m_GameObject"))
             out["m_Interactable"] = _sg(d, "m_Interactable")
-            out["m_TargetGraphic"] = _pptr(_sg(d, "m_TargetGraphic"))
+            out["m_TargetGraphic"] = _p(_sg(d, "m_TargetGraphic"))
             out["m_Transition"]   = _sg(d, "m_Transition")
             colors = _sg(d, "m_Colors")
             if colors:
@@ -950,19 +974,19 @@ def _dump_ui_obj(
                 calls = _sg(on_click, "m_PersistentCalls")
                 if calls:
                     out["m_OnClick"] = [
-                        {"target": _pptr(_sg(c, "m_Target")), "method": _sg(c, "m_MethodName")}
+                        {"target": _p(_sg(c, "m_Target")), "method": _sg(c, "m_MethodName")}
                         for c in _sg(calls, "m_Calls", [])
                     ]
 
         elif t in ("Toggle", "Slider", "ScrollRect", "InputField", "TMP_InputField",
                    "Mask", "RectMask2D", "HorizontalLayoutGroup", "VerticalLayoutGroup",
                    "GridLayoutGroup", "LayoutElement", "ContentSizeFitter", "AspectRatioFitter"):
-            out["m_GameObject"] = _pptr(_sg(d, "m_GameObject"))
+            out["m_GameObject"] = _p(_sg(d, "m_GameObject"))
             for f in dir(d):
                 if f.startswith("m_"):
                     try:
                         v = _sg(d, f)
-                        out[f] = _pptr(v) if hasattr(v, "path_id") else v
+                        out[f] = _p(v) if hasattr(v, "path_id") else v
                     except Exception:
                         pass
 
@@ -973,7 +997,7 @@ def _dump_ui_obj(
             out["border"]          = _vec(_sg(d, "m_Border"), ("x", "y", "z", "w"))
             rd = _sg(d, "m_RD")
             if rd:
-                out["texture"] = _pptr(_sg(rd, "texture"))
+                out["texture"] = _p(_sg(rd, "texture"))
 
         elif t == "Texture2D":
             out["width"]  = _sg(d, "m_Width")
@@ -983,15 +1007,15 @@ def _dump_ui_obj(
         elif t == "SpriteAtlas":
             packed = _sg(d, "m_PackedSprites")
             if packed:
-                out["m_PackedSprites"] = [_pptr(s) for s in packed]
+                out["m_PackedSprites"] = [_p(s) for s in packed]
 
         elif t in ("Font", "TMP_FontAsset"):
-            out["m_AtlasTexture"] = _pptr(_sg(d, "m_AtlasTexture"))
+            out["m_AtlasTexture"] = _p(_sg(d, "m_AtlasTexture"))
             out["m_FontSize"]     = _sg(d, "m_FontSize")
             out["m_LineSpacing"]  = _sg(d, "m_LineSpacing")
 
         elif t == "MonoBehaviour":
-            out["m_GameObject"] = _pptr(_sg(d, "m_GameObject"))
+            out["m_GameObject"] = _p(_sg(d, "m_GameObject"))
             out["m_Enabled"]    = _sg(d, "m_Enabled")
             for f in dir(d):
                 if f.startswith("m_") and f not in ("m_Script", "m_GameObject"):
@@ -1000,7 +1024,7 @@ def _dump_ui_obj(
                         if isinstance(v, (int, float, str, bool, type(None))):
                             out[f] = v
                         elif hasattr(v, "path_id"):
-                            out[f] = _pptr(v)
+                            out[f] = _p(v)
                     except Exception:
                         pass
 
@@ -1069,118 +1093,86 @@ def _run_stage4_ui_dump(
     dump_dir:    Path | None = None,
     progress_cb=None,
 ):
-    try:
-        import UnityPy
-    except ImportError:
-        log("[ERROR] UnityPy not installed — cannot run Stage 4. Run: pip install 'UnityPy>=1.20'")
-        return
-
     if ui_dump_dir.exists() and not force:
         n = _count_files(ui_dump_dir)
         log(f"[SKIP ] ui_dump/ already exists ({n} files) — skipping Stage 4")
         log("[INFO ] Tick 'Force Refresh' to re-run Stage 4.")
         return
 
-    log("[STEP ] Stage 4 — Full Unity UI field extraction (per-file, v20)…")
+    log("[STEP ] Stage 4 — Full Unity UI field extraction (per-file, v22)…")
     _wipe_dir(ui_dump_dir)
 
+    # 1. Load global environment and sprite index
+    env = build_global_env(raw_dir, log)
+    sprite_index = build_global_sprite_index(env, log)
     script_map = _load_script_map(dump_dir)
-    if script_map:
-        log(f"[INFO ] script.json loaded — {len(script_map)} class mappings")
-    else:
-        log("[INFO ] No script.json — MonoBehaviour class names unresolved")
 
-    individual_files: list[Path] = []
-    bundle_files:     list[Path] = []
+    # 2. Group objects by source file
+    objects_by_file: dict[str, list] = {}
+    total_objects = 0
+    for o in env.objects:
+        if o.type.name not in WANT_TYPES:
+            continue
+        
+        # Determine source file name
+        source_name = "unknown"
+        if hasattr(o, "assetsfile"):
+            source_name = getattr(o.assetsfile, "name", "unknown")
+        
+        if source_name not in objects_by_file:
+            objects_by_file[source_name] = []
+        
+        typetree_decoded = None
+        if o.type.name == "MonoBehaviour":
+            typetree_decoded = _try_typetree_decode(o, env)
+        
+        dumped = _dump_ui_obj(
+            o,
+            source_file=source_name,
+            script_map=script_map,
+            typetree_decoded=typetree_decoded,
+            sprite_index=sprite_index,
+        )
+        objects_by_file[source_name].append(dumped)
+        total_objects += 1
 
-    for data_dir in raw_dir.rglob("assets/bin/Data"):
-        if data_dir.is_dir():
-            for child in sorted(data_dir.iterdir()):
-                if child.is_file():
-                    individual_files.append(child)
+    # 3. Track coverage stats
+    stats = {"resolved": 0, "unresolved": 0, "per_bundle": {}}
 
-    for bundle in raw_dir.rglob("*.bundle"):
-        bundle_files.append(bundle)
+    def _count_pptrs(data):
+        if isinstance(data, dict):
+            if "unresolved" in data:
+                if data["unresolved"]:
+                    stats["unresolved"] += 1
+                else:
+                    stats["resolved"] += 1
+            for v in data.values():
+                _count_pptrs(v)
+        elif isinstance(data, list):
+            for v in data:
+                _count_pptrs(v)
 
-    total = len(individual_files) + len(bundle_files)
-    log(f"[INFO ] Found {len(individual_files)} serialized files + {len(bundle_files)} bundles ({total} total)")
-
-    sprite_name_map: dict[str, dict]  = {}
-    processed = skipped_empty = decode_fails = typetree_successes = 0
-
-    def _process_one(src: Path, idx: int):
-        nonlocal processed, skipped_empty, decode_fails, typetree_successes
-        if progress_cb:
-            progress_cb(idx / max(total, 1), f"Stage 4: {idx}/{total} — {src.name}")
-        source_file = src.name
-        try:
-            env = UnityPy.load(str(src))
-        except Exception:
-            skipped_empty += 1
-            return
-        objs: list[dict]         = []
-        bundle_sprites: dict[int, str] = {}
-        for o in env.objects:
-            if o.type.name not in WANT_TYPES:
-                continue
-            typetree_decoded = None
-            if o.type.name == "MonoBehaviour":
-                typetree_decoded = _try_typetree_decode(o, env)
-                if typetree_decoded:
-                    typetree_successes += 1
-            dumped = _dump_ui_obj(
-                o,
-                source_file=source_file,
-                script_map=script_map,
-                typetree_decoded=typetree_decoded,
-            )
-            if dumped.get("_decode_failed"):
-                decode_fails += 1
-            objs.append(dumped)
-            if o.type.name == "Sprite" and dumped.get("name"):
-                bundle_sprites[o.path_id] = dumped["name"]
-        if not objs:
-            skipped_empty += 1
-            return
-        external_refs = _get_env_external_refs(env)
-        rel      = str(src.relative_to(raw_dir)).replace(os.sep, "_").replace(" ", "_")[:200]
-        out_file = ui_dump_dir / f"{rel}.json"
-        out_file.parent.mkdir(parents=True, exist_ok=True)
+    # 4. Write per-source JSONs
+    for source_name, objs in objects_by_file.items():
+        _count_pptrs(objs)
+        stats["per_bundle"][source_name] = len(objs)
+        
+        out_file = ui_dump_dir / f"{source_name.replace(os.sep, '_')}.json"
         out_file.write_text(
-            json.dumps(
-                {"source": str(src), "source_file": source_file,
-                 "external_refs": external_refs, "objects": objs},
-                default=str, ensure_ascii=False,
-            ),
+            json.dumps({"source": source_name, "objects": objs},
+                       default=str, ensure_ascii=False),
             encoding="utf-8",
         )
-        if bundle_sprites:
-            sprite_name_map[str(src)] = {str(k): v for k, v in bundle_sprites.items()}
-        processed += 1
-        if processed % 500 == 0:
-            log(f"[INFO ] Stage 4: {processed}/{total} files "
-                f"({typetree_successes} typetree, {decode_fails} raw-bytes)…")
 
-    for idx, src in enumerate(individual_files):
-        _process_one(src, idx)
-    for idx, src in enumerate(bundle_files, start=len(individual_files)):
-        _process_one(src, idx)
-
-    (ui_dump_dir / "sprite_name_map.json").write_text(
-        json.dumps(sprite_name_map, indent=2, ensure_ascii=False), encoding="utf-8"
-    )
+    # 5. Write sprite mapping report
+    write_sprite_mapping_report(ui_dump_dir, stats, log)
 
     if dump_dir and (dump_dir / "script.json").exists():
         shutil.copy2(dump_dir / "script.json", ui_dump_dir / "script.json")
         log("[OK   ] script.json copied to ui_dump/")
 
-    if progress_cb:
-        progress_cb(1.0, "Stage 4: complete")
+    log(f"[OK   ] Stage 4 complete — {total_objects} objects processed")
 
-    log(f"[OK   ] Stage 4 complete — {processed} files → {ui_dump_dir}")
-    log(f"[OK   ] MonoBehaviour typetree decoded : {typetree_successes}")
-    log(f"[INFO ] MonoBehaviour raw-bytes fallback: {decode_fails}")
-    log(f"[INFO ] {skipped_empty} sources skipped (no UI objects)")
 
 
 # ────────────────────────────────────────────────────────────────────────────
@@ -1376,7 +1368,7 @@ def _run_pipeline(
 
 # ── GUI ───────────────────────────────────────────────────────────────────────
 class App(ctk.CTk):
-    VERSION = "v20"
+    VERSION = "v22"
 
     def __init__(self):
         super().__init__()

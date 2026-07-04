@@ -1,0 +1,162 @@
+"""Merged-environment sprite resolution for cross-bundle PPtr lookups.
+
+When Unity bundles reference sprites in *other* bundles (shared icon/UI
+bundles loaded separately from feature-specific bundles), the per-file
+UnityPy.load() call cannot resolve those PPtrs.  This module loads ALL
+files into a single merged environment so cross-bundle resolution works
+natively, and provides explicit unresolved markers for anything that
+still can't be resolved.
+"""
+from __future__ import annotations
+
+import json
+import os
+from pathlib import Path
+from typing import Callable, Optional
+
+
+def build_global_env(raw_dir: Path, log: Callable) -> object:
+    """Load ALL serialized files + .bundle files into ONE merged environment.
+
+    Returns a UnityPy Environment that contains every object from every
+    source file, enabling native cross-bundle PPtr resolution.
+    """
+    import UnityPy
+
+    all_files: list[Path] = []
+
+    # Individual serialized files (assets/bin/Data/*)
+    for data_dir in raw_dir.rglob("assets/bin/Data"):
+        if data_dir.is_dir():
+            for child in sorted(data_dir.iterdir()):
+                if child.is_file():
+                    all_files.append(child)
+
+    # Bundle files
+    for bundle in raw_dir.rglob("*.bundle"):
+        all_files.append(bundle)
+
+    log(f"[INFO ] Building merged environment from {len(all_files)} files…")
+
+    # UnityPy.load() accepts a list of paths and merges them into one env
+    env = UnityPy.load([str(f) for f in all_files])
+
+    total_objects = sum(1 for _ in env.objects)
+    log(f"[OK   ] Merged environment ready — {total_objects} objects across {len(all_files)} files")
+    return env
+
+
+def build_global_sprite_index(env, log: Callable) -> dict[str, dict]:
+    """Pre-pass that indexes every Sprite/Texture2D/Material/Font/TMP_FontAsset.
+
+    Returns a dict keyed by ``"{assetsfile_name}|{path_id}"`` mapping to
+    ``{"name": ..., "type": ...}``.
+    """
+    index: dict[str, dict] = {}
+    for o in env.objects:
+        if o.type.name not in ("Sprite", "Texture2D", "Material",
+                               "Font", "TMP_FontAsset"):
+            continue
+        try:
+            data = o.read()
+            name = getattr(data, "m_Name", None) or getattr(data, "name", None) or ""
+        except Exception:
+            name = ""
+        file_name = getattr(o.assetsfile, "name", "") if hasattr(o, "assetsfile") else ""
+        key = f"{file_name}|{o.path_id}"
+        index[key] = {"name": name, "type": o.type.name, "path_id": o.path_id,
+                      "file_name": file_name}
+
+    log(f"[INFO ] Global sprite index: {len(index)} entries")
+    return index
+
+
+def resolve_pptr_global(
+    pptr_obj,
+    current_file: str,
+    sprite_index: dict[str, dict],
+    log: Optional[Callable] = None,
+) -> dict:
+    """Resolve a PPtr that failed local resolution using the global index.
+
+    1. Try the pointer's own file_id -> externals table lookup (native).
+    2. Fall back to a path_id-only match across all indexed files.
+    3. If still unresolved, return an explicit ``{"unresolved": True, ...}``
+       dict — NEVER None, NEVER silently omitted.
+    """
+    if pptr_obj is None:
+        return {"unresolved": True, "reason": "null_pointer"}
+
+    pid = getattr(pptr_obj, "path_id", None)
+    fid = getattr(pptr_obj, "file_id", None)
+
+    # Try native read first (works if the object is in the same merged env)
+    name = None
+    if hasattr(pptr_obj, "read"):
+        try:
+            read = pptr_obj.read()
+            name = getattr(read, "m_Name", None) or getattr(read, "name", None)
+        except Exception:
+            pass
+
+    if name:
+        result = {"path_id": pid}
+        if fid is not None and fid != 0:
+            result["file_id"] = fid
+        result["name"] = name
+        return result
+
+    # Try file_id-based lookup via externals
+    if fid is not None and fid != 0 and hasattr(pptr_obj, "file_id"):
+        try:
+            externals = getattr(pptr_obj, "externals", None)
+            if externals and fid < len(externals):
+                target_file = externals[fid]
+                lookup_key = f"{target_file}|{pid}"
+                if lookup_key in sprite_index:
+                    entry = sprite_index[lookup_key]
+                    return {"path_id": pid, "file_id": fid,
+                            "name": entry["name"], "resolved_global": True}
+        except Exception:
+            pass
+
+    # Fallback: path_id-only match across all indexed files
+    if pid is not None:
+        for key, entry in sprite_index.items():
+            if entry.get("path_id") == pid:
+                return {"path_id": pid, "name": entry["name"],
+                        "resolved_global": True, "match_strategy": "path_id_only"}
+
+    # Truly unresolved — return explicit marker
+    result = {"path_id": pid, "unresolved": True}
+    if fid is not None and fid != 0:
+        result["file_id"] = fid
+    if log:
+        log(f"[WARN ] Unresolved PPtr: path_id={pid} file_id={fid} from {current_file}")
+    return result
+
+
+def write_sprite_mapping_report(
+    ui_dump_dir: Path,
+    stats: dict,
+    log: Callable,
+) -> None:
+    """Write ui_dump/sprite_mapping_report.json with per-bundle coverage."""
+    report = {
+        "total_resolved": stats.get("resolved", 0),
+        "total_unresolved": stats.get("unresolved", 0),
+        "total_pptrs": stats.get("resolved", 0) + stats.get("unresolved", 0),
+        "coverage_pct": 0.0,
+        "per_bundle": stats.get("per_bundle", {}),
+    }
+    total = report["total_pptrs"]
+    if total > 0:
+        report["coverage_pct"] = round(report["total_resolved"] / total * 100, 2)
+
+    out_path = ui_dump_dir / "sprite_mapping_report.json"
+    out_path.write_text(
+        json.dumps(report, indent=2, ensure_ascii=False),
+        encoding="utf-8",
+    )
+    log(f"[OK   ] Sprite mapping report: {report['coverage_pct']}% coverage "
+        f"({report['total_resolved']}/{total} resolved)")
