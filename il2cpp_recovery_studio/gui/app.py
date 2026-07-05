@@ -798,10 +798,11 @@ def _parse_monobehaviour_header(obj) -> dict:
         if not raw_b64:
             reader = getattr(obj, "reader", None) or getattr(obj, "_reader", None)
             if reader is not None:
+                byte_start = getattr(obj, "byte_start", 0)
                 if hasattr(reader, "Position"):
-                    reader.Position = 0
+                    reader.Position = byte_start
                 elif hasattr(reader, "seek"):
-                    reader.seek(0)
+                    reader.seek(byte_start)
                 raw_bytes = reader.read(64) if hasattr(reader, "read") else None
             else:
                 raw_bytes = None
@@ -837,6 +838,8 @@ def _dump_ui_obj(
     script_map:       dict | None = None,
     typetree_decoded: dict | None = None,
     sprite_index:     dict | None = None,
+    local_type_index: dict | None = None,
+    monoscript_index: dict | None = None,
 ) -> dict:
     t   = o.type.name
     out: dict = {
@@ -888,9 +891,26 @@ def _dump_ui_obj(
             out["layer"]     = _sg(d, "m_Layer")
             out["is_active"] = _sg(d, "m_IsActive")
             comps = _sg(d, "m_Component", [])
-            out["components"] = [
-                _p(c.component) if hasattr(c, "component") else _p(c) for c in comps
-            ]
+            # Resolve components using local object type index to avoid
+            # cross-bundle path_id collisions with the global sprite index.
+            resolved_comps = []
+            for c in comps:
+                ptr = c.component if hasattr(c, "component") else c
+                pid = getattr(ptr, "path_id", None)
+                if pid is not None and local_type_index and pid in local_type_index:
+                    comp_type = local_type_index[pid]
+                    comp_entry = {"path_id": pid, "type": comp_type}
+                    # For MonoBehaviours, resolve the script class name
+                    if comp_type == "MonoBehaviour" and monoscript_index:
+                        # Get the script class via script_map (from header parsing)
+                        # or from the monoscript_index built during env scan
+                        if pid in monoscript_index:
+                            comp_entry["_class_name"] = monoscript_index[pid]
+                    resolved_comps.append(comp_entry)
+                else:
+                    # Fallback to legacy _pptr resolution for external refs
+                    resolved_comps.append(_p(ptr))
+            out["components"] = resolved_comps
 
         elif t in ("Transform", "RectTransform"):
             out["m_GameObject"] = _p(_sg(d, "m_GameObject"))
@@ -1150,7 +1170,86 @@ def _run_stage4_ui_dump(
     sprite_index = build_global_sprite_index(env, log)
     script_map = _load_script_map(dump_dir)
 
-    # 2. Group objects by source file
+    # 2a. Build global MonoScript class map: (assetsfile_name, path_id) -> class_name
+    monoscript_class_map = {}
+    for o in env.objects:
+        if o.type.name == "MonoScript":
+            af = getattr(o, "assets_file", None)
+            afn = getattr(af, "name", "") if af else ""
+            try:
+                d = o.read()
+                cn = getattr(d, "m_ClassName", None)
+                if cn:
+                    ns = getattr(d, "m_Namespace", "")
+                    monoscript_class_map[(afn, o.path_id)] = f"{ns}.{cn}" if ns else cn
+            except Exception:
+                pass
+    log(f"[INFO ] Built global MonoScript class map with {len(monoscript_class_map)} entries")
+
+    def resolve_monoscript(o, fid, pid):
+        if not pid:
+            return None
+        af = getattr(o, "assets_file", None)
+        if af is None:
+            return None
+        externals = getattr(af, "externals", [])
+        script_file = ""
+        if fid > 0 and fid <= len(externals):
+            ext = externals[fid - 1]
+            script_file = getattr(ext, "name", str(ext))
+        elif fid == 0:
+            script_file = getattr(af, "name", "")
+        
+        # Try direct lookup
+        cls = monoscript_class_map.get((script_file, pid))
+        if cls:
+            return cls
+        # Fallback: path_id only match
+        for (fn, p), cn in monoscript_class_map.items():
+            if p == pid:
+                return cn
+        return None
+
+    # 2b. Build per-file local type indices and MonoBehaviour→class mappings.
+    local_type_indices: dict[str, dict[int, str]] = {}  # file → {pid → type}
+    monoscript_indices: dict[str, dict[int, str]] = {}  # file → {pid → class_name}
+    for o in env.objects:
+        af = getattr(o, "assets_file", None)
+        fn = getattr(af, "name", "unknown") if af else "unknown"
+        if fn not in local_type_indices:
+            local_type_indices[fn] = {}
+            monoscript_indices[fn] = {}
+        local_type_indices[fn][o.path_id] = o.type.name
+        
+        if o.type.name == "MonoBehaviour":
+            resolved_cls = None
+            try:
+                d = o.read()
+                script_ptr = getattr(d, "m_Script", None)
+                if script_ptr:
+                    sfid = getattr(script_ptr, "file_id", 0)
+                    spid = getattr(script_ptr, "path_id", 0)
+                    resolved_cls = resolve_monoscript(o, sfid, spid)
+            except Exception:
+                pass
+            
+            if not resolved_cls:
+                base = _parse_monobehaviour_header(o)
+                script_ref = base.get("m_Script")
+                if script_ref:
+                    sfid = script_ref.get("file_id", 0)
+                    spid = script_ref.get("path_id", 0)
+                    resolved_cls = resolve_monoscript(o, sfid, spid)
+            
+            if resolved_cls:
+                short_cls = resolved_cls.split(".")[-1]
+                monoscript_indices[fn][o.path_id] = short_cls
+
+    log(f"[INFO ] Built local type indices for {len(local_type_indices)} files")
+    resolved_mono_count = sum(len(v) for v in monoscript_indices.values())
+    log(f"[INFO ] Resolved {resolved_mono_count} MonoBehaviour class names")
+
+    # 2b. Group objects by source file and dump them
     objects_by_file: dict[str, list] = {}
     total_objects = 0
     for o in env.objects:
@@ -1175,6 +1274,8 @@ def _run_stage4_ui_dump(
             script_map=script_map,
             typetree_decoded=typetree_decoded,
             sprite_index=sprite_index,
+            local_type_index=local_type_indices.get(source_name),
+            monoscript_index=monoscript_indices.get(source_name),
         )
         objects_by_file[source_name].append(dumped)
         total_objects += 1

@@ -73,6 +73,12 @@ function rectToCss(rt) {
 /** Find the RectTransform attached to a GameObject */
 function getRectTransform(go, idx) {
   for (const comp of go.components ?? []) {
+    // New format: component carries type directly
+    if (comp.type === "RectTransform") {
+      const resolved = resolve(comp, idx);
+      if (resolved) return resolved;
+    }
+    // Legacy format: resolve and check
     const resolved = resolve(comp, idx);
     if (resolved?.type === "RectTransform") return resolved;
   }
@@ -82,6 +88,15 @@ function getRectTransform(go, idx) {
 /** Find a component by type attached to a GameObject */
 function getComponent(go, typeName, idx) {
   for (const comp of go.components ?? []) {
+    // New format: component entry carries _class_name directly from MonoScript
+    if (comp._class_name === typeName || comp.type === typeName) {
+      // Try to resolve the full object from the index for detailed fields
+      const resolved = resolve(comp, idx);
+      if (resolved) return resolved;
+      // If no full object in index, return the component entry itself
+      return comp;
+    }
+    // Legacy format: resolve and check
     const resolved = resolve(comp, idx);
     if (resolved) {
       if (resolved.type === typeName || resolved._class_name === typeName) {

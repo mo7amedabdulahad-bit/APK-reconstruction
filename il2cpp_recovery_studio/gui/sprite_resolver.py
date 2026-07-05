@@ -95,6 +95,20 @@ def resolve_pptr_global(
         try:
             read = pptr_obj.read()
             name = getattr(read, "m_Name", None) or getattr(read, "name", None)
+            type_name = None
+            if hasattr(read, "type"):
+                type_name = getattr(read.type, "name", None)
+            
+            # If this is a component or MonoBehaviour, return it directly.
+            # Do NOT resolve it globally as a sprite/texture.
+            if type_name and type_name not in ("Sprite", "Texture2D", "Material", "Font", "TMP_FontAsset"):
+                result = {"path_id": pid}
+                if fid is not None and fid != 0:
+                    result["file_id"] = fid
+                result["type"] = type_name
+                if name:
+                    result["name"] = name
+                return result
         except Exception:
             pass
 
