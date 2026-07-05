@@ -83,7 +83,11 @@ function getRectTransform(go, idx) {
 function getComponent(go, typeName, idx) {
   for (const comp of go.components ?? []) {
     const resolved = resolve(comp, idx);
-    if (resolved?.type === typeName) return resolved;
+    if (resolved) {
+      if (resolved.type === typeName || resolved._class_name === typeName) {
+        return resolved;
+      }
+    }
   }
   return null;
 }

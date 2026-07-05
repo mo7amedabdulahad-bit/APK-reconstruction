@@ -36,6 +36,7 @@ from il2cpp_recovery_studio.gui.sprite_resolver import (
     build_global_sprite_index,
     write_sprite_mapping_report,
 )
+from il2cpp_recovery_studio.gui.ai_ui_compiler import run_ui_compiler
 
 import customtkinter as ctk
 from tkinter import filedialog, messagebox
@@ -1429,8 +1430,11 @@ def _run_pipeline(
     if progress_cb: progress_cb(0.85, "Stage 5: Normalized UI trees (Node.js)…")
     _run_stage5_bundle_parser(
         ui_dump_dir, norm_ui_dir, log, force,
-        progress_cb=lambda p, msg: progress_cb(0.85 + p * 0.14, msg) if progress_cb else None,
+        progress_cb=lambda p, msg: progress_cb(0.85 + p * 0.08, msg) if progress_cb else None,
     )
+
+    if progress_cb: progress_cb(0.93, "Stage 6: AI Prompt Companions & Scene Slices…")
+    run_ui_compiler(out_dir, log)
 
     # Rebuild ai_asset_index now that all stages have produced their output
     log("[STEP ] Rebuilding AI asset index (post-pipeline)…")
@@ -1450,7 +1454,8 @@ def _run_pipeline(
         f"{'complete — DummyDll + script.json' if dump_dir else 'unavailable'}")
     log("[INFO ] ✔ Stage 4  — UI field dump per-file")
     log("[INFO ] ✔ Stage 5  — Normalized UI trees")
-    log("[INFO ] Next: open normalized_ui/ in your AI agent for React/Tailwind generation.")
+    log("[INFO ] ✔ Stage 6  — AI Prompt Companions generated")
+    log("[INFO ] Next: open your scene prompt packages under ai_export/scenes/ in your AI agent for React/Tailwind generation.")
 
 
 # ── GUI ───────────────────────────────────────────────────────────────────────
