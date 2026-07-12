@@ -31,6 +31,43 @@ import urllib.request
 import zipfile
 from pathlib import Path
 
+
+def _ensure_site_packages():
+    """If optional imports are failing, try adding real Python site-packages."""
+    try:
+        import UnityPy.helpers.TypeTreeGenerator  # noqa: F401
+        return  # already available
+    except ImportError:
+        pass
+
+    if sys.platform != "win32":
+        return
+
+    # Locate the real Python 3.13+ that has packages installed
+    pf   = Path(os.environ.get("ProgramFiles",    r"C:\Program Files"))
+    la   = Path(os.environ.get("LOCALAPPDATA",    r"C:\Users\Default\AppData\Local"))
+    user = Path(os.environ.get("USERPROFILE",     r"C:\Users\Default"))
+    search_roots = [
+        pf / "Python*",
+        pf / "Programs" / "Python" / "Python*",
+        la / "Programs" / "Python" / "Python*",
+        user / "AppData" / "Local" / "Programs" / "Python" / "Python*",
+    ]
+    for pattern in search_roots:
+        for d in sorted(Path(pattern.parent).glob(pattern.name), reverse=True):
+            site = d / "Lib" / "site-packages"
+            if not site.exists():
+                continue
+            # Verify it has the packages we need
+            if (site / "addressablestools").is_dir() or (site / "UnityPy" / "helpers" / "TypeTreeGenerator.py").exists():
+                if str(site) not in sys.path:
+                    sys.path.insert(0, str(site))
+                    print(f"[INFO ] Added site-packages: {site}")
+
+
+_ensure_site_packages()
+
+
 from il2cpp_recovery_studio.gui.sprite_resolver import (
     build_global_env,
     build_global_sprite_index,
@@ -322,6 +359,38 @@ def _find_node() -> str | None:
                         return str(cand)
                 except Exception:
                     pass
+    return None
+
+
+def _find_unity_data_dir(raw_dir: Path) -> Path | None:
+    """Find the Unity data directory containing assets/bin/Data.
+
+    Handles various XAPK/APK extraction structures:
+    - raw/<apk_stem>/assets/bin/Data (expected)
+    - raw/UnityDataAssetPack/assets/bin/Data (actual Google Play XAPK)
+    - raw/*/assets/bin/Data (fallback)
+
+    Returns the directory CONTAINING assets/bin/Data (i.e., the dir with assets/ subdir)
+    """
+    # 1. Check expected location (raw/<apk_stem>/assets/bin/Data)
+    for stem_dir in raw_dir.iterdir():
+        if stem_dir.is_dir():
+            candidate = stem_dir / "assets" / "bin" / "Data"
+            if candidate.exists():
+                return stem_dir  # Return the dir containing assets/
+
+    # 2. Check UnityDataAssetPack (common for Google Play XAPKs)
+    unity_pack = raw_dir / "UnityDataAssetPack"
+    if unity_pack.exists():
+        candidate = unity_pack / "assets" / "bin" / "Data"
+        if candidate.exists():
+            return unity_pack
+
+    # 3. Fallback: search all subdirs
+    for candidate in raw_dir.rglob("assets/bin/Data"):
+        if candidate.exists():
+            return candidate.parent.parent  # Return the dir containing assets/
+
     return None
 
 
@@ -638,7 +707,7 @@ def _run_stage4a_il2cppdumper(
             cmd,
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
-            stdin=subprocess.DEVNULL,
+            stdin=subprocess.PIPE,
             text=True, encoding="utf-8", errors="replace",
         )
         assert proc.stdout
@@ -646,6 +715,11 @@ def _run_stage4a_il2cppdumper(
             line = line.rstrip()
             if line:
                 log(f"[INFO ] Il2CppDumper: {line}")
+        # Close stdin so Il2CppDumper's Console.ReadKey() gets EOF instead
+        # of throwing InvalidOperationException when running non-interactively.
+        if proc.stdin:
+            try: proc.stdin.close()
+            except Exception: pass
         proc.wait(timeout=300)
 
         if proc.returncode == 0 and script_json.exists():
@@ -1119,6 +1193,11 @@ def _load_script_map(dump_dir: Path | None) -> dict:
 
 
 def _try_typetree_decode(o, env) -> dict | None:
+    """Try to decode typetree using UnityPy's built-in reader (no TypeTreeGenerator needed).
+    
+    This never crashes - it uses UnityPy's built-in typetree reader which handles
+    most cases. TypeTreeGenerator is an optional enhancement loaded separately.
+    """
     try:
         tt = o.read_typetree()
         if tt and isinstance(tt, dict) and len(tt) > 4:
@@ -1126,6 +1205,31 @@ def _try_typetree_decode(o, env) -> dict | None:
     except Exception:
         pass
     return None
+
+
+class _SuppressCSharpOutput:
+    """Context manager that redirects ALL C# interop output.
+
+    TypeTreeGeneratorAPI.dll writes 'Error generating tree nodes: Object
+    reference not set...' via Console.Error/Console.Out which goes to
+    the process-level fds 1 and 2 — NOT Python's sys.stderr object.
+    We must redirect the actual OS file descriptors to suppress it.
+    """
+
+    def __enter__(self):
+        self._old_fd1 = os.dup(1)
+        self._old_fd2 = os.dup(2)
+        devnull = os.open(os.devnull, os.O_WRONLY)
+        os.dup2(devnull, 1)
+        os.dup2(devnull, 2)
+        os.close(devnull)
+        return self
+
+    def __exit__(self, *args):
+        os.dup2(self._old_fd1, 1)
+        os.dup2(self._old_fd2, 2)
+        os.close(self._old_fd1)
+        os.close(self._old_fd2)
 
 
 def _run_stage4_ui_dump(
@@ -1147,27 +1251,46 @@ def _run_stage4_ui_dump(
 
     # 1. Load global environment and sprite index
     env = build_global_env(raw_dir, log)
-    
-    # 1b. Configure TypeTreeGenerator using DummyDlls
+# 1b. Configure TypeTreeGenerator using DummyDlls (optional enhancement)
+    typetree_available = False
     if dump_dir and (dump_dir / "DummyDll").exists():
         try:
-            from TypeTreeGeneratorAPI import TypeTreeGenerator
-            # Determine Unity version from first available asset
+            from UnityPy.helpers.TypeTreeGenerator import TypeTreeGenerator
             unity_ver = "2021.3.11f1"
             if env.objects:
                 unity_ver = getattr(env.objects[0].assets_file, "unity_version", unity_ver)
             
             generator = TypeTreeGenerator(unity_ver)
-            for dll_file in (dump_dir / "DummyDll").glob("*.dll"):
-                generator.load_dll(dll_file.read_bytes())
-            env.typetree_generator = generator
-            log(f"[INFO ] TypeTreeGenerator loaded {len(list((dump_dir / 'DummyDll').glob('*.dll')))} DummyDlls successfully (Unity {unity_ver}).")
-        except ImportError:
-            log("[WARN ] TypeTreeGeneratorAPI not installed. Run: pip install TypeTreeGeneratorAPI")
-        except Exception as e:
-            log(f"[WARN ] TypeTreeGenerator failed to load DummyDll: {e}")
+            with _SuppressCSharpOutput():
+                for dll_file in (dump_dir / "DummyDll").glob("*.dll"):
+                    generator.load_dll(dll_file.read_bytes())
             
-    sprite_index = build_global_sprite_index(env, log)
+            # Patch generator to cache failed class lookups
+            original_get_nodes_up = generator.get_nodes_up
+            failed_keys = set()
+            
+            def patched_get_nodes_up(assembly: str, fullname: str):
+                key = (assembly, fullname)
+                if key in failed_keys:
+                    raise ValueError(f"Cached TypeTree generation failure for {fullname} of {assembly}")
+                with _SuppressCSharpOutput():
+                    try:
+                        return original_get_nodes_up(assembly, fullname)
+                    except Exception as e:
+                        failed_keys.add(key)
+                        raise e
+            
+            generator.get_nodes_up = patched_get_nodes_up
+            env.typetree_generator = generator
+            typetree_available = True
+            log(f"[INFO ] TypeTreeGenerator loaded {len(list((dump_dir / 'DummyDll').glob('*.dll')))} DummyDlls (Unity {unity_ver}).")
+        except ImportError:
+            log("[INFO ] TypeTreeGeneratorAPI not installed — using UnityPy built-in typetree reading.")
+        except Exception as e:
+            log(f"[WARN ] TypeTreeGenerator unavailable, falling back to UnityPy: {e}")
+            
+    with _SuppressCSharpOutput():
+        sprite_index = build_global_sprite_index(env, log)
     script_map = _load_script_map(dump_dir)
 
     # 2a. Build global MonoScript class map: (assetsfile_name, path_id) -> class_name
@@ -1252,33 +1375,45 @@ def _run_stage4_ui_dump(
     # 2b. Group objects by source file and dump them
     objects_by_file: dict[str, list] = {}
     total_objects = 0
-    for o in env.objects:
-        if o.type.name not in WANT_TYPES:
-            continue
-        
-        # Determine source file name
-        source_name = "unknown"
-        if getattr(o, "assets_file", None) is not None:
-            source_name = getattr(o.assets_file, "name", "unknown") or "unknown"
-        
-        if source_name not in objects_by_file:
-            objects_by_file[source_name] = []
-        
-        typetree_decoded = None
-        if o.type.name == "MonoBehaviour":
-            typetree_decoded = _try_typetree_decode(o, env)
-        
-        dumped = _dump_ui_obj(
-            o,
-            source_file=source_name,
-            script_map=script_map,
-            typetree_decoded=typetree_decoded,
-            sprite_index=sprite_index,
-            local_type_index=local_type_indices.get(source_name),
-            monoscript_index=monoscript_indices.get(source_name),
-        )
-        objects_by_file[source_name].append(dumped)
-        total_objects += 1
+    skipped_objects = 0
+    # Suppress ALL C# interop output (TypeTreeGeneratorAPI.dll writes
+    # 'Error generating tree nodes: ...' directly to process fds 1+2)
+    # for the entire object processing loop.
+    with _SuppressCSharpOutput():
+        for o in env.objects:
+            if o.type.name not in WANT_TYPES:
+                continue
+            
+            # Determine source file name
+            source_name = "unknown"
+            if getattr(o, "assets_file", None) is not None:
+                source_name = getattr(o.assets_file, "name", "unknown") or "unknown"
+            
+            if source_name not in objects_by_file:
+                objects_by_file[source_name] = []
+            
+            try:
+                typetree_decoded = None
+                if o.type.name == "MonoBehaviour":
+                    typetree_decoded = _try_typetree_decode(o, env)
+                
+                dumped = _dump_ui_obj(
+                    o,
+                    source_file=source_name,
+                    script_map=script_map,
+                    typetree_decoded=typetree_decoded,
+                    sprite_index=sprite_index,
+                    local_type_index=local_type_indices.get(source_name),
+                    monoscript_index=monoscript_indices.get(source_name),
+                )
+                objects_by_file[source_name].append(dumped)
+                total_objects += 1
+            except Exception as exc:
+                skipped_objects += 1
+                if skipped_objects <= 5:
+                    log(f"[WARN ] Skipping {o.type.name} path_id={o.path_id}: {exc}")
+                elif skipped_objects == 6:
+                    log(f"[WARN ] Further skip messages suppressed...")
 
     # 3. Track coverage stats
     stats = {"resolved": 0, "unresolved": 0, "per_bundle": {}}
@@ -1316,7 +1451,8 @@ def _run_stage4_ui_dump(
         shutil.copy2(dump_dir / "script.json", ui_dump_dir / "script.json")
         log("[OK   ] script.json copied to ui_dump/")
 
-    log(f"[OK   ] Stage 4 complete — {total_objects} objects processed")
+    log(f"[OK   ] Stage 4 complete — {total_objects} objects processed"
+        + (f" ({skipped_objects} skipped due to errors)" if skipped_objects else ""))
 
 
 
@@ -1429,6 +1565,19 @@ def _run_pipeline(
                 log(f"[OK   ]   {dd.parent.parent.parent.name}: {w+sk} file(s) [{sk} skipped]")
             except Exception as exc:
                 log(f"[WARN ] Failed to load {dd}: {exc}")
+        # Also load split asset files (sharedassets*.assets) which are common in modern Unity
+        unity_data_dir = _find_unity_data_dir(raw_dir)
+        if unity_data_dir:
+            data_dir = unity_data_dir / "assets" / "bin" / "Data"
+            if data_dir.exists():
+                for asset_file in data_dir.glob("sharedassets*.assets*"):
+                    try:
+                        import UnityPy
+                        env = UnityPy.load(str(asset_file))
+                        w, sk = _dump_env(env, unity_dir, log, force)
+                        log(f"[OK   ]   {asset_file.name}: {w+sk} file(s) [{sk} skipped]")
+                    except Exception as exc:
+                        log(f"[WARN ] Failed to load split asset {asset_file.name}: {exc}")
         for bf in raw_dir.rglob("*.bundle"):
             try:
                 import UnityPy
@@ -1506,6 +1655,10 @@ def _run_pipeline(
             (ai_dir / "addressables_catalog.json").write_text(
                 json.dumps(out_catalog, indent=2, ensure_ascii=False), encoding="utf-8")
             log(f"[OK   ] addressables_catalog.json — {len(out_catalog['resources'])} keys parsed")
+        except ImportError:
+            log("[WARN ] addressablestools not installed. Run:")
+            log("[WARN ]   pip install addressablestools")
+            log(f"[WARN ]   (Current Python: {sys.executable})")
         except Exception as exc:
             log(f"[WARN ] Failed to parse addressables catalog: {exc}")
     else:
@@ -1535,7 +1688,7 @@ def _run_pipeline(
     )
 
     if progress_cb: progress_cb(0.93, "Stage 6: AI Prompt Companions & Scene Slices…")
-    run_ui_compiler(out_dir, log)
+    run_ui_compiler(out_dir, log, raw_dir=raw_dir)
 
     # Rebuild ai_asset_index now that all stages have produced their output
     log("[STEP ] Rebuilding AI asset index (post-pipeline)…")

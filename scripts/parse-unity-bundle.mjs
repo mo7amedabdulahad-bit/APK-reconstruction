@@ -107,6 +107,26 @@ function getComponent(go, typeName, idx) {
   return null;
 }
 
+/** Find a component where _class_name contains any of the given substrings */
+function getComponentFuzzy(go, substrings, idx) {
+  const subs = Array.isArray(substrings) ? substrings : [substrings];
+  for (const comp of go.components ?? []) {
+    const cn = comp._class_name ?? "";
+    if (cn && subs.some(s => cn.includes(s))) {
+      const resolved = resolve(comp, idx);
+      return resolved ?? comp;
+    }
+    const resolved = resolve(comp, idx);
+    if (resolved) {
+      const rcn = resolved._class_name ?? "";
+      if (rcn && subs.some(s => rcn.includes(s))) {
+        return resolved;
+      }
+    }
+  }
+  return null;
+}
+
 // ── Normalize one GameObject into a UI element node ──────────────────────────
 function normalizeNode(go, idx, spriteMap, depth = 0) {
   if (!go || depth > 64) return null; // guard against cycles
@@ -114,11 +134,15 @@ function normalizeNode(go, idx, spriteMap, depth = 0) {
   const rt = getRectTransform(go, idx);
   const image = getComponent(go, "Image", idx);
   const rawImage = getComponent(go, "RawImage", idx);
+  // Standard TMP or common subclasses (RTLTextMeshPro, etc.)
   const tmp = getComponent(go, "TextMeshProUGUI", idx)
-    ?? getComponent(go, "TMP_Text", idx);
+    ?? getComponent(go, "TMP_Text", idx)
+    ?? getComponentFuzzy(go, ["RTLTextMeshPro", "TextMeshPro"], idx);
   const legacyText = getComponent(go, "Text", idx);
-  const button = getComponent(go, "Button", idx);
-  const toggle = getComponent(go, "Toggle", idx);
+  const button = getComponent(go, "Button", idx)
+    ?? getComponentFuzzy(go, ["ToggledButton"], idx);
+  const toggle = getComponent(go, "Toggle", idx)
+    ?? getComponentFuzzy(go, ["SwitchButton"], idx);
   const slider = getComponent(go, "Slider", idx);
   const scrollRect = getComponent(go, "ScrollRect", idx);
   const inputField = getComponent(go, "InputField", idx)
@@ -126,8 +150,10 @@ function normalizeNode(go, idx, spriteMap, depth = 0) {
   const canvasGroup = getComponent(go, "CanvasGroup", idx);
   const canvas = getComponent(go, "Canvas", idx);
   const canvasScaler = getComponent(go, "CanvasScaler", idx);
-  const hLayout = getComponent(go, "HorizontalLayoutGroup", idx);
-  const vLayout = getComponent(go, "VerticalLayoutGroup", idx);
+  const hLayout = getComponent(go, "HorizontalLayoutGroup", idx)
+    ?? getComponentFuzzy(go, ["RTLHorizontalLayoutGroup"], idx);
+  const vLayout = getComponent(go, "VerticalLayoutGroup", idx)
+    ?? getComponentFuzzy(go, ["RTLVerticalLayoutGroup"], idx);
   const gridLayout = getComponent(go, "GridLayoutGroup", idx);
   const layoutEl = getComponent(go, "LayoutElement", idx);
   const sizeFitter = getComponent(go, "ContentSizeFitter", idx);

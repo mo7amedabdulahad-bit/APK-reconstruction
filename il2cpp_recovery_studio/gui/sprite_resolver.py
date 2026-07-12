@@ -15,6 +15,38 @@ from pathlib import Path
 from typing import Callable, Optional
 
 
+def _find_unity_data_dir(raw_dir: Path) -> Path | None:
+    """Find the Unity data directory containing assets/bin/Data.
+
+    Handles various XAPK/APK extraction structures:
+    - raw/<apk_stem>/assets/bin/Data (expected)
+    - raw/UnityDataAssetPack/assets/bin/Data (actual Google Play XAPK)
+    - raw/*/assets/bin/Data (fallback)
+
+    Returns the directory CONTAINING assets/bin/Data (i.e., the dir with assets/ subdir)
+    """
+    # 1. Check expected location (raw/<apk_stem>/assets/bin/Data)
+    for stem_dir in raw_dir.iterdir():
+        if stem_dir.is_dir():
+            candidate = stem_dir / "assets" / "bin" / "Data"
+            if candidate.exists():
+                return stem_dir  # Return the dir containing assets/
+
+    # 2. Check UnityDataAssetPack (common for Google Play XAPKs)
+    unity_pack = raw_dir / "UnityDataAssetPack"
+    if unity_pack.exists():
+        candidate = unity_pack / "assets" / "bin" / "Data"
+        if candidate.exists():
+            return unity_pack
+
+    # 3. Fallback: search all subdirs
+    for candidate in raw_dir.rglob("assets/bin/Data"):
+        if candidate.exists():
+            return candidate.parent.parent  # Return the dir containing assets/
+
+    return None
+
+
 def build_global_env(raw_dir: Path, log: Callable) -> object:
     """Load ALL serialized files + .bundle files into ONE merged environment.
 
@@ -30,6 +62,14 @@ def build_global_env(raw_dir: Path, log: Callable) -> object:
             for child in sorted(data_dir.iterdir()):
                 if child.is_file():
                     all_files.append(child)
+    # Also include split asset files (sharedassets*.assets*)
+    unity_data_dir = _find_unity_data_dir(raw_dir)
+    if unity_data_dir:
+        data_dir = unity_data_dir / "assets" / "bin" / "Data"
+        if data_dir.exists():
+            for asset_file in data_dir.glob("sharedassets*.assets*"):
+                if asset_file.is_file():
+                    all_files.append(asset_file)
     for bundle in raw_dir.rglob("*.bundle"):
         all_files.append(bundle)
 

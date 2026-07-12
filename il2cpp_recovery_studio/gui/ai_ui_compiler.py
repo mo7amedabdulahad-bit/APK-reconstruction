@@ -5,13 +5,100 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 from xml.dom import minidom
 
+try:
+    import UnityPy
+    _HAS_UNITYPY = True
+except ImportError:
+    _HAS_UNITYPY = False
+
+
+def _find_sprite_file(sprite_name: str, output_dir: Path, log=None) -> Path | None:
+    """Find a sprite file in various locations."""
+    # 1. unity_assets/ (Stage 2 extracted PNGs)
+    unity_assets = output_dir / "unity_assets"
+    for ext in (".png", ".txt", ".json"):
+        p = unity_assets / f"{sprite_name}{ext}"
+        if p.exists():
+            return p
+    
+    # 2. ui_dump/ (Stage 4 output - may have sprite mapping)
+    ui_dump = output_dir / "ui_dump"
+    for json_file in ui_dump.glob("*.json"):
+        try:
+            data = json.loads(json_file.read_text(encoding="utf-8"))
+            for obj in data.get("objects", []):
+                if obj.get("name") == sprite_name or obj.get("path_id") == sprite_name:
+                    # The sprite might be referenced by path_id
+                    pass
+        except Exception:
+            pass
+    
+    # 3. Search in unity_assets subdirectories recursively
+    unity_assets = output_dir / "unity_assets"
+    if unity_assets.exists():
+        for ext in (".png", ".txt", ".json"):
+            matches = list(unity_assets.rglob(f"{sprite_name}{ext}"))
+            if matches:
+                return matches[0]
+    
+    return None
+
+
+def _extract_sprite_on_demand(sprite_name: str, raw_dir: Path, output_dir: Path, log=None) -> Path | None:
+    """Try to extract a sprite from raw asset files on-demand using UnityPy."""
+    if not _HAS_UNITYPY:
+        return None
+    try:
+        unity_data_dir = _find_unity_data_dir(raw_dir)
+        if not unity_data_dir:
+            return None
+        data_dir = unity_data_dir / "assets" / "bin" / "Data"
+        if not data_dir.exists():
+            return None
+        
+        # Search all asset files for the sprite
+        for asset_file in data_dir.glob("sharedassets*.assets*"):
+            try:
+                import UnityPy
+                env = UnityPy.load(str(asset_file))
+                for obj in env.objects:
+                    if obj.type.name in ("Sprite", "Texture2D"):
+                        try:
+                            data = obj.read()
+                            name = getattr(data, "m_Name", None) or getattr(data, "name", None) or ""
+                            if name == sprite_name:
+                                # Extract to unity_assets for future use
+                                unity_assets = output_dir / "unity_assets"
+                                unity_assets.mkdir(parents=True, exist_ok=True)
+                                if obj.type.name == "Sprite" and hasattr(data, "image") and data.image:
+                                    out_png = unity_assets / f"{sprite_name}.png"
+                                    data.image.save(str(out_png))
+                                    return out_png
+                                elif obj.type.name == "Texture2D" and hasattr(data, "image") and data.image:
+                                    out_png = unity_assets / f"{sprite_name}.png"
+                                    data.image.save(str(out_png))
+                                    return out_png
+                        except Exception:
+                            continue
+            except Exception:
+                continue
+    except Exception:
+        pass
+    return None
+
+try:
+    import UnityPy
+    _HAS_UNITYPY = True
+except ImportError:
+    _HAS_UNITYPY = False
+
+
 def _prettify_xml(elem):
-    """Return a pretty-printed XML string for the Element."""
     rough_string = ET.tostring(elem, 'utf-8')
     reparsed = minidom.parseString(rough_string)
-    # Remove empty lines that minidom inserts when indenting
     pretty = reparsed.toprettyxml(indent="  ")
     return "\n".join([line for line in pretty.splitlines() if line.strip()])
+
 
 def _clean_attrib(val):
     if val is None:
@@ -20,21 +107,22 @@ def _clean_attrib(val):
         return json.dumps(val)
     return str(val)
 
+
+def _safe(val, default=""):
+    return val if val else default
+
+
 def build_xml_node(node):
-    """Recursively convert a normalized UI node to an ElementTree Element."""
-    # Determine element tag based on Unity UI components
     tag = "Panel"
     attribs = {"name": node.get("name", "GameObject")}
-    
-    # Layer / Active state
+
     if not node.get("is_active", True):
         attribs["active"] = "false"
-        
-    # Layout dimensions
+
     layout = node.get("layout", {}) or {}
     size = layout.get("sizeDelta", {}) or {}
     pos = layout.get("anchoredPosition", {}) or {}
-    
+
     if size.get("x") is not None and size.get("y") is not None:
         if size["x"] != 0 or size["y"] != 0:
             attribs["size"] = f"{int(size['x'])}x{int(size['y'])}"
@@ -42,7 +130,6 @@ def build_xml_node(node):
         if pos["x"] != 0 or pos["y"] != 0:
             attribs["pos"] = f"{int(pos['x'])},{int(pos['y'])}"
 
-    # Check components to specialize the tag
     if "canvas" in node:
         tag = "Canvas"
         c = node["canvas"]
@@ -88,12 +175,10 @@ def build_xml_node(node):
         if rimg.get("color"):
             attribs["color"] = rimg["color"]
 
-    # Special handling for text which can be attributes or child elements
     text_elem = None
     if "text" in node:
         txt = node["text"]
         content = txt.get("content", "") or ""
-        # If it's a simple text block, we can make it a Text tag
         text_elem = ET.Element("Text")
         text_elem.set("value", content)
         if txt.get("font"):
@@ -106,32 +191,83 @@ def build_xml_node(node):
     elem = ET.Element(tag, attribs)
     if text_elem is not None:
         elem.append(text_elem)
-        
-    # Process children
+
     for child in node.get("children", []) or []:
         if child:
             elem.append(build_xml_node(child))
-            
+
     return elem
 
-def extract_referenced_sprites(node, sprites=None):
-    if sprites is None:
-        sprites = set()
-    
+
+def collect_scene_assets(node, parent_name="", assets=None):
+    """Walk the normalized tree and collect every asset reference with context."""
+    if assets is None:
+        assets = {"sprites": [], "fonts": [], "texts": []}
+
+    name = node.get("name", "GameObject")
+
+    # Image sprites
     img = node.get("image", {}) or {}
-    if img.get("sprite"):
-        sprites.add(img["sprite"])
-        
+    sprite = img.get("sprite")
+    if sprite:
+        assets["sprites"].append({
+            "name": sprite,
+            "element": name,
+            "parent": parent_name,
+            "color": img.get("color"),
+            "type": "Image",
+        })
+
+    # RawImage textures
     rimg = node.get("rawImage", {}) or {}
-    if rimg.get("texture_name"):
-        sprites.add(rimg["texture_name"])
-        
+    tex = rimg.get("texture_name")
+    if tex:
+        assets["sprites"].append({
+            "name": tex,
+            "element": name,
+            "parent": parent_name,
+            "color": rimg.get("color"),
+            "type": "RawImage",
+        })
+
+    # Font references
+    txt = node.get("text", {}) or {}
+    font = txt.get("font")
+    if font:
+        assets["fonts"].append({
+            "name": font,
+            "element": name,
+            "parent": parent_name,
+            "fontSize": txt.get("fontSize"),
+        })
+
+    # Text content
+    content = txt.get("content")
+    if content:
+        assets["texts"].append({
+            "content": content,
+            "element": name,
+            "parent": parent_name,
+            "fontSize": txt.get("fontSize"),
+            "color": txt.get("color"),
+            "engine": txt.get("engine", "unknown"),
+        })
+
+    # CanvasScaler font
+    cs = node.get("canvasScaler", {}) or {}
+    # recurse
     for child in node.get("children", []) or []:
         if child:
-            extract_referenced_sprites(child, sprites)
-    return sprites
+            collect_scene_assets(child, name, assets)
 
-def generate_companion_markdown(scene_name, xml_str, sprites, raw_count):
+    return assets
+
+
+def generate_companion_markdown(scene_name, xml_str, assets, raw_count):
+    sprites = assets["sprites"]
+    fonts = assets["fonts"]
+    texts = assets["texts"]
+
     lines = [
         f"# Rebuild Companion: {scene_name}",
         "",
@@ -140,7 +276,49 @@ def generate_companion_markdown(scene_name, xml_str, sprites, raw_count):
         "## Scene Overview",
         f"- **Scene Name**: `{scene_name}`",
         f"- **Unity GameObjects Parsed**: `{raw_count}`",
-        f"- **UI Assets Linked**: `{len(sprites)}` (copied to the `./assets/` folder)",
+        f"- **Image/Texture Assets**: `{len(sprites)}`",
+        f"- **Font Assets**: `{len(fonts)}`",
+        f"- **Text Labels**: `{len(texts)}`",
+        "",
+    ]
+
+    # ── Asset Manifest ─────────────────────────────────────────────────────
+    if sprites:
+        lines.append("## Image & Texture Assets")
+        lines.append("")
+        lines.append("These are the named image/texture assets used in this scene. Each asset is listed with the element that uses it so you can map them to the correct UI component.")
+        lines.append("")
+        lines.append("| Asset Name | Used By | Parent Element | Type | Color |")
+        lines.append("|---|---|---|---|---|")
+        for s in sorted(sprites, key=lambda x: x["name"]):
+            color = s.get("color") or ""
+            lines.append(f"| `{s['name']}` | {s['element']} | {s['parent']} | {s['type']} | {color} |")
+        lines.append("")
+        lines.append("Asset files are copied to the `./assets/` directory alongside this file. Reference them by the asset name above.")
+
+    if fonts:
+        lines.append("")
+        lines.append("## Font Assets")
+        lines.append("")
+        lines.append("| Font Name | Used By | Font Size |")
+        lines.append("|---|---|---|")
+        for f in sorted(fonts, key=lambda x: x["name"]):
+            lines.append(f"| `{f['name']}` | {f['element']} | {f.get('fontSize', 'N/A')} |")
+
+    if texts:
+        lines.append("")
+        lines.append("## Text Labels (Content)")
+        lines.append("")
+        lines.append("These are the visible text strings in the scene. Use them as the default content when building the UI.")
+        lines.append("")
+        lines.append("| Text Content | Element | Parent | Font Size | Engine |")
+        lines.append("|---|---|---|---|---|")
+        for t in sorted(texts, key=lambda x: x["content"]):
+            content_short = t["content"][:80] + ("..." if len(t["content"]) > 80 else "")
+            lines.append(f"| {content_short} | {t['element']} | {t['parent']} | {t.get('fontSize', 'N/A')} | {t.get('engine', 'unknown')} |")
+
+    # ── XML Layout ─────────────────────────────────────────────────────────
+    lines.extend([
         "",
         "## Clean Layout Specs (Pseudo-HTML UI Markup)",
         "Use this XML layout to structure your screen. It reflects exact parent-child hierarchies, sizes, coordinates, alignments, and fonts:",
@@ -148,41 +326,50 @@ def generate_companion_markdown(scene_name, xml_str, sprites, raw_count):
         "```xml",
         xml_str,
         "```",
-        "",
-        "## Linked Assets (Check `./assets/` folder)",
-        "The following assets are required for this UI. They have been copied into the `./assets/` directory relative to this file:",
-    ]
-    for s in sorted(sprites):
-        lines.append(f"- `{s}.png`")
-        
+    ])
+
+    # ── Asset file list ────────────────────────────────────────────────────
+    if sprites:
+        lines.extend([
+            "",
+            "## Asset Files (Check `./assets/` folder)",
+            "The following files have been copied into the `./assets/` directory:",
+        ])
+        for s in sorted(sprites, key=lambda x: x["name"]):
+            lines.append(f"- `{s['name']}.png` -> used by **{s['element']}** ({s['type']})")
+
+    # ── Instructions ───────────────────────────────────────────────────────
     lines.extend([
         "",
         "## Instructions for the Rebuilding Agent",
-        "1. **Read Layout**: Parse the XML tree to define components. For instance, `<VerticalLayout>` maps to `flex flex-col`, and `<Button>` maps to clickable buttons.",
-        "2. **Render Images**: Reference images inside the local `./assets/` directory. Use CSS background-size or HTML img tags to fit the sizes defined by the `size` attribute.",
-        "3. **Match Colors**: Use the hex/rgba colors defined directly in the node attributes.",
-        "4. **Preserve Hierarchy**: Keep parent-child constraints. Maintain layout groups (grid, horizontal, vertical layouts) exactly as specified.",
+        "1. **Read Layout**: Parse the XML tree to define components. `<VerticalLayout>` maps to `flex flex-col`, `<HorizontalLayout>` maps to `flex flex-row`, `<Button>` maps to clickable buttons.",
+        "2. **Render Images**: Reference images by their **Asset Name** from the table above. Each asset has been copied to `./assets/<AssetName>.png`.",
+        "3. **Match Colors**: Use the hex/rgba colors defined in the node attributes and the asset table.",
+        "4. **Set Text Content**: Use the text strings from the **Text Labels** table above as the default content for each text element.",
+        "5. **Apply Fonts**: Where a font name is specified, use a matching Google Font or system font. Preserve font sizes from the table.",
+        "6. **Preserve Hierarchy**: Keep parent-child constraints. Maintain layout groups (grid, horizontal, vertical layouts) exactly as specified.",
     ])
     return "\n".join(lines)
 
-def run_ui_compiler(output_dir: Path, log):
+
+def run_ui_compiler(output_dir: Path, log, raw_dir: Path | None = None):
     log("[STEP ] Stage 6 — Building AI Prompt Companions & Slicing Scene assets…")
-    
+
     norm_dir = output_dir / "normalized_ui"
     unity_assets_dir = output_dir / "unity_assets"
     ai_export_dir = output_dir / "ai_export"
     scenes_dir = ai_export_dir / "scenes"
-    
+
     if not norm_dir.exists():
         log("[WARN ] normalized_ui/ directory does not exist. Run Stage 5 first.")
         return
-        
+
     scenes_dir.mkdir(parents=True, exist_ok=True)
     manifest = {}
-    
+
     json_files = list(norm_dir.glob("*.json"))
     log(f"[INFO ] Compiling prompt packages for {len(json_files)} UI scenes…")
-    
+
     processed = 0
     for jf in json_files:
         try:
@@ -190,17 +377,15 @@ def run_ui_compiler(output_dir: Path, log):
         except Exception as e:
             log(f"[WARN ] Failed to parse {jf.name}: {e}")
             continue
-            
+
         roots = data.get("roots", []) or []
         if not roots:
             continue
-            
-        # Helper to sanitize names
+
         def _local_safe(raw_str):
             s = "".join(c if c.isalnum() or c in " _-." else "_" for c in str(raw_str)).strip()
             return s or "unnamed"
 
-        # Determine a human-readable name based on roots
         root_names = [r.get("name") for r in roots if r and r.get("name") and r.get("name").lower() not in ("canvas", "gameobject", "panel", "root", "ui")]
         if root_names:
             scene_name = f"{_local_safe(root_names[0])}_{jf.stem[:8]}"
@@ -213,63 +398,72 @@ def run_ui_compiler(output_dir: Path, log):
 
         scene_output_dir = scenes_dir / scene_name
         assets_dest_dir = scene_output_dir / "assets"
-        
-        # 1. Generate clean XML layout DSL
+
         xml_root = ET.Element("Scene", {"name": scene_name})
-        all_sprites = set()
-        
+        all_assets = {"sprites": [], "fonts": [], "texts": []}
+
         for r in roots:
             if r:
                 xml_root.append(build_xml_node(r))
-                extract_referenced_sprites(r, all_sprites)
-                
+                collect_scene_assets(r, assets=all_assets)
+
         xml_str = _prettify_xml(xml_root)
-        
-        # Skip scenes with completely empty UI structures
+
         if len(xml_root) == 0:
             continue
-            
+
         scene_output_dir.mkdir(parents=True, exist_ok=True)
         (scene_output_dir / "layout.xml").write_text(xml_str, encoding="utf-8")
-        
-        # 2. Copy referenced asset files to `./assets/`
+
         copied_assets = []
-        if all_sprites and unity_assets_dir.exists():
+        seen_sprites = set()
+        if all_assets["sprites"]:
             assets_dest_dir.mkdir(parents=True, exist_ok=True)
-            for sprite in all_sprites:
-                # Unity assets could be png or wav
-                src_png = unity_assets_dir / f"{sprite}.png"
-                if src_png.exists():
-                    shutil.copy2(src_png, assets_dest_dir / f"{sprite}.png")
-                    copied_assets.append(f"{sprite}.png")
+            for s in all_assets["sprites"]:
+                sprite_name = s["name"]
+                if sprite_name in seen_sprites:
+                    continue
+                seen_sprites.add(sprite_name)
+                
+                # Try to find the sprite file in multiple locations
+                src_file = _find_sprite_file(sprite_name, output_dir)
+                
+                # If not found, try on-demand extraction from raw assets
+                if src_file is None and raw_dir is not None:
+                    src_file = _extract_sprite_on_demand(sprite_name, raw_dir, output_dir, log)
+                
+                if src_file and src_file.exists():
+                    ext = src_file.suffix
+                    dest_file = assets_dest_dir / f"{sprite_name}{ext}"
+                    shutil.copy2(src_file, dest_file)
+                    copied_assets.append(f"{sprite_name}{ext}")
+                    if log:
+                        log(f"[INFO ] Copied asset: {sprite_name}{ext}")
                 else:
-                    # Check text assets or other configs
-                    src_txt = unity_assets_dir / f"{sprite}.txt"
-                    if src_txt.exists():
-                        shutil.copy2(src_txt, assets_dest_dir / f"{sprite}.txt")
-                        copied_assets.append(f"{sprite}.txt")
-                        
-        # 3. Create PROMPT_COMPANION.md
+                    if log:
+                        log(f"[WARN ] Asset not found: {sprite_name}")
+
         markdown_str = generate_companion_markdown(
-            scene_name, xml_str, all_sprites, data.get("raw_count", 0)
+            scene_name, xml_str, all_assets, data.get("raw_count", 0)
         )
         (scene_output_dir / "PROMPT_COMPANION.md").write_text(markdown_str, encoding="utf-8")
-        
-        # Add to manifest
+
         manifest[scene_name] = {
             "xml_path": str(Path("scenes") / scene_name / "layout.xml"),
             "prompt_path": str(Path("scenes") / scene_name / "PROMPT_COMPANION.md"),
             "assets_copied": len(copied_assets),
+            "asset_names": sorted(seen_sprites),
+            "font_count": len(all_assets["fonts"]),
+            "text_count": len(all_assets["texts"]),
             "object_count": data.get("raw_count", 0),
         }
-        
+
         processed += 1
-        
-    # Write global scenes_manifest.json
+
     (ai_export_dir / "scenes_manifest.json").write_text(
         json.dumps(manifest, indent=2, ensure_ascii=False),
         encoding="utf-8"
     )
-    
+
     log(f"[OK   ] Stage 6 complete — {processed} AI Prompt Companions generated under ai_export/scenes/")
     log("[INFO ] Check scenes_manifest.json for a list of all compiled screens.")
