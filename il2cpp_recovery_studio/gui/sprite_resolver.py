@@ -67,8 +67,18 @@ def build_global_env(raw_dir: Path, log: Callable) -> object:
     if unity_data_dir:
         data_dir = unity_data_dir / "assets" / "bin" / "Data"
         if data_dir.exists():
+            processed_stems = set()
             for asset_file in data_dir.glob("sharedassets*.assets*"):
                 if asset_file.is_file():
+                    # Skip split files (.split0, .split1, ...) and .resS files
+                    name = asset_file.name
+                    if ".split" in name or name.endswith(".resS"):
+                        continue
+                    # Avoid adding same file multiple times (stem check)
+                    stem = asset_file.stem
+                    if stem in processed_stems:
+                        continue
+                    processed_stems.add(stem)
                     all_files.append(asset_file)
     for bundle in raw_dir.rglob("*.bundle"):
         all_files.append(bundle)

@@ -4,6 +4,7 @@ import shutil
 import xml.etree.ElementTree as ET
 from pathlib import Path
 from xml.dom import minidom
+from .sprite_resolver import _find_unity_data_dir
 
 try:
     import UnityPy
@@ -57,8 +58,18 @@ def _extract_sprite_on_demand(sprite_name: str, raw_dir: Path, output_dir: Path,
             return None
         
         # Search all asset files for the sprite
+        processed_stems = set()
         for asset_file in data_dir.glob("sharedassets*.assets*"):
             try:
+                # Skip split files (.split0, .split1, ...) and .resS files
+                name = asset_file.name
+                if ".split" in name or name.endswith(".resS"):
+                    continue
+                # Skip duplicates by stem
+                stem = asset_file.stem
+                if stem in processed_stems:
+                    continue
+                processed_stems.add(stem)
                 import UnityPy
                 env = UnityPy.load(str(asset_file))
                 for obj in env.objects:

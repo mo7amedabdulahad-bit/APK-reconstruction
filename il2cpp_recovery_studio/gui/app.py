@@ -18,6 +18,8 @@ v22: Merged UnityPy environment for cross-bundle sprite resolution.
 from __future__ import annotations
 
 import base64
+import hashlib
+import io
 import json
 import os
 import queue
@@ -135,6 +137,36 @@ DL_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) IL2CPP-Recovery-Studio/20"
 }
 
+#region debug-point dbg-helper
+import os as _os
+_DEBUG_SERVER_URL = _os.environ.get("DEBUG_SERVER_URL", "http://127.0.0.1:7777/event")
+_DEBUG_SESSION_ID = _os.environ.get("DEBUG_SESSION_ID", "unity-apk-rev-crash")
+_DEBUG_ENABLED = True
+
+def _dbg(event: str, data: dict | None = None, level: str = "info") -> None:
+    """Send a debug event to the TRAE Debug Server. Never raises."""
+    if not _DEBUG_ENABLED:
+        return
+    try:
+        import urllib.request as _urllib
+        payload = json.dumps({
+            "sessionId": _DEBUG_SESSION_ID,
+            "event": event,
+            "level": level,
+            "data": data or {},
+            "ts": time.time(),
+        }).encode("utf-8")
+        req = _urllib.Request(
+            _DEBUG_SERVER_URL,
+            data=payload,
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+        _urllib.urlopen(req, timeout=2)
+    except Exception:
+        pass  # debug reporting must never break the app
+#endregion
+
 _PURPOSE_HINTS: list[tuple[list[str], str]] = [
     (["lobby", "main_menu", "mainmenu", "home"],                  "Main Menu / Lobby"),
     (["village", "map", "world"],                                  "Village / World Map"),
@@ -215,7 +247,7 @@ def _skip_path(dest: Path, stem: str, ext: str) -> Path | None:
 # ── download helper (with User-Agent) ────────────────────────────────────────
 def _download(url: str, dest: Path, log) -> bool:
     """
-    Download url → dest using a proper User-Agent so GitHub doesn't block us.
+    Download url -> dest using a proper User-Agent so GitHub doesn't block us.
     Returns True on success.
     """
     log(f"[INFO ] Downloading {dest.name}…")
@@ -409,13 +441,14 @@ def _ensure_apktool(log) -> Path | None:
     return jar
 
 
-# ── Il2CppDumper: resolve exe (manual → auto-download → None) ────────────────
+# ── Il2CppDumper: resolve exe (manual -> local v39 -> auto-download -> None) ────────────────
 def _ensure_il2cppdumper(log, manual_path: str | None = None) -> Path | None:
     """
     Priority:
       1. manual_path  — if set and exe exists, use it directly.
-      2. auto-download into tools/il2cppdumper/ — cached after first run.
-      3. None — warn and skip Stage 4a.
+      2. local v39 version at tools/Il2CppDumper-win-x64-net8-v39/ — supports metadata v39.
+      3. auto-download into tools/il2cppdumper/ — cached after first run.
+      4. None — warn and skip Stage 4a.
 
     Also writes IL2CPP_FORCE_CONFIG next to the resolved exe so that
     metadata version 29–39+ is accepted via ForceDump / ForceVersion.
@@ -428,9 +461,16 @@ def _ensure_il2cppdumper(log, manual_path: str | None = None) -> Path | None:
             _write_il2cpp_config(mp.parent, log)
             return mp
         else:
-            log(f"[WARN ] Il2CppDumper manual path not valid ({mp}) — falling back to auto-download")
+            log(f"[WARN ] Il2CppDumper manual path not valid ({mp}) — falling back to local v39 version")
 
-    # 2. Auto-download
+    # 2. Local v39-compatible version (supports metadata v39 natively)
+    local_v39 = TOOLS_DIR.parent / "tools" / "Il2CppDumper-win-x64-net8-v39" / "Il2CppDumper.exe"
+    if local_v39.is_file():
+        log(f"[INFO ] Il2CppDumper — using local v39 version: {local_v39}")
+        _write_il2cpp_config(local_v39.parent, log)
+        return local_v39
+
+    # 3. Auto-download (fallback to v6.7.46 for older metadata versions)
     il2cpp_dir = TOOLS_DIR / "il2cppdumper"
     # search for exe that may already be there (any subfolder)
     existing = list(il2cpp_dir.rglob("Il2CppDumper.exe")) if il2cpp_dir.exists() else []
@@ -453,7 +493,7 @@ def _ensure_il2cppdumper(log, manual_path: str | None = None) -> Path | None:
         with zipfile.ZipFile(zip_path, "r") as z:
             z.extractall(il2cpp_dir)
         zip_path.unlink(missing_ok=True)
-        log(f"[OK   ] Il2CppDumper extracted → {il2cpp_dir}")
+        log(f"[OK   ] Il2CppDumper extracted -> {il2cpp_dir}")
     except Exception as exc:
         log(f"[ERROR] Extraction failed: {exc}")
         return None
@@ -464,7 +504,7 @@ def _ensure_il2cppdumper(log, manual_path: str | None = None) -> Path | None:
         return None
 
     exe = candidates[0]
-    log(f"[OK   ] Il2CppDumper ready → {exe}")
+    log(f"[OK   ] Il2CppDumper ready -> {exe}")
     _write_il2cpp_config(exe.parent, log)
     return exe
 
@@ -517,18 +557,18 @@ def _extract_xapk(src: Path, raw_dir: Path, log, force: bool):
                 dest.mkdir(parents=True, exist_ok=True)
                 with z.open(name) as src_f, zipfile.ZipFile(src_f) as inner:
                     inner.extractall(dest)
-                log(f"[OK   ]   {name} → {stem}/")
+                log(f"[OK   ]   {name} -> {stem}/")
     else:
         stem = src.stem
         dest = raw_dir / stem
         dest.mkdir(parents=True, exist_ok=True)
         with zipfile.ZipFile(src, "r") as z:
             z.extractall(dest)
-        log(f"[OK   ]   {src.name} → {stem}/")
+        log(f"[OK   ]   {src.name} -> {stem}/")
 
 
 # ── Unity-asset extraction (PNGs / text) ─────────────────────────────────────
-def _dump_env(env, dest: Path, log, force: bool) -> tuple[int, int]:
+def _dump_env(env, dest: Path, log, force: bool, seen: set | None = None) -> tuple[int, int]:
     written = skipped = 0
     for obj in env.objects:
         try:
@@ -544,9 +584,24 @@ def _dump_env(env, dest: Path, log, force: bool) -> tuple[int, int]:
             try:
                 img = data.image
                 if img:
+                    # Render once to PNG bytes so identical images can be
+                    # deduplicated by content. The same texture often ships in
+                    # both the main APK and expansion packs (and in split
+                    # bundles); the old code extracted it into every scene
+                    # folder, producing thousands of byte-identical duplicate
+                    # PNGs. Keeping each unique image once is safe because the
+                    # AI resolves sprites by name across the whole tree.
+                    buf = io.BytesIO()
+                    img.save(buf, format="PNG")
+                    raw = buf.getvalue()
+                    if seen is not None:
+                        h = hashlib.md5(raw).hexdigest()
+                        if h in seen:
+                            skipped += 1; continue
+                        seen.add(h)
                     out = _unique_path(dest, stem, ".png") if force else dest / f"{stem}.png"
                     out.parent.mkdir(parents=True, exist_ok=True)
-                    img.save(str(out)); written += 1
+                    out.write_bytes(raw); written += 1
             except Exception: pass
         elif t == "Sprite":
             if not force and _skip_path(dest, stem, ".png"):
@@ -554,9 +609,17 @@ def _dump_env(env, dest: Path, log, force: bool) -> tuple[int, int]:
             try:
                 img = data.image
                 if img:
+                    buf = io.BytesIO()
+                    img.save(buf, format="PNG")
+                    raw = buf.getvalue()
+                    if seen is not None:
+                        h = hashlib.md5(raw).hexdigest()
+                        if h in seen:
+                            skipped += 1; continue
+                        seen.add(h)
                     out = _unique_path(dest, stem, ".png") if force else dest / f"{stem}.png"
                     out.parent.mkdir(parents=True, exist_ok=True)
-                    img.save(str(out)); written += 1
+                    out.write_bytes(raw); written += 1
             except Exception: pass
         elif t == "TextAsset":
             script = getattr(data, "m_Script", "") or ""
@@ -664,7 +727,7 @@ def _run_smali(apk_path, smali_dir, java_bin, apktool_jar, log, force, thread_co
 
 
 # ────────────────────────────────────────────────────────────────────────────
-# STAGE 4a — Resolve + run Il2CppDumper → DummyDll + script.json
+# STAGE 4a — Resolve + run Il2CppDumper -> DummyDll + script.json
 # ────────────────────────────────────────────────────────────────────────────
 
 def _run_stage4a_il2cppdumper(
@@ -710,21 +773,23 @@ def _run_stage4a_il2cppdumper(
             stdin=subprocess.PIPE,
             text=True, encoding="utf-8", errors="replace",
         )
-        assert proc.stdout
-        for line in proc.stdout:
+        # Send "0\n" to stdin to auto-answer the "force continue" prompt,
+        # then capture all output. This avoids the deadlock where the process
+        # waits for stdin while we're blocked reading stdout.
+        # Use explicit write/flush first to ensure input is sent immediately
+        if proc.stdin:
+            proc.stdin.write("0\n")
+            proc.stdin.flush()
+        stdout_data, _ = proc.communicate(timeout=300)
+
+        for line in stdout_data.splitlines():
             line = line.rstrip()
             if line:
                 log(f"[INFO ] Il2CppDumper: {line}")
-        # Close stdin so Il2CppDumper's Console.ReadKey() gets EOF instead
-        # of throwing InvalidOperationException when running non-interactively.
-        if proc.stdin:
-            try: proc.stdin.close()
-            except Exception: pass
-        proc.wait(timeout=300)
 
         if proc.returncode == 0 and script_json.exists():
             dll_count = len(list(dll_dir.glob("*.dll"))) if dll_dir.exists() else 0
-            log(f"[OK   ] Stage 4a complete — {dll_count} DummyDlls + script.json → {dump_dir}")
+            log(f"[OK   ] Stage 4a complete — {dll_count} DummyDlls + script.json -> {dump_dir}")
             return dump_dir
         else:
             log(f"[WARN ] Il2CppDumper exited {proc.returncode} or script.json missing — "
@@ -930,6 +995,25 @@ def _dump_ui_obj(
     # Local binding so all _pptr calls inside this function pass through
     # the global sprite_index and source_file for cross-bundle resolution.
     _p = lambda obj: _pptr(obj, sprite_index=sprite_index, current_file=source_file)
+
+    # For MonoBehaviour on protected/obfuscated IL2CPP builds, a full o.read()
+    # is slow and can hit native faults UnityPy cannot catch. Recover the
+    # essential fields (class name via m_Script, GameObject, enabled state,
+    # name) cheaply from raw bytes instead of deserializing the whole object.
+    if t == "MonoBehaviour":
+        base = _parse_monobehaviour_header(o)
+        if base:
+            out["name"]         = base.get("m_Name")
+            out["m_GameObject"] = base.get("m_GameObject")
+            out["m_Enabled"]    = base.get("m_Enabled")
+            out["m_Script"]     = base.get("m_Script")
+            if script_map and base.get("m_Script"):
+                pid = str(base["m_Script"].get("path_id", ""))
+                cls = script_map.get(pid)
+                if cls:
+                    out["_class_name"] = cls
+            out["_decode"] = "header"
+            return out
 
     try:
         d = o.read()
@@ -1198,12 +1282,24 @@ def _try_typetree_decode(o, env) -> dict | None:
     This never crashes - it uses UnityPy's built-in typetree reader which handles
     most cases. TypeTreeGenerator is an optional enhancement loaded separately.
     """
+    _c = getattr(_try_typetree_decode, "_c", 0) + 1
+    _try_typetree_decode._c = _c
+    _emit = (_c % 25 == 0)
+    if _emit:
+        _dbg("s4-decode-enter", {"type": o.type.name, "path_id": o.path_id,
+                                 "has_generator": bool(getattr(env, "typetree_generator", None))})
     try:
         tt = o.read_typetree()
         if tt and isinstance(tt, dict) and len(tt) > 4:
+            if _emit:
+                _dbg("s4-decode-ok", {"type": o.type.name, "path_id": o.path_id})
             return tt
-    except Exception:
-        pass
+    except Exception as e:
+        if _emit:
+            _dbg("s4-decode-fail", {"type": o.type.name, "path_id": o.path_id,
+                                    "error": str(e)}, level="warn")
+    if _emit:
+        _dbg("s4-decode-none", {"type": o.type.name, "path_id": o.path_id})
     return None
 
 
@@ -1247,10 +1343,13 @@ def _run_stage4_ui_dump(
         return
 
     log("[STEP ] Stage 4 — Full Unity UI field extraction (per-file, v22)…")
+    _dbg("s4-start", {"ui_dump_dir": str(ui_dump_dir), "force": force})
     _wipe_dir(ui_dump_dir)
 
     # 1. Load global environment and sprite index
+    _dbg("s4-env-loading")
     env = build_global_env(raw_dir, log)
+    _dbg("s4-env-loaded", {"objects": len(env.objects) if hasattr(env, "objects") else -1})
 # 1b. Configure TypeTreeGenerator using DummyDlls (optional enhancement)
     typetree_available = False
     if dump_dir and (dump_dir / "DummyDll").exists():
@@ -1281,13 +1380,26 @@ def _run_stage4_ui_dump(
                         raise e
             
             generator.get_nodes_up = patched_get_nodes_up
-            env.typetree_generator = generator
-            typetree_available = True
-            log(f"[INFO ] TypeTreeGenerator loaded {len(list((dump_dir / 'DummyDll').glob('*.dll')))} DummyDlls (Unity {unity_ver}).")
+            # Attach the C# generator ONLY when explicitly opted in. On protected/
+            # obfuscated IL2CPP builds (this game's metadata reported "may be
+            # protected"), read_typetree() through this interop can segfault the
+            # whole process — a native fault Python cannot catch, which presents
+            # as a hard "crash" with no traceback. UnityPy's built-in typetree
+            # reader handles the common cases without the native dependency.
+            if _os.environ.get("IL2CPP_TYPETREE", "0") == "1":
+                env.typetree_generator = generator
+                typetree_available = True
+                log(f"[INFO ] TypeTreeGenerator attached {len(list((dump_dir / 'DummyDll').glob('*.dll')))} DummyDlls (Unity {unity_ver}).")
+                _dbg("s4-typetree-done", {"unity_ver": unity_ver, "attached": True})
+            else:
+                log(f"[INFO ] TypeTreeGenerator loaded but NOT attached (protected build) — using UnityPy built-in typetree. Set IL2CPP_TYPETREE=1 to force the C# generator.")
+                _dbg("s4-typetree-done", {"unity_ver": unity_ver, "attached": False})
         except ImportError:
             log("[INFO ] TypeTreeGeneratorAPI not installed — using UnityPy built-in typetree reading.")
+            _dbg("s4-typetree-import-error")
         except Exception as e:
             log(f"[WARN ] TypeTreeGenerator unavailable, falling back to UnityPy: {e}")
+            _dbg("s4-typetree-exception", {"error": str(e)}, level="warn")
             
     with _SuppressCSharpOutput():
         sprite_index = build_global_sprite_index(env, log)
@@ -1308,6 +1420,7 @@ def _run_stage4_ui_dump(
             except Exception:
                 pass
     log(f"[INFO ] Built global MonoScript class map with {len(monoscript_class_map)} entries")
+    _dbg("s4-monoscript-map-done", {"entries": len(monoscript_class_map)})
 
     def resolve_monoscript(o, fid, pid):
         if not pid:
@@ -1333,10 +1446,24 @@ def _run_stage4_ui_dump(
                 return cn
         return None
 
-    # 2b. Build per-file local type indices and MonoBehaviour→class mappings.
-    local_type_indices: dict[str, dict[int, str]] = {}  # file → {pid → type}
-    monoscript_indices: dict[str, dict[int, str]] = {}  # file → {pid → class_name}
+    # 2b. Build per-file local type indices and MonoBehaviour->class mappings.
+    local_type_indices: dict[str, dict[int, str]] = {}  # file -> {pid -> type}
+    monoscript_indices: dict[str, dict[int, str]] = {}  # file -> {pid -> class_name}
+    _dbg("s4-localtype-start", {"objects": len(env.objects)})
+    _lt_counter = 0
+    _lt_mb = 0
     for o in env.objects:
+        _lt_counter += 1
+        if _lt_counter % 1000 == 0:
+            _dbg("s4-localtype-iter", {
+                "processed": _lt_counter,
+                "type": o.type.name,
+                "path_id": o.path_id,
+                "source": getattr(getattr(o, "assets_file", None), "name", "unknown"),
+            })
+        if progress_cb and _lt_counter % 10000 == 0:
+            progress_cb(0.30 + 0.20 * (_lt_counter / len(env.objects)),
+                        f"Stage 4: scanning object {_lt_counter}/{len(env.objects)}")
         af = getattr(o, "assets_file", None)
         fn = getattr(af, "name", "unknown") if af else "unknown"
         if fn not in local_type_indices:
@@ -1346,29 +1473,44 @@ def _run_stage4_ui_dump(
         
         if o.type.name == "MonoBehaviour":
             resolved_cls = None
+            _lt_mb += 1
+            if _lt_mb % 100 == 0:
+                _dbg("s4-localtype-mb-read", {
+                    "mb_idx": _lt_mb,
+                    "source": fn,
+                    "path_id": o.path_id,
+                })
+            # Recover the m_Script PPtr from the raw MonoBehaviour header — this
+            # is a cheap, native-safe byte parse that does NOT deserialize the
+            # whole object. On protected/obfuscated IL2CPP builds a full
+            # o.read() is slow and can hit native faults Python cannot catch,
+            # so it is only used as a last-resort fallback below.
             try:
-                d = o.read()
-                script_ptr = getattr(d, "m_Script", None)
-                if script_ptr:
-                    sfid = getattr(script_ptr, "file_id", 0)
-                    spid = getattr(script_ptr, "path_id", 0)
-                    resolved_cls = resolve_monoscript(o, sfid, spid)
-            except Exception:
-                pass
-            
-            if not resolved_cls:
                 base = _parse_monobehaviour_header(o)
                 script_ref = base.get("m_Script")
                 if script_ref:
                     sfid = script_ref.get("file_id", 0)
                     spid = script_ref.get("path_id", 0)
                     resolved_cls = resolve_monoscript(o, sfid, spid)
-            
+            except Exception:
+                pass
+
+            if not resolved_cls:
+                try:
+                    d = o.read()
+                    script_ptr = getattr(d, "m_Script", None)
+                    if script_ptr:
+                        sfid = getattr(script_ptr, "file_id", 0)
+                        spid = getattr(script_ptr, "path_id", 0)
+                        resolved_cls = resolve_monoscript(o, sfid, spid)
+                except Exception:
+                    pass
+
             if resolved_cls:
                 short_cls = resolved_cls.split(".")[-1]
                 monoscript_indices[fn][o.path_id] = short_cls
 
-    log(f"[INFO ] Built local type indices for {len(local_type_indices)} files")
+    _dbg("s4-localtype-done", {"files": len(local_type_indices)})
     resolved_mono_count = sum(len(v) for v in monoscript_indices.values())
     log(f"[INFO ] Resolved {resolved_mono_count} MonoBehaviour class names")
 
@@ -1376,11 +1518,22 @@ def _run_stage4_ui_dump(
     objects_by_file: dict[str, list] = {}
     total_objects = 0
     skipped_objects = 0
+    processed_counter = 0
+    log(f"[INFO ] Processing {len(env.objects)} Unity objects...")
+    _dbg("s4-loop-start", {"objects": len(env.objects)})
     # Suppress ALL C# interop output (TypeTreeGeneratorAPI.dll writes
     # 'Error generating tree nodes: ...' directly to process fds 1+2)
     # for the entire object processing loop.
+    _mb_counter = 0
     with _SuppressCSharpOutput():
         for o in env.objects:
+            processed_counter += 1
+            if processed_counter % 10000 == 0:
+                log(f"[INFO ] Processed {processed_counter}/{len(env.objects)} objects...")
+                _dbg("s4-loop-heartbeat", {"processed": processed_counter, "total": len(env.objects)})
+                if progress_cb:
+                    progress_cb(0.5 + 0.3 * (processed_counter / len(env.objects)), f"Stage 4: Processed {processed_counter}/{len(env.objects)} objects")
+            
             if o.type.name not in WANT_TYPES:
                 continue
             
@@ -1395,7 +1548,23 @@ def _run_stage4_ui_dump(
             try:
                 typetree_decoded = None
                 if o.type.name == "MonoBehaviour":
-                    typetree_decoded = _try_typetree_decode(o, env)
+                    _mb_counter += 1
+                    # Full typetree decode of EVERY MonoBehaviour is extremely slow
+                    # (it deserializes the whole object) and, when the C# generator
+                    # is attached, is the native-crash risk on protected/obfuscated
+                    # builds. Default to cheap header-only extraction; full decode
+                    # can be forced with IL2CPP_TYPETREE=1 for well-behaved builds.
+                    if _mb_counter % 100 == 0:
+                        _dbg("s4-mb-attempt", {
+                            "idx": _mb_counter,
+                            "source": source_name,
+                            "path_id": o.path_id,
+                            "type": o.type.name,
+                        })
+                    if _os.environ.get("IL2CPP_TYPETREE", "0") == "1":
+                        typetree_decoded = _try_typetree_decode(o, env)
+                    else:
+                        typetree_decoded = None
                 
                 dumped = _dump_ui_obj(
                     o,
@@ -1410,10 +1579,18 @@ def _run_stage4_ui_dump(
                 total_objects += 1
             except Exception as exc:
                 skipped_objects += 1
+                _dbg("s4-loop-skip", {
+                    "source": source_name,
+                    "path_id": o.path_id,
+                    "type": o.type.name,
+                    "error": str(exc),
+                }, level="warn")
                 if skipped_objects <= 5:
                     log(f"[WARN ] Skipping {o.type.name} path_id={o.path_id}: {exc}")
                 elif skipped_objects == 6:
                     log(f"[WARN ] Further skip messages suppressed...")
+
+    _dbg("s4-loop-done", {"total_objects": total_objects, "skipped": skipped_objects})
 
     # 3. Track coverage stats
     stats = {"resolved": 0, "unresolved": 0, "per_bundle": {}}
@@ -1480,8 +1657,8 @@ def _run_stage5_bundle_parser(
     if not PARSER_SCRIPT.exists():
         log(f"[WARN ] Parser script not found at {PARSER_SCRIPT} — skipping Stage 5.")
         return
-    log(f"[INFO ] Node.js → {node}")
-    log(f"[INFO ] Parser  → {PARSER_SCRIPT}")
+    log(f"[INFO ] Node.js -> {node}")
+    log(f"[INFO ] Parser  -> {PARSER_SCRIPT}")
     normalized_ui_dir.mkdir(parents=True, exist_ok=True)
     if progress_cb:
         progress_cb(0.05, "Stage 5: starting Node.js parser…")
@@ -1508,7 +1685,7 @@ def _run_stage5_bundle_parser(
         proc.wait(timeout=600)
         if proc.returncode == 0:
             n = _count_files(normalized_ui_dir)
-            log(f"[OK   ] Stage 5 complete — {n} normalized tree file(s) → {normalized_ui_dir}")
+            log(f"[OK   ] Stage 5 complete — {n} normalized tree file(s) -> {normalized_ui_dir}")
         else:
             log(f"[ERROR] Stage 5 exited with code {proc.returncode}")
     except subprocess.TimeoutExpired:
@@ -1531,186 +1708,232 @@ def _run_pipeline(
     progress_cb=None,
 ):
     try:
-        import UnityPy
-    except ImportError:
-        log("[ERROR] UnityPy not installed. Run: pip install UnityPy")
-        return
+        try:
+            import UnityPy
+        except ImportError:
+            log("[ERROR] UnityPy not installed. Run: pip install UnityPy")
+            return
 
-    raw_dir     = out_dir / "raw"
-    unity_dir   = out_dir / "unity_assets"
-    il2cpp_dir  = out_dir / "il2cpp_meta"
-    smali_dir   = out_dir / "smali"
-    ai_dir      = out_dir / "ai_export"
-    ui_dump_dir = out_dir / "ui_dump"
-    norm_ui_dir = out_dir / "normalized_ui"
+        raw_dir     = out_dir / "raw"
+        unity_dir   = out_dir / "unity_assets"
+        il2cpp_dir  = out_dir / "il2cpp_meta"
+        smali_dir   = out_dir / "smali"
+        ai_dir      = out_dir / "ai_export"
+        ui_dump_dir = out_dir / "ui_dump"
+        norm_ui_dir = out_dir / "normalized_ui"
 
-    log(f"[INFO ] Output → {out_dir}")
+        log(f"[INFO ] Output -> {out_dir}")
+    
+        if progress_cb: progress_cb(0.00, "Stage 1: Extracting package…")
+        log("[STEP ] Stage 1 — Extracting package…")
+        _extract_xapk(src, raw_dir, log, force)
+    
+        if progress_cb: progress_cb(0.10, "Stage 2: Extracting Unity assets (PNG/text)…")
+        log("[STEP ] Stage 2 — Extracting Unity assets (PNG / text)…")
+        if unity_dir.exists() and not force:
+            log(f"[SKIP ] unity_assets/ already exists ({_count_files(unity_dir)} files)")
+        else:
+            if force: _wipe_dir(unity_dir)
+            else:     unity_dir.mkdir(parents=True, exist_ok=True)
+    
+        # Shared content-hash set so identical images extracted from the main
+        # APK, expansion packs, and split bundles are written only once.
+        seen_images: set[str] = set()
 
-    if progress_cb: progress_cb(0.00, "Stage 1: Extracting package…")
-    log("[STEP ] Stage 1 — Extracting package…")
-    _extract_xapk(src, raw_dir, log, force)
-
-    if progress_cb: progress_cb(0.10, "Stage 2: Extracting Unity assets (PNG/text)…")
-    log("[STEP ] Stage 2 — Extracting Unity assets (PNG / text)…")
-    if unity_dir.exists() and not force:
-        log(f"[SKIP ] unity_assets/ already exists ({_count_files(unity_dir)} files)")
-    else:
-        if force: _wipe_dir(unity_dir)
-        else:     unity_dir.mkdir(parents=True, exist_ok=True)
+        # 1. Extract assets/bin/Data directories (each becomes a scene subdirectory)
         for dd in raw_dir.rglob("assets/bin/Data"):
             try:
                 import UnityPy
-                env  = UnityPy.load(str(dd))
-                w, sk = _dump_env(env, unity_dir, log, force)
-                log(f"[OK   ]   {dd.parent.parent.parent.name}: {w+sk} file(s) [{sk} skipped]")
+                env = UnityPy.load(str(dd))
+                # Use the parent directory name (e.g., com.traviangames.travianlegendsmobile) as scene folder
+                scene_name = _safe_name(dd.parent.parent.parent.name)
+                scene_dir = unity_dir / scene_name
+                scene_dir.mkdir(parents=True, exist_ok=True)
+                w, sk = _dump_env(env, scene_dir, log, force, seen_images)
+                log(f"[OK   ]   {scene_name}: {w+sk} file(s) [{sk} skipped]")
             except Exception as exc:
                 log(f"[WARN ] Failed to load {dd}: {exc}")
-        # Also load split asset files (sharedassets*.assets) which are common in modern Unity
+    
+        # 2. Extract split asset files (sharedassets*.assets*) - each becomes a subdirectory
         unity_data_dir = _find_unity_data_dir(raw_dir)
         if unity_data_dir:
             data_dir = unity_data_dir / "assets" / "bin" / "Data"
             if data_dir.exists():
+                # Track processed file stems to avoid duplicates from .splitN files
+                processed_stems = set()
                 for asset_file in data_dir.glob("sharedassets*.assets*"):
                     try:
+                        # Skip split files (.split0, .split1, ...) and .resS files
+                        name = asset_file.name
+                        if ".split" in name or name.endswith(".resS"):
+                            continue
                         import UnityPy
                         env = UnityPy.load(str(asset_file))
-                        w, sk = _dump_env(env, unity_dir, log, force)
-                        log(f"[OK   ]   {asset_file.name}: {w+sk} file(s) [{sk} skipped]")
+                        # Use the asset file stem as scene folder
+                        scene_name = _safe_name(asset_file.stem)
+                        # Skip if we already processed this stem (to avoid duplicates)
+                        if scene_name in processed_stems:
+                            continue
+                        processed_stems.add(scene_name)
+                        scene_dir = unity_dir / scene_name
+                        scene_dir.mkdir(parents=True, exist_ok=True)
+                        w, sk = _dump_env(env, scene_dir, log, force, seen_images)
+                        log(f"[OK   ]   {scene_name}: {w+sk} file(s) [{sk} skipped]")
                     except Exception as exc:
                         log(f"[WARN ] Failed to load split asset {asset_file.name}: {exc}")
+    
+        # 3. Extract bundle files (*.bundle) - each becomes a subdirectory
         for bf in raw_dir.rglob("*.bundle"):
             try:
                 import UnityPy
                 env = UnityPy.load(str(bf))
-                _dump_env(env, unity_dir, log, force)
+                # Use the bundle file stem as scene folder
+                scene_name = _safe_name(bf.stem)
+                scene_dir = unity_dir / scene_name
+                scene_dir.mkdir(parents=True, exist_ok=True)
+                _dump_env(env, scene_dir, log, force, seen_images)
+                log(f"[OK   ]   {scene_name}: extracted")
             except Exception as exc:
                 log(f"[WARN ] Failed bundle {bf.name}: {exc}")
-        log(f"[OK   ] Stage 2 complete → {unity_dir}")
-
-    if progress_cb: progress_cb(0.25, "Stage 3: IL2CPP metadata…")
-    log("[STEP ] Stage 3 — IL2CPP metadata…")
-    if not (il2cpp_dir.exists() and not force):
-        _wipe_dir(il2cpp_dir)
-        for f in (
-            list(raw_dir.rglob("global-metadata.dat"))
-            + list(raw_dir.rglob("arm64-v8a/libil2cpp.so"))
-            + list(raw_dir.rglob("armeabi-v7a/libil2cpp.so"))
-        ):
-            dst_name = f"{f.parent.name}_{f.name}" if f.name == "libil2cpp.so" else f.name
-            shutil.copy2(f, il2cpp_dir / dst_name)
-            log(f"[OK   ]   Copied: {dst_name}")
-        log(f"[OK   ] Stage 3 complete → {il2cpp_dir}")
-    else:
-        log(f"[SKIP ] il2cpp_meta/ already exists ({_count_files(il2cpp_dir)} files)")
-
-    if progress_cb: progress_cb(0.30, "Stage 3b: Smali decompile…")
-    log("[STEP ] Stage 3b — Smali decompile…")
-    java = _find_java(java_override)
-    if java is None:
-        log("[WARN ] Java not found — skipping smali step.")
-    else:
-        apktool_jar = _ensure_apktool(log)
-        if apktool_jar:
-            smali_dir.mkdir(parents=True, exist_ok=True)
-            main_apks = [p for p in raw_dir.rglob("*.apk") if "config." not in p.name] \
-                        or list(raw_dir.rglob("*.apk"))
-            for apk in main_apks:
-                _run_smali(apk, smali_dir, java, apktool_jar, log, force)
-
-    if progress_cb: progress_cb(0.40, "Stage 3c: Building AI export…")
-    log("[STEP ] Stage 3c — AI export files…")
-    ai_dir.mkdir(parents=True, exist_ok=True)
-    scene_map = _build_ai_scene_map(unity_dir)
-    (ai_dir / "ai_scene_map.json").write_text(
-        json.dumps(scene_map, indent=2, ensure_ascii=False), encoding="utf-8")
-    log(f"[OK   ] ai_scene_map.json — {len(scene_map)} entries")
-
-    # Parse and export Addressables catalog if it exists
-    catalog_bin = None
-    for p in raw_dir.rglob("catalog.bin"):
-        catalog_bin = p
-        break
-    if catalog_bin:
-        try:
-            from addressablestools import parse_binary
-            catalog = parse_binary(catalog_bin.read_bytes())
-            out_catalog = {
-                "locator_id": catalog.locator_id,
-                "build_result_hash": catalog.build_result_hash,
-                "resources": {}
-            }
-            for key, locations in catalog.resources.items():
-                key_str = str(key)
-                out_locations = []
-                for loc in locations:
-                    loc_dict = {
-                        "primary_key": loc.primary_key,
-                        "internal_id": loc.internal_id,
-                        "provider_id": loc.provider_id,
-                        "type": loc.type.class_name if loc.type else None,
-                        "dependencies": [dep.primary_key for dep in loc.dependencies] if loc.dependencies else []
-                    }
-                    out_locations.append(loc_dict)
-                out_catalog["resources"][key_str] = out_locations
-            (ai_dir / "addressables_catalog.json").write_text(
-                json.dumps(out_catalog, indent=2, ensure_ascii=False), encoding="utf-8")
-            log(f"[OK   ] addressables_catalog.json — {len(out_catalog['resources'])} keys parsed")
-        except ImportError:
-            log("[WARN ] addressablestools not installed. Run:")
-            log("[WARN ]   pip install addressablestools")
-            log(f"[WARN ]   (Current Python: {sys.executable})")
-        except Exception as exc:
-            log(f"[WARN ] Failed to parse addressables catalog: {exc}")
-    else:
-        log("[INFO ] No catalog.bin found — skipping Addressables catalog export")
-
-    asset_index = _build_ai_asset_index(out_dir)
-    (ai_dir / "ai_asset_index.json").write_text(
-        json.dumps(asset_index, indent=2, ensure_ascii=False), encoding="utf-8")
-    log(f"[OK   ] ai_asset_index.json — {len(asset_index)} files indexed")
-
-    if progress_cb: progress_cb(0.42, "Stage 4a: Il2CppDumper…")
-    dump_dir = _run_stage4a_il2cppdumper(
-        il2cpp_dir, out_dir, log, manual_exe_path=il2cpp_exe_path
-    )
-
-    if progress_cb: progress_cb(0.50, "Stage 4: UI field dump (per-file, v20)…")
-    _run_stage4_ui_dump(
-        raw_dir, ui_dump_dir, log, force,
-        dump_dir=dump_dir,
-        progress_cb=lambda p, msg: progress_cb(0.50 + p * 0.35, msg) if progress_cb else None,
-    )
-
-    if progress_cb: progress_cb(0.85, "Stage 5: Normalized UI trees (Node.js)…")
-    _run_stage5_bundle_parser(
-        ui_dump_dir, norm_ui_dir, log, force,
-        progress_cb=lambda p, msg: progress_cb(0.85 + p * 0.08, msg) if progress_cb else None,
-    )
-
-    if progress_cb: progress_cb(0.93, "Stage 6: AI Prompt Companions & Scene Slices…")
-    run_ui_compiler(out_dir, log, raw_dir=raw_dir)
-
-    # Rebuild ai_asset_index now that all stages have produced their output
-    log("[STEP ] Rebuilding AI asset index (post-pipeline)…")
-    ai_dir.mkdir(parents=True, exist_ok=True)
-    asset_index = _build_ai_asset_index(out_dir)
-    (ai_dir / "ai_asset_index.json").write_text(
-        json.dumps(asset_index, indent=2, ensure_ascii=False), encoding="utf-8")
-    log(f"[OK   ] ai_asset_index.json — {len(asset_index)} files indexed")
-
-    if progress_cb: progress_cb(1.0, "All stages complete!")
-    log(f"[DONE ] All stages complete → {out_dir}")
-    log("")
-    log("[INFO ] ✔ Stage 1  — APK/XAPK extracted")
-    log("[INFO ] ✔ Stage 2  — PNGs + text assets")
-    log("[INFO ] ✔ Stage 3  — IL2CPP metadata + smali")
-    log(f"[INFO ] {'✔' if dump_dir else 'ℹ'} Stage 4a — Il2CppDumper "
-        f"{'complete — DummyDll + script.json' if dump_dir else 'unavailable'}")
-    log("[INFO ] ✔ Stage 4  — UI field dump per-file")
-    log("[INFO ] ✔ Stage 5  — Normalized UI trees")
-    log("[INFO ] ✔ Stage 6  — AI Prompt Companions generated")
-    log("[INFO ] Next: open your scene prompt packages under ai_export/scenes/ in your AI agent for React/Tailwind generation.")
-
+    
+        log(f"[OK   ] Stage 2 complete -> {unity_dir}")
+    
+        if progress_cb: progress_cb(0.25, "Stage 3: IL2CPP metadata…")
+        log("[STEP ] Stage 3 — IL2CPP metadata…")
+        if not (il2cpp_dir.exists() and not force):
+            _wipe_dir(il2cpp_dir)
+            for f in (
+                list(raw_dir.rglob("global-metadata.dat"))
+                + list(raw_dir.rglob("arm64-v8a/libil2cpp.so"))
+                + list(raw_dir.rglob("armeabi-v7a/libil2cpp.so"))
+            ):
+                dst_name = f"{f.parent.name}_{f.name}" if f.name == "libil2cpp.so" else f.name
+                shutil.copy2(f, il2cpp_dir / dst_name)
+                log(f"[OK   ]   Copied: {dst_name}")
+            log(f"[OK   ] Stage 3 complete -> {il2cpp_dir}")
+        else:
+            log(f"[SKIP ] il2cpp_meta/ already exists ({_count_files(il2cpp_dir)} files)")
+    
+        if progress_cb: progress_cb(0.30, "Stage 3b: Smali decompile…")
+        log("[STEP ] Stage 3b — Smali decompile…")
+        java = _find_java(java_override)
+        if java is None:
+            log("[WARN ] Java not found — skipping smali step.")
+        else:
+            apktool_jar = _ensure_apktool(log)
+            if apktool_jar:
+                smali_dir.mkdir(parents=True, exist_ok=True)
+                main_apks = [p for p in raw_dir.rglob("*.apk") if "config." not in p.name] \
+                            or list(raw_dir.rglob("*.apk"))
+                for apk in main_apks:
+                    _run_smali(apk, smali_dir, java, apktool_jar, log, force)
+    
+        if progress_cb: progress_cb(0.40, "Stage 3c: Building AI export…")
+        log("[STEP ] Stage 3c — AI export files…")
+        ai_dir.mkdir(parents=True, exist_ok=True)
+        scene_map = _build_ai_scene_map(unity_dir)
+        (ai_dir / "ai_scene_map.json").write_text(
+            json.dumps(scene_map, indent=2, ensure_ascii=False), encoding="utf-8")
+        log(f"[OK   ] ai_scene_map.json — {len(scene_map)} entries")
+    
+        # Parse and export Addressables catalog if it exists
+        catalog_bin = None
+        for p in raw_dir.rglob("catalog.bin"):
+            catalog_bin = p
+            break
+        if catalog_bin:
+            try:
+                from addressablestools import parse_binary
+                catalog = parse_binary(catalog_bin.read_bytes())
+                out_catalog = {
+                    "locator_id": catalog.locator_id,
+                    "build_result_hash": catalog.build_result_hash,
+                    "resources": {}
+                }
+                for key, locations in catalog.resources.items():
+                    key_str = str(key)
+                    out_locations = []
+                    for loc in locations:
+                        loc_dict = {
+                            "primary_key": loc.primary_key,
+                            "internal_id": loc.internal_id,
+                            "provider_id": loc.provider_id,
+                            "type": loc.type.class_name if loc.type else None,
+                            "dependencies": [dep.primary_key for dep in loc.dependencies] if loc.dependencies else []
+                        }
+                        out_locations.append(loc_dict)
+                    out_catalog["resources"][key_str] = out_locations
+                (ai_dir / "addressables_catalog.json").write_text(
+                    json.dumps(out_catalog, indent=2, ensure_ascii=False), encoding="utf-8")
+                log(f"[OK   ] addressables_catalog.json — {len(out_catalog['resources'])} keys parsed")
+            except ImportError:
+                log("[WARN ] addressablestools not installed. Run:")
+                log("[WARN ]   pip install addressablestools")
+                log(f"[WARN ]   (Current Python: {sys.executable})")
+            except Exception as exc:
+                log(f"[WARN ] Failed to parse addressables catalog: {exc}")
+        else:
+            log("[INFO ] No catalog.bin found — skipping Addressables catalog export")
+    
+        asset_index = _build_ai_asset_index(out_dir)
+        (ai_dir / "ai_asset_index.json").write_text(
+            json.dumps(asset_index, indent=2, ensure_ascii=False), encoding="utf-8")
+        log(f"[OK   ] ai_asset_index.json — {len(asset_index)} files indexed")
+    
+        if progress_cb: progress_cb(0.42, "Stage 4a: Il2CppDumper…")
+        dump_dir = _run_stage4a_il2cppdumper(
+            il2cpp_dir, out_dir, log, manual_exe_path=il2cpp_exe_path
+        )
+    
+        if progress_cb: progress_cb(0.50, "Stage 4: UI field dump (per-file, v20)…")
+        _dbg("pipeline-stage4-enter")
+        _run_stage4_ui_dump(
+            raw_dir, ui_dump_dir, log, force,
+            dump_dir=dump_dir,
+            progress_cb=lambda p, msg: progress_cb(0.50 + p * 0.35, msg) if progress_cb else None,
+        )
+        _dbg("pipeline-stage4-exit")
+    
+        if progress_cb: progress_cb(0.85, "Stage 5: Normalized UI trees (Node.js)…")
+        _dbg("pipeline-stage5-enter")
+        _run_stage5_bundle_parser(
+            ui_dump_dir, norm_ui_dir, log, force,
+            progress_cb=lambda p, msg: progress_cb(0.85 + p * 0.08, msg) if progress_cb else None,
+        )
+        _dbg("pipeline-stage5-exit")
+    
+        if progress_cb: progress_cb(0.93, "Stage 6: AI Prompt Companions & Scene Slices…")
+        _dbg("pipeline-stage6-enter")
+        run_ui_compiler(out_dir, log, raw_dir=raw_dir)
+        _dbg("pipeline-stage6-exit")
+    
+        # Rebuild ai_asset_index now that all stages have produced their output
+        log("[STEP ] Rebuilding AI asset index (post-pipeline)…")
+        ai_dir.mkdir(parents=True, exist_ok=True)
+        asset_index = _build_ai_asset_index(out_dir)
+        (ai_dir / "ai_asset_index.json").write_text(
+            json.dumps(asset_index, indent=2, ensure_ascii=False), encoding="utf-8")
+        log(f"[OK   ] ai_asset_index.json — {len(asset_index)} files indexed")
+    
+        if progress_cb: progress_cb(1.0, "All stages complete!")
+        log(f"[DONE ] All stages complete -> {out_dir}")
+        log("")
+        log("[INFO ] ✔ Stage 1  — APK/XAPK extracted")
+        log("[INFO ] ✔ Stage 2  — PNGs + text assets")
+        log("[INFO ] ✔ Stage 3  — IL2CPP metadata + smali")
+        log(f"[INFO ] {'✔' if dump_dir else 'ℹ'} Stage 4a — Il2CppDumper "
+            f"{'complete — DummyDll + script.json' if dump_dir else 'unavailable'}")
+        log("[INFO ] ✔ Stage 4  — UI field dump per-file")
+        log("[INFO ] ✔ Stage 5  — Normalized UI trees")
+        log("[INFO ] ✔ Stage 6  — AI Prompt Companions generated")
+        log("[INFO ] Next: open your scene prompt packages under ai_export/scenes/ in your AI agent for React/Tailwind generation.")
+    
+    except Exception as exc:
+        import traceback
+        log("[ERROR] Pipeline failed:")
+        log(traceback.format_exc())
+        if progress_cb:
+            progress_cb(0.0, "Failed!")
 
 # ── GUI ───────────────────────────────────────────────────────────────────────
 class App(ctk.CTk):
