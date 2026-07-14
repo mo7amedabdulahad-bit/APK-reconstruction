@@ -982,6 +982,85 @@ def _resolve_pptr_fields(pid, fid, sprite_index, source_file):
     return _pptr(ns, sprite_index=sprite_index, current_file=source_file)
 
 
+def _scan_first_text_string(raw_bytes: bytes, start: int = 0) -> str | None:
+    """Scan raw object bytes for the first printable AlignedString.
+
+    On protected/obfuscated IL2CPP builds the embedded type tree is broken, so
+    UnityPy cannot tell us where m_text lives (it is NOT the first field for
+    RTL-wrapped TMP subclasses).  However the string is still serialized as an
+    AlignedString (int32 length + UTF-8 bytes + 4-byte alignment padding), so we
+    locate the first plausible text string in the buffer.  For a UI text
+    component this is overwhelmingly m_text.
+    """
+    if not raw_bytes:
+        return None
+    i = start
+    n = len(raw_bytes)
+    while i + 4 <= n:
+        try:
+            L = struct.unpack_from("<i", raw_bytes, i)[0]
+        except Exception:
+            break
+        if 2 <= L <= 500 and i + 4 + L <= n:
+            try:
+                s = raw_bytes[i + 4: i + 4 + L].decode("utf-8")
+            except Exception:
+                i += 1
+                continue
+            st = s.strip()
+            # Reject pure numbers and empty/whitespace-only strings; accept
+            # anything else that is fully printable (covers latin + arabic, etc.)
+            if st and not (st.isdigit() or st.replace(".", "", 1).isdigit()):
+                if all(ord(c) >= 32 for c in st):
+                    return s
+        i += 1
+    return None
+
+
+# Cache: path_id -> font name, rebuilt only when the sprite_index identity changes.
+_FONT_INDEX_CACHE: dict = {}
+
+def _get_font_by_pid(sprite_index: dict) -> dict:
+    key = id(sprite_index)
+    cached = _FONT_INDEX_CACHE.get(key)
+    if cached is None:
+        cached = {
+            e["path_id"]: e["name"]
+            for e in sprite_index.values()
+            if e.get("type") in ("Font", "TMP_FontAsset") and e.get("name")
+        }
+        _FONT_INDEX_CACHE[key] = cached
+    return cached
+
+
+def _scan_font_pptr(raw_bytes: bytes, font_by_pid: dict) -> dict | None:
+    """Scan raw object bytes for a PPtr (int32 file_id + int64 path_id) that
+    resolves to a Font / TMP_FontAsset in the global index.
+
+    On protected builds the type tree is broken so we cannot locate
+    m_fontAsset by name; however the PPtr bytes are still present and 4-byte
+    aligned, so we scan for a path_id that matches a known font entry.
+    """
+    if not raw_bytes or not font_by_pid:
+        return None
+    n = len(raw_bytes)
+    i = 0
+    while i + 12 <= n:
+        try:
+            pid = struct.unpack_from("<q", raw_bytes, i + 4)[0]
+        except Exception:
+            break
+        if pid != 0 and pid in font_by_pid:
+            fid = struct.unpack_from("<i", raw_bytes, i)[0]
+            return {
+                "name": font_by_pid[pid],
+                "path_id": pid,
+                "file_id": fid if fid else 0,
+            }
+        i += 4
+    return None
+
+
 def _parse_ui_component_fields(raw_bytes, class_name, field_start,
                                sprite_index, source_file) -> dict:
     """Recover the essential fields of a known UI MonoBehaviour from raw bytes.
@@ -1015,14 +1094,18 @@ def _parse_ui_component_fields(raw_bytes, class_name, field_start,
                 out["m_Texture"] = tx
 
         elif _is_text_component(class_name):
-            # AlignedString layout: 4-byte length, then string bytes, then padding
-            # Parse length from field_start, then extract string from next bytes
-            if len(raw_bytes) >= field_start + 4:
-                nlen = struct.unpack_from('<i', raw_bytes[field_start:field_start+4])[0]
-                # Check bounds before extracting
-                if 0 <= nlen < 8192 and field_start + 4 + nlen <= len(raw_bytes):
-                    s = raw_bytes[field_start+4:field_start+4+nlen]
-                    out["m_text"] = s.decode('utf-8', 'replace')
+            # The type tree is broken on this protected build, so m_text is not
+            # at a fixed offset (especially for RTL-wrapped TMP subclasses).
+            # Recover it by scanning the raw bytes for the first printable
+            # text AlignedString, which for a text component is m_text.
+            txt = _scan_first_text_string(raw_bytes, field_start)
+            if txt:
+                out["m_text"] = txt
+            # m_fontAsset is a PPtr to a Font/TMP_FontAsset. Locate it by
+            # scanning for a path_id that matches a known font entry.
+            font = _scan_font_pptr(raw_bytes, _get_font_by_pid(sprite_index))
+            if font:
+                out["m_fontAsset"] = font
     except Exception:
         pass
     return out
