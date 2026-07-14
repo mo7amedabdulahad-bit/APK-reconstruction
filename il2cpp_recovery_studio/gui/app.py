@@ -1023,6 +1023,9 @@ def _parse_ui_component_fields(raw_bytes, class_name, field_start,
                 if 0 <= nlen < 8192 and field_start + 4 + nlen <= len(raw_bytes):
                     s = raw_bytes[field_start+4:field_start+4+nlen]
                     out["m_text"] = s.decode('utf-8', 'replace')
+    except Exception:
+        pass
+    return out
 
 
 def _dump_ui_obj(

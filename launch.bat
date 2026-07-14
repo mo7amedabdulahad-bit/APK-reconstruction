@@ -6,7 +6,7 @@ echo   Unity APK Extraction, Editing ^& Rebuild Tool
 echo ============================================================
 echo.
 
-REM Try to find Python
+REM Try to find Python in the standard locations
 where python >nul 2>&1
 if %ERRORLEVEL% == 0 (
     python "%~dp0launch.py"
@@ -27,9 +27,14 @@ if %ERRORLEVEL% == 0 (
     goto :end
 )
 
+REM Try the known installation path for Python 3.14 (replace 'Mohamed' with your username)
+if exist "%LOCALAPPDATA%\Programs\Python\Python314\python.exe" (
+    "%LOCALAPPDATA%\Programs\Python\pythoncore-3.14-64\python.exe" "%~dp0launch.py"
+    goto :end
+)
+
 echo ERROR: Python not found.
-echo Please install Python 3.10+ from https://www.python.org/downloads/
+echo Please ensure Python 3.10+ is installed and the PATH is set correctly.
 echo.
 pause
-
 :end
