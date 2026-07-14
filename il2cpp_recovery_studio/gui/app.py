@@ -22,10 +22,12 @@ import hashlib
 import io
 import json
 import os
+import os as _os
 import queue
 import shutil
 import struct
 import subprocess
+from types import SimpleNamespace
 import sys
 import threading
 import time
@@ -137,35 +139,7 @@ DL_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) IL2CPP-Recovery-Studio/20"
 }
 
-#region debug-point dbg-helper
-import os as _os
-_DEBUG_SERVER_URL = _os.environ.get("DEBUG_SERVER_URL", "http://127.0.0.1:7777/event")
-_DEBUG_SESSION_ID = _os.environ.get("DEBUG_SESSION_ID", "unity-apk-rev-crash")
-_DEBUG_ENABLED = True
 
-def _dbg(event: str, data: dict | None = None, level: str = "info") -> None:
-    """Send a debug event to the TRAE Debug Server. Never raises."""
-    if not _DEBUG_ENABLED:
-        return
-    try:
-        import urllib.request as _urllib
-        payload = json.dumps({
-            "sessionId": _DEBUG_SESSION_ID,
-            "event": event,
-            "level": level,
-            "data": data or {},
-            "ts": time.time(),
-        }).encode("utf-8")
-        req = _urllib.Request(
-            _DEBUG_SERVER_URL,
-            data=payload,
-            headers={"Content-Type": "application/json"},
-            method="POST",
-        )
-        _urllib.urlopen(req, timeout=2)
-    except Exception:
-        pass  # debug reporting must never break the app
-#endregion
 
 _PURPOSE_HINTS: list[tuple[list[str], str]] = [
     (["lobby", "main_menu", "mainmenu", "home"],                  "Main Menu / Lobby"),
@@ -966,9 +940,89 @@ def _parse_monobehaviour_header(obj) -> dict:
             name_len = struct.unpack_from("<i", raw_bytes, 28)[0]
             if 0 < name_len < 512 and len(raw_bytes) >= 32 + name_len:
                 result["m_Name"] = raw_bytes[32:32 + name_len].decode("utf-8", errors="replace")
+            # Offset of the first component-specific serialized field (right
+            # after the m_Name AlignedString, aligned up to 4 bytes). This is
+            # where m_Sprite / m_Texture / m_text live for known UI components.
+            n = name_len if (0 < name_len < 512) else 0
+            result["_field_start"] = ((32 + n + 3) // 4) * 4
     except Exception:
         pass
     return result
+
+
+# ── UI component field recovery (protected/obfuscated IL2CPP builds) ──────────
+# On builds where the embedded type tree is broken, UnityPy's o.read() /
+# read_typetree() raise (they never segfault, but they return nothing useful).
+# However the component fields are still stored in the raw MonoBehaviour bytes
+# at well-defined offsets, so we recover the essential ones directly.  The
+# first component field sits at _field_start; for built-in UI types that field
+# is the primary asset/text reference.
+_UI_COMPONENT_TYPES = {
+    "Image", "RawImage", "Text", "TextMeshProUGUI",
+    "RTLTextMeshPro", "RTLTextMeshProWithSettings", "TMProTextRenderer",
+    "Button", "Toggle", "Slider", "ScrollRect", "InputField",
+}
+
+# Substring-based detection for text components (the game uses RTL-wrapped
+# TMP variants whose serialized layout still starts with the TMP_Text m_text
+# field).
+def _is_text_component(class_name: str) -> bool:
+    if not class_name:
+        return False
+    return (class_name in ("Text", "TextMeshProUGUI")
+            or "TextMeshPro" in class_name
+            or "RTLTextMeshPro" in class_name)
+
+
+def _resolve_pptr_fields(pid, fid, sprite_index, source_file):
+    """Resolve a (file_id, path_id) PPtr to a name via the global sprite index."""
+    if pid is None or pid == 0:
+        return None
+    ns = SimpleNamespace(path_id=pid, file_id=fid or 0)
+    return _pptr(ns, sprite_index=sprite_index, current_file=source_file)
+
+
+def _parse_ui_component_fields(raw_bytes, class_name, field_start,
+                               sprite_index, source_file) -> dict:
+    """Recover the essential fields of a known UI MonoBehaviour from raw bytes.
+
+    Returns a dict with the same keys the Stage-5 Node parser expects
+    (m_Sprite, m_Color, m_Texture, m_text, m_fontAsset, ...).  Any field that
+    cannot be read safely is simply omitted.
+    """
+    out: dict = {}
+    if not raw_bytes or field_start is None or field_start + 12 > len(raw_bytes):
+        return out
+    try:
+        if class_name == "Image":
+            fid = struct.unpack_from("<i", raw_bytes, field_start)[0]
+            pid = struct.unpack_from("<q", raw_bytes, field_start + 4)[0]
+            sp = _resolve_pptr_fields(pid, fid, sprite_index, source_file)
+            if sp:
+                out["m_Sprite"] = sp
+            # m_Color (RGBA32, 4 floats) sits 24 bytes after the field start
+            # (m_Sprite PPtr + m_Material PPtr on this Unity version).
+            co = field_start + 24
+            if co + 16 <= len(raw_bytes):
+                r, g, b, a = struct.unpack_from("<4f", raw_bytes, co)
+                out["m_Color"] = {"r": r, "g": g, "b": b, "a": a}
+
+        elif class_name == "RawImage":
+            fid = struct.unpack_from("<i", raw_bytes, field_start)[0]
+            pid = struct.unpack_from("<q", raw_bytes, field_start + 4)[0]
+            tx = _resolve_pptr_fields(pid, fid, sprite_index, source_file)
+            if tx:
+                out["m_Texture"] = tx
+
+        elif _is_text_component(class_name):
+            # AlignedString layout: 4-byte length, then string bytes, then padding
+            # Parse length from field_start, then extract string from next bytes
+            if len(raw_bytes) >= field_start + 4:
+                nlen = struct.unpack_from('<i', raw_bytes[field_start:field_start+4])[0]
+                # Check bounds before extracting
+                if 0 <= nlen < 8192 and field_start + 4 + nlen <= len(raw_bytes):
+                    s = raw_bytes[field_start+4:field_start+4+nlen]
+                    out["m_text"] = s.decode('utf-8', 'replace')
 
 
 def _dump_ui_obj(
@@ -1007,11 +1061,35 @@ def _dump_ui_obj(
             out["m_GameObject"] = base.get("m_GameObject")
             out["m_Enabled"]    = base.get("m_Enabled")
             out["m_Script"]     = base.get("m_Script")
-            if script_map and base.get("m_Script"):
+            class_name = None
+            # monoscript_index is keyed by the MonoBehaviour's OWN path_id
+            # (reliable); script_map is keyed by TypeDefIndex (fallback).
+            # Resolve the component class so we can recover its fields from
+            # raw bytes below.
+            if monoscript_index:
+                class_name = monoscript_index.get(o.path_id)
+            if not class_name and script_map and base.get("m_Script"):
                 pid = str(base["m_Script"].get("path_id", ""))
-                cls = script_map.get(pid)
-                if cls:
-                    out["_class_name"] = cls
+                class_name = script_map.get(pid)
+            if class_name:
+                out["_class_name"] = class_name
+                leaf = class_name.split(".")[-1]
+                if leaf in _UI_COMPONENT_TYPES:
+                    class_name = leaf
+            # Recover UI component fields (sprite / texture / text / color)
+            # directly from raw bytes. o.read()/read_typetree() fail on this
+            # protected build, so we parse the well-defined component layout
+            # and resolve asset PPtrs through the global sprite index.
+            if class_name in _UI_COMPONENT_TYPES:
+                try:
+                    raw_b64, _ = _get_precise_raw_bytes(o)
+                    if raw_b64:
+                        rb = base64.b64decode(raw_b64)
+                        out.update(_parse_ui_component_fields(
+                            rb, class_name, base.get("_field_start"),
+                            sprite_index, source_file))
+                except Exception:
+                    pass
             out["_decode"] = "header"
             return out
 
@@ -1282,24 +1360,12 @@ def _try_typetree_decode(o, env) -> dict | None:
     This never crashes - it uses UnityPy's built-in typetree reader which handles
     most cases. TypeTreeGenerator is an optional enhancement loaded separately.
     """
-    _c = getattr(_try_typetree_decode, "_c", 0) + 1
-    _try_typetree_decode._c = _c
-    _emit = (_c % 25 == 0)
-    if _emit:
-        _dbg("s4-decode-enter", {"type": o.type.name, "path_id": o.path_id,
-                                 "has_generator": bool(getattr(env, "typetree_generator", None))})
     try:
         tt = o.read_typetree()
         if tt and isinstance(tt, dict) and len(tt) > 4:
-            if _emit:
-                _dbg("s4-decode-ok", {"type": o.type.name, "path_id": o.path_id})
             return tt
-    except Exception as e:
-        if _emit:
-            _dbg("s4-decode-fail", {"type": o.type.name, "path_id": o.path_id,
-                                    "error": str(e)}, level="warn")
-    if _emit:
-        _dbg("s4-decode-none", {"type": o.type.name, "path_id": o.path_id})
+    except Exception:
+        pass
     return None
 
 
@@ -1343,13 +1409,10 @@ def _run_stage4_ui_dump(
         return
 
     log("[STEP ] Stage 4 — Full Unity UI field extraction (per-file, v22)…")
-    _dbg("s4-start", {"ui_dump_dir": str(ui_dump_dir), "force": force})
     _wipe_dir(ui_dump_dir)
 
     # 1. Load global environment and sprite index
-    _dbg("s4-env-loading")
     env = build_global_env(raw_dir, log)
-    _dbg("s4-env-loaded", {"objects": len(env.objects) if hasattr(env, "objects") else -1})
 # 1b. Configure TypeTreeGenerator using DummyDlls (optional enhancement)
     typetree_available = False
     if dump_dir and (dump_dir / "DummyDll").exists():
@@ -1390,16 +1453,12 @@ def _run_stage4_ui_dump(
                 env.typetree_generator = generator
                 typetree_available = True
                 log(f"[INFO ] TypeTreeGenerator attached {len(list((dump_dir / 'DummyDll').glob('*.dll')))} DummyDlls (Unity {unity_ver}).")
-                _dbg("s4-typetree-done", {"unity_ver": unity_ver, "attached": True})
             else:
                 log(f"[INFO ] TypeTreeGenerator loaded but NOT attached (protected build) — using UnityPy built-in typetree. Set IL2CPP_TYPETREE=1 to force the C# generator.")
-                _dbg("s4-typetree-done", {"unity_ver": unity_ver, "attached": False})
         except ImportError:
             log("[INFO ] TypeTreeGeneratorAPI not installed — using UnityPy built-in typetree reading.")
-            _dbg("s4-typetree-import-error")
         except Exception as e:
             log(f"[WARN ] TypeTreeGenerator unavailable, falling back to UnityPy: {e}")
-            _dbg("s4-typetree-exception", {"error": str(e)}, level="warn")
             
     with _SuppressCSharpOutput():
         sprite_index = build_global_sprite_index(env, log)
@@ -1407,7 +1466,14 @@ def _run_stage4_ui_dump(
 
     # 2a. Build global MonoScript class map: (assetsfile_name, path_id) -> class_name
     monoscript_class_map = {}
+    _ms_counter = 0
     for o in env.objects:
+        _ms_counter += 1
+        if _ms_counter % 10000 == 0:
+            log(f"[INFO ] Scanning MonoScripts: {_ms_counter}/{len(env.objects)}...")
+            if progress_cb:
+                progress_cb(0.20 + 0.10 * (_ms_counter / len(env.objects)),
+                            f"Stage 4: scanning MonoScripts {_ms_counter}/{len(env.objects)}")
         if o.type.name == "MonoScript":
             af = getattr(o, "assets_file", None)
             afn = getattr(af, "name", "") if af else ""
@@ -1420,7 +1486,6 @@ def _run_stage4_ui_dump(
             except Exception:
                 pass
     log(f"[INFO ] Built global MonoScript class map with {len(monoscript_class_map)} entries")
-    _dbg("s4-monoscript-map-done", {"entries": len(monoscript_class_map)})
 
     def resolve_monoscript(o, fid, pid):
         if not pid:
@@ -1449,21 +1514,15 @@ def _run_stage4_ui_dump(
     # 2b. Build per-file local type indices and MonoBehaviour->class mappings.
     local_type_indices: dict[str, dict[int, str]] = {}  # file -> {pid -> type}
     monoscript_indices: dict[str, dict[int, str]] = {}  # file -> {pid -> class_name}
-    _dbg("s4-localtype-start", {"objects": len(env.objects)})
     _lt_counter = 0
     _lt_mb = 0
     for o in env.objects:
         _lt_counter += 1
-        if _lt_counter % 1000 == 0:
-            _dbg("s4-localtype-iter", {
-                "processed": _lt_counter,
-                "type": o.type.name,
-                "path_id": o.path_id,
-                "source": getattr(getattr(o, "assets_file", None), "name", "unknown"),
-            })
-        if progress_cb and _lt_counter % 10000 == 0:
-            progress_cb(0.30 + 0.20 * (_lt_counter / len(env.objects)),
-                        f"Stage 4: scanning object {_lt_counter}/{len(env.objects)}")
+        if _lt_counter % 10000 == 0:
+            log(f"[INFO ] Scanning local types: {_lt_counter}/{len(env.objects)}...")
+            if progress_cb:
+                progress_cb(0.30 + 0.20 * (_lt_counter / len(env.objects)),
+                            f"Stage 4: scanning object {_lt_counter}/{len(env.objects)}")
         af = getattr(o, "assets_file", None)
         fn = getattr(af, "name", "unknown") if af else "unknown"
         if fn not in local_type_indices:
@@ -1475,11 +1534,7 @@ def _run_stage4_ui_dump(
             resolved_cls = None
             _lt_mb += 1
             if _lt_mb % 100 == 0:
-                _dbg("s4-localtype-mb-read", {
-                    "mb_idx": _lt_mb,
-                    "source": fn,
-                    "path_id": o.path_id,
-                })
+                log(f"[INFO ] Resolving MonoBehaviour {_lt_mb} (at object {_lt_counter})...")
             # Recover the m_Script PPtr from the raw MonoBehaviour header — this
             # is a cheap, native-safe byte parse that does NOT deserialize the
             # whole object. On protected/obfuscated IL2CPP builds a full
@@ -1510,7 +1565,6 @@ def _run_stage4_ui_dump(
                 short_cls = resolved_cls.split(".")[-1]
                 monoscript_indices[fn][o.path_id] = short_cls
 
-    _dbg("s4-localtype-done", {"files": len(local_type_indices)})
     resolved_mono_count = sum(len(v) for v in monoscript_indices.values())
     log(f"[INFO ] Resolved {resolved_mono_count} MonoBehaviour class names")
 
@@ -1520,7 +1574,6 @@ def _run_stage4_ui_dump(
     skipped_objects = 0
     processed_counter = 0
     log(f"[INFO ] Processing {len(env.objects)} Unity objects...")
-    _dbg("s4-loop-start", {"objects": len(env.objects)})
     # Suppress ALL C# interop output (TypeTreeGeneratorAPI.dll writes
     # 'Error generating tree nodes: ...' directly to process fds 1+2)
     # for the entire object processing loop.
@@ -1529,10 +1582,9 @@ def _run_stage4_ui_dump(
         for o in env.objects:
             processed_counter += 1
             if processed_counter % 10000 == 0:
-                log(f"[INFO ] Processed {processed_counter}/{len(env.objects)} objects...")
-                _dbg("s4-loop-heartbeat", {"processed": processed_counter, "total": len(env.objects)})
+                log(f"[INFO ] Dumping UI objects: {processed_counter}/{len(env.objects)}...")
                 if progress_cb:
-                    progress_cb(0.5 + 0.3 * (processed_counter / len(env.objects)), f"Stage 4: Processed {processed_counter}/{len(env.objects)} objects")
+                    progress_cb(0.5 + 0.3 * (processed_counter / len(env.objects)), f"Stage 4: Processed {processed_counter}/{len(env.objects)} objects")
             
             if o.type.name not in WANT_TYPES:
                 continue
@@ -1554,17 +1606,8 @@ def _run_stage4_ui_dump(
                     # is attached, is the native-crash risk on protected/obfuscated
                     # builds. Default to cheap header-only extraction; full decode
                     # can be forced with IL2CPP_TYPETREE=1 for well-behaved builds.
-                    if _mb_counter % 100 == 0:
-                        _dbg("s4-mb-attempt", {
-                            "idx": _mb_counter,
-                            "source": source_name,
-                            "path_id": o.path_id,
-                            "type": o.type.name,
-                        })
                     if _os.environ.get("IL2CPP_TYPETREE", "0") == "1":
                         typetree_decoded = _try_typetree_decode(o, env)
-                    else:
-                        typetree_decoded = None
                 
                 dumped = _dump_ui_obj(
                     o,
@@ -1579,18 +1622,12 @@ def _run_stage4_ui_dump(
                 total_objects += 1
             except Exception as exc:
                 skipped_objects += 1
-                _dbg("s4-loop-skip", {
-                    "source": source_name,
-                    "path_id": o.path_id,
-                    "type": o.type.name,
-                    "error": str(exc),
-                }, level="warn")
                 if skipped_objects <= 5:
                     log(f"[WARN ] Skipping {o.type.name} path_id={o.path_id}: {exc}")
                 elif skipped_objects == 6:
                     log(f"[WARN ] Further skip messages suppressed...")
 
-    _dbg("s4-loop-done", {"total_objects": total_objects, "skipped": skipped_objects})
+    log(f"[OK   ] Stage 4 dump complete — {total_objects} objects written, {skipped_objects} skipped")
 
     # 3. Track coverage stats
     stats = {"resolved": 0, "unresolved": 0, "per_bundle": {}}
@@ -1886,26 +1923,20 @@ def _run_pipeline(
         )
     
         if progress_cb: progress_cb(0.50, "Stage 4: UI field dump (per-file, v20)…")
-        _dbg("pipeline-stage4-enter")
         _run_stage4_ui_dump(
             raw_dir, ui_dump_dir, log, force,
             dump_dir=dump_dir,
             progress_cb=lambda p, msg: progress_cb(0.50 + p * 0.35, msg) if progress_cb else None,
         )
-        _dbg("pipeline-stage4-exit")
     
         if progress_cb: progress_cb(0.85, "Stage 5: Normalized UI trees (Node.js)…")
-        _dbg("pipeline-stage5-enter")
         _run_stage5_bundle_parser(
             ui_dump_dir, norm_ui_dir, log, force,
             progress_cb=lambda p, msg: progress_cb(0.85 + p * 0.08, msg) if progress_cb else None,
         )
-        _dbg("pipeline-stage5-exit")
     
         if progress_cb: progress_cb(0.93, "Stage 6: AI Prompt Companions & Scene Slices…")
-        _dbg("pipeline-stage6-enter")
         run_ui_compiler(out_dir, log, raw_dir=raw_dir)
-        _dbg("pipeline-stage6-exit")
     
         # Rebuild ai_asset_index now that all stages have produced their output
         log("[STEP ] Rebuilding AI asset index (post-pipeline)…")
