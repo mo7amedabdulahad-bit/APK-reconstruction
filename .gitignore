@@ -52,6 +52,14 @@ il2cpp_recovery_studio/__pycache__/
 il2cpp_recovery_studio/.pytest_cache/
 il2cpp_recovery_studio/*.egg-info/
 
+# ---- Local Build / Test Debris (generated locally, not committed) ----
+build/
+dist/
+*.egg-info/
+Assets/
+test*
+phase8*
+
 # ---- Extracted Asset Binaries (too large) ----
 extracted_assets/Images/
 extracted_assets/Sprites/

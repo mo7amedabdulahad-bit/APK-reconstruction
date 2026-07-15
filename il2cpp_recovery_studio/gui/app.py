@@ -1001,18 +1001,23 @@ def _scan_first_text_string(raw_bytes: bytes, start: int = 0) -> str | None:
             L = struct.unpack_from("<i", raw_bytes, i)[0]
         except Exception:
             break
-        if 2 <= L <= 500 and i + 4 + L <= n:
+        if 2 <= L <= 200 and i + 4 + L <= n:
             try:
                 s = raw_bytes[i + 4: i + 4 + L].decode("utf-8")
             except Exception:
                 i += 1
                 continue
             st = s.strip()
-            # Reject pure numbers and empty/whitespace-only strings; accept
-            # anything else that is fully printable (covers latin + arabic, etc.)
-            if st and not (st.isdigit() or st.replace(".", "", 1).isdigit()):
-                if all(ord(c) >= 32 for c in st):
-                    return s
+            # Reject pure numbers, empty/whitespace-only strings, and strings
+            # made of a single repeated character; accept anything else that is
+            # fully printable (covers latin + arabic, etc.).  The <=200 length
+            # cap and the unique-character filter harden the scanner against
+            # blobs and noise in protected/obfuscated bundles.
+            if (st
+                    and len(set(st)) >= 2
+                    and not (st.isdigit() or st.replace(".", "", 1).isdigit())
+                    and all(ord(c) >= 32 for c in st)):
+                return s
         i += 1
     return None
 
@@ -1033,16 +1038,18 @@ def _get_font_by_pid(sprite_index: dict) -> dict:
     return cached
 
 
-def _scan_font_pptr(raw_bytes: bytes, font_by_pid: dict) -> dict | None:
-    """Scan raw object bytes for a PPtr (int32 file_id + int64 path_id) that
-    resolves to a Font / TMP_FontAsset in the global index.
+def _scan_all_font_pptrs(raw_bytes: bytes, font_by_pid: dict) -> list[dict]:
+    """Scan raw object bytes for every PPtr (int32 file_id + int64 path_id)
+    that resolves to a Font / TMP_FontAsset in the global index.
 
     On protected builds the type tree is broken so we cannot locate
     m_fontAsset by name; however the PPtr bytes are still present and 4-byte
-    aligned, so we scan for a path_id that matches a known font entry.
+    aligned, so we scan for every path_id that matches a known font entry and
+    return them all (multi-font support).
     """
+    results: list[dict] = []
     if not raw_bytes or not font_by_pid:
-        return None
+        return results
     n = len(raw_bytes)
     i = 0
     while i + 12 <= n:
@@ -1052,13 +1059,13 @@ def _scan_font_pptr(raw_bytes: bytes, font_by_pid: dict) -> dict | None:
             break
         if pid != 0 and pid in font_by_pid:
             fid = struct.unpack_from("<i", raw_bytes, i)[0]
-            return {
+            results.append({
                 "name": font_by_pid[pid],
                 "path_id": pid,
                 "file_id": fid if fid else 0,
-            }
+            })
         i += 4
-    return None
+    return results
 
 
 def _parse_ui_component_fields(raw_bytes, class_name, field_start,
@@ -1101,11 +1108,12 @@ def _parse_ui_component_fields(raw_bytes, class_name, field_start,
             txt = _scan_first_text_string(raw_bytes, field_start)
             if txt:
                 out["m_text"] = txt
-            # m_fontAsset is a PPtr to a Font/TMP_FontAsset. Locate it by
-            # scanning for a path_id that matches a known font entry.
-            font = _scan_font_pptr(raw_bytes, _get_font_by_pid(sprite_index))
-            if font:
-                out["m_fontAsset"] = font
+            # m_fontAsset is a PPtr to a Font/TMP_FontAsset. Locate every
+            # matching PPtr by scanning for path_ids that match known font
+            # entries (multi-font support).
+            fonts = _scan_all_font_pptrs(raw_bytes, _get_font_by_pid(sprite_index))
+            if fonts:
+                out["m_fontAssets"] = fonts
     except Exception:
         pass
     return out
@@ -1183,16 +1191,40 @@ def _dump_ui_obj(
         d = o.read()
         out["name"] = _sg(d, "m_Name") or _sg(d, "name")
     except Exception as e:
+        # Universal raw-byte fallback for protected/obfuscated builds: o.read()
+        # failed (native fault, or a MonoBehaviour whose header could not be
+        # parsed). Recover directly from the raw bytes instead of propagating
+        # the exception. This extends the raw-byte path to ALL MonoBehaviour
+        # types (Image, Button, Toggle, text components, ...) that reach here.
         base = _parse_monobehaviour_header(o)
-        out["name"]         = base.get("m_Name")
-        out["m_GameObject"] = base.get("m_GameObject")
-        out["m_Enabled"]    = base.get("m_Enabled")
-        out["m_Script"]     = base.get("m_Script")
-        if script_map and base.get("m_Script"):
-            pid = str(base["m_Script"].get("path_id", ""))
-            cls = script_map.get(pid)
-            if cls:
-                out["_class_name"] = cls
+        if base:
+            out["name"]         = base.get("m_Name")
+            out["m_GameObject"] = base.get("m_GameObject")
+            out["m_Enabled"]    = base.get("m_Enabled")
+            out["m_Script"]     = base.get("m_Script")
+            class_name = None
+            if monoscript_index:
+                class_name = monoscript_index.get(o.path_id)
+            if not class_name and script_map and base.get("m_Script"):
+                pid = str(base["m_Script"].get("path_id", ""))
+                class_name = script_map.get(pid)
+            if class_name:
+                out["_class_name"] = class_name
+                leaf = class_name.split(".")[-1]
+                if leaf in _UI_COMPONENT_TYPES:
+                    class_name = leaf
+            # Recover UI component fields (sprite / texture / text / color)
+            # from raw bytes, mirroring the primary MonoBehaviour path above.
+            if class_name in _UI_COMPONENT_TYPES:
+                try:
+                    raw_b64, _ = _get_precise_raw_bytes(o)
+                    if raw_b64:
+                        rb = base64.b64decode(raw_b64)
+                        out.update(_parse_ui_component_fields(
+                            rb, class_name, base.get("_field_start"),
+                            sprite_index, source_file))
+                except Exception:
+                    pass
         out["_decode_failed"] = True
         out["_decode_error"]  = str(e)
         raw_b64, raw_len      = _get_precise_raw_bytes(o)
@@ -1498,7 +1530,19 @@ def _run_stage4_ui_dump(
     _wipe_dir(ui_dump_dir)
 
     # 1. Load global environment and sprite index
-    env = build_global_env(raw_dir, log)
+    #     Phase 6 — additive scene bundle grouping: load every related scene
+    #     bundle into ONE shared Environment so cross-bundle PPtrs resolve
+    #     natively (the previous build_global_env call did the same thing via
+    #     UnityPy.load on the raw dir; load_scene_group is the explicit hook).
+    try:
+        from il2cpp_recovery_studio.unity_assets.bundle_loader import (
+            load_scene_group,
+        )
+        env = load_scene_group([str(raw_dir)])
+    except Exception as _e:
+        log(f"[WARN ] load_scene_group failed, falling back to "
+            f"build_global_env: {_e}")
+        env = build_global_env(raw_dir, log)
 # 1b. Configure TypeTreeGenerator using DummyDlls (optional enhancement)
     typetree_available = False
     if dump_dir and (dump_dir / "DummyDll").exists():
@@ -1549,6 +1593,63 @@ def _run_stage4_ui_dump(
     with _SuppressCSharpOutput():
         sprite_index = build_global_sprite_index(env, log)
     script_map = _load_script_map(dump_dir)
+
+    # 1c. Atlas unpacking pre-pass (Phase 5) — recover the Sprites packed
+    #     inside SpriteAtlases and merge them into the global sprite index so
+    #     that null-sprite Image components can resolve to a real sprite name
+    #     via the existing resolve_pptr_global path_id fallback.
+    try:
+        from il2cpp_recovery_studio.unity_assets.atlas_unpacker import (
+            recover_atlas_sprites,
+        )
+        with _SuppressCSharpOutput():
+            atlas_sprites = recover_atlas_sprites(env, log)
+        for _sname, _sinfo in atlas_sprites.items():
+            _pid = _sinfo.get("path_id")
+            if _pid is None:
+                continue
+            sprite_index[f"atlas|{_pid}"] = {
+                "name": _sname,
+                "type": "Sprite",
+                "path_id": _pid,
+                "file_name": "atlas",
+                "rect": _sinfo.get("rect"),
+                "atlas": _sinfo.get("atlas"),
+            }
+        log(f"[OK   ] Atlas unpacking pre-pass: merged {len(atlas_sprites)} "
+            f"sprites into sprite_index")
+    except Exception as _e:
+        log(f"[WARN ] Atlas unpacking pre-pass failed: {_e}")
+
+    # 1d. Addressables catalog name map (Phase 5) — map addressable keys to
+    #     sprite names so Image components loaded by address resolve too.
+    try:
+        from il2cpp_recovery_studio.unity_assets.addressable_catalog import (
+            load_addressable_catalog,
+        )
+        catalog_map = load_addressable_catalog(raw_dir)
+        if catalog_map:
+            _name_to_pid: dict[str, int] = {}
+            for _entry in sprite_index.values():
+                _n = _entry.get("name")
+                if _n and _n not in _name_to_pid:
+                    _name_to_pid[_n] = _entry.get("path_id")
+            for _addr, _sname in catalog_map.items():
+                _pid = _name_to_pid.get(_sname)
+                if _pid is not None:
+                    sprite_index[f"addr|{_addr}"] = {
+                        "name": _sname,
+                        "type": "Sprite",
+                        "path_id": _pid,
+                        "file_name": "addr",
+                    }
+            log(f"[OK   ] Addressables catalog: merged {len(catalog_map)} "
+                f"name mappings")
+        else:
+            log("[INFO ] Addressables catalog: no catalog.json found "
+                "(addressable bundles only) — skipping")
+    except Exception as _e:
+        log(f"[WARN ] Addressables catalog load failed: {_e}")
 
     # 2a. Build global MonoScript class map: (assetsfile_name, path_id) -> class_name
     monoscript_class_map = {}

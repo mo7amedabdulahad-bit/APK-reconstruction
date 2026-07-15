@@ -12,6 +12,13 @@ try:
 except ImportError:
     _HAS_UNITYPY = False
 
+# Import dynamic text extractor (Phase 7)
+try:
+    from ..metadata.dynamic_text_extractor import extract_dynamic_ui_strings
+    _HAS_DYNAMIC_TEXT = True
+except ImportError:
+    _HAS_DYNAMIC_TEXT = False
+
 
 def _find_sprite_file(sprite_name: str, output_dir: Path, log=None) -> Path | None:
     """Find a sprite file in various locations."""
@@ -121,6 +128,74 @@ def _clean_attrib(val):
 
 def _safe(val, default=""):
     return val if val else default
+
+
+def _discover_metadata_path(output_dir, raw_dir):
+    """Locate ``global-metadata.dat`` for Phase 7 dynamic text recovery."""
+    bases = []
+    if raw_dir is not None:
+        bases.append(raw_dir)
+    bases.append(output_dir)
+    for base in bases:
+        try:
+            hits = list(Path(base).rglob("global-metadata.dat"))
+        except Exception:
+            hits = []
+        if hits:
+            return hits[0]
+    # Fallback: standard Unity layout nested under the raw dir
+    if raw_dir is not None:
+        for pattern in (
+            "*/assets/bin/Data/Managed/Metadata/global-metadata.dat",
+            "*/assets/bin/Data/global-metadata.dat",
+        ):
+            try:
+                hits = list(Path(raw_dir).glob(pattern))
+            except Exception:
+                hits = []
+            if hits:
+                return hits[0]
+    return None
+
+
+def _append_dynamic_text_section(markdown_str, source, strings):
+    """Insert a 'Dynamic Text (IL2CPP recovered)' section into the markdown."""
+    # Place it right after the last section before the instructions block,
+    # or just before the end if the instructions header isn't found.
+    lines = [ln for ln in markdown_str.split("\n") if ln.strip()]
+    insert_idx = len(lines)
+    for i, ln in enumerate(lines):
+        if "## Instructions for the Rebuilding Agent" in ln:
+            j = i + 1
+            while j < len(lines) and not lines[j].startswith("## "):
+                j += 1
+            insert_idx = j
+            break
+
+    shown = strings[:10]
+    rows = []
+    for text in shown:
+        short = text if len(text) <= 60 else text[:60] + "..."
+        rows.append(f"| {short} | Dynamic |")
+    if len(strings) > 10:
+        rows.append(f"| ... and {len(strings) - 10} more | |")
+
+    section = "\n".join([
+        "",
+        "## Dynamic Text (IL2CPP recovered)",
+        "",
+        f"- **Source**: {source}",
+        f"- **Text Count**: {len(strings)}",
+        "",
+        "These UI strings were recovered from the compiled IL2CPP metadata.",
+        "They were not present in the UI dump (no Text components captured) but",
+        "exist in the game binary and may be shown at runtime.",
+        "",
+        "| Text Content | Context |",
+        "|---|---|",
+    ] + rows)
+
+    return "\n".join(lines[:insert_idx]) + section + "\n" + "\n".join(lines[insert_idx:])
 
 
 def build_xml_node(node):
@@ -381,6 +456,24 @@ def run_ui_compiler(output_dir: Path, log, raw_dir: Path | None = None):
     json_files = list(norm_dir.glob("*.json"))
     log(f"[INFO ] Compiling prompt packages for {len(json_files)} UI scenes…")
 
+    # ── Phase 7 Task 7.1: recover dynamic UI strings ONCE for the whole run ──
+    # Scanning the metadata blob is O(file size); doing it per-scene would be
+    # 448x redundant.  Resolve the path once and cache the class->strings map.
+    dynamic_text = {}
+    if _HAS_DYNAMIC_TEXT:
+        try:
+            metadata_path = _discover_metadata_path(output_dir, raw_dir)
+            if metadata_path is not None:
+                dynamic_text = extract_dynamic_ui_strings(str(metadata_path))
+                total_recovered = sum(len(v) for v in dynamic_text.values())
+                log(f"[OK   ] Phase 7 dynamic text: recovered {total_recovered} "
+                    f"string literal(s) across {len(dynamic_text)} class bucket(s)")
+            else:
+                log("[INFO ] Phase 7 dynamic text: no global-metadata.dat found "
+                    "— skipping dynamic text recovery")
+        except Exception as _e:
+            log(f"[WARN ] Phase 7 dynamic text recovery failed: {_e}")
+
     processed = 0
     for jf in json_files:
         try:
@@ -457,6 +550,19 @@ def run_ui_compiler(output_dir: Path, log, raw_dir: Path | None = None):
         markdown_str = generate_companion_markdown(
             scene_name, xml_str, all_assets, data.get("raw_count", 0)
         )
+
+        # ── Phase 7 Task 7.2: inject recovered dynamic text when the UI dump
+        # captured no Text components ──
+        if dynamic_text and len(all_assets["texts"]) == 0:
+            key = root_names[0] if root_names else (first_name or scene_name)
+            dynamic_strings = dynamic_text.get(key) or dynamic_text.get("__global__")
+            if dynamic_strings:
+                markdown_str = _append_dynamic_text_section(
+                    markdown_str, key, dynamic_strings
+                )
+                log(f"[OK   ] Phase 7: appended {len(dynamic_strings)} dynamic "
+                    f"string(s) to {scene_name}")
+
         (scene_output_dir / "PROMPT_COMPANION.md").write_text(markdown_str, encoding="utf-8")
 
         manifest[scene_name] = {
