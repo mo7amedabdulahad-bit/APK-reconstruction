@@ -1,0 +1,50 @@
+// Extracted from IL2CPP metadata v39 via Il2CppInspectorRedux
+// Namespace: TLMobile.Generated.GraphQL.Game
+// Source: global-metadata.dat (Travian Legends Mobile v3.13.0)
+
+	public class MapMarker : GraphQLServerObject
+	{
+		// Fields
+		[ObservableValue]
+		private int _id;
+		[ObservableValue]
+		private MapMarkerOwner _owner;
+		[ObservableValue]
+		private int _variant;
+		[ObservableValue]
+		private MapMarkedItem _markedItem;
+	
+		// Properties
+		public override GraphQLServerIdentifier ServerIdentifier { get => default; }
+		[ObservableValue]
+		public int id { get => default; set {} }
+		[ObservableValue]
+		public MapMarkerOwner owner { get => default; set {} }
+		[ObservableValue]
+		public int variant { get => default; set {} }
+		[ObservableValue]
+		public MapMarkedItem markedItem { get => default; set {} }
+	
+		// Nested types
+		public enum Query
+		{
+			All = 0
+		}
+	
+		// Constructors
+		public MapMarker() {}
+	
+		// Methods
+		public override string GetGraphQLBody(int query) => default;
+		public override object GetDTOObject(object dtoObject) => default;
+		public override System.Type GetDtoType() => default;
+		public override GraphQLServerObject GetNewObject(object dtoObject, int query) => default;
+		public override bool EqualToDTO(object dtoValue, int query = 0) => default;
+		public bool EqualToDTO(object dtoValue, Query query = Query.All) => default;
+		private bool EqualToDTOAll(MapMarkerDTO dtoValue) => default;
+		public override bool CopyValuesFromDTO(object newValues, int query = 0, bool beSilent = false) => default;
+		public bool CopyValuesFromDTO(object newValues, Query query = Query.All, bool beSilent = false) => default;
+		private bool CopyValuesFromDTOAll(MapMarkerDTO newValues, bool beSilent = false) => default;
+		public override void ParseDtoObjectsList(object rawDtoObj, Action<List<object>> resultCallback) {}
+		public new string ToString() => default;
+	}

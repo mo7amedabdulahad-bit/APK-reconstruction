@@ -1,0 +1,76 @@
+// Extracted from IL2CPP metadata v39 via Il2CppInspectorRedux
+// Namespace: TLMobile.Generated.GraphQL.Game
+// Source: global-metadata.dat (Travian Legends Mobile v3.13.0)
+
+	public class MetadataFields : GraphQLServerObject
+	{
+		// Fields
+		[ObservableValue]
+		private int _speed;
+		[ObservableValue]
+		private string _name;
+		[ObservableValue]
+		private string _url;
+		[ObservableValue]
+		private string _type;
+		[ObservableValue]
+		private GraphQLObservableList<string> _mainpageGroups;
+		[ObservableValue]
+		private GraphQLObservableList<string> _recommended;
+		[ObservableValue]
+		private string _mainpageBackground;
+		[ObservableValue]
+		private string _subtitle;
+		[ObservableValue]
+		private GraphQLObservableList<string> _gtl;
+	
+		// Properties
+		public override GraphQLServerIdentifier ServerIdentifier { get => default; }
+		[ObservableValue]
+		public int speed { get => default; set {} }
+		[ObservableValue]
+		public string name { get => default; set {} }
+		[ObservableValue]
+		public string url { get => default; set {} }
+		[ObservableValue]
+		public string type { get => default; set {} }
+		[ObservableValue]
+		public GraphQLObservableList<string> mainpageGroups { get => default; set {} }
+		[ObservableValue]
+		public GraphQLObservableList<string> recommended { get => default; set {} }
+		[ObservableValue]
+		public string mainpageBackground { get => default; set {} }
+		[ObservableValue]
+		public string subtitle { get => default; set {} }
+		[ObservableValue]
+		public GraphQLObservableList<string> gtl { get => default; set {} }
+	
+		// Nested types
+		public enum Query
+		{
+			All = 0
+		}
+	
+		// Constructors
+		public MetadataFields() {}
+	
+		// Methods
+		public override string GetGraphQLBody(int query) => default;
+		public override object GetDTOObject(object dtoObject) => default;
+		public override System.Type GetDtoType() => default;
+		public override GraphQLServerObject GetNewObject(object dtoObject, int query) => default;
+		public override bool EqualToDTO(object dtoValue, int query = 0) => default;
+		public bool EqualToDTO(object dtoValue, Query query = Query.All) => default;
+		private bool EqualToDTOAll(MetadataFieldsDTO dtoValue) => default;
+		public override bool CopyValuesFromDTO(object newValues, int query = 0, bool beSilent = false) => default;
+		public bool CopyValuesFromDTO(object newValues, Query query = Query.All, bool beSilent = false) => default;
+		private bool CopyValuesFromDTOAll(MetadataFieldsDTO newValues, bool beSilent = false) => default;
+		private bool CopyValuesFromDtoListMainpageGroups(GraphQLObservableList<string> to, List<string> from, int query) => default;
+		private bool CopyValuesFromDtoListRecommended(GraphQLObservableList<string> to, List<string> from, int query) => default;
+		private bool CopyValuesFromDtoListGtl(GraphQLObservableList<string> to, List<string> from, int query) => default;
+		public override void ParseDtoObjectsList(object rawDtoObj, Action<List<object>> resultCallback) {}
+		public new string ToString() => default;
+		private void _mainpageGroupsNotify(object sender, PropertyChangedEventArgs args) {}
+		private void _recommendedNotify(object sender, PropertyChangedEventArgs args) {}
+		private void _gtlNotify(object sender, PropertyChangedEventArgs args) {}
+	}
